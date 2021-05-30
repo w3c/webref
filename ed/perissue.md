@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 29, 2021
+% May 30, 2021
 
 397 specifications were crawled in this report.
 
@@ -1663,7 +1663,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/) but does not list it in its references
     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/) but does not list it in its references
     * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/) but does not list it in its references
-    * [`https://www.w3.org/TR/html4/present/`](https://www.w3.org/TR/html4/present/) but does not list it in its references
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html) but does not list it in its references
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/) links to [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/) but does not list it in its references
@@ -1885,7 +1884,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 616 missing references for links found in 170 specifications
+=> 615 missing references for links found in 170 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2763,6 +2762,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#category-label`](https://html.spec.whatwg.org/#category-label)
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
+     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
+     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
+     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
      * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
      * [`https://html.spec.whatwg.org/#email-state-(type=email)`](https://html.spec.whatwg.org/#email-state-(type=email))
      * [`https://html.spec.whatwg.org/#concept-input-list`](https://html.spec.whatwg.org/#concept-input-list)
@@ -2777,6 +2779,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
      * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
      * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
+     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
      * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
      * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
      * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
@@ -3809,7 +3812,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1291 problematic external links found in 202 specifications
+=> 1295 problematic external links found in 202 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5094,53 +5097,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar`](https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar)
      * [`https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest`](https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest)
      * [`https://html.spec.whatwg.org/#element-attrdef-track-kind`](https://html.spec.whatwg.org/#element-attrdef-track-kind)
-     * [`https://www.w3.org/TR/html/#checkbox-state-typecheckbox`](https://www.w3.org/TR/html/#checkbox-state-typecheckbox)
-     * [`https://www.w3.org/TR/html/#forms-checkedness`](https://www.w3.org/TR/html/#forms-checkedness)
-     * [`https://www.w3.org/TR/html/#color-state-typecolor`](https://www.w3.org/TR/html/#color-state-typecolor)
-     * [`https://www.w3.org/TR/html/#submit-button-state-typesubmit`](https://www.w3.org/TR/html/#submit-button-state-typesubmit)
-     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-output-for`](https://www.w3.org/TR/html/#element-attrdef-output-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formnovalidate`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formnovalidate)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formtarget`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formtarget)
-     * [`https://www.w3.org/TR/html/#element-attrdef-tablecells-headers`](https://www.w3.org/TR/html/#element-attrdef-tablecells-headers)
-     * [`https://www.w3.org/TR/html/#element-attrdef-canvas-height`](https://www.w3.org/TR/html/#element-attrdef-canvas-height)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-height`](https://www.w3.org/TR/html/#element-attrdef-media-height)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-href`](https://www.w3.org/TR/html/#element-attrdef-link-href)
-     * [`https://www.w3.org/TR/html/#element-attrdef-a-hreflang`](https://www.w3.org/TR/html/#element-attrdef-a-hreflang)
-     * [`https://www.w3.org/TR/html/#elementdef-area`](https://www.w3.org/TR/html/#elementdef-area)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-hreflang`](https://www.w3.org/TR/html/#element-attrdef-link-hreflang)
-     * [`https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv`](https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-checked`](https://www.w3.org/TR/html/#element-attrdef-input-checked)
-     * [`https://www.w3.org/TR/html/#element-attrdef-img-ismap`](https://www.w3.org/TR/html/#element-attrdef-img-ismap)
-     * [`https://www.w3.org/TR/html/#element-attrdef-global-lang`](https://www.w3.org/TR/html/#element-attrdef-global-lang)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-list`](https://www.w3.org/TR/html/#element-attrdef-input-list)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-loop`](https://www.w3.org/TR/html/#element-attrdef-media-loop)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-maxlength`](https://www.w3.org/TR/html/#element-attrdef-input-maxlength)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-maxlength`](https://www.w3.org/TR/html/#element-attrdef-textarea-maxlength)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-media`](https://www.w3.org/TR/html/#element-attrdef-link-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-source-media`](https://www.w3.org/TR/html/#element-attrdef-source-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-style-media`](https://www.w3.org/TR/html/#element-attrdef-style-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-method`](https://www.w3.org/TR/html/#element-attrdef-form-method)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-multiple`](https://www.w3.org/TR/html/#element-attrdef-input-multiple)
-     * [`https://www.w3.org/TR/html/#element-attrdef-select-multiple`](https://www.w3.org/TR/html/#element-attrdef-select-multiple)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-muted`](https://www.w3.org/TR/html/#element-attrdef-media-muted)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-name`](https://www.w3.org/TR/html/#element-attrdef-form-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-iframe-name`](https://www.w3.org/TR/html/#element-attrdef-iframe-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-object-name`](https://www.w3.org/TR/html/#element-attrdef-object-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-map-name`](https://www.w3.org/TR/html/#element-attrdef-map-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-meta-name`](https://www.w3.org/TR/html/#element-attrdef-meta-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-param-name`](https://www.w3.org/TR/html/#element-attrdef-param-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-novalidate`](https://www.w3.org/TR/html/#element-attrdef-form-novalidate)
-     * [`https://www.w3.org/TR/html/#element-attrdef-details-open`](https://www.w3.org/TR/html/#element-attrdef-details-open)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-placeholder`](https://www.w3.org/TR/html/#element-attrdef-input-placeholder)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder`](https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder)
-     * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
      * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
+     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
+     * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/):
      * [`https://dom.spec.whatwg.org/#interface-Document`](https://dom.spec.whatwg.org/#interface-Document)
      * [`https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML`](https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML)
@@ -5595,7 +5556,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
      * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
 
-=> 674 problematic external links found in 158 specifications
+=> 632 problematic external links found in 158 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

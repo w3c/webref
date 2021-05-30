@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% May 29, 2021
+% May 30, 2021
 
 ## [No title found for https://drafts.fxtf.org/geometry/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
 
@@ -7972,7 +7972,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 15 May 2021
+- Crawled version: 29 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -7985,7 +7985,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
      * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
      * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
-     * [`https://www.w3.org/TR/html4/present/`](https://www.w3.org/TR/html4/present/)
      * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
      * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html)
 - Inconsistent references for links: 
@@ -7995,6 +7994,9 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#category-label`](https://html.spec.whatwg.org/#category-label)
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
+     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
+     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
+     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
      * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
      * [`https://html.spec.whatwg.org/#email-state-(type=email)`](https://html.spec.whatwg.org/#email-state-(type=email))
      * [`https://html.spec.whatwg.org/#concept-input-list`](https://html.spec.whatwg.org/#concept-input-list)
@@ -8009,6 +8011,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
      * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
      * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
+     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
      * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
      * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
      * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
@@ -8098,53 +8101,11 @@ Informative references to this spec from:
      * [`https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar`](https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar)
      * [`https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest`](https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest)
      * [`https://html.spec.whatwg.org/#element-attrdef-track-kind`](https://html.spec.whatwg.org/#element-attrdef-track-kind)
-     * [`https://www.w3.org/TR/html/#checkbox-state-typecheckbox`](https://www.w3.org/TR/html/#checkbox-state-typecheckbox)
-     * [`https://www.w3.org/TR/html/#forms-checkedness`](https://www.w3.org/TR/html/#forms-checkedness)
-     * [`https://www.w3.org/TR/html/#color-state-typecolor`](https://www.w3.org/TR/html/#color-state-typecolor)
-     * [`https://www.w3.org/TR/html/#submit-button-state-typesubmit`](https://www.w3.org/TR/html/#submit-button-state-typesubmit)
-     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-output-for`](https://www.w3.org/TR/html/#element-attrdef-output-for)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formaction)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formenctype)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formmethod)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formnovalidate`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formnovalidate)
-     * [`https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formtarget`](https://www.w3.org/TR/html/#element-attrdef-submitbuttonelements-formtarget)
-     * [`https://www.w3.org/TR/html/#element-attrdef-tablecells-headers`](https://www.w3.org/TR/html/#element-attrdef-tablecells-headers)
-     * [`https://www.w3.org/TR/html/#element-attrdef-canvas-height`](https://www.w3.org/TR/html/#element-attrdef-canvas-height)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-height`](https://www.w3.org/TR/html/#element-attrdef-media-height)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-href`](https://www.w3.org/TR/html/#element-attrdef-link-href)
-     * [`https://www.w3.org/TR/html/#element-attrdef-a-hreflang`](https://www.w3.org/TR/html/#element-attrdef-a-hreflang)
-     * [`https://www.w3.org/TR/html/#elementdef-area`](https://www.w3.org/TR/html/#elementdef-area)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-hreflang`](https://www.w3.org/TR/html/#element-attrdef-link-hreflang)
-     * [`https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv`](https://www.w3.org/TR/html/#element-attrdef-meta-http-equiv)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-checked`](https://www.w3.org/TR/html/#element-attrdef-input-checked)
-     * [`https://www.w3.org/TR/html/#element-attrdef-img-ismap`](https://www.w3.org/TR/html/#element-attrdef-img-ismap)
-     * [`https://www.w3.org/TR/html/#element-attrdef-global-lang`](https://www.w3.org/TR/html/#element-attrdef-global-lang)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-list`](https://www.w3.org/TR/html/#element-attrdef-input-list)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-loop`](https://www.w3.org/TR/html/#element-attrdef-media-loop)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-maxlength`](https://www.w3.org/TR/html/#element-attrdef-input-maxlength)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-maxlength`](https://www.w3.org/TR/html/#element-attrdef-textarea-maxlength)
-     * [`https://www.w3.org/TR/html/#element-attrdef-link-media`](https://www.w3.org/TR/html/#element-attrdef-link-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-source-media`](https://www.w3.org/TR/html/#element-attrdef-source-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-style-media`](https://www.w3.org/TR/html/#element-attrdef-style-media)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-method`](https://www.w3.org/TR/html/#element-attrdef-form-method)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-multiple`](https://www.w3.org/TR/html/#element-attrdef-input-multiple)
-     * [`https://www.w3.org/TR/html/#element-attrdef-select-multiple`](https://www.w3.org/TR/html/#element-attrdef-select-multiple)
-     * [`https://www.w3.org/TR/html/#element-attrdef-media-muted`](https://www.w3.org/TR/html/#element-attrdef-media-muted)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-name`](https://www.w3.org/TR/html/#element-attrdef-form-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-iframe-name`](https://www.w3.org/TR/html/#element-attrdef-iframe-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-object-name`](https://www.w3.org/TR/html/#element-attrdef-object-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-map-name`](https://www.w3.org/TR/html/#element-attrdef-map-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-meta-name`](https://www.w3.org/TR/html/#element-attrdef-meta-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-param-name`](https://www.w3.org/TR/html/#element-attrdef-param-name)
-     * [`https://www.w3.org/TR/html/#element-attrdef-form-novalidate`](https://www.w3.org/TR/html/#element-attrdef-form-novalidate)
-     * [`https://www.w3.org/TR/html/#element-attrdef-details-open`](https://www.w3.org/TR/html/#element-attrdef-details-open)
-     * [`https://www.w3.org/TR/html/#element-attrdef-input-placeholder`](https://www.w3.org/TR/html/#element-attrdef-input-placeholder)
-     * [`https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder`](https://www.w3.org/TR/html/#element-attrdef-textarea-placeholder)
-     * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
      * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
      * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
+     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
+     * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
