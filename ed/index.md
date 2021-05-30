@@ -2,52 +2,6 @@
 % Reffy
 % May 30, 2021
 
-## [No title found for https://drafts.fxtf.org/geometry/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
-- Crawled URL: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
-- Crawled version: 28 May 2021
-- Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
-- Latest published version: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
-- Shortname: geometry-1
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
-- [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Element Timing API](https://wicg.github.io/element-timing/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
-- [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
-- [WebDriver](https://w3c.github.io/webdriver/)
-- [WebXR Device API](https://immersive-web.github.io/webxr/)
-- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
-- [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/)
-
-Informative references to this spec from:
-
-- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
-
-
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -72,7 +26,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Accelerated Shape Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -84,7 +38,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectReadOnly`
 - Missing references for WebIDL names: 
      * `Point2D` defined in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - Missing references for links: 
@@ -96,7 +49,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
      * [`https://drafts.csswg.org/css2/conform.html#intrinsic`](https://drafts.csswg.org/css2/conform.html#intrinsic)
 - Broken external links:
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
      * [`https://w3c.github.io/mediacapture-image/#Point2D`](https://w3c.github.io/mediacapture-image/#Point2D)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
@@ -111,7 +63,7 @@ Informative references to this spec from:
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 
 
-## Accelerated Text Detection in Images {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Accelerated Text Detection in Images {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -123,14 +75,12 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectReadOnly`
 - Missing references for WebIDL names: 
      * `Point2D` defined in [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - Missing references for links: 
      * [`https://w3c.github.io/mediacapture-image/`](https://w3c.github.io/mediacapture-image/)
 - Broken external links:
      * [`https://w3c.github.io/mediacapture-image/#Point2D`](https://w3c.github.io/mediacapture-image/#Point2D)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -746,7 +696,6 @@ Informative references to this spec from:
 - Broken external links:
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
-     * [`https://drafts.fxtf.org/geometry-1/#webkitcssmatrix`](https://drafts.fxtf.org/geometry-1/#webkitcssmatrix)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/WD-css3-images-20110217/`](https://www.w3.org/TR/2011/WD-css3-images-20110217/)
 
@@ -2529,7 +2478,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 26 May 2021
+- Crawled version: 1 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -3257,7 +3206,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 17 May 2021
+- Crawled version: 29 May 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -5406,6 +5355,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
@@ -5500,6 +5450,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
@@ -5508,7 +5459,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
@@ -5553,7 +5503,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -5737,6 +5686,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -5784,6 +5734,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 
 Informative references to this spec from:
@@ -5915,23 +5866,20 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSPercentishArray`, `DOMMatrix`, `DOMMatrixReadOnly`
+- Unknown WebIDL names used: `CSSPercentishArray`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-properties-values-api-1/`](https://www.w3.org/TR/css-properties-values-api-1/)
 - External links to private terms:
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
+     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior)
 - External links that neither target definitions nor headings:
      * [`https://drafts.fxtf.org/compositing-2/#propdef-mix`](https://drafts.fxtf.org/compositing-2/#propdef-mix)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-is2d`](https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-is2d)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrixreadonly`](https://drafts.fxtf.org/geometry-1/#dommatrixreadonly)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6086,6 +6034,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
@@ -6229,6 +6178,7 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
@@ -6380,7 +6330,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`, `DOMPoint`, `DOMPointInit`, `DOMQuad`, `DOMQuadInit`, `DOMRect`, `DOMRectList`, `DOMRectReadOnly`
+- Unknown WebIDL names used: `CSSOMString`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
@@ -6398,17 +6348,6 @@ Informative references to this spec from:
 - Broken external links:
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectlist`](https://drafts.fxtf.org/geometry-1/#domrectlist)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-x`](https://drafts.fxtf.org/geometry-1/#dom-domrect-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-y`](https://drafts.fxtf.org/geometry-1/#dom-domrect-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-width`](https://drafts.fxtf.org/geometry-1/#dom-domrect-width)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-height`](https://drafts.fxtf.org/geometry-1/#dom-domrect-height)
-     * [`https://drafts.fxtf.org/geometry-1/#domquad`](https://drafts.fxtf.org/geometry-1/#domquad)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-domquadinit`](https://drafts.fxtf.org/geometry-1/#dictdef-domquadinit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dompoint`](https://drafts.fxtf.org/geometry-1/#dompoint)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6440,6 +6379,7 @@ Informative references to this spec from:
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
@@ -6578,8 +6518,6 @@ No informative reference to this spec from other specs.
      * [`https://compat.spec.whatwg.org/#event-orientationchange`](https://compat.spec.whatwg.org/#event-orientationchange)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself`](https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate`](https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -6953,6 +6891,7 @@ Normative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -6982,7 +6921,7 @@ Informative references to this spec from:
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
-## Element Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Element Timing API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -6994,7 +6933,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectReadOnly`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-3" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
@@ -7009,7 +6947,6 @@ Informative references to this spec from:
 - External links that neither target definitions nor headings:
      * [`https://html.spec.whatwg.org/#resolve-a-url`](https://html.spec.whatwg.org/#resolve-a-url)
 - Broken external links:
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
      * [`https://w3c.github.io/resource-timing/#dfn-timing-allow-check`](https://w3c.github.io/resource-timing/#dfn-timing-allow-check)
 
 ### Known dependencies on this specification {.dependencies}
@@ -7791,6 +7728,60 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Geometry Interfaces Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
+- Crawled URL: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
+- Crawled version: 17 February 2021
+- Editor's Draft: [https://drafts.fxtf.org/geometry/](https://drafts.fxtf.org/geometry/)
+- Latest published version: [https://www.w3.org/TR/geometry-1/](https://www.w3.org/TR/geometry-1/)
+- Shortname: geometry-1
+
+### Potential issue(s) {.anomalies}
+
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+     * [`https://drafts.csswg.org/css-values-4/#absolute-length`](https://drafts.csswg.org/css-values-4/#absolute-length)
+- External links that neither target definitions nor headings:
+     * [`https://drafts.csswg.org/css-transforms-1/#TranslateDefined`](https://drafts.csswg.org/css-transforms-1/#TranslateDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#ScaleDefined`](https://drafts.csswg.org/css-transforms-1/#ScaleDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#RotateDefined`](https://drafts.csswg.org/css-transforms-1/#RotateDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#SkewXDefined`](https://drafts.csswg.org/css-transforms-1/#SkewXDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#SkewYDefined`](https://drafts.csswg.org/css-transforms-1/#SkewYDefined)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
+- [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Element Timing API](https://wicg.github.io/element-timing/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+- [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+- [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/)
+
+Informative references to this spec from:
+
+- [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
+
+
 ## Get Installed Related Apps API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -8191,7 +8182,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrix2DInit`, `WindowProxy`
+- Unknown WebIDL names used: `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `MessageEventSource` also defined in [Portals](https://wicg.github.io/portals/)
 - Missing references for WebIDL names: 
@@ -8460,6 +8451,13 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/cssom-view/#scroll-to-the-beginning-of-the-document`](https://drafts.csswg.org/cssom-view/#scroll-to-the-beginning-of-the-document)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
      * [`https://drafts.csswg.org/css-font-loading/#font-source`](https://drafts.csswg.org/css-font-loading/#font-source)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m11-element`](https://drafts.fxtf.org/geometry/#matrix-m11-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m12-element`](https://drafts.fxtf.org/geometry/#matrix-m12-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m21-element`](https://drafts.fxtf.org/geometry/#matrix-m21-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m22-element`](https://drafts.fxtf.org/geometry/#matrix-m22-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m41-element`](https://drafts.fxtf.org/geometry/#matrix-m41-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m42-element`](https://drafts.fxtf.org/geometry/#matrix-m42-element)
+     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary)
      * [`https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps`](https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps)
      * [`https://w3c.github.io/webvtt/#webvtt-file`](https://w3c.github.io/webvtt/#webvtt-file)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues`](https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues)
@@ -8786,17 +8784,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-column-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-column-gap)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
-     * [`https://drafts.fxtf.org/geometry/#dommatrix`](https://drafts.fxtf.org/geometry/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m11-element`](https://drafts.fxtf.org/geometry/#matrix-m11-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m12-element`](https://drafts.fxtf.org/geometry/#matrix-m12-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m21-element`](https://drafts.fxtf.org/geometry/#matrix-m21-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m22-element`](https://drafts.fxtf.org/geometry/#matrix-m22-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m41-element`](https://drafts.fxtf.org/geometry/#matrix-m41-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m42-element`](https://drafts.fxtf.org/geometry/#matrix-m42-element)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit)
-     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary)
-     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
@@ -8900,6 +8887,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
@@ -9582,7 +9570,7 @@ Informative references to this spec from:
 - [UI Events](https://w3c.github.io/uievents/)
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -9595,7 +9583,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectInit`, `DOMRectReadOnly`
 - Missing references for WebIDL names: 
      * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
 - Missing references for links: 
@@ -9614,9 +9601,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-box/#containing-block`](https://drafts.csswg.org/css-box/#containing-block)
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time/#time-origin`](https://www.w3.org/TR/hr-time/#time-origin)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit`](https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9786,10 +9770,6 @@ No informative reference to this spec from other specs.
      * [`https://wicg.github.io/element-timing/#get-an-element`](https://wicg.github.io/element-timing/#get-an-element)
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
      * [`https://wicg.github.io/event-timing#has-dispatched-input-event`](https://wicg.github.io/event-timing#has-dispatched-input-event)
-- Broken external links:
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9801,7 +9781,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Layout Instability API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Layout Instability API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -9813,7 +9793,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectReadOnly`
 - Missing references for links: 
      * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -9831,12 +9810,11 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/uievents/#keydown`](https://www.w3.org/TR/uievents/#keydown)
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
      * [`https://wicg.github.io/element-timing/#get-an-element`](https://wicg.github.io/element-timing/#get-an-element)
+     * [`https://www.w3.org/TR/geometry-1/#rectangle`](https://www.w3.org/TR/geometry-1/#rectangle)
 - External links that neither target definitions nor headings:
      * [`https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp`](https://w3c.github.io/hr-time/#idl-def-domhighrestimestamp)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#rectangle`](https://www.w3.org/TR/geometry-1/#rectangle)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10943,7 +10921,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Orientation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Orientation Sensor {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -10956,7 +10934,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
      * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/)
@@ -10974,8 +10951,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/sensors/#get-value-from-latest-reading`](https://w3c.github.io/sensors/#get-value-from-latest-reading)
      * [`https://w3c.github.io/sensors/#equivalent`](https://w3c.github.io/sensors/#equivalent)
      * [`https://w3c.github.io/sensors/#mock-sensor-type`](https://w3c.github.io/sensors/#mock-sensor-type)
-- Broken external links:
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/)
 
@@ -12304,7 +12279,7 @@ Informative references to this spec from:
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
 
 
-## Resize Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Resize Observer {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -12317,7 +12292,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRectReadOnly`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/)
      * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/)
@@ -12329,7 +12303,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#processing-model-8`](https://html.spec.whatwg.org/#processing-model-8)
 - Broken external links:
      * [`https://www.w3.org/TR/css3-positioning/#viewport`](https://www.w3.org/TR/css3-positioning/#viewport)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12456,7 +12429,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -12469,7 +12442,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrix2DInit`, `DOMPoint`, `DOMPointInit`, `DOMPointReadOnly`, `DOMRect`, `DOMRectReadOnly`
 - Missing references for WebIDL names: 
      * `CSSPseudoElement` defined in [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - No definition for IDL properties: 
@@ -12974,19 +12946,11 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
-     * [`https://www.w3.org/TR/geometry-1/#DOMRect`](https://www.w3.org/TR/geometry-1/#DOMRect)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-     * [`https://www.w3.org/TR/geometry-1/#DOMMatrix`](https://www.w3.org/TR/geometry-1/#DOMMatrix)
-     * [`https://www.w3.org/TR/geometry-1/#dictdef-dompointinit`](https://www.w3.org/TR/geometry-1/#dictdef-dompointinit)
-     * [`https://www.w3.org/TR/geometry-1/#domrectreadonly`](https://www.w3.org/TR/geometry-1/#domrectreadonly)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrix`](https://www.w3.org/TR/geometry-1/#dommatrix)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
      * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary`](https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary)
      * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
      * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
@@ -13053,11 +13017,12 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -13070,7 +13035,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMMatrix`, `DOMMatrix2DInit`, `DOMPoint`, `DOMPointInit`, `DOMPointReadOnly`, `DOMRect`, `DOMRectReadOnly`
 - Missing references for WebIDL names: 
      * `CSSPseudoElement` defined in [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - Missing references for links: 
@@ -13207,19 +13171,11 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
-     * [`https://www.w3.org/TR/geometry-1/#DOMRect`](https://www.w3.org/TR/geometry-1/#DOMRect)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-     * [`https://www.w3.org/TR/geometry-1/#DOMMatrix`](https://www.w3.org/TR/geometry-1/#DOMMatrix)
-     * [`https://www.w3.org/TR/geometry-1/#dictdef-dompointinit`](https://www.w3.org/TR/geometry-1/#dictdef-dompointinit)
-     * [`https://www.w3.org/TR/geometry-1/#domrectreadonly`](https://www.w3.org/TR/geometry-1/#domrectreadonly)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrix`](https://www.w3.org/TR/geometry-1/#dommatrix)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
      * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary`](https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary)
      * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
      * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
@@ -13312,6 +13268,7 @@ Informative references to this spec from:
 - [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
@@ -14153,7 +14110,6 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -14849,7 +14805,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Visual Viewport API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Visual Viewport API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -14861,15 +14817,12 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMRect`
 - External links to private terms:
      * [`https://www.w3.org/TR/css-overflow-4/#classic-scrollbars`](https://www.w3.org/TR/css-overflow-4/#classic-scrollbars)
      * [`https://www.w3.org/TR/cssom-view-1/#page-zoom`](https://www.w3.org/TR/cssom-view-1/#page-zoom)
      * [`https://www.w3.org/TR/cssom-view-1/#pinch-zoom`](https://www.w3.org/TR/cssom-view-1/#pinch-zoom)
 - External links that neither target definitions nor headings:
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
-- Broken external links:
-     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -15407,6 +15360,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
@@ -15962,6 +15916,11 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/uievents/#keypress`](https://w3c.github.io/uievents/#keypress)
      * [`https://w3c.github.io/uievents/#keyup`](https://w3c.github.io/uievents/#keyup)
      * [`https://w3c.github.io/uievents/#activation-trigger`](https://w3c.github.io/uievents/#activation-trigger)
+     * [`https://drafts.fxtf.org/geometry/#rectangle`](https://drafts.fxtf.org/geometry/#rectangle)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-height-dimension`](https://drafts.fxtf.org/geometry/#rectangle-height-dimension)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-width-dimension`](https://drafts.fxtf.org/geometry/#rectangle-width-dimension)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-x-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-x-coordinate)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-y-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-y-coordinate)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
      * [`https://fullscreen.spec.whatwg.org/#fullscreen-an-element`](https://fullscreen.spec.whatwg.org/#fullscreen-an-element)
      * [`https://fullscreen.spec.whatwg.org/#fullscreen-is-supported`](https://fullscreen.spec.whatwg.org/#fullscreen-is-supported)
@@ -15988,12 +15947,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29`](https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29)
      * [`https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29`](https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29)
      * [`https://html.spec.whatwg.org/#concept-output-mode`](https://html.spec.whatwg.org/#concept-output-mode)
-     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
-     * [`https://drafts.fxtf.org/geometry/#rectangle`](https://drafts.fxtf.org/geometry/#rectangle)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-height-dimension`](https://drafts.fxtf.org/geometry/#rectangle-height-dimension)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-width-dimension`](https://drafts.fxtf.org/geometry/#rectangle-width-dimension)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-x-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-x-coordinate)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-y-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-y-coordinate)
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
@@ -17843,7 +17796,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## WebXR Device API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -17856,7 +17809,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPointInit`, `DOMPointReadOnly`
 - Missing references for WebIDL names: 
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -17876,14 +17828,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context`](https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context)
      * [`https://immersive-web.github.io/webxr-ar-module/#first-person-observer-view`](https://immersive-web.github.io/webxr-ar-module/#first-person-observer-view)
      * [`https://www.w3.org/TR/pointerevents/#dfn-primary-pointer`](https://www.w3.org/TR/pointerevents/#dfn-primary-pointer)
-- Broken external links:
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18006,7 +17950,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Hit Test Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## WebXR Hit Test Module {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -18018,7 +17962,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPointInit`, `DOMPointReadOnly`
 - External links to private terms:
      * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
      * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
@@ -18041,16 +17984,6 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://www.w3.org/TR/webxr/#feature-policy`](https://www.w3.org/TR/webxr/#feature-policy)
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18063,7 +17996,7 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## WebXR Layers API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
+## WebXR Layers API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -18076,7 +18009,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPointReadOnly`
 - Missing references for WebIDL names: 
      * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `GLenum` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -18109,9 +18041,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument`](https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument)
 - Broken external links:
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-frompoint`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-frompoint)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18128,7 +18057,7 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
-## WebXR Lighting Estimation API Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
+## WebXR Lighting Estimation API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -18140,7 +18069,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMPointReadOnly`
 - Missing references for WebIDL names: 
      * `XRWebGLBinding` defined in [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
      * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -18154,11 +18082,6 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
 
 ### Known dependencies on this specification {.dependencies}
 

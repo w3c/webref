@@ -7,7 +7,6 @@
 
 ## Specifications without normative dependencies
 
-- [[No title found for https://drafts.fxtf.org/geometry/]](https://drafts.fxtf.org/geometry/)
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
 - [ECMAScript class static initialization blocks](https://tc39.es/proposal-class-static-block/)
@@ -67,7 +66,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 59 specifications found
+=> 58 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -152,24 +151,12 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `AddressErrors` used in [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `CSSPercentishArray` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- `DOMMatrix` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/), [HTML Standard](https://html.spec.whatwg.org/multipage/), [Orientation Sensor](https://w3c.github.io/orientation-sensor/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- `DOMMatrix2DInit` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- `DOMMatrixReadOnly` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- `DOMPoint` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- `DOMPointInit` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [WebXR Device API](https://immersive-web.github.io/webxr/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- `DOMPointReadOnly` used in [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [WebXR Device API](https://immersive-web.github.io/webxr/), [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/), [WebXR Layers API Level 1](https://immersive-web.github.io/layers/), [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/)
-- `DOMQuad` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- `DOMQuadInit` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- `DOMRect` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Visual Viewport API](https://wicg.github.io/visual-viewport/)
-- `DOMRectInit` used in [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
-- `DOMRectList` used in [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- `DOMRectReadOnly` used in [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/), [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Element Timing API](https://wicg.github.io/element-timing/), [Intersection Observer](https://w3c.github.io/IntersectionObserver/), [Layout Instability API](https://wicg.github.io/layout-instability/), [Resize Observer](https://drafts.csswg.org/resize-observer/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/), [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - `PaymentAddress` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/), [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 
-=> 19 WebIDL names found
+=> 7 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -2655,6 +2642,7 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/):
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
+     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
      * [`https://drafts.csswg.org/css-syntax-3/#consume-a-url-token`](https://drafts.csswg.org/css-syntax-3/#consume-a-url-token)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
@@ -2749,6 +2737,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#notify-new-reading`](https://w3c.github.io/sensors/#notify-new-reading)
      * [`https://w3c.github.io/sensors/#get-value-from-latest-reading`](https://w3c.github.io/sensors/#get-value-from-latest-reading)
      * [`https://w3c.github.io/sensors/#mock-sensor-type`](https://w3c.github.io/sensors/#mock-sensor-type)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/):
+     * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+     * [`https://drafts.csswg.org/css-values-4/#absolute-length`](https://drafts.csswg.org/css-values-4/#absolute-length)
 - [Gyroscope](https://w3c.github.io/gyroscope/):
      * [`https://w3c.github.io/sensors/#sensor-reading`](https://w3c.github.io/sensors/#sensor-reading)
      * [`https://w3c.github.io/sensors/#sensor-type`](https://w3c.github.io/sensors/#sensor-type)
@@ -2851,6 +2842,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom-view/#scroll-to-the-beginning-of-the-document`](https://drafts.csswg.org/cssom-view/#scroll-to-the-beginning-of-the-document)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
      * [`https://drafts.csswg.org/css-font-loading/#font-source`](https://drafts.csswg.org/css-font-loading/#font-source)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m11-element`](https://drafts.fxtf.org/geometry/#matrix-m11-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m12-element`](https://drafts.fxtf.org/geometry/#matrix-m12-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m21-element`](https://drafts.fxtf.org/geometry/#matrix-m21-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m22-element`](https://drafts.fxtf.org/geometry/#matrix-m22-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m41-element`](https://drafts.fxtf.org/geometry/#matrix-m41-element)
+     * [`https://drafts.fxtf.org/geometry/#matrix-m42-element`](https://drafts.fxtf.org/geometry/#matrix-m42-element)
+     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary)
      * [`https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps`](https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps)
      * [`https://w3c.github.io/webvtt/#webvtt-file`](https://w3c.github.io/webvtt/#webvtt-file)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues`](https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues)
@@ -2943,6 +2941,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/uievents/#keydown`](https://www.w3.org/TR/uievents/#keydown)
      * [`https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry`](https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry)
      * [`https://wicg.github.io/element-timing/#get-an-element`](https://wicg.github.io/element-timing/#get-an-element)
+     * [`https://www.w3.org/TR/geometry-1/#rectangle`](https://www.w3.org/TR/geometry-1/#rectangle)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
      * [`https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch)
      * [`https://html.spec.whatwg.org/#link-type-prefetch`](https://html.spec.whatwg.org/#link-type-prefetch)
@@ -3588,6 +3587,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/uievents/#keypress`](https://w3c.github.io/uievents/#keypress)
      * [`https://w3c.github.io/uievents/#keyup`](https://w3c.github.io/uievents/#keyup)
      * [`https://w3c.github.io/uievents/#activation-trigger`](https://w3c.github.io/uievents/#activation-trigger)
+     * [`https://drafts.fxtf.org/geometry/#rectangle`](https://drafts.fxtf.org/geometry/#rectangle)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-height-dimension`](https://drafts.fxtf.org/geometry/#rectangle-height-dimension)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-width-dimension`](https://drafts.fxtf.org/geometry/#rectangle-width-dimension)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-x-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-x-coordinate)
+     * [`https://drafts.fxtf.org/geometry/#rectangle-y-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-y-coordinate)
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
      * [`https://fullscreen.spec.whatwg.org/#fullscreen-an-element`](https://fullscreen.spec.whatwg.org/#fullscreen-an-element)
      * [`https://fullscreen.spec.whatwg.org/#fullscreen-is-supported`](https://fullscreen.spec.whatwg.org/#fullscreen-is-supported)
@@ -3812,7 +3816,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1295 problematic external links found in 202 specifications
+=> 1311 problematic external links found in 203 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4102,6 +4106,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://storage.spec.whatwg.org/#site-storage`](https://storage.spec.whatwg.org/#site-storage)
 - [Generic Sensor API](https://w3c.github.io/sensors/):
      * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/):
+     * [`https://drafts.csswg.org/css-transforms-1/#TranslateDefined`](https://drafts.csswg.org/css-transforms-1/#TranslateDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#ScaleDefined`](https://drafts.csswg.org/css-transforms-1/#ScaleDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#RotateDefined`](https://drafts.csswg.org/css-transforms-1/#RotateDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#SkewXDefined`](https://drafts.csswg.org/css-transforms-1/#SkewXDefined)
+     * [`https://drafts.csswg.org/css-transforms-1/#SkewYDefined`](https://drafts.csswg.org/css-transforms-1/#SkewYDefined)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/):
      * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
      * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
@@ -4760,17 +4770,15 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 873 problematic external links found in 69 specifications
+=> 878 problematic external links found in 70 specifications
 
 
 ## Broken external links
 
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/):
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
      * [`https://w3c.github.io/mediacapture-image/#Point2D`](https://w3c.github.io/mediacapture-image/#Point2D)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html):
      * [`https://w3c.github.io/mediacapture-image/#Point2D`](https://w3c.github.io/mediacapture-image/#Point2D)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/):
      * [`https://w3c.github.io/core-aam/#ariaLabel`](https://w3c.github.io/core-aam/#ariaLabel)
      * [`https://w3c.github.io/core-aam/#ariaLabelledBy`](https://w3c.github.io/core-aam/#ariaLabelledBy)
@@ -4792,7 +4800,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
-     * [`https://drafts.fxtf.org/geometry-1/#webkitcssmatrix`](https://drafts.fxtf.org/geometry-1/#webkitcssmatrix)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://www.w3.org/TR/payment-request/#physical-addresses`](https://www.w3.org/TR/payment-request/#physical-addresses)
@@ -4933,13 +4940,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations/#target-effect-end`](https://drafts.csswg.org/web-animations/#target-effect-end)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-is2d`](https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-is2d)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrixreadonly`](https://drafts.fxtf.org/geometry-1/#dommatrixreadonly)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly-stringification-behavior)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
@@ -4949,21 +4952,8 @@ Links in the body of a specification should be to the same document as that poin
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectlist`](https://drafts.fxtf.org/geometry-1/#domrectlist)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-x`](https://drafts.fxtf.org/geometry-1/#dom-domrect-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-y`](https://drafts.fxtf.org/geometry-1/#dom-domrect-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-width`](https://drafts.fxtf.org/geometry-1/#dom-domrect-width)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrect-height`](https://drafts.fxtf.org/geometry-1/#dom-domrect-height)
-     * [`https://drafts.fxtf.org/geometry-1/#domquad`](https://drafts.fxtf.org/geometry-1/#domquad)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-domquadinit`](https://drafts.fxtf.org/geometry-1/#dictdef-domquadinit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dompoint`](https://drafts.fxtf.org/geometry-1/#dompoint)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself`](https://drafts.fxtf.org/geometry-1/#dom-dommatrix-rotateself)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate`](https://drafts.fxtf.org/geometry-1/#dom-dommatrixreadonly-rotate)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/):
      * [`https://www.w3.org/TR/dom/#case-sensitive`](https://www.w3.org/TR/dom/#case-sensitive)
      * [`https://www.w3.org/TR/dom/#ascii-case-insensitive`](https://www.w3.org/TR/dom/#ascii-case-insensitive)
@@ -4976,7 +4966,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Early detection of input events](https://wicg.github.io/is-input-pending/):
      * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
 - [Element Timing API](https://wicg.github.io/element-timing/):
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
      * [`https://w3c.github.io/resource-timing/#dfn-timing-allow-check`](https://w3c.github.io/resource-timing/#dfn-timing-allow-check)
 - [Encoding Standard](https://encoding.spec.whatwg.org/):
      * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
@@ -5121,17 +5110,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-column-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-column-gap)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
-     * [`https://drafts.fxtf.org/geometry/#dommatrix`](https://drafts.fxtf.org/geometry/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m11-element`](https://drafts.fxtf.org/geometry/#matrix-m11-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m12-element`](https://drafts.fxtf.org/geometry/#matrix-m12-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m21-element`](https://drafts.fxtf.org/geometry/#matrix-m21-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m22-element`](https://drafts.fxtf.org/geometry/#matrix-m22-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m41-element`](https://drafts.fxtf.org/geometry/#matrix-m41-element)
-     * [`https://drafts.fxtf.org/geometry/#matrix-m42-element`](https://drafts.fxtf.org/geometry/#matrix-m42-element)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit)
-     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary)
-     * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
@@ -5143,9 +5121,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-box/#containing-block`](https://drafts.csswg.org/css-box/#containing-block)
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time/#time-origin`](https://www.w3.org/TR/hr-time/#time-origin)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit`](https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/):
      * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
@@ -5162,14 +5137,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/uievents-code/#code-delete`](https://www.w3.org/TR/uievents-code/#code-delete)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/):
      * [`https://www.w3.org/TR/uievents-code/#code-quote`](https://www.w3.org/TR/uievents-code/#code-quote)
-- [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/):
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height)
 - [Layout Instability API](https://wicg.github.io/layout-instability/):
      * [`https://www.w3.org/TR/css-values-4/#pixel-unit`](https://www.w3.org/TR/css-values-4/#pixel-unit)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#rectangle`](https://www.w3.org/TR/geometry-1/#rectangle)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/):
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
@@ -5233,8 +5202,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/presentation-api/#dfn-presentation-id`](https://w3c.github.io/presentation-api/#dfn-presentation-id)
      * [`https://w3c.github.io/presentation-api/#presentationconnection`](https://w3c.github.io/presentation-api/#presentationconnection)
      * [`https://w3c.github.io/remote-playback/#dfn-media-resources`](https://w3c.github.io/remote-playback/#dfn-media-resources)
-- [Orientation Sensor](https://w3c.github.io/orientation-sensor/):
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
 - [Origin Policy](https://wicg.github.io/origin-policy/):
      * [`https://html.spec.whatwg.org/#concept-document-csp-list`](https://html.spec.whatwg.org/#concept-document-csp-list)
      * [`https://w3c.github.io/webappsec-csp/#set-response-csp-list`](https://w3c.github.io/webappsec-csp/#set-response-csp-list)
@@ -5317,7 +5284,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-error`](https://w3c.github.io/webdriver/#dfn-error)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/):
      * [`https://www.w3.org/TR/css3-positioning/#viewport`](https://www.w3.org/TR/css3-positioning/#viewport)
-     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
 - [Resource Hints](https://w3c.github.io/resource-hints/):
      * [`https://html.spec.whatwg.org/#resulting-absolute-url`](https://html.spec.whatwg.org/#resulting-absolute-url)
      * [`https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable`](https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable)
@@ -5329,19 +5295,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
-     * [`https://www.w3.org/TR/geometry-1/#DOMRect`](https://www.w3.org/TR/geometry-1/#DOMRect)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-     * [`https://www.w3.org/TR/geometry-1/#DOMMatrix`](https://www.w3.org/TR/geometry-1/#DOMMatrix)
-     * [`https://www.w3.org/TR/geometry-1/#dictdef-dompointinit`](https://www.w3.org/TR/geometry-1/#dictdef-dompointinit)
-     * [`https://www.w3.org/TR/geometry-1/#domrectreadonly`](https://www.w3.org/TR/geometry-1/#domrectreadonly)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrix`](https://www.w3.org/TR/geometry-1/#dommatrix)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
      * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary`](https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary)
      * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
      * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
@@ -5352,19 +5310,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
-     * [`https://www.w3.org/TR/geometry-1/#DOMRect`](https://www.w3.org/TR/geometry-1/#DOMRect)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-     * [`https://www.w3.org/TR/geometry-1/#DOMMatrix`](https://www.w3.org/TR/geometry-1/#DOMMatrix)
-     * [`https://www.w3.org/TR/geometry-1/#dictdef-dompointinit`](https://www.w3.org/TR/geometry-1/#dictdef-dompointinit)
-     * [`https://www.w3.org/TR/geometry-1/#domrectreadonly`](https://www.w3.org/TR/geometry-1/#domrectreadonly)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrixreadonly`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly)
-     * [`https://www.w3.org/TR/geometry-1/#dommatrix`](https://www.w3.org/TR/geometry-1/#dommatrix)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
      * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
-     * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrix2dinit)
-     * [`https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary`](https://drafts.fxtf.org/geometry/#dommatrixinit-dictionary)
      * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
      * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
@@ -5414,7 +5364,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
-     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
 - [The Storage Access API](https://privacycg.github.io/storage-access/):
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands)
      * [`https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error`](https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error)
@@ -5446,8 +5395,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/navigation-timing/#performancetiming`](https://www.w3.org/TR/navigation-timing/#performancetiming)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/):
      * [`https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state`](https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state)
-- [Visual Viewport API](https://wicg.github.io/visual-viewport/):
-     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/):
      * [`https://w3c.github.io/hr-time/#time-origin`](https://w3c.github.io/hr-time/#time-origin)
      * [`https://w3c.github.io/hr-time/#domhighrestimestamp`](https://w3c.github.io/hr-time/#domhighrestimestamp)
@@ -5496,12 +5443,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29`](https://html.spec.whatwg.org/#radio-button-state-%28type=radio%29)
      * [`https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29`](https://html.spec.whatwg.org/#submit-button-state-%28type=submit%29)
      * [`https://html.spec.whatwg.org/#concept-output-mode`](https://html.spec.whatwg.org/#concept-output-mode)
-     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
-     * [`https://drafts.fxtf.org/geometry/#rectangle`](https://drafts.fxtf.org/geometry/#rectangle)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-height-dimension`](https://drafts.fxtf.org/geometry/#rectangle-height-dimension)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-width-dimension`](https://drafts.fxtf.org/geometry/#rectangle-width-dimension)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-x-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-x-coordinate)
-     * [`https://drafts.fxtf.org/geometry/#rectangle-y-coordinate`](https://drafts.fxtf.org/geometry/#rectangle-y-coordinate)
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
@@ -5521,42 +5462,16 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR Depth Sensing Module](https://immersive-web.github.io/depth-sensing/):
      * [`https://www.w3.org/TR/webxr/#feature-policy`](https://www.w3.org/TR/webxr/#feature-policy)
      * [`https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features)
-- [WebXR Device API](https://immersive-web.github.io/webxr/):
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dommatrix`](https://drafts.fxtf.org/geometry-1/#dommatrix)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/):
      * [`https://www.w3.org/TR/webxr/#feature-policy`](https://www.w3.org/TR/webxr/#feature-policy)
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/):
      * [`https://www.w3.org/TR/webxr/#animationframe`](https://www.w3.org/TR/webxr/#animationframe)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-frompoint`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-frompoint)
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/):
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
 
-=> 632 problematic external links found in 158 specifications
+=> 541 problematic external links found in 154 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
