@@ -4980,6 +4980,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Event Timing API](https://wicg.github.io/event-timing/):
      * [`https://w3c.github.io/hr-time/#dfn-performance`](https://w3c.github.io/hr-time/#dfn-performance)
      * [`https://html.spec.whatwg.org/#event-dnd-dragexit`](https://html.spec.whatwg.org/#event-dnd-dragexit)
+- [Fetch Standard](https://fetch.spec.whatwg.org/):
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
 - [File API](https://w3c.github.io/FileAPI/):
      * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/):
@@ -5279,6 +5281,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/visuren.html#block-container-element`](https://drafts.csswg.org/css2/visuren.html#block-container-element)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/):
      * [`https://html.spec.whatwg.org/#attr-a-referrerpolicy`](https://html.spec.whatwg.org/#attr-a-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#concept-document-referrer-policy`](https://html.spec.whatwg.org/#concept-document-referrer-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
 - [Reporting API 1](https://w3c.github.io/reporting/):
      * [`https://html.spec.whatwg.org/#creation-url`](https://html.spec.whatwg.org/#creation-url)
      * [`https://fetch.spec.whatwg.org/#concept-response-https-state`](https://fetch.spec.whatwg.org/#concept-response-https-state)
@@ -5342,6 +5346,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
      * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/):
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
+     * [`https://html.spec.whatwg.org/#concept-workerglobalscope-referrer-policy`](https://html.spec.whatwg.org/#concept-workerglobalscope-referrer-policy)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -5474,7 +5480,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 541 problematic external links found in 154 specifications
+=> 546 problematic external links found in 155 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

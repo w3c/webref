@@ -7184,6 +7184,8 @@ Informative references to this spec from:
 
 - External links to private terms:
      * [`https://w3c.github.io/FileAPI/#readOperation`](https://w3c.github.io/FileAPI/#readOperation)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -7966,7 +7968,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 29 May 2021
+- Crawled version: 31 May 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -8179,7 +8181,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 26 May 2021
+- Crawled version: 31 May 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -12082,6 +12084,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#attr-a-referrerpolicy`](https://html.spec.whatwg.org/#attr-a-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#concept-document-referrer-policy`](https://html.spec.whatwg.org/#concept-document-referrer-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -13633,6 +13637,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent)
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-settings-object-referrer-policy`](https://html.spec.whatwg.org/#concept-settings-object-referrer-policy)
+     * [`https://html.spec.whatwg.org/#concept-workerglobalscope-referrer-policy`](https://html.spec.whatwg.org/#concept-workerglobalscope-referrer-policy)
      * [`https://w3c.github.io/push-api/#h-the-push-event`](https://w3c.github.io/push-api/#h-the-push-event)
      * [`https://w3c.github.io/push-api/#dfn-push`](https://w3c.github.io/push-api/#dfn-push)
      * [`https://w3c.github.io/push-api/#dfn-fire-the-push-event`](https://w3c.github.io/push-api/#dfn-fire-the-push-event)
@@ -14062,7 +14068,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 25 May 2021
+- Crawled version: 31 May 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
