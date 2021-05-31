@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary PlaneInit {\n  required BufferSource src;\n  required unsigned long stride;\n  required unsigned long rows;\n};",
+    "fragment": "dictionary PlaneInit {\n  required BufferSource src;\n  [EnforceRange] required unsigned long stride;\n  [EnforceRange] required unsigned long rows;\n};",
     "href": "https://www.w3.org/TR/webcodecs/#dictdef-planeinit"
   },
   "extended": [],

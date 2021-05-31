@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "VisualViewport": {
-        "fragment": "[Exposed=Window]\ninterface VisualViewport : EventTarget {\n  readonly attribute double offsetLeft;\n  readonly attribute double offsetTop;\n\n  readonly attribute double pageLeft;\n  readonly attribute double pageTop;\n\n  readonly attribute double width;\n  readonly attribute double height;\n\n  readonly attribute double scale;\n\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n};",
+        "fragment": "[Exposed=Window]\ninterface VisualViewport : EventTarget {\n  readonly attribute double offsetLeft;\n  readonly attribute double offsetTop;\n\n  readonly attribute double pageLeft;\n  readonly attribute double pageTop;\n\n  readonly attribute double width;\n  readonly attribute double height;\n\n  readonly attribute double scale;\n\n  readonly attribute FrozenArray<DOMRect> segments;\n\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n};",
         "type": "interface",
         "name": "VisualViewport",
         "inheritance": "EventTarget",
@@ -126,6 +126,30 @@
           },
           {
             "type": "attribute",
+            "name": "segments",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMRect"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "onresize",
             "idlType": {
               "type": "attribute-type",
@@ -223,12 +247,14 @@
       ],
       "VisualViewport": [
         "EventTarget",
+        "DOMRect",
         "EventHandler"
       ]
     },
     "externalDependencies": [
       "Window",
       "EventTarget",
+      "DOMRect",
       "EventHandler"
     ],
     "hasObsoleteIdl": false

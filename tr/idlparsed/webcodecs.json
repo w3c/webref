@@ -1563,7 +1563,7 @@
         "partial": false
       },
       "AudioDecoderConfig": {
-        "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  required unsigned long sampleRate;\n  required unsigned long numberOfChannels;\n  BufferSource description;\n};",
+        "fragment": "dictionary AudioDecoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long sampleRate;\n  [EnforceRange] required unsigned long numberOfChannels;\n  BufferSource description;\n};",
         "type": "dictionary",
         "name": "AudioDecoderConfig",
         "inheritance": null,
@@ -1586,7 +1586,14 @@
           {
             "type": "field",
             "name": "sampleRate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1601,7 +1608,14 @@
           {
             "type": "field",
             "name": "numberOfChannels",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1633,7 +1647,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  unsigned long codedWidth;\n  unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1671,7 +1685,14 @@
           {
             "type": "field",
             "name": "codedWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1686,7 +1707,14 @@
           {
             "type": "field",
             "name": "codedHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1700,8 +1728,15 @@
           },
           {
             "type": "field",
-            "name": "cropLeft",
-            "extAttrs": [],
+            "name": "displayAspectWidth",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1715,68 +1750,15 @@
           },
           {
             "type": "field",
-            "name": "cropTop",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cropWidth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "cropHeight",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "displayWidth",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "displayHeight",
-            "extAttrs": [],
+            "name": "displayAspectHeight",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1811,7 +1793,7 @@
         "partial": false
       },
       "AudioEncoderConfig": {
-        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  unsigned long sampleRate;\n  unsigned long numberOfChannels;\n  unsigned long long bitrate;\n};",
+        "fragment": "dictionary AudioEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] unsigned long sampleRate;\n  [EnforceRange] unsigned long numberOfChannels;\n  [EnforceRange] unsigned long long bitrate;\n};",
         "type": "dictionary",
         "name": "AudioEncoderConfig",
         "inheritance": null,
@@ -1834,7 +1816,14 @@
           {
             "type": "field",
             "name": "sampleRate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1849,7 +1838,14 @@
           {
             "type": "field",
             "name": "numberOfChannels",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1864,7 +1860,14 @@
           {
             "type": "field",
             "name": "bitrate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1881,7 +1884,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  unsigned long long bitrate;\n  required unsigned long width;\n  required unsigned long height;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  DOMString scalabilityMode;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  DOMString scalabilityMode;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -1904,7 +1907,14 @@
           {
             "type": "field",
             "name": "bitrate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1919,7 +1929,14 @@
           {
             "type": "field",
             "name": "width",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1934,7 +1951,14 @@
           {
             "type": "field",
             "name": "height",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1949,7 +1973,14 @@
           {
             "type": "field",
             "name": "displayWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -1964,7 +1995,14 @@
           {
             "type": "field",
             "name": "displayHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2240,7 +2278,7 @@
         "partial": false
       },
       "EncodedAudioChunkInit": {
-        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedAudioChunkInit {\n  required EncodedAudioChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedAudioChunkInit",
         "inheritance": null,
@@ -2263,7 +2301,14 @@
           {
             "type": "field",
             "name": "timestamp",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2452,7 +2497,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
-        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  required long long timestamp;    // microseconds\n  long long duration;              // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] long long duration;              // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -2475,7 +2520,14 @@
           {
             "type": "field",
             "name": "timestamp",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2490,7 +2542,14 @@
           {
             "type": "field",
             "name": "duration",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2538,7 +2597,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long allocationSize;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  undefined copyTo([AllowShared] BufferSource destination, unsigned long planeNumber);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -2627,21 +2686,6 @@
           },
           {
             "type": "attribute",
-            "name": "allocationSize",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
             "name": "duration",
             "idlType": {
               "type": "attribute-type",
@@ -2669,6 +2713,38 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "allocationSize",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AudioDataCopyToOptions"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
@@ -2707,7 +2783,7 @@
               },
               {
                 "type": "argument",
-                "name": "planeNumber",
+                "name": "options",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2715,7 +2791,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "unsigned long"
+                  "idlType": "AudioDataCopyToOptions"
                 },
                 "default": null,
                 "optional": false,
@@ -2777,7 +2853,7 @@
         "partial": false
       },
       "AudioDataInit": {
-        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  required float sampleRate;\n  required unsigned long numberOfFrames;\n  required unsigned long numberOfChannels;\n  required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  [EnforceRange] required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "AudioDataInit",
         "inheritance": null,
@@ -2800,7 +2876,14 @@
           {
             "type": "field",
             "name": "sampleRate",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2815,7 +2898,14 @@
           {
             "type": "field",
             "name": "numberOfFrames",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2830,7 +2920,14 @@
           {
             "type": "field",
             "name": "numberOfChannels",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2845,7 +2942,14 @@
           {
             "type": "field",
             "name": "timestamp",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -2876,8 +2980,66 @@
         "extAttrs": [],
         "partial": false
       },
+      "AudioDataCopyToOptions": {
+        "fragment": "dictionary AudioDataCopyToOptions {\n  required unsigned long planeIndex;\n  unsigned long frameOffset = 0;\n  unsigned long frameCount;\n};",
+        "type": "dictionary",
+        "name": "AudioDataCopyToOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "planeIndex",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "frameOffset",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "frameCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "AudioSampleFormat": {
-        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S32\",\n  \"FLT\",\n  \"S16P\",\n  \"S32P\",\n  \"FLTP\",\n};",
+        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S24\",\n  \"S32\",\n  \"FLT\",\n  \"U8P\",\n  \"S16P\",\n  \"S24P\",\n  \"S32P\",\n  \"FLTP\",\n};",
         "type": "enum",
         "name": "AudioSampleFormat",
         "values": [
@@ -2891,6 +3053,10 @@
           },
           {
             "type": "enum-value",
+            "value": "S24"
+          },
+          {
+            "type": "enum-value",
             "value": "S32"
           },
           {
@@ -2899,7 +3065,15 @@
           },
           {
             "type": "enum-value",
+            "value": "U8P"
+          },
+          {
+            "type": "enum-value",
             "value": "S16P"
+          },
+          {
+            "type": "enum-value",
+            "value": "S24P"
           },
           {
             "type": "enum-value",
@@ -3303,7 +3477,7 @@
         "partial": false
       },
       "VideoFramePlaneInit": {
-        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  required unsigned long codedWidth;\n  required unsigned long codedHeight;\n  unsigned long cropLeft;\n  unsigned long cropTop;\n  unsigned long cropWidth;\n  unsigned long cropHeight;\n  unsigned long displayWidth;\n  unsigned long displayHeight;\n  long long duration;     // microseconds\n  long long timestamp;    // microseconds\n};",
+        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  [EnforceRange] unsigned long cropLeft;\n  [EnforceRange] unsigned long cropTop;\n  [EnforceRange] unsigned long cropWidth;\n  [EnforceRange] unsigned long cropHeight;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] long long duration;     // microseconds\n  [EnforceRange] long long timestamp;    // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFramePlaneInit",
         "inheritance": null,
@@ -3326,7 +3500,14 @@
           {
             "type": "field",
             "name": "codedWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3341,7 +3522,14 @@
           {
             "type": "field",
             "name": "codedHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3356,7 +3544,14 @@
           {
             "type": "field",
             "name": "cropLeft",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3371,7 +3566,14 @@
           {
             "type": "field",
             "name": "cropTop",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3386,7 +3588,14 @@
           {
             "type": "field",
             "name": "cropWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3401,7 +3610,14 @@
           {
             "type": "field",
             "name": "cropHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3416,7 +3632,14 @@
           {
             "type": "field",
             "name": "displayWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3431,7 +3654,14 @@
           {
             "type": "field",
             "name": "displayHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3446,7 +3676,14 @@
           {
             "type": "field",
             "name": "duration",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3461,7 +3698,14 @@
           {
             "type": "field",
             "name": "timestamp",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3582,7 +3826,7 @@
         "partial": false
       },
       "PlaneInit": {
-        "fragment": "dictionary PlaneInit {\n  required BufferSource src;\n  required unsigned long stride;\n  required unsigned long rows;\n};",
+        "fragment": "dictionary PlaneInit {\n  required BufferSource src;\n  [EnforceRange] required unsigned long stride;\n  [EnforceRange] required unsigned long rows;\n};",
         "type": "dictionary",
         "name": "PlaneInit",
         "inheritance": null,
@@ -3605,7 +3849,14 @@
           {
             "type": "field",
             "name": "stride",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3620,7 +3871,14 @@
           {
             "type": "field",
             "name": "rows",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3897,7 +4155,7 @@
         "extAttrs": []
       },
       "ImageDecoderInit": {
-        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  unsigned long desiredWidth;\n  unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
+        "fragment": "dictionary ImageDecoderInit {\n  required DOMString type;\n  required ImageBufferSource data;\n  PremultiplyAlpha premultiplyAlpha = \"default\";\n  ColorSpaceConversion colorSpaceConversion = \"default\";\n  [EnforceRange] unsigned long desiredWidth;\n  [EnforceRange] unsigned long desiredHeight;\n  boolean preferAnimation;\n};",
         "type": "dictionary",
         "name": "ImageDecoderInit",
         "inheritance": null,
@@ -3971,7 +4229,14 @@
           {
             "type": "field",
             "name": "desiredWidth",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3986,7 +4251,14 @@
           {
             "type": "field",
             "name": "desiredHeight",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -4018,7 +4290,7 @@
         "partial": false
       },
       "ImageDecodeOptions": {
-        "fragment": "dictionary ImageDecodeOptions {\n  unsigned long frameIndex = 0;\n  boolean completeFramesOnly = true;\n};",
+        "fragment": "dictionary ImageDecodeOptions {\n  [EnforceRange] unsigned long frameIndex = 0;\n  boolean completeFramesOnly = true;\n};",
         "type": "dictionary",
         "name": "ImageDecodeOptions",
         "inheritance": null,
@@ -4026,7 +4298,14 @@
           {
             "type": "field",
             "name": "frameIndex",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -4104,7 +4383,7 @@
         "partial": false
       },
       "ImageTrackList": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  readonly attribute unsigned long length;\n  readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrackList {\n  getter ImageTrack (unsigned long index);\n\n  readonly attribute Promise<undefined> ready;\n  [EnforceRange] readonly attribute unsigned long length;\n  [EnforceRange] readonly attribute long selectedIndex;\n  readonly attribute ImageTrack? selectedTrack;\n};",
         "type": "interface",
         "name": "ImageTrackList",
         "inheritance": null,
@@ -4176,7 +4455,14 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -4191,7 +4477,14 @@
               "union": false,
               "idlType": "long"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -4232,7 +4525,7 @@
         "partial": false
       },
       "ImageTrack": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  readonly attribute unsigned long frameCount;\n  readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface ImageTrack : EventTarget {\n  readonly attribute boolean animated;\n  [EnforceRange] readonly attribute unsigned long frameCount;\n  [EnforceRange] readonly attribute unrestricted float repetitionCount;\n  attribute EventHandler onchange;\n  attribute boolean selected;\n};",
         "type": "interface",
         "name": "ImageTrack",
         "inheritance": "EventTarget",
@@ -4263,7 +4556,14 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -4278,7 +4578,14 @@
               "union": false,
               "idlType": "unrestricted float"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -4455,11 +4762,13 @@
       "AudioData": [
         "AudioDataInit",
         "AudioSampleFormat",
+        "AudioDataCopyToOptions",
         "AudioData"
       ],
       "AudioDataInit": [
         "AudioSampleFormat"
       ],
+      "AudioDataCopyToOptions": [],
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",

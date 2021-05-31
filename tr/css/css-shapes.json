@@ -12,7 +12,11 @@
       "inherited": "no",
       "media": "visual",
       "computedValue": "as defined for <basic-shape> (with <shape-box> following, if supplied), the <image> with its URI made absolute, otherwise as specified.",
-      "animatable": "as specified for <basic-shape>, otherwise no"
+      "animatable": "as specified for <basic-shape>, otherwise no",
+      "styleDeclaration": [
+        "shape-outside",
+        "shapeOutside"
+      ]
     },
     "shape-image-threshold": {
       "name": "shape-image-threshold",
@@ -22,7 +26,11 @@
       "inherited": "no",
       "media": "visual",
       "computedValue": "The same as the specified value after clipping the <number> to the range [0.0,1.0]",
-      "animatable": "as number"
+      "animatable": "as number",
+      "styleDeclaration": [
+        "shape-image-threshold",
+        "shapeImageThreshold"
+      ]
     },
     "shape-margin": {
       "name": "shape-margin",
@@ -32,7 +40,11 @@
       "inherited": "no",
       "media": "visual",
       "computedValue": "the absolute length",
-      "animatable": "as length, percentage, or calc."
+      "animatable": "as length, percentage, or calc.",
+      "styleDeclaration": [
+        "shape-margin",
+        "shapeMargin"
+      ]
     }
   },
   "descriptors": {},

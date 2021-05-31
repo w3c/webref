@@ -1,28 +1,13 @@
 {
   "spec": {
-    "title": "Geolocation API Specification 2nd Edition",
+    "title": "Geolocation API",
     "url": "https://www.w3.org/TR/geolocation-API/"
   },
   "headings": [
     {
-      "id": "title_heading",
+      "id": "title",
       "level": 1,
-      "title": "Geolocation API Specification 2nd Edition"
-    },
-    {
-      "id": "draft_date",
-      "level": 2,
-      "title": "W3C Recommendation 8 November 2016 (GitHub reference added 31 January 2018)"
-    },
-    {
-      "id": "abstract",
-      "level": 2,
-      "title": "Abstract"
-    },
-    {
-      "id": "status",
-      "level": 2,
-      "title": "Status of This Document"
+      "title": "Geolocation API"
     },
     {
       "id": "toc",
@@ -30,194 +15,302 @@
       "title": "Table of Contents"
     },
     {
-      "id": "conformance",
-      "level": 2,
-      "title": "1 Conformance requirements"
-    },
-    {
       "id": "introduction",
       "level": 2,
-      "title": "2 Introduction"
+      "title": "Introduction",
+      "number": "1"
     },
     {
       "id": "scope",
+      "level": 3,
+      "title": "Scope",
+      "number": "1.1"
+    },
+    {
+      "id": "changes-since-last-publication",
+      "level": 3,
+      "title": "Changes since last publication",
+      "number": "1.2"
+    },
+    {
+      "id": "examples",
       "level": 2,
-      "title": "3 Scope"
+      "title": "Examples",
+      "number": "2"
+    },
+    {
+      "id": "get-current-position",
+      "level": 3,
+      "title": "Get current position",
+      "number": "2.1"
+    },
+    {
+      "id": "watch-a-position",
+      "level": 3,
+      "title": "Watch a position",
+      "number": "2.2"
+    },
+    {
+      "id": "stop-watching-a-position",
+      "level": 3,
+      "title": "Stop watching a position",
+      "number": "2.3"
+    },
+    {
+      "id": "handling-errors",
+      "level": 3,
+      "title": "Handling errors",
+      "number": "2.4"
+    },
+    {
+      "id": "using-maximumage-as-cache-control",
+      "level": 3,
+      "title": "Using maximumAge as cache control",
+      "number": "2.5"
+    },
+    {
+      "id": "using-timeout",
+      "level": 3,
+      "title": "Using timeout",
+      "number": "2.6"
+    },
+    {
+      "id": "enabling-the-api-in-third-party-contexts",
+      "level": 3,
+      "title": "Enabling the API in third-party contexts",
+      "number": "2.7"
     },
     {
       "id": "security",
       "level": 2,
-      "title": "4 Security and privacy considerations"
-    },
-    {
-      "id": "privacy_for_uas",
-      "level": 3,
-      "title": "Privacy considerations for implementers of the Geolocation API",
-      "number": "4.1"
+      "title": "Privacy and security considerations",
+      "number": "3"
     },
     {
       "id": "privacy_for_recipients",
       "level": 3,
       "title": "Privacy considerations for recipients of location information",
-      "number": "4.2"
+      "number": "3.1"
     },
     {
       "id": "implementation_considerations",
       "level": 3,
-      "title": "Additional implementation considerations",
-      "number": "4.3"
+      "title": "Implementation considerations",
+      "number": "3.2"
     },
     {
-      "id": "api_description",
+      "id": "navigator_interface",
       "level": 2,
-      "title": "5 API Description"
+      "title": "Extensions to the Navigator interface",
+      "number": "4"
     },
     {
       "id": "geolocation_interface",
+      "level": 2,
+      "title": "Geolocation interface and callbacks",
+      "number": "5"
+    },
+    {
+      "id": "internal-slots",
       "level": 3,
-      "title": "Geolocation interface",
+      "title": "Internal slots",
       "number": "5.1"
     },
     {
-      "id": "position_options_interface",
+      "id": "getcurrentposition-method",
       "level": 3,
-      "title": "PositionOptions interface",
+      "title": "getCurrentPosition() method",
       "number": "5.2"
     },
     {
-      "id": "position_interface",
+      "id": "watchposition-method",
       "level": 3,
-      "title": "Position interface",
+      "title": "watchPosition() method",
       "number": "5.3"
     },
     {
-      "id": "coordinates_interface",
+      "id": "clearwatch-method",
       "level": 3,
-      "title": "Coordinates interface",
+      "title": "clearWatch() method",
       "number": "5.4"
     },
     {
-      "id": "position_error_interface",
+      "id": "request-position",
       "level": 3,
-      "title": "PositionError interface",
+      "title": "Request position",
       "number": "5.5"
     },
     {
-      "id": "usecases",
-      "level": 2,
-      "title": "6 Use-Cases and Requirements"
+      "id": "check-permission",
+      "level": 3,
+      "title": "Check permission",
+      "number": "5.6"
     },
     {
-      "id": "usecases_section",
+      "id": "call-back-with-error",
       "level": 3,
-      "title": "Use-Cases",
+      "title": "Call back with error",
+      "number": "5.7"
+    },
+    {
+      "id": "position_options_interface",
+      "level": 2,
+      "title": "PositionOptions dictionary",
+      "number": "6"
+    },
+    {
+      "id": "enablehighaccuracy-member",
+      "level": 3,
+      "title": "enableHighAccuracy member",
       "number": "6.1"
     },
     {
-      "id": "usecase_find_poi",
-      "level": 4,
-      "title": "Find points of interest in the user's area",
-      "number": "6.1.1"
-    },
-    {
-      "id": "usecase_content_annotation",
-      "level": 4,
-      "title": "Annotating content with location information",
-      "number": "6.1.2"
-    },
-    {
-      "id": "usecase_show_position",
-      "level": 4,
-      "title": "Show the user's position on a map",
-      "number": "6.1.3"
-    },
-    {
-      "id": "usecase_turn_by_turn",
-      "level": 4,
-      "title": "Turn-by-turn route navigation",
-      "number": "6.1.4"
-    },
-    {
-      "id": "usecase_poi_alert",
-      "level": 4,
-      "title": "Alerts when points of interest are in the user's vicinity",
-      "number": "6.1.5"
-    },
-    {
-      "id": "usecase_local_info",
-      "level": 4,
-      "title": "Up-to-date local information",
-      "number": "6.1.6"
-    },
-    {
-      "id": "usecase_social_networking",
-      "level": 4,
-      "title": "Location-tagged status updates in social networking applications",
-      "number": "6.1.7"
-    },
-    {
-      "id": "requirements_section",
+      "id": "timeout-member",
       "level": 3,
-      "title": "Requirements",
+      "title": "timeout member",
       "number": "6.2"
     },
     {
-      "id": "req_latlong",
-      "level": 4,
-      "title": "The Geolocation API must provide location data in terms of a pair of latitude and longitude coordinates.",
-      "number": "6.2.1"
+      "id": "maximumage-member",
+      "level": 3,
+      "title": "maximumAge member",
+      "number": "6.3"
     },
     {
-      "id": "req_accuracy",
-      "level": 4,
-      "title": "The Geolocation API must provide information about the accuracy of the retrieved location data.",
-      "number": "6.2.2"
+      "id": "position_interface",
+      "level": 2,
+      "title": "GeolocationPosition interface",
+      "number": "7"
     },
     {
-      "id": "req_oneshot",
-      "level": 4,
-      "title": "The Geolocation API must support \"one-shot\" position updates.",
-      "number": "6.2.3"
+      "id": "coords-attribute",
+      "level": 3,
+      "title": "coords attribute",
+      "number": "7.1"
     },
     {
-      "id": "req_updates",
-      "level": 4,
-      "title": "The Geolocation API must allow an application to register to receive updates when the position of the hosting device changes.",
-      "number": "6.2.4"
+      "id": "timestamp-attribute",
+      "level": 3,
+      "title": "timestamp attribute",
+      "number": "7.2"
     },
     {
-      "id": "req_last_known",
-      "level": 4,
-      "title": "The Geolocation API must allow an application to request a cached position whose age is no greater than a specified value.",
-      "number": "6.2.5"
+      "id": "internal-slots-0",
+      "level": 3,
+      "title": "Internal slots",
+      "number": "7.3"
     },
     {
-      "id": "req_errors",
-      "level": 4,
-      "title": "The Geolocation API must provide a way for the application to receive updates about errors that may have occurred while obtaining a location fix.",
-      "number": "6.2.6"
+      "id": "coordinates_interface",
+      "level": 2,
+      "title": "GeolocationCoordinates interface",
+      "number": "8"
     },
     {
-      "id": "req_request_acuracy",
-      "level": 4,
-      "title": "The Geolocation API must allow an application to specify a desired accuracy level of the location information.",
-      "number": "6.2.7"
+      "id": "latitude-longitude-and-accuracy-attributes",
+      "level": 3,
+      "title": "latitude, longitude, and accuracy attributes",
+      "number": "8.1"
     },
     {
-      "id": "req_source_agnostic",
-      "level": 4,
-      "title": "The Geolocation API must be agnostic to the underlying sources of location information.",
-      "number": "6.2.8"
+      "id": "altitude-and-altitudeaccuracy-attributes",
+      "level": 3,
+      "title": "altitude and altitudeAccuracy attributes",
+      "number": "8.2"
+    },
+    {
+      "id": "heading-attribute",
+      "level": 3,
+      "title": "heading attribute",
+      "number": "8.3"
+    },
+    {
+      "id": "speed-attribute",
+      "level": 3,
+      "title": "speed attribute",
+      "number": "8.4"
+    },
+    {
+      "id": "constructing-a-geolocationposition",
+      "level": 3,
+      "title": "Constructing a GeolocationPosition",
+      "number": "8.5"
+    },
+    {
+      "id": "position_error_interface",
+      "level": 2,
+      "title": "GeolocationPositionError interface",
+      "number": "9"
+    },
+    {
+      "id": "constants",
+      "level": 3,
+      "title": "Constants",
+      "number": "9.1"
+    },
+    {
+      "id": "code-attribute",
+      "level": 3,
+      "title": "code attribute",
+      "number": "9.2"
+    },
+    {
+      "id": "message-attribute",
+      "level": 3,
+      "title": "message attribute",
+      "number": "9.3"
+    },
+    {
+      "id": "permissions-policy",
+      "level": 2,
+      "title": "10. Permissions policy"
+    },
+    {
+      "id": "conformance",
+      "level": 2,
+      "title": "11. Conformance"
+    },
+    {
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index",
+      "number": "B"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification",
+      "number": "B.1"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference",
+      "number": "B.2"
     },
     {
       "id": "acknowledgments",
       "level": 2,
-      "title": "Acknowledgments"
+      "title": "Acknowledgments",
+      "number": "C"
     },
     {
       "id": "references",
       "level": 2,
-      "title": "References"
+      "title": "References",
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "D.1"
     }
   ]
 }

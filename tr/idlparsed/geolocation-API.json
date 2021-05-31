@@ -1,16 +1,23 @@
 {
   "spec": {
-    "title": "Geolocation API Specification 2nd Edition",
+    "title": "Geolocation API",
     "url": "https://www.w3.org/TR/geolocation-API/"
   },
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "Geolocation",
+          "GeolocationPosition",
+          "GeolocationCoordinates",
+          "GeolocationPositionError"
+        ]
+      }
     },
     "idlNames": {
       "Geolocation": {
-        "fragment": "[NoInterfaceObject]\ninterface Geolocation {\n  void getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options);\n\n  long watchPosition(PositionCallback successCallback,\n                     optional PositionErrorCallback errorCallback,\n                     optional PositionOptions options);\n\n  void clearWatch(long watchId);\n};",
+        "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  long watchPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  undefined clearWatch (long watchId);\n};",
         "type": "interface",
         "name": "Geolocation",
         "inheritance": null,
@@ -24,7 +31,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -51,11 +58,13 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "PositionErrorCallback"
                 },
-                "default": null,
+                "default": {
+                  "type": "null"
+                },
                 "optional": true,
                 "variadic": false
               },
@@ -71,7 +80,9 @@
                   "union": false,
                   "idlType": "PositionOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -115,11 +126,13 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
                   "idlType": "PositionErrorCallback"
                 },
-                "default": null,
+                "default": {
+                  "type": "null"
+                },
                 "optional": true,
                 "variadic": false
               },
@@ -135,7 +148,9 @@
                   "union": false,
                   "idlType": "PositionOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -152,7 +167,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -179,15 +194,18 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
-            "rhs": null,
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
             "arguments": []
           }
         ],
         "partial": false
       },
       "PositionCallback": {
-        "fragment": "callback PositionCallback = void (Position position);",
+        "fragment": "callback PositionCallback = undefined (\n  GeolocationPosition position\n);",
         "type": "callback",
         "name": "PositionCallback",
         "idlType": {
@@ -196,7 +214,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -209,7 +227,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Position"
+              "idlType": "GeolocationPosition"
             },
             "default": null,
             "optional": false,
@@ -219,7 +237,7 @@
         "extAttrs": []
       },
       "PositionErrorCallback": {
-        "fragment": "callback PositionErrorCallback = void (PositionError positionError);",
+        "fragment": "callback PositionErrorCallback = undefined (\n  GeolocationPositionError positionError\n);",
         "type": "callback",
         "name": "PositionErrorCallback",
         "idlType": {
@@ -228,7 +246,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -241,7 +259,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PositionError"
+              "idlType": "GeolocationPositionError"
             },
             "default": null,
             "optional": false,
@@ -328,10 +346,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "Position": {
-        "fragment": "[NoInterfaceObject]\ninterface Position {\n  readonly attribute Coordinates coords;\n  readonly attribute DOMTimeStamp timestamp;\n};",
+      "GeolocationPosition": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute DOMTimeStamp timestamp;\n};",
         "type": "interface",
-        "name": "Position",
+        "name": "GeolocationPosition",
         "inheritance": null,
         "members": [
           {
@@ -343,7 +361,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "Coordinates"
+              "idlType": "GeolocationCoordinates"
             },
             "extAttrs": [],
             "special": "",
@@ -368,19 +386,43 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
             "rhs": null,
             "arguments": []
           }
         ],
         "partial": false
       },
-      "Coordinates": {
-        "fragment": "[NoInterfaceObject]\ninterface Coordinates {\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double accuracy;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
+      "GeolocationCoordinates": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationCoordinates {\n  readonly attribute double accuracy;\n  readonly attribute double latitude;\n  readonly attribute double longitude;\n  readonly attribute double? altitude;\n  readonly attribute double? altitudeAccuracy;\n  readonly attribute double? heading;\n  readonly attribute double? speed;\n};",
         "type": "interface",
-        "name": "Coordinates",
+        "name": "GeolocationCoordinates",
         "inheritance": null,
         "members": [
+          {
+            "type": "attribute",
+            "name": "accuracy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
           {
             "type": "attribute",
             "name": "latitude",
@@ -419,21 +461,6 @@
               "extAttrs": [],
               "generic": "",
               "nullable": true,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "accuracy",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
               "union": false,
               "idlType": "double"
             },
@@ -490,17 +517,26 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
             "rhs": null,
             "arguments": []
           }
         ],
         "partial": false
       },
-      "PositionError": {
-        "fragment": "[NoInterfaceObject]\ninterface PositionError {\n  const unsigned short PERMISSION_DENIED = 1;\n  const unsigned short POSITION_UNAVAILABLE = 2;\n  const unsigned short TIMEOUT = 3;\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
+      "GeolocationPositionError": {
+        "fragment": "[Exposed=Window]\ninterface GeolocationPositionError {\n  const unsigned short PERMISSION_DENIED = 1;\n  const unsigned short POSITION_UNAVAILABLE = 2;\n  const unsigned short TIMEOUT = 3;\n  readonly attribute unsigned short code;\n  readonly attribute DOMString message;\n};",
         "type": "interface",
-        "name": "PositionError",
+        "name": "GeolocationPositionError",
         "inheritance": null,
         "members": [
           {
@@ -588,8 +624,11 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "NoInterfaceObject",
-            "rhs": null,
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
             "arguments": []
           }
         ],
@@ -599,7 +638,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  readonly attribute Geolocation geolocation;\n};",
+          "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute Geolocation geolocation;\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -615,7 +654,14 @@
                 "union": false,
                 "idlType": "Geolocation"
               },
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "special": "",
               "readonly": true
             }
@@ -626,27 +672,32 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "Geolocation",
+        "GeolocationPosition",
+        "GeolocationCoordinates",
+        "GeolocationPositionError"
+      ]
+    },
     "dependencies": {
       "Navigator": [
         "Geolocation"
       ],
       "Geolocation": [
-        "void",
         "PositionCallback",
         "PositionErrorCallback",
         "PositionOptions"
       ],
       "PositionOptions": [],
-      "Position": [
-        "Coordinates"
+      "GeolocationPosition": [
+        "GeolocationCoordinates"
       ],
-      "Coordinates": [],
-      "PositionError": []
+      "GeolocationCoordinates": [],
+      "GeolocationPositionError": []
     },
     "externalDependencies": [
-      "Navigator",
-      "void"
+      "Navigator"
     ],
     "hasObsoleteIdl": false
   }

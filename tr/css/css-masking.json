@@ -13,7 +13,11 @@
       "media": "visual",
       "computedValue": "as specified, but with <url> values made absolute",
       "percentages": "as specified",
-      "animatable": "as specified for <basic-shape> [CSS-SHAPES], otherwise no"
+      "animatable": "as specified for <basic-shape> [CSS-SHAPES], otherwise no",
+      "styleDeclaration": [
+        "clip-path",
+        "clipPath"
+      ]
     },
     "clip-rule": {
       "name": "clip-rule",
@@ -24,7 +28,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "clip-rule",
+        "clipRule"
+      ]
     },
     "mask-image": {
       "name": "mask-image",
@@ -35,7 +43,11 @@
       "media": "visual",
       "computedValue": "as specified, but with URIs made absolute",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-image",
+        "maskImage"
+      ]
     },
     "mask-mode": {
       "name": "mask-mode",
@@ -46,7 +58,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-mode",
+        "maskMode"
+      ]
     },
     "mask-repeat": {
       "name": "mask-repeat",
@@ -57,7 +73,11 @@
       "media": "visual",
       "computedValue": "Consists of: two keywords, one per dimension",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-repeat",
+        "maskRepeat"
+      ]
     },
     "mask-position": {
       "name": "mask-position",
@@ -68,7 +88,11 @@
       "media": "visual",
       "computedValue": "Consisting of: two keywords representing the origin and two offsets from that origin, each given as an absolute length (if given a <length>), otherwise as a percentage.",
       "percentages": "refer to size of mask painting area minus size of mask layer image; see text background-position [CSS3BG]",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc"
+      "animatable": "as repeatable list of simple list of length, percentage, or calc",
+      "styleDeclaration": [
+        "mask-position",
+        "maskPosition"
+      ]
     },
     "mask-clip": {
       "name": "mask-clip",
@@ -79,7 +103,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-clip",
+        "maskClip"
+      ]
     },
     "mask-origin": {
       "name": "mask-origin",
@@ -90,7 +118,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-origin",
+        "maskOrigin"
+      ]
     },
     "mask-size": {
       "name": "mask-size",
@@ -101,7 +133,11 @@
       "media": "visual",
       "computedValue": "as specified, but with lengths made absolute",
       "percentages": "n/a",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc (This means keyword values are not animatable.)"
+      "animatable": "as repeatable list of simple list of length, percentage, or calc (This means keyword values are not animatable.)",
+      "styleDeclaration": [
+        "mask-size",
+        "maskSize"
+      ]
     },
     "mask-composite": {
       "name": "mask-composite",
@@ -112,7 +148,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-composite",
+        "maskComposite"
+      ]
     },
     "mask": {
       "name": "mask",
@@ -123,7 +163,10 @@
       "media": "visual",
       "computedValue": "see individual properties",
       "percentages": "see individual properties",
-      "animatable": "see individual properties"
+      "animatable": "see individual properties",
+      "styleDeclaration": [
+        "mask"
+      ]
     },
     "mask-border-source": {
       "name": "mask-border-source",
@@ -134,7 +177,11 @@
       "media": "visual",
       "computedValue": "none or the image with its URI made absolute",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-source",
+        "maskBorderSource"
+      ]
     },
     "mask-border-mode": {
       "name": "mask-border-mode",
@@ -145,7 +192,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-mode",
+        "maskBorderMode"
+      ]
     },
     "mask-border-slice": {
       "name": "mask-border-slice",
@@ -156,7 +207,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "refer to size of the mask border image",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-slice",
+        "maskBorderSlice"
+      ]
     },
     "mask-border-width": {
       "name": "mask-border-width",
@@ -167,7 +222,11 @@
       "media": "visual",
       "computedValue": "all <length>s made absolute, otherwise as specified",
       "percentages": "relative to width/height of the mask border image area",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-width",
+        "maskBorderWidth"
+      ]
     },
     "mask-border-outset": {
       "name": "mask-border-outset",
@@ -178,7 +237,11 @@
       "media": "visual",
       "computedValue": "all <length>s made absolute, otherwise as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-outset",
+        "maskBorderOutset"
+      ]
     },
     "mask-border-repeat": {
       "name": "mask-border-repeat",
@@ -189,7 +252,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-border-repeat",
+        "maskBorderRepeat"
+      ]
     },
     "mask-border": {
       "name": "mask-border",
@@ -200,7 +267,11 @@
       "media": "visual",
       "computedValue": "See individual properties",
       "percentages": "n/a",
-      "animatable": "See individual properties"
+      "animatable": "See individual properties",
+      "styleDeclaration": [
+        "mask-border",
+        "maskBorder"
+      ]
     },
     "mask-type": {
       "name": "mask-type",
@@ -211,7 +282,11 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no"
+      "animatable": "no",
+      "styleDeclaration": [
+        "mask-type",
+        "maskType"
+      ]
     },
     "clip": {
       "name": "clip",
@@ -222,7 +297,10 @@
       "media": "visual",
       "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "as rectangle"
+      "animatable": "as rectangle",
+      "styleDeclaration": [
+        "clip"
+      ]
     }
   },
   "descriptors": {},

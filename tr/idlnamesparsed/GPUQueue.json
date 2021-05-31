@@ -3,16 +3,16 @@
   "defined": {
     "spec": {
       "title": "WebGPU",
-      "url": "https://gpuweb.github.io/gpuweb/"
+      "url": "https://www.w3.org/TR/webgpu/"
     },
     "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
-    "href": "https://gpuweb.github.io/gpuweb/#gpuqueue"
+    "href": "https://www.w3.org/TR/webgpu/#gpuqueue"
   },
   "extended": [
     {
       "spec": {
         "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPUQueue includes GPUObjectBase;"
     }
@@ -24,10 +24,10 @@
       "defined": {
         "spec": {
           "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
+          "url": "https://www.w3.org/TR/webgpu/"
         },
         "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+        "href": "https://www.w3.org/TR/webgpu/#gpuobjectbase"
       },
       "extended": [],
       "inheritance": null,

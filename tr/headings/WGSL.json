@@ -1,0 +1,1185 @@
+{
+  "spec": {
+    "title": "WebGPU Shading Language",
+    "url": "https://www.w3.org/TR/WGSL/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "title": "WebGPU Shading Language"
+    },
+    {
+      "id": "profile-and-date",
+      "level": 2,
+      "title": "W3C Working Draft, 28 May 2021"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "goals",
+      "level": 3,
+      "title": "Goals",
+      "number": "1.1"
+    },
+    {
+      "id": "technical-overview",
+      "level": 3,
+      "title": "Technical Overview",
+      "number": "1.2"
+    },
+    {
+      "id": "notation",
+      "level": 3,
+      "title": "Notation",
+      "number": "1.3"
+    },
+    {
+      "id": "program-lifecycle",
+      "level": 2,
+      "title": "Shader Lifecycle",
+      "number": "2"
+    },
+    {
+      "id": "kinds-of-errors",
+      "level": 3,
+      "title": "Kinds of errors",
+      "number": "2.1"
+    },
+    {
+      "id": "textual-structure",
+      "level": 2,
+      "title": "Textual structure TODO",
+      "number": "3"
+    },
+    {
+      "id": "comments",
+      "level": 3,
+      "title": "Comments",
+      "number": "3.1"
+    },
+    {
+      "id": "tokens",
+      "level": 3,
+      "title": "Tokens TODO",
+      "number": "3.2"
+    },
+    {
+      "id": "literals",
+      "level": 3,
+      "title": "Literals TODO",
+      "number": "3.3"
+    },
+    {
+      "id": "keywords",
+      "level": 3,
+      "title": "Keywords TODO",
+      "number": "3.4"
+    },
+    {
+      "id": "identifiers",
+      "level": 3,
+      "title": "Identifiers TODO",
+      "number": "3.5"
+    },
+    {
+      "id": "attributes",
+      "level": 3,
+      "title": "Attributes",
+      "number": "3.6"
+    },
+    {
+      "id": "directives",
+      "level": 3,
+      "title": "Directives TODO",
+      "number": "3.7"
+    },
+    {
+      "id": "declaration-and-scope",
+      "level": 3,
+      "title": "Declaration and scope",
+      "number": "3.8"
+    },
+    {
+      "id": "types",
+      "level": 2,
+      "title": "Types",
+      "number": "4"
+    },
+    {
+      "id": "type-checking-section",
+      "level": 3,
+      "title": "Type Checking",
+      "number": "4.1"
+    },
+    {
+      "id": "typing-tables-section",
+      "level": 4,
+      "title": "Type rule tables",
+      "number": "4.1.1"
+    },
+    {
+      "id": "plain-types-section",
+      "level": 3,
+      "title": "Plain Types",
+      "number": "4.2"
+    },
+    {
+      "id": "bool-type",
+      "level": 4,
+      "title": "Boolean Type",
+      "number": "4.2.1"
+    },
+    {
+      "id": "integer-types",
+      "level": 4,
+      "title": "Integer Types",
+      "number": "4.2.2"
+    },
+    {
+      "id": "floating-point-types",
+      "level": 4,
+      "title": "Floating Point Type",
+      "number": "4.2.3"
+    },
+    {
+      "id": "scalar-types",
+      "level": 4,
+      "title": "Scalar Types",
+      "number": "4.2.4"
+    },
+    {
+      "id": "vector-types",
+      "level": 4,
+      "title": "Vector Types",
+      "number": "4.2.5"
+    },
+    {
+      "id": "matrix-types",
+      "level": 4,
+      "title": "Matrix Types",
+      "number": "4.2.6"
+    },
+    {
+      "id": "atomic-types",
+      "level": 4,
+      "title": "Atomic Types",
+      "number": "4.2.7"
+    },
+    {
+      "id": "array-types",
+      "level": 4,
+      "title": "Array Types",
+      "number": "4.2.8"
+    },
+    {
+      "id": "struct-types",
+      "level": 4,
+      "title": "Structure Types",
+      "number": "4.2.9"
+    },
+    {
+      "id": "composite-types",
+      "level": 4,
+      "title": "Composite Types",
+      "number": "4.2.10"
+    },
+    {
+      "id": "atomic-free-types",
+      "level": 4,
+      "title": "Atomic-Free Types",
+      "number": "4.2.11"
+    },
+    {
+      "id": "memory",
+      "level": 3,
+      "title": "Memory",
+      "number": "4.3"
+    },
+    {
+      "id": "memory-locations-section",
+      "level": 4,
+      "title": "Memory Locations",
+      "number": "4.3.1"
+    },
+    {
+      "id": "memory-access-mode",
+      "level": 4,
+      "title": "Memory Access Mode",
+      "number": "4.3.2"
+    },
+    {
+      "id": "storable-types",
+      "level": 4,
+      "title": "Storable Types",
+      "number": "4.3.3"
+    },
+    {
+      "id": "io-shareable-types",
+      "level": 4,
+      "title": "IO-shareable Types",
+      "number": "4.3.4"
+    },
+    {
+      "id": "host-shareable-types",
+      "level": 4,
+      "title": "Host-shareable Types",
+      "number": "4.3.5"
+    },
+    {
+      "id": "storage-class",
+      "level": 4,
+      "title": "Storage Classes",
+      "number": "4.3.6"
+    },
+    {
+      "id": "memory-layouts",
+      "level": 4,
+      "title": "Memory Layout",
+      "number": "4.3.7"
+    },
+    {
+      "id": "alignment-and-size",
+      "level": 5,
+      "title": "Alignment and Size",
+      "number": "4.3.7.1"
+    },
+    {
+      "id": "structure-layout-rules",
+      "level": 5,
+      "title": "Structure Layout Rules",
+      "number": "4.3.7.2"
+    },
+    {
+      "id": "array-layout-rules",
+      "level": 5,
+      "title": "Array Layout Rules",
+      "number": "4.3.7.3"
+    },
+    {
+      "id": "internal-value-layout",
+      "level": 5,
+      "title": "Internal Layout of Values",
+      "number": "4.3.7.4"
+    },
+    {
+      "id": "storage-class-layout-constraints",
+      "level": 5,
+      "title": "Storage Class Layout Constraints",
+      "number": "4.3.7.5"
+    },
+    {
+      "id": "memory-view-types",
+      "level": 3,
+      "title": "Memory View Types",
+      "number": "4.4"
+    },
+    {
+      "id": "access-mode-defaults",
+      "level": 4,
+      "title": "Access Mode Defaults",
+      "number": "4.4.1"
+    },
+    {
+      "id": "originating-variable-section",
+      "level": 4,
+      "title": "Originating variable",
+      "number": "4.4.2"
+    },
+    {
+      "id": "ref-ptr-use-cases",
+      "level": 4,
+      "title": "Use cases for references and pointers",
+      "number": "4.4.3"
+    },
+    {
+      "id": "forming-references-and-pointers",
+      "level": 4,
+      "title": "Forming reference and pointer values",
+      "number": "4.4.4"
+    },
+    {
+      "id": "pointers-other-languages",
+      "level": 4,
+      "title": "Comparison with references and pointers in other languages",
+      "number": "4.4.5"
+    },
+    {
+      "id": "texture-types",
+      "level": 3,
+      "title": "Texture and Sampler Types",
+      "number": "4.5"
+    },
+    {
+      "id": "texel-formats",
+      "level": 4,
+      "title": "Texel formats",
+      "number": "4.5.1"
+    },
+    {
+      "id": "sampled-texture-type",
+      "level": 4,
+      "title": "Sampled Texture Types",
+      "number": "4.5.2"
+    },
+    {
+      "id": "multisampled-texture-type",
+      "level": 4,
+      "title": "Multisampled Texture Types",
+      "number": "4.5.3"
+    },
+    {
+      "id": "external-texture-type",
+      "level": 4,
+      "title": "External Sampled Texture Types",
+      "number": "4.5.4"
+    },
+    {
+      "id": "texture-storage",
+      "level": 4,
+      "title": "Storage Texture Types",
+      "number": "4.5.5"
+    },
+    {
+      "id": "texture-depth",
+      "level": 4,
+      "title": "Depth Texture Types",
+      "number": "4.5.6"
+    },
+    {
+      "id": "sampler-type",
+      "level": 4,
+      "title": "Sampler Type",
+      "number": "4.5.7"
+    },
+    {
+      "id": "texture-types-grammar",
+      "level": 4,
+      "title": "Texture Types Grammar",
+      "number": "4.5.8"
+    },
+    {
+      "id": "type-aliases",
+      "level": 3,
+      "title": "Type Aliases TODO",
+      "number": "4.6"
+    },
+    {
+      "id": "type-declarations",
+      "level": 3,
+      "title": "Type Declaration Grammar",
+      "number": "4.7"
+    },
+    {
+      "id": "var-and-let",
+      "level": 2,
+      "title": "var and let",
+      "number": "5"
+    },
+    {
+      "id": "module-scope-variables",
+      "level": 3,
+      "title": "Module Scope Variables",
+      "number": "5.1"
+    },
+    {
+      "id": "module-constants",
+      "level": 3,
+      "title": "Module Constants",
+      "number": "5.2"
+    },
+    {
+      "id": "function-scope-variables",
+      "level": 3,
+      "title": "Function Scope Variables and Constants",
+      "number": "5.3"
+    },
+    {
+      "id": "never-alias-assumption",
+      "level": 3,
+      "title": "Never-alias assumption TODO",
+      "number": "5.4"
+    },
+    {
+      "id": "expressions",
+      "level": 2,
+      "title": "Expressions TODO",
+      "number": "6"
+    },
+    {
+      "id": "literal-expressions",
+      "level": 3,
+      "title": "Literal Expressions TODO",
+      "number": "6.1"
+    },
+    {
+      "id": "type-constructor-expr",
+      "level": 3,
+      "title": "Type Constructor Expressions TODO",
+      "number": "6.2"
+    },
+    {
+      "id": "zero-value-expr",
+      "level": 3,
+      "title": "Zero Value Expressions",
+      "number": "6.3"
+    },
+    {
+      "id": "conversion-expr",
+      "level": 3,
+      "title": "Conversion Expressions",
+      "number": "6.4"
+    },
+    {
+      "id": "bitcast-expr",
+      "level": 3,
+      "title": "Reinterpretation of Representation Expressions",
+      "number": "6.5"
+    },
+    {
+      "id": "composite-value-decomposition-expr",
+      "level": 3,
+      "title": "Composite Value Decomposition Expressions",
+      "number": "6.6"
+    },
+    {
+      "id": "vector-access-expr",
+      "level": 4,
+      "title": "Vector Access Expression",
+      "number": "6.6.1"
+    },
+    {
+      "id": "vector-single-component",
+      "level": 5,
+      "title": "Vector single component selection",
+      "number": "6.6.1.1"
+    },
+    {
+      "id": "vector-multi-component",
+      "level": 5,
+      "title": "Vector multiple component selection",
+      "number": "6.6.1.2"
+    },
+    {
+      "id": "component-reference-from-vector-reference",
+      "level": 5,
+      "title": "Component reference from vector reference",
+      "number": "6.6.1.3"
+    },
+    {
+      "id": "matrix-access-expr",
+      "level": 4,
+      "title": "Matrix Access Expression",
+      "number": "6.6.2"
+    },
+    {
+      "id": "array-access-expr",
+      "level": 4,
+      "title": "Array Access Expression",
+      "number": "6.6.3"
+    },
+    {
+      "id": "struct-access-expr",
+      "level": 4,
+      "title": "Structure Access Expression",
+      "number": "6.6.4"
+    },
+    {
+      "id": "logical-expr",
+      "level": 3,
+      "title": "Logical Expressions",
+      "number": "6.7"
+    },
+    {
+      "id": "arithmetic-expr",
+      "level": 3,
+      "title": "Arithmetic Expressions",
+      "number": "6.8"
+    },
+    {
+      "id": "comparison-expr",
+      "level": 3,
+      "title": "Comparison Expressions TODO",
+      "number": "6.9"
+    },
+    {
+      "id": "bit-expr",
+      "level": 3,
+      "title": "Bit Expressions TODO",
+      "number": "6.10"
+    },
+    {
+      "id": "function-call-expr",
+      "level": 3,
+      "title": "Function Call Expression",
+      "number": "6.11"
+    },
+    {
+      "id": "var-identifier-expr",
+      "level": 3,
+      "title": "Variable Identifier Expression",
+      "number": "6.12"
+    },
+    {
+      "id": "formal-parameter-expr",
+      "level": 3,
+      "title": "Formal Parameter Expression",
+      "number": "6.13"
+    },
+    {
+      "id": "address-of-expr",
+      "level": 3,
+      "title": "Address-Of Expression",
+      "number": "6.14"
+    },
+    {
+      "id": "indirection-expr",
+      "level": 3,
+      "title": "Indirection Expression",
+      "number": "6.15"
+    },
+    {
+      "id": "constant-identifier-expr",
+      "level": 3,
+      "title": "Constant Identifier Expression",
+      "number": "6.16"
+    },
+    {
+      "id": "expression-grammar",
+      "level": 3,
+      "title": "Expression Grammar Summary",
+      "number": "6.17"
+    },
+    {
+      "id": "statements",
+      "level": 2,
+      "title": "Statements TODO",
+      "number": "7"
+    },
+    {
+      "id": "compound-statement",
+      "level": 3,
+      "title": "Compound Statement",
+      "number": "7.1"
+    },
+    {
+      "id": "assignment",
+      "level": 3,
+      "title": "Assignment Statement",
+      "number": "7.2"
+    },
+    {
+      "id": "control-flow",
+      "level": 3,
+      "title": "Control flow TODO",
+      "number": "7.3"
+    },
+    {
+      "id": "sequence-statement",
+      "level": 4,
+      "title": "Sequence TODO",
+      "number": "7.3.1"
+    },
+    {
+      "id": "if-statement",
+      "level": 4,
+      "title": "If Statement",
+      "number": "7.3.2"
+    },
+    {
+      "id": "switch-statement",
+      "level": 4,
+      "title": "Switch Statement",
+      "number": "7.3.3"
+    },
+    {
+      "id": "loop-statement",
+      "level": 4,
+      "title": "Loop Statement",
+      "number": "7.3.4"
+    },
+    {
+      "id": "for-statement",
+      "level": 4,
+      "title": "For Statement",
+      "number": "7.3.5"
+    },
+    {
+      "id": "break-statement",
+      "level": 4,
+      "title": "Break",
+      "number": "7.3.6"
+    },
+    {
+      "id": "continue-statement",
+      "level": 4,
+      "title": "Continue",
+      "number": "7.3.7"
+    },
+    {
+      "id": "continuing-statement",
+      "level": 4,
+      "title": "Continuing Statement",
+      "number": "7.3.8"
+    },
+    {
+      "id": "return-statement",
+      "level": 4,
+      "title": "Return Statement",
+      "number": "7.3.9"
+    },
+    {
+      "id": "discard-statement",
+      "level": 4,
+      "title": "Discard Statement",
+      "number": "7.3.10"
+    },
+    {
+      "id": "function-call-statement",
+      "level": 3,
+      "title": "Function Call Statement",
+      "number": "7.4"
+    },
+    {
+      "id": "statements-summary",
+      "level": 3,
+      "title": "Statements Grammar Summary",
+      "number": "7.5"
+    },
+    {
+      "id": "functions",
+      "level": 2,
+      "title": "Functions",
+      "number": "8"
+    },
+    {
+      "id": "function-declaration-sec",
+      "level": 3,
+      "title": "Declaring a user-defined function",
+      "number": "8.1"
+    },
+    {
+      "id": "function-calls",
+      "level": 3,
+      "title": "Function calls",
+      "number": "8.2"
+    },
+    {
+      "id": "function-restriction",
+      "level": 3,
+      "title": "Restrictions on functions",
+      "number": "8.3"
+    },
+    {
+      "id": "entry-points",
+      "level": 2,
+      "title": "Entry Points TODO",
+      "number": "9"
+    },
+    {
+      "id": "shader-stages-sec",
+      "level": 3,
+      "title": "Shader Stages",
+      "number": "9.1"
+    },
+    {
+      "id": "entry-point-decl",
+      "level": 3,
+      "title": "Entry point declaration",
+      "number": "9.2"
+    },
+    {
+      "id": "entry-point-attributes",
+      "level": 4,
+      "title": "Function attributes for entry points",
+      "number": "9.2.1"
+    },
+    {
+      "id": "shader-interface",
+      "level": 3,
+      "title": "Shader Interface",
+      "number": "9.3"
+    },
+    {
+      "id": "pipeline-inputs-outputs",
+      "level": 4,
+      "title": "Pipeline Input and Output Interface",
+      "number": "9.3.1"
+    },
+    {
+      "id": "builtin-inputs-outputs",
+      "level": 5,
+      "title": "Built-in inputs and outputs",
+      "number": "9.3.1.1"
+    },
+    {
+      "id": "user-data-attributes",
+      "level": 5,
+      "title": "User Data Attribute TODO",
+      "number": "9.3.1.2"
+    },
+    {
+      "id": "interpolation",
+      "level": 5,
+      "title": "Interpolation",
+      "number": "9.3.1.3"
+    },
+    {
+      "id": "input-output-locations",
+      "level": 5,
+      "title": "Input-output Locations",
+      "number": "9.3.1.4"
+    },
+    {
+      "id": "resource-interface",
+      "level": 4,
+      "title": "Resource interface",
+      "number": "9.3.2"
+    },
+    {
+      "id": "resource-layout-compatibility",
+      "level": 4,
+      "title": "Resource layout compatibility",
+      "number": "9.3.3"
+    },
+    {
+      "id": "pipeline-compatibility",
+      "level": 3,
+      "title": "Pipeline compatibility TODO",
+      "number": "9.4"
+    },
+    {
+      "id": "input-output-matching",
+      "level": 4,
+      "title": "Input-output matching rules TODO",
+      "number": "9.4.1"
+    },
+    {
+      "id": "language-extensions",
+      "level": 2,
+      "title": "10. Language extensions"
+    },
+    {
+      "id": "enable-directive-section",
+      "level": 3,
+      "title": "Enable Directive",
+      "number": "10.1"
+    },
+    {
+      "id": "wgsl-module",
+      "level": 2,
+      "title": "11. WGSL program TODO"
+    },
+    {
+      "id": "execution",
+      "level": 2,
+      "title": "12. Execution TODO"
+    },
+    {
+      "id": "invocation-of-an-entry-point",
+      "level": 3,
+      "title": "Invocation of an entry point TODO",
+      "number": "12.1"
+    },
+    {
+      "id": "before-entry-point-begins",
+      "level": 4,
+      "title": "Before an entry point begins TODO",
+      "number": "12.1.1"
+    },
+    {
+      "id": "program-order",
+      "level": 4,
+      "title": "Program order (within an invocation) TODO",
+      "number": "12.1.2"
+    },
+    {
+      "id": "function-scope-variable-lifetime",
+      "level": 5,
+      "title": "Function-scope variable lifetime and initialization TODO",
+      "number": "12.1.2.1"
+    },
+    {
+      "id": "statement-order",
+      "level": 5,
+      "title": "Statement order TODO",
+      "number": "12.1.2.2"
+    },
+    {
+      "id": "intra-statement-order",
+      "level": 5,
+      "title": "Intra-statement order (or lack) TODO",
+      "number": "12.1.2.3"
+    },
+    {
+      "id": "uniformity",
+      "level": 3,
+      "title": "Uniformity TODO",
+      "number": "12.2"
+    },
+    {
+      "id": "uniform-control-flow",
+      "level": 4,
+      "title": "Uniform control flow TODO",
+      "number": "12.2.1"
+    },
+    {
+      "id": "divergence-reconvergence",
+      "level": 4,
+      "title": "Divergence and reconvergence TODO",
+      "number": "12.2.2"
+    },
+    {
+      "id": "uniformity-restrictions",
+      "level": 4,
+      "title": "Uniformity restrictions TODO",
+      "number": "12.2.3"
+    },
+    {
+      "id": "compute-shader-workgroups",
+      "level": 3,
+      "title": "Compute Shaders and Workgroups",
+      "number": "12.3"
+    },
+    {
+      "id": "collective-operations",
+      "level": 3,
+      "title": "Collective operations TODO",
+      "number": "12.4"
+    },
+    {
+      "id": "barrier",
+      "level": 4,
+      "title": "Barrier TODO",
+      "number": "12.4.1"
+    },
+    {
+      "id": "image-operations-requiring-uniformity",
+      "level": 4,
+      "title": "Image Operations Requiring Uniformity TODO",
+      "number": "12.4.2"
+    },
+    {
+      "id": "derivatives",
+      "level": 4,
+      "title": "Derivatives",
+      "number": "12.4.3"
+    },
+    {
+      "id": "arrayed-resource-access",
+      "level": 4,
+      "title": "Arrayed resource access TODO",
+      "number": "12.4.4"
+    },
+    {
+      "id": "floating-point-evaluation",
+      "level": 3,
+      "title": "Floating Point Evaluation",
+      "number": "12.5"
+    },
+    {
+      "id": "floating-point-accuracy",
+      "level": 4,
+      "title": "Floating Point Accuracy",
+      "number": "12.5.1"
+    },
+    {
+      "id": "floating-point-conversion",
+      "level": 4,
+      "title": "Floating point conversion",
+      "number": "12.5.2"
+    },
+    {
+      "id": "memory-model",
+      "level": 2,
+      "title": "13. Memory Model TODO"
+    },
+    {
+      "id": "grammar",
+      "level": 2,
+      "title": "14. Keyword and Token Summary"
+    },
+    {
+      "id": "keyword-summary",
+      "level": 3,
+      "title": "Keyword Summary",
+      "number": "14.1"
+    },
+    {
+      "id": "reserved-keywords",
+      "level": 3,
+      "title": "Reserved Keywords",
+      "number": "14.2"
+    },
+    {
+      "id": "syntactic-tokens",
+      "level": 3,
+      "title": "Syntactic Tokens",
+      "number": "14.3"
+    },
+    {
+      "id": "builtin-variables",
+      "level": 2,
+      "title": "15. Built-in variables"
+    },
+    {
+      "id": "builtin-functions",
+      "level": 2,
+      "title": "16. Built-in functions"
+    },
+    {
+      "id": "logical-builtin-functions",
+      "level": 3,
+      "title": "Logical built-in functions",
+      "number": "16.1"
+    },
+    {
+      "id": "value-testing-builtin-functions",
+      "level": 3,
+      "title": "Value-testing built-in functions",
+      "number": "16.2"
+    },
+    {
+      "id": "float-builtin-functions",
+      "level": 3,
+      "title": "Float built-in functions",
+      "number": "16.3"
+    },
+    {
+      "id": "integer-builtin-functions",
+      "level": 3,
+      "title": "Integer built-in functions",
+      "number": "16.4"
+    },
+    {
+      "id": "matrix-builtin-functions",
+      "level": 3,
+      "title": "Matrix built-in functions",
+      "number": "16.5"
+    },
+    {
+      "id": "vector-builtin-functions",
+      "level": 3,
+      "title": "Vector built-in functions",
+      "number": "16.6"
+    },
+    {
+      "id": "derivative-builtin-functions",
+      "level": 3,
+      "title": "Derivative built-in functions",
+      "number": "16.7"
+    },
+    {
+      "id": "texture-builtin-functions",
+      "level": 3,
+      "title": "Texture built-in functions",
+      "number": "16.8"
+    },
+    {
+      "id": "texturedimensions",
+      "level": 4,
+      "title": "textureDimensions",
+      "number": "16.8.1"
+    },
+    {
+      "id": "textureload",
+      "level": 4,
+      "title": "textureLoad",
+      "number": "16.8.2"
+    },
+    {
+      "id": "texturenumlayers",
+      "level": 4,
+      "title": "textureNumLayers",
+      "number": "16.8.3"
+    },
+    {
+      "id": "texturenumlevels",
+      "level": 4,
+      "title": "textureNumLevels",
+      "number": "16.8.4"
+    },
+    {
+      "id": "texturenumsamples",
+      "level": 4,
+      "title": "textureNumSamples",
+      "number": "16.8.5"
+    },
+    {
+      "id": "texturesample",
+      "level": 4,
+      "title": "textureSample",
+      "number": "16.8.6"
+    },
+    {
+      "id": "texturesamplebias",
+      "level": 4,
+      "title": "textureSampleBias",
+      "number": "16.8.7"
+    },
+    {
+      "id": "texturesamplecompare",
+      "level": 4,
+      "title": "textureSampleCompare",
+      "number": "16.8.8"
+    },
+    {
+      "id": "texturesamplecomparelevel",
+      "level": 4,
+      "title": "textureSampleCompareLevel",
+      "number": "16.8.9"
+    },
+    {
+      "id": "texturesamplegrad",
+      "level": 4,
+      "title": "textureSampleGrad",
+      "number": "16.8.10"
+    },
+    {
+      "id": "texturesamplelevel",
+      "level": 4,
+      "title": "textureSampleLevel",
+      "number": "16.8.11"
+    },
+    {
+      "id": "texturestore",
+      "level": 4,
+      "title": "textureStore",
+      "number": "16.8.12"
+    },
+    {
+      "id": "atomic-builtin-functions",
+      "level": 3,
+      "title": "Atomic built-in functions",
+      "number": "16.9"
+    },
+    {
+      "id": "atomic-load",
+      "level": 4,
+      "title": "Atomic Load",
+      "number": "16.9.1"
+    },
+    {
+      "id": "atomic-store",
+      "level": 4,
+      "title": "Atomic Store",
+      "number": "16.9.2"
+    },
+    {
+      "id": "atomic-rmw",
+      "level": 4,
+      "title": "Atomic Read-Modify-Write",
+      "number": "16.9.3"
+    },
+    {
+      "id": "pack-builtin-functions",
+      "level": 3,
+      "title": "Data packing built-in functions",
+      "number": "16.10"
+    },
+    {
+      "id": "unpack-builtin-functions",
+      "level": 3,
+      "title": "Data unpacking built-in functions",
+      "number": "16.11"
+    },
+    {
+      "id": "sync-builtin-functions",
+      "level": 3,
+      "title": "Synchronization built-in functions",
+      "number": "16.12"
+    },
+    {
+      "id": "value-steering-functions",
+      "level": 3,
+      "title": "Value-steering functions",
+      "number": "16.13"
+    },
+    {
+      "id": "glossary",
+      "level": 2,
+      "title": "17. Glossary"
+    },
+    {
+      "id": "junkyard",
+      "level": 2,
+      "title": "18. MATERIAL TO BE MOVED TO A NEW HOME OR DELETED"
+    },
+    {
+      "id": "type-promotions",
+      "level": 3,
+      "title": "Type Promotions",
+      "number": "18.1"
+    },
+    {
+      "id": "precedence",
+      "level": 3,
+      "title": "Precedence",
+      "number": "18.2"
+    },
+    {
+      "id": "w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

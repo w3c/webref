@@ -1,12 +1,12 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-05-24T02:35:33.245Z",
+  "date": "2021-05-31T04:29:17.079Z",
   "options": {
     "publishedVersion": true
   },
   "stats": {
-    "crawled": 395,
+    "crawled": 397,
     "errors": 0
   },
   "results": [
@@ -899,7 +899,7 @@
         "https://fetch.spec.whatwg.org/"
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
-      "date": "12 May 2021",
+      "date": "25 May 2021",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -946,44 +946,6 @@
       "headings": "headings/fullscreen.json",
       "ids": "ids/fullscreen.json",
       "idlparsed": "idlparsed/fullscreen.json"
-    },
-    {
-      "url": "https://gpuweb.github.io/gpuweb/",
-      "seriesComposition": "full",
-      "shortname": "gpuweb",
-      "series": {
-        "shortname": "gpuweb",
-        "currentSpecification": "gpuweb",
-        "nightlyUrl": "https://gpuweb.github.io/gpuweb/"
-      },
-      "tests": {
-        "repository": "https://github.com/gpuweb/cts",
-        "testPaths": [
-          "src/webgpu"
-        ]
-      },
-      "nightly": {
-        "url": "https://gpuweb.github.io/gpuweb/",
-        "repository": "https://github.com/gpuweb/gpuweb",
-        "sourcePath": "spec/index.bs",
-        "filename": "index.html"
-      },
-      "title": "WebGPU",
-      "source": "spec",
-      "shortTitle": "WebGPU",
-      "versions": [
-        "https://gpuweb.github.io/gpuweb/"
-      ],
-      "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "21 May 2021",
-      "links": "links/gpuweb.json",
-      "refs": "refs/gpuweb.json",
-      "idl": "idl/gpuweb.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/gpuweb.json",
-      "headings": "headings/gpuweb.json",
-      "ids": "ids/gpuweb.json",
-      "idlparsed": "idlparsed/gpuweb.json"
     },
     {
       "url": "https://html.spec.whatwg.org/multipage/",
@@ -1102,7 +1064,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "21 May 2021",
+      "date": "26 May 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -1608,7 +1570,7 @@
         "https://streams.spec.whatwg.org/"
       ],
       "crawled": "https://streams.spec.whatwg.org/",
-      "date": "13 May 2021",
+      "date": "26 May 2021",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
       "idl": "idl/streams.idl",
@@ -1652,13 +1614,13 @@
       "idlparsed": "idlparsed/svg-animations.json"
     },
     {
-      "url": "https://tc39.es/ecma262/",
+      "url": "https://tc39.es/ecma262/multipage/",
       "seriesComposition": "full",
       "shortname": "ecmascript",
       "series": {
         "shortname": "ecmascript",
         "currentSpecification": "ecmascript",
-        "nightlyUrl": "https://tc39.es/ecma262/"
+        "nightlyUrl": "https://tc39.es/ecma262/multipage/"
       },
       "shortTitle": "ECMAScript",
       "tests": {
@@ -1671,17 +1633,57 @@
         ]
       },
       "nightly": {
-        "url": "https://tc39.es/ecma262/",
+        "url": "https://tc39.es/ecma262/multipage/",
         "repository": "https://github.com/tc39/ecma262",
         "sourcePath": "spec.html",
+        "pages": [
+          "https://tc39.es/ecma262/multipage/scope.html",
+          "https://tc39.es/ecma262/multipage/conformance.html",
+          "https://tc39.es/ecma262/multipage/normative-references.html",
+          "https://tc39.es/ecma262/multipage/overview.html",
+          "https://tc39.es/ecma262/multipage/notational-conventions.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-data-types-and-values.html",
+          "https://tc39.es/ecma262/multipage/abstract-operations.html",
+          "https://tc39.es/ecma262/multipage/syntax-directed-operations.html",
+          "https://tc39.es/ecma262/multipage/executable-code-and-execution-contexts.html",
+          "https://tc39.es/ecma262/multipage/ordinary-and-exotic-objects-behaviours.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-source-code.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-lexical-grammar.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-expressions.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-statements-and-declarations.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-functions-and-classes.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-language-scripts-and-modules.html",
+          "https://tc39.es/ecma262/multipage/error-handling-and-language-extensions.html",
+          "https://tc39.es/ecma262/multipage/ecmascript-standard-built-in-objects.html",
+          "https://tc39.es/ecma262/multipage/global-object.html",
+          "https://tc39.es/ecma262/multipage/fundamental-objects.html",
+          "https://tc39.es/ecma262/multipage/numbers-and-dates.html",
+          "https://tc39.es/ecma262/multipage/text-processing.html",
+          "https://tc39.es/ecma262/multipage/indexed-collections.html",
+          "https://tc39.es/ecma262/multipage/keyed-collections.html",
+          "https://tc39.es/ecma262/multipage/structured-data.html",
+          "https://tc39.es/ecma262/multipage/managing-memory.html",
+          "https://tc39.es/ecma262/multipage/control-abstraction-objects.html",
+          "https://tc39.es/ecma262/multipage/reflection.html",
+          "https://tc39.es/ecma262/multipage/memory-model.html",
+          "https://tc39.es/ecma262/multipage/grammar-summary.html",
+          "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html",
+          "https://tc39.es/ecma262/multipage/strict-mode-of-ecmascript.html",
+          "https://tc39.es/ecma262/multipage/host-layering-points.html",
+          "https://tc39.es/ecma262/multipage/corrections-and-clarifications-in-ecmascript-2015-with-possible-compatibility-impact.html",
+          "https://tc39.es/ecma262/multipage/additions-and-changes-that-introduce-incompatibilities-with-prior-editions.html",
+          "https://tc39.es/ecma262/multipage/colophon.html",
+          "https://tc39.es/ecma262/multipage/bibliography.html",
+          "https://tc39.es/ecma262/multipage/copyright-and-software-license.html"
+        ],
         "filename": "index.html"
       },
       "title": "ECMAScript® 2022 Language Specification",
       "source": "specref",
       "versions": [
-        "https://tc39.es/ecma262/"
+        "https://tc39.es/ecma262/multipage/"
       ],
-      "crawled": "https://tc39.es/ecma262/",
+      "crawled": "https://tc39.es/ecma262/multipage/",
       "date": "12 May 2021",
       "links": "links/ecmascript.json",
       "generator": null,
@@ -1717,9 +1719,10 @@
         "https://tc39.es/ecma402/"
       ],
       "crawled": "https://tc39.es/ecma402/",
-      "date": "22 May 2021",
+      "date": "24 May 2021",
       "links": "links/ecma-402.json",
       "generator": null,
+      "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
       "ids": "ids/ecma-402.json"
     },
@@ -2054,7 +2057,7 @@
         "https://tc39.es/proposal-temporal/"
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
-      "date": "18 May 2021",
+      "date": "25 May 2021",
       "links": "links/tc39-temporal.json",
       "generator": null,
       "headings": "headings/tc39-temporal.json",
@@ -2082,7 +2085,7 @@
         "https://tc39.es/proposal-top-level-await/"
       ],
       "crawled": "https://tc39.es/proposal-top-level-await/",
-      "date": "19 May 2021",
+      "date": "28 May 2021",
       "links": "links/tc39-top-level-await.json",
       "generator": null,
       "dfns": "dfns/tc39-top-level-await.json",
@@ -2575,44 +2578,6 @@
       "headings": "headings/webrtc-ice.json",
       "ids": "ids/webrtc-ice.json",
       "idlparsed": "idlparsed/webrtc-ice.json"
-    },
-    {
-      "url": "https://w3c.github.io/webtransport/",
-      "seriesComposition": "full",
-      "shortname": "webtransport",
-      "series": {
-        "shortname": "webtransport",
-        "currentSpecification": "webtransport",
-        "nightlyUrl": "https://w3c.github.io/webtransport/"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/webtransport/",
-        "repository": "https://github.com/w3c/webtransport",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "title": "WebTransport",
-      "source": "specref",
-      "shortTitle": "WebTransport",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "webtransport"
-        ]
-      },
-      "versions": [
-        "https://w3c.github.io/webtransport/"
-      ],
-      "crawled": "https://w3c.github.io/webtransport/",
-      "date": "18 May 2021",
-      "links": "links/webtransport.json",
-      "refs": "refs/webtransport.json",
-      "idl": "idl/webtransport.idl",
-      "generator": "bikeshed",
-      "dfns": "dfns/webtransport.json",
-      "headings": "headings/webtransport.json",
-      "ids": "ids/webtransport.json",
-      "idlparsed": "idlparsed/webtransport.json"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -3131,6 +3096,42 @@
       "headings": "headings/deprecation-reporting.json",
       "ids": "ids/deprecation-reporting.json",
       "idlparsed": "idlparsed/deprecation-reporting.json"
+    },
+    {
+      "url": "https://wicg.github.io/document-policy/",
+      "seriesComposition": "full",
+      "shortname": "document-policy",
+      "series": {
+        "shortname": "document-policy",
+        "currentSpecification": "document-policy",
+        "nightlyUrl": "https://wicg.github.io/document-policy/"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/document-policy/",
+        "repository": "https://github.com/WICG/document-policy",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Document Policy",
+      "source": "spec",
+      "shortTitle": "Document Policy",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "document-policy"
+        ]
+      },
+      "versions": [
+        "https://wicg.github.io/document-policy/"
+      ],
+      "crawled": "https://wicg.github.io/document-policy/",
+      "date": "22 February 2021",
+      "links": "links/document-policy.json",
+      "refs": "refs/document-policy.json",
+      "generator": "bikeshed",
+      "dfns": "dfns/document-policy.json",
+      "headings": "headings/document-policy.json",
+      "ids": "ids/document-policy.json"
     },
     {
       "url": "https://wicg.github.io/element-timing/",
@@ -3999,7 +4000,7 @@
         "https://wicg.github.io/performance-measure-memory/"
       ],
       "crawled": "https://wicg.github.io/performance-measure-memory/",
-      "date": "13 January 2021",
+      "date": "28 May 2021",
       "links": "links/performance-measure-memory.json",
       "refs": "refs/performance-measure-memory.json",
       "idl": "idl/performance-measure-memory.idl",
@@ -4224,7 +4225,7 @@
         "https://wicg.github.io/private-network-access/"
       ],
       "crawled": "https://wicg.github.io/private-network-access/",
-      "date": "5 May 2021",
+      "date": "27 May 2021",
       "links": "links/private-network-access.json",
       "refs": "refs/private-network-access.json",
       "generator": "bikeshed",
@@ -4260,7 +4261,7 @@
         "https://wicg.github.io/sanitizer-api/"
       ],
       "crawled": "https://wicg.github.io/sanitizer-api/",
-      "date": "30 April 2021",
+      "date": "26 May 2021",
       "links": "links/sanitizer-api.json",
       "refs": "refs/sanitizer-api.json",
       "idl": "idl/sanitizer-api.idl",
@@ -4330,7 +4331,7 @@
         "https://wicg.github.io/scheduling-apis/"
       ],
       "crawled": "https://wicg.github.io/scheduling-apis/",
-      "date": "21 May 2021",
+      "date": "27 May 2021",
       "links": "links/scheduling-apis.json",
       "refs": "refs/scheduling-apis.json",
       "idl": "idl/scheduling-apis.idl",
@@ -4582,7 +4583,7 @@
         "https://wicg.github.io/ua-client-hints/"
       ],
       "crawled": "https://wicg.github.io/ua-client-hints/",
-      "date": "21 May 2021",
+      "date": "27 May 2021",
       "links": "links/ua-client-hints.json",
       "refs": "refs/ua-client-hints.json",
       "idl": "idl/ua-client-hints.idl",
@@ -4658,7 +4659,7 @@
         "https://wicg.github.io/visual-viewport/"
       ],
       "crawled": "https://wicg.github.io/visual-viewport/",
-      "date": "24 February 2020",
+      "date": "27 May 2021",
       "links": "links/visual-viewport.json",
       "refs": "refs/visual-viewport.json",
       "idl": "idl/visual-viewport.idl",
@@ -4878,7 +4879,7 @@
         "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "generator": null,
@@ -4912,7 +4913,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "generator": null,
@@ -4946,7 +4947,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl",
       "generator": null,
@@ -4980,7 +4981,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "generator": null,
@@ -5014,7 +5015,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "generator": null,
@@ -5048,7 +5049,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "generator": null,
@@ -5082,7 +5083,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "generator": null,
@@ -5116,7 +5117,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "generator": null,
@@ -5150,7 +5151,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "generator": null,
@@ -5184,7 +5185,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "generator": null,
@@ -5218,7 +5219,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "generator": null,
@@ -5252,7 +5253,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "generator": null,
@@ -5286,7 +5287,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "generator": null,
@@ -5320,7 +5321,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "generator": null,
@@ -5354,7 +5355,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "generator": null,
@@ -5388,7 +5389,7 @@
         "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "generator": null,
@@ -5422,7 +5423,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "generator": null,
@@ -5456,7 +5457,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "generator": null,
@@ -5490,7 +5491,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "generator": null,
@@ -5524,7 +5525,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "generator": null,
@@ -5558,7 +5559,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "generator": null,
@@ -5592,7 +5593,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "generator": null,
@@ -5626,7 +5627,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "generator": null,
@@ -5660,7 +5661,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "generator": null,
@@ -5694,7 +5695,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "generator": null,
@@ -5728,7 +5729,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "generator": null,
@@ -5762,7 +5763,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "generator": null,
@@ -5796,7 +5797,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "generator": null,
@@ -5830,7 +5831,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "generator": null,
@@ -5864,7 +5865,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "generator": null,
@@ -5898,7 +5899,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "generator": null,
@@ -5932,7 +5933,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "generator": null,
@@ -5966,7 +5967,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "generator": null,
@@ -6000,7 +6001,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "generator": null,
@@ -6034,7 +6035,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "generator": null,
@@ -6068,7 +6069,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "generator": null,
@@ -6102,7 +6103,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "generator": null,
@@ -6136,7 +6137,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "generator": null,
@@ -6170,7 +6171,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -6204,7 +6205,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "generator": null,
@@ -6238,7 +6239,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "generator": null,
@@ -6272,7 +6273,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-      "date": "18 May 2021",
+      "date": "26 May 2021",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "generator": null,
@@ -6523,7 +6524,7 @@
         "https://w3c.github.io/manifest/"
       ],
       "crawled": "https://www.w3.org/TR/appmanifest/",
-      "date": "07 April 2021",
+      "date": "26 May 2021",
       "links": "links/appmanifest.json",
       "refs": "refs/appmanifest.json",
       "generator": "respec",
@@ -6740,7 +6741,7 @@
         "https://w3c.github.io/clipboard-apis/"
       ],
       "crawled": "https://www.w3.org/TR/clipboard-apis/",
-      "date": "21 May 2021",
+      "date": "25 May 2021",
       "links": "links/clipboard-apis.json",
       "refs": "refs/clipboard-apis.json",
       "idl": "idl/clipboard-apis.idl",
@@ -10765,15 +10766,15 @@
         "shortname": "device-posture",
         "currentSpecification": "device-posture",
         "releaseUrl": "https://www.w3.org/TR/device-posture/",
-        "nightlyUrl": "https://w3c.github.io/screen-fold/"
+        "nightlyUrl": "https://w3c.github.io/device-posture/"
       },
       "release": {
         "url": "https://www.w3.org/TR/device-posture/",
         "filename": "Overview.html"
       },
       "nightly": {
-        "url": "https://w3c.github.io/screen-fold/",
-        "repository": "https://github.com/w3c/screen-fold",
+        "url": "https://w3c.github.io/device-posture/",
+        "repository": "https://github.com/w3c/device-posture",
         "sourcePath": "index.html",
         "filename": "index.html"
       },
@@ -10782,7 +10783,7 @@
       "shortTitle": "Device Posture API",
       "versions": [
         "https://www.w3.org/TR/device-posture/",
-        "https://w3c.github.io/screen-fold/"
+        "https://w3c.github.io/device-posture/"
       ],
       "crawled": "https://www.w3.org/TR/device-posture/",
       "date": "13 May 2021",
@@ -11212,7 +11213,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Geolocation API Specification 2nd Edition",
+      "title": "Geolocation API",
       "source": "w3c",
       "shortTitle": "Geolocation API Specification 2nd Edition",
       "tests": {
@@ -11227,11 +11228,11 @@
         "https://dev.w3.org/geo/api/spec-source.html"
       ],
       "crawled": "https://www.w3.org/TR/geolocation-API/",
-      "date": "31 January 2018)",
+      "date": "27 May 2021",
       "links": "links/geolocation-API.json",
       "refs": "refs/geolocation-API.json",
       "idl": "idl/geolocation-API.idl",
-      "generator": null,
+      "generator": "respec",
       "dfns": "dfns/geolocation-API.json",
       "headings": "headings/geolocation-API.json",
       "ids": "ids/geolocation-API.json",
@@ -11562,7 +11563,7 @@
         "https://w3c.github.io/html-aria/"
       ],
       "crawled": "https://www.w3.org/TR/html-aria/",
-      "date": "17 May 2021",
+      "date": "30 May 2021",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "generator": "respec",
@@ -13199,7 +13200,7 @@
       },
       "title": "Pointer Events",
       "source": "w3c",
-      "shortTitle": "Pointer Events 3",
+      "shortTitle": "Pointer Events",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -13387,7 +13388,7 @@
         "https://w3c.github.io/proximity/"
       ],
       "crawled": "https://www.w3.org/TR/proximity/",
-      "date": "5 March 2019",
+      "date": "27 May 2021",
       "links": "links/proximity.json",
       "refs": "refs/proximity.json",
       "idl": "idl/proximity.idl",
@@ -13780,7 +13781,7 @@
         "https://w3c.github.io/mediacapture-screen-share/"
       ],
       "crawled": "https://www.w3.org/TR/screen-capture/",
-      "date": "05 February 2021",
+      "date": "27 May 2021",
       "links": "links/screen-capture.json",
       "refs": "refs/screen-capture.json",
       "idl": "idl/screen-capture.idl",
@@ -13956,7 +13957,7 @@
         "https://w3c.github.io/selection-api/"
       ],
       "crawled": "https://www.w3.org/TR/selection-api/",
-      "date": "21 January 2021",
+      "date": "28 May 2021",
       "links": "links/selection-api.json",
       "refs": "refs/selection-api.json",
       "idl": "idl/selection-api.idl",
@@ -15369,7 +15370,7 @@
         "https://w3c.github.io/webcodecs/"
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
-      "date": "21 May 2021",
+      "date": "27 May 2021",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "idl": "idl/webcodecs.idl",
@@ -15467,6 +15468,50 @@
       "headings": "headings/webdriver2.json",
       "ids": "ids/webdriver2.json",
       "idlparsed": "idlparsed/webdriver2.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/webgpu/",
+      "seriesComposition": "full",
+      "shortname": "webgpu",
+      "series": {
+        "shortname": "webgpu",
+        "currentSpecification": "webgpu",
+        "releaseUrl": "https://www.w3.org/TR/webgpu/",
+        "nightlyUrl": "https://gpuweb.github.io/gpuweb/"
+      },
+      "tests": {
+        "repository": "https://github.com/gpuweb/cts",
+        "testPaths": [
+          "src/webgpu"
+        ]
+      },
+      "release": {
+        "url": "https://www.w3.org/TR/webgpu/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://gpuweb.github.io/gpuweb/",
+        "repository": "https://github.com/gpuweb/gpuweb",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebGPU",
+      "source": "w3c",
+      "shortTitle": "WebGPU",
+      "versions": [
+        "https://www.w3.org/TR/webgpu/",
+        "https://gpuweb.github.io/gpuweb/"
+      ],
+      "crawled": "https://www.w3.org/TR/webgpu/",
+      "date": "28 May 2021",
+      "links": "links/webgpu.json",
+      "refs": "refs/webgpu.json",
+      "idl": "idl/webgpu.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/webgpu.json",
+      "headings": "headings/webgpu.json",
+      "ids": "ids/webgpu.json",
+      "idlparsed": "idlparsed/webgpu.json"
     },
     {
       "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -15778,6 +15823,50 @@
       "idlparsed": "idlparsed/webrtc.json"
     },
     {
+      "url": "https://www.w3.org/TR/webtransport/",
+      "seriesComposition": "full",
+      "shortname": "webtransport",
+      "series": {
+        "shortname": "webtransport",
+        "currentSpecification": "webtransport",
+        "releaseUrl": "https://www.w3.org/TR/webtransport/",
+        "nightlyUrl": "https://w3c.github.io/webtransport/"
+      },
+      "release": {
+        "url": "https://www.w3.org/TR/webtransport/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/webtransport/",
+        "repository": "https://github.com/w3c/webtransport",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebTransport",
+      "source": "w3c",
+      "shortTitle": "WebTransport",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "webtransport"
+        ]
+      },
+      "versions": [
+        "https://www.w3.org/TR/webtransport/",
+        "https://w3c.github.io/webtransport/"
+      ],
+      "crawled": "https://www.w3.org/TR/webtransport/",
+      "date": "4 May 2021",
+      "links": "links/webtransport.json",
+      "refs": "refs/webtransport.json",
+      "idl": "idl/webtransport.idl",
+      "generator": "bikeshed",
+      "dfns": "dfns/webtransport.json",
+      "headings": "headings/webtransport.json",
+      "ids": "ids/webtransport.json",
+      "idlparsed": "idlparsed/webtransport.json"
+    },
+    {
       "url": "https://www.w3.org/TR/webvtt1/",
       "seriesComposition": "full",
       "shortname": "webvtt1",
@@ -16054,6 +16143,42 @@
       "headings": "headings/webxrlayers-1.json",
       "ids": "ids/webxrlayers-1.json",
       "idlparsed": "idlparsed/webxrlayers-1.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/WGSL/",
+      "seriesComposition": "full",
+      "shortname": "WGSL",
+      "series": {
+        "shortname": "WGSL",
+        "currentSpecification": "WGSL",
+        "releaseUrl": "https://www.w3.org/TR/WGSL/",
+        "nightlyUrl": "https://gpuweb.github.io/gpuweb/wgsl/"
+      },
+      "release": {
+        "url": "https://www.w3.org/TR/WGSL/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://gpuweb.github.io/gpuweb/wgsl/",
+        "repository": "https://github.com/gpuweb/gpuweb",
+        "sourcePath": "spec/index.bs",
+        "filename": "index.html"
+      },
+      "title": "WebGPU Shading Language",
+      "source": "w3c",
+      "shortTitle": "WebGPU Shading Language",
+      "versions": [
+        "https://www.w3.org/TR/WGSL/",
+        "https://gpuweb.github.io/gpuweb/wgsl/"
+      ],
+      "crawled": "https://www.w3.org/TR/WGSL/",
+      "date": "28 May 2021",
+      "links": "links/WGSL.json",
+      "refs": "refs/WGSL.json",
+      "generator": "bikeshed",
+      "dfns": "dfns/WGSL.json",
+      "headings": "headings/WGSL.json",
+      "ids": "ids/WGSL.json"
     },
     {
       "url": "https://www.w3.org/TR/WOFF2/",

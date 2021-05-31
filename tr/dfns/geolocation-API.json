@@ -1,86 +1,215 @@
 {
   "spec": {
-    "title": "Geolocation API Specification 2nd Edition",
+    "title": "Geolocation API",
     "url": "https://www.w3.org/TR/geolocation-API/"
   },
   "dfns": [
     {
-      "id": "navi-geo",
-      "href": "https://www.w3.org/TR/geolocation-API/#navi-geo",
+      "id": "dom-navigator-geolocation",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-navigator-geolocation",
       "linkingText": [
+        "geolocation"
+      ],
+      "localLinkingText": [
+        "Navigator.geolocation"
+      ],
+      "type": "attribute",
+      "for": [
         "Navigator"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "id": "navigator_interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "4"
       },
       "definedIn": "pre"
     },
     {
-      "id": "geolocation",
-      "href": "https://www.w3.org/TR/geolocation-API/#geolocation",
+      "id": "dom-geolocation",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocation",
       "linkingText": [
         "Geolocation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "interface",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
     },
     {
-      "id": "position-callback",
-      "href": "https://www.w3.org/TR/geolocation-API/#position-callback",
+      "id": "dom-positioncallback",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positioncallback",
       "linkingText": [
         "PositionCallback"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "callback",
+      "for": [
+        "PositionCallback"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
     },
     {
-      "id": "error-callback",
-      "href": "https://www.w3.org/TR/geolocation-API/#error-callback",
+      "id": "dom-positionerrorcallback",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positionerrorcallback",
       "linkingText": [
         "PositionErrorCallback"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "callback",
+      "for": [
+        "PositionErrorCallback"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "title": "Geolocation interface and callbacks",
+        "number": "5"
       },
       "definedIn": "pre"
     },
     {
-      "id": "get-current-position",
-      "href": "https://www.w3.org/TR/geolocation-API/#get-current-position",
+      "id": "dfn-cachedposition",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-cachedposition",
       "linkingText": [
-        "getCurrentPosition()"
+        "[[cachedPosition]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-watchtasks",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-watchtasks",
+      "linkingText": [
+        "[[watchTasks]]"
+      ],
+      "localLinkingText": [],
+      "type": "idl",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-geolocation-getcurrentposition",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocation-getcurrentposition",
+      "linkingText": [
+        "getCurrentPosition()",
+        "getCurrentPosition(successCallback)",
+        "getCurrentPosition(successCallback, errorCallback)",
+        "getCurrentPosition(successCallback, errorCallback, options)"
+      ],
+      "localLinkingText": [
+        "Geolocation.getCurrentPosition",
+        "Geolocation.getCurrentPosition()",
+        "getCurrentPosition"
+      ],
+      "type": "method",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "getcurrentposition-method",
+        "title": "getCurrentPosition() method",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-geolocation-watchposition",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocation-watchposition",
+      "linkingText": [
+        "watchPosition()",
+        "watchPosition(successCallback)",
+        "watchPosition(successCallback, errorCallback)",
+        "watchPosition(successCallback, errorCallback, options)"
+      ],
+      "localLinkingText": [
+        "Geolocation.watchPosition",
+        "Geolocation.watchPosition()",
+        "watchPosition"
+      ],
+      "type": "method",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "watchposition-method",
+        "title": "watchPosition() method",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-geolocation-clearwatch",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocation-clearwatch",
+      "linkingText": [
+        "clearWatch()",
+        "clearWatch(watchId)"
+      ],
+      "localLinkingText": [
+        "Geolocation.clearWatch",
+        "Geolocation.clearWatch()",
+        "clearWatch"
+      ],
+      "type": "method",
+      "for": [
+        "Geolocation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "clearwatch-method",
+        "title": "clearWatch() method",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-request-position",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-request-position",
+      "linkingText": [
+        "Request position"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -88,17 +217,40 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "id": "request-position",
+        "title": "Request position",
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "watch-position",
-      "href": "https://www.w3.org/TR/geolocation-API/#watch-position",
+      "id": "dfn-acquire-position",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-acquire-position",
       "linkingText": [
-        "watchPosition()"
+        "Acquire position",
+        "acquiring a position",
+        "acquire a position"
+      ],
+      "localLinkingText": [
+        "acquiring a position",
+        "acquire a position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "request-position",
+        "title": "Request position",
+        "number": "5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-check-permission",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-check-permission",
+      "linkingText": [
+        "check permission"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -106,17 +258,17 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "id": "check-permission",
+        "title": "Check permission",
+        "number": "5.6"
       },
       "definedIn": "prose"
     },
     {
-      "id": "clear-watch",
-      "href": "https://www.w3.org/TR/geolocation-API/#clear-watch",
+      "id": "dfn-call-back-with-error",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-call-back-with-error",
       "linkingText": [
-        "clearWatch()"
+        "call back with error"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -124,305 +276,351 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
+        "id": "call-back-with-error",
+        "title": "Call back with error",
+        "number": "5.7"
       },
       "definedIn": "prose"
     },
     {
-      "id": "watchId",
-      "href": "https://www.w3.org/TR/geolocation-API/#watchId",
-      "linkingText": [
-        "watchId"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "geolocation_interface",
-        "title": "Geolocation interface",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "position-options",
-      "href": "https://www.w3.org/TR/geolocation-API/#position-options",
+      "id": "dom-positionoptions",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positionoptions",
       "linkingText": [
         "PositionOptions"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "position_options_interface",
-        "title": "PositionOptions interface",
-        "number": "5.2"
+        "title": "PositionOptions dictionary",
+        "number": "6"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
-      "id": "high-accuracy",
-      "href": "https://www.w3.org/TR/geolocation-API/#high-accuracy",
+      "id": "dom-positionoptions-enablehighaccuracy",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positionoptions-enablehighaccuracy",
       "linkingText": [
         "enableHighAccuracy"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "PositionOptions"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_options_interface",
-        "title": "PositionOptions interface",
-        "number": "5.2"
+        "id": "enablehighaccuracy-member",
+        "title": "enableHighAccuracy member",
+        "number": "6.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "timeout",
-      "href": "https://www.w3.org/TR/geolocation-API/#timeout",
+      "id": "dom-positionoptions-timeout",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positionoptions-timeout",
       "linkingText": [
         "timeout"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "PositionOptions"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_options_interface",
-        "title": "PositionOptions interface",
-        "number": "5.2"
+        "id": "timeout-member",
+        "title": "timeout member",
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "max-age",
-      "href": "https://www.w3.org/TR/geolocation-API/#max-age",
+      "id": "dom-positionoptions-maximumage",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-positionoptions-maximumage",
       "linkingText": [
         "maximumAge"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "PositionOptions"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_options_interface",
-        "title": "PositionOptions interface",
-        "number": "5.2"
+        "id": "maximumage-member",
+        "title": "maximumAge member",
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "position",
-      "href": "https://www.w3.org/TR/geolocation-API/#position",
+      "id": "dom-geolocationposition",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationposition",
       "linkingText": [
-        "Position"
+        "GeolocationPosition"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "interface",
+      "for": [
+        "GeolocationPosition"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "position_interface",
-        "title": "Position interface",
-        "number": "5.3"
+        "title": "GeolocationPosition interface",
+        "number": "7"
       },
       "definedIn": "pre"
     },
     {
-      "id": "coords",
-      "href": "https://www.w3.org/TR/geolocation-API/#coords",
+      "id": "dom-geolocationposition-coords",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationposition-coords",
       "linkingText": [
         "coords"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationPosition.coords"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationPosition"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_interface",
-        "title": "Position interface",
-        "number": "5.3"
+        "id": "coords-attribute",
+        "title": "coords attribute",
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "timestamp",
-      "href": "https://www.w3.org/TR/geolocation-API/#timestamp",
+      "id": "dom-geolocationposition-timestamp",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationposition-timestamp",
       "linkingText": [
         "timestamp"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationPosition.timestamp"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationPosition"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_interface",
-        "title": "Position interface",
-        "number": "5.3"
+        "id": "timestamp-attribute",
+        "title": "timestamp attribute",
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "coordinates",
-      "href": "https://www.w3.org/TR/geolocation-API/#coordinates",
+      "id": "dfn-ishighaccuracy",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-ishighaccuracy",
       "linkingText": [
-        "Coordinates"
+        "[[isHighAccuracy]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "idl",
+      "for": [
+        "GeolocationPosition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots-0",
+        "title": "Internal slots",
+        "number": "7.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-geolocationcoordinates",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates",
+      "linkingText": [
+        "GeolocationCoordinates"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "title": "GeolocationCoordinates interface",
+        "number": "8"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
-      "id": "lat",
-      "href": "https://www.w3.org/TR/geolocation-API/#lat",
+      "id": "dom-geolocationcoordinates-latitude",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-latitude",
       "linkingText": [
         "latitude"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationCoordinates.latitude"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "latitude-longitude-and-accuracy-attributes",
+        "title": "latitude, longitude, and accuracy attributes",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "lon",
-      "href": "https://www.w3.org/TR/geolocation-API/#lon",
+      "id": "dom-geolocationcoordinates-longitude",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-longitude",
       "linkingText": [
         "longitude"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "altitude",
-      "href": "https://www.w3.org/TR/geolocation-API/#altitude",
-      "linkingText": [
-        "altitude"
+      "localLinkingText": [
+        "GeolocationCoordinates.longitude"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "latitude-longitude-and-accuracy-attributes",
+        "title": "latitude, longitude, and accuracy attributes",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "accuracy",
-      "href": "https://www.w3.org/TR/geolocation-API/#accuracy",
+      "id": "dom-geolocationcoordinates-accuracy",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-accuracy",
       "linkingText": [
         "accuracy"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationCoordinates.accuracy"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "latitude-longitude-and-accuracy-attributes",
+        "title": "latitude, longitude, and accuracy attributes",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "altitude-accuracy",
-      "href": "https://www.w3.org/TR/geolocation-API/#altitude-accuracy",
+      "id": "dom-geolocationcoordinates-altitude",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [
+        "GeolocationCoordinates.altitude"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "altitude-and-altitudeaccuracy-attributes",
+        "title": "altitude and altitudeAccuracy attributes",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-geolocationcoordinates-altitudeaccuracy",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-altitudeaccuracy",
       "linkingText": [
         "altitudeAccuracy"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationCoordinates.altitudeAccuracy"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "altitude-and-altitudeaccuracy-attributes",
+        "title": "altitude and altitudeAccuracy attributes",
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "heading",
-      "href": "https://www.w3.org/TR/geolocation-API/#heading",
+      "id": "dom-geolocationcoordinates-heading",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-heading",
       "linkingText": [
         "heading"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationCoordinates.heading"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "heading-attribute",
+        "title": "heading attribute",
+        "number": "8.3"
       },
       "definedIn": "prose"
     },
     {
-      "id": "speed",
-      "href": "https://www.w3.org/TR/geolocation-API/#speed",
+      "id": "dom-geolocationcoordinates-speed",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationcoordinates-speed",
       "linkingText": [
         "speed"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationCoordinates.speed"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationCoordinates"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "coordinates_interface",
-        "title": "Coordinates interface",
-        "number": "5.4"
+        "id": "speed-attribute",
+        "title": "speed attribute",
+        "number": "8.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "position-error",
-      "href": "https://www.w3.org/TR/geolocation-API/#position-error",
+      "id": "dfn-a-new-geolocationposition",
+      "href": "https://www.w3.org/TR/geolocation-API/#dfn-a-new-geolocationposition",
       "linkingText": [
-        "PositionError"
+        "A new GeolocationPosition"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -430,99 +628,131 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "code",
-      "href": "https://www.w3.org/TR/geolocation-API/#code",
-      "linkingText": [
-        "code"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
+        "id": "constructing-a-geolocationposition",
+        "title": "Constructing a GeolocationPosition",
+        "number": "8.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "permission_denied_error",
-      "href": "https://www.w3.org/TR/geolocation-API/#permission_denied_error",
+      "id": "dom-geolocationpositionerror",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror",
+      "linkingText": [
+        "GeolocationPositionError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position_error_interface",
+        "title": "GeolocationPositionError interface",
+        "number": "9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-geolocationpositionerror-permission_denied",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-permission_denied",
       "linkingText": [
         "PERMISSION_DENIED"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "position_unavailable_error",
-      "href": "https://www.w3.org/TR/geolocation-API/#position_unavailable_error",
+      "id": "dom-geolocationpositionerror-position_unavailable",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-position_unavailable",
       "linkingText": [
         "POSITION_UNAVAILABLE"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "timeout_error",
-      "href": "https://www.w3.org/TR/geolocation-API/#timeout_error",
+      "id": "dom-geolocationpositionerror-timeout",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-timeout",
       "linkingText": [
         "TIMEOUT"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "const",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
+        "id": "constants",
+        "title": "Constants",
+        "number": "9.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "message",
-      "href": "https://www.w3.org/TR/geolocation-API/#message",
+      "id": "dom-geolocationpositionerror-code",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-code",
+      "linkingText": [
+        "code"
+      ],
+      "localLinkingText": [
+        "GeolocationPositionError.code"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "code-attribute",
+        "title": "code attribute",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-geolocationpositionerror-message",
+      "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocationpositionerror-message",
       "linkingText": [
         "message"
       ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "localLinkingText": [
+        "GeolocationPositionError.message"
+      ],
+      "type": "attribute",
+      "for": [
+        "GeolocationPositionError"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "position_error_interface",
-        "title": "PositionError interface",
-        "number": "5.5"
+        "id": "message-attribute",
+        "title": "message attribute",
+        "number": "9.3"
       },
       "definedIn": "prose"
     }

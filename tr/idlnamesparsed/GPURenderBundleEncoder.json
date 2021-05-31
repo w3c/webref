@@ -3,30 +3,30 @@
   "defined": {
     "spec": {
       "title": "WebGPU",
-      "url": "https://gpuweb.github.io/gpuweb/"
+      "url": "https://www.w3.org/TR/webgpu/"
     },
     "fragment": "[Exposed=Window]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
-    "href": "https://gpuweb.github.io/gpuweb/#gpurenderbundleencoder"
+    "href": "https://www.w3.org/TR/webgpu/#gpurenderbundleencoder"
   },
   "extended": [
     {
       "spec": {
         "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPURenderBundleEncoder includes GPUObjectBase;"
     },
     {
       "spec": {
         "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPURenderBundleEncoder includes GPUProgrammablePassEncoder;"
     },
     {
       "spec": {
         "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
+        "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPURenderBundleEncoder includes GPURenderEncoderBase;"
     }
@@ -38,10 +38,10 @@
       "defined": {
         "spec": {
           "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
+          "url": "https://www.w3.org/TR/webgpu/"
         },
         "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+        "href": "https://www.w3.org/TR/webgpu/#gpuobjectbase"
       },
       "extended": [],
       "inheritance": null,
@@ -52,10 +52,10 @@
       "defined": {
         "spec": {
           "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
+          "url": "https://www.w3.org/TR/webgpu/"
         },
         "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder"
+        "href": "https://www.w3.org/TR/webgpu/#gpuprogrammablepassencoder"
       },
       "extended": [],
       "inheritance": null,
@@ -66,10 +66,10 @@
       "defined": {
         "spec": {
           "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
+          "url": "https://www.w3.org/TR/webgpu/"
         },
         "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#gpurenderencoderbase"
+        "href": "https://www.w3.org/TR/webgpu/#gpurenderencoderbase"
       },
       "extended": [],
       "inheritance": null,

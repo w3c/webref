@@ -1,14 +1,14 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary VideoFramePlaneInit {
   required PixelFormat format;
-  required unsigned long codedWidth;
-  required unsigned long codedHeight;
-  unsigned long cropLeft;
-  unsigned long cropTop;
-  unsigned long cropWidth;
-  unsigned long cropHeight;
-  unsigned long displayWidth;
-  unsigned long displayHeight;
-  long long duration;     // microseconds
-  long long timestamp;    // microseconds
+  [EnforceRange] required unsigned long codedWidth;
+  [EnforceRange] required unsigned long codedHeight;
+  [EnforceRange] unsigned long cropLeft;
+  [EnforceRange] unsigned long cropTop;
+  [EnforceRange] unsigned long cropWidth;
+  [EnforceRange] unsigned long cropHeight;
+  [EnforceRange] unsigned long displayWidth;
+  [EnforceRange] unsigned long displayHeight;
+  [EnforceRange] long long duration;     // microseconds
+  [EnforceRange] long long timestamp;    // microseconds
 };

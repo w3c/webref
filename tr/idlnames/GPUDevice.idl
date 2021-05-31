@@ -1,4 +1,4 @@
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 [Exposed=(Window, DedicatedWorker), Serializable]
 interface GPUDevice : EventTarget {
     [SameObject] readonly attribute GPUSupportedFeatures features;
@@ -29,21 +29,21 @@ interface GPUDevice : EventTarget {
     GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);
 };
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 GPUDevice includes GPUObjectBase;
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 partial interface GPUDevice {
     readonly attribute Promise<GPUDeviceLostInfo> lost;
 };
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 partial interface GPUDevice {
     undefined pushErrorScope(GPUErrorFilter filter);
     Promise<GPUError?> popErrorScope();
 };
 
-// Source: WebGPU (https://gpuweb.github.io/gpuweb/)
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 partial interface GPUDevice {
     [Exposed=(Window, DedicatedWorker)]
     attribute EventHandler onuncapturederror;

@@ -11,13 +11,6 @@
   "extended": [
     {
       "spec": {
-        "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
-      },
-      "fragment": "Navigator includes NavigatorGPU;"
-    },
-    {
-      "spec": {
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
@@ -228,10 +221,10 @@
     },
     {
       "spec": {
-        "title": "Geolocation API Specification 2nd Edition",
+        "title": "Geolocation API",
         "url": "https://www.w3.org/TR/geolocation-API/"
       },
-      "fragment": "partial interface Navigator {\n  readonly attribute Geolocation geolocation;\n};"
+      "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute Geolocation geolocation;\n};"
     },
     {
       "spec": {
@@ -347,6 +340,13 @@
     },
     {
       "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "Navigator includes NavigatorGPU;"
+    },
+    {
+      "spec": {
         "title": "Web MIDI API",
         "url": "https://www.w3.org/TR/webmidi/"
       },
@@ -362,20 +362,6 @@
   ],
   "inheritance": null,
   "includes": [
-    {
-      "name": "NavigatorGPU",
-      "defined": {
-        "spec": {
-          "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
-        },
-        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
     {
       "name": "NavigatorID",
       "defined": {
@@ -575,6 +561,20 @@
         },
         "fragment": "interface mixin NavigatorAutomationInformation {\n  readonly attribute boolean webdriver;\n};",
         "href": "https://www.w3.org/TR/webdriver2/#dom-navigatorautomationinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorGPU",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "href": "https://www.w3.org/TR/webgpu/#navigatorgpu"
       },
       "extended": [],
       "inheritance": null,

@@ -1,4 +1,4 @@
-// Source: WebTransport (https://w3c.github.io/webtransport/)
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
 [Exposed=(Window,Worker)]
 interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
@@ -9,14 +9,13 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
-
-  readonly attribute unsigned short maxDatagramSize;
-  readonly attribute DatagramDuplexStream datagrams;
-
-  Promise<BidirectionalStream> createBidirectionalStream();
-  /* a ReadableStream of BidirectionalStream objects */
-  readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
-// Source: WebTransport (https://w3c.github.io/webtransport/)
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
 WebTransport includes UnidirectionalStreamsTransport;
+
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
+WebTransport includes BidirectionalStreamsTransport;
+
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
+WebTransport includes DatagramTransport;

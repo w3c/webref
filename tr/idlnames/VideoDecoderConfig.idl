@@ -2,13 +2,9 @@
 dictionary VideoDecoderConfig {
   required DOMString codec;
   BufferSource description;
-  unsigned long codedWidth;
-  unsigned long codedHeight;
-  unsigned long cropLeft;
-  unsigned long cropTop;
-  unsigned long cropWidth;
-  unsigned long cropHeight;
-  unsigned long displayWidth;
-  unsigned long displayHeight;
+  [EnforceRange] unsigned long codedWidth;
+  [EnforceRange] unsigned long codedHeight;
+  [EnforceRange] unsigned long displayAspectWidth;
+  [EnforceRange] unsigned long displayAspectHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
 };

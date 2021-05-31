@@ -11,13 +11,6 @@
   "extended": [
     {
       "spec": {
-        "title": "WebGPU",
-        "url": "https://gpuweb.github.io/gpuweb/"
-      },
-      "fragment": "WorkerNavigator includes NavigatorGPU;"
-    },
-    {
-      "spec": {
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
@@ -120,24 +113,17 @@
         "url": "https://www.w3.org/TR/service-workers-1/"
       },
       "fragment": "partial interface WorkerNavigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorGPU;"
     }
   ],
   "inheritance": null,
   "includes": [
-    {
-      "name": "NavigatorGPU",
-      "defined": {
-        "spec": {
-          "title": "WebGPU",
-          "url": "https://gpuweb.github.io/gpuweb/"
-        },
-        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
-        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
     {
       "name": "NavigatorID",
       "defined": {
@@ -281,6 +267,20 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
         "href": "https://wicg.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorGPU",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "href": "https://www.w3.org/TR/webgpu/#navigatorgpu"
       },
       "extended": [],
       "inheritance": null,

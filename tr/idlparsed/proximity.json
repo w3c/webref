@@ -14,11 +14,35 @@
     },
     "idlNames": {
       "ProximitySensor": {
-        "fragment": "[Constructor(optional SensorOptions sensorOptions), SecureContext, Exposed=Window]\ninterface ProximitySensor : Sensor {\n  readonly attribute double? distance;\n  readonly attribute double? max;\n  readonly attribute boolean? near;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface ProximitySensor : Sensor {\n  constructor(optional SensorOptions sensorOptions = {});\n  readonly attribute double? distance;\n  readonly attribute double? max;\n  readonly attribute boolean? near;\n};",
         "type": "interface",
         "name": "ProximitySensor",
         "inheritance": "Sensor",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sensorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "distance",
@@ -66,29 +90,6 @@
           }
         ],
         "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "sensorOptions",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SensorOptions"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
           {
             "type": "extended-attribute",
             "name": "SecureContext",

@@ -1,0 +1,14 @@
+{
+  "name": "BidirectionalStreamsTransport",
+  "defined": {
+    "spec": {
+      "title": "WebTransport",
+      "url": "https://www.w3.org/TR/webtransport/"
+    },
+    "fragment": "interface mixin BidirectionalStreamsTransport {\n    Promise<BidirectionalStream> createBidirectionalStream();\n    /* a ReadableStream of BidirectionalStream objects */\n    readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
+    "href": "https://www.w3.org/TR/webtransport/#bidirectionalstreamstransport"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

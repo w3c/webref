@@ -1,0 +1,3384 @@
+{
+  "spec": {
+    "title": "WebGPU Shading Language",
+    "url": "https://www.w3.org/TR/WGSL/"
+  },
+  "dfns": [
+    {
+      "id": "draw-command",
+      "href": "https://www.w3.org/TR/WGSL/#draw-command",
+      "linkingText": [
+        "draw command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "technical-overview",
+        "title": "Technical Overview",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dispatch-command",
+      "href": "https://www.w3.org/TR/WGSL/#dispatch-command",
+      "linkingText": [
+        "dispatch command"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "technical-overview",
+        "title": "Technical Overview",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader",
+      "href": "https://www.w3.org/TR/WGSL/#shader",
+      "linkingText": [
+        "shader"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "technical-overview",
+        "title": "Technical Overview",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "invocations",
+      "href": "https://www.w3.org/TR/WGSL/#invocations",
+      "linkingText": [
+        "invocations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "technical-overview",
+        "title": "Technical Overview",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "floor-expression",
+      "href": "https://www.w3.org/TR/WGSL/#floor-expression",
+      "linkingText": [
+        "floor expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notation",
+        "title": "Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ceiling-expression",
+      "href": "https://www.w3.org/TR/WGSL/#ceiling-expression",
+      "linkingText": [
+        "ceiling expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notation",
+        "title": "Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "roundup",
+      "href": "https://www.w3.org/TR/WGSL/#roundup",
+      "linkingText": [
+        "roundUp"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notation",
+        "title": "Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "transpose",
+      "href": "https://www.w3.org/TR/WGSL/#transpose",
+      "linkingText": [
+        "transpose"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "notation",
+        "title": "Notation",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader-module-creation",
+      "href": "https://www.w3.org/TR/WGSL/#shader-module-creation",
+      "linkingText": [
+        "Shader module creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "program-lifecycle",
+        "title": "Shader Lifecycle",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-creation",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-creation",
+      "linkingText": [
+        "Pipeline creation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "program-lifecycle",
+        "title": "Shader Lifecycle",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader-execution-start",
+      "href": "https://www.w3.org/TR/WGSL/#shader-execution-start",
+      "linkingText": [
+        "Shader execution start"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "program-lifecycle",
+        "title": "Shader Lifecycle",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader-execution-end",
+      "href": "https://www.w3.org/TR/WGSL/#shader-execution-end",
+      "linkingText": [
+        "Shader execution end"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "program-lifecycle",
+        "title": "Shader Lifecycle",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "program-error",
+      "href": "https://www.w3.org/TR/WGSL/#program-error",
+      "linkingText": [
+        "program error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kinds-of-errors",
+        "title": "Kinds of errors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader-creation-error",
+      "href": "https://www.w3.org/TR/WGSL/#shader-creation-error",
+      "linkingText": [
+        "shader-creation error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kinds-of-errors",
+        "title": "Kinds of errors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-creation-error",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-creation-error",
+      "linkingText": [
+        "pipeline-creation error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kinds-of-errors",
+        "title": "Kinds of errors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dynamic-error",
+      "href": "https://www.w3.org/TR/WGSL/#dynamic-error",
+      "linkingText": [
+        "dynamic error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "kinds-of-errors",
+        "title": "Kinds of errors",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute",
+      "href": "https://www.w3.org/TR/WGSL/#attribute",
+      "linkingText": [
+        "attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attribute-align",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-align",
+      "linkingText": [
+        "align"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-binding",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-binding",
+      "linkingText": [
+        "binding"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-block",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-block",
+      "linkingText": [
+        "block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-builtin",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-builtin",
+      "linkingText": [
+        "builtin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-group",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-group",
+      "linkingText": [
+        "group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-interpolate",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-interpolate",
+      "linkingText": [
+        "interpolate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-invariant",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-invariant",
+      "linkingText": [
+        "invariant"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-location",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-location",
+      "linkingText": [
+        "location"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-override",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-override",
+      "linkingText": [
+        "override"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-size",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-size",
+      "linkingText": [
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-stage",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-stage",
+      "linkingText": [
+        "stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-stride",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-stride",
+      "linkingText": [
+        "stride"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "attribute-workgroup_size",
+      "href": "https://www.w3.org/TR/WGSL/#attribute-workgroup_size",
+      "linkingText": [
+        "workgroup_size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attribute"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "title": "Attributes",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "directive",
+      "href": "https://www.w3.org/TR/WGSL/#directive",
+      "linkingText": [
+        "directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "directives",
+        "title": "Directives TODO",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "declaration",
+      "href": "https://www.w3.org/TR/WGSL/#declaration",
+      "linkingText": [
+        "declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "name",
+      "href": "https://www.w3.org/TR/WGSL/#name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scope",
+      "href": "https://www.w3.org/TR/WGSL/#scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "in-scope",
+      "href": "https://www.w3.org/TR/WGSL/#in-scope",
+      "linkingText": [
+        "in scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "predeclared",
+      "href": "https://www.w3.org/TR/WGSL/#predeclared",
+      "linkingText": [
+        "predeclared"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resolves",
+      "href": "https://www.w3.org/TR/WGSL/#resolves",
+      "linkingText": [
+        "resolves"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "module-scope",
+      "href": "https://www.w3.org/TR/WGSL/#module-scope",
+      "linkingText": [
+        "module scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "declaration-and-scope",
+        "title": "Declaration and scope",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type",
+      "href": "https://www.w3.org/TR/WGSL/#type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types",
+        "title": "Types",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "expression",
+      "href": "https://www.w3.org/TR/WGSL/#expression",
+      "linkingText": [
+        "expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subexpressions",
+      "href": "https://www.w3.org/TR/WGSL/#subexpressions",
+      "linkingText": [
+        "subexpressions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "static-context",
+      "href": "https://www.w3.org/TR/WGSL/#static-context",
+      "linkingText": [
+        "static context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dynamic-context",
+      "href": "https://www.w3.org/TR/WGSL/#dynamic-context",
+      "linkingText": [
+        "dynamic context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "static-type",
+      "href": "https://www.w3.org/TR/WGSL/#static-type",
+      "linkingText": [
+        "static type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-checking",
+      "href": "https://www.w3.org/TR/WGSL/#type-checking",
+      "linkingText": [
+        "Type checking"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-assertion",
+      "href": "https://www.w3.org/TR/WGSL/#type-assertion",
+      "linkingText": [
+        "type assertion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-rule",
+      "href": "https://www.w3.org/TR/WGSL/#type-rule",
+      "linkingText": [
+        "type rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-rule-applies-to-an-expression",
+      "href": "https://www.w3.org/TR/WGSL/#type-rule-applies-to-an-expression",
+      "linkingText": [
+        "type rule applies to an expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "well-typed",
+      "href": "https://www.w3.org/TR/WGSL/#well-typed",
+      "linkingText": [
+        "well-typed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-error",
+      "href": "https://www.w3.org/TR/WGSL/#type-error",
+      "linkingText": [
+        "type error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "statically-typed-language",
+      "href": "https://www.w3.org/TR/WGSL/#statically-typed-language",
+      "linkingText": [
+        "statically typed language"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-checking-section",
+        "title": "Type Checking",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "type-rule-tables",
+      "href": "https://www.w3.org/TR/WGSL/#type-rule-tables",
+      "linkingText": [
+        "type rule tables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "typing-tables-section",
+        "title": "Type rule tables",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "semantics-of-an-expression",
+      "href": "https://www.w3.org/TR/WGSL/#semantics-of-an-expression",
+      "linkingText": [
+        "semantics of an expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "typing-tables-section",
+        "title": "Type rule tables",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "plain-type",
+      "href": "https://www.w3.org/TR/WGSL/#plain-type",
+      "linkingText": [
+        "plain type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "plain-types-section",
+        "title": "Plain Types",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bool",
+      "href": "https://www.w3.org/TR/WGSL/#bool",
+      "linkingText": [
+        "bool"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bool-type",
+        "title": "Boolean Type",
+        "number": "4.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "u32",
+      "href": "https://www.w3.org/TR/WGSL/#u32",
+      "linkingText": [
+        "u32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integer-types",
+        "title": "Integer Types",
+        "number": "4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "i32",
+      "href": "https://www.w3.org/TR/WGSL/#i32",
+      "linkingText": [
+        "i32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "integer-types",
+        "title": "Integer Types",
+        "number": "4.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "f32",
+      "href": "https://www.w3.org/TR/WGSL/#f32",
+      "linkingText": [
+        "f32"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-types",
+        "title": "Floating Point Type",
+        "number": "4.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scalar",
+      "href": "https://www.w3.org/TR/WGSL/#scalar",
+      "linkingText": [
+        "scalar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scalar-types",
+        "title": "Scalar Types",
+        "number": "4.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "numeric-scalar",
+      "href": "https://www.w3.org/TR/WGSL/#numeric-scalar",
+      "linkingText": [
+        "numeric scalar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scalar-types",
+        "title": "Scalar Types",
+        "number": "4.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vector",
+      "href": "https://www.w3.org/TR/WGSL/#vector",
+      "linkingText": [
+        "vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "title": "Vector Types",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "component-type",
+      "href": "https://www.w3.org/TR/WGSL/#component-type",
+      "linkingText": [
+        "component type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "title": "Vector Types",
+        "number": "4.2.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "numeric-vector",
+      "href": "https://www.w3.org/TR/WGSL/#numeric-vector",
+      "linkingText": [
+        "numeric vector"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "title": "Vector Types",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "component-wise",
+      "href": "https://www.w3.org/TR/WGSL/#component-wise",
+      "linkingText": [
+        "component-wise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "vector-types",
+        "title": "Vector Types",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "matrix",
+      "href": "https://www.w3.org/TR/WGSL/#matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "matrix-types",
+        "title": "Matrix Types",
+        "number": "4.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "atomic-type",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-type",
+      "linkingText": [
+        "atomic type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "atomic-types",
+        "title": "Atomic Types",
+        "number": "4.2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "atomic-modification",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-modification",
+      "linkingText": [
+        "atomic modification"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "atomic-types",
+        "title": "Atomic Types",
+        "number": "4.2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "array",
+      "href": "https://www.w3.org/TR/WGSL/#array",
+      "linkingText": [
+        "array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "array-types",
+        "title": "Array Types",
+        "number": "4.2.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "runtime-sized",
+      "href": "https://www.w3.org/TR/WGSL/#runtime-sized",
+      "linkingText": [
+        "runtime-sized"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "array-types",
+        "title": "Array Types",
+        "number": "4.2.8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "structure",
+      "href": "https://www.w3.org/TR/WGSL/#structure",
+      "linkingText": [
+        "structure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "struct-types",
+        "title": "Structure Types",
+        "number": "4.2.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "composite",
+      "href": "https://www.w3.org/TR/WGSL/#composite",
+      "linkingText": [
+        "composite"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-types",
+        "title": "Composite Types",
+        "number": "4.2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "components",
+      "href": "https://www.w3.org/TR/WGSL/#components",
+      "linkingText": [
+        "components"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "composite-types",
+        "title": "Composite Types",
+        "number": "4.2.10"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "atomic-free",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-free",
+      "linkingText": [
+        "atomic-free"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "atomic-free-types",
+        "title": "Atomic-Free Types",
+        "number": "4.2.11"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-locations",
+      "href": "https://www.w3.org/TR/WGSL/#memory-locations",
+      "linkingText": [
+        "memory locations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-locations-section",
+        "title": "Memory Locations",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "overlap",
+      "href": "https://www.w3.org/TR/WGSL/#overlap",
+      "linkingText": [
+        "overlap"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-locations-section",
+        "title": "Memory Locations",
+        "number": "4.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-access",
+      "href": "https://www.w3.org/TR/WGSL/#memory-access",
+      "linkingText": [
+        "memory access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "read-access",
+      "href": "https://www.w3.org/TR/WGSL/#read-access",
+      "linkingText": [
+        "read access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "write-access",
+      "href": "https://www.w3.org/TR/WGSL/#write-access",
+      "linkingText": [
+        "write access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "access-mode",
+      "href": "https://www.w3.org/TR/WGSL/#access-mode",
+      "linkingText": [
+        "access mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "access-read",
+      "href": "https://www.w3.org/TR/WGSL/#access-read",
+      "linkingText": [
+        "read"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "access"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "access-write",
+      "href": "https://www.w3.org/TR/WGSL/#access-write",
+      "linkingText": [
+        "write"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "access"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "access-read_write",
+      "href": "https://www.w3.org/TR/WGSL/#access-read_write",
+      "linkingText": [
+        "read_write"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "access"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-access-mode",
+        "title": "Memory Access Mode",
+        "number": "4.3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "storable",
+      "href": "https://www.w3.org/TR/WGSL/#storable",
+      "linkingText": [
+        "storable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storable-types",
+        "title": "Storable Types",
+        "number": "4.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "io-shareable",
+      "href": "https://www.w3.org/TR/WGSL/#io-shareable",
+      "linkingText": [
+        "IO-shareable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "io-shareable-types",
+        "title": "IO-shareable Types",
+        "number": "4.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "host-shareable",
+      "href": "https://www.w3.org/TR/WGSL/#host-shareable",
+      "linkingText": [
+        "host-shareable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "host-shareable-types",
+        "title": "Host-shareable Types",
+        "number": "4.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-classes",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes",
+      "linkingText": [
+        "storage classes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-classes-function",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-function",
+      "linkingText": [
+        "function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "storage-classes-private",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-private",
+      "linkingText": [
+        "private"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "storage-classes-workgroup",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-workgroup",
+      "linkingText": [
+        "workgroup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "storage-classes-uniform",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-uniform",
+      "linkingText": [
+        "uniform"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "storage-classes-storage",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "storage-classes-handle",
+      "href": "https://www.w3.org/TR/WGSL/#storage-classes-handle",
+      "linkingText": [
+        "handle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage classes"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class",
+        "title": "Storage Classes",
+        "number": "4.3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "memory-layout",
+      "href": "https://www.w3.org/TR/WGSL/#memory-layout",
+      "linkingText": [
+        "memory layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-layouts",
+        "title": "Memory Layout",
+        "number": "4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "alignof",
+      "href": "https://www.w3.org/TR/WGSL/#alignof",
+      "linkingText": [
+        "AlignOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-layouts",
+        "title": "Memory Layout",
+        "number": "4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sizeof",
+      "href": "https://www.w3.org/TR/WGSL/#sizeof",
+      "linkingText": [
+        "SizeOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-layouts",
+        "title": "Memory Layout",
+        "number": "4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "strideof",
+      "href": "https://www.w3.org/TR/WGSL/#strideof",
+      "linkingText": [
+        "StrideOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-layouts",
+        "title": "Memory Layout",
+        "number": "4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "offsetof",
+      "href": "https://www.w3.org/TR/WGSL/#offsetof",
+      "linkingText": [
+        "OffsetOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-layouts",
+        "title": "Memory Layout",
+        "number": "4.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "requiredalignof",
+      "href": "https://www.w3.org/TR/WGSL/#requiredalignof",
+      "linkingText": [
+        "RequiredAlignOf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-class-layout-constraints",
+        "title": "Storage Class Layout Constraints",
+        "number": "4.3.7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-view",
+      "href": "https://www.w3.org/TR/WGSL/#memory-view",
+      "linkingText": [
+        "memory view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-view-types",
+        "title": "Memory View Types",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reference-type",
+      "href": "https://www.w3.org/TR/WGSL/#reference-type",
+      "linkingText": [
+        "reference type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-view-types",
+        "title": "Memory View Types",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "store-type",
+      "href": "https://www.w3.org/TR/WGSL/#store-type",
+      "linkingText": [
+        "store type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-view-types",
+        "title": "Memory View Types",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "pointer-type",
+      "href": "https://www.w3.org/TR/WGSL/#pointer-type",
+      "linkingText": [
+        "pointer type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-view-types",
+        "title": "Memory View Types",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "pointee-type",
+      "href": "https://www.w3.org/TR/WGSL/#pointee-type",
+      "linkingText": [
+        "pointee type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-view-types",
+        "title": "Memory View Types",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "originating-variable",
+      "href": "https://www.w3.org/TR/WGSL/#originating-variable",
+      "linkingText": [
+        "originating variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "originating-variable-section",
+        "title": "Originating variable",
+        "number": "4.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "load-rule",
+      "href": "https://www.w3.org/TR/WGSL/#load-rule",
+      "linkingText": [
+        "Load Rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ref-ptr-use-cases",
+        "title": "Use cases for references and pointers",
+        "number": "4.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "composite-reference-component-expression",
+      "href": "https://www.w3.org/TR/WGSL/#composite-reference-component-expression",
+      "linkingText": [
+        "composite reference component expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "forming-references-and-pointers",
+        "title": "Forming reference and pointer values",
+        "number": "4.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texel",
+      "href": "https://www.w3.org/TR/WGSL/#texel",
+      "linkingText": [
+        "texel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texture",
+      "href": "https://www.w3.org/TR/WGSL/#texture",
+      "linkingText": [
+        "texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "non-arrayed-texture",
+      "href": "https://www.w3.org/TR/WGSL/#non-arrayed-texture",
+      "linkingText": [
+        "non-arrayed texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arrayed-texture",
+      "href": "https://www.w3.org/TR/WGSL/#arrayed-texture",
+      "linkingText": [
+        "arrayed texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "array-size",
+      "href": "https://www.w3.org/TR/WGSL/#array-size",
+      "linkingText": [
+        "array size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "texel-format",
+      "href": "https://www.w3.org/TR/WGSL/#texel-format",
+      "linkingText": [
+        "texel format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "channels",
+      "href": "https://www.w3.org/TR/WGSL/#channels",
+      "linkingText": [
+        "channels"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "channel-format",
+      "href": "https://www.w3.org/TR/WGSL/#channel-format",
+      "linkingText": [
+        "channel format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "channel-formats",
+      "href": "https://www.w3.org/TR/WGSL/#channel-formats",
+      "linkingText": [
+        "Channel Formats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "channel-transfer-function",
+      "href": "https://www.w3.org/TR/WGSL/#channel-transfer-function",
+      "linkingText": [
+        "channel transfer function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-texel-formats",
+      "href": "https://www.w3.org/TR/WGSL/#storage-texel-formats",
+      "linkingText": [
+        "storage-texel-formats"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texel-formats",
+        "title": "Texel formats",
+        "number": "4.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-texture",
+      "href": "https://www.w3.org/TR/WGSL/#storage-texture",
+      "linkingText": [
+        "storage texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-storage",
+        "title": "Storage Texture Types",
+        "number": "4.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "read-only-storage-texture",
+      "href": "https://www.w3.org/TR/WGSL/#read-only-storage-texture",
+      "linkingText": [
+        "read-only storage texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-storage",
+        "title": "Storage Texture Types",
+        "number": "4.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "write-only-storage-texture",
+      "href": "https://www.w3.org/TR/WGSL/#write-only-storage-texture",
+      "linkingText": [
+        "write-only storage texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-storage",
+        "title": "Storage Texture Types",
+        "number": "4.5.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sampler",
+      "href": "https://www.w3.org/TR/WGSL/#sampler",
+      "linkingText": [
+        "sampler"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sampler-type",
+        "title": "Sampler Type",
+        "number": "4.5.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "let-declaration",
+      "href": "https://www.w3.org/TR/WGSL/#let-declaration",
+      "linkingText": [
+        "let declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "var-and-let",
+        "title": "var and let",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "variable",
+      "href": "https://www.w3.org/TR/WGSL/#variable",
+      "linkingText": [
+        "variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "var-and-let",
+        "title": "var and let",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "variable-declaration",
+      "href": "https://www.w3.org/TR/WGSL/#variable-declaration",
+      "linkingText": [
+        "variable declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "var-and-let",
+        "title": "var and let",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "lifetime",
+      "href": "https://www.w3.org/TR/WGSL/#lifetime",
+      "linkingText": [
+        "lifetime"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "var-and-let",
+        "title": "var and let",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "uniform-buffer",
+      "href": "https://www.w3.org/TR/WGSL/#uniform-buffer",
+      "linkingText": [
+        "uniform buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-scope-variables",
+        "title": "Module Scope Variables",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-buffer",
+      "href": "https://www.w3.org/TR/WGSL/#storage-buffer",
+      "linkingText": [
+        "storage buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-scope-variables",
+        "title": "Module Scope Variables",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-overridable",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-overridable",
+      "linkingText": [
+        "pipeline-overridable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-constants",
+        "title": "Module Constants",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-constant-id",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-constant-id",
+      "linkingText": [
+        "pipeline constant ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "module-constants",
+        "title": "Module Constants",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-scope",
+      "href": "https://www.w3.org/TR/WGSL/#function-scope",
+      "linkingText": [
+        "function scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-scope-variables",
+        "title": "Function Scope Variables and Constants",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "address-of",
+      "href": "https://www.w3.org/TR/WGSL/#address-of",
+      "linkingText": [
+        "address-of"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "address-of-expr",
+        "title": "Address-Of Expression",
+        "number": "6.14"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "indirection",
+      "href": "https://www.w3.org/TR/WGSL/#indirection",
+      "linkingText": [
+        "indirection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "indirection-expr",
+        "title": "Indirection Expression",
+        "number": "6.15"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "assignment-statement",
+      "href": "https://www.w3.org/TR/WGSL/#assignment-statement",
+      "linkingText": [
+        "assignment statement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "assignment",
+        "title": "Assignment Statement",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "left-hand-side",
+      "href": "https://www.w3.org/TR/WGSL/#left-hand-side",
+      "linkingText": [
+        "left-hand side"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "assignment",
+        "title": "Assignment Statement",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "right-hand-side",
+      "href": "https://www.w3.org/TR/WGSL/#right-hand-side",
+      "linkingText": [
+        "right-hand side"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "assignment",
+        "title": "Assignment Statement",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "loop-body",
+      "href": "https://www.w3.org/TR/WGSL/#loop-body",
+      "linkingText": [
+        "loop body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loop-statement",
+        "title": "Loop Statement",
+        "number": "7.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iteration",
+      "href": "https://www.w3.org/TR/WGSL/#iteration",
+      "linkingText": [
+        "iteration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "loop-statement",
+        "title": "Loop Statement",
+        "number": "7.3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "return",
+      "href": "https://www.w3.org/TR/WGSL/#return",
+      "linkingText": [
+        "return"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "return-statement",
+        "title": "Return Statement",
+        "number": "7.3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-function",
+      "href": "https://www.w3.org/TR/WGSL/#function-function",
+      "linkingText": [
+        "function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "function"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "functions",
+        "title": "Functions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-defined-function",
+      "href": "https://www.w3.org/TR/WGSL/#user-defined-function",
+      "linkingText": [
+        "user-defined function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "functions",
+        "title": "Functions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-declaration",
+      "href": "https://www.w3.org/TR/WGSL/#function-declaration",
+      "linkingText": [
+        "function declaration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-declaration-sec",
+        "title": "Declaring a user-defined function",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "return-type",
+      "href": "https://www.w3.org/TR/WGSL/#return-type",
+      "linkingText": [
+        "return type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-declaration-sec",
+        "title": "Declaring a user-defined function",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-body",
+      "href": "https://www.w3.org/TR/WGSL/#function-body",
+      "linkingText": [
+        "function body"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-declaration-sec",
+        "title": "Declaring a user-defined function",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "formal-parameter",
+      "href": "https://www.w3.org/TR/WGSL/#formal-parameter",
+      "linkingText": [
+        "formal parameter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-declaration-sec",
+        "title": "Declaring a user-defined function",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "function-call",
+      "href": "https://www.w3.org/TR/WGSL/#function-call",
+      "linkingText": [
+        "function call"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-calls",
+        "title": "Function calls",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "call-site",
+      "href": "https://www.w3.org/TR/WGSL/#call-site",
+      "linkingText": [
+        "call site"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "function-calls",
+        "title": "Function calls",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline",
+      "linkingText": [
+        "pipeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucomputepipeline",
+      "href": "https://www.w3.org/TR/WGSL/#gpucomputepipeline",
+      "linkingText": [
+        "GPUComputePipeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-shader-stage",
+      "href": "https://www.w3.org/TR/WGSL/#compute-shader-stage",
+      "linkingText": [
+        "compute shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpurenderpipeline",
+      "href": "https://www.w3.org/TR/WGSL/#gpurenderpipeline",
+      "linkingText": [
+        "GPURenderPipeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vertex-shader-stage",
+      "href": "https://www.w3.org/TR/WGSL/#vertex-shader-stage",
+      "linkingText": [
+        "vertex shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-shader-stage",
+      "href": "https://www.w3.org/TR/WGSL/#fragment-shader-stage",
+      "linkingText": [
+        "fragment shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "shader-stages",
+      "href": "https://www.w3.org/TR/WGSL/#shader-stages",
+      "linkingText": [
+        "shader stages"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute",
+      "href": "https://www.w3.org/TR/WGSL/#compute",
+      "linkingText": [
+        "compute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "vertex",
+      "href": "https://www.w3.org/TR/WGSL/#vertex",
+      "linkingText": [
+        "vertex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment",
+      "href": "https://www.w3.org/TR/WGSL/#fragment",
+      "linkingText": [
+        "fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-stages-sec",
+        "title": "Shader Stages",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "entry-point",
+      "href": "https://www.w3.org/TR/WGSL/#entry-point",
+      "linkingText": [
+        "entry point"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "entry-point-decl",
+        "title": "Entry point declaration",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "functions-in-a-shader-stage",
+      "href": "https://www.w3.org/TR/WGSL/#functions-in-a-shader-stage",
+      "linkingText": [
+        "functions in a shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "entry-point-decl",
+        "title": "Entry point declaration",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "statically-accessed",
+      "href": "https://www.w3.org/TR/WGSL/#statically-accessed",
+      "linkingText": [
+        "statically accessed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-interface",
+        "title": "Shader Interface",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interface-of-a-shader-stage",
+      "href": "https://www.w3.org/TR/WGSL/#interface-of-a-shader-stage",
+      "linkingText": [
+        "interface of a shader stage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shader-interface",
+        "title": "Shader Interface",
+        "number": "9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "entry-point-io-type",
+      "href": "https://www.w3.org/TR/WGSL/#entry-point-io-type",
+      "linkingText": [
+        "Entry point IO type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipeline-inputs-outputs",
+        "title": "Pipeline Input and Output Interface",
+        "number": "9.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-input",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-input",
+      "linkingText": [
+        "pipeline input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipeline-inputs-outputs",
+        "title": "Pipeline Input and Output Interface",
+        "number": "9.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pipeline-output",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-output",
+      "linkingText": [
+        "pipeline output"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pipeline-inputs-outputs",
+        "title": "Pipeline Input and Output Interface",
+        "number": "9.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "built-in-input-variable",
+      "href": "https://www.w3.org/TR/WGSL/#built-in-input-variable",
+      "linkingText": [
+        "built-in input variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-inputs-outputs",
+        "title": "Built-in inputs and outputs",
+        "number": "9.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "built-in-output-variable",
+      "href": "https://www.w3.org/TR/WGSL/#built-in-output-variable",
+      "linkingText": [
+        "built-in output variable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-inputs-outputs",
+        "title": "Built-in inputs and outputs",
+        "number": "9.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-type",
+      "href": "https://www.w3.org/TR/WGSL/#interpolation-type",
+      "linkingText": [
+        "interpolation type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation",
+        "title": "Interpolation",
+        "number": "9.3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "interpolation-sampling",
+      "href": "https://www.w3.org/TR/WGSL/#interpolation-sampling",
+      "linkingText": [
+        "interpolation sampling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "interpolation",
+        "title": "Interpolation",
+        "number": "9.3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resource",
+      "href": "https://www.w3.org/TR/WGSL/#resource",
+      "linkingText": [
+        "resource"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-interface",
+        "title": "Resource interface",
+        "number": "9.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resource-interface-of-a-shader",
+      "href": "https://www.w3.org/TR/WGSL/#resource-interface-of-a-shader",
+      "linkingText": [
+        "resource interface of a shader"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-interface",
+        "title": "Resource interface",
+        "number": "9.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extension",
+      "href": "https://www.w3.org/TR/WGSL/#extension",
+      "linkingText": [
+        "extension"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "language-extensions",
+        "title": "10. Language extensions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enable-directive",
+      "href": "https://www.w3.org/TR/WGSL/#enable-directive",
+      "linkingText": [
+        "enable directive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "enable-directive-section",
+        "title": "Enable Directive",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-shader-stage-workgroup",
+      "href": "https://www.w3.org/TR/WGSL/#compute-shader-stage-workgroup",
+      "linkingText": [
+        "workgroup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "compute shader stage"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workgroup-grid",
+      "href": "https://www.w3.org/TR/WGSL/#workgroup-grid",
+      "linkingText": [
+        "workgroup grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-invocation-id",
+      "href": "https://www.w3.org/TR/WGSL/#local-invocation-id",
+      "linkingText": [
+        "local invocation ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-invocation-index",
+      "href": "https://www.w3.org/TR/WGSL/#local-invocation-index",
+      "linkingText": [
+        "local invocation index"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dispatch-size",
+      "href": "https://www.w3.org/TR/WGSL/#dispatch-size",
+      "linkingText": [
+        "dispatch size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-shader-grid",
+      "href": "https://www.w3.org/TR/WGSL/#compute-shader-grid",
+      "linkingText": [
+        "compute shader grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "global-invocation-id",
+      "href": "https://www.w3.org/TR/WGSL/#global-invocation-id",
+      "linkingText": [
+        "global invocation ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "workgroup-id",
+      "href": "https://www.w3.org/TR/WGSL/#workgroup-id",
+      "linkingText": [
+        "workgroup ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compute-shader-workgroups",
+        "title": "Compute Shaders and Workgroups",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "partial-derivative",
+      "href": "https://www.w3.org/TR/WGSL/#partial-derivative",
+      "linkingText": [
+        "partial derivative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "derivatives",
+        "title": "Derivatives",
+        "number": "12.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "correctly-rounded",
+      "href": "https://www.w3.org/TR/WGSL/#correctly-rounded",
+      "linkingText": [
+        "correctly rounded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-accuracy",
+        "title": "Floating Point Accuracy",
+        "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "ulp",
+      "href": "https://www.w3.org/TR/WGSL/#ulp",
+      "linkingText": [
+        "ULP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-accuracy",
+        "title": "Floating Point Accuracy",
+        "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inherited-from",
+      "href": "https://www.w3.org/TR/WGSL/#inherited-from",
+      "linkingText": [
+        "inherited from"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-accuracy",
+        "title": "Floating Point Accuracy",
+        "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reassociation",
+      "href": "https://www.w3.org/TR/WGSL/#reassociation",
+      "linkingText": [
+        "Reassociation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "floating-point-accuracy",
+        "title": "Floating Point Accuracy",
+        "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "built-in-functions",
+      "href": "https://www.w3.org/TR/WGSL/#built-in-functions",
+      "linkingText": [
+        "built-in functions"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "builtin-functions",
+        "title": "16. Built-in functions"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

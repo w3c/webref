@@ -3,18 +3,32 @@
   "defined": {
     "spec": {
       "title": "WebTransport",
-      "url": "https://w3c.github.io/webtransport/"
+      "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
-    "href": "https://w3c.github.io/webtransport/#webtransport"
+    "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n};",
+    "href": "https://www.w3.org/TR/webtransport/#webtransport"
   },
   "extended": [
     {
       "spec": {
         "title": "WebTransport",
-        "url": "https://w3c.github.io/webtransport/"
+        "url": "https://www.w3.org/TR/webtransport/"
       },
       "fragment": "WebTransport includes UnidirectionalStreamsTransport;"
+    },
+    {
+      "spec": {
+        "title": "WebTransport",
+        "url": "https://www.w3.org/TR/webtransport/"
+      },
+      "fragment": "WebTransport includes BidirectionalStreamsTransport;"
+    },
+    {
+      "spec": {
+        "title": "WebTransport",
+        "url": "https://www.w3.org/TR/webtransport/"
+      },
+      "fragment": "WebTransport includes DatagramTransport;"
     }
   ],
   "inheritance": null,
@@ -24,10 +38,38 @@
       "defined": {
         "spec": {
           "title": "WebTransport",
-          "url": "https://w3c.github.io/webtransport/"
+          "url": "https://www.w3.org/TR/webtransport/"
         },
         "fragment": "interface mixin UnidirectionalStreamsTransport {\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
-        "href": "https://w3c.github.io/webtransport/#unidirectionalstreamstransport"
+        "href": "https://www.w3.org/TR/webtransport/#unidirectionalstreamstransport"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "BidirectionalStreamsTransport",
+      "defined": {
+        "spec": {
+          "title": "WebTransport",
+          "url": "https://www.w3.org/TR/webtransport/"
+        },
+        "fragment": "interface mixin BidirectionalStreamsTransport {\n    Promise<BidirectionalStream> createBidirectionalStream();\n    /* a ReadableStream of BidirectionalStream objects */\n    readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectionalstreamstransport"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "DatagramTransport",
+      "defined": {
+        "spec": {
+          "title": "WebTransport",
+          "url": "https://www.w3.org/TR/webtransport/"
+        },
+        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    readonly attribute DatagramDuplexStream datagrams;\n};",
+        "href": "https://www.w3.org/TR/webtransport/#datagramtransport"
       },
       "extended": [],
       "inheritance": null,

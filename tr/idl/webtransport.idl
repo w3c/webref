@@ -1,7 +1,7 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: WebTransport (https://w3c.github.io/webtransport/)
+// Source: WebTransport (https://www.w3.org/TR/webtransport/)
 
 interface mixin UnidirectionalStreamsTransport {
   Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
@@ -10,6 +10,17 @@ interface mixin UnidirectionalStreamsTransport {
 };
 
 dictionary SendStreamParameters {
+};
+
+interface mixin BidirectionalStreamsTransport {
+    Promise<BidirectionalStream> createBidirectionalStream();
+    /* a ReadableStream of BidirectionalStream objects */
+    readonly attribute ReadableStream incomingBidirectionalStreams;
+};
+
+interface mixin DatagramTransport {
+    readonly attribute unsigned short maxDatagramSize;
+    readonly attribute DatagramDuplexStream datagrams;
 };
 
 [Exposed=(Window,Worker)]
@@ -28,16 +39,11 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
   attribute EventHandler onstatechange;
-
-  readonly attribute unsigned short maxDatagramSize;
-  readonly attribute DatagramDuplexStream datagrams;
-
-  Promise<BidirectionalStream> createBidirectionalStream();
-  /* a ReadableStream of BidirectionalStream objects */
-  readonly attribute ReadableStream incomingBidirectionalStreams;
 };
 
 WebTransport includes UnidirectionalStreamsTransport;
+WebTransport includes BidirectionalStreamsTransport;
+WebTransport includes DatagramTransport;
 
 dictionary WebTransportOptions {
   boolean allowPooling;

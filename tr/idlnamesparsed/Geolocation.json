@@ -2,10 +2,11 @@
   "name": "Geolocation",
   "defined": {
     "spec": {
-      "title": "Geolocation API Specification 2nd Edition",
+      "title": "Geolocation API",
       "url": "https://www.w3.org/TR/geolocation-API/"
     },
-    "fragment": "[NoInterfaceObject]\ninterface Geolocation {\n  void getCurrentPosition(PositionCallback successCallback,\n                          optional PositionErrorCallback errorCallback,\n                          optional PositionOptions options);\n\n  long watchPosition(PositionCallback successCallback,\n                     optional PositionErrorCallback errorCallback,\n                     optional PositionOptions options);\n\n  void clearWatch(long watchId);\n};"
+    "fragment": "[Exposed=Window]\ninterface Geolocation {\n  undefined getCurrentPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  long watchPosition (\n    PositionCallback successCallback,\n    optional PositionErrorCallback? errorCallback = null,\n    optional PositionOptions options = {}\n  );\n\n  undefined clearWatch (long watchId);\n};",
+    "href": "https://www.w3.org/TR/geolocation-API/#dom-geolocation"
   },
   "extended": [],
   "inheritance": null,
