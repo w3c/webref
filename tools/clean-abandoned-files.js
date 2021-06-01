@@ -3,7 +3,7 @@ const fs = require("fs");
 const ed = require("../ed/index.json");
 const tr = require("../tr/index.json");
 
-const subdirs = ["dfns", "css", "headings", "idl", "idlparsed", "links", "refs"];
+const subdirs = ["dfns", "css", "elements", "headings", "idl", "idlparsed", "links", "refs"];
 const idlnamesSubdirs = ["idlnames", "idlnamesparsed"];
 
 
@@ -13,6 +13,9 @@ const removeExtension = f => {
 }
 
 function checkDir(path, index) {
+  if (!fs.existsSync(path)) {
+    return;
+  }
   const dir = fs.readdirSync(path);
   for (let filename of dir) {
     const subdir = path.split("/")[1];
