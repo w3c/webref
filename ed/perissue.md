@@ -3522,7 +3522,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/):
      * [`https://heycam.github.io/webidl/#create-a-namespace-object`](https://heycam.github.io/webidl/#create-a-namespace-object)
-     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/):
      * [`https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module`](https://webassembly.github.io/spec/js-api/#instantiate-a-promise-of-a-module)
      * [`https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module`](https://webassembly.github.io/spec/js-api/#asynchronously-compile-a-webassembly-module)
@@ -3824,7 +3823,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1316 problematic external links found in 203 specifications
+=> 1315 problematic external links found in 203 specifications
 
 
 ## External links that neither target definitions nor headings
