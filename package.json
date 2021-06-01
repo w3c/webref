@@ -27,6 +27,7 @@
     "@jsdevtools/npm-publish": "1.4.3",
     "@octokit/rest": "18.5.3",
     "@webref/css": "file:packages/css",
+    "@webref/elements": "file:packages/elements",
     "@webref/idl": "file:packages/idl",
     "css-tree": "1.1.2",
     "flags": "0.1.3",
@@ -36,6 +37,9 @@
   },
   "scripts": {
     "prepare": "node packages/prepare.js",
-    "test": "mocha --recursive --delay"
+    "test": "mocha --recursive --delay",
+    "test-css": "mocha --recursive --delay test/css",
+    "test-elements": "mocha --recursive --delay test/elements",
+    "test-idl": "mocha --recursive --delay test/idl"
   }
 }

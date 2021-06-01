@@ -1,8 +1,8 @@
 /**
- * Prepare a CSS or IDL package release pull request.
+ * Prepare a Webref package release pull request if needed.
  *
- * The pull request contains the CSS or IDL diff as description, and bumps the
- * version patch number.
+ * The pull request contains the diff as description, and bumps the version
+ * patch number.
  *
  * If the PR is merged, the "release-package.js" job should run and actually
  * release the package at the commit on which the pre-release PR was based.
@@ -43,7 +43,8 @@ function btoa(str) {
  * Compute diff between the released npm package and the contents of the repo
  *
  * @function
- * @param {String} type Package name. One of "css" or "idl"
+ * @param {String} type Package name. Must match one of the existing folder
+ *  names under "packages" (e.g. "css", "elements", "idl")
  * @return {String} The results of running the diff. An empty string if contents
  *   match.
  */
@@ -128,7 +129,8 @@ function computeDiff(type) {
  * Create or update pre-release pull request
  *
  * @function
- * @param {String} type Package name. One of "css" or "idl"
+ * @param {String} type Package name. Must match one of the existing folder
+ *  names under "packages" (e.g. "css", "elements", "idl")
  */
 async function prepareRelease(type) {
   // Compute a reasonably unique ID
@@ -336,7 +338,7 @@ const octokit = new Octokit({
   //log: console
 });
 
-const packageType = (process.argv[2] === "css") ? "css": "idl";
+const packageType = process.argv[2] ?? "idl";
 
 prepareRelease(packageType)
   .then(() => {

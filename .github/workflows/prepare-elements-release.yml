@@ -1,9 +1,9 @@
-name: "@webref/idl: Prepare release PR if needed"
+name: "@webref/elements: Prepare release PR if needed"
 
 on:
   # Runs on pushes to default branch on files of interest and after a crawl.
   # Notes:
-  # - No trigger on changes to "packages/css/**" to avoid re-creating
+  # - No trigger on changes to "packages/elements/**" to avoid re-creating
   # pre-release PR before package has actually been released.
   # - Crawl pushes to default branch but that push won't trigger the workflow
   # (a workflow cannot be triggered by a push made by another workflow). Hence
@@ -17,8 +17,8 @@ on:
     branches:
       - master
     paths:
-      - 'ed/idl/**'
-      - 'ed/idlpatches/**'
+      - 'ed/elements/**'
+      - 'ed/elementspatches/**'
   workflow_dispatch:
 
 jobs:
@@ -39,9 +39,9 @@ jobs:
         npm run prepare
 
     - name: Test new release
-      run: npm test-idl
+      run: npm test-elements
 
     - name: Prepare a pre-release pull request if needed
-      run: node tools/prepare-release.js idl
+      run: node tools/prepare-release.js elements
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

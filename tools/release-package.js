@@ -1,5 +1,5 @@
 /**
- * Publish CSS or IDL package to npm, using the commit on which the pre-release
+ * Publish a Webref package to npm, using the commit on which the pre-release
  * PR is based.
  */
 
@@ -42,7 +42,7 @@ async function releasePackage(prNumber) {
   }
   const type = match[1];
 
-  if (!["css", "idl"].includes(type)) {
+  if (!["css", "elements", "idl"].includes(type)) {
     console.log(`- Unknown package type "${type}", nothing to release`);
     return;
   }
