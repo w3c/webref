@@ -23,6 +23,8 @@ jobs:
 
     - name: Drop patches locally when related issues/PR are closed
       run: node tools/clean-patches.js
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Create PR to drop patches from repo if needed
       uses: peter-evans/create-pull-request@v3
