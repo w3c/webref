@@ -41,4 +41,4 @@ elements.listAll().then(all => {
 # Guarantees
 
 The following guarantees are provided by this package:
-- All Web IDL interfaces exist in the latest version of the [`@webref/idl` package] at the time the `@webref/elements` package is released.
+- All Web IDL interfaces exist in the latest version of the [`@webref/idl` package](https://www.npmjs.com/package/@webref/idl) at the time the `@webref/elements` package is released.
