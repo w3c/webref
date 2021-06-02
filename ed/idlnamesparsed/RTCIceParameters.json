@@ -8,7 +8,15 @@
     "fragment": "dictionary RTCIceParameters {\n  DOMString usernameFragment;\n  DOMString password;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtciceparameters"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "IceTransport Extensions for WebRTC",
+        "url": "https://w3c.github.io/webrtc-ice/"
+      },
+      "fragment": "partial dictionary RTCIceParameters {\n             boolean   iceLite;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

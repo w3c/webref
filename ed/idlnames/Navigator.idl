@@ -28,6 +28,17 @@ Navigator includes NavigatorConcurrentHardware;
 // Source: Storage Standard (https://storage.spec.whatwg.org/)
 Navigator includes NavigatorStorage;
 
+// Source: Badging API (https://w3c.github.io/badging/)
+// Methods only exposed on documents.
+[SecureContext]
+partial interface Navigator {
+  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);
+  Promise<undefined> clearClientBadge();
+};
+
+// Source: Badging API (https://w3c.github.io/badging/)
+Navigator includes NavigatorBadge;
+
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
