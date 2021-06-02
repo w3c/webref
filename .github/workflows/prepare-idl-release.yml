@@ -39,7 +39,7 @@ jobs:
         npm run prepare
 
     - name: Test new release
-      run: npm test-idl
+      run: npm run test-idl
 
     - name: Prepare a pre-release pull request if needed
       run: node tools/prepare-release.js idl
