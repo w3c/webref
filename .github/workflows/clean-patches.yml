@@ -18,8 +18,8 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm install @actions/core
-        npm install @octokit/rest
+        npm install --no-save @actions/core
+        npm install --no-save @octokit/rest
 
     - name: Drop patches locally when related issues/PR are closed
       run: node tools/clean-patches.js
