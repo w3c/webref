@@ -39,7 +39,7 @@ jobs:
         npm run prepare
 
     - name: Test new release
-      run: npm test-elements
+      run: npm run test-elements
 
     - name: Prepare a pre-release pull request if needed
       run: node tools/prepare-release.js elements
