@@ -1,0 +1,37 @@
+name: Clean patches when issues/PR are closed
+
+on:
+  schedule:
+    - cron: '30 3 * * 3'
+  workflow_dispatch:
+jobs:
+  clean:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout webref
+      uses: actions/checkout@master
+
+    - name: Setup node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 14.x
+
+    - name: Install dependencies
+      run: |
+        npm install @actions/core
+        npm install @octokit/rest
+
+    - name: Drop patches locally when related issues/PR are closed
+      run: node tools/clean-patches.js
+
+    - name: Create PR to drop patches from repo if needed
+    - uses: peter-evans/create-pull-request@v3
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        title: Drop patches that are no longer needed
+        commit-message: "Drop patches that are no longer needed"
+        body: ${{ env.dropped_patches }}
+        assignees: tidoust, dontcallmedom
+        branch: clean-patches
+        branch-suffix: timestamp
