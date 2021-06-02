@@ -14,7 +14,7 @@ const reviewers = ["dontcallmedom", "foolip", "tidoust"];
  * Create or update pre-release pull request
  *
  * @function
- * @param {String} type Package name. One of "css" or "idl"
+ * @param {String} type Package name
  */
 async function requestReview(type) {
   console.log(`Check pre-release PR for the @webref/${type} package`);
@@ -75,9 +75,9 @@ const octokit = new Octokit({
   //log: console
 });
 
-const packageType = (process.argv[2] === "css") ? "css": "idl";
-
 requestReview("css")
+  .then(() => console.log())
+  .then(() => requestReview("elements"))
   .then(() => console.log())
   .then(() => requestReview("idl"))
   .then(() => {

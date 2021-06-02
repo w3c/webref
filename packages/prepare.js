@@ -20,6 +20,13 @@ const packages = [
     patchDir: path.join(rootDir, 'ed/csspatches'),
     fileExt: 'json'
   },
+  {
+    name: 'elements',
+    srcDir: path.join(rootDir, 'ed/elements'),
+    dstDir: path.join(rootDir, 'packages/elements'),
+    patchDir: path.join(rootDir, 'ed/elementspatches'),
+    fileExt: 'json'
+  },
 ];
 
 
