@@ -5332,8 +5332,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
      * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
-- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/):
-     * [`https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained`](https://www.w3.org/TR/mediacapture-streams/#event-mediastreamtrack-overconstrained)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
      * [`https://w3c.github.io/web-animations/#duration`](https://w3c.github.io/web-animations/#duration)
      * [`https://w3c.github.io/web-animations/#target-effect-end`](https://w3c.github.io/web-animations/#target-effect-end)
@@ -5480,7 +5478,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 542 problematic external links found in 154 specifications
+=> 541 problematic external links found in 153 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
