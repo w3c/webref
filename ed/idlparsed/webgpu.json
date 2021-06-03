@@ -9288,7 +9288,7 @@
         "extAttrs": []
       },
       "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
+        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
         "name": "GPUSwapChainDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9357,6 +9357,21 @@
               "type": "string",
               "value": "opaque"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "size",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExtent3D"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -11195,7 +11210,8 @@
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasCompositingAlphaMode",
+        "GPUExtent3D"
       ],
       "GPUSwapChain": [
         "GPUTexture",
