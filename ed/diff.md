@@ -1,20 +1,4 @@
-% Diff between report from "June 03, 2021" and reference report from "June 02, 2021"
+% Diff between report from "June 03, 2021" and reference report from "June 03, 2021"
 % Reffy
 % June 03, 2021
-
-## User-Agent Client Hints
-
-- Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Missing references for links: *INS* https://w3c.github.io/device-memory/
-
-
-## WebGPU
-
-- Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Missing references for links: *INS* https://www.w3.org/TR/resize-observer/
-
 
