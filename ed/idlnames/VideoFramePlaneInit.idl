@@ -9,6 +9,6 @@ dictionary VideoFramePlaneInit {
   [EnforceRange] unsigned long cropHeight;
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
-  [EnforceRange] long long duration;     // microseconds
-  [EnforceRange] long long timestamp;    // microseconds
+  [EnforceRange] unsigned long long duration;  // microseconds
+  [EnforceRange] long long timestamp;          // microseconds
 };

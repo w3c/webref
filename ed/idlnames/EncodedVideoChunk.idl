@@ -3,9 +3,9 @@
 interface EncodedVideoChunk {
   constructor(EncodedVideoChunkInit init);
   readonly attribute EncodedVideoChunkType type;
-  readonly attribute long long timestamp;    // microseconds
-  readonly attribute long long? duration;    // microseconds
+  readonly attribute long long timestamp;             // microseconds
+  readonly attribute unsigned long long? duration;    // microseconds
   readonly attribute unsigned long byteLength;
 
-  undefined copyTo(ArrayBufferView dst);
+  undefined copyTo([AllowShared] BufferSource destination);
 };
