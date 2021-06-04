@@ -1148,6 +1148,69 @@
         ],
         "partial": false
       },
+      "WellKnownDirectory": {
+        "fragment": "enum WellKnownDirectory {\n  \"desktop\",\n  \"documents\",\n  \"downloads\",\n  \"music\",\n  \"pictures\",\n  \"videos\",\n};",
+        "type": "enum",
+        "name": "WellKnownDirectory",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "desktop"
+          },
+          {
+            "type": "enum-value",
+            "value": "documents"
+          },
+          {
+            "type": "enum-value",
+            "value": "downloads"
+          },
+          {
+            "type": "enum-value",
+            "value": "music"
+          },
+          {
+            "type": "enum-value",
+            "value": "pictures"
+          },
+          {
+            "type": "enum-value",
+            "value": "videos"
+          }
+        ],
+        "extAttrs": []
+      },
+      "StartInDirectory": {
+        "fragment": "typedef (WellKnownDirectory or FileSystemHandle) StartInDirectory;",
+        "type": "typedef",
+        "name": "StartInDirectory",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WellKnownDirectory"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FileSystemHandle"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
       "FilePickerAcceptType": {
         "fragment": "dictionary FilePickerAcceptType {\n    USVString description;\n    record<USVString, (USVString or sequence<USVString>)> accept;\n};",
         "type": "dictionary",
@@ -1232,7 +1295,7 @@
         "partial": false
       },
       "FilePickerOptions": {
-        "fragment": "dictionary FilePickerOptions {\n    sequence<FilePickerAcceptType> types;\n    boolean excludeAcceptAllOption = false;\n};",
+        "fragment": "dictionary FilePickerOptions {\n    sequence<FilePickerAcceptType> types;\n    boolean excludeAcceptAllOption = false;\n    DOMString id;\n    StartInDirectory startIn;\n};",
         "type": "dictionary",
         "name": "FilePickerOptions",
         "inheritance": null,
@@ -1278,6 +1341,36 @@
               "value": false
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "startIn",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "StartInDirectory"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -1312,20 +1405,67 @@
         "partial": false
       },
       "SaveFilePickerOptions": {
-        "fragment": "dictionary SaveFilePickerOptions : FilePickerOptions {\n};",
+        "fragment": "dictionary SaveFilePickerOptions : FilePickerOptions {\n    USVString? suggestedName;\n};",
         "type": "dictionary",
         "name": "SaveFilePickerOptions",
         "inheritance": "FilePickerOptions",
-        "members": [],
+        "members": [
+          {
+            "type": "field",
+            "name": "suggestedName",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       },
       "DirectoryPickerOptions": {
-        "fragment": "dictionary DirectoryPickerOptions {\n};",
+        "fragment": "dictionary DirectoryPickerOptions {\n    DOMString id;\n    StartInDirectory startIn;\n};",
         "type": "dictionary",
         "name": "DirectoryPickerOptions",
         "inheritance": null,
-        "members": [],
+        "members": [
+          {
+            "type": "field",
+            "name": "id",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "startIn",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "StartInDirectory"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
         "extAttrs": [],
         "partial": false
       }
@@ -1626,7 +1766,8 @@
       ],
       "FilePickerAcceptType": [],
       "FilePickerOptions": [
-        "FilePickerAcceptType"
+        "FilePickerAcceptType",
+        "StartInDirectory"
       ],
       "OpenFilePickerOptions": [
         "FilePickerOptions"
@@ -1634,7 +1775,9 @@
       "SaveFilePickerOptions": [
         "FilePickerOptions"
       ],
-      "DirectoryPickerOptions": [],
+      "DirectoryPickerOptions": [
+        "StartInDirectory"
+      ],
       "Window": [
         "FileSystemFileHandle",
         "OpenFilePickerOptions",

@@ -2703,6 +2703,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#file-upload-state-(type=file)`](https://html.spec.whatwg.org/#file-upload-state-(type=file))
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
      * [`https://html.spec.whatwg.org/#activation-notification`](https://html.spec.whatwg.org/#activation-notification)
+     * [`https://html.spec.whatwg.org/#as-a-download`](https://html.spec.whatwg.org/#as-a-download)
      * [`https://html.spec.whatwg.org/#concept-dnd-rw`](https://html.spec.whatwg.org/#concept-dnd-rw)
      * [`https://html.spec.whatwg.org/#concept-dnd-ro`](https://html.spec.whatwg.org/#concept-dnd-ro)
      * [`https://html.spec.whatwg.org/#the-drag-data-item-kind`](https://html.spec.whatwg.org/#the-drag-data-item-kind)
@@ -3824,7 +3825,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1314 problematic external links found in 203 specifications
+=> 1315 problematic external links found in 203 specifications
 
 
 ## External links that neither target definitions nor headings

@@ -1636,6 +1636,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedefdef-startindirectory",
+      "href": "https://wicg.github.io/file-system-access/#typedefdef-startindirectory",
+      "linkingText": [
+        "StartInDirectory"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-filepickeraccepttype",
       "href": "https://wicg.github.io/file-system-access/#dictdef-filepickeraccepttype",
       "linkingText": [
@@ -1752,6 +1770,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-filepickeroptions-id",
+      "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FilePickerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filepickeroptions-startin",
+      "href": "https://wicg.github.io/file-system-access/#dom-filepickeroptions-startin",
+      "linkingText": [
+        "startIn"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "FilePickerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-openfilepickeroptions",
       "href": "https://wicg.github.io/file-system-access/#dictdef-openfilepickeroptions",
       "linkingText": [
@@ -1808,6 +1866,26 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-savefilepickeroptions-suggestedname",
+      "href": "https://wicg.github.io/file-system-access/#dom-savefilepickeroptions-suggestedname",
+      "linkingText": [
+        "suggestedName"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SaveFilePickerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-directorypickeroptions",
       "href": "https://wicg.github.io/file-system-access/#dictdef-directorypickeroptions",
       "linkingText": [
@@ -1816,6 +1894,46 @@
       "localLinkingText": [],
       "type": "dictionary",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directorypickeroptions-id",
+      "href": "https://wicg.github.io/file-system-access/#dom-directorypickeroptions-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectoryPickerOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "local-filesystem",
+        "title": "Accessing Local File System",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-directorypickeroptions-startin",
+      "href": "https://wicg.github.io/file-system-access/#dom-directorypickeroptions-startin",
+      "linkingText": [
+        "startIn"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DirectoryPickerOptions"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1925,6 +2043,274 @@
       "definedIn": "prose"
     },
     {
+      "id": "process-accept-types",
+      "href": "https://wicg.github.io/file-system-access/#process-accept-types",
+      "linkingText": [
+        "process accept types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-types",
+        "title": "Accepted file types",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "validate-a-suffix",
+      "href": "https://wicg.github.io/file-system-access/#validate-a-suffix",
+      "linkingText": [
+        "validate a suffix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-types",
+        "title": "Accepted file types",
+        "number": "3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "recently-picked-directory-map",
+      "href": "https://wicg.github.io/file-system-access/#recently-picked-directory-map",
+      "linkingText": [
+        "recently picked directory map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "path-id-map",
+      "href": "https://wicg.github.io/file-system-access/#path-id-map",
+      "linkingText": [
+        "path id map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valid-path-id",
+      "href": "https://wicg.github.io/file-system-access/#valid-path-id",
+      "linkingText": [
+        "valid path id"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-wellknowndirectory",
+      "href": "https://wicg.github.io/file-system-access/#enumdef-wellknowndirectory",
+      "linkingText": [
+        "WellKnownDirectory"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-wellknowndirectory-desktop",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-desktop",
+      "linkingText": [
+        "\"desktop\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-wellknowndirectory-documents",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-documents",
+      "linkingText": [
+        "\"documents\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-wellknowndirectory-downloads",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-downloads",
+      "linkingText": [
+        "\"downloads\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-wellknowndirectory-music",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-music",
+      "linkingText": [
+        "\"music\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-wellknowndirectory-pictures",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-pictures",
+      "linkingText": [
+        "\"pictures\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-wellknowndirectory-videos",
+      "href": "https://wicg.github.io/file-system-access/#dom-wellknowndirectory-videos",
+      "linkingText": [
+        "\"videos\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "wellknowndirectory-determine-the-directory-the-picker-will-start-in",
+      "href": "https://wicg.github.io/file-system-access/#wellknowndirectory-determine-the-directory-the-picker-will-start-in",
+      "linkingText": [
+        "determine the directory the picker will start in"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "wellknowndirectory-remember-a-picked-directory",
+      "href": "https://wicg.github.io/file-system-access/#wellknowndirectory-remember-a-picked-directory",
+      "linkingText": [
+        "remember a picked directory"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WellKnownDirectory"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "api-filepickeroptions-starting-directory",
+        "title": "Starting Directory",
+        "number": "3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-window-showopenfilepicker",
       "href": "https://wicg.github.io/file-system-access/#dom-window-showopenfilepicker",
       "linkingText": [
@@ -1941,7 +2327,7 @@
       "heading": {
         "id": "api-showopenfilepicker",
         "title": "The showOpenFilePicker() method",
-        "number": "3.2"
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -1962,42 +2348,6 @@
       "heading": {
         "id": "api-showsavefilepicker",
         "title": "The showSaveFilePicker() method",
-        "number": "3.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "process-accept-types",
-      "href": "https://wicg.github.io/file-system-access/#process-accept-types",
-      "linkingText": [
-        "process accept types"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "api-filpickeroptions-types",
-        "title": "FilePickerOptions.types",
-        "number": "3.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "validate-a-suffix",
-      "href": "https://wicg.github.io/file-system-access/#validate-a-suffix",
-      "linkingText": [
-        "validate a suffix"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "api-filpickeroptions-types",
-        "title": "FilePickerOptions.types",
         "number": "3.4"
       },
       "definedIn": "prose"
@@ -2044,14 +2394,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "origin-private-file-system",
-      "href": "https://wicg.github.io/file-system-access/#origin-private-file-system",
+      "id": "wellknowndirectory-origin-private-file-system",
+      "href": "https://wicg.github.io/file-system-access/#wellknowndirectory-origin-private-file-system",
       "linkingText": [
         "origin private file system"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "WellKnownDirectory"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2082,14 +2434,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "too-sensitive-or-dangerous",
-      "href": "https://wicg.github.io/file-system-access/#too-sensitive-or-dangerous",
+      "id": "wellknowndirectory-too-sensitive-or-dangerous",
+      "href": "https://wicg.github.io/file-system-access/#wellknowndirectory-too-sensitive-or-dangerous",
       "linkingText": [
         "too sensitive or dangerous"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "WellKnownDirectory"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -2100,14 +2454,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "malware-scans-and-safe-browsing-checks",
-      "href": "https://wicg.github.io/file-system-access/#malware-scans-and-safe-browsing-checks",
+      "id": "wellknowndirectory-malware-scans-and-safe-browsing-checks",
+      "href": "https://wicg.github.io/file-system-access/#wellknowndirectory-malware-scans-and-safe-browsing-checks",
       "linkingText": [
         "malware scans and safe browsing checks"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "WellKnownDirectory"
+      ],
       "access": "private",
       "informative": false,
       "heading": {

@@ -13,7 +13,7 @@ partial interface Performance {
 };
 
 // Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
-[Exposed=(Window,Worker)]
+[CrossOriginIsolated, Exposed=(Window,Worker)]
 partial interface Performance {
   Promise<Profiler> profile(ProfilerInitOptions options);
 };
