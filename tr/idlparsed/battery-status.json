@@ -6,11 +6,15 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "BatteryManager"
+        ]
+      }
     },
     "idlNames": {
       "BatteryManager": {
-        "fragment": "interface BatteryManager : EventTarget {\n    readonly attribute boolean             charging;\n    readonly attribute unrestricted double chargingTime;\n    readonly attribute unrestricted double dischargingTime;\n    readonly attribute double              level;\n             attribute EventHandler        onchargingchange;\n             attribute EventHandler        onchargingtimechange;\n             attribute EventHandler        ondischargingtimechange;\n             attribute EventHandler        onlevelchange;\n};",
+        "fragment": "[Exposed=Window]\ninterface BatteryManager : EventTarget {\n    readonly        attribute boolean             charging;\n    readonly        attribute unrestricted double chargingTime;\n    readonly        attribute unrestricted double dischargingTime;\n    readonly        attribute double              level;\n                    attribute EventHandler        onchargingchange;\n                    attribute EventHandler        onchargingtimechange;\n                    attribute EventHandler        ondischargingtimechange;\n                    attribute EventHandler        onlevelchange;\n};",
         "type": "interface",
         "name": "BatteryManager",
         "inheritance": "EventTarget",
@@ -136,14 +140,24 @@
             "readonly": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       }
     },
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n    Promise<BatteryManager> getBattery();\n};",
+          "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -179,7 +193,11 @@
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "BatteryManager"
+      ]
+    },
     "dependencies": {
       "Navigator": [
         "BatteryManager"

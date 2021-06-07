@@ -6,5 +6,5 @@ interface EncodedAudioChunk {
   readonly attribute long long timestamp;    // microseconds
   readonly attribute unsigned long byteLength;
 
-  undefined copyTo(ArrayBufferView dst);
+  undefined copyTo([AllowShared] BufferSource destination);
 };

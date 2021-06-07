@@ -6,26 +6,47 @@
   "properties": {},
   "descriptors": {},
   "valuespaces": {
+    "<color-space>": {
+      "value": "srgb | hsl | hwb | xyz | lab | lch"
+    },
     "<color-mix()>": {
-      "value": "color-mix( <color> <color> [ <number> | <percentage> | [ <color-function> <colorspace>? ]?] )"
+      "value": "color-mix( in <color-space> , [ <color> && <percentage [0,100]>? ]#{2} <hue-adjuster>?)"
+    },
+    "<hue-adjuster>": {
+      "value": "shorter | longer | increasing | decreasing | specified"
     },
     "<color-contrast()>": {
-      "value": "color-contrast( <color> <color># )"
+      "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large | AAA | AAA-large]]? )"
     },
     "<color-adjust()>": {
-      "value": "color-adjust( <color> [ color-function <colorspace>? ]?] )"
+      "value": "color-adjust( <color> <color-adjuster> && [ in <color-space> ]? )"
+    },
+    "<color-adjuster>": {
+      "value": "[ [ <srgb-adjuster> | <hsl-adjuster> | <hwb-adjuster> | <xyz-adjuster> | <lab-adjuster> | <lch-adjuster> ] | alpha ] <percentage>"
+    },
+    "<srgb-adjuster>": {
+      "value": "red | green | blue"
+    },
+    "<hsl-adjuster>": {
+      "value": "hue | saturation | lightness"
+    },
+    "<hwb-adjuster>": {
+      "value": "hue | whiteness | blackness"
+    },
+    "<xyz-adjuster>": {
+      "value": "x | y | z"
+    },
+    "<lab-adjuster>": {
+      "value": "lightness | a | b"
+    },
+    "<lch-adjuster>": {
+      "value": "lightness | chroma | hue"
     },
     "<rgb()>": {
-      "value": "rgb([from <color>]? <percentage>{3} [ / <alpha-value> ]? ) | rgb([from <color>]? <number>{3} [ / <alpha-value> ]? )"
-    },
-    "<alpha-value>": {
-      "value": "<number> | <percentage>"
+      "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> ]{3} [ / <alpha-value> ]? )"
     },
     "<hsl()>": {
       "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
-    },
-    "<hue>": {
-      "value": "<number> | <angle>"
     },
     "<hwb()>": {
       "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
@@ -35,6 +56,9 @@
     },
     "<lch()>": {
       "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+    },
+    "<color()>": {
+      "value": "color( [from <color>]? <colorspace-params> [ / <alpha-value> ]? )"
     }
   }
 }

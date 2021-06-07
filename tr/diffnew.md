@@ -1,37 +1,55 @@
-% Diff between report from "May 31, 2021" and reference report from "May 24, 2021"
+% Diff between report from "June 07, 2021" and reference report from "May 31, 2021"
 % Reffy
-% May 31, 2021
+% June 07, 2021
 
-## Document Policy
+## Battery Status API
 
-- Initial URL: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
+- Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/document-policy/](https://wicg.github.io/document-policy/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-permissions-policy/
 
 
-## ECMAScript® 2022 Language Specification
+## CSS Color Module Level 5
 
-- Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
+- Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
+- Spec is OK: *INS* true / *DEL* false
 
 
-## Geolocation API
+## Scalable Vector Graphics (SVG) 1.1 (Second Edition)
 
-- Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
+- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Spec title: *INS* Geolocation API / *DEL* Geolocation API Specification 2nd Edition
+- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Could not extract name from element-summary element
+    at https://www.w3.org/TR/SVG11/reffy/scripts/extract-elements.mjs:142:15
+    at Array.map (<anonymous>)
+    at Object.default [as extractElements] (https://www.w3.org/TR/SVG11/reffy/scripts/extract-elements.mjs:139:6)
+    at __puppeteer_evaluation_script__:10:40 Error: Evaluation failed: Error: Could not extract name from element-summary element
+    at https://www.w3.org/TR/SVG11/reffy/scripts/extract-elements.mjs:142:15
+    at Array.map (<anonymous>)
+    at Object.default [as extractElements] (https://www.w3.org/TR/SVG11/reffy/scripts/extract-elements.mjs:139:6)
+    at __puppeteer_evaluation_script__:10:40
+    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:387:25)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:241:24)
+    at async Promise.all (index 355)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:247:21)
+    at async Promise.all (index 0)
 
 
-## Private Network Access
+## User-Agent Client Hints
 
-- Initial URL: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
+- Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/private-network-access/](https://wicg.github.io/private-network-access/)
-- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/
+- Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
+- Missing references for links: *INS* https://w3c.github.io/device-memory/
 
 
 ## WebGPU
@@ -39,22 +57,6 @@
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- This specification was not in the reference crawl report.
-
-
-## WebGPU Shading Language
-
-- Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- This specification was not in the reference crawl report.
-
-
-## WebTransport
-
-- Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- This specification was not in the reference crawl report.
+- Missing references for links: *INS* https://www.w3.org/TR/resize-observer/
 
 

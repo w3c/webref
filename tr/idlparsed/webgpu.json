@@ -17,7 +17,7 @@
       },
       "functions": {
         "Window": [
-          "GPUAdapterLimits",
+          "GPUSupportedLimits",
           "GPUSupportedFeatures",
           "GPU",
           "GPUAdapter",
@@ -109,10 +109,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "GPUAdapterLimits": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapterLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
+      "GPUSupportedLimits": {
+        "fragment": "[Exposed=Window]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
         "type": "interface",
-        "name": "GPUAdapterLimits",
+        "name": "GPUSupportedLimits",
         "inheritance": null,
         "members": [
           {
@@ -577,7 +577,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUAdapterLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -628,7 +628,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUAdapterLimits"
+              "idlType": "GPUSupportedLimits"
             },
             "extAttrs": [
               {
@@ -802,7 +802,7 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    readonly attribute object limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
@@ -838,9 +838,16 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "object"
+              "idlType": "GPUSupportedLimits"
             },
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": "",
             "readonly": true
           },
@@ -9281,7 +9288,7 @@
         "extAttrs": []
       },
       "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n};",
+        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
         "name": "GPUSwapChainDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -9350,6 +9357,21 @@
               "type": "string",
               "value": "opaque"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "size",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExtent3D"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -10719,7 +10741,7 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "GPUAdapterLimits",
+        "GPUSupportedLimits",
         "GPUSupportedFeatures",
         "GPU",
         "GPUAdapter",
@@ -10766,7 +10788,7 @@
     "dependencies": {
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
-      "GPUAdapterLimits": [],
+      "GPUSupportedLimits": [],
       "GPUSupportedFeatures": [],
       "NavigatorGPU": [
         "GPU"
@@ -10786,7 +10808,7 @@
       ],
       "GPUAdapter": [
         "GPUSupportedFeatures",
-        "GPUAdapterLimits",
+        "GPUSupportedLimits",
         "GPUDevice",
         "GPUDeviceDescriptor"
       ],
@@ -10798,6 +10820,7 @@
       "GPUDevice": [
         "EventTarget",
         "GPUSupportedFeatures",
+        "GPUSupportedLimits",
         "GPUQueue",
         "GPUBuffer",
         "GPUBufferDescriptor",
@@ -11187,7 +11210,8 @@
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
-        "GPUCanvasCompositingAlphaMode"
+        "GPUCanvasCompositingAlphaMode",
+        "GPUExtent3D"
       ],
       "GPUSwapChain": [
         "GPUTexture",

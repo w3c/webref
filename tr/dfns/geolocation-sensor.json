@@ -59,11 +59,31 @@
       "definedIn": "prose"
     },
     {
+      "id": "geolocationsensor",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#geolocationsensor",
+      "linkingText": [
+        "GeolocationSensor"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "geolocationsensor-interface",
+        "title": "The GeolocationSensor Interface",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-geolocationsensor-geolocationsensor",
       "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationsensor-geolocationsensor",
       "linkingText": [
         "GeolocationSensor(options)",
-        "GeolocationSensor()"
+        "constructor(options)",
+        "GeolocationSensor()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -88,26 +108,11 @@
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GeolocationSensor/GeolocationSensor(options)"
+        "GeolocationSensor/GeolocationSensor(options)",
+        "GeolocationSensor/constructor(options)",
+        "GeolocationSensor/GeolocationSensor()",
+        "GeolocationSensor/constructor()"
       ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "geolocationsensor-interface",
-        "title": "The GeolocationSensor Interface",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "geolocationsensor",
-      "href": "https://www.w3.org/TR/geolocation-sensor/#geolocationsensor",
-      "linkingText": [
-        "GeolocationSensor"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -568,6 +573,164 @@
         "number": "6.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dictdef-geolocationreadingvalues",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dictdef-geolocationreadingvalues",
+      "linkingText": [
+        "GeolocationReadingValues"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-latitude",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-latitude",
+      "linkingText": [
+        "latitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-longitude",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-longitude",
+      "linkingText": [
+        "longitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-altitude",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-altitude",
+      "linkingText": [
+        "altitude"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-accuracy",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-accuracy",
+      "linkingText": [
+        "accuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-altitudeaccuracy",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-altitudeaccuracy",
+      "linkingText": [
+        "altitudeAccuracy"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-heading",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-heading",
+      "linkingText": [
+        "heading"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-geolocationreadingvalues-speed",
+      "href": "https://www.w3.org/TR/geolocation-sensor/#dom-geolocationreadingvalues-speed",
+      "linkingText": [
+        "speed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GeolocationReadingValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mock-geolocation-sensor-type",
+        "title": "Mock Sensor Type",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
     }
   ]
 }

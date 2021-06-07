@@ -56,3 +56,10 @@ partial dictionary MediaTrackCapabilities {
     (double or DoubleRange) depthFar;
     boolean                 depthToVideoTransform;
 };
+
+// Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
+partial dictionary MediaTrackCapabilities {
+  DOMString displaySurface;
+  boolean logicalSurface;
+  sequence<DOMString> cursor;
+};

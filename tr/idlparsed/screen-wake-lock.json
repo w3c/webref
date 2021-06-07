@@ -15,7 +15,7 @@
     },
     "idlNames": {
       "WakeLock": {
-        "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLock {\n  Promise<WakeLockSentinel> request(WakeLockType type);\n};",
+        "fragment": "[SecureContext, Exposed=(Window)]\ninterface WakeLock {\n  Promise<WakeLockSentinel> request(optional WakeLockType type = \"screen\");\n};",
         "type": "interface",
         "name": "WakeLock",
         "inheritance": null,
@@ -53,8 +53,11 @@
                   "union": false,
                   "idlType": "WakeLockType"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "string",
+                  "value": "screen"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],

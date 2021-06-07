@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
     "href": "https://www.w3.org/TR/webcodecs/#audiodata"
   },
   "extended": [],

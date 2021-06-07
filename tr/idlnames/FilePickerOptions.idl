@@ -2,4 +2,6 @@
 dictionary FilePickerOptions {
     sequence<FilePickerAcceptType> types;
     boolean excludeAcceptAllOption = false;
+    DOMString id;
+    StartInDirectory startIn;
 };

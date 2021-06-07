@@ -14,11 +14,35 @@
     },
     "idlNames": {
       "AmbientLightSensor": {
-        "fragment": "[Constructor(optional SensorOptions sensorOptions), SecureContext, Exposed=Window]\ninterface AmbientLightSensor : Sensor {\n  readonly attribute double? illuminance;\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface AmbientLightSensor : Sensor {\n  constructor(optional SensorOptions sensorOptions = {});\n  readonly attribute double? illuminance;\n};",
         "type": "interface",
         "name": "AmbientLightSensor",
         "inheritance": "Sensor",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "sensorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "attribute",
             "name": "illuminance",
@@ -36,29 +60,6 @@
           }
         ],
         "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "sensorOptions",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SensorOptions"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
           {
             "type": "extended-attribute",
             "name": "SecureContext",

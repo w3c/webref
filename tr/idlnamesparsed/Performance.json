@@ -21,7 +21,7 @@
         "title": "JS Self-Profiling API",
         "url": "https://wicg.github.io/js-self-profiling/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};"
+      "fragment": "[CrossOriginIsolated, Exposed=(Window,Worker)]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};"
     },
     {
       "spec": {

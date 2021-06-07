@@ -10,9 +10,9 @@
       "title": "CSS Color Module Level 4"
     },
     {
-      "id": "subtitle",
+      "id": "profile-and-date",
       "level": 2,
-      "title": "W3C Working Draft, 12 November 2020"
+      "title": "W3C Working Draft, 1 June 2021"
     },
     {
       "id": "abstract",
@@ -319,20 +319,26 @@
     {
       "id": "predefined",
       "level": 3,
-      "title": "Predefined colorspaces: srgb, display-p3, a98-rgb, prophoto-rgb, rec2020, xyz and lab'.",
+      "title": "Predefined color spaces: srgb, display-p3, a98-rgb, prophoto-rgb, rec2020, and xyz.",
       "number": "10.2"
     },
     {
       "id": "predefined-to-lab",
       "level": 4,
-      "title": "Converting predefined colorspaces to Lab",
+      "title": "Converting predefined color spaces to Lab",
       "number": "10.2.1"
     },
     {
       "id": "lab-to-predefined",
       "level": 4,
-      "title": "Converting Lab to predefined colorspaces",
+      "title": "Converting Lab to predefined color spaces",
       "number": "10.2.2"
+    },
+    {
+      "id": "predefined-to-predefined",
+      "level": 4,
+      "title": "Converting between predefined RGB color spaces",
+      "number": "10.2.3"
     },
     {
       "id": "at-profile",
@@ -343,35 +349,83 @@
     {
       "id": "cal-cmyk",
       "level": 3,
-      "title": "CSS and print: using calibrated CMYK and other printed colorspaces",
+      "title": "CSS and print: using calibrated CMYK and other printed color spaces",
       "number": "10.4"
-    },
-    {
-      "id": "working-color-space",
-      "level": 2,
-      "title": "11. Working Color Space"
     },
     {
       "id": "device-cmyk",
       "level": 2,
-      "title": "12. Device-dependent CMYK Colors: the device-cmyk() function"
+      "title": "11. Device-dependent CMYK Colors: the device-cmyk() function"
     },
     {
       "id": "cmyk-rgb",
       "level": 3,
       "title": "Naively Converting Between Uncalibrated CMYK and sRGB-Based Colors",
-      "number": "12.1"
+      "number": "11.1"
     },
     {
       "id": "transparency",
       "level": 2,
-      "title": "13. Transparency: the opacity property"
+      "title": "12. Transparency: the opacity property"
     },
     {
       "id": "alpha",
       "level": 3,
       "title": "Simple alpha compositing",
+      "number": "12.1"
+    },
+    {
+      "id": "interpolation",
+      "level": 2,
+      "title": "13. Interpolation"
+    },
+    {
+      "id": "interpolation-space",
+      "level": 3,
+      "title": "Color space for interpolation",
       "number": "13.1"
+    },
+    {
+      "id": "interpolation-alpha",
+      "level": 3,
+      "title": "Interpolating with alpha",
+      "number": "13.2"
+    },
+    {
+      "id": "hue-interpolation",
+      "level": 3,
+      "title": "Hue interpolation",
+      "number": "13.3"
+    },
+    {
+      "id": "hue-shorter",
+      "level": 4,
+      "title": "shorter",
+      "number": "13.3.1"
+    },
+    {
+      "id": "hue-longer",
+      "level": 4,
+      "title": "longer",
+      "number": "13.3.2"
+    },
+    {
+      "id": "hue-increasing",
+      "level": 4,
+      "title": "increasing",
+      "number": "13.3.3"
+    },
+    {
+      "id": "hue-decreasing",
+      "level": 4,
+      "title": "decreasing",
+      "number": "13.3.4"
+    },
+    {
+      "id": "hue-specified",
+      "level": 4,
+      "title": "specified",
+      "number": "13.3.5"
     },
     {
       "id": "sample",
@@ -382,6 +436,11 @@
       "id": "color-conversion-code",
       "level": 2,
       "title": "15. Sample code for color conversions"
+    },
+    {
+      "id": "color-difference-code",
+      "level": 2,
+      "title": "16. Sample code for ΔE2000 color difference"
     },
     {
       "id": "deprecated-system-colors",
@@ -397,6 +456,11 @@
       "id": "changes",
       "level": 2,
       "title": "Changes"
+    },
+    {
+      "id": "changes-from-20201112",
+      "level": 3,
+      "title": "Changes since the Working Draft of 12 November 2020"
     },
     {
       "id": "changes-from-20191105",
@@ -416,47 +480,42 @@
     {
       "id": "priv-sec",
       "level": 2,
-      "title": "16. Security and Privacy Considerations"
+      "title": "17. Security and Privacy Considerations"
     },
     {
       "id": "a11y-sec",
       "level": 2,
-      "title": "17. Accessibility Considerations"
+      "title": "18. Accessibility Considerations"
     },
     {
-      "id": "conformance",
+      "id": "w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "document-conventions",
+      "id": "w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conform-classes",
+      "id": "w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "conform-responsible",
+      "id": "w3c-partial",
       "level": 3,
-      "title": "Requirements for Responsible Implementation of CSS"
+      "title": "Partial implementations"
     },
     {
-      "id": "conform-partial",
-      "level": 4,
-      "title": "Partial Implementations"
-    },
-    {
-      "id": "conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "conform-testing",
-      "level": 4,
-      "title": "Implementations of CR-level Features"
+      "id": "w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
     },
     {
       "id": "index",

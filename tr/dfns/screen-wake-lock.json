@@ -61,11 +61,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-block",
-      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-block",
+      "id": "dfn-screen-wake-lock-permission-revocation-algorithm",
+      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-screen-wake-lock-permission-revocation-algorithm",
       "linkingText": [
-        "block",
-        "block a permission"
+        "Screen Wake Lock permission revocation algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -98,6 +97,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-screen-wake-lock-task-source",
+      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-screen-wake-lock-task-source",
+      "linkingText": [
+        "screen wake lock task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "title": "Concepts",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-platform-wake-lock",
       "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-platform-wake-lock",
       "linkingText": [
@@ -109,26 +126,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "concepts-and-state-record",
-        "title": "Concepts and state record",
-        "number": "5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-state-record",
-      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-state-record",
-      "linkingText": [
-        "state record"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "concepts-and-state-record",
-        "title": "Concepts and state record",
+        "id": "concepts",
+        "title": "Concepts",
         "number": "5"
       },
       "definedIn": "prose"
@@ -145,9 +144,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "concepts-and-state-record",
-        "title": "Concepts and state record",
-        "number": "5"
+        "id": "internal-slots",
+        "title": "Internal slots",
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -169,7 +168,7 @@
       "heading": {
         "id": "extensions-to-the-navigator-interface",
         "title": "Extensions to the Navigator interface",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "pre"
     },
@@ -187,7 +186,7 @@
       "heading": {
         "id": "the-wakelock-interface",
         "title": "The WakeLock interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "heading"
     },
@@ -212,7 +211,7 @@
       "heading": {
         "id": "the-request-method",
         "title": "The request() method",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "heading"
     },
@@ -230,7 +229,7 @@
       "heading": {
         "id": "the-wakelocksentinel-interface",
         "title": "The WakeLockSentinel interface",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "heading"
     },
@@ -246,9 +245,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "internal-slots",
+        "id": "internal-slots-0",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "table"
     },
@@ -270,7 +269,7 @@
       "heading": {
         "id": "the-released-attribute",
         "title": "The released attribute",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "heading"
     },
@@ -292,7 +291,7 @@
       "heading": {
         "id": "the-type-attribute",
         "title": "The type attribute",
-        "number": "8.3"
+        "number": "9.3"
       },
       "definedIn": "heading"
     },
@@ -316,7 +315,7 @@
       "heading": {
         "id": "the-release-method",
         "title": "The release() method",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "heading"
     },
@@ -338,7 +337,7 @@
       "heading": {
         "id": "the-onrelease-attribute",
         "title": "The onrelease attribute",
-        "number": "8.5"
+        "number": "9.5"
       },
       "definedIn": "heading"
     },
@@ -355,8 +354,7 @@
       "informative": false,
       "heading": {
         "id": "the-wakelocktype-enum",
-        "title": "The WakeLockType enum",
-        "number": "9"
+        "title": "10. The WakeLockType enum"
       },
       "definedIn": "heading"
     },
@@ -375,8 +373,7 @@
       "informative": false,
       "heading": {
         "id": "the-wakelocktype-enum",
-        "title": "The WakeLockType enum",
-        "number": "9"
+        "title": "10. The WakeLockType enum"
       },
       "definedIn": "dt"
     },
@@ -396,7 +393,7 @@
       "informative": false,
       "heading": {
         "id": "managing-wake-locks",
-        "title": "10. Managing Wake Locks"
+        "title": "11. Managing Wake Locks"
       },
       "definedIn": "prose"
     },
@@ -414,7 +411,7 @@
       "informative": false,
       "heading": {
         "id": "managing-wake-locks",
-        "title": "10. Managing Wake Locks"
+        "title": "11. Managing Wake Locks"
       },
       "definedIn": "prose"
     },
@@ -433,7 +430,7 @@
       "informative": false,
       "heading": {
         "id": "managing-wake-locks",
-        "title": "10. Managing Wake Locks"
+        "title": "11. Managing Wake Locks"
       },
       "definedIn": "prose"
     },
@@ -451,7 +448,7 @@
       "heading": {
         "id": "auto-releasing-wake-locks",
         "title": "Auto-releasing wake locks",
-        "number": "10.1"
+        "number": "11.1"
       },
       "definedIn": "heading"
     },
@@ -469,7 +466,7 @@
       "heading": {
         "id": "handling-document-loss-of-full-activity",
         "title": "Handling document loss of full activity",
-        "number": "10.2"
+        "number": "11.2"
       },
       "definedIn": "heading"
     },
@@ -487,7 +484,7 @@
       "heading": {
         "id": "handling-document-loss-of-visibility",
         "title": "Handling document loss of visibility",
-        "number": "10.3"
+        "number": "11.3"
       },
       "definedIn": "heading"
     },
@@ -505,7 +502,7 @@
       "heading": {
         "id": "acquire-wake-lock-algorithm",
         "title": "Acquire wake lock algorithm",
-        "number": "10.4"
+        "number": "11.4"
       },
       "definedIn": "prose"
     },
@@ -523,15 +520,15 @@
       "heading": {
         "id": "release-wake-lock-algorithm",
         "title": "Release wake lock algorithm",
-        "number": "10.5"
+        "number": "11.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-hidden",
-      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-hidden",
+      "id": "dfn-now-hidden-algorithm",
+      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-now-hidden-algorithm",
       "linkingText": [
-        "hidden"
+        "now hidden algorithm"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -540,24 +537,7 @@
       "informative": false,
       "heading": {
         "id": "dependencies",
-        "title": "13. Dependencies"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-visibility-state",
-      "href": "https://www.w3.org/TR/screen-wake-lock/#dfn-visibility-state",
-      "linkingText": [
-        "visibility state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "dependencies",
-        "title": "13. Dependencies"
+        "title": "14. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -574,7 +554,7 @@
       "informative": false,
       "heading": {
         "id": "conformance",
-        "title": "14. Conformance"
+        "title": "15. Conformance"
       },
       "definedIn": "prose"
     }

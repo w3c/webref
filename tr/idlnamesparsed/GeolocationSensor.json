@@ -5,7 +5,7 @@
       "title": "Geolocation Sensor",
       "url": "https://www.w3.org/TR/geolocation-sensor/"
     },
-    "fragment": "[Constructor(optional GeolocationSensorOptions options), SecureContext, Exposed=Window]\ninterface GeolocationSensor : Sensor {\n  static Promise<GeolocationSensorReading> read(optional ReadOptions readOptions);\n  readonly attribute unrestricted double? latitude;\n  readonly attribute unrestricted double? longitude;\n  readonly attribute unrestricted double? altitude;\n  readonly attribute unrestricted double? accuracy;\n  readonly attribute unrestricted double? altitudeAccuracy;\n  readonly attribute unrestricted double? heading;\n  readonly attribute unrestricted double? speed;\n};",
+    "fragment": "[SecureContext,\n Exposed=(DedicatedWorker, Window)]\ninterface GeolocationSensor : Sensor {\n  constructor(optional GeolocationSensorOptions options = {});\n  static Promise<GeolocationSensorReading> read(optional ReadOptions readOptions = {});\n  readonly attribute unrestricted double? latitude;\n  readonly attribute unrestricted double? longitude;\n  readonly attribute unrestricted double? altitude;\n  readonly attribute unrestricted double? accuracy;\n  readonly attribute unrestricted double? altitudeAccuracy;\n  readonly attribute unrestricted double? heading;\n  readonly attribute unrestricted double? speed;\n};",
     "href": "https://www.w3.org/TR/geolocation-sensor/#geolocationsensor"
   },
   "extended": [],

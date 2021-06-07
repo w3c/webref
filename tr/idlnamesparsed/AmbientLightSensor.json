@@ -5,7 +5,7 @@
       "title": "Ambient Light Sensor",
       "url": "https://www.w3.org/TR/ambient-light/"
     },
-    "fragment": "[Constructor(optional SensorOptions sensorOptions), SecureContext, Exposed=Window]\ninterface AmbientLightSensor : Sensor {\n  readonly attribute double? illuminance;\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface AmbientLightSensor : Sensor {\n  constructor(optional SensorOptions sensorOptions = {});\n  readonly attribute double? illuminance;\n};",
     "href": "https://www.w3.org/TR/ambient-light/#ambientlightsensor"
   },
   "extended": [],

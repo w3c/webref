@@ -2152,7 +2152,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -2238,15 +2238,22 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "dst",
-                "extAttrs": [],
+                "name": "destination",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ArrayBufferView"
+                  "idlType": "BufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -2356,7 +2363,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute long long? duration;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo(ArrayBufferView dst);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedVideoChunk {\n  constructor(EncodedVideoChunkInit init);\n  readonly attribute EncodedVideoChunkType type;\n  readonly attribute long long timestamp;             // microseconds\n  readonly attribute unsigned long long? duration;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
         "type": "interface",
         "name": "EncodedVideoChunk",
         "inheritance": null,
@@ -2422,7 +2429,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2457,15 +2464,22 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "dst",
-                "extAttrs": [],
+                "name": "destination",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "ArrayBufferView"
+                  "idlType": "BufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -2497,7 +2511,7 @@
         "partial": false
       },
       "EncodedVideoChunkInit": {
-        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;    // microseconds\n  [EnforceRange] long long duration;              // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary EncodedVideoChunkInit {\n  required EncodedVideoChunkType type;\n  [EnforceRange] required long long timestamp;        // microseconds\n  [EnforceRange] unsigned long long duration;         // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkInit",
         "inheritance": null,
@@ -2556,7 +2570,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -2597,7 +2611,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat sampleFormat;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute long long duration;     // microseconds\n  readonly attribute long long timestamp;    // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -2626,7 +2640,7 @@
           },
           {
             "type": "attribute",
-            "name": "sampleFormat",
+            "name": "format",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -2693,7 +2707,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "extAttrs": [],
             "special": "",
@@ -2853,14 +2867,14 @@
         "partial": false
       },
       "AudioDataInit": {
-        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat sampleFormat;\n  [EnforceRange] required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;    // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  [EnforceRange] required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "AudioDataInit",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "sampleFormat",
+            "name": "format",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -3087,7 +3101,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<(Plane or PlaneInit)> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane>? planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute long long? duration;     // microseconds\n  readonly attribute long long? timestamp;    // microseconds\n\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<(Plane or PlaneInit)> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute FrozenArray<Plane>? planes;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute unsigned long cropLeft;\n  readonly attribute unsigned long cropTop;\n  readonly attribute unsigned long cropWidth;\n  readonly attribute unsigned long cropHeight;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3364,7 +3378,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "extAttrs": [],
             "special": "",
@@ -3437,7 +3451,7 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  long long duration;     // microseconds\n  long long timestamp;    // microseconds\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -3452,7 +3466,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -3477,7 +3491,7 @@
         "partial": false
       },
       "VideoFramePlaneInit": {
-        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  [EnforceRange] unsigned long cropLeft;\n  [EnforceRange] unsigned long cropTop;\n  [EnforceRange] unsigned long cropWidth;\n  [EnforceRange] unsigned long cropHeight;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] long long duration;     // microseconds\n  [EnforceRange] long long timestamp;    // microseconds\n};",
+        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  [EnforceRange] unsigned long cropLeft;\n  [EnforceRange] unsigned long cropTop;\n  [EnforceRange] unsigned long cropWidth;\n  [EnforceRange] unsigned long cropHeight;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long duration;  // microseconds\n  [EnforceRange] long long timestamp;          // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFramePlaneInit",
         "inheritance": null,
@@ -3690,7 +3704,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "long long"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false

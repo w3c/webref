@@ -6,6 +6,9 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
+        "DedicatedWorker": [
+          "GeolocationSensor"
+        ],
         "Window": [
           "GeolocationSensor"
         ]
@@ -14,11 +17,35 @@
     },
     "idlNames": {
       "GeolocationSensor": {
-        "fragment": "[Constructor(optional GeolocationSensorOptions options), SecureContext, Exposed=Window]\ninterface GeolocationSensor : Sensor {\n  static Promise<GeolocationSensorReading> read(optional ReadOptions readOptions);\n  readonly attribute unrestricted double? latitude;\n  readonly attribute unrestricted double? longitude;\n  readonly attribute unrestricted double? altitude;\n  readonly attribute unrestricted double? accuracy;\n  readonly attribute unrestricted double? altitudeAccuracy;\n  readonly attribute unrestricted double? heading;\n  readonly attribute unrestricted double? speed;\n};",
+        "fragment": "[SecureContext,\n Exposed=(DedicatedWorker, Window)]\ninterface GeolocationSensor : Sensor {\n  constructor(optional GeolocationSensorOptions options = {});\n  static Promise<GeolocationSensorReading> read(optional ReadOptions readOptions = {});\n  readonly attribute unrestricted double? latitude;\n  readonly attribute unrestricted double? longitude;\n  readonly attribute unrestricted double? altitude;\n  readonly attribute unrestricted double? accuracy;\n  readonly attribute unrestricted double? altitudeAccuracy;\n  readonly attribute unrestricted double? heading;\n  readonly attribute unrestricted double? speed;\n};",
         "type": "interface",
         "name": "GeolocationSensor",
         "inheritance": "Sensor",
         "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GeolocationSensorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
           {
             "type": "operation",
             "name": "read",
@@ -52,7 +79,9 @@
                   "union": false,
                   "idlType": "ReadOptions"
                 },
-                "default": null,
+                "default": {
+                  "type": "dictionary"
+                },
                 "optional": true,
                 "variadic": false
               }
@@ -169,29 +198,6 @@
         "extAttrs": [
           {
             "type": "extended-attribute",
-            "name": "Constructor",
-            "rhs": null,
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "options",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GeolocationSensorOptions"
-                },
-                "default": null,
-                "optional": true,
-                "variadic": false
-              }
-            ]
-          },
-          {
-            "type": "extended-attribute",
             "name": "SecureContext",
             "rhs": null,
             "arguments": []
@@ -200,8 +206,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "DedicatedWorker"
+                },
+                {
+                  "value": "Window"
+                }
+              ]
             },
             "arguments": []
           }
@@ -371,11 +384,129 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "GeolocationReadingValues": {
+        "fragment": "dictionary GeolocationReadingValues {\n  required double? latitude;\n  required double? longitude;\n  required double? altitude;\n  required double? accuracy;\n  required double? altitudeAccuracy;\n  required double? heading;\n  required double? speed;\n};",
+        "type": "dictionary",
+        "name": "GeolocationReadingValues",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "latitude",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "longitude",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "altitude",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "accuracy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "altitudeAccuracy",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "heading",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "speed",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
     "globals": {},
     "exposed": {
+      "DedicatedWorker": [
+        "GeolocationSensor"
+      ],
       "Window": [
         "GeolocationSensor"
       ]
@@ -396,7 +527,8 @@
       ],
       "GeolocationSensorReading": [
         "DOMHighResTimeStamp"
-      ]
+      ],
+      "GeolocationReadingValues": []
     },
     "externalDependencies": [
       "Sensor",

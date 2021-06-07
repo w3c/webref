@@ -8,7 +8,7 @@
       "name": "color",
       "value": "<color>",
       "initial": "CanvasText",
-      "appliesTo": "all elements",
+      "appliesTo": "all elements and text",
       "inherited": "yes",
       "percentages": "N/A",
       "computedValue": "computed color, see resolving color values",
@@ -45,6 +45,12 @@
       "for": "@color-profile",
       "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
       "initial": "relative-colorimetric"
+    },
+    "components": {
+      "name": "components",
+      "for": "@color-profile",
+      "value": "<ident>#",
+      "initial": "n/a"
     }
   },
   "valuespaces": {
@@ -73,7 +79,7 @@
       "value": "lch( <percentage> <number> <hue> [ / <alpha-value> ]? )"
     },
     "<color()>": {
-      "value": "color( [ [<ident> | <dashed-ident>]? [ <number-percentage>+ | <string> ] [ / <alpha-value> ]? ]# , <color>? )"
+      "value": "color( [<ident> | <dashed-ident>] [ <number-percentage>+ ] [ / <alpha-value> ]? )"
     },
     "<device-cmyk()>": {
       "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <color>? )"
