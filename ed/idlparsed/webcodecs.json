@@ -2152,7 +2152,7 @@
         "extAttrs": []
       },
       "EncodedAudioChunk": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface EncodedAudioChunk {\n  constructor(EncodedAudioChunkInit init);\n  readonly attribute EncodedAudioChunkType type;\n  readonly attribute long long timestamp;    // microseconds\n  readonly attribute unsigned long duration; // microseconds\n  readonly attribute unsigned long byteLength;\n\n  undefined copyTo([AllowShared] BufferSource destination);\n};",
         "type": "interface",
         "name": "EncodedAudioChunk",
         "inheritance": null,
@@ -2204,6 +2204,21 @@
               "nullable": false,
               "union": false,
               "idlType": "long long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "duration",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
