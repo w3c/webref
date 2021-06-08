@@ -536,7 +536,7 @@
         "partial": false
       },
       "GPURequestAdapterOptions": {
-        "fragment": "dictionary GPURequestAdapterOptions {\n    GPUPowerPreference powerPreference;\n};",
+        "fragment": "dictionary GPURequestAdapterOptions {\n    GPUPowerPreference powerPreference;\n    boolean forceSoftware = false;\n};",
         "type": "dictionary",
         "name": "GPURequestAdapterOptions",
         "inheritance": null,
@@ -554,6 +554,24 @@
               "idlType": "GPUPowerPreference"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "forceSoftware",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           }
         ],
@@ -577,7 +595,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isSoftware;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -638,6 +656,21 @@
                 "arguments": []
               }
             ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "isSoftware",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
