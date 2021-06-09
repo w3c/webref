@@ -4277,7 +4277,7 @@
         "partial": false
       },
       "GPUProgrammableStage": {
-        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n};",
+        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
         "type": "dictionary",
         "name": "GPUProgrammableStage",
         "inheritance": null,
@@ -4311,13 +4311,59 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "constants",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineConstantValue"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
+      "GPUPipelineConstantValue": {
+        "fragment": "typedef double GPUPipelineConstantValue;",
+        "type": "typedef",
+        "name": "GPUPipelineConstantValue",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": []
+      },
       "GPUComputePipeline": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface GPUComputePipeline {\n};",
+        "fragment": "// May represent WGSL’s bool, f32, i32, u32.\n\n[Exposed=Window, Serializable]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
@@ -10988,7 +11034,8 @@
         "GPUBindGroupLayout"
       ],
       "GPUProgrammableStage": [
-        "GPUShaderModule"
+        "GPUShaderModule",
+        "GPUPipelineConstantValue"
       ],
       "GPUComputePipeline": [
         "GPUObjectBase",
