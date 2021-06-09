@@ -48,8 +48,7 @@
           "GPURenderBundleEncoder",
           "GPUQueue",
           "GPUQuerySet",
-          "GPUCanvasContext",
-          "GPUSwapChain",
+          "GPUPresentationContext",
           "GPUDeviceLostInfo"
         ],
         "DedicatedWorker": [
@@ -9220,35 +9219,35 @@
         ],
         "extAttrs": []
       },
-      "GPUCanvasContext": {
-        "fragment": "[Exposed=Window]\ninterface GPUCanvasContext {\n    GPUSwapChain configureSwapChain(GPUSwapChainDescriptor descriptor);\n\n    GPUTextureFormat getSwapChainPreferredFormat(GPUAdapter adapter);\n};",
+      "GPUPresentationContext": {
+        "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration? configuration);\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
-        "name": "GPUCanvasContext",
+        "name": "GPUPresentationContext",
         "inheritance": null,
         "members": [
           {
             "type": "operation",
-            "name": "configureSwapChain",
+            "name": "configure",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSwapChain"
+              "idlType": "undefined"
             },
             "arguments": [
               {
                 "type": "argument",
-                "name": "descriptor",
+                "name": "configuration",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
-                  "idlType": "GPUSwapChainDescriptor"
+                  "idlType": "GPUPresentationConfiguration"
                 },
                 "default": null,
                 "optional": false,
@@ -9260,7 +9259,7 @@
           },
           {
             "type": "operation",
-            "name": "getSwapChainPreferredFormat",
+            "name": "getPreferredFormat",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -9287,6 +9286,21 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getCurrentTexture",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -9320,10 +9334,10 @@
         ],
         "extAttrs": []
       },
-      "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+      "GPUPresentationConfiguration": {
+        "fragment": "dictionary GPUPresentationConfiguration : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
-        "name": "GPUSwapChainDescriptor",
+        "name": "GPUPresentationConfiguration",
         "inheritance": "GPUObjectDescriptorBase",
         "members": [
           {
@@ -9409,41 +9423,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "GPUSwapChain": {
-        "fragment": "[Exposed=Window]\ninterface GPUSwapChain {\n    GPUTexture getCurrentTexture();\n};",
-        "type": "interface",
-        "name": "GPUSwapChain",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "getCurrentTexture",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTexture"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "GPUDeviceLostReason": {
@@ -10760,15 +10739,6 @@
           "target": "GPUQuerySet",
           "includes": "GPUObjectBase"
         }
-      ],
-      "GPUSwapChain": [
-        {
-          "fragment": "GPUSwapChain includes GPUObjectBase;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "GPUSwapChain",
-          "includes": "GPUObjectBase"
-        }
       ]
     },
     "globals": {},
@@ -10805,8 +10775,7 @@
         "GPURenderBundleEncoder",
         "GPUQueue",
         "GPUQuerySet",
-        "GPUCanvasContext",
-        "GPUSwapChain",
+        "GPUPresentationContext",
         "GPUDeviceLostInfo",
         "GPUOutOfMemoryError",
         "GPUValidationError",
@@ -11232,23 +11201,19 @@
         "GPUSize32",
         "GPUPipelineStatisticName"
       ],
-      "GPUCanvasContext": [
-        "GPUSwapChain",
-        "GPUSwapChainDescriptor",
+      "GPUPresentationContext": [
+        "GPUPresentationConfiguration",
         "GPUTextureFormat",
-        "GPUAdapter"
+        "GPUAdapter",
+        "GPUTexture"
       ],
-      "GPUSwapChainDescriptor": [
+      "GPUPresentationConfiguration": [
         "GPUObjectDescriptorBase",
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
         "GPUCanvasCompositingAlphaMode",
         "GPUExtent3D"
-      ],
-      "GPUSwapChain": [
-        "GPUTexture",
-        "GPUObjectBase"
       ],
       "GPUDeviceLostInfo": [
         "GPUDeviceLostReason"

@@ -17250,10 +17250,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "gpucanvascontext",
-      "href": "https://gpuweb.github.io/gpuweb/#gpucanvascontext",
+      "id": "gpupresentationcontext",
+      "href": "https://gpuweb.github.io/gpuweb/#gpupresentationcontext",
       "linkingText": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -17261,137 +17261,253 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvascontext-canvas-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-canvas-slot",
+      "id": "dom-gpupresentationcontext-canvas-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-canvas-slot",
       "linkingText": [
         "[[canvas]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-currentswapchain-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-currentswapchain-slot",
+      "id": "dom-gpupresentationcontext-validconfiguration-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-validconfiguration-slot",
       "linkingText": [
-        "[[currentSwapChain]]"
+        "[[validConfiguration]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-configureswapchain",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configureswapchain",
+      "id": "dom-gpupresentationcontext-configuration-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-configuration-slot",
       "linkingText": [
-        "configureSwapChain(descriptor)"
+        "[[configuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-size-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-size-slot",
+      "linkingText": [
+        "[[size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-currenttexture-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-currenttexture-slot",
+      "linkingText": [
+        "[[currentTexture]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-configure",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-configure",
+      "linkingText": [
+        "configure(configuration)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-configureswapchain-descriptor-descriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-configureswapchain-descriptor-descriptor",
+      "id": "dom-gpupresentationcontext-configure-configuration-configuration",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-configure-configuration-configuration",
       "linkingText": [
-        "descriptor"
+        "configuration"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCanvasContext/configureSwapChain(descriptor)"
+        "GPUPresentationContext/configure(configuration)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucanvascontext-getswapchainpreferredformat",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getswapchainpreferredformat",
+      "id": "dom-gpupresentationcontext-getpreferredformat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-getpreferredformat",
       "linkingText": [
-        "getSwapChainPreferredFormat(adapter)"
+        "getPreferredFormat(adapter)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
+      "id": "dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
       "linkingText": [
         "adapter"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCanvasContext/getSwapChainPreferredFormat(adapter)"
+        "GPUPresentationContext/getPreferredFormat(adapter)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "supported-swap-chain-formats",
-      "href": "https://gpuweb.github.io/gpuweb/#supported-swap-chain-formats",
+      "id": "dom-gpupresentationcontext-getcurrenttexture",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationcontext-getcurrenttexture",
       "linkingText": [
-        "supported swap chain formats"
+        "getCurrentTexture()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-present-the-presentation-context-content-to-the-canvas",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-present-the-presentation-context-content-to-the-canvas",
+      "linkingText": [
+        "present the presentation context content to the canvas"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-allocating-a-new-presentation-context-texture",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-allocating-a-new-presentation-context-texture",
+      "linkingText": [
+        "allocating a new presentation context texture"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "supported-presentation-context-formats",
+      "href": "https://gpuweb.github.io/gpuweb/#supported-presentation-context-formats",
+      "linkingText": [
+        "supported presentation context formats"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -17399,8 +17515,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "prose"
@@ -17417,8 +17533,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -17437,8 +17553,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -17457,17 +17573,17 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-gpuswapchaindescriptor",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuswapchaindescriptor",
+      "id": "dictdef-gpupresentationconfiguration",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpupresentationconfiguration",
       "linkingText": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -17475,283 +17591,111 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-device",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-device",
+      "id": "dom-gpupresentationconfiguration-device",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationconfiguration-device",
       "linkingText": [
         "device"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-format",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-format",
+      "id": "dom-gpupresentationconfiguration-format",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationconfiguration-format",
       "linkingText": [
         "format"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-usage",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-usage",
+      "id": "dom-gpupresentationconfiguration-usage",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationconfiguration-usage",
       "linkingText": [
         "usage"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-compositingalphamode",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-compositingalphamode",
+      "id": "dom-gpupresentationconfiguration-compositingalphamode",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationconfiguration-compositingalphamode",
       "linkingText": [
         "compositingAlphaMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-size",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchaindescriptor-size",
+      "id": "dom-gpupresentationconfiguration-size",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpupresentationconfiguration-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "gpuswapchain",
-      "href": "https://gpuweb.github.io/gpuweb/#gpuswapchain",
-      "linkingText": [
-        "GPUSwapChain"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuswapchain-context-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchain-context-slot",
-      "linkingText": [
-        "[[context]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-descriptor-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchain-descriptor-slot",
-      "linkingText": [
-        "[[descriptor]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-size-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchain-size-slot",
-      "linkingText": [
-        "[[size]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-currenttexture-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchain-currenttexture-slot",
-      "linkingText": [
-        "[[currentTexture]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-getcurrenttexture",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuswapchain-getcurrenttexture",
-      "linkingText": [
-        "getCurrentTexture()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "abstract-opdef-present-the-swap-chain-content-to-the-canvas",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-present-the-swap-chain-content-to-the-canvas",
-      "linkingText": [
-        "present the swap chain content to the canvas"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-allocating-a-new-swap-chain-texture",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-allocating-a-new-swap-chain-texture",
-      "linkingText": [
-        "allocating a new swap chain texture"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-destroy-the-swap-chain",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-destroy-the-swap-chain",
-      "linkingText": [
-        "destroy the swap chain"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
@@ -17769,7 +17713,7 @@
       "heading": {
         "id": "GPUCanvasCompositingAlphaMode",
         "title": "GPUCanvasCompositingAlphaMode",
-        "number": "19.5"
+        "number": "19.4"
       },
       "definedIn": "heading"
     },
