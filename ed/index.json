@@ -1,11 +1,11 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-06-10T12:48:28.943Z",
+  "date": "2021-06-10T18:50:39.852Z",
   "options": {},
   "stats": {
     "crawled": 399,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -1309,16 +1309,14 @@
       "versions": [
         "https://mathml-refresh.github.io/mathml-core/"
       ],
-      "crawled": "https://mathml-refresh.github.io/mathml-core/",
-      "date": "21 April 2021",
-      "links": "links/mathml-core.json",
-      "refs": "refs/mathml-core.json",
-      "idl": "idl/mathml-core.idl",
-      "generator": "respec",
-      "dfns": "dfns/mathml-core.json",
-      "headings": "headings/mathml-core.json",
-      "ids": "ids/mathml-core.json",
-      "idlparsed": "idlparsed/mathml-core.json"
+      "crawled": {
+        "url": "https://mathml-refresh.github.io/mathml-core/",
+        "repository": "https://github.com/mathml-refresh/mathml-core",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "date": "",
+      "error": "Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:381:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:241:24)\n    at async Promise.all (index 31)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:247:21)\n    at async Promise.all (index 0)"
     },
     {
       "url": "https://mimesniff.spec.whatwg.org/",
@@ -1832,7 +1830,7 @@
         "https://tc39.es/proposal-class-static-block/"
       ],
       "crawled": "https://tc39.es/proposal-class-static-block/",
-      "date": "19 March 2021",
+      "date": "10 June 2021",
       "links": "links/tc39-class-static-block.json",
       "generator": null,
       "headings": "headings/tc39-class-static-block.json",
@@ -13847,7 +13845,7 @@
         "https://w3c.github.io/mediacapture-screen-share/"
       ],
       "crawled": "https://w3c.github.io/mediacapture-screen-share/",
-      "date": "03 June 2021",
+      "date": "10 June 2021",
       "links": "links/screen-capture.json",
       "refs": "refs/screen-capture.json",
       "idl": "idl/screen-capture.idl",
@@ -15566,7 +15564,7 @@
         "https://gpuweb.github.io/gpuweb/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
-      "date": "9 June 2021",
+      "date": "10 June 2021",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -16236,7 +16234,7 @@
         "https://gpuweb.github.io/gpuweb/wgsl/"
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
-      "date": "9 June 2021",
+      "date": "10 June 2021",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "generator": "bikeshed",
