@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 09, 2021
+% June 10, 2021
 
 399 specifications were crawled in this report.
 
@@ -2790,7 +2790,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
      * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
      * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/):
      * [`https://html.spec.whatwg.org/#plaintext-state`](https://html.spec.whatwg.org/#plaintext-state)
      * [`https://html.spec.whatwg.org/#rcdata-state`](https://html.spec.whatwg.org/#rcdata-state)
@@ -3278,7 +3277,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
      * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
      * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
      * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
@@ -3296,7 +3294,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
      * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
      * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
      * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
@@ -3830,7 +3827,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1317 problematic external links found in 202 specifications
+=> 1314 problematic external links found in 202 specifications
 
 
 ## External links that neither target definitions nor headings

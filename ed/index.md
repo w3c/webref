@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 09, 2021
+% June 10, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -1994,6 +1994,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [MathML Core](https://mathml-refresh.github.io/mathml-core/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -2461,7 +2462,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Crawled URL: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
-- Crawled version: 20 May 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-adjust-1/](https://drafts.csswg.org/css-color-adjust-1/)
 - Latest published version: [https://www.w3.org/TR/css-color-adjust-1/](https://www.w3.org/TR/css-color-adjust-1/)
 - Shortname: css-color-adjust-1
@@ -3128,7 +3129,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 17 May 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -6344,7 +6345,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Crawled version: 8 February 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
 - Latest published version: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Shortname: cssom-view-1
@@ -8047,7 +8048,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
      * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
      * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
@@ -8210,7 +8210,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 8 June 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -11792,7 +11792,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - Crawled URL: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
-- Crawled version: 27 May 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://wicg.github.io/scheduling-apis/](https://wicg.github.io/scheduling-apis/)
 - Shortname: scheduling-apis
 
@@ -12939,7 +12939,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
      * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
      * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
      * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
@@ -13164,7 +13163,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
      * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
      * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
      * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
      * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
