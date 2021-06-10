@@ -2714,6 +2714,7 @@ Normative references to this spec from:
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 
@@ -5575,6 +5576,7 @@ Normative references to this spec from:
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
@@ -5733,7 +5735,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 18 May 2021
+- Crawled version: 9 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -7707,7 +7709,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 07 June 2021
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -10122,7 +10124,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 07 June 2021
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -11134,7 +11136,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled URL: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
-- Crawled version: 04 June 2021
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Shortname: page-visibility-2
@@ -11604,7 +11606,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 02 June 2021
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -14814,7 +14816,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 2 June 2021
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
