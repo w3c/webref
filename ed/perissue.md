@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 10, 2021
+% June 11, 2021
 
 399 specifications were crawled in this report.
 
@@ -282,11 +282,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"disabled"` with type `enum-value` for [`TextTrackMode`](https://html.spec.whatwg.org/multipage/media.html#texttrackmode), but found [`disabled`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled) with type `element-attr` for `link`
     * `"hidden"` with type `enum-value` for [`TextTrackMode`](https://html.spec.whatwg.org/multipage/media.html#texttrackmode), but found [`hidden`](https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-hidden) with type `dfn`
     * `"showing"` with type `enum-value` for [`TextTrackMode`](https://html.spec.whatwg.org/multipage/media.html#texttrackmode), but found [`showing`](https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-showing) with type `dfn`
-    * `"subtitles"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`subtitles`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles) with type `dfn`
-    * `"captions"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`captions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions) with type `dfn`
-    * `"descriptions"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`descriptions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions) with type `dfn`
-    * `"chapters"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`chapters`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters) with type `dfn`
-    * `"metadata"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata) with type `dfn`
+    * `"subtitles"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`subtitles`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-subtitles) with type `attr-value` for `track/kind`
+    * `"captions"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`captions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-captions) with type `attr-value` for `track/kind`
+    * `"descriptions"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`descriptions`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-descriptions) with type `attr-value` for `track/kind`
+    * `"chapters"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`chapters`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-chapters) with type `attr-value` for `track/kind`
+    * `"metadata"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata) with type `attr-value` for `track/kind`
     * `constructor(type, eventInitDict)` with type `constructor` for [`TrackEvent`](https://html.spec.whatwg.org/multipage/media.html#trackevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `track` with type `dict-member` for [`TrackEventInit`](https://html.spec.whatwg.org/multipage/media.html#trackeventinit), but found [`track`](https://html.spec.whatwg.org/multipage/media.html#the-track-element) with type `element`
     * `formAction` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formAction`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formaction) with type `attribute` for `HTMLButtonElement`
@@ -2448,15 +2448,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/):
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-username`](https://html.spec.whatwg.org/#attr-fe-autocomplete-username)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-current-password`](https://html.spec.whatwg.org/#attr-fe-autocomplete-current-password)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-new-password`](https://html.spec.whatwg.org/#attr-fe-autocomplete-new-password)
      * [`https://html.spec.whatwg.org/#category-submit`](https://html.spec.whatwg.org/#category-submit)
      * [`https://html.spec.whatwg.org/#form-owner`](https://html.spec.whatwg.org/#form-owner)
      * [`https://html.spec.whatwg.org/#autofill-detail-tokens`](https://html.spec.whatwg.org/#autofill-detail-tokens)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-photo`](https://html.spec.whatwg.org/#attr-fe-autocomplete-photo)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-name`](https://html.spec.whatwg.org/#attr-fe-autocomplete-name)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-nickname`](https://html.spec.whatwg.org/#attr-fe-autocomplete-nickname)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/):
      * [`https://drafts.csswg.org/web-animations#animation-effect`](https://drafts.csswg.org/web-animations#animation-effect)
      * [`https://drafts.csswg.org/web-animations#concept-animation`](https://drafts.csswg.org/web-animations#concept-animation)
@@ -2535,7 +2529,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/):
      * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
      * [`https://www.w3.org/TR/css-color-4/#css-system-colors`](https://www.w3.org/TR/css-color-4/#css-system-colors)
-     * [`https://html.spec.whatwg.org/#meta-color-scheme`](https://html.spec.whatwg.org/#meta-color-scheme)
      * [`https://drafts.csswg.org/css2/#canvas`](https://drafts.csswg.org/css2/#canvas)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
      * [`https://drafts.csswg.org/css-break-3/#monolithic`](https://drafts.csswg.org/css-break-3/#monolithic)
@@ -2626,8 +2619,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#nodes-are-removed`](https://html.spec.whatwg.org/#nodes-are-removed)
      * [`https://html.spec.whatwg.org/#sequential-focus-navigation-order`](https://html.spec.whatwg.org/#sequential-focus-navigation-order)
      * [`https://drafts.csswg.org/cssom-view-1/#scroll-an-element`](https://drafts.csswg.org/cssom-view-1/#scroll-an-element)
-- [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/):
-     * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://www.w3.org/TR/css-text-3/#grapheme-cluster`](https://www.w3.org/TR/css-text-3/#grapheme-cluster)
      * [`https://www.w3.org/TR/css-text-3/#letter`](https://www.w3.org/TR/css-text-3/#letter)
@@ -2965,7 +2956,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/geometry-1/#rectangle`](https://www.w3.org/TR/geometry-1/#rectangle)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html):
      * [`https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch)
-     * [`https://html.spec.whatwg.org/#link-type-prefetch`](https://html.spec.whatwg.org/#link-type-prefetch)
      * [`https://html.spec.whatwg.org/#navigation-params`](https://html.spec.whatwg.org/#navigation-params)
      * [`https://html.spec.whatwg.org/#process-the-linked-resource`](https://html.spec.whatwg.org/#process-the-linked-resource)
      * [`https://html.spec.whatwg.org/#select-an-image-source`](https://html.spec.whatwg.org/#select-an-image-source)
@@ -3102,8 +3092,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-feature-policy/#parse-policy-directive`](https://w3c.github.io/webappsec-feature-policy/#parse-policy-directive)
      * [`https://w3c.github.io/ServiceWorker/#update`](https://w3c.github.io/ServiceWorker/#update)
      * [`https://w3c.github.io/ServiceWorker/#run-service-worker`](https://w3c.github.io/ServiceWorker/#run-service-worker)
-- [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/):
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete-one-time-code`](https://html.spec.whatwg.org/#attr-fe-autocomplete-one-time-code)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/):
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
      * [`https://html.spec.whatwg.org/#iframe-load-event-steps`](https://html.spec.whatwg.org/#iframe-load-event-steps)
@@ -3229,8 +3217,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/box.html#border-edge`](https://drafts.csswg.org/css2/box.html#border-edge)
      * [`https://drafts.csswg.org/css2/box.html#content-edge`](https://drafts.csswg.org/css2/box.html#content-edge)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/):
-     * [`https://html.spec.whatwg.org/#link-type-noreferrer`](https://html.spec.whatwg.org/#link-type-noreferrer)
-     * [`https://html.spec.whatwg.org/#meta-referrer`](https://html.spec.whatwg.org/#meta-referrer)
      * [`https://html.spec.whatwg.org/#javascript-protocol`](https://html.spec.whatwg.org/#javascript-protocol)
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
@@ -3266,7 +3252,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#url`](https://html.spec.whatwg.org/#url)
      * [`https://html.spec.whatwg.org/#delay-the-load-event`](https://html.spec.whatwg.org/#delay-the-load-event)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/):
-     * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
      * [`https://www.w3.org/TR/navigation-timing-2/#dom-PerformanceNavigationTiming-startTime`](https://www.w3.org/TR/navigation-timing-2/#dom-PerformanceNavigationTiming-startTime)
      * [`https://fetch.spec.whatwg.org/#record-connection-timing-info`](https://fetch.spec.whatwg.org/#record-connection-timing-info)
      * [`https://fetch.spec.whatwg.org/#concept-tao-check`](https://fetch.spec.whatwg.org/#concept-tao-check)
@@ -3834,7 +3819,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1308 problematic external links found in 201 specifications
+=> 1295 problematic external links found in 199 specifications
 
 
 ## External links that neither target definitions nor headings
