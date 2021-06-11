@@ -939,6 +939,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "webtransport-sendstreams",
+      "href": "https://w3c.github.io/webtransport/#webtransport-sendstreams",
+      "linkingText": [
+        "[[SendStreams]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-receivestreams",
+      "href": "https://w3c.github.io/webtransport/#webtransport-receivestreams",
+      "linkingText": [
+        "[[ReceiveStreams]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "webtransport-outgoingstreams",
       "href": "https://w3c.github.io/webtransport/#webtransport-outgoingstreams",
       "linkingText": [
@@ -1331,9 +1371,29 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "webtransport-methods",
-        "title": "Methods",
-        "number": "7.4"
+        "id": "webtransport-procedures",
+        "title": "Procedures",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webtransport-cleanup",
+      "href": "https://w3c.github.io/webtransport/#webtransport-cleanup",
+      "linkingText": [
+        "cleanup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-procedures",
+        "title": "Procedures",
+        "number": "7.5"
       },
       "definedIn": "prose"
     },
@@ -1351,7 +1411,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "prose"
     },
@@ -1371,7 +1431,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "dt"
     },
@@ -1391,7 +1451,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "dt"
     },
@@ -1409,7 +1469,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "prose"
     },
@@ -1427,7 +1487,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "prose"
     },
@@ -1445,7 +1505,7 @@
       "heading": {
         "id": "web-transport-configuration",
         "title": "Configuration",
-        "number": "7.5"
+        "number": "7.6"
       },
       "definedIn": "prose"
     },
@@ -1463,7 +1523,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "prose"
     },
@@ -1483,7 +1543,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -1503,7 +1563,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -1523,7 +1583,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -1543,7 +1603,7 @@
       "heading": {
         "id": "web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "7.6"
+        "number": "7.7"
       },
       "definedIn": "dt"
     },
@@ -1561,7 +1621,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "prose"
     },
@@ -1581,7 +1641,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -1601,7 +1661,7 @@
       "heading": {
         "id": "web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "7.7"
+        "number": "7.8"
       },
       "definedIn": "dt"
     },
@@ -1619,7 +1679,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "prose"
     },
@@ -1639,7 +1699,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1659,7 +1719,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1679,7 +1739,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1699,7 +1759,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1719,7 +1779,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1739,7 +1799,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1759,7 +1819,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1779,7 +1839,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
@@ -1799,7 +1859,7 @@
       "heading": {
         "id": "web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "7.8"
+        "number": "7.9"
       },
       "definedIn": "dt"
     },
