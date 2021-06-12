@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 11, 2021
+% June 12, 2021
 
 399 specifications were crawled in this report.
 
@@ -3829,7 +3829,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#aria-labelledby`](https://w3c.github.io/aria/#aria-labelledby)
      * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
      * [`https://w3c.github.io/aria/#textbox`](https://w3c.github.io/aria/#textbox)
-     * [`https://w3c.github.io/aria/#button`](https://w3c.github.io/aria/#button)
      * [`https://w3c.github.io/aria/#combobox`](https://w3c.github.io/aria/#combobox)
      * [`https://w3c.github.io/aria/#listbox`](https://w3c.github.io/aria/#listbox)
      * [`https://w3c.github.io/aria/#option`](https://w3c.github.io/aria/#option)
@@ -4770,7 +4769,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 876 problematic external links found in 69 specifications
+=> 875 problematic external links found in 69 specifications
 
 
 ## Broken external links

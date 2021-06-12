@@ -1,6 +1,5 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-dictionary PlaneInit {
-  required BufferSource data;
+dictionary PlaneLayout {
+  [EnforceRange] required unsigned long offset;
   [EnforceRange] required unsigned long stride;
-  [EnforceRange] unsigned long offset = 0;
 };
