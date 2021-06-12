@@ -1,4 +1,4 @@
-% Diff between report from "June 12, 2021" and reference report from "June 11, 2021"
+% Diff between report from "June 12, 2021" and reference report from "June 12, 2021"
 % Reffy
 % June 12, 2021
 
