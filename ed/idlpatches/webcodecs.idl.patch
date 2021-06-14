@@ -1,0 +1,104 @@
+From 7bb8d539a667ac3145e863c856944e3e862d5b6a Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Mon, 14 Jun 2021 19:01:19 +0200
+Subject: [PATCH] Revert IDL while dictionary as attribute issue gets fixed
+
+https://github.com/w3c/webcodecs/issues/278
+---
+ ed/idl/webcodecs.idl | 47 +++++++++++++++++++-------------------------
+ 1 file changed, 20 insertions(+), 27 deletions(-)
+
+diff --git a/ed/idl/webcodecs.idl b/ed/idl/webcodecs.idl
+index dbb3cc2de..16d6bd5ed 100644
+--- a/ed/idl/webcodecs.idl
++++ b/ed/idl/webcodecs.idl
+@@ -161,7 +161,6 @@ dictionary VideoEncoderConfig {
+   [EnforceRange] unsigned long displayHeight;
+   HardwareAcceleration hardwareAcceleration = "allow";
+   DOMString scalabilityMode;
+-  BitrateMode bitrateMode = "variable";
+ };
+ 
+ enum HardwareAcceleration {
+@@ -275,23 +274,22 @@ enum AudioSampleFormat {
+ [Exposed=(Window,DedicatedWorker)]
+ interface VideoFrame {
+   constructor(CanvasImageSource image, optional VideoFrameInit init = {});
+-  constructor(sequence<PlaneInit> planes,
++  constructor(sequence<(Plane or PlaneInit)> planes,
+               VideoFramePlaneInit init);
+ 
+   readonly attribute PixelFormat format;
++  readonly attribute FrozenArray<Plane>? planes;
+   readonly attribute unsigned long codedWidth;
+   readonly attribute unsigned long codedHeight;
+-  readonly attribute VideoFrameRect codedRect;
+-  readonly attribute VideoFrameRect visibleRect;
++  readonly attribute unsigned long cropLeft;
++  readonly attribute unsigned long cropTop;
++  readonly attribute unsigned long cropWidth;
++  readonly attribute unsigned long cropHeight;
+   readonly attribute unsigned long displayWidth;
+   readonly attribute unsigned long displayHeight;
+   readonly attribute unsigned long long? duration;  // microseconds
+   readonly attribute long long? timestamp;          // microseconds
+-  unsigned long allocationSize(
+-      optional VideoFrameCopyToOptions options = {});
+-  Promise<sequence<PlaneLayout>> copyTo(
+-      [AllowShared] BufferSource destination,
+-      optional VideoFrameCopyToOptions options = {});
++
+   VideoFrame clone();
+   undefined close();
+ };
+@@ -305,34 +303,29 @@ dictionary VideoFramePlaneInit {
+   required PixelFormat format;
+   [EnforceRange] required unsigned long codedWidth;
+   [EnforceRange] required unsigned long codedHeight;
+-  VideoFrameRect visibleRect;
++  [EnforceRange] unsigned long cropLeft;
++  [EnforceRange] unsigned long cropTop;
++  [EnforceRange] unsigned long cropWidth;
++  [EnforceRange] unsigned long cropHeight;
+   [EnforceRange] unsigned long displayWidth;
+   [EnforceRange] unsigned long displayHeight;
+   [EnforceRange] unsigned long long duration;  // microseconds
+   [EnforceRange] long long timestamp;          // microseconds
+ };
+ 
+-dictionary PlaneInit {
+-  required BufferSource data;
+-  [EnforceRange] required unsigned long stride;
+-  [EnforceRange] unsigned long offset = 0;
+-};
+-
+-dictionary VideoFrameCopyToOptions {
+-  VideoFrameRect rect;
+-  sequence<PlaneLayout> layout;
+-};
++[Exposed=(Window,DedicatedWorker)]
++interface Plane {
++  readonly attribute unsigned long stride;
++  readonly attribute unsigned long rows;
++  readonly attribute unsigned long length;
+ 
+-dictionary VideoFrameRect {
+-  [EnforceRange] required unsigned long left;
+-  [EnforceRange] required unsigned long top;
+-  [EnforceRange] required unsigned long width;
+-  [EnforceRange] required unsigned long height;
++  undefined readInto(ArrayBufferView dst);
+ };
+ 
+-dictionary PlaneLayout {
+-  [EnforceRange] required unsigned long offset;
++dictionary PlaneInit {
++  required BufferSource src;
+   [EnforceRange] required unsigned long stride;
++  [EnforceRange] required unsigned long rows;
+ };
+ 
+ enum PixelFormat {
+-- 
+2.31.1.windows.1
+
