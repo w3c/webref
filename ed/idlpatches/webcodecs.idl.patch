@@ -1,26 +1,18 @@
-From 7bb8d539a667ac3145e863c856944e3e862d5b6a Mon Sep 17 00:00:00 2001
+From 3cc0e244620f53f827d50d90a07068bbfd038267 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Mon, 14 Jun 2021 19:01:19 +0200
+Date: Mon, 14 Jun 2021 21:35:03 +0200
 Subject: [PATCH] Revert IDL while dictionary as attribute issue gets fixed
 
 https://github.com/w3c/webcodecs/issues/278
 ---
- ed/idl/webcodecs.idl | 47 +++++++++++++++++++-------------------------
- 1 file changed, 20 insertions(+), 27 deletions(-)
+ ed/idl/webcodecs.idl | 46 +++++++++++++++++++-------------------------
+ 1 file changed, 20 insertions(+), 26 deletions(-)
 
 diff --git a/ed/idl/webcodecs.idl b/ed/idl/webcodecs.idl
-index dbb3cc2de..16d6bd5ed 100644
+index dbb3cc2de..4fc4f975f 100644
 --- a/ed/idl/webcodecs.idl
 +++ b/ed/idl/webcodecs.idl
-@@ -161,7 +161,6 @@ dictionary VideoEncoderConfig {
-   [EnforceRange] unsigned long displayHeight;
-   HardwareAcceleration hardwareAcceleration = "allow";
-   DOMString scalabilityMode;
--  BitrateMode bitrateMode = "variable";
- };
- 
- enum HardwareAcceleration {
-@@ -275,23 +274,22 @@ enum AudioSampleFormat {
+@@ -275,23 +275,22 @@ enum AudioSampleFormat {
  [Exposed=(Window,DedicatedWorker)]
  interface VideoFrame {
    constructor(CanvasImageSource image, optional VideoFrameInit init = {});
@@ -51,7 +43,7 @@ index dbb3cc2de..16d6bd5ed 100644
    VideoFrame clone();
    undefined close();
  };
-@@ -305,34 +303,29 @@ dictionary VideoFramePlaneInit {
+@@ -305,34 +304,29 @@ dictionary VideoFramePlaneInit {
    required PixelFormat format;
    [EnforceRange] required unsigned long codedWidth;
    [EnforceRange] required unsigned long codedHeight;
