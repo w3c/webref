@@ -421,27 +421,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "sendstream-create",
-      "href": "https://w3c.github.io/webtransport/#sendstream-create",
-      "linkingText": [
-        "create",
-        "creating"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "SendStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "add-sendstream",
-        "title": "Add SendStream to UnidirectionalStreamsTransport",
-        "number": "5.2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dictdef-sendstreamparameters",
       "href": "https://w3c.github.io/webtransport/#dictdef-sendstreamparameters",
       "linkingText": [
@@ -1019,10 +998,10 @@
       "definedIn": "table"
     },
     {
-      "id": "webtransport-receivedbidirectionalstreams",
-      "href": "https://w3c.github.io/webtransport/#webtransport-receivedbidirectionalstreams",
+      "id": "webtransport-incomingbidirectionalstreams",
+      "href": "https://w3c.github.io/webtransport/#webtransport-incomingbidirectionalstreams",
       "linkingText": [
-        "[[ReceivedBidirectionalStreams]]"
+        "[[IncomingBidirectionalStreams]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1143,6 +1122,24 @@
       "href": "https://w3c.github.io/webtransport/#initialize-webtransport-over-http",
       "linkingText": [
         "initialize WebTransport over HTTP"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "title": "Constructor",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pullbidirectionalstream",
+      "href": "https://w3c.github.io/webtransport/#pullbidirectionalstream",
+      "linkingText": [
+        "pullBidirectionalStream"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1356,26 +1353,6 @@
         "number": "7.4"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "webtransport-create-a-bidirectionalstream",
-      "href": "https://w3c.github.io/webtransport/#webtransport-create-a-bidirectionalstream",
-      "linkingText": [
-        "create a BidirectionalStream"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-procedures",
-        "title": "Procedures",
-        "number": "7.5"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "webtransport-cleanup",
@@ -1903,6 +1880,47 @@
       "definedIn": "pre"
     },
     {
+      "id": "sendstream-internalstream",
+      "href": "https://w3c.github.io/webtransport/#sendstream-internalstream",
+      "linkingText": [
+        "[[InternalStream]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sendstream-create",
+      "href": "https://w3c.github.io/webtransport/#sendstream-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-procedures",
+        "title": "Procedures",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-sendstream-remotecanceled",
       "href": "https://w3c.github.io/webtransport/#dom-sendstream-remotecanceled",
       "linkingText": [
@@ -1918,7 +1936,7 @@
       "heading": {
         "id": "send-stream-attributes",
         "title": "Attributes",
-        "number": "8.2"
+        "number": "8.3"
       },
       "definedIn": "dt"
     },
@@ -1939,7 +1957,7 @@
       "heading": {
         "id": "send-stream-methods",
         "title": "Methods",
-        "number": "8.3"
+        "number": "8.4"
       },
       "definedIn": "dt"
     },
@@ -1955,9 +1973,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "send-stream-procedures",
+        "id": "send-stream-procedures①",
         "title": "Procedures",
-        "number": "8.4"
+        "number": "8.5"
       },
       "definedIn": "prose"
     },
@@ -1975,7 +1993,7 @@
       "heading": {
         "id": "stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "8.5"
+        "number": "8.6"
       },
       "definedIn": "prose"
     },
@@ -1995,7 +2013,7 @@
       "heading": {
         "id": "stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "8.5"
+        "number": "8.6"
       },
       "definedIn": "dt"
     },
@@ -2038,6 +2056,47 @@
       "definedIn": "pre"
     },
     {
+      "id": "receivestream-internalstream",
+      "href": "https://w3c.github.io/webtransport/#receivestream-internalstream",
+      "linkingText": [
+        "[[InternalStream]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "receivestream-create",
+      "href": "https://w3c.github.io/webtransport/#receivestream-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-procedures",
+        "title": "Procedures",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "cancelalgorithm",
       "href": "https://w3c.github.io/webtransport/#cancelalgorithm",
       "linkingText": [
@@ -2049,9 +2108,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "receive-stream-procedures",
+        "id": "receive-stream-procedures①",
         "title": "Procedures",
-        "number": "9.3"
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -2111,40 +2170,82 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-bidirectionalstream-readable-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-readable-slot",
+      "id": "bidirectionalstream-readable",
+      "href": "https://w3c.github.io/webtransport/#bidirectionalstream-readable",
       "linkingText": [
         "[[Readable]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "BidirectionalStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "bidirectional-stream",
-        "title": "10. Interface BidirectionalStream"
+        "id": "bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
       },
-      "definedIn": "prose"
+      "definedIn": "table"
     },
     {
-      "id": "dom-bidirectionalstream-writable-slot",
-      "href": "https://w3c.github.io/webtransport/#dom-bidirectionalstream-writable-slot",
+      "id": "bidirectionalstream-writable",
+      "href": "https://w3c.github.io/webtransport/#bidirectionalstream-writable",
       "linkingText": [
         "[[Writable]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "BidirectionalStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "bidirectional-stream",
-        "title": "10. Interface BidirectionalStream"
+        "id": "bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "bidirectionalstream-transport",
+      "href": "https://w3c.github.io/webtransport/#bidirectionalstream-transport",
+      "linkingText": [
+        "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "bidirectionalstream-create",
+      "href": "https://w3c.github.io/webtransport/#bidirectionalstream-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-procedures",
+        "title": "Procedures",
+        "number": "10.2"
       },
       "definedIn": "prose"
     }
