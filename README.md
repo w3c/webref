@@ -1,12 +1,25 @@
 # Webref
 
-This repository contains **machine-readable references of CSS properties, definitions, IDL, and other useful terms that can be automatically extracted from web browser specifications**. The contents of the repository are updated automatically **every 6 hours** (although note information about published _[/TR/](https://www.w3.org/TR/)_ versions of specifications are updated only once per week). Subsets of that content are published as NPM [packages](https://github.com/w3c/webref/tree/master/packages), [@webref/idl](https://www.npmjs.com/package/@webref/idl), [@webref/css](https://www.npmjs.com/package/@webref/css) and [@webref/elements](https://www.npmjs.com/package/@webref/elements), updated on a weekly basis when the underlying content has changed.
+## Description
+
+This repository contains **machine-readable references of CSS properties, definitions, IDL, and other useful terms that can be automatically extracted from web browser specifications**. The contents of the repository are updated automatically **every 6 hours** (although note information about published _[/TR/](https://www.w3.org/TR/)_ versions of specifications are updated only once per week).
 
 Specifications covered by this repository are technical Web specifications that are directly implemented or that will be implemented by Web browsers; in other words, those that appear in [browser-specs](https://github.com/w3c/browser-specs).
 
-This repository contains information about latest Editor's Drafts of these specifications in the [ed](ed) folder, as well as about the latest published version (for _[/TR/](https://www.w3.org/TR/)_ specifications) in the [tr](tr) folder.
+This repository contains **raw** and **automatically-generated** extracts from web browser specifications. These extracts come with no guarantee on validity or consistency. For instance, if a specification defines invalid IDL snippets or uses an unknown IDL type, the corresponding IDL extract in this repository will be invalid as well.
 
-The following subfolders contain individual machine-readable JSON or text files generated for each specification:
+Curated subsets of the repository content are published as NPM [packages](https://github.com/w3c/webref/tree/master/packages), updated on a weekly basis when the underlying content has changed:
+- [@webref/idl](https://www.npmjs.com/package/@webref/idl) contains a [curated](packages/idl#guarantees) version of the [ed/idl](ed/idl) folder.
+- [@webref/css](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [ed/css](ed/css) folder.
+- [@webref/elements](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [ed/elements](ed/elements) folder.
+
+The NPM packages provide additional validity and consistency guarantees. Unless you are ready to deal with invalid content, we recommend that you rely on the content of these NPM packages instead of on the non-curated content in this repository.
+
+## Available extracts
+
+This repository contains information about latest Editor's Drafts of Web specifications in the [ed](ed) folder, as well as about the latest published version (for _[/TR/](https://www.w3.org/TR/)_ specifications) in the [tr](tr) folder. More often that not, published versions of specifications are much older than their latest Editor's Draft. Data in the [tr](tr) folder is more invalid/inconsistent than data in the [ed](ed) folder as a result.
+
+The following subfolders contain individual machine-readable JSON or text files generated from specifications:
 
 - [ed/css](ed/css) and [tr/css](tr/css): CSS terms (properties, descriptors, value spaces). One file per specification [series](https://github.com/w3c/browser-specs/#series).
 - [ed/dfns](ed/dfns) and [tr/dfns](tr/dfns): `<dfn>` terms, along with metadata such as linking text, access level, namespace. One file per specification.
