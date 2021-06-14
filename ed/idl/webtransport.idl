@@ -3,15 +3,6 @@
 // (https://github.com/w3c/webref)
 // Source: WebTransport (https://w3c.github.io/webtransport/)
 
-interface mixin UnidirectionalStreamsTransport {
-  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
-  /* a ReadableStream of ReceiveStream objects */
-  readonly attribute ReadableStream incomingUnidirectionalStreams;
-};
-
-dictionary SendStreamParameters {
-};
-
 [Exposed=(Window,Worker)]
 interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
@@ -35,13 +26,18 @@ interface WebTransport {
   Promise<BidirectionalStream> createBidirectionalStream();
   /* a ReadableStream of BidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
-};
 
-WebTransport includes UnidirectionalStreamsTransport;
+  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
+  /* a ReadableStream of ReceiveStream objects */
+  readonly attribute ReadableStream incomingUnidirectionalStreams;
+};
 
 dictionary WebTransportOptions {
   boolean allowPooling;
   sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
+};
+
+dictionary SendStreamParameters {
 };
 
 enum WebTransportState {

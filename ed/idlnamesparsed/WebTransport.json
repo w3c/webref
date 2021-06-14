@@ -5,33 +5,10 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
     "href": "https://w3c.github.io/webtransport/#webtransport"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "WebTransport",
-        "url": "https://www.w3.org/TR/webtransport/"
-      },
-      "fragment": "WebTransport includes UnidirectionalStreamsTransport;"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
-  "includes": [
-    {
-      "name": "UnidirectionalStreamsTransport",
-      "defined": {
-        "spec": {
-          "title": "WebTransport",
-          "url": "https://www.w3.org/TR/webtransport/"
-        },
-        "fragment": "interface mixin UnidirectionalStreamsTransport {\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
-        "href": "https://w3c.github.io/webtransport/#unidirectionalstreamstransport"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    }
-  ]
+  "includes": []
 }
