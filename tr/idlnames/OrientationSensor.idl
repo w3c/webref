@@ -2,5 +2,5 @@
 [SecureContext, Exposed=Window]
 interface OrientationSensor : Sensor {
   readonly attribute FrozenArray<double>? quaternion;
-  void populateMatrix(RotationMatrixType targetMatrix);
+  undefined populateMatrix(RotationMatrixType targetMatrix);
 };

@@ -16,7 +16,7 @@
         "title": "WebGPU",
         "url": "https://www.w3.org/TR/webgpu/"
       },
-      "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n};",
+      "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpuprogrammablestage"
     },
     "extended": [],

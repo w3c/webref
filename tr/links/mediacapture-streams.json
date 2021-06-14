@@ -27,15 +27,12 @@
     "https://www.w3.org/2020/Process-20200915/": [],
     "https://datatracker.ietf.org/doc/html/bcp14": [],
     "https://html.spec.whatwg.org/": [
-      "eventhandler",
-      "queue-a-task",
-      "event-handlers",
-      "responsible-document",
-      "relevant-settings-object",
-      "allowed-to-use",
       "video",
       "audio",
       "window",
+      "eventhandler",
+      "relevant-settings-object",
+      "responsible-document",
       "gains-focus",
       "the-img-element",
       "media-timeline",
@@ -70,6 +67,7 @@
       "media-element-load-algorithm",
       "navigator",
       "concept-relevant-global",
+      "allowed-to-use",
       "fully-active",
       "top-level-browsing-context",
       "nested-browsing-context",
@@ -77,28 +75,31 @@
       "browsing-context",
       "concept-document-permissions-policy"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-event-fire",
-      "event",
-      "dictdef-eventinit",
-      "eventtarget",
-      "concept-document"
+    "https://www.w3.org/TR/webrtc/": [
+      "dom-rtcpeerconnection"
+    ],
+    "https://www.w3.org/TR/webaudio/": [
+      "mediastreamaudiosourcenode"
     ],
     "https://heycam.github.io/webidl/": [
-      "idl-DOMException",
       "Exposed",
       "idl-sequence",
       "idl-DOMString",
       "idl-undefined",
       "idl-boolean",
       "idl-promise",
+      "resolve",
       "idl-long",
       "idl-double",
       "SameObject",
+      "reject",
+      "idl-DOMException",
       "SecureContext",
+      "upon-fulfillment",
       "Default",
       "idl-object",
       "default-tojson-steps",
+      "upon-rejection",
       "exceptiondef-typeerror",
       "dom-domexception-name",
       "invalidstateerror",
@@ -109,23 +110,24 @@
       "Clamp",
       "idl-unsigned-long"
     ],
+    "https://dom.spec.whatwg.org/": [
+      "eventtarget",
+      "concept-event-fire",
+      "concept-document",
+      "event",
+      "dictdef-eventinit"
+    ],
     "https://www.w3.org/TR/permissions/": [
-      "reading-current-states",
-      "request-permission-to-use",
+      "permission-state",
       "dom-permissionstate-granted",
       "enumdef-permissionname",
       "dom-devicepermissiondescriptor-deviceid",
       "dom-permissionname-camera",
       "dom-permissionname-microphone",
       "dom-permissionstate-denied",
+      "request-permission-to-use",
       "dictdef-permissiondescriptor",
       "dom-permissiondescriptor-name"
-    ],
-    "https://www.w3.org/TR/webrtc/": [
-      "dom-rtcpeerconnection"
-    ],
-    "https://www.w3.org/TR/webaudio/": [
-      "mediastreamaudiosourcenode"
     ],
     "https://infra.spec.whatwg.org/": [
       "map-exists"

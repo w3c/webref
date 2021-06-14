@@ -278,42 +278,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "injected-state",
-      "href": "https://www.w3.org/TR/webcodecs/#injected-state",
-      "linkingText": [
-        "injected state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "reset-the-control-message-queue",
-      "href": "https://www.w3.org/TR/webcodecs/#reset-the-control-message-queue",
-      "linkingText": [
-        "Reset the control message queue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "control-thread-and-codec-thread",
-        "title": "Control Thread and Codec Thread",
-        "number": "2.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "codec-processing-loop",
       "href": "https://www.w3.org/TR/webcodecs/#codec-processing-loop",
       "linkingText": [
@@ -591,6 +555,66 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-key-chunk-required-slot",
       "linkingText": [
         "[[key chunk required]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-state-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-decodequeuesize-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-decodequeuesize-slot",
+      "linkingText": [
+        "[[decodeQueueSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audiodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audiodecoder-pending-flush-promises-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodecoder-pending-flush-promises-slot",
+      "linkingText": [
+        "[[pending flush promises]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1121,6 +1145,66 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-key-chunk-required-slot",
       "linkingText": [
         "[[key chunk required]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-state-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-decodequeuesize-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-decodequeuesize-slot",
+      "linkingText": [
+        "[[decodeQueueSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoDecoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videodecoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoder-pending-flush-promises-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoder-pending-flush-promises-slot",
+      "linkingText": [
+        "[[pending flush promises]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1671,6 +1755,66 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-active-output-config-slot",
       "linkingText": [
         "[[active output config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-state-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-encodequeuesize-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-encodequeuesize-slot",
+      "linkingText": [
+        "[[encodeQueueSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AudioEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "audioencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-audioencoder-pending-flush-promises-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audioencoder-pending-flush-promises-slot",
+      "linkingText": [
+        "[[pending flush promises]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2281,6 +2425,66 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-active-output-config-slot",
       "linkingText": [
         "[[active output config]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-state-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-state-slot",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-encodequeuesize-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-encodequeuesize-slot",
+      "linkingText": [
+        "[[encodeQueueSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoder-pending-flush-promises-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-pending-flush-promises-slot",
+      "linkingText": [
+        "[[pending flush promises]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -3499,6 +3703,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoderconfig-bitratemode",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-bitratemode",
+      "linkingText": [
+        "bitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-hardwareacceleration",
       "href": "https://www.w3.org/TR/webcodecs/#enumdef-hardwareacceleration",
       "linkingText": [
@@ -3970,6 +4194,86 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-encodedaudiochunk-type-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedaudiochunk-timestamp-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-timestamp-slot",
+      "linkingText": [
+        "[[timestamp]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedaudiochunk-duration-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-duration-slot",
+      "linkingText": [
+        "[[duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedaudiochunk-byte-length-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-byte-length-slot",
+      "linkingText": [
+        "[[byte length]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-encodedaudiochunk-encodedaudiochunk",
       "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-encodedaudiochunk",
       "linkingText": [
@@ -4015,6 +4319,26 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-timestamp",
       "linkingText": [
         "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedAudioChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-attributes",
+        "title": "Attributes",
+        "number": "8.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedaudiochunk-duration",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunk-duration",
+      "linkingText": [
+        "duration"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4290,6 +4614,86 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunk-internal-data-slot",
       "linkingText": [
         "[[internal data]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedvideochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunk-type-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunk-type-slot",
+      "linkingText": [
+        "[[type]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedvideochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunk-timestamp-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunk-timestamp-slot",
+      "linkingText": [
+        "[[timestamp]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedvideochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunk-duration-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunk-duration-slot",
+      "linkingText": [
+        "[[duration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "EncodedVideoChunk"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedvideochunk-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunk-byte-length-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunk-byte-length-slot",
+      "linkingText": [
+        "[[byte length]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -5635,6 +6039,69 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-videoframe-allocationsize-options-options",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-allocationsize-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/allocationSize(options)",
+        "VideoFrame/allocationSize()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframe-copyto-destination-options-destination",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-copyto-destination-options-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/copyTo(destination, options)",
+        "VideoFrame/copyTo(destination)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframe-copyto-destination-options-options",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-copyto-destination-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoFrame/copyTo(destination, options)",
+        "VideoFrame/copyTo(destination)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-videoframeinit",
       "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframeinit",
       "linkingText": [
@@ -5771,70 +6238,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-cropleft",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropleft",
+      "id": "dom-videoframeplaneinit-visiblerect",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-visiblerect",
       "linkingText": [
-        "cropLeft"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-croptop",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-croptop",
-      "linkingText": [
-        "cropTop"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-cropwidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropwidth",
-      "linkingText": [
-        "cropWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-cropheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-cropheight",
-      "linkingText": [
-        "cropHeight"
+        "visibleRect"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -5931,6 +6338,84 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-planeinit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-planeinit",
+      "linkingText": [
+        "PlaneInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-planeinit-data",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-planeinit-stride",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-stride",
+      "linkingText": [
+        "stride"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-planeinit-offset",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-videoframe-detached-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-detached-slot",
       "linkingText": [
@@ -5991,26 +6476,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-planes-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-planes-slot",
-      "linkingText": [
-        "[[planes]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-videoframe-coded-width-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-coded-width-slot",
       "linkingText": [
@@ -6051,10 +6516,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-crop-left-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-crop-left-slot",
+      "id": "dom-videoframe-visible-left-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-left-slot",
       "linkingText": [
-        "[[crop left]]"
+        "[[visible left]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6071,10 +6536,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-crop-top-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-crop-top-slot",
+      "id": "dom-videoframe-visible-top-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-top-slot",
       "linkingText": [
-        "[[crop top]]"
+        "[[visible top]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6091,10 +6556,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-crop-width-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-crop-width-slot",
+      "id": "dom-videoframe-visible-width-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-width-slot",
       "linkingText": [
-        "[[crop width]]"
+        "[[visible width]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6111,10 +6576,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-crop-height-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-crop-height-slot",
+      "id": "dom-videoframe-visible-height-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-visible-height-slot",
       "linkingText": [
-        "[[crop height]]"
+        "[[visible height]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6275,26 +6740,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-planes",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-planes",
-      "linkingText": [
-        "planes"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-attributes",
-        "title": "Attributes",
-        "number": "9.4.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-videoframe-codedwidth",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-codedwidth",
       "linkingText": [
@@ -6335,10 +6780,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-cropleft",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-cropleft",
+      "id": "dom-videoframe-codedrect",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-codedrect",
       "linkingText": [
-        "cropLeft"
+        "codedRect"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6355,50 +6800,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoframe-croptop",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-croptop",
+      "id": "dom-videoframe-visiblerect",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-visiblerect",
       "linkingText": [
-        "cropTop"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-attributes",
-        "title": "Attributes",
-        "number": "9.4.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframe-cropwidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-cropwidth",
-      "linkingText": [
-        "cropWidth"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-attributes",
-        "title": "Attributes",
-        "number": "9.4.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframe-cropheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-cropheight",
-      "linkingText": [
-        "cropHeight"
+        "visibleRect"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6495,6 +6900,244 @@
       "definedIn": "dt"
     },
     {
+      "id": "parsed-copyto-options",
+      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options",
+      "linkingText": [
+        "parsed copyto options"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parsed-copyto-options-allocationsize",
+      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options-allocationsize",
+      "linkingText": [
+        "allocationSize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "parsed copyto options"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parsed-copyto-options-computedlayouts",
+      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options-computedlayouts",
+      "linkingText": [
+        "computedLayouts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "parsed copyto options"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout",
+      "linkingText": [
+        "computed plane layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-destinationoffset",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationoffset",
+      "linkingText": [
+        "destinationOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-destinationstride",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-destinationstride",
+      "linkingText": [
+        "destinationStride"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-sourcetop",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourcetop",
+      "linkingText": [
+        "sourceTop"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-sourceheight",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourceheight",
+      "linkingText": [
+        "sourceHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-sourceleftbytes",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourceleftbytes",
+      "linkingText": [
+        "sourceLeftBytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-plane-layout-sourcewidthbytes",
+      "href": "https://www.w3.org/TR/webcodecs/#computed-plane-layout-sourcewidthbytes",
+      "linkingText": [
+        "sourceWidthBytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "computed plane layout"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-structures",
+        "title": "Internal Structures",
+        "number": "9.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-videoframe-allocationsize",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-allocationsize",
+      "linkingText": [
+        "allocationSize(options)",
+        "allocationSize()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-methods",
+        "title": "Methods",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-copyto",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-copyto",
+      "linkingText": [
+        "copyTo(destination, options)",
+        "copyTo(destination)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-methods",
+        "title": "Methods",
+        "number": "9.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoframe-clone",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-clone",
       "linkingText": [
@@ -6510,7 +7153,7 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "9.4.4"
+        "number": "9.4.5"
       },
       "definedIn": "dt"
     },
@@ -6530,7 +7173,7 @@
       "heading": {
         "id": "videoframe-methods",
         "title": "Methods",
-        "number": "9.4.4"
+        "number": "9.4.5"
       },
       "definedIn": "dt"
     },
@@ -6548,7 +7191,7 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.4.5"
+        "number": "9.4.6"
       },
       "definedIn": "prose"
     },
@@ -6566,7 +7209,7 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.4.5"
+        "number": "9.4.6"
       },
       "definedIn": "dt"
     },
@@ -6586,7 +7229,7 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.4.5"
+        "number": "9.4.6"
       },
       "definedIn": "dt"
     },
@@ -6606,7 +7249,7 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.4.5"
+        "number": "9.4.6"
       },
       "definedIn": "dt"
     },
@@ -6624,53 +7267,75 @@
       "heading": {
         "id": "videoframe-algorithms",
         "title": "Algorithms",
-        "number": "9.4.5"
+        "number": "9.4.6"
       },
       "definedIn": "dt"
     },
     {
-      "id": "plane",
-      "href": "https://www.w3.org/TR/webcodecs/#plane",
+      "id": "videoframe-parse-videoframecopytooptions",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-videoframecopytooptions",
       "linkingText": [
-        "Plane"
+        "Parse VideoFrameCopyToOptions"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
-        "number": "9.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-plane-readinto-dst-dst",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-readinto-dst-dst",
-      "linkingText": [
-        "dst"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
+      "type": "dfn",
       "for": [
-        "Plane/readInto(dst)"
+        "VideoFrame"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
-        "number": "9.5"
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dictdef-planeinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dictdef-planeinit",
+      "id": "videoframe-parse-copyto-rect",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-copyto-rect",
       "linkingText": [
-        "PlaneInit"
+        "Parse CopyTo Rect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoframe-compute-layout-and-allocation-size",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-compute-layout-and-allocation-size",
+      "linkingText": [
+        "Compute Layout and Allocation Size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-videoframecopytooptions",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframecopytooptions",
+      "linkingText": [
+        "VideoFrameCopyToOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -6678,171 +7343,207 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
+        "id": "videoframe-copyto-options",
+        "title": "VideoFrame CopyTo() Options",
         "number": "9.5"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-src",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-src",
+      "id": "dom-videoframecopytooptions-rect",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-rect",
       "linkingText": [
-        "src"
+        "rect"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameCopyToOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
+        "id": "videoframe-copyto-options",
+        "title": "VideoFrame CopyTo() Options",
         "number": "9.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframecopytooptions-layout",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframecopytooptions-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameCopyToOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-copyto-options",
+        "title": "VideoFrame CopyTo() Options",
+        "number": "9.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-videoframerect",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframerect",
+      "linkingText": [
+        "VideoFrameRect"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-rect",
+        "title": "VideoFrame Rectangle (Rect)",
+        "number": "9.6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-stride",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-stride",
+      "id": "dom-videoframerect-left",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-left",
+      "linkingText": [
+        "left"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameRect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-rect",
+        "title": "VideoFrame Rectangle (Rect)",
+        "number": "9.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframerect-top",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-top",
+      "linkingText": [
+        "top"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameRect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-rect",
+        "title": "VideoFrame Rectangle (Rect)",
+        "number": "9.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframerect-width",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameRect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-rect",
+        "title": "VideoFrame Rectangle (Rect)",
+        "number": "9.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframerect-height",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameRect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-rect",
+        "title": "VideoFrame Rectangle (Rect)",
+        "number": "9.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-planelayout",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-planelayout",
+      "linkingText": [
+        "PlaneLayout"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "plane-layout",
+        "title": "Plane Layout",
+        "number": "9.7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-planelayout-offset",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-planelayout-offset",
+      "linkingText": [
+        "offset"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PlaneLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "plane-layout",
+        "title": "Plane Layout",
+        "number": "9.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-planelayout-stride",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-planelayout-stride",
       "linkingText": [
         "stride"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "PlaneLayout"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
-        "number": "9.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-planeinit-rows",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-rows",
-      "linkingText": [
-        "rows"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-interface",
-        "title": "Plane Interface",
-        "number": "9.5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-plane-parent-frame-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-parent-frame-slot",
-      "linkingText": [
-        "[[parent frame]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.5.1"
+        "id": "plane-layout",
+        "title": "Plane Layout",
+        "number": "9.7"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "dom-plane-stride",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-stride",
-      "linkingText": [
-        "stride"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-attributes",
-        "title": "Attributes",
-        "number": "9.5.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-plane-rows",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-rows",
-      "linkingText": [
-        "rows"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-attributes",
-        "title": "Attributes",
-        "number": "9.5.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-plane-length",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-length",
-      "linkingText": [
-        "length"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-attributes",
-        "title": "Attributes",
-        "number": "9.5.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-plane-readinto",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-plane-readinto",
-      "linkingText": [
-        "readInto(dst)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "Plane"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "plane-methods",
-        "title": "Methods",
-        "number": "9.5.3"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "enumdef-pixelformat",
@@ -6858,7 +7559,7 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "9.6"
+        "number": "9.8"
       },
       "definedIn": "pre"
     },
@@ -6879,7 +7580,7 @@
       "heading": {
         "id": "pixel-format",
         "title": "Pixel Format",
-        "number": "9.6"
+        "number": "9.8"
       },
       "definedIn": "dt"
     },

@@ -48,8 +48,7 @@
           "GPURenderBundleEncoder",
           "GPUQueue",
           "GPUQuerySet",
-          "GPUCanvasContext",
-          "GPUSwapChain",
+          "GPUPresentationContext",
           "GPUDeviceLostInfo"
         ],
         "DedicatedWorker": [
@@ -536,7 +535,7 @@
         "partial": false
       },
       "GPURequestAdapterOptions": {
-        "fragment": "dictionary GPURequestAdapterOptions {\n    GPUPowerPreference powerPreference;\n};",
+        "fragment": "dictionary GPURequestAdapterOptions {\n    GPUPowerPreference powerPreference;\n    boolean forceSoftware = false;\n};",
         "type": "dictionary",
         "name": "GPURequestAdapterOptions",
         "inheritance": null,
@@ -554,6 +553,24 @@
               "idlType": "GPUPowerPreference"
             },
             "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "forceSoftware",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           }
         ],
@@ -577,7 +594,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isSoftware;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -638,6 +655,21 @@
                 "arguments": []
               }
             ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "isSoftware",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -4245,7 +4277,7 @@
         "partial": false
       },
       "GPUProgrammableStage": {
-        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n};",
+        "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
         "type": "dictionary",
         "name": "GPUProgrammableStage",
         "inheritance": null,
@@ -4279,13 +4311,59 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "constants",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUPipelineConstantValue"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
+      "GPUPipelineConstantValue": {
+        "fragment": "typedef double GPUPipelineConstantValue;",
+        "type": "typedef",
+        "name": "GPUPipelineConstantValue",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "double"
+        },
+        "extAttrs": []
+      },
       "GPUComputePipeline": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface GPUComputePipeline {\n};",
+        "fragment": "// May represent WGSL’s bool, f32, i32, u32.\n\n[Exposed=Window, Serializable]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
@@ -8531,7 +8609,7 @@
         "extAttrs": []
       },
       "GPUStoreOp": {
-        "fragment": "enum GPUStoreOp {\n    \"store\",\n    \"clear\"\n};",
+        "fragment": "enum GPUStoreOp {\n    \"store\",\n    \"discard\"\n};",
         "type": "enum",
         "name": "GPUStoreOp",
         "values": [
@@ -8541,7 +8619,7 @@
           },
           {
             "type": "enum-value",
-            "value": "clear"
+            "value": "discard"
           }
         ],
         "extAttrs": []
@@ -9187,35 +9265,35 @@
         ],
         "extAttrs": []
       },
-      "GPUCanvasContext": {
-        "fragment": "[Exposed=Window]\ninterface GPUCanvasContext {\n    GPUSwapChain configureSwapChain(GPUSwapChainDescriptor descriptor);\n\n    GPUTextureFormat getSwapChainPreferredFormat(GPUAdapter adapter);\n};",
+      "GPUPresentationContext": {
+        "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration? configuration);\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
-        "name": "GPUCanvasContext",
+        "name": "GPUPresentationContext",
         "inheritance": null,
         "members": [
           {
             "type": "operation",
-            "name": "configureSwapChain",
+            "name": "configure",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSwapChain"
+              "idlType": "undefined"
             },
             "arguments": [
               {
                 "type": "argument",
-                "name": "descriptor",
+                "name": "configuration",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": false,
+                  "nullable": true,
                   "union": false,
-                  "idlType": "GPUSwapChainDescriptor"
+                  "idlType": "GPUPresentationConfiguration"
                 },
                 "default": null,
                 "optional": false,
@@ -9227,7 +9305,7 @@
           },
           {
             "type": "operation",
-            "name": "getSwapChainPreferredFormat",
+            "name": "getPreferredFormat",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -9254,6 +9332,21 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "getCurrentTexture",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTexture"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           }
@@ -9287,10 +9380,10 @@
         ],
         "extAttrs": []
       },
-      "GPUSwapChainDescriptor": {
-        "fragment": "dictionary GPUSwapChainDescriptor : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+      "GPUPresentationConfiguration": {
+        "fragment": "dictionary GPUPresentationConfiguration : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
-        "name": "GPUSwapChainDescriptor",
+        "name": "GPUPresentationConfiguration",
         "inheritance": "GPUObjectDescriptorBase",
         "members": [
           {
@@ -9376,41 +9469,6 @@
           }
         ],
         "extAttrs": [],
-        "partial": false
-      },
-      "GPUSwapChain": {
-        "fragment": "[Exposed=Window]\ninterface GPUSwapChain {\n    GPUTexture getCurrentTexture();\n};",
-        "type": "interface",
-        "name": "GPUSwapChain",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "getCurrentTexture",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUTexture"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
         "partial": false
       },
       "GPUDeviceLostReason": {
@@ -10727,15 +10785,6 @@
           "target": "GPUQuerySet",
           "includes": "GPUObjectBase"
         }
-      ],
-      "GPUSwapChain": [
-        {
-          "fragment": "GPUSwapChain includes GPUObjectBase;",
-          "type": "includes",
-          "extAttrs": [],
-          "target": "GPUSwapChain",
-          "includes": "GPUObjectBase"
-        }
       ]
     },
     "globals": {},
@@ -10772,8 +10821,7 @@
         "GPURenderBundleEncoder",
         "GPUQueue",
         "GPUQuerySet",
-        "GPUCanvasContext",
-        "GPUSwapChain",
+        "GPUPresentationContext",
         "GPUDeviceLostInfo",
         "GPUOutOfMemoryError",
         "GPUValidationError",
@@ -10986,7 +11034,8 @@
         "GPUBindGroupLayout"
       ],
       "GPUProgrammableStage": [
-        "GPUShaderModule"
+        "GPUShaderModule",
+        "GPUPipelineConstantValue"
       ],
       "GPUComputePipeline": [
         "GPUObjectBase",
@@ -11199,23 +11248,19 @@
         "GPUSize32",
         "GPUPipelineStatisticName"
       ],
-      "GPUCanvasContext": [
-        "GPUSwapChain",
-        "GPUSwapChainDescriptor",
+      "GPUPresentationContext": [
+        "GPUPresentationConfiguration",
         "GPUTextureFormat",
-        "GPUAdapter"
+        "GPUAdapter",
+        "GPUTexture"
       ],
-      "GPUSwapChainDescriptor": [
+      "GPUPresentationConfiguration": [
         "GPUObjectDescriptorBase",
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
         "GPUCanvasCompositingAlphaMode",
         "GPUExtent3D"
-      ],
-      "GPUSwapChain": [
-        "GPUTexture",
-        "GPUObjectBase"
       ],
       "GPUDeviceLostInfo": [
         "GPUDeviceLostReason"

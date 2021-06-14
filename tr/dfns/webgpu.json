@@ -679,6 +679,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-adapter-software-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-software-slot",
+      "linkingText": [
+        "[[software]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "adapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapters",
+        "title": "Adapters",
+        "number": "3.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "device",
       "href": "https://www.w3.org/TR/webgpu/#device",
       "linkingText": [
@@ -1890,6 +1910,26 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurequestadapteroptions-forcesoftware",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurequestadapteroptions-forcesoftware",
+      "linkingText": [
+        "forceSoftware"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURequestAdapterOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "adapter-selection",
+        "title": "Adapter Selection",
+        "number": "4.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "gpuadapter",
       "href": "https://www.w3.org/TR/webgpu/#gpuadapter",
       "linkingText": [
@@ -1952,6 +1992,26 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-limits",
       "linkingText": [
         "limits"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUAdapter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-adapter",
+        "title": "GPUAdapter",
+        "number": "4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuadapter-issoftware",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuadapter-issoftware",
+      "linkingText": [
+        "isSoftware"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -8546,6 +8606,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-gpuprogrammablestage-constants",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablestage-constants",
+      "linkingText": [
+        "constants"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUProgrammableStage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUProgrammableStage",
+        "title": "GPUProgrammableStage",
+        "number": "10.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedefdef-gpupipelineconstantvalue",
+      "href": "https://www.w3.org/TR/webgpu/#typedefdef-gpupipelineconstantvalue",
+      "linkingText": [
+        "GPUPipelineConstantValue"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "GPUProgrammableStage",
+        "title": "GPUProgrammableStage",
+        "number": "10.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-validating-gpuprogrammablestage",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-validating-gpuprogrammablestage",
       "linkingText": [
@@ -14903,10 +15001,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpustoreop-clear",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpustoreop-clear",
+      "id": "dom-gpustoreop-discard",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpustoreop-discard",
       "linkingText": [
-        "\"clear\""
+        "\"discard\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -17190,10 +17288,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "gpucanvascontext",
-      "href": "https://www.w3.org/TR/webgpu/#gpucanvascontext",
+      "id": "gpupresentationcontext",
+      "href": "https://www.w3.org/TR/webgpu/#gpupresentationcontext",
       "linkingText": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -17201,137 +17299,253 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpucanvascontext-canvas-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas-slot",
+      "id": "dom-gpupresentationcontext-canvas-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-canvas-slot",
       "linkingText": [
         "[[canvas]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-currentswapchain-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-currentswapchain-slot",
+      "id": "dom-gpupresentationcontext-validconfiguration-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-validconfiguration-slot",
       "linkingText": [
-        "[[currentSwapChain]]"
+        "[[validConfiguration]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-configureswapchain",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configureswapchain",
+      "id": "dom-gpupresentationcontext-configuration-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configuration-slot",
       "linkingText": [
-        "configureSwapChain(descriptor)"
+        "[[configuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-size-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-size-slot",
+      "linkingText": [
+        "[[size]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-currenttexture-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-currenttexture-slot",
+      "linkingText": [
+        "[[currentTexture]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpupresentationcontext-configure",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configure",
+      "linkingText": [
+        "configure(configuration)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-configureswapchain-descriptor-descriptor",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configureswapchain-descriptor-descriptor",
+      "id": "dom-gpupresentationcontext-configure-configuration-configuration",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configure-configuration-configuration",
       "linkingText": [
-        "descriptor"
+        "configuration"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCanvasContext/configureSwapChain(descriptor)"
+        "GPUPresentationContext/configure(configuration)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucanvascontext-getswapchainpreferredformat",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getswapchainpreferredformat",
+      "id": "dom-gpupresentationcontext-getpreferredformat",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getpreferredformat",
       "linkingText": [
-        "getSwapChainPreferredFormat(adapter)"
+        "getPreferredFormat(adapter)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUCanvasContext"
+        "GPUPresentationContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getswapchainpreferredformat-adapter-adapter",
+      "id": "dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
       "linkingText": [
         "adapter"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCanvasContext/getSwapChainPreferredFormat(adapter)"
+        "GPUPresentationContext/getPreferredFormat(adapter)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "canvas-context",
-        "title": "GPUCanvasContext",
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "supported-swap-chain-formats",
-      "href": "https://www.w3.org/TR/webgpu/#supported-swap-chain-formats",
+      "id": "dom-gpupresentationcontext-getcurrenttexture",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getcurrenttexture",
       "linkingText": [
-        "supported swap chain formats"
+        "getCurrentTexture()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "GPUPresentationContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-present-the-presentation-context-content-to-the-canvas",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-present-the-presentation-context-content-to-the-canvas",
+      "linkingText": [
+        "present the presentation context content to the canvas"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-allocating-a-new-presentation-context-texture",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-allocating-a-new-presentation-context-texture",
+      "linkingText": [
+        "allocating a new presentation context texture"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "presentation-context",
+        "title": "GPUPresentationContext",
+        "number": "19.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "supported-presentation-context-formats",
+      "href": "https://www.w3.org/TR/webgpu/#supported-presentation-context-formats",
+      "linkingText": [
+        "supported presentation context formats"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -17339,8 +17553,8 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "prose"
@@ -17357,8 +17571,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -17377,8 +17591,8 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -17397,17 +17611,17 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-gpuswapchaindescriptor",
-      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpuswapchaindescriptor",
+      "id": "dictdef-gpupresentationconfiguration",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpupresentationconfiguration",
       "linkingText": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -17415,283 +17629,111 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-device",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchaindescriptor-device",
+      "id": "dom-gpupresentationconfiguration-device",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-device",
       "linkingText": [
         "device"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-format",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchaindescriptor-format",
+      "id": "dom-gpupresentationconfiguration-format",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-format",
       "linkingText": [
         "format"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-usage",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchaindescriptor-usage",
+      "id": "dom-gpupresentationconfiguration-usage",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-usage",
       "linkingText": [
         "usage"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-compositingalphamode",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchaindescriptor-compositingalphamode",
+      "id": "dom-gpupresentationconfiguration-compositingalphamode",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-compositingalphamode",
       "linkingText": [
         "compositingAlphaMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuswapchaindescriptor-size",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchaindescriptor-size",
+      "id": "dom-gpupresentationconfiguration-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUSwapChainDescriptor"
+        "GPUPresentationConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "swapchain-descriptor",
-        "title": "GPUSwapChainDescriptor",
+        "id": "presentation-configuration",
+        "title": "GPUPresentationConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "gpuswapchain",
-      "href": "https://www.w3.org/TR/webgpu/#gpuswapchain",
-      "linkingText": [
-        "GPUSwapChain"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuswapchain-context-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchain-context-slot",
-      "linkingText": [
-        "[[context]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-descriptor-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchain-descriptor-slot",
-      "linkingText": [
-        "[[descriptor]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-size-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchain-size-slot",
-      "linkingText": [
-        "[[size]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-currenttexture-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchain-currenttexture-slot",
-      "linkingText": [
-        "[[currentTexture]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpuswapchain-getcurrenttexture",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuswapchain-getcurrenttexture",
-      "linkingText": [
-        "getCurrentTexture()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUSwapChain"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "abstract-opdef-present-the-swap-chain-content-to-the-canvas",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-present-the-swap-chain-content-to-the-canvas",
-      "linkingText": [
-        "present the swap chain content to the canvas"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-allocating-a-new-swap-chain-texture",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-allocating-a-new-swap-chain-texture",
-      "linkingText": [
-        "allocating a new swap chain texture"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-destroy-the-swap-chain",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-destroy-the-swap-chain",
-      "linkingText": [
-        "destroy the swap chain"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "swapchain",
-        "title": "GPUSwapChain",
-        "number": "19.4"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-gpucanvascompositingalphamode-gpucanvascompositingalphamode",
@@ -17709,7 +17751,7 @@
       "heading": {
         "id": "GPUCanvasCompositingAlphaMode",
         "title": "GPUCanvasCompositingAlphaMode",
-        "number": "19.5"
+        "number": "19.4"
       },
       "definedIn": "heading"
     },

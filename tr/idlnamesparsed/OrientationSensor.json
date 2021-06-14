@@ -5,7 +5,7 @@
       "title": "Orientation Sensor",
       "url": "https://www.w3.org/TR/orientation-sensor/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface OrientationSensor : Sensor {\n  readonly attribute FrozenArray<double>? quaternion;\n  void populateMatrix(RotationMatrixType targetMatrix);\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface OrientationSensor : Sensor {\n  readonly attribute FrozenArray<double>? quaternion;\n  undefined populateMatrix(RotationMatrixType targetMatrix);\n};",
     "href": "https://www.w3.org/TR/orientation-sensor/#orientationsensor"
   },
   "extended": [],

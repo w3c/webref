@@ -18289,7 +18289,7 @@
         "aria-*"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "dfn",
       "for": [],
       "access": "private",
       "informative": false,
@@ -21530,9 +21530,7 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "crossorigin"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -21549,9 +21547,15 @@
         "anonymous"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "audio/crossorigin",
+        "video/crossorigin",
+        "img/crossorigin",
+        "link/crossorigin",
+        "script/crossorigin"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "cors-settings-attributes",
@@ -21585,9 +21589,15 @@
         "use-credentials"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "audio/crossorigin",
+        "video/crossorigin",
+        "img/crossorigin",
+        "link/crossorigin",
+        "script/crossorigin"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "cors-settings-attributes",
@@ -21604,9 +21614,7 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "crossorigin"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -21737,11 +21745,12 @@
         "lazy"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "loading"
+        "img/loading",
+        "iframe/loading"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "lazy-loading-attributes",
@@ -21775,11 +21784,12 @@
         "eager"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attr-value",
       "for": [
-        "loading"
+        "img/loading",
+        "iframe/loading"
       ],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "lazy-loading-attributes",
@@ -24953,11 +24963,9 @@
         "data-"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
-      "for": [
-        "data"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "embedding-custom-non-visible-data-with-the-data-*-attributes",
@@ -26157,8 +26165,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "the-meta-element",
-      "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+      "id": "meta",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#meta",
       "linkingText": [
         "meta"
       ],
@@ -26166,24 +26174,6 @@
       "type": "element",
       "for": [],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-meta-element",
-        "title": "The meta element",
-        "number": "4.2.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "meta",
-      "href": "https://html.spec.whatwg.org/multipage/semantics.html#meta",
-      "linkingText": [
-        "meta"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "the-meta-element",
@@ -26337,9 +26327,11 @@
         "application-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26355,9 +26347,11 @@
         "author"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26373,9 +26367,11 @@
         "description"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26391,9 +26387,11 @@
         "generator"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26409,9 +26407,11 @@
         "keywords"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26427,9 +26427,11 @@
         "referrer"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26445,9 +26447,11 @@
         "theme-color"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26463,9 +26467,11 @@
         "color-scheme"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/name"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "standard-metadata-names",
@@ -26519,9 +26525,11 @@
         "content-language"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26537,9 +26545,11 @@
         "content-type"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26555,9 +26565,11 @@
         "default-style"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26573,9 +26585,11 @@
         "refresh"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26591,9 +26605,11 @@
         "set-cookie"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26609,9 +26625,11 @@
         "x-ua-compatible"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -26627,9 +26645,11 @@
         "content-security-policy"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "meta/http-equiv"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "pragma-directives",
@@ -27761,9 +27781,11 @@
         "1"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "ol/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-ol-element",
@@ -27797,9 +27819,11 @@
         "a"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "ol/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-ol-element",
@@ -27833,9 +27857,11 @@
         "A"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "ol/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-ol-element",
@@ -27869,9 +27895,11 @@
         "i"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "ol/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-ol-element",
@@ -27905,9 +27933,11 @@
         "I"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "ol/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-ol-element",
@@ -28037,9 +28067,9 @@
         "menu"
       ],
       "localLinkingText": [],
-      "type": "element",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "the-menu-element",
@@ -29558,9 +29588,12 @@
         "ping"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "element-attr",
+      "for": [
+        "a",
+        "area"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "links-created-by-a-and-area-elements",
@@ -30154,9 +30187,13 @@
         "author"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-author",
@@ -30172,9 +30209,12 @@
         "bookmark"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-bookmark",
@@ -30190,9 +30230,11 @@
         "canonical"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-canonical",
@@ -30208,9 +30250,11 @@
         "dns-prefetch"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-dns-prefetch",
@@ -30226,9 +30270,13 @@
         "external"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-external",
@@ -30244,9 +30292,14 @@
         "help"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-help",
@@ -30262,9 +30315,11 @@
         "icon"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "rel-icon",
@@ -30298,9 +30353,14 @@
         "license"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-license",
@@ -30336,9 +30396,11 @@
         "modulepreload"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-modulepreload",
@@ -30354,9 +30416,13 @@
         "nofollow"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-nofollow",
@@ -30372,9 +30438,13 @@
         "noopener"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-noopener",
@@ -30390,9 +30460,13 @@
         "noreferrer"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-noreferrer",
@@ -30408,9 +30482,13 @@
         "opener"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-opener",
@@ -30426,9 +30504,11 @@
         "pingback"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-pingback",
@@ -30444,9 +30524,11 @@
         "preconnect"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-preconnect",
@@ -30462,9 +30544,11 @@
         "prefetch"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-prefetch",
@@ -30500,9 +30584,11 @@
         "prerender"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-prerender",
@@ -30518,9 +30604,14 @@
         "search"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-search",
@@ -30536,9 +30627,11 @@
         "stylesheet"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-stylesheet",
@@ -30572,9 +30665,12 @@
         "tag"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "a/rel",
+        "area/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-tag",
@@ -30590,9 +30686,14 @@
         "next"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-next",
@@ -30608,9 +30709,14 @@
         "prev"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "link/rel",
+        "a/rel",
+        "area/rel",
+        "form/rel"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "link-type-prev",
@@ -32366,9 +32472,11 @@
         "sync"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "img/decoding"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "decoding-images",
@@ -32402,9 +32510,11 @@
         "async"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "img/decoding"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "decoding-images",
@@ -32438,9 +32548,11 @@
         "auto"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "img/decoding"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "decoding-images",
@@ -33994,9 +34106,9 @@
         "audio"
       ],
       "localLinkingText": [],
-      "type": "element",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "the-audio-element",
@@ -34106,9 +34218,11 @@
         "subtitles"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "track/kind"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-track-element",
@@ -34142,9 +34256,11 @@
         "captions"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "track/kind"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-track-element",
@@ -34178,9 +34294,11 @@
         "descriptions"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "track/kind"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-track-element",
@@ -34214,9 +34332,11 @@
         "chapters"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "track/kind"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-track-element",
@@ -34250,9 +34370,11 @@
         "metadata"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "track/kind"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-track-element",
@@ -35016,7 +35138,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -35036,7 +35159,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -35552,7 +35676,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -35570,9 +35695,12 @@
         "none"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "audio/preload",
+        "video/preload"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "loading-the-media-resource",
@@ -35606,9 +35734,12 @@
         "metadata"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "audio/preload",
+        "video/preload"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "loading-the-media-resource",
@@ -35642,9 +35773,12 @@
         "auto"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "audio/preload",
+        "video/preload"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "loading-the-media-resource",
@@ -35924,7 +36058,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -36084,7 +36219,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -38881,7 +39017,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -39033,7 +39170,8 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "media"
+        "audio",
+        "video"
       ],
       "access": "public",
       "informative": false,
@@ -40187,9 +40325,11 @@
         "circle state"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "area/shape"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-area-element",
@@ -40205,9 +40345,11 @@
         "default state"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "area/shape"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-area-element",
@@ -40223,9 +40365,11 @@
         "polygon state"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "area/shape"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-area-element",
@@ -40241,9 +40385,11 @@
         "rectangle state"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "area/shape"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-area-element",
@@ -40458,7 +40604,9 @@
       ],
       "localLinkingText": [],
       "type": "element-attr",
-      "for": [],
+      "for": [
+        "img"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -41461,9 +41609,11 @@
         "row"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "th/scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-th-element",
@@ -41479,9 +41629,11 @@
         "col"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "th/scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-th-element",
@@ -41497,9 +41649,11 @@
         "rowgroup"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "th/scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-th-element",
@@ -41515,9 +41669,11 @@
         "colgroup"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "th/scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-th-element",
@@ -41533,9 +41689,11 @@
         "auto"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "th/scope"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-th-element",
@@ -45492,9 +45650,11 @@
         "submit"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-button-element",
@@ -45510,9 +45670,11 @@
         "reset"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-button-element",
@@ -45528,9 +45690,11 @@
         "button"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/type"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-button-element",
@@ -46888,9 +47052,11 @@
         "soft"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "textarea/wrap"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-textarea-element",
@@ -46906,9 +47072,11 @@
         "hard"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "textarea/wrap"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-textarea-element",
@@ -48594,17 +48762,12 @@
       "id": "attr-fe-maxlength",
       "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-maxlength",
       "linkingText": [
-        "form control maxlength attribute"
+        "maxlength"
       ],
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "button",
-        "fieldset",
         "input",
-        "object",
-        "output",
-        "select",
         "textarea"
       ],
       "access": "public",
@@ -48638,17 +48801,12 @@
       "id": "attr-fe-minlength",
       "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#attr-fe-minlength",
       "linkingText": [
-        "form control minlength attribute"
+        "minlength"
       ],
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "button",
-        "fieldset",
         "input",
-        "object",
-        "output",
-        "select",
         "textarea"
       ],
       "access": "public",
@@ -48872,9 +49030,12 @@
         "get"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/method",
+        "button/method"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -48908,9 +49069,12 @@
         "post"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/method",
+        "button/method"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -48944,9 +49108,12 @@
         "dialog"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/method",
+        "button/method"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -49040,9 +49207,12 @@
         "application/x-www-form-urlencoded"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/enctype",
+        "button/enctype"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -49058,9 +49228,12 @@
         "multipart/form-data"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/enctype",
+        "button/enctype"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -49076,9 +49249,12 @@
         "text/plain"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "form/enctype",
+        "button/enctype"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "form-submission-attributes",
@@ -49514,9 +49690,17 @@
         "section-"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49532,9 +49716,17 @@
         "shipping"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49550,9 +49742,17 @@
         "billing"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49568,9 +49768,17 @@
         "home"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49586,9 +49794,17 @@
         "work"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49604,9 +49820,17 @@
         "mobile"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49622,9 +49846,17 @@
         "fax"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49640,9 +49872,17 @@
         "pager"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49658,9 +49898,17 @@
         "off"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49676,9 +49924,17 @@
         "on"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49730,9 +49986,17 @@
         "name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49748,9 +50012,17 @@
         "honorific-prefix"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49766,9 +50038,17 @@
         "given-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49784,9 +50064,17 @@
         "additional-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49802,9 +50090,17 @@
         "family-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49820,9 +50116,17 @@
         "honorific-suffix"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49838,9 +50142,17 @@
         "nickname"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49856,9 +50168,17 @@
         "organization-title"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49874,9 +50194,17 @@
         "username"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49892,9 +50220,17 @@
         "new-password"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49910,9 +50246,17 @@
         "current-password"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49928,9 +50272,17 @@
         "one-time-code"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49946,9 +50298,17 @@
         "organization"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49964,9 +50324,17 @@
         "street-address"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -49982,9 +50350,17 @@
         "address-line1"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50000,9 +50376,17 @@
         "address-line2"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50018,9 +50402,17 @@
         "address-line3"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50036,9 +50428,17 @@
         "address-level4"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50054,9 +50454,17 @@
         "address-level3"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50072,9 +50480,17 @@
         "address-level2"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50090,9 +50506,17 @@
         "address-level1"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50108,9 +50532,17 @@
         "country"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50126,9 +50558,17 @@
         "country-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50144,9 +50584,17 @@
         "postal-code"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50162,9 +50610,17 @@
         "cc-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50180,9 +50636,17 @@
         "cc-given-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50198,9 +50662,17 @@
         "cc-additional-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50216,9 +50688,17 @@
         "cc-family-name"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50234,9 +50714,17 @@
         "cc-number"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50252,9 +50740,17 @@
         "cc-exp"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50270,9 +50766,17 @@
         "cc-exp-month"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50288,9 +50792,17 @@
         "cc-exp-year"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50306,9 +50818,17 @@
         "cc-csc"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50324,9 +50844,17 @@
         "cc-type"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50342,9 +50870,17 @@
         "transaction-currency"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50360,9 +50896,17 @@
         "transaction-amount"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50378,9 +50922,17 @@
         "language"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50396,9 +50948,17 @@
         "bday"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50414,9 +50974,17 @@
         "bday-day"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50432,9 +51000,17 @@
         "bday-month"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50450,9 +51026,17 @@
         "bday-year"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50468,9 +51052,17 @@
         "sex"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50486,9 +51078,17 @@
         "url"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50504,9 +51104,17 @@
         "photo"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50522,9 +51130,17 @@
         "tel"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50540,9 +51156,17 @@
         "tel-country-code"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50558,9 +51182,17 @@
         "tel-national"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50576,9 +51208,17 @@
         "tel-area-code"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50594,9 +51234,17 @@
         "tel-local"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50612,9 +51260,17 @@
         "tel-local-prefix"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50630,9 +51286,17 @@
         "tel-local-suffix"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50648,9 +51312,17 @@
         "tel-extension"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50666,9 +51338,17 @@
         "email"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -50684,9 +51364,17 @@
         "impp"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "button/autocomplete",
+        "fieldset/autocomplete",
+        "input/autocomplete",
+        "object/autocomplete",
+        "output/autocomplete",
+        "select/autocomplete",
+        "textarea/autocomplete"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "autofilling-form-controls:-the-autocomplete-attribute",
@@ -53260,8 +53948,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "the-script-element",
-      "href": "https://html.spec.whatwg.org/multipage/scripting.html#the-script-element",
+      "id": "script",
+      "href": "https://html.spec.whatwg.org/multipage/scripting.html#script",
       "linkingText": [
         "script"
       ],
@@ -53269,24 +53957,6 @@
       "type": "element",
       "for": [],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-script-element",
-        "title": "The script element",
-        "number": "4.12.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "script",
-      "href": "https://html.spec.whatwg.org/multipage/scripting.html#script",
-      "linkingText": [
-        "script"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "the-script-element",
@@ -60140,7 +60810,7 @@
       "localLinkingText": [],
       "type": "element-attr",
       "for": [
-        "face"
+        "form-associated custom elements"
       ],
       "access": "public",
       "informative": false,
@@ -71178,9 +71848,11 @@
         "allow-popups"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71196,9 +71868,11 @@
         "allow-top-navigation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71214,9 +71888,11 @@
         "allow-top-navigation-by-user-activation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71232,9 +71908,11 @@
         "allow-same-origin"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71250,9 +71928,11 @@
         "allow-forms"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71268,9 +71948,11 @@
         "allow-pointer-lock"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71286,9 +71968,11 @@
         "allow-scripts"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71304,9 +71988,11 @@
         "allow-popups-to-escape-sandbox"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71322,9 +72008,11 @@
         "allow-modals"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71340,9 +72028,11 @@
         "allow-orientation-lock"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71358,9 +72048,11 @@
         "allow-presentation"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -71376,9 +72068,11 @@
         "allow-downloads"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attr-value",
+      "for": [
+        "iframe/sandbox"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "sandboxing",
@@ -78704,11 +79398,9 @@
         "value"
       ],
       "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "handler"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "event-handler-attributes",
@@ -78724,11 +79416,9 @@
         "listener"
       ],
       "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "handler"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "event-handler-attributes",
@@ -78744,11 +79434,9 @@
         "name"
       ],
       "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "handler"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "event-handler-attributes",
@@ -78764,11 +79452,9 @@
         "target"
       ],
       "localLinkingText": [],
-      "type": "event",
-      "for": [
-        "handler"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "event-handler-attributes",
