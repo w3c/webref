@@ -73,8 +73,8 @@ interface GPUAdapter {
 };
 
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
-    sequence<GPUFeatureName> nonGuaranteedFeatures = [];
-    record<DOMString, GPUSize32> nonGuaranteedLimits = {};
+    sequence<GPUFeatureName> requiredFeatures = [];
+    record<DOMString, GPUSize32> requiredLimits = {};
 };
 
 enum GPUFeatureName {

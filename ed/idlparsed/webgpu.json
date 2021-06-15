@@ -731,14 +731,14 @@
         "partial": false
       },
       "GPUDeviceDescriptor": {
-        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> nonGuaranteedFeatures = [];\n    record<DOMString, GPUSize32> nonGuaranteedLimits = {};\n};",
+        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize32> requiredLimits = {};\n};",
         "type": "dictionary",
         "name": "GPUDeviceDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
         "members": [
           {
             "type": "field",
-            "name": "nonGuaranteedFeatures",
+            "name": "requiredFeatures",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -765,7 +765,7 @@
           },
           {
             "type": "field",
-            "name": "nonGuaranteedLimits",
+            "name": "requiredLimits",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
