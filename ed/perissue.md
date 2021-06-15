@@ -25,6 +25,9 @@ Reffy could not fetch or render these specifications for some reason. This may h
 
 ## Specifications without normative dependencies
 
+- [500 Internal Server Error](https://drafts.csswg.org/mediaqueries-4/)
+- [500 Internal Server Error](https://drafts.csswg.org/mediaqueries-5/)
+- [500 Internal Server Error](https://drafts.csswg.org/resize-observer/)
 - [Accessible `Object.hasOwnProperty`](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - [Atomics.waitAsync](https://tc39.es/proposal-atomics-wait-async/)
 - [ContentEditable](https://w3c.github.io/contentEditable/)
@@ -86,7 +89,7 @@ Reffy could not fetch or render these specifications for some reason. This may h
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 60 specifications found
+=> 63 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -1698,7 +1701,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) links to [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/) but does not list it in its references
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
     * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/) but does not list it in its references
@@ -1730,11 +1732,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
 - [Preload](https://w3c.github.io/preload/) links to [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
 - [Reporting API 1](https://w3c.github.io/reporting/) links to [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/) but does not list it in its references
-- [Resize Observer](https://drafts.csswg.org/resize-observer/) links to:
-    * [`https://www.w3.org/TR/css3-positioning/`](https://www.w3.org/TR/css3-positioning/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-display-3/`](https://www.w3.org/TR/css-display-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/intersection-observer/`](https://www.w3.org/TR/intersection-observer/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
 - [Resource Hints](https://w3c.github.io/resource-hints/) links to:
     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/) but does not list it in its references
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
@@ -1897,7 +1894,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 619 missing references for links found in 172 specifications
+=> 614 missing references for links found in 170 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -3012,15 +3009,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#ready-for-post-load-tasks`](https://html.spec.whatwg.org/#ready-for-post-load-tasks)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/):
      * [`https://html.spec.whatwg.org/#media-element-load-algorithm`](https://html.spec.whatwg.org/#media-element-load-algorithm)
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
-     * [`https://drafts.csswg.org/css-values-3/#relative-length`](https://drafts.csswg.org/css-values-3/#relative-length)
-     * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
-     * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/):
-     * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
-     * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
-     * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
-     * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
 - [Media Session Standard](https://w3c.github.io/mediasession/):
      * [`https://html.spec.whatwg.org/#potentially-playing`](https://html.spec.whatwg.org/#potentially-playing)
      * [`https://html.spec.whatwg.org/#concept-media-muted`](https://html.spec.whatwg.org/#concept-media-muted)
@@ -3242,8 +3230,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/):
      * [`https://w3c.github.io/permissions/#create-a-permissionstatus`](https://w3c.github.io/permissions/#create-a-permissionstatus)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/):
-     * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
 - [Resource Hints](https://w3c.github.io/resource-hints/):
      * [`https://html.spec.whatwg.org/#url`](https://html.spec.whatwg.org/#url)
      * [`https://html.spec.whatwg.org/#delay-the-load-event`](https://html.spec.whatwg.org/#delay-the-load-event)
@@ -3813,7 +3799,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1288 problematic external links found in 198 specifications
+=> 1280 problematic external links found in 195 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4467,8 +4453,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/):
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/):
-     * [`https://html.spec.whatwg.org/#processing-model-8`](https://html.spec.whatwg.org/#processing-model-8)
 - [Resource Hints](https://w3c.github.io/resource-hints/):
      * [`https://html.spec.whatwg.org/#resolve-a-url`](https://html.spec.whatwg.org/#resolve-a-url)
      * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
@@ -4763,7 +4747,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 875 problematic external links found in 69 specifications
+=> 874 problematic external links found in 68 specifications
 
 
 ## Broken external links
@@ -4791,6 +4775,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#drag-data-item-type-string`](https://html.spec.whatwg.org/#drag-data-item-type-string)
      * [`https://w3c.github.io/FileAPI/#dfn-blobparts`](https://w3c.github.io/FileAPI/#dfn-blobparts)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
+     * [`https://drafts.csswg.org/mediaqueries-4/#media-feature`](https://drafts.csswg.org/mediaqueries-4/#media-feature)
+     * [`https://drafts.csswg.org/mediaqueries-4/#mq-min-max`](https://drafts.csswg.org/mediaqueries-4/#mq-min-max)
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean`](https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
@@ -4807,6 +4795,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-response-csp-list`](https://fetch.spec.whatwg.org/#concept-response-csp-list)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
      * [`https://html.spec.whatwg.org/#dom-window-requestanimationframe`](https://html.spec.whatwg.org/#dom-window-requestanimationframe)
+- [CSS 2](https://drafts.csswg.org/css2/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural)
+- [CSS 2](https://drafts.csswg.org/css2/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/):
      * [`https://drafts.csswg.org/web-animations#timing-function`](https://drafts.csswg.org/web-animations#timing-function)
      * [`https://drafts.csswg.org/web-animations#inherited-time`](https://drafts.csswg.org/web-animations#inherited-time)
@@ -4843,48 +4835,118 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/contentEditable/#dfn-editing-host`](https://w3c.github.io/contentEditable/#dfn-editing-host)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
      * [`https://drafts.csswg.org/selectors-3/#first-formatted-line0`](https://drafts.csswg.org/selectors-3/#first-formatted-line0)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
+     * [`https://drafts.csswg.org/resize-observer-1/#resizeobserver`](https://drafts.csswg.org/resize-observer-1/#resizeobserver)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query)
+     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
+     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
+     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
+     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
+     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
+- [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme`](https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-color-scheme)
+     * [`https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast`](https://drafts.csswg.org/mediaqueries-5/#descdef-media-prefers-contrast)
+     * [`https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors`](https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query`](https://drafts.csswg.org/mediaqueries-5/#media-query)
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-dark`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-prefers-color-scheme-dark)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors`](https://drafts.csswg.org/mediaqueries-5/#descdef-media-forced-colors)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-feature`](https://drafts.csswg.org/mediaqueries-5/#media-feature)
+- [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list)
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-condition)
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed`](https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed)
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-media-not`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-not)
+- [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
+     * [`https://drafts.csswg.org/resize-observer-1/#resizeobserver`](https://drafts.csswg.org/resize-observer-1/#resizeobserver)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-aspect-ratio`](https://drafts.csswg.org/mediaqueries-5/#descdef-media-device-aspect-ratio)
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
+- [CSS Display Module Level 3](https://drafts.csswg.org/css-display/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/):
      * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
+     * [`https://www.w3.org/TR/css3-mediaqueries/#width`](https://www.w3.org/TR/css3-mediaqueries/#width)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/):
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
+- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
+- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/):
      * [`https://www.w3.org/TR/css3-selectors/#first-letter`](https://www.w3.org/TR/css3-selectors/#first-letter)
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
      * [`https://drafts.csswg.org/css-overflow-3/#paginated-overflow`](https://drafts.csswg.org/css-overflow-3/#paginated-overflow)
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query`](https://drafts.csswg.org/mediaqueries-5/#media-query)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
      * [`https://drafts.csswg.org/css-inline/#central`](https://drafts.csswg.org/css-inline/#central)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query`](https://drafts.csswg.org/mediaqueries-5/#media-query)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query-list`](https://drafts.csswg.org/mediaqueries-5/#media-query-list)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-type`](https://drafts.csswg.org/mediaqueries-5/#media-type)
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-feature`](https://drafts.csswg.org/mediaqueries-5/#media-feature)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation)
+     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait)
+     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan)
+     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive)
+     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace)
+     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid)
      * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0`](https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-color-3/#alphavalue-def`](https://drafts.csswg.org/css-color-3/#alphavalue-def)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/):
      * [`https://drafts.csswg.org/selectors-3/#subject`](https://drafts.csswg.org/selectors-3/#subject)
      * [`https://www.w3.org/TR/css3-transitions/#animatable-types`](https://www.w3.org/TR/css3-transitions/#animatable-types)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
+- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#continuous-media`](https://drafts.csswg.org/mediaqueries-5/#continuous-media)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
@@ -4893,6 +4955,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
      * [`https://www.w3.org/TR/css-color-3/#currentcolor-def`](https://www.w3.org/TR/css-color-3/#currentcolor-def)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-true`](https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-true)
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false`](https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/):
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/):
@@ -4908,11 +4975,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule`](https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/):
      * [`https://drafts.csswg.org/css2/box.html#x14`](https://drafts.csswg.org/css2/box.html#x14)
+- [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural`](https://drafts.csswg.org/mediaqueries-5/#valdef-media-aural)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/):
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-5/#typedef-media-query-list)
+     * [`https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed`](https://drafts.csswg.org/mediaqueries-5/#typedef-general-enclosed)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/):
      * [`https://drafts.csswg.org/css-transforms/#grouping-property-values`](https://drafts.csswg.org/css-transforms/#grouping-property-values)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
@@ -4934,13 +5006,22 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query`](https://drafts.csswg.org/mediaqueries-5/#media-query)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#media-query`](https://drafts.csswg.org/mediaqueries-5/#media-query)
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/):
+     * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
      * [`https://html.spec.whatwg.org/#responsible-browsing-context`](https://html.spec.whatwg.org/#responsible-browsing-context)
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
+     * [`https://drafts.csswg.org/mediaqueries-4/#mf-colors`](https://drafts.csswg.org/mediaqueries-4/#mf-colors)
+- [Device Posture API](https://w3c.github.io/device-posture/):
+     * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
      * [`https://html.spec.whatwg.org/#triggered-by-user-activation`](https://html.spec.whatwg.org/#triggered-by-user-activation)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/):
@@ -4975,6 +5056,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-length`](https://www.w3.org/TR/css-transitions-1/#animtype-length)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-number`](https://www.w3.org/TR/css-transitions-1/#animtype-number)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list`](https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list)
+     * [`https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false`](https://drafts.csswg.org/mediaqueries-5/#valdef-custom-media-false)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/):
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Gamepad](https://w3c.github.io/gamepad/):
@@ -5093,6 +5175,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/#content%E2%91%A0`](https://drafts.csswg.org/css2/#content%E2%91%A0)
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
+     * [`https://drafts.csswg.org/mediaqueries/#typedef-media-condition`](https://drafts.csswg.org/mediaqueries/#typedef-media-condition)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
@@ -5260,8 +5343,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#wait-for-a-response`](https://fetch.spec.whatwg.org/#wait-for-a-response)
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
      * [`https://w3c.github.io/webdriver/#dfn-error`](https://w3c.github.io/webdriver/#dfn-error)
-- [Resize Observer](https://drafts.csswg.org/resize-observer/):
-     * [`https://www.w3.org/TR/css3-positioning/#viewport`](https://www.w3.org/TR/css3-positioning/#viewport)
 - [Resource Hints](https://w3c.github.io/resource-hints/):
      * [`https://html.spec.whatwg.org/#resulting-absolute-url`](https://html.spec.whatwg.org/#resulting-absolute-url)
      * [`https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable`](https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable)
@@ -5384,6 +5465,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 - [Web Application Manifest](https://w3c.github.io/manifest/):
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme`](https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/):
      * [`https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#collectfromcredentialstore-origin-options-sameoriginwithancestors)
      * [`https://w3c.github.io/webappsec-credential-management/#store-credential-sameoriginwithancestors`](https://w3c.github.io/webappsec-credential-management/#store-credential-sameoriginwithancestors)
@@ -5420,6 +5502,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
+     * [`https://www.w3.org/TR/mediaqueries-4/#media-types`](https://www.w3.org/TR/mediaqueries-4/#media-types)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
      * [`https://w3c.github.io/webdriver/#dfn-intermediary-node`](https://w3c.github.io/webdriver/#dfn-intermediary-node)
      * [`https://w3c.github.io/webdriver/#dfn-get-a-property`](https://w3c.github.io/webdriver/#dfn-get-a-property)
@@ -5445,7 +5528,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 528 problematic external links found in 148 specifications
+=> 609 problematic external links found in 166 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
