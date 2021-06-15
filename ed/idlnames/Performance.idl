@@ -46,14 +46,6 @@ partial interface Performance {
               attribute EventHandler onresourcetimingbufferfull;
 };
 
-// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-2/)
-partial interface Performance {
-    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});
-    undefined clearMarks(optional DOMString markName);
-    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);
-    undefined clearMeasures(optional DOMString measureName);
-};
-
 // Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-3/)
 partial interface Performance {
     PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});

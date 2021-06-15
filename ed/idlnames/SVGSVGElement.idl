@@ -1,4 +1,4 @@
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
+// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 [Exposed=Window]
 interface SVGSVGElement : SVGGraphicsElement {
 
@@ -44,12 +44,6 @@ partial interface SVGSVGElement {
   float getCurrentTime();
   undefined setCurrentTime(float seconds);
 };
-
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
-SVGSVGElement includes SVGFitToViewBox;
-
-// Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG11/)
-SVGSVGElement includes WindowEventHandlers;
 
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 SVGSVGElement includes SVGFitToViewBox;

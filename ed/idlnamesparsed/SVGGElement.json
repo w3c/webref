@@ -3,9 +3,10 @@
   "defined": {
     "spec": {
       "title": "Scalable Vector Graphics (SVG) 2",
-      "url": "https://www.w3.org/TR/SVG11/"
+      "url": "https://www.w3.org/TR/SVG2/"
     },
-    "fragment": "[Exposed=Window]\ninterface SVGGElement : SVGGraphicsElement {\n};"
+    "fragment": "[Exposed=Window]\ninterface SVGGElement : SVGGraphicsElement {\n};",
+    "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGGElement"
   },
   "extended": [],
   "inheritance": {
@@ -13,18 +14,12 @@
     "defined": {
       "spec": {
         "title": "Scalable Vector Graphics (SVG) 2",
-        "url": "https://www.w3.org/TR/SVG11/"
+        "url": "https://www.w3.org/TR/SVG2/"
       },
-      "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};"
+      "fragment": "[Exposed=Window]\ninterface SVGGraphicsElement : SVGElement {\n  [SameObject] readonly attribute SVGAnimatedTransformList transform;\n\n  DOMRect getBBox(optional SVGBoundingBoxOptions options = {});\n  DOMMatrix? getCTM();\n  DOMMatrix? getScreenCTM();\n};",
+      "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGGraphicsElement"
     },
     "extended": [
-      {
-        "spec": {
-          "title": "Scalable Vector Graphics (SVG) 2",
-          "url": "https://www.w3.org/TR/SVG11/"
-        },
-        "fragment": "SVGGraphicsElement includes SVGTests;"
-      },
       {
         "spec": {
           "title": "Scalable Vector Graphics (SVG) 2",
@@ -38,9 +33,10 @@
       "defined": {
         "spec": {
           "title": "Scalable Vector Graphics (SVG) 2",
-          "url": "https://www.w3.org/TR/SVG11/"
+          "url": "https://www.w3.org/TR/SVG2/"
         },
-        "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};"
+        "fragment": "[Exposed=Window]\ninterface SVGElement : Element {\n\n  [SameObject] readonly attribute SVGAnimatedString className;\n\n  readonly attribute SVGSVGElement? ownerSVGElement;\n  readonly attribute SVGElement? viewportElement;\n};",
+        "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGElement"
       },
       "extended": [
         {
@@ -49,34 +45,6 @@
             "url": "https://www.w3.org/TR/cssom-1/"
           },
           "fragment": "SVGElement includes ElementCSSInlineStyle;"
-        },
-        {
-          "spec": {
-            "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
-          },
-          "fragment": "SVGElement includes GlobalEventHandlers;"
-        },
-        {
-          "spec": {
-            "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
-          },
-          "fragment": "SVGElement includes DocumentAndElementEventHandlers;"
-        },
-        {
-          "spec": {
-            "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
-          },
-          "fragment": "SVGElement includes SVGElementInstance;"
-        },
-        {
-          "spec": {
-            "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
-          },
-          "fragment": "SVGElement includes HTMLOrSVGElement;"
         },
         {
           "spec": {
@@ -507,106 +475,7 @@
           "defined": {
             "spec": {
               "title": "Scalable Vector Graphics (SVG) 2",
-              "url": "https://www.w3.org/TR/SVG11/"
-            },
-            "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
-            "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
-          },
-          "extended": [],
-          "inheritance": null,
-          "includes": []
-        },
-        {
-          "name": "HTMLOrSVGElement",
-          "defined": {
-            "spec": {
-              "title": "HTML Standard",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            },
-            "fragment": "interface mixin HTMLOrSVGElement {\n  [SameObject] readonly attribute DOMStringMap dataset;\n  attribute DOMString nonce; // intentionally no [CEReactions]\n\n  [CEReactions] attribute boolean autofocus;\n  [CEReactions] attribute long tabIndex;\n  undefined focus(optional FocusOptions options = {});\n  undefined blur();\n};",
-            "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
-          },
-          "extended": [],
-          "inheritance": null,
-          "includes": []
-        },
-        {
-          "name": "GlobalEventHandlers",
-          "defined": {
-            "spec": {
-              "title": "HTML Standard",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            },
-            "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
-            "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
-          },
-          "extended": [
-            {
-              "spec": {
-                "title": "WebXR DOM Overlays Module",
-                "url": "https://immersive-web.github.io/dom-overlays/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
-            },
-            {
-              "spec": {
-                "title": "CSS Animations Level 1",
-                "url": "https://www.w3.org/TR/css-animations-1/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
-            },
-            {
-              "spec": {
-                "title": "CSS Transitions",
-                "url": "https://www.w3.org/TR/css-transitions-1/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
-            },
-            {
-              "spec": {
-                "title": "Pointer Events",
-                "url": "https://www.w3.org/TR/pointerevents3/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
-            },
-            {
-              "spec": {
-                "title": "Selection API",
-                "url": "https://www.w3.org/TR/selection-api/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
-            },
-            {
-              "spec": {
-                "title": "Touch Events - Level 2",
-                "url": "https://www.w3.org/TR/touch-events/"
-              },
-              "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
-            }
-          ],
-          "inheritance": null,
-          "includes": []
-        },
-        {
-          "name": "DocumentAndElementEventHandlers",
-          "defined": {
-            "spec": {
-              "title": "HTML Standard",
-              "url": "https://html.spec.whatwg.org/multipage/"
-            },
-            "fragment": "interface mixin DocumentAndElementEventHandlers {\n  attribute EventHandler oncopy;\n  attribute EventHandler oncut;\n  attribute EventHandler onpaste;\n};",
-            "href": "https://html.spec.whatwg.org/multipage/webappapis.html#documentandelementeventhandlers"
-          },
-          "extended": [],
-          "inheritance": null,
-          "includes": []
-        },
-        {
-          "name": "SVGElementInstance",
-          "defined": {
-            "spec": {
-              "title": "Scalable Vector Graphics (SVG) 2",
-              "url": "https://www.w3.org/TR/SVG11/"
+              "url": "https://www.w3.org/TR/SVG2/"
             },
             "fragment": "interface mixin SVGElementInstance {\n  [SameObject] readonly attribute SVGElement? correspondingElement;\n  [SameObject] readonly attribute SVGUseElement? correspondingUseElement;\n};",
             "href": "https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance"
@@ -637,21 +506,7 @@
         "defined": {
           "spec": {
             "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
-          },
-          "fragment": "interface mixin SVGTests {\n  [SameObject] readonly attribute SVGStringList requiredExtensions;\n  [SameObject] readonly attribute SVGStringList systemLanguage;\n};",
-          "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"
-        },
-        "extended": [],
-        "inheritance": null,
-        "includes": []
-      },
-      {
-        "name": "SVGTests",
-        "defined": {
-          "spec": {
-            "title": "Scalable Vector Graphics (SVG) 2",
-            "url": "https://www.w3.org/TR/SVG11/"
+            "url": "https://www.w3.org/TR/SVG2/"
           },
           "fragment": "interface mixin SVGTests {\n  [SameObject] readonly attribute SVGStringList requiredExtensions;\n  [SameObject] readonly attribute SVGStringList systemLanguage;\n};",
           "href": "https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests"
