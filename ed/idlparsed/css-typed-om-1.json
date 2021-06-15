@@ -2273,7 +2273,7 @@
         "partial": false
       },
       "CSSMathClamp": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathClamp : CSSMathValue {\n    constructor(CSSNumberish min, CSSNumberish val, CSSNumberish max);\n    readonly attribute CSSNumericValue min;\n    readonly attribute CSSNumericValue val;\n    readonly attribute CSSNumericValue max;\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathClamp : CSSMathValue {\n    constructor(CSSNumberish lower, CSSNumberish value, CSSNumberish upper);\n    readonly attribute CSSNumericValue lower;\n    readonly attribute CSSNumericValue value;\n    readonly attribute CSSNumericValue upper;\n};",
         "type": "interface",
         "name": "CSSMathClamp",
         "inheritance": "CSSMathValue",
@@ -2283,7 +2283,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "min",
+                "name": "lower",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2299,7 +2299,7 @@
               },
               {
                 "type": "argument",
-                "name": "val",
+                "name": "value",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2315,7 +2315,7 @@
               },
               {
                 "type": "argument",
-                "name": "max",
+                "name": "upper",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -2334,7 +2334,7 @@
           },
           {
             "type": "attribute",
-            "name": "min",
+            "name": "lower",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -2349,7 +2349,7 @@
           },
           {
             "type": "attribute",
-            "name": "val",
+            "name": "value",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -2364,7 +2364,7 @@
           },
           {
             "type": "attribute",
-            "name": "max",
+            "name": "upper",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],

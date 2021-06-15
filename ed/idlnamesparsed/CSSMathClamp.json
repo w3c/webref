@@ -5,7 +5,7 @@
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathClamp : CSSMathValue {\n    constructor(CSSNumberish min, CSSNumberish val, CSSNumberish max);\n    readonly attribute CSSNumericValue min;\n    readonly attribute CSSNumericValue val;\n    readonly attribute CSSNumericValue max;\n};",
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSMathClamp : CSSMathValue {\n    constructor(CSSNumberish lower, CSSNumberish value, CSSNumberish upper);\n    readonly attribute CSSNumericValue lower;\n    readonly attribute CSSNumericValue value;\n    readonly attribute CSSNumericValue upper;\n};",
     "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssmathclamp"
   },
   "extended": [],
