@@ -5,7 +5,7 @@
       "title": "CSS Object Model (CSSOM)",
       "url": "https://www.w3.org/TR/cssom-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSStyleSheet : StyleSheet {\n  readonly attribute CSSRule? ownerRule;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSStyleSheet : StyleSheet {\n  constructor(optional CSSStyleSheetInit options = {});\n\n  readonly attribute CSSRule? ownerRule;\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n\n  Promise<CSSStyleSheet> replace(USVString text);\n  undefined replaceSync(USVString text);\n};",
     "href": "https://drafts.csswg.org/cssom/#cssstylesheet"
   },
   "extended": [

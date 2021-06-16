@@ -35,10 +35,13 @@
       "SameObject",
       "PutForwards",
       "idl-boolean",
+      "idl-promise",
       "securityerror",
+      "notallowederror",
+      "idl-DOMException",
+      "syntaxerror",
       "idl-long",
       "indexsizeerror",
-      "syntaxerror",
       "hierarchyrequesterror",
       "invalidstateerror",
       "idl-unsigned-short",
@@ -93,21 +96,31 @@
     ],
     "https://drafts.csswg.org/css-syntax-3/": [
       "serialize-an-anb-value",
-      "environment-encoding",
       "parse-a-rule",
+      "parse-a-list-of-rules",
+      "environment-encoding",
       "parse-a-list-of-declarations",
       "parse-a-list-of-component-values",
       "css-parse-something-according-to-a-css-grammar",
       "typedef-whitespace-token"
     ],
-    "https://url.spec.whatwg.org/": [
-      "absolute-url-string",
-      "concept-url-parser",
-      "concept-url-serializer",
-      "concept-url"
+    "https://drafts.csswg.org/cssom-1/": [
+      "concept-css-style-sheet-location",
+      "concept-css-style-sheet-parent-css-style-sheet",
+      "concept-css-style-sheet-owner-node",
+      "concept-css-style-sheet-owner-css-rule",
+      "concept-css-style-sheet-title",
+      "concept-css-style-sheet-alternate-flag",
+      "concept-css-style-sheet-origin-clean-flag",
+      "concept-css-style-sheet-media",
+      "concept-css-style-sheet-disabled-flag"
     ],
     "https://html.spec.whatwg.org/": [
+      "concept-script-base-url",
+      "concept-document-window",
+      "current-global-object",
       "the-style-element:concept-css-style-sheet-title",
+      "in-parallel",
       "tree-order",
       "ascii-case-insensitive",
       "concept-origin",
@@ -125,12 +138,17 @@
       "window",
       "browsing-context",
       "browsing-context-container",
-      "being-rendered",
-      "current-global-object",
-      "concept-document-window"
+      "being-rendered"
+    ],
+    "https://url.spec.whatwg.org/": [
+      "absolute-url-string",
+      "concept-url-parser",
+      "concept-url-serializer",
+      "concept-url"
     ],
     "https://dom.spec.whatwg.org/": [
       "in-a-document-tree",
+      "document",
       "element",
       "processinginstruction",
       "documentorshadowroot",
@@ -143,7 +161,6 @@
       "concept-node-document",
       "concept-document-url",
       "concept-document-encoding",
-      "document",
       "concept-element-attributes-change-ext",
       "concept-element-attributes-get-by-namespace",
       "concept-element-attributes-set-value",
@@ -162,6 +179,11 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/ownerRule": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/cssRules": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule": [],
+    "https://drafts.csswg.org/css-cascade-5/": [
+      "at-ruledef-import",
+      "computed-value",
+      "used-value"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/StyleSheetList": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Document/styleSheets": [],
@@ -318,10 +340,6 @@
     ],
     "https://drafts.csswg.org/css-shadow-parts-1/": [
       "selectordef-part"
-    ],
-    "https://drafts.csswg.org/css-cascade-5/": [
-      "computed-value",
-      "used-value"
     ],
     "https://drafts.csswg.org/css-overflow-3/": [
       "propdef-overflow"

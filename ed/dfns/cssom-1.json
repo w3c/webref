@@ -674,6 +674,29 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-cssstylesheet-cssstylesheet",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssstylesheet",
+      "linkingText": [
+        "CSSStyleSheet(options)",
+        "constructor(options)",
+        "CSSStyleSheet()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-style-sheets",
+        "title": "CSS Style Sheets",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "concept-css-style-sheet-type",
       "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-type",
       "linkingText": [
@@ -894,6 +917,86 @@
       "definedIn": "dt"
     },
     {
+      "id": "concept-css-style-sheet-constructed-flag",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-constructed-flag",
+      "linkingText": [
+        "constructed flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "css-style-sheets",
+        "title": "CSS Style Sheets",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "concept-css-style-sheet-disallow-modification-flag",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-disallow-modification-flag",
+      "linkingText": [
+        "disallow modification flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "css-style-sheets",
+        "title": "CSS Style Sheets",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "concept-css-style-sheet-constructor-document",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-constructor-document",
+      "linkingText": [
+        "constructor document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "css-style-sheets",
+        "title": "CSS Style Sheets",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "concept-css-style-sheet-stylesheet-base-url",
+      "href": "https://drafts.csswg.org/cssom/#concept-css-style-sheet-stylesheet-base-url",
+      "linkingText": [
+        "stylesheet base URL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "css-style-sheets",
+        "title": "CSS Style Sheets",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "stylesheet",
       "href": "https://drafts.csswg.org/cssom/#stylesheet",
       "linkingText": [
@@ -1070,6 +1173,29 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-cssstylesheet-cssstylesheet-options-options",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-cssstylesheet-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/CSSStyleSheet(options)",
+        "CSSStyleSheet/constructor(options)",
+        "CSSStyleSheet/CSSStyleSheet()",
+        "CSSStyleSheet/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-cssstylesheet-insertrule-rule-index-rule",
       "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-insertrule-rule-index-rule",
       "linkingText": [
@@ -1121,6 +1247,124 @@
       "type": "argument",
       "for": [
         "CSSStyleSheet/deleteRule(index)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssstylesheet-replace-text-text",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replace-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/replace(text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssstylesheet-replacesync-text-text",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replacesync-text-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSSStyleSheet/replaceSync(text)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-cssstylesheetinit",
+      "href": "https://drafts.csswg.org/cssom/#dictdef-cssstylesheetinit",
+      "linkingText": [
+        "CSSStyleSheetInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssstylesheetinit-baseurl",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheetinit-baseurl",
+      "linkingText": [
+        "baseURL"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CSSStyleSheetInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssstylesheetinit-media",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheetinit-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CSSStyleSheetInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssstylesheetinit-disabled",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheetinit-disabled",
+      "linkingText": [
+        "disabled"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CSSStyleSheetInit"
       ],
       "access": "public",
       "informative": false,
@@ -1197,6 +1441,46 @@
       "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-deleterule",
       "linkingText": [
         "deleteRule(index)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssstylesheet-replace",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replace",
+      "linkingText": [
+        "replace(text)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-cssstylesheet-interface",
+        "title": "The CSSStyleSheet Interface",
+        "number": "6.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssstylesheet-replacesync",
+      "href": "https://drafts.csswg.org/cssom/#dom-cssstylesheet-replacesync",
+      "linkingText": [
+        "replaceSync(text)"
       ],
       "localLinkingText": [],
       "type": "method",

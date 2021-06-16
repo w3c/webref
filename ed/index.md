@@ -688,7 +688,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -767,7 +766,6 @@ Normative references to this spec from:
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 - [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
@@ -870,7 +868,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Constructable Stylesheet Objects {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Constructable Stylesheet Objects {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -882,6 +880,8 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- WebIDL names also defined elsewhere: 
+    * `CSSStyleSheetInit` also defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - External links to private terms:
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location)
      * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet)
@@ -965,7 +965,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 4 June 2021
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
@@ -1477,6 +1477,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
@@ -1661,7 +1662,6 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 
 
@@ -1824,6 +1824,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -1987,6 +1988,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -2034,6 +2036,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -2186,6 +2189,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -2315,7 +2319,6 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -2553,7 +2556,6 @@ Informative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
@@ -2945,6 +2947,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -3271,7 +3274,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -3820,7 +3823,6 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -3853,6 +3855,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 
 
 ## CSS Line Grid Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -4033,7 +4036,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -4210,13 +4212,13 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
-- Crawled version: 17 May 2021
+- Crawled version: 22 May 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom/](https://drafts.csswg.org/cssom/)
 - Latest published version: [https://www.w3.org/TR/cssom-1/](https://www.w3.org/TR/cssom-1/)
 - Shortname: cssom-1
@@ -4224,6 +4226,8 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
+- WebIDL names also defined elsewhere: 
+    * `CSSStyleSheetInit` also defined in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#tree-order`](https://html.spec.whatwg.org/#tree-order)
      * [`https://html.spec.whatwg.org/#ascii-case-insensitive`](https://html.spec.whatwg.org/#ascii-case-insensitive)
@@ -4285,7 +4289,6 @@ Normative references to this spec from:
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -4369,7 +4372,6 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4647,6 +4649,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -4751,7 +4754,6 @@ Normative references to this spec from:
 
 Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
 
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
@@ -4954,7 +4956,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 
 No informative reference to this spec from other specs.
@@ -5137,7 +5138,6 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
@@ -5460,7 +5460,6 @@ Normative references to this spec from:
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -5579,9 +5578,9 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -5634,7 +5633,6 @@ Normative references to this spec from:
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -5696,7 +5694,6 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 
@@ -5812,7 +5809,6 @@ Informative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 
@@ -6044,10 +6040,10 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -6700,6 +6696,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -6734,7 +6731,6 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Save Data API](https://wicg.github.io/savedata/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -6796,6 +6792,7 @@ Informative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Web Share API](https://w3c.github.io/web-share/)
 
@@ -7188,7 +7185,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 14 June 2021
+- Crawled version: 15 June 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -7249,7 +7246,6 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -7455,7 +7451,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 No informative reference to this spec from other specs.
 
@@ -7631,7 +7626,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Crawled URL: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Crawled version: 11 June 2021
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Shortname: generic-sensor
@@ -7784,7 +7779,6 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
@@ -8192,7 +8186,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 15 June 2021
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -8927,6 +8921,7 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -8979,7 +8974,6 @@ Normative references to this spec from:
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Save Data API](https://wicg.github.io/savedata/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
@@ -9451,6 +9445,7 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -9488,6 +9483,7 @@ Normative references to this spec from:
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
@@ -9999,30 +9995,37 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## MathML Core {data-spec=true data-error=true}
+## MathML Core {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
-- Initial URL: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
-- Crawled URL: [[object Object]]([object Object])
-- Editor's Draft: [https://mathml-refresh.github.io/mathml-core/](https://mathml-refresh.github.io/mathml-core/)
+- Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
+- Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
+- Crawled version: 16 June 2021
+- Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Loading script from reffy/scripts/reffy.mjs failed Error: Loading script from reffy/scripts/reffy.mjs failed
-    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:381:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:241:24)
-    at async Promise.all (index 31)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:247:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- External links to private terms:
+     * [`https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes`](https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes)
+     * [`https://html.spec.whatwg.org/#presentational-hints`](https://html.spec.whatwg.org/#presentational-hints)
+     * [`https://html.spec.whatwg.org/#html-integration-point`](https://html.spec.whatwg.org/#html-integration-point)
+     * [`https://html.spec.whatwg.org/#mathml-text-integration-point`](https://html.spec.whatwg.org/#mathml-text-integration-point)
+     * [`https://html.spec.whatwg.org/#tree-construction-dispatcher`](https://html.spec.whatwg.org/#tree-construction-dispatcher)
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#element`](https://html.spec.whatwg.org/#element)
+- External links that neither target definitions nor headings:
+     * [`https://www.w3.org/TR/css-writing-modes-3/#extent`](https://www.w3.org/TR/css-writing-modes-3/#extent)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#the-background-color`](https://www.w3.org/TR/css-backgrounds-3/#the-background-color)
+- Broken external links:
+     * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
+     * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
+     * [`https://html.spec.whatwg.org/#event-handler-contentattributes`](https://html.spec.whatwg.org/#event-handler-contentattributes)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#padding-physical`](https://www.w3.org/TR/css-backgrounds-3/#padding-physical)
+     * [`https://heycam.github.io/webidl/#DOMException`](https://heycam.github.io/webidl/#DOMException)
+     * [`https://www.w3.org/TR/css-position-3/#pos-sch`](https://www.w3.org/TR/css-position-3/#pos-sch)
+     * [`https://www.w3.org/TR/css-box-3/#the-border-width`](https://www.w3.org/TR/css-box-3/#the-border-width)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -10030,7 +10033,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
-- [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 
 
 ## Measure Memory API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -10400,6 +10403,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 
 Informative references to this spec from:
@@ -11523,6 +11527,7 @@ Normative references to this spec from:
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web Serial API](https://wicg.github.io/serial/)
@@ -12087,7 +12092,6 @@ Normative references to this spec from:
 - [Portals](https://wicg.github.io/portals/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -12441,562 +12445,97 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 
 No informative reference to this spec from other specs.
 
 
-## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Scalable Vector Graphics (SVG) 1.1 (Second Edition) {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Crawled URL: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
-- Crawled version: 08 June 2021
-- Editor's Draft: [https://svgwg.org/svg2-draft/](https://svgwg.org/svg2-draft/)
+- Crawled URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Crawled version: 16 August 2011
+- Editor's Draft: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
 - Latest published version: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
 - Shortname: SVG11
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for WebIDL names: 
-     * `CSSPseudoElement` defined in [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
-- No definition for IDL properties: 
-     * `SVGElement` with type `interface`
-     * `className` with type `attribute`
-     * `ownerSVGElement` with type `attribute`
-     * `viewportElement` with type `attribute`
-     * `SVGBoundingBoxOptions` with type `dictionary`
-     * `fill` with type `dict-member`, but found [`fill`](https://svgwg.org/svg2-draft/painting.html#TermFill) with type `dfn`
-     * `stroke` with type `dict-member`, but found [`stroke`](https://svgwg.org/svg2-draft/painting.html#TermStroke) with type `dfn`
-     * `markers` with type `dict-member`
-     * `clipped` with type `dict-member`
-     * `SVGGraphicsElement` with type `interface`
-     * `transform` with type `attribute`
-     * `getBBox(options)` with type `method`
-     * `getCTM()` with type `method`
-     * `getScreenCTM()` with type `method`
-     * `SVGGeometryElement` with type `interface`
-     * `pathLength` with type `attribute`
-     * `isPointInFill(point)` with type `method`
-     * `isPointInStroke(point)` with type `method`
-     * `getTotalLength()` with type `method`
-     * `getPointAtLength(distance)` with type `method`
-     * `SVGNumber` with type `interface`
-     * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
-     * `SVGLength` with type `interface`
-     * `SVG_LENGTHTYPE_UNKNOWN` with type `const`
-     * `SVG_LENGTHTYPE_NUMBER` with type `const`
-     * `SVG_LENGTHTYPE_PERCENTAGE` with type `const`
-     * `SVG_LENGTHTYPE_EMS` with type `const`
-     * `SVG_LENGTHTYPE_EXS` with type `const`
-     * `SVG_LENGTHTYPE_PX` with type `const`
-     * `SVG_LENGTHTYPE_CM` with type `const`
-     * `SVG_LENGTHTYPE_MM` with type `const`
-     * `SVG_LENGTHTYPE_IN` with type `const`
-     * `SVG_LENGTHTYPE_PT` with type `const`
-     * `SVG_LENGTHTYPE_PC` with type `const`
-     * `unitType` with type `attribute`
-     * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
-     * `valueInSpecifiedUnits` with type `attribute`
-     * `valueAsString` with type `attribute`
-     * `newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)` with type `method`
-     * `convertToSpecifiedUnits(unitType)` with type `method`
-     * `SVGAngle` with type `interface`
-     * `SVG_ANGLETYPE_UNKNOWN` with type `const`
-     * `SVG_ANGLETYPE_UNSPECIFIED` with type `const`
-     * `SVG_ANGLETYPE_DEG` with type `const`
-     * `SVG_ANGLETYPE_RAD` with type `const`
-     * `SVG_ANGLETYPE_GRAD` with type `const`
-     * `unitType` with type `attribute`
-     * `value` with type `attribute`, but found [`value`](https://svgwg.org/svg2-draft/types.html#NumberValue) with type `dfn`
-     * `valueInSpecifiedUnits` with type `attribute`
-     * `valueAsString` with type `attribute`
-     * `newValueSpecifiedUnits(unitType, valueInSpecifiedUnits)` with type `method`
-     * `convertToSpecifiedUnits(unitType)` with type `method`
-     * `SVGNumberList` with type `interface`
-     * `length` with type `attribute`
-     * `numberOfItems` with type `attribute`
-     * `clear()` with type `method`
-     * `initialize(newItem)` with type `method`
-     * `getItem(index)` with type `method`
-     * `insertItemBefore(newItem, index)` with type `method`
-     * `replaceItem(newItem, index)` with type `method`
-     * `removeItem(index)` with type `method`
-     * `appendItem(newItem)` with type `method`
-     * `SVGLengthList` with type `interface`
-     * `length` with type `attribute`
-     * `numberOfItems` with type `attribute`
-     * `clear()` with type `method`
-     * `initialize(newItem)` with type `method`
-     * `getItem(index)` with type `method`
-     * `insertItemBefore(newItem, index)` with type `method`
-     * `replaceItem(newItem, index)` with type `method`
-     * `removeItem(index)` with type `method`
-     * `appendItem(newItem)` with type `method`
-     * `SVGStringList` with type `interface`
-     * `length` with type `attribute`
-     * `numberOfItems` with type `attribute`
-     * `clear()` with type `method`
-     * `initialize(newItem)` with type `method`
-     * `getItem(index)` with type `method`
-     * `insertItemBefore(newItem, index)` with type `method`
-     * `replaceItem(newItem, index)` with type `method`
-     * `removeItem(index)` with type `method`
-     * `appendItem(newItem)` with type `method`
-     * `SVGAnimatedBoolean` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedEnumeration` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedInteger` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedNumber` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedLength` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedAngle` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedString` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedRect` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedNumberList` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGAnimatedLengthList` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGUnitTypes` with type `interface`
-     * `SVG_UNIT_TYPE_UNKNOWN` with type `const`
-     * `SVG_UNIT_TYPE_USERSPACEONUSE` with type `const`
-     * `SVG_UNIT_TYPE_OBJECTBOUNDINGBOX` with type `const`
-     * `requiredExtensions` with type `attribute` for [`SVGTests`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests), but found [`requiredExtensions`](https://svgwg.org/svg2-draft/struct.html#RequiredExtensionsAttribute) with type `dfn`
-     * `systemLanguage` with type `attribute` for [`SVGTests`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGTests), but found [`systemLanguage`](https://svgwg.org/svg2-draft/struct.html#SystemLanguageAttribute) with type `dfn`
-     * `viewBox` with type `attribute` for [`SVGFitToViewBox`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox), but found [`viewBox`](https://svgwg.org/svg2-draft/coords.html#TermViewBox) with type `element-attr` for `svg`
-     * `preserveAspectRatio` with type `attribute` for [`SVGFitToViewBox`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGFitToViewBox), but found [`preserveAspectRatio`](https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio) with type `element-attr` for `svg`
-     * `href` with type `attribute` for [`SVGURIReference`](https://svgwg.org/svg2-draft/types.html#InterfaceSVGURIReference), but found [`href`](https://svgwg.org/svg2-draft/struct.html#UseElementHrefAttribute) with type `dfn`
-     * `SVGSVGElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `currentScale` with type `attribute`
-     * `currentTranslate` with type `attribute`
-     * `getIntersectionList(rect, referenceElement)` with type `method`
-     * `getEnclosureList(rect, referenceElement)` with type `method`
-     * `checkIntersection(element, rect)` with type `method`
-     * `checkEnclosure(element, rect)` with type `method`
-     * `deselectAll()` with type `method`
-     * `createSVGNumber()` with type `method`
-     * `createSVGLength()` with type `method`
-     * `createSVGAngle()` with type `method`
-     * `createSVGPoint()` with type `method`
-     * `createSVGMatrix()` with type `method`
-     * `createSVGRect()` with type `method`
-     * `createSVGTransform()` with type `method`
-     * `createSVGTransformFromMatrix(matrix)` with type `method`
-     * `getElementById(elementId)` with type `method`
-     * `suspendRedraw(maxWaitMilliseconds)` with type `method`
-     * `unsuspendRedraw(suspendHandleID)` with type `method`
-     * `unsuspendRedrawAll()` with type `method`
-     * `forceRedraw()` with type `method`
-     * `SVGGElement` with type `interface`
-     * `SVGDefsElement` with type `interface`
-     * `SVGDescElement` with type `interface`
-     * `SVGMetadataElement` with type `interface`
-     * `SVGTitleElement` with type `interface`
-     * `SVGSymbolElement` with type `interface`
-     * `SVGUseElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `instanceRoot` with type `attribute`
-     * `animatedInstanceRoot` with type `attribute`
-     * `SVGUseElementShadowRoot` with type `interface`
-     * `correspondingElement` with type `attribute` for [`SVGElementInstance`](https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance)
-     * `correspondingUseElement` with type `attribute` for [`SVGElementInstance`](https://svgwg.org/svg2-draft/struct.html#InterfaceSVGElementInstance)
-     * `ShadowAnimation` with type `interface`
-     * `constructor(source, newTarget)` with type `constructor`
-     * `sourceAnimation` with type `attribute`
-     * `SVGSwitchElement` with type `interface`
-     * `getSVGDocument()` with type `method` for [`GetSVGDocument`](https://svgwg.org/svg2-draft/struct.html#InterfaceGetSVGDocument)
-     * `SVGStyleElement` with type `interface`
-     * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
-     * `media` with type `attribute`, but found [`media`](https://svgwg.org/svg2-draft/styling.html#StyleElementMediaAttribute) with type `element-attr` for `style`
-     * `title` with type `attribute`, but found [`title`](https://svgwg.org/svg2-draft/struct.html#elementdef-title) with type `element`
-     * `SVGTransform` with type `interface`
-     * `SVG_TRANSFORM_UNKNOWN` with type `const`
-     * `SVG_TRANSFORM_MATRIX` with type `const`
-     * `SVG_TRANSFORM_TRANSLATE` with type `const`
-     * `SVG_TRANSFORM_SCALE` with type `const`
-     * `SVG_TRANSFORM_ROTATE` with type `const`
-     * `SVG_TRANSFORM_SKEWX` with type `const`
-     * `SVG_TRANSFORM_SKEWY` with type `const`
-     * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
-     * `matrix` with type `attribute`
-     * `angle` with type `attribute`
-     * `setMatrix(matrix)` with type `method`
-     * `setTranslate(tx, ty)` with type `method`
-     * `setScale(sx, sy)` with type `method`
-     * `setRotate(angle, cx, cy)` with type `method`
-     * `setSkewX(angle)` with type `method`
-     * `setSkewY(angle)` with type `method`
-     * `SVGTransformList` with type `interface`
-     * `length` with type `attribute`
-     * `numberOfItems` with type `attribute`
-     * `clear()` with type `method`
-     * `initialize(newItem)` with type `method`
-     * `getItem(index)` with type `method`
-     * `insertItemBefore(newItem, index)` with type `method`
-     * `replaceItem(newItem, index)` with type `method`
-     * `removeItem(index)` with type `method`
-     * `appendItem(newItem)` with type `method`
-     * `createSVGTransformFromMatrix(matrix)` with type `method`
-     * `consolidate()` with type `method`
-     * `SVGAnimatedTransformList` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGPreserveAspectRatio` with type `interface`
-     * `SVG_PRESERVEASPECTRATIO_UNKNOWN` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_NONE` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMINYMIN` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMIDYMIN` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMAXYMIN` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMINYMID` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMIDYMID` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMAXYMID` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMINYMAX` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMIDYMAX` with type `const`
-     * `SVG_PRESERVEASPECTRATIO_XMAXYMAX` with type `const`
-     * `SVG_MEETORSLICE_UNKNOWN` with type `const`
-     * `SVG_MEETORSLICE_MEET` with type `const`
-     * `SVG_MEETORSLICE_SLICE` with type `const`
-     * `align` with type `attribute`
-     * `meetOrSlice` with type `attribute`
-     * `SVGAnimatedPreserveAspectRatio` with type `interface`
-     * `baseVal` with type `attribute`
-     * `animVal` with type `attribute`
-     * `SVGPathElement` with type `interface`
-     * `SVGRectElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `rx` with type `attribute`, but found [`rx`](https://svgwg.org/svg2-draft/geometry.html#RxProperty) with type `property`
-     * `ry` with type `attribute`, but found [`ry`](https://svgwg.org/svg2-draft/geometry.html#RyProperty) with type `property`
-     * `SVGCircleElement` with type `interface`
-     * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
-     * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
-     * `r` with type `attribute`, but found [`r`](https://svgwg.org/svg2-draft/geometry.html#RProperty) with type `property`
-     * `SVGEllipseElement` with type `interface`
-     * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
-     * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
-     * `rx` with type `attribute`, but found [`rx`](https://svgwg.org/svg2-draft/geometry.html#RxProperty) with type `property`
-     * `ry` with type `attribute`, but found [`ry`](https://svgwg.org/svg2-draft/geometry.html#RyProperty) with type `property`
-     * `SVGLineElement` with type `interface`
-     * `x1` with type `attribute`, but found [`x1`](https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute) with type `element-attr` for `line`
-     * `y1` with type `attribute`, but found [`y1`](https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute) with type `element-attr` for `line`
-     * `x2` with type `attribute`, but found [`x2`](https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute) with type `element-attr` for `line`
-     * `y2` with type `attribute`, but found [`y2`](https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute) with type `element-attr` for `line`
-     * `points` with type `attribute` for [`SVGAnimatedPoints`](https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints), but found [`points`](https://svgwg.org/svg2-draft/shapes.html#PolylineElementPointsAttribute) with type `element-attr` for `polyline`
-     * `animatedPoints` with type `attribute` for [`SVGAnimatedPoints`](https://svgwg.org/svg2-draft/shapes.html#InterfaceSVGAnimatedPoints)
-     * `SVGPointList` with type `interface`
-     * `length` with type `attribute`
-     * `numberOfItems` with type `attribute`
-     * `clear()` with type `method`
-     * `initialize(newItem)` with type `method`
-     * `getItem(index)` with type `method`
-     * `insertItemBefore(newItem, index)` with type `method`
-     * `replaceItem(newItem, index)` with type `method`
-     * `removeItem(index)` with type `method`
-     * `appendItem(newItem)` with type `method`
-     * `SVGPolylineElement` with type `interface`
-     * `SVGPolygonElement` with type `interface`
-     * `SVGTextContentElement` with type `interface`
-     * `LENGTHADJUST_UNKNOWN` with type `const`
-     * `LENGTHADJUST_SPACING` with type `const`
-     * `LENGTHADJUST_SPACINGANDGLYPHS` with type `const`
-     * `textLength` with type `attribute`, but found [`textLength`](https://svgwg.org/svg2-draft/text.html#TextElementTextLengthAttribute) with type `element-attr` for `text`
-     * `lengthAdjust` with type `attribute`, but found [`lengthAdjust`](https://svgwg.org/svg2-draft/text.html#TextElementLengthAdjustAttribute) with type `element-attr` for `text`
-     * `getNumberOfChars()` with type `method`
-     * `getComputedTextLength()` with type `method`
-     * `getSubStringLength(charnum, nchars)` with type `method`
-     * `getStartPositionOfChar(charnum)` with type `method`
-     * `getEndPositionOfChar(charnum)` with type `method`
-     * `getExtentOfChar(charnum)` with type `method`
-     * `getRotationOfChar(charnum)` with type `method`
-     * `getCharNumAtPosition(point)` with type `method`
-     * `selectSubString(charnum, nchars)` with type `method`
-     * `SVGTextPositioningElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `dx` with type `attribute`, but found [`dx`](https://svgwg.org/svg2-draft/text.html#TextElementDXAttribute) with type `element-attr` for `text`
-     * `dy` with type `attribute`, but found [`dy`](https://svgwg.org/svg2-draft/text.html#TextElementDYAttribute) with type `element-attr` for `text`
-     * `rotate` with type `attribute`, but found [`rotate`](https://svgwg.org/svg2-draft/text.html#TextElementRotateAttribute) with type `element-attr` for `text`
-     * `SVGTextElement` with type `interface`
-     * `SVGTSpanElement` with type `interface`
-     * `SVGTextPathElement` with type `interface`
-     * `TEXTPATH_METHODTYPE_UNKNOWN` with type `const`
-     * `TEXTPATH_METHODTYPE_ALIGN` with type `const`
-     * `TEXTPATH_METHODTYPE_STRETCH` with type `const`
-     * `TEXTPATH_SPACINGTYPE_UNKNOWN` with type `const`
-     * `TEXTPATH_SPACINGTYPE_AUTO` with type `const`
-     * `TEXTPATH_SPACINGTYPE_EXACT` with type `const`
-     * `startOffset` with type `attribute`
-     * `method` with type `attribute`
-     * `spacing` with type `attribute`
-     * `SVGImageElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `preserveAspectRatio` with type `attribute`, but found [`preserveAspectRatio`](https://svgwg.org/svg2-draft/coords.html#TermPreserveAspectRatio) with type `element-attr` for `svg`
-     * `crossOrigin` with type `attribute`
-     * `SVGForeignObjectElement` with type `interface`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `SVGMarkerElement` with type `interface`
-     * `SVG_MARKERUNITS_UNKNOWN` with type `const`
-     * `SVG_MARKERUNITS_USERSPACEONUSE` with type `const`
-     * `SVG_MARKERUNITS_STROKEWIDTH` with type `const`
-     * `SVG_MARKER_ORIENT_UNKNOWN` with type `const`
-     * `SVG_MARKER_ORIENT_AUTO` with type `const`
-     * `SVG_MARKER_ORIENT_ANGLE` with type `const`
-     * `refX` with type `attribute`, but found [`refX`](https://svgwg.org/svg2-draft/struct.html#SymbolElementRefXAttribute) with type `element-attr` for `symbol`
-     * `refY` with type `attribute`, but found [`refY`](https://svgwg.org/svg2-draft/struct.html#SymbolElementRefYAttribute) with type `element-attr` for `symbol`
-     * `markerUnits` with type `attribute`, but found [`markerUnits`](https://svgwg.org/svg2-draft/painting.html#MarkerUnitsAttribute) with type `element-attr` for `marker`
-     * `markerWidth` with type `attribute`, but found [`markerWidth`](https://svgwg.org/svg2-draft/painting.html#MarkerWidthAttribute) with type `element-attr` for `marker`
-     * `markerHeight` with type `attribute`, but found [`markerHeight`](https://svgwg.org/svg2-draft/painting.html#MarkerHeightAttribute) with type `element-attr` for `marker`
-     * `orientType` with type `attribute`
-     * `orientAngle` with type `attribute`
-     * `orient` with type `attribute`, but found [`orient`](https://svgwg.org/svg2-draft/painting.html#OrientAttribute) with type `element-attr` for `marker`
-     * `setOrientToAuto()` with type `method`
-     * `setOrientToAngle(angle)` with type `method`
-     * `SVGGradientElement` with type `interface`
-     * `SVG_SPREADMETHOD_UNKNOWN` with type `const`
-     * `SVG_SPREADMETHOD_PAD` with type `const`
-     * `SVG_SPREADMETHOD_REFLECT` with type `const`
-     * `SVG_SPREADMETHOD_REPEAT` with type `const`
-     * `gradientUnits` with type `attribute`
-     * `gradientTransform` with type `attribute`
-     * `spreadMethod` with type `attribute`
-     * `SVGLinearGradientElement` with type `interface`
-     * `x1` with type `attribute`, but found [`x1`](https://svgwg.org/svg2-draft/shapes.html#LineElementX1Attribute) with type `element-attr` for `line`
-     * `y1` with type `attribute`, but found [`y1`](https://svgwg.org/svg2-draft/shapes.html#LineElementY1Attribute) with type `element-attr` for `line`
-     * `x2` with type `attribute`, but found [`x2`](https://svgwg.org/svg2-draft/shapes.html#LineElementX2Attribute) with type `element-attr` for `line`
-     * `y2` with type `attribute`, but found [`y2`](https://svgwg.org/svg2-draft/shapes.html#LineElementY2Attribute) with type `element-attr` for `line`
-     * `SVGRadialGradientElement` with type `interface`
-     * `cx` with type `attribute`, but found [`cx`](https://svgwg.org/svg2-draft/geometry.html#CxProperty) with type `property`
-     * `cy` with type `attribute`, but found [`cy`](https://svgwg.org/svg2-draft/geometry.html#CyProperty) with type `property`
-     * `r` with type `attribute`, but found [`r`](https://svgwg.org/svg2-draft/geometry.html#RProperty) with type `property`
-     * `fx` with type `attribute`
-     * `fy` with type `attribute`
-     * `fr` with type `attribute`
-     * `SVGStopElement` with type `interface`
-     * `offset` with type `attribute`
-     * `SVGPatternElement` with type `interface`
-     * `patternUnits` with type `attribute`
-     * `patternContentUnits` with type `attribute`
-     * `patternTransform` with type `attribute`
-     * `x` with type `attribute`, but found [`x`](https://svgwg.org/svg2-draft/geometry.html#XProperty) with type `property`
-     * `y` with type `attribute`, but found [`y`](https://svgwg.org/svg2-draft/geometry.html#YProperty) with type `property`
-     * `width` with type `attribute`
-     * `height` with type `attribute`
-     * `SVGScriptElement` with type `interface`
-     * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
-     * `crossOrigin` with type `attribute`
-     * `SVGAElement` with type `interface`
-     * `target` with type `attribute`, but found [`target`](https://svgwg.org/svg2-draft/linking.html#AElementTargetAttribute) with type `element-attr` for `a`
-     * `download` with type `attribute`, but found [`download`](https://svgwg.org/svg2-draft/linking.html#AElementDownloadAttribute) with type `element-attr` for `a`
-     * `ping` with type `attribute`, but found [`ping`](https://svgwg.org/svg2-draft/linking.html#AElementPingAttribute) with type `element-attr` for `a`
-     * `rel` with type `attribute`, but found [`rel`](https://svgwg.org/svg2-draft/linking.html#AElementRelAttribute) with type `element-attr` for `a`
-     * `relList` with type `attribute`
-     * `hreflang` with type `attribute`, but found [`hreflang`](https://svgwg.org/svg2-draft/linking.html#AElementHreflangAttribute) with type `element-attr` for `a`
-     * `type` with type `attribute`, but found [`type`](https://svgwg.org/svg2-draft/styling.html#StyleElementTypeAttribute) with type `element-attr` for `style`
-     * `text` with type `attribute`, but found [`text`](https://svgwg.org/svg2-draft/text.html#elementdef-text) with type `element`
-     * `referrerPolicy` with type `attribute`
-     * `SVGViewElement` with type `interface`
-     * `rootElement` with type `attribute`
+- Invalid WebIDL content found
+- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
-     * [`https://www.w3.org/TR/svg-integration/`](https://www.w3.org/TR/svg-integration/)
-     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
-     * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/)
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
-     * [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/)
-     * [`https://w3c.github.io/selection-api/`](https://w3c.github.io/selection-api/)
-     * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
-     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
-     * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
-     * [`https://www.w3.org/TR/css-position-3/`](https://www.w3.org/TR/css-position-3/)
-     * [`https://www.w3.org/TR/css3-exclusions/`](https://www.w3.org/TR/css3-exclusions/)
-     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
-     * [`https://www.w3.org/TR/css-backgrounds-3/`](https://www.w3.org/TR/css-backgrounds-3/)
-     * [`https://www.w3.org/TR/css-box-3/`](https://www.w3.org/TR/css-box-3/)
-     * [`https://www.w3.org/TR/css-content-3/`](https://www.w3.org/TR/css-content-3/)
-     * [`https://www.w3.org/TR/resource-hints/`](https://www.w3.org/TR/resource-hints/)
-     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
-     * [`https://www.w3.org/TR/orientation-event/`](https://www.w3.org/TR/orientation-event/)
-     * [`https://www.w3.org/TR/css-selectors-3/`](https://www.w3.org/TR/css-selectors-3/)
-     * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
      * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
-     * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/)
-     * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/)
-     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
-     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
+     * [`https://www.w3.org/TR/xml-names11/`](https://www.w3.org/TR/xml-names11/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/xml-stylesheet/`](https://www.w3.org/TR/xml-stylesheet/)
+     * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/)
+     * [`https://www.w3.org/TR/html4/`](https://www.w3.org/TR/html4/)
+     * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/)
      * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
-     * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
-     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
-     * [`https://www.w3.org/TR/2016/CR-SVG2-20160915/`](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
-     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
-     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
 - Inconsistent references for links: 
-     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/), related reference "xml" uses URL [`https://www.w3.org/TR/xml`](https://www.w3.org/TR/xml)
-     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "xml-names" uses URL [`https://www.w3.org/TR/xml-names`](https://www.w3.org/TR/xml-names)
-     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/), related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
-     * [`https://www.w3.org/TR/compositing/`](https://www.w3.org/TR/compositing/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
-     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
-     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113), related reference "compositing-1" uses URL [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/)
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "css-values" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-     * [`https://www.w3.org/TR/2014/CR-geometry-1-20141125/`](https://www.w3.org/TR/2014/CR-geometry-1-20141125/), related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
-     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/), related reference "geometry-1" uses URL [`https://www.w3.org/TR/geometry-1/`](https://www.w3.org/TR/geometry-1/)
-     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-     * [`https://w3c.github.io/svg-aam/`](https://w3c.github.io/svg-aam/), related reference "svg-aam-1.0" uses URL [`https://www.w3.org/TR/svg-aam-1.0/`](https://www.w3.org/TR/svg-aam-1.0/)
-     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/), related reference "dom" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/), related reference "css-fonts-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
-     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/), related reference "smil-animation" uses URL [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/)
-     * [`https://w3c.github.io/clipboard-apis/`](https://w3c.github.io/clipboard-apis/), related reference "clipboard-apis" uses URL [`https://www.w3.org/TR/clipboard-apis/`](https://www.w3.org/TR/clipboard-apis/)
-     * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/), related reference "graphics-aria-1.0" uses URL [`https://www.w3.org/TR/graphics-aria-1.0/`](https://www.w3.org/TR/graphics-aria-1.0/)
-     * [`https://www.w3.org/TR/referrer-policy/`](https://www.w3.org/TR/referrer-policy/), related reference "ReferrerPolicy" uses URL [`https://w3c.github.io/webappsec-referrer-policy/`](https://w3c.github.io/webappsec-referrer-policy/)
-     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "uievents" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
-     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/), related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
-     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/), related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
-- External links to private terms:
-     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
-     * [`https://html.spec.whatwg.org/#set-of-comma-separated-tokens`](https://html.spec.whatwg.org/#set-of-comma-separated-tokens)
-     * [`https://html.spec.whatwg.org/#valid-integer`](https://html.spec.whatwg.org/#valid-integer)
-     * [`https://html.spec.whatwg.org/#boolean-attribute`](https://html.spec.whatwg.org/#boolean-attribute)
-     * [`https://html.spec.whatwg.org/#global-attributes`](https://html.spec.whatwg.org/#global-attributes)
-     * [`https://html.spec.whatwg.org/#cors-settings-attribute`](https://html.spec.whatwg.org/#cors-settings-attribute)
-     * [`https://html.spec.whatwg.org/#focused`](https://html.spec.whatwg.org/#focused)
-     * [`https://html.spec.whatwg.org/#focusable`](https://html.spec.whatwg.org/#focusable)
-     * [`https://html.spec.whatwg.org/#create-a-potential-cors-request`](https://html.spec.whatwg.org/#create-a-potential-cors-request)
-     * [`https://html.spec.whatwg.org/#valid-browsing-context-name`](https://html.spec.whatwg.org/#valid-browsing-context-name)
-     * [`https://html.spec.whatwg.org/#mime-type`](https://html.spec.whatwg.org/#mime-type)
-     * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
-     * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
-     * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
-     * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
-     * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
-- External links that neither target definitions nor headings:
-     * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant`](https://www.w3.org/TR/wai-aria-1.1/#aria-activedescendant)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-atomic`](https://www.w3.org/TR/wai-aria-1.1/#aria-atomic)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete`](https://www.w3.org/TR/wai-aria-1.1/#aria-autocomplete)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-busy`](https://www.w3.org/TR/wai-aria-1.1/#aria-busy)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-colcount)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-colindex)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-controls`](https://www.w3.org/TR/wai-aria-1.1/#aria-controls)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-current`](https://www.w3.org/TR/wai-aria-1.1/#aria-current)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-details`](https://www.w3.org/TR/wai-aria-1.1/#aria-details)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect`](https://www.w3.org/TR/wai-aria-1.1/#aria-dropeffect)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage`](https://www.w3.org/TR/wai-aria-1.1/#aria-errormessage)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-expanded`](https://www.w3.org/TR/wai-aria-1.1/#aria-expanded)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-flowto`](https://www.w3.org/TR/wai-aria-1.1/#aria-flowto)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed`](https://www.w3.org/TR/wai-aria-1.1/#aria-grabbed)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup`](https://www.w3.org/TR/wai-aria-1.1/#aria-haspopup)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-invalid`](https://www.w3.org/TR/wai-aria-1.1/#aria-invalid)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts`](https://www.w3.org/TR/wai-aria-1.1/#aria-keyshortcuts)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-level`](https://www.w3.org/TR/wai-aria-1.1/#aria-level)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-live`](https://www.w3.org/TR/wai-aria-1.1/#aria-live)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-modal`](https://www.w3.org/TR/wai-aria-1.1/#aria-modal)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiline`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiline)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-orientation`](https://www.w3.org/TR/wai-aria-1.1/#aria-orientation)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-owns`](https://www.w3.org/TR/wai-aria-1.1/#aria-owns)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-posinset`](https://www.w3.org/TR/wai-aria-1.1/#aria-posinset)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-pressed`](https://www.w3.org/TR/wai-aria-1.1/#aria-pressed)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-relevant`](https://www.w3.org/TR/wai-aria-1.1/#aria-relevant)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription`](https://www.w3.org/TR/wai-aria-1.1/#aria-roledescription)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowcount)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowindex)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-selected`](https://www.w3.org/TR/wai-aria-1.1/#aria-selected)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-setsize`](https://www.w3.org/TR/wai-aria-1.1/#aria-setsize)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-sort`](https://www.w3.org/TR/wai-aria-1.1/#aria-sort)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemin)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuenow)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuetext)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#group`](https://www.w3.org/TR/wai-aria-1.1/#group)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#radiogroup`](https://www.w3.org/TR/wai-aria-1.1/#radiogroup)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#heading`](https://www.w3.org/TR/wai-aria-1.1/#heading)
-     * [`https://www.w3.org/TR/css3-background/#the-background-position`](https://www.w3.org/TR/css3-background/#the-background-position)
-     * [`https://www.w3.org/TR/css-text-3/#hyphens-property`](https://www.w3.org/TR/css-text-3/#hyphens-property)
-     * [`https://www.w3.org/TR/css3-images/#intrinsic-dimensions`](https://www.w3.org/TR/css3-images/#intrinsic-dimensions)
-     * [`https://www.w3.org/TR/css3-images/#intrinsic-width`](https://www.w3.org/TR/css3-images/#intrinsic-width)
-     * [`https://www.w3.org/TR/css3-images/#intrinsic-height`](https://www.w3.org/TR/css3-images/#intrinsic-height)
-     * [`https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio`](https://www.w3.org/TR/css3-images/#intrinsic-aspect-ratio)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#specially-focusable`](https://html.spec.whatwg.org/#specially-focusable)
-     * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
-     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
-     * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
-     * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
-     * [`https://www.w3.org/TR/css3-mediaqueries/#syntax`](https://www.w3.org/TR/css3-mediaqueries/#syntax)
-     * [`https://www.w3.org/TR/css-position-3/#vp`](https://www.w3.org/TR/css-position-3/#vp)
-     * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
-     * [`https://drafts.csswg.org/web-animations/#discrete-animation-type-section`](https://drafts.csswg.org/web-animations/#discrete-animation-type-section)
-     * [`https://drafts.csswg.org/web-animations/#real-number-animation-type`](https://drafts.csswg.org/web-animations/#real-number-animation-type)
-     * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
-     * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
-     * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/xmlbase/`](https://www.w3.org/TR/xmlbase/), related reference "XML-BASE" uses URL [`http://www.w3.org/TR/2009/REC-xmlbase-20090128/`](http://www.w3.org/TR/2009/REC-xmlbase-20090128/)
+     * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/), related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/), related reference "XLINK" uses URL [`http://www.w3.org/TR/2010/REC-xlink11-20100506/`](http://www.w3.org/TR/2010/REC-xlink11-20100506/)
+     * [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/), related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/charmod/`](https://www.w3.org/TR/charmod/), related reference "CHARMOD" uses URL [`http://www.w3.org/TR/2005/REC-charmod-20050215/`](http://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/rdf-primer/`](https://www.w3.org/TR/rdf-primer/), related reference "RDF-PRIMER" uses URL [`http://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](http://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+     * [`https://www.w3.org/TR/xmlschema-2/`](https://www.w3.org/TR/xmlschema-2/), related reference "SCHEMA2" uses URL [`http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/), related reference "SELECTORS" uses URL [`http://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+     * [`https://www.w3.org/TR/xhtml1/`](https://www.w3.org/TR/xhtml1/), related reference "XHTML" uses URL [`http://www.w3.org/TR/2002/REC-xhtml1-20020801/`](http://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+     * [`https://www.w3.org/TR/xslt/`](https://www.w3.org/TR/xslt/), related reference "XSLT" uses URL [`http://www.w3.org/TR/1999/REC-xslt-19991116`](http://www.w3.org/TR/1999/REC-xslt-19991116)
+     * [`https://www.w3.org/TR/xslt20/`](https://www.w3.org/TR/xslt20/), related reference "XSLT2" uses URL [`http://www.w3.org/TR/2007/REC-xslt20-20070123/`](http://www.w3.org/TR/2007/REC-xslt20-20070123/)
 - External links that use a dated URL:
+     * [`https://www.w3.org/TR/2001/REC-SVG-20010904/`](https://www.w3.org/TR/2001/REC-SVG-20010904/)
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
      * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/)
-     * [`https://www.w3.org/TR/2008/REC-SMIL3-20081201/`](https://www.w3.org/TR/2008/REC-SMIL3-20081201/)
-     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
-     * [`https://www.w3.org/TR/2012/CR-WebIDL-20120419/`](https://www.w3.org/TR/2012/CR-WebIDL-20120419/)
-     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113/`](https://www.w3.org/TR/2015/CR-compositing-1-20150113/)
-     * [`https://www.w3.org/TR/2015/CR-compositing-1-20150113`](https://www.w3.org/TR/2015/CR-compositing-1-20150113)
-     * [`https://www.w3.org/TR/2014/CR-geometry-1-20141125/`](https://www.w3.org/TR/2014/CR-geometry-1-20141125/)
-     * [`https://www.w3.org/TR/2014/WD-geometry-1-20140522/`](https://www.w3.org/TR/2014/WD-geometry-1-20140522/)
-     * [`https://www.w3.org/TR/2014/CR-html5-20140204/`](https://www.w3.org/TR/2014/CR-html5-20140204/)
-     * [`https://www.w3.org/TR/2014/WD-dom-20140204/`](https://www.w3.org/TR/2014/WD-dom-20140204/)
-     * [`https://www.w3.org/TR/2013/REC-css-style-attr-20131107/`](https://www.w3.org/TR/2013/REC-css-style-attr-20131107/)
-     * [`https://www.w3.org/TR/2011/WD-css3-fonts-20111004/`](https://www.w3.org/TR/2011/WD-css3-fonts-20111004/)
-     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
-     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)
      * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
-     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/)
+     * [`https://www.w3.org/TR/2009/REC-xmlbase-20090128/`](https://www.w3.org/TR/2009/REC-xmlbase-20090128/)
      * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
-     * [`https://www.w3.org/TR/2016/CR-SVG2-20160915/`](https://www.w3.org/TR/2016/CR-SVG2-20160915/)
-     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/)
-     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/)
+     * [`https://www.w3.org/TR/1999/REC-xslt-19991116`](https://www.w3.org/TR/1999/REC-xslt-19991116)
+     * [`https://www.w3.org/TR/2007/REC-xslt20-20070123/`](https://www.w3.org/TR/2007/REC-xslt20-20070123/)
+     * [`https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/`](https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/)
+     * [`https://www.w3.org/TR/2008/REC-SMIL3-20081201/`](https://www.w3.org/TR/2008/REC-SMIL3-20081201/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2002/REC-xhtml1-20020801/`](https://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/)
+     * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://www.w3.org/TR/2006/REC-xsl11-20061205/`](https://www.w3.org/TR/2006/REC-xsl11-20061205/)
+     * [`https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/`](https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/)
+     * [`https://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](https://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/`](https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/)
+     * [`https://www.w3.org/TR/2000/REC-ATAG10-20000203/`](https://www.w3.org/TR/2000/REC-ATAG10-20000203/)
+     * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/)
+     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/)
+     * [`https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/`](https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/)
+     * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/2003/REC-PNG-20031110/`](https://www.w3.org/TR/2003/REC-PNG-20031110/)
+     * [`https://www.w3.org/TR/2010/REC-xlink11-20100506/`](https://www.w3.org/TR/2010/REC-xlink11-20100506/)
+     * [`https://www.w3.org/TR/2009/REC-xml-names-20091208/`](https://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/2010/REC-MathML3-20101021/`](https://www.w3.org/TR/2010/REC-MathML3-20101021/)
+     * [`https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+     * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/)
+     * [`https://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](https://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+     * [`https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/`](https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/)
+     * [`https://www.w3.org/TR/2006/WD-Window-20060407/`](https://www.w3.org/TR/2006/WD-Window-20060407/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -13016,7 +12555,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [SVG Integration](https://svgwg.org/specs/integration/)
@@ -13256,6 +12794,7 @@ Normative references to this spec from:
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Image Resource](https://w3c.github.io/image-resource/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -13284,6 +12823,7 @@ Informative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
@@ -13888,7 +13428,6 @@ Normative references to this spec from:
 
 - [ARIA in HTML](https://w3c.github.io/html-aria/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 
 Informative references to this spec from:
@@ -14491,7 +14030,6 @@ Normative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
@@ -14666,7 +14204,6 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -14691,6 +14228,28 @@ Informative references to this spec from:
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
+
+
+## User Preference Media Features Client Hints Headers {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
+- Crawled URL: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
+- Crawled version: 7 June 2021
+- Editor's Draft: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
+- Shortname: user-preference-media-features-headers
+
+### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/mediaqueries-5/`](https://www.w3.org/TR/mediaqueries-5/), related reference "MEDIA-QUERIES-LEVEL-5" uses URL [`https://drafts.csswg.org/mediaqueries-5/`](https://drafts.csswg.org/mediaqueries-5/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## User Timing Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -14876,7 +14435,6 @@ Normative references to this spec from:
 
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
@@ -14937,7 +14495,6 @@ Normative references to this spec from:
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
@@ -15400,6 +14957,7 @@ Normative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -15443,7 +15001,6 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Save Data API](https://wicg.github.io/savedata/)
-- [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)

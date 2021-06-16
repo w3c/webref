@@ -1,0 +1,723 @@
+{
+  "spec": {
+    "title": "MathML Core",
+    "url": "https://w3c.github.io/mathml-core/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "level": 1,
+      "title": "MathML Core"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "mathml-fundamentals",
+      "level": 2,
+      "title": "MathML Fundamentals",
+      "number": "2"
+    },
+    {
+      "id": "mathml-elements-and-attributes",
+      "level": 3,
+      "title": "Elements and attributes",
+      "number": "2.1"
+    },
+    {
+      "id": "the-top-level-math-element",
+      "level": 4,
+      "title": "The Top-Level <math> Element",
+      "number": "2.1.1"
+    },
+    {
+      "id": "types-for-mathml-attribute-values",
+      "level": 4,
+      "title": "Types for MathML Attribute Values",
+      "number": "2.1.2"
+    },
+    {
+      "id": "global-attributes",
+      "level": 4,
+      "title": "Global Attributes",
+      "number": "2.1.3"
+    },
+    {
+      "id": "attributes-common-to-html-and-mathml-elements",
+      "level": 4,
+      "title": "Attributes common to HTML and MathML elements",
+      "number": "2.1.4"
+    },
+    {
+      "id": "legacy-mathml-style-attributes",
+      "level": 4,
+      "title": "Legacy MathML Style Attributes",
+      "number": "2.1.5"
+    },
+    {
+      "id": "the-mathvariant-attribute",
+      "level": 4,
+      "title": "The mathvariant attribute",
+      "number": "2.1.6"
+    },
+    {
+      "id": "the-displaystyle-and-scriptlevel-attributes",
+      "level": 4,
+      "title": "The displaystyle and scriptlevel attributes",
+      "number": "2.1.7"
+    },
+    {
+      "id": "integration-in-the-web-platform",
+      "level": 3,
+      "title": "Integration in the Web Platform",
+      "number": "2.2"
+    },
+    {
+      "id": "html-and-svg",
+      "level": 4,
+      "title": "HTML and SVG",
+      "number": "2.2.1"
+    },
+    {
+      "id": "css-styling",
+      "level": 4,
+      "title": "CSS styling",
+      "number": "2.2.2"
+    },
+    {
+      "id": "dom-and-javascript",
+      "level": 4,
+      "title": "DOM and Javascript",
+      "number": "2.2.3"
+    },
+    {
+      "id": "text-layout",
+      "level": 4,
+      "title": "Text layout",
+      "number": "2.2.4"
+    },
+    {
+      "id": "focus",
+      "level": 4,
+      "title": "Focus",
+      "number": "2.2.5"
+    },
+    {
+      "id": "presentation-markup",
+      "level": 2,
+      "title": "Presentation Markup",
+      "number": "3"
+    },
+    {
+      "id": "visual-formatting-model",
+      "level": 3,
+      "title": "Visual formatting model",
+      "number": "3.1"
+    },
+    {
+      "id": "box-model",
+      "level": 4,
+      "title": "Box Model",
+      "number": "3.1.1"
+    },
+    {
+      "id": "layout-algorithms",
+      "level": 4,
+      "title": "Layout Algorithms",
+      "number": "3.1.2"
+    },
+    {
+      "id": "stacking-contexts",
+      "level": 4,
+      "title": "Stacking contexts",
+      "number": "3.1.3"
+    },
+    {
+      "id": "token-elements",
+      "level": 3,
+      "title": "Token Elements",
+      "number": "3.2"
+    },
+    {
+      "id": "text-mtext",
+      "level": 4,
+      "title": "Text <mtext>",
+      "number": "3.2.1"
+    },
+    {
+      "id": "layout-of-mtext",
+      "level": 5,
+      "title": "Layout of <mtext>",
+      "number": "3.2.1.1"
+    },
+    {
+      "id": "identifier-mi",
+      "level": 4,
+      "title": "Identifier <mi>",
+      "number": "3.2.2"
+    },
+    {
+      "id": "number-mn",
+      "level": 4,
+      "title": "Number <mn>",
+      "number": "3.2.3"
+    },
+    {
+      "id": "operator-fence-separator-or-accent-mo",
+      "level": 4,
+      "title": "Operator, Fence, Separator or Accent <mo>",
+      "number": "3.2.4"
+    },
+    {
+      "id": "embellished-operators",
+      "level": 5,
+      "title": "Embellished operators",
+      "number": "3.2.4.1"
+    },
+    {
+      "id": "dictionary-based-attributes",
+      "level": 5,
+      "title": "Dictionary-based attributes",
+      "number": "3.2.4.2"
+    },
+    {
+      "id": "layout-of-operators",
+      "level": 5,
+      "title": "Layout of operators",
+      "number": "3.2.4.3"
+    },
+    {
+      "id": "space-mspace",
+      "level": 4,
+      "title": "Space <mspace>",
+      "number": "3.2.5"
+    },
+    {
+      "id": "definition-of-space-like-elements",
+      "level": 5,
+      "title": "Definition of space-like elements",
+      "number": "3.2.5.1"
+    },
+    {
+      "id": "string-literal-ms",
+      "level": 4,
+      "title": "String Literal <ms>",
+      "number": "3.2.6"
+    },
+    {
+      "id": "general-layout-schemata",
+      "level": 3,
+      "title": "General Layout Schemata",
+      "number": "3.3"
+    },
+    {
+      "id": "horizontally-group-sub-expressions-mrow",
+      "level": 4,
+      "title": "Group Sub-Expressions <mrow>",
+      "number": "3.3.1"
+    },
+    {
+      "id": "algorithm-for-stretching-operators-along-the-block-axis",
+      "level": 5,
+      "title": "Algorithm for stretching operators along the block axis",
+      "number": "3.3.1.1"
+    },
+    {
+      "id": "layout-of-mrow",
+      "level": 5,
+      "title": "Layout of <mrow>",
+      "number": "3.3.1.2"
+    },
+    {
+      "id": "fractions-mfrac",
+      "level": 4,
+      "title": "Fractions <mfrac>",
+      "number": "3.3.2"
+    },
+    {
+      "id": "fraction-with-nonzero-line-thickness",
+      "level": 5,
+      "title": "Fraction with nonzero line thickness",
+      "number": "3.3.2.1"
+    },
+    {
+      "id": "fraction-with-zero-line-thickness",
+      "level": 5,
+      "title": "Fraction with zero line thickness",
+      "number": "3.3.2.2"
+    },
+    {
+      "id": "radicals-msqrt-mroot",
+      "level": 4,
+      "title": "Radicals <msqrt>, <mroot>",
+      "number": "3.3.3"
+    },
+    {
+      "id": "radical-symbol",
+      "level": 5,
+      "title": "Radical symbol",
+      "number": "3.3.3.1"
+    },
+    {
+      "id": "square-root",
+      "level": 5,
+      "title": "Square root",
+      "number": "3.3.3.2"
+    },
+    {
+      "id": "root-with-index",
+      "level": 5,
+      "title": "Root with index",
+      "number": "3.3.3.3"
+    },
+    {
+      "id": "style-change-mstyle",
+      "level": 4,
+      "title": "Style Change <mstyle>",
+      "number": "3.3.4"
+    },
+    {
+      "id": "error-message-merror",
+      "level": 4,
+      "title": "Error Message <merror>",
+      "number": "3.3.5"
+    },
+    {
+      "id": "adjust-space-around-content-mpadded",
+      "level": 4,
+      "title": "Adjust Space Around Content <mpadded>",
+      "number": "3.3.6"
+    },
+    {
+      "id": "inner-box-and-requested-parameters",
+      "level": 5,
+      "title": "Inner box and requested parameters",
+      "number": "3.3.6.1"
+    },
+    {
+      "id": "layout-of-mpadded",
+      "level": 5,
+      "title": "Layout of <mpadded>",
+      "number": "3.3.6.2"
+    },
+    {
+      "id": "making-sub-expressions-invisible-mphantom",
+      "level": 4,
+      "title": "Making Sub-Expressions Invisible <mphantom>",
+      "number": "3.3.7"
+    },
+    {
+      "id": "script-and-limit-schemata",
+      "level": 3,
+      "title": "Script and Limit Schemata",
+      "number": "3.4"
+    },
+    {
+      "id": "subscripts-and-superscripts-msub-msup-msubsup",
+      "level": 4,
+      "title": "Subscripts and Superscripts <msub>, <msup>, <msubsup>",
+      "number": "3.4.1"
+    },
+    {
+      "id": "children-of-msub-msup-msubsup",
+      "level": 5,
+      "title": "Children of <msub>, <msup>, <msubsup>",
+      "number": "3.4.1.1"
+    },
+    {
+      "id": "base-with-subscript",
+      "level": 5,
+      "title": "Base with subscript",
+      "number": "3.4.1.2"
+    },
+    {
+      "id": "base-with-superscript",
+      "level": 5,
+      "title": "Base with superscript",
+      "number": "3.4.1.3"
+    },
+    {
+      "id": "base-with-subscript-and-superscript",
+      "level": 5,
+      "title": "Base with subscript and superscript",
+      "number": "3.4.1.4"
+    },
+    {
+      "id": "underscripts-and-overscripts-munder-mover-munderover",
+      "level": 4,
+      "title": "Underscripts and Overscripts <munder>, <mover>, <munderover>",
+      "number": "3.4.2"
+    },
+    {
+      "id": "children-of-munder-mover-munderover",
+      "level": 5,
+      "title": "Children of <munder>, <mover>, <munderover>",
+      "number": "3.4.2.1"
+    },
+    {
+      "id": "algorithm-for-stretching-operators-along-the-inline-axis",
+      "level": 5,
+      "title": "Algorithm for stretching operators along the inline axis",
+      "number": "3.4.2.2"
+    },
+    {
+      "id": "base-with-underscript",
+      "level": 5,
+      "title": "Base with underscript",
+      "number": "3.4.2.3"
+    },
+    {
+      "id": "base-with-overscript",
+      "level": 5,
+      "title": "Base with overscript",
+      "number": "3.4.2.4"
+    },
+    {
+      "id": "base-with-underscript-and-overscript",
+      "level": 5,
+      "title": "Base with underscript and overscript",
+      "number": "3.4.2.5"
+    },
+    {
+      "id": "prescripts-and-tensor-indices-mmultiscripts",
+      "level": 4,
+      "title": "Prescripts and Tensor Indices <mmultiscripts>",
+      "number": "3.4.3"
+    },
+    {
+      "id": "base-with-prescripts-and-postscripts",
+      "level": 5,
+      "title": "Base with prescripts and postscripts",
+      "number": "3.4.3.1"
+    },
+    {
+      "id": "displaystyle-and-scriptlevel-in-scripts",
+      "level": 4,
+      "title": "Displaystyle, scriptlevel and math-shift in scripts",
+      "number": "3.4.4"
+    },
+    {
+      "id": "tabular-math",
+      "level": 3,
+      "title": "Tabular Math",
+      "number": "3.5"
+    },
+    {
+      "id": "table-or-matrix-mtable",
+      "level": 4,
+      "title": "Table or Matrix <mtable>",
+      "number": "3.5.1"
+    },
+    {
+      "id": "row-in-table-or-matrix-mtr",
+      "level": 4,
+      "title": "Row in Table or Matrix <mtr>",
+      "number": "3.5.2"
+    },
+    {
+      "id": "entry-in-table-or-matrix-mtd",
+      "level": 4,
+      "title": "Entry in Table or Matrix <mtd>",
+      "number": "3.5.3"
+    },
+    {
+      "id": "enlivening-expressions",
+      "level": 3,
+      "title": "Enlivening Expressions",
+      "number": "3.6"
+    },
+    {
+      "id": "semantics-and-presentation",
+      "level": 3,
+      "title": "Semantics and Presentation",
+      "number": "3.7"
+    },
+    {
+      "id": "css-extensions-for-math-layout",
+      "level": 2,
+      "title": "CSS Extensions for Math Layout",
+      "number": "4"
+    },
+    {
+      "id": "new-display-math-value",
+      "level": 3,
+      "title": "The display: block math and display: inline math value",
+      "number": "4.1"
+    },
+    {
+      "id": "new-text-transform-values",
+      "level": 3,
+      "title": "New text-transform values",
+      "number": "4.2"
+    },
+    {
+      "id": "the-math-style-property",
+      "level": 3,
+      "title": "The math-style property",
+      "number": "4.3"
+    },
+    {
+      "id": "the-math-shift",
+      "level": 3,
+      "title": "The math-shift property",
+      "number": "4.4"
+    },
+    {
+      "id": "the-math-script-level-property",
+      "level": 3,
+      "title": "New value math-depth property and font-size: math value",
+      "number": "4.5"
+    },
+    {
+      "id": "opentype-math-table",
+      "level": 2,
+      "title": "OpenType MATH table",
+      "number": "5"
+    },
+    {
+      "id": "layout-constants-mathconstants",
+      "level": 3,
+      "title": "Layout constants (MathConstants)",
+      "number": "5.1"
+    },
+    {
+      "id": "glyph-information-mathglyphinfo",
+      "level": 3,
+      "title": "Glyph information (MathGlyphInfo)",
+      "number": "5.2"
+    },
+    {
+      "id": "size-variants-for-operators-mathvariants",
+      "level": 3,
+      "title": "Size variants for operators (MathVariants)",
+      "number": "5.3"
+    },
+    {
+      "id": "the-glyphassembly-table",
+      "level": 4,
+      "title": "The GlyphAssembly table",
+      "number": "5.3.1"
+    },
+    {
+      "id": "algorithms-for-glyph-stretching",
+      "level": 4,
+      "title": "Algorithms for glyph stretching",
+      "number": "5.3.2"
+    },
+    {
+      "id": "user-agent-stylesheet",
+      "level": 2,
+      "title": "User Agent Stylesheet",
+      "number": "A"
+    },
+    {
+      "id": "operator-tables",
+      "level": 2,
+      "title": "Operator Tables",
+      "number": "B"
+    },
+    {
+      "id": "operator-dictionary",
+      "level": 3,
+      "title": "Operator Dictionary",
+      "number": "B.1"
+    },
+    {
+      "id": "stretchy-operator-axis",
+      "level": 3,
+      "title": "Stretchy Operator Axis",
+      "number": "B.2"
+    },
+    {
+      "id": "operator-dictionary-human",
+      "level": 3,
+      "title": "Operator Dictionary (human-readable)",
+      "number": "B.3"
+    },
+    {
+      "id": "combining-character-equivalences",
+      "level": 3,
+      "title": "Combining Character Equivalences",
+      "number": "B.4"
+    },
+    {
+      "id": "comb-comb",
+      "level": 4,
+      "title": "Combining"
+    },
+    {
+      "id": "comb-noncomb",
+      "level": 4,
+      "title": "Non Combining"
+    },
+    {
+      "id": "unicode-based-glyph-assemblies",
+      "level": 3,
+      "title": "Unicode-based Glyph Assemblies",
+      "number": "B.5"
+    },
+    {
+      "id": "new-text-transform-mappings",
+      "level": 2,
+      "title": "New text-transform Mappings",
+      "number": "C"
+    },
+    {
+      "id": "bold-script-mappings",
+      "level": 3,
+      "title": "bold-script mappings",
+      "number": "C.1"
+    },
+    {
+      "id": "bold-italic-mappings",
+      "level": 3,
+      "title": "bold-italic mappings",
+      "number": "C.2"
+    },
+    {
+      "id": "tailed-mappings",
+      "level": 3,
+      "title": "tailed mappings",
+      "number": "C.3"
+    },
+    {
+      "id": "bold-mappings",
+      "level": 3,
+      "title": "bold mappings",
+      "number": "C.4"
+    },
+    {
+      "id": "fraktur-mappings",
+      "level": 3,
+      "title": "fraktur mappings",
+      "number": "C.5"
+    },
+    {
+      "id": "script-mappings",
+      "level": 3,
+      "title": "script mappings",
+      "number": "C.6"
+    },
+    {
+      "id": "monospace-mappings",
+      "level": 3,
+      "title": "monospace mappings",
+      "number": "C.7"
+    },
+    {
+      "id": "initial-mappings",
+      "level": 3,
+      "title": "initial mappings",
+      "number": "C.8"
+    },
+    {
+      "id": "sans-serif-mappings",
+      "level": 3,
+      "title": "sans-serif mappings",
+      "number": "C.9"
+    },
+    {
+      "id": "double-struck-mappings",
+      "level": 3,
+      "title": "double-struck mappings",
+      "number": "C.10"
+    },
+    {
+      "id": "looped-mappings",
+      "level": 3,
+      "title": "looped mappings",
+      "number": "C.11"
+    },
+    {
+      "id": "stretched-mappings",
+      "level": 3,
+      "title": "stretched mappings",
+      "number": "C.12"
+    },
+    {
+      "id": "italic-mappings",
+      "level": 3,
+      "title": "italic mappings",
+      "number": "C.13"
+    },
+    {
+      "id": "bold-fraktur-mappings",
+      "level": 3,
+      "title": "bold-fraktur mappings",
+      "number": "C.14"
+    },
+    {
+      "id": "sans-serif-bold-italic-mappings",
+      "level": 3,
+      "title": "sans-serif-bold-italic mappings",
+      "number": "C.15"
+    },
+    {
+      "id": "sans-serif-italic-mappings",
+      "level": 3,
+      "title": "sans-serif-italic mappings",
+      "number": "C.16"
+    },
+    {
+      "id": "bold-sans-serif-mappings",
+      "level": 3,
+      "title": "bold-sans-serif mappings",
+      "number": "C.17"
+    },
+    {
+      "id": "acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "D"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "number": "E"
+    },
+    {
+      "id": "conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "F"
+    },
+    {
+      "id": "conformance-0",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "document-conventions",
+      "level": 3,
+      "title": "Document conventions",
+      "number": "F.1"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References",
+      "number": "G"
+    },
+    {
+      "id": "normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "G.1"
+    },
+    {
+      "id": "informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "G.2"
+    }
+  ]
+}

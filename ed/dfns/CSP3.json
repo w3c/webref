@@ -1972,10 +1972,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-documenturl",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturl",
+      "id": "dom-securitypolicyviolationevent-documenturi",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi",
       "linkingText": [
-        "documentURL"
+        "documentURI"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2012,10 +2012,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-blockedurl",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockedurl",
+      "id": "dom-securitypolicyviolationevent-blockeduri",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockeduri",
       "linkingText": [
-        "blockedURL"
+        "blockedURI"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2036,6 +2036,26 @@
       "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-effectivedirective",
       "linkingText": [
         "effectiveDirective"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "SecurityPolicyViolationEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationevent-violateddirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective",
+      "linkingText": [
+        "violatedDirective"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2152,10 +2172,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-lineno",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-lineno",
+      "id": "dom-securitypolicyviolationevent-linenumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber",
       "linkingText": [
-        "lineno"
+        "lineNumber"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2172,10 +2192,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-colno",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-colno",
+      "id": "dom-securitypolicyviolationevent-columnnumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-columnnumber",
       "linkingText": [
-        "colno"
+        "columnNumber"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2210,10 +2230,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-documenturl",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturl",
+      "id": "dom-securitypolicyviolationeventinit-documenturi",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-documenturi",
       "linkingText": [
-        "documentURL"
+        "documentURI"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2250,10 +2270,30 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-blockedurl",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-blockedurl",
+      "id": "dom-securitypolicyviolationeventinit-blockeduri",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-blockeduri",
       "linkingText": [
-        "blockedURL"
+        "blockedURI"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SecurityPolicyViolationEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "violation-events",
+        "title": "Violation DOM Events",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-securitypolicyviolationeventinit-violateddirective",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-violateddirective",
+      "linkingText": [
+        "violatedDirective"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -2390,115 +2430,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationeventinit-lineno",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-lineno",
-      "linkingText": [
-        "lineno"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SecurityPolicyViolationEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-securitypolicyviolationeventinit-colno",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-colno",
-      "linkingText": [
-        "colno"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "SecurityPolicyViolationEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-documenturi",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-documenturi",
-      "linkingText": [
-        "documentURI"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-blockeduri",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-blockeduri",
-      "linkingText": [
-        "blockedURI"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-violateddirective",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-violateddirective",
-      "linkingText": [
-        "violatedDirective"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "SecurityPolicyViolationEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "violation-events",
-        "title": "Violation DOM Events",
-        "number": "5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-securitypolicyviolationevent-linenumber",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-linenumber",
+      "id": "dom-securitypolicyviolationeventinit-linenumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-linenumber",
       "linkingText": [
         "lineNumber"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
-        "SecurityPolicyViolationEvent"
+        "SecurityPolicyViolationEventInit"
       ],
       "access": "public",
       "informative": false,
@@ -2507,18 +2447,18 @@
         "title": "Violation DOM Events",
         "number": "5.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-securitypolicyviolationevent-columnnumber",
-      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationevent-columnnumber",
+      "id": "dom-securitypolicyviolationeventinit-columnnumber",
+      "href": "https://w3c.github.io/webappsec-csp/#dom-securitypolicyviolationeventinit-columnnumber",
       "linkingText": [
         "columnNumber"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
-        "SecurityPolicyViolationEvent"
+        "SecurityPolicyViolationEventInit"
       ],
       "access": "public",
       "informative": false,
@@ -2527,7 +2467,7 @@
         "title": "Violation DOM Events",
         "number": "5.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
       "id": "fetch-directives",
