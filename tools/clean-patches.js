@@ -40,7 +40,7 @@ async function dropPatchesWhenPossible() {
   console.log();
   console.log("Extract list of issues");
   const diffStart = /^---$/m;
-  const issueUrl = /(?:^|\s)https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/(issues|pull)\/(\d+)(?:\s|$)/g;
+  const issueUrl = /(?<=^|\s)https:\/\/github\.com\/([^\/]+)\/([^\/]+)\/(issues|pull)\/(\d+)(?=\s|$)/g;
   for (const patch of patches) {
     const contents = fs.readFileSync(path.join(rootDir, patch.name), "utf8");
     const desc = contents.substring(0, contents.match(diffStart)?.index);
