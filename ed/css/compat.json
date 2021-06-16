@@ -603,18 +603,22 @@
     }
   },
   "descriptors": {
-    "-webkit-device-pixel-ratio": {
-      "name": "-webkit-device-pixel-ratio",
-      "for": "@media",
-      "value": "<number>",
-      "type": "range"
-    },
-    "-webkit-transform-3d": {
-      "name": "-webkit-transform-3d",
-      "for": "@media",
-      "value": "<mq-boolean>",
-      "acceptsMin/maxPrefixes": "no"
-    }
+    "-webkit-device-pixel-ratio": [
+      {
+        "name": "-webkit-device-pixel-ratio",
+        "for": "@media",
+        "value": "<number>",
+        "type": "range"
+      }
+    ],
+    "-webkit-transform-3d": [
+      {
+        "name": "-webkit-transform-3d",
+        "for": "@media",
+        "value": "<mq-boolean>",
+        "acceptsMin/maxPrefixes": "no"
+      }
+    ]
   },
   "valuespaces": {}
 }

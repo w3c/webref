@@ -706,6 +706,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
@@ -1097,7 +1100,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Crawled URL: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
-- Crawled version: 19 August 2020
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Shortname: requestidlecallback
@@ -1106,14 +1109,6 @@ No informative reference to this spec from other specs.
 
 - External links to private terms:
      * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
-     * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
-     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#microtask-queue`](https://html.spec.whatwg.org/#microtask-queue)
-     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#dom-window-requestanimationframe`](https://html.spec.whatwg.org/#dom-window-requestanimationframe)
-- External links to outdated specs:
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2496,6 +2491,10 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
@@ -2727,6 +2726,17 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - External links to private terms:
      * [`https://drafts.csswg.org/css-text-3/#grapheme-cluster`](https://drafts.csswg.org/css-text-3/#grapheme-cluster)
 
@@ -2832,6 +2842,18 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
@@ -3227,6 +3249,22 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `CSSOMString`
 - No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
      * `<feature-value-block>`
      * `<font-feature-value-type>`
 - Missing references for links: 
@@ -3305,6 +3343,16 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - External links to private terms:
      * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
@@ -4501,6 +4549,11 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
@@ -4677,6 +4730,10 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/)
 - External links to private terms:
@@ -4864,6 +4921,9 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
@@ -6785,6 +6845,7 @@ Informative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -8383,10 +8444,6 @@ No informative reference to this spec from other specs.
      * `add(data, type)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
      * `add(data)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
      * `remove(index)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`remove()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-remove) with type `method` for `DataTransferItemList`
-     * `setTimeout(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setTimeout()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout) with type `method` for `WindowOrWorkerGlobalScope`
-     * `clearTimeout(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearTimeout()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-cleartimeout) with type `method` for `WindowOrWorkerGlobalScope`
-     * `setInterval(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval) with type `method` for `WindowOrWorkerGlobalScope`
-     * `clearInterval(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval) with type `method` for `WindowOrWorkerGlobalScope`
      * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
      * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
      * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
@@ -10322,6 +10379,28 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - External links to private terms:
@@ -10370,6 +10449,43 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - External links to private terms:
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
@@ -11124,7 +11240,6 @@ Normative references to this spec from:
 
 - [Beacon](https://w3c.github.io/beacon/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
@@ -11143,6 +11258,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 
@@ -12917,6 +13033,11 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
+     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
@@ -14607,6 +14728,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
 - Broken external links:
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
 

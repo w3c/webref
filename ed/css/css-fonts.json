@@ -382,102 +382,146 @@
     }
   },
   "descriptors": {
-    "font-family": {
-      "name": "font-family",
-      "for": "@font-palette-values",
-      "value": "<'font-family'>",
-      "initial": "N/A"
-    },
-    "src": {
-      "name": "src",
-      "for": "@font-face",
-      "value": "see prose",
-      "initial": "N/A"
-    },
-    "font-style": {
-      "name": "font-style",
-      "for": "@font-face",
-      "value": "auto | normal | italic | oblique [ <angle> | <angle>{1,2} ]?",
-      "initial": "auto"
-    },
-    "font-weight": {
-      "name": "font-weight",
-      "for": "@font-face",
-      "value": "auto | <font-weight-absolute>{1,2}",
-      "initial": "auto"
-    },
-    "font-stretch": {
-      "name": "font-stretch",
-      "for": "@font-face",
-      "value": "auto | <'font-stretch'>{1,2}",
-      "initial": "auto"
-    },
-    "unicode-range": {
-      "name": "unicode-range",
-      "for": "@font-face",
-      "value": "<urange>#",
-      "initial": "U+0-10FFFF"
-    },
-    "font-feature-settings": {
-      "name": "font-feature-settings",
-      "for": "@font-face",
-      "value": "normal | <feature-tag-value>#",
-      "initial": "normal"
-    },
-    "font-variation-settings": {
-      "name": "font-variation-settings",
-      "for": "@font-face",
-      "value": "normal | [ <string> <number>]#",
-      "initial": "normal"
-    },
-    "font-named-instance": {
-      "name": "font-named-instance",
-      "for": "@font-face",
-      "value": "auto | <string>",
-      "initial": "auto"
-    },
-    "font-display": {
-      "name": "font-display",
-      "for": "@font-feature-values",
-      "value": "auto | block | swap | fallback | optional",
-      "initial": "auto"
-    },
-    "font-language-override": {
-      "name": "font-language-override",
-      "for": "@font-face",
-      "value": "normal | <string>",
-      "initial": "normal"
-    },
-    "ascent-override": {
-      "name": "ascent-override",
-      "for": "@font-face",
-      "value": "normal | <percentage>",
-      "initial": "normal"
-    },
-    "descent-override": {
-      "name": "descent-override",
-      "for": "@font-face",
-      "value": "normal | <percentage>",
-      "initial": "normal"
-    },
-    "line-gap-override": {
-      "name": "line-gap-override",
-      "for": "@font-face",
-      "value": "normal | <percentage>",
-      "initial": "normal"
-    },
-    "base-palette": {
-      "name": "base-palette",
-      "for": "@font-palette-values",
-      "value": "<integer> | <string>",
-      "initial": "N/A"
-    },
-    "override-color": {
-      "name": "override-color",
-      "for": "@font-palette-values",
-      "value": "[ [ <string> | <integer> ] <color> ]#",
-      "initial": "N/A"
-    }
+    "font-family": [
+      {
+        "name": "font-family",
+        "for": "@font-face",
+        "value": "<family-name>",
+        "initial": "N/A"
+      },
+      {
+        "name": "font-family",
+        "for": "@font-palette-values",
+        "value": "<'font-family'>",
+        "initial": "N/A"
+      }
+    ],
+    "src": [
+      {
+        "name": "src",
+        "for": "@font-face",
+        "value": "see prose",
+        "initial": "N/A"
+      }
+    ],
+    "font-style": [
+      {
+        "name": "font-style",
+        "for": "@font-face",
+        "value": "auto | normal | italic | oblique [ <angle> | <angle>{1,2} ]?",
+        "initial": "auto"
+      }
+    ],
+    "font-weight": [
+      {
+        "name": "font-weight",
+        "for": "@font-face",
+        "value": "auto | <font-weight-absolute>{1,2}",
+        "initial": "auto"
+      }
+    ],
+    "font-stretch": [
+      {
+        "name": "font-stretch",
+        "for": "@font-face",
+        "value": "auto | <'font-stretch'>{1,2}",
+        "initial": "auto"
+      }
+    ],
+    "unicode-range": [
+      {
+        "name": "unicode-range",
+        "for": "@font-face",
+        "value": "<urange>#",
+        "initial": "U+0-10FFFF"
+      }
+    ],
+    "font-feature-settings": [
+      {
+        "name": "font-feature-settings",
+        "for": "@font-face",
+        "value": "normal | <feature-tag-value>#",
+        "initial": "normal"
+      }
+    ],
+    "font-variation-settings": [
+      {
+        "name": "font-variation-settings",
+        "for": "@font-face",
+        "value": "normal | [ <string> <number>]#",
+        "initial": "normal"
+      }
+    ],
+    "font-named-instance": [
+      {
+        "name": "font-named-instance",
+        "for": "@font-face",
+        "value": "auto | <string>",
+        "initial": "auto"
+      }
+    ],
+    "font-display": [
+      {
+        "name": "font-display",
+        "for": "@font-face",
+        "value": "auto | block | swap | fallback | optional",
+        "initial": "auto"
+      },
+      {
+        "name": "font-display",
+        "for": "@font-feature-values",
+        "value": "auto | block | swap | fallback | optional",
+        "initial": "auto"
+      }
+    ],
+    "font-language-override": [
+      {
+        "name": "font-language-override",
+        "for": "@font-face",
+        "value": "normal | <string>",
+        "initial": "normal"
+      }
+    ],
+    "ascent-override": [
+      {
+        "name": "ascent-override",
+        "for": "@font-face",
+        "value": "normal | <percentage>",
+        "initial": "normal"
+      }
+    ],
+    "descent-override": [
+      {
+        "name": "descent-override",
+        "for": "@font-face",
+        "value": "normal | <percentage>",
+        "initial": "normal"
+      }
+    ],
+    "line-gap-override": [
+      {
+        "name": "line-gap-override",
+        "for": "@font-face",
+        "value": "normal | <percentage>",
+        "initial": "normal"
+      }
+    ],
+    "base-palette": [
+      {
+        "name": "base-palette",
+        "for": "@font-palette-values",
+        "value": "<integer> | <string>",
+        "initial": "N/A"
+      }
+    ],
+    "override-color": [
+      {
+        "name": "override-color",
+        "for": "@font-palette-values",
+        "value": "[ [ <string> | <integer> ] <color> ]#",
+        "initial": "N/A"
+      }
+    ]
   },
   "valuespaces": {
     "<font-weight-absolute>": {

@@ -6,8 +6,14 @@
   "properties": {
     "scrollbar-gutter": {
       "name": "scrollbar-gutter",
-      "newValues": "auto | [ [ stable | always ] && mirror? && force? ] || match-parent",
-      "appliesTo": "all elements",
+      "value": "auto | stable && mirror?",
+      "initial": "auto",
+      "appliesTo": "scroll containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
       "styleDeclaration": [
         "scrollbar-gutter",
         "scrollbarGutter"

@@ -249,11 +249,145 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## No definition for CSS properties
 
+- [Compatibility Standard](https://compat.spec.whatwg.org/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
     * `<feature-value-block>`
     * `<font-feature-value-type>`
+- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+    * `null` with type `descriptor`
+- [Web Application Manifest](https://w3c.github.io/manifest/):
+    * `null` with type `descriptor`
 
-=> 2 properties without definition found in 1 specification
+=> 124 properties without definition found in 13 specifications
 
 
 ## No definition for IDL properties
@@ -747,10 +881,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `add(data, type)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
     * `add(data)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
     * `remove(index)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`remove()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-remove) with type `method` for `DataTransferItemList`
-    * `setTimeout(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setTimeout()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout) with type `method` for `WindowOrWorkerGlobalScope`
-    * `clearTimeout(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearTimeout()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-cleartimeout) with type `method` for `WindowOrWorkerGlobalScope`
-    * `setInterval(handler, timeout, ...arguments)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`setInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval) with type `method` for `WindowOrWorkerGlobalScope`
-    * `clearInterval(handle)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`clearInterval()`](https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-clearinterval) with type `method` for `WindowOrWorkerGlobalScope`
     * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
     * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
     * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
@@ -767,7 +897,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender), but found [`setStreams()`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection), but found [`addTrack()`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 58 properties without definition found in 2 specifications
+=> 54 properties without definition found in 2 specifications
 
 
 ## Missing references based on document links
@@ -2034,10 +2164,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-element-attributes`](https://html.spec.whatwg.org/#concept-element-attributes)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
      * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
-     * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
-     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#microtask-queue`](https://html.spec.whatwg.org/#microtask-queue)
-     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/):
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
      * [`https://html.spec.whatwg.org/#category-submit`](https://html.spec.whatwg.org/#category-submit)
@@ -3398,7 +3524,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 1281 problematic external links found in 198 specifications
+=> 1277 problematic external links found in 198 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4334,8 +4460,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/):
      * [`https://w3c.github.io/webappsec-csp/#port-part-match`](https://w3c.github.io/webappsec-csp/#port-part-match)
      * [`https://fetch.spec.whatwg.org/#concept-response-csp-list`](https://fetch.spec.whatwg.org/#concept-response-csp-list)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
-     * [`https://html.spec.whatwg.org/#dom-window-requestanimationframe`](https://html.spec.whatwg.org/#dom-window-requestanimationframe)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/):
      * [`https://drafts.csswg.org/web-animations#timing-function`](https://drafts.csswg.org/web-animations#timing-function)
      * [`https://drafts.csswg.org/web-animations#inherited-time`](https://drafts.csswg.org/web-animations#inherited-time)
@@ -4967,7 +5091,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 521 problematic external links found in 148 specifications
+=> 520 problematic external links found in 147 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -4990,8 +5114,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
      * [`https://www.w3.org/TR/eventsource/`](https://www.w3.org/TR/eventsource/)
      * [`https://www.w3.org/TR/websockets/`](https://www.w3.org/TR/websockets/)
-- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/):
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/):
@@ -5086,7 +5208,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 58 problematic external links found in 49 specifications
+=> 57 problematic external links found in 48 specifications
 
 
 ## External links that use a dated URL
