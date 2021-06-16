@@ -392,7 +392,7 @@
         "extAttrs": []
       },
       "SourceBuffer": {
-        "fragment": "[Exposed=Window]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined remove (double start, unrestricted double end);\n};",
+        "fragment": "[Exposed=Window]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
         "type": "interface",
         "name": "SourceBuffer",
         "inheritance": "EventTarget",
@@ -651,6 +651,38 @@
               "idlType": "undefined"
             },
             "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "changeType",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": ""
           },

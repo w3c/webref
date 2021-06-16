@@ -17,5 +17,6 @@ interface SourceBuffer : EventTarget {
                     attribute EventHandler        onabort;
     undefined appendBuffer (BufferSource data);
     undefined abort ();
+    undefined changeType (DOMString type);
     undefined remove (double start, unrestricted double end);
 };
