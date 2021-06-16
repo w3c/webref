@@ -1,9 +1,0 @@
-// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-[Exposed=(Window,DedicatedWorker)]
-interface Plane {
-  readonly attribute unsigned long stride;
-  readonly attribute unsigned long rows;
-  readonly attribute unsigned long length;
-
-  undefined readInto(ArrayBufferView dst);
-};
