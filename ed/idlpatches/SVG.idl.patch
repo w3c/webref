@@ -1,18 +1,18 @@
-From 28b67fca45cca9a2029a5c1321d74ce9b0a31a93 Mon Sep 17 00:00:00 2001
-From: Kagami Sascha Rosylight <saschanaz@outlook.com>
-Date: Fri, 12 Mar 2021 06:48:07 +0100
-Subject: [PATCH] Fix SVG.idl
+From 1a20398e5b4503d5a7ad7cb021b65c1d8bfc0716 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 17 Jun 2021 23:29:59 +0200
+Subject: [PATCH] Fix SVG.idl / Add SVG 1.1 only interfaces
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 ---
- ed/idl/SVG.idl | 15 ++++++++++++++-
- 1 file changed, 14 insertions(+), 1 deletion(-)
+ ed/idl/SVG.idl | 149 ++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 148 insertions(+), 1 deletion(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index e0b013bfa..69d47018e 100644
+index 9ce619d1e..a619b4c66 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -672,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -673,9 +673,156 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -34,6 +34,143 @@ index e0b013bfa..69d47018e 100644
  
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
+ 
+ SVGViewElement includes SVGFitToViewBox;
++
++
++////////////////////////////////////////////////////////////////////////////////
++// SVG 1.1 interfaces that are not defined in SVG 2
++//
++// Note this is best effort at defining these interfaces with current Web IDL,
++// as the actual definitions in SVG 1.1 use outdated (and invalid) IDL.
++//
++// These interfaces are to be dropped whenever possible.
++////////////////////////////////////////////////////////////////////////////////
++[Exposed=Window]
++interface SVGTRefElement : SVGTextPositioningElement {};
++SVGTRefElement includes SVGURIReference;
++
++[Exposed=Window]
++interface SVGAltGlyphElement : SVGTextPositioningElement {
++  attribute DOMString glyphRef;
++  attribute DOMString format;
++};
++SVGAltGlyphElement includes SVGURIReference;
++
++[Exposed=Window]
++interface SVGAltGlyphDefElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGAltGlyphItemElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGGlyphRefElement : SVGElement {
++  attribute DOMString glyphRef;
++  attribute DOMString format;
++  attribute float x;
++  attribute float y;
++  attribute float dx;
++  attribute float dy;
++};
++SVGGlyphRefElement includes SVGURIReference;
++SVGGlyphRefElement includes SVGStylable;
++
++[Exposed=Window]
++interface SVGColorProfileElement : SVGElement {
++  attribute DOMString local;
++  attribute DOMString name;
++  attribute unsigned short renderingIntent;
++};
++SVGColorProfileElement includes SVGURIReference;
++SVGColorProfileElement includes SVGRenderingIntent;
++
++[Exposed=Window]
++interface SVGCursorElement : SVGElement {
++  readonly attribute SVGAnimatedLength x;
++  readonly attribute SVGAnimatedLength y;
++};
++SVGCursorElement includes SVGURIReference;
++SVGCursorElement includes SVGTests;
++SVGCursorElement includes SVGExternalResourcesRequired;
++
++[Exposed=Window]
++interface SVGAnimateColorElement : SVGAnimationElement {};
++SVGCursorElement includes SVGStylable;
++
++[Exposed=Window]
++interface SVGFontElement : SVGElement {};
++SVGFontElement includes SVGExternalResourcesRequired;
++SVGFontElement includes SVGStylable;
++
++[Exposed=Window]
++interface SVGGlyphElement : SVGElement {};
++SVGGlyphElement includes SVGStylable;
++
++[Exposed=Window]
++interface SVGMissingGlyphElement : SVGElement {};
++SVGMissingGlyphElement includes SVGStylable;
++
++[Exposed=Window]
++interface SVGHKernElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGVKernElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGFontFaceElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGFontFaceSrcElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGFontFaceUriElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGFontFaceFormatElement : SVGElement {};
++
++[Exposed=Window]
++interface SVGFontFaceNameElement : SVGElement {};
++
++[Exposed=Window]
++interface CSSValue {
++  // UnitTypes
++  const unsigned short      CSS_INHERIT                    = 0;
++  const unsigned short      CSS_PRIMITIVE_VALUE            = 1;
++  const unsigned short      CSS_VALUE_LIST                 = 2;
++  const unsigned short      CSS_CUSTOM                     = 3;
++
++           attribute DOMString        cssText;
++                                        // raises(DOMException) on setting
++
++  readonly attribute unsigned short   cssValueType;
++};
++
++
++[Exposed=Window]
++interface mixin SVGStylable {
++
++  readonly attribute SVGAnimatedString className;
++  readonly attribute CSSStyleDeclaration style;
++
++  CSSValue getPresentationAttribute(DOMString name);
++};
++
++[Exposed=Window]
++interface mixin SVGRenderingIntent {
++  // Rendering Intent Types
++  const unsigned short RENDERING_INTENT_UNKNOWN = 0;
++  const unsigned short RENDERING_INTENT_AUTO = 1;
++  const unsigned short RENDERING_INTENT_PERCEPTUAL = 2;
++  const unsigned short RENDERING_INTENT_RELATIVE_COLORIMETRIC = 3;
++  const unsigned short RENDERING_INTENT_SATURATION = 4;
++  const unsigned short RENDERING_INTENT_ABSOLUTE_COLORIMETRIC = 5;
++};
++
++[Exposed=Window]
++interface mixin SVGExternalResourcesRequired {
++  readonly attribute SVGAnimatedBoolean externalResourcesRequired;
++};
+\ No newline at end of file
 -- 
-2.30.0.windows.1
+2.31.1.windows.1
 
