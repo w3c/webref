@@ -1,10 +1,335 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "CSS Inline Layout Module Level 3",
     "url": "https://drafts.csswg.org/css-inline-3/"
   },
   "links": {
-    "https://www.w3.org/": [],
-    "https://lists.w3.org/Archives/Public/www-style": []
+    "https://www.w3.org/TR/CSS/": [
+      "future-proofing",
+      "unstable",
+      "proprietary-extension"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues": [],
+    "https://lists.w3.org/Archives/Public/public-css-archive/": [],
+    "https://lists.w3.org/Archives/Public/www-style/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://drafts.csswg.org/css-display-3/": [
+      "inline-level",
+      "inline-level-box",
+      "block-container",
+      "inline-box",
+      "atomic-inline",
+      "text-run",
+      "containing-block",
+      "anonymous",
+      "formatting-context",
+      "box-tree",
+      "in-flow",
+      "replaced-element",
+      "inline-block",
+      "document-order",
+      "box",
+      "valdef-display-inline-block",
+      "propdef-display",
+      "valdef-display-block",
+      "independent-formatting-context",
+      "block-formatting-context"
+    ],
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "block-axis",
+      "inline-axis",
+      "logical-width",
+      "block-flow-direction",
+      "line-left",
+      "line-right",
+      "line-over",
+      "line-under",
+      "logical-height",
+      "typographic-mode",
+      "horizontal-writing-mode",
+      "vertical-writing-mode",
+      "propdef-text-orientation",
+      "valdef-text-orientation-sideways",
+      "valdef-text-orientation-mixed",
+      "valdef-text-orientation-upright",
+      "over",
+      "under",
+      "block-start",
+      "block-end",
+      "propdef-writing-mode",
+      "valdef-writing-mode-vertical-lr",
+      "block-size",
+      "inline-size",
+      "inline-start",
+      "inline-end",
+      "css-start"
+    ],
+    "https://www.w3.org/TR/css-text/": [],
+    "https://github.com/w3c/csswg-drafts/issues/5244": [],
+    "https://lists.w3.org/Archives/Public/www-archive/2020Feb/att-0005/CSS-SC29-20200113.pdf": [],
+    "https://www.w3.org/TR/CSS2/": [
+      "property-defs",
+      "collapsing-margins",
+      "clearance",
+      "inline-formatting",
+      "floats"
+    ],
+    "https://www.w3.org/TR/css-values-3/": [
+      "value-defs"
+    ],
+    "https://drafts.csswg.org/css-values-4/": [
+      "css-wide-keywords",
+      "comb-one",
+      "comb-any",
+      "typedef-length-percentage",
+      "mult-opt",
+      "comb-all",
+      "mult-req",
+      "em"
+    ],
+    "https://drafts.csswg.org/css-break-3/": [
+      "fragment",
+      "monolithic",
+      "propdef-orphans"
+    ],
+    "https://drafts.csswg.org/css-box-4/": [
+      "content-edge",
+      "margin",
+      "border",
+      "padding",
+      "content-box",
+      "margin-box",
+      "content-area",
+      "box-edge",
+      "margin-edge",
+      "border-edge",
+      "propdef-margin"
+    ],
+    "https://www.w3.org/TR/css-writing-modes-3/": [
+      "text-direction",
+      "bidi-box-model"
+    ],
+    "https://drafts.csswg.org/css-text-3/": [
+      "forced-line-break",
+      "preserved-white-space",
+      "content-language",
+      "unicode-script",
+      "hang",
+      "propdef-hanging-punctuation",
+      "propdef-text-align",
+      "typographic-character-unit",
+      "propdef-letter-spacing",
+      "white-space",
+      "justification-opportunity",
+      "propdef-word-spacing",
+      "word-separator",
+      "propdef-text-indent"
+    ],
+    "https://www.w3.org/TR/css-text-3/": [
+      "line-breaking",
+      "boundary-shaping"
+    ],
+    "https://drafts.csswg.org/css-multicol-1/": [
+      "column-box",
+      "multi-column-layout"
+    ],
+    "https://drafts.csswg.org/css-break-4/": [
+      "fragmentation-container",
+      "box-fragment",
+      "fragmentation",
+      "propdef-widows",
+      "forced-break"
+    ],
+    "https://drafts.csswg.org/css-align-3/": [
+      "propdef-align-content",
+      "shared-alignment-context",
+      "synthesize-baseline",
+      "baseline-alignment",
+      "valdef-justify-content-normal",
+      "valdef-self-position-start",
+      "valdef-self-position-end",
+      "valdef-self-position-center",
+      "first-baseline-set",
+      "last-baseline-set",
+      "last-baseline-alignment",
+      "first-baseline-alignment",
+      "propdef-justify-self"
+    ],
+    "https://drafts.csswg.org/css-page-floats-3/": [
+      "float",
+      "valdef-float-none"
+    ],
+    "https://drafts.csswg.org/css-sizing-3/": [
+      "inner-size",
+      "outer-size",
+      "propdef-height",
+      "automatic-size",
+      "sizing-property",
+      "propdef-box-sizing",
+      "width",
+      "height",
+      "definite",
+      "min-width",
+      "max-width",
+      "valdef-width-auto"
+    ],
+    "https://drafts.csswg.org/css-ruby-1/": [
+      "ruby-annotation-box",
+      "ruby-container",
+      "internal-ruby-boxes",
+      "ruby"
+    ],
+    "https://drafts.csswg.org/css-position-3/": [
+      "absolute-position",
+      "positioned-box",
+      "propdef-position",
+      "valdef-position-static"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "propdef-z-index",
+      "propdef-float",
+      "propdef-clear"
+    ],
+    "https://drafts.csswg.org/css-fonts-4/": [
+      "propdef-font-language-override",
+      "first-available-font"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/859": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/dominant-baseline": [],
+    "https://www.w3.org/TR/css-values/": [
+      "value-defs",
+      "percentages"
+    ],
+    "https://www.w3.org/TR/css-cascade/": [
+      "initial-values",
+      "inherited-property",
+      "computed"
+    ],
+    "https://svgwg.org/svg2-draft/text.html": [
+      "TermTextContentElement",
+      "TermCurrentTextPosition"
+    ],
+    "https://www.w3.org/TR/web-animations/": [
+      "animation-type"
+    ],
+    "https://drafts.csswg.org/css-cascade-5/": [
+      "shorthand-property",
+      "computed-value",
+      "specified-value",
+      "longhand",
+      "used-value"
+    ],
+    "https://www.w3.org/TR/css-align-3/": [
+      "distribution-block",
+      "baseline-terms"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/alignment-baseline": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseline-shift": [],
+    "https://drafts.csswg.org/css-values-3/": [
+      "length-value",
+      "percentage-value",
+      "number-value",
+      "integer-value"
+    ],
+    "https://drafts.csswg.org/css-fonts-3/": [
+      "propdef-font-size"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/5180": [],
+    "https://github.com/w3c/csswg-drafts/issues/5234": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/line-height": [],
+    "https://github.com/w3c/csswg-drafts/issues/3118": [],
+    "https://github.com/w3c/csswg-drafts/issues/2165": [],
+    "https://github.com/w3c/csswg-drafts/issues/5236": [],
+    "https://drafts.csswg.org/css-pseudo-4/": [
+      "first-formatted-line",
+      "selectordef-first-letter",
+      "selectordef-marker"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/5189": [],
+    "https://github.com/w3c/csswg-drafts/issues/310": [
+      "issuecomment-396765893"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter": [],
+    "https://drafts.csswg.org/css-lists-3/": [
+      "valdef-list-style-position-inside"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/initial-letter-align": [],
+    "https://www.w3.org/TR/ilreq/": [
+      "h_scripts_without_hanging_baseline"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/4988": [],
+    "https://github.com/w3c/csswg-drafts/issues/410": [],
+    "https://drafts.csswg.org/css-shapes-1/": [
+      "propdef-shape-margin",
+      "propdef-shape-outside"
+    ],
+    "https://www.w3.org/TR/CSS21/": [
+      "floats",
+      "style-sheet",
+      "user-agent",
+      "ignore"
+    ],
+    "https://lists.w3.org/Archives/Public/www-style/2018Jul/0019.html": [],
+    "https://html.spec.whatwg.org/": [
+      "textmetrics"
+    ],
+    "https://drafts.csswg.org/css-values/": [
+      "ex"
+    ],
+    "https://www.w3.org/TR/2020/WD-css-inline-3-20200618/": [],
+    "https://github.com/w3c/csswg-drafts/issues/864": [],
+    "https://github.com/w3c/csswg-drafts/issues/5237": [],
+    "https://drafts.csswg.org/css-counter-styles-3/": [
+      "hebrew"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/5208": [],
+    "https://github.com/w3c/csswg-drafts/issues/5329": [],
+    "https://github.com/w3c/csswg-drafts/issues/5120": [],
+    "https://github.com/w3c/csswg-drafts/issues/5207": [],
+    "https://github.com/w3c/csswg-drafts/issues/5119": [],
+    "https://github.com/w3c/csswg-drafts/issues/5312": [],
+    "https://github.com/w3c/csswg-drafts/issues/5235": [],
+    "https://github.com/w3c/csswg-drafts/issues/5225": [],
+    "https://www.w3.org/TR/2020/WD-css-inline-3-20200604/": [],
+    "https://github.com/w3c/csswg-drafts/issues/5168": [],
+    "https://github.com/w3c/csswg-drafts/issues/719": [],
+    "https://www.w3.org/TR/2018/WD-css-inline-3-20180808/": [],
+    "https://github.com/w3c/csswg-drafts/issues/3199": [],
+    "https://github.com/w3c/csswg-drafts/issues/861": [],
+    "https://github.com/w3c/csswg-drafts/issues/3240": [],
+    "https://github.com/w3c/csswg-drafts/issues/3955": [],
+    "https://github.com/w3c/csswg-drafts/issues/862": [],
+    "https://github.com/w3c/csswg-drafts/issues/2955": [],
+    "https://github.com/w3c/csswg-drafts/issues/4495": [],
+    "https://github.com/w3c/csswg-drafts/issues/3978": [],
+    "https://github.com/w3c/csswg-drafts/issues/4115": [],
+    "https://github.com/w3c/csswg-drafts/issues/2399": [
+      "issuecomment-635630662"
+    ],
+    "https://www.w3.org/Style/CSS/Test/": [],
+    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
+    "https://www.w3.org/TR/css-box-4/": [],
+    "https://www.w3.org/TR/css-break-3/": [],
+    "https://www.w3.org/TR/css-break-4/": [],
+    "https://www.w3.org/TR/css-cascade-5/": [],
+    "https://www.w3.org/TR/css-counter-styles-3/": [],
+    "https://www.w3.org/TR/css-display-3/": [],
+    "https://www.w3.org/TR/css-fonts-3/": [],
+    "https://www.w3.org/TR/css-fonts-4/": [],
+    "https://www.w3.org/TR/css-lists-3/": [],
+    "https://www.w3.org/TR/css-multicol-1/": [],
+    "https://www.w3.org/TR/css-page-floats-3/": [],
+    "https://www.w3.org/TR/css-position-3/": [],
+    "https://www.w3.org/TR/css-pseudo-4/": [],
+    "https://www.w3.org/TR/css-ruby-1/": [],
+    "https://www.w3.org/TR/css-shapes-1/": [],
+    "https://www.w3.org/TR/css-sizing-3/": [],
+    "https://www.w3.org/TR/css-values-4/": [],
+    "https://www.w3.org/TR/css-writing-modes-4/": [],
+    "https://quirks.spec.whatwg.org/": [],
+    "https://tools.ietf.org/html/rfc2119": [],
+    "https://www.w3.org/TR/SVG2/": [],
+    "https://www.w3.org/TR/css-line-grid-1/": [],
+    "https://www.w3.org/TR/selectors-3/": []
   }
 }

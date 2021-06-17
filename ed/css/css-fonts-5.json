@@ -3,7 +3,23 @@
     "title": "CSS Fonts Module Level 5",
     "url": "https://drafts.csswg.org/css-fonts-5/"
   },
-  "properties": {},
+  "properties": {
+    "font-size-adjust": {
+      "name": "font-size-adjust",
+      "value": "none | [ ex | cap | ch | ic ]? [ from-font | <number> ]",
+      "initial": "none",
+      "appliesTo": "all elements and text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the keyword none, or a pair of a metric keyword and a <number>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete if the keywords differ, otherwise by computed value type",
+      "styleDeclaration": [
+        "font-size-adjust",
+        "fontSizeAdjust"
+      ]
+    }
+  },
   "descriptors": {
     "font-size": [
       {
@@ -25,7 +41,7 @@
       {
         "name": "ascent-override",
         "for": "@font-face",
-        "value": "normal | <percentage [0,∞]>",
+        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -33,7 +49,7 @@
       {
         "name": "descent-override",
         "for": "@font-face",
-        "value": "normal | <percentage [0,∞]>",
+        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -41,7 +57,7 @@
       {
         "name": "line-gap-override",
         "for": "@font-face",
-        "value": "normal | <percentage [0,∞]>",
+        "value": "[ normal | <percentage [0,∞]> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -49,7 +65,7 @@
       {
         "name": "superscript-position-override",
         "for": "@font-face",
-        "value": "normal | from-font | <percentage>",
+        "value": "[ normal | from-font | <percentage> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -57,7 +73,7 @@
       {
         "name": "subscript-position-override",
         "for": "@font-face",
-        "value": "normal | from-font | <percentage>",
+        "value": "[ normal | from-font | <percentage> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -65,7 +81,7 @@
       {
         "name": "superscript-size-override",
         "for": "@font-face",
-        "value": "normal | from-font | <percentage [0,∞]>",
+        "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
         "initial": "normal"
       }
     ],
@@ -73,7 +89,7 @@
       {
         "name": "subscript-size-override",
         "for": "@font-face",
-        "value": "normal | from-font | <percentage [0,∞]>",
+        "value": "[ normal | from-font | <percentage [0,∞]> ]{1,2}",
         "initial": "normal"
       }
     ]

@@ -1,13 +1,366 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "CSS Ruby Annotation Layout Module Level 1",
     "url": "https://drafts.csswg.org/css-ruby-1/"
   },
   "headings": [
     {
       "id": "title",
       "level": 1,
-      "title": "CSS Working Group Editor Drafts"
+      "title": "CSS Ruby Annotation Layout Module Level 1"
+    },
+    {
+      "id": "profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 17 May 2021"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "ruby-def",
+      "level": 3,
+      "title": "What is ruby?",
+      "number": "1.1"
+    },
+    {
+      "id": "placement",
+      "level": 3,
+      "title": "Module interactions",
+      "number": "1.2"
+    },
+    {
+      "id": "values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.3"
+    },
+    {
+      "id": "diagram-conventions",
+      "level": 3,
+      "title": "Diagram conventions",
+      "number": "1.4"
+    },
+    {
+      "id": "ruby-model",
+      "level": 2,
+      "title": "Ruby Box Model",
+      "number": "2"
+    },
+    {
+      "id": "ruby-display",
+      "level": 3,
+      "title": "Ruby-specific display Values",
+      "number": "2.1"
+    },
+    {
+      "id": "formatting-context",
+      "level": 4,
+      "title": "The Ruby Formatting Context",
+      "number": "2.1.1"
+    },
+    {
+      "id": "block-ruby",
+      "level": 4,
+      "title": "Non-Inline Ruby",
+      "number": "2.1.2"
+    },
+    {
+      "id": "box-fixup",
+      "level": 3,
+      "title": "Anonymous Ruby Box Generation",
+      "number": "2.2"
+    },
+    {
+      "id": "ruby-pairing",
+      "level": 3,
+      "title": "Annotation Pairing",
+      "number": "2.3"
+    },
+    {
+      "id": "segment-pairing",
+      "level": 4,
+      "title": "Segment Pairing and Annotation Levels",
+      "number": "2.3.1"
+    },
+    {
+      "id": "base-annotation-pairing",
+      "level": 4,
+      "title": "Unit Pairing and Spanning Annotations",
+      "number": "2.3.2"
+    },
+    {
+      "id": "hiding",
+      "level": 3,
+      "title": "Hiding Annotations: visibility: collapse and auto-hidden ruby",
+      "number": "2.4"
+    },
+    {
+      "id": "white-space",
+      "level": 3,
+      "title": "White Space Collapsing",
+      "number": "2.5"
+    },
+    {
+      "id": "ruby-layout",
+      "level": 2,
+      "title": "Ruby Layout",
+      "number": "3"
+    },
+    {
+      "id": "interlinear-layout",
+      "level": 3,
+      "title": "Interlinear Ruby Layout",
+      "number": "3.1"
+    },
+    {
+      "id": "interlinear-inline",
+      "level": 4,
+      "title": "Inline-axis Interlinear Layout",
+      "number": "3.1.1"
+    },
+    {
+      "id": "interlinear-block",
+      "level": 4,
+      "title": "Block-axis Interlinear Layout",
+      "number": "3.1.2"
+    },
+    {
+      "id": "inter-character-layout",
+      "level": 3,
+      "title": "Inter-character Ruby Layout",
+      "number": "3.2"
+    },
+    {
+      "id": "box-style",
+      "level": 3,
+      "title": "Styling Ruby Boxes",
+      "number": "3.3"
+    },
+    {
+      "id": "line-breaks",
+      "level": 3,
+      "title": "Breaking Across Lines",
+      "number": "3.4"
+    },
+    {
+      "id": "break-between",
+      "level": 4,
+      "title": "Breaking Between Bases",
+      "number": "3.4.1"
+    },
+    {
+      "id": "break-within",
+      "level": 4,
+      "title": "Breaking Within Bases",
+      "number": "3.4.2"
+    },
+    {
+      "id": "bidi",
+      "level": 3,
+      "title": "Bidi Reordering",
+      "number": "3.5"
+    },
+    {
+      "id": "line-height",
+      "level": 3,
+      "title": "Line Spacing",
+      "number": "3.6"
+    },
+    {
+      "id": "ruby-props",
+      "level": 2,
+      "title": "Ruby Formatting Properties",
+      "number": "4"
+    },
+    {
+      "id": "rubypos",
+      "level": 3,
+      "title": "Ruby Positioning: the ruby-position property",
+      "number": "4.1"
+    },
+    {
+      "id": "collapsed-ruby",
+      "level": 3,
+      "title": "Sharing Annotation Space: the ruby-merge property",
+      "number": "4.2"
+    },
+    {
+      "id": "ruby-align-property",
+      "level": 3,
+      "title": "Ruby Text Distribution: the ruby-align property",
+      "number": "4.3"
+    },
+    {
+      "id": "ruby-text-decoration",
+      "level": 3,
+      "title": "Ruby Text Decoration",
+      "number": "4.4"
+    },
+    {
+      "id": "edge-effects",
+      "level": 2,
+      "title": "Edge Effects",
+      "number": "5"
+    },
+    {
+      "id": "ruby-overhang",
+      "level": 3,
+      "title": "Overhanging Ruby: the ruby-overhang property",
+      "number": "5.1"
+    },
+    {
+      "id": "line-edge",
+      "level": 3,
+      "title": "Line-edge Alignment",
+      "number": "5.2"
+    },
+    {
+      "id": "default-stylesheet",
+      "level": 2,
+      "title": "Appendix A: Sample Style Sheets"
+    },
+    {
+      "id": "default-ua-ruby",
+      "level": 3,
+      "title": "Default UA Style Sheet",
+      "number": "A.1"
+    },
+    {
+      "id": "default-inline",
+      "level": 3,
+      "title": "Inlining Ruby Annotations",
+      "number": "A.2"
+    },
+    {
+      "id": "default-parens",
+      "level": 3,
+      "title": "Generating Parentheses",
+      "number": "A.3"
+    },
+    {
+      "id": "glossary",
+      "level": 2,
+      "title": "Glossary",
+      "number": "6"
+    },
+    {
+      "id": "acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-20200429",
+      "level": 3,
+      "title": "Changes since the 29 April 2020 WD"
+    },
+    {
+      "id": "changes-20140805",
+      "level": 3,
+      "title": "Changes since the 5 August 2014 WD"
+    },
+    {
+      "id": "changes-20130919",
+      "level": 3,
+      "title": "Changes since the 19 September 2013 WD"
+    },
+    {
+      "id": "changes-20110630",
+      "level": 3,
+      "title": "Changes since the 30 June 2011 WD"
+    },
+    {
+      "id": "w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
     }
   ]
 }

@@ -1,13 +1,252 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "CSS Multi-column Layout Module Level 2",
     "url": "https://drafts.csswg.org/css-multicol-2/"
   },
   "headings": [
     {
       "id": "title",
       "level": 1,
-      "title": "CSS Working Group Editor Drafts"
+      "title": "CSS Multi-column Layout Module Level 2"
+    },
+    {
+      "id": "profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 14 March 2020"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "interaction",
+      "level": 2,
+      "title": "Module Interactions",
+      "number": "2"
+    },
+    {
+      "id": "the-multi-column-model",
+      "level": 2,
+      "title": "The multi-column model",
+      "number": "3"
+    },
+    {
+      "id": "the-number-and-width-of-columns",
+      "level": 2,
+      "title": "The number and width of columns",
+      "number": "4"
+    },
+    {
+      "id": "cw",
+      "level": 3,
+      "title": "column-width",
+      "number": "4.1"
+    },
+    {
+      "id": "cc",
+      "level": 3,
+      "title": "column-count",
+      "number": "4.2"
+    },
+    {
+      "id": "columns",
+      "level": 3,
+      "title": "columns",
+      "number": "4.3"
+    },
+    {
+      "id": "pseudo-algorithm",
+      "level": 3,
+      "title": "Pseudo-algorithm",
+      "number": "4.4"
+    },
+    {
+      "id": "stacking-context",
+      "level": 3,
+      "title": "Stacking context",
+      "number": "4.5"
+    },
+    {
+      "id": "column-gaps-and-rules",
+      "level": 2,
+      "title": "Column gaps and rules",
+      "number": "5"
+    },
+    {
+      "id": "column-gap",
+      "level": 3,
+      "title": "column-gap",
+      "number": "5.1"
+    },
+    {
+      "id": "crc",
+      "level": 3,
+      "title": "column-rule-color",
+      "number": "5.2"
+    },
+    {
+      "id": "crs",
+      "level": 3,
+      "title": "column-rule-style",
+      "number": "5.3"
+    },
+    {
+      "id": "crw",
+      "level": 3,
+      "title": "column-rule-width",
+      "number": "5.4"
+    },
+    {
+      "id": "column-rule",
+      "level": 3,
+      "title": "column-rule",
+      "number": "5.5"
+    },
+    {
+      "id": "column-breaks",
+      "level": 2,
+      "title": "Column breaks",
+      "number": "6"
+    },
+    {
+      "id": "break-before-break-after-break-inside",
+      "level": 3,
+      "title": "break-before, break-after, break-inside",
+      "number": "6.1"
+    },
+    {
+      "id": "spanning-columns",
+      "level": 2,
+      "title": "Spanning columns",
+      "number": "7"
+    },
+    {
+      "id": "column-span",
+      "level": 3,
+      "title": "column-span",
+      "number": "7.1"
+    },
+    {
+      "id": "filling-columns",
+      "level": 2,
+      "title": "Filling columns",
+      "number": "8"
+    },
+    {
+      "id": "cf",
+      "level": 3,
+      "title": "column-fill",
+      "number": "8.1"
+    },
+    {
+      "id": "overflow",
+      "level": 2,
+      "title": "Overflow",
+      "number": "9"
+    },
+    {
+      "id": "overflow-inside-multicol-elements",
+      "level": 3,
+      "title": "Overflow inside multicol elements",
+      "number": "9.1"
+    },
+    {
+      "id": "pagination-and-overflow-outside-multicol",
+      "level": 3,
+      "title": "Pagination and overflow outside multicol elements",
+      "number": "9.2"
+    },
+    {
+      "id": "acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "priv-sec",
+      "level": 2,
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "level": 2,
+      "title": "Issues Index"
     }
   ]
 }

@@ -5,7 +5,7 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "[Global=Window,\n Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Window : EventTarget {\n  // the current browsing context\n  [LegacyUnforgeable] readonly attribute WindowProxy window;\n  [Replaceable] readonly attribute WindowProxy self;\n  [LegacyUnforgeable] readonly attribute Document document;\n  attribute DOMString name;\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location location;\n  readonly attribute History history;\n  readonly attribute CustomElementRegistry customElements;\n  [Replaceable] readonly attribute BarProp locationbar;\n  [Replaceable] readonly attribute BarProp menubar;\n  [Replaceable] readonly attribute BarProp personalbar;\n  [Replaceable] readonly attribute BarProp scrollbars;\n  [Replaceable] readonly attribute BarProp statusbar;\n  [Replaceable] readonly attribute BarProp toolbar;\n  attribute DOMString status;\n  undefined close();\n  readonly attribute boolean closed;\n  undefined stop();\n  undefined focus();\n  undefined blur();\n\n  // other browsing contexts\n  [Replaceable] readonly attribute WindowProxy frames;\n  [Replaceable] readonly attribute unsigned long length;\n  [LegacyUnforgeable] readonly attribute WindowProxy? top;\n  attribute any opener;\n  [Replaceable] readonly attribute WindowProxy? parent;\n  readonly attribute Element? frameElement;\n  WindowProxy? open(optional USVString url = \"\", optional DOMString target = \"_blank\", optional [LegacyNullToEmptyString] DOMString features = \"\");\n  getter object (DOMString name);\n  // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic\n  // object on the prototype chain. Indeed, this does not make the global object an exotic object.\n  // Indexed access is taken care of by the WindowProxy exotic object.\n\n  // the user agent\n  readonly attribute Navigator navigator;\n  readonly attribute boolean originAgentCluster;\n\n  // user prompts\n  undefined alert();\n  undefined alert(DOMString message);\n  boolean confirm(optional DOMString message = \"\");\n  DOMString? prompt(optional DOMString message = \"\", optional DOMString default = \"\");\n  undefined print();\n\n  undefined postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);\n  undefined postMessage(any message, optional WindowPostMessageOptions options = {});\n\n  // also has obsolete members\n};",
+    "fragment": "[Global=Window,\n Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Window : EventTarget {\n  // the current browsing context\n  [LegacyUnforgeable] readonly attribute WindowProxy window;\n  [Replaceable] readonly attribute WindowProxy self;\n  [LegacyUnforgeable] readonly attribute Document document;\n  attribute DOMString name;\n  [PutForwards=href, LegacyUnforgeable] readonly attribute Location location;\n  readonly attribute History history;\n  readonly attribute CustomElementRegistry customElements;\n  [Replaceable] readonly attribute BarProp locationbar;\n  [Replaceable] readonly attribute BarProp menubar;\n  [Replaceable] readonly attribute BarProp personalbar;\n  [Replaceable] readonly attribute BarProp scrollbars;\n  [Replaceable] readonly attribute BarProp statusbar;\n  [Replaceable] readonly attribute BarProp toolbar;\n  attribute DOMString status;\n  undefined close();\n  readonly attribute boolean closed;\n  undefined stop();\n  undefined focus();\n  undefined blur();\n\n  // other browsing contexts\n  [Replaceable] readonly attribute WindowProxy frames;\n  [Replaceable] readonly attribute unsigned long length;\n  [LegacyUnforgeable] readonly attribute WindowProxy? top;\n  attribute any opener;\n  [Replaceable] readonly attribute WindowProxy? parent;\n  readonly attribute Element? frameElement;\n  WindowProxy? open(optional USVString url = \"\", optional DOMString target = \"_blank\", optional [LegacyNullToEmptyString] DOMString features = \"\");\n  getter object (DOMString name);\n  // Since this is the global object, the IDL named getter adds a NamedPropertiesObject exotic\n  // object on the prototype chain. Indeed, this does not make the global object an exotic object.\n  // Indexed access is taken care of by the WindowProxy exotic object.\n\n  // the user agent\n  readonly attribute Navigator navigator;\n  readonly attribute Navigator clientInformation; // legacy alias of .navigator\n  readonly attribute boolean originAgentCluster;\n\n  // user prompts\n  undefined alert();\n  undefined alert(DOMString message);\n  boolean confirm(optional DOMString message = \"\");\n  DOMString? prompt(optional DOMString message = \"\", optional DOMString default = \"\");\n  undefined print();\n\n  undefined postMessage(any message, USVString targetOrigin, optional sequence<object> transfer = []);\n  undefined postMessage(any message, optional WindowPostMessageOptions options = {});\n\n  // also has obsolete members\n};",
     "href": "https://html.spec.whatwg.org/multipage/window-object.html#window"
   },
   "extended": [
@@ -109,6 +109,27 @@
     },
     {
       "spec": {
+        "title": "CSS Spatial Navigation Level 1",
+        "url": "https://www.w3.org/TR/css-nav-1/"
+      },
+      "fragment": "partial interface Window {\n    undefined navigate(SpatialNavigationDirection dir);\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "partial interface Window {\n  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};"
+    },
+    {
+      "spec": {
+        "title": "CSSOM View Module",
+        "url": "https://www.w3.org/TR/cssom-view-1/"
+      },
+      "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    undefined scroll(optional ScrollToOptions options = {});\n    undefined scroll(unrestricted double x, unrestricted double y);\n    undefined scrollTo(optional ScrollToOptions options = {});\n    undefined scrollTo(unrestricted double x, unrestricted double y);\n    undefined scrollBy(optional ScrollToOptions options = {});\n    undefined scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};"
+    },
+    {
+      "spec": {
         "title": "DeviceOrientation Event Specification",
         "url": "https://www.w3.org/TR/orientation-event/"
       },
@@ -182,6 +203,20 @@
             "url": "https://immersive-web.github.io/dom-overlays/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Animations Level 1",
+            "url": "https://www.w3.org/TR/css-animations-1/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Transitions",
+            "url": "https://www.w3.org/TR/css-transitions-1/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
         },
         {
           "spec": {

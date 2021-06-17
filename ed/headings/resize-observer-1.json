@@ -1,13 +1,237 @@
 {
   "spec": {
-    "title": "CSS Working Group Editor Drafts",
+    "title": "Resize Observer",
     "url": "https://drafts.csswg.org/resize-observer/"
   },
   "headings": [
     {
       "id": "title",
       "level": 1,
-      "title": "CSS Working Group Editor Drafts"
+      "title": "Resize Observer"
+    },
+    {
+      "id": "profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 11 November 2020"
+    },
+    {
+      "id": "abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "api",
+      "level": 2,
+      "title": "Resize Observer API",
+      "number": "2"
+    },
+    {
+      "id": "resize-observer-interface",
+      "level": 3,
+      "title": "ResizeObserver interface",
+      "number": "2.1"
+    },
+    {
+      "id": "resize-observer-callback",
+      "level": 3,
+      "title": "ResizeObserverCallback",
+      "number": "2.2"
+    },
+    {
+      "id": "resize-observer-entry-interface",
+      "level": 3,
+      "title": "ResizeObserverEntry",
+      "number": "2.3"
+    },
+    {
+      "id": "processing-model",
+      "level": 2,
+      "title": "Processing Model",
+      "number": "3"
+    },
+    {
+      "id": "resize-observation-interface",
+      "level": 3,
+      "title": "ResizeObservation example struct",
+      "number": "3.1"
+    },
+    {
+      "id": "internal-slot-definitions",
+      "level": 3,
+      "title": "Internal Slot Definitions",
+      "number": "3.2"
+    },
+    {
+      "id": "document-slots",
+      "level": 4,
+      "title": "Document",
+      "number": "3.2.1"
+    },
+    {
+      "id": "resize-observer-slots",
+      "level": 4,
+      "title": "ResizeObserver",
+      "number": "3.2.2"
+    },
+    {
+      "id": "css-definitions",
+      "level": 3,
+      "title": "CSS Definitions",
+      "number": "3.3"
+    },
+    {
+      "id": "content-rect-h",
+      "level": 4,
+      "title": "content rect",
+      "number": "3.3.1"
+    },
+    {
+      "id": "algorithms",
+      "level": 3,
+      "title": "Algorithms",
+      "number": "3.4"
+    },
+    {
+      "id": "gather-active-observations-h",
+      "level": 4,
+      "title": "Gather active observations at depth",
+      "number": "3.4.1"
+    },
+    {
+      "id": "has-active-observations-h",
+      "level": 4,
+      "title": "Has active observations",
+      "number": "3.4.2"
+    },
+    {
+      "id": "has-skipped-observations-h",
+      "level": 4,
+      "title": "Has skipped observations",
+      "number": "3.4.3"
+    },
+    {
+      "id": "create-and-populate-resizeobserverentry-h",
+      "level": 4,
+      "title": "Create and populate a ResizeObserverEntry",
+      "number": "3.4.4"
+    },
+    {
+      "id": "broadcast-resize-notifications-h",
+      "level": 4,
+      "title": "Broadcast active observations",
+      "number": "3.4.5"
+    },
+    {
+      "id": "deliver-resize-error",
+      "level": 4,
+      "title": "Deliver Resize Loop Error",
+      "number": "3.4.6"
+    },
+    {
+      "id": "calculate-depth-for-node-h",
+      "level": 4,
+      "title": "Calculate depth for node",
+      "number": "3.4.7"
+    },
+    {
+      "id": "calculate-box-size-h",
+      "level": 4,
+      "title": "Calculate box size, given target and observed box",
+      "number": "3.4.8"
+    },
+    {
+      "id": "lifetime",
+      "level": 3,
+      "title": "ResizeObserver Lifetime",
+      "number": "3.5"
+    },
+    {
+      "id": "integrations",
+      "level": 3,
+      "title": "External Spec Integrations",
+      "number": "3.6"
+    },
+    {
+      "id": "html-event-loop",
+      "level": 4,
+      "title": "HTML Processing Model: Event Loop",
+      "number": "3.6.1"
+    },
+    {
+      "id": "w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "level": 2,
+      "title": "IDL Index"
     }
   ]
 }
