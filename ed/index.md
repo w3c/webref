@@ -2669,7 +2669,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Crawled URL: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
-- Crawled version: 10 June 2021
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-contain-2/](https://drafts.csswg.org/css-contain-2/)
 - Latest published version: [https://www.w3.org/TR/css-contain-2/](https://www.w3.org/TR/css-contain-2/)
 - Shortname: css-contain-2
@@ -6983,6 +6983,7 @@ Normative references to this spec from:
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
+- [WebDriver](https://w3c.github.io/webdriver/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 
 Informative references to this spec from:
@@ -7690,7 +7691,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Crawled URL: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Crawled version: 16 June 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Shortname: generic-sensor
@@ -8344,7 +8345,7 @@ No informative reference to this spec from other specs.
      * `persisted` with type `dict-member` for [`PageTransitionEventInit`](https://html.spec.whatwg.org/multipage/browsing-the-web.html#pagetransitioneventinit), but found [`persisted`](https://html.spec.whatwg.org/multipage/browsing-the-web.html#dom-pagetransitionevent-persisted) with type `attribute` for `PageTransitionEvent`
      * `constructor(type, eventInitDict)` with type `constructor` for [`ErrorEvent`](https://html.spec.whatwg.org/multipage/webappapis.html#errorevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `message` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`message`](https://html.spec.whatwg.org/multipage/media.html#concept-mediaerror-message) with type `dfn`
-     * `filename` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`filename`](https://html.spec.whatwg.org/multipage/input.html#dom-input-value-filename) with type `dfn` for `HTMLInputElement.value`
+     * `filename` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`filename`](https://html.spec.whatwg.org/multipage/input.html#dom-input-value-filename) with type `dfn`
      * `lineno` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`lineno`](https://html.spec.whatwg.org/multipage/webappapis.html#dom-errorevent-lineno) with type `attribute` for `ErrorEvent`
      * `colno` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`colno`](https://html.spec.whatwg.org/multipage/webappapis.html#dom-errorevent-colno) with type `attribute` for `ErrorEvent`
      * `error` with type `dict-member` for [`ErrorEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#erroreventinit), but found [`error`](https://html.spec.whatwg.org/multipage/media.html#dom-media-error) with type `attribute` for `HTMLMediaElement`
@@ -11226,7 +11227,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled URL: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
-- Crawled version: 10 June 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Shortname: page-visibility-2
@@ -13796,7 +13797,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Crawled URL: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
-- Crawled version: 19 October 2020
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Shortname: screen-orientation
@@ -14812,7 +14813,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 16 June 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Shortname: webauthn-3
@@ -15334,7 +15335,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Crawled version: 29 April 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Shortname: web-share
@@ -15499,7 +15500,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 11 June 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
@@ -15531,7 +15532,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Crawled URL: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
-- Crawled version: 17 May 2021
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/webdriver/](https://w3c.github.io/webdriver/)
 - Latest published version: [https://www.w3.org/TR/webdriver2/](https://www.w3.org/TR/webdriver2/)
 - Shortname: webdriver2
