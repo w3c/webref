@@ -1,0 +1,37 @@
+From 01cdc65111d53814813de2639a90f0b4c220507a Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 17 Jun 2021 22:32:36 +0200
+Subject: [PATCH] Drop IDL that was merged into CSSOM
+
+https://github.com/WICG/construct-stylesheets/issues/139
+---
+ ed/idl/construct-stylesheets.idl | 13 -------------
+ 1 file changed, 13 deletions(-)
+
+diff --git a/ed/idl/construct-stylesheets.idl b/ed/idl/construct-stylesheets.idl
+index 249af0393..8906c8f34 100644
+--- a/ed/idl/construct-stylesheets.idl
++++ b/ed/idl/construct-stylesheets.idl
+@@ -3,19 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
+ 
+-partial interface CSSStyleSheet {
+-  constructor(optional CSSStyleSheetInit options = {});
+-  Promise<CSSStyleSheet> replace(USVString text);
+-  undefined replaceSync(USVString text);
+-};
+-
+-dictionary CSSStyleSheetInit {
+-  (MediaList or DOMString) media = "";
+-  DOMString title = "";
+-  boolean alternate = false;
+-  boolean disabled = false;
+-};
+-
+ partial interface mixin DocumentOrShadowRoot {
+   attribute FrozenArray<CSSStyleSheet> adoptedStyleSheets;
+ };
+-- 
+2.31.1.windows.1
+
