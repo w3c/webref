@@ -4510,10 +4510,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
-     * [`https://drafts.csswg.org/css-values-4/#vw`](https://drafts.csswg.org/css-values-4/#vw)
-     * [`https://drafts.csswg.org/css-values-4/#vh`](https://drafts.csswg.org/css-values-4/#vh)
-     * [`https://drafts.csswg.org/css-values-4/#vmin`](https://drafts.csswg.org/css-values-4/#vmin)
-     * [`https://drafts.csswg.org/css-values-4/#vmax`](https://drafts.csswg.org/css-values-4/#vmax)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/):
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/):
@@ -5101,7 +5097,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
      * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
 
-=> 526 problematic external links found in 147 specifications
+=> 522 problematic external links found in 147 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
