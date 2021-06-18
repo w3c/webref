@@ -6,569 +6,672 @@
   "headings": [
     {
       "id": "title",
+      "href": "https://w3c.github.io/webrtc-stats/#title",
       "level": 1,
       "title": "Identifiers for WebRTC's Statistics API"
     },
     {
       "id": "toc",
+      "href": "https://w3c.github.io/webrtc-stats/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
+      "href": "https://w3c.github.io/webrtc-stats/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "conformance",
+      "href": "https://w3c.github.io/webrtc-stats/#conformance",
       "level": 2,
       "title": "Conformance",
       "number": "2"
     },
     {
       "id": "terminology",
+      "href": "https://w3c.github.io/webrtc-stats/#terminology",
       "level": 2,
       "title": "Terminology",
       "number": "3"
     },
     {
       "id": "basic-concepts",
+      "href": "https://w3c.github.io/webrtc-stats/#basic-concepts",
       "level": 2,
       "title": "Basic concepts",
       "number": "4"
     },
     {
       "id": "guidelines-for-design-of-stats-objects",
+      "href": "https://w3c.github.io/webrtc-stats/#guidelines-for-design-of-stats-objects",
       "level": 3,
       "title": "Guidelines for design of stats objects",
       "number": "4.1"
     },
     {
       "id": "guidelines-for-implementing-stats-objects",
+      "href": "https://w3c.github.io/webrtc-stats/#guidelines-for-implementing-stats-objects",
       "level": 3,
       "title": "Guidelines for implementing stats objects",
       "number": "4.2"
     },
     {
       "id": "lifetime-considerations-for-monitored-objects",
+      "href": "https://w3c.github.io/webrtc-stats/#lifetime-considerations-for-monitored-objects",
       "level": 3,
       "title": "Lifetime considerations for monitored objects",
       "number": "4.3"
     },
     {
       "id": "guidelines-for-getstats-results-caching-throttling",
+      "href": "https://w3c.github.io/webrtc-stats/#guidelines-for-getstats-results-caching-throttling",
       "level": 3,
       "title": "Guidelines for getStats() results caching/throttling",
       "number": "4.4"
     },
     {
       "id": "maintenance-procedures-for-stats-object-types",
+      "href": "https://w3c.github.io/webrtc-stats/#maintenance-procedures-for-stats-object-types",
       "level": 2,
       "title": "Maintenance procedures for stats object types",
       "number": "5"
     },
     {
       "id": "adding-new-stats-objects",
+      "href": "https://w3c.github.io/webrtc-stats/#adding-new-stats-objects",
       "level": 3,
       "title": "Adding new stats objects",
       "number": "5.1"
     },
     {
       "id": "retiring-stats-objects",
+      "href": "https://w3c.github.io/webrtc-stats/#retiring-stats-objects",
       "level": 3,
       "title": "Retiring stats objects",
       "number": "5.2"
     },
     {
       "id": "rtctatstype-*",
+      "href": "https://w3c.github.io/webrtc-stats/#rtctatstype-*",
       "level": 2,
       "title": "RTCStatsType",
       "number": "6"
     },
     {
       "id": "rtcstatstype-str*",
+      "href": "https://w3c.github.io/webrtc-stats/#rtcstatstype-str*",
       "level": 3,
       "title": "RTCStatsType enum",
       "number": "6.1"
     },
     {
       "id": "stats-dictionaries",
+      "href": "https://w3c.github.io/webrtc-stats/#stats-dictionaries",
       "level": 2,
       "title": "Stats dictionaries",
       "number": "7"
     },
     {
       "id": "the-rtp-statistics-hierarchy",
+      "href": "https://w3c.github.io/webrtc-stats/#the-rtp-statistics-hierarchy",
       "level": 3,
       "title": "The RTP statistics hierarchy",
       "number": "7.1"
     },
     {
       "id": "streamstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#streamstats-dict*",
       "level": 3,
       "title": "RTCRtpStreamStats dictionary",
       "number": "7.2"
     },
     {
       "id": "dictionary-rtcrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCRtpStreamStats Members"
     },
     {
       "id": "codec-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#codec-dict*",
       "level": 3,
       "title": "RTCCodecStats dictionary",
       "number": "7.3"
     },
     {
       "id": "dictionary-rtccodecstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtccodecstats-members",
       "level": 4,
       "title": "Dictionary RTCCodecStats Members"
     },
     {
       "id": "rtccodectype-enum",
+      "href": "https://w3c.github.io/webrtc-stats/#rtccodectype-enum",
       "level": 4,
       "title": "RTCCodecType enum",
       "number": "7.3.1"
     },
     {
       "id": "receivedrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#receivedrtpstats-dict*",
       "level": 3,
       "title": "RTCReceivedRtpStreamStats dictionary",
       "number": "7.4"
     },
     {
       "id": "dictionary-rtcreceivedrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcreceivedrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCReceivedRtpStreamStats Members"
     },
     {
       "id": "inboundrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#inboundrtpstats-dict*",
       "level": 3,
       "title": "RTCInboundRtpStreamStats dictionary",
       "number": "7.5"
     },
     {
       "id": "dictionary-rtcinboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcinboundrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCInboundRtpStreamStats Members"
     },
     {
       "id": "remoteinboundrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#remoteinboundrtpstats-dict*",
       "level": 3,
       "title": "RTCRemoteInboundRtpStreamStats dictionary",
       "number": "7.6"
     },
     {
       "id": "dictionary-rtcremoteinboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcremoteinboundrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCRemoteInboundRtpStreamStats Members"
     },
     {
       "id": "sentrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#sentrtpstats-dict*",
       "level": 3,
       "title": "RTCSentRtpStreamStats dictionary",
       "number": "7.7"
     },
     {
       "id": "dictionary-rtcsentrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcsentrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCSentRtpStreamStats Members"
     },
     {
       "id": "outboundrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#outboundrtpstats-dict*",
       "level": 3,
       "title": "RTCOutboundRtpStreamStats dictionary",
       "number": "7.8"
     },
     {
       "id": "dictionary-rtcoutboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcoutboundrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCOutboundRtpStreamStats Members"
     },
     {
       "id": "rtcqualitylimitationreason-enum",
+      "href": "https://w3c.github.io/webrtc-stats/#rtcqualitylimitationreason-enum",
       "level": 3,
       "title": "RTCQualityLimitationReason enum",
       "number": "7.9"
     },
     {
       "id": "remoteoutboundrtpstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#remoteoutboundrtpstats-dict*",
       "level": 3,
       "title": "RTCRemoteOutboundRtpStreamStats dictionary",
       "number": "7.10"
     },
     {
       "id": "dictionary-rtcremoteoutboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcremoteoutboundrtpstreamstats-members",
       "level": 4,
       "title": "Dictionary RTCRemoteOutboundRtpStreamStats Members"
     },
     {
       "id": "mediasourcestats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#mediasourcestats-dict*",
       "level": 3,
       "title": "RTCMediaSourceStats dictionary",
       "number": "7.11"
     },
     {
       "id": "dictionary-rtcmediasourcestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcmediasourcestats-members",
       "level": 4,
       "title": "Dictionary RTCMediaSourceStats Members"
     },
     {
       "id": "audiosourcestats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#audiosourcestats-dict*",
       "level": 3,
       "title": "RTCAudioSourceStats dictionary",
       "number": "7.12"
     },
     {
       "id": "dictionary-rtcaudiosourcestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiosourcestats-members",
       "level": 4,
       "title": "Dictionary RTCAudioSourceStats Members"
     },
     {
       "id": "videosourcestats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#videosourcestats-dict*",
       "level": 3,
       "title": "RTCVideoSourceStats dictionary",
       "number": "7.13"
     },
     {
       "id": "dictionary-rtcvideosourcestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcvideosourcestats-members",
       "level": 4,
       "title": "Dictionary RTCVideoSourceStats Members"
     },
     {
       "id": "contributingsourcestats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#contributingsourcestats-dict*",
       "level": 3,
       "title": "RTCRtpContributingSourceStats dictionary",
       "number": "7.14"
     },
     {
       "id": "dictionary-rtcrtpcontributingsourcestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtpcontributingsourcestats-members",
       "level": 4,
       "title": "Dictionary RTCRtpContributingSourceStats Members"
     },
     {
       "id": "pcstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#pcstats-dict*",
       "level": 3,
       "title": "RTCPeerConnectionStats dictionary",
       "number": "7.15"
     },
     {
       "id": "dictionary-rtcpeerconnectionstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcpeerconnectionstats-members",
       "level": 4,
       "title": "Dictionary RTCPeerConnectionStats Members"
     },
     {
       "id": "transceiver-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#transceiver-dict*",
       "level": 3,
       "title": "RTCRtpTransceiverStats dictionary",
       "number": "7.16"
     },
     {
       "id": "dictionary-rtcrtptransceiverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcrtptransceiverstats-members",
       "level": 4,
       "title": "Dictionary RTCRtpTransceiverStats Members"
     },
     {
       "id": "mststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#mststats-dict*",
       "level": 3,
       "title": "RTCMediaHandlerStats dictionary",
       "number": "7.17"
     },
     {
       "id": "dictionary-rtcmediahandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcmediahandlerstats-members",
       "level": 4,
       "title": "Dictionary RTCMediaHandlerStats Members"
     },
     {
       "id": "vststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#vststats-dict*",
       "level": 3,
       "title": "RTCVideoHandlerStats dictionary",
       "number": "7.18"
     },
     {
       "id": "dictionary-rtcvideohandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcvideohandlerstats-members",
       "level": 4,
       "title": "Dictionary RTCVideoHandlerStats Members"
     },
     {
       "id": "vsstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#vsstats-dict*",
       "level": 3,
       "title": "RTCVideoSenderStats dictionary",
       "number": "7.19"
     },
     {
       "id": "dictionary-rtcvideosenderstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcvideosenderstats-members",
       "level": 4,
       "title": "Dictionary RTCVideoSenderStats Members"
     },
     {
       "id": "rvststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#rvststats-dict*",
       "level": 3,
       "title": "RTCVideoReceiverStats dictionary",
       "number": "7.20"
     },
     {
       "id": "dictionary-rtcvideoreceiverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcvideoreceiverstats-members",
       "level": 4,
       "title": "Dictionary RTCVideoReceiverStats Members"
     },
     {
       "id": "aststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#aststats-dict*",
       "level": 3,
       "title": "RTCAudioHandlerStats dictionary",
       "number": "7.21"
     },
     {
       "id": "dictionary-rtcaudiohandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiohandlerstats-members",
       "level": 4,
       "title": "Dictionary RTCAudioHandlerStats Members"
     },
     {
       "id": "asstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#asstats-dict*",
       "level": 3,
       "title": "RTCAudioSenderStats dictionary",
       "number": "7.22"
     },
     {
       "id": "dictionary-rtcaudiosenderstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudiosenderstats-members",
       "level": 4,
       "title": "Dictionary RTCAudioSenderStats Members"
     },
     {
       "id": "raststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#raststats-dict*",
       "level": 3,
       "title": "RTCAudioReceiverStats dictionary",
       "number": "7.23"
     },
     {
       "id": "dictionary-rtcaudioreceiverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcaudioreceiverstats-members",
       "level": 4,
       "title": "Dictionary RTCAudioReceiverStats Members"
     },
     {
       "id": "dcstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#dcstats-dict*",
       "level": 3,
       "title": "RTCDataChannelStats dictionary",
       "number": "7.24"
     },
     {
       "id": "dictionary-rtcdatachannelstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcdatachannelstats-members",
       "level": 4,
       "title": "Dictionary RTCDataChannelStats Members"
     },
     {
       "id": "transportstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#transportstats-dict*",
       "level": 3,
       "title": "RTCTransportStats dictionary",
       "number": "7.25"
     },
     {
       "id": "dictionary-rtctransportstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtctransportstats-members",
       "level": 4,
       "title": "Dictionary RTCTransportStats Members"
     },
     {
       "id": "sctptransportstats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#sctptransportstats-dict*",
       "level": 3,
       "title": "RTCSctpTransportStats dictionary",
       "number": "7.26"
     },
     {
       "id": "dictionary-rtcsctptransportstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcsctptransportstats-members",
       "level": 4,
       "title": "Dictionary RTCSctpTransportStats Members"
     },
     {
       "id": "icecandidate-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#icecandidate-dict*",
       "level": 3,
       "title": "RTCIceCandidateStats dictionary",
       "number": "7.27"
     },
     {
       "id": "dictionary-rtcicecandidatestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatestats-members",
       "level": 4,
       "title": "Dictionary RTCIceCandidateStats Members"
     },
     {
       "id": "candidatepair-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#candidatepair-dict*",
       "level": 3,
       "title": "RTCIceCandidatePairStats dictionary",
       "number": "7.28"
     },
     {
       "id": "dictionary-rtcicecandidatepairstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtcicecandidatepairstats-members",
       "level": 4,
       "title": "Dictionary RTCIceCandidatePairStats Members"
     },
     {
       "id": "rtcstatsicecandidatepairstate-enum",
+      "href": "https://w3c.github.io/webrtc-stats/#rtcstatsicecandidatepairstate-enum",
       "level": 4,
       "title": "RTCStatsIceCandidatePairState enum",
       "number": "7.28.1"
     },
     {
       "id": "certificatestats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#certificatestats-dict*",
       "level": 3,
       "title": "RTCCertificateStats dictionary",
       "number": "7.29"
     },
     {
       "id": "dictionary-rtccertificatestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtccertificatestats-members",
       "level": 4,
       "title": "Dictionary RTCCertificateStats Members"
     },
     {
       "id": "ice-server-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#ice-server-dict*",
       "level": 3,
       "title": "RTCIceServerStats dictionary",
       "number": "7.30"
     },
     {
       "id": "dictionary-rtciceserverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#dictionary-rtciceserverstats-members",
       "level": 4,
       "title": "Dictionary RTCIceServerStats Members"
     },
     {
       "id": "obsolete-stats",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-stats",
       "level": 2,
       "title": "Obsolete stats",
       "number": "8"
     },
     {
       "id": "obsolete-rtcmediastreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediastreamstats-members",
       "level": 3,
       "title": "Obsolete RTCMediaStreamStats members"
     },
     {
       "id": "lvststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#lvststats-dict*",
       "level": 3,
       "title": "Obsolete RTCSenderVideoTrackAttachmentStats dictionary"
     },
     {
       "id": "laststats-dict*",
+      "href": "https://w3c.github.io/webrtc-stats/#laststats-dict*",
       "level": 3,
       "title": "Obsolete RTCSenderAudioTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtcreceivervideotrackattachmentstats-dictionary",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcreceivervideotrackattachmentstats-dictionary",
       "level": 3,
       "title": "Obsolete RTCReceiverVideoTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtcreceiveraudiotrackattachmentstats-dictionary",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcreceiveraudiotrackattachmentstats-dictionary",
       "level": 3,
       "title": "Obsolete RTCReceiverAudioTrackAttachmentStats dictionary"
     },
     {
       "id": "obsolete-rtccodecstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtccodecstats-members",
       "level": 3,
       "title": "Obsolete RTCCodecStats members"
     },
     {
       "id": "obsolete-rtcicecandidatestats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcicecandidatestats-members",
       "level": 3,
       "title": "Obsolete RTCIceCandidateStats members"
     },
     {
       "id": "obsolete-rtcicecandidatepairstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcicecandidatepairstats-members",
       "level": 3,
       "title": "Obsolete RTCIceCandidatePairStats members"
     },
     {
       "id": "obsolete-rtcrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcrtpstreamstats-members",
       "level": 3,
       "title": "Obsolete RTCRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcinboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcinboundrtpstreamstats-members",
       "level": 3,
       "title": "Obsolete RTCInboundRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcoutboundrtpstreamstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcoutboundrtpstreamstats-members",
       "level": 3,
       "title": "Obsolete RTCOutboundRtpStreamStats members"
     },
     {
       "id": "obsolete-rtcmediahandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcmediahandlerstats-members",
       "level": 3,
       "title": "Obsolete RTCMediaHandlerStats members"
     },
     {
       "id": "obsolete-rtcaudiohandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiohandlerstats-members",
       "level": 3,
       "title": "Obsolete RTCAudioHandlerStats members"
     },
     {
       "id": "obsolete-rtcaudiosenderstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudiosenderstats-members",
       "level": 3,
       "title": "Obsolete RTCAudioSenderStats members"
     },
     {
       "id": "obsolete-rtcaudioreceiverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcaudioreceiverstats-members",
       "level": 3,
       "title": "Obsolete RTCAudioReceiverStats members"
     },
     {
       "id": "obsolete-rtcvideohandlerstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideohandlerstats-members",
       "level": 3,
       "title": "Obsolete RTCVideoHandlerStats members"
     },
     {
       "id": "obsolete-rtcvideosenderstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideosenderstats-members",
       "level": 3,
       "title": "Obsolete RTCVideoSenderStats members"
     },
     {
       "id": "obsolete-rtcvideoreceiverstats-members",
+      "href": "https://w3c.github.io/webrtc-stats/#obsolete-rtcvideoreceiverstats-members",
       "level": 3,
       "title": "Obsolete RTCVideoReceiverStats members"
     },
     {
       "id": "examples",
+      "href": "https://w3c.github.io/webrtc-stats/#examples",
       "level": 2,
       "title": "Examples",
       "number": "9"
     },
     {
       "id": "example-of-a-stats-application",
+      "href": "https://w3c.github.io/webrtc-stats/#example-of-a-stats-application",
       "level": 3,
       "title": "Example of a stats application",
       "number": "9.1"
     },
     {
       "id": "security-and-privacy-considerations",
+      "href": "https://w3c.github.io/webrtc-stats/#security-and-privacy-considerations",
       "level": 2,
       "title": "10. Security and Privacy Considerations"
     },
     {
       "id": "summary",
+      "href": "https://w3c.github.io/webrtc-stats/#summary",
       "level": 2,
       "title": "Summary of WebRTC stats fields per type",
       "number": "A"
     },
     {
       "id": "acknowledgements",
+      "href": "https://w3c.github.io/webrtc-stats/#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
       "number": "B"
     },
     {
       "id": "references",
+      "href": "https://w3c.github.io/webrtc-stats/#references",
       "level": 2,
       "title": "References",
       "number": "C"
     },
     {
       "id": "normative-references",
+      "href": "https://w3c.github.io/webrtc-stats/#normative-references",
       "level": 3,
       "title": "Normative references",
       "number": "C.1"
     },
     {
       "id": "informative-references",
+      "href": "https://w3c.github.io/webrtc-stats/#informative-references",
       "level": 3,
       "title": "Informative references",
       "number": "C.2"
