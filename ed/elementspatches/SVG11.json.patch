@@ -1,0 +1,107 @@
+From b439b3472862e5de769058366cc42f3480651d15 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 18 Jun 2021 17:31:41 +0200
+Subject: [PATCH] Drop non implemented SVG 1.1 only elements
+
+---
+ ed/elements/SVG11.json | 56 ------------------------------------------
+ 1 file changed, 56 deletions(-)
+
+diff --git a/ed/elements/SVG11.json b/ed/elements/SVG11.json
+index f625f0541..c030834b3 100644
+--- a/ed/elements/SVG11.json
++++ b/ed/elements/SVG11.json
+@@ -80,10 +80,6 @@
+       "name": "tspan",
+       "interface": "SVGTSpanElement"
+     },
+-    {
+-      "name": "tref",
+-      "interface": "SVGTRefElement"
+-    },
+     {
+       "name": "textPath",
+       "interface": "SVGTextPathElement"
+@@ -92,14 +88,6 @@
+       "name": "altGlyph",
+       "interface": "SVGAltGlyphElement"
+     },
+-    {
+-      "name": "altGlyphDef",
+-      "interface": "SVGAltGlyphDefElement"
+-    },
+-    {
+-      "name": "altGlyphItem",
+-      "interface": "SVGAltGlyphItemElement"
+-    },
+     {
+       "name": "glyphRef",
+       "interface": "SVGGlyphRefElement"
+@@ -108,10 +96,6 @@
+       "name": "marker",
+       "interface": "SVGMarkerElement"
+     },
+-    {
+-      "name": "color-profile",
+-      "interface": "SVGColorProfileElement"
+-    },
+     {
+       "name": "linearGradient",
+       "interface": "SVGLinearGradientElement"
+@@ -268,10 +252,6 @@
+       "name": "mpath",
+       "interface": "SVGMPathElement"
+     },
+-    {
+-      "name": "animateColor",
+-      "interface": "SVGAnimateColorElement"
+-    },
+     {
+       "name": "animateTransform",
+       "interface": "SVGAnimateTransformElement"
+@@ -280,42 +260,6 @@
+       "name": "font",
+       "interface": "SVGFontElement"
+     },
+-    {
+-      "name": "glyph",
+-      "interface": "SVGGlyphElement"
+-    },
+-    {
+-      "name": "missing-glyph",
+-      "interface": "SVGMissingGlyphElement"
+-    },
+-    {
+-      "name": "hkern",
+-      "interface": "SVGHKernElement"
+-    },
+-    {
+-      "name": "vkern",
+-      "interface": "SVGVKernElement"
+-    },
+-    {
+-      "name": "font-face",
+-      "interface": "SVGFontFaceElement"
+-    },
+-    {
+-      "name": "font-face-src",
+-      "interface": "SVGFontFaceSrcElement"
+-    },
+-    {
+-      "name": "font-face-uri",
+-      "interface": "SVGFontFaceUriElement"
+-    },
+-    {
+-      "name": "font-face-format",
+-      "interface": "SVGFontFaceFormatElement"
+-    },
+-    {
+-      "name": "font-face-name",
+-      "interface": "SVGFontFaceNameElement"
+-    },
+     {
+       "name": "metadata",
+       "interface": "SVGMetadataElement"
+-- 
+2.31.1.windows.1
+

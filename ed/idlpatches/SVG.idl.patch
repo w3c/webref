@@ -1,18 +1,18 @@
-From 28b67fca45cca9a2029a5c1321d74ce9b0a31a93 Mon Sep 17 00:00:00 2001
-From: Kagami Sascha Rosylight <saschanaz@outlook.com>
-Date: Fri, 12 Mar 2021 06:48:07 +0100
-Subject: [PATCH] Fix SVG.idl
+From 00f03dfcfa40e90574b0285de758eb153c993aa5 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 18 Jun 2021 17:30:02 +0200
+Subject: [PATCH] Fix SVG.idl / Add SVG 1.1 only interfaces
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 ---
- ed/idl/SVG.idl | 15 ++++++++++++++-
- 1 file changed, 14 insertions(+), 1 deletion(-)
+ ed/idl/SVG.idl | 51 +++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 50 insertions(+), 1 deletion(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index e0b013bfa..69d47018e 100644
+index 9ce619d1e..7077e4ecd 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -672,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -673,9 +673,58 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -34,6 +34,44 @@ index e0b013bfa..69d47018e 100644
  
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
+ 
+ SVGViewElement includes SVGFitToViewBox;
++
++
++////////////////////////////////////////////////////////////////////////////////
++// SVG 1.1 interfaces that do not exist in SVG 2 and that are still implemented.
++//
++// Note this is best effort at defining these interfaces with current Web IDL,
++// as the actual definitions in SVG 1.1 use outdated (and invalid) IDL.
++////////////////////////////////////////////////////////////////////////////////
++[Exposed=Window]
++interface SVGAltGlyphElement : SVGTextPositioningElement {
++  attribute DOMString glyphRef;
++  attribute DOMString format;
++};
++SVGAltGlyphElement includes SVGURIReference;
++
++[Exposed=Window]
++interface SVGGlyphRefElement : SVGElement {
++  attribute DOMString glyphRef;
++  attribute DOMString format;
++  attribute float x;
++  attribute float y;
++  attribute float dx;
++  attribute float dy;
++};
++SVGGlyphRefElement includes SVGURIReference;
++
++[Exposed=Window]
++interface SVGCursorElement : SVGElement {
++  readonly attribute SVGAnimatedLength x;
++  readonly attribute SVGAnimatedLength y;
++};
++SVGCursorElement includes SVGURIReference;
++SVGCursorElement includes SVGTests;
++
++[Exposed=Window]
++interface SVGFontElement : SVGElement {};
 -- 
-2.30.0.windows.1
+2.31.1.windows.1
 

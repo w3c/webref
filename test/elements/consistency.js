@@ -16,7 +16,6 @@ idl.parseAll().then(allIdl => {
 
   return elements.listAll().then(allElements => {
     for (const [shortname, data] of Object.entries(allElements)) {
-      console.log(shortname);
       describe(`The ${shortname} entry in @webidl/elements`, () => {
         for (const el of data.elements) {
           if (!el.interface) {
