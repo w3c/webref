@@ -1361,7 +1361,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunkMetadata": {
-        "fragment": "dictionary EncodedVideoChunkMetadata {\n  VideoDecoderConfig decoderConfig;\n  unsigned long temporalLayerId;\n};",
+        "fragment": "dictionary EncodedVideoChunkMetadata {\n  VideoDecoderConfig decoderConfig;\n  SvcOutputMetadata svc;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkMetadata",
         "inheritance": null,
@@ -1381,6 +1381,31 @@
             "default": null,
             "required": false
           },
+          {
+            "type": "field",
+            "name": "svc",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SvcOutputMetadata"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "SvcOutputMetadata": {
+        "fragment": "dictionary SvcOutputMetadata {\n  unsigned long temporalLayerId;\n};",
+        "type": "dictionary",
+        "name": "SvcOutputMetadata",
+        "inheritance": null,
+        "members": [
           {
             "type": "field",
             "name": "temporalLayerId",
@@ -4830,8 +4855,10 @@
         "WebCodecsErrorCallback"
       ],
       "EncodedVideoChunkMetadata": [
-        "VideoDecoderConfig"
+        "VideoDecoderConfig",
+        "SvcOutputMetadata"
       ],
+      "SvcOutputMetadata": [],
       "AudioDecoderSupport": [
         "AudioDecoderConfig"
       ],

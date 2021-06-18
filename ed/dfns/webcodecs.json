@@ -2755,6 +2755,24 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-svcoutputmetadata",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-svcoutputmetadata",
+      "linkingText": [
+        "SvcOutputMetadata"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-encodedvideochunkmetadata-decoderconfig",
       "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-decoderconfig",
       "linkingText": [
@@ -2775,15 +2793,35 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-encodedvideochunkmetadata-temporallayerid",
-      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-temporallayerid",
+      "id": "dom-encodedvideochunkmetadata-svc",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedvideochunkmetadata-svc",
+      "linkingText": [
+        "svc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-svcoutputmetadata-temporallayerid",
+      "href": "https://w3c.github.io/webcodecs/#dom-svcoutputmetadata-temporallayerid",
       "linkingText": [
         "temporalLayerId"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "EncodedVideoChunkMetadata"
+        "SvcOutputMetadata"
       ],
       "access": "public",
       "informative": false,

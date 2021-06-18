@@ -105,6 +105,10 @@ callback EncodedVideoChunkOutputCallback =
 
 dictionary EncodedVideoChunkMetadata {
   VideoDecoderConfig decoderConfig;
+  SvcOutputMetadata svc;
+};
+
+dictionary SvcOutputMetadata {
   unsigned long temporalLayerId;
 };
 
