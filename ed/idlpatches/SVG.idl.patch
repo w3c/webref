@@ -1,18 +1,18 @@
-From 1a20398e5b4503d5a7ad7cb021b65c1d8bfc0716 Mon Sep 17 00:00:00 2001
+From dc5ddcb5e25c98044a6af074dd9d2a6a45726f22 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 17 Jun 2021 23:29:59 +0200
+Date: Fri, 18 Jun 2021 15:17:01 +0200
 Subject: [PATCH] Fix SVG.idl / Add SVG 1.1 only interfaces
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
 ---
- ed/idl/SVG.idl | 149 ++++++++++++++++++++++++++++++++++++++++++++++++-
- 1 file changed, 148 insertions(+), 1 deletion(-)
+ ed/idl/SVG.idl | 113 ++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 112 insertions(+), 1 deletion(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index 9ce619d1e..a619b4c66 100644
+index 9ce619d1e..fad951779 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -673,9 +673,156 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -673,9 +673,120 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -73,7 +73,6 @@ index 9ce619d1e..a619b4c66 100644
 +  attribute float dy;
 +};
 +SVGGlyphRefElement includes SVGURIReference;
-+SVGGlyphRefElement includes SVGStylable;
 +
 +[Exposed=Window]
 +interface SVGColorProfileElement : SVGElement {
@@ -91,24 +90,18 @@ index 9ce619d1e..a619b4c66 100644
 +};
 +SVGCursorElement includes SVGURIReference;
 +SVGCursorElement includes SVGTests;
-+SVGCursorElement includes SVGExternalResourcesRequired;
 +
 +[Exposed=Window]
 +interface SVGAnimateColorElement : SVGAnimationElement {};
-+SVGCursorElement includes SVGStylable;
 +
 +[Exposed=Window]
 +interface SVGFontElement : SVGElement {};
-+SVGFontElement includes SVGExternalResourcesRequired;
-+SVGFontElement includes SVGStylable;
 +
 +[Exposed=Window]
 +interface SVGGlyphElement : SVGElement {};
-+SVGGlyphElement includes SVGStylable;
 +
 +[Exposed=Window]
 +interface SVGMissingGlyphElement : SVGElement {};
-+SVGMissingGlyphElement includes SVGStylable;
 +
 +[Exposed=Window]
 +interface SVGHKernElement : SVGElement {};
@@ -132,30 +125,6 @@ index 9ce619d1e..a619b4c66 100644
 +interface SVGFontFaceNameElement : SVGElement {};
 +
 +[Exposed=Window]
-+interface CSSValue {
-+  // UnitTypes
-+  const unsigned short      CSS_INHERIT                    = 0;
-+  const unsigned short      CSS_PRIMITIVE_VALUE            = 1;
-+  const unsigned short      CSS_VALUE_LIST                 = 2;
-+  const unsigned short      CSS_CUSTOM                     = 3;
-+
-+           attribute DOMString        cssText;
-+                                        // raises(DOMException) on setting
-+
-+  readonly attribute unsigned short   cssValueType;
-+};
-+
-+
-+[Exposed=Window]
-+interface mixin SVGStylable {
-+
-+  readonly attribute SVGAnimatedString className;
-+  readonly attribute CSSStyleDeclaration style;
-+
-+  CSSValue getPresentationAttribute(DOMString name);
-+};
-+
-+[Exposed=Window]
 +interface mixin SVGRenderingIntent {
 +  // Rendering Intent Types
 +  const unsigned short RENDERING_INTENT_UNKNOWN = 0;
@@ -165,12 +134,6 @@ index 9ce619d1e..a619b4c66 100644
 +  const unsigned short RENDERING_INTENT_SATURATION = 4;
 +  const unsigned short RENDERING_INTENT_ABSOLUTE_COLORIMETRIC = 5;
 +};
-+
-+[Exposed=Window]
-+interface mixin SVGExternalResourcesRequired {
-+  readonly attribute SVGAnimatedBoolean externalResourcesRequired;
-+};
-\ No newline at end of file
 -- 
 2.31.1.windows.1
 
