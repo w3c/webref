@@ -8,8 +8,3 @@ interface Screen {
   readonly attribute unsigned long colorDepth;
   readonly attribute unsigned long pixelDepth;
 };
-
-// Source: The Screen Orientation API (https://www.w3.org/TR/screen-orientation/)
-partial interface Screen {
-  [SameObject] readonly attribute ScreenOrientation orientation;
-};

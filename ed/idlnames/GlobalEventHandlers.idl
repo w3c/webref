@@ -88,32 +88,3 @@ partial interface mixin GlobalEventHandlers {
   attribute EventHandler ontransitionend;
   attribute EventHandler ontransitioncancel;
 };
-
-// Source: Pointer Events (https://www.w3.org/TR/pointerevents3/)
-partial interface mixin GlobalEventHandlers {
-    attribute EventHandler ongotpointercapture;
-    attribute EventHandler onlostpointercapture;
-    attribute EventHandler onpointerdown;
-    attribute EventHandler onpointermove;
-    [SecureContext] attribute EventHandler onpointerrawupdate;
-    attribute EventHandler onpointerup;
-    attribute EventHandler onpointercancel;
-    attribute EventHandler onpointerover;
-    attribute EventHandler onpointerout;
-    attribute EventHandler onpointerenter;
-    attribute EventHandler onpointerleave;
-};
-
-// Source: Selection API (https://www.w3.org/TR/selection-api/)
-partial interface mixin GlobalEventHandlers {
-  attribute EventHandler onselectstart;
-  attribute EventHandler onselectionchange;
-};
-
-// Source: Touch Events - Level 2 (https://www.w3.org/TR/touch-events/)
-partial interface mixin GlobalEventHandlers {
-                    attribute EventHandler ontouchstart;
-                    attribute EventHandler ontouchend;
-                    attribute EventHandler ontouchmove;
-                    attribute EventHandler ontouchcancel;
-};

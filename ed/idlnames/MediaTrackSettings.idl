@@ -47,11 +47,3 @@ partial dictionary MediaTrackSettings {
     // Applies to both depth stream track and color stream track:
     DOMString           videoKind;
 };
-
-// Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
-partial dictionary MediaTrackSettings {
-  DOMString displaySurface;
-  boolean logicalSurface;
-  DOMString cursor;
-  boolean restrictOwnAudio;
-};

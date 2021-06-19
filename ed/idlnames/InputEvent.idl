@@ -6,9 +6,3 @@ interface InputEvent : UIEvent {
   readonly attribute boolean isComposing;
   readonly attribute DOMString inputType;
 };
-
-// Source: Input Events Level 2 (https://www.w3.org/TR/input-events-2/)
-partial interface InputEvent {
-   readonly attribute DataTransfer? dataTransfer;
-   sequence<StaticRange> getTargetRanges();
-};

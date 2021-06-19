@@ -11,24 +11,10 @@
   "extended": [
     {
       "spec": {
-        "title": "Audio Output Devices API",
-        "url": "https://www.w3.org/TR/audio-output/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});\n};"
-    },
-    {
-      "spec": {
         "title": "Media Capture and Streams",
         "url": "https://www.w3.org/TR/mediacapture-streams/"
       },
       "fragment": "partial interface MediaDevices {\n  MediaTrackSupportedConstraints getSupportedConstraints();\n  Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});\n};"
-    },
-    {
-      "spec": {
-        "title": "Screen Capture",
-        "url": "https://www.w3.org/TR/screen-capture/"
-      },
-      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});\n};"
     }
   ],
   "inheritance": {
