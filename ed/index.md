@@ -2,59 +2,6 @@
 % Reffy
 % June 19, 2021
 
-## [No title found for https://www.w3.org/TR/SVG11/] {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Crawled URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Crawled version: 19 June 2021
-- Editor's Draft: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Latest published version: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Shortname: SVG11
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-
-### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
-- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
-- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
-- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
-- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
-- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-- [SVG Integration](https://svgwg.org/specs/integration/)
-- [Web Animations](https://drafts.csswg.org/web-animations-1/)
-
-Informative references to this spec from:
-
-- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
-- [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS 2](https://drafts.csswg.org/css2/)
-- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
-- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
-- [Selectors Level 4](https://drafts.csswg.org/selectors/)
-- [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
-
-
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -344,6 +291,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
+- [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -464,51 +413,274 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## ARIA in HTML {data-spec=true data-error=true}
+## ARIA in HTML {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
+- Crawled version: 18 June 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 294)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/wai-aria-1.1/#host_general_conflict`](https://www.w3.org/TR/wai-aria-1.1/#host_general_conflict)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#implicit_semantics`](https://www.w3.org/TR/wai-aria-1.1/#implicit_semantics)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#global_states`](https://www.w3.org/TR/wai-aria-1.1/#global_states)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-rowspan)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value`](https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#alert`](https://www.w3.org/TR/wai-aria-1.1/#alert)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#alertdialog`](https://www.w3.org/TR/wai-aria-1.1/#alertdialog)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#application`](https://www.w3.org/TR/wai-aria-1.1/#application)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#article`](https://www.w3.org/TR/wai-aria-1.1/#article)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#banner`](https://www.w3.org/TR/wai-aria-1.1/#banner)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#button`](https://www.w3.org/TR/wai-aria-1.1/#button)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#cell`](https://www.w3.org/TR/wai-aria-1.1/#cell)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#checkbox`](https://www.w3.org/TR/wai-aria-1.1/#checkbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#columnheader`](https://www.w3.org/TR/wai-aria-1.1/#columnheader)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#combobox`](https://www.w3.org/TR/wai-aria-1.1/#combobox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#complementary`](https://www.w3.org/TR/wai-aria-1.1/#complementary)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#contentinfo`](https://www.w3.org/TR/wai-aria-1.1/#contentinfo)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#definition`](https://www.w3.org/TR/wai-aria-1.1/#definition)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#dialog`](https://www.w3.org/TR/wai-aria-1.1/#dialog)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#directory`](https://www.w3.org/TR/wai-aria-1.1/#directory)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#document`](https://www.w3.org/TR/wai-aria-1.1/#document)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#feed`](https://www.w3.org/TR/wai-aria-1.1/#feed)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#figure`](https://www.w3.org/TR/wai-aria-1.1/#figure)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#form`](https://www.w3.org/TR/wai-aria-1.1/#form)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#grid`](https://www.w3.org/TR/wai-aria-1.1/#grid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#gridcell`](https://www.w3.org/TR/wai-aria-1.1/#gridcell)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#group`](https://www.w3.org/TR/wai-aria-1.1/#group)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#heading`](https://www.w3.org/TR/wai-aria-1.1/#heading)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#img`](https://www.w3.org/TR/wai-aria-1.1/#img)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#link`](https://www.w3.org/TR/wai-aria-1.1/#link)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#list`](https://www.w3.org/TR/wai-aria-1.1/#list)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#listbox`](https://www.w3.org/TR/wai-aria-1.1/#listbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#listitem`](https://www.w3.org/TR/wai-aria-1.1/#listitem)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#log`](https://www.w3.org/TR/wai-aria-1.1/#log)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#main`](https://www.w3.org/TR/wai-aria-1.1/#main)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#marquee`](https://www.w3.org/TR/wai-aria-1.1/#marquee)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#math`](https://www.w3.org/TR/wai-aria-1.1/#math)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menu`](https://www.w3.org/TR/wai-aria-1.1/#menu)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menubar`](https://www.w3.org/TR/wai-aria-1.1/#menubar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitem`](https://www.w3.org/TR/wai-aria-1.1/#menuitem)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitemcheckbox`](https://www.w3.org/TR/wai-aria-1.1/#menuitemcheckbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#menuitemradio`](https://www.w3.org/TR/wai-aria-1.1/#menuitemradio)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#navigation`](https://www.w3.org/TR/wai-aria-1.1/#navigation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#none`](https://www.w3.org/TR/wai-aria-1.1/#none)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#note`](https://www.w3.org/TR/wai-aria-1.1/#note)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#option`](https://www.w3.org/TR/wai-aria-1.1/#option)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#presentation`](https://www.w3.org/TR/wai-aria-1.1/#presentation)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#progressbar`](https://www.w3.org/TR/wai-aria-1.1/#progressbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radio`](https://www.w3.org/TR/wai-aria-1.1/#radio)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#radiogroup`](https://www.w3.org/TR/wai-aria-1.1/#radiogroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#region`](https://www.w3.org/TR/wai-aria-1.1/#region)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#row`](https://www.w3.org/TR/wai-aria-1.1/#row)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#rowgroup`](https://www.w3.org/TR/wai-aria-1.1/#rowgroup)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#rowheader`](https://www.w3.org/TR/wai-aria-1.1/#rowheader)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#scrollbar`](https://www.w3.org/TR/wai-aria-1.1/#scrollbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#search`](https://www.w3.org/TR/wai-aria-1.1/#search)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#searchbox`](https://www.w3.org/TR/wai-aria-1.1/#searchbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#separator`](https://www.w3.org/TR/wai-aria-1.1/#separator)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#slider`](https://www.w3.org/TR/wai-aria-1.1/#slider)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#spinbutton`](https://www.w3.org/TR/wai-aria-1.1/#spinbutton)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#status`](https://www.w3.org/TR/wai-aria-1.1/#status)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#switch`](https://www.w3.org/TR/wai-aria-1.1/#switch)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tab`](https://www.w3.org/TR/wai-aria-1.1/#tab)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#table`](https://www.w3.org/TR/wai-aria-1.1/#table)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tablist`](https://www.w3.org/TR/wai-aria-1.1/#tablist)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tabpanel`](https://www.w3.org/TR/wai-aria-1.1/#tabpanel)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#term`](https://www.w3.org/TR/wai-aria-1.1/#term)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#textbox`](https://www.w3.org/TR/wai-aria-1.1/#textbox)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#timer`](https://www.w3.org/TR/wai-aria-1.1/#timer)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#toolbar`](https://www.w3.org/TR/wai-aria-1.1/#toolbar)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tooltip`](https://www.w3.org/TR/wai-aria-1.1/#tooltip)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#tree`](https://www.w3.org/TR/wai-aria-1.1/#tree)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#treegrid`](https://www.w3.org/TR/wai-aria-1.1/#treegrid)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#treeitem`](https://www.w3.org/TR/wai-aria-1.1/#treeitem)
+     * [`https://html.spec.whatwg.org/#semantics-2`](https://html.spec.whatwg.org/#semantics-2)
+     * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
+     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
+     * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
+     * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-href`](https://html.spec.whatwg.org/#attr-hyperlink-href)
+     * [`https://html.spec.whatwg.org/#the-abbr-element`](https://html.spec.whatwg.org/#the-abbr-element)
+     * [`https://html.spec.whatwg.org/#the-address-element`](https://html.spec.whatwg.org/#the-address-element)
+     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
+     * [`https://html.spec.whatwg.org/#the-article-element`](https://html.spec.whatwg.org/#the-article-element)
+     * [`https://html.spec.whatwg.org/#the-aside-element`](https://html.spec.whatwg.org/#the-aside-element)
+     * [`https://html.spec.whatwg.org/#the-audio-element`](https://html.spec.whatwg.org/#the-audio-element)
+     * [`https://html.spec.whatwg.org/#autonomous-custom-element`](https://html.spec.whatwg.org/#autonomous-custom-element)
+     * [`https://html.spec.whatwg.org/#elementinternals`](https://html.spec.whatwg.org/#elementinternals)
+     * [`https://html.spec.whatwg.org/#the-b-element`](https://html.spec.whatwg.org/#the-b-element)
+     * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
+     * [`https://html.spec.whatwg.org/#the-bdi-element`](https://html.spec.whatwg.org/#the-bdi-element)
+     * [`https://html.spec.whatwg.org/#the-bdo-element`](https://html.spec.whatwg.org/#the-bdo-element)
+     * [`https://html.spec.whatwg.org/#the-blockquote-element`](https://html.spec.whatwg.org/#the-blockquote-element)
+     * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
+     * [`https://html.spec.whatwg.org/#the-br-element`](https://html.spec.whatwg.org/#the-br-element)
+     * [`https://html.spec.whatwg.org/#canvas`](https://html.spec.whatwg.org/#canvas)
+     * [`https://html.spec.whatwg.org/#the-caption-element`](https://html.spec.whatwg.org/#the-caption-element)
+     * [`https://html.spec.whatwg.org/#the-cite-element`](https://html.spec.whatwg.org/#the-cite-element)
+     * [`https://html.spec.whatwg.org/#the-code-element`](https://html.spec.whatwg.org/#the-code-element)
+     * [`https://html.spec.whatwg.org/#the-col-element`](https://html.spec.whatwg.org/#the-col-element)
+     * [`https://html.spec.whatwg.org/#the-colgroup-element`](https://html.spec.whatwg.org/#the-colgroup-element)
+     * [`https://html.spec.whatwg.org/#the-data-element`](https://html.spec.whatwg.org/#the-data-element)
+     * [`https://html.spec.whatwg.org/#the-datalist-element`](https://html.spec.whatwg.org/#the-datalist-element)
+     * [`https://html.spec.whatwg.org/#the-dd-element`](https://html.spec.whatwg.org/#the-dd-element)
+     * [`https://html.spec.whatwg.org/#the-del-element`](https://html.spec.whatwg.org/#the-del-element)
+     * [`https://html.spec.whatwg.org/#the-dfn-element`](https://html.spec.whatwg.org/#the-dfn-element)
+     * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
+     * [`https://html.spec.whatwg.org/#the-dialog-element`](https://html.spec.whatwg.org/#the-dialog-element)
+     * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
+     * [`https://html.spec.whatwg.org/#the-dl-element`](https://html.spec.whatwg.org/#the-dl-element)
+     * [`https://html.spec.whatwg.org/#the-dt-element`](https://html.spec.whatwg.org/#the-dt-element)
+     * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
+     * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
+     * [`https://html.spec.whatwg.org/#the-figcaption-element`](https://html.spec.whatwg.org/#the-figcaption-element)
+     * [`https://html.spec.whatwg.org/#the-figure-element`](https://html.spec.whatwg.org/#the-figure-element)
+     * [`https://html.spec.whatwg.org/#the-footer-element`](https://html.spec.whatwg.org/#the-footer-element)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://html.spec.whatwg.org/#form-associated-custom-element`](https://html.spec.whatwg.org/#form-associated-custom-element)
+     * [`https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements`](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+     * [`https://html.spec.whatwg.org/#the-head-element`](https://html.spec.whatwg.org/#the-head-element)
+     * [`https://html.spec.whatwg.org/#the-header-element`](https://html.spec.whatwg.org/#the-header-element)
+     * [`https://html.spec.whatwg.org/#the-hgroup-element`](https://html.spec.whatwg.org/#the-hgroup-element)
+     * [`https://html.spec.whatwg.org/#the-hr-element`](https://html.spec.whatwg.org/#the-hr-element)
+     * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
+     * [`https://html.spec.whatwg.org/#the-i-element`](https://html.spec.whatwg.org/#the-i-element)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#attr-img-alt`](https://html.spec.whatwg.org/#attr-img-alt)
+     * [`https://html.spec.whatwg.org/#unknown-images`](https://html.spec.whatwg.org/#unknown-images)
+     * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
+     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
+     * [`https://html.spec.whatwg.org/#attr-input-checked`](https://html.spec.whatwg.org/#attr-input-checked)
+     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
+     * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
+     * [`https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local)`](https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local))
+     * [`https://html.spec.whatwg.org/#e-mail-state-(type=email)`](https://html.spec.whatwg.org/#e-mail-state-(type=email))
+     * [`https://html.spec.whatwg.org/#attr-input-list`](https://html.spec.whatwg.org/#attr-input-list)
+     * [`https://html.spec.whatwg.org/#file-upload-state-(type=file)`](https://html.spec.whatwg.org/#file-upload-state-(type=file))
+     * [`https://html.spec.whatwg.org/#hidden-state-(type=hidden)`](https://html.spec.whatwg.org/#hidden-state-(type=hidden))
+     * [`https://html.spec.whatwg.org/#image-button-state-(type=image)`](https://html.spec.whatwg.org/#image-button-state-(type=image))
+     * [`https://html.spec.whatwg.org/#month-state-(type=month)`](https://html.spec.whatwg.org/#month-state-(type=month))
+     * [`https://html.spec.whatwg.org/#number-state-(type=number)`](https://html.spec.whatwg.org/#number-state-(type=number))
+     * [`https://html.spec.whatwg.org/#password-state-(type=password)`](https://html.spec.whatwg.org/#password-state-(type=password))
+     * [`https://html.spec.whatwg.org/#radio-button-state-(type=radio)`](https://html.spec.whatwg.org/#radio-button-state-(type=radio))
+     * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
+     * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
+     * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
+     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
+     * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
+     * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
+     * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
+     * [`https://html.spec.whatwg.org/#week-state-(type=week)`](https://html.spec.whatwg.org/#week-state-(type=week))
+     * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
+     * [`https://html.spec.whatwg.org/#the-kbd-element`](https://html.spec.whatwg.org/#the-kbd-element)
+     * [`https://html.spec.whatwg.org/#the-label-element`](https://html.spec.whatwg.org/#the-label-element)
+     * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
+     * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
+     * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
+     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
+     * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
+     * [`https://html.spec.whatwg.org/#the-menu-element`](https://html.spec.whatwg.org/#the-menu-element)
+     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
+     * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
+     * [`https://html.spec.whatwg.org/#the-nav-element`](https://html.spec.whatwg.org/#the-nav-element)
+     * [`https://html.spec.whatwg.org/#the-noscript-element`](https://html.spec.whatwg.org/#the-noscript-element)
+     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
+     * [`https://html.spec.whatwg.org/#the-ol-element`](https://html.spec.whatwg.org/#the-ol-element)
+     * [`https://html.spec.whatwg.org/#the-optgroup-element`](https://html.spec.whatwg.org/#the-optgroup-element)
+     * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
+     * [`https://html.spec.whatwg.org/#the-output-element`](https://html.spec.whatwg.org/#the-output-element)
+     * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
+     * [`https://html.spec.whatwg.org/#the-param-element`](https://html.spec.whatwg.org/#the-param-element)
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#the-pre-element`](https://html.spec.whatwg.org/#the-pre-element)
+     * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
+     * [`https://html.spec.whatwg.org/#the-q-element`](https://html.spec.whatwg.org/#the-q-element)
+     * [`https://html.spec.whatwg.org/#the-rp-element`](https://html.spec.whatwg.org/#the-rp-element)
+     * [`https://html.spec.whatwg.org/#the-rt-element`](https://html.spec.whatwg.org/#the-rt-element)
+     * [`https://html.spec.whatwg.org/#the-ruby-element`](https://html.spec.whatwg.org/#the-ruby-element)
+     * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
+     * [`https://html.spec.whatwg.org/#the-samp-element`](https://html.spec.whatwg.org/#the-samp-element)
+     * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
+     * [`https://html.spec.whatwg.org/#the-section-element`](https://html.spec.whatwg.org/#the-section-element)
+     * [`https://html.spec.whatwg.org/#the-select-element`](https://html.spec.whatwg.org/#the-select-element)
+     * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
+     * [`https://html.spec.whatwg.org/#the-small-element`](https://html.spec.whatwg.org/#the-small-element)
+     * [`https://html.spec.whatwg.org/#the-source-element`](https://html.spec.whatwg.org/#the-source-element)
+     * [`https://html.spec.whatwg.org/#the-span-element`](https://html.spec.whatwg.org/#the-span-element)
+     * [`https://html.spec.whatwg.org/#the-strong-element`](https://html.spec.whatwg.org/#the-strong-element)
+     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
+     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
+     * [`https://html.spec.whatwg.org/#the-sub-element`](https://html.spec.whatwg.org/#the-sub-element)
+     * [`https://html.spec.whatwg.org/#the-sup-element`](https://html.spec.whatwg.org/#the-sup-element)
+     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
+     * [`https://html.spec.whatwg.org/#the-tbody-element`](https://html.spec.whatwg.org/#the-tbody-element)
+     * [`https://html.spec.whatwg.org/#the-template-element`](https://html.spec.whatwg.org/#the-template-element)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
+     * [`https://html.spec.whatwg.org/#the-tfoot-element`](https://html.spec.whatwg.org/#the-tfoot-element)
+     * [`https://html.spec.whatwg.org/#the-thead-element`](https://html.spec.whatwg.org/#the-thead-element)
+     * [`https://html.spec.whatwg.org/#the-time-element`](https://html.spec.whatwg.org/#the-time-element)
+     * [`https://html.spec.whatwg.org/#the-title-element`](https://html.spec.whatwg.org/#the-title-element)
+     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
+     * [`https://html.spec.whatwg.org/#the-th-element`](https://html.spec.whatwg.org/#the-th-element)
+     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
+     * [`https://html.spec.whatwg.org/#the-track-element`](https://html.spec.whatwg.org/#the-track-element)
+     * [`https://html.spec.whatwg.org/#the-u-element`](https://html.spec.whatwg.org/#the-u-element)
+     * [`https://html.spec.whatwg.org/#the-var-element`](https://html.spec.whatwg.org/#the-var-element)
+     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
+     * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
+     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
+     * [`https://html.spec.whatwg.org/#attr-fe-disabled`](https://html.spec.whatwg.org/#attr-fe-disabled)
+     * [`https://html.spec.whatwg.org/#attr-option-disabled`](https://html.spec.whatwg.org/#attr-option-disabled)
+     * [`https://html.spec.whatwg.org/#attr-optgroup-disabled`](https://html.spec.whatwg.org/#attr-optgroup-disabled)
+     * [`https://html.spec.whatwg.org/#attr-hidden`](https://html.spec.whatwg.org/#attr-hidden)
+     * [`https://html.spec.whatwg.org/#attr-input-placeholder`](https://html.spec.whatwg.org/#attr-input-placeholder)
+     * [`https://html.spec.whatwg.org/#attr-meter-max`](https://html.spec.whatwg.org/#attr-meter-max)
+     * [`https://html.spec.whatwg.org/#attr-progress-max`](https://html.spec.whatwg.org/#attr-progress-max)
+     * [`https://html.spec.whatwg.org/#attr-input-max`](https://html.spec.whatwg.org/#attr-input-max)
+     * [`https://html.spec.whatwg.org/#attr-meter-min`](https://html.spec.whatwg.org/#attr-meter-min)
+     * [`https://html.spec.whatwg.org/#attr-input-min`](https://html.spec.whatwg.org/#attr-input-min)
+     * [`https://html.spec.whatwg.org/#attr-input-readonly`](https://html.spec.whatwg.org/#attr-input-readonly)
+     * [`https://html.spec.whatwg.org/#attr-textarea-readonly`](https://html.spec.whatwg.org/#attr-textarea-readonly)
+     * [`https://html.spec.whatwg.org/#attr-face-readonly`](https://html.spec.whatwg.org/#attr-face-readonly)
+     * [`https://html.spec.whatwg.org/#attr-contenteditable`](https://html.spec.whatwg.org/#attr-contenteditable)
+     * [`https://html.spec.whatwg.org/#dom-iscontenteditable`](https://html.spec.whatwg.org/#dom-iscontenteditable)
+     * [`https://html.spec.whatwg.org/#attr-input-required`](https://html.spec.whatwg.org/#attr-input-required)
+     * [`https://html.spec.whatwg.org/#attr-textarea-required`](https://html.spec.whatwg.org/#attr-textarea-required)
+     * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
+     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
+     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
+     * [`https://html.spec.whatwg.org/#lowercase-ascii-letters`](https://html.spec.whatwg.org/#lowercase-ascii-letters)
+     * [`https://html.spec.whatwg.org/#kinds-of-content`](https://html.spec.whatwg.org/#kinds-of-content)
+     * [`https://html.spec.whatwg.org/#phrasing-content-2`](https://html.spec.whatwg.org/#phrasing-content-2)
+     * [`https://html.spec.whatwg.org/#interactive-content-2`](https://html.spec.whatwg.org/#interactive-content-2)
+     * [`https://html.spec.whatwg.org/#flow-content-2`](https://html.spec.whatwg.org/#flow-content-2)
+     * [`https://html.spec.whatwg.org/#sectioning-content-2`](https://html.spec.whatwg.org/#sectioning-content-2)
+     * [`https://html.spec.whatwg.org/#palpable-content-2`](https://html.spec.whatwg.org/#palpable-content-2)
+     * [`https://html.spec.whatwg.org/#heading-content-2`](https://html.spec.whatwg.org/#heading-content-2)
+     * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
+     * [`https://html.spec.whatwg.org/#embedded-content-category`](https://html.spec.whatwg.org/#embedded-content-category)
+     * [`https://html.spec.whatwg.org/#transparent-content-models`](https://html.spec.whatwg.org/#transparent-content-models)
+     * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation`](https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation)
+     * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -542,52 +714,61 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Audio Output Devices API {data-spec=true data-error=true}
+## Audio Output Devices API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
+- Crawled version: 01 April 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
 - Latest published version: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Shortname: audio-output
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 182)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#dom-media-paused`](https://html.spec.whatwg.org/#dom-media-paused)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#allowed-to-play`](https://html.spec.whatwg.org/#allowed-to-play)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#event-mediadevices-devicechange`](https://www.w3.org/TR/mediacapture-streams/#event-mediadevices-devicechange)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-groupid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-groupid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#device-exposure-decision-non-camera-microphone`](https://www.w3.org/TR/mediacapture-streams/#device-exposure-decision-non-camera-microphone)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-kind`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-kind)
+     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaDeviceKind.audiooutput`](https://www.w3.org/TR/mediacapture-streams/#idl-def-MediaDeviceKind.audiooutput)
+     * [`https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId`](https://www.w3.org/TR/mediacapture-streams/#def-mediadeviceinfo-groupId)
+     * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionname-speaker-selection`](https://www.w3.org/TR/permissions/#dom-permissionname-speaker-selection)
+     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
+     * [`https://www.w3.org/TR/permissions/#prompt-the-user-to-choose`](https://www.w3.org/TR/permissions/#prompt-the-user-to-choose)
+     * [`https://www.w3.org/TR/webaudio/#allowed-to-start`](https://www.w3.org/TR/webaudio/#allowed-to-start)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -598,7 +779,7 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Background Fetch {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Background Fetch {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -610,7 +791,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ImageResource`
 - Missing references for links: 
      * [`https://storage.spec.whatwg.org/`](https://storage.spec.whatwg.org/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
@@ -766,51 +946,46 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Badging API {data-spec=true data-error=true}
+## Badging API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
+- Crawled version: 03 February 2021
 - Editor's Draft: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
 - Shortname: badging
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 57)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-navigation-scope`](https://www.w3.org/TR/appmanifest/#dfn-navigation-scope)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest`](https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#dom-document-url`](https://dom.spec.whatwg.org/#dom-document-url)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
+     * [`https://html.spec.whatwg.org/#the-title-element`](https://html.spec.whatwg.org/#the-title-element)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration`](https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-scope-url`](https://www.w3.org/TR/service-workers-1/#dfn-scope-url)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -819,52 +994,55 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Battery Status API {data-spec=true data-error=true}
+## Battery Status API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
+- Crawled version: 29 May 2021
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Shortname: battery-status
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 183)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#same-origin-domain`](https://html.spec.whatwg.org/#same-origin-domain)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-unrestricted-double`](https://heycam.github.io/webidl/#idl-unrestricted-double)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -876,52 +1054,56 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Beacon {data-spec=true data-error=true}
+## Beacon {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
+- Crawled version: 30 January 2020
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
 - Latest published version: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Shortname: beacon
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 184)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/page-visibility-2/#dfn-visibilitychange`](https://www.w3.org/TR/page-visibility-2/#dfn-visibilitychange)
+     * [`https://www.w3.org/TR/page-visibility-2/#dfn-unload`](https://www.w3.org/TR/page-visibility-2/#dfn-unload)
+     * [`https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate)
+     * [`https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate-hidden)
+     * [`https://fetch.spec.whatwg.org/#keep-alive-flag`](https://fetch.spec.whatwg.org/#keep-alive-flag)
+     * [`https://fetch.spec.whatwg.org/#concept-header-value`](https://fetch.spec.whatwg.org/#concept-header-value)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://fetch.spec.whatwg.org/#concept-request-method`](https://fetch.spec.whatwg.org/#concept-request-method)
+     * [`https://fetch.spec.whatwg.org/#concept-request-url`](https://fetch.spec.whatwg.org/#concept-request-url)
+     * [`https://fetch.spec.whatwg.org/#concept-request-header-list`](https://fetch.spec.whatwg.org/#concept-request-header-list)
+     * [`https://fetch.spec.whatwg.org/#concept-request-origin`](https://fetch.spec.whatwg.org/#concept-request-origin)
+     * [`https://fetch.spec.whatwg.org/#concept-request-body`](https://fetch.spec.whatwg.org/#concept-request-body)
+     * [`https://fetch.spec.whatwg.org/#concept-request-mode`](https://fetch.spec.whatwg.org/#concept-request-mode)
+     * [`https://fetch.spec.whatwg.org/#concept-request-credentials-mode`](https://fetch.spec.whatwg.org/#concept-request-credentials-mode)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://fetch.spec.whatwg.org/#http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#http-network-or-cache-fetch)
+     * [`https://fetch.spec.whatwg.org/#bodyinit`](https://fetch.spec.whatwg.org/#bodyinit)
+     * [`https://fetch.spec.whatwg.org/#cors-safelisted-request-header`](https://fetch.spec.whatwg.org/#cors-safelisted-request-header)
+     * [`https://fetch.spec.whatwg.org/#concept-bodyinit-extract`](https://fetch.spec.whatwg.org/#concept-bodyinit-extract)
+     * [`https://fetch.spec.whatwg.org/#http-access-control-allow-credentials`](https://fetch.spec.whatwg.org/#http-access-control-allow-credentials)
+     * [`https://fetch.spec.whatwg.org/#http-access-control-allow-origin`](https://fetch.spec.whatwg.org/#http-access-control-allow-origin)
+     * [`https://fetch.spec.whatwg.org/#http-access-control-allow-headers`](https://fetch.spec.whatwg.org/#http-access-control-allow-headers)
+     * [`https://dom.spec.whatwg.org/#concept-document-url`](https://dom.spec.whatwg.org/#concept-document-url)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://html.spec.whatwg.org/#api-base-url`](https://html.spec.whatwg.org/#api-base-url)
+     * [`https://html.spec.whatwg.org/#entry-settings-object`](https://html.spec.whatwg.org/#entry-settings-object)
+     * [`https://html.spec.whatwg.org/#multipart/form-data-encoding-algorithm`](https://html.spec.whatwg.org/#multipart/form-data-encoding-algorithm)
+     * [`https://html.spec.whatwg.org/#multipart/form-data-boundary-string`](https://html.spec.whatwg.org/#multipart/form-data-boundary-string)
+     * [`https://html.spec.whatwg.org/#origin`](https://html.spec.whatwg.org/#origin)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -1065,6 +1247,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 No informative reference to this spec from other specs.
@@ -1293,6 +1476,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
 ## Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -1629,7 +1813,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Content Index {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Content Index {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -1641,7 +1825,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `ImageResource`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
      * [`https://www.w3.org/TR/service-workers/`](https://www.w3.org/TR/service-workers/), related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
@@ -1932,18 +2115,22 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Document Policy](https://wicg.github.io/document-policy/)
+- [Preload](https://w3c.github.io/preload/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Serial API](https://wicg.github.io/serial/)
@@ -2055,51 +2242,21 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## ContentEditable {data-spec=true data-error=true}
+## ContentEditable {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
+- Crawled version: 30 January 2020
 - Editor's Draft: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
 - Shortname: contentEditable
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 58)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No normative references found
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#dom-contenteditable`](https://html.spec.whatwg.org/#dom-contenteditable)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2207,52 +2364,40 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Cooperative Scheduling of Background Tasks {data-spec=true data-error=true}
+## Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
 - Latest published version: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Shortname: requestidlecallback
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 341)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe`](https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe)
+     * [`https://html.spec.whatwg.org/#dom-settimeout`](https://html.spec.whatwg.org/#dom-settimeout)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
+     * [`https://html.spec.whatwg.org/#list-of-active-timers`](https://html.spec.whatwg.org/#list-of-active-timers)
+     * [`https://html.spec.whatwg.org/#dom-setinterval`](https://html.spec.whatwg.org/#dom-setinterval)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
+     * [`https://heycam.github.io/webidl/#dfn-conforming-implementation`](https://heycam.github.io/webidl/#dfn-conforming-implementation)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time`](https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://www.w3.org/TR/page-visibility-2/#dfn-hidden`](https://www.w3.org/TR/page-visibility-2/#dfn-hidden)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -2467,6 +2612,7 @@ Normative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
+- [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/)
 
 No informative reference to this spec from other specs.
@@ -2759,9 +2905,11 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
@@ -3322,6 +3470,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -3751,6 +3900,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -3839,6 +3989,7 @@ Normative references to this spec from:
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -4120,6 +4271,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -4851,7 +5003,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 8 June 2021
+- Crawled version: 19 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -4949,6 +5101,7 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
@@ -4973,7 +5126,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Crawled URL: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
-- Crawled version: 5 June 2021
+- Crawled version: 19 June 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color-5/](https://drafts.csswg.org/css-color-5/)
 - Latest published version: [https://www.w3.org/TR/css-color-5/](https://www.w3.org/TR/css-color-5/)
 - Shortname: css-color-5
@@ -4994,6 +5147,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
      * [`https://www.w3.org/TR/css-color-4/#interpolation`](https://www.w3.org/TR/css-color-4/#interpolation)
      * [`https://www.w3.org/TR/css-color-4/#hue-interpolation`](https://www.w3.org/TR/css-color-4/#hue-interpolation)
+     * [`https://www.w3.org/TR/css-color-4/#serializing-color-values`](https://www.w3.org/TR/css-color-4/#serializing-color-values)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-white`](https://drafts.csswg.org/css-color-4/#valdef-color-white)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-black`](https://drafts.csswg.org/css-color-4/#valdef-color-black)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-red`](https://drafts.csswg.org/css-color-4/#valdef-color-red)
@@ -5098,6 +5252,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 Informative references to this spec from:
 
@@ -5590,7 +5745,9 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
 ## CSS Display Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -5770,10 +5927,12 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -6443,6 +6602,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -7938,6 +8098,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 
 
 ## CSS Line Grid Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -9000,6 +9161,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -9287,6 +9449,7 @@ Normative references to this spec from:
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 
 Informative references to this spec from:
 
@@ -9864,6 +10027,7 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -11377,6 +11541,7 @@ Normative references to this spec from:
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
 Informative references to this spec from:
@@ -11864,6 +12029,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -13214,12 +13380,15 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -13906,6 +14075,9 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
@@ -13915,6 +14087,7 @@ Informative references to this spec from:
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 
 
@@ -14044,52 +14217,44 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Device Posture API {data-spec=true data-error=true}
+## Device Posture API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
+- Crawled version: 08 June 2021
 - Editor's Draft: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 276)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#dom-navigator`](https://html.spec.whatwg.org/#dom-navigator)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationtype`](https://www.w3.org/TR/screen-orientation/#dom-orientationtype)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm`](https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm)
+     * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -14310,7 +14475,7 @@ Informative references to this spec from:
 - [DOM Standard](https://dom.spec.whatwg.org/)
 
 
-## DOM Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## DOM Standard {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -14322,7 +14487,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for links: 
      * [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Inconsistent references for links: 
@@ -14507,6 +14671,9 @@ Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
@@ -14543,9 +14710,11 @@ Normative references to this spec from:
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Document Policy](https://wicg.github.io/document-policy/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -14554,62 +14723,88 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api-1/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
@@ -14618,6 +14813,7 @@ Normative references to this spec from:
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
@@ -14633,6 +14829,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Accessible Name and Description Computation 1.2](https://w3c.github.io/accname/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
@@ -14640,6 +14838,49 @@ Informative references to this spec from:
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Web Share API](https://w3c.github.io/web-share/)
+
+
+## Early detection of input events {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Crawled URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Crawled version: 08 March 2021
+- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Shortname: is-input-pending
+
+### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#dragevent`](https://html.spec.whatwg.org/#dragevent)
+     * [`https://dom.spec.whatwg.org/#concept-event-dispatch`](https://dom.spec.whatwg.org/#concept-event-dispatch)
+     * [`https://dom.spec.whatwg.org/#dom-event-istrusted`](https://dom.spec.whatwg.org/#dom-event-istrusted)
+     * [`https://www.w3.org/TR/uievents/#idl-uievent`](https://www.w3.org/TR/uievents/#idl-uievent)
+     * [`https://www.w3.org/TR/uievents/#event-type-mousemove`](https://www.w3.org/TR/uievents/#event-type-mousemove)
+     * [`https://www.w3.org/TR/uievents/#event-type-wheel`](https://www.w3.org/TR/uievents/#event-type-wheel)
+     * [`https://www.w3.org/TR/touch-events/#touchevent-interface`](https://www.w3.org/TR/touch-events/#touchevent-interface)
+     * [`https://www.w3.org/TR/touch-events/#the-touchmove-event`](https://www.w3.org/TR/touch-events/#the-touchmove-event)
+     * [`https://www.w3.org/TR/pointerevents3/#the-pointermove-event`](https://www.w3.org/TR/pointerevents3/#the-pointermove-event)
+     * [`https://www.w3.org/TR/pointerevents3/#the-pointerrawupdate-event`](https://www.w3.org/TR/pointerevents3/#the-pointerrawupdate-event)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## ECMAScript class static initialization blocks {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
@@ -14682,6 +14923,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -14709,14 +14952,29 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
@@ -14724,6 +14982,7 @@ Normative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -14734,10 +14993,15 @@ Informative references to this spec from:
 
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
-## Element Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Element Timing API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -14749,7 +15013,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `PerformanceEntry`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-3" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
@@ -14820,6 +15083,7 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
@@ -14925,11 +15189,14 @@ Normative references to this spec from:
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -15026,7 +15293,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Event Timing API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Event Timing API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -15038,7 +15305,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `Performance`, `PerformanceEntry`, `PerformanceObserverInit`
 - Missing references for links: 
      * [`https://w3c.github.io/pointerevents/`](https://w3c.github.io/pointerevents/)
      * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
@@ -15144,6 +15410,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
@@ -15497,6 +15764,7 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
@@ -15517,30 +15785,43 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
+- [Preload](https://w3c.github.io/preload/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [Trace Context Level 2](https://w3c.github.io/trace-context/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
@@ -15552,6 +15833,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Web IDL](https://heycam.github.io/webidl/)
 
@@ -15750,6 +16032,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [File System Access](https://wicg.github.io/file-system-access/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
@@ -15757,11 +16040,14 @@ Normative references to this spec from:
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+- [Web Share API](https://w3c.github.io/web-share/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -16152,51 +16438,23 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Frame Timing {data-spec=true data-error=true}
+## Frame Timing {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
+- Crawled version: 23 April 2021
 - Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - Shortname: frame-timing
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 91)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16298,10 +16556,13 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/)
 
@@ -16309,53 +16570,54 @@ Informative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 
-## Gamepad {data-spec=true data-error=true}
+## Gamepad {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
+- Crawled version: 11 June 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Shortname: gamepad
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 284)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/navigation-timing/#performancetiming`](https://www.w3.org/TR/navigation-timing/#performancetiming)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe`](https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#non-secure-context`](https://html.spec.whatwg.org/#non-secure-context)
+     * [`https://html.spec.whatwg.org/#windoweventhandlers`](https://html.spec.whatwg.org/#windoweventhandlers)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping`](https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16363,55 +16625,43 @@ Normative references to this spec from:
 
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/)
 
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
+
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Gamepad Extensions {data-spec=true data-error=true}
+## Gamepad Extensions {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
+- Crawled version: 11 June 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Shortname: gamepad-extensions
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 59)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for WebIDL names: 
+     * `Gamepad` defined in [Gamepad](https://w3c.github.io/gamepad/)
+- Missing references for links: 
+     * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/)
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-Float32Array`](https://heycam.github.io/webidl/#idl-Float32Array)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
+     * [`https://heycam.github.io/webidl/#idl-Uint32Array`](https://heycam.github.io/webidl/#idl-Uint32Array)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16420,7 +16670,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Generic Sensor API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Generic Sensor API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -16433,7 +16683,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
      * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/), related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
@@ -16555,51 +16804,60 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 
 
-## Geolocation API Specification 2nd Edition {data-spec=true data-error=true}
+## Geolocation API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
+- Crawled version: 15 June 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 286)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
+     * [`https://html.spec.whatwg.org/#list-of-active-timers`](https://html.spec.whatwg.org/#list-of-active-timers)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
+     * [`https://heycam.github.io/webidl/#invoke-a-callback-function`](https://heycam.github.io/webidl/#invoke-a-callback-function)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
+     * [`https://heycam.github.io/webidl/#Clamp`](https://heycam.github.io/webidl/#Clamp)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#list-item`](https://infra.spec.whatwg.org/#list-item)
+     * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
+     * [`https://infra.spec.whatwg.org/#map-remove`](https://infra.spec.whatwg.org/#map-remove)
+     * [`https://infra.spec.whatwg.org/#implementation-defined`](https://infra.spec.whatwg.org/#implementation-defined)
+     * [`https://infra.spec.whatwg.org/#set-append`](https://infra.spec.whatwg.org/#set-append)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
+     * [`https://infra.spec.whatwg.org/#list-contain`](https://infra.spec.whatwg.org/#list-contain)
+     * [`https://www.w3.org/TR/secure-contexts/#non-secure-context`](https://www.w3.org/TR/secure-contexts/#non-secure-context)
+     * [`https://www.w3.org/TR/page-visibility-2/#dfn-hidden`](https://www.w3.org/TR/page-visibility-2/#dfn-hidden)
+     * [`https://www.w3.org/TR/page-visibility-2/#dfn-visible`](https://www.w3.org/TR/page-visibility-2/#dfn-visible)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16615,7 +16873,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Geolocation Sensor {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Geolocation Sensor {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -16628,7 +16886,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Broken external links:
      * [`https://w3c.github.io/sensors/#sensor`](https://w3c.github.io/sensors/#sensor)
      * [`https://w3c.github.io/sensors/#security-and-privacy`](https://w3c.github.io/sensors/#security-and-privacy)
@@ -16758,6 +17015,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 - [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
@@ -16936,183 +17194,594 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## High Resolution Time {data-spec=true data-error=true}
+## High Resolution Time {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
+- Crawled version: 07 June 2021
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Shortname: hr-time-3
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 292)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://heycam.github.io/webidl/#Replaceable`](https://heycam.github.io/webidl/#Replaceable)
+     * [`https://html.spec.whatwg.org/#worker`](https://html.spec.whatwg.org/#worker)
+     * [`https://html.spec.whatwg.org/#sharedworker`](https://html.spec.whatwg.org/#sharedworker)
+     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#official-moment-of-creation`](https://html.spec.whatwg.org/#official-moment-of-creation)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#windoworworkerglobalscope`](https://html.spec.whatwg.org/#windoworworkerglobalscope)
+     * [`https://infra.spec.whatwg.org/#implementation-defined`](https://infra.spec.whatwg.org/#implementation-defined)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
-No informative reference to this spec from other specs.
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+
+Informative references to this spec from:
+
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 
 
-## HTML Accessibility API Mappings 1.0 {data-spec=true data-error=true}
+## HTML Accessibility API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Crawled version: 18 June 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 293)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/core-aam/role-map-button-pressed`](https://w3c.github.io/core-aam/role-map-button-pressed)
+     * [`https://w3c.github.io/core-aam/role-map-button-haspopup`](https://w3c.github.io/core-aam/role-map-button-haspopup)
+     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
+     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
+     * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://w3c.github.io/aria/core-aam/core-aam.html`](https://w3c.github.io/aria/core-aam/core-aam.html)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/), related reference "core-aam-1.2" uses URL [`https://www.w3.org/TR/core-aam-1.2/`](https://www.w3.org/TR/core-aam-1.2/)
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- Broken external links:
+     * [`https://www.w3.org/TR/wai-aria/#dfn-user-agent`](https://www.w3.org/TR/wai-aria/#dfn-user-agent)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessibility-api`](https://www.w3.org/TR/wai-aria/#dfn-accessibility-api)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-role`](https://www.w3.org/TR/wai-aria/#dfn-role)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-state`](https://www.w3.org/TR/wai-aria/#dfn-state)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-property`](https://www.w3.org/TR/wai-aria/#dfn-property)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-description`](https://www.w3.org/TR/wai-aria/#dfn-accessible-description)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-object`](https://www.w3.org/TR/wai-aria/#dfn-accessible-object)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-widget`](https://www.w3.org/TR/wai-aria/#dfn-widget)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-element`](https://www.w3.org/TR/wai-aria/#dfn-element)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-node`](https://www.w3.org/TR/wai-aria/#dfn-node)
+     * [`https://www.w3.org/TR/core-aam-1.2/#intro_aapi`](https://www.w3.org/TR/core-aam-1.2/#intro_aapi)
+     * [`https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree`](https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree)
+     * [`https://w3c.github.io/core-aam/#mapping_general`](https://w3c.github.io/core-aam/#mapping_general)
+     * [`https://w3c.github.io/core-aam/#mapping_conflicts`](https://w3c.github.io/core-aam/#mapping_conflicts)
+     * [`https://w3c.github.io/core-aam/#mapping_nodirect`](https://w3c.github.io/core-aam/#mapping_nodirect)
+     * [`https://w3c.github.io/core-aam/#ariaRoleDescription`](https://w3c.github.io/core-aam/#ariaRoleDescription)
+     * [`https://w3c.github.io/core-aam/#role-map-link`](https://w3c.github.io/core-aam/#role-map-link)
+     * [`https://w3c.github.io/core-aam/#role-map-article`](https://w3c.github.io/core-aam/#role-map-article)
+     * [`https://w3c.github.io/core-aam/#role-map-complementary`](https://w3c.github.io/core-aam/#role-map-complementary)
+     * [`https://w3c.github.io/core-aam/#role-map-button`](https://w3c.github.io/core-aam/#role-map-button)
+     * [`https://w3c.github.io/core-aam/#role-map-slider`](https://w3c.github.io/core-aam/#role-map-slider)
+     * [`https://w3c.github.io/core-aam/#role-map-toolbar`](https://w3c.github.io/core-aam/#role-map-toolbar)
+     * [`https://w3c.github.io/core-aam/#role-map-listbox`](https://w3c.github.io/core-aam/#role-map-listbox)
+     * [`https://w3c.github.io/core-aam/#ariaMultiselectableFalse`](https://w3c.github.io/core-aam/#ariaMultiselectableFalse)
+     * [`https://w3c.github.io/core-aam/#role-map-definition`](https://w3c.github.io/core-aam/#role-map-definition)
+     * [`https://w3c.github.io/core-aam/#role-map-term`](https://w3c.github.io/core-aam/#role-map-term)
+     * [`https://w3c.github.io/core-aam/#role-map-dialog`](https://w3c.github.io/core-aam/#role-map-dialog)
+     * [`https://w3c.github.io/core-aam/#role-map-group`](https://w3c.github.io/core-aam/#role-map-group)
+     * [`https://w3c.github.io/core-aam/#role-map-figure`](https://w3c.github.io/core-aam/#role-map-figure)
+     * [`https://w3c.github.io/core-aam/#role-map-contentinfo`](https://w3c.github.io/core-aam/#role-map-contentinfo)
+     * [`https://w3c.github.io/core-aam/#role-map-form`](https://w3c.github.io/core-aam/#role-map-form)
+     * [`https://w3c.github.io/core-aam/#role-map-heading`](https://w3c.github.io/core-aam/#role-map-heading)
+     * [`https://w3c.github.io/core-aam/#ariaLevel`](https://w3c.github.io/core-aam/#ariaLevel)
+     * [`https://w3c.github.io/core-aam/#role-map-banner`](https://w3c.github.io/core-aam/#role-map-banner)
+     * [`https://w3c.github.io/core-aam/#role-map-separator`](https://w3c.github.io/core-aam/#role-map-separator)
+     * [`https://w3c.github.io/core-aam/#role-map-img`](https://w3c.github.io/core-aam/#role-map-img)
+     * [`https://w3c.github.io/core-aam/#role-map-presentation`](https://w3c.github.io/core-aam/#role-map-presentation)
+     * [`https://w3c.github.io/core-aam/#role-map-checkbox`](https://w3c.github.io/core-aam/#role-map-checkbox)
+     * [`https://w3c.github.io/core-aam/#ariaCheckedMixed`](https://w3c.github.io/core-aam/#ariaCheckedMixed)
+     * [`https://w3c.github.io/core-aam/#role-map-textbox`](https://w3c.github.io/core-aam/#role-map-textbox)
+     * [`https://w3c.github.io/core-aam/#role-map-spinbutton`](https://w3c.github.io/core-aam/#role-map-spinbutton)
+     * [`https://w3c.github.io/core-aam/#role-map-radio`](https://w3c.github.io/core-aam/#role-map-radio)
+     * [`https://w3c.github.io/core-aam/#ariaCheckedTrue`](https://w3c.github.io/core-aam/#ariaCheckedTrue)
+     * [`https://w3c.github.io/core-aam/#role-map-searchbox`](https://w3c.github.io/core-aam/#role-map-searchbox)
+     * [`https://w3c.github.io/core-aam/#role-map-combobox`](https://w3c.github.io/core-aam/#role-map-combobox)
+     * [`https://w3c.github.io/core-aam/#ariaControls`](https://w3c.github.io/core-aam/#ariaControls)
+     * [`https://w3c.github.io/core-aam/#role-map-listitem`](https://w3c.github.io/core-aam/#role-map-listitem)
+     * [`https://w3c.github.io/core-aam/#role-map-main`](https://w3c.github.io/core-aam/#role-map-main)
+     * [`https://w3c.github.io/core-aam/#role-map-math`](https://w3c.github.io/core-aam/#role-map-math)
+     * [`https://w3c.github.io/core-aam/#role-map-list`](https://w3c.github.io/core-aam/#role-map-list)
+     * [`https://w3c.github.io/core-aam/#role-map-menu`](https://w3c.github.io/core-aam/#role-map-menu)
+     * [`https://w3c.github.io/core-aam/#role-map-navigation`](https://w3c.github.io/core-aam/#role-map-navigation)
+     * [`https://w3c.github.io/core-aam/#role-map-option`](https://w3c.github.io/core-aam/#role-map-option)
+     * [`https://w3c.github.io/core-aam/#ariaSelectedTrue`](https://w3c.github.io/core-aam/#ariaSelectedTrue)
+     * [`https://w3c.github.io/core-aam/#role-map-status`](https://w3c.github.io/core-aam/#role-map-status)
+     * [`https://w3c.github.io/core-aam/#role-map-progressbar`](https://w3c.github.io/core-aam/#role-map-progressbar)
+     * [`https://w3c.github.io/core-aam/#ariaValueMax`](https://w3c.github.io/core-aam/#ariaValueMax)
+     * [`https://w3c.github.io/core-aam/#ariaValueMin`](https://w3c.github.io/core-aam/#ariaValueMin)
+     * [`https://w3c.github.io/core-aam/#ariaValueNow`](https://w3c.github.io/core-aam/#ariaValueNow)
+     * [`https://w3c.github.io/core-aam/#role-map-region`](https://w3c.github.io/core-aam/#role-map-region)
+     * [`https://w3c.github.io/core-aam/#role-map-table`](https://w3c.github.io/core-aam/#role-map-table)
+     * [`https://w3c.github.io/core-aam/#role-map-rowgroup`](https://w3c.github.io/core-aam/#role-map-rowgroup)
+     * [`https://w3c.github.io/core-aam/#role-map-cell`](https://w3c.github.io/core-aam/#role-map-cell)
+     * [`https://w3c.github.io/core-aam/#role-map-grid`](https://w3c.github.io/core-aam/#role-map-grid)
+     * [`https://w3c.github.io/core-aam/#role-map-treegrid`](https://w3c.github.io/core-aam/#role-map-treegrid)
+     * [`https://w3c.github.io/core-aam/#role-map-gridcell`](https://w3c.github.io/core-aam/#role-map-gridcell)
+     * [`https://w3c.github.io/core-aam/#ariaMultilineTrue`](https://w3c.github.io/core-aam/#ariaMultilineTrue)
+     * [`https://w3c.github.io/core-aam/#role-map-columnheader`](https://w3c.github.io/core-aam/#role-map-columnheader)
+     * [`https://w3c.github.io/core-aam/#role-map-rowheader`](https://w3c.github.io/core-aam/#role-map-rowheader)
+     * [`https://w3c.github.io/core-aam/#role-map-row`](https://w3c.github.io/core-aam/#role-map-row)
+     * [`https://w3c.github.io/core-aam/#ariaAutocompleteInlineListBoth`](https://w3c.github.io/core-aam/#ariaAutocompleteInlineListBoth)
+     * [`https://w3c.github.io/core-aam/#ariaFlowto`](https://w3c.github.io/core-aam/#ariaFlowto)
+     * [`https://w3c.github.io/core-aam/#ariaCheckedFalse`](https://w3c.github.io/core-aam/#ariaCheckedFalse)
+     * [`https://w3c.github.io/core-aam/#ariaColSpan`](https://w3c.github.io/core-aam/#ariaColSpan)
+     * [`https://w3c.github.io/core-aam/#ariaDisabledTrue`](https://w3c.github.io/core-aam/#ariaDisabledTrue)
+     * [`https://w3c.github.io/core-aam/#ariaHiddenTrue`](https://w3c.github.io/core-aam/#ariaHiddenTrue)
+     * [`https://w3c.github.io/core-aam/#ariaExpandedTrue`](https://w3c.github.io/core-aam/#ariaExpandedTrue)
+     * [`https://w3c.github.io/core-aam/#ariaModalTrue`](https://w3c.github.io/core-aam/#ariaModalTrue)
+     * [`https://w3c.github.io/core-aam/#ariaHiddenFalse`](https://w3c.github.io/core-aam/#ariaHiddenFalse)
+     * [`https://w3c.github.io/core-aam/#ariaModalFalse`](https://w3c.github.io/core-aam/#ariaModalFalse)
+     * [`https://w3c.github.io/core-aam/#ariaPlaceholder`](https://w3c.github.io/core-aam/#ariaPlaceholder)
+     * [`https://w3c.github.io/core-aam/#ariaReadonlyTrue`](https://w3c.github.io/core-aam/#ariaReadonlyTrue)
+     * [`https://w3c.github.io/core-aam/#ariaRequiredTrue`](https://w3c.github.io/core-aam/#ariaRequiredTrue)
+     * [`https://w3c.github.io/core-aam/#ariaRowSpan`](https://w3c.github.io/core-aam/#ariaRowSpan)
+     * [`https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar`](https://w3c.github.io/core-aam/#ariaInvalidSpellingGrammar)
+     * [`https://w3c.github.io/core-aam/#focus_state_event_table`](https://w3c.github.io/core-aam/#focus_state_event_table)
+     * [`https://html.spec.whatwg.org/#category-label`](https://html.spec.whatwg.org/#category-label)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#hyperlink`](https://html.spec.whatwg.org/#hyperlink)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-href`](https://html.spec.whatwg.org/#attr-hyperlink-href)
+     * [`https://html.spec.whatwg.org/#the-abbr-element`](https://html.spec.whatwg.org/#the-abbr-element)
+     * [`https://html.spec.whatwg.org/#the-address-element`](https://html.spec.whatwg.org/#the-address-element)
+     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
+     * [`https://html.spec.whatwg.org/#the-article-element`](https://html.spec.whatwg.org/#the-article-element)
+     * [`https://html.spec.whatwg.org/#the-aside-element`](https://html.spec.whatwg.org/#the-aside-element)
+     * [`https://html.spec.whatwg.org/#attr-media-controls`](https://html.spec.whatwg.org/#attr-media-controls)
+     * [`https://html.spec.whatwg.org/#autonomous-custom-element`](https://html.spec.whatwg.org/#autonomous-custom-element)
+     * [`https://html.spec.whatwg.org/#the-b-element`](https://html.spec.whatwg.org/#the-b-element)
+     * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
+     * [`https://html.spec.whatwg.org/#the-bdi-element`](https://html.spec.whatwg.org/#the-bdi-element)
+     * [`https://html.spec.whatwg.org/#the-bdo-element`](https://html.spec.whatwg.org/#the-bdo-element)
+     * [`https://html.spec.whatwg.org/#the-blockquote-element`](https://html.spec.whatwg.org/#the-blockquote-element)
+     * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
+     * [`https://html.spec.whatwg.org/#the-br-element`](https://html.spec.whatwg.org/#the-br-element)
+     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
+     * [`https://html.spec.whatwg.org/#canvas`](https://html.spec.whatwg.org/#canvas)
+     * [`https://html.spec.whatwg.org/#the-caption-element`](https://html.spec.whatwg.org/#the-caption-element)
+     * [`https://html.spec.whatwg.org/#the-cite-element`](https://html.spec.whatwg.org/#the-cite-element)
+     * [`https://html.spec.whatwg.org/#the-code-element`](https://html.spec.whatwg.org/#the-code-element)
+     * [`https://html.spec.whatwg.org/#the-col-element`](https://html.spec.whatwg.org/#the-col-element)
+     * [`https://html.spec.whatwg.org/#the-colgroup-element`](https://html.spec.whatwg.org/#the-colgroup-element)
+     * [`https://html.spec.whatwg.org/#the-data-element`](https://html.spec.whatwg.org/#the-data-element)
+     * [`https://html.spec.whatwg.org/#the-datalist-element`](https://html.spec.whatwg.org/#the-datalist-element)
+     * [`https://html.spec.whatwg.org/#the-dd-element`](https://html.spec.whatwg.org/#the-dd-element)
+     * [`https://html.spec.whatwg.org/#the-del-element`](https://html.spec.whatwg.org/#the-del-element)
+     * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
+     * [`https://html.spec.whatwg.org/#the-dfn-element`](https://html.spec.whatwg.org/#the-dfn-element)
+     * [`https://html.spec.whatwg.org/#the-dialog-element`](https://html.spec.whatwg.org/#the-dialog-element)
+     * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
+     * [`https://html.spec.whatwg.org/#the-dl-element`](https://html.spec.whatwg.org/#the-dl-element)
+     * [`https://html.spec.whatwg.org/#the-dt-element`](https://html.spec.whatwg.org/#the-dt-element)
+     * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
+     * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
+     * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#the-figcaption-element`](https://html.spec.whatwg.org/#the-figcaption-element)
+     * [`https://html.spec.whatwg.org/#the-figure-element`](https://html.spec.whatwg.org/#the-figure-element)
+     * [`https://html.spec.whatwg.org/#the-footer-element`](https://html.spec.whatwg.org/#the-footer-element)
+     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
+     * [`https://html.spec.whatwg.org/#sectioning-content`](https://html.spec.whatwg.org/#sectioning-content)
+     * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://html.spec.whatwg.org/#custom-elements-face-example`](https://html.spec.whatwg.org/#custom-elements-face-example)
+     * [`https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements`](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+     * [`https://html.spec.whatwg.org/#the-head-element`](https://html.spec.whatwg.org/#the-head-element)
+     * [`https://html.spec.whatwg.org/#the-header-element`](https://html.spec.whatwg.org/#the-header-element)
+     * [`https://html.spec.whatwg.org/#the-hgroup-element`](https://html.spec.whatwg.org/#the-hgroup-element)
+     * [`https://html.spec.whatwg.org/#the-hr-element`](https://html.spec.whatwg.org/#the-hr-element)
+     * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
+     * [`https://html.spec.whatwg.org/#the-i-element`](https://html.spec.whatwg.org/#the-i-element)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#attr-img-alt`](https://html.spec.whatwg.org/#attr-img-alt)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#attr-input-type`](https://html.spec.whatwg.org/#attr-input-type)
+     * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
+     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
+     * [`https://html.spec.whatwg.org/#dom-input-indeterminate`](https://html.spec.whatwg.org/#dom-input-indeterminate)
+     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
+     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
+     * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
+     * [`https://html.spec.whatwg.org/#email-state-(type=email)`](https://html.spec.whatwg.org/#email-state-(type=email))
+     * [`https://html.spec.whatwg.org/#concept-input-list`](https://html.spec.whatwg.org/#concept-input-list)
+     * [`https://html.spec.whatwg.org/#file-upload-state-(type=file)`](https://html.spec.whatwg.org/#file-upload-state-(type=file))
+     * [`https://html.spec.whatwg.org/#hidden-state-(type=hidden)`](https://html.spec.whatwg.org/#hidden-state-(type=hidden))
+     * [`https://html.spec.whatwg.org/#image-button-state-(type=image)`](https://html.spec.whatwg.org/#image-button-state-(type=image))
+     * [`https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local)`](https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local))
+     * [`https://html.spec.whatwg.org/#month-state-(type=month)`](https://html.spec.whatwg.org/#month-state-(type=month))
+     * [`https://html.spec.whatwg.org/#number-state-(type=number)`](https://html.spec.whatwg.org/#number-state-(type=number))
+     * [`https://html.spec.whatwg.org/#password-state-(type=password)`](https://html.spec.whatwg.org/#password-state-(type=password))
+     * [`https://html.spec.whatwg.org/#radio-button-state-(type=radio)`](https://html.spec.whatwg.org/#radio-button-state-(type=radio))
+     * [`https://html.spec.whatwg.org/#radio-button-group`](https://html.spec.whatwg.org/#radio-button-group)
+     * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
+     * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
+     * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
+     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
+     * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
+     * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
+     * [`https://html.spec.whatwg.org/#attr-input-list`](https://html.spec.whatwg.org/#attr-input-list)
+     * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
+     * [`https://html.spec.whatwg.org/#week-state-(type=week)`](https://html.spec.whatwg.org/#week-state-(type=week))
+     * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
+     * [`https://html.spec.whatwg.org/#the-kbd-element`](https://html.spec.whatwg.org/#the-kbd-element)
+     * [`https://html.spec.whatwg.org/#the-label-element`](https://html.spec.whatwg.org/#the-label-element)
+     * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
+     * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
+     * [`https://html.spec.whatwg.org/#the-ol-element`](https://html.spec.whatwg.org/#the-ol-element)
+     * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
+     * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
+     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
+     * [`https://html.spec.whatwg.org/#menuitem`](https://html.spec.whatwg.org/#menuitem)
+     * [`https://html.spec.whatwg.org/#attr-menu-type`](https://html.spec.whatwg.org/#attr-menu-type)
+     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
+     * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
+     * [`https://html.spec.whatwg.org/#the-nav-element`](https://html.spec.whatwg.org/#the-nav-element)
+     * [`https://html.spec.whatwg.org/#the-noscript-element`](https://html.spec.whatwg.org/#the-noscript-element)
+     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
+     * [`https://html.spec.whatwg.org/#the-optgroup-element`](https://html.spec.whatwg.org/#the-optgroup-element)
+     * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
+     * [`https://html.spec.whatwg.org/#concept-select-option-list`](https://html.spec.whatwg.org/#concept-select-option-list)
+     * [`https://html.spec.whatwg.org/#concept-option-selectedness`](https://html.spec.whatwg.org/#concept-option-selectedness)
+     * [`https://html.spec.whatwg.org/#the-output-element`](https://html.spec.whatwg.org/#the-output-element)
+     * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
+     * [`https://html.spec.whatwg.org/#the-param-element`](https://html.spec.whatwg.org/#the-param-element)
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#the-pre-element`](https://html.spec.whatwg.org/#the-pre-element)
+     * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
+     * [`https://html.spec.whatwg.org/#the-q-element`](https://html.spec.whatwg.org/#the-q-element)
+     * [`https://html.spec.whatwg.org/#the-rp-element`](https://html.spec.whatwg.org/#the-rp-element)
+     * [`https://html.spec.whatwg.org/#the-rt-element`](https://html.spec.whatwg.org/#the-rt-element)
+     * [`https://html.spec.whatwg.org/#the-ruby-element`](https://html.spec.whatwg.org/#the-ruby-element)
+     * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
+     * [`https://html.spec.whatwg.org/#the-samp-element`](https://html.spec.whatwg.org/#the-samp-element)
+     * [`https://html.spec.whatwg.org/#the-script-element`](https://html.spec.whatwg.org/#the-script-element)
+     * [`https://html.spec.whatwg.org/#the-section-element`](https://html.spec.whatwg.org/#the-section-element)
+     * [`https://html.spec.whatwg.org/#the-select-element`](https://html.spec.whatwg.org/#the-select-element)
+     * [`https://html.spec.whatwg.org/#attr-select-multiple`](https://html.spec.whatwg.org/#attr-select-multiple)
+     * [`https://html.spec.whatwg.org/#attr-select-size`](https://html.spec.whatwg.org/#attr-select-size)
+     * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
+     * [`https://html.spec.whatwg.org/#the-small-element`](https://html.spec.whatwg.org/#the-small-element)
+     * [`https://html.spec.whatwg.org/#the-source-element`](https://html.spec.whatwg.org/#the-source-element)
+     * [`https://html.spec.whatwg.org/#the-span-element`](https://html.spec.whatwg.org/#the-span-element)
+     * [`https://html.spec.whatwg.org/#the-strong-element`](https://html.spec.whatwg.org/#the-strong-element)
+     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
+     * [`https://html.spec.whatwg.org/#the-sub-element`](https://html.spec.whatwg.org/#the-sub-element)
+     * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
+     * [`https://html.spec.whatwg.org/#the-sup-element`](https://html.spec.whatwg.org/#the-sup-element)
+     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
+     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
+     * [`https://html.spec.whatwg.org/#the-tbody-element`](https://html.spec.whatwg.org/#the-tbody-element)
+     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
+     * [`https://html.spec.whatwg.org/#the-template-element`](https://html.spec.whatwg.org/#the-template-element)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
+     * [`https://html.spec.whatwg.org/#the-tfoot-element`](https://html.spec.whatwg.org/#the-tfoot-element)
+     * [`https://html.spec.whatwg.org/#the-th-element`](https://html.spec.whatwg.org/#the-th-element)
+     * [`https://html.spec.whatwg.org/#column-header`](https://html.spec.whatwg.org/#column-header)
+     * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
+     * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
+     * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
+     * [`https://html.spec.whatwg.org/#the-thead-element`](https://html.spec.whatwg.org/#the-thead-element)
+     * [`https://html.spec.whatwg.org/#the-time-element`](https://html.spec.whatwg.org/#the-time-element)
+     * [`https://html.spec.whatwg.org/#the-title-element`](https://html.spec.whatwg.org/#the-title-element)
+     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
+     * [`https://html.spec.whatwg.org/#the-track-element`](https://html.spec.whatwg.org/#the-track-element)
+     * [`https://html.spec.whatwg.org/#the-u-element`](https://html.spec.whatwg.org/#the-u-element)
+     * [`https://html.spec.whatwg.org/#the-var-element`](https://html.spec.whatwg.org/#the-var-element)
+     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
+     * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
+     * [`https://html.spec.whatwg.org/#attributes-3`](https://html.spec.whatwg.org/#attributes-3)
+     * [`https://html.spec.whatwg.org/#attr-th-abbr`](https://html.spec.whatwg.org/#attr-th-abbr)
+     * [`https://html.spec.whatwg.org/#attr-input-accept`](https://html.spec.whatwg.org/#attr-input-accept)
+     * [`https://html.spec.whatwg.org/#attr-form-accept-charset`](https://html.spec.whatwg.org/#attr-form-accept-charset)
+     * [`https://html.spec.whatwg.org/#the-accesskey-attribute`](https://html.spec.whatwg.org/#the-accesskey-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fs-action`](https://html.spec.whatwg.org/#attr-fs-action)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allowfullscreen`](https://html.spec.whatwg.org/#attr-iframe-allowfullscreen)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest`](https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest)
+     * [`https://html.spec.whatwg.org/#attr-area-alt`](https://html.spec.whatwg.org/#attr-area-alt)
+     * [`https://html.spec.whatwg.org/#attr-input-alt`](https://html.spec.whatwg.org/#attr-input-alt)
+     * [`https://html.spec.whatwg.org/#attr-link-as`](https://html.spec.whatwg.org/#attr-link-as)
+     * [`https://html.spec.whatwg.org/#attr-script-async`](https://html.spec.whatwg.org/#attr-script-async)
+     * [`https://html.spec.whatwg.org/#attr-autocapitalize`](https://html.spec.whatwg.org/#attr-autocapitalize)
+     * [`https://html.spec.whatwg.org/#attr-form-autocomplete`](https://html.spec.whatwg.org/#attr-form-autocomplete)
+     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete`](https://html.spec.whatwg.org/#attr-fe-autocomplete)
+     * [`https://html.spec.whatwg.org/#attr-fe-autofocus`](https://html.spec.whatwg.org/#attr-fe-autofocus)
+     * [`https://html.spec.whatwg.org/#attr-media-autoplay`](https://html.spec.whatwg.org/#attr-media-autoplay)
+     * [`https://html.spec.whatwg.org/#attr-meta-charset`](https://html.spec.whatwg.org/#attr-meta-charset)
+     * [`https://html.spec.whatwg.org/#attr-input-checked`](https://html.spec.whatwg.org/#attr-input-checked)
+     * [`https://html.spec.whatwg.org/#attr-blockquote-cite`](https://html.spec.whatwg.org/#attr-blockquote-cite)
+     * [`https://html.spec.whatwg.org/#attr-mod-cite`](https://html.spec.whatwg.org/#attr-mod-cite)
+     * [`https://html.spec.whatwg.org/#attr-q-cite`](https://html.spec.whatwg.org/#attr-q-cite)
+     * [`https://html.spec.whatwg.org/#classes`](https://html.spec.whatwg.org/#classes)
+     * [`https://html.spec.whatwg.org/#attr-link-color`](https://html.spec.whatwg.org/#attr-link-color)
+     * [`https://html.spec.whatwg.org/#attr-textarea-cols`](https://html.spec.whatwg.org/#attr-textarea-cols)
+     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
+     * [`https://html.spec.whatwg.org/#attr-meta-content`](https://html.spec.whatwg.org/#attr-meta-content)
+     * [`https://html.spec.whatwg.org/#attr-contenteditable`](https://html.spec.whatwg.org/#attr-contenteditable)
+     * [`https://html.spec.whatwg.org/#attr-area-coords`](https://html.spec.whatwg.org/#attr-area-coords)
+     * [`https://html.spec.whatwg.org/#attr-media-crossorigin`](https://html.spec.whatwg.org/#attr-media-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-img-crossorigin`](https://html.spec.whatwg.org/#attr-img-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-link-crossorigin`](https://html.spec.whatwg.org/#attr-link-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-script-crossorigin`](https://html.spec.whatwg.org/#attr-script-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-object-data`](https://html.spec.whatwg.org/#attr-object-data)
+     * [`https://html.spec.whatwg.org/#attr-mod-datetime`](https://html.spec.whatwg.org/#attr-mod-datetime)
+     * [`https://html.spec.whatwg.org/#attr-time-datetime`](https://html.spec.whatwg.org/#attr-time-datetime)
+     * [`https://html.spec.whatwg.org/#attr-img-decoding`](https://html.spec.whatwg.org/#attr-img-decoding)
+     * [`https://html.spec.whatwg.org/#attr-track-default`](https://html.spec.whatwg.org/#attr-track-default)
+     * [`https://html.spec.whatwg.org/#attr-script-defer`](https://html.spec.whatwg.org/#attr-script-defer)
+     * [`https://html.spec.whatwg.org/#the-dir-attribute`](https://html.spec.whatwg.org/#the-dir-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fe-dirname`](https://html.spec.whatwg.org/#attr-fe-dirname)
+     * [`https://html.spec.whatwg.org/#attr-fe-disabled`](https://html.spec.whatwg.org/#attr-fe-disabled)
+     * [`https://html.spec.whatwg.org/#attr-fieldset-disabled`](https://html.spec.whatwg.org/#attr-fieldset-disabled)
+     * [`https://html.spec.whatwg.org/#attr-optgroup-disabled`](https://html.spec.whatwg.org/#attr-optgroup-disabled)
+     * [`https://html.spec.whatwg.org/#attr-option-disabled`](https://html.spec.whatwg.org/#attr-option-disabled)
+     * [`https://html.spec.whatwg.org/#form-associated-custom-element`](https://html.spec.whatwg.org/#form-associated-custom-element)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-download`](https://html.spec.whatwg.org/#attr-hyperlink-download)
+     * [`https://html.spec.whatwg.org/#the-draggable-attribute`](https://html.spec.whatwg.org/#the-draggable-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fs-enctype`](https://html.spec.whatwg.org/#attr-fs-enctype)
+     * [`https://html.spec.whatwg.org/#attr-output-for`](https://html.spec.whatwg.org/#attr-output-for)
+     * [`https://html.spec.whatwg.org/#attr-fae-form`](https://html.spec.whatwg.org/#attr-fae-form)
+     * [`https://html.spec.whatwg.org/#attr-fs-formaction`](https://html.spec.whatwg.org/#attr-fs-formaction)
+     * [`https://html.spec.whatwg.org/#attr-fs-formenctype`](https://html.spec.whatwg.org/#attr-fs-formenctype)
+     * [`https://html.spec.whatwg.org/#attr-fs-formmethod`](https://html.spec.whatwg.org/#attr-fs-formmethod)
+     * [`https://html.spec.whatwg.org/#attr-fs-formnovalidate`](https://html.spec.whatwg.org/#attr-fs-formnovalidate)
+     * [`https://html.spec.whatwg.org/#attr-fs-formtarget`](https://html.spec.whatwg.org/#attr-fs-formtarget)
+     * [`https://html.spec.whatwg.org/#attr-tdth-headers`](https://html.spec.whatwg.org/#attr-tdth-headers)
+     * [`https://html.spec.whatwg.org/#attr-canvas-height`](https://html.spec.whatwg.org/#attr-canvas-height)
+     * [`https://html.spec.whatwg.org/#attr-dim-height`](https://html.spec.whatwg.org/#attr-dim-height)
+     * [`https://html.spec.whatwg.org/#the-hidden-attribute`](https://html.spec.whatwg.org/#the-hidden-attribute)
+     * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
+     * [`https://html.spec.whatwg.org/#attr-meter-high`](https://html.spec.whatwg.org/#attr-meter-high)
+     * [`https://html.spec.whatwg.org/#attr-link-href`](https://html.spec.whatwg.org/#attr-link-href)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-hreflang`](https://html.spec.whatwg.org/#attr-hyperlink-hreflang)
+     * [`https://html.spec.whatwg.org/#attr-link-hreflang`](https://html.spec.whatwg.org/#attr-link-hreflang)
+     * [`https://html.spec.whatwg.org/#attr-meta-http-equiv`](https://html.spec.whatwg.org/#attr-meta-http-equiv)
+     * [`https://html.spec.whatwg.org/#the-id-attribute`](https://html.spec.whatwg.org/#the-id-attribute)
+     * [`https://html.spec.whatwg.org/#attr-img-ismap`](https://html.spec.whatwg.org/#attr-img-ismap)
+     * [`https://html.spec.whatwg.org/#element-attrdef-track-kind`](https://html.spec.whatwg.org/#element-attrdef-track-kind)
+     * [`https://html.spec.whatwg.org/#attr-optgroup-label`](https://html.spec.whatwg.org/#attr-optgroup-label)
+     * [`https://html.spec.whatwg.org/#attr-option-label`](https://html.spec.whatwg.org/#attr-option-label)
+     * [`https://html.spec.whatwg.org/#attr-track-label`](https://html.spec.whatwg.org/#attr-track-label)
+     * [`https://html.spec.whatwg.org/#attr-lang`](https://html.spec.whatwg.org/#attr-lang)
+     * [`https://html.spec.whatwg.org/#attr-media-loop`](https://html.spec.whatwg.org/#attr-media-loop)
+     * [`https://html.spec.whatwg.org/#attr-meter-low`](https://html.spec.whatwg.org/#attr-meter-low)
+     * [`https://html.spec.whatwg.org/#attr-input-max`](https://html.spec.whatwg.org/#attr-input-max)
+     * [`https://html.spec.whatwg.org/#attr-meter-max`](https://html.spec.whatwg.org/#attr-meter-max)
+     * [`https://html.spec.whatwg.org/#attr-progress-max`](https://html.spec.whatwg.org/#attr-progress-max)
+     * [`https://html.spec.whatwg.org/#attr-input-maxlength`](https://html.spec.whatwg.org/#attr-input-maxlength)
+     * [`https://html.spec.whatwg.org/#attr-textarea-maxlength`](https://html.spec.whatwg.org/#attr-textarea-maxlength)
+     * [`https://html.spec.whatwg.org/#attr-link-media`](https://html.spec.whatwg.org/#attr-link-media)
+     * [`https://html.spec.whatwg.org/#attr-source-media`](https://html.spec.whatwg.org/#attr-source-media)
+     * [`https://html.spec.whatwg.org/#attr-style-media`](https://html.spec.whatwg.org/#attr-style-media)
+     * [`https://html.spec.whatwg.org/#attr-fs-method`](https://html.spec.whatwg.org/#attr-fs-method)
+     * [`https://html.spec.whatwg.org/#attr-input-min`](https://html.spec.whatwg.org/#attr-input-min)
+     * [`https://html.spec.whatwg.org/#attr-meter-min`](https://html.spec.whatwg.org/#attr-meter-min)
+     * [`https://html.spec.whatwg.org/#attr-input-minlength`](https://html.spec.whatwg.org/#attr-input-minlength)
+     * [`https://html.spec.whatwg.org/#attr-textarea-minlength`](https://html.spec.whatwg.org/#attr-textarea-minlength)
+     * [`https://html.spec.whatwg.org/#attr-input-multiple`](https://html.spec.whatwg.org/#attr-input-multiple)
+     * [`https://html.spec.whatwg.org/#attr-media-muted`](https://html.spec.whatwg.org/#attr-media-muted)
+     * [`https://html.spec.whatwg.org/#attr-fe-name`](https://html.spec.whatwg.org/#attr-fe-name)
+     * [`https://html.spec.whatwg.org/#attr-form-name`](https://html.spec.whatwg.org/#attr-form-name)
+     * [`https://html.spec.whatwg.org/#attr-iframe-name`](https://html.spec.whatwg.org/#attr-iframe-name)
+     * [`https://html.spec.whatwg.org/#attr-object-name`](https://html.spec.whatwg.org/#attr-object-name)
+     * [`https://html.spec.whatwg.org/#attr-map-name`](https://html.spec.whatwg.org/#attr-map-name)
+     * [`https://html.spec.whatwg.org/#attr-meta-name`](https://html.spec.whatwg.org/#attr-meta-name)
+     * [`https://html.spec.whatwg.org/#attr-param-name`](https://html.spec.whatwg.org/#attr-param-name)
+     * [`https://html.spec.whatwg.org/#attr-slot-name`](https://html.spec.whatwg.org/#attr-slot-name)
+     * [`https://html.spec.whatwg.org/#attr-script-nomodule`](https://html.spec.whatwg.org/#attr-script-nomodule)
+     * [`https://html.spec.whatwg.org/#attr-nonce`](https://html.spec.whatwg.org/#attr-nonce)
+     * [`https://html.spec.whatwg.org/#attr-fs-novalidate`](https://html.spec.whatwg.org/#attr-fs-novalidate)
+     * [`https://html.spec.whatwg.org/#attr-details-open`](https://html.spec.whatwg.org/#attr-details-open)
+     * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
+     * [`https://html.spec.whatwg.org/#attr-meter-optimum`](https://html.spec.whatwg.org/#attr-meter-optimum)
+     * [`https://html.spec.whatwg.org/#attr-input-pattern`](https://html.spec.whatwg.org/#attr-input-pattern)
+     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
+     * [`https://html.spec.whatwg.org/#attr-input-placeholder`](https://html.spec.whatwg.org/#attr-input-placeholder)
+     * [`https://html.spec.whatwg.org/#attr-textarea-placeholder`](https://html.spec.whatwg.org/#attr-textarea-placeholder)
+     * [`https://html.spec.whatwg.org/#attr-video-playsinline`](https://html.spec.whatwg.org/#attr-video-playsinline)
+     * [`https://html.spec.whatwg.org/#attr-video-poster`](https://html.spec.whatwg.org/#attr-video-poster)
+     * [`https://html.spec.whatwg.org/#attr-media-preload`](https://html.spec.whatwg.org/#attr-media-preload)
+     * [`https://html.spec.whatwg.org/#attr-input-readonly`](https://html.spec.whatwg.org/#attr-input-readonly)
+     * [`https://html.spec.whatwg.org/#attr-textarea-readonly`](https://html.spec.whatwg.org/#attr-textarea-readonly)
+     * [`https://html.spec.whatwg.org/#attr-face-readonly`](https://html.spec.whatwg.org/#attr-face-readonly)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy`](https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-iframe-referrerpolicy`](https://html.spec.whatwg.org/#attr-iframe-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-img-referrerpolicy`](https://html.spec.whatwg.org/#attr-img-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-link-referrerpolicy`](https://html.spec.whatwg.org/#attr-link-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-script-referrerpolicy`](https://html.spec.whatwg.org/#attr-script-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-rel`](https://html.spec.whatwg.org/#attr-hyperlink-rel)
+     * [`https://html.spec.whatwg.org/#attr-link-rel`](https://html.spec.whatwg.org/#attr-link-rel)
+     * [`https://html.spec.whatwg.org/#attr-input-required`](https://html.spec.whatwg.org/#attr-input-required)
+     * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
+     * [`https://html.spec.whatwg.org/#attr-textarea-required`](https://html.spec.whatwg.org/#attr-textarea-required)
+     * [`https://html.spec.whatwg.org/#attr-ol-reversed`](https://html.spec.whatwg.org/#attr-ol-reversed)
+     * [`https://html.spec.whatwg.org/#attr-textarea-rows`](https://html.spec.whatwg.org/#attr-textarea-rows)
+     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
+     * [`https://html.spec.whatwg.org/#attr-iframe-sandbox`](https://html.spec.whatwg.org/#attr-iframe-sandbox)
+     * [`https://html.spec.whatwg.org/#attr-th-scope`](https://html.spec.whatwg.org/#attr-th-scope)
+     * [`https://html.spec.whatwg.org/#attr-option-selected`](https://html.spec.whatwg.org/#attr-option-selected)
+     * [`https://html.spec.whatwg.org/#attr-area-shape`](https://html.spec.whatwg.org/#attr-area-shape)
+     * [`https://html.spec.whatwg.org/#attr-input-size`](https://html.spec.whatwg.org/#attr-input-size)
+     * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
+     * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
+     * [`https://html.spec.whatwg.org/#attr-source-sizes`](https://html.spec.whatwg.org/#attr-source-sizes)
+     * [`https://html.spec.whatwg.org/#attr-col-span`](https://html.spec.whatwg.org/#attr-col-span)
+     * [`https://html.spec.whatwg.org/#attr-colgroup-span`](https://html.spec.whatwg.org/#attr-colgroup-span)
+     * [`https://html.spec.whatwg.org/#attr-spellcheck`](https://html.spec.whatwg.org/#attr-spellcheck)
+     * [`https://html.spec.whatwg.org/#attr-media-src`](https://html.spec.whatwg.org/#attr-media-src)
+     * [`https://html.spec.whatwg.org/#attr-embed-src`](https://html.spec.whatwg.org/#attr-embed-src)
+     * [`https://html.spec.whatwg.org/#attr-iframe-src`](https://html.spec.whatwg.org/#attr-iframe-src)
+     * [`https://html.spec.whatwg.org/#attr-img-src`](https://html.spec.whatwg.org/#attr-img-src)
+     * [`https://html.spec.whatwg.org/#attr-input-src`](https://html.spec.whatwg.org/#attr-input-src)
+     * [`https://html.spec.whatwg.org/#attr-script-src`](https://html.spec.whatwg.org/#attr-script-src)
+     * [`https://html.spec.whatwg.org/#attr-source-src`](https://html.spec.whatwg.org/#attr-source-src)
+     * [`https://html.spec.whatwg.org/#attr-track-src`](https://html.spec.whatwg.org/#attr-track-src)
+     * [`https://html.spec.whatwg.org/#attr-iframe-srcdoc`](https://html.spec.whatwg.org/#attr-iframe-srcdoc)
+     * [`https://html.spec.whatwg.org/#attr-track-srclang`](https://html.spec.whatwg.org/#attr-track-srclang)
+     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
+     * [`https://html.spec.whatwg.org/#attr-source-srcset`](https://html.spec.whatwg.org/#attr-source-srcset)
+     * [`https://html.spec.whatwg.org/#attr-ol-start`](https://html.spec.whatwg.org/#attr-ol-start)
+     * [`https://html.spec.whatwg.org/#attr-input-step`](https://html.spec.whatwg.org/#attr-input-step)
+     * [`https://html.spec.whatwg.org/#the-style-attribute`](https://html.spec.whatwg.org/#the-style-attribute)
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-target`](https://html.spec.whatwg.org/#attr-hyperlink-target)
+     * [`https://html.spec.whatwg.org/#attr-base-target`](https://html.spec.whatwg.org/#attr-base-target)
+     * [`https://html.spec.whatwg.org/#attr-fs-target`](https://html.spec.whatwg.org/#attr-fs-target)
+     * [`https://html.spec.whatwg.org/#attr-title`](https://html.spec.whatwg.org/#attr-title)
+     * [`https://html.spec.whatwg.org/#attr-abbr-title`](https://html.spec.whatwg.org/#attr-abbr-title)
+     * [`https://html.spec.whatwg.org/#attr-dfn-title`](https://html.spec.whatwg.org/#attr-dfn-title)
+     * [`https://html.spec.whatwg.org/#attr-link-title`](https://html.spec.whatwg.org/#attr-link-title)
+     * [`https://html.spec.whatwg.org/#attr-style-title`](https://html.spec.whatwg.org/#attr-style-title)
+     * [`https://html.spec.whatwg.org/#attr-translate`](https://html.spec.whatwg.org/#attr-translate)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-type`](https://html.spec.whatwg.org/#attr-hyperlink-type)
+     * [`https://html.spec.whatwg.org/#attr-link-type`](https://html.spec.whatwg.org/#attr-link-type)
+     * [`https://html.spec.whatwg.org/#attr-button-type`](https://html.spec.whatwg.org/#attr-button-type)
+     * [`https://html.spec.whatwg.org/#attr-embed-type`](https://html.spec.whatwg.org/#attr-embed-type)
+     * [`https://html.spec.whatwg.org/#attr-object-type`](https://html.spec.whatwg.org/#attr-object-type)
+     * [`https://html.spec.whatwg.org/#attr-script-type`](https://html.spec.whatwg.org/#attr-script-type)
+     * [`https://html.spec.whatwg.org/#attr-source-type`](https://html.spec.whatwg.org/#attr-source-type)
+     * [`https://html.spec.whatwg.org/#attr-ol-type`](https://html.spec.whatwg.org/#attr-ol-type)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-usemap`](https://html.spec.whatwg.org/#attr-hyperlink-usemap)
+     * [`https://html.spec.whatwg.org/#attr-button-value`](https://html.spec.whatwg.org/#attr-button-value)
+     * [`https://html.spec.whatwg.org/#attr-option-value`](https://html.spec.whatwg.org/#attr-option-value)
+     * [`https://html.spec.whatwg.org/#attr-data-value`](https://html.spec.whatwg.org/#attr-data-value)
+     * [`https://html.spec.whatwg.org/#attr-input-value`](https://html.spec.whatwg.org/#attr-input-value)
+     * [`https://html.spec.whatwg.org/#attr-li-value`](https://html.spec.whatwg.org/#attr-li-value)
+     * [`https://html.spec.whatwg.org/#attr-meter-value`](https://html.spec.whatwg.org/#attr-meter-value)
+     * [`https://html.spec.whatwg.org/#attr-progress-value`](https://html.spec.whatwg.org/#attr-progress-value)
+     * [`https://html.spec.whatwg.org/#attr-param-value`](https://html.spec.whatwg.org/#attr-param-value)
+     * [`https://html.spec.whatwg.org/#attr-canvas-width`](https://html.spec.whatwg.org/#attr-canvas-width)
+     * [`https://html.spec.whatwg.org/#attr-dim-width`](https://html.spec.whatwg.org/#attr-dim-width)
+     * [`https://html.spec.whatwg.org/#attr-textarea-wrap`](https://html.spec.whatwg.org/#attr-textarea-wrap)
+     * [`https://html.spec.whatwg.org/#sections`](https://html.spec.whatwg.org/#sections)
+     * [`https://html.spec.whatwg.org/#grouping-content`](https://html.spec.whatwg.org/#grouping-content)
+     * [`https://html.spec.whatwg.org/#the-sub-and-sup-elements`](https://html.spec.whatwg.org/#the-sub-and-sup-elements)
+     * [`https://html.spec.whatwg.org/#the-menu-element`](https://html.spec.whatwg.org/#the-menu-element)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
+     * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
+     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
+     * [`https://www.w3.org/TR/html/#tabular-data`](https://www.w3.org/TR/html/#tabular-data)
+     * [`https://w3c.github.io/accname/#mapping_additional_nd_te`](https://w3c.github.io/accname/#mapping_additional_nd_te)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://dom.spec.whatwg.org/#concept-tree-child`](https://dom.spec.whatwg.org/#concept-tree-child)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [ARIA in HTML](https://w3c.github.io/html-aria/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 
 No informative reference to this spec from other specs.
 
 
-## HTML Media Capture {data-spec=true data-error=true}
+## HTML Media Capture {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
+- Crawled version: 01 February 2018
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
 - Latest published version: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Shortname: html-media-capture
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 295)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-facingMode`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-facingMode)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+     * [`https://www.w3.org/TR/custom-elements/`](https://www.w3.org/TR/custom-elements/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -17198,7 +17867,7 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `WindowProxy`
+- Unknown WebIDL names used: `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `MessageEventSource` also defined in [Portals](https://wicg.github.io/portals/)
 - Missing references for WebIDL names: 
@@ -18588,7 +19257,12 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
+- [ARIA in HTML](https://w3c.github.io/html-aria/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
@@ -18601,6 +19275,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -18647,10 +19322,12 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Document Policy](https://wicg.github.io/document-policy/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
@@ -18662,18 +19339,30 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
+- [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
+- [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -18681,54 +19370,89 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Open Screen Protocol](https://w3c.github.io/openscreenprotocol/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
+- [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
+- [Preload](https://w3c.github.io/preload/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/)
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
@@ -18736,8 +19460,12 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
+- [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
@@ -18747,6 +19475,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
@@ -18765,6 +19494,7 @@ Informative references to this spec from:
 
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [ContentEditable](https://w3c.github.io/contentEditable/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
@@ -18781,10 +19511,13 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
+- [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
 - [MIME Sniffing Standard](https://mimesniff.spec.whatwg.org/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
@@ -18792,7 +19525,7 @@ Informative references to this spec from:
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## HTMLVideoElement.requestVideoFrameCallback() {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -18804,7 +19537,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
 - Broken external links:
@@ -18837,51 +19569,58 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## IceTransport Extensions for WebRTC {data-spec=true data-error=true}
+## IceTransport Extensions for WebRTC {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
+- Crawled version: 18 March 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
 - Shortname: webrtc-ice
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 70)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransport`](https://www.w3.org/TR/webrtc/#dom-rtcicetransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannel`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannel)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport`](https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransport-getlocalparameters`](https://www.w3.org/TR/webrtc/#dom-rtcicetransport-getlocalparameters)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceerrorevent`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceerrorevent)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicecandidate`](https://www.w3.org/TR/webrtc/#dom-rtcicecandidate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicecandidateinit`](https://www.w3.org/TR/webrtc/#dom-rtcicecandidateinit)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceserver`](https://www.w3.org/TR/webrtc/#dom-rtciceserver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportpolicy`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportpolicy)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicerole`](https://www.w3.org/TR/webrtc/#dom-rtcicerole)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceparameters`](https://www.w3.org/TR/webrtc/#dom-rtciceparameters)
+     * [`https://www.w3.org/TR/webrtc/#dom-icetransport-state`](https://www.w3.org/TR/webrtc/#dom-icetransport-state)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-closed`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-closed)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceserver-urls`](https://www.w3.org/TR/webrtc/#dom-rtciceserver-urls)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceserver-username`](https://www.w3.org/TR/webrtc/#dom-rtciceserver-username)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceserver-credentialtype`](https://www.w3.org/TR/webrtc/#dom-rtciceserver-credentialtype)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicecredentialtype-password`](https://www.w3.org/TR/webrtc/#dom-rtcicecredentialtype-password)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceparameters-usernamefragment`](https://www.w3.org/TR/webrtc/#dom-rtciceparameters-usernamefragment)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtciceparameters-password`](https://www.w3.org/TR/webrtc/#dom-rtciceparameters-password)
+     * [`https://www.w3.org/TR/webrtc/#dom-icetransport-role`](https://www.w3.org/TR/webrtc/#dom-icetransport-role)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-checking`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-checking)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-completed`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-completed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18890,52 +19629,81 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Identifiers for WebRTC's Statistics API {data-spec=true data-error=true}
+## Identifiers for WebRTC's Statistics API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
+- Crawled version: 28 April 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Shortname: webrtc-stats
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 387)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/webrtc-extensions/`](https://w3c.github.io/webrtc-extensions/)
+- Broken external links:
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannel`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannel)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport`](https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlstransportstate`](https://www.w3.org/TR/webrtc/#dom-rtcdtlstransportstate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransport`](https://www.w3.org/TR/webrtc/#dom-rtcicetransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicerole`](https://www.w3.org/TR/webrtc/#dom-rtcicerole)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcsctptransport`](https://www.w3.org/TR/webrtc/#dom-rtcsctptransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicecandidatetype`](https://www.w3.org/TR/webrtc/#dom-rtcicecandidatetype)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtccertificate`](https://www.w3.org/TR/webrtc/#dom-rtccertificate)
+     * [`https://www.w3.org/TR/webrtc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector`](https://www.w3.org/TR/webrtc/#widl-RTCPeerConnection-getStats-Promise-RTCStatsReport--MediaStreamTrack-selector)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack)
+     * [`https://www.w3.org/TR/webrtc/#dom-peerconnection-setremotedescription`](https://www.w3.org/TR/webrtc/#dom-peerconnection-setremotedescription)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-track`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-track)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver`](https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver`](https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsynchronizationsource`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsynchronizationsource)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpcodingparameters-rid`](https://www.w3.org/TR/webrtc/#dom-rtcrtpcodingparameters-rid)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-open`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-open)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-connecting`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-connecting)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-closing`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-closing)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-closed`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannelstate-closed)
+     * [`https://www.w3.org/TR/webrtc/#dom-peerconnection-createdatachannel`](https://www.w3.org/TR/webrtc/#dom-peerconnection-createdatachannel)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-ondatachannel`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-ondatachannel)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtransceiver`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtransceiver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtptransceiver-mid`](https://www.w3.org/TR/webrtc/#dom-rtptransceiver-mid)
+     * [`https://www.w3.org/TR/webrtc/#dom-datachannel-label`](https://www.w3.org/TR/webrtc/#dom-datachannel-label)
+     * [`https://www.w3.org/TR/webrtc/#dom-datachannel-protocol`](https://www.w3.org/TR/webrtc/#dom-datachannel-protocol)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-id`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannel-id)
+     * [`https://www.w3.org/TR/webrtc/#dom-datachannel-readystate`](https://www.w3.org/TR/webrtc/#dom-datachannel-readystate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate`](https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate)
+     * [`https://www.w3.org/TR/webrtc/#dom-icetransport-role`](https://www.w3.org/TR/webrtc/#dom-icetransport-role)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport-icetransport`](https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport-icetransport)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport-state`](https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport-state)
+     * [`https://www.w3.org/TR/webrtc/#dom-icetransport-state`](https://www.w3.org/TR/webrtc/#dom-icetransport-state)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcicecandidate`](https://www.w3.org/TR/webrtc/#dom-rtcicecandidate)
+     * [`https://www.w3.org/TR/webrtc/#dom-peerconnection-addicecandidate`](https://www.w3.org/TR/webrtc/#dom-peerconnection-addicecandidate)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent-url`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent-url)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent)
+     * [`https://www.w3.org/TR/webrtc/#revealing-ip-addresses`](https://www.w3.org/TR/webrtc/#revealing-ip-addresses)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#idl-long-long`](https://heycam.github.io/webidl/#idl-long-long)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-performance`](https://www.w3.org/TR/hr-time-3/#dom-performance)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-performance-timeorigin`](https://www.w3.org/TR/hr-time-3/#dom-performance-timeorigin)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-performance-now`](https://www.w3.org/TR/hr-time-3/#dom-performance-now)
+     * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
+     * [`https://www.w3.org/TR/webrtc-identity/#isolated-media-streams`](https://www.w3.org/TR/webrtc-identity/#isolated-media-streams)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -18998,7 +19766,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 
 Informative references to this spec from:
 
@@ -19074,52 +19844,53 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Image Resource {data-spec=true data-error=true}
+## Image Resource {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
+- Crawled version: 04 June 2021
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
 - Latest published version: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Shortname: image-resource
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 297)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/wai-aria/`](https://www.w3.org/TR/wai-aria/)
+- Broken external links:
+     * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#api-base-url`](https://html.spec.whatwg.org/#api-base-url)
+     * [`https://html.spec.whatwg.org/#attr-link-rel`](https://html.spec.whatwg.org/#attr-link-rel)
+     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
+     * [`https://mimesniff.spec.whatwg.org/#image-mime-type`](https://mimesniff.spec.whatwg.org/#image-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically`](https://mimesniff.spec.whatwg.org/#rules-for-sniffing-images-specifically)
+     * [`https://mimesniff.spec.whatwg.org/#computed-mime-type`](https://mimesniff.spec.whatwg.org/#computed-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#parse-a-mime-type`](https://mimesniff.spec.whatwg.org/#parse-a-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#mime-type-essence`](https://mimesniff.spec.whatwg.org/#mime-type-essence)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://fetch.spec.whatwg.org/#concept-response`](https://fetch.spec.whatwg.org/#concept-response)
+     * [`https://fetch.spec.whatwg.org/#concept-request-url`](https://fetch.spec.whatwg.org/#concept-request-url)
+     * [`https://fetch.spec.whatwg.org/#concept-request-destination`](https://fetch.spec.whatwg.org/#concept-request-destination)
+     * [`https://fetch.spec.whatwg.org/#concept-request-client`](https://fetch.spec.whatwg.org/#concept-request-client)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-short_name`](https://www.w3.org/TR/appmanifest/#dfn-short_name)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -19127,6 +19898,8 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
+- [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -19417,6 +20190,7 @@ Normative references to this spec from:
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Console Standard](https://console.spec.whatwg.org/)
@@ -19452,6 +20226,7 @@ Normative references to this spec from:
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
@@ -19463,13 +20238,17 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
@@ -19477,6 +20256,7 @@ Normative references to this spec from:
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
@@ -19487,7 +20267,11 @@ Normative references to this spec from:
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
@@ -19497,25 +20281,34 @@ Normative references to this spec from:
 - [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -19534,55 +20327,29 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
 
-## Input Device Capabilities {data-spec=true data-error=true}
+## Input Device Capabilities {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
+- Crawled version: 08 March 2021
 - Editor's Draft: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
 - Shortname: input-device-capabilities
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 95)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://www.w3.org/TR/uievents/#uievent`](https://www.w3.org/TR/uievents/#uievent)
+     * [`https://www.w3.org/TR/uievents/#dictdef-uieventinit`](https://www.w3.org/TR/uievents/#dictdef-uieventinit)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -19591,52 +20358,47 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Input Events Level 2 {data-spec=true data-error=true}
+## Input Events Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
+- Crawled version: 07 October 2020
 - Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
 - Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Shortname: input-events-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 299)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "UI-EVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- Broken external links:
+     * [`https://w3c.github.io/uievents/#event-type-input`](https://w3c.github.io/uievents/#event-type-input)
+     * [`https://w3c.github.io/uievents/#beforeinput`](https://w3c.github.io/uievents/#beforeinput)
+     * [`https://w3c.github.io/uievents/#event-type-compositionstart`](https://w3c.github.io/uievents/#event-type-compositionstart)
+     * [`https://w3c.github.io/uievents/#event-type-compositionupdate`](https://w3c.github.io/uievents/#event-type-compositionupdate)
+     * [`https://w3c.github.io/uievents/#event-type-compositionend`](https://w3c.github.io/uievents/#event-type-compositionend)
+     * [`https://www.w3.org/TR/uievents/#dispatch`](https://www.w3.org/TR/uievents/#dispatch)
+     * [`https://www.w3.org/TR/uievents/#interface-inputevent`](https://www.w3.org/TR/uievents/#interface-inputevent)
+     * [`https://www.w3.org/TR/uievents/#default-action`](https://www.w3.org/TR/uievents/#default-action)
+     * [`https://www.w3.org/TR/uievents/#user-agent`](https://www.w3.org/TR/uievents/#user-agent)
+     * [`https://www.w3.org/TR/uievents/#keydown`](https://www.w3.org/TR/uievents/#keydown)
+     * [`https://www.w3.org/TR/uievents/#keypress`](https://www.w3.org/TR/uievents/#keypress)
+     * [`https://html.spec.whatwg.org/#editing-host`](https://html.spec.whatwg.org/#editing-host)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#datatransfer`](https://html.spec.whatwg.org/#datatransfer)
+     * [`https://html.spec.whatwg.org/#the-br-element`](https://html.spec.whatwg.org/#the-br-element)
+     * [`https://html.spec.whatwg.org/#drag-data-store`](https://html.spec.whatwg.org/#drag-data-store)
+     * [`https://html.spec.whatwg.org/#concept-dnd-ro`](https://html.spec.whatwg.org/#concept-dnd-ro)
+     * [`https://html.spec.whatwg.org/#drag-data-store-item-list`](https://html.spec.whatwg.org/#drag-data-store-item-list)
+     * [`https://html.spec.whatwg.org/#the-drag-data-item-type-string`](https://html.spec.whatwg.org/#the-drag-data-item-type-string)
+     * [`https://html.spec.whatwg.org/#the-drag-data-item-kind`](https://html.spec.whatwg.org/#the-drag-data-item-kind)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://dom.spec.whatwg.org/#interface-staticrange`](https://dom.spec.whatwg.org/#interface-staticrange)
+     * [`https://infra.spec.whatwg.org/#code-points`](https://infra.spec.whatwg.org/#code-points)
+     * [`https://www.w3.org/TR/cssom-1/#serialize-a-css-component-value`](https://www.w3.org/TR/cssom-1/#serialize-a-css-component-value)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -19644,10 +20406,11 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [UI Events](https://w3c.github.io/uievents/)
 
 
-## Intersection Observer {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## Intersection Observer {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -19660,7 +20423,8 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
+- Missing references for WebIDL names: 
+     * `DOMHighResTimeStamp` defined in [High Resolution Time](https://w3c.github.io/hr-time/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/)
      * [`https://www.w3.org/TR/css-masking-1/`](https://www.w3.org/TR/css-masking-1/)
@@ -19767,104 +20531,44 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## isInputPending {data-spec=true data-error=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Crawled URL: [[object Object]]([object Object])
-- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Shortname: is-input-pending
-
-### Potential issue(s) {.anomalies}
-
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 97)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-## JS Self-Profiling API {data-spec=true data-error=true}
+## JS Self-Profiling API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
+- Crawled version: 04 June 2021
 - Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Shortname: js-self-profiling
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 98)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html)
+- Broken external links:
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-time-origin`](https://www.w3.org/TR/hr-time-2/#dfn-time-origin)
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time`](https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time)
+     * [`https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
+     * [`https://www.w3.org/TR/hr-time-2/#clock-resolution`](https://www.w3.org/TR/hr-time-2/#clock-resolution)
+     * [`https://fetch.spec.whatwg.org/#concept-response`](https://fetch.spec.whatwg.org/#concept-response)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#CrossOriginIsolated`](https://heycam.github.io/webidl/#CrossOriginIsolated)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
+     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
+     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
+     * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -19989,7 +20693,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Largest Contentful Paint {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Largest Contentful Paint {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -20001,7 +20705,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `PerformanceEntry`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-3" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
@@ -20056,11 +20759,12 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
 
-## Layout Instability API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Layout Instability API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -20072,7 +20776,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `PerformanceEntry`
 - Missing references for links: 
      * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/)
      * [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -20149,7 +20852,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
@@ -20390,7 +21095,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Long Tasks API 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## Long Tasks API 1 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -20403,7 +21108,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME-2" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
@@ -20460,6 +21164,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
@@ -20563,50 +21268,112 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## MathML Core {data-spec=true data-error=true}
+## MathML Core {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 61)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://infra.spec.whatwg.org/#mathml-namespace`](https://infra.spec.whatwg.org/#mathml-namespace)
+     * [`https://infra.spec.whatwg.org/#ascii-case-insensitive`](https://infra.spec.whatwg.org/#ascii-case-insensitive)
+     * [`https://infra.spec.whatwg.org/#ascii-lowercase`](https://infra.spec.whatwg.org/#ascii-lowercase)
+     * [`https://www.w3.org/TR/css-fonts-4/#font-family-prop`](https://www.w3.org/TR/css-fonts-4/#font-family-prop)
+     * [`https://www.w3.org/TR/css-fonts-4/#valdef-font-family-math`](https://www.w3.org/TR/css-fonts-4/#valdef-font-family-math)
+     * [`https://www.w3.org/TR/css-fonts-4/#font-variant-alternates-prop`](https://www.w3.org/TR/css-fonts-4/#font-variant-alternates-prop)
+     * [`https://www.w3.org/TR/css-fonts-4/#first-available-font`](https://www.w3.org/TR/css-fonts-4/#first-available-font)
+     * [`https://www.w3.org/TR/css-fonts-4/#font-size-prop`](https://www.w3.org/TR/css-fonts-4/#font-size-prop)
+     * [`https://www.w3.org/TR/css-values-3/#integer-value`](https://www.w3.org/TR/css-values-3/#integer-value)
+     * [`https://www.w3.org/TR/css-values-3/#typedef-length-percentage`](https://www.w3.org/TR/css-values-3/#typedef-length-percentage)
+     * [`https://www.w3.org/TR/css-values-3/#comb-one`](https://www.w3.org/TR/css-values-3/#comb-one)
+     * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
+     * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
+     * [`https://html.spec.whatwg.org/#the-id-attribute`](https://html.spec.whatwg.org/#the-id-attribute)
+     * [`https://html.spec.whatwg.org/#classes`](https://html.spec.whatwg.org/#classes)
+     * [`https://html.spec.whatwg.org/#the-style-attribute`](https://html.spec.whatwg.org/#the-style-attribute)
+     * [`https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes`](https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes)
+     * [`https://html.spec.whatwg.org/#nonce-attributes`](https://html.spec.whatwg.org/#nonce-attributes)
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
+     * [`https://html.spec.whatwg.org/#presentational-hints`](https://html.spec.whatwg.org/#presentational-hints)
+     * [`https://html.spec.whatwg.org/#event-handler-contentattributes`](https://html.spec.whatwg.org/#event-handler-contentattributes)
+     * [`https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects`](https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects)
+     * [`https://html.spec.whatwg.org/#parsing`](https://html.spec.whatwg.org/#parsing)
+     * [`https://html.spec.whatwg.org/#html-integration-point`](https://html.spec.whatwg.org/#html-integration-point)
+     * [`https://html.spec.whatwg.org/#mathml-text-integration-point`](https://html.spec.whatwg.org/#mathml-text-integration-point)
+     * [`https://html.spec.whatwg.org/#tree-construction-dispatcher`](https://html.spec.whatwg.org/#tree-construction-dispatcher)
+     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
+     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
+     * [`https://html.spec.whatwg.org/#flow-content-2`](https://html.spec.whatwg.org/#flow-content-2)
+     * [`https://html.spec.whatwg.org/#phrasing-content-2`](https://html.spec.whatwg.org/#phrasing-content-2)
+     * [`https://html.spec.whatwg.org/#webappapis`](https://html.spec.whatwg.org/#webappapis)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
+     * [`https://html.spec.whatwg.org/#documentandelementeventhandlers`](https://html.spec.whatwg.org/#documentandelementeventhandlers)
+     * [`https://html.spec.whatwg.org/#htmlorsvgelement`](https://html.spec.whatwg.org/#htmlorsvgelement)
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#focus`](https://html.spec.whatwg.org/#focus)
+     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
+     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
+     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
+     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
+     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
+     * [`https://html.spec.whatwg.org/#the-canvas-element`](https://html.spec.whatwg.org/#the-canvas-element)
+     * [`https://html.spec.whatwg.org/#security-with-canvas-elements`](https://html.spec.whatwg.org/#security-with-canvas-elements)
+     * [`https://html.spec.whatwg.org/#element`](https://html.spec.whatwg.org/#element)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#direction`](https://www.w3.org/TR/css-writing-modes-3/#direction)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#writing-mode`](https://www.w3.org/TR/css-writing-modes-3/#writing-mode)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#abstract-dimensions`](https://www.w3.org/TR/css-writing-modes-3/#abstract-dimensions)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#block-dimension`](https://www.w3.org/TR/css-writing-modes-3/#block-dimension)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#inline-dimension`](https://www.w3.org/TR/css-writing-modes-3/#inline-dimension)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#block-axis`](https://www.w3.org/TR/css-writing-modes-3/#block-axis)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#inline-axis`](https://www.w3.org/TR/css-writing-modes-3/#inline-axis)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#block-size`](https://www.w3.org/TR/css-writing-modes-3/#block-size)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#inline-size`](https://www.w3.org/TR/css-writing-modes-3/#inline-size)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#logical-directions`](https://www.w3.org/TR/css-writing-modes-3/#logical-directions)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#inline-start`](https://www.w3.org/TR/css-writing-modes-3/#inline-start)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#inline-end`](https://www.w3.org/TR/css-writing-modes-3/#inline-end)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#block-start`](https://www.w3.org/TR/css-writing-modes-3/#block-start)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#block-end`](https://www.w3.org/TR/css-writing-modes-3/#block-end)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#line-relative-direction`](https://www.w3.org/TR/css-writing-modes-3/#line-relative-direction)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#line-left`](https://www.w3.org/TR/css-writing-modes-3/#line-left)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#line-right`](https://www.w3.org/TR/css-writing-modes-3/#line-right)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#line-over`](https://www.w3.org/TR/css-writing-modes-3/#line-over)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#line-under`](https://www.w3.org/TR/css-writing-modes-3/#line-under)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#intro-baselines`](https://www.w3.org/TR/css-writing-modes-3/#intro-baselines)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode`](https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#extent`](https://www.w3.org/TR/css-writing-modes-3/#extent)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#the-background-color`](https://www.w3.org/TR/css-backgrounds-3/#the-background-color)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#padding-physical`](https://www.w3.org/TR/css-backgrounds-3/#padding-physical)
+     * [`https://www.w3.org/TR/css-display-3/#unbox-mathml`](https://www.w3.org/TR/css-display-3/#unbox-mathml)
+     * [`https://www.w3.org/TR/css-display-3/#block-box`](https://www.w3.org/TR/css-display-3/#block-box)
+     * [`https://www.w3.org/TR/css-display-3/#valdef-display-table`](https://www.w3.org/TR/css-display-3/#valdef-display-table)
+     * [`https://www.w3.org/TR/css-display-3/#typedef-display-inside`](https://www.w3.org/TR/css-display-3/#typedef-display-inside)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#DOMException`](https://heycam.github.io/webidl/#DOMException)
+     * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
+     * [`https://www.w3.org/TR/selectors-3/#overview`](https://www.w3.org/TR/selectors-3/#overview)
+     * [`https://www.w3.org/TR/css-sizing-3/#min-content-inline-size`](https://www.w3.org/TR/css-sizing-3/#min-content-inline-size)
+     * [`https://www.w3.org/TR/css-sizing-3/#max-content-inline-size`](https://www.w3.org/TR/css-sizing-3/#max-content-inline-size)
+     * [`https://www.w3.org/TR/css-align-3/#first-baseline-set`](https://www.w3.org/TR/css-align-3/#first-baseline-set)
+     * [`https://www.w3.org/TR/css-align-3/#last-baseline-set`](https://www.w3.org/TR/css-align-3/#last-baseline-set)
+     * [`https://www.w3.org/TR/css-position-3/#pos-sch`](https://www.w3.org/TR/css-position-3/#pos-sch)
+     * [`https://www.w3.org/TR/css-box-3/#content-box`](https://www.w3.org/TR/css-box-3/#content-box)
+     * [`https://www.w3.org/TR/css-box-3/#padding-box`](https://www.w3.org/TR/css-box-3/#padding-box)
+     * [`https://www.w3.org/TR/css-box-3/#border-box`](https://www.w3.org/TR/css-box-3/#border-box)
+     * [`https://www.w3.org/TR/css-box-3/#the-border-width`](https://www.w3.org/TR/css-box-3/#the-border-width)
+     * [`https://www.w3.org/TR/css-box-3/#margin-box`](https://www.w3.org/TR/css-box-3/#margin-box)
+     * [`https://www.w3.org/TR/css-box-3/#margin-physical`](https://www.w3.org/TR/css-box-3/#margin-physical)
+     * [`https://www.w3.org/TR/css-text-3/#forced-line-break`](https://www.w3.org/TR/css-text-3/#forced-line-break)
+     * [`https://www.w3.org/TR/css-text-3/#soft-wrap-opportunity`](https://www.w3.org/TR/css-text-3/#soft-wrap-opportunity)
+     * [`https://www.w3.org/TR/css-text-3/#text-transform-property`](https://www.w3.org/TR/css-text-3/#text-transform-property)
+     * [`https://www.w3.org/TR/css-layout-api-1/#registering-layout`](https://www.w3.org/TR/css-layout-api-1/#registering-layout)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -20617,7 +21384,7 @@ Informative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 
 
-## Measure Memory API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Measure Memory API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -20629,7 +21396,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Performance`
 - Broken external links:
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
@@ -20880,12 +21646,19 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
@@ -20893,55 +21666,66 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/)
 
 
-## Media Capture Automation {data-spec=true data-error=true}
+## Media Capture Automation {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
+- Crawled version: 15 February 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
 - Shortname: mediacapture-automation
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 63)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "mediacapture-streams" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- Broken external links:
+     * [`https://www.w3.org/TR/webdriver2/#dfn-extension-command`](https://www.w3.org/TR/webdriver2/#dfn-extension-command)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-sessions`](https://www.w3.org/TR/webdriver2/#dfn-sessions)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-extension-command-uri-template`](https://www.w3.org/TR/webdriver2/#dfn-extension-command-uri-template)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps`](https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-errors`](https://www.w3.org/TR/webdriver2/#dfn-errors)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-error-code`](https://www.w3.org/TR/webdriver2/#dfn-error-code)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-invalid-argument`](https://www.w3.org/TR/webdriver2/#dfn-invalid-argument)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context`](https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-no-longer-open`](https://www.w3.org/TR/webdriver2/#dfn-no-longer-open)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-no-such-window`](https://www.w3.org/TR/webdriver2/#dfn-no-such-window)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts`](https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-success`](https://www.w3.org/TR/webdriver2/#dfn-success)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-url-variables`](https://www.w3.org/TR/webdriver2/#dfn-url-variables)
+     * [`https://www.w3.org/TR/webdriver2/#dfn-getting-properties`](https://www.w3.org/TR/webdriver2/#dfn-getting-properties)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use`](https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-navigator-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-navigator-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-source`](https://www.w3.org/TR/mediacapture-streams/#dfn-source)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-label`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-label)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-deviceid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-groupid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-groupid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind)
+     * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-frameRate`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-frameRate)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-facingmode`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-facingmode)
+     * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate)
+     * [`https://www.w3.org/TR/mediacapture-streams/#mediadevices`](https://www.w3.org/TR/mediacapture-streams/#mediadevices)
+     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-prompt`](https://www.w3.org/TR/permissions/#dom-permissionstate-prompt)
+     * [`https://www.w3.org/TR/permissions/#set-permission-command`](https://www.w3.org/TR/permissions/#set-permission-command)
+     * [`https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia`](https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia)
+     * [`https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose`](https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose)
+     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://w3c.github.io/mediacapture-main/#dfn-source`](https://w3c.github.io/mediacapture-main/#dfn-source)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -20997,55 +21781,59 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
-## Media Capture from DOM Elements {data-spec=true data-error=true}
+## Media Capture from DOM Elements {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
+- Crawled version: 19 January 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Shortname: mediacapture-fromelement
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 307)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "mediacapture-streams" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
+     * [`https://html.spec.whatwg.org/#canvas`](https://html.spec.whatwg.org/#canvas)
+     * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
+     * [`https://html.spec.whatwg.org/#htmlcanvaselement`](https://html.spec.whatwg.org/#htmlcanvaselement)
+     * [`https://html.spec.whatwg.org/#videotrack`](https://html.spec.whatwg.org/#videotrack)
+     * [`https://html.spec.whatwg.org/#audiotrack`](https://html.spec.whatwg.org/#audiotrack)
+     * [`https://html.spec.whatwg.org/#dom-videotracklist-selectedindex`](https://html.spec.whatwg.org/#dom-videotracklist-selectedindex)
+     * [`https://html.spec.whatwg.org/#dom-audiotrack-enabled`](https://html.spec.whatwg.org/#dom-audiotrack-enabled)
+     * [`https://html.spec.whatwg.org/#dom-media-have_nothing`](https://html.spec.whatwg.org/#dom-media-have_nothing)
+     * [`https://html.spec.whatwg.org/#ended-playback`](https://html.spec.whatwg.org/#ended-playback)
+     * [`https://html.spec.whatwg.org/#dom-media-src`](https://html.spec.whatwg.org/#dom-media-src)
+     * [`https://html.spec.whatwg.org/#dom-media-srcobject`](https://html.spec.whatwg.org/#dom-media-srcobject)
+     * [`https://html.spec.whatwg.org/#dom-media-playbackrate`](https://html.spec.whatwg.org/#dom-media-playbackrate)
+     * [`https://html.spec.whatwg.org/#concept-canvas-origin-clean`](https://html.spec.whatwg.org/#concept-canvas-origin-clean)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastream`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastream)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack)
+     * [`https://w3c.github.io/mediacapture-main/#ends-nostop`](https://w3c.github.io/mediacapture-main/#ends-nostop)
+     * [`https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack`](https://w3c.github.io/mediacapture-main/#event-mediastream-addtrack)
+     * [`https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack`](https://w3c.github.io/mediacapture-main/#event-mediastream-removetrack)
+     * [`https://w3c.github.io/mediacapture-main/#track-muted`](https://w3c.github.io/mediacapture-main/#track-muted)
+     * [`https://w3c.github.io/mediacapture-main/#track-enabled`](https://w3c.github.io/mediacapture-main/#track-enabled)
+     * [`https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-muted`](https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-muted)
+     * [`https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-mute`](https://w3c.github.io/mediacapture-main/#event-mediastreamtrack-mute)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://www.w3.org/TR/webaudio/#mediastreamaudiosourcenode`](https://www.w3.org/TR/webaudio/#mediastreamaudiosourcenode)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -21056,51 +21844,33 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## Media Feeds {data-spec=true data-error=true}
+## Media Feeds {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
+- Crawled version: 08 March 2021
 - Editor's Draft: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - Shortname: media-feeds
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 104)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#link`](https://html.spec.whatwg.org/#link)
+     * [`https://html.spec.whatwg.org/#the-head-element`](https://html.spec.whatwg.org/#the-head-element)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-href`](https://html.spec.whatwg.org/#attr-hyperlink-href)
+     * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
+     * [`https://html.spec.whatwg.org/#ready-for-post-load-tasks`](https://html.spec.whatwg.org/#ready-for-post-load-tasks)
+     * [`https://html.spec.whatwg.org/#linkTypes`](https://html.spec.whatwg.org/#linkTypes)
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
+     * [`https://url.spec.whatwg.org/#urls`](https://url.spec.whatwg.org/#urls)
+     * [`https://fetch.spec.whatwg.org/#fetching`](https://fetch.spec.whatwg.org/#fetching)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://fetch.spec.whatwg.org/#concept-header-list`](https://fetch.spec.whatwg.org/#concept-header-list)
+     * [`https://fetch.spec.whatwg.org/#concept-request-redirect-mode`](https://fetch.spec.whatwg.org/#concept-request-redirect-mode)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -21109,50 +21879,26 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Media Playback Quality {data-spec=true data-error=true}
+## Media Playback Quality {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
+- Crawled version: 04 February 2021
 - Editor's Draft: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
 - Shortname: media-playback-quality
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 62)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
+     * [`https://html.spec.whatwg.org/#media-element-load-algorithm`](https://html.spec.whatwg.org/#media-element-load-algorithm)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time`](https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -21243,7 +21989,9 @@ Normative references to this spec from:
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
@@ -21371,6 +22119,7 @@ Normative references to this spec from:
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 Informative references to this spec from:
 
@@ -21519,6 +22268,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 
 
@@ -21608,7 +22358,7 @@ Informative references to this spec from:
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 
 
-## MediaStream Recording {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## MediaStream Recording {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -21621,7 +22371,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for links: 
      * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/)
      * [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/)
@@ -21675,55 +22424,29 @@ Informative references to this spec from:
 
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 
 
-## MediaStreamTrack Content Hints {data-spec=true data-error=true}
+## MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
+- Crawled version: 19 January 2021
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
 - Latest published version: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Shortname: mst-content-hint
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 315)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsendparameters`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsendparameters)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -21785,12 +22508,16 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Preload](https://w3c.github.io/preload/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -21798,6 +22525,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 
 ## Mixed Content Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -21870,11 +22598,13 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Preload](https://w3c.github.io/preload/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
@@ -21964,111 +22694,163 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Navigation Timing Level 2 {data-spec=true data-error=true}
+## Navigation Timing Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
+- Crawled version: 18 May 2021
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
 - Latest published version: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Shortname: navigation-timing-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 316)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/resource-hints/#prerender`](https://www.w3.org/TR/resource-hints/#prerender)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-nexthopprotocol`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-nexthopprotocol)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-transfersize`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-transfersize)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-encodedbodysize`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-encodedbodysize)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-decodedbodysize`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-decodedbodysize)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-secureconnectionstart`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-secureconnectionstart)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-requeststart`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-requeststart)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responsestart`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responsestart)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responseend`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responseend)
+     * [`https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry`](https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectstart`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectstart)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectend`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectend)
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-time-origin`](https://www.w3.org/TR/hr-time-2/#dfn-time-origin)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-performance-timeorigin`](https://www.w3.org/TR/hr-time-2/#dom-performance-timeorigin)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#the-document's-address`](https://html.spec.whatwg.org/#the-document's-address)
+     * [`https://html.spec.whatwg.org/#document-load-timing-info`](https://html.spec.whatwg.org/#document-load-timing-info)
+     * [`https://html.spec.whatwg.org/#document-unload-timing-info`](https://html.spec.whatwg.org/#document-unload-timing-info)
+     * [`https://html.spec.whatwg.org/#unload-event-start-time`](https://html.spec.whatwg.org/#unload-event-start-time)
+     * [`https://html.spec.whatwg.org/#unloading-documents`](https://html.spec.whatwg.org/#unloading-documents)
+     * [`https://html.spec.whatwg.org/#unload-event-end-time`](https://html.spec.whatwg.org/#unload-event-end-time)
+     * [`https://html.spec.whatwg.org/#dom-interactive-time`](https://html.spec.whatwg.org/#dom-interactive-time)
+     * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
+     * [`https://html.spec.whatwg.org/#dom-content-loaded-event-start-time`](https://html.spec.whatwg.org/#dom-content-loaded-event-start-time)
+     * [`https://html.spec.whatwg.org/#the-end:event-domcontentloaded`](https://html.spec.whatwg.org/#the-end:event-domcontentloaded)
+     * [`https://html.spec.whatwg.org/#dom-content-loaded-event-end-time`](https://html.spec.whatwg.org/#dom-content-loaded-event-end-time)
+     * [`https://html.spec.whatwg.org/#dom-complete-time`](https://html.spec.whatwg.org/#dom-complete-time)
+     * [`https://html.spec.whatwg.org/#load-event-start-time`](https://html.spec.whatwg.org/#load-event-start-time)
+     * [`https://html.spec.whatwg.org/#load-event-end-time`](https://html.spec.whatwg.org/#load-event-end-time)
+     * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
+     * [`https://html.spec.whatwg.org/#history-handling-behavior`](https://html.spec.whatwg.org/#history-handling-behavior)
+     * [`https://html.spec.whatwg.org/#hh-default`](https://html.spec.whatwg.org/#hh-default)
+     * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
+     * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
+     * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://html.spec.whatwg.org/#load-timing-info`](https://html.spec.whatwg.org/#load-timing-info)
+     * [`https://html.spec.whatwg.org/#previous-document-unload-timing`](https://html.spec.whatwg.org/#previous-document-unload-timing)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page`](https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page)
+     * [`https://html.spec.whatwg.org/#relaxing-the-same-origin-restriction`](https://html.spec.whatwg.org/#relaxing-the-same-origin-restriction)
+     * [`https://html.spec.whatwg.org/#prompt-to-unload-a-document`](https://html.spec.whatwg.org/#prompt-to-unload-a-document)
+     * [`https://html.spec.whatwg.org/#unload-a-document`](https://html.spec.whatwg.org/#unload-a-document)
+     * [`https://html.spec.whatwg.org/#fetching-resources`](https://html.spec.whatwg.org/#fetching-resources)
+     * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
+     * [`https://html.spec.whatwg.org/#the-end`](https://html.spec.whatwg.org/#the-end)
+     * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute`](https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
+     * [`https://heycam.github.io/webidl/#idl-enums`](https://heycam.github.io/webidl/#idl-enums)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-start-time`](https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-start-time)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-fetch-event-dispatch-time`](https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-fetch-event-dispatch-time)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-timing-info`](https://www.w3.org/TR/service-workers-1/#service-worker-timing-info)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://fetch.spec.whatwg.org/#redirect-status`](https://fetch.spec.whatwg.org/#redirect-status)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info`](https://fetch.spec.whatwg.org/#fetch-timing-info)
+     * [`https://fetch.spec.whatwg.org/#concept-request-method`](https://fetch.spec.whatwg.org/#concept-request-method)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 Informative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
-## Network Error Logging {data-spec=true data-error=true}
+## Network Error Logging {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/network-error-logging/](https://w3c.github.io/network-error-logging/)
+- Crawled version: 23 November 2020
 - Editor's Draft: [https://w3c.github.io/network-error-logging/](https://w3c.github.io/network-error-logging/)
 - Latest published version: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
 - Shortname: network-error-logging-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 317)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://fetch.spec.whatwg.org/#concept-request-client`](https://fetch.spec.whatwg.org/#concept-request-client)
+     * [`https://fetch.spec.whatwg.org/#cors-preflight-request`](https://fetch.spec.whatwg.org/#cors-preflight-request)
+     * [`https://fetch.spec.whatwg.org/#extract-header-list-values`](https://fetch.spec.whatwg.org/#extract-header-list-values)
+     * [`https://fetch.spec.whatwg.org/#header-list-contains`](https://fetch.spec.whatwg.org/#header-list-contains)
+     * [`https://fetch.spec.whatwg.org/#concept-header-name`](https://fetch.spec.whatwg.org/#concept-header-name)
+     * [`https://fetch.spec.whatwg.org/#concept-header-value`](https://fetch.spec.whatwg.org/#concept-header-value)
+     * [`https://fetch.spec.whatwg.org/#http-network-fetch`](https://fetch.spec.whatwg.org/#http-network-fetch)
+     * [`https://fetch.spec.whatwg.org/#http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#http-network-or-cache-fetch)
+     * [`https://fetch.spec.whatwg.org/#redirect-status`](https://fetch.spec.whatwg.org/#redirect-status)
+     * [`https://fetch.spec.whatwg.org/#concept-request-header-list`](https://fetch.spec.whatwg.org/#concept-request-header-list)
+     * [`https://fetch.spec.whatwg.org/#concept-response`](https://fetch.spec.whatwg.org/#concept-response)
+     * [`https://fetch.spec.whatwg.org/#concept-response-header-list`](https://fetch.spec.whatwg.org/#concept-response-header-list)
+     * [`https://fetch.spec.whatwg.org/#concept-response-trailer`](https://fetch.spec.whatwg.org/#concept-response-trailer)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#navigator.online`](https://html.spec.whatwg.org/#navigator.online)
+     * [`https://html.spec.whatwg.org/#origin`](https://html.spec.whatwg.org/#origin)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://www.w3.org/TR/referrer-policy/#referrer-policy`](https://www.w3.org/TR/referrer-policy/#referrer-policy)
+     * [`https://www.w3.org/TR/reporting-1/#endpoint-group`](https://www.w3.org/TR/reporting-1/#endpoint-group)
+     * [`https://www.w3.org/TR/reporting-1/#report`](https://www.w3.org/TR/reporting-1/#report)
+     * [`https://www.w3.org/TR/reporting-1/#report-body`](https://www.w3.org/TR/reporting-1/#report-body)
+     * [`https://www.w3.org/TR/reporting-1/#report-type`](https://www.w3.org/TR/reporting-1/#report-type)
+     * [`https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers`](https://www.w3.org/TR/reporting-1/#visible-to-reporting-observers)
+     * [`https://www.w3.org/TR/reporting-1/#queue-report`](https://www.w3.org/TR/reporting-1/#queue-report)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-nexthopprotocol`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-nexthopprotocol)
+     * [`https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy`](https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy)
+     * [`https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin`](https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin)
+     * [`https://url.spec.whatwg.org/#concept-url-fragment`](https://url.spec.whatwg.org/#concept-url-fragment)
+     * [`https://url.spec.whatwg.org/#concept-host`](https://url.spec.whatwg.org/#concept-host)
+     * [`https://url.spec.whatwg.org/#concept-URL`](https://url.spec.whatwg.org/#concept-URL)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -22081,55 +22863,43 @@ Informative references to this spec from:
 - [Reporting API 1](https://w3c.github.io/reporting/)
 
 
-## Network Information API {data-spec=true data-error=true}
+## Network Information API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
+- Crawled version: 11 May 2020
 - Editor's Draft: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
 - Shortname: netinfo
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 105)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
+     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
+- Broken external links:
+     * [`https://w3c.github.io/ServiceWorker/v1/#cache-objects`](https://w3c.github.io/ServiceWorker/v1/#cache-objects)
+     * [`https://w3c.github.io/ServiceWorker/v1/#installation-algorithm`](https://w3c.github.io/ServiceWorker/v1/#installation-algorithm)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#networking-task-source`](https://html.spec.whatwg.org/#networking-task-source)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unrestricted-double`](https://heycam.github.io/webidl/#idl-unrestricted-double)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://dom.spec.whatwg.org/#interface-eventtarget`](https://dom.spec.whatwg.org/#interface-eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Save Data API](https://wicg.github.io/savedata/)
 
 No informative reference to this spec from other specs.
 
@@ -22164,7 +22934,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Notifications API Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Notifications API Standard {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -22176,7 +22946,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `VibratePattern`
 - Broken external links:
      * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
      * [`https://heycam.github.io/webidl/#dfn-dictionary`](https://heycam.github.io/webidl/#dfn-dictionary)
@@ -22253,12 +23022,15 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Push API](https://w3c.github.io/push-api/)
 
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 
 
 ## Open Screen Protocol {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -22602,51 +23374,27 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## overscroll and scrollend events {data-spec=true data-error=true}
+## overscroll and scrollend events {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
+- Crawled version: 15 April 2020
 - Editor's Draft: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
 - Shortname: overscroll-scrollend-events
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 107)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/)
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://www.w3.org/TR/cssom-view/#scrolling-events`](https://www.w3.org/TR/cssom-view/#scrolling-events)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -22742,74 +23490,73 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Page Visibility Level 2 {data-spec=true data-error=true}
+## Page Visibility Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
 - Latest published version: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Shortname: page-visibility-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 321)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#session-history-entry`](https://html.spec.whatwg.org/#session-history-entry)
+     * [`https://html.spec.whatwg.org/#event-pageshow`](https://html.spec.whatwg.org/#event-pageshow)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#event-unload`](https://html.spec.whatwg.org/#event-unload)
+     * [`https://html.spec.whatwg.org/#unloading-document-visibility-change-steps`](https://html.spec.whatwg.org/#unloading-document-visibility-change-steps)
+     * [`https://html.spec.whatwg.org/#event-focus`](https://html.spec.whatwg.org/#event-focus)
+     * [`https://html.spec.whatwg.org/#event-blur`](https://html.spec.whatwg.org/#event-blur)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
 Informative references to this spec from:
 
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
 
 
-## Paint Timing 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Paint Timing 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -22822,7 +23569,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PerformanceEntry`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-images-3/`](https://www.w3.org/TR/css-images-3/)
      * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
@@ -22888,118 +23634,167 @@ Normative references to this spec from:
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
 No informative reference to this spec from other specs.
 
 
-## Payment Handler API {data-spec=true data-error=true}
+## Payment Handler API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
+- Crawled version: 04 June 2021
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 323)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-concept`](https://www.w3.org/TR/service-workers-1/#service-worker-concept)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-global-scope`](https://www.w3.org/TR/service-workers-1/#service-worker-global-scope)
+     * [`https://www.w3.org/TR/service-workers-1/#extendableevent-interface`](https://www.w3.org/TR/service-workers-1/#extendableevent-interface)
+     * [`https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit`](https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-registration-concept`](https://www.w3.org/TR/service-workers-1/#service-worker-registration-concept)
+     * [`https://www.w3.org/TR/service-workers-1/#fire-functional-event-algorithm`](https://www.w3.org/TR/service-workers-1/#fire-functional-event-algorithm)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-extend-lifetime-promises`](https://www.w3.org/TR/service-workers-1/#dfn-extend-lifetime-promises)
+     * [`https://www.w3.org/TR/service-workers-1/#client-visibilitystate-attribute`](https://www.w3.org/TR/service-workers-1/#client-visibilitystate-attribute)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client)
+     * [`https://www.w3.org/TR/service-workers-1/#create-windowclient-algorithm`](https://www.w3.org/TR/service-workers-1/#create-windowclient-algorithm)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-pending-promises-count`](https://www.w3.org/TR/service-workers-1/#dfn-pending-promises-count)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration`](https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag`](https://www.w3.org/TR/service-workers-1/#dfn-uninstalling-flag)
+     * [`https://www.w3.org/TR/service-workers-1/#try-clear-registration-algorithm`](https://www.w3.org/TR/service-workers-1/#try-clear-registration-algorithm)
+     * [`https://www.w3.org/TR/service-workers-1/#try-activate-algorithm`](https://www.w3.org/TR/service-workers-1/#try-activate-algorithm)
+     * [`https://www.w3.org/TR/service-workers-1/#security-considerations`](https://www.w3.org/TR/service-workers-1/#security-considerations)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-scope-url`](https://www.w3.org/TR/service-workers-1/#dfn-scope-url)
+     * [`https://www.w3.org/TR/payment-request/#canmakepayment()-method`](https://www.w3.org/TR/payment-request/#canmakepayment()-method)
+     * [`https://www.w3.org/TR/payment-request/#show()-method`](https://www.w3.org/TR/payment-request/#show()-method)
+     * [`https://www.w3.org/TR/payment-request/#dfn-payment-method`](https://www.w3.org/TR/payment-request/#dfn-payment-method)
+     * [`https://www.w3.org/TR/payment-request/#paymentmethoddata-dictionary`](https://www.w3.org/TR/payment-request/#paymentmethoddata-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest`](https://www.w3.org/TR/payment-request/#dom-paymentrequest)
+     * [`https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary`](https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#id-attribute`](https://www.w3.org/TR/payment-request/#id-attribute)
+     * [`https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods`](https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods)
+     * [`https://www.w3.org/TR/payment-request/#show-method`](https://www.w3.org/TR/payment-request/#show-method)
+     * [`https://www.w3.org/TR/payment-request/#dfn-json-serialize`](https://www.w3.org/TR/payment-request/#dfn-json-serialize)
+     * [`https://www.w3.org/TR/payment-request/#payment-method-changed-algorithm`](https://www.w3.org/TR/payment-request/#payment-method-changed-algorithm)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentmethodchangeevent`](https://www.w3.org/TR/payment-request/#dom-paymentmethodchangeevent)
+     * [`https://www.w3.org/TR/payment-request/#updatewith-method`](https://www.w3.org/TR/payment-request/#updatewith-method)
+     * [`https://www.w3.org/TR/payment-request/#user-accepts-the-payment-request-algorithm`](https://www.w3.org/TR/payment-request/#user-accepts-the-payment-request-algorithm)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse`](https://www.w3.org/TR/payment-request/#dom-paymentresponse)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-methodname`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-methodname)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-details`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-details)
+     * [`https://www.w3.org/TR/payment-request/#paymentdetailsbase-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsbase-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequestupdateevent`](https://www.w3.org/TR/payment-request/#dom-paymentrequestupdateevent)
+     * [`https://www.w3.org/TR/payment-request/#paymentrequest-updated-algorithm`](https://www.w3.org/TR/payment-request/#paymentrequest-updated-algorithm)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#unordered-set-of-unique-space-separated-tokens`](https://html.spec.whatwg.org/#unordered-set-of-unique-space-separated-tokens)
+     * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#api-base-url`](https://html.spec.whatwg.org/#api-base-url)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://www.w3.org/TR/payment-method-basic-card/#method-id`](https://www.w3.org/TR/payment-method-basic-card/#method-id)
+     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportednetworks`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportednetworks)
+     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
+     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
+     * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-pmi`](https://www.w3.org/TR/payment-method-id/#dfn-pmi)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-url-based-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-url-based-payment-method-identifier)
+     * [`https://infra.spec.whatwg.org/#ascii-case-insensitive`](https://infra.spec.whatwg.org/#ascii-case-insensitive)
+     * [`https://mimesniff.spec.whatwg.org/#valid-mime-type`](https://mimesniff.spec.whatwg.org/#valid-mime-type)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
+     * [`https://url.spec.whatwg.org/#concept-url-origin`](https://url.spec.whatwg.org/#concept-url-origin)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://www.w3.org/TR/payment-method-manifest/#ingest-payment-method-manifests`](https://www.w3.org/TR/payment-method-manifest/#ingest-payment-method-manifests)
+     * [`https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest`](https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest)
+     * [`https://www.w3.org/TR/payment-method-manifest/#payment-method-manifest`](https://www.w3.org/TR/payment-method-manifest/#payment-method-manifest)
+     * [`https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-supported-origins`](https://www.w3.org/TR/payment-method-manifest/#parsed-payment-method-manifest-supported-origins)
+     * [`https://dom.spec.whatwg.org/#dom-event-istrusted`](https://dom.spec.whatwg.org/#dom-event-istrusted)
+     * [`https://dom.spec.whatwg.org/#dispatch-flag`](https://dom.spec.whatwg.org/#dispatch-flag)
+     * [`https://dom.spec.whatwg.org/#stop-propagation-flag`](https://dom.spec.whatwg.org/#stop-propagation-flag)
+     * [`https://dom.spec.whatwg.org/#stop-immediate-propagation-flag`](https://dom.spec.whatwg.org/#stop-immediate-propagation-flag)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 Informative references to this spec from:
 
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 
 
-## Payment Method Identifiers {data-spec=true data-error=true}
+## Payment Method Identifiers {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
 - Latest published version: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
 - Shortname: payment-method-id
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 325)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://url.spec.whatwg.org/#concept-basic-url-parser`](https://url.spec.whatwg.org/#concept-basic-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
+     * [`https://url.spec.whatwg.org/#concept-url-username`](https://url.spec.whatwg.org/#concept-url-username)
+     * [`https://url.spec.whatwg.org/#concept-url-password`](https://url.spec.whatwg.org/#concept-url-password)
+     * [`https://url.spec.whatwg.org/#concept-url-equals`](https://url.spec.whatwg.org/#concept-url-equals)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 No informative reference to this spec from other specs.
 
@@ -23098,111 +23893,168 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+Informative references to this spec from:
+
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 
 
-## Payment Method: Basic Card {data-spec=true data-error=true}
+## Payment Method: Basic Card {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Shortname: payment-method-basic-card
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 324)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `AddressErrors`, `PaymentAddress`
+- Broken external links:
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest`](https://www.w3.org/TR/payment-request/#dom-paymentrequest)
+     * [`https://www.w3.org/TR/payment-request/#dfn-options`](https://www.w3.org/TR/payment-request/#dfn-options)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress`](https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress)
+     * [`https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input`](https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress`](https://www.w3.org/TR/payment-request/#dom-paymentaddress)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode`](https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode)
+     * [`https://www.w3.org/TR/payment-request/#dfn-payment-method-changed-algorithm`](https://www.w3.org/TR/payment-request/#dfn-payment-method-changed-algorithm)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequestupdateevent-updatewith`](https://www.w3.org/TR/payment-request/#dom-paymentrequestupdateevent-updatewith)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentmethoddata`](https://www.w3.org/TR/payment-request/#dom-paymentmethoddata)
+     * [`https://www.w3.org/TR/payment-request/#dfn-serializedmethoddata`](https://www.w3.org/TR/payment-request/#dfn-serializedmethoddata)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest-show`](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show)
+     * [`https://www.w3.org/TR/payment-request/#dfn-serializedmodifierdata`](https://www.w3.org/TR/payment-request/#dfn-serializedmodifierdata)
+     * [`https://www.w3.org/TR/payment-request/#dfn-details`](https://www.w3.org/TR/payment-request/#dfn-details)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-modifiers`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-modifiers)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier-total`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier-total)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier-additionaldisplayitems`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsmodifier-additionaldisplayitems)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentresponse-retry`](https://www.w3.org/TR/payment-request/#dom-paymentresponse-retry)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors`](https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors-paymentmethod`](https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors-paymentmethod)
+     * [`https://www.w3.org/TR/payment-request/#dom-addresserrors`](https://www.w3.org/TR/payment-request/#dom-addresserrors)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#pair`](https://infra.spec.whatwg.org/#pair)
+     * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+
+Informative references to this spec from:
+
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 
 
-## Payment Request API {data-spec=true data-error=true}
+## Payment Request API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
+- Crawled version: 26 May 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 327)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardresponse`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardresponse)
+     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest)
+     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccarderrors`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccarderrors)
+     * [`https://heycam.github.io/webidl/#dfn-dictionary`](https://heycam.github.io/webidl/#dfn-dictionary)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#NewObject`](https://heycam.github.io/webidl/#NewObject)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
+     * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#dfn-exception`](https://heycam.github.io/webidl/#dfn-exception)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-pmi`](https://www.w3.org/TR/payment-method-id/#dfn-pmi)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-validate-a-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-validate-a-payment-method-identifier)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-url-based-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-url-based-payment-method-identifier)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#consume-user-activation`](https://html.spec.whatwg.org/#consume-user-activation)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#language`](https://html.spec.whatwg.org/#language)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#document-element`](https://dom.spec.whatwg.org/#document-element)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#concept-event-constructor`](https://dom.spec.whatwg.org/#concept-event-constructor)
+     * [`https://dom.spec.whatwg.org/#dom-event-istrusted`](https://dom.spec.whatwg.org/#dom-event-istrusted)
+     * [`https://dom.spec.whatwg.org/#event-target`](https://dom.spec.whatwg.org/#event-target)
+     * [`https://dom.spec.whatwg.org/#stop-propagation-flag`](https://dom.spec.whatwg.org/#stop-propagation-flag)
+     * [`https://dom.spec.whatwg.org/#stop-immediate-propagation-flag`](https://dom.spec.whatwg.org/#stop-immediate-propagation-flag)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#concept-event-create`](https://dom.spec.whatwg.org/#concept-event-create)
+     * [`https://dom.spec.whatwg.org/#dom-event-type`](https://dom.spec.whatwg.org/#dom-event-type)
+     * [`https://dom.spec.whatwg.org/#concept-event-dispatch`](https://dom.spec.whatwg.org/#concept-event-dispatch)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#list-contain`](https://infra.spec.whatwg.org/#list-contain)
+     * [`https://infra.spec.whatwg.org/#set-append`](https://infra.spec.whatwg.org/#set-append)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
+     * [`https://infra.spec.whatwg.org/#code-point`](https://infra.spec.whatwg.org/#code-point)
+     * [`https://infra.spec.whatwg.org/#ascii-uppercase`](https://infra.spec.whatwg.org/#ascii-uppercase)
+     * [`https://url.spec.whatwg.org/#concept-basic-url-parser`](https://url.spec.whatwg.org/#concept-basic-url-parser)
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -23210,57 +24062,72 @@ Normative references to this spec from:
 
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 
 
-## Performance Timeline Level 2 {data-spec=true data-error=true}
+## Performance Timeline Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
+- Crawled version: 07 May 2021
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Shortname: performance-timeline-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 328)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/)
+- Broken external links:
+     * [`https://www.w3.org/TR/hr-time-2/#sec-performance`](https://www.w3.org/TR/hr-time-2/#sec-performance)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#map-key`](https://infra.spec.whatwg.org/#map-key)
+     * [`https://infra.spec.whatwg.org/#map-value`](https://infra.spec.whatwg.org/#map-value)
+     * [`https://infra.spec.whatwg.org/#map-get`](https://infra.spec.whatwg.org/#map-get)
+     * [`https://infra.spec.whatwg.org/#struct`](https://infra.spec.whatwg.org/#struct)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#map-getting-the-values`](https://infra.spec.whatwg.org/#map-getting-the-values)
+     * [`https://infra.spec.whatwg.org/#string-is`](https://infra.spec.whatwg.org/#string-is)
+     * [`https://w3c.github.io/timing-entrytypes-registry/#registry`](https://w3c.github.io/timing-entrytypes-registry/#registry)
+     * [`https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry`](https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#es-frozen-array`](https://heycam.github.io/webidl/#es-frozen-array)
+     * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
+     * [`https://heycam.github.io/webidl/#dfn-callback-this-value`](https://heycam.github.io/webidl/#dfn-callback-this-value)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/workers/`](https://www.w3.org/TR/workers/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -23268,12 +24135,21 @@ Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 
 
 ## Permissions {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -23364,23 +24240,30 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -23462,21 +24345,31 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
+- [Battery Status API](https://w3c.github.io/battery/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Federated Learning of Cohorts](https://wicg.github.io/floc/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web Serial API](https://wicg.github.io/serial/)
+- [Web Share API](https://w3c.github.io/web-share/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
@@ -23564,116 +24457,115 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Pointer Events {data-spec=true data-error=true}
+## Pointer Events {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
+- Crawled version: 14 June 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 332)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/touch-events/`](https://w3c.github.io/touch-events/), related reference "TOUCH-EVENTS" uses URL [`https://www.w3.org/TR/touch-events/`](https://www.w3.org/TR/touch-events/)
+- Broken external links:
+     * [`https://www.w3.org/TR/uievents/#dictdef-mouseeventinit`](https://www.w3.org/TR/uievents/#dictdef-mouseeventinit)
+     * [`https://www.w3.org/TR/uievents/#mouseevent`](https://www.w3.org/TR/uievents/#mouseevent)
+     * [`https://www.w3.org/TR/uievents/#dom-uievent-detail`](https://www.w3.org/TR/uievents/#dom-uievent-detail)
+     * [`https://www.w3.org/TR/uievents/#dom-focusevent-relatedtarget`](https://www.w3.org/TR/uievents/#dom-focusevent-relatedtarget)
+     * [`https://www.w3.org/TR/uievents/#event-type-click`](https://www.w3.org/TR/uievents/#event-type-click)
+     * [`https://www.w3.org/TR/uievents/#event-type-auxclick`](https://www.w3.org/TR/uievents/#event-type-auxclick)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-float`](https://heycam.github.io/webidl/#idl-float)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
+     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#initiate-the-drag-and-drop-operation`](https://html.spec.whatwg.org/#initiate-the-drag-and-drop-operation)
+     * [`https://html.spec.whatwg.org/#event-contextmenu`](https://html.spec.whatwg.org/#event-contextmenu)
+     * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://dom.spec.whatwg.org/#concept-node-document`](https://dom.spec.whatwg.org/#concept-node-document)
+     * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
+     * [`https://dom.spec.whatwg.org/#connected`](https://dom.spec.whatwg.org/#connected)
+     * [`https://dom.spec.whatwg.org/#dom-event-timestamp`](https://dom.spec.whatwg.org/#dom-event-timestamp)
+     * [`https://dom.spec.whatwg.org/#dom-event-target`](https://dom.spec.whatwg.org/#dom-event-target)
+     * [`https://compat.spec.whatwg.org/#touch-action`](https://compat.spec.whatwg.org/#touch-action)
+     * [`https://www.w3.org/TR/pointerlock/#dom-mouseevent-movementx`](https://www.w3.org/TR/pointerlock/#dom-mouseevent-movementx)
+     * [`https://www.w3.org/TR/pointerlock/#dom-mouseevent-movementy`](https://www.w3.org/TR/pointerlock/#dom-mouseevent-movementy)
+     * [`https://www.w3.org/TR/touch-events/#mouse-events`](https://www.w3.org/TR/touch-events/#mouse-events)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [UI Events](https://w3c.github.io/uievents/)
 
 No informative reference to this spec from other specs.
 
 
-## Pointer Lock 2.0 {data-spec=true data-error=true}
+## Pointer Lock 2.0 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
+- Crawled version: 15 June 2021
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Shortname: pointerlock-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 333)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/), related reference "ui-events" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#active-sandboxing-flag-set`](https://html.spec.whatwg.org/#active-sandboxing-flag-set)
+     * [`https://html.spec.whatwg.org/#sandboxed-pointer-lock-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-pointer-lock-browsing-context-flag)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#ancestor-browsing-context`](https://html.spec.whatwg.org/#ancestor-browsing-context)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#becomes-disconnected`](https://html.spec.whatwg.org/#becomes-disconnected)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#concept-node-document`](https://dom.spec.whatwg.org/#concept-node-document)
+     * [`https://dom.spec.whatwg.org/#concept-element`](https://dom.spec.whatwg.org/#concept-element)
+     * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
+     * [`https://dom.spec.whatwg.org/#concept-shadow-including-root`](https://dom.spec.whatwg.org/#concept-shadow-including-root)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#documentorshadowroot`](https://dom.spec.whatwg.org/#documentorshadowroot)
+     * [`https://dom.spec.whatwg.org/#retarget`](https://dom.spec.whatwg.org/#retarget)
+     * [`https://dom.spec.whatwg.org/#concept-element-shadow-root`](https://dom.spec.whatwg.org/#concept-element-shadow-root)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://w3c.github.io/uievents/#events-wheelevents`](https://w3c.github.io/uievents/#events-wheelevents)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
 Informative references to this spec from:
@@ -23838,110 +24730,143 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Preload {data-spec=true data-error=true}
+## Preload {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
+- Crawled version: 17 May 2021
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
 - Latest published version: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Shortname: preload
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 334)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#insert-an-element-into-a-document`](https://html.spec.whatwg.org/#insert-an-element-into-a-document)
+     * [`https://html.spec.whatwg.org/#resolve-a-url`](https://html.spec.whatwg.org/#resolve-a-url)
+     * [`https://html.spec.whatwg.org/#url`](https://html.spec.whatwg.org/#url)
+     * [`https://html.spec.whatwg.org/#attr-link-crossorigin`](https://html.spec.whatwg.org/#attr-link-crossorigin)
+     * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
+     * [`https://html.spec.whatwg.org/#delay-the-load-event`](https://html.spec.whatwg.org/#delay-the-load-event)
+     * [`https://html.spec.whatwg.org/#external-resource-link`](https://html.spec.whatwg.org/#external-resource-link)
+     * [`https://html.spec.whatwg.org/#valid-media-query-list`](https://html.spec.whatwg.org/#valid-media-query-list)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#fetch-and-process-the-linked-resource`](https://html.spec.whatwg.org/#fetch-and-process-the-linked-resource)
+     * [`https://html.spec.whatwg.org/#matches-the-environment`](https://html.spec.whatwg.org/#matches-the-environment)
+     * [`https://html.spec.whatwg.org/#process-the-linked-resource`](https://html.spec.whatwg.org/#process-the-linked-resource)
+     * [`https://html.spec.whatwg.org/#attr-link-as`](https://html.spec.whatwg.org/#attr-link-as)
+     * [`https://html.spec.whatwg.org/#charset`](https://html.spec.whatwg.org/#charset)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#concept-document-content-type`](https://dom.spec.whatwg.org/#concept-document-content-type)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#in-a-document-tree`](https://dom.spec.whatwg.org/#in-a-document-tree)
+     * [`https://dom.spec.whatwg.org/#concept-node-document`](https://dom.spec.whatwg.org/#concept-node-document)
+     * [`https://fetch.spec.whatwg.org/#concept-request-destination`](https://fetch.spec.whatwg.org/#concept-request-destination)
+     * [`https://fetch.spec.whatwg.org/#concept-network-error`](https://fetch.spec.whatwg.org/#concept-network-error)
+     * [`https://mimesniff.spec.whatwg.org/#parsable-mime-type`](https://mimesniff.spec.whatwg.org/#parsable-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent`](https://mimesniff.spec.whatwg.org/#supported-by-the-user-agent)
+     * [`https://www.w3.org/TR/resource-hints/#dfn-prefetch`](https://www.w3.org/TR/resource-hints/#dfn-prefetch)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
 
 Informative references to this spec from:
 
 - [Priority Hints](https://wicg.github.io/priority-hints/)
 
 
-## Presentation API {data-spec=true data-error=true}
+## Presentation API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
+- Crawled version: 09 December 2020
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
 - Latest published version: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Shortname: presentation-api
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 335)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+     * [`https://heycam.github.io/webidl/#ArrayBufferView`](https://heycam.github.io/webidl/#ArrayBufferView)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://html.spec.whatwg.org/#dom-location-reload`](https://html.spec.whatwg.org/#dom-location-reload)
+     * [`https://html.spec.whatwg.org/#dom-localstorage`](https://html.spec.whatwg.org/#dom-localstorage)
+     * [`https://html.spec.whatwg.org/#dom-sessionstorage`](https://html.spec.whatwg.org/#dom-sessionstorage)
+     * [`https://html.spec.whatwg.org/#parse-a-url`](https://html.spec.whatwg.org/#parse-a-url)
+     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#allowed-to-navigate`](https://html.spec.whatwg.org/#allowed-to-navigate)
+     * [`https://html.spec.whatwg.org/#navigate-fragid`](https://html.spec.whatwg.org/#navigate-fragid)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#nested-browsing-context`](https://html.spec.whatwg.org/#nested-browsing-context)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#active-sandboxing-flag-set`](https://html.spec.whatwg.org/#active-sandboxing-flag-set)
+     * [`https://html.spec.whatwg.org/#sandboxed-presentation-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-presentation-browsing-context-flag)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#active-window`](https://html.spec.whatwg.org/#active-window)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#binarytype`](https://html.spec.whatwg.org/#binarytype)
+     * [`https://html.spec.whatwg.org/#messageevent`](https://html.spec.whatwg.org/#messageevent)
+     * [`https://html.spec.whatwg.org/#unload-a-document`](https://html.spec.whatwg.org/#unload-a-document)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#sandboxed-modals-flag`](https://html.spec.whatwg.org/#sandboxed-modals-flag)
+     * [`https://html.spec.whatwg.org/#sandboxed-auxiliary-navigation-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-auxiliary-navigation-browsing-context-flag)
+     * [`https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag)
+     * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#concept-event-create`](https://dom.spec.whatwg.org/#concept-event-create)
+     * [`https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url`](https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-url)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcdatachannel`](https://www.w3.org/TR/webrtc/#dom-rtcdatachannel)
+     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#permission-descriptor-type`](https://www.w3.org/TR/permissions/#permission-descriptor-type)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration)
+     * [`https://www.w3.org/TR/service-workers-1/#cache`](https://www.w3.org/TR/service-workers-1/#cache)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-window-client`](https://www.w3.org/TR/service-workers-1/#dfn-window-client)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-worker-client`](https://www.w3.org/TR/service-workers-1/#dfn-worker-client)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -23949,6 +24874,7 @@ Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Open Screen Protocol](https://w3c.github.io/openscreenprotocol/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 
 No informative reference to this spec from other specs.
 
@@ -24318,52 +25244,64 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Push API {data-spec=true data-error=true}
+## Push API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
+- Crawled version: 16 June 2021
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
 - Latest published version: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Shortname: push-api
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 337)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-active-worker`](https://www.w3.org/TR/service-workers-1/#dfn-active-worker)
+     * [`https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration`](https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration)
+     * [`https://www.w3.org/TR/service-workers-1/#serviceworkerregistration`](https://www.w3.org/TR/service-workers-1/#serviceworkerregistration)
+     * [`https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope`](https://www.w3.org/TR/service-workers-1/#serviceworkerglobalscope)
+     * [`https://www.w3.org/TR/service-workers-1/#extendableevent`](https://www.w3.org/TR/service-workers-1/#extendableevent)
+     * [`https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit`](https://www.w3.org/TR/service-workers-1/#dictdef-extendableeventinit)
+     * [`https://www.w3.org/TR/service-workers-1/#fire-functional-event`](https://www.w3.org/TR/service-workers-1/#fire-functional-event)
+     * [`https://www.w3.org/TR/service-workers-1/#extendableevent-extend-lifetime-promises`](https://www.w3.org/TR/service-workers-1/#extendableevent-extend-lifetime-promises)
+     * [`https://html.spec.whatwg.org/#network`](https://html.spec.whatwg.org/#network)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
+     * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#invalidcharactererror`](https://heycam.github.io/webidl/#invalidcharactererror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#DOMTimeStamp`](https://heycam.github.io/webidl/#DOMTimeStamp)
+     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#dfn-json-types`](https://heycam.github.io/webidl/#dfn-json-types)
+     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
+     * [`https://encoding.spec.whatwg.org/#utf-8-decode`](https://encoding.spec.whatwg.org/#utf-8-decode)
+     * [`https://encoding.spec.whatwg.org/#utf-8-encode`](https://encoding.spec.whatwg.org/#utf-8-encode)
+     * [`https://dom.spec.whatwg.org/#concept-event-constructor-ext`](https://dom.spec.whatwg.org/#concept-event-constructor-ext)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -24620,10 +25558,14 @@ Normative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Portals](https://wicg.github.io/portals/)
+- [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Preload](https://w3c.github.io/preload/)
 
 
 ## RegExp Match Indices {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
@@ -24703,52 +25645,63 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Remote Playback API {data-spec=true data-error=true}
+## Remote Playback API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
+- Crawled version: 19 May 2021
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
 - Latest published version: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Shortname: remote-playback
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 339)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#media-element`](https://html.spec.whatwg.org/#media-element)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#media-element-event-task-source`](https://html.spec.whatwg.org/#media-element-event-task-source)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#media-resource`](https://html.spec.whatwg.org/#media-resource)
+     * [`https://html.spec.whatwg.org/#dom-track-srclang`](https://html.spec.whatwg.org/#dom-track-srclang)
+     * [`https://html.spec.whatwg.org/#the-track-element`](https://html.spec.whatwg.org/#the-track-element)
+     * [`https://html.spec.whatwg.org/#concept-media-load-algorithm`](https://html.spec.whatwg.org/#concept-media-load-algorithm)
+     * [`https://html.spec.whatwg.org/#attr-source-type`](https://html.spec.whatwg.org/#attr-source-type)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#active-window`](https://html.spec.whatwg.org/#active-window)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#expose-a-user-interface-to-the-user`](https://html.spec.whatwg.org/#expose-a-user-interface-to-the-user)
+     * [`https://html.spec.whatwg.org/#allowed-to-play`](https://html.spec.whatwg.org/#allowed-to-play)
+     * [`https://html.spec.whatwg.org/#dom-media-fastseek`](https://html.spec.whatwg.org/#dom-media-fastseek)
+     * [`https://html.spec.whatwg.org/#dom-media-seeking`](https://html.spec.whatwg.org/#dom-media-seeking)
+     * [`https://html.spec.whatwg.org/#event-media-seeking`](https://html.spec.whatwg.org/#event-media-seeking)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
+     * [`https://html.spec.whatwg.org/#reflecting-content-attributes-in-idl-attributes`](https://html.spec.whatwg.org/#reflecting-content-attributes-in-idl-attributes)
+     * [`https://html.spec.whatwg.org/#nested-browsing-context`](https://html.spec.whatwg.org/#nested-browsing-context)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://url.spec.whatwg.org/#url`](https://url.spec.whatwg.org/#url)
+     * [`https://www.w3.org/TR/presentation-api/#interface-presentationrequest`](https://www.w3.org/TR/presentation-api/#interface-presentationrequest)
+     * [`https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin`](https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -24854,6 +25807,7 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 
 No informative reference to this spec from other specs.
@@ -24980,108 +25934,139 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Resource Hints {data-spec=true data-error=true}
+## Resource Hints {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/resource-hints/](https://www.w3.org/TR/resource-hints/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
+- Crawled version: 05 October 2020
 - Editor's Draft: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 - Latest published version: [https://www.w3.org/TR/resource-hints/](https://www.w3.org/TR/resource-hints/)
 - Shortname: resource-hints
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 343)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://url.spec.whatwg.org/`](https://url.spec.whatwg.org/)
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/)
+     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
+     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#resolve-a-url`](https://html.spec.whatwg.org/#resolve-a-url)
+     * [`https://html.spec.whatwg.org/#url`](https://html.spec.whatwg.org/#url)
+     * [`https://html.spec.whatwg.org/#resulting-absolute-url`](https://html.spec.whatwg.org/#resulting-absolute-url)
+     * [`https://html.spec.whatwg.org/#cors-settings-attributes`](https://html.spec.whatwg.org/#cors-settings-attributes)
+     * [`https://html.spec.whatwg.org/#origin-2`](https://html.spec.whatwg.org/#origin-2)
+     * [`https://html.spec.whatwg.org/#delay-the-load-event`](https://html.spec.whatwg.org/#delay-the-load-event)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
+     * [`https://url.spec.whatwg.org/#concept-url-origin`](https://url.spec.whatwg.org/#concept-url-origin)
+     * [`https://fetch.spec.whatwg.org/#concept-connection-obtain`](https://fetch.spec.whatwg.org/#concept-connection-obtain)
+     * [`https://w3c.github.io/page-visibility/#visibilitystate-attribute`](https://w3c.github.io/page-visibility/#visibilitystate-attribute)
+     * [`https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable`](https://w3c.github.io/webappsec-mixed-content/#category-optionally-blockable)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Preload](https://w3c.github.io/preload/)
 
 No informative reference to this spec from other specs.
 
 
-## Resource Timing Level 2 {data-spec=true data-error=true}
+## Resource Timing Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
+- Crawled version: 15 April 2021
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Shortname: resource-timing-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 344)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/), related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+- Broken external links:
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#node`](https://dom.spec.whatwg.org/#node)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#the-script-element`](https://html.spec.whatwg.org/#the-script-element)
+     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
+     * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
+     * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://www.w3.org/TR/navigation-timing-2/#dom-PerformanceNavigationTiming-startTime`](https://www.w3.org/TR/navigation-timing-2/#dom-PerformanceNavigationTiming-startTime)
+     * [`https://xhr.spec.whatwg.org/#interface-xmlhttprequest`](https://xhr.spec.whatwg.org/#interface-xmlhttprequest)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://fetch.spec.whatwg.org/#concept-request-client`](https://fetch.spec.whatwg.org/#concept-request-client)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info`](https://fetch.spec.whatwg.org/#fetch-timing-info)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-start-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-end-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-end-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-final-service-worker-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-final-service-worker-start-time)
+     * [`https://fetch.spec.whatwg.org/#concept-http-fetch`](https://fetch.spec.whatwg.org/#concept-http-fetch)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-redirect-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-redirect-start-time)
+     * [`https://fetch.spec.whatwg.org/#concept-http-redirect-fetch`](https://fetch.spec.whatwg.org/#concept-http-redirect-fetch)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-redirect-end-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-redirect-end-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-post-redirect-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-post-redirect-start-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-final-connection-timing-info`](https://fetch.spec.whatwg.org/#fetch-timing-info-final-connection-timing-info)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-domain-lookup-start-time`](https://fetch.spec.whatwg.org/#connection-timing-info-domain-lookup-start-time)
+     * [`https://fetch.spec.whatwg.org/#record-connection-timing-info`](https://fetch.spec.whatwg.org/#record-connection-timing-info)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-domain-lookup-end-time`](https://fetch.spec.whatwg.org/#connection-timing-info-domain-lookup-end-time)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-connection-start-time`](https://fetch.spec.whatwg.org/#connection-timing-info-connection-start-time)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-connection-end-time`](https://fetch.spec.whatwg.org/#connection-timing-info-connection-end-time)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-secure-connection-start-time`](https://fetch.spec.whatwg.org/#connection-timing-info-secure-connection-start-time)
+     * [`https://fetch.spec.whatwg.org/#connection-timing-info-alpn-negotiated-protocol`](https://fetch.spec.whatwg.org/#connection-timing-info-alpn-negotiated-protocol)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-final-network-request-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-final-network-request-start-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-final-network-response-start-time`](https://fetch.spec.whatwg.org/#fetch-timing-info-final-network-response-start-time)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size`](https://fetch.spec.whatwg.org/#fetch-timing-info-encoded-body-size)
+     * [`https://fetch.spec.whatwg.org/#fetch-timing-info-decoded-body-size`](https://fetch.spec.whatwg.org/#fetch-timing-info-decoded-body-size)
+     * [`https://fetch.spec.whatwg.org/#concept-tao-check`](https://fetch.spec.whatwg.org/#concept-tao-check)
+     * [`https://fetch.spec.whatwg.org/#tao-check`](https://fetch.spec.whatwg.org/#tao-check)
+     * [`https://www.w3.org/TR/performance-timeline-2/#performance-timeline`](https://www.w3.org/TR/performance-timeline-2/#performance-timeline)
+     * [`https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface`](https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface)
+     * [`https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute`](https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performance`](https://www.w3.org/TR/performance-timeline-2/#dom-performance)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
+     * [`https://heycam.github.io/webidl/#es-environment`](https://heycam.github.io/webidl/#es-environment)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-3/#relative-high-resolution-coarse-time)
+     * [`https://infra.spec.whatwg.org/#isomorphic-decode`](https://infra.spec.whatwg.org/#isomorphic-decode)
+     * [`https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source`](https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source)
+     * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -25090,55 +26075,37 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 
 
-## Save Data API {data-spec=true data-error=true}
+## Save Data API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Crawled version: 08 March 2021
 - Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
 - Shortname: savedata
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 117)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
+- Broken external links:
+     * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://html.spec.whatwg.org/#networking-task-source`](https://html.spec.whatwg.org/#networking-task-source)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -25147,6 +26114,130 @@ Normative references to this spec from:
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 
 No informative reference to this spec from other specs.
+
+
+## Scalable Vector Graphics (SVG) 1.1 (Second Edition) {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-hasInvalidIdl=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Crawled URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Crawled version: 16 August 2011
+- Editor's Draft: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Latest published version: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Shortname: SVG11
+
+### Potential issue(s) {.anomalies}
+
+- Invalid WebIDL content found
+- Spec uses WebIDL but does not reference it normatively
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
+     * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://www.w3.org/TR/xlink/`](https://www.w3.org/TR/xlink/)
+     * [`https://www.w3.org/TR/xml-names11/`](https://www.w3.org/TR/xml-names11/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/xml-stylesheet/`](https://www.w3.org/TR/xml-stylesheet/)
+     * [`https://www.w3.org/TR/xsl/`](https://www.w3.org/TR/xsl/)
+     * [`https://www.w3.org/TR/html4/`](https://www.w3.org/TR/html4/)
+     * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/)
+     * [`https://www.w3.org/TR/smil/`](https://www.w3.org/TR/smil/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/), related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/xmlbase/`](https://www.w3.org/TR/xmlbase/), related reference "XML-BASE" uses URL [`http://www.w3.org/TR/2009/REC-xmlbase-20090128/`](http://www.w3.org/TR/2009/REC-xmlbase-20090128/)
+     * [`https://www.w3.org/TR/smil-animation/`](https://www.w3.org/TR/smil-animation/), related reference "SMILANIM" uses URL [`http://www.w3.org/TR/2001/REC-smil-animation-20010904/`](http://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/xlink11/`](https://www.w3.org/TR/xlink11/), related reference "XLINK" uses URL [`http://www.w3.org/TR/2010/REC-xlink11-20100506/`](http://www.w3.org/TR/2010/REC-xlink11-20100506/)
+     * [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/), related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/), related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/charmod/`](https://www.w3.org/TR/charmod/), related reference "CHARMOD" uses URL [`http://www.w3.org/TR/2005/REC-charmod-20050215/`](http://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/rdf-primer/`](https://www.w3.org/TR/rdf-primer/), related reference "RDF-PRIMER" uses URL [`http://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](http://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+     * [`https://www.w3.org/TR/xmlschema-2/`](https://www.w3.org/TR/xmlschema-2/), related reference "SCHEMA2" uses URL [`http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](http://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+     * [`https://www.w3.org/TR/css3-selectors/`](https://www.w3.org/TR/css3-selectors/), related reference "SELECTORS" uses URL [`http://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](http://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+     * [`https://www.w3.org/TR/xhtml1/`](https://www.w3.org/TR/xhtml1/), related reference "XHTML" uses URL [`http://www.w3.org/TR/2002/REC-xhtml1-20020801/`](http://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+     * [`https://www.w3.org/TR/xslt/`](https://www.w3.org/TR/xslt/), related reference "XSLT" uses URL [`http://www.w3.org/TR/1999/REC-xslt-19991116`](http://www.w3.org/TR/1999/REC-xslt-19991116)
+     * [`https://www.w3.org/TR/xslt20/`](https://www.w3.org/TR/xslt20/), related reference "XSLT2" uses URL [`http://www.w3.org/TR/2007/REC-xslt20-20070123/`](http://www.w3.org/TR/2007/REC-xslt20-20070123/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2001/REC-SVG-20010904/`](https://www.w3.org/TR/2001/REC-SVG-20010904/)
+     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
+     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/)
+     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
+     * [`https://www.w3.org/TR/2009/REC-xmlbase-20090128/`](https://www.w3.org/TR/2009/REC-xmlbase-20090128/)
+     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/)
+     * [`https://www.w3.org/TR/1999/REC-xslt-19991116`](https://www.w3.org/TR/1999/REC-xslt-19991116)
+     * [`https://www.w3.org/TR/2007/REC-xslt20-20070123/`](https://www.w3.org/TR/2007/REC-xslt20-20070123/)
+     * [`https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/`](https://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/)
+     * [`https://www.w3.org/TR/2008/REC-SMIL3-20081201/`](https://www.w3.org/TR/2008/REC-SMIL3-20081201/)
+     * [`https://www.w3.org/TR/2001/REC-smil-animation-20010904/`](https://www.w3.org/TR/2001/REC-smil-animation-20010904/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2002/REC-xhtml1-20020801/`](https://www.w3.org/TR/2002/REC-xhtml1-20020801/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Core-20001113/)
+     * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/)
+     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/present/`](https://www.w3.org/TR/1999/REC-html401-19991224/present/)
+     * [`https://www.w3.org/TR/2006/REC-xsl11-20061205/`](https://www.w3.org/TR/2006/REC-xsl11-20061205/)
+     * [`https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/`](https://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Events-20001113/)
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/struct/`](https://www.w3.org/TR/1999/REC-html401-19991224/struct/)
+     * [`https://www.w3.org/TR/2004/REC-rdf-primer-20040210/`](https://www.w3.org/TR/2004/REC-rdf-primer-20040210/)
+     * [`https://www.w3.org/TR/2003/REC-MathML2-20031021/`](https://www.w3.org/TR/2003/REC-MathML2-20031021/)
+     * [`https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/`](https://www.w3.org/TR/2002/WD-XHTMLplusMathMLplusSVG-20020809/)
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Views-20001113/)
+     * [`https://www.w3.org/TR/2000/REC-ATAG10-20000203/`](https://www.w3.org/TR/2000/REC-ATAG10-20000203/)
+     * [`https://www.w3.org/TR/2002/REC-UAAG10-20021217/`](https://www.w3.org/TR/2002/REC-UAAG10-20021217/)
+     * [`https://www.w3.org/TR/2008/REC-WCAG20-20081211/`](https://www.w3.org/TR/2008/REC-WCAG20-20081211/)
+     * [`https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/`](https://www.w3.org/TR/2000/NOTE-SVG-access-20000807/)
+     * [`https://www.w3.org/TR/2005/REC-charmod-20050215/`](https://www.w3.org/TR/2005/REC-charmod-20050215/)
+     * [`https://www.w3.org/TR/2003/REC-PNG-20031110/`](https://www.w3.org/TR/2003/REC-PNG-20031110/)
+     * [`https://www.w3.org/TR/2010/REC-xlink11-20100506/`](https://www.w3.org/TR/2010/REC-xlink11-20100506/)
+     * [`https://www.w3.org/TR/2009/REC-xml-names-20091208/`](https://www.w3.org/TR/2009/REC-xml-names-20091208/)
+     * [`https://www.w3.org/TR/2010/REC-MathML3-20101021/`](https://www.w3.org/TR/2010/REC-MathML3-20101021/)
+     * [`https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/`](https://www.w3.org/TR/2004/REC-xmlschema-2-20041028/)
+     * [`https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/`](https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/)
+     * [`https://www.w3.org/TR/2009/PR-css3-selectors-20091215/`](https://www.w3.org/TR/2009/PR-css3-selectors-20091215/)
+     * [`https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/`](https://www.w3.org/TR/2009/WD-SVGCompositing-20090430/)
+     * [`https://www.w3.org/TR/2006/WD-Window-20060407/`](https://www.w3.org/TR/2006/WD-Window-20060407/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
+- [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
+- [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
+- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
+- [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
+- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
+- [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
+- [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
+- [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [SVG Integration](https://svgwg.org/specs/integration/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+
+Informative references to this spec from:
+
+- [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS 2](https://drafts.csswg.org/css2/)
+- [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Style Attributes](https://drafts.csswg.org/css-style-attr/)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/)
+- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
+- [Selectors Level 4](https://drafts.csswg.org/selectors/)
+- [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 
 
 ## Scalable Vector Graphics (SVG) 2 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -25684,8 +26775,11 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 - [SVG Animations](https://svgwg.org/specs/animations/)
 - [SVG Integration](https://svgwg.org/specs/integration/)
@@ -25711,57 +26805,41 @@ Informative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 
 
-## Scalable Video Coding (SVC) Extension for WebRTC {data-spec=true data-error=true}
+## Scalable Video Coding (SVC) Extension for WebRTC {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
+- Crawled version: 15 March 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
 - Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Shortname: webrtc-svc
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 388)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpencodingparameters`](https://www.w3.org/TR/webrtc/#dom-rtcrtpencodingparameters)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpcodeccapability`](https://www.w3.org/TR/webrtc/#dom-rtcrtpcodeccapability)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setparameters`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setparameters)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcerror`](https://www.w3.org/TR/webrtc/#dom-rtcerror)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcerrordetailtype-hardware-encoder-error`](https://www.w3.org/TR/webrtc/#dom-rtcerrordetailtype-hardware-encoder-error)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtransceiver`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtransceiver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences`](https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiver-setcodecpreferences)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverinit-sendencodings`](https://www.w3.org/TR/webrtc/#dom-rtcrtptransceiverinit-sendencodings)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-getparameters`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-getparameters)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver`](https://www.w3.org/TR/webrtc/#dom-rtcrtpreceiver)
+     * [`https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-getcapabilities`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-getcapabilities)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -25774,108 +26852,160 @@ Informative references to this spec from:
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 
 
-## Screen Capture {data-spec=true data-error=true}
+## Screen Capture {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
+- Crawled version: 10 June 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
 - Latest published version: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Shortname: screen-capture
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 345)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastream`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastream)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern`](https://www.w3.org/TR/mediacapture-streams/#dom-constrainablepattern)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-applyconstraints-algorithm`](https://www.w3.org/TR/mediacapture-streams/#dfn-applyconstraints-algorithm)
+     * [`https://www.w3.org/TR/mediacapture-streams/#set-track-muted`](https://www.w3.org/TR/mediacapture-streams/#set-track-muted)
+     * [`https://www.w3.org/TR/mediacapture-streams/#track-ended`](https://www.w3.org/TR/mediacapture-streams/#track-ended)
+     * [`https://www.w3.org/TR/mediacapture-streams/#constrainable-properties`](https://www.w3.org/TR/mediacapture-streams/#constrainable-properties)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constrainulong`](https://www.w3.org/TR/mediacapture-streams/#dom-constrainulong)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constraindouble`](https://www.w3.org/TR/mediacapture-streams/#dom-constraindouble)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constraindomstring`](https://www.w3.org/TR/mediacapture-streams/#dom-constraindomstring)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-videoresizemodeenum`](https://www.w3.org/TR/mediacapture-streams/#dom-videoresizemodeenum)
+     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-VideoResizeModeEnum.user`](https://www.w3.org/TR/mediacapture-streams/#idl-def-VideoResizeModeEnum.user)
+     * [`https://www.w3.org/TR/mediacapture-streams/#idl-def-VideoResizeModeEnum.right`](https://www.w3.org/TR/mediacapture-streams/#idl-def-VideoResizeModeEnum.right)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-constrainboolean`](https://www.w3.org/TR/mediacapture-streams/#dom-constrainboolean)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-selectsettings`](https://www.w3.org/TR/mediacapture-streams/#dfn-selectsettings)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-settings-dictionary`](https://www.w3.org/TR/mediacapture-streams/#dfn-settings-dictionary)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-fitness-distance`](https://www.w3.org/TR/mediacapture-streams/#dfn-fitness-distance)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraints`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraintset`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackconstraintset)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksettings`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksettings)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-getsettings`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-getsettings)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackcapabilities`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatrackcapabilities)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-getcapabilities`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-getcapabilities)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-deviceid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#privacy-indicator-requirements`](https://www.w3.org/TR/mediacapture-streams/#privacy-indicator-requirements)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#dom-domexception-name`](https://heycam.github.io/webidl/#dom-domexception-name)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#dfn-create-exception`](https://heycam.github.io/webidl/#dfn-create-exception)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#notreadableerror`](https://heycam.github.io/webidl/#notreadableerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-granted`](https://www.w3.org/TR/permissions/#dom-permissionstate-granted)
+     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
+     * [`https://www.w3.org/TR/permissions/#prompt-the-user-to-choose`](https://www.w3.org/TR/permissions/#prompt-the-user-to-choose)
+     * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionname-display-capture`](https://www.w3.org/TR/permissions/#dom-permissionname-display-capture)
+     * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Screen Wake Lock API {data-spec=true data-error=true}
+## Screen Wake Lock API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
+- Crawled version: 07 June 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 347)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://www.w3.org/TR/permissions/#powerful-feature`](https://www.w3.org/TR/permissions/#powerful-feature)
+     * [`https://www.w3.org/TR/permissions/#permission-revocation-algorithm`](https://www.w3.org/TR/permissions/#permission-revocation-algorithm)
+     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#queue-a-global-task`](https://html.spec.whatwg.org/#queue-a-global-task)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#if-aborted`](https://infra.spec.whatwg.org/#if-aborted)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-determine-the-visibility-state`](https://www.w3.org/TR/page-visibility/#dfn-determine-the-visibility-state)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-visibility-states`](https://www.w3.org/TR/page-visibility/#dfn-visibility-states)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-now-hidden-algorithm`](https://www.w3.org/TR/page-visibility/#dfn-now-hidden-algorithm)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -26030,74 +27160,99 @@ Normative references to this spec from:
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 Informative references to this spec from:
 
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
+- [Web Share API](https://w3c.github.io/web-share/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 
 
-## Selection API {data-spec=true data-error=true}
+## Selection API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
+- Crawled version: 11 June 2021
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Shortname: selection-api
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 349)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No definition for IDL properties: 
+     * `stringification behavior` with type `dfn` for [`Selection`](https://w3c.github.io/selection-api/#dom-selection)
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- Broken external links:
+     * [`https://dom.spec.whatwg.org/#concept-range-bp`](https://dom.spec.whatwg.org/#concept-range-bp)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#concept-range`](https://dom.spec.whatwg.org/#concept-range)
+     * [`https://dom.spec.whatwg.org/#range-collapsed`](https://dom.spec.whatwg.org/#range-collapsed)
+     * [`https://dom.spec.whatwg.org/#concept-range-bp-after`](https://dom.spec.whatwg.org/#concept-range-bp-after)
+     * [`https://dom.spec.whatwg.org/#concept-range-bp-before`](https://dom.spec.whatwg.org/#concept-range-bp-before)
+     * [`https://dom.spec.whatwg.org/#concept-range-start`](https://dom.spec.whatwg.org/#concept-range-start)
+     * [`https://dom.spec.whatwg.org/#concept-range-end`](https://dom.spec.whatwg.org/#concept-range-end)
+     * [`https://dom.spec.whatwg.org/#node`](https://dom.spec.whatwg.org/#node)
+     * [`https://dom.spec.whatwg.org/#range`](https://dom.spec.whatwg.org/#range)
+     * [`https://dom.spec.whatwg.org/#boundary-point-node`](https://dom.spec.whatwg.org/#boundary-point-node)
+     * [`https://dom.spec.whatwg.org/#concept-range-bp-offset`](https://dom.spec.whatwg.org/#concept-range-bp-offset)
+     * [`https://dom.spec.whatwg.org/#concept-tree-root`](https://dom.spec.whatwg.org/#concept-tree-root)
+     * [`https://dom.spec.whatwg.org/#concept-node-length`](https://dom.spec.whatwg.org/#concept-node-length)
+     * [`https://dom.spec.whatwg.org/#concept-range-bp-set`](https://dom.spec.whatwg.org/#concept-range-bp-set)
+     * [`https://dom.spec.whatwg.org/#concept-tree-child`](https://dom.spec.whatwg.org/#concept-tree-child)
+     * [`https://dom.spec.whatwg.org/#dom-range-deletecontents`](https://dom.spec.whatwg.org/#dom-range-deletecontents)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#editing-host`](https://html.spec.whatwg.org/#editing-host)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
+     * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#indexsizeerror`](https://heycam.github.io/webidl/#indexsizeerror)
+     * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -26274,52 +27429,40 @@ Informative references to this spec from:
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 
 
-## Server Timing {data-spec=true data-error=true}
+## Server Timing {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
+- Crawled version: 28 July 2020
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
 - Latest published version: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Shortname: server-timing
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 352)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming)
+     * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
+     * [`https://www.w3.org/TR/resource-timing-2/#dfn-current-document`](https://www.w3.org/TR/resource-timing-2/#dfn-current-document)
+     * [`https://www.w3.org/TR/navigation-timing-2/#dfn-current-document`](https://www.w3.org/TR/navigation-timing-2/#dfn-current-document)
+     * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://www.w3.org/TR/secure-contexts/#is-settings-object-contextually-secure`](https://www.w3.org/TR/secure-contexts/#is-settings-object-contextually-secure)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -26328,7 +27471,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers Nightly {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Service Workers Nightly {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -26341,7 +27484,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `VisibilityState`
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -26679,6 +27821,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -26687,10 +27830,14 @@ Normative references to this spec from:
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
@@ -26699,11 +27846,14 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Beacon](https://w3c.github.io/beacon/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
 ## Static class features {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
@@ -26957,6 +28107,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Preload](https://w3c.github.io/preload/)
 
 Informative references to this spec from:
 
@@ -27057,12 +28208,14 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [ARIA in HTML](https://w3c.github.io/html-aria/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/)
 
 Informative references to this spec from:
 
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
+- [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/)
 
 
 ## SVG Animations {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -27413,52 +28566,48 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## The Screen Orientation API {data-spec=true data-error=true}
+## The Screen Orientation API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
 - Latest published version: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Shortname: screen-orientation
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 346)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/cssom-view-1/#screen`](https://www.w3.org/TR/cssom-view-1/#screen)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#sandboxed-orientation-lock-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-orientation-lock-browsing-context-flag)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://fullscreen.spec.whatwg.org/#fullscreen-element`](https://fullscreen.spec.whatwg.org/#fullscreen-element)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm`](https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -27466,7 +28615,9 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 No informative reference to this spec from other specs.
 
@@ -27554,51 +28705,39 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Timing Entry Names Registry {data-spec=true data-error=true}
+## Timing Entry Names Registry {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/timing-entrytypes-registry/](https://www.w3.org/TR/timing-entrytypes-registry/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/timing-entrytypes-registry/](https://w3c.github.io/timing-entrytypes-registry/)
+- Crawled version: 03 February 2021
 - Editor's Draft: [https://w3c.github.io/timing-entrytypes-registry/](https://w3c.github.io/timing-entrytypes-registry/)
 - Latest published version: [https://www.w3.org/TR/timing-entrytypes-registry/](https://www.w3.org/TR/timing-entrytypes-registry/)
 - Shortname: timing-entrytypes-registry
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 360)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-entrytype`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-entrytype)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary`](https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-registered-performance-observer`](https://www.w3.org/TR/performance-timeline-2/#dfn-registered-performance-observer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-options-list`](https://www.w3.org/TR/performance-timeline-2/#dfn-options-list)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-observer`](https://www.w3.org/TR/performance-timeline-2/#dfn-observer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-observer-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-observer-buffer)
+     * [`https://www.w3.org/TR/hr-time-2/#sec-performance`](https://www.w3.org/TR/hr-time-2/#sec-performance)
+     * [`https://www.w3.org/TR/user-timing-2/#dom-performancemark`](https://www.w3.org/TR/user-timing-2/#dom-performancemark)
+     * [`https://www.w3.org/TR/user-timing-2/#dom-performancemeasure`](https://www.w3.org/TR/user-timing-2/#dom-performancemeasure)
+     * [`https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming`](https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming)
+     * [`https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming)
+     * [`https://www.w3.org/TR/longtasks-1/#performancelongtasktiming`](https://www.w3.org/TR/longtasks-1/#performancelongtasktiming)
+     * [`https://www.w3.org/TR/paint-timing/#performancepainttiming`](https://www.w3.org/TR/paint-timing/#performancepainttiming)
+     * [`https://wicg.github.io/element-timing/#performanceelementtiming`](https://wicg.github.io/element-timing/#performanceelementtiming)
+     * [`https://wicg.github.io/event-timing/#performanceeventtiming`](https://wicg.github.io/event-timing/#performanceeventtiming)
+     * [`https://wicg.github.io/event-timing/#should-add-performanceeventtiming`](https://wicg.github.io/event-timing/#should-add-performanceeventtiming)
+     * [`https://wicg.github.io/layout-instability/#layoutshift`](https://wicg.github.io/layout-instability/#layoutshift)
+     * [`https://wicg.github.io/largest-contentful-paint/#largestcontentfulpaint`](https://wicg.github.io/largest-contentful-paint/#largestcontentfulpaint)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -27630,110 +28769,69 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Touch Events {data-spec=true data-error=true}
+## Touch Events - Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
+- Crawled version: 24 September 2019
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
 - Latest published version: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
 - Shortname: touch-events
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 361)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-float`](https://heycam.github.io/webidl/#idl-float)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#observing-event-listeners`](https://dom.spec.whatwg.org/#observing-event-listeners)
+     * [`https://dom.spec.whatwg.org/#event-retargeting-steps`](https://dom.spec.whatwg.org/#event-retargeting-steps)
+     * [`https://dom.spec.whatwg.org/#retarget`](https://dom.spec.whatwg.org/#retarget)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## Trace Context - Level 1 {data-spec=true data-error=true}
+## Trace Context Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
+- Crawled version: 18 May 2021
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
 - Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Shortname: trace-context-1
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 362)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://fetch.spec.whatwg.org/#http-access-control-request-headers`](https://fetch.spec.whatwg.org/#http-access-control-request-headers)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -27742,52 +28840,32 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Tracking Preference Expression (DNT) {data-spec=true data-error=true}
+## Tracking Preference Expression (DNT) {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/tracking-dnt/](https://www.w3.org/TR/tracking-dnt/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/dnt/drafts/tracking-dnt.html](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
+- Crawled version: 17 January 2019
 - Editor's Draft: [https://w3c.github.io/dnt/drafts/tracking-dnt.html](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - Latest published version: [https://www.w3.org/TR/tracking-dnt/](https://www.w3.org/TR/tracking-dnt/)
 - Shortname: tracking-dnt
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 363)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML51" uses URL [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -28138,11 +29216,17 @@ Normative references to this spec from:
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
 - [UI Events KeyboardEvent code Values](https://w3c.github.io/uievents-code/)
 - [UI Events KeyboardEvent key Values](https://w3c.github.io/uievents-key/)
 - [WebDriver](https://w3c.github.io/webdriver/)
@@ -28384,6 +29468,7 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -28400,15 +29485,23 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
+- [Media Feeds](https://wicg.github.io/media-feeds/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
+- [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Private Network Access](https://wicg.github.io/private-network-access/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
@@ -28421,7 +29514,11 @@ Normative references to this spec from:
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
+- [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebTransport](https://w3c.github.io/webtransport/)
@@ -28432,6 +29529,7 @@ Informative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/)
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 
 
@@ -28471,106 +29569,114 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## User Timing Level 2 {data-spec=true data-error=true}
+## User Timing Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Crawled version: 08 March 2021
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Shortname: user-timing-2
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 368)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-performance-now`](https://www.w3.org/TR/hr-time-2/#dom-performance-now)
+     * [`https://www.w3.org/TR/hr-time-2/#idl-def-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#idl-def-domhighrestimestamp)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-timeline`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-timeline)
+     * [`https://www.w3.org/TR/performance-timeline-2/#performance-timeline`](https://www.w3.org/TR/performance-timeline-2/#performance-timeline)
+     * [`https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute`](https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute)
+     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#dfn-read-only`](https://heycam.github.io/webidl/#dfn-read-only)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://infra.spec.whatwg.org/#map-is-empty`](https://infra.spec.whatwg.org/#map-is-empty)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://www.w3.org/TR/navigation-timing/#performancetiming`](https://www.w3.org/TR/navigation-timing/#performancetiming)
+     * [`https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming`](https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
 
-No informative reference to this spec from other specs.
+- [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
+
+Informative references to this spec from:
+
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 
 
-## User Timing Level 3 {data-spec=true data-error=true}
+## User Timing Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
+- Crawled version: 08 March 2021
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
 - Shortname: user-timing-3
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 369)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-2/#dom-performance-now`](https://www.w3.org/TR/hr-time-2/#dom-performance-now)
+     * [`https://www.w3.org/TR/hr-time-2/#idl-def-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#idl-def-domhighrestimestamp)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
+     * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-timeline`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-timeline)
+     * [`https://www.w3.org/TR/performance-timeline-2/#performance-timeline`](https://www.w3.org/TR/performance-timeline-2/#performance-timeline)
+     * [`https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute`](https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute)
+     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#dfn-read-only`](https://heycam.github.io/webidl/#dfn-read-only)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://infra.spec.whatwg.org/#map-is-empty`](https://infra.spec.whatwg.org/#map-is-empty)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://www.w3.org/TR/navigation-timing/#performancetiming`](https://www.w3.org/TR/navigation-timing/#performancetiming)
+     * [`https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming`](https://www.w3.org/TR/navigation-timing-2/#dom-performancenavigationtiming)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -28643,52 +29749,33 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Vibration API (Second Edition) {data-spec=true data-error=true}
+## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
+- Crawled version: 13 January 2021
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
 - Latest published version: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Shortname: vibration
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 370)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/), related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
+     * [`https://html.spec.whatwg.org/#the-navigator-object`](https://html.spec.whatwg.org/#the-navigator-object)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state`](https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state)
+     * [`https://w3c.github.io/page-visibility/#dfn-visibility-states`](https://w3c.github.io/page-visibility/#dfn-visibility-states)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -28699,51 +29786,41 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Visual Viewport API {data-spec=true data-error=true}
+## Visual Viewport API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
+- Crawled version: 27 May 2021
 - Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Shortname: visual-viewport
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 128)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Replaceable`](https://heycam.github.io/webidl/#Replaceable)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
+     * [`https://www.w3.org/TR/css-display-3/#initial-containing-block`](https://www.w3.org/TR/css-display-3/#initial-containing-block)
+     * [`https://www.w3.org/TR/css-overflow-4/#classic-scrollbars`](https://www.w3.org/TR/css-overflow-4/#classic-scrollbars)
+     * [`https://www.w3.org/TR/css-values-3/#reference-pixel`](https://www.w3.org/TR/css-values-3/#reference-pixel)
+     * [`https://www.w3.org/TR/cssom-view-1/#page-zoom`](https://www.w3.org/TR/cssom-view-1/#page-zoom)
+     * [`https://www.w3.org/TR/cssom-view-1/#pinch-zoom`](https://www.w3.org/TR/cssom-view-1/#pinch-zoom)
+     * [`https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio`](https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio)
+     * [`https://www.w3.org/TR/cssom-view-1/#resizing-viewports`](https://www.w3.org/TR/cssom-view-1/#resizing-viewports)
+     * [`https://www.w3.org/TR/cssom-view-1/#scrolling-events`](https://www.w3.org/TR/cssom-view-1/#scrolling-events)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -28808,7 +29885,7 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `CSSOMString`, `DOMHighResTimeStamp`
+- Unknown WebIDL names used: `CSSOMString`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
      * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/), related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
@@ -29082,123 +30159,126 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web App Manifest - Application Information {data-spec=true data-error=true}
+## Web App Manifest - Application Information {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
+- Crawled version: 24 March 2021
 - Editor's Draft: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
 - Latest published version: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
 - Shortname: manifest-app-info
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 303)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-applied`](https://www.w3.org/TR/appmanifest/#dfn-applied)
+     * [`https://www.w3.org/TR/appmanifest/#internationalization`](https://www.w3.org/TR/appmanifest/#internationalization)
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-description`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-description)
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/image-resource/#dom-imageresource`](https://www.w3.org/TR/image-resource/#dom-imageresource)
+     * [`https://www.w3.org/TR/image-resource/#dom-imageresource-sizes`](https://www.w3.org/TR/image-resource/#dom-imageresource-sizes)
 
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Application Manifest](https://w3c.github.io/manifest/)
 
 
-## Web Application Manifest {data-spec=true data-error=true}
+## Web Application Manifest {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
+- Crawled version: 09 June 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 181)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- No definition for CSS properties: 
+     * `null` with type `descriptor`
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#attr-meta-name`](https://html.spec.whatwg.org/#attr-meta-name)
+     * [`https://html.spec.whatwg.org/#unordered-set-of-unique-space-separated-tokens`](https://html.spec.whatwg.org/#unordered-set-of-unique-space-separated-tokens)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#json-mime-type`](https://mimesniff.spec.whatwg.org/#json-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#computed-mime-type`](https://mimesniff.spec.whatwg.org/#computed-mime-type)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#user-agent`](https://infra.spec.whatwg.org/#user-agent)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value`](https://infra.spec.whatwg.org/#parse-json-bytes-to-a-javascript-value)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#split-on-ascii-whitespace`](https://infra.spec.whatwg.org/#split-on-ascii-whitespace)
+     * [`https://infra.spec.whatwg.org/#iteration-continue`](https://infra.spec.whatwg.org/#iteration-continue)
+     * [`https://infra.spec.whatwg.org/#set-append`](https://infra.spec.whatwg.org/#set-append)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
+     * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url-query`](https://url.spec.whatwg.org/#concept-url-query)
+     * [`https://url.spec.whatwg.org/#concept-url-fragment`](https://url.spec.whatwg.org/#concept-url-fragment)
+     * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
+     * [`https://url.spec.whatwg.org/#concept-url-path`](https://url.spec.whatwg.org/#concept-url-path)
+     * [`https://www.w3.org/TR/screen-orientation/#dfn-default-screen-orientation`](https://www.w3.org/TR/screen-orientation/#dfn-default-screen-orientation)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype)
+     * [`https://www.w3.org/TR/css-color-4/#alpha-channel`](https://www.w3.org/TR/css-color-4/#alpha-channel)
+     * [`https://www.w3.org/TR/css-color-4/#sRGB`](https://www.w3.org/TR/css-color-4/#sRGB)
+     * [`https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme`](https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme)
+     * [`https://fetch.spec.whatwg.org/#concept-response`](https://fetch.spec.whatwg.org/#concept-response)
+     * [`https://fetch.spec.whatwg.org/#concept-response-body`](https://fetch.spec.whatwg.org/#concept-response-body)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://dom.spec.whatwg.org/#concept-node-document`](https://dom.spec.whatwg.org/#concept-node-document)
+     * [`https://dom.spec.whatwg.org/#concept-document-url`](https://dom.spec.whatwg.org/#concept-document-url)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar`](https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar)
+     * [`https://www.w3.org/TR/image-resource/#dfn-image-resource`](https://www.w3.org/TR/image-resource/#dfn-image-resource)
+     * [`https://www.w3.org/TR/image-resource/#dfn-process-an-image-resource-from-json`](https://www.w3.org/TR/image-resource/#dfn-process-an-image-resource-from-json)
+     * [`https://www.w3.org/TR/service-workers-1/#scope-match-algorithm`](https://www.w3.org/TR/service-workers-1/#scope-match-algorithm)
+     * [`https://www.w3.org/TR/css-conditional-3/#at-ruledef-media`](https://www.w3.org/TR/css-conditional-3/#at-ruledef-media)
 
 ### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
+- [Badging API](https://w3c.github.io/badging/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Image Resource](https://w3c.github.io/image-resource/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 
 
-## Web Audio API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Web Audio API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -29211,7 +30291,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediacapture-fromelement/`](https://www.w3.org/TR/mediacapture-fromelement/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
@@ -29326,7 +30405,10 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 Informative references to this spec from:
@@ -29544,6 +30626,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [Push API](https://w3c.github.io/push-api/)
 
 
 ## Web Bluetooth {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -29730,6 +30813,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
@@ -29829,7 +30913,11 @@ Normative references to this spec from:
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
+- [Badging API](https://w3c.github.io/badging/)
+- [Battery Status API](https://w3c.github.io/battery/)
+- [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compression Streams](https://wicg.github.io/compression/)
@@ -29840,6 +30928,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Crash Reporting](https://wicg.github.io/crash-reporting/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
@@ -29871,9 +30960,11 @@ Normative references to this spec from:
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
 - [Device Memory 1](https://w3c.github.io/device-memory/)
+- [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
+- [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
@@ -29885,22 +30976,34 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api-1/)
+- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
+- [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Get Installed Related Apps API](https://wicg.github.io/get-installed-related-apps/spec/)
 - [Gyroscope](https://w3c.github.io/gyroscope/)
+- [High Resolution Time](https://w3c.github.io/hr-time/)
+- [HTML Media Capture](https://w3c.github.io/html-media-capture/)
 - [HTML Sanitizer API](https://wicg.github.io/sanitizer-api/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
+- [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
+- [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
+- [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Intervention Reporting](https://wicg.github.io/intervention-reporting/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -29909,43 +31012,74 @@ Normative references to this spec from:
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Magnetometer](https://w3c.github.io/magnetometer/)
+- [MathML Core](https://w3c.github.io/mathml-core/)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [Media Session Standard](https://w3c.github.io/mediasession/)
 - [Media Source Extensions™](https://w3c.github.io/media-source/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/)
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Notifications API Standard](https://notifications.spec.whatwg.org/)
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
 - [Page Lifecycle](https://wicg.github.io/page-lifecycle/)
+- [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Paint Timing 1](https://w3c.github.io/paint-timing/)
+- [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- [Payment Request API](https://w3c.github.io/payment-request/)
+- [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Pointer Events](https://w3c.github.io/pointerevents/)
+- [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
+- [Presentation API](https://w3c.github.io/presentation-api/)
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
 - [Proximity Sensor](https://w3c.github.io/proximity/)
+- [Push API](https://w3c.github.io/push-api/)
 - [Relinquishing Permissions](https://wicg.github.io/permissions-revoke/)
+- [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
+- [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Selection API](https://w3c.github.io/selection-api/)
+- [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
+- [Touch Events - Level 2](https://w3c.github.io/touch-events/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
+- [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+- [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
+- [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -29955,8 +31089,12 @@ Normative references to this spec from:
 - [Web Cryptography API](https://w3c.github.io/webcrypto/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
+- [Web MIDI API](https://webaudio.github.io/web-midi-api/)
+- [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 - [Web Serial API](https://wicg.github.io/serial/)
+- [Web Share API](https://w3c.github.io/web-share/)
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [Web Speech API](https://wicg.github.io/speech-api/)
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/)
@@ -29966,6 +31104,7 @@ Normative references to this spec from:
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
@@ -29987,6 +31126,8 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
+- [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/)
+- [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 
 
 ## Web Locks API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -30071,52 +31212,47 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web MIDI API {data-spec=true data-error=true}
+## Web MIDI API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://webaudio.github.io/web-midi-api/](https://webaudio.github.io/web-midi-api/)
+- Crawled version: 08 October 2020
 - Editor's Draft: [https://webaudio.github.io/web-midi-api/](https://webaudio.github.io/web-midi-api/)
 - Latest published version: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
 - Shortname: webmidi
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 384)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#dfn-maplike`](https://heycam.github.io/webidl/#dfn-maplike)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
+     * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -30127,51 +31263,105 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
-## Web NFC API {data-spec=true data-error=true}
+## Web NFC {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
+- Crawled version: 31 December 2020
 - Editor's Draft: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Shortname: web-nfc
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 64)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#parse-a-mime-type`](https://mimesniff.spec.whatwg.org/#parse-a-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#serialize-a-mime-type`](https://mimesniff.spec.whatwg.org/#serialize-a-mime-type)
+     * [`https://url.spec.whatwg.org/#absolute-url-string`](https://url.spec.whatwg.org/#absolute-url-string)
+     * [`https://url.spec.whatwg.org/#concept-domain`](https://url.spec.whatwg.org/#concept-domain)
+     * [`https://url.spec.whatwg.org/#concept-domain-to-ascii`](https://url.spec.whatwg.org/#concept-domain-to-ascii)
+     * [`https://url.spec.whatwg.org/#forbidden-host-code-point`](https://url.spec.whatwg.org/#forbidden-host-code-point)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
+     * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#abortsignal`](https://dom.spec.whatwg.org/#abortsignal)
+     * [`https://dom.spec.whatwg.org/#abortsignal-aborted-flag`](https://dom.spec.whatwg.org/#abortsignal-aborted-flag)
+     * [`https://dom.spec.whatwg.org/#abortsignal-abort-algorithms`](https://dom.spec.whatwg.org/#abortsignal-abort-algorithms)
+     * [`https://dom.spec.whatwg.org/#document-element`](https://dom.spec.whatwg.org/#document-element)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
+     * [`https://dom.spec.whatwg.org/#concept-node-append`](https://dom.spec.whatwg.org/#concept-node-append)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://www.w3.org/TR/page-visibility/#dom-visibilitystate-visible`](https://www.w3.org/TR/page-visibility/#dom-visibilitystate-visible)
+     * [`https://www.w3.org/TR/page-visibility/#dfn-visibility-states`](https://www.w3.org/TR/page-visibility/#dfn-visibility-states)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
+     * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled`](https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#notreadableerror`](https://heycam.github.io/webidl/#notreadableerror)
+     * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#ascii-string`](https://infra.spec.whatwg.org/#ascii-string)
+     * [`https://infra.spec.whatwg.org/#code-point`](https://infra.spec.whatwg.org/#code-point)
+     * [`https://infra.spec.whatwg.org/#ascii-alphanumeric`](https://infra.spec.whatwg.org/#ascii-alphanumeric)
+     * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
+     * [`https://infra.spec.whatwg.org/#byte`](https://infra.spec.whatwg.org/#byte)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#byte-sequence-length`](https://infra.spec.whatwg.org/#byte-sequence-length)
+     * [`https://infra.spec.whatwg.org/#ascii-hex-digit`](https://infra.spec.whatwg.org/#ascii-hex-digit)
+     * [`https://infra.spec.whatwg.org/#ascii-decode`](https://infra.spec.whatwg.org/#ascii-decode)
+     * [`https://encoding.spec.whatwg.org/#name`](https://encoding.spec.whatwg.org/#name)
+     * [`https://encoding.spec.whatwg.org/#label`](https://encoding.spec.whatwg.org/#label)
+     * [`https://encoding.spec.whatwg.org/#concept-encoding-get`](https://encoding.spec.whatwg.org/#concept-encoding-get)
+     * [`https://encoding.spec.whatwg.org/#concept-stream`](https://encoding.spec.whatwg.org/#concept-stream)
+     * [`https://encoding.spec.whatwg.org/#utf-8-encode`](https://encoding.spec.whatwg.org/#utf-8-encode)
+     * [`https://encoding.spec.whatwg.org/#concept-stream-read`](https://encoding.spec.whatwg.org/#concept-stream-read)
+     * [`https://encoding.spec.whatwg.org/#end-of-stream`](https://encoding.spec.whatwg.org/#end-of-stream)
+     * [`https://encoding.spec.whatwg.org/#utf-8-decode`](https://encoding.spec.whatwg.org/#utf-8-decode)
+     * [`https://encoding.spec.whatwg.org/#decoder`](https://encoding.spec.whatwg.org/#decoder)
+     * [`https://encoding.spec.whatwg.org/#encoder`](https://encoding.spec.whatwg.org/#encoder)
+     * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
+     * [`https://www.w3.org/TR/permissions/#query-a-permission`](https://www.w3.org/TR/permissions/#query-a-permission)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-granted`](https://www.w3.org/TR/permissions/#dom-permissionstate-granted)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-prompt`](https://www.w3.org/TR/permissions/#dom-permissionstate-prompt)
+     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -30361,105 +31551,119 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Web Share API {data-spec=true data-error=true}
+## Web Share API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
 - Latest published version: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Shortname: web-share
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 376)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/web-intents/`](https://www.w3.org/TR/web-intents/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#consume-user-activation`](https://html.spec.whatwg.org/#consume-user-activation)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#api-base-url`](https://html.spec.whatwg.org/#api-base-url)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#dom-base-href`](https://html.spec.whatwg.org/#dom-base-href)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#dataerror`](https://heycam.github.io/webidl/#dataerror)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#dfn-exposed`](https://heycam.github.io/webidl/#dfn-exposed)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
+     * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
+     * [`https://url.spec.whatwg.org/#relative-url-string`](https://url.spec.whatwg.org/#relative-url-string)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 No informative reference to this spec from other specs.
 
 
-## Web Share Target API {data-spec=true data-error=true}
+## Web Share Target API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
+- Crawled version: 04 February 2021
 - Editor's Draft: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
 - Shortname: web-share-target
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 65)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Unknown WebIDL names used: `WebAppManifest`
+- Broken external links:
+     * [`https://www.w3.org/TR/web-share/#dom-sharedata`](https://www.w3.org/TR/web-share/#dom-sharedata)
+     * [`https://www.w3.org/TR/web-share/#dfn-share-target`](https://www.w3.org/TR/web-share/#dfn-share-target)
+     * [`https://www.w3.org/TR/web-share/#dom-navigator-share`](https://www.w3.org/TR/web-share/#dom-navigator-share)
+     * [`https://www.w3.org/TR/web-share/#dom-sharedata-url`](https://www.w3.org/TR/web-share/#dom-sharedata-url)
+     * [`https://html.spec.whatwg.org/#dom-navigator-registerprotocolhandler`](https://html.spec.whatwg.org/#dom-navigator-registerprotocolhandler)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#multipart/form-data-encoding-algorithm`](https://html.spec.whatwg.org/#multipart/form-data-encoding-algorithm)
+     * [`https://html.spec.whatwg.org/#multipart/form-data-boundary-string`](https://html.spec.whatwg.org/#multipart/form-data-boundary-string)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-extension-point`](https://www.w3.org/TR/appmanifest/#dfn-extension-point)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest`](https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope`](https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-issue-a-developer-warning`](https://www.w3.org/TR/appmanifest/#dfn-issue-a-developer-warning)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-within-scope`](https://www.w3.org/TR/appmanifest/#dfn-within-scope)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-navigation-scope`](https://www.w3.org/TR/appmanifest/#dfn-navigation-scope)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-install`](https://www.w3.org/TR/appmanifest/#dfn-install)
+     * [`https://url.spec.whatwg.org/#concept-urlencoded`](https://url.spec.whatwg.org/#concept-urlencoded)
+     * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
+     * [`https://url.spec.whatwg.org/#concept-url-origin`](https://url.spec.whatwg.org/#concept-url-origin)
+     * [`https://url.spec.whatwg.org/#valid-url-string`](https://url.spec.whatwg.org/#valid-url-string)
+     * [`https://url.spec.whatwg.org/#concept-urlencoded-serializer`](https://url.spec.whatwg.org/#concept-urlencoded-serializer)
+     * [`https://url.spec.whatwg.org/#concept-url-query`](https://url.spec.whatwg.org/#concept-url-query)
+     * [`https://www.w3.org/TR/service-workers-1/#service-worker-concept`](https://www.w3.org/TR/service-workers-1/#service-worker-concept)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://infra.spec.whatwg.org/#ascii-case-insensitive`](https://infra.spec.whatwg.org/#ascii-case-insensitive)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy`](https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy)
+     * [`https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin`](https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin)
+     * [`https://fetch.spec.whatwg.org/#concept-header-list`](https://fetch.spec.whatwg.org/#concept-header-list)
+     * [`https://fetch.spec.whatwg.org/#concept-header-list-append`](https://fetch.spec.whatwg.org/#concept-header-list-append)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
+     * [`https://encoding.spec.whatwg.org/#utf-8-encode`](https://encoding.spec.whatwg.org/#utf-8-encode)
+     * [`https://encoding.spec.whatwg.org/#utf-8`](https://encoding.spec.whatwg.org/#utf-8)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -31086,6 +32290,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://w3c.github.io/sensors/)
+- [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 
 No informative reference to this spec from other specs.
@@ -32746,51 +33951,43 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebHID API {data-spec=true data-error=true}
+## WebHID API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
+- Crawled version: 15 March 2021
 - Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Shortname: webhid
 
 ### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 131)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
+     * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-byte`](https://heycam.github.io/webidl/#idl-byte)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
+     * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -32866,7 +34063,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -32879,7 +34076,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`, `RTCStatsType`
 - Possibly no definition for IDL properties: 
      * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender), but found [`setStreams()`](https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
      * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection), but found [`addTrack()`](https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
@@ -33088,16 +34284,24 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [IceTransport Extensions for WebRTC](https://w3c.github.io/webrtc-ice/)
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 - [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
+- [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
+- [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebRTC Priority Control API](https://w3c.github.io/webrtc-priority/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Presentation API](https://w3c.github.io/presentation-api/)
+- [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 
 
 ## WebRTC Encoded Transform {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -33202,12 +34406,14 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Identifiers for WebRTC's Statistics API](https://w3c.github.io/webrtc-stats/)
 
 No informative reference to this spec from other specs.
 
 
-## WebTransport {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## WebTransport {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -33220,7 +34426,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - Broken external links:
@@ -33742,7 +34947,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Device API {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## WebXR Device API {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -33755,7 +34960,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `DOMHighResTimeStamp`
 - Missing references for WebIDL names: 
      * `WebGLRenderingContext` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
      * `WebGLFramebuffer` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -33966,7 +35170,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+## WebXR Gamepads Module - Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -33979,7 +35183,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `Gamepad`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/), related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - Broken external links:
@@ -34018,7 +35221,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Gamepad](https://w3c.github.io/gamepad/)
 
 No informative reference to this spec from other specs.
 
@@ -34566,6 +35771,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 Informative references to this spec from:
 

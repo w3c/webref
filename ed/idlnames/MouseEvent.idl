@@ -34,6 +34,12 @@ partial interface MouseEvent {
   readonly attribute double offsetY;
 };
 
+// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
+partial interface MouseEvent {
+  readonly attribute double movementX;
+  readonly attribute double movementY;
+};
+
 // Source: UI Events (https://www.w3.org/TR/uievents/)
 partial interface MouseEvent {
   // Deprecated in this specification

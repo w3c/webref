@@ -8,7 +8,15 @@
     "fragment": "dictionary InputEventInit : UIEventInit {\n  DOMString? data = null;\n  boolean isComposing = false;\n  DOMString inputType = \"\";\n};",
     "href": "https://w3c.github.io/uievents/#dictdef-inputeventinit"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Input Events Level 2",
+        "url": "https://www.w3.org/TR/input-events-2/"
+      },
+      "fragment": "partial dictionary InputEventInit {\n   DataTransfer? dataTransfer = null;\n   sequence<StaticRange> targetRanges = [];\n};"
+    }
+  ],
   "inheritance": {
     "name": "UIEventInit",
     "defined": {
@@ -20,6 +28,13 @@
       "href": "https://w3c.github.io/uievents/#dictdef-uieventinit"
     },
     "extended": [
+      {
+        "spec": {
+          "title": "Input Device Capabilities",
+          "url": "https://wicg.github.io/input-device-capabilities/"
+        },
+        "fragment": "partial dictionary UIEventInit {\n  InputDeviceCapabilities? sourceCapabilities = null;\n};"
+      },
       {
         "spec": {
           "title": "UI Events",

@@ -59,10 +59,28 @@ interface HTMLMediaElement : HTMLElement {
   TextTrack addTextTrack(TextTrackKind kind, optional DOMString label = "", optional DOMString language = "");
 };
 
+// Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
+partial interface HTMLMediaElement {
+  [SecureContext] readonly attribute DOMString sinkId;
+  [SecureContext] Promise<undefined> setSinkId (DOMString sinkId);
+};
+
 // Source: Encrypted Media Extensions (https://www.w3.org/TR/encrypted-media/)
 [Exposed=Window] partial interface HTMLMediaElement {
     [SecureContext] readonly        attribute MediaKeys?   mediaKeys;
                                     attribute EventHandler onencrypted;
                                     attribute EventHandler onwaitingforkey;
     [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);
+};
+
+// Source: Media Capture from DOM Elements (https://www.w3.org/TR/mediacapture-fromelement/)
+partial interface HTMLMediaElement {
+    MediaStream captureStream ();
+};
+
+// Source: Remote Playback API (https://www.w3.org/TR/remote-playback/)
+partial interface HTMLMediaElement {
+  [SameObject] readonly attribute RemotePlayback remote;
+
+  [CEReactions] attribute boolean disableRemotePlayback;
 };

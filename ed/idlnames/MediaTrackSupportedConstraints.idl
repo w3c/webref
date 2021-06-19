@@ -45,3 +45,12 @@ partial dictionary MediaTrackSupportedConstraints {
     // Applies to both depth stream track and color stream track:
     boolean videoKind = true;
 };
+
+// Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
+partial dictionary MediaTrackSupportedConstraints {
+  boolean displaySurface = true;
+  boolean logicalSurface = true;
+  boolean cursor = true;
+  boolean restrictOwnAudio = true;
+  boolean suppressLocalAudioPlayback = true;
+};

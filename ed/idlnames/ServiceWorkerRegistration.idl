@@ -48,3 +48,14 @@ partial interface ServiceWorkerRegistration {
 partial interface ServiceWorkerRegistration {
   readonly attribute PeriodicSyncManager periodicSync;
 };
+
+// Source: Payment Handler API (https://www.w3.org/TR/payment-handler/)
+partial interface ServiceWorkerRegistration {
+  [SameObject] readonly attribute PaymentManager paymentManager;
+};
+
+// Source: Push API (https://www.w3.org/TR/push-api/)
+[SecureContext]
+partial interface ServiceWorkerRegistration {
+  readonly attribute PushManager pushManager;
+};

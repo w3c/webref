@@ -2,23 +2,12 @@
 % Reffy
 % June 19, 2021
 
-## [No title found for https://www.w3.org/TR/SVG11/]
-
-- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
-- Spec title: *INS* [No title found for https://www.w3.org/TR/SVG11/] / *DEL* Scalable Vector Graphics (SVG) 1.1 (Second Edition)
-- No normative references found: *INS* true / *DEL* false
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
 ## ARIA in HTML
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -55,7 +44,7 @@
 - Initial URL: [https://www.w3.org/TR/audio-output/](https://www.w3.org/TR/audio-output/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mediacapture-output/](https://w3c.github.io/mediacapture-output/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -88,20 +77,12 @@
     at async Promise.all (index 0)
 
 
-## Background Fetch
-
-- Initial URL: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/background-fetch/](https://wicg.github.io/background-fetch/)
-- Unknown WebIDL names used: *INS* ImageResource
-
-
 ## Badging API
 
 - Initial URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -139,7 +120,7 @@
 - Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -177,7 +158,7 @@
 - Initial URL: [https://www.w3.org/TR/beacon/](https://www.w3.org/TR/beacon/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/beacon/](https://w3c.github.io/beacon/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -210,20 +191,12 @@
     at async Promise.all (index 0)
 
 
-## Content Index
-
-- Initial URL: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/content-index/spec/](https://wicg.github.io/content-index/spec/)
-- Unknown WebIDL names used: *INS* ImageResource
-
-
 ## ContentEditable
 
 - Initial URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -261,7 +234,7 @@
 - Initial URL: [https://www.w3.org/TR/requestidlecallback/](https://www.w3.org/TR/requestidlecallback/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/requestidlecallback/](https://w3c.github.io/requestidlecallback/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -299,7 +272,7 @@
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -332,28 +305,43 @@
     at async Promise.all (index 0)
 
 
-## DOM Standard
+## Early detection of input events
 
-- Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
+- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## Element Timing API
-
-- Initial URL: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/element-timing/](https://wicg.github.io/element-timing/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
-
-
-## Event Timing API
-
-- Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, Performance, PerformanceEntry, PerformanceObserverInit
+- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
+- Spec title: *INS* Early detection of input events / *DEL* isInputPending
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
+    at isReady (__puppeteer_evaluation_script__:12:27)
+    at isReady (__puppeteer_evaluation_script__:19:27)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
+    at isReady (__puppeteer_evaluation_script__:12:27)
+    at isReady (__puppeteer_evaluation_script__:19:27)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at async isReady (__puppeteer_evaluation_script__:19:21)
+    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
+    at async Promise.all (index 97)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
+    at async Promise.all (index 0)
 
 
 ## Frame Timing
@@ -361,7 +349,7 @@
 - Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -399,7 +387,7 @@
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -436,7 +424,7 @@
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -468,21 +456,13 @@
     at async Promise.all (index 0)
 
 
-## Generic Sensor API
-
-- Initial URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## Geolocation API Specification 2nd Edition
+## Geolocation API
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Spec title: *INS* Geolocation API Specification 2nd Edition / *DEL* Geolocation API
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec title: *INS* Geolocation API / *DEL* Geolocation API Specification 2nd Edition
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -514,20 +494,12 @@
     at async Promise.all (index 0)
 
 
-## Geolocation Sensor
-
-- Initial URL: [https://www.w3.org/TR/geolocation-sensor/](https://www.w3.org/TR/geolocation-sensor/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/geolocation-sensor/](https://w3c.github.io/geolocation-sensor/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## High Resolution Time
 
 - Initial URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -564,7 +536,7 @@
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -601,7 +573,7 @@
 - Initial URL: [https://www.w3.org/TR/html-media-capture/](https://www.w3.org/TR/html-media-capture/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/html-media-capture/](https://w3c.github.io/html-media-capture/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -634,28 +606,12 @@
     at async Promise.all (index 0)
 
 
-## HTML Standard
-
-- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## HTMLVideoElement.requestVideoFrameCallback()
-
-- Initial URL: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/video-rvfc/](https://wicg.github.io/video-rvfc/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## IceTransport Extensions for WebRTC
 
 - Initial URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -693,7 +649,7 @@
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -731,7 +687,7 @@
 - Initial URL: [https://www.w3.org/TR/image-resource/](https://www.w3.org/TR/image-resource/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/image-resource/](https://w3c.github.io/image-resource/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -769,7 +725,7 @@
 - Initial URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -807,7 +763,7 @@
 - Initial URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -845,46 +801,7 @@
 - Initial URL: [https://www.w3.org/TR/intersection-observer/](https://www.w3.org/TR/intersection-observer/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/IntersectionObserver/](https://w3c.github.io/IntersectionObserver/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## isInputPending
-
-- Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Spec title: *INS* isInputPending / *DEL* Early detection of input events
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long
-    at isReady (__puppeteer_evaluation_script__:12:27)
-    at isReady (__puppeteer_evaluation_script__:19:27)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at async isReady (__puppeteer_evaluation_script__:19:21)
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:343:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 97)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)
+- Missing references for WebIDL names: *INS* DOMHighResTimeStamp
 
 
 ## JS Self-Profiling API
@@ -892,7 +809,7 @@
 - Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -925,36 +842,12 @@
     at async Promise.all (index 0)
 
 
-## Largest Contentful Paint
-
-- Initial URL: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/largest-contentful-paint/](https://wicg.github.io/largest-contentful-paint/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
-
-
-## Layout Instability API
-
-- Initial URL: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/layout-instability/](https://wicg.github.io/layout-instability/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, PerformanceEntry
-
-
-## Long Tasks API 1
-
-- Initial URL: [https://www.w3.org/TR/longtasks-1/](https://www.w3.org/TR/longtasks-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/longtasks/](https://w3c.github.io/longtasks/)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-
-
 ## MathML Core
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -986,20 +879,12 @@
     at async Promise.all (index 0)
 
 
-## Measure Memory API
-
-- Initial URL: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/performance-measure-memory/](https://wicg.github.io/performance-measure-memory/)
-- Unknown WebIDL names used: *INS* Performance
-
-
 ## Media Capture Automation
 
 - Initial URL: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1037,7 +922,7 @@
 - Initial URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1075,7 +960,7 @@
 - Initial URL: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/media-feeds/](https://wicg.github.io/media-feeds/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1113,7 +998,7 @@
 - Initial URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1145,20 +1030,12 @@
     at async Promise.all (index 0)
 
 
-## MediaStream Recording
-
-- Initial URL: [https://www.w3.org/TR/mediastream-recording/](https://www.w3.org/TR/mediastream-recording/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/mediacapture-record/](https://w3c.github.io/mediacapture-record/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## MediaStreamTrack Content Hints
 
 - Initial URL: [https://www.w3.org/TR/mst-content-hint/](https://www.w3.org/TR/mst-content-hint/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mst-content-hint/](https://w3c.github.io/mst-content-hint/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1196,7 +1073,7 @@
 - Initial URL: [https://www.w3.org/TR/navigation-timing-2/](https://www.w3.org/TR/navigation-timing-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/navigation-timing/](https://w3c.github.io/navigation-timing/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1234,7 +1111,7 @@
 - Initial URL: [https://www.w3.org/TR/network-error-logging-1/](https://www.w3.org/TR/network-error-logging-1/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/network-error-logging/](https://w3c.github.io/network-error-logging/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1272,7 +1149,7 @@
 - Initial URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1305,20 +1182,12 @@
     at async Promise.all (index 0)
 
 
-## Notifications API Standard
-
-- Initial URL: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://notifications.spec.whatwg.org/](https://notifications.spec.whatwg.org/)
-- Unknown WebIDL names used: *INS* VibratePattern
-
-
 ## overscroll and scrollend events
 
 - Initial URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1356,7 +1225,7 @@
 - Initial URL: [https://www.w3.org/TR/page-visibility-2/](https://www.w3.org/TR/page-visibility-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/page-visibility/](https://w3c.github.io/page-visibility/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1389,20 +1258,12 @@
     at async Promise.all (index 0)
 
 
-## Paint Timing 1
-
-- Initial URL: [https://www.w3.org/TR/paint-timing/](https://www.w3.org/TR/paint-timing/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/paint-timing/](https://w3c.github.io/paint-timing/)
-- Unknown WebIDL names used: *INS* PerformanceEntry
-
-
 ## Payment Handler API
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1440,7 +1301,7 @@
 - Initial URL: [https://www.w3.org/TR/payment-method-id/](https://www.w3.org/TR/payment-method-id/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/payment-method-id/](https://w3c.github.io/payment-method-id/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1478,7 +1339,7 @@
 - Initial URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1516,7 +1377,7 @@
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1554,7 +1415,7 @@
 - Initial URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1592,7 +1453,7 @@
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1630,7 +1491,7 @@
 - Initial URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1668,7 +1529,7 @@
 - Initial URL: [https://www.w3.org/TR/preload/](https://www.w3.org/TR/preload/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/preload/](https://w3c.github.io/preload/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1706,7 +1567,7 @@
 - Initial URL: [https://www.w3.org/TR/presentation-api/](https://www.w3.org/TR/presentation-api/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/presentation-api/](https://w3c.github.io/presentation-api/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1744,7 +1605,7 @@
 - Initial URL: [https://www.w3.org/TR/push-api/](https://www.w3.org/TR/push-api/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/push-api/](https://w3c.github.io/push-api/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1782,7 +1643,7 @@
 - Initial URL: [https://www.w3.org/TR/remote-playback/](https://www.w3.org/TR/remote-playback/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/remote-playback/](https://w3c.github.io/remote-playback/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1820,7 +1681,7 @@
 - Initial URL: [https://www.w3.org/TR/resource-hints/](https://www.w3.org/TR/resource-hints/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1858,7 +1719,7 @@
 - Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1896,7 +1757,7 @@
 - Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1929,12 +1790,25 @@
     at async Promise.all (index 0)
 
 
+## Scalable Vector Graphics (SVG) 1.1 (Second Edition)
+
+- Initial URL: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://www.w3.org/TR/SVG11/](https://www.w3.org/TR/SVG11/)
+- Spec title: *INS* Scalable Vector Graphics (SVG) 1.1 (Second Edition) / *DEL* [No title found for https://www.w3.org/TR/SVG11/]
+- No normative references found: *INS* false / *DEL* true
+- Invalid WebIDL content found: *INS* true / *DEL* false
+- Spec does not reference WebIDL normatively: *INS* true / *DEL* false
+- Missing references for links: *INS* https://www.w3.org/TR/2001/REC-xlink-20010627/, https://www.w3.org/TR/2001/REC-MathML2-20010221/, https://www.w3.org/TR/1999/REC-html401-19991224/present/, https://www.w3.org/TR/xlink/, https://www.w3.org/TR/xml-names11/, https://www.w3.org/TR/1999/REC-html401-19991224/struct/, https://www.w3.org/TR/2003/REC-MathML2-20031021/, https://www.w3.org/TR/xml-stylesheet/, https://www.w3.org/TR/xsl/, https://www.w3.org/TR/html4/, https://www.w3.org/TR/2005/NOTE-xml11schema10-20050511/, https://www.w3.org/TR/smil/
+- Inconsistent references for links: *INS* https://www.w3.org/TR/2006/REC-xml-names-20060816/, https://www.w3.org/TR/2006/REC-xml-20060816/, https://www.w3.org/TR/xmlbase/, https://www.w3.org/TR/smil-animation/, https://www.w3.org/TR/xlink11/, https://www.w3.org/TR/xml/, https://www.w3.org/TR/xml-names/, https://www.w3.org/TR/charmod/, https://www.w3.org/TR/rdf-primer/, https://www.w3.org/TR/xmlschema-2/, https://www.w3.org/TR/css3-selectors/, https://www.w3.org/TR/xhtml1/, https://www.w3.org/TR/xslt/, https://www.w3.org/TR/xslt20/
+
+
 ## Scalable Video Coding (SVC) Extension for WebRTC
 
 - Initial URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -1972,7 +1846,7 @@
 - Initial URL: [https://www.w3.org/TR/screen-capture/](https://www.w3.org/TR/screen-capture/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/mediacapture-screen-share/](https://w3c.github.io/mediacapture-screen-share/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2010,7 +1884,7 @@
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2048,7 +1922,7 @@
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2086,7 +1960,7 @@
 - Initial URL: [https://www.w3.org/TR/server-timing/](https://www.w3.org/TR/server-timing/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/server-timing/](https://w3c.github.io/server-timing/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2119,20 +1993,12 @@
     at async Promise.all (index 0)
 
 
-## Service Workers Nightly
-
-- Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Unknown WebIDL names used: *INS* VisibilityState
-
-
 ## The Screen Orientation API
 
 - Initial URL: [https://www.w3.org/TR/screen-orientation/](https://www.w3.org/TR/screen-orientation/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/screen-orientation/](https://w3c.github.io/screen-orientation/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2170,7 +2036,7 @@
 - Initial URL: [https://www.w3.org/TR/timing-entrytypes-registry/](https://www.w3.org/TR/timing-entrytypes-registry/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/timing-entrytypes-registry/](https://w3c.github.io/timing-entrytypes-registry/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2202,13 +2068,13 @@
     at async Promise.all (index 0)
 
 
-## Touch Events
+## Touch Events - Level 2
 
 - Initial URL: [https://www.w3.org/TR/touch-events/](https://www.w3.org/TR/touch-events/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/touch-events/](https://w3c.github.io/touch-events/)
-- Spec title: *INS* Touch Events / *DEL* Touch Events - Level 2
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec title: *INS* Touch Events - Level 2 / *DEL* Touch Events
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2241,13 +2107,13 @@
     at async Promise.all (index 0)
 
 
-## Trace Context - Level 1
+## Trace Context Level 2
 
 - Initial URL: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Spec title: *INS* Trace Context - Level 1 / *DEL* Trace Context Level 2
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec title: *INS* Trace Context Level 2 / *DEL* Trace Context - Level 1
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2285,7 +2151,7 @@
 - Initial URL: [https://www.w3.org/TR/tracking-dnt/](https://www.w3.org/TR/tracking-dnt/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/dnt/drafts/tracking-dnt.html](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2318,13 +2184,13 @@
     at async Promise.all (index 0)
 
 
-## User Timing Level 2
+## User Timing Level 3
 
 - Initial URL: [https://www.w3.org/TR/user-timing-2/](https://www.w3.org/TR/user-timing-2/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Spec title: *INS* User Timing Level 2 / *DEL* User Timing Level 3
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec title: *INS* User Timing Level 3 / *DEL* User Timing Level 2
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2362,7 +2228,7 @@
 - Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2400,7 +2266,7 @@
 - Initial URL: [https://www.w3.org/TR/vibration/](https://www.w3.org/TR/vibration/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/vibration/](https://w3c.github.io/vibration/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2438,7 +2304,7 @@
 - Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2471,20 +2337,12 @@
     at async Promise.all (index 0)
 
 
-## Web Animations
-
-- Initial URL: [https://www.w3.org/TR/web-animations-1/](https://www.w3.org/TR/web-animations-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/web-animations-1/](https://drafts.csswg.org/web-animations-1/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## Web App Manifest - Application Information
 
 - Initial URL: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2522,7 +2380,7 @@
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2555,20 +2413,12 @@
     at async Promise.all (index 0)
 
 
-## Web Audio API
-
-- Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
 ## Web MIDI API
 
 - Initial URL: [https://www.w3.org/TR/webmidi/](https://www.w3.org/TR/webmidi/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://webaudio.github.io/web-midi-api/](https://webaudio.github.io/web-midi-api/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2601,13 +2451,13 @@
     at async Promise.all (index 0)
 
 
-## Web NFC API
+## Web NFC
 
 - Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Spec title: *INS* Web NFC API / *DEL* Web NFC
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec title: *INS* Web NFC / *DEL* Web NFC API
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2645,7 +2495,7 @@
 - Initial URL: [https://www.w3.org/TR/web-share/](https://www.w3.org/TR/web-share/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/web-share/](https://w3c.github.io/web-share/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2683,7 +2533,7 @@
 - Initial URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2721,7 +2571,7 @@
 - Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
-- Spec could not be rendered: *INS* Error: Evaluation failed: Error: Respec generation took too long
+- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: Respec generation took too long
     at isReady (__puppeteer_evaluation_script__:12:27)
     at isReady (__puppeteer_evaluation_script__:19:27)
     at async isReady (__puppeteer_evaluation_script__:19:21)
@@ -2752,37 +2602,5 @@
     at async Promise.all (index 131)
     at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
     at async Promise.all (index 0)
-
-
-## WebRTC 1.0: Real-Time Communication Between Browsers
-
-- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp, RTCStatsType
-
-
-## WebTransport
-
-- Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## WebXR Device API
-
-- Initial URL: [https://www.w3.org/TR/webxr/](https://www.w3.org/TR/webxr/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/webxr/](https://immersive-web.github.io/webxr/)
-- Unknown WebIDL names used: *INS* DOMHighResTimeStamp
-
-
-## WebXR Gamepads Module - Level 1
-
-- Initial URL: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
-- Unknown WebIDL names used: *INS* Gamepad
 
 
