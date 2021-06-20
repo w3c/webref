@@ -50,27 +50,6 @@
         "url": "https://wicg.github.io/periodic-background-sync/"
       },
       "fragment": "partial interface ServiceWorkerGlobalScope {\n    attribute EventHandler onperiodicsync;\n};"
-    },
-    {
-      "spec": {
-        "title": "Payment Handler API",
-        "url": "https://www.w3.org/TR/payment-handler/"
-      },
-      "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler oncanmakepayment;\n};"
-    },
-    {
-      "spec": {
-        "title": "Payment Handler API",
-        "url": "https://www.w3.org/TR/payment-handler/"
-      },
-      "fragment": "partial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpaymentrequest;\n};"
-    },
-    {
-      "spec": {
-        "title": "Push API",
-        "url": "https://www.w3.org/TR/push-api/"
-      },
-      "fragment": "[Exposed=ServiceWorker, SecureContext]\npartial interface ServiceWorkerGlobalScope {\n  attribute EventHandler onpush;\n  attribute EventHandler onpushsubscriptionchange;\n};"
     }
   ],
   "inheritance": {
@@ -152,13 +131,6 @@
               "url": "https://wicg.github.io/scheduling-apis/"
             },
             "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute Scheduler scheduler;\n};"
-          },
-          {
-            "spec": {
-              "title": "High Resolution Time",
-              "url": "https://www.w3.org/TR/hr-time-3/"
-            },
-            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};"
           },
           {
             "spec": {

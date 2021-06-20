@@ -3,8 +3,3 @@ dictionary RTCRtpSendParameters : RTCRtpParameters {
   required DOMString transactionId;
   required sequence<RTCRtpEncodingParameters> encodings;
 };
-
-// Source: MediaStreamTrack Content Hints (https://www.w3.org/TR/mst-content-hint/)
-partial dictionary RTCRtpSendParameters {
- RTCDegradationPreference degradationPreference;
-};

@@ -116,11 +116,6 @@ partial interface Window {
     [SameObject] readonly attribute SpeechSynthesis speechSynthesis;
 };
 
-// Source: Visual Viewport API (https://wicg.github.io/visual-viewport/)
-partial interface Window {
-  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;
-};
-
 // Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
 partial interface Window {
     undefined navigate(SpatialNavigationDirection dir);
@@ -186,15 +181,4 @@ partial interface Window {
 // Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
 partial interface Window {
     [SecureContext] attribute EventHandler ondevicemotion;
-};
-
-// Source: Cooperative Scheduling of Background Tasks (https://www.w3.org/TR/requestidlecallback/)
-partial interface Window {
-  unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});
-  undefined cancelIdleCallback(unsigned long handle);
-};
-
-// Source: Selection API (https://www.w3.org/TR/selection-api/)
-partial interface Window {
-  Selection? getSelection();
 };

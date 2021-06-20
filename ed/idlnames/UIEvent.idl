@@ -6,11 +6,6 @@ interface UIEvent : Event {
   readonly attribute long detail;
 };
 
-// Source: Input Device Capabilities (https://wicg.github.io/input-device-capabilities/)
-partial interface UIEvent {
-  readonly attribute InputDeviceCapabilities? sourceCapabilities;
-};
-
 // Source: UI Events (https://www.w3.org/TR/uievents/)
 partial interface UIEvent {
   // Deprecated in this specification
