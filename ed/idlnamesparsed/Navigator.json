@@ -67,6 +67,20 @@
     },
     {
       "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "// Methods only exposed on documents.\n[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "Navigator includes NavigatorBadge;"
+    },
+    {
+      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
@@ -85,6 +99,13 @@
         "url": "https://wicg.github.io/get-installed-related-apps/spec/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};"
+    },
+    {
+      "spec": {
+        "title": "Early detection of input events",
+        "url": "https://wicg.github.io/is-input-pending/"
+      },
+      "fragment": "partial interface Navigator {\n  readonly attribute Scheduling scheduling;\n};"
     },
     {
       "spec": {
@@ -109,6 +130,13 @@
     },
     {
       "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "Navigator includes NavigatorNetworkInformation;"
+    },
+    {
+      "spec": {
         "title": "Web Serial API",
         "url": "https://wicg.github.io/serial/"
       },
@@ -130,10 +158,31 @@
     },
     {
       "spec": {
+        "title": "WebHID API",
+        "url": "https://wicg.github.io/webhid/"
+      },
+      "fragment": "[SecureContext] partial interface Navigator {\n    [SameObject] readonly attribute HID hid;\n};"
+    },
+    {
+      "spec": {
         "title": "WebUSB API",
         "url": "https://wicg.github.io/webusb/"
       },
       "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
+        "title": "Battery Status API",
+        "url": "https://www.w3.org/TR/battery-status/"
+      },
+      "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
+    },
+    {
+      "spec": {
+        "title": "Beacon",
+        "url": "https://www.w3.org/TR/beacon/"
+      },
+      "fragment": "partial interface Navigator {\n    boolean sendBeacon(USVString url, optional BodyInit? data = null);\n};"
     },
     {
       "spec": {
@@ -158,10 +207,31 @@
     },
     {
       "spec": {
+        "title": "Device Posture API",
+        "url": "https://www.w3.org/TR/device-posture/"
+      },
+      "fragment": "[SecureContext, Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute DevicePosture devicePosture;\n};"
+    },
+    {
+      "spec": {
         "title": "Encrypted Media Extensions",
         "url": "https://www.w3.org/TR/encrypted-media/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};"
+    },
+    {
+      "spec": {
+        "title": "Gamepad",
+        "url": "https://www.w3.org/TR/gamepad/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  sequence<Gamepad?> getGamepads();\n};"
+    },
+    {
+      "spec": {
+        "title": "Geolocation API",
+        "url": "https://www.w3.org/TR/geolocation-API/"
+      },
+      "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute Geolocation geolocation;\n};"
     },
     {
       "spec": {
@@ -200,10 +270,45 @@
     },
     {
       "spec": {
+        "title": "Pointer Events",
+        "url": "https://www.w3.org/TR/pointerevents3/"
+      },
+      "fragment": "partial interface Navigator {\n    readonly  attribute long maxTouchPoints;\n};"
+    },
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Presentation presentation;\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Wake Lock API",
+        "url": "https://www.w3.org/TR/screen-wake-lock/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute WakeLock wakeLock;\n};"
+    },
+    {
+      "spec": {
         "title": "Service Workers Nightly",
         "url": "https://www.w3.org/TR/service-workers-1/"
       },
       "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    },
+    {
+      "spec": {
+        "title": "Vibration API (Second Edition)",
+        "url": "https://www.w3.org/TR/vibration/"
+      },
+      "fragment": "partial interface Navigator {\n    boolean vibrate (VibratePattern pattern);\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Share API",
+        "url": "https://www.w3.org/TR/web-share/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n};"
     },
     {
       "spec": {
@@ -218,6 +323,13 @@
         "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "Navigator includes NavigatorGPU;"
+    },
+    {
+      "spec": {
+        "title": "Web MIDI API",
+        "url": "https://www.w3.org/TR/webmidi/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext]\n  Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});\n};"
     },
     {
       "spec": {
@@ -350,6 +462,20 @@
       "includes": []
     },
     {
+      "name": "NavigatorBadge",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
       "name": "NavigatorFonts",
       "defined": {
         "spec": {
@@ -358,6 +484,20 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
         "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
       },
       "extended": [],
       "inheritance": null,

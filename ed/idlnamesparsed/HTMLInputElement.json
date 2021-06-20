@@ -22,6 +22,13 @@
         "url": "https://wicg.github.io/entries-api/"
       },
       "fragment": "partial interface HTMLInputElement {\n    attribute boolean webkitdirectory;\n    readonly attribute FrozenArray<FileSystemEntry> webkitEntries;\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Media Capture",
+        "url": "https://www.w3.org/TR/html-media-capture/"
+      },
+      "fragment": "partial interface HTMLInputElement {\n    [CEReactions] attribute DOMString capture;\n};"
     }
   ],
   "inheritance": {
@@ -193,6 +200,20 @@
             "url": "https://www.w3.org/TR/DOM-Parsing/"
           },
           "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Events",
+            "url": "https://www.w3.org/TR/pointerevents3/"
+          },
+          "fragment": "partial interface Element {\n  undefined setPointerCapture (long pointerId);\n  undefined releasePointerCapture (long pointerId);\n  boolean hasPointerCapture (long pointerId);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Lock 2.0",
+            "url": "https://www.w3.org/TR/pointerlock-2/"
+          },
+          "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
         },
         {
           "spec": {
@@ -397,6 +418,27 @@
               "url": "https://www.w3.org/TR/css-transitions-1/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
+          },
+          {
+            "spec": {
+              "title": "Pointer Events",
+              "url": "https://www.w3.org/TR/pointerevents3/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+          },
+          {
+            "spec": {
+              "title": "Selection API",
+              "url": "https://www.w3.org/TR/selection-api/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+          },
+          {
+            "spec": {
+              "title": "Touch Events - Level 2",
+              "url": "https://www.w3.org/TR/touch-events/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n                    attribute EventHandler ontouchstart;\n                    attribute EventHandler ontouchend;\n                    attribute EventHandler ontouchmove;\n                    attribute EventHandler ontouchcancel;\n};"
           }
         ],
         "inheritance": null,

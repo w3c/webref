@@ -1,10 +1,55 @@
+// Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
+[Exposed=(Window,Worker)]
+interface Performance : EventTarget {
+    DOMHighResTimeStamp now();
+    readonly attribute DOMHighResTimeStamp timeOrigin;
+    [Default] object toJSON();
+};
+
 // Source: Event Timing API (https://wicg.github.io/event-timing/)
 [Exposed=Window]
 partial interface Performance {
     [SameObject] readonly attribute EventCounts eventCounts;
 };
 
+// Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
+[Exposed=Window]
+partial interface Performance {
+  Promise<Profiler> profile(ProfilerInitOptions options);
+};
+
 // Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)
 partial interface Performance {
   [Exposed=(Window,ServiceWorker,SharedWorker), CrossOriginIsolated] Promise<MemoryMeasurement> measureUserAgentSpecificMemory();
+};
+
+// Source: Navigation Timing Level 2 (https://www.w3.org/TR/navigation-timing-2/)
+[Exposed=Window]
+partial interface Performance {
+  [SameObject]
+  readonly attribute PerformanceTiming timing;
+  [SameObject]
+  readonly attribute PerformanceNavigation navigation;
+};
+
+// Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline-2/)
+partial interface Performance {
+  PerformanceEntryList getEntries ();
+  PerformanceEntryList getEntriesByType (DOMString type);
+  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);
+};
+
+// Source: Resource Timing Level 2 (https://www.w3.org/TR/resource-timing-2/)
+partial interface Performance {
+  undefined clearResourceTimings ();
+  undefined setResourceTimingBufferSize (unsigned long maxSize);
+              attribute EventHandler onresourcetimingbufferfull;
+};
+
+// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-3/)
+partial interface Performance {
+    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});
+    undefined clearMarks(optional DOMString markName);
+    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);
+    undefined clearMeasures(optional DOMString measureName);
 };

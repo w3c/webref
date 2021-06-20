@@ -46,10 +46,24 @@
     },
     {
       "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorBadge;"
+    },
+    {
+      "spec": {
         "title": "Local Font Access API",
         "url": "https://wicg.github.io/local-font-access/"
       },
       "fragment": "WorkerNavigator includes NavigatorFonts;"
+    },
+    {
+      "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorNetworkInformation;"
     },
     {
       "spec": {
@@ -196,6 +210,20 @@
       "includes": []
     },
     {
+      "name": "NavigatorBadge",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
       "name": "NavigatorFonts",
       "defined": {
         "spec": {
@@ -204,6 +232,20 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
         "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
       },
       "extended": [],
       "inheritance": null,

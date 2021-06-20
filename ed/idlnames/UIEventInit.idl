@@ -4,6 +4,11 @@ dictionary UIEventInit : EventInit {
   long detail = 0;
 };
 
+// Source: Input Device Capabilities (https://wicg.github.io/input-device-capabilities/)
+partial dictionary UIEventInit {
+  InputDeviceCapabilities? sourceCapabilities = null;
+};
+
 // Source: UI Events (https://www.w3.org/TR/uievents/)
 partial dictionary UIEventInit {
   unsigned long which = 0;

@@ -12,8 +12,7 @@
           "Performance"
         ],
         "Worker": [
-          "Profiler",
-          "Performance"
+          "Profiler"
         ]
       }
     },
@@ -413,7 +412,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
-          "fragment": "[CrossOriginIsolated, Exposed=(Window,Worker)]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};",
+          "fragment": "[Exposed=Window]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,
@@ -463,23 +462,10 @@
           "extAttrs": [
             {
               "type": "extended-attribute",
-              "name": "CrossOriginIsolated",
-              "rhs": null,
-              "arguments": []
-            },
-            {
-              "type": "extended-attribute",
               "name": "Exposed",
               "rhs": {
-                "type": "identifier-list",
-                "value": [
-                  {
-                    "value": "Window"
-                  },
-                  {
-                    "value": "Worker"
-                  }
-                ]
+                "type": "identifier",
+                "value": "Window"
               },
               "arguments": []
             }
@@ -495,8 +481,7 @@
         "Performance"
       ],
       "Worker": [
-        "Profiler",
-        "Performance"
+        "Profiler"
       ]
     },
     "dependencies": {
