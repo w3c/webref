@@ -10987,6 +10987,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#NewObject`](https://heycam.github.io/webidl/#NewObject)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-reference`](https://heycam.github.io/webidl/#dfn-get-buffer-source-reference)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
      * [`https://streams.spec.whatwg.org/#generictransformstream`](https://streams.spec.whatwg.org/#generictransformstream)
      * [`https://streams.spec.whatwg.org/#dom-generictransformstream-readable`](https://streams.spec.whatwg.org/#dom-generictransformstream-readable)
@@ -10996,11 +10997,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://streams.spec.whatwg.org/#writable-stream`](https://streams.spec.whatwg.org/#writable-stream)
      * [`https://streams.spec.whatwg.org/#rs-pipe-through`](https://streams.spec.whatwg.org/#rs-pipe-through)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
-     * [`https://streams.spec.whatwg.org/#generictransformstream-transform`](https://streams.spec.whatwg.org/#generictransformstream-transform)
-     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
      * [`https://streams.spec.whatwg.org/#transformstream`](https://streams.spec.whatwg.org/#transformstream)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up`](https://streams.spec.whatwg.org/#transformstream-set-up)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm)
+     * [`https://streams.spec.whatwg.org/#generictransformstream-transform`](https://streams.spec.whatwg.org/#generictransformstream-transform)
      * [`https://streams.spec.whatwg.org/#transformstream-enqueue`](https://streams.spec.whatwg.org/#transformstream-enqueue)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/):
      * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
@@ -23038,7 +23039,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20634 problematic external links found in 340 specifications
+=> 20635 problematic external links found in 340 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

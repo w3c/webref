@@ -1348,7 +1348,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
-- Crawled version: 15 June 2021
+- Crawled version: 21 June 2021
 - Editor's Draft: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Shortname: compat
 
@@ -14481,7 +14481,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 21 April 2021
+- Crawled version: 21 June 2021
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -14954,6 +14954,7 @@ Normative references to this spec from:
 
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
+- [DOM Standard](https://dom.spec.whatwg.org/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [File API](https://w3c.github.io/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
@@ -15094,7 +15095,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 21 June 2021
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -15152,6 +15153,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#NewObject`](https://heycam.github.io/webidl/#NewObject)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-reference`](https://heycam.github.io/webidl/#dfn-get-buffer-source-reference)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value`](https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value)
      * [`https://streams.spec.whatwg.org/#generictransformstream`](https://streams.spec.whatwg.org/#generictransformstream)
      * [`https://streams.spec.whatwg.org/#dom-generictransformstream-readable`](https://streams.spec.whatwg.org/#dom-generictransformstream-readable)
@@ -15161,11 +15163,11 @@ No informative reference to this spec from other specs.
      * [`https://streams.spec.whatwg.org/#writable-stream`](https://streams.spec.whatwg.org/#writable-stream)
      * [`https://streams.spec.whatwg.org/#rs-pipe-through`](https://streams.spec.whatwg.org/#rs-pipe-through)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
-     * [`https://streams.spec.whatwg.org/#generictransformstream-transform`](https://streams.spec.whatwg.org/#generictransformstream-transform)
-     * [`https://streams.spec.whatwg.org/#transformstream-create`](https://streams.spec.whatwg.org/#transformstream-create)
      * [`https://streams.spec.whatwg.org/#transformstream`](https://streams.spec.whatwg.org/#transformstream)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-transformalgorithm)
-     * [`https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-create-flushalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up`](https://streams.spec.whatwg.org/#transformstream-set-up)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm`](https://streams.spec.whatwg.org/#transformstream-set-up-transformalgorithm)
+     * [`https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm`](https://streams.spec.whatwg.org/#transformstream-set-up-flushalgorithm)
+     * [`https://streams.spec.whatwg.org/#generictransformstream-transform`](https://streams.spec.whatwg.org/#generictransformstream-transform)
      * [`https://streams.spec.whatwg.org/#transformstream-enqueue`](https://streams.spec.whatwg.org/#transformstream-enqueue)
 
 ### Known dependencies on this specification {.dependencies}
@@ -15513,7 +15515,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 20 June 2021
+- Crawled version: 21 June 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
