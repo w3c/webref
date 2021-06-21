@@ -6,1236 +6,1454 @@
   "headings": [
     {
       "id": "title",
+      "href": "https://www.w3.org/TR/webgpu/#title",
       "level": 1,
       "title": "WebGPU"
     },
     {
       "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/webgpu/#profile-and-date",
       "level": 2,
-      "title": "W3C Working Draft, 14 June 2021"
+      "title": "W3C Working Draft, 20 June 2021"
     },
     {
       "id": "abstract",
+      "href": "https://www.w3.org/TR/webgpu/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
+      "href": "https://www.w3.org/TR/webgpu/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
+      "href": "https://www.w3.org/TR/webgpu/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
+      "href": "https://www.w3.org/TR/webgpu/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "malicious-use",
+      "href": "https://www.w3.org/TR/webgpu/#malicious-use",
       "level": 2,
       "title": "Malicious use considerations",
       "number": "2"
     },
     {
       "id": "security",
+      "href": "https://www.w3.org/TR/webgpu/#security",
       "level": 3,
       "title": "Security",
       "number": "2.1"
     },
     {
       "id": "security-cpu-ub",
+      "href": "https://www.w3.org/TR/webgpu/#security-cpu-ub",
       "level": 4,
       "title": "CPU-based undefined behavior",
       "number": "2.1.1"
     },
     {
       "id": "security-gpu-ub",
+      "href": "https://www.w3.org/TR/webgpu/#security-gpu-ub",
       "level": 3,
       "title": "GPU-based undefined behavior",
       "number": "2.2"
     },
     {
       "id": "security-uninitialized",
+      "href": "https://www.w3.org/TR/webgpu/#security-uninitialized",
       "level": 3,
       "title": "Uninitialized data",
       "number": "2.3"
     },
     {
       "id": "security-shader",
+      "href": "https://www.w3.org/TR/webgpu/#security-shader",
       "level": 3,
       "title": "Out-of-bounds access in shaders",
       "number": "2.4"
     },
     {
       "id": "security-invalid-data",
+      "href": "https://www.w3.org/TR/webgpu/#security-invalid-data",
       "level": 3,
       "title": "Invalid data",
       "number": "2.5"
     },
     {
       "id": "security-driver-bugs",
+      "href": "https://www.w3.org/TR/webgpu/#security-driver-bugs",
       "level": 4,
       "title": "Driver bugs",
       "number": "2.5.1"
     },
     {
       "id": "security-timing",
+      "href": "https://www.w3.org/TR/webgpu/#security-timing",
       "level": 4,
       "title": "Timing attacks",
       "number": "2.5.2"
     },
     {
       "id": "security-rowhammer",
+      "href": "https://www.w3.org/TR/webgpu/#security-rowhammer",
       "level": 4,
       "title": "Row hammer attacks",
       "number": "2.5.3"
     },
     {
       "id": "security-dos",
+      "href": "https://www.w3.org/TR/webgpu/#security-dos",
       "level": 3,
       "title": "Denial of service",
       "number": "2.6"
     },
     {
       "id": "security-workload-identification",
+      "href": "https://www.w3.org/TR/webgpu/#security-workload-identification",
       "level": 3,
       "title": "Workload identification",
       "number": "2.7"
     },
     {
       "id": "security-memory-resources",
+      "href": "https://www.w3.org/TR/webgpu/#security-memory-resources",
       "level": 4,
       "title": "Memory resources",
       "number": "2.7.1"
     },
     {
       "id": "security-computation-resources",
+      "href": "https://www.w3.org/TR/webgpu/#security-computation-resources",
       "level": 4,
       "title": "Computation resources",
       "number": "2.7.2"
     },
     {
       "id": "security-privacy",
+      "href": "https://www.w3.org/TR/webgpu/#security-privacy",
       "level": 3,
       "title": "Privacy",
       "number": "2.8"
     },
     {
       "id": "security-machine-limits",
+      "href": "https://www.w3.org/TR/webgpu/#security-machine-limits",
       "level": 4,
       "title": "Machine-specific limits",
       "number": "2.8.1"
     },
     {
       "id": "security-machine-artifacts",
+      "href": "https://www.w3.org/TR/webgpu/#security-machine-artifacts",
       "level": 4,
       "title": "Machine-specific artifacts",
       "number": "2.8.2"
     },
     {
       "id": "security-machine-performance",
+      "href": "https://www.w3.org/TR/webgpu/#security-machine-performance",
       "level": 4,
       "title": "Machine-specific performance",
       "number": "2.8.3"
     },
     {
       "id": "security-user-agent-state",
+      "href": "https://www.w3.org/TR/webgpu/#security-user-agent-state",
       "level": 4,
       "title": "User Agent State",
       "number": "2.8.4"
     },
     {
       "id": "fundamentals",
+      "href": "https://www.w3.org/TR/webgpu/#fundamentals",
       "level": 2,
       "title": "Fundamentals",
       "number": "3"
     },
     {
       "id": "api-conventions",
+      "href": "https://www.w3.org/TR/webgpu/#api-conventions",
       "level": 3,
       "title": "Conventions",
       "number": "3.1"
     },
     {
       "id": "dot-syntax",
+      "href": "https://www.w3.org/TR/webgpu/#dot-syntax",
       "level": 4,
       "title": "Dot Syntax",
       "number": "3.1.1"
     },
     {
       "id": "webgpu-internal-objects",
+      "href": "https://www.w3.org/TR/webgpu/#webgpu-internal-objects",
       "level": 4,
       "title": "Internal Objects",
       "number": "3.1.2"
     },
     {
       "id": "webgpu-interfaces",
+      "href": "https://www.w3.org/TR/webgpu/#webgpu-interfaces",
       "level": 4,
       "title": "WebGPU Interfaces",
       "number": "3.1.3"
     },
     {
       "id": "object-descriptors",
+      "href": "https://www.w3.org/TR/webgpu/#object-descriptors",
       "level": 4,
       "title": "Object Descriptors",
       "number": "3.1.4"
     },
     {
       "id": "invalidity",
+      "href": "https://www.w3.org/TR/webgpu/#invalidity",
       "level": 3,
       "title": "Invalid Internal Objects & Contagious Invalidity",
       "number": "3.2"
     },
     {
       "id": "coordinate-systems",
+      "href": "https://www.w3.org/TR/webgpu/#coordinate-systems",
       "level": 3,
       "title": "Coordinate Systems",
       "number": "3.3"
     },
     {
       "id": "programming-model",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model",
       "level": 3,
       "title": "Programming Model",
       "number": "3.4"
     },
     {
       "id": "programming-model-timelines",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model-timelines",
       "level": 4,
       "title": "Timelines",
       "number": "3.4.1"
     },
     {
       "id": "programming-model-memory",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model-memory",
       "level": 4,
       "title": "Memory Model",
       "number": "3.4.2"
     },
     {
       "id": "programming-model-multi-threading",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model-multi-threading",
       "level": 4,
       "title": "Multi-Threading",
       "number": "3.4.3"
     },
     {
       "id": "programming-model-resource-usages",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model-resource-usages",
       "level": 4,
       "title": "Resource Usages",
       "number": "3.4.4"
     },
     {
       "id": "programming-model-synchronization",
+      "href": "https://www.w3.org/TR/webgpu/#programming-model-synchronization",
       "level": 4,
       "title": "Synchronization",
       "number": "3.4.5"
     },
     {
       "id": "core-internal-objects",
+      "href": "https://www.w3.org/TR/webgpu/#core-internal-objects",
       "level": 3,
       "title": "Core Internal Objects",
       "number": "3.5"
     },
     {
       "id": "adapters",
+      "href": "https://www.w3.org/TR/webgpu/#adapters",
       "level": 4,
       "title": "Adapters",
       "number": "3.5.1"
     },
     {
       "id": "devices",
+      "href": "https://www.w3.org/TR/webgpu/#devices",
       "level": 4,
       "title": "Devices",
       "number": "3.5.2"
     },
     {
       "id": "optional-capabilities",
+      "href": "https://www.w3.org/TR/webgpu/#optional-capabilities",
       "level": 3,
       "title": "Optional Capabilities",
       "number": "3.6"
     },
     {
       "id": "features",
+      "href": "https://www.w3.org/TR/webgpu/#features",
       "level": 4,
       "title": "Features",
       "number": "3.6.1"
     },
     {
       "id": "limits",
+      "href": "https://www.w3.org/TR/webgpu/#limits",
       "level": 4,
       "title": "Limits",
       "number": "3.6.2"
     },
     {
       "id": "gpu-supportedlimits",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-supportedlimits",
       "level": 5,
       "title": "GPUSupportedLimits",
       "number": "3.6.2.1"
     },
     {
       "id": "gpu-supportedfeatures",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-supportedfeatures",
       "level": 5,
       "title": "GPUSupportedFeatures",
       "number": "3.6.2.2"
     },
     {
       "id": "origin-restrictions",
+      "href": "https://www.w3.org/TR/webgpu/#origin-restrictions",
       "level": 3,
       "title": "Origin Restrictions",
       "number": "3.7"
     },
     {
       "id": "color-spaces",
+      "href": "https://www.w3.org/TR/webgpu/#color-spaces",
       "level": 3,
       "title": "Color Spaces",
       "number": "3.8"
     },
     {
       "id": "initialization",
+      "href": "https://www.w3.org/TR/webgpu/#initialization",
       "level": 2,
       "title": "Initialization",
       "number": "4"
     },
     {
       "id": "initialization-examples",
+      "href": "https://www.w3.org/TR/webgpu/#initialization-examples",
       "level": 3,
       "title": "Examples",
       "number": "4.1"
     },
     {
       "id": "navigator-gpu",
+      "href": "https://www.w3.org/TR/webgpu/#navigator-gpu",
       "level": 3,
       "title": "navigator.gpu",
       "number": "4.2"
     },
     {
       "id": "gpu-interface",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-interface",
       "level": 3,
       "title": "GPU",
       "number": "4.3"
     },
     {
       "id": "adapter-selection",
+      "href": "https://www.w3.org/TR/webgpu/#adapter-selection",
       "level": 4,
       "title": "Adapter Selection",
       "number": "4.3.1"
     },
     {
       "id": "gpu-adapter",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-adapter",
       "level": 3,
       "title": "GPUAdapter",
       "number": "4.4"
     },
     {
       "id": "gpudevicedescriptor",
+      "href": "https://www.w3.org/TR/webgpu/#gpudevicedescriptor",
       "level": 4,
       "title": "GPUDeviceDescriptor",
       "number": "4.4.1"
     },
     {
       "id": "gpufeaturename",
+      "href": "https://www.w3.org/TR/webgpu/#gpufeaturename",
       "level": 5,
       "title": "GPUFeatureName",
       "number": "4.4.1.1"
     },
     {
       "id": "gpu-device",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-device",
       "level": 3,
       "title": "GPUDevice",
       "number": "4.5"
     },
     {
       "id": "buffers",
+      "href": "https://www.w3.org/TR/webgpu/#buffers",
       "level": 2,
       "title": "Buffers",
       "number": "5"
     },
     {
       "id": "buffer-interface",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-interface",
       "level": 3,
       "title": "GPUBuffer",
       "number": "5.1"
     },
     {
       "id": "buffer-creation",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-creation",
       "level": 3,
       "title": "Buffer Creation",
       "number": "5.2"
     },
     {
       "id": "GPUBufferDescriptor",
+      "href": "https://www.w3.org/TR/webgpu/#GPUBufferDescriptor",
       "level": 4,
       "title": "GPUBufferDescriptor",
       "number": "5.2.1"
     },
     {
       "id": "buffer-usage",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-usage",
       "level": 4,
       "title": "Buffer Usage",
       "number": "5.2.2"
     },
     {
       "id": "buffer-destruction",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-destruction",
       "level": 3,
       "title": "Buffer Destruction",
       "number": "5.3"
     },
     {
       "id": "buffer-mapping",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-mapping",
       "level": 3,
       "title": "Buffer Mapping",
       "number": "5.4"
     },
     {
       "id": "textures",
+      "href": "https://www.w3.org/TR/webgpu/#textures",
       "level": 2,
       "title": "Textures and Texture Views",
       "number": "6"
     },
     {
       "id": "texture-interface",
+      "href": "https://www.w3.org/TR/webgpu/#texture-interface",
       "level": 3,
       "title": "GPUTexture",
       "number": "6.1"
     },
     {
       "id": "texture-creation",
+      "href": "https://www.w3.org/TR/webgpu/#texture-creation",
       "level": 4,
       "title": "Texture Creation",
       "number": "6.1.1"
     },
     {
       "id": "texture-destruction",
+      "href": "https://www.w3.org/TR/webgpu/#texture-destruction",
       "level": 4,
       "title": "Texture Destruction",
       "number": "6.1.2"
     },
     {
       "id": "gpu-textureview",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-textureview",
       "level": 3,
       "title": "GPUTextureView",
       "number": "6.2"
     },
     {
       "id": "texture-view-creation",
+      "href": "https://www.w3.org/TR/webgpu/#texture-view-creation",
       "level": 4,
       "title": "Texture View Creation",
       "number": "6.2.1"
     },
     {
       "id": "texture-formats",
+      "href": "https://www.w3.org/TR/webgpu/#texture-formats",
       "level": 3,
       "title": "Texture Formats",
       "number": "6.3"
     },
     {
       "id": "gpu-external-texture",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-external-texture",
       "level": 3,
       "title": "GPUExternalTexture",
       "number": "6.4"
     },
     {
       "id": "external-texture-creation",
+      "href": "https://www.w3.org/TR/webgpu/#external-texture-creation",
       "level": 4,
       "title": "Importing External Textures",
       "number": "6.4.1"
     },
     {
       "id": "external-texture-sampling",
+      "href": "https://www.w3.org/TR/webgpu/#external-texture-sampling",
       "level": 4,
       "title": "Sampling External Textures",
       "number": "6.4.2"
     },
     {
       "id": "samplers",
+      "href": "https://www.w3.org/TR/webgpu/#samplers",
       "level": 2,
       "title": "Samplers",
       "number": "7"
     },
     {
       "id": "sampler-interface",
+      "href": "https://www.w3.org/TR/webgpu/#sampler-interface",
       "level": 3,
       "title": "GPUSampler",
       "number": "7.1"
     },
     {
       "id": "sampler-creation",
+      "href": "https://www.w3.org/TR/webgpu/#sampler-creation",
       "level": 3,
       "title": "Sampler Creation",
       "number": "7.2"
     },
     {
       "id": "GPUSamplerDescriptor",
+      "href": "https://www.w3.org/TR/webgpu/#GPUSamplerDescriptor",
       "level": 4,
       "title": "GPUSamplerDescriptor",
       "number": "7.2.1"
     },
     {
       "id": "bindings",
+      "href": "https://www.w3.org/TR/webgpu/#bindings",
       "level": 2,
       "title": "Resource Binding",
       "number": "8"
     },
     {
       "id": "bind-group-layout",
+      "href": "https://www.w3.org/TR/webgpu/#bind-group-layout",
       "level": 3,
       "title": "GPUBindGroupLayout",
       "number": "8.1"
     },
     {
       "id": "bind-group-layout-creation",
+      "href": "https://www.w3.org/TR/webgpu/#bind-group-layout-creation",
       "level": 4,
       "title": "Creation",
       "number": "8.1.1"
     },
     {
       "id": "bind-group-compatibility",
+      "href": "https://www.w3.org/TR/webgpu/#bind-group-compatibility",
       "level": 4,
       "title": "Compatibility",
       "number": "8.1.2"
     },
     {
       "id": "gpu-bind-group",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-bind-group",
       "level": 3,
       "title": "GPUBindGroup",
       "number": "8.2"
     },
     {
       "id": "bind-group-creation",
+      "href": "https://www.w3.org/TR/webgpu/#bind-group-creation",
       "level": 4,
       "title": "Bind Group Creation",
       "number": "8.2.1"
     },
     {
       "id": "pipeline-layout",
+      "href": "https://www.w3.org/TR/webgpu/#pipeline-layout",
       "level": 3,
       "title": "GPUPipelineLayout",
       "number": "8.3"
     },
     {
       "id": "pipeline-layout-creation",
+      "href": "https://www.w3.org/TR/webgpu/#pipeline-layout-creation",
       "level": 4,
       "title": "Creation",
       "number": "8.3.1"
     },
     {
       "id": "shader-modules",
+      "href": "https://www.w3.org/TR/webgpu/#shader-modules",
       "level": 2,
       "title": "Shader Modules",
       "number": "9"
     },
     {
       "id": "shader-module",
+      "href": "https://www.w3.org/TR/webgpu/#shader-module",
       "level": 3,
       "title": "GPUShaderModule",
       "number": "9.1"
     },
     {
       "id": "shader-module-creation",
+      "href": "https://www.w3.org/TR/webgpu/#shader-module-creation",
       "level": 4,
       "title": "Shader Module Creation",
       "number": "9.1.1"
     },
     {
       "id": "shader-module-compilation-information",
+      "href": "https://www.w3.org/TR/webgpu/#shader-module-compilation-information",
       "level": 4,
       "title": "Shader Module Compilation Information",
       "number": "9.1.2"
     },
     {
       "id": "pipelines",
+      "href": "https://www.w3.org/TR/webgpu/#pipelines",
       "level": 2,
       "title": "10. Pipelines"
     },
     {
       "id": "pipeline-base",
+      "href": "https://www.w3.org/TR/webgpu/#pipeline-base",
       "level": 3,
       "title": "Base pipelines",
       "number": "10.1"
     },
     {
       "id": "default-pipeline-layout",
+      "href": "https://www.w3.org/TR/webgpu/#default-pipeline-layout",
       "level": 4,
       "title": "Default pipeline layout",
       "number": "10.1.1"
     },
     {
       "id": "GPUProgrammableStage",
+      "href": "https://www.w3.org/TR/webgpu/#GPUProgrammableStage",
       "level": 4,
       "title": "GPUProgrammableStage",
       "number": "10.1.2"
     },
     {
       "id": "compute-pipeline",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pipeline",
       "level": 3,
       "title": "GPUComputePipeline",
       "number": "10.2"
     },
     {
       "id": "compute-pipeline-creation",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pipeline-creation",
       "level": 4,
       "title": "Creation",
       "number": "10.2.1"
     },
     {
       "id": "render-pipeline",
+      "href": "https://www.w3.org/TR/webgpu/#render-pipeline",
       "level": 3,
       "title": "GPURenderPipeline",
       "number": "10.3"
     },
     {
       "id": "render-pipeline-creation",
+      "href": "https://www.w3.org/TR/webgpu/#render-pipeline-creation",
       "level": 4,
       "title": "Creation",
       "number": "10.3.1"
     },
     {
       "id": "primitive-state",
+      "href": "https://www.w3.org/TR/webgpu/#primitive-state",
       "level": 4,
       "title": "Primitive State",
       "number": "10.3.2"
     },
     {
       "id": "multisample-state",
+      "href": "https://www.w3.org/TR/webgpu/#multisample-state",
       "level": 4,
       "title": "Multisample State",
       "number": "10.3.3"
     },
     {
       "id": "fragment-state",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-state",
       "level": 4,
       "title": "Fragment State",
       "number": "10.3.4"
     },
     {
       "id": "color-target-state",
+      "href": "https://www.w3.org/TR/webgpu/#color-target-state",
       "level": 4,
       "title": "Color Target State",
       "number": "10.3.5"
     },
     {
       "id": "blend-state",
+      "href": "https://www.w3.org/TR/webgpu/#blend-state",
       "level": 5,
       "title": "Blend State",
       "number": "10.3.5.1"
     },
     {
       "id": "depth-stencil-state",
+      "href": "https://www.w3.org/TR/webgpu/#depth-stencil-state",
       "level": 4,
       "title": "Depth/Stencil State",
       "number": "10.3.6"
     },
     {
       "id": "vertex-state",
+      "href": "https://www.w3.org/TR/webgpu/#vertex-state",
       "level": 4,
       "title": "Vertex State",
       "number": "10.3.7"
     },
     {
       "id": "vertex-formats",
+      "href": "https://www.w3.org/TR/webgpu/#vertex-formats",
       "level": 5,
       "title": "Vertex Formats",
       "number": "10.3.7.1"
     },
     {
       "id": "command-buffers",
+      "href": "https://www.w3.org/TR/webgpu/#command-buffers",
       "level": 2,
       "title": "11. Command Buffers"
     },
     {
       "id": "command-buffer",
+      "href": "https://www.w3.org/TR/webgpu/#command-buffer",
       "level": 3,
       "title": "GPUCommandBuffer",
       "number": "11.1"
     },
     {
       "id": "command-buffer-creation",
+      "href": "https://www.w3.org/TR/webgpu/#command-buffer-creation",
       "level": 4,
       "title": "Creation",
       "number": "11.1.1"
     },
     {
       "id": "command-encoding",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoding",
       "level": 2,
       "title": "12. Command Encoding"
     },
     {
       "id": "command-encoder",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder",
       "level": 3,
       "title": "GPUCommandEncoder",
       "number": "12.1"
     },
     {
       "id": "command-encoder-creation",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder-creation",
       "level": 4,
       "title": "Creation",
       "number": "12.1.1"
     },
     {
       "id": "command-encoder-pass-encoding",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder-pass-encoding",
       "level": 3,
       "title": "Pass Encoding",
       "number": "12.2"
     },
     {
       "id": "copy-commands",
+      "href": "https://www.w3.org/TR/webgpu/#copy-commands",
       "level": 3,
       "title": "Copy Commands",
       "number": "12.3"
     },
     {
       "id": "gpu-image-data-layout",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
       "level": 4,
       "title": "GPUImageDataLayout",
       "number": "12.3.1"
     },
     {
       "id": "gpu-image-copy-buffer",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-buffer",
       "level": 4,
       "title": "GPUImageCopyBuffer",
       "number": "12.3.2"
     },
     {
       "id": "gpu-image-copy-texture",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
       "level": 4,
       "title": "GPUImageCopyTexture",
       "number": "12.3.3"
     },
     {
-      "id": "gpu-image-copy-external-image",
+      "id": "gpu-image-copy-texture-tagged",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture-tagged",
       "level": 4,
-      "title": "GPUImageCopyExternalImage",
+      "title": "GPUImageCopyTextureTagged",
       "number": "12.3.4"
     },
     {
-      "id": "buffer-copies",
+      "id": "gpu-image-copy-external-image",
+      "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-external-image",
       "level": 4,
-      "title": "Buffer Copies",
+      "title": "GPUImageCopyExternalImage",
       "number": "12.3.5"
     },
     {
-      "id": "image-copies",
+      "id": "buffer-copies",
+      "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
       "level": 4,
-      "title": "Image Copies",
+      "title": "Buffer Copies",
       "number": "12.3.6"
     },
     {
+      "id": "image-copies",
+      "href": "https://www.w3.org/TR/webgpu/#image-copies",
+      "level": 4,
+      "title": "Image Copies",
+      "number": "12.3.7"
+    },
+    {
       "id": "command-encoder-debug-markers",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
       "level": 3,
       "title": "Debug Markers",
       "number": "12.4"
     },
     {
       "id": "command-encoder-queries",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder-queries",
       "level": 3,
       "title": "Queries",
       "number": "12.5"
     },
     {
       "id": "command-encoder-finalization",
+      "href": "https://www.w3.org/TR/webgpu/#command-encoder-finalization",
       "level": 3,
       "title": "Finalization",
       "number": "12.6"
     },
     {
       "id": "programmable-passes",
+      "href": "https://www.w3.org/TR/webgpu/#programmable-passes",
       "level": 2,
       "title": "13. Programmable Passes"
     },
     {
       "id": "programmable-passes-bind-groups",
+      "href": "https://www.w3.org/TR/webgpu/#programmable-passes-bind-groups",
       "level": 3,
       "title": "Bind Groups",
       "number": "13.1"
     },
     {
       "id": "programmable-passes-debug-markers",
+      "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
       "level": 3,
       "title": "Debug Markers",
       "number": "13.2"
     },
     {
       "id": "compute-passes",
+      "href": "https://www.w3.org/TR/webgpu/#compute-passes",
       "level": 2,
       "title": "14. Compute Passes"
     },
     {
       "id": "compute-pass-encoder",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder",
       "level": 3,
       "title": "GPUComputePassEncoder",
       "number": "14.1"
     },
     {
       "id": "compute-pass-encoder-creation",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
       "level": 4,
       "title": "Creation",
       "number": "14.1.1"
     },
     {
       "id": "compute-pass-encoder-dispatch",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
       "level": 4,
       "title": "Dispatch",
       "number": "14.1.2"
     },
     {
       "id": "compute-pass-encoder-queries",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-queries",
       "level": 4,
       "title": "Queries",
       "number": "14.1.3"
     },
     {
       "id": "compute-pass-encoder-finalization",
+      "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-finalization",
       "level": 4,
       "title": "Finalization",
       "number": "14.1.4"
     },
     {
       "id": "render-passes",
+      "href": "https://www.w3.org/TR/webgpu/#render-passes",
       "level": 2,
       "title": "15. Render Passes"
     },
     {
       "id": "render-pass-encoder",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
       "level": 3,
       "title": "GPURenderPassEncoder",
       "number": "15.1"
     },
     {
       "id": "render-pass-encoder-creation",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
       "level": 4,
       "title": "Creation",
       "number": "15.1.1"
     },
     {
       "id": "color-attachments",
+      "href": "https://www.w3.org/TR/webgpu/#color-attachments",
       "level": 5,
       "title": "Color Attachments",
       "number": "15.1.1.1"
     },
     {
       "id": "depth-stencil-attachments",
+      "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
       "level": 5,
       "title": "Depth/Stencil Attachments",
       "number": "15.1.1.2"
     },
     {
       "id": "load-and-store-ops",
+      "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
       "level": 5,
       "title": "Load & Store Operations",
       "number": "15.1.1.3"
     },
     {
       "id": "render-pass-encoder-drawing",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
       "level": 4,
       "title": "Drawing",
       "number": "15.1.2"
     },
     {
       "id": "render-pass-encoder-rasterization-state",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
       "level": 4,
       "title": "Rasterization state",
       "number": "15.1.3"
     },
     {
       "id": "render-pass-encoder-queries",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-queries",
       "level": 4,
       "title": "Queries",
       "number": "15.1.4"
     },
     {
       "id": "render-pass-encoder-bundles",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-bundles",
       "level": 4,
       "title": "Bundles",
       "number": "15.1.5"
     },
     {
       "id": "render-pass-encoder-finalization",
+      "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-finalization",
       "level": 4,
       "title": "Finalization",
       "number": "15.1.6"
     },
     {
       "id": "bundles",
+      "href": "https://www.w3.org/TR/webgpu/#bundles",
       "level": 2,
       "title": "16. Bundles"
     },
     {
       "id": "render-bundle",
+      "href": "https://www.w3.org/TR/webgpu/#render-bundle",
       "level": 3,
       "title": "GPURenderBundle",
       "number": "16.1"
     },
     {
       "id": "render-bundle-creation",
+      "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
       "level": 4,
       "title": "Creation",
       "number": "16.1.1"
     },
     {
       "id": "render-bundle-encoding",
+      "href": "https://www.w3.org/TR/webgpu/#render-bundle-encoding",
       "level": 4,
       "title": "Encoding",
       "number": "16.1.2"
     },
     {
       "id": "render-bundle-finalization",
+      "href": "https://www.w3.org/TR/webgpu/#render-bundle-finalization",
       "level": 4,
       "title": "Finalization",
       "number": "16.1.3"
     },
     {
       "id": "queues",
+      "href": "https://www.w3.org/TR/webgpu/#queues",
       "level": 2,
       "title": "17. Queues"
     },
     {
       "id": "queries",
+      "href": "https://www.w3.org/TR/webgpu/#queries",
       "level": 2,
       "title": "18. Queries"
     },
     {
       "id": "queryset",
+      "href": "https://www.w3.org/TR/webgpu/#queryset",
       "level": 3,
       "title": "GPUQuerySet",
       "number": "18.1"
     },
     {
       "id": "queryset-creation",
+      "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
       "level": 4,
       "title": "QuerySet Creation",
       "number": "18.1.1"
     },
     {
       "id": "queryset-destruction",
+      "href": "https://www.w3.org/TR/webgpu/#queryset-destruction",
       "level": 4,
       "title": "QuerySet Destruction",
       "number": "18.1.2"
     },
     {
       "id": "querytype",
+      "href": "https://www.w3.org/TR/webgpu/#querytype",
       "level": 3,
       "title": "QueryType",
       "number": "18.2"
     },
     {
       "id": "occlusion",
+      "href": "https://www.w3.org/TR/webgpu/#occlusion",
       "level": 3,
       "title": "Occlusion Query",
       "number": "18.3"
     },
     {
       "id": "pipeline-statistics",
+      "href": "https://www.w3.org/TR/webgpu/#pipeline-statistics",
       "level": 3,
       "title": "Pipeline Statistics Query",
       "number": "18.4"
     },
     {
       "id": "timestamp",
+      "href": "https://www.w3.org/TR/webgpu/#timestamp",
       "level": 3,
       "title": "Timestamp Query",
       "number": "18.5"
     },
     {
       "id": "canvas-rendering",
+      "href": "https://www.w3.org/TR/webgpu/#canvas-rendering",
       "level": 2,
       "title": "19. Canvas Rendering"
     },
     {
       "id": "canvas-getcontext",
+      "href": "https://www.w3.org/TR/webgpu/#canvas-getcontext",
       "level": 3,
       "title": "HTMLCanvasElement.getContext()",
       "number": "19.1"
     },
     {
       "id": "presentation-context",
+      "href": "https://www.w3.org/TR/webgpu/#presentation-context",
       "level": 3,
       "title": "GPUPresentationContext",
       "number": "19.2"
     },
     {
       "id": "presentation-configuration",
+      "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
       "level": 3,
       "title": "GPUPresentationConfiguration",
       "number": "19.3"
     },
     {
       "id": "presentation-context-sizing",
+      "href": "https://www.w3.org/TR/webgpu/#presentation-context-sizing",
       "level": 4,
       "title": "Presentation Context sizing",
       "number": "19.3.1"
     },
     {
       "id": "GPUCanvasCompositingAlphaMode",
+      "href": "https://www.w3.org/TR/webgpu/#GPUCanvasCompositingAlphaMode",
       "level": 3,
       "title": "GPUCanvasCompositingAlphaMode",
       "number": "19.4"
     },
     {
       "id": "errors-and-debugging",
+      "href": "https://www.w3.org/TR/webgpu/#errors-and-debugging",
       "level": 2,
       "title": "20. Errors & Debugging"
     },
     {
       "id": "fatal-errors",
+      "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
       "level": 3,
       "title": "Fatal Errors",
       "number": "20.1"
     },
     {
       "id": "error-scopes",
+      "href": "https://www.w3.org/TR/webgpu/#error-scopes",
       "level": 3,
       "title": "Error Scopes",
       "number": "20.2"
     },
     {
       "id": "telemetry",
+      "href": "https://www.w3.org/TR/webgpu/#telemetry",
       "level": 3,
       "title": "Telemetry",
       "number": "20.3"
     },
     {
       "id": "detailed-operations",
+      "href": "https://www.w3.org/TR/webgpu/#detailed-operations",
       "level": 2,
       "title": "21. Detailed Operations"
     },
     {
       "id": "transfer-operations",
+      "href": "https://www.w3.org/TR/webgpu/#transfer-operations",
       "level": 3,
       "title": "Transfer",
       "number": "21.1"
     },
     {
       "id": "computing-operations",
+      "href": "https://www.w3.org/TR/webgpu/#computing-operations",
       "level": 3,
       "title": "Computing",
       "number": "21.2"
     },
     {
       "id": "rendering-operations",
+      "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
       "level": 3,
       "title": "Rendering",
       "number": "21.3"
     },
     {
       "id": "index-resolution",
+      "href": "https://www.w3.org/TR/webgpu/#index-resolution",
       "level": 4,
       "title": "Index Resolution",
       "number": "21.3.1"
     },
     {
       "id": "vertex-processing",
+      "href": "https://www.w3.org/TR/webgpu/#vertex-processing",
       "level": 4,
       "title": "Vertex Processing",
       "number": "21.3.2"
     },
     {
       "id": "primitive-assembly",
+      "href": "https://www.w3.org/TR/webgpu/#primitive-assembly",
       "level": 4,
       "title": "Primitive Assembly",
       "number": "21.3.3"
     },
     {
       "id": "primitive-clipping",
+      "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
       "level": 4,
       "title": "Primitive Clipping",
       "number": "21.3.4"
     },
     {
       "id": "rasterization",
+      "href": "https://www.w3.org/TR/webgpu/#rasterization",
       "level": 4,
       "title": "Rasterization",
       "number": "21.3.5"
     },
     {
       "id": "point-rasterization",
+      "href": "https://www.w3.org/TR/webgpu/#point-rasterization",
       "level": 5,
       "title": "Point Rasterization",
       "number": "21.3.5.1"
     },
     {
       "id": "line-rasterization",
+      "href": "https://www.w3.org/TR/webgpu/#line-rasterization",
       "level": 5,
       "title": "Line Rasterization",
       "number": "21.3.5.2"
     },
     {
       "id": "polygon-rasterization",
+      "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
       "level": 5,
       "title": "Polygon Rasterization",
       "number": "21.3.5.3"
     },
     {
       "id": "fragment-processing",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
       "level": 4,
       "title": "Fragment Processing",
       "number": "21.3.6"
     },
     {
       "id": "no-color-output",
+      "href": "https://www.w3.org/TR/webgpu/#no-color-output",
       "level": 4,
       "title": "No Color Output",
       "number": "21.3.7"
     },
     {
       "id": "alpha-to-coverage",
+      "href": "https://www.w3.org/TR/webgpu/#alpha-to-coverage",
       "level": 4,
       "title": "Alpha to Coverage",
       "number": "21.3.8"
     },
     {
       "id": "sample-frequency-shading",
+      "href": "https://www.w3.org/TR/webgpu/#sample-frequency-shading",
       "level": 4,
       "title": "Sample frequency shading",
       "number": "21.3.9"
     },
     {
       "id": "sample-masking",
+      "href": "https://www.w3.org/TR/webgpu/#sample-masking",
       "level": 4,
       "title": "Sample Masking",
       "number": "21.3.10"
     },
     {
       "id": "type-definitions",
+      "href": "https://www.w3.org/TR/webgpu/#type-definitions",
       "level": 2,
       "title": "22. Type Definitions"
     },
     {
       "id": "colors-and-vectors",
+      "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
       "level": 3,
       "title": "Colors & Vectors",
       "number": "22.1"
     },
     {
       "id": "feature-index",
+      "href": "https://www.w3.org/TR/webgpu/#feature-index",
       "level": 2,
       "title": "23. Feature Index"
     },
     {
       "id": "depth-clamping",
+      "href": "https://www.w3.org/TR/webgpu/#depth-clamping",
       "level": 3,
       "title": "depth-clamping",
       "number": "23.1"
     },
     {
       "id": "depth24unorm-stencil8",
+      "href": "https://www.w3.org/TR/webgpu/#depth24unorm-stencil8",
       "level": 3,
       "title": "depth24unorm-stencil8",
       "number": "23.2"
     },
     {
       "id": "depth32float-stencil8",
+      "href": "https://www.w3.org/TR/webgpu/#depth32float-stencil8",
       "level": 3,
       "title": "depth32float-stencil8",
       "number": "23.3"
     },
     {
       "id": "pipeline-statistics-query",
+      "href": "https://www.w3.org/TR/webgpu/#pipeline-statistics-query",
       "level": 3,
       "title": "pipeline-statistics-query",
       "number": "23.4"
     },
     {
       "id": "texture-compression-bc",
+      "href": "https://www.w3.org/TR/webgpu/#texture-compression-bc",
       "level": 3,
       "title": "texture-compression-bc",
       "number": "23.5"
     },
     {
       "id": "timestamp-query",
+      "href": "https://www.w3.org/TR/webgpu/#timestamp-query",
       "level": 3,
       "title": "timestamp-query",
       "number": "23.6"
     },
     {
       "id": "appendices",
+      "href": "https://www.w3.org/TR/webgpu/#appendices",
       "level": 2,
       "title": "24. Appendices"
     },
     {
       "id": "texture-format-caps",
+      "href": "https://www.w3.org/TR/webgpu/#texture-format-caps",
       "level": 3,
       "title": "Texture Format Capabilities",
       "number": "24.1"
     },
     {
       "id": "plain-color-formats",
+      "href": "https://www.w3.org/TR/webgpu/#plain-color-formats",
       "level": 4,
       "title": "Plain color formats",
       "number": "24.1.1"
     },
     {
       "id": "depth-formats",
+      "href": "https://www.w3.org/TR/webgpu/#depth-formats",
       "level": 4,
       "title": "Depth/stencil formats",
       "number": "24.1.2"
     },
     {
       "id": "packed-formats",
+      "href": "https://www.w3.org/TR/webgpu/#packed-formats",
       "level": 4,
       "title": "Packed formats",
       "number": "24.1.3"
     },
     {
       "id": "temp-dfn-usages",
+      "href": "https://www.w3.org/TR/webgpu/#temp-dfn-usages",
       "level": 3,
       "title": "Temporary usages of non-exported dfns",
       "number": "24.2"
     },
     {
       "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/webgpu/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/webgpu/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/webgpu/#w3c-conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "index",
+      "href": "https://www.w3.org/TR/webgpu/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/webgpu/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/webgpu/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
+      "href": "https://www.w3.org/TR/webgpu/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
+      "href": "https://www.w3.org/TR/webgpu/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
+      "href": "https://www.w3.org/TR/webgpu/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
+      "href": "https://www.w3.org/TR/webgpu/#idl-index",
       "level": 2,
       "title": "IDL Index"
     },
     {
       "id": "issues-index",
+      "href": "https://www.w3.org/TR/webgpu/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }

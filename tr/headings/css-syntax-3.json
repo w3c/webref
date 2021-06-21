@@ -6,506 +6,594 @@
   "headings": [
     {
       "id": "title",
+      "href": "https://www.w3.org/TR/css-syntax-3/#title",
       "level": 1,
       "title": "CSS Syntax Module Level 3"
     },
     {
       "id": "subtitle",
+      "href": "https://www.w3.org/TR/css-syntax-3/#subtitle",
       "level": 2,
       "title": "W3C Candidate Recommendation, 16 July 2019"
     },
     {
       "id": "abstract",
+      "href": "https://www.w3.org/TR/css-syntax-3/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "status",
+      "href": "https://www.w3.org/TR/css-syntax-3/#status",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
+      "href": "https://www.w3.org/TR/css-syntax-3/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
+      "href": "https://www.w3.org/TR/css-syntax-3/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "placement",
+      "href": "https://www.w3.org/TR/css-syntax-3/#placement",
       "level": 3,
       "title": "Module interactions",
       "number": "1.1"
     },
     {
       "id": "syntax-description",
+      "href": "https://www.w3.org/TR/css-syntax-3/#syntax-description",
       "level": 2,
       "title": "Description of CSS’s Syntax",
       "number": "2"
     },
     {
       "id": "escaping",
+      "href": "https://www.w3.org/TR/css-syntax-3/#escaping",
       "level": 3,
       "title": "Escaping",
       "number": "2.1"
     },
     {
       "id": "error-handling",
+      "href": "https://www.w3.org/TR/css-syntax-3/#error-handling",
       "level": 3,
       "title": "Error Handling",
       "number": "2.2"
     },
     {
       "id": "tokenizing-and-parsing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokenizing-and-parsing",
       "level": 2,
       "title": "Tokenizing and Parsing CSS",
       "number": "3"
     },
     {
       "id": "parsing-overview",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parsing-overview",
       "level": 3,
       "title": "Overview of the Parsing Model",
       "number": "3.1"
     },
     {
       "id": "input-byte-stream",
+      "href": "https://www.w3.org/TR/css-syntax-3/#input-byte-stream",
       "level": 3,
       "title": "The input byte stream",
       "number": "3.2"
     },
     {
       "id": "input-preprocessing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#input-preprocessing",
       "level": 3,
       "title": "Preprocessing the input stream",
       "number": "3.3"
     },
     {
       "id": "tokenization",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokenization",
       "level": 2,
       "title": "Tokenization",
       "number": "4"
     },
     {
       "id": "token-diagrams",
+      "href": "https://www.w3.org/TR/css-syntax-3/#token-diagrams",
       "level": 3,
       "title": "Token Railroad Diagrams",
       "number": "4.1"
     },
     {
       "id": "tokenizer-definitions",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokenizer-definitions",
       "level": 3,
       "title": "Definitions",
       "number": "4.2"
     },
     {
       "id": "tokenizer-algorithms",
+      "href": "https://www.w3.org/TR/css-syntax-3/#tokenizer-algorithms",
       "level": 3,
       "title": "Tokenizer Algorithms",
       "number": "4.3"
     },
     {
       "id": "consume-token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-token",
       "level": 4,
       "title": "Consume a token",
       "number": "4.3.1"
     },
     {
       "id": "consume-comment",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-comment",
       "level": 4,
       "title": "Consume comments",
       "number": "4.3.2"
     },
     {
       "id": "consume-numeric-token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-numeric-token",
       "level": 4,
       "title": "Consume a numeric token",
       "number": "4.3.3"
     },
     {
       "id": "consume-ident-like-token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-ident-like-token",
       "level": 4,
       "title": "Consume an ident-like token",
       "number": "4.3.4"
     },
     {
       "id": "consume-string-token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-string-token",
       "level": 4,
       "title": "Consume a string token",
       "number": "4.3.5"
     },
     {
       "id": "consume-url-token",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-url-token",
       "level": 4,
       "title": "Consume a url token",
       "number": "4.3.6"
     },
     {
       "id": "consume-escaped-code-point",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-escaped-code-point",
       "level": 4,
       "title": "Consume an escaped code point",
       "number": "4.3.7"
     },
     {
       "id": "starts-with-a-valid-escape",
+      "href": "https://www.w3.org/TR/css-syntax-3/#starts-with-a-valid-escape",
       "level": 4,
       "title": "Check if two code points are a valid escape",
       "number": "4.3.8"
     },
     {
       "id": "would-start-an-identifier",
+      "href": "https://www.w3.org/TR/css-syntax-3/#would-start-an-identifier",
       "level": 4,
       "title": "Check if three code points would start an identifier",
       "number": "4.3.9"
     },
     {
       "id": "starts-with-a-number",
+      "href": "https://www.w3.org/TR/css-syntax-3/#starts-with-a-number",
       "level": 4,
       "title": "Check if three code points would start a number",
       "number": "4.3.10"
     },
     {
       "id": "consume-name",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-name",
       "level": 4,
       "title": "Consume a name",
       "number": "4.3.11"
     },
     {
       "id": "consume-number",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-number",
       "level": 4,
       "title": "Consume a number",
       "number": "4.3.12"
     },
     {
       "id": "convert-string-to-number",
+      "href": "https://www.w3.org/TR/css-syntax-3/#convert-string-to-number",
       "level": 4,
       "title": "Convert a string to a number",
       "number": "4.3.13"
     },
     {
       "id": "consume-remnants-of-bad-url",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-remnants-of-bad-url",
       "level": 4,
       "title": "Consume the remnants of a bad url",
       "number": "4.3.14"
     },
     {
       "id": "parsing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
       "level": 2,
       "title": "Parsing",
       "number": "5"
     },
     {
       "id": "parser-diagrams",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parser-diagrams",
       "level": 3,
       "title": "Parser Railroad Diagrams",
       "number": "5.1"
     },
     {
       "id": "parser-definitions",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parser-definitions",
       "level": 3,
       "title": "Definitions",
       "number": "5.2"
     },
     {
       "id": "parser-entry-points",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parser-entry-points",
       "level": 3,
       "title": "Parser Entry Points",
       "number": "5.3"
     },
     {
       "id": "parse-grammar",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-grammar",
       "level": 4,
       "title": "Parse something according to a CSS grammar",
       "number": "5.3.1"
     },
     {
       "id": "parse-stylesheet",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-stylesheet",
       "level": 4,
       "title": "Parse a stylesheet",
       "number": "5.3.2"
     },
     {
       "id": "parse-list-of-rules",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-rules",
       "level": 4,
       "title": "Parse a list of rules",
       "number": "5.3.3"
     },
     {
       "id": "parse-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-rule",
       "level": 4,
       "title": "Parse a rule",
       "number": "5.3.4"
     },
     {
       "id": "parse-declaration",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-declaration",
       "level": 4,
       "title": "Parse a declaration",
       "number": "5.3.5"
     },
     {
       "id": "parse-list-of-declarations",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-declarations",
       "level": 4,
       "title": "Parse a list of declarations",
       "number": "5.3.6"
     },
     {
       "id": "parse-component-value",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-component-value",
       "level": 4,
       "title": "Parse a component value",
       "number": "5.3.7"
     },
     {
       "id": "parse-list-of-component-values",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-component-values",
       "level": 4,
       "title": "Parse a list of component values",
       "number": "5.3.8"
     },
     {
       "id": "parse-comma-separated-list-of-component-values",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values",
       "level": 4,
       "title": "Parse a comma-separated list of component values",
       "number": "5.3.9"
     },
     {
       "id": "parser-algorithms",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parser-algorithms",
       "level": 3,
       "title": "Parser Algorithms",
       "number": "5.4"
     },
     {
       "id": "consume-list-of-rules",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-list-of-rules",
       "level": 4,
       "title": "Consume a list of rules",
       "number": "5.4.1"
     },
     {
       "id": "consume-at-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-at-rule",
       "level": 4,
       "title": "Consume an at-rule",
       "number": "5.4.2"
     },
     {
       "id": "consume-qualified-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-qualified-rule",
       "level": 4,
       "title": "Consume a qualified rule",
       "number": "5.4.3"
     },
     {
       "id": "consume-list-of-declarations",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-list-of-declarations",
       "level": 4,
       "title": "Consume a list of declarations",
       "number": "5.4.4"
     },
     {
       "id": "consume-declaration",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-declaration",
       "level": 4,
       "title": "Consume a declaration",
       "number": "5.4.5"
     },
     {
       "id": "consume-component-value",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-component-value",
       "level": 4,
       "title": "Consume a component value",
       "number": "5.4.6"
     },
     {
       "id": "consume-simple-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-simple-block",
       "level": 4,
       "title": "Consume a simple block",
       "number": "5.4.7"
     },
     {
       "id": "consume-function",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-function",
       "level": 4,
       "title": "Consume a function",
       "number": "5.4.8"
     },
     {
       "id": "anb-microsyntax",
+      "href": "https://www.w3.org/TR/css-syntax-3/#anb-microsyntax",
       "level": 2,
       "title": "The An+B microsyntax",
       "number": "6"
     },
     {
       "id": "anb-syntax",
+      "href": "https://www.w3.org/TR/css-syntax-3/#anb-syntax",
       "level": 3,
       "title": "Informal Syntax Description",
       "number": "6.1"
     },
     {
       "id": "the-anb-type",
+      "href": "https://www.w3.org/TR/css-syntax-3/#the-anb-type",
       "level": 3,
       "title": "The <an+b> type",
       "number": "6.2"
     },
     {
       "id": "urange",
+      "href": "https://www.w3.org/TR/css-syntax-3/#urange",
       "level": 2,
       "title": "The Unicode-Range microsyntax",
       "number": "7"
     },
     {
       "id": "urange-syntax",
+      "href": "https://www.w3.org/TR/css-syntax-3/#urange-syntax",
       "level": 3,
       "title": "The <urange> type",
       "number": "7.1"
     },
     {
       "id": "rule-defs",
+      "href": "https://www.w3.org/TR/css-syntax-3/#rule-defs",
       "level": 2,
       "title": "Defining Grammars for Rules and Other Values",
       "number": "8"
     },
     {
       "id": "declaration-rule-list",
+      "href": "https://www.w3.org/TR/css-syntax-3/#declaration-rule-list",
       "level": 3,
       "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions",
       "number": "8.1"
     },
     {
       "id": "any-value",
+      "href": "https://www.w3.org/TR/css-syntax-3/#any-value",
       "level": 3,
       "title": "Defining Arbitrary Contents: the <declaration-value> and <any-value> productions",
       "number": "8.2"
     },
     {
       "id": "css-stylesheets",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-stylesheets",
       "level": 2,
       "title": "CSS stylesheets",
       "number": "9"
     },
     {
       "id": "style-rules",
+      "href": "https://www.w3.org/TR/css-syntax-3/#style-rules",
       "level": 3,
       "title": "Style rules",
       "number": "9.1"
     },
     {
       "id": "charset-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#charset-rule",
       "level": 3,
       "title": "The @charset Rule",
       "number": "9.2"
     },
     {
       "id": "serialization",
+      "href": "https://www.w3.org/TR/css-syntax-3/#serialization",
       "level": 2,
       "title": "10. Serialization"
     },
     {
       "id": "serializing-anb",
+      "href": "https://www.w3.org/TR/css-syntax-3/#serializing-anb",
       "level": 3,
       "title": "Serializing <an+b>",
       "number": "10.1"
     },
     {
       "id": "priv-sec",
+      "href": "https://www.w3.org/TR/css-syntax-3/#priv-sec",
       "level": 2,
       "title": "11. Privacy and Security Considerations"
     },
     {
       "id": "changes",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes",
       "level": 2,
       "title": "12. Changes"
     },
     {
       "id": "changes-CR-20140220",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes-CR-20140220",
       "level": 3,
       "title": "Changes from the 20 February 2014 Candidate Recommendation",
       "number": "12.1"
     },
     {
       "id": "changes-WD-20131105",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes-WD-20131105",
       "level": 3,
       "title": "Changes from the 5 November 2013 Last Call Working Draft",
       "number": "12.2"
     },
     {
       "id": "changes-WD-20130919",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes-WD-20130919",
       "level": 3,
       "title": "Changes from the 19 September 2013 Working Draft",
       "number": "12.3"
     },
     {
       "id": "changes-css21",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes-css21",
       "level": 3,
       "title": "Changes from CSS 2.1 and Selectors Level 3",
       "number": "12.4"
     },
     {
       "id": "acknowledgments",
+      "href": "https://www.w3.org/TR/css-syntax-3/#acknowledgments",
       "level": 2,
       "title": "Acknowledgments"
     },
     {
       "id": "conformance",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "document-conventions",
+      "href": "https://www.w3.org/TR/css-syntax-3/#document-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conform-classes",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conform-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
       "id": "conform-responsible",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conform-responsible",
       "level": 3,
       "title": "Requirements for Responsible Implementation of CSS"
     },
     {
       "id": "conform-partial",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conform-partial",
       "level": 4,
       "title": "Partial Implementations"
     },
     {
       "id": "conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
       "id": "conform-testing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#conform-testing",
       "level": 4,
       "title": "Implementations of CR-level Features"
     },
     {
       "id": "cr-exit-criteria",
+      "href": "https://www.w3.org/TR/css-syntax-3/#cr-exit-criteria",
       "level": 3,
       "title": "CR exit criteria"
     },
     {
       "id": "index",
+      "href": "https://www.w3.org/TR/css-syntax-3/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/css-syntax-3/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/css-syntax-3/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
+      "href": "https://www.w3.org/TR/css-syntax-3/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
+      "href": "https://www.w3.org/TR/css-syntax-3/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
+      "href": "https://www.w3.org/TR/css-syntax-3/#informative",
       "level": 3,
       "title": "Informative References"
     }

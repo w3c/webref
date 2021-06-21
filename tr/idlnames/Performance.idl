@@ -13,7 +13,7 @@ partial interface Performance {
 };
 
 // Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
-[CrossOriginIsolated, Exposed=(Window,Worker)]
+[Exposed=Window]
 partial interface Performance {
   Promise<Profiler> profile(ProfilerInitOptions options);
 };
@@ -44,14 +44,6 @@ partial interface Performance {
   undefined clearResourceTimings ();
   undefined setResourceTimingBufferSize (unsigned long maxSize);
               attribute EventHandler onresourcetimingbufferfull;
-};
-
-// Source: User Timing Level 2 (https://www.w3.org/TR/user-timing-2/)
-partial interface Performance {
-    void mark(DOMString markName);
-    void clearMarks(optional DOMString markName);
-    void measure(DOMString measureName, optional DOMString startMark, optional DOMString endMark);
-    void clearMeasures(optional DOMString measureName);
 };
 
 // Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-3/)

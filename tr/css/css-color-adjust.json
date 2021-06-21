@@ -6,7 +6,7 @@
   "properties": {
     "color-scheme": {
       "name": "color-scheme",
-      "value": "normal | [ light | dark | <custom-ident> ]+",
+      "value": "normal | [ light | dark | <custom-ident> ]+ && only?",
       "initial": "normal",
       "appliesTo": "all elements and text",
       "inherited": "yes",
@@ -21,7 +21,7 @@
     },
     "forced-color-adjust": {
       "name": "forced-color-adjust",
-      "value": "auto | none",
+      "value": "auto | none | preserve-parent-color",
       "initial": "auto",
       "appliesTo": "all elements and text",
       "inherited": "yes",

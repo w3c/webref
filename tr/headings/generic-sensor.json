@@ -6,601 +6,704 @@
   "headings": [
     {
       "id": "title",
+      "href": "https://www.w3.org/TR/generic-sensor/#title",
       "level": 1,
       "title": "Generic Sensor API"
     },
     {
-      "id": "subtitle",
+      "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/generic-sensor/#profile-and-date",
       "level": 2,
-      "title": "W3C Candidate Recommendation, 12 December 2019"
+      "title": "W3C Candidate Recommendation Draft, 19 June 2021"
     },
     {
       "id": "abstract",
+      "href": "https://www.w3.org/TR/generic-sensor/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
+      "href": "https://www.w3.org/TR/generic-sensor/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
+      "href": "https://www.w3.org/TR/generic-sensor/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
+      "href": "https://www.w3.org/TR/generic-sensor/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "scope",
+      "href": "https://www.w3.org/TR/generic-sensor/#scope",
       "level": 2,
       "title": "Scope",
       "number": "2"
     },
     {
       "id": "feature-detection",
+      "href": "https://www.w3.org/TR/generic-sensor/#feature-detection",
       "level": 2,
       "title": "A note on Feature Detection of Hardware Features",
       "number": "3"
     },
     {
       "id": "security-and-privacy",
+      "href": "https://www.w3.org/TR/generic-sensor/#security-and-privacy",
       "level": 2,
       "title": "Security and privacy considerations",
       "number": "4"
     },
     {
       "id": "main-privacy-security-threats",
+      "href": "https://www.w3.org/TR/generic-sensor/#main-privacy-security-threats",
       "level": 3,
       "title": "Types of privacy and security threats",
       "number": "4.1"
     },
     {
       "id": "location-tracking",
+      "href": "https://www.w3.org/TR/generic-sensor/#location-tracking",
       "level": 4,
       "title": "Location Tracking",
       "number": "4.1.1"
     },
     {
       "id": "eavesdropping",
+      "href": "https://www.w3.org/TR/generic-sensor/#eavesdropping",
       "level": 4,
       "title": "Eavesdropping",
       "number": "4.1.2"
     },
     {
       "id": "keystroke-monitoring",
+      "href": "https://www.w3.org/TR/generic-sensor/#keystroke-monitoring",
       "level": 4,
       "title": "Keystroke Monitoring",
       "number": "4.1.3"
     },
     {
       "id": "device-fingerprinting",
+      "href": "https://www.w3.org/TR/generic-sensor/#device-fingerprinting",
       "level": 4,
       "title": "Device Fingerprinting",
       "number": "4.1.4"
     },
     {
       "id": "user-identifying",
+      "href": "https://www.w3.org/TR/generic-sensor/#user-identifying",
       "level": 4,
       "title": "User Identifying",
       "number": "4.1.5"
     },
     {
       "id": "mitigation-strategies",
+      "href": "https://www.w3.org/TR/generic-sensor/#mitigation-strategies",
       "level": 3,
       "title": "Mitigation Strategies",
       "number": "4.2"
     },
     {
       "id": "secure-context",
+      "href": "https://www.w3.org/TR/generic-sensor/#secure-context",
       "level": 4,
       "title": "Secure Context",
       "number": "4.2.1"
     },
     {
-      "id": "feature-policy",
+      "id": "permissions-policy",
+      "href": "https://www.w3.org/TR/generic-sensor/#permissions-policy",
       "level": 4,
-      "title": "Feature Policy",
+      "title": "Permissions Policy",
       "number": "4.2.2"
     },
     {
       "id": "focused-area",
+      "href": "https://www.w3.org/TR/generic-sensor/#focused-area",
       "level": 4,
       "title": "Focused Area",
       "number": "4.2.3"
     },
     {
       "id": "visibility-state",
+      "href": "https://www.w3.org/TR/generic-sensor/#visibility-state",
       "level": 4,
       "title": "Visibility State",
       "number": "4.2.4"
     },
     {
       "id": "permissions",
+      "href": "https://www.w3.org/TR/generic-sensor/#permissions",
       "level": 4,
       "title": "Permissions API",
       "number": "4.2.5"
     },
     {
       "id": "mitigation-strategies-case-by-case",
+      "href": "https://www.w3.org/TR/generic-sensor/#mitigation-strategies-case-by-case",
       "level": 3,
       "title": "Mitigation strategies applied on a case by case basis",
       "number": "4.3"
     },
     {
       "id": "limit-max-frequency",
+      "href": "https://www.w3.org/TR/generic-sensor/#limit-max-frequency",
       "level": 4,
       "title": "Limit maximum sampling frequency",
       "number": "4.3.1"
     },
     {
       "id": "stop-sensor",
+      "href": "https://www.w3.org/TR/generic-sensor/#stop-sensor",
       "level": 4,
       "title": "Stop the sensor altogether",
       "number": "4.3.2"
     },
     {
       "id": "limit-number-of-delivered-readings",
+      "href": "https://www.w3.org/TR/generic-sensor/#limit-number-of-delivered-readings",
       "level": 4,
       "title": "Limit number of delivered readings",
       "number": "4.3.3"
     },
     {
       "id": "reduce-accuracy",
+      "href": "https://www.w3.org/TR/generic-sensor/#reduce-accuracy",
       "level": 4,
       "title": "Reduce accuracy",
       "number": "4.3.4"
     },
     {
       "id": "inform-user",
+      "href": "https://www.w3.org/TR/generic-sensor/#inform-user",
       "level": 4,
       "title": "Keep the user informed about API use",
       "number": "4.3.5"
     },
     {
       "id": "concepts",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts",
       "level": 2,
       "title": "Concepts",
       "number": "5"
     },
     {
       "id": "concepts-sensors",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-sensors",
       "level": 3,
       "title": "Sensors",
       "number": "5.1"
     },
     {
       "id": "concepts-sensor-types",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-sensor-types",
       "level": 3,
       "title": "Sensor Types",
       "number": "5.2"
     },
     {
       "id": "concepts-default-sensor",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-default-sensor",
       "level": 3,
       "title": "Default sensor",
       "number": "5.3"
     },
     {
       "id": "concepts-reading-change-threshold",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-reading-change-threshold",
       "level": 3,
       "title": "Reading change threshold",
       "number": "5.4"
     },
     {
       "id": "concepts-sampling-and-reporting-frequencies",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-sampling-and-reporting-frequencies",
       "level": 3,
       "title": "Sampling Frequency and Reporting Frequency",
       "number": "5.5"
     },
     {
       "id": "concepts-can-expose-sensor-readings",
+      "href": "https://www.w3.org/TR/generic-sensor/#concepts-can-expose-sensor-readings",
       "level": 3,
       "title": "Conditions to expose sensor readings",
       "number": "5.6"
     },
     {
       "id": "model",
+      "href": "https://www.w3.org/TR/generic-sensor/#model",
       "level": 2,
       "title": "Model",
       "number": "6"
     },
     {
       "id": "model-sensor-type",
+      "href": "https://www.w3.org/TR/generic-sensor/#model-sensor-type",
       "level": 3,
       "title": "Sensor Type",
       "number": "6.1"
     },
     {
       "id": "model-sensor",
+      "href": "https://www.w3.org/TR/generic-sensor/#model-sensor",
       "level": 3,
       "title": "Sensor",
       "number": "6.2"
     },
     {
       "id": "api",
+      "href": "https://www.w3.org/TR/generic-sensor/#api",
       "level": 2,
       "title": "API",
       "number": "7"
     },
     {
       "id": "the-sensor-interface",
+      "href": "https://www.w3.org/TR/generic-sensor/#the-sensor-interface",
       "level": 3,
       "title": "The Sensor Interface",
       "number": "7.1"
     },
     {
       "id": "sensor-lifecycle",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-lifecycle",
       "level": 4,
       "title": "Sensor lifecycle",
       "number": "7.1.1"
     },
     {
       "id": "sensor-garbage-collection",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-garbage-collection",
       "level": 4,
       "title": "Sensor garbage collection",
       "number": "7.1.2"
     },
     {
       "id": "sensor-internal-slots",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-internal-slots",
       "level": 4,
       "title": "Sensor internal slots",
       "number": "7.1.3"
     },
     {
       "id": "sensor-activated",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-activated",
       "level": 4,
       "title": "Sensor.activated",
       "number": "7.1.4"
     },
     {
       "id": "sensor-has-reading",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-has-reading",
       "level": 4,
       "title": "Sensor.hasReading",
       "number": "7.1.5"
     },
     {
       "id": "sensor-timestamp",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-timestamp",
       "level": 4,
       "title": "Sensor.timestamp",
       "number": "7.1.6"
     },
     {
       "id": "sensor-start",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-start",
       "level": 4,
       "title": "Sensor.start()",
       "number": "7.1.7"
     },
     {
       "id": "sensor-stop",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-stop",
       "level": 4,
       "title": "Sensor.stop()",
       "number": "7.1.8"
     },
     {
       "id": "sensor-onreading",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-onreading",
       "level": 4,
       "title": "Sensor.onreading",
       "number": "7.1.9"
     },
     {
       "id": "sensor-onactivate",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-onactivate",
       "level": 4,
       "title": "Sensor.onactivate",
       "number": "7.1.10"
     },
     {
       "id": "sensor-onerror",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-onerror",
       "level": 4,
       "title": "Sensor.onerror",
       "number": "7.1.11"
     },
     {
       "id": "event-handlers",
+      "href": "https://www.w3.org/TR/generic-sensor/#event-handlers",
       "level": 4,
       "title": "Event handlers",
       "number": "7.1.12"
     },
     {
       "id": "the-sensor-error-event-interface",
+      "href": "https://www.w3.org/TR/generic-sensor/#the-sensor-error-event-interface",
       "level": 3,
       "title": "The SensorErrorEvent Interface",
       "number": "7.2"
     },
     {
       "id": "sensor-error-event-error",
+      "href": "https://www.w3.org/TR/generic-sensor/#sensor-error-event-error",
       "level": 4,
       "title": "SensorErrorEvent.error",
       "number": "7.2.1"
     },
     {
       "id": "abstract-operations",
+      "href": "https://www.w3.org/TR/generic-sensor/#abstract-operations",
       "level": 2,
       "title": "Abstract Operations",
       "number": "8"
     },
     {
       "id": "initialize-a-sensor-object",
+      "href": "https://www.w3.org/TR/generic-sensor/#initialize-a-sensor-object",
       "level": 3,
       "title": "Initialize a sensor object",
       "number": "8.1"
     },
     {
       "id": "check-sensor-policy-controlled-features",
+      "href": "https://www.w3.org/TR/generic-sensor/#check-sensor-policy-controlled-features",
       "level": 3,
       "title": "Check sensor policy-controlled features",
       "number": "8.2"
     },
     {
       "id": "connect-to-sensor",
+      "href": "https://www.w3.org/TR/generic-sensor/#connect-to-sensor",
       "level": 3,
       "title": "Connect to sensor",
       "number": "8.3"
     },
     {
       "id": "activate-a-sensor-object",
+      "href": "https://www.w3.org/TR/generic-sensor/#activate-a-sensor-object",
       "level": 3,
       "title": "Activate a sensor object",
       "number": "8.4"
     },
     {
       "id": "deactivate-a-sensor-object",
+      "href": "https://www.w3.org/TR/generic-sensor/#deactivate-a-sensor-object",
       "level": 3,
       "title": "Deactivate a sensor object",
       "number": "8.5"
     },
     {
       "id": "revoke-sensor-permission",
+      "href": "https://www.w3.org/TR/generic-sensor/#revoke-sensor-permission",
       "level": 3,
       "title": "Revoke sensor permission",
       "number": "8.6"
     },
     {
       "id": "set-sensor-settings",
+      "href": "https://www.w3.org/TR/generic-sensor/#set-sensor-settings",
       "level": 3,
       "title": "Set sensor settings",
       "number": "8.7"
     },
     {
       "id": "update-latest-reading",
+      "href": "https://www.w3.org/TR/generic-sensor/#update-latest-reading",
       "level": 3,
       "title": "Update latest reading",
       "number": "8.8"
     },
     {
       "id": "find-the-reporting-frequency-of-a-sensor-object",
+      "href": "https://www.w3.org/TR/generic-sensor/#find-the-reporting-frequency-of-a-sensor-object",
       "level": 3,
       "title": "Find the reporting frequency of a sensor object",
       "number": "8.9"
     },
     {
       "id": "report-latest-reading-updated",
+      "href": "https://www.w3.org/TR/generic-sensor/#report-latest-reading-updated",
       "level": 3,
       "title": "Report latest reading updated",
       "number": "8.10"
     },
     {
       "id": "notify-new-reading",
+      "href": "https://www.w3.org/TR/generic-sensor/#notify-new-reading",
       "level": 3,
       "title": "Notify new reading",
       "number": "8.11"
     },
     {
       "id": "notify-activated-state",
+      "href": "https://www.w3.org/TR/generic-sensor/#notify-activated-state",
       "level": 3,
       "title": "Notify activated state",
       "number": "8.12"
     },
     {
       "id": "notify-error",
+      "href": "https://www.w3.org/TR/generic-sensor/#notify-error",
       "level": 3,
       "title": "Notify error",
       "number": "8.13"
     },
     {
       "id": "get-value-from-latest-reading",
+      "href": "https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading",
       "level": 3,
       "title": "Get value from latest reading",
       "number": "8.14"
     },
     {
       "id": "request-sensor-access",
+      "href": "https://www.w3.org/TR/generic-sensor/#request-sensor-access",
       "level": 3,
       "title": "Request sensor access",
       "number": "8.15"
     },
     {
       "id": "automation",
+      "href": "https://www.w3.org/TR/generic-sensor/#automation",
       "level": 2,
       "title": "Automation",
       "number": "9"
     },
     {
       "id": "mock-sensors",
+      "href": "https://www.w3.org/TR/generic-sensor/#mock-sensors",
       "level": 3,
       "title": "Mock Sensors",
       "number": "9.1"
     },
     {
       "id": "dictionary-mocksensorconfiguration",
+      "href": "https://www.w3.org/TR/generic-sensor/#dictionary-mocksensorconfiguration",
       "level": 4,
       "title": "MockSensorConfiguration dictionary",
       "number": "9.1.1"
     },
     {
       "id": "dictionary-mocksensor",
+      "href": "https://www.w3.org/TR/generic-sensor/#dictionary-mocksensor",
       "level": 4,
       "title": "MockSensor dictionary",
       "number": "9.1.2"
     },
     {
       "id": "section-mock-sensor-type",
+      "href": "https://www.w3.org/TR/generic-sensor/#section-mock-sensor-type",
       "level": 4,
       "title": "Mock sensor type",
       "number": "9.1.3"
     },
     {
       "id": "section-extension-commands",
+      "href": "https://www.w3.org/TR/generic-sensor/#section-extension-commands",
       "level": 3,
       "title": "Extension Commands",
       "number": "9.2"
     },
     {
       "id": "create-mock-sensor-command",
+      "href": "https://www.w3.org/TR/generic-sensor/#create-mock-sensor-command",
       "level": 4,
       "title": "Create mock sensor",
       "number": "9.2.1"
     },
     {
       "id": "get-mock-sensor-command",
+      "href": "https://www.w3.org/TR/generic-sensor/#get-mock-sensor-command",
       "level": 4,
       "title": "Get mock sensor",
       "number": "9.2.2"
     },
     {
       "id": "update-mock-sensor-reading-command",
+      "href": "https://www.w3.org/TR/generic-sensor/#update-mock-sensor-reading-command",
       "level": 4,
       "title": "Update mock sensor reading",
       "number": "9.2.3"
     },
     {
       "id": "delete-mock-sensor-command",
+      "href": "https://www.w3.org/TR/generic-sensor/#delete-mock-sensor-command",
       "level": 4,
       "title": "Delete mock sensor",
       "number": "9.2.4"
     },
     {
       "id": "extension-handling-errors",
+      "href": "https://www.w3.org/TR/generic-sensor/#extension-handling-errors",
       "level": 3,
       "title": "Handling errors",
       "number": "9.3"
     },
     {
       "id": "extensibility",
+      "href": "https://www.w3.org/TR/generic-sensor/#extensibility",
       "level": 2,
       "title": "10. Extensibility"
     },
     {
       "id": "extension-security-and-privacy",
+      "href": "https://www.w3.org/TR/generic-sensor/#extension-security-and-privacy",
       "level": 3,
       "title": "Security and Privacy",
       "number": "10.1"
     },
     {
       "id": "naming",
+      "href": "https://www.w3.org/TR/generic-sensor/#naming",
       "level": 3,
       "title": "Naming",
       "number": "10.2"
     },
     {
       "id": "unit",
+      "href": "https://www.w3.org/TR/generic-sensor/#unit",
       "level": 3,
       "title": "Unit",
       "number": "10.3"
     },
     {
       "id": "high-vs-low-level",
+      "href": "https://www.w3.org/TR/generic-sensor/#high-vs-low-level",
       "level": 3,
       "title": "Exposing High-Level vs. Low-Level Sensors",
       "number": "10.4"
     },
     {
       "id": "multiple-sensors",
+      "href": "https://www.w3.org/TR/generic-sensor/#multiple-sensors",
       "level": 3,
       "title": "When is Enabling Multiple Sensors of the Same Type Not the Right Choice?",
       "number": "10.5"
     },
     {
       "id": "definition-reqs",
+      "href": "https://www.w3.org/TR/generic-sensor/#definition-reqs",
       "level": 3,
       "title": "Definition Requirements",
       "number": "10.6"
     },
     {
       "id": "extend-automation",
+      "href": "https://www.w3.org/TR/generic-sensor/#extend-automation",
       "level": 3,
       "title": "Automation",
       "number": "10.7"
     },
     {
       "id": "permission-api",
+      "href": "https://www.w3.org/TR/generic-sensor/#permission-api",
       "level": 3,
       "title": "Extending the Permission API",
       "number": "10.8"
     },
     {
-      "id": "feature-policy-api",
+      "id": "permissions-policy-api",
+      "href": "https://www.w3.org/TR/generic-sensor/#permissions-policy-api",
       "level": 3,
-      "title": "Extending the Feature Policy API",
+      "title": "Extending the Permissions Policy API",
       "number": "10.9"
     },
     {
       "id": "example-webidl",
+      "href": "https://www.w3.org/TR/generic-sensor/#example-webidl",
       "level": 3,
       "title": "Example WebIDL",
       "number": "10.10"
     },
     {
       "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/generic-sensor/#acknowledgements",
       "level": 2,
       "title": "11. Acknowledgements"
     },
     {
       "id": "conformance",
+      "href": "https://www.w3.org/TR/generic-sensor/#conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "conventions",
+      "href": "https://www.w3.org/TR/generic-sensor/#conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "conformant-algorithms",
+      "href": "https://www.w3.org/TR/generic-sensor/#conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "conformance-classes",
+      "href": "https://www.w3.org/TR/generic-sensor/#conformance-classes",
       "level": 3,
       "title": "Conformance Classes"
     },
     {
       "id": "index",
+      "href": "https://www.w3.org/TR/generic-sensor/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/generic-sensor/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/generic-sensor/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
+      "href": "https://www.w3.org/TR/generic-sensor/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
+      "href": "https://www.w3.org/TR/generic-sensor/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "informative",
+      "href": "https://www.w3.org/TR/generic-sensor/#informative",
       "level": 3,
       "title": "Informative References"
     },
     {
       "id": "idl-index",
+      "href": "https://www.w3.org/TR/generic-sensor/#idl-index",
       "level": 2,
       "title": "IDL Index"
     }

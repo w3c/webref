@@ -6,1178 +6,1378 @@
   "headings": [
     {
       "id": "title",
+      "href": "https://www.w3.org/TR/WGSL/#title",
       "level": 1,
       "title": "WebGPU Shading Language"
     },
     {
       "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/WGSL/#profile-and-date",
       "level": 2,
-      "title": "W3C Working Draft, 14 June 2021"
+      "title": "W3C Working Draft, 18 June 2021"
     },
     {
       "id": "abstract",
+      "href": "https://www.w3.org/TR/WGSL/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
+      "href": "https://www.w3.org/TR/WGSL/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
     {
       "id": "toc",
+      "href": "https://www.w3.org/TR/WGSL/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "intro",
+      "href": "https://www.w3.org/TR/WGSL/#intro",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "goals",
+      "href": "https://www.w3.org/TR/WGSL/#goals",
       "level": 3,
       "title": "Goals",
       "number": "1.1"
     },
     {
       "id": "technical-overview",
+      "href": "https://www.w3.org/TR/WGSL/#technical-overview",
       "level": 3,
       "title": "Technical Overview",
       "number": "1.2"
     },
     {
       "id": "notation",
+      "href": "https://www.w3.org/TR/WGSL/#notation",
       "level": 3,
       "title": "Notation",
       "number": "1.3"
     },
     {
       "id": "program-lifecycle",
+      "href": "https://www.w3.org/TR/WGSL/#program-lifecycle",
       "level": 2,
       "title": "Shader Lifecycle",
       "number": "2"
     },
     {
       "id": "kinds-of-errors",
+      "href": "https://www.w3.org/TR/WGSL/#kinds-of-errors",
       "level": 3,
       "title": "Kinds of errors",
       "number": "2.1"
     },
     {
       "id": "textual-structure",
+      "href": "https://www.w3.org/TR/WGSL/#textual-structure",
       "level": 2,
       "title": "Textual structure TODO",
       "number": "3"
     },
     {
       "id": "comments",
+      "href": "https://www.w3.org/TR/WGSL/#comments",
       "level": 3,
       "title": "Comments",
       "number": "3.1"
     },
     {
       "id": "tokens",
+      "href": "https://www.w3.org/TR/WGSL/#tokens",
       "level": 3,
       "title": "Tokens TODO",
       "number": "3.2"
     },
     {
       "id": "literals",
+      "href": "https://www.w3.org/TR/WGSL/#literals",
       "level": 3,
       "title": "Literals TODO",
       "number": "3.3"
     },
     {
       "id": "keywords",
+      "href": "https://www.w3.org/TR/WGSL/#keywords",
       "level": 3,
       "title": "Keywords TODO",
       "number": "3.4"
     },
     {
       "id": "identifiers",
+      "href": "https://www.w3.org/TR/WGSL/#identifiers",
       "level": 3,
       "title": "Identifiers TODO",
       "number": "3.5"
     },
     {
       "id": "attributes",
+      "href": "https://www.w3.org/TR/WGSL/#attributes",
       "level": 3,
       "title": "Attributes",
       "number": "3.6"
     },
     {
       "id": "directives",
+      "href": "https://www.w3.org/TR/WGSL/#directives",
       "level": 3,
       "title": "Directives TODO",
       "number": "3.7"
     },
     {
       "id": "declaration-and-scope",
+      "href": "https://www.w3.org/TR/WGSL/#declaration-and-scope",
       "level": 3,
       "title": "Declaration and scope",
       "number": "3.8"
     },
     {
       "id": "types",
+      "href": "https://www.w3.org/TR/WGSL/#types",
       "level": 2,
       "title": "Types",
       "number": "4"
     },
     {
       "id": "type-checking-section",
+      "href": "https://www.w3.org/TR/WGSL/#type-checking-section",
       "level": 3,
       "title": "Type Checking",
       "number": "4.1"
     },
     {
       "id": "typing-tables-section",
+      "href": "https://www.w3.org/TR/WGSL/#typing-tables-section",
       "level": 4,
       "title": "Type rule tables",
       "number": "4.1.1"
     },
     {
       "id": "plain-types-section",
+      "href": "https://www.w3.org/TR/WGSL/#plain-types-section",
       "level": 3,
       "title": "Plain Types",
       "number": "4.2"
     },
     {
       "id": "bool-type",
+      "href": "https://www.w3.org/TR/WGSL/#bool-type",
       "level": 4,
       "title": "Boolean Type",
       "number": "4.2.1"
     },
     {
       "id": "integer-types",
+      "href": "https://www.w3.org/TR/WGSL/#integer-types",
       "level": 4,
       "title": "Integer Types",
       "number": "4.2.2"
     },
     {
       "id": "floating-point-types",
+      "href": "https://www.w3.org/TR/WGSL/#floating-point-types",
       "level": 4,
       "title": "Floating Point Type",
       "number": "4.2.3"
     },
     {
       "id": "scalar-types",
+      "href": "https://www.w3.org/TR/WGSL/#scalar-types",
       "level": 4,
       "title": "Scalar Types",
       "number": "4.2.4"
     },
     {
       "id": "vector-types",
+      "href": "https://www.w3.org/TR/WGSL/#vector-types",
       "level": 4,
       "title": "Vector Types",
       "number": "4.2.5"
     },
     {
       "id": "matrix-types",
+      "href": "https://www.w3.org/TR/WGSL/#matrix-types",
       "level": 4,
       "title": "Matrix Types",
       "number": "4.2.6"
     },
     {
       "id": "atomic-types",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-types",
       "level": 4,
       "title": "Atomic Types",
       "number": "4.2.7"
     },
     {
       "id": "array-types",
+      "href": "https://www.w3.org/TR/WGSL/#array-types",
       "level": 4,
       "title": "Array Types",
       "number": "4.2.8"
     },
     {
       "id": "struct-types",
+      "href": "https://www.w3.org/TR/WGSL/#struct-types",
       "level": 4,
       "title": "Structure Types",
       "number": "4.2.9"
     },
     {
       "id": "composite-types",
+      "href": "https://www.w3.org/TR/WGSL/#composite-types",
       "level": 4,
       "title": "Composite Types",
       "number": "4.2.10"
     },
     {
       "id": "atomic-free-types",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-free-types",
       "level": 4,
       "title": "Atomic-Free Types",
       "number": "4.2.11"
     },
     {
       "id": "memory",
+      "href": "https://www.w3.org/TR/WGSL/#memory",
       "level": 3,
       "title": "Memory",
       "number": "4.3"
     },
     {
       "id": "memory-locations-section",
+      "href": "https://www.w3.org/TR/WGSL/#memory-locations-section",
       "level": 4,
       "title": "Memory Locations",
       "number": "4.3.1"
     },
     {
       "id": "memory-access-mode",
+      "href": "https://www.w3.org/TR/WGSL/#memory-access-mode",
       "level": 4,
       "title": "Memory Access Mode",
       "number": "4.3.2"
     },
     {
       "id": "storable-types",
+      "href": "https://www.w3.org/TR/WGSL/#storable-types",
       "level": 4,
       "title": "Storable Types",
       "number": "4.3.3"
     },
     {
       "id": "io-shareable-types",
+      "href": "https://www.w3.org/TR/WGSL/#io-shareable-types",
       "level": 4,
       "title": "IO-shareable Types",
       "number": "4.3.4"
     },
     {
       "id": "host-shareable-types",
+      "href": "https://www.w3.org/TR/WGSL/#host-shareable-types",
       "level": 4,
       "title": "Host-shareable Types",
       "number": "4.3.5"
     },
     {
       "id": "storage-class",
+      "href": "https://www.w3.org/TR/WGSL/#storage-class",
       "level": 4,
       "title": "Storage Classes",
       "number": "4.3.6"
     },
     {
       "id": "memory-layouts",
+      "href": "https://www.w3.org/TR/WGSL/#memory-layouts",
       "level": 4,
       "title": "Memory Layout",
       "number": "4.3.7"
     },
     {
       "id": "alignment-and-size",
+      "href": "https://www.w3.org/TR/WGSL/#alignment-and-size",
       "level": 5,
       "title": "Alignment and Size",
       "number": "4.3.7.1"
     },
     {
       "id": "structure-layout-rules",
+      "href": "https://www.w3.org/TR/WGSL/#structure-layout-rules",
       "level": 5,
       "title": "Structure Layout Rules",
       "number": "4.3.7.2"
     },
     {
       "id": "array-layout-rules",
+      "href": "https://www.w3.org/TR/WGSL/#array-layout-rules",
       "level": 5,
       "title": "Array Layout Rules",
       "number": "4.3.7.3"
     },
     {
       "id": "internal-value-layout",
+      "href": "https://www.w3.org/TR/WGSL/#internal-value-layout",
       "level": 5,
       "title": "Internal Layout of Values",
       "number": "4.3.7.4"
     },
     {
       "id": "storage-class-layout-constraints",
+      "href": "https://www.w3.org/TR/WGSL/#storage-class-layout-constraints",
       "level": 5,
       "title": "Storage Class Layout Constraints",
       "number": "4.3.7.5"
     },
     {
       "id": "memory-view-types",
+      "href": "https://www.w3.org/TR/WGSL/#memory-view-types",
       "level": 3,
       "title": "Memory View Types",
       "number": "4.4"
     },
     {
       "id": "access-mode-defaults",
+      "href": "https://www.w3.org/TR/WGSL/#access-mode-defaults",
       "level": 4,
       "title": "Access Mode Defaults",
       "number": "4.4.1"
     },
     {
       "id": "originating-variable-section",
+      "href": "https://www.w3.org/TR/WGSL/#originating-variable-section",
       "level": 4,
       "title": "Originating variable",
       "number": "4.4.2"
     },
     {
       "id": "ref-ptr-use-cases",
+      "href": "https://www.w3.org/TR/WGSL/#ref-ptr-use-cases",
       "level": 4,
       "title": "Use cases for references and pointers",
       "number": "4.4.3"
     },
     {
       "id": "forming-references-and-pointers",
+      "href": "https://www.w3.org/TR/WGSL/#forming-references-and-pointers",
       "level": 4,
       "title": "Forming reference and pointer values",
       "number": "4.4.4"
     },
     {
       "id": "pointers-other-languages",
+      "href": "https://www.w3.org/TR/WGSL/#pointers-other-languages",
       "level": 4,
       "title": "Comparison with references and pointers in other languages",
       "number": "4.4.5"
     },
     {
       "id": "texture-types",
+      "href": "https://www.w3.org/TR/WGSL/#texture-types",
       "level": 3,
       "title": "Texture and Sampler Types",
       "number": "4.5"
     },
     {
       "id": "texel-formats",
+      "href": "https://www.w3.org/TR/WGSL/#texel-formats",
       "level": 4,
       "title": "Texel formats",
       "number": "4.5.1"
     },
     {
       "id": "sampled-texture-type",
+      "href": "https://www.w3.org/TR/WGSL/#sampled-texture-type",
       "level": 4,
       "title": "Sampled Texture Types",
       "number": "4.5.2"
     },
     {
       "id": "multisampled-texture-type",
+      "href": "https://www.w3.org/TR/WGSL/#multisampled-texture-type",
       "level": 4,
       "title": "Multisampled Texture Types",
       "number": "4.5.3"
     },
     {
       "id": "external-texture-type",
+      "href": "https://www.w3.org/TR/WGSL/#external-texture-type",
       "level": 4,
       "title": "External Sampled Texture Types",
       "number": "4.5.4"
     },
     {
       "id": "texture-storage",
+      "href": "https://www.w3.org/TR/WGSL/#texture-storage",
       "level": 4,
       "title": "Storage Texture Types",
       "number": "4.5.5"
     },
     {
       "id": "texture-depth",
+      "href": "https://www.w3.org/TR/WGSL/#texture-depth",
       "level": 4,
       "title": "Depth Texture Types",
       "number": "4.5.6"
     },
     {
       "id": "sampler-type",
+      "href": "https://www.w3.org/TR/WGSL/#sampler-type",
       "level": 4,
       "title": "Sampler Type",
       "number": "4.5.7"
     },
     {
       "id": "texture-types-grammar",
+      "href": "https://www.w3.org/TR/WGSL/#texture-types-grammar",
       "level": 4,
       "title": "Texture Types Grammar",
       "number": "4.5.8"
     },
     {
       "id": "type-aliases",
+      "href": "https://www.w3.org/TR/WGSL/#type-aliases",
       "level": 3,
       "title": "Type Aliases TODO",
       "number": "4.6"
     },
     {
       "id": "type-declarations",
+      "href": "https://www.w3.org/TR/WGSL/#type-declarations",
       "level": 3,
       "title": "Type Declaration Grammar",
       "number": "4.7"
     },
     {
       "id": "var-and-let",
+      "href": "https://www.w3.org/TR/WGSL/#var-and-let",
       "level": 2,
       "title": "var and let",
       "number": "5"
     },
     {
       "id": "module-scope-variables",
+      "href": "https://www.w3.org/TR/WGSL/#module-scope-variables",
       "level": 3,
       "title": "Module Scope Variables",
       "number": "5.1"
     },
     {
       "id": "module-constants",
+      "href": "https://www.w3.org/TR/WGSL/#module-constants",
       "level": 3,
       "title": "Module Constants",
       "number": "5.2"
     },
     {
       "id": "function-scope-variables",
+      "href": "https://www.w3.org/TR/WGSL/#function-scope-variables",
       "level": 3,
       "title": "Function Scope Variables and Constants",
       "number": "5.3"
     },
     {
       "id": "never-alias-assumption",
+      "href": "https://www.w3.org/TR/WGSL/#never-alias-assumption",
       "level": 3,
       "title": "Never-alias assumption TODO",
       "number": "5.4"
     },
     {
       "id": "expressions",
+      "href": "https://www.w3.org/TR/WGSL/#expressions",
       "level": 2,
       "title": "Expressions TODO",
       "number": "6"
     },
     {
       "id": "literal-expressions",
+      "href": "https://www.w3.org/TR/WGSL/#literal-expressions",
       "level": 3,
       "title": "Literal Expressions TODO",
       "number": "6.1"
     },
     {
       "id": "parenthesized-expressions",
+      "href": "https://www.w3.org/TR/WGSL/#parenthesized-expressions",
       "level": 3,
       "title": "Parenthesized Expressions",
       "number": "6.2"
     },
     {
       "id": "type-constructor-expr",
+      "href": "https://www.w3.org/TR/WGSL/#type-constructor-expr",
       "level": 3,
       "title": "Type Constructor Expressions TODO",
       "number": "6.3"
     },
     {
       "id": "zero-value-expr",
+      "href": "https://www.w3.org/TR/WGSL/#zero-value-expr",
       "level": 3,
       "title": "Zero Value Expressions",
       "number": "6.4"
     },
     {
       "id": "conversion-expr",
+      "href": "https://www.w3.org/TR/WGSL/#conversion-expr",
       "level": 3,
       "title": "Conversion Expressions",
       "number": "6.5"
     },
     {
       "id": "bitcast-expr",
+      "href": "https://www.w3.org/TR/WGSL/#bitcast-expr",
       "level": 3,
       "title": "Reinterpretation of Representation Expressions",
       "number": "6.6"
     },
     {
       "id": "composite-value-decomposition-expr",
+      "href": "https://www.w3.org/TR/WGSL/#composite-value-decomposition-expr",
       "level": 3,
       "title": "Composite Value Decomposition Expressions",
       "number": "6.7"
     },
     {
       "id": "vector-access-expr",
+      "href": "https://www.w3.org/TR/WGSL/#vector-access-expr",
       "level": 4,
       "title": "Vector Access Expression",
       "number": "6.7.1"
     },
     {
       "id": "vector-single-component",
+      "href": "https://www.w3.org/TR/WGSL/#vector-single-component",
       "level": 5,
       "title": "Vector single component selection",
       "number": "6.7.1.1"
     },
     {
       "id": "vector-multi-component",
+      "href": "https://www.w3.org/TR/WGSL/#vector-multi-component",
       "level": 5,
       "title": "Vector multiple component selection",
       "number": "6.7.1.2"
     },
     {
       "id": "component-reference-from-vector-reference",
+      "href": "https://www.w3.org/TR/WGSL/#component-reference-from-vector-reference",
       "level": 5,
       "title": "Component reference from vector reference",
       "number": "6.7.1.3"
     },
     {
       "id": "matrix-access-expr",
+      "href": "https://www.w3.org/TR/WGSL/#matrix-access-expr",
       "level": 4,
       "title": "Matrix Access Expression",
       "number": "6.7.2"
     },
     {
       "id": "array-access-expr",
+      "href": "https://www.w3.org/TR/WGSL/#array-access-expr",
       "level": 4,
       "title": "Array Access Expression",
       "number": "6.7.3"
     },
     {
       "id": "struct-access-expr",
+      "href": "https://www.w3.org/TR/WGSL/#struct-access-expr",
       "level": 4,
       "title": "Structure Access Expression",
       "number": "6.7.4"
     },
     {
       "id": "logical-expr",
+      "href": "https://www.w3.org/TR/WGSL/#logical-expr",
       "level": 3,
       "title": "Logical Expressions",
       "number": "6.8"
     },
     {
       "id": "arithmetic-expr",
+      "href": "https://www.w3.org/TR/WGSL/#arithmetic-expr",
       "level": 3,
       "title": "Arithmetic Expressions",
       "number": "6.9"
     },
     {
       "id": "comparison-expr",
+      "href": "https://www.w3.org/TR/WGSL/#comparison-expr",
       "level": 3,
       "title": "Comparison Expressions TODO",
       "number": "6.10"
     },
     {
       "id": "bit-expr",
+      "href": "https://www.w3.org/TR/WGSL/#bit-expr",
       "level": 3,
       "title": "Bit Expressions TODO",
       "number": "6.11"
     },
     {
       "id": "function-call-expr",
+      "href": "https://www.w3.org/TR/WGSL/#function-call-expr",
       "level": 3,
       "title": "Function Call Expression",
       "number": "6.12"
     },
     {
       "id": "var-identifier-expr",
+      "href": "https://www.w3.org/TR/WGSL/#var-identifier-expr",
       "level": 3,
       "title": "Variable Identifier Expression",
       "number": "6.13"
     },
     {
       "id": "formal-parameter-expr",
+      "href": "https://www.w3.org/TR/WGSL/#formal-parameter-expr",
       "level": 3,
       "title": "Formal Parameter Expression",
       "number": "6.14"
     },
     {
       "id": "address-of-expr",
+      "href": "https://www.w3.org/TR/WGSL/#address-of-expr",
       "level": 3,
       "title": "Address-Of Expression",
       "number": "6.15"
     },
     {
       "id": "indirection-expr",
+      "href": "https://www.w3.org/TR/WGSL/#indirection-expr",
       "level": 3,
       "title": "Indirection Expression",
       "number": "6.16"
     },
     {
       "id": "constant-identifier-expr",
+      "href": "https://www.w3.org/TR/WGSL/#constant-identifier-expr",
       "level": 3,
       "title": "Constant Identifier Expression",
       "number": "6.17"
     },
     {
       "id": "expression-grammar",
+      "href": "https://www.w3.org/TR/WGSL/#expression-grammar",
       "level": 3,
       "title": "Expression Grammar Summary",
       "number": "6.18"
     },
     {
       "id": "statements",
+      "href": "https://www.w3.org/TR/WGSL/#statements",
       "level": 2,
       "title": "Statements TODO",
       "number": "7"
     },
     {
       "id": "compound-statement",
+      "href": "https://www.w3.org/TR/WGSL/#compound-statement",
       "level": 3,
       "title": "Compound Statement",
       "number": "7.1"
     },
     {
       "id": "assignment",
+      "href": "https://www.w3.org/TR/WGSL/#assignment",
       "level": 3,
       "title": "Assignment Statement",
       "number": "7.2"
     },
     {
       "id": "control-flow",
+      "href": "https://www.w3.org/TR/WGSL/#control-flow",
       "level": 3,
       "title": "Control flow TODO",
       "number": "7.3"
     },
     {
       "id": "sequence-statement",
+      "href": "https://www.w3.org/TR/WGSL/#sequence-statement",
       "level": 4,
       "title": "Sequence TODO",
       "number": "7.3.1"
     },
     {
       "id": "if-statement",
+      "href": "https://www.w3.org/TR/WGSL/#if-statement",
       "level": 4,
       "title": "If Statement",
       "number": "7.3.2"
     },
     {
       "id": "switch-statement",
+      "href": "https://www.w3.org/TR/WGSL/#switch-statement",
       "level": 4,
       "title": "Switch Statement",
       "number": "7.3.3"
     },
     {
       "id": "loop-statement",
+      "href": "https://www.w3.org/TR/WGSL/#loop-statement",
       "level": 4,
       "title": "Loop Statement",
       "number": "7.3.4"
     },
     {
       "id": "for-statement",
+      "href": "https://www.w3.org/TR/WGSL/#for-statement",
       "level": 4,
       "title": "For Statement",
       "number": "7.3.5"
     },
     {
       "id": "break-statement",
+      "href": "https://www.w3.org/TR/WGSL/#break-statement",
       "level": 4,
       "title": "Break",
       "number": "7.3.6"
     },
     {
       "id": "continue-statement",
+      "href": "https://www.w3.org/TR/WGSL/#continue-statement",
       "level": 4,
       "title": "Continue",
       "number": "7.3.7"
     },
     {
       "id": "continuing-statement",
+      "href": "https://www.w3.org/TR/WGSL/#continuing-statement",
       "level": 4,
       "title": "Continuing Statement",
       "number": "7.3.8"
     },
     {
       "id": "return-statement",
+      "href": "https://www.w3.org/TR/WGSL/#return-statement",
       "level": 4,
       "title": "Return Statement",
       "number": "7.3.9"
     },
     {
       "id": "discard-statement",
+      "href": "https://www.w3.org/TR/WGSL/#discard-statement",
       "level": 4,
       "title": "Discard Statement",
       "number": "7.3.10"
     },
     {
       "id": "function-call-statement",
+      "href": "https://www.w3.org/TR/WGSL/#function-call-statement",
       "level": 3,
       "title": "Function Call Statement",
       "number": "7.4"
     },
     {
       "id": "statements-summary",
+      "href": "https://www.w3.org/TR/WGSL/#statements-summary",
       "level": 3,
       "title": "Statements Grammar Summary",
       "number": "7.5"
     },
     {
       "id": "functions",
+      "href": "https://www.w3.org/TR/WGSL/#functions",
       "level": 2,
       "title": "Functions",
       "number": "8"
     },
     {
       "id": "function-declaration-sec",
+      "href": "https://www.w3.org/TR/WGSL/#function-declaration-sec",
       "level": 3,
       "title": "Declaring a user-defined function",
       "number": "8.1"
     },
     {
       "id": "function-calls",
+      "href": "https://www.w3.org/TR/WGSL/#function-calls",
       "level": 3,
       "title": "Function calls",
       "number": "8.2"
     },
     {
       "id": "function-restriction",
+      "href": "https://www.w3.org/TR/WGSL/#function-restriction",
       "level": 3,
       "title": "Restrictions on functions",
       "number": "8.3"
     },
     {
       "id": "entry-points",
+      "href": "https://www.w3.org/TR/WGSL/#entry-points",
       "level": 2,
       "title": "Entry Points TODO",
       "number": "9"
     },
     {
       "id": "shader-stages-sec",
+      "href": "https://www.w3.org/TR/WGSL/#shader-stages-sec",
       "level": 3,
       "title": "Shader Stages",
       "number": "9.1"
     },
     {
       "id": "entry-point-decl",
+      "href": "https://www.w3.org/TR/WGSL/#entry-point-decl",
       "level": 3,
       "title": "Entry point declaration",
       "number": "9.2"
     },
     {
       "id": "entry-point-attributes",
+      "href": "https://www.w3.org/TR/WGSL/#entry-point-attributes",
       "level": 4,
       "title": "Function attributes for entry points",
       "number": "9.2.1"
     },
     {
       "id": "shader-interface",
+      "href": "https://www.w3.org/TR/WGSL/#shader-interface",
       "level": 3,
       "title": "Shader Interface",
       "number": "9.3"
     },
     {
       "id": "pipeline-inputs-outputs",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-inputs-outputs",
       "level": 4,
       "title": "Pipeline Input and Output Interface",
       "number": "9.3.1"
     },
     {
       "id": "builtin-inputs-outputs",
+      "href": "https://www.w3.org/TR/WGSL/#builtin-inputs-outputs",
       "level": 5,
       "title": "Built-in inputs and outputs",
       "number": "9.3.1.1"
     },
     {
       "id": "user-data-attributes",
+      "href": "https://www.w3.org/TR/WGSL/#user-data-attributes",
       "level": 5,
       "title": "User Data Attribute TODO",
       "number": "9.3.1.2"
     },
     {
       "id": "interpolation",
+      "href": "https://www.w3.org/TR/WGSL/#interpolation",
       "level": 5,
       "title": "Interpolation",
       "number": "9.3.1.3"
     },
     {
       "id": "input-output-locations",
+      "href": "https://www.w3.org/TR/WGSL/#input-output-locations",
       "level": 5,
       "title": "Input-output Locations",
       "number": "9.3.1.4"
     },
     {
       "id": "resource-interface",
+      "href": "https://www.w3.org/TR/WGSL/#resource-interface",
       "level": 4,
       "title": "Resource interface",
       "number": "9.3.2"
     },
     {
       "id": "resource-layout-compatibility",
+      "href": "https://www.w3.org/TR/WGSL/#resource-layout-compatibility",
       "level": 4,
       "title": "Resource layout compatibility",
       "number": "9.3.3"
     },
     {
       "id": "pipeline-compatibility",
+      "href": "https://www.w3.org/TR/WGSL/#pipeline-compatibility",
       "level": 3,
       "title": "Pipeline compatibility TODO",
       "number": "9.4"
     },
     {
       "id": "input-output-matching",
+      "href": "https://www.w3.org/TR/WGSL/#input-output-matching",
       "level": 4,
       "title": "Input-output matching rules TODO",
       "number": "9.4.1"
     },
     {
       "id": "language-extensions",
+      "href": "https://www.w3.org/TR/WGSL/#language-extensions",
       "level": 2,
       "title": "10. Language extensions"
     },
     {
       "id": "enable-directive-section",
+      "href": "https://www.w3.org/TR/WGSL/#enable-directive-section",
       "level": 3,
       "title": "Enable Directive",
       "number": "10.1"
     },
     {
       "id": "wgsl-module",
+      "href": "https://www.w3.org/TR/WGSL/#wgsl-module",
       "level": 2,
       "title": "11. WGSL program TODO"
     },
     {
       "id": "execution",
+      "href": "https://www.w3.org/TR/WGSL/#execution",
       "level": 2,
       "title": "12. Execution TODO"
     },
     {
       "id": "invocation-of-an-entry-point",
+      "href": "https://www.w3.org/TR/WGSL/#invocation-of-an-entry-point",
       "level": 3,
       "title": "Invocation of an entry point TODO",
       "number": "12.1"
     },
     {
       "id": "before-entry-point-begins",
+      "href": "https://www.w3.org/TR/WGSL/#before-entry-point-begins",
       "level": 4,
       "title": "Before an entry point begins TODO",
       "number": "12.1.1"
     },
     {
       "id": "program-order",
+      "href": "https://www.w3.org/TR/WGSL/#program-order",
       "level": 4,
       "title": "Program order (within an invocation) TODO",
       "number": "12.1.2"
     },
     {
       "id": "function-scope-variable-lifetime",
+      "href": "https://www.w3.org/TR/WGSL/#function-scope-variable-lifetime",
       "level": 5,
       "title": "Function-scope variable lifetime and initialization TODO",
       "number": "12.1.2.1"
     },
     {
       "id": "statement-order",
+      "href": "https://www.w3.org/TR/WGSL/#statement-order",
       "level": 5,
       "title": "Statement order TODO",
       "number": "12.1.2.2"
     },
     {
       "id": "intra-statement-order",
+      "href": "https://www.w3.org/TR/WGSL/#intra-statement-order",
       "level": 5,
       "title": "Intra-statement order (or lack) TODO",
       "number": "12.1.2.3"
     },
     {
       "id": "uniformity",
+      "href": "https://www.w3.org/TR/WGSL/#uniformity",
       "level": 3,
       "title": "Uniformity TODO",
       "number": "12.2"
     },
     {
       "id": "uniform-control-flow",
+      "href": "https://www.w3.org/TR/WGSL/#uniform-control-flow",
       "level": 4,
       "title": "Uniform control flow TODO",
       "number": "12.2.1"
     },
     {
       "id": "divergence-reconvergence",
+      "href": "https://www.w3.org/TR/WGSL/#divergence-reconvergence",
       "level": 4,
       "title": "Divergence and reconvergence TODO",
       "number": "12.2.2"
     },
     {
       "id": "uniformity-restrictions",
+      "href": "https://www.w3.org/TR/WGSL/#uniformity-restrictions",
       "level": 4,
       "title": "Uniformity restrictions TODO",
       "number": "12.2.3"
     },
     {
       "id": "compute-shader-workgroups",
+      "href": "https://www.w3.org/TR/WGSL/#compute-shader-workgroups",
       "level": 3,
       "title": "Compute Shaders and Workgroups",
       "number": "12.3"
     },
     {
       "id": "collective-operations",
+      "href": "https://www.w3.org/TR/WGSL/#collective-operations",
       "level": 3,
       "title": "Collective operations TODO",
       "number": "12.4"
     },
     {
       "id": "barrier",
+      "href": "https://www.w3.org/TR/WGSL/#barrier",
       "level": 4,
       "title": "Barrier TODO",
       "number": "12.4.1"
     },
     {
       "id": "derivatives",
+      "href": "https://www.w3.org/TR/WGSL/#derivatives",
       "level": 4,
       "title": "Derivatives",
       "number": "12.4.2"
     },
     {
       "id": "arrayed-resource-access",
+      "href": "https://www.w3.org/TR/WGSL/#arrayed-resource-access",
       "level": 4,
       "title": "Arrayed resource access TODO",
       "number": "12.4.3"
     },
     {
       "id": "floating-point-evaluation",
+      "href": "https://www.w3.org/TR/WGSL/#floating-point-evaluation",
       "level": 3,
       "title": "Floating Point Evaluation",
       "number": "12.5"
     },
     {
       "id": "floating-point-accuracy",
+      "href": "https://www.w3.org/TR/WGSL/#floating-point-accuracy",
       "level": 4,
       "title": "Floating Point Accuracy",
       "number": "12.5.1"
     },
     {
       "id": "floating-point-conversion",
+      "href": "https://www.w3.org/TR/WGSL/#floating-point-conversion",
       "level": 4,
       "title": "Floating point conversion",
       "number": "12.5.2"
     },
     {
       "id": "memory-model",
+      "href": "https://www.w3.org/TR/WGSL/#memory-model",
       "level": 2,
       "title": "13. Memory Model TODO"
     },
     {
       "id": "grammar",
+      "href": "https://www.w3.org/TR/WGSL/#grammar",
       "level": 2,
       "title": "14. Keyword and Token Summary"
     },
     {
       "id": "keyword-summary",
+      "href": "https://www.w3.org/TR/WGSL/#keyword-summary",
       "level": 3,
       "title": "Keyword Summary",
       "number": "14.1"
     },
     {
       "id": "reserved-keywords",
+      "href": "https://www.w3.org/TR/WGSL/#reserved-keywords",
       "level": 3,
       "title": "Reserved Keywords",
       "number": "14.2"
     },
     {
       "id": "syntactic-tokens",
+      "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
       "level": 3,
       "title": "Syntactic Tokens",
       "number": "14.3"
     },
     {
       "id": "builtin-variables",
+      "href": "https://www.w3.org/TR/WGSL/#builtin-variables",
       "level": 2,
       "title": "15. Built-in variables"
     },
     {
       "id": "builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#builtin-functions",
       "level": 2,
       "title": "16. Built-in functions"
     },
     {
       "id": "logical-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#logical-builtin-functions",
       "level": 3,
       "title": "Logical built-in functions",
       "number": "16.1"
     },
     {
       "id": "value-testing-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#value-testing-builtin-functions",
       "level": 3,
       "title": "Value-testing built-in functions",
       "number": "16.2"
     },
     {
       "id": "float-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#float-builtin-functions",
       "level": 3,
       "title": "Float built-in functions",
       "number": "16.3"
     },
     {
       "id": "integer-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#integer-builtin-functions",
       "level": 3,
       "title": "Integer built-in functions",
       "number": "16.4"
     },
     {
       "id": "matrix-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#matrix-builtin-functions",
       "level": 3,
       "title": "Matrix built-in functions",
       "number": "16.5"
     },
     {
       "id": "vector-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#vector-builtin-functions",
       "level": 3,
       "title": "Vector built-in functions",
       "number": "16.6"
     },
     {
       "id": "derivative-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#derivative-builtin-functions",
       "level": 3,
       "title": "Derivative built-in functions",
       "number": "16.7"
     },
     {
       "id": "texture-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#texture-builtin-functions",
       "level": 3,
       "title": "Texture built-in functions",
       "number": "16.8"
     },
     {
       "id": "texturedimensions",
+      "href": "https://www.w3.org/TR/WGSL/#texturedimensions",
       "level": 4,
       "title": "textureDimensions",
       "number": "16.8.1"
     },
     {
       "id": "textureload",
+      "href": "https://www.w3.org/TR/WGSL/#textureload",
       "level": 4,
       "title": "textureLoad",
       "number": "16.8.2"
     },
     {
       "id": "texturenumlayers",
+      "href": "https://www.w3.org/TR/WGSL/#texturenumlayers",
       "level": 4,
       "title": "textureNumLayers",
       "number": "16.8.3"
     },
     {
       "id": "texturenumlevels",
+      "href": "https://www.w3.org/TR/WGSL/#texturenumlevels",
       "level": 4,
       "title": "textureNumLevels",
       "number": "16.8.4"
     },
     {
       "id": "texturenumsamples",
+      "href": "https://www.w3.org/TR/WGSL/#texturenumsamples",
       "level": 4,
       "title": "textureNumSamples",
       "number": "16.8.5"
     },
     {
       "id": "texturesample",
+      "href": "https://www.w3.org/TR/WGSL/#texturesample",
       "level": 4,
       "title": "textureSample",
       "number": "16.8.6"
     },
     {
       "id": "texturesamplebias",
+      "href": "https://www.w3.org/TR/WGSL/#texturesamplebias",
       "level": 4,
       "title": "textureSampleBias",
       "number": "16.8.7"
     },
     {
       "id": "texturesamplecompare",
+      "href": "https://www.w3.org/TR/WGSL/#texturesamplecompare",
       "level": 4,
       "title": "textureSampleCompare",
       "number": "16.8.8"
     },
     {
       "id": "texturesamplecomparelevel",
+      "href": "https://www.w3.org/TR/WGSL/#texturesamplecomparelevel",
       "level": 4,
       "title": "textureSampleCompareLevel",
       "number": "16.8.9"
     },
     {
       "id": "texturesamplegrad",
+      "href": "https://www.w3.org/TR/WGSL/#texturesamplegrad",
       "level": 4,
       "title": "textureSampleGrad",
       "number": "16.8.10"
     },
     {
       "id": "texturesamplelevel",
+      "href": "https://www.w3.org/TR/WGSL/#texturesamplelevel",
       "level": 4,
       "title": "textureSampleLevel",
       "number": "16.8.11"
     },
     {
       "id": "texturestore",
+      "href": "https://www.w3.org/TR/WGSL/#texturestore",
       "level": 4,
       "title": "textureStore",
       "number": "16.8.12"
     },
     {
       "id": "atomic-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-builtin-functions",
       "level": 3,
       "title": "Atomic built-in functions",
       "number": "16.9"
     },
     {
       "id": "atomic-load",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-load",
       "level": 4,
       "title": "Atomic Load",
       "number": "16.9.1"
     },
     {
       "id": "atomic-store",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-store",
       "level": 4,
       "title": "Atomic Store",
       "number": "16.9.2"
     },
     {
       "id": "atomic-rmw",
+      "href": "https://www.w3.org/TR/WGSL/#atomic-rmw",
       "level": 4,
       "title": "Atomic Read-Modify-Write",
       "number": "16.9.3"
     },
     {
       "id": "pack-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#pack-builtin-functions",
       "level": 3,
       "title": "Data packing built-in functions",
       "number": "16.10"
     },
     {
       "id": "unpack-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#unpack-builtin-functions",
       "level": 3,
       "title": "Data unpacking built-in functions",
       "number": "16.11"
     },
     {
       "id": "sync-builtin-functions",
+      "href": "https://www.w3.org/TR/WGSL/#sync-builtin-functions",
       "level": 3,
       "title": "Synchronization built-in functions",
       "number": "16.12"
     },
     {
       "id": "value-steering-functions",
+      "href": "https://www.w3.org/TR/WGSL/#value-steering-functions",
       "level": 3,
       "title": "Value-steering functions",
       "number": "16.13"
     },
     {
       "id": "glossary",
+      "href": "https://www.w3.org/TR/WGSL/#glossary",
       "level": 2,
       "title": "17. Glossary"
     },
     {
       "id": "junkyard",
+      "href": "https://www.w3.org/TR/WGSL/#junkyard",
       "level": 2,
       "title": "18. MATERIAL TO BE MOVED TO A NEW HOME OR DELETED"
     },
     {
       "id": "type-promotions",
+      "href": "https://www.w3.org/TR/WGSL/#type-promotions",
       "level": 3,
       "title": "Type Promotions",
       "number": "18.1"
     },
     {
       "id": "precedence",
+      "href": "https://www.w3.org/TR/WGSL/#precedence",
       "level": 3,
       "title": "Precedence",
       "number": "18.2"
     },
     {
       "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/WGSL/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
       "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/WGSL/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
       "id": "w3c-conformant-algorithms",
+      "href": "https://www.w3.org/TR/WGSL/#w3c-conformant-algorithms",
       "level": 3,
       "title": "Conformant Algorithms"
     },
     {
       "id": "index",
+      "href": "https://www.w3.org/TR/WGSL/#index",
       "level": 2,
       "title": "Index"
     },
     {
       "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/WGSL/#index-defined-here",
       "level": 3,
       "title": "Terms defined by this specification"
     },
     {
       "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/WGSL/#index-defined-elsewhere",
       "level": 3,
       "title": "Terms defined by reference"
     },
     {
       "id": "references",
+      "href": "https://www.w3.org/TR/WGSL/#references",
       "level": 2,
       "title": "References"
     },
     {
       "id": "normative",
+      "href": "https://www.w3.org/TR/WGSL/#normative",
       "level": 3,
       "title": "Normative References"
     },
     {
       "id": "issues-index",
+      "href": "https://www.w3.org/TR/WGSL/#issues-index",
       "level": 2,
       "title": "Issues Index"
     }

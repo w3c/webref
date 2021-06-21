@@ -20,27 +20,33 @@
     }
   },
   "descriptors": {
-    "size": {
-      "name": "size",
-      "for": "@page",
-      "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
-      "initial": "auto",
-      "computedValue": "specified value, with <length>s made absolute."
-    },
-    "marks": {
-      "name": "marks",
-      "for": "@page",
-      "value": "none | [ crop || cross ]",
-      "initial": "none",
-      "computedValue": "as specified"
-    },
-    "bleed": {
-      "name": "bleed",
-      "for": "@page",
-      "value": "auto | <length>",
-      "initial": "auto",
-      "computedValue": "as specified"
-    }
+    "size": [
+      {
+        "name": "size",
+        "for": "@page",
+        "value": "<length>{1,2} | auto | [ <page-size> || [ portrait | landscape ] ]",
+        "initial": "auto",
+        "computedValue": "specified value, with <length>s made absolute."
+      }
+    ],
+    "marks": [
+      {
+        "name": "marks",
+        "for": "@page",
+        "value": "none | [ crop || cross ]",
+        "initial": "none",
+        "computedValue": "as specified"
+      }
+    ],
+    "bleed": [
+      {
+        "name": "bleed",
+        "for": "@page",
+        "value": "auto | <length>",
+        "initial": "auto",
+        "computedValue": "as specified"
+      }
+    ]
   },
   "valuespaces": {
     "<page-selector-list>": {

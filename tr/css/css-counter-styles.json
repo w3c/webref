@@ -5,66 +5,86 @@
   },
   "properties": {},
   "descriptors": {
-    "system": {
-      "name": "system",
-      "for": "@counter-style",
-      "value": "cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]",
-      "initial": "symbolic"
-    },
-    "negative": {
-      "name": "negative",
-      "for": "@counter-style",
-      "value": "<symbol> <symbol>?",
-      "initial": "\"\\2D\" (\"-\" hyphen-minus)"
-    },
-    "prefix": {
-      "name": "prefix",
-      "for": "@counter-style",
-      "value": "<symbol>",
-      "initial": "\"\" (the empty string)"
-    },
-    "suffix": {
-      "name": "suffix",
-      "for": "@counter-style",
-      "value": "<symbol>",
-      "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
-    },
-    "range": {
-      "name": "range",
-      "for": "@counter-style",
-      "value": "[ [ <integer> | infinite ]{2} ]# | auto",
-      "initial": "auto"
-    },
-    "pad": {
-      "name": "pad",
-      "for": "@counter-style",
-      "value": "<integer> && <symbol>",
-      "initial": "0 \"\""
-    },
-    "fallback": {
-      "name": "fallback",
-      "for": "@counter-style",
-      "value": "<counter-style-name>",
-      "initial": "decimal"
-    },
-    "symbols": {
-      "name": "symbols",
-      "for": "@counter-style",
-      "value": "<symbol>+",
-      "initial": "n/a"
-    },
-    "additive-symbols": {
-      "name": "additive-symbols",
-      "for": "@counter-style",
-      "value": "[ <integer> && <symbol> ]#",
-      "initial": "n/a"
-    },
-    "speak-as": {
-      "name": "speak-as",
-      "for": "@counter-style",
-      "value": "auto | bullets | numbers | words | spell-out | <counter-style-name>",
-      "initial": "auto"
-    }
+    "system": [
+      {
+        "name": "system",
+        "for": "@counter-style",
+        "value": "cyclic | numeric | alphabetic | symbolic | additive | [fixed <integer>?] | [ extends <counter-style-name> ]",
+        "initial": "symbolic"
+      }
+    ],
+    "negative": [
+      {
+        "name": "negative",
+        "for": "@counter-style",
+        "value": "<symbol> <symbol>?",
+        "initial": "\"\\2D\" (\"-\" hyphen-minus)"
+      }
+    ],
+    "prefix": [
+      {
+        "name": "prefix",
+        "for": "@counter-style",
+        "value": "<symbol>",
+        "initial": "\"\" (the empty string)"
+      }
+    ],
+    "suffix": [
+      {
+        "name": "suffix",
+        "for": "@counter-style",
+        "value": "<symbol>",
+        "initial": "\"\\2E\\20\" (\".\" full stop followed by a space)"
+      }
+    ],
+    "range": [
+      {
+        "name": "range",
+        "for": "@counter-style",
+        "value": "[ [ <integer> | infinite ]{2} ]# | auto",
+        "initial": "auto"
+      }
+    ],
+    "pad": [
+      {
+        "name": "pad",
+        "for": "@counter-style",
+        "value": "<integer> && <symbol>",
+        "initial": "0 \"\""
+      }
+    ],
+    "fallback": [
+      {
+        "name": "fallback",
+        "for": "@counter-style",
+        "value": "<counter-style-name>",
+        "initial": "decimal"
+      }
+    ],
+    "symbols": [
+      {
+        "name": "symbols",
+        "for": "@counter-style",
+        "value": "<symbol>+",
+        "initial": "n/a"
+      }
+    ],
+    "additive-symbols": [
+      {
+        "name": "additive-symbols",
+        "for": "@counter-style",
+        "value": "[ <integer> && <symbol> ]#",
+        "initial": "n/a"
+      }
+    ],
+    "speak-as": [
+      {
+        "name": "speak-as",
+        "for": "@counter-style",
+        "value": "auto | bullets | numbers | words | spell-out | <counter-style-name>",
+        "initial": "auto"
+      }
+    ]
   },
   "valuespaces": {
     "<symbol>": {

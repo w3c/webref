@@ -16,7 +16,7 @@
         "title": "Generic Sensor API",
         "url": "https://www.w3.org/TR/generic-sensor/"
       },
-      "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  void start();\n  void stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
+      "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  undefined start();\n  undefined stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
       "href": "https://www.w3.org/TR/generic-sensor/#sensor"
     },
     "extended": [],

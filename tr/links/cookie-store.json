@@ -25,6 +25,7 @@
       "window",
       "same-origin",
       "queue-a-global-task",
+      "dom-manipulation-task-source",
       "non-secure-context",
       "secure-context"
     ],
@@ -52,9 +53,26 @@
       "dictdef-extendableeventinit",
       "fire-functional-event"
     ],
-    "https://tc39.github.io/ecma262/": [
-      "sec-promise-objects",
-      "sec-time-values-and-time-range"
+    "https://heycam.github.io/webidl/": [
+      "idl-promise",
+      "Exposed",
+      "SecureContext",
+      "idl-USVString",
+      "idl-undefined",
+      "DOMTimeStamp",
+      "idl-boolean",
+      "idl-sequence",
+      "a-promise-rejected-with",
+      "securityerror",
+      "idl-DOMException",
+      "a-new-promise",
+      "reject",
+      "exceptiondef-typeerror",
+      "resolve",
+      "this",
+      "SameObject",
+      "idl-DOMString",
+      "idl-frozen-array"
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-fetch",
@@ -83,27 +101,6 @@
       "set-append",
       "iteration-break"
     ],
-    "https://heycam.github.io/webidl/": [
-      "Exposed",
-      "SecureContext",
-      "idl-promise",
-      "idl-USVString",
-      "idl-undefined",
-      "DOMTimeStamp",
-      "idl-boolean",
-      "idl-sequence",
-      "a-promise-rejected-with",
-      "securityerror",
-      "idl-DOMException",
-      "a-new-promise",
-      "reject",
-      "exceptiondef-typeerror",
-      "resolve",
-      "this",
-      "SameObject",
-      "idl-DOMString",
-      "idl-frozen-array"
-    ],
     "https://url.spec.whatwg.org/": [
       "concept-basic-url-parser",
       "concept-url-equals",
@@ -114,9 +111,12 @@
       "utf-8-encode",
       "utf-8-decode-without-bom"
     ],
+    "https://tc39.github.io/ecma262/": [
+      "sec-time-values-and-time-range"
+    ],
     "https://github.com/tabatkins/bikeshed": [],
     "https://tools.ietf.org/html/rfc2119": [],
     "https://www.w3.org/TR/service-workers-1/": [],
-    "https://tc39.es/ecma262/": []
+    "https://tc39.es/ecma262/multipage/": []
   }
 }

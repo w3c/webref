@@ -6,1045 +6,1220 @@
   "headings": [
     {
       "id": "respecDocument",
+      "href": "https://www.w3.org/TR/WebIDL-1/#respecDocument",
       "level": 1,
       "title": "WebIDL Level 1"
     },
     {
       "id": "w3c-recommendation-15-december-2016",
+      "href": "https://www.w3.org/TR/WebIDL-1/#w3c-recommendation-15-december-2016",
       "level": 2,
       "title": "W3C Recommendation 15 December 2016"
     },
     {
       "id": "abstract",
+      "href": "https://www.w3.org/TR/WebIDL-1/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
       "id": "sotd",
+      "href": "https://www.w3.org/TR/WebIDL-1/#sotd",
       "level": 2,
       "title": "Status of This Document"
     },
     {
       "id": "toc",
+      "href": "https://www.w3.org/TR/WebIDL-1/#toc",
       "level": 2,
       "title": "Table of Contents"
     },
     {
       "id": "introduction",
+      "href": "https://www.w3.org/TR/WebIDL-1/#introduction",
       "level": 2,
       "title": "Introduction",
       "number": "1"
     },
     {
       "id": "conventions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#conventions",
       "level": 3,
       "title": "Typographic conventions",
       "number": "1.1"
     },
     {
       "id": "conformance",
+      "href": "https://www.w3.org/TR/WebIDL-1/#conformance",
       "level": 2,
       "title": "Conformance",
       "number": "2"
     },
     {
       "id": "idl",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl",
       "level": 2,
       "title": "Interface definition language",
       "number": "3"
     },
     {
       "id": "idl-names",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-names",
       "level": 3,
       "title": "Names",
       "number": "3.1"
     },
     {
       "id": "idl-interfaces",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-interfaces",
       "level": 3,
       "title": "Interfaces",
       "number": "3.2"
     },
     {
       "id": "idl-constants",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-constants",
       "level": 4,
       "title": "Constants",
       "number": "3.2.1"
     },
     {
       "id": "idl-attributes",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-attributes",
       "level": 4,
       "title": "Attributes",
       "number": "3.2.2"
     },
     {
       "id": "idl-operations",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-operations",
       "level": 4,
       "title": "Operations",
       "number": "3.2.3"
     },
     {
       "id": "idl-special-operations",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-special-operations",
       "level": 4,
       "title": "Special operations",
       "number": "3.2.4"
     },
     {
       "id": "idl-legacy-callers",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-legacy-callers",
       "level": 5,
       "title": "Legacy callers",
       "number": "3.2.4.1"
     },
     {
       "id": "idl-stringifiers",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-stringifiers",
       "level": 5,
       "title": "Stringifiers",
       "number": "3.2.4.2"
     },
     {
       "id": "idl-serializers",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-serializers",
       "level": 5,
       "title": "Serializers",
       "number": "3.2.4.3"
     },
     {
       "id": "idl-indexed-properties",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-indexed-properties",
       "level": 5,
       "title": "Indexed properties",
       "number": "3.2.4.4"
     },
     {
       "id": "idl-named-properties",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-named-properties",
       "level": 5,
       "title": "Named properties",
       "number": "3.2.4.5"
     },
     {
       "id": "idl-static-attributes-and-operations",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-static-attributes-and-operations",
       "level": 4,
       "title": "Static attributes and operations",
       "number": "3.2.5"
     },
     {
       "id": "idl-overloading",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-overloading",
       "level": 4,
       "title": "Overloading",
       "number": "3.2.6"
     },
     {
       "id": "idl-iterable",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-iterable",
       "level": 4,
       "title": "Iterable declarations",
       "number": "3.2.7"
     },
     {
       "id": "idl-dictionaries",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-dictionaries",
       "level": 3,
       "title": "Dictionaries",
       "number": "3.3"
     },
     {
       "id": "idl-exceptions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-exceptions",
       "level": 3,
       "title": "Exceptions",
       "number": "3.4"
     },
     {
       "id": "idl-DOMException-error-names",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-DOMException-error-names",
       "level": 4,
       "title": "Error names",
       "number": "3.4.1"
     },
     {
       "id": "idl-enums",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-enums",
       "level": 3,
       "title": "Enumerations",
       "number": "3.5"
     },
     {
       "id": "idl-callback-functions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-callback-functions",
       "level": 3,
       "title": "Callback functions",
       "number": "3.6"
     },
     {
       "id": "idl-typedefs",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-typedefs",
       "level": 3,
       "title": "Typedefs",
       "number": "3.7"
     },
     {
       "id": "idl-implements-statements",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-implements-statements",
       "level": 3,
       "title": "Implements statements",
       "number": "3.8"
     },
     {
       "id": "idl-objects",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-objects",
       "level": 3,
       "title": "Objects implementing interfaces",
       "number": "3.9"
     },
     {
       "id": "idl-types",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-types",
       "level": 3,
       "title": "Types",
       "number": "3.10"
     },
     {
       "id": "idl-any",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-any",
       "level": 4,
       "title": "any",
       "number": "3.10.1"
     },
     {
       "id": "idl-boolean",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-boolean",
       "level": 4,
       "title": "boolean",
       "number": "3.10.2"
     },
     {
       "id": "idl-byte",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-byte",
       "level": 4,
       "title": "byte",
       "number": "3.10.3"
     },
     {
       "id": "idl-octet",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-octet",
       "level": 4,
       "title": "octet",
       "number": "3.10.4"
     },
     {
       "id": "idl-short",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-short",
       "level": 4,
       "title": "short",
       "number": "3.10.5"
     },
     {
       "id": "idl-unsigned-short",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-unsigned-short",
       "level": 4,
       "title": "unsigned short",
       "number": "3.10.6"
     },
     {
       "id": "idl-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-long",
       "level": 4,
       "title": "long",
       "number": "3.10.7"
     },
     {
       "id": "idl-unsigned-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-unsigned-long",
       "level": 4,
       "title": "unsigned long",
       "number": "3.10.8"
     },
     {
       "id": "idl-long-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-long-long",
       "level": 4,
       "title": "long long",
       "number": "3.10.9"
     },
     {
       "id": "idl-unsigned-long-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-unsigned-long-long",
       "level": 4,
       "title": "unsigned long long",
       "number": "3.10.10"
     },
     {
       "id": "idl-float",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-float",
       "level": 4,
       "title": "float",
       "number": "3.10.11"
     },
     {
       "id": "idl-unrestricted-float",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-unrestricted-float",
       "level": 4,
       "title": "unrestricted float",
       "number": "3.10.12"
     },
     {
       "id": "idl-double",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-double",
       "level": 4,
       "title": "double",
       "number": "3.10.13"
     },
     {
       "id": "idl-unrestricted-double",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-unrestricted-double",
       "level": 4,
       "title": "unrestricted double",
       "number": "3.10.14"
     },
     {
       "id": "idl-DOMString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-DOMString",
       "level": 4,
       "title": "DOMString",
       "number": "3.10.15"
     },
     {
       "id": "idl-ByteString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-ByteString",
       "level": 4,
       "title": "ByteString",
       "number": "3.10.16"
     },
     {
       "id": "idl-USVString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-USVString",
       "level": 4,
       "title": "USVString",
       "number": "3.10.17"
     },
     {
       "id": "idl-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-object",
       "level": 4,
       "title": "object",
       "number": "3.10.18"
     },
     {
       "id": "idl-interface",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-interface",
       "level": 4,
       "title": "Interface types",
       "number": "3.10.19"
     },
     {
       "id": "idl-dictionary",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-dictionary",
       "level": 4,
       "title": "Dictionary types",
       "number": "3.10.20"
     },
     {
       "id": "idl-enumeration",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-enumeration",
       "level": 4,
       "title": "Enumeration types",
       "number": "3.10.21"
     },
     {
       "id": "idl-callback-function",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-callback-function",
       "level": 4,
       "title": "Callback function types",
       "number": "3.10.22"
     },
     {
       "id": "idl-nullable-type",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-nullable-type",
       "level": 4,
       "title": "Nullable types — T?",
       "number": "3.10.23"
     },
     {
       "id": "idl-sequence",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-sequence",
       "level": 4,
       "title": "Sequences — sequence<T>",
       "number": "3.10.24"
     },
     {
       "id": "idl-promise",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-promise",
       "level": 4,
       "title": "Promise types — Promise<T>",
       "number": "3.10.25"
     },
     {
       "id": "idl-union",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-union",
       "level": 4,
       "title": "Union types",
       "number": "3.10.26"
     },
     {
       "id": "idl-Error",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-Error",
       "level": 4,
       "title": "Error",
       "number": "3.10.27"
     },
     {
       "id": "idl-DOMException",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-DOMException",
       "level": 4,
       "title": "DOMException",
       "number": "3.10.28"
     },
     {
       "id": "idl-buffer-source-types",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-buffer-source-types",
       "level": 4,
       "title": "Buffer source types",
       "number": "3.10.29"
     },
     {
       "id": "idl-extended-attributes",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-extended-attributes",
       "level": 3,
       "title": "Extended attributes",
       "number": "3.11"
     },
     {
       "id": "ecmascript-binding",
+      "href": "https://www.w3.org/TR/WebIDL-1/#ecmascript-binding",
       "level": 2,
       "title": "ECMAScript binding",
       "number": "4"
     },
     {
       "id": "es-environment",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-environment",
       "level": 3,
       "title": "ECMAScript environment",
       "number": "4.1"
     },
     {
       "id": "es-type-mapping",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-type-mapping",
       "level": 3,
       "title": "ECMAScript type mapping",
       "number": "4.2"
     },
     {
       "id": "es-any",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-any",
       "level": 4,
       "title": "any",
       "number": "4.2.1"
     },
     {
       "id": "es-void",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-void",
       "level": 4,
       "title": "void",
       "number": "4.2.2"
     },
     {
       "id": "es-boolean",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-boolean",
       "level": 4,
       "title": "boolean",
       "number": "4.2.3"
     },
     {
       "id": "es-byte",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-byte",
       "level": 4,
       "title": "byte",
       "number": "4.2.4"
     },
     {
       "id": "es-octet",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-octet",
       "level": 4,
       "title": "octet",
       "number": "4.2.5"
     },
     {
       "id": "es-short",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-short",
       "level": 4,
       "title": "short",
       "number": "4.2.6"
     },
     {
       "id": "es-unsigned-short",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-unsigned-short",
       "level": 4,
       "title": "unsigned short",
       "number": "4.2.7"
     },
     {
       "id": "es-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-long",
       "level": 4,
       "title": "long",
       "number": "4.2.8"
     },
     {
       "id": "es-unsigned-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-unsigned-long",
       "level": 4,
       "title": "unsigned long",
       "number": "4.2.9"
     },
     {
       "id": "es-long-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-long-long",
       "level": 4,
       "title": "long long",
       "number": "4.2.10"
     },
     {
       "id": "es-unsigned-long-long",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-unsigned-long-long",
       "level": 4,
       "title": "unsigned long long",
       "number": "4.2.11"
     },
     {
       "id": "es-float",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-float",
       "level": 4,
       "title": "float",
       "number": "4.2.12"
     },
     {
       "id": "es-unrestricted-float",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-unrestricted-float",
       "level": 4,
       "title": "unrestricted float",
       "number": "4.2.13"
     },
     {
       "id": "es-double",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-double",
       "level": 4,
       "title": "double",
       "number": "4.2.14"
     },
     {
       "id": "es-unrestricted-double",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-unrestricted-double",
       "level": 4,
       "title": "unrestricted double",
       "number": "4.2.15"
     },
     {
       "id": "es-DOMString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-DOMString",
       "level": 4,
       "title": "DOMString",
       "number": "4.2.16"
     },
     {
       "id": "es-ByteString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-ByteString",
       "level": 4,
       "title": "ByteString",
       "number": "4.2.17"
     },
     {
       "id": "es-USVString",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-USVString",
       "level": 4,
       "title": "USVString",
       "number": "4.2.18"
     },
     {
       "id": "es-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-object",
       "level": 4,
       "title": "object",
       "number": "4.2.19"
     },
     {
       "id": "es-interface",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-interface",
       "level": 4,
       "title": "Interface types",
       "number": "4.2.20"
     },
     {
       "id": "es-dictionary",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-dictionary",
       "level": 4,
       "title": "Dictionary types",
       "number": "4.2.21"
     },
     {
       "id": "es-enumeration",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-enumeration",
       "level": 4,
       "title": "Enumeration types",
       "number": "4.2.22"
     },
     {
       "id": "es-callback-function",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-callback-function",
       "level": 4,
       "title": "Callback function types",
       "number": "4.2.23"
     },
     {
       "id": "es-nullable-type",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-nullable-type",
       "level": 4,
       "title": "Nullable types — T?",
       "number": "4.2.24"
     },
     {
       "id": "es-sequence",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-sequence",
       "level": 4,
       "title": "Sequences — sequence<T>",
       "number": "4.2.25"
     },
     {
       "id": "create-sequence-from-iterable",
+      "href": "https://www.w3.org/TR/WebIDL-1/#create-sequence-from-iterable",
       "level": 5,
       "title": "Creating a sequence from an iterable",
       "number": "4.2.25.1"
     },
     {
       "id": "es-promise",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-promise",
       "level": 4,
       "title": "Promise types — Promise<T>",
       "number": "4.2.26"
     },
     {
       "id": "es-union",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-union",
       "level": 4,
       "title": "Union types",
       "number": "4.2.27"
     },
     {
       "id": "es-Error",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-Error",
       "level": 4,
       "title": "Error",
       "number": "4.2.28"
     },
     {
       "id": "es-DOMException",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-DOMException",
       "level": 4,
       "title": "DOMException",
       "number": "4.2.29"
     },
     {
       "id": "es-buffer-source-types",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-buffer-source-types",
       "level": 4,
       "title": "Buffer source types",
       "number": "4.2.30"
     },
     {
       "id": "es-extended-attributes",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-extended-attributes",
       "level": 3,
       "title": "ECMAScript-specific extended attributes",
       "number": "4.3"
     },
     {
       "id": "Clamp",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Clamp",
       "level": 4,
       "title": "[Clamp]",
       "number": "4.3.1"
     },
     {
       "id": "Constructor",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Constructor",
       "level": 4,
       "title": "[Constructor]",
       "number": "4.3.2"
     },
     {
       "id": "EnforceRange",
+      "href": "https://www.w3.org/TR/WebIDL-1/#EnforceRange",
       "level": 4,
       "title": "[EnforceRange]",
       "number": "4.3.3"
     },
     {
       "id": "Exposed",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Exposed",
       "level": 4,
       "title": "[Exposed]",
       "number": "4.3.4"
     },
     {
       "id": "Global",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Global",
       "level": 4,
       "title": "[Global] and [PrimaryGlobal]",
       "number": "4.3.5"
     },
     {
       "id": "LenientThis",
+      "href": "https://www.w3.org/TR/WebIDL-1/#LenientThis",
       "level": 4,
       "title": "[LenientThis]",
       "number": "4.3.6"
     },
     {
       "id": "NamedConstructor",
+      "href": "https://www.w3.org/TR/WebIDL-1/#NamedConstructor",
       "level": 4,
       "title": "[NamedConstructor]",
       "number": "4.3.7"
     },
     {
       "id": "NewObject",
+      "href": "https://www.w3.org/TR/WebIDL-1/#NewObject",
       "level": 4,
       "title": "[NewObject]",
       "number": "4.3.8"
     },
     {
       "id": "NoInterfaceObject",
+      "href": "https://www.w3.org/TR/WebIDL-1/#NoInterfaceObject",
       "level": 4,
       "title": "[NoInterfaceObject]",
       "number": "4.3.9"
     },
     {
       "id": "OverrideBuiltins",
+      "href": "https://www.w3.org/TR/WebIDL-1/#OverrideBuiltins",
       "level": 4,
       "title": "[OverrideBuiltins]",
       "number": "4.3.10"
     },
     {
       "id": "PutForwards",
+      "href": "https://www.w3.org/TR/WebIDL-1/#PutForwards",
       "level": 4,
       "title": "[PutForwards]",
       "number": "4.3.11"
     },
     {
       "id": "Replaceable",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Replaceable",
       "level": 4,
       "title": "[Replaceable]",
       "number": "4.3.12"
     },
     {
       "id": "SameObject",
+      "href": "https://www.w3.org/TR/WebIDL-1/#SameObject",
       "level": 4,
       "title": "[SameObject]",
       "number": "4.3.13"
     },
     {
       "id": "TreatNonObjectAsNull",
+      "href": "https://www.w3.org/TR/WebIDL-1/#TreatNonObjectAsNull",
       "level": 4,
       "title": "[TreatNonObjectAsNull]",
       "number": "4.3.14"
     },
     {
       "id": "TreatNullAs",
+      "href": "https://www.w3.org/TR/WebIDL-1/#TreatNullAs",
       "level": 4,
       "title": "[TreatNullAs]",
       "number": "4.3.15"
     },
     {
       "id": "Unforgeable",
+      "href": "https://www.w3.org/TR/WebIDL-1/#Unforgeable",
       "level": 4,
       "title": "[Unforgeable]",
       "number": "4.3.16"
     },
     {
       "id": "es-security",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-security",
       "level": 3,
       "title": "Security",
       "number": "4.4"
     },
     {
       "id": "es-overloads",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-overloads",
       "level": 3,
       "title": "Overload resolution algorithm",
       "number": "4.5"
     },
     {
       "id": "es-interfaces",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-interfaces",
       "level": 3,
       "title": "Interfaces",
       "number": "4.6"
     },
     {
       "id": "interface-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#interface-object",
       "level": 4,
       "title": "Interface object",
       "number": "4.6.1"
     },
     {
       "id": "es-interface-call",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-interface-call",
       "level": 5,
       "title": "Interface object [[Call]] method",
       "number": "4.6.1.1"
     },
     {
       "id": "es-interface-hasinstance",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-interface-hasinstance",
       "level": 5,
       "title": "Interface object [[HasInstance]] method",
       "number": "4.6.1.2"
     },
     {
       "id": "named-constructors",
+      "href": "https://www.w3.org/TR/WebIDL-1/#named-constructors",
       "level": 4,
       "title": "Named constructors",
       "number": "4.6.2"
     },
     {
       "id": "es-dictionary-constructors",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-dictionary-constructors",
       "level": 4,
       "title": "Dictionary constructors",
       "number": "4.6.3"
     },
     {
       "id": "interface-prototype-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#interface-prototype-object",
       "level": 4,
       "title": "Interface prototype object",
       "number": "4.6.4"
     },
     {
       "id": "named-properties-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#named-properties-object",
       "level": 4,
       "title": "Named properties object",
       "number": "4.6.5"
     },
     {
       "id": "named-properties-object-getownproperty",
+      "href": "https://www.w3.org/TR/WebIDL-1/#named-properties-object-getownproperty",
       "level": 5,
       "title": "Named properties object [[GetOwnProperty]] method",
       "number": "4.6.5.1"
     },
     {
       "id": "named-properties-object-defineownproperty",
+      "href": "https://www.w3.org/TR/WebIDL-1/#named-properties-object-defineownproperty",
       "level": 5,
       "title": "Named properties object [[DefineOwnProperty]] method",
       "number": "4.6.5.2"
     },
     {
       "id": "named-properties-object-delete",
+      "href": "https://www.w3.org/TR/WebIDL-1/#named-properties-object-delete",
       "level": 5,
       "title": "Named properties object [[Delete]] method",
       "number": "4.6.5.3"
     },
     {
       "id": "es-constants",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-constants",
       "level": 4,
       "title": "Constants",
       "number": "4.6.6"
     },
     {
       "id": "es-attributes",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-attributes",
       "level": 4,
       "title": "Attributes",
       "number": "4.6.7"
     },
     {
       "id": "es-operations",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-operations",
       "level": 4,
       "title": "Operations",
       "number": "4.6.8"
     },
     {
       "id": "es-stringifier",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-stringifier",
       "level": 5,
       "title": "Stringifiers",
       "number": "4.6.8.1"
     },
     {
       "id": "es-serializer",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-serializer",
       "level": 5,
       "title": "Serializers",
       "number": "4.6.8.2"
     },
     {
       "id": "es-iterators",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterators",
       "level": 4,
       "title": "Common iterator behavior",
       "number": "4.6.9"
     },
     {
       "id": "es-iterator",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterator",
       "level": 5,
       "title": "@@iterator",
       "number": "4.6.9.1"
     },
     {
       "id": "es-forEach",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-forEach",
       "level": 5,
       "title": "forEach",
       "number": "4.6.9.2"
     },
     {
       "id": "es-iterable",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterable",
       "level": 4,
       "title": "Iterable declarations",
       "number": "4.6.10"
     },
     {
       "id": "es-iterable-entries",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterable-entries",
       "level": 5,
       "title": "entries",
       "number": "4.6.10.1"
     },
     {
       "id": "es-iterable-keys",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterable-keys",
       "level": 5,
       "title": "keys",
       "number": "4.6.10.2"
     },
     {
       "id": "es-iterable-values",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterable-values",
       "level": 5,
       "title": "values",
       "number": "4.6.10.3"
     },
     {
       "id": "es-default-iterator-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-default-iterator-object",
       "level": 5,
       "title": "Default iterator objects",
       "number": "4.6.10.4"
     },
     {
       "id": "es-iterator-prototype-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-iterator-prototype-object",
       "level": 5,
       "title": "Iterator prototype object",
       "number": "4.6.10.5"
     },
     {
       "id": "initializing-objects-from-iterables",
+      "href": "https://www.w3.org/TR/WebIDL-1/#initializing-objects-from-iterables",
       "level": 4,
       "title": "Initializing objects from iterables",
       "number": "4.6.11"
     },
     {
       "id": "es-implements-statements",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-implements-statements",
       "level": 3,
       "title": "Implements statements",
       "number": "4.7"
     },
     {
       "id": "es-platform-objects",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-platform-objects",
       "level": 3,
       "title": "Platform objects implementing interfaces",
       "number": "4.8"
     },
     {
       "id": "indexed-and-named-properties",
+      "href": "https://www.w3.org/TR/WebIDL-1/#indexed-and-named-properties",
       "level": 4,
       "title": "Indexed and named properties",
       "number": "4.8.1"
     },
     {
       "id": "getownproperty-guts",
+      "href": "https://www.w3.org/TR/WebIDL-1/#getownproperty-guts",
       "level": 4,
       "title": "The PlatformObjectGetOwnProperty abstract operation",
       "number": "4.8.2"
     },
     {
       "id": "getownproperty",
+      "href": "https://www.w3.org/TR/WebIDL-1/#getownproperty",
       "level": 4,
       "title": "Platform object [[GetOwnProperty]] method",
       "number": "4.8.3"
     },
     {
       "id": "invoking-indexed-setter",
+      "href": "https://www.w3.org/TR/WebIDL-1/#invoking-indexed-setter",
       "level": 4,
       "title": "Invoking a platform object indexed property setter",
       "number": "4.8.4"
     },
     {
       "id": "invoking-named-setter",
+      "href": "https://www.w3.org/TR/WebIDL-1/#invoking-named-setter",
       "level": 4,
       "title": "Invoking a platform object named property setter",
       "number": "4.8.5"
     },
     {
       "id": "platformobjectset",
+      "href": "https://www.w3.org/TR/WebIDL-1/#platformobjectset",
       "level": 4,
       "title": "Platform object [[Set]] method",
       "number": "4.8.6"
     },
     {
       "id": "defineownproperty",
+      "href": "https://www.w3.org/TR/WebIDL-1/#defineownproperty",
       "level": 4,
       "title": "Platform object [[DefineOwnProperty]] method",
       "number": "4.8.7"
     },
     {
       "id": "delete",
+      "href": "https://www.w3.org/TR/WebIDL-1/#delete",
       "level": 4,
       "title": "Platform object [[Delete]] method",
       "number": "4.8.8"
     },
     {
       "id": "call",
+      "href": "https://www.w3.org/TR/WebIDL-1/#call",
       "level": 4,
       "title": "Platform object [[Call]] method",
       "number": "4.8.9"
     },
     {
       "id": "property-enumeration",
+      "href": "https://www.w3.org/TR/WebIDL-1/#property-enumeration",
       "level": 4,
       "title": "Property enumeration",
       "number": "4.8.10"
     },
     {
       "id": "es-user-objects",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-user-objects",
       "level": 3,
       "title": "User objects implementing callback interfaces",
       "number": "4.9"
     },
     {
       "id": "es-invoking-callback-functions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-invoking-callback-functions",
       "level": 3,
       "title": "Invoking callback functions",
       "number": "4.10"
     },
     {
       "id": "es-exceptions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-exceptions",
       "level": 3,
       "title": "Exceptions",
       "number": "4.11"
     },
     {
       "id": "es-DOMException-constructor-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-DOMException-constructor-object",
       "level": 4,
       "title": "DOMException constructor object",
       "number": "4.11.1"
     },
     {
       "id": "es-DOMException-call",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-DOMException-call",
       "level": 5,
       "title": "DOMException(message, name)",
       "number": "4.11.1.1"
     },
     {
       "id": "es-DOMException-prototype-object",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-DOMException-prototype-object",
       "level": 4,
       "title": "DOMException prototype object",
       "number": "4.11.2"
     },
     {
       "id": "es-exception-objects",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-exception-objects",
       "level": 3,
       "title": "Exception objects",
       "number": "4.12"
     },
     {
       "id": "es-creating-throwing-exceptions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-creating-throwing-exceptions",
       "level": 3,
       "title": "Creating and throwing exceptions",
       "number": "4.13"
     },
     {
       "id": "es-handling-exceptions",
+      "href": "https://www.w3.org/TR/WebIDL-1/#es-handling-exceptions",
       "level": 3,
       "title": "Handling exceptions",
       "number": "4.14"
     },
     {
       "id": "common",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common",
       "level": 2,
       "title": "Common definitions",
       "number": "5"
     },
     {
       "id": "common-ArrayBufferView",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common-ArrayBufferView",
       "level": 3,
       "title": "ArrayBufferView",
       "number": "5.1"
     },
     {
       "id": "common-BufferSource",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common-BufferSource",
       "level": 3,
       "title": "BufferSource",
       "number": "5.2"
     },
     {
       "id": "common-DOMTimeStamp",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common-DOMTimeStamp",
       "level": 3,
       "title": "DOMTimeStamp",
       "number": "5.3"
     },
     {
       "id": "common-Function",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common-Function",
       "level": 3,
       "title": "Function",
       "number": "5.4"
     },
     {
       "id": "common-VoidFunction",
+      "href": "https://www.w3.org/TR/WebIDL-1/#common-VoidFunction",
       "level": 3,
       "title": "VoidFunction",
       "number": "5.5"
     },
     {
       "id": "extensibility",
+      "href": "https://www.w3.org/TR/WebIDL-1/#extensibility",
       "level": 2,
       "title": "Extensibility",
       "number": "6"
     },
     {
       "id": "referencing",
+      "href": "https://www.w3.org/TR/WebIDL-1/#referencing",
       "level": 2,
       "title": "Referencing this specification",
       "number": "7"
     },
     {
       "id": "acknowledgements",
+      "href": "https://www.w3.org/TR/WebIDL-1/#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
       "number": "8"
     },
     {
       "id": "idl-grammar",
+      "href": "https://www.w3.org/TR/WebIDL-1/#idl-grammar",
       "level": 2,
       "title": "IDL grammar",
       "number": "A"
     },
     {
       "id": "references",
+      "href": "https://www.w3.org/TR/WebIDL-1/#references",
       "level": 2,
       "title": "References",
       "number": "B"
     },
     {
       "id": "normative-references",
+      "href": "https://www.w3.org/TR/WebIDL-1/#normative-references",
       "level": 3,
       "title": "Normative references",
       "number": "B.1"
     },
     {
       "id": "informative-references",
+      "href": "https://www.w3.org/TR/WebIDL-1/#informative-references",
       "level": 3,
       "title": "Informative references",
       "number": "B.2"

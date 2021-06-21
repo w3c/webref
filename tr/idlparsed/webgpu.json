@@ -731,14 +731,14 @@
         "partial": false
       },
       "GPUDeviceDescriptor": {
-        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> nonGuaranteedFeatures = [];\n    record<DOMString, GPUSize32> nonGuaranteedLimits = {};\n};",
+        "fragment": "dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {\n    sequence<GPUFeatureName> requiredFeatures = [];\n    record<DOMString, GPUSize32> requiredLimits = {};\n};",
         "type": "dictionary",
         "name": "GPUDeviceDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
         "members": [
           {
             "type": "field",
-            "name": "nonGuaranteedFeatures",
+            "name": "requiredFeatures",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -765,7 +765,7 @@
           },
           {
             "type": "field",
-            "name": "nonGuaranteedLimits",
+            "name": "requiredLimits",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -6660,6 +6660,52 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUImageCopyTextureTagged": {
+        "fragment": "dictionary GPUImageCopyTextureTagged : GPUImageCopyTexture {\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    boolean premultipliedAlpha = false;\n};",
+        "type": "dictionary",
+        "name": "GPUImageCopyTextureTagged",
+        "inheritance": "GPUImageCopyTexture",
+        "members": [
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPredefinedColorSpace"
+            },
+            "default": {
+              "type": "string",
+              "value": "srgb"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "premultipliedAlpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUImageCopyExternalImage": {
         "fragment": "dictionary GPUImageCopyExternalImage {\n    required (ImageBitmap or HTMLCanvasElement or OffscreenCanvas) source;\n    GPUOrigin2D origin = {};\n};",
         "type": "dictionary",
@@ -8774,7 +8820,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -9075,7 +9121,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUImageCopyTexture"
+                  "idlType": "GPUImageCopyTextureTagged"
                 },
                 "default": null,
                 "optional": false,
@@ -9266,7 +9312,7 @@
         "extAttrs": []
       },
       "GPUPresentationContext": {
-        "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration? configuration);\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUPresentationContext",
         "inheritance": null,
@@ -9291,7 +9337,7 @@
                   "type": "argument-type",
                   "extAttrs": [],
                   "generic": "",
-                  "nullable": true,
+                  "nullable": false,
                   "union": false,
                   "idlType": "GPUPresentationConfiguration"
                 },
@@ -9300,6 +9346,21 @@
                 "variadic": false
               }
             ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "unconfigure",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },
@@ -11148,6 +11209,10 @@
         "GPUOrigin3D",
         "GPUTextureAspect"
       ],
+      "GPUImageCopyTextureTagged": [
+        "GPUImageCopyTexture",
+        "GPUPredefinedColorSpace"
+      ],
       "GPUImageCopyExternalImage": [
         "ImageBitmap",
         "HTMLCanvasElement",
@@ -11237,6 +11302,7 @@
         "GPUImageDataLayout",
         "GPUExtent3D",
         "GPUImageCopyExternalImage",
+        "GPUImageCopyTextureTagged",
         "GPUObjectBase"
       ],
       "GPUQuerySet": [

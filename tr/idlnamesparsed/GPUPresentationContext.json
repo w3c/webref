@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration? configuration);\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+    "fragment": "[Exposed=Window]\ninterface GPUPresentationContext {\n    undefined configure(GPUPresentationConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
     "href": "https://www.w3.org/TR/webgpu/#gpupresentationcontext"
   },
   "extended": [],

@@ -24,7 +24,7 @@
     },
     "idlNames": {
       "Sensor": {
-        "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  void start();\n  void stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
+        "fragment": "[SecureContext, Exposed=(DedicatedWorker, Window)]\ninterface Sensor : EventTarget {\n  readonly attribute boolean activated;\n  readonly attribute boolean hasReading;\n  readonly attribute DOMHighResTimeStamp? timestamp;\n  undefined start();\n  undefined stop();\n  attribute EventHandler onreading;\n  attribute EventHandler onactivate;\n  attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "Sensor",
         "inheritance": "EventTarget",
@@ -83,7 +83,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -98,7 +98,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -518,7 +518,6 @@
       "Sensor": [
         "EventTarget",
         "DOMHighResTimeStamp",
-        "void",
         "EventHandler"
       ],
       "SensorOptions": [],
@@ -538,7 +537,6 @@
     "externalDependencies": [
       "EventTarget",
       "DOMHighResTimeStamp",
-      "void",
       "EventHandler",
       "Event",
       "EventInit"

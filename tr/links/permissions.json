@@ -8,15 +8,15 @@
     "https://www.w3.org/2011/webappsec/": [],
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://github.com/w3c/permissions/issues": [],
-    "https://w3c.github.io/manifest/": [
-      "dfn-install"
+    "https://www.w3.org/TR/appmanifest/": [
+      "dfn-installed-web-application"
     ],
     "https://html.spec.whatwg.org/": [
       "environment-settings-object",
@@ -34,6 +34,7 @@
       "event-handler-event-type",
       "navigator",
       "workernavigator",
+      "secure-context",
       "active-document",
       "concept-settings-object-origin",
       "relevant-settings-object",
@@ -42,15 +43,15 @@
       "concept-task"
     ],
     "https://webbluetoothcg.github.io/web-bluetooth/": [
-      "dom-permissionname-bluetooth",
       "dictdef-bluetoothlescanfilterinit",
-      "typedefdef-bluetoothserviceuuid"
+      "typedefdef-bluetoothserviceuuid",
+      "permission-api-integration"
     ],
     "https://tc39.github.io/ecma262/": [
       "sec-code-realms",
       "current-realm"
     ],
-    "https://w3c.github.io/webappsec-feature-policy/": [
+    "https://www.w3.org/TR/permissions-policy/": [
       "policy-controlled-feature"
     ],
     "https://w3c.github.io/mediacapture-main/": [
@@ -59,16 +60,18 @@
       "devicechange"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": [],
-    "https://www.w3.org/TR/uievents/": [
-      "user-agent"
+    "https://infra.spec.whatwg.org/": [
+      "user-agent",
+      "list",
+      "list-append"
     ],
     "https://heycam.github.io/webidl/": [
       "Exposed",
       "SameObject",
+      "idl-promise",
       "idl-object",
       "dfn-convert-ecmascript-to-idl-value",
       "a-promise-rejected-with",
-      "idl-promise",
       "idl-boolean",
       "idl-DOMString"
     ],
@@ -78,24 +81,34 @@
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/onchange": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": [],
-    "https://storage.spec.whatwg.org/": [
-      "dom-permissionname-persistent-storage"
-    ],
-    "https://github.com/w3c/sensors/issues/22": [],
-    "https://w3c.github.io/webappsec-secure-contexts/": [
-      "secure-contexts",
-      "non-secure-contexts"
-    ],
     "https://en.wikipedia.org/wiki/Partially_ordered_set": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/geolocation": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/midi": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/camera": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/microphone": [],
     "https://wicg.github.io/permissions-request/": [
       "permission-request-algorithm",
       "boolean-permission-request-algorithm"
     ],
+    "https://www.w3.org/TR/mediacapture-streams/": [
+      "dfn-device-permission-revocation-algorithm"
+    ],
+    "https://storage.spec.whatwg.org/": [
+      "persistence",
+      "bucket-mode"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/ambient-light-sensor": [],
     "https://w3c.github.io/sensors/": [
       "generic-sensor-permission-revocation-algorithm"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/accelerometer": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/gyroscope": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/magnetometer": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/display-capture": [],
     "https://w3c.github.io/webdriver/": [
       "dfn-extension-commands",
       "dfn-extension-command-uri-template",
@@ -108,22 +121,17 @@
       "dfn-session",
       "dfn-local-end"
     ],
-    "https://infra.spec.whatwg.org/": [
-      "list",
-      "list-append"
-    ],
-    "https://tc39.es/ecma262/": [],
-    "https://www.w3.org/TR/feature-policy-1/": [],
+    "https://tc39.es/ecma262/multipage/": [],
+    "https://www.w3.org/TR/permissions-policy-1/": [],
     "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/secure-contexts/": [],
     "https://www.w3.org/TR/webdriver1/": [],
     "https://www.w3.org/TR/accelerometer/": [],
     "https://www.w3.org/TR/ambient-light/": [],
     "https://www.w3.org/TR/audio-output/": [],
     "https://wicg.github.io/background-fetch/": [],
     "https://www.w3.org/TR/clipboard-apis/": [],
+    "https://www.w3.org/TR/gamepad/": [],
     "https://www.w3.org/TR/geolocation-API/": [],
-    "https://www.w3.org/TR/mediacapture-streams/": [],
     "https://www.w3.org/TR/gyroscope/": [],
     "https://www.w3.org/TR/magnetometer/": [],
     "https://notifications.spec.whatwg.org/": [],

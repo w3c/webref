@@ -21,7 +21,7 @@
         "title": "JS Self-Profiling API",
         "url": "https://wicg.github.io/js-self-profiling/"
       },
-      "fragment": "[CrossOriginIsolated, Exposed=(Window,Worker)]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};"
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};"
     },
     {
       "spec": {
@@ -50,13 +50,6 @@
         "url": "https://www.w3.org/TR/resource-timing-2/"
       },
       "fragment": "partial interface Performance {\n  undefined clearResourceTimings ();\n  undefined setResourceTimingBufferSize (unsigned long maxSize);\n              attribute EventHandler onresourcetimingbufferfull;\n};"
-    },
-    {
-      "spec": {
-        "title": "User Timing Level 2",
-        "url": "https://www.w3.org/TR/user-timing-2/"
-      },
-      "fragment": "partial interface Performance {\n    void mark(DOMString markName);\n    void clearMarks(optional DOMString markName);\n    void measure(DOMString measureName, optional DOMString startMark, optional DOMString endMark);\n    void clearMeasures(optional DOMString measureName);\n};"
     },
     {
       "spec": {

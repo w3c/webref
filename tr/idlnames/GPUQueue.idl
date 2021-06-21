@@ -20,7 +20,7 @@ interface GPUQueue {
 
     undefined copyExternalImageToTexture(
         GPUImageCopyExternalImage source,
-        GPUImageCopyTexture destination,
+        GPUImageCopyTextureTagged destination,
         GPUExtent3D copySize);
 };
 
