@@ -24156,7 +24156,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 17 June 2021
+- Crawled version: 22 June 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -24199,9 +24199,9 @@ Informative references to this spec from:
      * [`https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid`](https://webbluetoothcg.github.io/web-bluetooth/#typedefdef-bluetoothserviceuuid)
      * [`https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration`](https://webbluetoothcg.github.io/web-bluetooth/#permission-api-integration)
      * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
-     * [`https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia`](https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia)
-     * [`https://w3c.github.io/mediacapture-main/#deviceid`](https://w3c.github.io/mediacapture-main/#deviceid)
-     * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm`](https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm)
      * [`https://infra.spec.whatwg.org/#user-agent`](https://infra.spec.whatwg.org/#user-agent)
      * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
      * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
@@ -24217,7 +24217,7 @@ Informative references to this spec from:
      * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
      * [`https://wicg.github.io/permissions-request/#permission-request-algorithm`](https://wicg.github.io/permissions-request/#permission-request-algorithm)
      * [`https://wicg.github.io/permissions-request/#boolean-permission-request-algorithm`](https://wicg.github.io/permissions-request/#boolean-permission-request-algorithm)
-     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm`](https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm)
+     * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
      * [`https://storage.spec.whatwg.org/#persistence`](https://storage.spec.whatwg.org/#persistence)
      * [`https://storage.spec.whatwg.org/#bucket-mode`](https://storage.spec.whatwg.org/#bucket-mode)
      * [`https://w3c.github.io/sensors/#generic-sensor-permission-revocation-algorithm`](https://w3c.github.io/sensors/#generic-sensor-permission-revocation-algorithm)
