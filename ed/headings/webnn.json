@@ -1,0 +1,506 @@
+{
+  "spec": {
+    "title": "Web Neural Network API",
+    "url": "https://webmachinelearning.github.io/webnn/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://webmachinelearning.github.io/webnn/#title",
+      "level": 1,
+      "title": "Web Neural Network API"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://webmachinelearning.github.io/webnn/#subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 23 June 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://webmachinelearning.github.io/webnn/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://webmachinelearning.github.io/webnn/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://webmachinelearning.github.io/webnn/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://webmachinelearning.github.io/webnn/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "usecases",
+      "href": "https://webmachinelearning.github.io/webnn/#usecases",
+      "level": 2,
+      "title": "Use cases",
+      "number": "2"
+    },
+    {
+      "id": "usecases-application",
+      "href": "https://webmachinelearning.github.io/webnn/#usecases-application",
+      "level": 3,
+      "title": "Application Use Cases",
+      "number": "2.1"
+    },
+    {
+      "id": "usecase-person-detection",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-person-detection",
+      "level": 4,
+      "title": "Person Detection",
+      "number": "2.1.1"
+    },
+    {
+      "id": "usecase-segmentation",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-segmentation",
+      "level": 4,
+      "title": "Semantic Segmentation",
+      "number": "2.1.2"
+    },
+    {
+      "id": "usecase-skeleton-detection",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-skeleton-detection",
+      "level": 4,
+      "title": "Skeleton Detection",
+      "number": "2.1.3"
+    },
+    {
+      "id": "usecase-face-recognition",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-face-recognition",
+      "level": 4,
+      "title": "Face Recognition",
+      "number": "2.1.4"
+    },
+    {
+      "id": "usecase-facial-landmarks",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-facial-landmarks",
+      "level": 4,
+      "title": "Facial Landmark Detection",
+      "number": "2.1.5"
+    },
+    {
+      "id": "usecase-style-transfer",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-style-transfer",
+      "level": 4,
+      "title": "Style Transfer",
+      "number": "2.1.6"
+    },
+    {
+      "id": "usecase-super-resolution",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-super-resolution",
+      "level": 4,
+      "title": "Super Resolution",
+      "number": "2.1.7"
+    },
+    {
+      "id": "usecase-image-captioning",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-image-captioning",
+      "level": 4,
+      "title": "Image Captioning",
+      "number": "2.1.8"
+    },
+    {
+      "id": "usecase-translation",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-translation",
+      "level": 4,
+      "title": "Machine Translation",
+      "number": "2.1.9"
+    },
+    {
+      "id": "usecase-emotion-analysis",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-emotion-analysis",
+      "level": 4,
+      "title": "Emotion Analysis",
+      "number": "2.1.10"
+    },
+    {
+      "id": "usecase-video-summalization",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-video-summalization",
+      "level": 4,
+      "title": "Video Summarization",
+      "number": "2.1.11"
+    },
+    {
+      "id": "usecase-noise-suppression",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-noise-suppression",
+      "level": 4,
+      "title": "Noise Suppression",
+      "number": "2.1.12"
+    },
+    {
+      "id": "usecases-framework",
+      "href": "https://webmachinelearning.github.io/webnn/#usecases-framework",
+      "level": 3,
+      "title": "Framework Use Cases",
+      "number": "2.2"
+    },
+    {
+      "id": "usecase-custom-layer",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-custom-layer",
+      "level": 4,
+      "title": "Custom Layer",
+      "number": "2.2.1"
+    },
+    {
+      "id": "usecase-network-concat",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-network-concat",
+      "level": 4,
+      "title": "Network Concatenation",
+      "number": "2.2.2"
+    },
+    {
+      "id": "usecase-perf-adapt",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-perf-adapt",
+      "level": 4,
+      "title": "Performance Adaptation",
+      "number": "2.2.3"
+    },
+    {
+      "id": "usecase-op-level-exec",
+      "href": "https://webmachinelearning.github.io/webnn/#usecase-op-level-exec",
+      "level": 4,
+      "title": "Operation Level Execution",
+      "number": "2.2.4"
+    },
+    {
+      "id": "security",
+      "href": "https://webmachinelearning.github.io/webnn/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "3"
+    },
+    {
+      "id": "privacy",
+      "href": "https://webmachinelearning.github.io/webnn/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "4"
+    },
+    {
+      "id": "programming-model",
+      "href": "https://webmachinelearning.github.io/webnn/#programming-model",
+      "level": 2,
+      "title": "Programming Model",
+      "number": "5"
+    },
+    {
+      "id": "programming-model-device-selection",
+      "href": "https://webmachinelearning.github.io/webnn/#programming-model-device-selection",
+      "level": 3,
+      "title": "Device Selection",
+      "number": "5.1"
+    },
+    {
+      "id": "api",
+      "href": "https://webmachinelearning.github.io/webnn/#api",
+      "level": 2,
+      "title": "API",
+      "number": "6"
+    },
+    {
+      "id": "api-navigator-ml",
+      "href": "https://webmachinelearning.github.io/webnn/#api-navigator-ml",
+      "level": 3,
+      "title": "navigator.ml",
+      "number": "6.1"
+    },
+    {
+      "id": "api-ml",
+      "href": "https://webmachinelearning.github.io/webnn/#api-ml",
+      "level": 3,
+      "title": "ML",
+      "number": "6.2"
+    },
+    {
+      "id": "permissions-policy-integration",
+      "href": "https://webmachinelearning.github.io/webnn/#permissions-policy-integration",
+      "level": 4,
+      "title": "Permissions Policy Integration",
+      "number": "6.2.1"
+    },
+    {
+      "id": "api-mlcontext",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlcontext",
+      "level": 3,
+      "title": "MLContext",
+      "number": "6.3"
+    },
+    {
+      "id": "api-mloperanddescriptor",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mloperanddescriptor",
+      "level": 3,
+      "title": "MLOperandDescriptor",
+      "number": "6.4"
+    },
+    {
+      "id": "api-mloperand",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mloperand",
+      "level": 3,
+      "title": "MLOperand",
+      "number": "6.5"
+    },
+    {
+      "id": "api-mlgraphbuilder",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder",
+      "level": 3,
+      "title": "MLGraphBuilder",
+      "number": "6.6"
+    },
+    {
+      "id": "api-mlgraphbuilder-batchnorm",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-batchnorm",
+      "level": 4,
+      "title": "batchNormalization",
+      "number": "6.6.1"
+    },
+    {
+      "id": "api-mlgraphbuilder-clamp",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-clamp",
+      "level": 4,
+      "title": "clamp",
+      "number": "6.6.2"
+    },
+    {
+      "id": "api-mlgraphbuilder-concat",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-concat",
+      "level": 4,
+      "title": "concat",
+      "number": "6.6.3"
+    },
+    {
+      "id": "api-mlgraphbuilder-conv2d",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-conv2d",
+      "level": 4,
+      "title": "conv2d",
+      "number": "6.6.4"
+    },
+    {
+      "id": "api-mlgraphbuilder-binary",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-binary",
+      "level": 4,
+      "title": "element-wise binary operations",
+      "number": "6.6.5"
+    },
+    {
+      "id": "api-mlgraphbuilder-unary",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-unary",
+      "level": 4,
+      "title": "element-wise unary operations",
+      "number": "6.6.6"
+    },
+    {
+      "id": "api-mlgraphbuilder-gemm",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gemm",
+      "level": 4,
+      "title": "gemm",
+      "number": "6.6.7"
+    },
+    {
+      "id": "api-mlgraphbuilder-gru",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-gru",
+      "level": 4,
+      "title": "gru",
+      "number": "6.6.8"
+    },
+    {
+      "id": "api-mlgraphbuilder-grucell",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-grucell",
+      "level": 4,
+      "title": "gruCell",
+      "number": "6.6.9"
+    },
+    {
+      "id": "api-mlgraphbuilder-instancenorm",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-instancenorm",
+      "level": 4,
+      "title": "instanceNormalization",
+      "number": "6.6.10"
+    },
+    {
+      "id": "api-mlgraphbuilder-leakyrelu",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-leakyrelu",
+      "level": 4,
+      "title": "leakyRelu",
+      "number": "6.6.11"
+    },
+    {
+      "id": "api-mlgraphbuilder-matmul",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-matmul",
+      "level": 4,
+      "title": "matmul",
+      "number": "6.6.12"
+    },
+    {
+      "id": "api-mlgraphbuilder-pad",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pad",
+      "level": 4,
+      "title": "pad",
+      "number": "6.6.13"
+    },
+    {
+      "id": "api-mlgraphbuilder-pool2d",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-pool2d",
+      "level": 4,
+      "title": "pooling operations",
+      "number": "6.6.14"
+    },
+    {
+      "id": "api-mlgraphbuilder-reduce",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reduce",
+      "level": 4,
+      "title": "reduction operations",
+      "number": "6.6.15"
+    },
+    {
+      "id": "api-mlgraphbuilder-resample",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-resample",
+      "level": 4,
+      "title": "resample",
+      "number": "6.6.16"
+    },
+    {
+      "id": "api-mlgraphbuilder-reshape",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-reshape",
+      "level": 4,
+      "title": "reshape",
+      "number": "6.6.17"
+    },
+    {
+      "id": "api-mlgraphbuilder-slice",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-slice",
+      "level": 4,
+      "title": "slice",
+      "number": "6.6.18"
+    },
+    {
+      "id": "api-mlgraphbuilder-softmax",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-softmax",
+      "level": 4,
+      "title": "softmax",
+      "number": "6.6.19"
+    },
+    {
+      "id": "api-mlgraphbuilder-split",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-split",
+      "level": 4,
+      "title": "split",
+      "number": "6.6.20"
+    },
+    {
+      "id": "api-mlgraphbuilder-squeeze",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-squeeze",
+      "level": 4,
+      "title": "squeeze",
+      "number": "6.6.21"
+    },
+    {
+      "id": "api-mlgraphbuilder-transpose",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraphbuilder-transpose",
+      "level": 4,
+      "title": "transpose",
+      "number": "6.6.22"
+    },
+    {
+      "id": "api-mlgraph",
+      "href": "https://webmachinelearning.github.io/webnn/#api-mlgraph",
+      "level": 3,
+      "title": "MLGraph",
+      "number": "6.7"
+    },
+    {
+      "id": "compilation-examples",
+      "href": "https://webmachinelearning.github.io/webnn/#compilation-examples",
+      "level": 4,
+      "title": "Examples",
+      "number": "6.7.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://webmachinelearning.github.io/webnn/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "7"
+    },
+    {
+      "id": "appendices",
+      "href": "https://webmachinelearning.github.io/webnn/#appendices",
+      "level": 2,
+      "title": "Appendices",
+      "number": "8"
+    },
+    {
+      "id": "appendices-mloperandtype-arraybufferview-compatibility",
+      "href": "https://webmachinelearning.github.io/webnn/#appendices-mloperandtype-arraybufferview-compatibility",
+      "level": 3,
+      "title": "MLOperandType and ArrayBufferView compatibility",
+      "number": "8.1"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://webmachinelearning.github.io/webnn/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "9"
+    },
+    {
+      "id": "index",
+      "href": "https://webmachinelearning.github.io/webnn/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://webmachinelearning.github.io/webnn/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://webmachinelearning.github.io/webnn/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://webmachinelearning.github.io/webnn/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://webmachinelearning.github.io/webnn/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://webmachinelearning.github.io/webnn/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://webmachinelearning.github.io/webnn/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://webmachinelearning.github.io/webnn/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

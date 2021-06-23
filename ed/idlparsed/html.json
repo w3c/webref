@@ -2069,7 +2069,7 @@
         "partial": false
       },
       "HTMLMetaElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLMetaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString httpEquiv;\n  [CEReactions] attribute DOMString content;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLMetaElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute DOMString httpEquiv;\n  [CEReactions] attribute DOMString content;\n  [CEReactions] attribute DOMString media;\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLMetaElement",
         "inheritance": "HTMLElement",
@@ -2133,6 +2133,28 @@
           {
             "type": "attribute",
             "name": "content",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "media",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -15396,7 +15418,7 @@
         "extAttrs": []
       },
       "CanvasRenderingContext2DSettings": {
-        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n  PredefinedColorSpace colorSpace = \"srgb\";\n};",
+        "fragment": "dictionary CanvasRenderingContext2DSettings {\n  boolean alpha = true;\n  boolean desynchronized = false;\n  PredefinedColorSpace colorSpace = \"srgb\";\n  boolean willReadFrequently = false;\n};",
         "type": "dictionary",
         "name": "CanvasRenderingContext2DSettings",
         "inheritance": null,
@@ -15452,6 +15474,24 @@
             "default": {
               "type": "string",
               "value": "srgb"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "willReadFrequently",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }

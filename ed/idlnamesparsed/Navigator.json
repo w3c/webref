@@ -333,6 +333,13 @@
     },
     {
       "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "Navigator includes NavigatorML;"
+    },
+    {
+      "spec": {
         "title": "WebXR Device API",
         "url": "https://www.w3.org/TR/webxr/"
       },
@@ -568,6 +575,20 @@
         },
         "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
         "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorML",
+      "defined": {
+        "spec": {
+          "title": "Web Neural Network API",
+          "url": "https://www.w3.org/TR/webnn/"
+        },
+        "fragment": "interface mixin NavigatorML {\n  [SecureContext, SameObject] readonly attribute ML ml;\n};",
+        "href": "https://webmachinelearning.github.io/webnn/#navigatorml"
       },
       "extended": [],
       "inheritance": null,
