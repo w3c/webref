@@ -22126,6 +22126,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm)
      * [`https://streams.spec.whatwg.org/#writablestream-error`](https://streams.spec.whatwg.org/#writablestream-error)
      * [`https://streams.spec.whatwg.org/#readablestream-error`](https://streams.spec.whatwg.org/#readablestream-error)
+     * [`https://streams.spec.whatwg.org/#readablestream-close`](https://streams.spec.whatwg.org/#readablestream-close)
+     * [`https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm)
+     * [`https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm)
      * [`https://streams.spec.whatwg.org/#writablestream-abort`](https://streams.spec.whatwg.org/#writablestream-abort)
      * [`https://streams.spec.whatwg.org/#ws-abort`](https://streams.spec.whatwg.org/#ws-abort)
      * [`https://streams.spec.whatwg.org/#ws-close`](https://streams.spec.whatwg.org/#ws-close)
@@ -22149,6 +22152,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#iteration-break`](https://infra.spec.whatwg.org/#iteration-break)
      * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#set-append`](https://infra.spec.whatwg.org/#set-append)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
      * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
@@ -23040,7 +23046,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20637 problematic external links found in 340 specifications
+=> 20643 problematic external links found in 340 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

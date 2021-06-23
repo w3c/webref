@@ -14889,7 +14889,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Crawled URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- Crawled version: 22 June 2021
+- Crawled version: 23 June 2021
 - Editor's Draft: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Shortname: tc39-class-static-block
 
@@ -30201,7 +30201,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 09 June 2021
+- Crawled version: 23 June 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -34421,7 +34421,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 22 June 2021
+- Crawled version: 23 June 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
@@ -34480,6 +34480,9 @@ No informative reference to this spec from other specs.
      * [`https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-writealgorithm)
      * [`https://streams.spec.whatwg.org/#writablestream-error`](https://streams.spec.whatwg.org/#writablestream-error)
      * [`https://streams.spec.whatwg.org/#readablestream-error`](https://streams.spec.whatwg.org/#readablestream-error)
+     * [`https://streams.spec.whatwg.org/#readablestream-close`](https://streams.spec.whatwg.org/#readablestream-close)
+     * [`https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm)
+     * [`https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm)
      * [`https://streams.spec.whatwg.org/#writablestream-abort`](https://streams.spec.whatwg.org/#writablestream-abort)
      * [`https://streams.spec.whatwg.org/#ws-abort`](https://streams.spec.whatwg.org/#ws-abort)
      * [`https://streams.spec.whatwg.org/#ws-close`](https://streams.spec.whatwg.org/#ws-close)
@@ -34503,6 +34506,9 @@ No informative reference to this spec from other specs.
      * [`https://infra.spec.whatwg.org/#iteration-break`](https://infra.spec.whatwg.org/#iteration-break)
      * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#set-append`](https://infra.spec.whatwg.org/#set-append)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
      * [`https://url.spec.whatwg.org/#concept-url-scheme`](https://url.spec.whatwg.org/#concept-url-scheme)
