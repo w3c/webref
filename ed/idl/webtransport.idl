@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: WebTransport (https://w3c.github.io/webtransport/)
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker), SecureContext]
 interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
@@ -14,7 +14,7 @@ interface DatagramDuplexStream {
   attribute long outgoingHighWaterMark;
 };
 
-[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker), SecureContext]
 interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
 
@@ -69,9 +69,8 @@ dictionary WebTransportStats {
   unsigned long numReceivedDatagramsDropped;
 };
 
-[ Exposed=(Window,Worker) ]
+[Exposed=(Window,Worker), SecureContext]
 interface SendStream : WritableStream /* of Uint8Array */ {
-  readonly attribute Promise<StreamAbortInfo> remoteCanceled;
   undefined reset(optional StreamAbortInfo abortInfo = {});
 };
 
@@ -79,12 +78,11 @@ dictionary StreamAbortInfo {
   [EnforceRange] octet errorCode = 0;
 };
 
-[ Exposed=(Window,Worker) ]
+[Exposed=(Window,Worker), SecureContext]
 interface ReceiveStream : ReadableStream /* of Uint8Array */ {
-  readonly attribute Promise<StreamAbortInfo> remoteReset;
 };
 
-[ Exposed=(Window,Worker) ]
+[Exposed=(Window,Worker), SecureContext]
 interface BidirectionalStream {
   readonly attribute ReceiveStream readable;
   readonly attribute SendStream writable;

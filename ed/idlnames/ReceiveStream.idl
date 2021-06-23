@@ -1,5 +1,4 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
-[ Exposed=(Window,Worker) ]
+[Exposed=(Window,Worker), SecureContext]
 interface ReceiveStream : ReadableStream /* of Uint8Array */ {
-  readonly attribute Promise<StreamAbortInfo> remoteReset;
 };

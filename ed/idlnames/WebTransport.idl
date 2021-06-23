@@ -1,5 +1,5 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
-[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker), SecureContext]
 interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
 

@@ -30,7 +30,7 @@
     },
     "idlNames": {
       "DatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
         "type": "interface",
         "name": "DatagramDuplexStream",
         "inheritance": null,
@@ -142,12 +142,18 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -472,6 +478,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -750,35 +762,11 @@
         "partial": false
       },
       "SendStream": {
-        "fragment": "[ Exposed=(Window,Worker) ]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> remoteCanceled;\n  undefined reset(optional StreamAbortInfo abortInfo = {});\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  undefined reset(optional StreamAbortInfo abortInfo = {});\n};",
         "type": "interface",
         "name": "SendStream",
         "inheritance": "WritableStream",
         "members": [
-          {
-            "type": "attribute",
-            "name": "remoteCanceled",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "StreamAbortInfo"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "operation",
             "name": "reset",
@@ -830,6 +818,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -870,36 +864,11 @@
         "partial": false
       },
       "ReceiveStream": {
-        "fragment": "[ Exposed=(Window,Worker) ]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n  readonly attribute Promise<StreamAbortInfo> remoteReset;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n};",
         "type": "interface",
         "name": "ReceiveStream",
         "inheritance": "ReadableStream",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "remoteReset",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "StreamAbortInfo"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -916,12 +885,18 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
       },
       "BidirectionalStream": {
-        "fragment": "[ Exposed=(Window,Worker) ]\ninterface BidirectionalStream {\n  readonly attribute ReceiveStream readable;\n  readonly attribute SendStream writable;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface BidirectionalStream {\n  readonly attribute ReceiveStream readable;\n  readonly attribute SendStream writable;\n};",
         "type": "interface",
         "name": "BidirectionalStream",
         "inheritance": null,
@@ -972,6 +947,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -1027,8 +1008,7 @@
       ],
       "StreamAbortInfo": [],
       "ReceiveStream": [
-        "ReadableStream",
-        "StreamAbortInfo"
+        "ReadableStream"
       ],
       "BidirectionalStream": [
         "ReceiveStream",
