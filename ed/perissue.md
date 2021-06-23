@@ -2331,7 +2331,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
      * [`https://html.spec.whatwg.org/#the-article-element`](https://html.spec.whatwg.org/#the-article-element)
      * [`https://html.spec.whatwg.org/#the-aside-element`](https://html.spec.whatwg.org/#the-aside-element)
-     * [`https://html.spec.whatwg.org/#the-audio-element`](https://html.spec.whatwg.org/#the-audio-element)
+     * [`https://html.spec.whatwg.org/#audio`](https://html.spec.whatwg.org/#audio)
      * [`https://html.spec.whatwg.org/#autonomous-custom-element`](https://html.spec.whatwg.org/#autonomous-custom-element)
      * [`https://html.spec.whatwg.org/#elementinternals`](https://html.spec.whatwg.org/#elementinternals)
      * [`https://html.spec.whatwg.org/#the-b-element`](https://html.spec.whatwg.org/#the-b-element)
@@ -2408,7 +2408,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
      * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
      * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
-     * [`https://html.spec.whatwg.org/#the-menu-element`](https://html.spec.whatwg.org/#the-menu-element)
+     * [`https://html.spec.whatwg.org/#menus`](https://html.spec.whatwg.org/#menus)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
      * [`https://html.spec.whatwg.org/#the-nav-element`](https://html.spec.whatwg.org/#the-nav-element)
@@ -11281,8 +11281,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#absolute-url-with-fragment-string`](https://url.spec.whatwg.org/#absolute-url-with-fragment-string)
      * [`https://url.spec.whatwg.org/#concept-url-fragment`](https://url.spec.whatwg.org/#concept-url-fragment)
      * [`https://url.spec.whatwg.org/#concept-domain`](https://url.spec.whatwg.org/#concept-domain)
-     * [`https://url.spec.whatwg.org/#ip-address`](https://url.spec.whatwg.org/#ip-address)
      * [`https://url.spec.whatwg.org/#concept-host`](https://url.spec.whatwg.org/#concept-host)
+     * [`https://url.spec.whatwg.org/#host-public-suffix`](https://url.spec.whatwg.org/#host-public-suffix)
+     * [`https://url.spec.whatwg.org/#ip-address`](https://url.spec.whatwg.org/#ip-address)
      * [`https://url.spec.whatwg.org/#concept-ipv6`](https://url.spec.whatwg.org/#concept-ipv6)
      * [`https://url.spec.whatwg.org/#concept-url-origin`](https://url.spec.whatwg.org/#concept-url-origin)
      * [`https://url.spec.whatwg.org/#concept-url-port`](https://url.spec.whatwg.org/#concept-url-port)
@@ -17164,6 +17165,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-connection`](https://fetch.spec.whatwg.org/#concept-connection)
      * [`https://fetch.spec.whatwg.org/#concept-connection-pool`](https://fetch.spec.whatwg.org/#concept-connection-pool)
      * [`https://fetch.spec.whatwg.org/#concept-response`](https://fetch.spec.whatwg.org/#concept-response)
+     * [`https://fetch.spec.whatwg.org/#concept-request-policy-container`](https://fetch.spec.whatwg.org/#concept-request-policy-container)
      * [`https://fetch.spec.whatwg.org/#concept-network-error`](https://fetch.spec.whatwg.org/#concept-network-error)
      * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
      * [`https://fetch.spec.whatwg.org/#concept-http-fetch`](https://fetch.spec.whatwg.org/#concept-http-fetch)
@@ -17180,9 +17182,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-websocket-establish`](https://fetch.spec.whatwg.org/#concept-websocket-establish)
      * [`https://fetch.spec.whatwg.org/#network-partition-key`](https://fetch.spec.whatwg.org/#network-partition-key)
      * [`https://url.spec.whatwg.org/#dom-url-host`](https://url.spec.whatwg.org/#dom-url-host)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
      * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
@@ -23046,7 +23048,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20643 problematic external links found in 340 specifications
+=> 20645 problematic external links found in 340 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
