@@ -1,6 +1,6 @@
-From 02c8a7920291c53ab07942930c4234c240aff8f1 Mon Sep 17 00:00:00 2001
+From 7bcaa17bb3609a233727d8964f6bc310deecc830 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 6 May 2021 15:32:18 +0200
+Date: Thu, 24 Jun 2021 10:22:36 +0200
 Subject: [PATCH] Drop duplicate `fillMode` enum definition
 
 The spec is a delta spec and re-defines that enum because it updates the meaning
@@ -11,11 +11,11 @@ the spec remains a delta spec.
  1 file changed, 2 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index 628282743..bf4f9aa18 100644
+index 1b5db8b13..2bc7aa412 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
-@@ -33,8 +33,6 @@ partial dictionary ComputedEffectTiming {
-     double startTime;
+@@ -38,8 +38,6 @@ partial dictionary ComputedEffectTiming {
+     CSSNumberish?        progress;
  };
  
 -enum FillMode { "none", "forwards", "backwards", "both", "auto" };
@@ -24,5 +24,5 @@ index 628282743..bf4f9aa18 100644
  interface GroupEffect {
    constructor(sequence<AnimationEffect>? children,
 -- 
-2.31.0.windows.1
+2.32.0.windows.1
 
