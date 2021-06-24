@@ -1,21 +1,33 @@
-From 02c8a7920291c53ab07942930c4234c240aff8f1 Mon Sep 17 00:00:00 2001
+From c23c657bba54488f8223ef05634aa1a12bd172bb Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 6 May 2021 15:32:18 +0200
-Subject: [PATCH] Drop duplicate `fillMode` enum definition
+Date: Thu, 24 Jun 2021 10:55:15 +0200
+Subject: [PATCH] Drop duplicate `fillMode` enum, fix `ComputedEffectTiming`
 
-The spec is a delta spec and re-defines that enum because it updates the meaning
-of one of its values. Patch will likely need to be kept around for as long as
-the spec remains a delta spec.
+The spec is a delta spec and re-defines the enum to change the meaning of one of
+its value. It also extends but also modifies the definition of the
+`ComputedEffectTiming` dictionary.
+
+Patch will likely need to be kept around for as long as the spec remains a delta
+spec.
 ---
- ed/idl/web-animations-2.idl | 2 --
- 1 file changed, 2 deletions(-)
+ ed/idl/web-animations-2.idl | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index 628282743..bf4f9aa18 100644
+index 1b5db8b13..c03be662d 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
-@@ -33,8 +33,6 @@ partial dictionary ComputedEffectTiming {
-     double startTime;
+@@ -30,7 +30,7 @@ partial dictionary OptionalEffectTiming {
+     double playbackRate;
+ };
+ 
+-partial dictionary ComputedEffectTiming {
++dictionary ComputedEffectTiming {
+     CSSNumberish         startTime;
+     CSSNumberish         endTime;
+     CSSNumberish         activeDuration;
+@@ -38,8 +38,6 @@ partial dictionary ComputedEffectTiming {
+     CSSNumberish?        progress;
  };
  
 -enum FillMode { "none", "forwards", "backwards", "both", "auto" };
@@ -24,5 +36,5 @@ index 628282743..bf4f9aa18 100644
  interface GroupEffect {
    constructor(sequence<AnimationEffect>? children,
 -- 
-2.31.0.windows.1
+2.32.0.windows.1
 
