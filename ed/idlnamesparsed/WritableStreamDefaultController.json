@@ -5,7 +5,7 @@
       "title": "Streams Standard",
       "url": "https://streams.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  undefined error(optional any e);\n};",
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  readonly attribute any abortReason;\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
     "href": "https://streams.spec.whatwg.org/#writablestreamdefaultcontroller"
   },
   "extended": [],

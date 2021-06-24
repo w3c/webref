@@ -15099,7 +15099,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Crawled URL: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
-- Crawled version: 21 June 2021
+- Crawled version: 24 June 2021
 - Editor's Draft: [https://encoding.spec.whatwg.org/](https://encoding.spec.whatwg.org/)
 - Latest published version: [https://www.w3.org/TR/encoding/](https://www.w3.org/TR/encoding/)
 - Shortname: encoding
@@ -27970,7 +27970,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 15 June 2021
+- Crawled version: 24 June 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -28051,6 +28051,7 @@ Informative references to this spec from:
      * [`https://dom.spec.whatwg.org/#abortsignal-aborted-flag`](https://dom.spec.whatwg.org/#abortsignal-aborted-flag)
      * [`https://dom.spec.whatwg.org/#abortsignal-add`](https://dom.spec.whatwg.org/#abortsignal-add)
      * [`https://dom.spec.whatwg.org/#abortsignal-remove`](https://dom.spec.whatwg.org/#abortsignal-remove)
+     * [`https://dom.spec.whatwg.org/#abortsignal-signal-abort`](https://dom.spec.whatwg.org/#abortsignal-signal-abort)
      * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
      * [`https://infra.spec.whatwg.org/#struct-item`](https://infra.spec.whatwg.org/#struct-item)
      * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
@@ -34154,7 +34155,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 21 June 2021
+- Crawled version: 24 June 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc

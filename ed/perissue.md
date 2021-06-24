@@ -18953,6 +18953,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#abortsignal-aborted-flag`](https://dom.spec.whatwg.org/#abortsignal-aborted-flag)
      * [`https://dom.spec.whatwg.org/#abortsignal-add`](https://dom.spec.whatwg.org/#abortsignal-add)
      * [`https://dom.spec.whatwg.org/#abortsignal-remove`](https://dom.spec.whatwg.org/#abortsignal-remove)
+     * [`https://dom.spec.whatwg.org/#abortsignal-signal-abort`](https://dom.spec.whatwg.org/#abortsignal-signal-abort)
      * [`https://infra.spec.whatwg.org/#map-exists`](https://infra.spec.whatwg.org/#map-exists)
      * [`https://infra.spec.whatwg.org/#struct-item`](https://infra.spec.whatwg.org/#struct-item)
      * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
@@ -23101,7 +23102,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20696 problematic external links found in 341 specifications
+=> 20697 problematic external links found in 341 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
