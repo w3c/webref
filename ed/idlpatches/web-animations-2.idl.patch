@@ -1,23 +1,31 @@
-From 7bcaa17bb3609a233727d8964f6bc310deecc830 Mon Sep 17 00:00:00 2001
+From cba91c8b29368e2f9886a05c9c5456deda4fccc5 Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 24 Jun 2021 10:22:36 +0200
-Subject: [PATCH] Drop duplicate `fillMode` enum definition
+Date: Thu, 24 Jun 2021 10:33:56 +0200
+Subject: [PATCH] Drop duplicate `fillMode` and `ComputedEffectTiming` dfns
 
-The spec is a delta spec and re-defines that enum because it updates the meaning
-of one of its values. Patch will likely need to be kept around for as long as
-the spec remains a delta spec.
+The spec is a delta spec and re-defines these dfns to update their meaning and
+complete members and values. Patch will likely need to be kept around for as
+long as the spec remains a delta spec.
 ---
- ed/idl/web-animations-2.idl | 2 --
- 1 file changed, 2 deletions(-)
+ ed/idl/web-animations-2.idl | 10 ----------
+ 1 file changed, 10 deletions(-)
 
 diff --git a/ed/idl/web-animations-2.idl b/ed/idl/web-animations-2.idl
-index 1b5db8b13..2bc7aa412 100644
+index 1b5db8b13..ba7c860c2 100644
 --- a/ed/idl/web-animations-2.idl
 +++ b/ed/idl/web-animations-2.idl
-@@ -38,8 +38,6 @@ partial dictionary ComputedEffectTiming {
-     CSSNumberish?        progress;
+@@ -30,16 +30,6 @@ partial dictionary OptionalEffectTiming {
+     double playbackRate;
  };
  
+-partial dictionary ComputedEffectTiming {
+-    CSSNumberish         startTime;
+-    CSSNumberish         endTime;
+-    CSSNumberish         activeDuration;
+-    CSSNumberish?        localTime;
+-    CSSNumberish?        progress;
+-};
+-
 -enum FillMode { "none", "forwards", "backwards", "both", "auto" };
 -
  [Exposed=Window]
