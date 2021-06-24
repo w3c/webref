@@ -527,11 +527,26 @@
     "idlExtendedNames": {
       "AnimationTimeline": [
         {
-          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    Animation play (optional AnimationEffect? effect = null);\n};",
+          "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};",
           "type": "interface",
           "name": "AnimationTimeline",
           "inheritance": null,
           "members": [
+            {
+              "type": "attribute",
+              "name": "duration",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
             {
               "type": "operation",
               "name": "play",
@@ -818,7 +833,7 @@
       ],
       "ComputedEffectTiming": [
         {
-          "fragment": "partial dictionary ComputedEffectTiming {\n    double startTime;\n};",
+          "fragment": "partial dictionary ComputedEffectTiming {\n    CSSNumberish         startTime;\n    CSSNumberish         endTime;\n    CSSNumberish         activeDuration;\n    CSSNumberish?        localTime;\n    CSSNumberish?        progress;\n};",
           "type": "dictionary",
           "name": "ComputedEffectTiming",
           "inheritance": null,
@@ -833,7 +848,67 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "double"
+                "idlType": "CSSNumberish"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "endTime",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "activeDuration",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "localTime",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "progress",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
               },
               "default": null,
               "required": false
@@ -913,6 +988,7 @@
     },
     "dependencies": {
       "AnimationTimeline": [
+        "CSSNumberish",
         "Animation",
         "AnimationEffect"
       ],
@@ -922,7 +998,9 @@
       ],
       "EffectTiming": [],
       "OptionalEffectTiming": [],
-      "ComputedEffectTiming": [],
+      "ComputedEffectTiming": [
+        "CSSNumberish"
+      ],
       "GroupEffect": [
         "AnimationEffect",
         "EffectTiming",
@@ -947,6 +1025,7 @@
     },
     "externalDependencies": [
       "AnimationTimeline",
+      "CSSNumberish",
       "Animation",
       "AnimationEffect",
       "EffectTiming",

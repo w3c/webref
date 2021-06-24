@@ -5,5 +5,4 @@ interface ScrollTimeline : AnimationTimeline {
   readonly attribute Element? source;
   readonly attribute ScrollDirection orientation;
   readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;
-  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;
 };
