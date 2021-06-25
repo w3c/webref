@@ -15,13 +15,6 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "partial interface HTMLImageElement {\n  [CEReactions] attribute DOMString name;\n  [CEReactions] attribute USVString lowsrc;\n  [CEReactions] attribute DOMString align;\n  [CEReactions] attribute unsigned long hspace;\n  [CEReactions] attribute unsigned long vspace;\n  [CEReactions] attribute USVString longDesc;\n\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString border;\n};"
-    },
-    {
-      "spec": {
-        "title": "CSSOM View Module",
-        "url": "https://www.w3.org/TR/cssom-view-1/"
-      },
-      "fragment": "partial interface HTMLImageElement {\n  readonly attribute long x;\n  readonly attribute long y;\n};"
     }
   ],
   "inheritance": {
@@ -69,13 +62,6 @@
           "url": "https://www.w3.org/TR/cssom-1/"
         },
         "fragment": "HTMLElement includes ElementCSSInlineStyle;"
-      },
-      {
-        "spec": {
-          "title": "CSSOM View Module",
-          "url": "https://www.w3.org/TR/cssom-view-1/"
-        },
-        "fragment": "partial interface HTMLElement {\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};"
       }
     ],
     "inheritance": {
@@ -165,20 +151,6 @@
             "url": "https://www.w3.org/TR/css-typed-om-1/"
           },
           "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};"
-        },
-        {
-          "spec": {
-            "title": "CSSOM View Module",
-            "url": "https://www.w3.org/TR/cssom-view-1/"
-          },
-          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
-        },
-        {
-          "spec": {
-            "title": "CSSOM View Module",
-            "url": "https://www.w3.org/TR/cssom-view-1/"
-          },
-          "fragment": "// like Range\nElement includes GeometryUtils;"
         },
         {
           "spec": {
@@ -316,20 +288,6 @@
             },
             "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
             "href": "https://drafts.csswg.org/css-regions/#region"
-          },
-          "extended": [],
-          "inheritance": null,
-          "includes": []
-        },
-        {
-          "name": "GeometryUtils",
-          "defined": {
-            "spec": {
-              "title": "CSSOM View Module",
-              "url": "https://www.w3.org/TR/cssom-view-1/"
-            },
-            "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-            "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
           },
           "extended": [],
           "inheritance": null,
