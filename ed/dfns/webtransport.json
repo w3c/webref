@@ -66,10 +66,10 @@
       "definedIn": "table"
     },
     {
-      "id": "session-create-an-outgoing-stream",
-      "href": "https://w3c.github.io/webtransport/#session-create-an-outgoing-stream",
+      "id": "session-create-an-outgoing-unidirectional-stream",
+      "href": "https://w3c.github.io/webtransport/#session-create-an-outgoing-unidirectional-stream",
       "linkingText": [
-        "create an outgoing stream"
+        "create an outgoing unidirectional stream"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -108,10 +108,10 @@
       "definedIn": "table"
     },
     {
-      "id": "session-receive-an-incoming-stream",
-      "href": "https://w3c.github.io/webtransport/#session-receive-an-incoming-stream",
+      "id": "session-receive-an-incoming-unidirectional-stream",
+      "href": "https://w3c.github.io/webtransport/#session-receive-an-incoming-unidirectional-stream",
       "linkingText": [
-        "receive an incoming stream"
+        "receive an incoming unidirectional stream"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -192,6 +192,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "session-terminated",
+      "href": "https://w3c.github.io/webtransport/#session-terminated",
+      "linkingText": [
+        "terminated"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://w3c.github.io/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "webtransport-stream",
       "href": "https://w3c.github.io/webtransport/#webtransport-stream",
       "linkingText": [
@@ -211,10 +232,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "stream-incoming",
-      "href": "https://w3c.github.io/webtransport/#stream-incoming",
+      "id": "stream-incoming-unidirectional",
+      "href": "https://w3c.github.io/webtransport/#stream-incoming-unidirectional",
       "linkingText": [
-        "incoming"
+        "incoming unidirectional"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -232,10 +253,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "stream-outgoing",
-      "href": "https://w3c.github.io/webtransport/#stream-outgoing",
+      "id": "stream-outgoing-unidirectional",
+      "href": "https://w3c.github.io/webtransport/#stream-outgoing-unidirectional",
       "linkingText": [
-        "outgoing"
+        "outgoing unidirectional"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1586,7 +1607,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -1607,7 +1628,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -1628,7 +1649,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "dt"
     },
@@ -1647,7 +1668,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -1666,7 +1687,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -1685,7 +1706,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -1704,7 +1725,7 @@
         "id": "web-transport-configuration",
         "href": "https://w3c.github.io/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "6.6"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -1723,7 +1744,7 @@
         "id": "web-transport-state-enum",
         "href": "https://w3c.github.io/webtransport/#web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "6.7"
+        "number": "6.8"
       },
       "definedIn": "prose"
     },
@@ -1744,7 +1765,7 @@
         "id": "web-transport-state-enum",
         "href": "https://w3c.github.io/webtransport/#web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "6.7"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1765,7 +1786,7 @@
         "id": "web-transport-state-enum",
         "href": "https://w3c.github.io/webtransport/#web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "6.7"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1786,7 +1807,7 @@
         "id": "web-transport-state-enum",
         "href": "https://w3c.github.io/webtransport/#web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "6.7"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1807,7 +1828,7 @@
         "id": "web-transport-state-enum",
         "href": "https://w3c.github.io/webtransport/#web-transport-state-enum",
         "title": "WebTransportState Enum",
-        "number": "6.7"
+        "number": "6.8"
       },
       "definedIn": "dt"
     },
@@ -1826,7 +1847,7 @@
         "id": "web-transport-close-info",
         "href": "https://w3c.github.io/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "6.8"
+        "number": "6.9"
       },
       "definedIn": "prose"
     },
@@ -1847,7 +1868,7 @@
         "id": "web-transport-close-info",
         "href": "https://w3c.github.io/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "6.8"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1868,7 +1889,7 @@
         "id": "web-transport-close-info",
         "href": "https://w3c.github.io/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "6.8"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
@@ -1887,7 +1908,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "prose"
     },
@@ -1908,7 +1929,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1929,7 +1950,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1950,7 +1971,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1971,7 +1992,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1992,7 +2013,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -2013,7 +2034,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -2034,7 +2055,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -2055,7 +2076,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -2076,7 +2097,7 @@
         "id": "web-transport-stats",
         "href": "https://w3c.github.io/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
