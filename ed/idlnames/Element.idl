@@ -95,6 +95,31 @@ partial interface Element {
     [SameObject] StylePropertyMapReadOnly computedStyleMap();
 };
 
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+partial interface Element {
+  DOMRectList getClientRects();
+  [NewObject] DOMRect getBoundingClientRect();
+  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});
+  undefined scroll(optional ScrollToOptions options = {});
+  undefined scroll(unrestricted double x, unrestricted double y);
+  undefined scrollTo(optional ScrollToOptions options = {});
+  undefined scrollTo(unrestricted double x, unrestricted double y);
+  undefined scrollBy(optional ScrollToOptions options = {});
+  undefined scrollBy(unrestricted double x, unrestricted double y);
+  attribute unrestricted double scrollTop;
+  attribute unrestricted double scrollLeft;
+  readonly attribute long scrollWidth;
+  readonly attribute long scrollHeight;
+  readonly attribute long clientTop;
+  readonly attribute long clientLeft;
+  readonly attribute long clientWidth;
+  readonly attribute long clientHeight;
+};
+
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+// like Range
+Element includes GeometryUtils;
+
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
 Element includes InnerHTML;
 
