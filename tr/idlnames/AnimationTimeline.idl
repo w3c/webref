@@ -8,5 +8,6 @@ interface AnimationTimeline {
 // Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
 [Exposed=Window]
 partial interface AnimationTimeline {
+    readonly attribute CSSNumberish? duration;
     Animation play (optional AnimationEffect? effect = null);
 };

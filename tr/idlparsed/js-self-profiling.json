@@ -412,7 +412,7 @@
     "idlExtendedNames": {
       "Performance": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Performance {\n  Promise<Profiler> profile(ProfilerInitOptions options);\n};",
+          "fragment": "[Exposed=Window]\npartial interface Performance {\n  Profiler profile(ProfilerInitOptions options);\n};",
           "type": "interface",
           "name": "Performance",
           "inheritance": null,
@@ -423,19 +423,10 @@
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
-                "generic": "Promise",
+                "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": [
-                  {
-                    "type": "return-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "Profiler"
-                  }
-                ]
+                "idlType": "Profiler"
               },
               "arguments": [
                 {

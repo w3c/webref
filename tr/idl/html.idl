@@ -210,6 +210,7 @@ interface HTMLMetaElement : HTMLElement {
   [CEReactions] attribute DOMString name;
   [CEReactions] attribute DOMString httpEquiv;
   [CEReactions] attribute DOMString content;
+  [CEReactions] attribute DOMString media;
 
   // also has obsolete members
 };
@@ -1274,6 +1275,7 @@ dictionary CanvasRenderingContext2DSettings {
   boolean alpha = true;
   boolean desynchronized = false;
   PredefinedColorSpace colorSpace = "srgb";
+  boolean willReadFrequently = false;
 };
 
 enum ImageSmoothingQuality { "low", "medium", "high" };

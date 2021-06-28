@@ -15,7 +15,7 @@ partial interface Performance {
 // Source: JS Self-Profiling API (https://wicg.github.io/js-self-profiling/)
 [Exposed=Window]
 partial interface Performance {
-  Promise<Profiler> profile(ProfilerInitOptions options);
+  Profiler profile(ProfilerInitOptions options);
 };
 
 // Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)

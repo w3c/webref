@@ -3,6 +3,7 @@
 interface SFrameTransform {
     constructor(optional SFrameTransformOptions options = {});
     Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);
+    attribute EventHandler onerror;
 };
 
 // Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)

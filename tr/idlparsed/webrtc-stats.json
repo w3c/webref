@@ -2048,7 +2048,7 @@
         "extAttrs": []
       },
       "RTCRemoteOutboundRtpStreamStats": {
-        "fragment": "dictionary RTCRemoteOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString           localId;\n             DOMHighResTimeStamp remoteTimestamp;\n             unsigned long long  reportsSent;\n};",
+        "fragment": "dictionary RTCRemoteOutboundRtpStreamStats : RTCSentRtpStreamStats {\n             DOMString           localId;\n             DOMHighResTimeStamp remoteTimestamp;\n             unsigned long long  reportsSent;\n             double              roundTripTime;\n             double              totalRoundTripTime;\n             unsigned long long  roundTripTimeMeasurements;\n};",
         "type": "dictionary",
         "name": "RTCRemoteOutboundRtpStreamStats",
         "inheritance": "RTCSentRtpStreamStats",
@@ -2086,6 +2086,51 @@
           {
             "type": "field",
             "name": "reportsSent",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "roundTripTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "totalRoundTripTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "roundTripTimeMeasurements",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

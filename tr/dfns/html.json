@@ -4517,7 +4517,7 @@
       "id": "concept-response-url",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-url",
       "linkingText": [
-        "url"
+        "URL"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4536,7 +4536,7 @@
       "id": "concept-response-url-list",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-response-url-list",
       "linkingText": [
-        "url list"
+        "URL list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4688,7 +4688,7 @@
       "id": "concept-request-url",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#concept-request-url",
       "linkingText": [
-        "url"
+        "URL"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -24157,25 +24157,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "concept-document-embedder-policy",
-      "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-document-embedder-policy",
-      "linkingText": [
-        "embedder policy"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-document-object",
-        "href": "https://html.spec.whatwg.org/multipage/dom.html#the-document-object",
-        "title": "The Document object",
-        "number": "3.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "concept-document-permissions-policy",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#concept-document-permissions-policy",
       "linkingText": [
@@ -27705,6 +27686,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "attr-meta-media",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-media",
+      "linkingText": [
+        "media"
+      ],
+      "localLinkingText": [],
+      "type": "element-attr",
+      "for": [
+        "meta"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-meta-element",
+        "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+        "title": "The meta element",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-meta-name",
       "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-name",
       "linkingText": [
@@ -27730,6 +27732,27 @@
       "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-content",
       "linkingText": [
         "content"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMetaElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-meta-element",
+        "href": "https://html.spec.whatwg.org/multipage/semantics.html#the-meta-element",
+        "title": "The meta element",
+        "number": "4.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-meta-media",
+      "href": "https://html.spec.whatwg.org/multipage/semantics.html#dom-meta-media",
+      "linkingText": [
+        "media"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -29607,9 +29630,9 @@
         "menu"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-menu-element",
@@ -35961,9 +35984,9 @@
         "audio"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "element",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-audio-element",
@@ -59199,6 +59222,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "concept-canvas-will-read-frequently",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently",
+      "linkingText": [
+        "will read frequently"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "concept-canvas-color-space",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-color-space",
       "linkingText": [
@@ -59304,6 +59346,27 @@
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-colorspace",
       "linkingText": [
         "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CanvasRenderingContext2DSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-canvasrenderingcontext2dsettings-willreadfrequently",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasrenderingcontext2dsettings-willreadfrequently",
+      "linkingText": [
+        "willReadFrequently"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -77044,6 +77107,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "policy-container-embedder-policy",
+      "href": "https://html.spec.whatwg.org/multipage/origin.html#policy-container-embedder-policy",
+      "linkingText": [
+        "embedder policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "policy container"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "policy-containers",
+        "href": "https://html.spec.whatwg.org/multipage/origin.html#policy-containers",
+        "title": "Policy containers",
+        "number": "7.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "policy-container-referrer-policy",
       "href": "https://html.spec.whatwg.org/multipage/origin.html#policy-container-referrer-policy",
       "linkingText": [
@@ -78049,25 +78133,6 @@
       "href": "https://html.spec.whatwg.org/multipage/history.html#concept-location-ancestor-origins-list",
       "linkingText": [
         "ancestor origins list"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "the-location-interface",
-        "href": "https://html.spec.whatwg.org/multipage/history.html#the-location-interface",
-        "title": "The Location interface",
-        "number": "7.10.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "location-object-setter-navigate",
-      "href": "https://html.spec.whatwg.org/multipage/history.html#location-object-setter-navigate",
-      "linkingText": [
-        "Location-object-setter navigate"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -79637,6 +79702,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "fire-a-page-transition-event",
+      "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#fire-a-page-transition-event",
+      "linkingText": [
+        "fire a page transition event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-pagetransitionevent-interface",
+        "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#the-pagetransitionevent-interface",
+        "title": "The PageTransitionEvent interface",
+        "number": "7.11.10.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "completely-loaded-time",
       "href": "https://html.spec.whatwg.org/multipage/browsing-the-web.html#completely-loaded-time",
       "linkingText": [
@@ -80581,27 +80665,6 @@
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-policy-container",
       "linkingText": [
         "policy container"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "environment settings object"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "environment-settings-objects",
-        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#environment-settings-objects",
-        "title": "Environment settings objects",
-        "number": "8.1.3.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "concept-settings-object-embedder-policy",
-      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#concept-settings-object-embedder-policy",
-      "linkingText": [
-        "embedder policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -87510,7 +87573,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "custom-handlers",
@@ -97798,6 +97861,25 @@
         "number": "13.2.6.4.1"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "parser-cannot-change-the-mode-flag",
+      "href": "https://html.spec.whatwg.org/multipage/parsing.html#parser-cannot-change-the-mode-flag",
+      "linkingText": [
+        "parser cannot change the mode flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-initial-insertion-mode",
+        "href": "https://html.spec.whatwg.org/multipage/parsing.html#the-initial-insertion-mode",
+        "title": "The \"initial\" insertion mode",
+        "number": "13.2.6.4.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "the-before-html-insertion-mode",

@@ -8,10 +8,12 @@
       "constructors": {
         "Window": [
           "SFrameTransform",
+          "SFrameTransformErrorEvent",
           "RTCRtpScriptTransform"
         ],
         "DedicatedWorker": [
-          "SFrameTransform"
+          "SFrameTransform",
+          "SFrameTransformErrorEvent"
         ]
       },
       "functions": {
@@ -196,7 +198,7 @@
         "extAttrs": []
       },
       "SFrameTransform": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransform {\n    constructor(optional SFrameTransformOptions options = {});\n    Promise<undefined> setEncryptionKey(CryptoKey key, optional CryptoKeyID keyID);\n    attribute EventHandler onerror;\n};",
         "type": "interface",
         "name": "SFrameTransform",
         "inheritance": null,
@@ -281,6 +283,21 @@
             ],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -301,6 +318,191 @@
             "arguments": []
           }
         ],
+        "partial": false
+      },
+      "SFrameTransformErrorEventType": {
+        "fragment": "enum SFrameTransformErrorEventType {\n    \"authentication\",\n    \"keyID\",\n    \"syntax\"\n};",
+        "type": "enum",
+        "name": "SFrameTransformErrorEventType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "authentication"
+          },
+          {
+            "type": "enum-value",
+            "value": "keyID"
+          },
+          {
+            "type": "enum-value",
+            "value": "syntax"
+          }
+        ],
+        "extAttrs": []
+      },
+      "SFrameTransformErrorEvent": {
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType type;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
+        "type": "interface",
+        "name": "SFrameTransformErrorEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "SFrameTransformErrorEventInit"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameTransformErrorEventType"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "keyID",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CryptoKeyID"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "frame",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "SFrameTransformErrorEventInit": {
+        "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType type;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
+        "type": "dictionary",
+        "name": "SFrameTransformErrorEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "SFrameTransformErrorEventType"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "frame",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "keyID",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CryptoKeyID"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
         "partial": false
       },
       "RTCEncodedVideoFrameType": {
@@ -959,12 +1161,14 @@
     "exposed": {
       "Window": [
         "SFrameTransform",
+        "SFrameTransformErrorEvent",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
         "RTCRtpScriptTransform"
       ],
       "DedicatedWorker": [
         "SFrameTransform",
+        "SFrameTransformErrorEvent",
         "RTCEncodedVideoFrame",
         "RTCEncodedAudioFrame",
         "RTCTransformEvent",
@@ -989,7 +1193,19 @@
         "SFrameTransformOptions",
         "CryptoKey",
         "CryptoKeyID",
+        "EventHandler",
         "GenericTransformStream"
+      ],
+      "SFrameTransformErrorEvent": [
+        "Event",
+        "SFrameTransformErrorEventInit",
+        "SFrameTransformErrorEventType",
+        "CryptoKeyID"
+      ],
+      "SFrameTransformErrorEventInit": [
+        "EventInit",
+        "SFrameTransformErrorEventType",
+        "CryptoKeyID"
       ],
       "RTCEncodedVideoFrameMetadata": [],
       "RTCEncodedVideoFrame": [
@@ -1022,9 +1238,10 @@
       "RTCRtpReceiver",
       "bigint",
       "CryptoKey",
-      "Event",
-      "DedicatedWorkerGlobalScope",
       "EventHandler",
+      "Event",
+      "EventInit",
+      "DedicatedWorkerGlobalScope",
       "Worker"
     ],
     "hasObsoleteIdl": false

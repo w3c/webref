@@ -44,5 +44,5 @@ dictionary ProfilerInitOptions {
 
 [Exposed=Window]
 partial interface Performance {
-  Promise<Profiler> profile(ProfilerInitOptions options);
+  Profiler profile(ProfilerInitOptions options);
 };

@@ -120,6 +120,13 @@
         "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "WorkerNavigator includes NavigatorGPU;"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorML;"
     }
   ],
   "inheritance": null,
@@ -281,6 +288,20 @@
         },
         "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
         "href": "https://www.w3.org/TR/webgpu/#navigatorgpu"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorML",
+      "defined": {
+        "spec": {
+          "title": "Web Neural Network API",
+          "url": "https://www.w3.org/TR/webnn/"
+        },
+        "fragment": "interface mixin NavigatorML {\n  [SecureContext, SameObject] readonly attribute ML ml;\n};",
+        "href": "https://www.w3.org/TR/webnn/#navigatorml"
       },
       "extended": [],
       "inheritance": null,

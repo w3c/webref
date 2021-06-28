@@ -116,7 +116,7 @@
         "extAttrs": []
       },
       "ScrollTimelineOptions": {
-        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  sequence<ScrollTimelineOffset> scrollOffsets = [];\n  (double or ScrollTimelineAutoKeyword) timeRange = \"auto\";\n};",
+        "fragment": "dictionary ScrollTimelineOptions {\n  Element? source;\n  ScrollDirection orientation = \"block\";\n  sequence<ScrollTimelineOffset> scrollOffsets = [];\n};",
         "type": "dictionary",
         "name": "ScrollTimelineOptions",
         "inheritance": null,
@@ -180,48 +180,13 @@
               "value": []
             },
             "required": false
-          },
-          {
-            "type": "field",
-            "name": "timeRange",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ScrollTimelineAutoKeyword"
-                }
-              ]
-            },
-            "default": {
-              "type": "string",
-              "value": "auto"
-            },
-            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "ScrollTimeline": {
-        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n  readonly attribute (double or ScrollTimelineAutoKeyword) timeRange;\n};",
+        "fragment": "[Exposed=Window]\ninterface ScrollTimeline : AnimationTimeline {\n  constructor(optional ScrollTimelineOptions options = {});\n  readonly attribute Element? source;\n  readonly attribute ScrollDirection orientation;\n  readonly attribute FrozenArray<ScrollTimelineOffset> scrollOffsets;\n};",
         "type": "interface",
         "name": "ScrollTimeline",
         "inheritance": "AnimationTimeline",
@@ -297,38 +262,6 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "ScrollTimelineOffset"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "timeRange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "ScrollTimelineAutoKeyword"
                 }
               ]
             },
@@ -428,7 +361,7 @@
         "partial": false
       },
       "CSSScrollTimelineRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString scrollOffsets;\n    readonly attribute CSSOMString timeRange;\n};",
+        "fragment": "[Exposed=Window]\ninterface CSSScrollTimelineRule : CSSRule {\n    readonly attribute CSSOMString name;\n    readonly attribute CSSOMString source;\n    readonly attribute CSSOMString orientation;\n    readonly attribute CSSOMString scrollOffsets;\n};",
         "type": "interface",
         "name": "CSSScrollTimelineRule",
         "inheritance": "CSSRule",
@@ -492,21 +425,6 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "timeRange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           }
         ],
         "extAttrs": [
@@ -535,16 +453,14 @@
       "ScrollTimelineOptions": [
         "Element",
         "ScrollDirection",
-        "ScrollTimelineOffset",
-        "ScrollTimelineAutoKeyword"
+        "ScrollTimelineOffset"
       ],
       "ScrollTimeline": [
         "AnimationTimeline",
         "ScrollTimelineOptions",
         "Element",
         "ScrollDirection",
-        "ScrollTimelineOffset",
-        "ScrollTimelineAutoKeyword"
+        "ScrollTimelineOffset"
       ],
       "ElementBasedOffset": [
         "Element",
