@@ -200,13 +200,6 @@
     },
     {
       "spec": {
-        "title": "Device Memory 1",
-        "url": "https://www.w3.org/TR/device-memory-1/"
-      },
-      "fragment": "Navigator includes NavigatorDeviceMemory;"
-    },
-    {
-      "spec": {
         "title": "Device Posture API",
         "url": "https://www.w3.org/TR/device-posture/"
       },
@@ -533,20 +526,6 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
         "href": "https://wicg.github.io/web-locks/#navigatorlocks"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "NavigatorDeviceMemory",
-      "defined": {
-        "spec": {
-          "title": "Device Memory 1",
-          "url": "https://www.w3.org/TR/device-memory-1/"
-        },
-        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
-        "href": "https://w3c.github.io/device-memory/#navigatordevicememory"
       },
       "extended": [],
       "inheritance": null,

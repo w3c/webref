@@ -419,7 +419,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 27 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -511,6 +511,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
      * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
      * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
@@ -593,7 +594,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
      * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
-     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
      * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
      * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
      * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
@@ -667,7 +667,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
      * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
      * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
-     * [`https://html.spec.whatwg.org/#lowercase-ascii-letters`](https://html.spec.whatwg.org/#lowercase-ascii-letters)
      * [`https://html.spec.whatwg.org/#kinds-of-content`](https://html.spec.whatwg.org/#kinds-of-content)
      * [`https://html.spec.whatwg.org/#phrasing-content-2`](https://html.spec.whatwg.org/#phrasing-content-2)
      * [`https://html.spec.whatwg.org/#interactive-content-2`](https://html.spec.whatwg.org/#interactive-content-2)
@@ -678,6 +677,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://html.spec.whatwg.org/#embedded-content-category`](https://html.spec.whatwg.org/#embedded-content-category)
      * [`https://html.spec.whatwg.org/#transparent-content-models`](https://html.spec.whatwg.org/#transparent-content-models)
+     * [`https://infra.spec.whatwg.org/#ascii-lowercase`](https://infra.spec.whatwg.org/#ascii-lowercase)
+     * [`https://infra.spec.whatwg.org/#ascii-case-insensitive`](https://infra.spec.whatwg.org/#ascii-case-insensitive)
      * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
      * [`https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation`](https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation)
      * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
@@ -14198,33 +14199,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Device Memory 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
-- Crawled URL: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
-- Crawled version: 30 November 2020
-- Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
-- Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
-- Shortname: device-memory-1
-
-### Potential issue(s) {.anomalies}
-
-- Broken external links:
-     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
-     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
-     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
-     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Device Posture API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -19332,7 +19306,6 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
-- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Document Policy](https://wicg.github.io/document-policy/)
@@ -20201,6 +20174,7 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [ARIA in HTML](https://w3c.github.io/html-aria/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -23979,7 +23953,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 26 May 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -29328,6 +29302,28 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+## Unicorn! · GitHub {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Crawled URL: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Crawled version: 28 June 2021
+- Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Shortname: device-memory-1
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Upgrade Insecure Requests {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -30985,7 +30981,6 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
-- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
@@ -33865,7 +33860,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 24 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -33985,7 +33980,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 24 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -35666,7 +35661,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
 - Crawled URL: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
-- Crawled version: 11 January 2018
+- Crawled version: 21 June 2021
 - Editor's Draft: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
 - Latest published version: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
 - Shortname: WOFF2

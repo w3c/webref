@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-06-28T12:46:25.494Z",
+  "date": "2021-06-28T18:47:47.596Z",
   "stats": {
     "crawled": 401,
     "errors": 0,
@@ -754,7 +754,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "27 June 2021",
+      "date": "28 June 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -885,6 +885,7 @@
             "https://html.spec.whatwg.org/#html-elements",
             "https://html.spec.whatwg.org/#the-button-element",
             "https://html.spec.whatwg.org/#the-fieldset-element",
+            "https://html.spec.whatwg.org/#the-main-element",
             "https://html.spec.whatwg.org/#the-ul-element",
             "https://html.spec.whatwg.org/#the-summary-element",
             "https://html.spec.whatwg.org/#the-a-element",
@@ -967,7 +968,6 @@
             "https://html.spec.whatwg.org/#the-legend-element",
             "https://html.spec.whatwg.org/#the-li-element",
             "https://html.spec.whatwg.org/#the-link-element",
-            "https://html.spec.whatwg.org/#the-main-element",
             "https://html.spec.whatwg.org/#the-map-element",
             "https://html.spec.whatwg.org/#mathml",
             "https://html.spec.whatwg.org/#the-mark-element",
@@ -1041,7 +1041,6 @@
             "https://html.spec.whatwg.org/#attr-select-required",
             "https://html.spec.whatwg.org/#attr-tdth-colspan",
             "https://html.spec.whatwg.org/#attr-tdth-rowspan",
-            "https://html.spec.whatwg.org/#lowercase-ascii-letters",
             "https://html.spec.whatwg.org/#kinds-of-content",
             "https://html.spec.whatwg.org/#phrasing-content-2",
             "https://html.spec.whatwg.org/#interactive-content-2",
@@ -1052,6 +1051,8 @@
             "https://html.spec.whatwg.org/#sectioning-root",
             "https://html.spec.whatwg.org/#embedded-content-category",
             "https://html.spec.whatwg.org/#transparent-content-models",
+            "https://infra.spec.whatwg.org/#ascii-lowercase",
+            "https://infra.spec.whatwg.org/#ascii-case-insensitive",
             "https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name",
             "https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation",
             "https://www.w3.org/TR/svg-aam-1.0/#details-id-66"
@@ -25973,58 +25974,6 @@
       }
     },
     {
-      "title": "Device Memory 1",
-      "shortname": "device-memory-1",
-      "date": "30 November 2020",
-      "url": "https://www.w3.org/TR/device-memory-1/",
-      "release": {
-        "url": "https://www.w3.org/TR/device-memory-1/",
-        "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/device-memory/",
-        "repository": "https://github.com/w3c/device-memory",
-        "sourcePath": "index.bs",
-        "filename": "index.html"
-      },
-      "crawled": "https://w3c.github.io/device-memory/",
-      "report": {
-        "noNormativeRefs": false,
-        "noRefToWebIDL": false,
-        "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
-        "unknownExposedNames": [],
-        "unknownIdlNames": [],
-        "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
-        "missingDfns": {
-          "css": [],
-          "idl": []
-        },
-        "missingLinkRef": [],
-        "inconsistentRef": [],
-        "referencedBy": {
-          "normative": [],
-          "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#SecureContext",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-double",
-            "https://html.spec.whatwg.org/#navigator",
-            "https://html.spec.whatwg.org/#workernavigator"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
-        },
-        "ok": false
-      }
-    },
-    {
       "title": "Device Posture API",
       "shortname": "device-posture",
       "date": "08 June 2021",
@@ -43070,11 +43019,6 @@
               "crawled": "https://wicg.github.io/datacue/"
             },
             {
-              "url": "https://www.w3.org/TR/device-memory-1/",
-              "title": "Device Memory 1",
-              "crawled": "https://w3c.github.io/device-memory/"
-            },
-            {
               "url": "https://www.w3.org/TR/device-posture/",
               "title": "Device Posture API",
               "crawled": "https://w3c.github.io/device-posture/"
@@ -46216,6 +46160,11 @@
               "url": "https://www.w3.org/TR/accelerometer/",
               "title": "Accelerometer",
               "crawled": "https://w3c.github.io/accelerometer/"
+            },
+            {
+              "url": "https://www.w3.org/TR/html-aria/",
+              "title": "ARIA in HTML",
+              "crawled": "https://w3c.github.io/html-aria/"
             },
             {
               "url": "https://wicg.github.io/background-fetch/",
@@ -53357,7 +53306,7 @@
     {
       "title": "Payment Request API",
       "shortname": "payment-request",
-      "date": "26 May 2021",
+      "date": "28 June 2021",
       "url": "https://www.w3.org/TR/payment-request/",
       "release": {
         "url": "https://www.w3.org/TR/payment-request/",
@@ -62527,6 +62476,43 @@
       }
     },
     {
+      "title": "Unicorn! · GitHub",
+      "shortname": "device-memory-1",
+      "date": "28 June 2021",
+      "url": "https://www.w3.org/TR/device-memory-1/",
+      "release": {
+        "url": "https://www.w3.org/TR/device-memory-1/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/device-memory/",
+        "repository": "https://github.com/w3c/device-memory",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "crawled": "https://w3c.github.io/device-memory/",
+      "report": {
+        "noNormativeRefs": true,
+        "noRefToWebIDL": false,
+        "hasInvalidIdl": false,
+        "unknownExposedNames": [],
+        "unknownIdlNames": [],
+        "redefinedIdlNames": [],
+        "missingWebIdlRef": [],
+        "missingDfns": {
+          "css": [],
+          "idl": []
+        },
+        "missingLinkRef": [],
+        "inconsistentRef": [],
+        "referencedBy": {
+          "normative": [],
+          "informative": []
+        },
+        "ok": false
+      }
+    },
+    {
       "title": "Upgrade Insecure Requests",
       "shortname": "upgrade-insecure-requests",
       "date": "4 June 2021",
@@ -65330,11 +65316,6 @@
               "url": "https://wicg.github.io/deprecation-reporting/",
               "title": "Deprecation Reporting",
               "crawled": "https://wicg.github.io/deprecation-reporting/"
-            },
-            {
-              "url": "https://www.w3.org/TR/device-memory-1/",
-              "title": "Device Memory 1",
-              "crawled": "https://w3c.github.io/device-memory/"
             },
             {
               "url": "https://www.w3.org/TR/device-posture/",
@@ -73210,7 +73191,7 @@
     {
       "title": "WebGPU",
       "shortname": "webgpu",
-      "date": "24 June 2021",
+      "date": "28 June 2021",
       "url": "https://www.w3.org/TR/webgpu/",
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
@@ -73363,7 +73344,7 @@
     {
       "title": "WebGPU Shading Language",
       "shortname": "WGSL",
-      "date": "24 June 2021",
+      "date": "28 June 2021",
       "url": "https://www.w3.org/TR/WGSL/",
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
@@ -75914,7 +75895,7 @@
     {
       "title": "WOFF File Format 2.0",
       "shortname": "WOFF2",
-      "date": "11 January 2018",
+      "date": "21 June 2021",
       "url": "https://www.w3.org/TR/WOFF2/",
       "release": {
         "url": "https://www.w3.org/TR/WOFF2/",
