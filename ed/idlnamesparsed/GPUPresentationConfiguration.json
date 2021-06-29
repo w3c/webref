@@ -5,23 +5,10 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUPresentationConfiguration : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+    "fragment": "dictionary GPUPresentationConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpupresentationconfiguration"
   },
   "extended": [],
-  "inheritance": {
-    "name": "GPUObjectDescriptorBase",
-    "defined": {
-      "spec": {
-        "title": "WebGPU",
-        "url": "https://www.w3.org/TR/webgpu/"
-      },
-      "fragment": "dictionary GPUObjectDescriptorBase {\n    USVString label;\n};",
-      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuobjectdescriptorbase"
-    },
-    "extended": [],
-    "inheritance": null,
-    "includes": []
-  },
+  "inheritance": null,
   "includes": []
 }
