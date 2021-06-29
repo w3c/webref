@@ -4826,44 +4826,6 @@
       "definedIn": "table"
     },
     {
-      "id": "dfn-get-buffer-source-reference",
-      "href": "https://heycam.github.io/webidl/#dfn-get-buffer-source-reference",
-      "linkingText": [
-        "get a reference to the buffer source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idl-buffer-source-types",
-        "href": "https://heycam.github.io/webidl/#idl-buffer-source-types",
-        "title": "Buffer source types",
-        "number": "2.13.33"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-get-buffer-source-copy",
-      "href": "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
-      "linkingText": [
-        "get a copy of the buffer source"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "idl-buffer-source-types",
-        "href": "https://heycam.github.io/webidl/#idl-buffer-source-types",
-        "title": "Buffer source types",
-        "number": "2.13.33"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "idl-frozen-array",
       "href": "https://heycam.github.io/webidl/#idl-frozen-array",
       "linkingText": [
@@ -5541,10 +5503,240 @@
       "definedIn": "example"
     },
     {
+      "id": "arraybuffer-create",
+      "href": "https://heycam.github.io/webidl/#arraybuffer-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybufferview-create",
+      "href": "https://heycam.github.io/webidl/#arraybufferview-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBufferView"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-buffer-source-copy",
+      "href": "https://heycam.github.io/webidl/#dfn-get-buffer-source-copy",
+      "linkingText": [
+        "get a copy of the buffer source",
+        "get a copy of the bytes held by the buffer source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffersource-byte-length",
+      "href": "https://heycam.github.io/webidl/#buffersource-byte-length",
+      "linkingText": [
+        "byte length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BufferSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffersource-underlying-buffer",
+      "href": "https://heycam.github.io/webidl/#buffersource-underlying-buffer",
+      "linkingText": [
+        "underlying buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BufferSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybuffer-write",
+      "href": "https://heycam.github.io/webidl/#arraybuffer-write",
+      "linkingText": [
+        "write"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybuffer-write-startingoffset",
+      "href": "https://heycam.github.io/webidl/#arraybuffer-write-startingoffset",
+      "linkingText": [
+        "startingOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBuffer/write"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybufferview-write",
+      "href": "https://heycam.github.io/webidl/#arraybufferview-write",
+      "linkingText": [
+        "write"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBufferView"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybufferview-write-startingoffset",
+      "href": "https://heycam.github.io/webidl/#arraybufferview-write-startingoffset",
+      "linkingText": [
+        "startingOffset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBufferView/write"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-detach",
       "href": "https://heycam.github.io/webidl/#dfn-detach",
       "linkingText": [
         "detach"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ArrayBuffer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "buffersource-detached",
+      "href": "https://heycam.github.io/webidl/#buffersource-detached",
+      "linkingText": [
+        "detached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BufferSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "es-buffer-source-types",
+        "href": "https://heycam.github.io/webidl/#es-buffer-source-types",
+        "title": "Buffer source types",
+        "number": "3.2.25"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "arraybuffer-transfer",
+      "href": "https://heycam.github.io/webidl/#arraybuffer-transfer",
+      "linkingText": [
+        "transfer"
       ],
       "localLinkingText": [],
       "type": "dfn",

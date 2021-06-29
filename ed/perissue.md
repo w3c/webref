@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 28, 2021
+% June 29, 2021
 
 401 specifications were crawled in this report.
 
@@ -25,7 +25,6 @@
 - [Static class features](https://tc39.es/proposal-static-class-features/)
 - [Temporal proposal](https://tc39.es/proposal-temporal/)
 - [Top-Level Await](https://tc39.es/proposal-top-level-await/)
-- [Unicorn! · GitHub](https://w3c.github.io/device-memory/)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
@@ -69,7 +68,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 61 specifications found
+=> 60 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -10539,6 +10538,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+- [Device Memory 1](https://w3c.github.io/device-memory/):
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
 - [Device Posture API](https://w3c.github.io/device-posture/):
      * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
      * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
@@ -20659,6 +20664,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#javascript-string-convert`](https://infra.spec.whatwg.org/#javascript-string-convert)
      * [`https://infra.spec.whatwg.org/#map-set`](https://infra.spec.whatwg.org/#map-set)
      * [`https://infra.spec.whatwg.org/#map-iterate`](https://infra.spec.whatwg.org/#map-iterate)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#byte-sequence-length`](https://infra.spec.whatwg.org/#byte-sequence-length)
      * [`https://infra.spec.whatwg.org/#set-intersection`](https://infra.spec.whatwg.org/#set-intersection)
      * [`https://infra.spec.whatwg.org/#iteration-continue`](https://infra.spec.whatwg.org/#iteration-continue)
      * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
@@ -20679,6 +20686,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom-1/#namespacedef-css`](https://drafts.csswg.org/cssom-1/#namespacedef-css)
      * [`https://fetch.spec.whatwg.org/#response`](https://fetch.spec.whatwg.org/#response)
      * [`https://fetch.spec.whatwg.org/#dom-global-fetch`](https://fetch.spec.whatwg.org/#dom-global-fetch)
+     * [`https://webassembly.github.io/spec/js-api/#memory`](https://webassembly.github.io/spec/js-api/#memory)
+     * [`https://webassembly.github.io/spec/js-api/#dom-memory-buffer`](https://webassembly.github.io/spec/js-api/#dom-memory-buffer)
 - [Web Locks API](https://wicg.github.io/web-locks/):
      * [`https://html.spec.whatwg.org/#integration-with-the-javascript-agent-cluster-formalism`](https://html.spec.whatwg.org/#integration-with-the-javascript-agent-cluster-formalism)
      * [`https://html.spec.whatwg.org/#starting-a-new-parallel-queue`](https://html.spec.whatwg.org/#starting-a-new-parallel-queue)
@@ -23104,7 +23113,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20699 problematic external links found in 340 specifications
+=> 20708 problematic external links found in 341 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

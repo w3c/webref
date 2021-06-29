@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% June 28, 2021
+% June 29, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -14199,6 +14199,33 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Device Memory 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Crawled URL: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Crawled version: 30 November 2020
+- Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
+- Shortname: device-memory-1
+
+### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Device Posture API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -14871,7 +14898,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Crawled URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- Crawled version: 24 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Shortname: tc39-class-static-block
 
@@ -19306,6 +19333,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
+- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Document Policy](https://wicg.github.io/document-policy/)
@@ -23953,7 +23981,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 28 June 2021
+- Crawled version: 29 June 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -29302,28 +29330,6 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Unicorn! · GitHub {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
-- Crawled URL: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
-- Crawled version: 28 June 2021
-- Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
-- Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
-- Shortname: device-memory-1
-
-### Potential issue(s) {.anomalies}
-
-- No normative references found
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Upgrade Insecure Requests {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -30845,7 +30851,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 3 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -30906,6 +30912,8 @@ Informative references to this spec from:
      * [`https://infra.spec.whatwg.org/#javascript-string-convert`](https://infra.spec.whatwg.org/#javascript-string-convert)
      * [`https://infra.spec.whatwg.org/#map-set`](https://infra.spec.whatwg.org/#map-set)
      * [`https://infra.spec.whatwg.org/#map-iterate`](https://infra.spec.whatwg.org/#map-iterate)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#byte-sequence-length`](https://infra.spec.whatwg.org/#byte-sequence-length)
      * [`https://infra.spec.whatwg.org/#set-intersection`](https://infra.spec.whatwg.org/#set-intersection)
      * [`https://infra.spec.whatwg.org/#iteration-continue`](https://infra.spec.whatwg.org/#iteration-continue)
      * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
@@ -30926,6 +30934,8 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/cssom-1/#namespacedef-css`](https://drafts.csswg.org/cssom-1/#namespacedef-css)
      * [`https://fetch.spec.whatwg.org/#response`](https://fetch.spec.whatwg.org/#response)
      * [`https://fetch.spec.whatwg.org/#dom-global-fetch`](https://fetch.spec.whatwg.org/#dom-global-fetch)
+     * [`https://webassembly.github.io/spec/js-api/#memory`](https://webassembly.github.io/spec/js-api/#memory)
+     * [`https://webassembly.github.io/spec/js-api/#dom-memory-buffer`](https://webassembly.github.io/spec/js-api/#dom-memory-buffer)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -30981,6 +30991,7 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
+- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
@@ -31292,7 +31303,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Crawled URL: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
-- Crawled version: 24 June 2021
+- Crawled version: 29 June 2021
 - Editor's Draft: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
 - Latest published version: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Shortname: webnn
@@ -31886,6 +31897,7 @@ Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Streams Standard](https://streams.spec.whatwg.org/)
+- [Web IDL](https://heycam.github.io/webidl/)
 
 
 ## WebAssembly Web API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
