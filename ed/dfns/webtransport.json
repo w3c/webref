@@ -2121,32 +2121,31 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-sendstream-reset-abortinfo-abortinfo",
-      "href": "https://w3c.github.io/webtransport/#dom-sendstream-reset-abortinfo-abortinfo",
-      "linkingText": [
-        "abortInfo"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "SendStream/reset(abortInfo)",
-        "SendStream/reset()"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "send-stream",
-        "href": "https://w3c.github.io/webtransport/#send-stream",
-        "title": "Interface SendStream",
-        "number": "7"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "sendstream-internalstream",
       "href": "https://w3c.github.io/webtransport/#sendstream-internalstream",
       "linkingText": [
         "[[InternalStream]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sendstream-pendingoperation",
+      "href": "https://w3c.github.io/webtransport/#sendstream-pendingoperation",
+      "linkingText": [
+        "[[PendingOperation]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2270,28 +2269,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-sendstream-reset",
-      "href": "https://w3c.github.io/webtransport/#dom-sendstream-reset",
-      "linkingText": [
-        "reset(abortInfo)",
-        "reset()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "SendStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "send-stream-methods",
-        "href": "https://w3c.github.io/webtransport/#send-stream-methods",
-        "title": "Methods",
-        "number": "7.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dictdef-streamabortinfo",
       "href": "https://w3c.github.io/webtransport/#dictdef-streamabortinfo",
       "linkingText": [
@@ -2306,7 +2283,7 @@
         "id": "stream-abort-info",
         "href": "https://w3c.github.io/webtransport/#stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "7.5"
+        "number": "7.4"
       },
       "definedIn": "prose"
     },
@@ -2327,7 +2304,7 @@
         "id": "stream-abort-info",
         "href": "https://w3c.github.io/webtransport/#stream-abort-info",
         "title": "StreamAbortInfo Dictionary",
-        "number": "7.5"
+        "number": "7.4"
       },
       "definedIn": "dt"
     },

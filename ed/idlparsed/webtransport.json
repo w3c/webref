@@ -762,46 +762,11 @@
         "partial": false
       },
       "SendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n  undefined reset(optional StreamAbortInfo abortInfo = {});\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n};",
         "type": "interface",
         "name": "SendStream",
         "inheritance": "WritableStream",
-        "members": [
-          {
-            "type": "operation",
-            "name": "reset",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "abortInfo",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "StreamAbortInfo"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -1003,8 +968,7 @@
         "DOMHighResTimeStamp"
       ],
       "SendStream": [
-        "WritableStream",
-        "StreamAbortInfo"
+        "WritableStream"
       ],
       "StreamAbortInfo": [],
       "ReceiveStream": [

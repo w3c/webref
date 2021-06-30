@@ -34517,7 +34517,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 25 June 2021
+- Crawled version: 30 June 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
@@ -34537,6 +34537,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#feedback-from-the-protocol`](https://html.spec.whatwg.org/#feedback-from-the-protocol)
      * [`https://dom.spec.whatwg.org/#concept-event`](https://dom.spec.whatwg.org/#concept-event)
+     * [`https://dom.spec.whatwg.org/#abortsignal-add`](https://dom.spec.whatwg.org/#abortsignal-add)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -34579,7 +34580,6 @@ No informative reference to this spec from other specs.
      * [`https://streams.spec.whatwg.org/#readablestream-close`](https://streams.spec.whatwg.org/#readablestream-close)
      * [`https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-closealgorithm)
      * [`https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm`](https://streams.spec.whatwg.org/#writablestream-set-up-abortalgorithm)
-     * [`https://streams.spec.whatwg.org/#writablestream-abort`](https://streams.spec.whatwg.org/#writablestream-abort)
      * [`https://streams.spec.whatwg.org/#ws-abort`](https://streams.spec.whatwg.org/#ws-abort)
      * [`https://streams.spec.whatwg.org/#ws-close`](https://streams.spec.whatwg.org/#ws-close)
      * [`https://streams.spec.whatwg.org/#default-writer-write`](https://streams.spec.whatwg.org/#default-writer-write)

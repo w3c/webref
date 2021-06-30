@@ -71,7 +71,6 @@ dictionary WebTransportStats {
 
 [Exposed=(Window,Worker), SecureContext]
 interface SendStream : WritableStream /* of Uint8Array */ {
-  undefined reset(optional StreamAbortInfo abortInfo = {});
 };
 
 dictionary StreamAbortInfo {
