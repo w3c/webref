@@ -5,20 +5,19 @@
   },
   "idlparsed": {
     "jsNames": {
-      "constructors": {},
-      "functions": {
+      "constructors": {
         "Window": [
-          "Profiler",
-          "Performance"
+          "Profiler"
         ],
         "Worker": [
           "Profiler"
         ]
-      }
+      },
+      "functions": {}
     },
     "idlNames": {
       "Profiler": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  Promise<ProfilerTrace> stop();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
         "type": "interface",
         "name": "Profiler",
         "inheritance": "EventTarget",
@@ -52,6 +51,28 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ProfilerInitOptions"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
           },
           {
             "type": "operation",
@@ -409,67 +430,11 @@
         "partial": false
       }
     },
-    "idlExtendedNames": {
-      "Performance": [
-        {
-          "fragment": "[Exposed=Window]\npartial interface Performance {\n  Profiler profile(ProfilerInitOptions options);\n};",
-          "type": "interface",
-          "name": "Performance",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "operation",
-              "name": "profile",
-              "idlType": {
-                "type": "return-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "Profiler"
-              },
-              "arguments": [
-                {
-                  "type": "argument",
-                  "name": "options",
-                  "extAttrs": [],
-                  "idlType": {
-                    "type": "argument-type",
-                    "extAttrs": [],
-                    "generic": "",
-                    "nullable": false,
-                    "union": false,
-                    "idlType": "ProfilerInitOptions"
-                  },
-                  "default": null,
-                  "optional": false,
-                  "variadic": false
-                }
-              ],
-              "extAttrs": [],
-              "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        }
-      ]
-    },
+    "idlExtendedNames": {},
     "globals": {},
     "exposed": {
       "Window": [
-        "Profiler",
-        "Performance"
+        "Profiler"
       ],
       "Worker": [
         "Profiler"
@@ -479,6 +444,7 @@
       "Profiler": [
         "EventTarget",
         "DOMHighResTimeStamp",
+        "ProfilerInitOptions",
         "ProfilerTrace"
       ],
       "ProfilerTrace": [
@@ -494,16 +460,11 @@
       "ProfilerFrame": [],
       "ProfilerInitOptions": [
         "DOMHighResTimeStamp"
-      ],
-      "Performance": [
-        "Profiler",
-        "ProfilerInitOptions"
       ]
     },
     "externalDependencies": [
       "EventTarget",
-      "DOMHighResTimeStamp",
-      "Performance"
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }
