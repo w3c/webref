@@ -30054,9 +30054,9 @@
         "ping"
       ],
       "localLinkingText": [],
-      "type": "element-attr",
+      "type": "attribute",
       "for": [
-        "a"
+        "HTMLAnchorElement"
       ],
       "access": "public",
       "informative": false,
@@ -36768,8 +36768,10 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "media-elements",
@@ -37570,12 +37572,12 @@
       "id": "stall-timeout",
       "href": "https://html.spec.whatwg.org/multipage/media.html#stall-timeout",
       "linkingText": [
-        "stall timeout"
+        "media element stall timeout"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "loading-the-media-resource",
@@ -41280,8 +41282,10 @@
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "user-interface",
@@ -51250,7 +51254,8 @@
         "HTMLButtonElement",
         "HTMLSelectElement",
         "HTMLTextAreaElement",
-        "HTMLOutputElement"
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -51340,7 +51345,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -52170,7 +52177,8 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "HTMLButtonElement"
+        "HTMLButtonElement",
+        "HTMLInputElement"
       ],
       "access": "public",
       "informative": false,
@@ -52191,7 +52199,8 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "HTMLButtonElement"
+        "HTMLButtonElement",
+        "HTMLInputElement"
       ],
       "access": "public",
       "informative": false,
@@ -52212,7 +52221,8 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "HTMLButtonElement"
+        "HTMLButtonElement",
+        "HTMLInputElement"
       ],
       "access": "public",
       "informative": false,
@@ -52233,7 +52243,8 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "HTMLButtonElement"
+        "HTMLButtonElement",
+        "HTMLInputElement"
       ],
       "access": "public",
       "informative": false,
@@ -52254,7 +52265,8 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "HTMLButtonElement"
+        "HTMLButtonElement",
+        "HTMLInputElement"
       ],
       "access": "public",
       "informative": false,
@@ -55128,7 +55140,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -55174,7 +55188,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -55199,7 +55215,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -55514,7 +55532,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -55579,7 +55599,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -55625,7 +55647,9 @@
         "HTMLInputElement",
         "HTMLButtonElement",
         "HTMLSelectElement",
-        "HTMLTextAreaElement"
+        "HTMLTextAreaElement",
+        "HTMLOutputElement",
+        "HTMLFieldSetElement"
       ],
       "access": "public",
       "informative": false,
@@ -63866,9 +63890,11 @@
         "canvas"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "OffscreenCanvas"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-offscreen-2d-rendering-context",
@@ -69704,7 +69730,7 @@
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "Window"
+        "HTMLOrSVGElement"
       ],
       "access": "public",
       "informative": false,
@@ -70085,9 +70111,11 @@
         "designMode"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "making-entire-documents-editable:-the-designmode-idl-attribute",
@@ -85629,7 +85657,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85650,7 +85678,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85671,7 +85699,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85692,7 +85720,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85713,7 +85741,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85734,7 +85762,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85755,7 +85783,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85776,7 +85804,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85797,7 +85825,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85818,7 +85846,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85839,7 +85867,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85860,7 +85888,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85881,7 +85909,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85902,7 +85930,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85923,7 +85951,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -85944,7 +85972,7 @@
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "Window"
+        "WindowEventHandlers"
       ],
       "access": "public",
       "informative": false,
@@ -88415,9 +88443,11 @@
         "cancelAnimationFrame(handle)"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "method",
+      "for": [
+        "AnimationFrameProvider"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "animation-frames",
