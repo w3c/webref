@@ -1,34 +1,30 @@
-From 19b9c8dc7f45c366acc866426d1a84da5a6a44bf Mon Sep 17 00:00:00 2001
-From: Francois Daoust <fd@tidoust.net>
-Date: Thu, 24 Jun 2021 10:58:08 +0200
+From ab2e615380eee3c617fa06e16f1007ffa340d0e1 Mon Sep 17 00:00:00 2001
+From: Kagami Sascha Rosylight <saschanaz@outlook.com>
+Date: Thu, 1 Jul 2021 13:33:00 +0200
 Subject: [PATCH] Drop duplicate `ComputedEffectTiming` dfn
 
 The dictionary is re-defined in Level 2 with an additional property and
 different property types. Patch is only needed because Level 2 is a delta spec.
 It will likely need to be kept around for as long as that remains the case.
 ---
- ed/idl/web-animations.idl | 8 --------
- 1 file changed, 8 deletions(-)
+ ed/idl/web-animations.idl | 4 ----
+ 1 file changed, 4 deletions(-)
 
 diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
-index 6e973d195..a9675b1d9 100644
+index 6e973d195..626c82356 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
-@@ -85,14 +85,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
- 
+@@ -86,10 +86,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
  
--dictionary ComputedEffectTiming : EffectTiming {
+ dictionary ComputedEffectTiming : EffectTiming {
 -    unrestricted double  endTime;
 -    unrestricted double  activeDuration;
 -    double?              localTime;
 -    double?              progress;
--    unrestricted double? currentIteration;
--};
--
- [Exposed=Window]
- interface KeyframeEffect : AnimationEffect {
-     constructor(Element? target,
+     unrestricted double? currentIteration;
+ };
+ 
 -- 
 2.32.0.windows.1
 
