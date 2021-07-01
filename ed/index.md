@@ -1338,9 +1338,7 @@ Normative references to this spec from:
 
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
-Informative references to this spec from:
-
-- [Permissions](https://w3c.github.io/permissions/)
+No informative reference to this spec from other specs.
 
 
 ## Compatibility Standard {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -20341,7 +20339,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Crawled URL: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
-- Crawled version: 07 October 2020
+- Crawled version: 01 July 2021
 - Editor's Draft: [https://w3c.github.io/input-events/](https://w3c.github.io/input-events/)
 - Latest published version: [https://www.w3.org/TR/input-events-2/](https://www.w3.org/TR/input-events-2/)
 - Shortname: input-events-2
@@ -24135,7 +24133,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 24 June 2021
+- Crawled version: 1 July 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -24513,7 +24511,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Crawled URL: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
-- Crawled version: 15 June 2021
+- Crawled version: 01 July 2021
 - Editor's Draft: [https://w3c.github.io/pointerlock/](https://w3c.github.io/pointerlock/)
 - Latest published version: [https://www.w3.org/TR/pointerlock-2/](https://www.w3.org/TR/pointerlock-2/)
 - Shortname: pointerlock-2
@@ -24543,6 +24541,8 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#concept-element-shadow-root`](https://dom.spec.whatwg.org/#concept-element-shadow-root)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://www.w3.org/TR/uievents/#mouseevent`](https://www.w3.org/TR/uievents/#mouseevent)
+     * [`https://www.w3.org/TR/uievents/#dictdef-mouseeventinit`](https://www.w3.org/TR/uievents/#dictdef-mouseeventinit)
      * [`https://w3c.github.io/uievents/#events-wheelevents`](https://w3c.github.io/uievents/#events-wheelevents)
 
 ### Known dependencies on this specification {.dependencies}
@@ -30190,7 +30190,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 28 June 2021
+- Crawled version: 01 July 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
