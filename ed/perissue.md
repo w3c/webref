@@ -249,144 +249,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## No definition for CSS properties
 
-- [Compatibility Standard](https://compat.spec.whatwg.org/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
     * `<feature-value-block>`
     * `<font-feature-value-type>`
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Web Application Manifest](https://w3c.github.io/manifest/):
-    * `null` with type `descriptor`
 
-=> 123 properties without definition found in 13 specifications
+=> 2 properties without definition found in 1 specification
 
 
 ## No definition for IDL properties
@@ -22136,8 +22003,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
      * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
-     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
-     * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
@@ -22146,6 +22011,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
@@ -23078,7 +22944,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20711 problematic external links found in 341 specifications
+=> 20710 problematic external links found in 341 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

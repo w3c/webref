@@ -1353,9 +1353,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
@@ -5010,10 +5007,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-color-3/`](https://www.w3.org/TR/css-color-3/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
@@ -5445,17 +5438,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Broken external links:
      * [`https://drafts.csswg.org/css-images-3/#typedef-image`](https://drafts.csswg.org/css-images-3/#typedef-image)
      * [`https://drafts.csswg.org/css-images-3/#default-object-size`](https://drafts.csswg.org/css-images-3/#default-object-size)
@@ -5691,18 +5673,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/)
      * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/)
@@ -6466,22 +6436,6 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `CSSOMString`
 - No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
      * `<feature-value-block>`
      * `<font-feature-value-type>`
 - Missing references for links: 
@@ -6634,16 +6588,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
@@ -9579,11 +9523,6 @@ No informative reference to this spec from other specs.
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/)
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
@@ -10060,10 +9999,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/)
 - Broken external links:
@@ -10514,9 +10449,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
@@ -21513,7 +21445,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 28 June 2021
+- Crawled version: 01 July 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -21898,28 +21830,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
 - Broken external links:
@@ -21993,43 +21903,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Broken external links:
      * [`https://drafts.csswg.org/css-conditional-3/#at-ruledef-media`](https://drafts.csswg.org/css-conditional-3/#at-ruledef-media)
      * [`https://drafts.csswg.org/css-cascade-5/#at-ruledef-import`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-import)
@@ -27013,10 +26886,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
-     * `null` with type `descriptor`
 - Missing references for links: 
      * [`https://w3c.github.io/web-animations/`](https://w3c.github.io/web-animations/)
      * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
@@ -30197,8 +30066,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- No definition for CSS properties: 
-     * `null` with type `descriptor`
 - Broken external links:
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
@@ -34480,7 +34347,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 30 June 2021
+- Crawled version: 1 July 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
@@ -34517,8 +34384,6 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
      * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
-     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
-     * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
@@ -34527,6 +34392,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
@@ -35635,7 +35501,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
 - Crawled URL: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
-- Crawled version: 21 June 2021
+- Crawled version: 06 July 2021
 - Editor's Draft: [https://w3c.github.io/woff/woff2/](https://w3c.github.io/woff/woff2/)
 - Latest published version: [https://www.w3.org/TR/WOFF2/](https://www.w3.org/TR/WOFF2/)
 - Shortname: WOFF2
