@@ -473,8 +473,36 @@
         ],
         "partial": false
       },
+      "MediaKeySessionClosedReason": {
+        "fragment": "enum MediaKeySessionClosedReason {\n    \"internal-error\",\n    \"closed-by-application\",\n    \"release-acknowledged\",\n    \"hardware-context-reset\",\n    \"resource-evicted\"\n};",
+        "type": "enum",
+        "name": "MediaKeySessionClosedReason",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "internal-error"
+          },
+          {
+            "type": "enum-value",
+            "value": "closed-by-application"
+          },
+          {
+            "type": "enum-value",
+            "value": "release-acknowledged"
+          },
+          {
+            "type": "enum-value",
+            "value": "hardware-context-reset"
+          },
+          {
+            "type": "enum-value",
+            "value": "resource-evicted"
+          }
+        ],
+        "extAttrs": []
+      },
       "MediaKeySession": {
-        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n    readonly        attribute DOMString           sessionId;\n    readonly        attribute unrestricted double expiration;\n    readonly        attribute Promise<undefined>       closed;\n    readonly        attribute MediaKeyStatusMap   keyStatuses;\n                    attribute EventHandler        onkeystatuseschange;\n                    attribute EventHandler        onmessage;\n    Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n    Promise<boolean> load (DOMString sessionId);\n    Promise<undefined>    update (BufferSource response);\n    Promise<undefined>    close ();\n    Promise<undefined>    remove ();\n};",
+        "fragment": "[Exposed=Window, SecureContext] interface MediaKeySession : EventTarget {\n    readonly        attribute DOMString                            sessionId;\n    readonly        attribute unrestricted double                  expiration;\n    readonly        attribute Promise<MediaKeySessionClosedReason> closed;\n    readonly        attribute MediaKeyStatusMap                    keyStatuses;\n                    attribute EventHandler                         onkeystatuseschange;\n                    attribute EventHandler                         onmessage;\n    Promise<undefined>    generateRequest (DOMString initDataType, BufferSource initData);\n    Promise<boolean> load (DOMString sessionId);\n    Promise<undefined>    update (BufferSource response);\n    Promise<undefined>    close ();\n    Promise<undefined>    remove ();\n};",
         "type": "interface",
         "name": "MediaKeySession",
         "inheritance": "EventTarget",
@@ -525,7 +553,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "undefined"
+                  "idlType": "MediaKeySessionClosedReason"
                 }
               ]
             },
@@ -1518,6 +1546,7 @@
       ],
       "MediaKeySession": [
         "EventTarget",
+        "MediaKeySessionClosedReason",
         "MediaKeyStatusMap",
         "EventHandler"
       ],
