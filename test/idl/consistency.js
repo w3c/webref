@@ -235,6 +235,8 @@ describe('Web IDL consistency', () => {
       'octet', // https://heycam.github.io/webidl/#idl-octet
       'short', // https://heycam.github.io/webidl/#idl-short
       'symbol', // https://heycam.github.io/webidl/#idl-symbol
+      'BigUint64Array', // https://heycam.github.io/webidl/#idl-BigUint64Array
+      'BigInt64Array', // https://heycam.github.io/webidl/#idl-BigInt64Array
       'Uint16Array', // https://heycam.github.io/webidl/#idl-Uint16Array
       'Uint32Array', // https://heycam.github.io/webidl/#idl-Uint32Array
       'Uint8Array', // https://heycam.github.io/webidl/#idl-Uint8Array
