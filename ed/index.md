@@ -1249,6 +1249,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Network Information API](https://wicg.github.io/netinfo/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 No informative reference to this spec from other specs.
@@ -13600,7 +13601,9 @@ Normative references to this spec from:
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 
 
 ## CSS Will Change Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -14015,6 +14018,7 @@ Normative references to this spec from:
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -15753,6 +15757,7 @@ Normative references to this spec from:
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -19300,6 +19305,7 @@ Normative references to this spec from:
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Hints](https://w3c.github.io/resource-hints/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 - [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
@@ -19326,6 +19332,7 @@ Normative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+- [uuid](https://wicg.github.io/uuid/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -19911,6 +19918,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## Incremental Font Transfer {data-spec=true data-missingDfns=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
+- Crawled URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
+- Crawled version: 24 June 2021
+- Editor's Draft: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
+- Shortname: PFE
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Indexed Database API 3.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -20178,6 +20206,7 @@ Normative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+- [uuid](https://wicg.github.io/uuid/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -21151,7 +21180,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled version: 30 June 2021
+- Crawled version: 02 July 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -24199,6 +24228,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Document Policy](https://wicg.github.io/document-policy/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/)
 
 
 ## Picture-in-Picture {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -25915,6 +25945,47 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
+
+
+## Responsive Image Client Hints {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/responsive-image-client-hints/](https://wicg.github.io/responsive-image-client-hints/)
+- Crawled URL: [https://wicg.github.io/responsive-image-client-hints/](https://wicg.github.io/responsive-image-client-hints/)
+- Crawled version: 22 June 2021
+- Editor's Draft: [https://wicg.github.io/responsive-image-client-hints/](https://wicg.github.io/responsive-image-client-hints/)
+- Shortname: responsive-image-client-hints
+
+### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/respimg-usecases/`](https://www.w3.org/TR/respimg-usecases/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height`](https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height)
+     * [`https://html.spec.whatwg.org/#source-set`](https://html.spec.whatwg.org/#source-set)
+     * [`https://html.spec.whatwg.org/#source-size-2`](https://html.spec.whatwg.org/#source-size-2)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header`](https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio`](https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth`](https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight)
+     * [`https://drafts.csswg.org/css-values-4/#px`](https://drafts.csswg.org/css-values-4/#px)
+     * [`https://wicg.github.io/client-hints-infrastructure/#fetch`](https://wicg.github.io/client-hints-infrastructure/#fetch)
+     * [`https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request`](https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Save Data API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -29574,6 +29645,36 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## uuid {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
+- Crawled URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
+- Crawled version: 14 May 2021
+- Editor's Draft: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
+- Shortname: uuid
+
+### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#byte`](https://infra.spec.whatwg.org/#byte)
+     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
+     * [`https://infra.spec.whatwg.org/#ascii-lower-hex-digit`](https://infra.spec.whatwg.org/#ascii-lower-hex-digit)
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Vibration API (Second Edition) {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -30638,6 +30739,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [uuid](https://wicg.github.io/uuid/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 
@@ -30648,7 +30750,7 @@ Informative references to this spec from:
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
-## Web IDL {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
+## Web IDL {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -30661,7 +30763,6 @@ Informative references to this spec from:
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `BigInt64Array`, `BigUint64Array`
 - Broken external links:
      * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
@@ -30914,6 +31015,7 @@ Normative references to this spec from:
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
+- [uuid](https://wicg.github.io/uuid/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -35493,6 +35595,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Incremental Font Transfer](https://w3c.github.io/PFE/Overview.html)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
 
 

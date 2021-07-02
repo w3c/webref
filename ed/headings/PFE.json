@@ -1,0 +1,307 @@
+{
+  "spec": {
+    "title": "Incremental Font Transfer",
+    "url": "https://w3c.github.io/PFE/Overview.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/PFE/Overview.html#title",
+      "level": 1,
+      "title": "Incremental Font Transfer"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/PFE/Overview.html#subtitle",
+      "level": 2,
+      "title": "Editor’s Draft, 24 June 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/PFE/Overview.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/PFE/Overview.html#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/PFE/Overview.html#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/PFE/Overview.html#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "patch-incxfer",
+      "href": "https://w3c.github.io/PFE/Overview.html#patch-incxfer",
+      "level": 2,
+      "title": "Patch Based Incremental Transfer",
+      "number": "2"
+    },
+    {
+      "id": "patch-overview",
+      "href": "https://w3c.github.io/PFE/Overview.html#patch-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "2.1"
+    },
+    {
+      "id": "font-subset",
+      "href": "https://w3c.github.io/PFE/Overview.html#font-subset",
+      "level": 4,
+      "title": "Font Subset",
+      "number": "2.1.1"
+    },
+    {
+      "id": "data-types",
+      "href": "https://w3c.github.io/PFE/Overview.html#data-types",
+      "level": 3,
+      "title": "Data Types",
+      "number": "2.2"
+    },
+    {
+      "id": "encoding",
+      "href": "https://w3c.github.io/PFE/Overview.html#encoding",
+      "level": 4,
+      "title": "Encoding",
+      "number": "2.2.1"
+    },
+    {
+      "id": "primitives",
+      "href": "https://w3c.github.io/PFE/Overview.html#primitives",
+      "level": 4,
+      "title": "Primitives",
+      "number": "2.2.2"
+    },
+    {
+      "id": "sparsebitset",
+      "href": "https://w3c.github.io/PFE/Overview.html#sparsebitset",
+      "level": 4,
+      "title": "SparseBitSet",
+      "number": "2.2.3"
+    },
+    {
+      "id": "objects",
+      "href": "https://w3c.github.io/PFE/Overview.html#objects",
+      "level": 4,
+      "title": "Objects",
+      "number": "2.2.4"
+    },
+    {
+      "id": "schemas",
+      "href": "https://w3c.github.io/PFE/Overview.html#schemas",
+      "level": 4,
+      "title": "Object Schemas",
+      "number": "2.2.5"
+    },
+    {
+      "id": "CompressedList",
+      "href": "https://w3c.github.io/PFE/Overview.html#CompressedList",
+      "level": 5,
+      "title": "CompressedList",
+      "number": "2.2.5.1"
+    },
+    {
+      "id": "CompressedSet",
+      "href": "https://w3c.github.io/PFE/Overview.html#CompressedSet",
+      "level": 5,
+      "title": "CompressedSet",
+      "number": "2.2.5.2"
+    },
+    {
+      "id": "PatchRequest",
+      "href": "https://w3c.github.io/PFE/Overview.html#PatchRequest",
+      "level": 5,
+      "title": "PatchRequest",
+      "number": "2.2.5.3"
+    },
+    {
+      "id": "PatchResponse",
+      "href": "https://w3c.github.io/PFE/Overview.html#PatchResponse",
+      "level": 5,
+      "title": "PatchResponse",
+      "number": "2.2.5.4"
+    },
+    {
+      "id": "client",
+      "href": "https://w3c.github.io/PFE/Overview.html#client",
+      "level": 3,
+      "title": "Client",
+      "number": "2.3"
+    },
+    {
+      "id": "client-state",
+      "href": "https://w3c.github.io/PFE/Overview.html#client-state",
+      "level": 4,
+      "title": "Client State",
+      "number": "2.3.1"
+    },
+    {
+      "id": "extend-subset",
+      "href": "https://w3c.github.io/PFE/Overview.html#extend-subset",
+      "level": 4,
+      "title": "Extending the Font Subset",
+      "number": "2.3.2"
+    },
+    {
+      "id": "handling-patch-response",
+      "href": "https://w3c.github.io/PFE/Overview.html#handling-patch-response",
+      "level": 4,
+      "title": "Handling PatchResponse",
+      "number": "2.3.3"
+    },
+    {
+      "id": "client-side-checksum-mismatch",
+      "href": "https://w3c.github.io/PFE/Overview.html#client-side-checksum-mismatch",
+      "level": 4,
+      "title": "Client Side Checksum Mismatch",
+      "number": "2.3.4"
+    },
+    {
+      "id": "server",
+      "href": "https://w3c.github.io/PFE/Overview.html#server",
+      "level": 3,
+      "title": "Server",
+      "number": "2.4"
+    },
+    {
+      "id": "handling-patch-request",
+      "href": "https://w3c.github.io/PFE/Overview.html#handling-patch-request",
+      "level": 4,
+      "title": "Responding to a PatchRequest",
+      "number": "2.4.1"
+    },
+    {
+      "id": "procedures",
+      "href": "https://w3c.github.io/PFE/Overview.html#procedures",
+      "level": 3,
+      "title": "Procedures",
+      "number": "2.5"
+    },
+    {
+      "id": "computing-checksums",
+      "href": "https://w3c.github.io/PFE/Overview.html#computing-checksums",
+      "level": 4,
+      "title": "Computing Checksums",
+      "number": "2.5.1"
+    },
+    {
+      "id": "codepoint-reordering",
+      "href": "https://w3c.github.io/PFE/Overview.html#codepoint-reordering",
+      "level": 4,
+      "title": "Codepoint Reordering",
+      "number": "2.5.2"
+    },
+    {
+      "id": "reordering-checksum",
+      "href": "https://w3c.github.io/PFE/Overview.html#reordering-checksum",
+      "level": 5,
+      "title": "Codepoint Reordering Checksum",
+      "number": "2.5.2.1"
+    },
+    {
+      "id": "patch-formats",
+      "href": "https://w3c.github.io/PFE/Overview.html#patch-formats",
+      "level": 4,
+      "title": "Patch Formats",
+      "number": "2.5.3"
+    },
+    {
+      "id": "connection-speeds",
+      "href": "https://w3c.github.io/PFE/Overview.html#connection-speeds",
+      "level": 4,
+      "title": "Connection Speeds",
+      "number": "2.5.4"
+    },
+    {
+      "id": "range-request-incxfer",
+      "href": "https://w3c.github.io/PFE/Overview.html#range-request-incxfer",
+      "level": 2,
+      "title": "Range Request Incremental Transfer",
+      "number": "3"
+    },
+    {
+      "id": "negotiating-transfer-type",
+      "href": "https://w3c.github.io/PFE/Overview.html#negotiating-transfer-type",
+      "level": 2,
+      "title": "Negotiating Incremental Transfer Type",
+      "number": "4"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://w3c.github.io/PFE/Overview.html#priv-sec",
+      "level": 2,
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/PFE/Overview.html#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/PFE/Overview.html#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/PFE/Overview.html#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "conformance-classes",
+      "href": "https://w3c.github.io/PFE/Overview.html#conformance-classes",
+      "level": 3,
+      "title": "Conformance Classes"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/PFE/Overview.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/PFE/Overview.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/PFE/Overview.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/PFE/Overview.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/PFE/Overview.html#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://w3c.github.io/PFE/Overview.html#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

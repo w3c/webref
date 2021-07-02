@@ -2,7 +2,7 @@
 % Reffy
 % July 02, 2021
 
-401 specifications were crawled in this report.
+404 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -155,8 +155,6 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 ## List of WebIDL names not defined in the specifications crawled
 
 - `AddressErrors` used in [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
-- `BigInt64Array` used in [Web IDL](https://heycam.github.io/webidl/)
-- `BigUint64Array` used in [Web IDL](https://heycam.github.io/webidl/)
 - `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `CSSPercentishArray` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - `PaymentAddress` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/), [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
@@ -164,7 +162,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [UI Events](https://w3c.github.io/uievents/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 
-=> 9 WebIDL names found
+=> 7 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -1295,6 +1293,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/) links to [`https://www.w3.org/TR/respimg-usecases/`](https://www.w3.org/TR/respimg-usecases/) but does not list it in its references
 - [Save Data API](https://wicg.github.io/savedata/) links to [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but does not list it in its references
@@ -1432,7 +1431,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 602 missing references for links found in 173 specifications
+=> 603 missing references for links found in 174 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1726,6 +1725,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/) links to [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/) links to [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/) but related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
@@ -1847,7 +1847,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 336 inconsistent references for links found in 184 specifications
+=> 337 inconsistent references for links found in 185 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -17535,6 +17535,23 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#isomorphic-decode`](https://infra.spec.whatwg.org/#isomorphic-decode)
      * [`https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source`](https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source)
      * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/):
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height`](https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height)
+     * [`https://html.spec.whatwg.org/#source-set`](https://html.spec.whatwg.org/#source-set)
+     * [`https://html.spec.whatwg.org/#source-size-2`](https://html.spec.whatwg.org/#source-size-2)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header`](https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio`](https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth`](https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight)
+     * [`https://drafts.csswg.org/css-values-4/#px`](https://drafts.csswg.org/css-values-4/#px)
+     * [`https://wicg.github.io/client-hints-infrastructure/#fetch`](https://wicg.github.io/client-hints-infrastructure/#fetch)
+     * [`https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request`](https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request)
 - [Save Data API](https://wicg.github.io/savedata/):
      * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
@@ -19702,6 +19719,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://w3c.github.io/permissions/#permission-task-source`](https://w3c.github.io/permissions/#permission-task-source)
+- [uuid](https://wicg.github.io/uuid/):
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#byte`](https://infra.spec.whatwg.org/#byte)
+     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
+     * [`https://infra.spec.whatwg.org/#ascii-lower-hex-digit`](https://infra.spec.whatwg.org/#ascii-lower-hex-digit)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/):
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
      * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
@@ -22919,7 +22946,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20711 problematic external links found in 341 specifications
+=> 20736 problematic external links found in 343 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
