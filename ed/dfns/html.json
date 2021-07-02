@@ -24968,7 +24968,7 @@
       "id": "dom-document-getelementsbyname",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname",
       "linkingText": [
-        "getElementsByName(name)"
+        "getElementsByName(elementName)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -38793,7 +38793,7 @@
       "id": "dom-media-fastseek",
       "href": "https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek",
       "linkingText": [
-        "fastSeek()"
+        "fastSeek(time)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -48633,7 +48633,7 @@
       "id": "dom-select-add",
       "href": "https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-add",
       "linkingText": [
-        "add()"
+        "add(element, before)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -55179,7 +55179,7 @@
       "id": "dom-cva-setcustomvalidity",
       "href": "https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity",
       "linkingText": [
-        "setCustomValidity(message)"
+        "setCustomValidity(error)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -56724,7 +56724,7 @@
       "id": "dom-dialog-close",
       "href": "https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-close",
       "linkingText": [
-        "close()"
+        "close(returnValue)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -59821,7 +59821,7 @@
       "id": "dom-context-2d-setlinedash",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash",
       "linkingText": [
-        "setLineDash()"
+        "setLineDash(segments)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -61233,7 +61233,7 @@
       "id": "dom-path2d-addpath",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-addpath",
       "linkingText": [
-        "addPath(b, transform)"
+        "addPath(path, transform)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -61805,7 +61805,7 @@
       "id": "dom-context-2d-filltext",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-filltext",
       "linkingText": [
-        "fillText()"
+        "fillText(text, x, y, maxWidth)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -61826,7 +61826,7 @@
       "id": "dom-context-2d-stroketext",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroketext",
       "linkingText": [
-        "strokeText()"
+        "strokeText(text, x, y, maxWidth)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -61847,7 +61847,7 @@
       "id": "dom-context-2d-measuretext",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-measuretext",
       "linkingText": [
-        "measureText()"
+        "measureText(text)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -63208,7 +63208,7 @@
       "id": "dom-imagebitmaprenderingcontext-transferfromimagebitmap",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontext-transferfromimagebitmap",
       "linkingText": [
-        "transferFromImageBitmap(imageBitmap)"
+        "transferFromImageBitmap(bitmap)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -71905,7 +71905,7 @@
       "id": "dom-datatransfer-setdragimage",
       "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdragimage",
       "linkingText": [
-        "setDragImage(element, x, y)"
+        "setDragImage(image, x, y)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -71989,7 +71989,7 @@
       "id": "dom-datatransfer-cleardata",
       "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-cleardata",
       "linkingText": [
-        "clearData()"
+        "clearData(format)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -72092,7 +72092,7 @@
       "id": "dom-datatransferitemlist-remove",
       "href": "https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-remove",
       "linkingText": [
-        "remove()"
+        "remove(index)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -88747,7 +88747,7 @@
       "id": "dom-messageevent-initmessageevent",
       "href": "https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent",
       "linkingText": [
-        "initMessageEvent()"
+        "initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -91873,7 +91873,7 @@
       "id": "dom-workerglobalscope-importscripts",
       "href": "https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts",
       "linkingText": [
-        "importScripts(urls)"
+        "importScripts(...urls)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -92739,7 +92739,7 @@
       "id": "dom-storage-key",
       "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key",
       "linkingText": [
-        "key(n)"
+        "key(index)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -93105,7 +93105,7 @@
       "id": "dom-storageevent-initstorageevent",
       "href": "https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-initstorageevent",
       "linkingText": [
-        "initStorageEvent()"
+        "initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url, storageArea)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -106878,7 +106878,7 @@
       "id": "dom-pluginarray-item",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item",
       "linkingText": [
-        "item()"
+        "item(index)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -106899,7 +106899,7 @@
       "id": "dom-pluginarray-nameditem",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem",
       "linkingText": [
-        "namedItem()"
+        "namedItem(name)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -106962,7 +106962,7 @@
       "id": "dom-mimetypearray-item",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item",
       "linkingText": [
-        "item()"
+        "item(index)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -106983,7 +106983,7 @@
       "id": "dom-mimetypearray-nameditem",
       "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem",
       "linkingText": [
-        "namedItem()"
+        "namedItem(name)"
       ],
       "localLinkingText": [],
       "type": "method",

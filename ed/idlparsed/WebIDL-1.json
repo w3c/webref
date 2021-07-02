@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "ArrayBufferView": {
-        "fragment": "typedef (Int8Array or Int16Array or Int32Array or\n         Uint8Array or Uint16Array or Uint32Array or Uint8ClampedArray or\n         Float32Array or Float64Array or DataView) ArrayBufferView;",
+        "fragment": "typedef (Int8Array or Int16Array or Int32Array or\n         Uint8Array or Uint16Array or Uint32Array or Uint8ClampedArray or\n         BigInt64Array or BigUint64Array or\n         Float32Array or Float64Array or DataView) ArrayBufferView;",
         "type": "typedef",
         "name": "ArrayBufferView",
         "idlType": {
@@ -82,6 +82,22 @@
               "nullable": false,
               "union": false,
               "idlType": "Uint8ClampedArray"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BigInt64Array"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BigUint64Array"
             },
             {
               "type": null,
@@ -764,7 +780,10 @@
     "dependencies": {
       "DOMException": []
     },
-    "externalDependencies": [],
+    "externalDependencies": [
+      "BigInt64Array",
+      "BigUint64Array"
+    ],
     "hasObsoleteIdl": false
   }
 }
