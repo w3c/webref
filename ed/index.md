@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 03, 2021
+% July 04, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -21180,7 +21180,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled version: 02 July 2021
+- Crawled version: 03 July 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
