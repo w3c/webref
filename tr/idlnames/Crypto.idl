@@ -1,0 +1,5 @@
+// Source: uuid (https://wicg.github.io/uuid/)
+[Exposed=(Window,Worker)]
+partial interface Crypto {
+  [SecureContext] DOMString randomUUID();
+};

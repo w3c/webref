@@ -109,7 +109,7 @@
         "partial": false
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=Window]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n};",
+        "fragment": "[Exposed=Window]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeWorkgroupInvocations;\n    readonly attribute unsigned long maxComputePerDimensionDispatchSize;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -326,6 +326,36 @@
           },
           {
             "type": "attribute",
+            "name": "minUniformBufferOffsetAlignment",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "minStorageBufferOffsetAlignment",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
             "name": "maxVertexBuffers",
             "idlType": {
               "type": "attribute-type",
@@ -357,6 +387,66 @@
           {
             "type": "attribute",
             "name": "maxVertexBufferArrayStride",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxInterStageShaderComponents",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxComputeWorkgroupStorageSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxComputeWorkgroupInvocations",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxComputePerDimensionDispatchSize",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -7340,7 +7430,7 @@
         "partial": false
       },
       "GPURenderEncoderBase": {
-        "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size = 0);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
+        "fragment": "interface mixin GPURenderEncoderBase {\n    undefined setPipeline(GPURenderPipeline pipeline);\n\n    undefined setIndexBuffer(GPUBuffer buffer, GPUIndexFormat indexFormat, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined setVertexBuffer(GPUIndex32 slot, GPUBuffer buffer, optional GPUSize64 offset = 0, optional GPUSize64 size);\n\n    undefined draw(GPUSize32 vertexCount, optional GPUSize32 instanceCount = 1,\n              optional GPUSize32 firstVertex = 0, optional GPUSize32 firstInstance = 0);\n    undefined drawIndexed(GPUSize32 indexCount, optional GPUSize32 instanceCount = 1,\n                     optional GPUSize32 firstIndex = 0,\n                     optional GPUSignedOffset32 baseVertex = 0,\n                     optional GPUSize32 firstInstance = 0);\n\n    undefined drawIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n    undefined drawIndexedIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n};",
         "type": "interface mixin",
         "name": "GPURenderEncoderBase",
         "inheritance": null,
@@ -7452,10 +7542,7 @@
                   "union": false,
                   "idlType": "GPUSize64"
                 },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
+                "default": null,
                 "optional": true,
                 "variadic": false
               }
@@ -7538,10 +7625,7 @@
                   "union": false,
                   "idlType": "GPUSize64"
                 },
-                "default": {
-                  "type": "number",
-                  "value": "0"
-                },
+                "default": null,
                 "optional": true,
                 "variadic": false
               }
@@ -9442,10 +9526,10 @@
         "extAttrs": []
       },
       "GPUPresentationConfiguration": {
-        "fragment": "dictionary GPUPresentationConfiguration : GPUObjectDescriptorBase {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+        "fragment": "dictionary GPUPresentationConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
         "name": "GPUPresentationConfiguration",
-        "inheritance": "GPUObjectDescriptorBase",
+        "inheritance": null,
         "members": [
           {
             "type": "field",
@@ -9492,6 +9576,24 @@
             "default": {
               "type": "number",
               "value": "0x10"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "colorSpace",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPredefinedColorSpace"
+            },
+            "default": {
+              "type": "string",
+              "value": "srgb"
             },
             "required": false
           },
@@ -11321,10 +11423,10 @@
         "GPUTexture"
       ],
       "GPUPresentationConfiguration": [
-        "GPUObjectDescriptorBase",
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",
+        "GPUPredefinedColorSpace",
         "GPUCanvasCompositingAlphaMode",
         "GPUExtent3D"
       ],

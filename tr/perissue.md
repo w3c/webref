@@ -1,8 +1,8 @@
 % Reffy crawl
 % Reffy
-% June 28, 2021
+% July 05, 2021
 
-401 specifications were crawled in this report.
+404 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -179,6 +179,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 ## List of WebIDL names not defined in the specifications crawled
 
+- `AddressErrors` used in [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
 - `AlgorithmIdentifier` used in [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `CSS` used in [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/), [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Parser API](https://wicg.github.io/css-parser-api/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSGroupingRule` used in [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
@@ -189,20 +190,22 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `CSSStyleDeclaration` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - `CSSStyleRule` used in [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `CSSStyleSheet` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
+- `Crypto` used in [uuid](https://wicg.github.io/uuid/)
 - `CryptoKey` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - `DOMException` used in [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/), [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `Date` used in [Reporting API](https://www.w3.org/TR/reporting-1/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - `Map` used in [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
 - `MediaList` used in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/)
+- `PaymentAddress` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/), [Payment Method: Basic Card](https://www.w3.org/TR/payment-method-basic-card/)
 - `Screen` used in [The Screen Orientation API](https://www.w3.org/TR/screen-orientation/)
 - `SupportedType` used in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
 - `WindowProxy` used in [HTML Standard](https://html.spec.whatwg.org/multipage/), [Portals](https://wicg.github.io/portals/), [SVG Animations](https://svgwg.org/specs/animations/), [Touch Events](https://www.w3.org/TR/touch-events/)
 - `bigint` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
-- `void` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Resize Observer](https://www.w3.org/TR/resize-observer-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
+- `void` used in [Cooperative Scheduling of Background Tasks](https://www.w3.org/TR/requestidlecallback/), [Credential Management Level 1](https://www.w3.org/TR/credential-management-1/), [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/), [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/), [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/), [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/), [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/), [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/), [Encrypted Media Extensions](https://www.w3.org/TR/encrypted-media/), [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/), [Identity for WebRTC 1.0](https://www.w3.org/TR/webrtc-identity/), [Media Source Extensions™](https://www.w3.org/TR/media-source/), [Pointer Lock 2.0](https://www.w3.org/TR/pointerlock-2/), [Remote Playback API](https://www.w3.org/TR/remote-playback/), [Reporting API](https://www.w3.org/TR/reporting-1/), [Resize Observer](https://www.w3.org/TR/resize-observer-1/), [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/), [Service Workers 1](https://www.w3.org/TR/service-workers-1/), [Tracking Preference Expression (DNT)](https://www.w3.org/TR/tracking-dnt/), [User Timing Level 2](https://www.w3.org/TR/user-timing-2/), [Web MIDI API](https://www.w3.org/TR/webmidi/), [WebAssembly JavaScript Interface](https://www.w3.org/TR/wasm-js-api-1/), [WebXR Device API](https://www.w3.org/TR/webxr/)
 
-=> 22 WebIDL names found
+=> 25 WebIDL names found
 
 Some of them may be type errors in specs (e.g. "int" does not exist, "Array" cannot be used on its own, etc.)
 Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
@@ -430,79 +433,25 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `speak-punctuation` with type `property`, but found [`speak-punctuation`](https://www.w3.org/TR/CSS22/aural.html#propdef-speak-punctuation) with type `dfn`
     * `speak-numeral` with type `property`, but found [`speak-numeral`](https://www.w3.org/TR/CSS22/aural.html#propdef-speak-numeral) with type `dfn`
     * `speak-header` with type `property`, but found [`speak-header`](https://www.w3.org/TR/CSS22/aural.html#propdef-speak-header) with type `dfn`
-- [Compatibility Standard](https://compat.spec.whatwg.org/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Color Module Level 4](https://www.w3.org/TR/css-color-4/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
+    * `min-width#descdef-viewport-min-widthReferenced in:5.1. The min-width and max-width descriptors (2)5.2. The width shorthand descriptor (2) (3) Resolve non-auto lengths to pixel lengths The width and height properties` with type `descriptor`
+    * `max-width#descdef-viewport-max-widthReferenced in:5.1. The min-width and max-width descriptors (2)5.2. The width shorthand descriptor (2) (3) Resolve non-auto lengths to pixel lengths The width and height properties` with type `descriptor`
+    * `width#descdef-viewport-widthReferenced in:5.2. The width shorthand descriptor The width and height properties (2)` with type `descriptor`
+    * `min-height#descdef-viewport-min-heightReferenced in:5.3. The min-height and max-height descriptors Resolve non-auto lengths to pixel lengths The width and height properties` with type `descriptor`
+    * `max-height#descdef-viewport-max-heightReferenced in:5.3. The min-height and max-height descriptors Resolve non-auto lengths to pixel lengths The width and height properties` with type `descriptor`
+    * `height#descdef-viewport-heightReferenced in:5.4. The height shorthand descriptor The width and height properties` with type `descriptor`
+    * `zoom#descdef-viewport-zoomReferenced in:5.5. The zoom descriptor (2)5.6. The min-zoom descriptor (2) (3)5.7. The max-zoom descriptor (2) (3) The width and height properties10. Handling auto for zoom (2) (3)Appendix A. Changes` with type `descriptor`
+    * `min-zoom#descdef-viewport-min-zoomReferenced in:5.6. The min-zoom descriptor9.3. extend-to-zoom The initial-scale` with type `descriptor`
+    * `minimum-scale` with type `descriptor`
+    * `minimum-scale` with type `descriptor`
+    * `and maximum-scale properties (2)` with type `descriptor`
+    * `max-zoom#descdef-viewport-max-zoomReferenced in:5.7. The max-zoom descriptor9.3. extend-to-zoom The initial-scale` with type `descriptor`
+    * `and maximum-scale properties (2) (3)` with type `descriptor`
+    * `user-zoom#descdef-viewport-user-zoomReferenced in:5.8. The user-zoom descriptor The user-scalable property` with type `descriptor`
+    * `orientation#descdef-viewport-orientationReferenced in:5.9. The orientation descriptor` with type `descriptor`
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
     * `<feature-value-block>`
     * `<font-feature-value-type>`
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [CSS Round Display Level 1](https://www.w3.org/TR/css-round-display-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
 - [CSS Speech Module](https://www.w3.org/TR/css-speech-1/):
     * `voice-volume` with type `property`, but found [`voice-volume`](https://www.w3.org/TR/css-speech-1/#voice-volume) with type `dfn`
     * `voice-balance` with type `property`, but found [`voice-balance`](https://www.w3.org/TR/css-speech-1/#voice-balance) with type `dfn`
@@ -525,73 +474,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `voice-duration` with type `property`, but found [`voice-duration`](https://www.w3.org/TR/css-speech-1/#voice-duration) with type `dfn`
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/):
     * `scroll-behavior#propdef-scroll-behaviorReferenced in:3.1. Scrolling (2)13.1. Smooth Scrolling: The scroll-behavior Property (2) (3)Changes From 17 December 2013Changes From 4 August 2011 To 17 December 2013` with type `property`
-- [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Media Queries Level 5](https://www.w3.org/TR/mediaqueries-5/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-    * `null` with type `descriptor`
-- [Web Application Manifest](https://www.w3.org/TR/appmanifest/):
-    * `null` with type `descriptor`
 
-=> 260 properties without definition found in 16 specifications
+=> 152 properties without definition found in 5 specifications
 
 
 ## No definition for IDL properties
@@ -694,8 +578,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"loading"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate), but found [`loading`](https://html.spec.whatwg.org/multipage/embedded-content.html#attr-img-loading) with type `element-attr` for `img`
     * `"interactive"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate)
     * `"complete"` with type `enum-value` for [`DocumentReadyState`](https://html.spec.whatwg.org/multipage/dom.html#documentreadystate), but found [`complete`](https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-complete) with type `attribute` for `HTMLImageElement`
-    * `focus(options)` with type `method` for [`HTMLOrSVGElement`](https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement), but found [`focus()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-window-focus) with type `method` for `Window`
-    * `ping` with type `attribute` for [`HTMLAnchorElement`](https://html.spec.whatwg.org/multipage/text-level-semantics.html#htmlanchorelement), but found [`ping`](https://html.spec.whatwg.org/multipage/text-level-semantics.html#dom-a-ping) with type `element-attr` for `a`
     * `""` with type `enum-value` for [`CanPlayTypeResult`](https://html.spec.whatwg.org/multipage/media.html#canplaytyperesult)
     * `"disabled"` with type `enum-value` for [`TextTrackMode`](https://html.spec.whatwg.org/multipage/media.html#texttrackmode), but found [`disabled`](https://html.spec.whatwg.org/multipage/semantics.html#attr-link-disabled) with type `element-attr` for `link`
     * `"hidden"` with type `enum-value` for [`TextTrackMode`](https://html.spec.whatwg.org/multipage/media.html#texttrackmode), but found [`hidden`](https://html.spec.whatwg.org/multipage/media.html#dom-texttrack-hidden) with type `dfn`
@@ -707,26 +589,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `"metadata"` with type `enum-value` for [`TextTrackKind`](https://html.spec.whatwg.org/multipage/media.html#texttrackkind), but found [`metadata`](https://html.spec.whatwg.org/multipage/media.html#attr-track-kind-keyword-metadata) with type `attr-value` for `track/kind`
     * `constructor(type, eventInitDict)` with type `constructor` for [`TrackEvent`](https://html.spec.whatwg.org/multipage/media.html#trackevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `track` with type `dict-member` for [`TrackEventInit`](https://html.spec.whatwg.org/multipage/media.html#trackeventinit), but found [`track`](https://html.spec.whatwg.org/multipage/media.html#the-track-element) with type `element`
-    * `formAction` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formAction`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formaction) with type `attribute` for `HTMLButtonElement`
-    * `formEnctype` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formEnctype`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formenctype) with type `attribute` for `HTMLButtonElement`
-    * `formMethod` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formMethod`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formmethod) with type `attribute` for `HTMLButtonElement`
-    * `formNoValidate` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formNoValidate`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formnovalidate) with type `attribute` for `HTMLButtonElement`
-    * `formTarget` with type `attribute` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`formTarget`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-fs-formtarget) with type `attribute` for `HTMLButtonElement`
-    * `name` with type `attribute` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`name`](https://html.spec.whatwg.org/multipage/infrastructure.html#slot-name) with type `dfn`
-    * `willValidate` with type `attribute` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`willValidate`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-willvalidate) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `validity` with type `attribute` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`validity`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-validity) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `validationMessage` with type `attribute` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`validationMessage`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-validationmessage) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `checkValidity()` with type `method` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`checkValidity()`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-checkvalidity) with type `method` for `HTMLFormElement`
-    * `reportValidity()` with type `method` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`reportValidity()`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-reportvalidity) with type `method` for `HTMLFormElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLOutputElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmloutputelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `form` with type `attribute` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`form`](https://html.spec.whatwg.org/multipage/forms.html#the-form-element) with type `element`
-    * `name` with type `attribute` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`name`](https://html.spec.whatwg.org/multipage/infrastructure.html#slot-name) with type `dfn`
-    * `willValidate` with type `attribute` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`willValidate`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-willvalidate) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `validity` with type `attribute` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`validity`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-validity) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `validationMessage` with type `attribute` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`validationMessage`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-validationmessage) with type `attribute` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `checkValidity()` with type `method` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`checkValidity()`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-checkvalidity) with type `method` for `HTMLFormElement`
-    * `reportValidity()` with type `method` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`reportValidity()`](https://html.spec.whatwg.org/multipage/forms.html#dom-form-reportvalidity) with type `method` for `HTMLFormElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLFieldSetElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlfieldsetelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
     * `constructor(type, eventInitDict)` with type `constructor` for [`SubmitEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submitevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `submitter` with type `dict-member` for [`SubmitEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submiteventinit), but found [`submitter`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-submitevent-submitter) with type `attribute` for `SubmitEvent`
     * `constructor(type, eventInitDict)` with type `constructor` for [`FormDataEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -780,29 +642,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `constructor(type, eventInitDict)` with type `constructor` for [`PromiseRejectionEvent`](https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectionevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `promise` with type `dict-member` for [`PromiseRejectionEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit), but found [`promise`](https://html.spec.whatwg.org/multipage/webappapis.html#dom-promiserejectionevent-promise) with type `attribute` for `PromiseRejectionEvent`
     * `reason` with type `dict-member` for [`PromiseRejectionEventInit`](https://html.spec.whatwg.org/multipage/webappapis.html#promiserejectioneventinit), but found [`reason`](https://html.spec.whatwg.org/multipage/webappapis.html#dom-promiserejectionevent-reason) with type `attribute` for `PromiseRejectionEvent`
-    * `onafterprint` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onafterprint`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onafterprint) with type `attribute` for `Window`
-    * `onbeforeprint` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onbeforeprint`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeprint) with type `attribute` for `Window`
-    * `onbeforeunload` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onbeforeunload`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onbeforeunload) with type `attribute` for `Window`
-    * `onhashchange` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onhashchange`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onhashchange) with type `attribute` for `Window`
-    * `onlanguagechange` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onlanguagechange`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onlanguagechange) with type `attribute` for `Window`
-    * `onmessage` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onmessage`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessage) with type `attribute` for `Window`
-    * `onmessageerror` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onmessageerror`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onmessageerror) with type `attribute` for `Window`
-    * `onoffline` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onoffline`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onoffline) with type `attribute` for `Window`
-    * `ononline` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`ononline`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-ononline) with type `attribute` for `Window`
-    * `onpagehide` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onpagehide`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpagehide) with type `attribute` for `Window`
-    * `onpageshow` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onpageshow`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpageshow) with type `attribute` for `Window`
-    * `onpopstate` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onpopstate`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onpopstate) with type `attribute` for `Window`
-    * `onrejectionhandled` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onrejectionhandled`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onrejectionhandled) with type `attribute` for `Window`
-    * `onstorage` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onstorage`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onstorage) with type `attribute` for `Window`
-    * `onunhandledrejection` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onunhandledrejection`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunhandledrejection) with type `attribute` for `Window`
-    * `onunload` with type `attribute` for [`WindowEventHandlers`](https://html.spec.whatwg.org/multipage/webappapis.html#windoweventhandlers), but found [`onunload`](https://html.spec.whatwg.org/multipage/webappapis.html#handler-window-onunload) with type `attribute` for `Window`
     * `constructor()` with type `constructor` for [`DOMParser`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparser), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `"text/html"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`text/html`](https://html.spec.whatwg.org/multipage/iana.html#text/html) with type `dfn`
     * `"text/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`text/xml`](https://html.spec.whatwg.org/multipage/indices.html#text/xml) with type `dfn`
     * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
     * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
     * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
-    * `cancelAnimationFrame(handle)` with type `method` for [`AnimationFrameProvider`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider), but found [`cancelAnimationFrame(handle)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider-cancelanimationframe) with type `dfn`
     * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `constructor(url, protocols)` with type `constructor` for [`WebSocket`](https://html.spec.whatwg.org/multipage/web-sockets.html#websocket), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -821,14 +666,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `constructor(scriptURL, options)` with type `constructor` for [`SharedWorker`](https://html.spec.whatwg.org/multipage/workers.html#sharedworker), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `hardwareConcurrency` with type `attribute` for [`NavigatorConcurrentHardware`](https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware)
     * `constructor(type, eventInitDict)` with type `constructor` for [`StorageEvent`](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
-    * `key` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
+    * `key` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`key(index)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
     * `oldValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`oldValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-oldvalue) with type `attribute` for `StorageEvent`
     * `newValue` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`newValue`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-newvalue) with type `attribute` for `StorageEvent`
     * `url` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`url`](https://html.spec.whatwg.org/multipage/infrastructure.html#basic-url-parser-url) with type `dfn`
     * `storageArea` with type `dict-member` for [`StorageEventInit`](https://html.spec.whatwg.org/multipage/webstorage.html#storageeventinit), but found [`storageArea`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-storagearea) with type `attribute` for `StorageEvent`
     * `write(...text)` with type `method`
     * `writeln(...text)` with type `method`
-    * `designMode` with type `attribute`, but found [`designMode`](https://html.spec.whatwg.org/multipage/interaction.html#designMode) with type `dfn`
     * `execCommand(commandId, showUI, value)` with type `method`, but found [`execCommand()`](https://html.spec.whatwg.org/multipage/interaction.html#execCommand) with type `dfn`
     * `queryCommandEnabled(commandId)` with type `method`, but found [`queryCommandEnabled()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandenabled) with type `dfn`
     * `queryCommandIndeterm(commandId)` with type `method`, but found [`queryCommandIndeterm()`](https://html.spec.whatwg.org/multipage/interaction.html#dom-document-querycommandindeterm) with type `dfn`
@@ -1355,7 +1199,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 699 properties without definition found in 59 specifications
+=> 659 properties without definition found in 59 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1376,19 +1220,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `fromMatrix(other)` with type `method` for [`DOMMatrixReadOnly`](https://www.w3.org/TR/geometry-1/#dommatrixreadonly), but found [`fromMatrix()`](https://www.w3.org/TR/geometry-1/#dom-dommatrixreadonly-frommatrix) with type `method` for `DOMMatrixReadOnly`
     * `fromMatrix(other)` with type `method` for [`DOMMatrix`](https://www.w3.org/TR/geometry-1/#dommatrix), but found [`fromMatrix()`](https://www.w3.org/TR/geometry-1/#dom-dommatrix-frommatrix) with type `method` for `DOMMatrix`
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
-    * `setCustomValidity(error)` with type `method` for [`HTMLObjectElement`](https://html.spec.whatwg.org/multipage/iframe-embed-object.html#htmlobjectelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `fastSeek(time)` with type `method` for [`HTMLMediaElement`](https://html.spec.whatwg.org/multipage/media.html#htmlmediaelement), but found [`fastSeek()`](https://html.spec.whatwg.org/multipage/media.html#dom-media-fastseek) with type `method` for `HTMLMediaElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
     * `setRangeText(replacement)` with type `method` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`setRangeText(replacement, start, end, selectMode)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext) with type `method` for `HTMLInputElement`,`HTMLTextAreaElement`
     * `setRangeText(replacement, start, end, selectionMode)` with type `method` for [`HTMLInputElement`](https://html.spec.whatwg.org/multipage/input.html#htmlinputelement), but found [`setRangeText(replacement, start, end, selectMode)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext) with type `method` for `HTMLInputElement`,`HTMLTextAreaElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLButtonElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlbuttonelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `add(element, before)` with type `method` for [`HTMLSelectElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement), but found [`add()`](https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-add) with type `method` for `HTMLSelectElement`
     * `remove(index)` with type `method` for [`HTMLSelectElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement), but found [`remove()`](https://html.spec.whatwg.org/multipage/form-elements.html#dom-select-remove) with type `method` for `HTMLSelectElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLSelectElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmlselectelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
-    * `setCustomValidity(error)` with type `method` for [`HTMLTextAreaElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement), but found [`setCustomValidity(message)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-cva-setcustomvalidity) with type `method` for `HTMLObjectElement`,`HTMLInputElement`,`HTMLButtonElement`,`HTMLSelectElement`,`HTMLTextAreaElement`
     * `setRangeText(replacement)` with type `method` for [`HTMLTextAreaElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement), but found [`setRangeText(replacement, start, end, selectMode)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext) with type `method` for `HTMLInputElement`,`HTMLTextAreaElement`
     * `setRangeText(replacement, start, end, selectionMode)` with type `method` for [`HTMLTextAreaElement`](https://html.spec.whatwg.org/multipage/form-elements.html#htmltextareaelement), but found [`setRangeText(replacement, start, end, selectMode)`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-textarea/input-setrangetext) with type `method` for `HTMLInputElement`,`HTMLTextAreaElement`
-    * `close(returnValue)` with type `method` for [`HTMLDialogElement`](https://html.spec.whatwg.org/multipage/interactive-elements.html#htmldialogelement), but found [`close()`](https://html.spec.whatwg.org/multipage/interactive-elements.html#dom-dialog-close) with type `method` for `HTMLDialogElement`
     * `fill(fillRule)` with type `method` for [`CanvasDrawPath`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath), but found [`fill()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill) with type `method` for `CanvasDrawPath`
     * `fill(path, fillRule)` with type `method` for [`CanvasDrawPath`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath), but found [`fill()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-fill) with type `method` for `CanvasDrawPath`
     * `stroke(path)` with type `method` for [`CanvasDrawPath`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath), but found [`stroke()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroke) with type `method` for `CanvasDrawPath`
@@ -1400,46 +1236,21 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `isPointInStroke(path, x, y)` with type `method` for [`CanvasDrawPath`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawpath), but found [`isPointInStroke()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-ispointinstroke) with type `method` for `CanvasDrawPath`
     * `drawFocusIfNeeded(path, element)` with type `method` for [`CanvasUserInterface`](https://html.spec.whatwg.org/multipage/canvas.html#canvasuserinterface), but found [`drawFocusIfNeeded(element)`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawfocusifneeded) with type `method` for `CanvasUserInterface`
     * `scrollPathIntoView(path)` with type `method` for [`CanvasUserInterface`](https://html.spec.whatwg.org/multipage/canvas.html#canvasuserinterface), but found [`scrollPathIntoView()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-scrollpathintoview) with type `method` for `CanvasUserInterface`
-    * `fillText(text, x, y, maxWidth)` with type `method` for [`CanvasText`](https://html.spec.whatwg.org/multipage/canvas.html#canvastext), but found [`fillText()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-filltext) with type `method` for `CanvasText`
-    * `strokeText(text, x, y, maxWidth)` with type `method` for [`CanvasText`](https://html.spec.whatwg.org/multipage/canvas.html#canvastext), but found [`strokeText()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-stroketext) with type `method` for `CanvasText`
-    * `measureText(text)` with type `method` for [`CanvasText`](https://html.spec.whatwg.org/multipage/canvas.html#canvastext), but found [`measureText()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-measuretext) with type `method` for `CanvasText`
     * `drawImage(image, dx, dy)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
     * `drawImage(image, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
     * `drawImage(image, sx, sy, sw, sh, dx, dy, dw, dh)` with type `method` for [`CanvasDrawImage`](https://html.spec.whatwg.org/multipage/canvas.html#canvasdrawimage), but found [`drawImage`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-drawimage) with type `method` for `CanvasDrawImage`
     * `putImageData(imagedata, dx, dy)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
     * `putImageData(imagedata, dx, dy, dirtyX, dirtyY, dirtyWidth, dirtyHeight)` with type `method` for [`CanvasImageData`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagedata), but found [`putImageData()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-putimagedata) with type `method` for `CanvasImageData`
-    * `setLineDash(segments)` with type `method` for [`CanvasPathDrawingStyles`](https://html.spec.whatwg.org/multipage/canvas.html#canvaspathdrawingstyles), but found [`setLineDash()`](https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-setlinedash) with type `method` for `CanvasPathDrawingStyles`
-    * `addPath(path, transform)` with type `method` for [`Path2D`](https://html.spec.whatwg.org/multipage/canvas.html#path2d), but found [`addPath(b, transform)`](https://html.spec.whatwg.org/multipage/canvas.html#dom-path2d-addpath) with type `method` for `Path2D`
-    * `transferFromImageBitmap(bitmap)` with type `method` for [`ImageBitmapRenderingContext`](https://html.spec.whatwg.org/multipage/canvas.html#imagebitmaprenderingcontext), but found [`transferFromImageBitmap(imageBitmap)`](https://html.spec.whatwg.org/multipage/canvas.html#dom-imagebitmaprenderingcontext-transferfromimagebitmap) with type `method` for `ImageBitmapRenderingContext`
-    * `setDragImage(image, x, y)` with type `method` for [`DataTransfer`](https://html.spec.whatwg.org/multipage/dnd.html#datatransfer), but found [`setDragImage(element, x, y)`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-setdragimage) with type `method` for `DataTransfer`
-    * `clearData(format)` with type `method` for [`DataTransfer`](https://html.spec.whatwg.org/multipage/dnd.html#datatransfer), but found [`clearData()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransfer-cleardata) with type `method` for `DataTransfer`
     * `add(data, type)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
     * `add(data)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
-    * `remove(index)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`remove()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-remove) with type `method` for `DataTransferItemList`
     * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
-    * `initMessageEvent(type, bubbles, cancelable, data, origin, lastEventId, source, ports)` with type `method` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`initMessageEvent()`](https://html.spec.whatwg.org/multipage/comms.html#dom-messageevent-initmessageevent) with type `method` for `MessageEvent`
-    * `importScripts(...urls)` with type `method` for [`WorkerGlobalScope`](https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope), but found [`importScripts(urls)`](https://html.spec.whatwg.org/multipage/workers.html#dom-workerglobalscope-importscripts) with type `method` for `WorkerGlobalScope`
-    * `key(index)` with type `method` for [`Storage`](https://html.spec.whatwg.org/multipage/webstorage.html#storage-2), but found [`key(n)`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storage-key) with type `method` for `Storage`
-    * `initStorageEvent(type, bubbles, cancelable, key, oldValue, newValue, url, storageArea)` with type `method` for [`StorageEvent`](https://html.spec.whatwg.org/multipage/webstorage.html#storageevent), but found [`initStorageEvent()`](https://html.spec.whatwg.org/multipage/webstorage.html#dom-storageevent-initstorageevent) with type `method` for `StorageEvent`
-    * `item(index)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-item) with type `method` for `PluginArray`
-    * `namedItem(name)` with type `method` for [`PluginArray`](https://html.spec.whatwg.org/multipage/obsolete.html#pluginarray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-pluginarray-nameditem) with type `method` for `PluginArray`
-    * `item(index)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-item) with type `method` for `MimeTypeArray`
-    * `namedItem(name)` with type `method` for [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/obsolete.html#mimetypearray), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-mimetypearray-nameditem) with type `method` for `MimeTypeArray`
     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
-    * `getElementsByName(elementName)` with type `method`, but found [`getElementsByName(name)`](https://html.spec.whatwg.org/multipage/dom.html#dom-document-getelementsbyname) with type `method` for `Document`
-- [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/):
-    * `constructor(callback)` with type `constructor` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.constructor()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-constructor) with type `constructor` for `PerformanceObserver`
-    * `observe(options)` with type `method` for [`PerformanceObserver`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver), but found [`PerformanceObserver.observe()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-observe) with type `method` for `PerformanceObserver`
-    * `getEntriesByType(type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbytype) with type `method` for `PerformanceObserverEntryList`
-    * `getEntriesByName(name, type)` with type `method` for [`PerformanceObserverEntryList`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist), but found [`PerformanceObserverEntryList.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbyname) with type `method` for `PerformanceObserverEntryList`
-    * `getEntriesByType(type)` with type `method`, but found [`Performance.getEntriesByType()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbytype) with type `method` for `Performance`
-    * `getEntriesByName(name, type)` with type `method`, but found [`Performance.getEntriesByName()`](https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbyname) with type `method` for `Performance`
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/):
     * `setStreams(...streams)` with type `method` for [`RTCRtpSender`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender), but found [`setStreams()`](https://www.w3.org/TR/webrtc/#dom-rtcrtpsender-setstreams) with type `method` for `RTCRtpSender`
     * `addTrack(track, ...streams)` with type `method` for [`RTCPeerConnection`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection), but found [`addTrack()`](https://www.w3.org/TR/webrtc/#dom-rtcpeerconnection-addtrack) with type `method` for `RTCPeerConnection`
 
-=> 67 properties without definition found in 5 specifications
+=> 35 properties without definition found in 4 specifications
 
 
 ## Missing references based on document links
@@ -2118,6 +1929,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/CSP2/`](https://w3c.github.io/webappsec/specs/CSP2/) but does not list it in its references
     * [`https://w3c.github.io/webappsec/specs/content-security-policy/`](https://w3c.github.io/webappsec/specs/content-security-policy/) but does not list it in its references
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/) links to [`https://www.w3.org/TR/respimg-usecases/`](https://www.w3.org/TR/respimg-usecases/) but does not list it in its references
 - [Save Data API](https://wicg.github.io/savedata/) links to [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but does not list it in its references
@@ -2278,7 +2090,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 709 missing references for links found in 180 specifications
+=> 710 missing references for links found in 181 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2579,6 +2391,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIXED-CONTENT" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [Resource Timing Level 2](https://www.w3.org/TR/resource-timing-2/) links to [`https://w3c.github.io/performance-timeline/`](https://w3c.github.io/performance-timeline/) but related reference "PERFORMANCE-TIMELINE-2" uses URL [`https://www.w3.org/TR/performance-timeline-2/`](https://www.w3.org/TR/performance-timeline-2/)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/) links to [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NS" uses URL [`http://www.w3.org/TR/2009/REC-xml-names-20091208/`](http://www.w3.org/TR/2009/REC-xml-names-20091208/)
     * [`https://www.w3.org/TR/2006/REC-xml-20060816/`](https://www.w3.org/TR/2006/REC-xml-20060816/) but related reference "XML10" uses URL [`http://www.w3.org/TR/2008/REC-xml-20081126/`](http://www.w3.org/TR/2008/REC-xml-20081126/)
@@ -2702,7 +2515,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 337 inconsistent references for links found in 177 specifications
+=> 338 inconsistent references for links found in 178 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2957,6 +2770,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
      * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
      * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
@@ -3039,7 +2853,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
      * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
-     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
      * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
      * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
      * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
@@ -3113,7 +2926,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
      * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
      * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
-     * [`https://html.spec.whatwg.org/#lowercase-ascii-letters`](https://html.spec.whatwg.org/#lowercase-ascii-letters)
      * [`https://html.spec.whatwg.org/#kinds-of-content`](https://html.spec.whatwg.org/#kinds-of-content)
      * [`https://html.spec.whatwg.org/#phrasing-content-2`](https://html.spec.whatwg.org/#phrasing-content-2)
      * [`https://html.spec.whatwg.org/#interactive-content-2`](https://html.spec.whatwg.org/#interactive-content-2)
@@ -3124,6 +2936,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
      * [`https://html.spec.whatwg.org/#embedded-content-category`](https://html.spec.whatwg.org/#embedded-content-category)
      * [`https://html.spec.whatwg.org/#transparent-content-models`](https://html.spec.whatwg.org/#transparent-content-models)
+     * [`https://infra.spec.whatwg.org/#ascii-lowercase`](https://infra.spec.whatwg.org/#ascii-lowercase)
+     * [`https://infra.spec.whatwg.org/#ascii-case-insensitive`](https://infra.spec.whatwg.org/#ascii-case-insensitive)
      * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
      * [`https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation`](https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation)
      * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
@@ -13831,7 +13645,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/hr-time-2/#dfn-time-origin`](https://www.w3.org/TR/hr-time-2/#dfn-time-origin)
      * [`https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time`](https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time)
      * [`https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp)
-     * [`https://www.w3.org/TR/hr-time-2/#dfn-performance`](https://www.w3.org/TR/hr-time-2/#dfn-performance)
      * [`https://www.w3.org/TR/hr-time-2/#clock-resolution`](https://www.w3.org/TR/hr-time-2/#clock-resolution)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
@@ -14269,7 +14082,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#nonce-attributes`](https://html.spec.whatwg.org/#nonce-attributes)
      * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
      * [`https://html.spec.whatwg.org/#presentational-hints`](https://html.spec.whatwg.org/#presentational-hints)
-     * [`https://html.spec.whatwg.org/#event-handler-contentattributes`](https://html.spec.whatwg.org/#event-handler-contentattributes)
+     * [`https://html.spec.whatwg.org/#event-handler-content-attributes`](https://html.spec.whatwg.org/#event-handler-content-attributes)
      * [`https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects`](https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects)
      * [`https://html.spec.whatwg.org/#parsing`](https://html.spec.whatwg.org/#parsing)
      * [`https://html.spec.whatwg.org/#html-integration-point`](https://html.spec.whatwg.org/#html-integration-point)
@@ -14317,27 +14130,28 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode`](https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode)
      * [`https://www.w3.org/TR/css-writing-modes-3/#extent`](https://www.w3.org/TR/css-writing-modes-3/#extent)
      * [`https://www.w3.org/TR/css-backgrounds-3/#the-background-color`](https://www.w3.org/TR/css-backgrounds-3/#the-background-color)
-     * [`https://www.w3.org/TR/css-backgrounds-3/#padding-physical`](https://www.w3.org/TR/css-backgrounds-3/#padding-physical)
      * [`https://www.w3.org/TR/css-display-3/#unbox-mathml`](https://www.w3.org/TR/css-display-3/#unbox-mathml)
+     * [`https://www.w3.org/TR/css-display-3/#in-flow`](https://www.w3.org/TR/css-display-3/#in-flow)
+     * [`https://www.w3.org/TR/css-display-3/#out-of-flow`](https://www.w3.org/TR/css-display-3/#out-of-flow)
      * [`https://www.w3.org/TR/css-display-3/#block-box`](https://www.w3.org/TR/css-display-3/#block-box)
      * [`https://www.w3.org/TR/css-display-3/#valdef-display-table`](https://www.w3.org/TR/css-display-3/#valdef-display-table)
      * [`https://www.w3.org/TR/css-display-3/#typedef-display-inside`](https://www.w3.org/TR/css-display-3/#typedef-display-inside)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
-     * [`https://heycam.github.io/webidl/#DOMException`](https://heycam.github.io/webidl/#DOMException)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
      * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
-     * [`https://www.w3.org/TR/selectors-3/#overview`](https://www.w3.org/TR/selectors-3/#overview)
+     * [`https://www.w3.org/TR/selectors-3/#title`](https://www.w3.org/TR/selectors-3/#title)
      * [`https://www.w3.org/TR/css-sizing-3/#min-content-inline-size`](https://www.w3.org/TR/css-sizing-3/#min-content-inline-size)
      * [`https://www.w3.org/TR/css-sizing-3/#max-content-inline-size`](https://www.w3.org/TR/css-sizing-3/#max-content-inline-size)
      * [`https://www.w3.org/TR/css-align-3/#first-baseline-set`](https://www.w3.org/TR/css-align-3/#first-baseline-set)
      * [`https://www.w3.org/TR/css-align-3/#last-baseline-set`](https://www.w3.org/TR/css-align-3/#last-baseline-set)
-     * [`https://www.w3.org/TR/css-position-3/#pos-sch`](https://www.w3.org/TR/css-position-3/#pos-sch)
      * [`https://www.w3.org/TR/css-box-3/#content-box`](https://www.w3.org/TR/css-box-3/#content-box)
      * [`https://www.w3.org/TR/css-box-3/#padding-box`](https://www.w3.org/TR/css-box-3/#padding-box)
      * [`https://www.w3.org/TR/css-box-3/#border-box`](https://www.w3.org/TR/css-box-3/#border-box)
-     * [`https://www.w3.org/TR/css-box-3/#the-border-width`](https://www.w3.org/TR/css-box-3/#the-border-width)
+     * [`https://www.w3.org/TR/css-box-3/#borders`](https://www.w3.org/TR/css-box-3/#borders)
      * [`https://www.w3.org/TR/css-box-3/#margin-box`](https://www.w3.org/TR/css-box-3/#margin-box)
      * [`https://www.w3.org/TR/css-box-3/#margin-physical`](https://www.w3.org/TR/css-box-3/#margin-physical)
+     * [`https://www.w3.org/TR/css-box-4/#propdef-padding`](https://www.w3.org/TR/css-box-4/#propdef-padding)
      * [`https://www.w3.org/TR/css-text-3/#forced-line-break`](https://www.w3.org/TR/css-text-3/#forced-line-break)
      * [`https://www.w3.org/TR/css-text-3/#soft-wrap-opportunity`](https://www.w3.org/TR/css-text-3/#soft-wrap-opportunity)
      * [`https://www.w3.org/TR/css-text-3/#text-transform-property`](https://www.w3.org/TR/css-text-3/#text-transform-property)
@@ -15734,8 +15548,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#pair`](https://infra.spec.whatwg.org/#pair)
      * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
 - [Payment Request API](https://www.w3.org/TR/payment-request/):
-     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
-     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardresponse`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardresponse)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest)
      * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccarderrors`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccarderrors)
@@ -15767,7 +15579,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
-     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://www.w3.org/TR/payment-method-id/#dfn-pmi`](https://www.w3.org/TR/payment-method-id/#dfn-pmi)
      * [`https://www.w3.org/TR/payment-method-id/#dfn-validate-a-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-validate-a-payment-method-identifier)
      * [`https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier)
@@ -15787,12 +15598,15 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#language`](https://html.spec.whatwg.org/#language)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
      * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
-     * [`https://dom.spec.whatwg.org/#potential-event-target`](https://dom.spec.whatwg.org/#potential-event-target)
+     * [`https://dom.spec.whatwg.org/#document-element`](https://dom.spec.whatwg.org/#document-element)
      * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
      * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
      * [`https://dom.spec.whatwg.org/#concept-event-constructor`](https://dom.spec.whatwg.org/#concept-event-constructor)
@@ -15812,41 +15626,48 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
      * [`https://infra.spec.whatwg.org/#code-point`](https://infra.spec.whatwg.org/#code-point)
      * [`https://infra.spec.whatwg.org/#ascii-uppercase`](https://infra.spec.whatwg.org/#ascii-uppercase)
-     * [`https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace`](https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace)
      * [`https://url.spec.whatwg.org/#concept-basic-url-parser`](https://url.spec.whatwg.org/#concept-basic-url-parser)
      * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - [Performance Timeline Level 2](https://www.w3.org/TR/performance-timeline-2/):
      * [`https://www.w3.org/TR/hr-time-2/#sec-performance`](https://www.w3.org/TR/hr-time-2/#sec-performance)
-     * [`https://heycam.github.io/webidl/#es-environment`](https://heycam.github.io/webidl/#es-environment)
+     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#map-key`](https://infra.spec.whatwg.org/#map-key)
+     * [`https://infra.spec.whatwg.org/#map-value`](https://infra.spec.whatwg.org/#map-value)
+     * [`https://infra.spec.whatwg.org/#map-get`](https://infra.spec.whatwg.org/#map-get)
+     * [`https://infra.spec.whatwg.org/#struct`](https://infra.spec.whatwg.org/#struct)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#map-getting-the-values`](https://infra.spec.whatwg.org/#map-getting-the-values)
+     * [`https://infra.spec.whatwg.org/#string-is`](https://infra.spec.whatwg.org/#string-is)
+     * [`https://w3c.github.io/timing-entrytypes-registry/#registry`](https://w3c.github.io/timing-entrytypes-registry/#registry)
+     * [`https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry`](https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#Default`](https://heycam.github.io/webidl/#Default)
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
-     * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
-     * [`https://heycam.github.io/webidl/#idl-void`](https://heycam.github.io/webidl/#idl-void)
+     * [`https://heycam.github.io/webidl/#default-tojson-steps`](https://heycam.github.io/webidl/#default-tojson-steps)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
-     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#es-frozen-array`](https://heycam.github.io/webidl/#es-frozen-array)
      * [`https://heycam.github.io/webidl/#dfn-create-frozen-array`](https://heycam.github.io/webidl/#dfn-create-frozen-array)
      * [`https://heycam.github.io/webidl/#dfn-callback-this-value`](https://heycam.github.io/webidl/#dfn-callback-this-value)
-     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
-     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
-     * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
-     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
-     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
-     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
-     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://www.w3.org/TR/hr-time/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time/#dom-domhighrestimestamp)
-     * [`https://infra.spec.whatwg.org/#struct`](https://infra.spec.whatwg.org/#struct)
-     * [`https://w3c.github.io/timing-entrytypes-registry/#registry`](https://w3c.github.io/timing-entrytypes-registry/#registry)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
 - [Permissions](https://www.w3.org/TR/permissions/):
      * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
@@ -16032,7 +15853,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
-     * [`https://html.spec.whatwg.org/#event-loop-processing-model`](https://html.spec.whatwg.org/#event-loop-processing-model)
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
      * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
@@ -16889,6 +16709,23 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source`](https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source)
      * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
      * [`https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time`](https://www.w3.org/TR/hr-time-2/#relative-high-resolution-coarse-time)
+- [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/):
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height`](https://html.spec.whatwg.org/#density-corrected-intrinsic-width-and-height)
+     * [`https://html.spec.whatwg.org/#source-set`](https://html.spec.whatwg.org/#source-set)
+     * [`https://html.spec.whatwg.org/#source-size-2`](https://html.spec.whatwg.org/#source-size-2)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header`](https://w3c.github.io/webappsec-permissions-policy/#permissions-policy-header)
+     * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio`](https://drafts.csswg.org/cssom-view-1/#dom-window-devicepixelratio)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth`](https://drafts.csswg.org/cssom-view-1/#dom-element-clientwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerwidth)
+     * [`https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight`](https://drafts.csswg.org/cssom-view-1/#dom-window-innerheight)
+     * [`https://drafts.csswg.org/css-values-4/#px`](https://drafts.csswg.org/css-values-4/#px)
+     * [`https://wicg.github.io/client-hints-infrastructure/#fetch`](https://wicg.github.io/client-hints-infrastructure/#fetch)
+     * [`https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request`](https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request)
 - [Save Data API](https://wicg.github.io/savedata/):
      * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
@@ -17624,17 +17461,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#non-secure-context`](https://html.spec.whatwg.org/#non-secure-context)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
-     * [`https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
      * [`https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming`](https://www.w3.org/TR/resource-timing-2/#performanceresourcetiming)
      * [`https://www.w3.org/TR/resource-timing-2/#step-create-object`](https://www.w3.org/TR/resource-timing-2/#step-create-object)
      * [`https://www.w3.org/TR/resource-timing-2/#dfn-current-document`](https://www.w3.org/TR/resource-timing-2/#dfn-current-document)
      * [`https://www.w3.org/TR/navigation-timing-2/#dfn-current-document`](https://www.w3.org/TR/navigation-timing-2/#dfn-current-document)
      * [`https://www.w3.org/TR/navigation-timing-2/#step-create-object`](https://www.w3.org/TR/navigation-timing-2/#step-create-object)
      * [`https://fetch.spec.whatwg.org/#concept-fetch`](https://fetch.spec.whatwg.org/#concept-fetch)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-contexts`](https://www.w3.org/TR/secure-contexts/#secure-contexts)
-     * [`https://www.w3.org/TR/secure-contexts/#is-settings-object-contextually-secure`](https://www.w3.org/TR/secure-contexts/#is-settings-object-contextually-secure)
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1/):
      * [`https://html.spec.whatwg.org/#workers`](https://html.spec.whatwg.org/#workers)
      * [`https://html.spec.whatwg.org/#application-cache`](https://html.spec.whatwg.org/#application-cache)
@@ -18885,6 +18722,8 @@ Links in the body of a specification should be to the same document as that poin
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/):
      * [`https://infra.spec.whatwg.org/#user-agent`](https://infra.spec.whatwg.org/#user-agent)
      * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
+     * [`https://infra.spec.whatwg.org/#strictly-split`](https://infra.spec.whatwg.org/#strictly-split)
      * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
      * [`https://infra.spec.whatwg.org/#list-item`](https://infra.spec.whatwg.org/#list-item)
      * [`https://infra.spec.whatwg.org/#string`](https://infra.spec.whatwg.org/#string)
@@ -18896,7 +18735,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
      * [`https://infra.spec.whatwg.org/#stack-pop`](https://infra.spec.whatwg.org/#stack-pop)
      * [`https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace`](https://infra.spec.whatwg.org/#strip-leading-and-trailing-ascii-whitespace)
-     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
      * [`https://infra.spec.whatwg.org/#list-contain`](https://infra.spec.whatwg.org/#list-contain)
      * [`https://heycam.github.io/webidl/#dfn-dictionary`](https://heycam.github.io/webidl/#dfn-dictionary)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
@@ -18923,6 +18761,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://w3c.github.io/permissions/#permission-task-source`](https://w3c.github.io/permissions/#permission-task-source)
+- [uuid](https://wicg.github.io/uuid/):
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#byte`](https://infra.spec.whatwg.org/#byte)
+     * [`https://infra.spec.whatwg.org/#string-concatenate`](https://infra.spec.whatwg.org/#string-concatenate)
+     * [`https://infra.spec.whatwg.org/#ascii-lower-hex-digit`](https://infra.spec.whatwg.org/#ascii-lower-hex-digit)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/):
      * [`https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state`](https://w3c.github.io/page-visibility/#dfn-steps-to-determine-the-visibility-state)
      * [`https://w3c.github.io/page-visibility/#dfn-visibility-states`](https://w3c.github.io/page-visibility/#dfn-visibility-states)
@@ -20658,7 +20506,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-canvas-toblob`](https://html.spec.whatwg.org/#dom-canvas-toblob)
      * [`https://html.spec.whatwg.org/#offscreencanvas-placeholder`](https://html.spec.whatwg.org/#offscreencanvas-placeholder)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
-     * [`https://www.w3.org/TR/css-color-4/#predefined`](https://www.w3.org/TR/css-color-4/#predefined)
      * [`https://www.w3.org/TR/css-color-4/#valdef-color-srgb`](https://www.w3.org/TR/css-color-4/#valdef-color-srgb)
      * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
      * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
@@ -21862,7 +21709,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 18801 problematic external links found in 339 specifications
+=> 18833 problematic external links found in 341 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

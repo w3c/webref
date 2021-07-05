@@ -1,73 +1,44 @@
-% Diff between report from "June 28, 2021" and reference report from "June 21, 2021"
+% Diff between report from "July 05, 2021" and reference report from "June 28, 2021"
 % Reffy
-% June 28, 2021
+% July 05, 2021
 
-## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
+## Contact Picker API
 
-- Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
+- Initial URL: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
-- Spec title: *INS* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification / *DEL* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
-- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: More than one dfn found for CSS property/descriptor "top"
-    at https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:106:17
-    at Array.forEach (<anonymous>)
-    at extractDfns (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:103:6)
-    at extractDlDfns (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:133:3)
-    at Object.default [as extractCSS] (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:23:22)
-    at __puppeteer_evaluation_script__:15:35 Error: Evaluation failed: Error: More than one dfn found for CSS property/descriptor "top"
-    at https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:106:17
-    at Array.forEach (<anonymous>)
-    at extractDfns (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:103:6)
-    at extractDlDfns (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:133:3)
-    at Object.default [as extractCSS] (https://www.w3.org/TR/CSS21/reffy/scripts/extract-cssdfn.mjs:23:22)
-    at __puppeteer_evaluation_script__:15:35
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:387:25)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 270)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)
+- Editor's Draft: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
+- Unknown WebIDL names used: *INS* PaymentAddress
 
 
-## CSS Generated Content for Paged Media Module
+## Incremental Font Transfer
 
-- Initial URL: [https://www.w3.org/TR/css-gcpm-3/](https://www.w3.org/TR/css-gcpm-3/)
+- Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-gcpm/](https://drafts.csswg.org/css-gcpm/)
-- Spec could not be rendered: *DEL* Error: Evaluation failed: Error: More than one dfn found for CSS property/descriptor "content"
-    at https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:106:17
-    at Array.forEach (<anonymous>)
-    at extractDfns (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:103:6)
-    at extractTableDfns (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:125:3)
-    at Object.default [as extractCSS] (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:15:17)
-    at __puppeteer_evaluation_script__:15:35 Error: Evaluation failed: Error: More than one dfn found for CSS property/descriptor "content"
-    at https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:106:17
-    at Array.forEach (<anonymous>)
-    at extractDfns (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:103:6)
-    at extractTableDfns (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:125:3)
-    at Object.default [as extractCSS] (https://www.w3.org/TR/css-gcpm-3/reffy/scripts/extract-cssdfn.mjs:15:17)
-    at __puppeteer_evaluation_script__:15:35
-    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:387:25)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:83:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:243:24)
-    at async Promise.all (index 217)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:249:21)
-    at async Promise.all (index 0)
+- Editor's Draft: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
+- This specification was not in the reference crawl report.
 
 
-## Web Neural Network API
+## Payment Method: Basic Card
 
-- Initial URL: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
+- Initial URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
+- Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
+- Unknown WebIDL names used: *INS* AddressErrors, PaymentAddress
+
+
+## Responsive Image Client Hints
+
+- Initial URL: [https://wicg.github.io/responsive-image-client-hints/](https://wicg.github.io/responsive-image-client-hints/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/responsive-image-client-hints/](https://wicg.github.io/responsive-image-client-hints/)
+- This specification was not in the reference crawl report.
+
+
+## uuid
+
+- Initial URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
 - This specification was not in the reference crawl report.
 
 

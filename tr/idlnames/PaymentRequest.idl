@@ -3,8 +3,7 @@
 interface PaymentRequest : EventTarget {
   constructor(
     sequence<PaymentMethodData> methodData,
-    PaymentDetailsInit details,
-    optional PaymentOptions options = {}
+    PaymentDetailsInit details
   );
   [NewObject]
   Promise<PaymentResponse> show(optional Promise<PaymentDetailsUpdate> detailsPromise);
@@ -14,11 +13,6 @@ interface PaymentRequest : EventTarget {
   Promise<boolean> canMakePayment();
 
   readonly attribute DOMString id;
-  readonly attribute PaymentAddress? shippingAddress;
-  readonly attribute DOMString? shippingOption;
-  readonly attribute PaymentShippingType? shippingType;
 
-  attribute EventHandler onshippingaddresschange;
-  attribute EventHandler onshippingoptionchange;
   attribute EventHandler onpaymentmethodchange;
 };

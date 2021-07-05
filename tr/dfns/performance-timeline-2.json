@@ -62,6 +62,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-performance-entry-buffer-map",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer-map",
+      "linkingText": [
+        "performance entry buffer map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-timeline",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performance-timeline",
+        "title": "Performance Timeline",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-performance-entry-buffer",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer",
       "linkingText": [
@@ -81,10 +100,67 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-relevant-performance-entry-buffer",
-      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-relevant-performance-entry-buffer",
+      "id": "dfn-maxbuffersize",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-maxbuffersize",
       "linkingText": [
-        "relevant performance entry buffer"
+        "maxBufferSize"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-timeline",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performance-timeline",
+        "title": "Performance Timeline",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-availablefromtimeline",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-availablefromtimeline",
+      "linkingText": [
+        "availableFromTimeline"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-timeline",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performance-timeline",
+        "title": "Performance Timeline",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-dropped-entries-count",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-dropped-entries-count",
+      "linkingText": [
+        "dropped entries count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performance-timeline",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performance-timeline",
+        "title": "Performance Timeline",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-relevant-performance-entry-tuple",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-relevant-performance-entry-tuple",
+      "linkingText": [
+        "relevant performance entry tuple"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -141,12 +217,13 @@
       "id": "dom-performance-getentries",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentries",
       "linkingText": [
-        "Performance.getEntries()",
+        "getEntries()"
+      ],
+      "localLinkingText": [
         "Performance.getEntries",
-        "getEntries()",
+        "Performance.getEntries()",
         "getEntries"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Performance"
@@ -165,12 +242,14 @@
       "id": "dom-performance-getentriesbytype",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbytype",
       "linkingText": [
-        "Performance.getEntriesByType()",
-        "Performance.getEntriesByType",
         "getEntriesByType()",
+        "getEntriesByType(type)"
+      ],
+      "localLinkingText": [
+        "Performance.getEntriesByType",
+        "Performance.getEntriesByType()",
         "getEntriesByType"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Performance"
@@ -189,12 +268,15 @@
       "id": "dom-performance-getentriesbyname",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performance-getentriesbyname",
       "linkingText": [
-        "Performance.getEntriesByName()",
-        "Performance.getEntriesByName",
         "getEntriesByName()",
+        "getEntriesByName(name)",
+        "getEntriesByName(name, type)"
+      ],
+      "localLinkingText": [
+        "Performance.getEntriesByName",
+        "Performance.getEntriesByName()",
         "getEntriesByName"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "Performance"
@@ -224,7 +306,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "heading"
     },
@@ -232,10 +314,11 @@
       "id": "dom-performanceentry-name",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-name",
       "linkingText": [
-        "PerformanceEntry.name",
         "name"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PerformanceEntry.name"
+      ],
       "type": "attribute",
       "for": [
         "PerformanceEntry"
@@ -246,7 +329,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "dt"
     },
@@ -254,10 +337,11 @@
       "id": "dom-performanceentry-entrytype",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-entrytype",
       "linkingText": [
-        "PerformanceEntry.entryType",
         "entryType"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PerformanceEntry.entryType"
+      ],
       "type": "attribute",
       "for": [
         "PerformanceEntry"
@@ -268,7 +352,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "dt"
     },
@@ -276,10 +360,11 @@
       "id": "dom-performanceentry-starttime",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-starttime",
       "linkingText": [
-        "PerformanceEntry.startTime",
         "startTime"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PerformanceEntry.startTime"
+      ],
       "type": "attribute",
       "for": [
         "PerformanceEntry"
@@ -290,7 +375,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "dt"
     },
@@ -298,10 +383,11 @@
       "id": "dom-performanceentry-duration",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-duration",
       "linkingText": [
-        "PerformanceEntry.duration",
         "duration"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PerformanceEntry.duration"
+      ],
       "type": "attribute",
       "for": [
         "PerformanceEntry"
@@ -312,7 +398,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "dt"
     },
@@ -320,12 +406,13 @@
       "id": "dom-performanceentry-tojson",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry-tojson",
       "linkingText": [
-        "PerformanceEntry.toJSON()",
+        "toJSON()"
+      ],
+      "localLinkingText": [
         "PerformanceEntry.toJSON",
-        "toJSON()",
+        "PerformanceEntry.toJSON()",
         "toJSON"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceEntry"
@@ -336,7 +423,7 @@
         "id": "the-performanceentry-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceentry-interface",
         "title": "The PerformanceEntry interface",
-        "number": "3.2"
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -355,7 +442,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "heading"
     },
@@ -374,7 +461,26 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-observer-callback",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-observer-callback",
+      "linkingText": [
+        "observer callback"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-performanceobserver-interface",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
+        "title": "The PerformanceObserver interface",
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -393,7 +499,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -412,7 +518,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -431,7 +537,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -450,7 +556,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -469,7 +575,7 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "prose"
     },
@@ -477,12 +583,14 @@
       "id": "dom-performanceobserver-constructor",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-constructor",
       "linkingText": [
-        "PerformanceObserver.constructor()",
-        "PerformanceObserver.constructor",
         "constructor()",
+        "constructor(callback)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.constructor",
+        "PerformanceObserver.constructor()",
         "constructor"
       ],
-      "localLinkingText": [],
       "type": "constructor",
       "for": [
         "PerformanceObserver"
@@ -493,20 +601,62 @@
         "id": "the-performanceobserver-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#the-performanceobserver-interface",
         "title": "The PerformanceObserver interface",
-        "number": "3.3"
+        "number": "5"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-performanceobservercallbackoptions",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobservercallbackoptions",
+      "linkingText": [
+        "PerformanceObserverCallbackOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performanceobservercallbackoptions-dictionary",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobservercallbackoptions-dictionary",
+        "title": "PerformanceObserverCallbackOptions dictionary",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-performanceobservercallbackoptions-droppedentriescount",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobservercallbackoptions-droppedentriescount",
+      "linkingText": [
+        "droppedEntriesCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverCallbackOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performanceobservercallbackoptions-dictionary",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobservercallbackoptions-dictionary",
+        "title": "PerformanceObserverCallbackOptions dictionary",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-performanceobserver-observe",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-observe",
       "linkingText": [
-        "PerformanceObserver.observe()",
-        "PerformanceObserver.observe",
         "observe()",
+        "observe(options)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserver.observe",
+        "PerformanceObserver.observe()",
         "observe"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserver"
@@ -517,7 +667,7 @@
         "id": "observe-method",
         "href": "https://www.w3.org/TR/performance-timeline-2/#observe-method",
         "title": "observe() method",
-        "number": "3.3.1"
+        "number": "5.2"
       },
       "definedIn": "heading"
     },
@@ -536,7 +686,7 @@
         "id": "observe-method",
         "href": "https://www.w3.org/TR/performance-timeline-2/#observe-method",
         "title": "observe() method",
-        "number": "3.3.1"
+        "number": "5.2"
       },
       "definedIn": "prose"
     },
@@ -555,7 +705,7 @@
         "id": "performanceobserverinit-dictionary",
         "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "3.3.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "heading"
     },
@@ -576,7 +726,7 @@
         "id": "performanceobserverinit-dictionary",
         "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "3.3.1.1"
+        "number": "5.2.1"
       },
       "definedIn": "dt"
     },
@@ -597,7 +747,28 @@
         "id": "performanceobserverinit-dictionary",
         "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary",
         "title": "PerformanceObserverInit dictionary",
-        "number": "3.3.1.1"
+        "number": "5.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-performanceobserverinit-buffered",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverinit-buffered",
+      "linkingText": [
+        "buffered"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "performanceobserverinit-dictionary",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverinit-dictionary",
+        "title": "PerformanceObserverInit dictionary",
+        "number": "5.2.1"
       },
       "definedIn": "dt"
     },
@@ -616,20 +787,40 @@
         "id": "performanceobserverentrylist-interface",
         "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverentrylist-interface",
         "title": "PerformanceObserverEntryList interface",
-        "number": "3.3.1.2"
+        "number": "5.2.2"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "dfn-entry-list",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-entry-list",
+      "linkingText": [
+        "entry list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "performanceobserverentrylist-interface",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#performanceobserverentrylist-interface",
+        "title": "PerformanceObserverEntryList interface",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-performanceobserverentrylist-getentries",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentries",
       "linkingText": [
-        "PerformanceObserverEntryList.getEntries()",
+        "getEntries()"
+      ],
+      "localLinkingText": [
         "PerformanceObserverEntryList.getEntries",
-        "getEntries()",
+        "PerformanceObserverEntryList.getEntries()",
         "getEntries"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserverEntryList"
@@ -640,7 +831,7 @@
         "id": "getentries-method-0",
         "href": "https://www.w3.org/TR/performance-timeline-2/#getentries-method-0",
         "title": "getEntries() method",
-        "number": "3.3.1.2.1"
+        "number": "5.2.2.1"
       },
       "definedIn": "heading"
     },
@@ -648,12 +839,14 @@
       "id": "dom-performanceobserverentrylist-getentriesbytype",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbytype",
       "linkingText": [
-        "PerformanceObserverEntryList.getEntriesByType()",
-        "PerformanceObserverEntryList.getEntriesByType",
         "getEntriesByType()",
+        "getEntriesByType(type)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserverEntryList.getEntriesByType",
+        "PerformanceObserverEntryList.getEntriesByType()",
         "getEntriesByType"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserverEntryList"
@@ -664,7 +857,7 @@
         "id": "getentriesbytype-method-0",
         "href": "https://www.w3.org/TR/performance-timeline-2/#getentriesbytype-method-0",
         "title": "getEntriesByType() method",
-        "number": "3.3.1.2.2"
+        "number": "5.2.2.2"
       },
       "definedIn": "heading"
     },
@@ -672,12 +865,15 @@
       "id": "dom-performanceobserverentrylist-getentriesbyname",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserverentrylist-getentriesbyname",
       "linkingText": [
-        "PerformanceObserverEntryList.getEntriesByName()",
-        "PerformanceObserverEntryList.getEntriesByName",
         "getEntriesByName()",
+        "getEntriesByName(name)",
+        "getEntriesByName(name, type)"
+      ],
+      "localLinkingText": [
+        "PerformanceObserverEntryList.getEntriesByName",
+        "PerformanceObserverEntryList.getEntriesByName()",
         "getEntriesByName"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserverEntryList"
@@ -688,7 +884,7 @@
         "id": "getentriesbyname-method-0",
         "href": "https://www.w3.org/TR/performance-timeline-2/#getentriesbyname-method-0",
         "title": "getEntriesByName() method",
-        "number": "3.3.1.2.3"
+        "number": "5.2.2.3"
       },
       "definedIn": "heading"
     },
@@ -696,12 +892,13 @@
       "id": "dom-performanceobserver-takerecords",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-takerecords",
       "linkingText": [
-        "PerformanceObserver.takeRecords()",
+        "takeRecords()"
+      ],
+      "localLinkingText": [
         "PerformanceObserver.takeRecords",
-        "takeRecords()",
+        "PerformanceObserver.takeRecords()",
         "takeRecords"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserver"
@@ -712,7 +909,7 @@
         "id": "takerecords-method",
         "href": "https://www.w3.org/TR/performance-timeline-2/#takerecords-method",
         "title": "takeRecords() method",
-        "number": "3.3.2"
+        "number": "5.3"
       },
       "definedIn": "heading"
     },
@@ -720,12 +917,13 @@
       "id": "dom-performanceobserver-disconnect",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-disconnect",
       "linkingText": [
-        "PerformanceObserver.disconnect()",
+        "disconnect()"
+      ],
+      "localLinkingText": [
         "PerformanceObserver.disconnect",
-        "disconnect()",
+        "PerformanceObserver.disconnect()",
         "disconnect"
       ],
-      "localLinkingText": [],
       "type": "method",
       "for": [
         "PerformanceObserver"
@@ -736,7 +934,7 @@
         "id": "disconnect-method",
         "href": "https://www.w3.org/TR/performance-timeline-2/#disconnect-method",
         "title": "disconnect() method",
-        "number": "3.3.3"
+        "number": "5.4"
       },
       "definedIn": "heading"
     },
@@ -755,7 +953,7 @@
         "id": "supportedentrytypes-attribute",
         "href": "https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute",
         "title": "supportedEntryTypes attribute",
-        "number": "3.3.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -763,10 +961,11 @@
       "id": "dom-performanceobserver-supportedentrytypes",
       "href": "https://www.w3.org/TR/performance-timeline-2/#dom-performanceobserver-supportedentrytypes",
       "linkingText": [
-        "PerformanceObserver.supportedEntryTypes",
         "supportedEntryTypes"
       ],
-      "localLinkingText": [],
+      "localLinkingText": [
+        "PerformanceObserver.supportedEntryTypes"
+      ],
       "type": "attribute",
       "for": [
         "PerformanceObserver"
@@ -777,7 +976,7 @@
         "id": "supportedentrytypes-attribute",
         "href": "https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute",
         "title": "supportedEntryTypes attribute",
-        "number": "3.3.4"
+        "number": "5.5"
       },
       "definedIn": "prose"
     },
@@ -796,7 +995,142 @@
         "id": "queue-a-performanceentry",
         "href": "https://www.w3.org/TR/performance-timeline-2/#queue-a-performanceentry",
         "title": "Queue a PerformanceEntry",
-        "number": "4.1"
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-queue-the-performanceobserver-task",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-queue-the-performanceobserver-task",
+      "linkingText": [
+        "queue the PerformanceObserver task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "queue-the-performanceobserver-task",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#queue-the-performanceobserver-task",
+        "title": "Queue the PerformanceObserver task",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-performance-timeline-task-source",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-performance-timeline-task-source",
+      "linkingText": [
+        "performance timeline task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "queue-the-performanceobserver-task",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#queue-the-performanceobserver-task",
+        "title": "Queue the PerformanceObserver task",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-filter-buffer-map-by-name-and-type",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-filter-buffer-map-by-name-and-type",
+      "linkingText": [
+        "filter buffer map by name and type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filter-buffer-map-by-name-and-type",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#filter-buffer-map-by-name-and-type",
+        "title": "Filter buffer map by name and type",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-filter-buffer-by-name-and-type",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-filter-buffer-by-name-and-type",
+      "linkingText": [
+        "filter buffer by name and type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filter-buffer-by-name-and-type",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#filter-buffer-by-name-and-type",
+        "title": "Filter buffer by name and type",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-determine-if-a-performance-entry-buffer-is-full",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-determine-if-a-performance-entry-buffer-is-full",
+      "linkingText": [
+        "determine if a performance entry buffer is full"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determine-if-a-performance-entry-buffer-is-full",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#determine-if-a-performance-entry-buffer-is-full",
+        "title": "Determine if a performance entry buffer is full",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-keyed",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-keyed",
+      "linkingText": [
+        "keyed",
+        "key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#dependencies",
+        "title": "Dependencies",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-getting-the-value-of-entry",
+      "href": "https://www.w3.org/TR/performance-timeline-2/#dfn-getting-the-value-of-entry",
+      "linkingText": [
+        "getting the value of entry",
+        "getting the value of an entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://www.w3.org/TR/performance-timeline-2/#dependencies",
+        "title": "Dependencies",
+        "number": "8"
       },
       "definedIn": "prose"
     }

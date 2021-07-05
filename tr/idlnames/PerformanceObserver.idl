@@ -2,8 +2,8 @@
 [Exposed=(Window,Worker)]
 interface PerformanceObserver {
   constructor(PerformanceObserverCallback callback);
-  void observe (optional PerformanceObserverInit options = {});
-  void disconnect ();
+  undefined observe (optional PerformanceObserverInit options = {});
+  undefined disconnect ();
   PerformanceEntryList takeRecords();
   [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;
 };

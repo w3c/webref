@@ -142,8 +142,7 @@
       "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(methodData, details)",
-        "constructor(methodData, details, options)"
+        "constructor(methodData, details)"
       ],
       "localLinkingText": [
         "PaymentRequest.constructor",
@@ -207,7 +206,7 @@
       "href": "https://www.w3.org/TR/payment-request/#dfn-paymentrequest-paymentrequest",
       "linkingText": [
         "PaymentRequest.PaymentRequest()",
-        "PaymentRequest(methodData, details, options)"
+        "PaymentRequest(methodData, details)"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -322,121 +321,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentrequest-shippingaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-shippingaddress",
-      "linkingText": [
-        "shippingAddress"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.shippingAddress"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shippingaddress-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#shippingaddress-attribute",
-        "title": "shippingAddress attribute",
-        "number": "3.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentrequest-shippingtype",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-shippingtype",
-      "linkingText": [
-        "shippingType"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.shippingType"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shippingtype-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#shippingtype-attribute",
-        "title": "shippingType attribute",
-        "number": "3.7"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentrequest-onshippingaddresschange",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-onshippingaddresschange",
-      "linkingText": [
-        "onshippingaddresschange"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.onshippingaddresschange"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "onshippingaddresschange-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#onshippingaddresschange-attribute",
-        "title": "onshippingaddresschange attribute",
-        "number": "3.8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentrequest-shippingoption",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-shippingoption",
-      "linkingText": [
-        "shippingOption"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.shippingOption"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shippingoption-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#shippingoption-attribute",
-        "title": "shippingOption attribute",
-        "number": "3.9"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentrequest-onshippingoptionchange",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-onshippingoptionchange",
-      "linkingText": [
-        "onshippingoptionchange"
-      ],
-      "localLinkingText": [
-        "PaymentRequest.onshippingoptionchange"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "onshippingoptionchange-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#onshippingoptionchange-attribute",
-        "title": "onshippingoptionchange attribute",
-        "number": "3.10"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "dom-paymentrequest-onpaymentmethodchange",
       "href": "https://www.w3.org/TR/payment-request/#dom-paymentrequest-onpaymentmethodchange",
       "linkingText": [
@@ -455,7 +339,7 @@
         "id": "onpaymentmethodchange-attribute",
         "href": "https://www.w3.org/TR/payment-request/#onpaymentmethodchange-attribute",
         "title": "onpaymentmethodchange attribute",
-        "number": "3.11"
+        "number": "3.6"
       },
       "definedIn": "heading"
     },
@@ -466,7 +350,7 @@
         "[[serializedMethodData]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
+      "type": "attribute",
       "for": [
         "PaymentRequest"
       ],
@@ -476,7 +360,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -487,7 +371,7 @@
         "[[serializedModifierData]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
+      "type": "attribute",
       "for": [
         "PaymentRequest"
       ],
@@ -497,7 +381,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -508,7 +392,7 @@
         "[[details]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
+      "type": "attribute",
       "for": [
         "PaymentRequest"
       ],
@@ -518,28 +402,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-options",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-options",
-      "linkingText": [
-        "[[options]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [
-        "PaymentRequest"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots",
-        "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -550,15 +413,17 @@
         "[[state]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -579,7 +444,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -600,7 +465,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "dt"
     },
@@ -621,7 +486,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "dt"
     },
@@ -642,7 +507,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "dt"
     },
@@ -653,15 +518,17 @@
         "[[updating]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -672,15 +539,17 @@
         "[[acceptPromise]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -691,15 +560,17 @@
         "[[response]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentRequest"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -710,7 +581,7 @@
         "[[handler]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
+      "type": "attribute",
       "for": [
         "PaymentRequest"
       ],
@@ -720,7 +591,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/payment-request/#internal-slots",
         "title": "Internal Slots",
-        "number": "3.12"
+        "number": "3.7"
       },
       "definedIn": "table"
     },
@@ -944,27 +815,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-paymentdetailsbase-shippingoptions",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-shippingoptions",
-      "linkingText": [
-        "shippingOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentDetailsBase"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentdetailsbase-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentdetailsbase-dictionary",
-        "title": "PaymentDetailsBase dictionary",
-        "number": "6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-paymentdetailsbase-modifiers",
       "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsbase-modifiers",
       "linkingText": [
@@ -1066,73 +916,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-paymentdetailsupdate-error",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-error",
-      "linkingText": [
-        "error"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentDetailsUpdate"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentdetailsupdate-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentdetailsupdate-dictionary",
-        "title": "PaymentDetailsUpdate dictionary",
-        "number": "6.3"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-paymentdetailsupdate-total",
       "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-total",
       "linkingText": [
         "total"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentDetailsUpdate"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentdetailsupdate-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentdetailsupdate-dictionary",
-        "title": "PaymentDetailsUpdate dictionary",
-        "number": "6.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentdetailsupdate-shippingaddresserrors",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-shippingaddresserrors",
-      "linkingText": [
-        "shippingAddressErrors"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentDetailsUpdate"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentdetailsupdate-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentdetailsupdate-dictionary",
-        "title": "PaymentDetailsUpdate dictionary",
-        "number": "6.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentdetailsupdate-payererrors",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentdetailsupdate-payererrors",
-      "linkingText": [
-        "payerErrors"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1274,233 +1061,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-paymentshippingtype",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingtype",
-      "linkingText": [
-        "PaymentShippingType"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingtype-enum",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingtype-enum",
-        "title": "PaymentShippingType enum",
-        "number": "8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentshippingtype-shipping",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingtype-shipping",
-      "linkingText": [
-        "shipping"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PaymentShippingType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingtype-enum",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingtype-enum",
-        "title": "PaymentShippingType enum",
-        "number": "8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentshippingtype-delivery",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingtype-delivery",
-      "linkingText": [
-        "delivery"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PaymentShippingType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingtype-enum",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingtype-enum",
-        "title": "PaymentShippingType enum",
-        "number": "8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentshippingtype-pickup",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingtype-pickup",
-      "linkingText": [
-        "pickup"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PaymentShippingType"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingtype-enum",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingtype-enum",
-        "title": "PaymentShippingType enum",
-        "number": "8"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions",
-      "linkingText": [
-        "PaymentOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentoptions-requestbillingaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestbillingaddress",
-      "linkingText": [
-        "requestBillingAddress"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions-requestpayername",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayername",
-      "linkingText": [
-        "requestPayerName"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions-requestpayeremail",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayeremail",
-      "linkingText": [
-        "requestPayerEmail"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions-requestpayerphone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestpayerphone",
-      "linkingText": [
-        "requestPayerPhone"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions-requestshipping",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-requestshipping",
-      "linkingText": [
-        "requestShipping"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentoptions-shippingtype",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentoptions-shippingtype",
-      "linkingText": [
-        "shippingType"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentoptions-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentoptions-dictionary",
-        "title": "PaymentOptions dictionary",
-        "number": "9"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-paymentitem",
       "href": "https://www.w3.org/TR/payment-request/#dom-paymentitem",
       "linkingText": [
@@ -1514,7 +1074,8 @@
       "heading": {
         "id": "paymentitem-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentitem-dictionary",
-        "title": "10. PaymentItem dictionary"
+        "title": "PaymentItem dictionary",
+        "number": "8"
       },
       "definedIn": "heading"
     },
@@ -1534,7 +1095,8 @@
       "heading": {
         "id": "paymentitem-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentitem-dictionary",
-        "title": "10. PaymentItem dictionary"
+        "title": "PaymentItem dictionary",
+        "number": "8"
       },
       "definedIn": "dt"
     },
@@ -1554,7 +1116,8 @@
       "heading": {
         "id": "paymentitem-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentitem-dictionary",
-        "title": "10. PaymentItem dictionary"
+        "title": "PaymentItem dictionary",
+        "number": "8"
       },
       "definedIn": "dt"
     },
@@ -1574,1258 +1137,8 @@
       "heading": {
         "id": "paymentitem-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentitem-dictionary",
-        "title": "10. PaymentItem dictionary"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-physical-address",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-physical-address",
-      "linkingText": [
-        "physical address"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-address-line",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-address-line",
-      "linkingText": [
-        "Address line"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-city",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-city",
-      "linkingText": [
-        "City"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-country",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-country",
-      "linkingText": [
-        "Country"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-dependent-locality",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-dependent-locality",
-      "linkingText": [
-        "Dependent locality"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-organization",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-organization",
-      "linkingText": [
-        "Organization"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-phone-number",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-phone-number",
-      "linkingText": [
-        "Phone number"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-postal-code",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-postal-code",
-      "linkingText": [
-        "Postal code"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-recipient",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-recipient",
-      "linkingText": [
-        "Recipient"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-region",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-region",
-      "linkingText": [
-        "Region"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-sorting-code",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-sorting-code",
-      "linkingText": [
-        "Sorting code"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "physical-addresses",
-        "href": "https://www.w3.org/TR/payment-request/#physical-addresses",
-        "title": "11. Physical addresses"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress",
-      "linkingText": [
-        "PaymentAddress"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentaddress-interface",
-        "href": "https://www.w3.org/TR/payment-request/#paymentaddress-interface",
-        "title": "PaymentAddress interface",
-        "number": "11.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-paymentaddress-paymentaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-paymentaddress-paymentaddress",
-      "linkingText": [
-        "PaymentAddress.PaymentAddress()",
-        "internally construct a PaymentAddress"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-constructor",
-        "href": "https://www.w3.org/TR/payment-request/#internal-constructor",
-        "title": "Internal constructor",
-        "number": "11.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-paymentaddress-country",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-country",
-      "linkingText": [
-        "country"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.country"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "country-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#country-attribute",
-        "title": "country attribute",
-        "number": "11.1.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-addressline",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-addressline",
-      "linkingText": [
-        "addressLine"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.addressLine"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressline-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#addressline-attribute",
-        "title": "addressLine attribute",
-        "number": "11.1.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-region",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-region",
-      "linkingText": [
-        "region"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.region"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "region-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#region-attribute",
-        "title": "region attribute",
-        "number": "11.1.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-city",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-city",
-      "linkingText": [
-        "city"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.city"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "city-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#city-attribute",
-        "title": "city attribute",
-        "number": "11.1.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-dependentlocality",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-dependentlocality",
-      "linkingText": [
-        "dependentLocality"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.dependentLocality"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "dependentlocality-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#dependentlocality-attribute",
-        "title": "dependentLocality attribute",
-        "number": "11.1.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-postalcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-postalcode",
-      "linkingText": [
-        "postalCode"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.postalCode"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "postalcode-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#postalcode-attribute",
-        "title": "postalCode attribute",
-        "number": "11.1.7"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-sortingcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-sortingcode",
-      "linkingText": [
-        "sortingCode"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.sortingCode"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sortingcode-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#sortingcode-attribute",
-        "title": "sortingCode attribute",
-        "number": "11.1.8"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-organization",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-organization",
-      "linkingText": [
-        "organization"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.organization"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "organization-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#organization-attribute",
-        "title": "organization attribute",
-        "number": "11.1.9"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-recipient",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-recipient",
-      "linkingText": [
-        "recipient"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.recipient"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "recipient-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#recipient-attribute",
-        "title": "recipient attribute",
-        "number": "11.1.10"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentaddress-phone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentaddress-phone",
-      "linkingText": [
-        "phone"
-      ],
-      "localLinkingText": [
-        "PaymentAddress.phone"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentAddress"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "phone-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#phone-attribute",
-        "title": "phone attribute",
-        "number": "11.1.11"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-paymentaddress-slots",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-paymentaddress-slots",
-      "linkingText": [
-        "PaymentAddress slots"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-country-0",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-country-0",
-      "linkingText": [
-        "[[country]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-addressline",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-addressline",
-      "linkingText": [
-        "[[addressLine]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-region-0",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-region-0",
-      "linkingText": [
-        "[[region]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-city-0",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-city-0",
-      "linkingText": [
-        "[[city]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-dependentlocality",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-dependentlocality",
-      "linkingText": [
-        "[[dependentLocality]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-postalcode",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-postalcode",
-      "linkingText": [
-        "[[postalCode]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-sortingcode",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-sortingcode",
-      "linkingText": [
-        "[[sortingCode]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-organization-0",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-organization-0",
-      "linkingText": [
-        "[[organization]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-recipient-0",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-recipient-0",
-      "linkingText": [
-        "[[recipient]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-phone",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-phone",
-      "linkingText": [
-        "[[phone]]"
-      ],
-      "localLinkingText": [],
-      "type": "idl",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "internal-slots-0",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
-        "title": "Internal slots",
-        "number": "11.1.12"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-addressinit",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit",
-      "linkingText": [
-        "AddressInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-addressinit-addressline",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-addressline",
-      "linkingText": [
-        "addressLine"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-city",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-city",
-      "linkingText": [
-        "city"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-country",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-country",
-      "linkingText": [
-        "country"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-dependentlocality",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-dependentlocality",
-      "linkingText": [
-        "dependentLocality"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-organization",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-organization",
-      "linkingText": [
-        "organization"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-phone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-phone",
-      "linkingText": [
-        "phone"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-postalcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-postalcode",
-      "linkingText": [
-        "postalCode"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-recipient",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-recipient",
-      "linkingText": [
-        "recipient"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-region",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-region",
-      "linkingText": [
-        "region"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addressinit-sortingcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addressinit-sortingcode",
-      "linkingText": [
-        "sortingCode"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addressinit-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addressinit-dictionary",
-        "title": "AddressInit dictionary",
-        "number": "11.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors",
-      "linkingText": [
-        "AddressErrors"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-addresserrors-addressline",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-addressline",
-      "linkingText": [
-        "addressLine"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-city",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-city",
-      "linkingText": [
-        "city"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-country",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-country",
-      "linkingText": [
-        "country"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-dependentlocality",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-dependentlocality",
-      "linkingText": [
-        "dependentLocality"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-organization",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-organization",
-      "linkingText": [
-        "organization"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-phone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-phone",
-      "linkingText": [
-        "phone"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-postalcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-postalcode",
-      "linkingText": [
-        "postalCode"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-recipient",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-recipient",
-      "linkingText": [
-        "recipient"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-region",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-region",
-      "linkingText": [
-        "region"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-addresserrors-sortingcode",
-      "href": "https://www.w3.org/TR/payment-request/#dom-addresserrors-sortingcode",
-      "linkingText": [
-        "sortingCode"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "AddressErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "addresserrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#addresserrors-dictionary",
-        "title": "AddressErrors dictionary",
-        "number": "11.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dfn-create-a-paymentaddress-from-user-provided-input",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-create-a-paymentaddress-from-user-provided-input",
-      "linkingText": [
-        "create a PaymentAddress from user-provided input"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "creating-a-paymentaddress-from-user-provided-input",
-        "href": "https://www.w3.org/TR/payment-request/#creating-a-paymentaddress-from-user-provided-input",
-        "title": "Creating a PaymentAddress from user-provided input",
-        "number": "11.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-paymentshippingoption",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption",
-      "linkingText": [
-        "PaymentShippingOption"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingoption-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingoption-dictionary",
-        "title": "12. PaymentShippingOption dictionary"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentshippingoption-id",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption-id",
-      "linkingText": [
-        "id"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentShippingOption"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingoption-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingoption-dictionary",
-        "title": "12. PaymentShippingOption dictionary"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentshippingoption-label",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption-label",
-      "linkingText": [
-        "label"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentShippingOption"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingoption-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingoption-dictionary",
-        "title": "12. PaymentShippingOption dictionary"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentshippingoption-amount",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption-amount",
-      "linkingText": [
-        "amount"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentShippingOption"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingoption-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingoption-dictionary",
-        "title": "12. PaymentShippingOption dictionary"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentshippingoption-selected",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentshippingoption-selected",
-      "linkingText": [
-        "selected"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentShippingOption"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentshippingoption-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentshippingoption-dictionary",
-        "title": "12. PaymentShippingOption dictionary"
+        "title": "PaymentItem dictionary",
+        "number": "8"
       },
       "definedIn": "dt"
     },
@@ -2843,7 +1156,8 @@
       "heading": {
         "id": "paymentcomplete-enum",
         "href": "https://www.w3.org/TR/payment-request/#paymentcomplete-enum",
-        "title": "13. PaymentComplete enum"
+        "title": "PaymentComplete enum",
+        "number": "9"
       },
       "definedIn": "heading"
     },
@@ -2863,7 +1177,8 @@
       "heading": {
         "id": "paymentcomplete-enum",
         "href": "https://www.w3.org/TR/payment-request/#paymentcomplete-enum",
-        "title": "13. PaymentComplete enum"
+        "title": "PaymentComplete enum",
+        "number": "9"
       },
       "definedIn": "dt"
     },
@@ -2883,7 +1198,8 @@
       "heading": {
         "id": "paymentcomplete-enum",
         "href": "https://www.w3.org/TR/payment-request/#paymentcomplete-enum",
-        "title": "13. PaymentComplete enum"
+        "title": "PaymentComplete enum",
+        "number": "9"
       },
       "definedIn": "dt"
     },
@@ -2903,7 +1219,8 @@
       "heading": {
         "id": "paymentcomplete-enum",
         "href": "https://www.w3.org/TR/payment-request/#paymentcomplete-enum",
-        "title": "13. PaymentComplete enum"
+        "title": "PaymentComplete enum",
+        "number": "9"
       },
       "definedIn": "dt"
     },
@@ -2921,7 +1238,7 @@
       "heading": {
         "id": "paymentresponse-interface",
         "href": "https://www.w3.org/TR/payment-request/#paymentresponse-interface",
-        "title": "14. PaymentResponse interface"
+        "title": "10. PaymentResponse interface"
       },
       "definedIn": "heading"
     },
@@ -2947,7 +1264,7 @@
         "id": "retry-method",
         "href": "https://www.w3.org/TR/payment-request/#retry-method",
         "title": "retry() method",
-        "number": "14.1"
+        "number": "10.1"
       },
       "definedIn": "heading"
     },
@@ -2966,51 +1283,9 @@
         "id": "paymentvalidationerrors-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentvalidationerrors-dictionary",
         "title": "PaymentValidationErrors dictionary",
-        "number": "14.1.1"
+        "number": "10.1.1"
       },
       "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentvalidationerrors-payer",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors-payer",
-      "linkingText": [
-        "payer"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentValidationErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentvalidationerrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentvalidationerrors-dictionary",
-        "title": "PaymentValidationErrors dictionary",
-        "number": "14.1.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-paymentvalidationerrors-shippingaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentvalidationerrors-shippingaddress",
-      "linkingText": [
-        "shippingAddress"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PaymentValidationErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "paymentvalidationerrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#paymentvalidationerrors-dictionary",
-        "title": "PaymentValidationErrors dictionary",
-        "number": "14.1.1"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-paymentvalidationerrors-error",
@@ -3029,7 +1304,7 @@
         "id": "paymentvalidationerrors-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentvalidationerrors-dictionary",
         "title": "PaymentValidationErrors dictionary",
-        "number": "14.1.1"
+        "number": "10.1.1"
       },
       "definedIn": "dt"
     },
@@ -3050,108 +1325,7 @@
         "id": "paymentvalidationerrors-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentvalidationerrors-dictionary",
         "title": "PaymentValidationErrors dictionary",
-        "number": "14.1.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-payererrors",
-      "href": "https://www.w3.org/TR/payment-request/#dom-payererrors",
-      "linkingText": [
-        "PayerErrors"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payererrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#payererrors-dictionary",
-        "title": "PayerErrors dictionary",
-        "number": "14.1.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dfn-payer-details",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-payer-details",
-      "linkingText": [
-        "Payer details"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "payererrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#payererrors-dictionary",
-        "title": "PayerErrors dictionary",
-        "number": "14.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-payererrors-email",
-      "href": "https://www.w3.org/TR/payment-request/#dom-payererrors-email",
-      "linkingText": [
-        "email"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PayerErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payererrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#payererrors-dictionary",
-        "title": "PayerErrors dictionary",
-        "number": "14.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-payererrors-name",
-      "href": "https://www.w3.org/TR/payment-request/#dom-payererrors-name",
-      "linkingText": [
-        "name"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PayerErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payererrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#payererrors-dictionary",
-        "title": "PayerErrors dictionary",
-        "number": "14.1.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-payererrors-phone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-payererrors-phone",
-      "linkingText": [
-        "phone"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "PayerErrors"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payererrors-dictionary",
-        "href": "https://www.w3.org/TR/payment-request/#payererrors-dictionary",
-        "title": "PayerErrors dictionary",
-        "number": "14.1.2"
+        "number": "10.1.1"
       },
       "definedIn": "dt"
     },
@@ -3174,7 +1348,7 @@
         "id": "methodname-attribute",
         "href": "https://www.w3.org/TR/payment-request/#methodname-attribute",
         "title": "methodName attribute",
-        "number": "14.2"
+        "number": "10.2"
       },
       "definedIn": "heading"
     },
@@ -3197,122 +1371,7 @@
         "id": "details-attribute",
         "href": "https://www.w3.org/TR/payment-request/#details-attribute",
         "title": "details attribute",
-        "number": "14.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-shippingaddress",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingaddress",
-      "linkingText": [
-        "shippingAddress"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.shippingAddress"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shippingaddress-attribute-0",
-        "href": "https://www.w3.org/TR/payment-request/#shippingaddress-attribute-0",
-        "title": "shippingAddress attribute",
-        "number": "14.4"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-shippingoption",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-shippingoption",
-      "linkingText": [
-        "shippingOption"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.shippingOption"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "shippingoption-attribute-0",
-        "href": "https://www.w3.org/TR/payment-request/#shippingoption-attribute-0",
-        "title": "shippingOption attribute",
-        "number": "14.5"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-payername",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payername",
-      "linkingText": [
-        "payerName"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.payerName"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payername-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#payername-attribute",
-        "title": "payerName attribute",
-        "number": "14.6"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-payeremail",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payeremail",
-      "linkingText": [
-        "payerEmail"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.payerEmail"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payeremail-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#payeremail-attribute",
-        "title": "payerEmail attribute",
-        "number": "14.7"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-payerphone",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-payerphone",
-      "linkingText": [
-        "payerPhone"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.payerPhone"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "payerphone-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#payerphone-attribute",
-        "title": "payerPhone attribute",
-        "number": "14.8"
+        "number": "10.3"
       },
       "definedIn": "heading"
     },
@@ -3335,7 +1394,7 @@
         "id": "requestid-attribute",
         "href": "https://www.w3.org/TR/payment-request/#requestid-attribute",
         "title": "requestId attribute",
-        "number": "14.9"
+        "number": "10.4"
       },
       "definedIn": "heading"
     },
@@ -3361,30 +1420,7 @@
         "id": "complete-method",
         "href": "https://www.w3.org/TR/payment-request/#complete-method",
         "title": "complete() method",
-        "number": "14.10"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-paymentresponse-onpayerdetailchange",
-      "href": "https://www.w3.org/TR/payment-request/#dom-paymentresponse-onpayerdetailchange",
-      "linkingText": [
-        "onpayerdetailchange"
-      ],
-      "localLinkingText": [
-        "PaymentResponse.onpayerdetailchange"
-      ],
-      "type": "attribute",
-      "for": [
-        "PaymentResponse"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "onpayerdetailchange-attribute",
-        "href": "https://www.w3.org/TR/payment-request/#onpayerdetailchange-attribute",
-        "title": "onpayerdetailchange attribute",
-        "number": "14.11"
+        "number": "10.5"
       },
       "definedIn": "heading"
     },
@@ -3395,15 +1431,17 @@
         "[[complete]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "internal-slots-1",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-1",
+        "id": "internal-slots-0",
+        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
         "title": "Internal Slots",
-        "number": "14.12"
+        "number": "10.6"
       },
       "definedIn": "table"
     },
@@ -3414,15 +1452,17 @@
         "[[request]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "internal-slots-1",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-1",
+        "id": "internal-slots-0",
+        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
         "title": "Internal Slots",
-        "number": "14.12"
+        "number": "10.6"
       },
       "definedIn": "table"
     },
@@ -3433,15 +1473,17 @@
         "[[retryPromise]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "PaymentResponse"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "internal-slots-1",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-1",
+        "id": "internal-slots-0",
+        "href": "https://www.w3.org/TR/payment-request/#internal-slots-0",
         "title": "Internal Slots",
-        "number": "14.12"
+        "number": "10.6"
       },
       "definedIn": "table"
     },
@@ -3460,66 +1502,9 @@
       "heading": {
         "id": "permissions-policy",
         "href": "https://www.w3.org/TR/payment-request/#permissions-policy",
-        "title": "15. Permissions Policy integration"
+        "title": "11. Permissions Policy integration"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dfn-shippingaddresschange",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-shippingaddresschange",
-      "linkingText": [
-        "shippingaddresschange"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "summary",
-        "href": "https://www.w3.org/TR/payment-request/#summary",
-        "title": "Summary",
-        "number": "16.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-shippingoptionchange",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-shippingoptionchange",
-      "linkingText": [
-        "shippingoptionchange"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "summary",
-        "href": "https://www.w3.org/TR/payment-request/#summary",
-        "title": "Summary",
-        "number": "16.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dfn-payerdetailchange",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-payerdetailchange",
-      "linkingText": [
-        "payerdetailchange"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": true,
-      "heading": {
-        "id": "summary",
-        "href": "https://www.w3.org/TR/payment-request/#summary",
-        "title": "Summary",
-        "number": "16.1"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dfn-paymentmethodchange",
@@ -3536,7 +1521,7 @@
         "id": "summary",
         "href": "https://www.w3.org/TR/payment-request/#summary",
         "title": "Summary",
-        "number": "16.1"
+        "number": "12.1"
       },
       "definedIn": "table"
     },
@@ -3555,7 +1540,7 @@
         "id": "paymentmethodchangeevent-interface",
         "href": "https://www.w3.org/TR/payment-request/#paymentmethodchangeevent-interface",
         "title": "PaymentMethodChangeEvent interface",
-        "number": "16.2"
+        "number": "12.2"
       },
       "definedIn": "heading"
     },
@@ -3582,7 +1567,7 @@
         "id": "paymentmethodchangeevent-interface",
         "href": "https://www.w3.org/TR/payment-request/#paymentmethodchangeevent-interface",
         "title": "PaymentMethodChangeEvent interface",
-        "number": "16.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -3605,7 +1590,7 @@
         "id": "methoddetails-attribute",
         "href": "https://www.w3.org/TR/payment-request/#methoddetails-attribute",
         "title": "methodDetails attribute",
-        "number": "16.2.1"
+        "number": "12.2.1"
       },
       "definedIn": "heading"
     },
@@ -3628,7 +1613,7 @@
         "id": "methodname-attribute-0",
         "href": "https://www.w3.org/TR/payment-request/#methodname-attribute-0",
         "title": "methodName attribute",
-        "number": "16.2.2"
+        "number": "12.2.2"
       },
       "definedIn": "heading"
     },
@@ -3647,7 +1632,7 @@
         "id": "paymentmethodchangeeventinit-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentmethodchangeeventinit-dictionary",
         "title": "PaymentMethodChangeEventInit dictionary",
-        "number": "16.2.3"
+        "number": "12.2.3"
       },
       "definedIn": "heading"
     },
@@ -3668,7 +1653,7 @@
         "id": "paymentmethodchangeeventinit-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentmethodchangeeventinit-dictionary",
         "title": "PaymentMethodChangeEventInit dictionary",
-        "number": "16.2.3"
+        "number": "12.2.3"
       },
       "definedIn": "dt"
     },
@@ -3689,7 +1674,7 @@
         "id": "paymentmethodchangeeventinit-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentmethodchangeeventinit-dictionary",
         "title": "PaymentMethodChangeEventInit dictionary",
-        "number": "16.2.3"
+        "number": "12.2.3"
       },
       "definedIn": "dt"
     },
@@ -3708,7 +1693,7 @@
         "id": "paymentrequestupdateevent-interface",
         "href": "https://www.w3.org/TR/payment-request/#paymentrequestupdateevent-interface",
         "title": "PaymentRequestUpdateEvent interface",
-        "number": "16.3"
+        "number": "12.3"
       },
       "definedIn": "heading"
     },
@@ -3737,7 +1722,7 @@
         "id": "constructor-0",
         "href": "https://www.w3.org/TR/payment-request/#constructor-0",
         "title": "Constructor",
-        "number": "16.3.1"
+        "number": "12.3.1"
       },
       "definedIn": "heading"
     },
@@ -3763,7 +1748,7 @@
         "id": "updatewith-method",
         "href": "https://www.w3.org/TR/payment-request/#updatewith-method",
         "title": "updateWith() method",
-        "number": "16.3.2"
+        "number": "12.3.2"
       },
       "definedIn": "heading"
     },
@@ -3774,17 +1759,17 @@
         "[[waitForUpdate]]"
       ],
       "localLinkingText": [],
-      "type": "idl",
+      "type": "attribute",
       "for": [
         "PaymentRequestUpdateEvent"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "internal-slots-2",
-        "href": "https://www.w3.org/TR/payment-request/#internal-slots-2",
+        "id": "internal-slots-1",
+        "href": "https://www.w3.org/TR/payment-request/#internal-slots-1",
         "title": "Internal Slots",
-        "number": "16.3.3"
+        "number": "12.3.3"
       },
       "definedIn": "table"
     },
@@ -3803,7 +1788,7 @@
         "id": "paymentrequestupdateeventinit-dictionary",
         "href": "https://www.w3.org/TR/payment-request/#paymentrequestupdateeventinit-dictionary",
         "title": "PaymentRequestUpdateEventInit dictionary",
-        "number": "16.3.4"
+        "number": "12.3.4"
       },
       "definedIn": "heading"
     },
@@ -3822,45 +1807,7 @@
         "id": "can-make-payment-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#can-make-payment-algorithm",
         "title": "Can make payment algorithm",
-        "number": "17.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-shipping-address-changed-algorithm",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-shipping-address-changed-algorithm",
-      "linkingText": [
-        "shipping address changed algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "shipping-address-changed-algorithm",
-        "href": "https://www.w3.org/TR/payment-request/#shipping-address-changed-algorithm",
-        "title": "Shipping address changed algorithm",
-        "number": "17.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-shipping-option-changed-algorithm",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-shipping-option-changed-algorithm",
-      "linkingText": [
-        "shipping option changed algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "shipping-option-changed-algorithm",
-        "href": "https://www.w3.org/TR/payment-request/#shipping-option-changed-algorithm",
-        "title": "Shipping option changed algorithm",
-        "number": "17.3"
+        "number": "13.1"
       },
       "definedIn": "prose"
     },
@@ -3881,7 +1828,7 @@
         "id": "payment-method-changed-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#payment-method-changed-algorithm",
         "title": "Payment method changed algorithm",
-        "number": "17.4"
+        "number": "13.2"
       },
       "definedIn": "prose"
     },
@@ -3900,26 +1847,7 @@
         "id": "paymentrequest-updated-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#paymentrequest-updated-algorithm",
         "title": "PaymentRequest updated algorithm",
-        "number": "17.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-payer-detail-changed-algorithm",
-      "href": "https://www.w3.org/TR/payment-request/#dfn-payer-detail-changed-algorithm",
-      "linkingText": [
-        "payer detail changed algorithm"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "payer-detail-changed-algorithm",
-        "href": "https://www.w3.org/TR/payment-request/#payer-detail-changed-algorithm",
-        "title": "Payer detail changed algorithm",
-        "number": "17.6"
+        "number": "13.3"
       },
       "definedIn": "prose"
     },
@@ -3939,7 +1867,7 @@
         "id": "user-accepts-the-payment-request-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#user-accepts-the-payment-request-algorithm",
         "title": "User accepts the payment request algorithm",
-        "number": "17.7"
+        "number": "13.4"
       },
       "definedIn": "prose"
     },
@@ -3959,7 +1887,7 @@
         "id": "user-aborts-the-payment-request-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#user-aborts-the-payment-request-algorithm",
         "title": "User aborts the payment request algorithm",
-        "number": "17.8"
+        "number": "13.5"
       },
       "definedIn": "prose"
     },
@@ -3978,7 +1906,7 @@
         "id": "update-a-paymentrequest-s-details-algorithm",
         "href": "https://www.w3.org/TR/payment-request/#update-a-paymentrequest-s-details-algorithm",
         "title": "Update a PaymentRequest's details algorithm",
-        "number": "17.9"
+        "number": "13.6"
       },
       "definedIn": "prose"
     },
@@ -3997,7 +1925,7 @@
         "id": "abort-the-update",
         "href": "https://www.w3.org/TR/payment-request/#abort-the-update",
         "title": "Abort the update",
-        "number": "17.9.1"
+        "number": "13.6.1"
       },
       "definedIn": "prose"
     },
@@ -4015,7 +1943,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/payment-request/#dependencies",
-        "title": "20. Dependencies"
+        "title": "16. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -4033,7 +1961,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/payment-request/#dependencies",
-        "title": "20. Dependencies"
+        "title": "16. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -4053,7 +1981,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/payment-request/#dependencies",
-        "title": "20. Dependencies"
+        "title": "16. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -4072,7 +2000,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/payment-request/#dependencies",
-        "title": "20. Dependencies"
+        "title": "16. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -4090,7 +2018,7 @@
       "heading": {
         "id": "dependencies",
         "href": "https://www.w3.org/TR/payment-request/#dependencies",
-        "title": "20. Dependencies"
+        "title": "16. Dependencies"
       },
       "definedIn": "prose"
     },
@@ -4108,7 +2036,7 @@
       "heading": {
         "id": "conformance",
         "href": "https://www.w3.org/TR/payment-request/#conformance",
-        "title": "21. Conformance"
+        "title": "17. Conformance"
       },
       "definedIn": "prose"
     }

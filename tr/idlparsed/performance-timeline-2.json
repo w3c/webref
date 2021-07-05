@@ -158,7 +158,7 @@
         "partial": false
       },
       "PerformanceObserverCallback": {
-        "fragment": "callback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer);",
+        "fragment": "callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,\n                                             PerformanceObserver observer,\n                                             optional PerformanceObserverCallbackOptions options = {});",
         "type": "callback",
         "name": "PerformanceObserverCallback",
         "idlType": {
@@ -167,7 +167,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -201,12 +201,30 @@
             "default": null,
             "optional": false,
             "variadic": false
+          },
+          {
+            "type": "argument",
+            "name": "options",
+            "extAttrs": [],
+            "idlType": {
+              "type": "argument-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PerformanceObserverCallbackOptions"
+            },
+            "default": {
+              "type": "dictionary"
+            },
+            "optional": true,
+            "variadic": false
           }
         ],
         "extAttrs": []
       },
       "PerformanceObserver": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  void observe (optional PerformanceObserverInit options = {});\n  void disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
         "type": "interface",
         "name": "PerformanceObserver",
         "inheritance": null,
@@ -242,7 +260,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -276,7 +294,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [],
             "extAttrs": [],
@@ -349,8 +367,33 @@
         ],
         "partial": false
       },
+      "PerformanceObserverCallbackOptions": {
+        "fragment": "dictionary PerformanceObserverCallbackOptions {\n  unsigned long long droppedEntriesCount;\n};",
+        "type": "dictionary",
+        "name": "PerformanceObserverCallbackOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "droppedEntriesCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "PerformanceObserverInit": {
-        "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n};",
+        "fragment": "dictionary PerformanceObserverInit {\n  sequence<DOMString> entryTypes;\n  DOMString type;\n  boolean buffered;\n};",
         "type": "dictionary",
         "name": "PerformanceObserverInit",
         "inheritance": null,
@@ -390,6 +433,21 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "buffered",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false
@@ -652,10 +710,10 @@
       ],
       "PerformanceObserver": [
         "PerformanceObserverCallback",
-        "void",
         "PerformanceObserverInit",
         "PerformanceEntryList"
       ],
+      "PerformanceObserverCallbackOptions": [],
       "PerformanceObserverInit": [],
       "PerformanceObserverEntryList": [
         "PerformanceEntryList"
@@ -663,8 +721,7 @@
     },
     "externalDependencies": [
       "Performance",
-      "DOMHighResTimeStamp",
-      "void"
+      "DOMHighResTimeStamp"
     ],
     "hasObsoleteIdl": false
   }

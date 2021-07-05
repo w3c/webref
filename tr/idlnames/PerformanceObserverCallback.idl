@@ -1,3 +1,4 @@
 // Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline-2/)
-callback PerformanceObserverCallback = void (PerformanceObserverEntryList entries,
-                                             PerformanceObserver observer);
+callback PerformanceObserverCallback = undefined (PerformanceObserverEntryList entries,
+                                             PerformanceObserver observer,
+                                             optional PerformanceObserverCallbackOptions options = {});
