@@ -4,11 +4,9 @@ interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
 
   Promise<WebTransportStats> getStats();
-  readonly attribute WebTransportState state;
   readonly attribute Promise<undefined> ready;
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
-  attribute EventHandler onstatechange;
 
   readonly attribute unsigned short maxDatagramSize;
   readonly attribute DatagramDuplexStream datagrams;
@@ -17,7 +15,7 @@ interface WebTransport {
   /* a ReadableStream of BidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
-  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});
+  Promise<SendStream> createUnidirectionalStream();
   /* a ReadableStream of ReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
 };

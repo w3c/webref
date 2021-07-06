@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "Sanitizer": {
-        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  SanitizerConfig config();\n  static SanitizerConfig defaultConfig();\n};",
+        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig aConfig = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  readonly attribute SanitizerConfig config;\n  static readonly attribute SanitizerConfig defaultConfig;\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
@@ -24,7 +24,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "config",
+                "name": "aConfig",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -108,34 +108,34 @@
             "special": ""
           },
           {
-            "type": "operation",
+            "type": "attribute",
             "name": "config",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "SanitizerConfig"
             },
-            "arguments": [],
             "extAttrs": [],
-            "special": ""
+            "special": "",
+            "readonly": true
           },
           {
-            "type": "operation",
+            "type": "attribute",
             "name": "defaultConfig",
             "idlType": {
-              "type": "return-type",
+              "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
               "idlType": "SanitizerConfig"
             },
-            "arguments": [],
             "extAttrs": [],
-            "special": "static"
+            "special": "static",
+            "readonly": true
           }
         ],
         "extAttrs": [

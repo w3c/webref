@@ -153,7 +153,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -221,21 +221,6 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "state",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "WebTransportState"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           },
           {
             "type": "attribute",
@@ -318,21 +303,6 @@
             ],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "onstatechange",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
           },
           {
             "type": "attribute",
@@ -423,26 +393,7 @@
                 }
               ]
             },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "parameters",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "SendStreamParameters"
-                },
-                "default": {
-                  "type": "dictionary"
-                },
-                "optional": true,
-                "variadic": false
-              }
-            ],
+            "arguments": [],
             "extAttrs": [],
             "special": ""
           },
@@ -536,39 +487,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "SendStreamParameters": {
-        "fragment": "dictionary SendStreamParameters {\n};",
-        "type": "dictionary",
-        "name": "SendStreamParameters",
-        "inheritance": null,
-        "members": [],
-        "extAttrs": [],
-        "partial": false
-      },
-      "WebTransportState": {
-        "fragment": "enum WebTransportState {\n  \"connecting\",\n  \"connected\",\n  \"closed\",\n  \"failed\"\n};",
-        "type": "enum",
-        "name": "WebTransportState",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "connecting"
-          },
-          {
-            "type": "enum-value",
-            "value": "connected"
-          },
-          {
-            "type": "enum-value",
-            "value": "closed"
-          },
-          {
-            "type": "enum-value",
-            "value": "failed"
-          }
-        ],
-        "extAttrs": []
       },
       "WebTransportCloseInfo": {
         "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long long errorCode = 0;\n  DOMString reason = \"\";\n};",
@@ -950,19 +868,15 @@
       "WebTransport": [
         "WebTransportOptions",
         "WebTransportStats",
-        "WebTransportState",
         "WebTransportCloseInfo",
-        "EventHandler",
         "DatagramDuplexStream",
         "BidirectionalStream",
         "ReadableStream",
-        "SendStream",
-        "SendStreamParameters"
+        "SendStream"
       ],
       "WebTransportOptions": [
         "RTCDtlsFingerprint"
       ],
-      "SendStreamParameters": [],
       "WebTransportCloseInfo": [],
       "WebTransportStats": [
         "DOMHighResTimeStamp"
@@ -982,7 +896,6 @@
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
-      "EventHandler",
       "RTCDtlsFingerprint",
       "DOMHighResTimeStamp"
     ],

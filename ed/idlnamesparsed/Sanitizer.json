@@ -5,7 +5,7 @@
       "title": "HTML Sanitizer API",
       "url": "https://wicg.github.io/sanitizer-api/"
     },
-    "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  SanitizerConfig config();\n  static SanitizerConfig defaultConfig();\n};",
+    "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig aConfig = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  readonly attribute SanitizerConfig config;\n  static readonly attribute SanitizerConfig defaultConfig;\n};",
     "href": "https://wicg.github.io/sanitizer-api/#sanitizer"
   },
   "extended": [],
