@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 05, 2021
+% July 06, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -14171,7 +14171,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Crawled version: 30 June 2021
+- Crawled version: 05 July 2021
 - Editor's Draft: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
@@ -14195,14 +14195,10 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#dom-navigator`](https://html.spec.whatwg.org/#dom-navigator)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationtype`](https://www.w3.org/TR/screen-orientation/#dom-orientationtype)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
      * [`https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm`](https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm)
      * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationtype`](https://www.w3.org/TR/screen-orientation/#dom-orientationtype)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -21955,7 +21951,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Crawled URL: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
-- Crawled version: 19 January 2021
+- Crawled version: 05 July 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-fromelement/](https://w3c.github.io/mediacapture-fromelement/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-fromelement/](https://www.w3.org/TR/mediacapture-fromelement/)
 - Shortname: mediacapture-fromelement
@@ -26283,7 +26279,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 5 July 2021
+- Crawled version: 6 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -26324,7 +26320,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 5 July 2021
+- Crawled version: 6 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -26345,7 +26341,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 5 July 2021
+- Crawled version: 6 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 

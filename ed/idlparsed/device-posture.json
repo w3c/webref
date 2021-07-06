@@ -75,33 +75,21 @@
         "partial": false
       },
       "DevicePostureType": {
-        "fragment": "enum DevicePostureType {\n  \"no-fold\",\n  \"laptop\",\n  \"flat\",\n  \"tent\",\n  \"tablet\",\n  \"book\"\n};",
+        "fragment": "enum DevicePostureType {\n  \"continuous\",\n  \"folded\",\n  \"folded-over\"\n};",
         "type": "enum",
         "name": "DevicePostureType",
         "values": [
           {
             "type": "enum-value",
-            "value": "no-fold"
+            "value": "continuous"
           },
           {
             "type": "enum-value",
-            "value": "laptop"
+            "value": "folded"
           },
           {
             "type": "enum-value",
-            "value": "flat"
-          },
-          {
-            "type": "enum-value",
-            "value": "tent"
-          },
-          {
-            "type": "enum-value",
-            "value": "tablet"
-          },
-          {
-            "type": "enum-value",
-            "value": "book"
+            "value": "folded-over"
           }
         ],
         "extAttrs": []

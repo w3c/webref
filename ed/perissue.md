@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 05, 2021
+% July 06, 2021
 
 418 specifications were crawled in this report.
 
@@ -10377,14 +10377,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#dom-navigator`](https://html.spec.whatwg.org/#dom-navigator)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-primary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-portrait-secondary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-primary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary`](https://www.w3.org/TR/screen-orientation/#dom-orientationlocktype-landscape-secondary)
-     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationtype`](https://www.w3.org/TR/screen-orientation/#dom-orientationtype)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
      * [`https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm`](https://www.w3.org/TR/page-visibility/#dfn-now-visible-algorithm)
      * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
+     * [`https://www.w3.org/TR/screen-orientation/#dom-orientationtype`](https://www.w3.org/TR/screen-orientation/#dom-orientationtype)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
      * [`https://html.spec.whatwg.org/#dom-window`](https://html.spec.whatwg.org/#dom-window)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
@@ -22967,7 +22963,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20746 problematic external links found in 344 specifications
+=> 20742 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
