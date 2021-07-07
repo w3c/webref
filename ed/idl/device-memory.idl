@@ -1,14 +1,12 @@
 // GENERATED CONTENT - DO NOT EDIT
 // Content was automatically extracted by Reffy into webref
 // (https://github.com/w3c/webref)
-// Source: Device Memory 1 (https://w3c.github.io/device-memory/)
+// Source: Device Memory (https://www.w3.org/TR/device-memory/)
 
 [
+    NoInterfaceObject,
     SecureContext,
     Exposed=(Window,Worker)
-] interface mixin NavigatorDeviceMemory {
+] interface NavigatorDeviceClass {
     readonly attribute double deviceMemory;
 };
-
-Navigator includes NavigatorDeviceMemory;
-WorkerNavigator includes NavigatorDeviceMemory;
