@@ -2,7 +2,7 @@
 % Reffy
 % July 07, 2021
 
-418 specifications were crawled in this report.
+426 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -23,9 +23,14 @@
 - [RegExp Match Indices](https://tc39.es/proposal-regexp-match-indices/)
 - [Relative Indexing Method](https://tc39.es/proposal-relative-indexing-method/)
 - [Resizable ArrayBuffer and growable SharedArrayBuffer](https://tc39.es/proposal-resizablearraybuffer/)
+- [rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - [rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
+- [rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
+- [rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - [rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - [rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
+- [rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
+- [rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - [Static class features](https://tc39.es/proposal-static-class-features/)
 - [Temporal proposal](https://tc39.es/proposal-temporal/)
 - [Top-Level Await](https://tc39.es/proposal-top-level-await/)
@@ -72,7 +77,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 64 specifications found
+=> 69 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -1303,7 +1308,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/) but does not list it in its references
     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/) but does not list it in its references
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
+- [rfc6797](https://datatracker.ietf.org/doc/html/rfc6797) links to:
+    * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/) but does not list it in its references
+    * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812) but does not list it in its references
+- [rfc7034](https://datatracker.ietf.org/doc/html/rfc7034) links to:
+    * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/) but does not list it in its references
+    * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/) but does not list it in its references
 - [rfc7469](https://datatracker.ietf.org/doc/html/rfc7469) links to [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224) but does not list it in its references
+- [rfc7578](https://datatracker.ietf.org/doc/html/rfc7578) links to [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028) but does not list it in its references
+- [rfc8942](https://datatracker.ietf.org/doc/html/rfc8942) links to [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/) but does not list it in its references
 - [Save Data API](https://wicg.github.io/savedata/) links to [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/) but does not list it in its references
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/) links to:
     * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/) but does not list it in its references
@@ -1438,7 +1451,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 606 missing references for links found in 175 specifications
+=> 612 missing references for links found in 179 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -17567,6 +17580,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://wicg.github.io/client-hints-infrastructure/#fetch`](https://wicg.github.io/client-hints-infrastructure/#fetch)
      * [`https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request`](https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request)
      * [`https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting`](https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting)
+- [rfc8942](https://datatracker.ietf.org/doc/html/rfc8942):
+     * [`https://wicg.github.io/savedata/#save-data-request-header-field`](https://wicg.github.io/savedata/#save-data-request-header-field)
 - [Save Data API](https://wicg.github.io/savedata/):
      * [`https://wicg.github.io/netinfo/#network-information`](https://wicg.github.io/netinfo/#network-information)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
@@ -19194,8 +19209,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#retarget`](https://dom.spec.whatwg.org/#retarget)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
-- [Trace Context Level 2](https://w3c.github.io/trace-context/):
-     * [`https://fetch.spec.whatwg.org/#http-access-control-request-headers`](https://fetch.spec.whatwg.org/#http-access-control-request-headers)
 - [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html):
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
@@ -23241,8 +23254,16 @@ Links in the body of a specification should be to the same document as that poin
 - [rfc6454](https://datatracker.ietf.org/doc/html/rfc6454):
      * [`https://www.w3.org/TR/2010/WD-cors-20100727/`](https://www.w3.org/TR/2010/WD-cors-20100727/)
      * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/)
+- [rfc6797](https://datatracker.ietf.org/doc/html/rfc6797):
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812)
+- [rfc7034](https://datatracker.ietf.org/doc/html/rfc7034):
+     * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/)
+     * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/)
 - [rfc7469](https://datatracker.ietf.org/doc/html/rfc7469):
      * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
+- [rfc7578](https://datatracker.ietf.org/doc/html/rfc7578):
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028)
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/):
      * [`https://www.w3.org/TR/2001/REC-SVG-20010904/`](https://www.w3.org/TR/2001/REC-SVG-20010904/)
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
@@ -23345,6 +23366,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 188 problematic external links found in 59 specifications
+=> 193 problematic external links found in 62 specifications
 
 

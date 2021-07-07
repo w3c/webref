@@ -414,6 +414,27 @@ Informative references to this spec from:
 - [Permissions](https://w3c.github.io/permissions/)
 
 
+## An HTTP Status Code to Report Legal Obstacles {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc7725](https://datatracker.ietf.org/doc/html/rfc7725)
+- Crawled URL: [https://httpwg.org/specs/rfc7725.html](https://httpwg.org/specs/rfc7725.html)
+- Crawled version: 15 March 2021
+- Editor's Draft: [https://httpwg.org/specs/rfc7725.html](https://httpwg.org/specs/rfc7725.html)
+- Shortname: rfc7725
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## ARIA in HTML {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -6587,7 +6608,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
-- Crawled version: 25 June 2021
+- Crawled version: 7 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
 - Shortname: css-fonts-5
 
@@ -15763,7 +15784,6 @@ Normative references to this spec from:
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
-- [Trace Context Level 2](https://w3c.github.io/trace-context/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
@@ -19462,6 +19482,48 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## HTTP Alternative Services {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc7838](https://datatracker.ietf.org/doc/html/rfc7838)
+- Crawled URL: [https://httpwg.org/specs/rfc7838.html](https://httpwg.org/specs/rfc7838.html)
+- Crawled version: 15 March 2021
+- Editor's Draft: [https://httpwg.org/specs/rfc7838.html](https://httpwg.org/specs/rfc7838.html)
+- Shortname: rfc7838
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## HTTP Immutable Responses {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc8246](https://datatracker.ietf.org/doc/html/rfc8246)
+- Crawled URL: [https://httpwg.org/specs/rfc8246.html](https://httpwg.org/specs/rfc8246.html)
+- Crawled version: 15 March 2021
+- Editor's Draft: [https://httpwg.org/specs/rfc8246.html](https://httpwg.org/specs/rfc8246.html)
+- Shortname: rfc8246
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## HTTP State Management Mechanism {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
 
 ### Spec info {.info}
@@ -19606,7 +19668,6 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
-- [Trace Context Level 2](https://w3c.github.io/trace-context/)
 - [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [WebDriver](https://w3c.github.io/webdriver/)
 
@@ -26279,6 +26340,34 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## rfc2397 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
+- Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
+- Crawled version: 7 July 2021
+- Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
+- Shortname: rfc2397
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [File API](https://w3c.github.io/FileAPI/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [WebDriver](https://w3c.github.io/webdriver/)
+
+Informative references to this spec from:
+
+- [Element Timing API](https://wicg.github.io/element-timing/)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+
+
 ## rfc6454 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -26318,6 +26407,69 @@ Informative references to this spec from:
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [URL Standard](https://url.spec.whatwg.org/)
+
+
+## rfc6797 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
+- Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
+- Crawled version: 7 July 2021
+- Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
+- Shortname: rfc6797
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Network Error Logging](https://w3c.github.io/network-error-logging/)
+- [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+
+Informative references to this spec from:
+
+- [Infra Standard](https://infra.spec.whatwg.org/)
+- [Server Timing](https://w3c.github.io/server-timing/)
+
+
+## rfc7034 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
+- Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
+- Crawled version: 7 July 2021
+- Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
+- Shortname: rfc7034
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/)
+     * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/)
+     * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+
+No informative reference to this spec from other specs.
 
 
 ## rfc7239 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
@@ -26362,6 +26514,61 @@ No informative reference to this spec from other specs.
 ### Known dependencies on this specification {.dependencies}
 
 No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+## rfc7578 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
+- Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
+- Crawled version: 7 July 2021
+- Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
+- Shortname: rfc7578
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
+## rfc8942 {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
+- Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
+- Crawled version: 7 July 2021
+- Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
+- Shortname: rfc8942
+
+### Potential issue(s) {.anomalies}
+
+- No normative references found
+- Missing references for links: 
+     * [`https://fetch.spec.whatwg.org/`](https://fetch.spec.whatwg.org/)
+- Broken external links:
+     * [`https://wicg.github.io/savedata/#save-data-request-header-field`](https://wicg.github.io/savedata/#save-data-request-header-field)
+
+### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
+- [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 No informative reference to this spec from other specs.
 
@@ -29121,29 +29328,6 @@ Informative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 
 
-## Trace Context Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
-- Crawled URL: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Crawled version: 06 July 2021
-- Editor's Draft: [https://w3c.github.io/trace-context/](https://w3c.github.io/trace-context/)
-- Latest published version: [https://www.w3.org/TR/trace-context-1/](https://www.w3.org/TR/trace-context-1/)
-- Shortname: trace-context-1
-
-### Potential issue(s) {.anomalies}
-
-- Broken external links:
-     * [`https://fetch.spec.whatwg.org/#http-access-control-request-headers`](https://fetch.spec.whatwg.org/#http-access-control-request-headers)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Tracking Preference Expression (DNT) {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -29837,6 +30021,28 @@ Informative references to this spec from:
 - [Origin-bound one-time codes delivered via SMS](https://wicg.github.io/sms-one-time-codes/)
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
+
+
+## Use of the Content-Disposition Header Field
+  in the Hypertext Transfer Protocol (HTTP) {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://datatracker.ietf.org/doc/html/rfc6266](https://datatracker.ietf.org/doc/html/rfc6266)
+- Crawled URL: [https://httpwg.org/specs/rfc6266.html](https://httpwg.org/specs/rfc6266.html)
+- Crawled version: 15 March 2021
+- Editor's Draft: [https://httpwg.org/specs/rfc6266.html](https://httpwg.org/specs/rfc6266.html)
+- Shortname: rfc6266
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## User Preference Media Features Client Hints Headers {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -34216,7 +34422,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 July 2021
+- Crawled version: 7 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -34335,7 +34541,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 6 July 2021
+- Crawled version: 7 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL

@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>418 specifications were crawled in this report.</p>
+  <p>426 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -40,9 +40,14 @@
   <li><a href="https://tc39.es/proposal-regexp-match-indices/">RegExp Match Indices</a></li>
   <li><a href="https://tc39.es/proposal-relative-indexing-method/">Relative Indexing Method</a></li>
   <li><a href="https://tc39.es/proposal-resizablearraybuffer/">Resizable ArrayBuffer and growable SharedArrayBuffer</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc2397">rfc2397</a></li>
   <li><a href="https://datatracker.ietf.org/doc/html/rfc6454">rfc6454</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc6797">rfc6797</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7034">rfc7034</a></li>
   <li><a href="https://datatracker.ietf.org/doc/html/rfc7239">rfc7239</a></li>
   <li><a href="https://datatracker.ietf.org/doc/html/rfc7469">rfc7469</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7578">rfc7578</a></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc8942">rfc8942</a></li>
   <li><a href="https://tc39.es/proposal-static-class-features/">Static class features</a></li>
   <li><a href="https://tc39.es/proposal-temporal/">Temporal proposal</a></li>
   <li><a href="https://tc39.es/proposal-top-level-await/">Top-Level Await</a></li>
@@ -89,7 +94,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/">WebGL WEBGL_multi_draw Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   </ul>
-  <p>=&gt; 64 specifications found</p>
+  <p>=&gt; 69 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -1641,7 +1646,19 @@
   <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc6797">rfc6797</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/"><code>https://www.w3.org/TR/1999/REC-html401-19991224/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2010/REC-wsc-ui-20100812"><code>https://www.w3.org/TR/2010/REC-wsc-ui-20100812</code></a> but does not list it in its references</li>
+  </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7034">rfc7034</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2012/CR-CSP-20121115/"><code>https://www.w3.org/TR/2012/CR-CSP-20121115/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2013/WD-CSP11-20130604/"><code>https://www.w3.org/TR/2013/WD-CSP11-20130604/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://datatracker.ietf.org/doc/html/rfc7469">rfc7469</a> links to <a href="https://www.w3.org/TR/1999/REC-html401-19991224"><code>https://www.w3.org/TR/1999/REC-html401-19991224</code></a> but does not list it in its references</li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7578">rfc7578</a> links to <a href="https://www.w3.org/TR/2014/REC-html5-20141028"><code>https://www.w3.org/TR/2014/REC-html5-20141028</code></a> but does not list it in its references</li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc8942">rfc8942</a> links to <a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/savedata/">Save Data API</a> links to <a href="https://www.w3.org/TR/netinfo/"><code>https://www.w3.org/TR/netinfo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a> links to:
   <ul>
@@ -1812,7 +1829,7 @@
   </ul></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 606 missing references for links found in 175 specifications</p>
+  <p>=&gt; 612 missing references for links found in 179 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -18586,6 +18603,10 @@
   <li><a href="https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request"><code>https://wicg.github.io/client-hints-infrastructure/#abstract-opdef-append-client-hints-to-request</code></a></li>
   <li><a href="https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting"><code>https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting</code></a></li>
   </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc8942">rfc8942</a>:
+  <ul>
+  <li><a href="https://wicg.github.io/savedata/#save-data-request-header-field"><code>https://wicg.github.io/savedata/#save-data-request-header-field</code></a></li>
+  </ul></li>
   <li><a href="https://wicg.github.io/savedata/">Save Data API</a>:
   <ul>
   <li><a href="https://wicg.github.io/netinfo/#network-information"><code>https://wicg.github.io/netinfo/#network-information</code></a></li>
@@ -20258,10 +20279,6 @@
   <li><a href="https://dom.spec.whatwg.org/#retarget"><code>https://dom.spec.whatwg.org/#retarget</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
-  </ul></li>
-  <li><a href="https://w3c.github.io/trace-context/">Trace Context Level 2</a>:
-  <ul>
-  <li><a href="https://fetch.spec.whatwg.org/#http-access-control-request-headers"><code>https://fetch.spec.whatwg.org/#http-access-control-request-headers</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/dnt/drafts/tracking-dnt.html">Tracking Preference Expression (DNT)</a>:
   <ul>
@@ -24624,9 +24641,23 @@
   <li><a href="https://www.w3.org/TR/2010/WD-cors-20100727/"><code>https://www.w3.org/TR/2010/WD-cors-20100727/</code></a></li>
   <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/"><code>https://www.w3.org/TR/2011/WD-html5-20110525/</code></a></li>
   </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc6797">rfc6797</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224/"><code>https://www.w3.org/TR/1999/REC-html401-19991224/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2010/REC-wsc-ui-20100812"><code>https://www.w3.org/TR/2010/REC-wsc-ui-20100812</code></a></li>
+  </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7034">rfc7034</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2012/CR-CSP-20121115/"><code>https://www.w3.org/TR/2012/CR-CSP-20121115/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2013/WD-CSP11-20130604/"><code>https://www.w3.org/TR/2013/WD-CSP11-20130604/</code></a></li>
+  </ul></li>
   <li><a href="https://datatracker.ietf.org/doc/html/rfc7469">rfc7469</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/1999/REC-html401-19991224"><code>https://www.w3.org/TR/1999/REC-html401-19991224</code></a></li>
+  </ul></li>
+  <li><a href="https://datatracker.ietf.org/doc/html/rfc7578">rfc7578</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2014/REC-html5-20141028"><code>https://www.w3.org/TR/2014/REC-html5-20141028</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a>:
   <ul>
@@ -24756,7 +24787,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 188 problematic external links found in 59 specifications</p>
+  <p>=&gt; 193 problematic external links found in 62 specifications</p>
   </section>
   </body>
 </html>
