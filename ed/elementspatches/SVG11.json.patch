@@ -1,17 +1,19 @@
-From b439b3472862e5de769058366cc42f3480651d15 Mon Sep 17 00:00:00 2001
+From ffbc27e5547fc329522bb35a113d051d5a0ef7ec Mon Sep 17 00:00:00 2001
 From: Francois Daoust <fd@tidoust.net>
-Date: Fri, 18 Jun 2021 17:31:41 +0200
-Subject: [PATCH] Drop non implemented SVG 1.1 only elements
+Date: Wed, 7 Jul 2021 10:53:15 +0200
+Subject: [PATCH] Drop SVG 1.1 elements deprecated in SVG 2
 
+Note `<clipPath>` and `<mask>` are not defined in SVG 2 but they are defined in
+CSS Masking Level 1.
 ---
- ed/elements/SVG11.json | 56 ------------------------------------------
- 1 file changed, 56 deletions(-)
+ ed/elements/SVG11.json | 72 ------------------------------------------
+ 1 file changed, 72 deletions(-)
 
 diff --git a/ed/elements/SVG11.json b/ed/elements/SVG11.json
-index f625f0541..c030834b3 100644
+index f625f0541..d085ab508 100644
 --- a/ed/elements/SVG11.json
 +++ b/ed/elements/SVG11.json
-@@ -80,10 +80,6 @@
+@@ -80,38 +80,14 @@
        "name": "tspan",
        "interface": "SVGTSpanElement"
      },
@@ -22,10 +24,11 @@ index f625f0541..c030834b3 100644
      {
        "name": "textPath",
        "interface": "SVGTextPathElement"
-@@ -92,14 +88,6 @@
-       "name": "altGlyph",
-       "interface": "SVGAltGlyphElement"
      },
+-    {
+-      "name": "altGlyph",
+-      "interface": "SVGAltGlyphElement"
+-    },
 -    {
 -      "name": "altGlyphDef",
 -      "interface": "SVGAltGlyphDefElement"
@@ -34,10 +37,11 @@ index f625f0541..c030834b3 100644
 -      "name": "altGlyphItem",
 -      "interface": "SVGAltGlyphItemElement"
 -    },
+-    {
+-      "name": "glyphRef",
+-      "interface": "SVGGlyphRefElement"
+-    },
      {
-       "name": "glyphRef",
-       "interface": "SVGGlyphRefElement"
-@@ -108,10 +96,6 @@
        "name": "marker",
        "interface": "SVGMarkerElement"
      },
@@ -48,7 +52,18 @@ index f625f0541..c030834b3 100644
      {
        "name": "linearGradient",
        "interface": "SVGLinearGradientElement"
-@@ -268,10 +252,6 @@
+@@ -236,10 +212,6 @@
+       "name": "feTurbulence",
+       "interface": "SVGFETurbulenceElement"
+     },
+-    {
+-      "name": "cursor",
+-      "interface": "SVGCursorElement"
+-    },
+     {
+       "name": "a",
+       "interface": "SVGAElement"
+@@ -268,54 +240,10 @@
        "name": "mpath",
        "interface": "SVGMPathElement"
      },
@@ -59,10 +74,11 @@ index f625f0541..c030834b3 100644
      {
        "name": "animateTransform",
        "interface": "SVGAnimateTransformElement"
-@@ -280,42 +260,6 @@
-       "name": "font",
-       "interface": "SVGFontElement"
      },
+-    {
+-      "name": "font",
+-      "interface": "SVGFontElement"
+-    },
 -    {
 -      "name": "glyph",
 -      "interface": "SVGGlyphElement"
