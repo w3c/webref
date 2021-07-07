@@ -1,7 +1,0 @@
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
-[Exposed=Window]
-interface AnimationPlaybackEvent : Event {
-    constructor(DOMString type, optional AnimationPlaybackEventInit eventInitDict = {});
-    readonly attribute double? currentTime;
-    readonly attribute double? timelineTime;
-};
