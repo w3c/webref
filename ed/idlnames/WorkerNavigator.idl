@@ -44,6 +44,9 @@ partial interface WorkerNavigator {
   [SameObject] readonly attribute USB usb;
 };
 
+// Source: Device Memory 1 (https://www.w3.org/TR/device-memory-1/)
+WorkerNavigator includes NavigatorDeviceMemory;
+
 // Source: Media Capabilities (https://www.w3.org/TR/media-capabilities/)
 [Exposed=Worker]
 partial interface WorkerNavigator {

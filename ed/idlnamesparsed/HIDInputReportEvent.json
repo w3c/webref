@@ -5,7 +5,7 @@
       "title": "WebHID API",
       "url": "https://wicg.github.io/webhid/"
     },
-    "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
+    "fragment": "[Exposed=Window, SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
     "href": "https://wicg.github.io/webhid/#dom-hidinputreportevent"
   },
   "extended": [],

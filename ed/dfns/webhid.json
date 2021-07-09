@@ -5,151 +5,26 @@
   },
   "dfns": [
     {
-      "id": "dom-hiddevicefilter",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter",
+      "id": "dom-navigator-hid",
+      "href": "https://wicg.github.io/webhid/#dom-navigator-hid",
       "linkingText": [
-        "HIDDeviceFilter"
+        "hid"
       ],
-      "localLinkingText": [],
-      "type": "dictionary",
+      "localLinkingText": [
+        "Navigator.hid"
+      ],
+      "type": "attribute",
       "for": [
-        "HIDDeviceFilter"
+        "Navigator"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "hid-attribute",
+        "href": "https://wicg.github.io/webhid/#hid-attribute",
+        "title": "hid attribute"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicefilter-vendorid",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid",
-      "linkingText": [
-        "vendorId"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDDeviceFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicefilter-productid",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-productid",
-      "linkingText": [
-        "productId"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDDeviceFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicefilter-usagepage",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage",
-      "linkingText": [
-        "usagePage"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDDeviceFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicefilter-usage",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usage",
-      "linkingText": [
-        "usage"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDDeviceFilter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicerequestoptions",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions",
-      "linkingText": [
-        "HIDDeviceRequestOptions"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [
-        "HIDDeviceRequestOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hiddevicerequestoptions-filters",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters",
-      "linkingText": [
-        "filters"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDDeviceRequestOptions"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-hid",
@@ -165,12 +40,33 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dfn-devices",
+      "href": "https://wicg.github.io/webhid/#dfn-devices",
+      "linkingText": [
+        "[[devices]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HID"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "table"
     },
     {
       "id": "dom-hid-onconnect",
@@ -188,12 +84,31 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-connect",
+      "href": "https://wicg.github.io/webhid/#dfn-connect",
+      "linkingText": [
+        "connect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-hid-ondisconnect",
@@ -211,12 +126,641 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-disconnect",
+      "href": "https://wicg.github.io/webhid/#dfn-disconnect",
+      "linkingText": [
+        "disconnect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hid-interface",
+      "href": "https://wicg.github.io/webhid/#dfn-hid-interface",
+      "linkingText": [
+        "HID interface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-parsing-the-report-descriptor",
+      "href": "https://wicg.github.io/webhid/#dfn-parsing-the-report-descriptor",
+      "linkingText": [
+        "parsing the report descriptor",
+        "parse the report descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-main-items",
+      "href": "https://wicg.github.io/webhid/#dfn-main-items",
+      "linkingText": [
+        "Main items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-global-items",
+      "href": "https://wicg.github.io/webhid/#dfn-global-items",
+      "linkingText": [
+        "Global items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-local-items",
+      "href": "https://wicg.github.io/webhid/#dfn-local-items",
+      "linkingText": [
+        "Local items"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-item-data-field",
+      "href": "https://wicg.github.io/webhid/#dfn-item-data-field",
+      "linkingText": [
+        "item data field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-bsize-field",
+      "href": "https://wicg.github.io/webhid/#dfn-bsize-field",
+      "linkingText": [
+        "bSize field"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-input-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-input-tag",
+      "linkingText": [
+        "Input tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-output-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-output-tag",
+      "linkingText": [
+        "Output tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-feature-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-feature-tag",
+      "linkingText": [
+        "Feature tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-collection-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-collection-tag",
+      "linkingText": [
+        "Collection tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-collection-type",
+      "href": "https://wicg.github.io/webhid/#dfn-collection-type",
+      "linkingText": [
+        "collection type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-end-collection-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-end-collection-tag",
+      "linkingText": [
+        "End Collection tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-usage-page-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-page-tag",
+      "linkingText": [
+        "Usage Page tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-logical-minimum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-logical-minimum-tag",
+      "linkingText": [
+        "Logical Minimum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-logical-maximum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-logical-maximum-tag",
+      "linkingText": [
+        "Logical Maximum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-physical-minimum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-physical-minimum-tag",
+      "linkingText": [
+        "Physical Minimum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-physical-maximum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-physical-maximum-tag",
+      "linkingText": [
+        "Physical Maximum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-unit-exponent-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-unit-exponent-tag",
+      "linkingText": [
+        "Unit Exponent tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-unit-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-unit-tag",
+      "linkingText": [
+        "Unit tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-report-size-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-report-size-tag",
+      "linkingText": [
+        "Report Size tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-report-id-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-report-id-tag",
+      "linkingText": [
+        "Report ID tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-report-count-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-report-count-tag",
+      "linkingText": [
+        "Report Count tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-push-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-push-tag",
+      "linkingText": [
+        "Push tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-pop-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-pop-tag",
+      "linkingText": [
+        "Pop tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-usage-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-tag",
+      "linkingText": [
+        "Usage tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-usage-minimum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-minimum-tag",
+      "linkingText": [
+        "Usage Minimum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-usage-maximum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-maximum-tag",
+      "linkingText": [
+        "Usage Maximum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-string-index-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-string-index-tag",
+      "linkingText": [
+        "String Index tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-string-minimum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-string-minimum-tag",
+      "linkingText": [
+        "String Minimum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-string-maximum-tag",
+      "href": "https://wicg.github.io/webhid/#dfn-string-maximum-tag",
+      "linkingText": [
+        "String Maximum tag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-creating-a-hid-report-item",
+      "href": "https://wicg.github.io/webhid/#dfn-creating-a-hid-report-item",
+      "linkingText": [
+        "creating a HID report item",
+        "create a HID report item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hid-interface",
+        "href": "https://wicg.github.io/webhid/#hid-interface",
+        "title": "HID interface",
+        "number": "5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-hid-getdevices",
@@ -236,12 +780,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "getdevices-method",
+        "href": "https://wicg.github.io/webhid/#getdevices-method",
+        "title": "getDevices() method",
+        "number": "5.1"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
       "id": "dom-hid-requestdevice",
@@ -262,153 +806,800 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
+        "id": "requestdevice-method",
+        "href": "https://wicg.github.io/webhid/#requestdevice-method",
+        "title": "requestDevice() method",
+        "number": "5.2"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
-      "id": "dom-navigator-hid",
-      "href": "https://wicg.github.io/webhid/#dom-navigator-hid",
+      "id": "dom-hiddevicerequestoptions",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions",
       "linkingText": [
-        "hid"
-      ],
-      "localLinkingText": [
-        "Navigator.hid"
-      ],
-      "type": "attribute",
-      "for": [
-        "Navigator"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dfn-matching-device",
-      "href": "https://wicg.github.io/webhid/#dfn-matching-device",
-      "linkingText": [
-        "matching device"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-matching-collection",
-      "href": "https://wicg.github.io/webhid/#dfn-matching-collection",
-      "linkingText": [
-        "matching collection"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-is-valid",
-      "href": "https://wicg.github.io/webhid/#dfn-is-valid",
-      "linkingText": [
-        "is valid"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-enumerate-all-devices-attached-to-the-system",
-      "href": "https://wicg.github.io/webhid/#dfn-enumerate-all-devices-attached-to-the-system",
-      "linkingText": [
-        "enumerate all devices attached to the system"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "enumeration",
-        "href": "https://wicg.github.io/webhid/#enumeration",
-        "title": "Device Enumeration",
-        "number": "4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-hidconnectioneventinit",
-      "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit",
-      "linkingText": [
-        "HIDConnectionEventInit"
+        "HIDDeviceRequestOptions"
       ],
       "localLinkingText": [],
       "type": "dictionary",
-      "for": [
-        "HIDConnectionEventInit"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hiddevicerequestoptions-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicerequestoptions-dictionary",
+        "title": "HIDDeviceRequestOptions dictionary",
+        "number": "5.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "heading"
     },
     {
-      "id": "dom-hidconnectioneventinit-device",
-      "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit-device",
+      "id": "dom-hiddevicerequestoptions-filters",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicerequestoptions-filters",
       "linkingText": [
-        "device"
+        "filters"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDConnectionEventInit"
+        "HIDDeviceRequestOptions"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hiddevicerequestoptions-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicerequestoptions-dictionary",
+        "title": "HIDDeviceRequestOptions dictionary",
+        "number": "5.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hiddevicefilter",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter",
+      "linkingText": [
+        "HIDDeviceFilter"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hiddevicefilter-vendorid",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-vendorid",
+      "linkingText": [
+        "vendorId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDDeviceFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hiddevicefilter-productid",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-productid",
+      "linkingText": [
+        "productId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDDeviceFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hiddevicefilter-usagepage",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usagepage",
+      "linkingText": [
+        "usagePage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDDeviceFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hiddevicefilter-usage",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevicefilter-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDDeviceFilter"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-matches-any-filter",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-any-filter",
+      "linkingText": [
+        "matches any filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-matches-the-device-ids",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-the-device-ids",
+      "linkingText": [
+        "matches the device IDs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-matches-any-collection",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-any-collection",
+      "linkingText": [
+        "matches any collection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-matches-the-collection",
+      "href": "https://wicg.github.io/webhid/#dfn-matches-the-collection",
+      "linkingText": [
+        "matches the collection"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevicefilter-dictionary",
+        "href": "https://wicg.github.io/webhid/#hiddevicefilter-dictionary",
+        "title": "HIDDeviceFilter dictionary",
+        "number": "5.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-hiddevice",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice",
+      "linkingText": [
+        "HIDDevice"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dfn-hid-device-task-source",
+      "href": "https://wicg.github.io/webhid/#dfn-hid-device-task-source",
+      "linkingText": [
+        "HID device task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-state",
+      "href": "https://wicg.github.io/webhid/#dfn-state",
+      "linkingText": [
+        "[[state]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-vendorid",
+      "href": "https://wicg.github.io/webhid/#dfn-vendorid",
+      "linkingText": [
+        "[[vendorId]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-productid",
+      "href": "https://wicg.github.io/webhid/#dfn-productid",
+      "linkingText": [
+        "[[productId]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-productname",
+      "href": "https://wicg.github.io/webhid/#dfn-productname",
+      "linkingText": [
+        "[[productName]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-collections",
+      "href": "https://wicg.github.io/webhid/#dfn-collections",
+      "linkingText": [
+        "[[collections]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-pendingsendreportpromises",
+      "href": "https://wicg.github.io/webhid/#dfn-pendingsendreportpromises",
+      "linkingText": [
+        "[[pendingSendReportPromises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-pendingsendfeaturereportpromises",
+      "href": "https://wicg.github.io/webhid/#dfn-pendingsendfeaturereportpromises",
+      "linkingText": [
+        "[[pendingSendFeatureReportPromises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-pendingreceivefeaturereportpromises",
+      "href": "https://wicg.github.io/webhid/#dfn-pendingreceivefeaturereportpromises",
+      "linkingText": [
+        "[[pendingReceiveFeatureReportPromises]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-hiddevice-oninputreport",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-oninputreport",
+      "linkingText": [
+        "oninputreport"
+      ],
+      "localLinkingText": [
+        "HIDDevice.oninputreport"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-inputreport",
+      "href": "https://wicg.github.io/webhid/#dfn-inputreport",
+      "linkingText": [
+        "inputreport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-hiddevice-opened",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened",
+      "linkingText": [
+        "opened"
+      ],
+      "localLinkingText": [
+        "HIDDevice.opened"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hiddevice-vendorid",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid",
+      "linkingText": [
+        "vendorId"
+      ],
+      "localLinkingText": [
+        "HIDDevice.vendorId"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-vendor-id",
+      "href": "https://wicg.github.io/webhid/#dfn-vendor-id",
+      "linkingText": [
+        "vendor ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-hiddevice-productid",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid",
+      "linkingText": [
+        "productId"
+      ],
+      "localLinkingText": [
+        "HIDDevice.productId"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-product-id",
+      "href": "https://wicg.github.io/webhid/#dfn-product-id",
+      "linkingText": [
+        "product ID"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-hiddevice-productname",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname",
+      "linkingText": [
+        "productName"
+      ],
+      "localLinkingText": [
+        "HIDDevice.productName"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-product-name",
+      "href": "https://wicg.github.io/webhid/#dfn-product-name",
+      "linkingText": [
+        "product name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-hiddevice-collections",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections",
+      "linkingText": [
+        "collections"
+      ],
+      "localLinkingText": [
+        "HIDDevice.collections"
+      ],
+      "type": "attribute",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-top-level-collections",
+      "href": "https://wicg.github.io/webhid/#dfn-top-level-collections",
+      "linkingText": [
+        "Top-level collections"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "hiddevice-interface",
+        "href": "https://wicg.github.io/webhid/#hiddevice-interface",
+        "title": "HIDDevice interface",
+        "number": "6"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dom-hiddevice-open",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-open",
+      "linkingText": [
+        "open()"
+      ],
+      "localLinkingText": [
+        "HIDDevice.open",
+        "HIDDevice.open()",
+        "open"
+      ],
+      "type": "method",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "open-method",
+        "href": "https://wicg.github.io/webhid/#open-method",
+        "title": "open() method",
+        "number": "6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hiddevice-close",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-close",
+      "linkingText": [
+        "close()"
+      ],
+      "localLinkingText": [
+        "HIDDevice.close",
+        "HIDDevice.close()",
+        "close"
+      ],
+      "type": "method",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-method",
+        "href": "https://wicg.github.io/webhid/#close-method",
+        "title": "close() method",
+        "number": "6.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hiddevice-sendreport",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendreport",
+      "linkingText": [
+        "sendReport()",
+        "sendReport(reportId, data)"
+      ],
+      "localLinkingText": [
+        "HIDDevice.sendReport",
+        "HIDDevice.sendReport()",
+        "sendReport"
+      ],
+      "type": "method",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sendreport-method",
+        "href": "https://wicg.github.io/webhid/#sendreport-method",
+        "title": "sendReport() method",
+        "number": "6.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hiddevice-sendfeaturereport",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport",
+      "linkingText": [
+        "sendFeatureReport()",
+        "sendFeatureReport(reportId, data)"
+      ],
+      "localLinkingText": [
+        "HIDDevice.sendFeatureReport",
+        "HIDDevice.sendFeatureReport()",
+        "sendFeatureReport"
+      ],
+      "type": "method",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sendfeaturereport-method",
+        "href": "https://wicg.github.io/webhid/#sendfeaturereport-method",
+        "title": "sendFeatureReport() method",
+        "number": "6.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hiddevice-receivefeaturereport",
+      "href": "https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport",
+      "linkingText": [
+        "receiveFeatureReport()",
+        "receiveFeatureReport(reportId)"
+      ],
+      "localLinkingText": [
+        "HIDDevice.receiveFeatureReport",
+        "HIDDevice.receiveFeatureReport()",
+        "receiveFeatureReport"
+      ],
+      "type": "method",
+      "for": [
+        "HIDDevice"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "receivefeaturereport-method",
+        "href": "https://wicg.github.io/webhid/#receivefeaturereport-method",
+        "title": "receiveFeatureReport() method",
+        "number": "6.5"
+      },
+      "definedIn": "heading"
     },
     {
       "id": "dom-hidconnectionevent",
@@ -424,10 +1615,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidconnectionevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidconnectionevent-interface",
+        "title": "HIDConnectionEvent interface",
+        "number": "7"
       },
       "definedIn": "pre"
     },
@@ -450,10 +1641,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidconnectionevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidconnectionevent-interface",
+        "title": "HIDConnectionEvent interface",
+        "number": "7"
       },
       "definedIn": "pre"
     },
@@ -473,96 +1664,54 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidconnectionevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidconnectionevent-interface",
+        "title": "HIDConnectionEvent interface",
+        "number": "7"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidinputreporteventinit",
-      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit",
+      "id": "dom-hidconnectioneventinit",
+      "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit",
       "linkingText": [
-        "HIDInputReportEventInit"
+        "HIDConnectionEventInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
       "for": [
-        "HIDInputReportEventInit"
+        "HIDConnectionEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidconnectioneventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidconnectioneventinit-dictionary",
+        "title": "HIDConnectionEventInit dictionary",
+        "number": "7.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hidinputreporteventinit-device",
-      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-device",
+      "id": "dom-hidconnectioneventinit-device",
+      "href": "https://wicg.github.io/webhid/#dom-hidconnectioneventinit-device",
       "linkingText": [
         "device"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDInputReportEventInit"
+        "HIDConnectionEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidconnectioneventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidconnectioneventinit-dictionary",
+        "title": "HIDConnectionEventInit dictionary",
+        "number": "7.1"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidinputreporteventinit-reportid",
-      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-reportid",
-      "linkingText": [
-        "reportId"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDInputReportEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidinputreporteventinit-data",
-      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-data",
-      "linkingText": [
-        "data"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDInputReportEventInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
-      },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-hidinputreportevent",
@@ -578,10 +1727,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidinputreportevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -604,10 +1753,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidinputreportevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -627,12 +1776,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidinputreportevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "8"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-hidinputreportevent-reportid",
@@ -650,12 +1799,12 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidinputreportevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "8"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-hidinputreportevent-data",
@@ -673,789 +1822,340 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "events",
-        "href": "https://wicg.github.io/webhid/#events",
-        "title": "Events",
-        "number": "4.1"
+        "id": "hidinputreportevent-interface",
+        "href": "https://wicg.github.io/webhid/#hidinputreportevent-interface",
+        "title": "HIDInputReportEvent interface",
+        "number": "8"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidunitsystem",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem",
+      "id": "dom-hidinputreporteventinit",
+      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit",
       "linkingText": [
-        "HIDUnitSystem"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-none",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-si-linear",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-linear",
-      "linkingText": [
-        "si-linear"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-si-rotation",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-rotation",
-      "linkingText": [
-        "si-rotation"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-english-linear",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-linear",
-      "linkingText": [
-        "english-linear"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-english-rotation",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-rotation",
-      "linkingText": [
-        "english-rotation"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-vendor-defined",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-vendor-defined",
-      "linkingText": [
-        "vendor-defined"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidunitsystem-reserved",
-      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-reserved",
-      "linkingText": [
-        "reserved"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "HIDUnitSystem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem",
-      "linkingText": [
-        "HIDReportItem"
+        "HIDInputReportEventInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
       "for": [
-        "HIDReportItem"
+        "HIDInputReportEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidinputreporteventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidinputreporteventinit-dictionary",
+        "title": "HIDInputReportEventInit dictionary",
+        "number": "8.1"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hidreportitem-isabsolute",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute",
+      "id": "dom-hidinputreporteventinit-device",
+      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-device",
       "linkingText": [
-        "isAbsolute"
+        "device"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDInputReportEventInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidinputreporteventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidinputreporteventinit-dictionary",
+        "title": "HIDInputReportEventInit dictionary",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidinputreporteventinit-reportid",
+      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-reportid",
+      "linkingText": [
+        "reportId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDInputReportEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidinputreporteventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidinputreporteventinit-dictionary",
+        "title": "HIDInputReportEventInit dictionary",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidinputreporteventinit-data",
+      "href": "https://wicg.github.io/webhid/#dom-hidinputreporteventinit-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDInputReportEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidinputreporteventinit-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidinputreporteventinit-dictionary",
+        "title": "HIDInputReportEventInit dictionary",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidcollectioninfo",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo",
+      "linkingText": [
+        "HIDCollectionInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [
+        "HIDCollectionInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hidreportitem-isarray",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isarray",
+      "id": "dfn-report-descriptor",
+      "href": "https://wicg.github.io/webhid/#dfn-report-descriptor",
       "linkingText": [
-        "isArray"
+        "Report descriptor"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-hidreportitem-isbufferedbytes",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes",
+      "id": "dom-hidcollectioninfo-usagepage",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage",
       "linkingText": [
-        "isBufferedBytes"
+        "usagePage"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-isconstant",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isconstant",
+      "id": "dfn-hid-usages",
+      "href": "https://wicg.github.io/webhid/#dfn-hid-usages",
       "linkingText": [
-        "isConstant"
+        "HID usages"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-hidreportitem-islinear",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-islinear",
+      "id": "dfn-usage-page",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-page",
       "linkingText": [
-        "isLinear"
+        "usage page"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-hidreportitem-isrange",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isrange",
+      "id": "dfn-usage-id",
+      "href": "https://wicg.github.io/webhid/#dfn-usage-id",
       "linkingText": [
-        "isRange"
+        "usage ID"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-hidreportitem-isvolatile",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile",
+      "id": "dom-hidcollectioninfo-usage",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage",
       "linkingText": [
-        "isVolatile"
+        "usage"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-hasnull",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-hasnull",
+      "id": "dom-hidcollectioninfo-type",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-type",
       "linkingText": [
-        "hasNull"
+        "type"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-haspreferredstate",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate",
+      "id": "dom-hidcollectioninfo-children",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-children",
       "linkingText": [
-        "hasPreferredState"
+        "children"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-wrap",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-wrap",
+      "id": "dom-hidcollectioninfo-inputreports",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports",
       "linkingText": [
-        "wrap"
+        "inputReports"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-usages",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usages",
+      "id": "dom-hidcollectioninfo-outputreports",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports",
       "linkingText": [
-        "usages"
+        "outputReports"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidreportitem-usageminimum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum",
+      "id": "dom-hidcollectioninfo-featurereports",
+      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports",
       "linkingText": [
-        "usageMinimum"
+        "featureReports"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDReportItem"
+        "HIDCollectionInfo"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidcollectioninfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidcollectioninfo-dictionary",
+        "title": "HIDCollectionInfo dictionary",
+        "number": "9"
       },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-usagemaximum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum",
-      "linkingText": [
-        "usageMaximum"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-reportsize",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportsize",
-      "linkingText": [
-        "reportSize"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-reportcount",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportcount",
-      "linkingText": [
-        "reportCount"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent",
-      "linkingText": [
-        "unitExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitsystem",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem",
-      "linkingText": [
-        "unitSystem"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactorlengthexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent",
-      "linkingText": [
-        "unitFactorLengthExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactormassexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent",
-      "linkingText": [
-        "unitFactorMassExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactortimeexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent",
-      "linkingText": [
-        "unitFactorTimeExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactortemperatureexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent",
-      "linkingText": [
-        "unitFactorTemperatureExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactorcurrentexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent",
-      "linkingText": [
-        "unitFactorCurrentExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-unitfactorluminousintensityexponent",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent",
-      "linkingText": [
-        "unitFactorLuminousIntensityExponent"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-logicalminimum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum",
-      "linkingText": [
-        "logicalMinimum"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-logicalmaximum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum",
-      "linkingText": [
-        "logicalMaximum"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-physicalminimum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum",
-      "linkingText": [
-        "physicalMinimum"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-physicalmaximum",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum",
-      "linkingText": [
-        "physicalMaximum"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-hidreportitem-strings",
-      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-strings",
-      "linkingText": [
-        "strings"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "HIDReportItem"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
-      },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-hidreportinfo",
@@ -1471,10 +2171,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportinfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportinfo-dictionary",
+        "title": "10. HIDReportInfo dictionary"
       },
       "definedIn": "pre"
     },
@@ -1492,12 +2191,30 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportinfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportinfo-dictionary",
+        "title": "10. HIDReportInfo dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-use-report-ids",
+      "href": "https://wicg.github.io/webhid/#dfn-use-report-ids",
+      "linkingText": [
+        "use report IDs",
+        "uses report IDs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hidreportinfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportinfo-dictionary",
+        "title": "10. HIDReportInfo dictionary"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-hidreportinfo-items",
@@ -1513,467 +2230,947 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportinfo-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportinfo-dictionary",
+        "title": "10. HIDReportInfo dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo",
+      "id": "dom-hidreportitem",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem",
       "linkingText": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "localLinkingText": [],
       "type": "dictionary",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hidcollectioninfo-usagepage",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usagepage",
+      "id": "dom-hidreportitem-isabsolute",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isabsolute",
       "linkingText": [
-        "usagePage"
+        "isAbsolute"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-usage",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-usage",
+      "id": "dom-hidreportitem-isarray",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isarray",
       "linkingText": [
-        "usage"
+        "isArray"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-type",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-type",
+      "id": "dom-hidreportitem-isbufferedbytes",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isbufferedbytes",
       "linkingText": [
-        "type"
+        "isBufferedBytes"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-children",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-children",
+      "id": "dom-hidreportitem-isconstant",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isconstant",
       "linkingText": [
-        "children"
+        "isConstant"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-inputreports",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-inputreports",
+      "id": "dom-hidreportitem-islinear",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-islinear",
       "linkingText": [
-        "inputReports"
+        "isLinear"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-outputreports",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-outputreports",
+      "id": "dom-hidreportitem-isrange",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isrange",
       "linkingText": [
-        "outputReports"
+        "isRange"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hidcollectioninfo-featurereports",
-      "href": "https://wicg.github.io/webhid/#dom-hidcollectioninfo-featurereports",
+      "id": "dom-hidreportitem-isvolatile",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-isvolatile",
       "linkingText": [
-        "featureReports"
+        "isVolatile"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "HIDCollectionInfo"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "report-descriptor",
-        "href": "https://wicg.github.io/webhid/#report-descriptor",
-        "title": "HID Collection and Report Information",
-        "number": "4.2"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hiddevice",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice",
+      "id": "dom-hidreportitem-hasnull",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-hasnull",
       "linkingText": [
-        "HIDDevice"
+        "hasNull"
       ],
       "localLinkingText": [],
-      "type": "interface",
+      "type": "dict-member",
       "for": [
-        "HIDDevice"
+        "HIDReportItem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-haspreferredstate",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-haspreferredstate",
+      "linkingText": [
+        "hasPreferredState"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-wrap",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-wrap",
+      "linkingText": [
+        "wrap"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-usages",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usages",
+      "linkingText": [
+        "usages"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-usageminimum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usageminimum",
+      "linkingText": [
+        "usageMinimum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-usagemaximum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-usagemaximum",
+      "linkingText": [
+        "usageMaximum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-reportsize",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportsize",
+      "linkingText": [
+        "reportSize"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-reportcount",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-reportcount",
+      "linkingText": [
+        "reportCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitexponent",
+      "linkingText": [
+        "unitExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitsystem",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitsystem",
+      "linkingText": [
+        "unitSystem"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactorlengthexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorlengthexponent",
+      "linkingText": [
+        "unitFactorLengthExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactormassexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactormassexponent",
+      "linkingText": [
+        "unitFactorMassExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactortimeexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortimeexponent",
+      "linkingText": [
+        "unitFactorTimeExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactortemperatureexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactortemperatureexponent",
+      "linkingText": [
+        "unitFactorTemperatureExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactorcurrentexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorcurrentexponent",
+      "linkingText": [
+        "unitFactorCurrentExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-unitfactorluminousintensityexponent",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-unitfactorluminousintensityexponent",
+      "linkingText": [
+        "unitFactorLuminousIntensityExponent"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-logicalminimum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalminimum",
+      "linkingText": [
+        "logicalMinimum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-logicalmaximum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-logicalmaximum",
+      "linkingText": [
+        "logicalMaximum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-physicalminimum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalminimum",
+      "linkingText": [
+        "physicalMinimum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-physicalmaximum",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-physicalmaximum",
+      "linkingText": [
+        "physicalMaximum"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidreportitem-strings",
+      "href": "https://wicg.github.io/webhid/#dom-hidreportitem-strings",
+      "linkingText": [
+        "strings"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "HIDReportItem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidreportitem-dictionary",
+        "href": "https://wicg.github.io/webhid/#hidreportitem-dictionary",
+        "title": "11. HIDReportItem dictionary"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-hidunitsystem",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem",
+      "linkingText": [
+        "HIDUnitSystem"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-hidunitsystem-none",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HIDUnitSystem"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-oninputreport",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-oninputreport",
+      "id": "dom-hidunitsystem-si-linear",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-linear",
       "linkingText": [
-        "oninputreport"
+        "si-linear"
       ],
-      "localLinkingText": [
-        "HIDDevice.oninputreport"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-opened",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-opened",
+      "id": "dom-hidunitsystem-si-rotation",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-si-rotation",
       "linkingText": [
-        "opened"
+        "si-rotation"
       ],
-      "localLinkingText": [
-        "HIDDevice.opened"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-vendorid",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-vendorid",
+      "id": "dom-hidunitsystem-english-linear",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-linear",
       "linkingText": [
-        "vendorId"
+        "english-linear"
       ],
-      "localLinkingText": [
-        "HIDDevice.vendorId"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-productid",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productid",
+      "id": "dom-hidunitsystem-english-rotation",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-english-rotation",
       "linkingText": [
-        "productId"
+        "english-rotation"
       ],
-      "localLinkingText": [
-        "HIDDevice.productId"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-productname",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-productname",
+      "id": "dom-hidunitsystem-vendor-defined",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-vendor-defined",
       "linkingText": [
-        "productName"
+        "vendor-defined"
       ],
-      "localLinkingText": [
-        "HIDDevice.productName"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-collections",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-collections",
+      "id": "dom-hidunitsystem-reserved",
+      "href": "https://wicg.github.io/webhid/#dom-hidunitsystem-reserved",
       "linkingText": [
-        "collections"
+        "reserved"
       ],
-      "localLinkingText": [
-        "HIDDevice.collections"
-      ],
-      "type": "attribute",
+      "localLinkingText": [],
+      "type": "enum-value",
       "for": [
-        "HIDDevice"
+        "HIDUnitSystem"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-hiddevice-open",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-open",
+      "id": "dfn-none",
+      "href": "https://wicg.github.io/webhid/#dfn-none",
       "linkingText": [
-        "open()"
+        "\"none\""
       ],
-      "localLinkingText": [
-        "HIDDevice.open",
-        "HIDDevice.open()",
-        "open"
-      ],
-      "type": "method",
-      "for": [
-        "HIDDevice"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hiddevice-close",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-close",
+      "id": "dfn-si-linear",
+      "href": "https://wicg.github.io/webhid/#dfn-si-linear",
       "linkingText": [
-        "close()"
+        "\"si-linear\""
       ],
-      "localLinkingText": [
-        "HIDDevice.close",
-        "HIDDevice.close()",
-        "close"
-      ],
-      "type": "method",
-      "for": [
-        "HIDDevice"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hiddevice-sendreport",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendreport",
+      "id": "dfn-si-rotation",
+      "href": "https://wicg.github.io/webhid/#dfn-si-rotation",
       "linkingText": [
-        "sendReport()",
-        "sendReport(reportId, data)"
+        "\"si-rotation\""
       ],
-      "localLinkingText": [
-        "HIDDevice.sendReport",
-        "HIDDevice.sendReport()",
-        "sendReport"
-      ],
-      "type": "method",
-      "for": [
-        "HIDDevice"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hiddevice-sendfeaturereport",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-sendfeaturereport",
+      "id": "dfn-english-linear",
+      "href": "https://wicg.github.io/webhid/#dfn-english-linear",
       "linkingText": [
-        "sendFeatureReport()",
-        "sendFeatureReport(reportId, data)"
+        "\"english-linear\""
       ],
-      "localLinkingText": [
-        "HIDDevice.sendFeatureReport",
-        "HIDDevice.sendFeatureReport()",
-        "sendFeatureReport"
-      ],
-      "type": "method",
-      "for": [
-        "HIDDevice"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
-      "id": "dom-hiddevice-receivefeaturereport",
-      "href": "https://wicg.github.io/webhid/#dom-hiddevice-receivefeaturereport",
+      "id": "dfn-english-rotation",
+      "href": "https://wicg.github.io/webhid/#dfn-english-rotation",
       "linkingText": [
-        "receiveFeatureReport()",
-        "receiveFeatureReport(reportId)"
+        "\"english-rotation\""
       ],
-      "localLinkingText": [
-        "HIDDevice.receiveFeatureReport",
-        "HIDDevice.receiveFeatureReport()",
-        "receiveFeatureReport"
-      ],
-      "type": "method",
-      "for": [
-        "HIDDevice"
-      ],
-      "access": "public",
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "device-usage",
-        "href": "https://wicg.github.io/webhid/#device-usage",
-        "title": "Device Usage",
-        "number": "5"
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-vendor-defined",
+      "href": "https://wicg.github.io/webhid/#dfn-vendor-defined",
+      "linkingText": [
+        "\"vendor-defined\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-reserved",
+      "href": "https://wicg.github.io/webhid/#dfn-reserved",
+      "linkingText": [
+        "\"reserved\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hidunitsystem-enum",
+        "href": "https://wicg.github.io/webhid/#hidunitsystem-enum",
+        "title": "12. HIDUnitSystem enum"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-parsing-the-blocklist",
+      "href": "https://wicg.github.io/webhid/#dfn-parsing-the-blocklist",
+      "linkingText": [
+        "parsing the blocklist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/webhid/#blocklist",
+        "title": "14. The HID Blocklist"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-hid-blocklist",
+      "href": "https://wicg.github.io/webhid/#dfn-hid-blocklist",
+      "linkingText": [
+        "HID blocklist"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/webhid/#blocklist",
+        "title": "14. The HID Blocklist"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blocked-report",
+      "href": "https://wicg.github.io/webhid/#dfn-blocked-report",
+      "linkingText": [
+        "blocked report"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/webhid/#blocklist",
+        "title": "14. The HID Blocklist"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-blocked-by-a-blocklist-rule",
+      "href": "https://wicg.github.io/webhid/#dfn-blocked-by-a-blocklist-rule",
+      "linkingText": [
+        "blocked by a blocklist rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "blocklist",
+        "href": "https://wicg.github.io/webhid/#blocklist",
+        "title": "14. The HID Blocklist"
+      },
+      "definedIn": "prose"
     }
   ]
 }

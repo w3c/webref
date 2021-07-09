@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 08, 2021
+% July 09, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -14160,13 +14160,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Device Memory {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+## Device Memory 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
-- Crawled URL: [https://www.w3.org/TR/device-memory/](https://www.w3.org/TR/device-memory/)
-- Crawled version: 25 September 2018
+- Crawled URL: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
+- Crawled version: 30 November 2020
 - Editor's Draft: [https://w3c.github.io/device-memory/](https://w3c.github.io/device-memory/)
 - Latest published version: [https://www.w3.org/TR/device-memory-1/](https://www.w3.org/TR/device-memory-1/)
 - Shortname: device-memory-1
@@ -14174,10 +14174,11 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Broken external links:
-     * [`https://heycam.github.io/webidl/#NoInterfaceObject`](https://heycam.github.io/webidl/#NoInterfaceObject)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -16545,7 +16546,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled URL: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Crawled version: 11 June 2021
+- Crawled version: 09 July 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Shortname: gamepad
@@ -16553,7 +16554,17 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Broken external links:
-     * [`https://www.w3.org/TR/navigation-timing/#performancetiming`](https://www.w3.org/TR/navigation-timing/#performancetiming)
+     * [`https://infra.spec.whatwg.org/#user-agent`](https://infra.spec.whatwg.org/#user-agent)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#list-size`](https://infra.spec.whatwg.org/#list-size)
+     * [`https://infra.spec.whatwg.org/#the-range`](https://infra.spec.whatwg.org/#the-range)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#list-contain`](https://infra.spec.whatwg.org/#list-contain)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#list-item`](https://infra.spec.whatwg.org/#list-item)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
@@ -16562,27 +16573,34 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
      * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe`](https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe)
-     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#non-secure-context`](https://html.spec.whatwg.org/#non-secure-context)
      * [`https://html.spec.whatwg.org/#windoweventhandlers`](https://html.spec.whatwg.org/#windoweventhandlers)
      * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
      * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
-     * [`https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping`](https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping)
+     * [`https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time`](https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
      * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
      * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
      * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
+     * [`https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping`](https://www.w3.org/TR/webxr-gamepads-module-1/#xr-standard-gamepad-mapping)
      * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
 
 ### Known dependencies on this specification {.dependencies}
@@ -16598,6 +16616,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Permissions](https://w3c.github.io/permissions/)
+- [WebHID API](https://wicg.github.io/webhid/)
 
 
 ## Gamepad Extensions {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -16606,7 +16625,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Crawled URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Crawled version: 11 June 2021
+- Crawled version: 09 July 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Shortname: gamepad-extensions
 
@@ -18786,6 +18805,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-values/#vw`](https://drafts.csswg.org/css-values/#vw)
      * [`https://drafts.csswg.org/css-values/#in`](https://drafts.csswg.org/css-values/#in)
      * [`https://drafts.csswg.org/css-values/#px`](https://drafts.csswg.org/css-values/#px)
+     * [`https://drafts.csswg.org/css-values/#pt`](https://drafts.csswg.org/css-values/#pt)
      * [`https://drafts.csswg.org/css-values/#funcdef-attr`](https://drafts.csswg.org/css-values/#funcdef-attr)
      * [`https://drafts.csswg.org/css-values/#math-function`](https://drafts.csswg.org/css-values/#math-function)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
@@ -19230,6 +19250,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
+- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Document Policy](https://wicg.github.io/document-policy/)
@@ -20461,6 +20482,7 @@ Normative references to this spec from:
 - [File API](https://w3c.github.io/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
@@ -20475,6 +20497,7 @@ Normative references to this spec from:
 - [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
@@ -20539,6 +20562,7 @@ Normative references to this spec from:
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
+- [WebHID API](https://wicg.github.io/webhid/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/)
 - [WebTransport](https://w3c.github.io/webtransport/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
@@ -20763,7 +20787,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Crawled version: 07 July 2021
+- Crawled version: 09 July 2021
 - Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Shortname: js-self-profiling
 
@@ -20790,6 +20814,11 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
+     * [`https://www.w3.org/TR/webdriver1/#dfn-extension-command`](https://www.w3.org/TR/webdriver1/#dfn-extension-command)
+     * [`https://www.w3.org/TR/webdriver1/#dfn-remote-end-steps`](https://www.w3.org/TR/webdriver1/#dfn-remote-end-steps)
+     * [`https://www.w3.org/TR/webdriver1/#dfn-current-browsing-context`](https://www.w3.org/TR/webdriver1/#dfn-current-browsing-context)
+     * [`https://www.w3.org/TR/webdriver1/#dfn-success`](https://www.w3.org/TR/webdriver1/#dfn-success)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -22728,6 +22757,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Gamepad](https://w3c.github.io/gamepad/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 
@@ -22992,7 +23022,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Gamepad](https://w3c.github.io/gamepad/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Navigation Timing Level 2](https://w3c.github.io/navigation-timing/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
@@ -26347,7 +26376,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Shortname: rfc2397
 
@@ -26375,7 +26404,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -26416,7 +26445,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Shortname: rfc6797
 
@@ -26450,7 +26479,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Shortname: rfc7034
 
@@ -26479,7 +26508,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -26500,7 +26529,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 
@@ -26525,7 +26554,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Shortname: rfc7578
 
@@ -26552,7 +26581,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
-- Crawled version: 8 July 2021
+- Crawled version: 9 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Shortname: rfc8942
 
@@ -28441,7 +28470,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 7 July 2021
+- Crawled version: 8 July 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -28463,8 +28492,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
      * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
-     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
-     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
      * [`https://html.spec.whatwg.org/#event-unhandledrejection`](https://html.spec.whatwg.org/#event-unhandledrejection)
      * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
      * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
@@ -28474,6 +28501,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#event-message`](https://html.spec.whatwg.org/#event-message)
      * [`https://html.spec.whatwg.org/#event-messageerror`](https://html.spec.whatwg.org/#event-messageerror)
      * [`https://html.spec.whatwg.org/#port-message-queue`](https://html.spec.whatwg.org/#port-message-queue)
+     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
      * [`https://html.spec.whatwg.org/#websocket`](https://html.spec.whatwg.org/#websocket)
      * [`https://html.spec.whatwg.org/#dom-websocket-bufferedamount`](https://html.spec.whatwg.org/#dom-websocket-bufferedamount)
      * [`https://w3c.github.io/ServiceWorker/#service-worker-global-scope-fetch-event`](https://w3c.github.io/ServiceWorker/#service-worker-global-scope-fetch-event)
@@ -29726,6 +29755,7 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [Pointer Events](https://w3c.github.io/pointerevents/)
+- [WebHID API](https://wicg.github.io/webhid/)
 
 
 ## UI Events KeyboardEvent code Values {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -31545,7 +31575,7 @@ Normative references to this spec from:
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
 - [DataCue API](https://wicg.github.io/datacue/)
 - [Deprecation Reporting](https://wicg.github.io/deprecation-reporting/)
-- [Device Memory](https://www.w3.org/TR/device-memory/)
+- [Device Memory 1](https://w3c.github.io/device-memory/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [DOM Parsing and Serialization](https://w3c.github.io/DOM-Parsing/)
@@ -34427,7 +34457,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 7 July 2021
+- Crawled version: 8 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -34550,7 +34580,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 7 July 2021
+- Crawled version: 8 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -34611,36 +34641,74 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Crawled URL: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
-- Crawled version: 23 June 2021
+- Crawled version: 08 July 2021
 - Editor's Draft: [https://wicg.github.io/webhid/](https://wicg.github.io/webhid/)
 - Shortname: webhid
 
 ### Potential issue(s) {.anomalies}
 
 - Broken external links:
+     * [`https://www.w3.org/TR/pointerevents/#dom-pointerevent`](https://www.w3.org/TR/pointerevents/#dom-pointerevent)
+     * [`https://www.w3.org/TR/uievents/#keyboardevent`](https://www.w3.org/TR/uievents/#keyboardevent)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
      * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
-     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
-     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
-     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
-     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
-     * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
-     * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
-     * [`https://heycam.github.io/webidl/#idl-byte`](https://heycam.github.io/webidl/#idl-byte)
-     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
+     * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
+     * [`https://heycam.github.io/webidl/#idl-DataView`](https://heycam.github.io/webidl/#idl-DataView)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#networkerror`](https://heycam.github.io/webidl/#networkerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-byte`](https://heycam.github.io/webidl/#idl-byte)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
-     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#queue-a-global-task`](https://html.spec.whatwg.org/#queue-a-global-task)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
      * [`https://dom.spec.whatwg.org/#eventtarget`](https://dom.spec.whatwg.org/#eventtarget)
-     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://dom.spec.whatwg.org/#concept-event-fire`](https://dom.spec.whatwg.org/#concept-event-fire)
      * [`https://dom.spec.whatwg.org/#event`](https://dom.spec.whatwg.org/#event)
+     * [`https://dom.spec.whatwg.org/#dictdef-eventinit`](https://dom.spec.whatwg.org/#dictdef-eventinit)
+     * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
+     * [`https://infra.spec.whatwg.org/#list-append`](https://infra.spec.whatwg.org/#list-append)
+     * [`https://infra.spec.whatwg.org/#byte-sequence`](https://infra.spec.whatwg.org/#byte-sequence)
+     * [`https://infra.spec.whatwg.org/#list`](https://infra.spec.whatwg.org/#list)
+     * [`https://infra.spec.whatwg.org/#ordered-map`](https://infra.spec.whatwg.org/#ordered-map)
+     * [`https://infra.spec.whatwg.org/#stack`](https://infra.spec.whatwg.org/#stack)
+     * [`https://infra.spec.whatwg.org/#stack-push`](https://infra.spec.whatwg.org/#stack-push)
+     * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
+     * [`https://infra.spec.whatwg.org/#list-item`](https://infra.spec.whatwg.org/#list-item)
+     * [`https://infra.spec.whatwg.org/#list-size`](https://infra.spec.whatwg.org/#list-size)
+     * [`https://infra.spec.whatwg.org/#list-is-empty`](https://infra.spec.whatwg.org/#list-is-empty)
+     * [`https://infra.spec.whatwg.org/#list-remove`](https://infra.spec.whatwg.org/#list-remove)
+     * [`https://infra.spec.whatwg.org/#stack-pop`](https://infra.spec.whatwg.org/#stack-pop)
+     * [`https://infra.spec.whatwg.org/#the-range`](https://infra.spec.whatwg.org/#the-range)
+     * [`https://infra.spec.whatwg.org/#list-empty`](https://infra.spec.whatwg.org/#list-empty)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
      * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
 
 ### Known dependencies on this specification {.dependencies}

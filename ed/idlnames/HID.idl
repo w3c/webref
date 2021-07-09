@@ -1,8 +1,5 @@
 // Source: WebHID API (https://wicg.github.io/webhid/)
-[
-    Exposed=Window,
-    SecureContext
-]
+[Exposed=Window, SecureContext]
 interface HID : EventTarget {
     attribute EventHandler onconnect;
     attribute EventHandler ondisconnect;
