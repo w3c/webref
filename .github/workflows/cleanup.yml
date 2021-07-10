@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout webref
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
     - name: Setup node.js
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v2
       with:
-        node-version: 10.x
+        node-version: '14'
     - name: Run clean up
       run: node tools/clean-abandoned-files.js
     - uses: peter-evans/create-pull-request@v3
