@@ -11033,26 +11033,26 @@
       "number": "27.6.3.3"
     },
     {
-      "id": "sec-asyncgeneratorresolve",
-      "title": "AsyncGeneratorResolve ( generator, value, done )",
+      "id": "sec-asyncgeneratorenqueue",
+      "title": "AsyncGeneratorEnqueue ( generator, completion, promiseCapability )",
       "level": 4,
       "number": "27.6.3.4"
     },
     {
-      "id": "sec-asyncgeneratorreject",
-      "title": "AsyncGeneratorReject ( generator, exception )",
+      "id": "sec-asyncgeneratorcompletestep",
+      "title": "AsyncGeneratorCompleteStep ( generator, completion, done [ , realm ] )",
       "level": 4,
       "number": "27.6.3.5"
     },
     {
-      "id": "sec-asyncgeneratorresumenext",
-      "title": "AsyncGeneratorResumeNext ( generator )",
+      "id": "sec-asyncgeneratorresume",
+      "title": "AsyncGeneratorResume ( generator, completion )",
       "level": 4,
       "number": "27.6.3.6"
     },
     {
-      "id": "sec-asyncgeneratorenqueue",
-      "title": "AsyncGeneratorEnqueue ( generator, completion, generatorBrand )",
+      "id": "sec-asyncgeneratorunwrapyieldresumption",
+      "title": "AsyncGeneratorUnwrapYieldResumption ( resumptionValue )",
       "level": 4,
       "number": "27.6.3.7"
     },
@@ -11063,10 +11063,22 @@
       "number": "27.6.3.8"
     },
     {
+      "id": "sec-asyncgeneratorawaitreturn",
+      "title": "AsyncGeneratorAwaitReturn ( generator )",
+      "level": 4,
+      "number": "27.6.3.9"
+    },
+    {
+      "id": "sec-asyncgeneratordrainqueue",
+      "title": "AsyncGeneratorDrainQueue ( generator )",
+      "level": 4,
+      "number": "27.6.3.10"
+    },
+    {
       "id": "sec-createasynciteratorfromclosure",
       "title": "CreateAsyncIteratorFromClosure ( closure, generatorBrand, generatorPrototype )",
       "level": 4,
-      "number": "27.6.3.9"
+      "number": "27.6.3.11"
     },
     {
       "id": "sec-async-function-objects",
