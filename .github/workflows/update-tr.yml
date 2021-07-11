@@ -8,16 +8,16 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
     - name: Checkout reffy
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
       with:
         repository: w3c/reffy
         ref: main
         fetch-depth: 1
         path: reffy
     - name: Setup node.js
-      uses: actions/setup-node@master
+      uses: actions/setup-node@v2
       with:
-        node-version: 14.x
+        node-version: '14'
     - name: Install pandoc
       run: sudo apt-get install pandoc
     - name: Setup Reffy
@@ -28,7 +28,7 @@ jobs:
       run: npm run tr
       working-directory: reffy
     - name: Checkout webref
-      uses: actions/checkout@master
+      uses: actions/checkout@v2
       with:
         path: webref
     - name: Copy reports
