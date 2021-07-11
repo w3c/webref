@@ -10,4 +10,6 @@ dictionary MLConv2dOptions {
   long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLFilterOperandLayout filterLayout = "oihw";
+  MLOperand bias;
+  MLOperator activation;
 };
