@@ -19109,7 +19109,7 @@
         "partial": false
       },
       "CanvasPath": {
-        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
+        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined roundRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h, sequence<(unrestricted double or DOMPointInit)> radii);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
         "type": "interface mixin",
         "name": "CanvasPath",
         "inheritance": null,
@@ -19584,6 +19584,128 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "roundRect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "w",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "h",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "radii",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": true,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "unrestricted double"
+                        },
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "DOMPointInit"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -38492,7 +38614,9 @@
         "CanvasFontVariantCaps",
         "CanvasTextRendering"
       ],
-      "CanvasPath": [],
+      "CanvasPath": [
+        "DOMPointInit"
+      ],
       "CanvasGradient": [],
       "CanvasPattern": [
         "DOMMatrix2DInit"
@@ -38863,6 +38987,7 @@
       "SVGImageElement",
       "DOMMatrix",
       "DOMMatrix2DInit",
+      "DOMPointInit",
       "ShadowRoot",
       "File",
       "MouseEvent",
