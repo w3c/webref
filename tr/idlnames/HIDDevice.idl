@@ -1,8 +1,6 @@
 // Source: WebHID API (https://wicg.github.io/webhid/)
-[
-    Exposed=Window,
-    SecureContext
-] interface HIDDevice : EventTarget {
+[Exposed=Window, SecureContext]
+interface HIDDevice : EventTarget {
     attribute EventHandler oninputreport;
     readonly attribute boolean opened;
     readonly attribute unsigned short vendorId;
@@ -12,6 +10,8 @@
     Promise<undefined> open();
     Promise<undefined> close();
     Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);
-    Promise<undefined> sendFeatureReport([EnforceRange] octet reportId, BufferSource data);
+    Promise<undefined> sendFeatureReport(
+        [EnforceRange] octet reportId,
+        BufferSource data);
     Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);
 };

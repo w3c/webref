@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "Sanitizer": {
-        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  SanitizerConfig config();\n  static SanitizerConfig defaultConfig();\n};",
+        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  SanitizerConfig getConfiguration();\n  static SanitizerConfig getDefaultConfiguration();\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
@@ -109,7 +109,7 @@
           },
           {
             "type": "operation",
-            "name": "config",
+            "name": "getConfiguration",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -124,7 +124,7 @@
           },
           {
             "type": "operation",
-            "name": "defaultConfig",
+            "name": "getDefaultConfiguration",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],

@@ -8,6 +8,6 @@
   DocumentFragment sanitize(SanitizerInput input);
   DOMString sanitizeToString(SanitizerInput input);
 
-  SanitizerConfig config();
-  static SanitizerConfig defaultConfig();
+  SanitizerConfig getConfiguration();
+  static SanitizerConfig getDefaultConfiguration();
 };

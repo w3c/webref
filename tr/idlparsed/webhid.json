@@ -19,112 +19,8 @@
       }
     },
     "idlNames": {
-      "HIDDeviceFilter": {
-        "fragment": "dictionary HIDDeviceFilter {\n    unsigned long vendorId;\n    unsigned short productId;\n    unsigned short usagePage;\n    unsigned short usage;\n};",
-        "type": "dictionary",
-        "name": "HIDDeviceFilter",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "vendorId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "productId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "usagePage",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "usage",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "HIDDeviceRequestOptions": {
-        "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
-        "type": "dictionary",
-        "name": "HIDDeviceRequestOptions",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "filters",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDDeviceFilter"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "HID": {
-        "fragment": "[\n    Exposed=Window,\n    SecureContext\n]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface HID : EventTarget {\n    attribute EventHandler onconnect;\n    attribute EventHandler ondisconnect;\n    Promise<sequence<HIDDevice>> getDevices();\n    Promise<sequence<HIDDevice>> requestDevice(\n        HIDDeviceRequestOptions options);\n};",
         "type": "interface",
         "name": "HID",
         "inheritance": "EventTarget",
@@ -262,23 +158,32 @@
         ],
         "partial": false
       },
-      "HIDConnectionEventInit": {
-        "fragment": "dictionary HIDConnectionEventInit : EventInit {\n    required HIDDevice device;\n};",
+      "HIDDeviceRequestOptions": {
+        "fragment": "dictionary HIDDeviceRequestOptions {\n    required sequence<HIDDeviceFilter> filters;\n};",
         "type": "dictionary",
-        "name": "HIDConnectionEventInit",
-        "inheritance": "EventInit",
+        "name": "HIDDeviceRequestOptions",
+        "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "device",
+            "name": "filters",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "HIDDevice"
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDDeviceFilter"
+                }
+              ]
             },
             "default": null,
             "required": true
@@ -287,8 +192,427 @@
         "extAttrs": [],
         "partial": false
       },
+      "HIDDeviceFilter": {
+        "fragment": "dictionary HIDDeviceFilter {\n    unsigned long vendorId;\n    unsigned short productId;\n    unsigned short usagePage;\n    unsigned short usage;\n};",
+        "type": "dictionary",
+        "name": "HIDDeviceFilter",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "vendorId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "productId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "usagePage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "usage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HIDDevice": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
+        "type": "interface",
+        "name": "HIDDevice",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "oninputreport",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "opened",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "vendorId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "productId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "productName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "collections",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDCollectionInfo"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "open",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "close",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "sendReport",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "reportId",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "octet"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "sendFeatureReport",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "reportId",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "octet"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "data",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BufferSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "receiveFeatureReport",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DataView"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "reportId",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "EnforceRange",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "octet"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "HIDConnectionEvent": {
-        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDConnectionEvent : Event {\n    constructor(DOMString type, HIDConnectionEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n};",
         "type": "interface",
         "name": "HIDConnectionEvent",
         "inheritance": "Event",
@@ -373,10 +697,10 @@
         ],
         "partial": false
       },
-      "HIDInputReportEventInit": {
-        "fragment": "dictionary HIDInputReportEventInit : EventInit {\n    required HIDDevice device;\n    required octet reportId;\n    required DataView data;\n};",
+      "HIDConnectionEventInit": {
+        "fragment": "dictionary HIDConnectionEventInit : EventInit {\n    required HIDDevice device;\n};",
         "type": "dictionary",
-        "name": "HIDInputReportEventInit",
+        "name": "HIDConnectionEventInit",
         "inheritance": "EventInit",
         "members": [
           {
@@ -393,43 +717,13 @@
             },
             "default": null,
             "required": true
-          },
-          {
-            "type": "field",
-            "name": "reportId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "data",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DataView"
-            },
-            "default": null,
-            "required": true
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "HIDInputReportEvent": {
-        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface HIDInputReportEvent : Event {\n    constructor(DOMString type, HIDInputReportEventInit eventInitDict);\n    [SameObject] readonly attribute HIDDevice device;\n    readonly attribute octet reportId;\n    readonly attribute DataView data;\n};",
         "type": "interface",
         "name": "HIDInputReportEvent",
         "inheritance": "Event",
@@ -544,41 +838,260 @@
         ],
         "partial": false
       },
-      "HIDUnitSystem": {
-        "fragment": "enum HIDUnitSystem {\n    \"none\", \"si-linear\", \"si-rotation\", \"english-linear\",\n    \"english-rotation\", \"vendor-defined\", \"reserved\"\n};",
-        "type": "enum",
-        "name": "HIDUnitSystem",
-        "values": [
+      "HIDInputReportEventInit": {
+        "fragment": "dictionary HIDInputReportEventInit : EventInit {\n    required HIDDevice device;\n    required octet reportId;\n    required DataView data;\n};",
+        "type": "dictionary",
+        "name": "HIDInputReportEventInit",
+        "inheritance": "EventInit",
+        "members": [
           {
-            "type": "enum-value",
-            "value": "none"
+            "type": "field",
+            "name": "device",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HIDDevice"
+            },
+            "default": null,
+            "required": true
           },
           {
-            "type": "enum-value",
-            "value": "si-linear"
+            "type": "field",
+            "name": "reportId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": true
           },
           {
-            "type": "enum-value",
-            "value": "si-rotation"
-          },
-          {
-            "type": "enum-value",
-            "value": "english-linear"
-          },
-          {
-            "type": "enum-value",
-            "value": "english-rotation"
-          },
-          {
-            "type": "enum-value",
-            "value": "vendor-defined"
-          },
-          {
-            "type": "enum-value",
-            "value": "reserved"
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DataView"
+            },
+            "default": null,
+            "required": true
           }
         ],
-        "extAttrs": []
+        "extAttrs": [],
+        "partial": false
+      },
+      "HIDCollectionInfo": {
+        "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
+        "type": "dictionary",
+        "name": "HIDCollectionInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "usagePage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "usage",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "children",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDCollectionInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "inputReports",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDReportInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "outputReports",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDReportInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "featureReports",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDReportInfo"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "HIDReportInfo": {
+        "fragment": "dictionary HIDReportInfo {\n    octet reportId;\n    sequence<HIDReportItem> items;\n};",
+        "type": "dictionary",
+        "name": "HIDReportInfo",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "reportId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "items",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "HIDReportItem"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       },
       "HIDReportItem": {
         "fragment": "dictionary HIDReportItem {\n    boolean isAbsolute;\n    boolean isArray;\n    boolean isBufferedBytes;\n    boolean isConstant;\n    boolean isLinear;\n    boolean isRange;\n    boolean isVolatile;\n    boolean hasNull;\n    boolean hasPreferredState;\n    boolean wrap;\n    sequence<unsigned long> usages;\n    unsigned long usageMinimum;\n    unsigned long usageMaximum;\n    unsigned short reportSize;\n    unsigned short reportCount;\n    byte unitExponent;\n    HIDUnitSystem unitSystem;\n    byte unitFactorLengthExponent;\n    byte unitFactorMassExponent;\n    byte unitFactorTimeExponent;\n    byte unitFactorTemperatureExponent;\n    byte unitFactorCurrentExponent;\n    byte unitFactorLuminousIntensityExponent;\n    long logicalMinimum;\n    long logicalMaximum;\n    long physicalMinimum;\n    long physicalMaximum;\n    sequence<DOMString> strings;\n};",
@@ -1028,554 +1541,41 @@
         "extAttrs": [],
         "partial": false
       },
-      "HIDReportInfo": {
-        "fragment": "dictionary HIDReportInfo {\n    octet reportId;\n    sequence<HIDReportItem> items;\n};",
-        "type": "dictionary",
-        "name": "HIDReportInfo",
-        "inheritance": null,
-        "members": [
+      "HIDUnitSystem": {
+        "fragment": "enum HIDUnitSystem {\n    \"none\", \"si-linear\", \"si-rotation\", \"english-linear\",\n    \"english-rotation\", \"vendor-defined\", \"reserved\"\n};",
+        "type": "enum",
+        "name": "HIDUnitSystem",
+        "values": [
           {
-            "type": "field",
-            "name": "reportId",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "default": null,
-            "required": false
+            "type": "enum-value",
+            "value": "none"
           },
           {
-            "type": "field",
-            "name": "items",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDReportItem"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
+            "type": "enum-value",
+            "value": "si-linear"
+          },
+          {
+            "type": "enum-value",
+            "value": "si-rotation"
+          },
+          {
+            "type": "enum-value",
+            "value": "english-linear"
+          },
+          {
+            "type": "enum-value",
+            "value": "english-rotation"
+          },
+          {
+            "type": "enum-value",
+            "value": "vendor-defined"
+          },
+          {
+            "type": "enum-value",
+            "value": "reserved"
           }
         ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "HIDCollectionInfo": {
-        "fragment": "dictionary HIDCollectionInfo {\n    unsigned short usagePage;\n    unsigned short usage;\n    octet type;\n    sequence<HIDCollectionInfo> children;\n    sequence<HIDReportInfo> inputReports;\n    sequence<HIDReportInfo> outputReports;\n    sequence<HIDReportInfo> featureReports;\n};",
-        "type": "dictionary",
-        "name": "HIDCollectionInfo",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "usagePage",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "usage",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "type",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "children",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDCollectionInfo"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "inputReports",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDReportInfo"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "outputReports",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDReportInfo"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "featureReports",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDReportInfo"
-                }
-              ]
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "HIDDevice": {
-        "fragment": "[\n    Exposed=Window,\n    SecureContext\n] interface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
-        "type": "interface",
-        "name": "HIDDevice",
-        "inheritance": "EventTarget",
-        "members": [
-          {
-            "type": "attribute",
-            "name": "oninputreport",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "EventHandler"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "opened",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "vendorId",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "productId",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "productName",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "collections",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "FrozenArray",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "HIDCollectionInfo"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "open",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "close",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "sendReport",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "reportId",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "octet"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "BufferSource"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "sendFeatureReport",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "reportId",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "octet"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
-              {
-                "type": "argument",
-                "name": "data",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "BufferSource"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "receiveFeatureReport",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DataView"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "reportId",
-                "extAttrs": [
-                  {
-                    "type": "extended-attribute",
-                    "name": "EnforceRange",
-                    "rhs": null,
-                    "arguments": []
-                  }
-                ],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "octet"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
+        "extAttrs": []
       }
     },
     "idlExtendedNames": {
@@ -1625,15 +1625,14 @@
     "exposed": {
       "Window": [
         "HID",
+        "HIDDevice",
         "HIDConnectionEvent",
-        "HIDInputReportEvent",
-        "HIDDevice"
+        "HIDInputReportEvent"
       ]
     },
     "dependencies": {
-      "HIDDeviceFilter": [],
-      "HIDDeviceRequestOptions": [
-        "HIDDeviceFilter"
+      "Navigator": [
+        "HID"
       ],
       "HID": [
         "EventTarget",
@@ -1641,19 +1640,21 @@
         "HIDDevice",
         "HIDDeviceRequestOptions"
       ],
-      "Navigator": [
-        "HID"
+      "HIDDeviceRequestOptions": [
+        "HIDDeviceFilter"
       ],
-      "HIDConnectionEventInit": [
-        "EventInit",
-        "HIDDevice"
+      "HIDDeviceFilter": [],
+      "HIDDevice": [
+        "EventTarget",
+        "EventHandler",
+        "HIDCollectionInfo"
       ],
       "HIDConnectionEvent": [
         "Event",
         "HIDConnectionEventInit",
         "HIDDevice"
       ],
-      "HIDInputReportEventInit": [
+      "HIDConnectionEventInit": [
         "EventInit",
         "HIDDevice"
       ],
@@ -1662,28 +1663,27 @@
         "HIDInputReportEventInit",
         "HIDDevice"
       ],
-      "HIDReportItem": [
-        "HIDUnitSystem"
-      ],
-      "HIDReportInfo": [
-        "HIDReportItem"
+      "HIDInputReportEventInit": [
+        "EventInit",
+        "HIDDevice"
       ],
       "HIDCollectionInfo": [
         "HIDCollectionInfo",
         "HIDReportInfo"
       ],
-      "HIDDevice": [
-        "EventTarget",
-        "EventHandler",
-        "HIDCollectionInfo"
+      "HIDReportInfo": [
+        "HIDReportItem"
+      ],
+      "HIDReportItem": [
+        "HIDUnitSystem"
       ]
     },
     "externalDependencies": [
+      "Navigator",
       "EventTarget",
       "EventHandler",
-      "Navigator",
-      "EventInit",
-      "Event"
+      "Event",
+      "EventInit"
     ],
     "hasObsoleteIdl": false
   }

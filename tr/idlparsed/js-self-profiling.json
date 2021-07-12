@@ -8,16 +8,13 @@
       "constructors": {
         "Window": [
           "Profiler"
-        ],
-        "Worker": [
-          "Profiler"
         ]
       },
       "functions": {}
     },
     "idlNames": {
       "Profiler": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
+        "fragment": "[Exposed=Window]\ninterface Profiler : EventTarget {\n  readonly attribute DOMHighResTimeStamp sampleInterval;\n  readonly attribute boolean stopped;\n\n  constructor(ProfilerInitOptions options);\n  Promise<ProfilerTrace> stop();\n};",
         "type": "interface",
         "name": "Profiler",
         "inheritance": "EventTarget",
@@ -104,15 +101,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "identifier",
+              "value": "Window"
             },
             "arguments": []
           }
@@ -434,9 +424,6 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "Profiler"
-      ],
-      "Worker": [
         "Profiler"
       ]
     },
