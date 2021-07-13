@@ -1,7 +1,8 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-[Exposed=Window]
+[Exposed=Window,
+ LegacyUnenumerableNamedProperties]
 interface MimeTypeArray {
   readonly attribute unsigned long length;
-  getter object? item(unsigned long index);
-  object? namedItem(DOMString name);
+  getter MimeType? item(unsigned long index);
+  getter MimeType? namedItem(DOMString name);
 };

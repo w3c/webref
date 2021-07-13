@@ -9,8 +9,10 @@
     "https://www.w3.org/community/": [],
     "https://dom.spec.whatwg.org/": [
       "element",
+      "concept-document",
       "documentfragment",
       "interface-Document",
+      "concept-node-replace-all",
       "concept-node-clone",
       "dom-document-createdocumentfragment",
       "concept-node-append",
@@ -18,27 +20,20 @@
       "concept-tree-order",
       "concept-element-attribute",
       "concept-tree-parent",
-      "text",
+      "comment",
       "boundary-point-node",
+      "text",
       "concept-element-interface"
     ],
     "https://w3c.github.io/DOM-Parsing/": [
       "widl-Element-innerHTML",
-      "widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type"
+      "dfn-fragment-parsing-algorithm"
     ],
     "https://github.com/google/security-research-pocs/tree/master/script-gadgets": [],
-    "https://heycam.github.io/webidl/": [
-      "Exposed",
-      "SecureContext",
-      "idl-DOMString",
-      "idl-sequence",
-      "idl-boolean",
-      "idl-record"
-    ],
     "https://html.spec.whatwg.org/": [
+      "parsing",
       "html-parser",
       "custom-element",
-      "html-fragment-serialisation-algorithm",
       "htmltemplateelement",
       "htmlhyperlinkelementutils",
       "htmlformelement",
@@ -58,13 +53,21 @@
       "htmlslotelement",
       "htmldataelement"
     ],
+    "https://heycam.github.io/webidl/": [
+      "Exposed",
+      "SecureContext",
+      "idl-DOMString",
+      "idl-undefined",
+      "idl-sequence",
+      "idl-boolean",
+      "idl-record"
+    ],
     "https://wpt.fyi/results/sanitizer-api/sanitizer-sanitize.https.tentative.html": [],
     "https://wpt.live/sanitizer-api/sanitizer-sanitize.https.tentative.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-sanitize.https.tentative.html": [],
     "https://wpt.fyi/results/sanitizer-api/sanitizer-config.https.tentative.html": [],
     "https://wpt.live/sanitizer-api/sanitizer-config.https.tentative.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/sanitizer-api/sanitizer-config.https.tentative.html": [],
-    "https://github.com/WICG/sanitizer-api/issues/42": [],
     "https://infra.spec.whatwg.org/": [
       "list-iterate"
     ],
@@ -74,6 +77,9 @@
     "https://www.w3.org/TR/DOM-Parsing/": [],
     "https://github.com/WICG/sanitizer-api/blob/main/resources/defaults-derivation.html": [],
     "https://github.com/cure53/DOMPurify": [],
+    "https://cure53.de/fp170.pdf": [],
+    "https://research.securitum.com/mutation-xss-via-mathml-mutation-dompurify-2-0-17-bypass/": [],
+    "https://www.checkmarx.com/blog/technical-blog/vulnerabilities-discovered-in-mozilla-bleach/": [],
     "https://url.spec.whatwg.org/": []
   }
 }

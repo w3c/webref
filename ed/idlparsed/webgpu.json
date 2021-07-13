@@ -142,7 +142,7 @@
         "partial": false
       },
       "GPUSupportedLimits": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeWorkgroupInvocations;\n    readonly attribute unsigned long maxComputePerDimensionDispatchSize;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUSupportedLimits {\n    readonly attribute unsigned long maxTextureDimension1D;\n    readonly attribute unsigned long maxTextureDimension2D;\n    readonly attribute unsigned long maxTextureDimension3D;\n    readonly attribute unsigned long maxTextureArrayLayers;\n    readonly attribute unsigned long maxBindGroups;\n    readonly attribute unsigned long maxDynamicUniformBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxDynamicStorageBuffersPerPipelineLayout;\n    readonly attribute unsigned long maxSampledTexturesPerShaderStage;\n    readonly attribute unsigned long maxSamplersPerShaderStage;\n    readonly attribute unsigned long maxStorageBuffersPerShaderStage;\n    readonly attribute unsigned long maxStorageTexturesPerShaderStage;\n    readonly attribute unsigned long maxUniformBuffersPerShaderStage;\n    readonly attribute unsigned long maxUniformBufferBindingSize;\n    readonly attribute unsigned long maxStorageBufferBindingSize;\n    readonly attribute unsigned long minUniformBufferOffsetAlignment;\n    readonly attribute unsigned long minStorageBufferOffsetAlignment;\n    readonly attribute unsigned long maxVertexBuffers;\n    readonly attribute unsigned long maxVertexAttributes;\n    readonly attribute unsigned long maxVertexBufferArrayStride;\n    readonly attribute unsigned long maxInterStageShaderComponents;\n    readonly attribute unsigned long maxComputeWorkgroupStorageSize;\n    readonly attribute unsigned long maxComputeWorkgroupInvocations;\n    readonly attribute GPUExtent3D maxComputeWorkgroupSize;\n    readonly attribute unsigned long maxComputePerDimensionDispatchSize;\n};",
         "type": "interface",
         "name": "GPUSupportedLimits",
         "inheritance": null,
@@ -472,6 +472,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxComputeWorkgroupSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUExtent3D"
             },
             "extAttrs": [],
             "special": "",
@@ -5834,10 +5849,10 @@
         ],
         "extAttrs": []
       },
-      "GPUInputStepMode": {
-        "fragment": "enum GPUInputStepMode {\n    \"vertex\",\n    \"instance\"\n};",
+      "GPUVertexStepMode": {
+        "fragment": "enum GPUVertexStepMode {\n    \"vertex\",\n    \"instance\"\n};",
         "type": "enum",
-        "name": "GPUInputStepMode",
+        "name": "GPUVertexStepMode",
         "values": [
           {
             "type": "enum-value",
@@ -5888,7 +5903,7 @@
         "partial": false
       },
       "GPUVertexBufferLayout": {
-        "fragment": "dictionary GPUVertexBufferLayout {\n    required GPUSize64 arrayStride;\n    GPUInputStepMode stepMode = \"vertex\";\n    required sequence<GPUVertexAttribute> attributes;\n};",
+        "fragment": "dictionary GPUVertexBufferLayout {\n    required GPUSize64 arrayStride;\n    GPUVertexStepMode stepMode = \"vertex\";\n    required sequence<GPUVertexAttribute> attributes;\n};",
         "type": "dictionary",
         "name": "GPUVertexBufferLayout",
         "inheritance": null,
@@ -5918,7 +5933,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUInputStepMode"
+              "idlType": "GPUVertexStepMode"
             },
             "default": {
               "type": "string",
@@ -11280,7 +11295,9 @@
     "dependencies": {
       "GPUObjectBase": [],
       "GPUObjectDescriptorBase": [],
-      "GPUSupportedLimits": [],
+      "GPUSupportedLimits": [
+        "GPUExtent3D"
+      ],
       "GPUSupportedFeatures": [],
       "NavigatorGPU": [
         "GPU"
@@ -11545,7 +11562,7 @@
       ],
       "GPUVertexBufferLayout": [
         "GPUSize64",
-        "GPUInputStepMode",
+        "GPUVertexStepMode",
         "GPUVertexAttribute"
       ],
       "GPUVertexAttribute": [

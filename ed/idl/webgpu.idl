@@ -35,6 +35,7 @@ interface GPUSupportedLimits {
     readonly attribute unsigned long maxInterStageShaderComponents;
     readonly attribute unsigned long maxComputeWorkgroupStorageSize;
     readonly attribute unsigned long maxComputeWorkgroupInvocations;
+    readonly attribute GPUExtent3D maxComputeWorkgroupSize;
     readonly attribute unsigned long maxComputePerDimensionDispatchSize;
 };
 
@@ -699,7 +700,7 @@ enum GPUVertexFormat {
     "sint32x4",
 };
 
-enum GPUInputStepMode {
+enum GPUVertexStepMode {
     "vertex",
     "instance"
 };
@@ -710,7 +711,7 @@ dictionary GPUVertexState: GPUProgrammableStage {
 
 dictionary GPUVertexBufferLayout {
     required GPUSize64 arrayStride;
-    GPUInputStepMode stepMode = "vertex";
+    GPUVertexStepMode stepMode = "vertex";
     required sequence<GPUVertexAttribute> attributes;
 };
 

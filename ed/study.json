@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-07-13T12:49:00.898Z",
+  "date": "2021-07-13T18:44:14.865Z",
   "stats": {
     "crawled": 426,
     "errors": 0,
@@ -31971,7 +31971,7 @@
     {
       "title": "HTML Sanitizer API",
       "shortname": "sanitizer-api",
-      "date": "12 July 2021",
+      "date": "13 July 2021",
       "url": "https://wicg.github.io/sanitizer-api/",
       "nightly": {
         "url": "https://wicg.github.io/sanitizer-api/",
@@ -32014,8 +32014,10 @@
           "notDfn": [],
           "brokenLinks": [
             "https://dom.spec.whatwg.org/#element",
+            "https://dom.spec.whatwg.org/#concept-document",
             "https://dom.spec.whatwg.org/#documentfragment",
             "https://dom.spec.whatwg.org/#interface-Document",
+            "https://dom.spec.whatwg.org/#concept-node-replace-all",
             "https://dom.spec.whatwg.org/#concept-node-clone",
             "https://dom.spec.whatwg.org/#dom-document-createdocumentfragment",
             "https://dom.spec.whatwg.org/#concept-node-append",
@@ -32023,20 +32025,15 @@
             "https://dom.spec.whatwg.org/#concept-tree-order",
             "https://dom.spec.whatwg.org/#concept-element-attribute",
             "https://dom.spec.whatwg.org/#concept-tree-parent",
-            "https://dom.spec.whatwg.org/#text",
+            "https://dom.spec.whatwg.org/#comment",
             "https://dom.spec.whatwg.org/#boundary-point-node",
+            "https://dom.spec.whatwg.org/#text",
             "https://dom.spec.whatwg.org/#concept-element-interface",
             "https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML",
-            "https://w3c.github.io/DOM-Parsing/#widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#SecureContext",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#idl-sequence",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://heycam.github.io/webidl/#idl-record",
+            "https://w3c.github.io/DOM-Parsing/#dfn-fragment-parsing-algorithm",
+            "https://html.spec.whatwg.org/#parsing",
             "https://html.spec.whatwg.org/#html-parser",
             "https://html.spec.whatwg.org/#custom-element",
-            "https://html.spec.whatwg.org/#html-fragment-serialisation-algorithm",
             "https://html.spec.whatwg.org/#htmltemplateelement",
             "https://html.spec.whatwg.org/#htmlhyperlinkelementutils",
             "https://html.spec.whatwg.org/#htmlformelement",
@@ -32055,6 +32052,13 @@
             "https://html.spec.whatwg.org/#rcdata-state",
             "https://html.spec.whatwg.org/#htmlslotelement",
             "https://html.spec.whatwg.org/#htmldataelement",
+            "https://heycam.github.io/webidl/#Exposed",
+            "https://heycam.github.io/webidl/#SecureContext",
+            "https://heycam.github.io/webidl/#idl-DOMString",
+            "https://heycam.github.io/webidl/#idl-undefined",
+            "https://heycam.github.io/webidl/#idl-sequence",
+            "https://heycam.github.io/webidl/#idl-boolean",
+            "https://heycam.github.io/webidl/#idl-record",
             "https://infra.spec.whatwg.org/#list-iterate"
           ],
           "evolvingLinks": [],
@@ -32067,7 +32071,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "12 July 2021",
+      "date": "13 July 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -37141,6 +37145,161 @@
             {
               "expected": {
                 "linkingText": [
+                  "NavigatorPlugins"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "navigatorplugins",
+                "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins",
+                "linkingText": [
+                  "NavigatorPlugins"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "pdf-viewing-support",
+                  "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+                  "title": "PDF viewing support",
+                  "number": "8.9.1.6"
+                },
+                "definedIn": "pre"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "PluginArray"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "pluginarray",
+                "href": "https://html.spec.whatwg.org/multipage/system-state.html#pluginarray",
+                "linkingText": [
+                  "PluginArray"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "pdf-viewing-support",
+                  "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+                  "title": "PDF viewing support",
+                  "number": "8.9.1.6"
+                },
+                "definedIn": "pre"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MimeTypeArray"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "mimetypearray",
+                "href": "https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray",
+                "linkingText": [
+                  "MimeTypeArray"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "pdf-viewing-support",
+                  "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+                  "title": "PDF viewing support",
+                  "number": "8.9.1.6"
+                },
+                "definedIn": "pre"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "Plugin"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "dom-plugin",
+                "href": "https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin",
+                "linkingText": [
+                  "Plugin"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "pdf-viewing-support",
+                  "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+                  "title": "PDF viewing support",
+                  "number": "8.9.1.6"
+                },
+                "definedIn": "pre"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "MimeType"
+                ],
+                "type": "interface",
+                "for": [],
+                "access": "public",
+                "informative": false
+              },
+              "found": {
+                "id": "mimetype",
+                "href": "https://html.spec.whatwg.org/multipage/system-state.html#mimetype",
+                "linkingText": [
+                  "MimeType"
+                ],
+                "localLinkingText": [],
+                "type": "dfn",
+                "for": [],
+                "access": "private",
+                "informative": false,
+                "heading": {
+                  "id": "pdf-viewing-support",
+                  "href": "https://html.spec.whatwg.org/multipage/system-state.html#pdf-viewing-support",
+                  "title": "PDF viewing support",
+                  "number": "8.9.1.6"
+                },
+                "definedIn": "pre"
+              },
+              "for": null
+            },
+            {
+              "expected": {
+                "linkingText": [
                   "constructor(type, eventInitDict)"
                 ],
                 "type": "constructor",
@@ -38287,114 +38446,6 @@
                 },
                 "definedIn": "pre"
               }
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "item(index)"
-                ],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-plugin-item",
-                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item",
-                "linkingText": [
-                  "item()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "other-elements,-attributes-and-apis",
-                  "href": "https://html.spec.whatwg.org/multipage/obsolete.html#other-elements,-attributes-and-apis",
-                  "title": "Other elements, attributes and APIs",
-                  "number": "16.3.3"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "dom-plugin",
-                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin",
-                "linkingText": [
-                  "Plugin"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "other-elements,-attributes-and-apis",
-                  "href": "https://html.spec.whatwg.org/multipage/obsolete.html#other-elements,-attributes-and-apis",
-                  "title": "Other elements, attributes and APIs",
-                  "number": "16.3.3"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
-            },
-            {
-              "expected": {
-                "linkingText": [
-                  "namedItem(name)"
-                ],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false
-              },
-              "found": {
-                "id": "dom-plugin-nameditem",
-                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem",
-                "linkingText": [
-                  "namedItem()"
-                ],
-                "localLinkingText": [],
-                "type": "method",
-                "for": [
-                  "Plugin"
-                ],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "other-elements,-attributes-and-apis",
-                  "href": "https://html.spec.whatwg.org/multipage/obsolete.html#other-elements,-attributes-and-apis",
-                  "title": "Other elements, attributes and APIs",
-                  "number": "16.3.3"
-                },
-                "definedIn": "prose"
-              },
-              "for": {
-                "id": "dom-plugin",
-                "href": "https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin",
-                "linkingText": [
-                  "Plugin"
-                ],
-                "localLinkingText": [],
-                "type": "interface",
-                "for": [],
-                "access": "public",
-                "informative": false,
-                "heading": {
-                  "id": "other-elements,-attributes-and-apis",
-                  "href": "https://html.spec.whatwg.org/multipage/obsolete.html#other-elements,-attributes-and-apis",
-                  "title": "Other elements, attributes and APIs",
-                  "number": "16.3.3"
-                },
-                "definedIn": "pre"
-              },
-              "warning": true
             },
             {
               "expected": {
@@ -40501,6 +40552,7 @@
             "https://heycam.github.io/webidl/#overridden-constructor-steps",
             "https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface",
             "https://heycam.github.io/webidl/#dfn-array-index-property-name",
+            "https://heycam.github.io/webidl/#dfn-support-indexed-properties",
             "https://heycam.github.io/webidl/#dfn-supported-property-indices",
             "https://heycam.github.io/webidl/#dfn-determine-the-value-of-an-indexed-property",
             "https://heycam.github.io/webidl/#dfn-set-the-value-of-an-existing-indexed-property",
@@ -70070,7 +70122,7 @@
     {
       "title": "WebGPU",
       "shortname": "webgpu",
-      "date": "12 July 2021",
+      "date": "13 July 2021",
       "url": "https://www.w3.org/TR/webgpu/",
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
@@ -70226,7 +70278,7 @@
     {
       "title": "WebGPU Shading Language",
       "shortname": "WGSL",
-      "date": "12 July 2021",
+      "date": "13 July 2021",
       "url": "https://www.w3.org/TR/WGSL/",
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
