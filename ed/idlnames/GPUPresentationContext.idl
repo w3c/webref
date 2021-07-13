@@ -1,6 +1,8 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=Window]
+[Exposed=(Window, DedicatedWorker)]
 interface GPUPresentationContext {
+    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;
+
     undefined configure(GPUPresentationConfiguration configuration);
     undefined unconfigure();
 
