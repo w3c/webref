@@ -166,12 +166,18 @@ dictionary VideoEncoderConfig {
   HardwareAcceleration hardwareAcceleration = "allow";
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
+  LatencyMode latencyMode = "quality";
 };
 
 enum HardwareAcceleration {
   "allow",
   "deny",
   "require",
+};
+
+enum LatencyMode {
+  "quality",
+  "realtime"
 };
 
 dictionary VideoEncoderEncodeOptions {
@@ -231,7 +237,7 @@ enum EncodedVideoChunkType {
     "delta",
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), Serializable, Transferable]
 interface AudioData {
   constructor(AudioDataInit init);
 
@@ -276,7 +282,7 @@ enum AudioSampleFormat {
   "FLTP",
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), Serializable, Transferable]
 interface VideoFrame {
   constructor(CanvasImageSource image, optional VideoFrameInit init = {});
   constructor(sequence<PlaneInit> planes,
@@ -285,8 +291,8 @@ interface VideoFrame {
   readonly attribute PixelFormat format;
   readonly attribute unsigned long codedWidth;
   readonly attribute unsigned long codedHeight;
-  readonly attribute VideoFrameRect codedRect;
-  readonly attribute VideoFrameRect visibleRect;
+  readonly attribute DOMRectReadOnly? codedRect;
+  readonly attribute DOMRectReadOnly? visibleRect;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
   readonly attribute unsigned long long? duration;  // microseconds
@@ -309,7 +315,7 @@ dictionary VideoFramePlaneInit {
   required PixelFormat format;
   [EnforceRange] required unsigned long codedWidth;
   [EnforceRange] required unsigned long codedHeight;
-  VideoFrameRect visibleRect;
+  DOMRectInit visibleRect;
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
   [EnforceRange] unsigned long long duration;  // microseconds
@@ -323,15 +329,8 @@ dictionary PlaneInit {
 };
 
 dictionary VideoFrameCopyToOptions {
-  VideoFrameRect rect;
+  DOMRectInit rect;
   sequence<PlaneLayout> layout;
-};
-
-dictionary VideoFrameRect {
-  [EnforceRange] required unsigned long left;
-  [EnforceRange] required unsigned long top;
-  [EnforceRange] required unsigned long width;
-  [EnforceRange] required unsigned long height;
 };
 
 dictionary PlaneLayout {

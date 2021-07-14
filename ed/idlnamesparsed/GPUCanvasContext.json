@@ -1,0 +1,14 @@
+{
+  "name": "GPUCanvasContext",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucanvascontext"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

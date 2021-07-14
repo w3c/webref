@@ -50,7 +50,7 @@
           "GPURenderBundleEncoder",
           "GPUQueue",
           "GPUQuerySet",
-          "GPUPresentationContext",
+          "GPUCanvasContext",
           "GPUDeviceLostInfo"
         ],
         "DedicatedWorker": [
@@ -85,7 +85,7 @@
           "GPURenderBundleEncoder",
           "GPUQueue",
           "GPUQuerySet",
-          "GPUPresentationContext",
+          "GPUCanvasContext",
           "GPUDeviceLostInfo"
         ]
       }
@@ -9597,10 +9597,10 @@
         ],
         "extAttrs": []
       },
-      "GPUPresentationContext": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUPresentationContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUPresentationConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+      "GPUCanvasContext": {
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
-        "name": "GPUPresentationContext",
+        "name": "GPUCanvasContext",
         "inheritance": null,
         "members": [
           {
@@ -9657,7 +9657,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "GPUPresentationConfiguration"
+                  "idlType": "GPUCanvasConfiguration"
                 },
                 "default": null,
                 "optional": false,
@@ -9766,10 +9766,10 @@
         ],
         "extAttrs": []
       },
-      "GPUPresentationConfiguration": {
-        "fragment": "dictionary GPUPresentationConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+      "GPUCanvasConfiguration": {
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
-        "name": "GPUPresentationConfiguration",
+        "name": "GPUCanvasConfiguration",
         "inheritance": null,
         "members": [
           {
@@ -11246,7 +11246,7 @@
         "GPURenderBundleEncoder",
         "GPUQueue",
         "GPUQuerySet",
-        "GPUPresentationContext",
+        "GPUCanvasContext",
         "GPUDeviceLostInfo",
         "GPUOutOfMemoryError",
         "GPUValidationError",
@@ -11284,7 +11284,7 @@
         "GPURenderBundleEncoder",
         "GPUQueue",
         "GPUQuerySet",
-        "GPUPresentationContext",
+        "GPUCanvasContext",
         "GPUDeviceLostInfo",
         "GPUOutOfMemoryError",
         "GPUValidationError",
@@ -11713,15 +11713,15 @@
         "GPUSize32",
         "GPUPipelineStatisticName"
       ],
-      "GPUPresentationContext": [
+      "GPUCanvasContext": [
         "HTMLCanvasElement",
         "OffscreenCanvas",
-        "GPUPresentationConfiguration",
+        "GPUCanvasConfiguration",
         "GPUTextureFormat",
         "GPUAdapter",
         "GPUTexture"
       ],
-      "GPUPresentationConfiguration": [
+      "GPUCanvasConfiguration": [
         "GPUDevice",
         "GPUTextureFormat",
         "GPUTextureUsageFlags",

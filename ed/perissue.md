@@ -21133,7 +21133,16 @@ Links in the body of a specification should be to the same document as that poin
 - [WebCodecs](https://w3c.github.io/webcodecs/):
      * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
      * [`https://html.spec.whatwg.org/#parallel-queue`](https://html.spec.whatwg.org/#parallel-queue)
+     * [`https://html.spec.whatwg.org/#detached`](https://html.spec.whatwg.org/#detached)
      * [`https://html.spec.whatwg.org/#dom-navigator-canplaytype`](https://html.spec.whatwg.org/#dom-navigator-canplaytype)
+     * [`https://html.spec.whatwg.org/#transferable-objects`](https://html.spec.whatwg.org/#transferable-objects)
+     * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+     * [`https://html.spec.whatwg.org/#serializable`](https://html.spec.whatwg.org/#serializable)
+     * [`https://html.spec.whatwg.org/#transferable`](https://html.spec.whatwg.org/#transferable)
+     * [`https://html.spec.whatwg.org/#transfer-steps`](https://html.spec.whatwg.org/#transfer-steps)
+     * [`https://html.spec.whatwg.org/#transfer-receiving-steps`](https://html.spec.whatwg.org/#transfer-receiving-steps)
+     * [`https://html.spec.whatwg.org/#serialization-steps`](https://html.spec.whatwg.org/#serialization-steps)
+     * [`https://html.spec.whatwg.org/#deserialization-steps`](https://html.spec.whatwg.org/#deserialization-steps)
      * [`https://html.spec.whatwg.org/#canvasimagesource`](https://html.spec.whatwg.org/#canvasimagesource)
      * [`https://html.spec.whatwg.org/#canvasdrawimage`](https://html.spec.whatwg.org/#canvasdrawimage)
      * [`https://html.spec.whatwg.org/#dom-context-2d-drawimage`](https://html.spec.whatwg.org/#dom-context-2d-drawimage)
@@ -21195,6 +21204,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-float`](https://heycam.github.io/webidl/#idl-float)
      * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
      * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
      * [`https://heycam.github.io/webidl/#idl-short`](https://heycam.github.io/webidl/#idl-short)
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
@@ -21209,7 +21219,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-constant`](https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-constant)
      * [`https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-variable`](https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-variable)
      * [`https://w3c.github.io/webrtc-svc/#scalabilitymodes*`](https://w3c.github.io/webrtc-svc/#scalabilitymodes*)
-     * [`https://immersive-web.github.io/layers/#dom-xrcompositionlayer-destroy`](https://immersive-web.github.io/layers/#dom-xrcompositionlayer-destroy)
+     * [`https://drafts.fxtf.org/geometry-1/#domrectreadonly`](https://drafts.fxtf.org/geometry-1/#domrectreadonly)
+     * [`https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit`](https://drafts.fxtf.org/geometry-1/#dictdef-domrectinit)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectinit-width`](https://drafts.fxtf.org/geometry-1/#dom-domrectinit-width)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectinit-height`](https://drafts.fxtf.org/geometry-1/#dom-domrectinit-height)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-width)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-height)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-x)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-domrectreadonly-y)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectinit-y`](https://drafts.fxtf.org/geometry-1/#dom-domrectinit-y)
+     * [`https://drafts.fxtf.org/geometry-1/#dom-domrectinit-x`](https://drafts.fxtf.org/geometry-1/#dom-domrectinit-x)
+     * [`https://drafts.fxtf.org/geometry-1/#domrect`](https://drafts.fxtf.org/geometry-1/#domrect)
      * [`https://www.w3.org/TR/css-images-3/#natural-dimensions`](https://www.w3.org/TR/css-images-3/#natural-dimensions)
      * [`https://www.w3.org/TR/css-images-3/#natural-width`](https://www.w3.org/TR/css-images-3/#natural-width)
      * [`https://www.w3.org/TR/css-images-3/#natural-height`](https://www.w3.org/TR/css-images-3/#natural-height)
@@ -22147,6 +22167,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-unsigned-short`](https://heycam.github.io/webidl/#idl-unsigned-short)
      * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
@@ -22155,7 +22176,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
-     * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
@@ -23088,7 +23108,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20851 problematic external links found in 344 specifications
+=> 20871 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

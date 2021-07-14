@@ -3954,6 +3954,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoderconfig-latencymode",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-latencymode",
+      "linkingText": [
+        "latencyMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-hardwareacceleration",
       "href": "https://w3c.github.io/webcodecs/#enumdef-hardwareacceleration",
       "linkingText": [
@@ -4039,6 +4060,69 @@
       "definedIn": "dt"
     },
     {
+      "id": "enumdef-latencymode",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-latencymode",
+      "linkingText": [
+        "LatencyMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://w3c.github.io/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-latencymode-quality",
+      "href": "https://w3c.github.io/webcodecs/#dom-latencymode-quality",
+      "linkingText": [
+        "\"quality\"",
+        "quality"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LatencyMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://w3c.github.io/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-latencymode-realtime",
+      "href": "https://w3c.github.io/webcodecs/#dom-latencymode-realtime",
+      "linkingText": [
+        "\"realtime\"",
+        "realtime"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LatencyMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://w3c.github.io/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.10"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "equal-dictionaries",
       "href": "https://w3c.github.io/webcodecs/#equal-dictionaries",
       "linkingText": [
@@ -4053,7 +4137,7 @@
         "id": "config-equivalence",
         "href": "https://w3c.github.io/webcodecs/#config-equivalence",
         "title": "Configuration Equivalence",
-        "number": "7.10"
+        "number": "7.11"
       },
       "definedIn": "prose"
     },
@@ -4072,7 +4156,7 @@
         "id": "video-encoder-options",
         "href": "https://w3c.github.io/webcodecs/#video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.11"
+        "number": "7.12"
       },
       "definedIn": "pre"
     },
@@ -4093,7 +4177,7 @@
         "id": "video-encoder-options",
         "href": "https://w3c.github.io/webcodecs/#video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.11"
+        "number": "7.12"
       },
       "definedIn": "dt"
     },
@@ -4112,7 +4196,7 @@
         "id": "codec-state",
         "href": "https://w3c.github.io/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.13"
       },
       "definedIn": "pre"
     },
@@ -4134,7 +4218,7 @@
         "id": "codec-state",
         "href": "https://w3c.github.io/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.13"
       },
       "definedIn": "dt"
     },
@@ -4156,7 +4240,7 @@
         "id": "codec-state",
         "href": "https://w3c.github.io/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.13"
       },
       "definedIn": "dt"
     },
@@ -4178,7 +4262,7 @@
         "id": "codec-state",
         "href": "https://w3c.github.io/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.13"
       },
       "definedIn": "dt"
     },
@@ -4197,7 +4281,7 @@
         "id": "error-callback",
         "href": "https://w3c.github.io/webcodecs/#error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.13"
+        "number": "7.14"
       },
       "definedIn": "pre"
     },
@@ -4218,7 +4302,7 @@
         "id": "error-callback",
         "href": "https://w3c.github.io/webcodecs/#error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.13"
+        "number": "7.14"
       },
       "definedIn": "pre"
     },
@@ -5386,27 +5470,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audiodata-detached-slot",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiodata-detached-slot",
-      "linkingText": [
-        "[[detached]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioData"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audiodata-internal-slots",
-        "href": "https://w3c.github.io/webcodecs/#audiodata-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-audiodata-resource-reference-slot",
       "href": "https://w3c.github.io/webcodecs/#dom-audiodata-resource-reference-slot",
       "linkingText": [
@@ -5803,6 +5866,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "close-audiodata",
+      "href": "https://w3c.github.io/webcodecs/#close-audiodata",
+      "linkingText": [
+        "Close AudioData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-algorithms",
+        "href": "https://w3c.github.io/webcodecs/#audiodata-algorithms",
+        "title": "Algorithms",
+        "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-audiodatacopytooptions",
       "href": "https://w3c.github.io/webcodecs/#dictdef-audiodatacopytooptions",
       "linkingText": [
@@ -5817,7 +5899,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://w3c.github.io/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "pre"
     },
@@ -5838,7 +5920,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://w3c.github.io/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -5859,7 +5941,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://w3c.github.io/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -5880,7 +5962,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://w3c.github.io/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -6783,27 +6865,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-detached-slot",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-detached-slot",
-      "linkingText": [
-        "[[detached]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoFrame"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-internal-slots",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-videoframe-resource-reference-slot",
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot",
       "linkingText": [
@@ -7682,6 +7743,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "close-videoframe",
+      "href": "https://w3c.github.io/webcodecs/#close-videoframe",
+      "linkingText": [
+        "Close VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "videoframe-parse-videoframecopytooptions",
       "href": "https://w3c.github.io/webcodecs/#videoframe-parse-videoframecopytooptions",
       "linkingText": [
@@ -7802,109 +7882,6 @@
         "href": "https://w3c.github.io/webcodecs/#videoframe-copyto-options",
         "title": "VideoFrame CopyTo() Options",
         "number": "9.5"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dictdef-videoframerect",
-      "href": "https://w3c.github.io/webcodecs/#dictdef-videoframerect",
-      "linkingText": [
-        "VideoFrameRect"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframerect-left",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframerect-left",
-      "linkingText": [
-        "left"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-top",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframerect-top",
-      "linkingText": [
-        "top"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-width",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframerect-width",
-      "linkingText": [
-        "width"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-height",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframerect-height",
-      "linkingText": [
-        "height"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
       },
       "definedIn": "dt"
     },

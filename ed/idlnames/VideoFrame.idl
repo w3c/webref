@@ -1,5 +1,5 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), Serializable, Transferable]
 interface VideoFrame {
   constructor(CanvasImageSource image, optional VideoFrameInit init = {});
   constructor(sequence<PlaneInit> planes,
@@ -8,8 +8,8 @@ interface VideoFrame {
   readonly attribute PixelFormat format;
   readonly attribute unsigned long codedWidth;
   readonly attribute unsigned long codedHeight;
-  readonly attribute VideoFrameRect codedRect;
-  readonly attribute VideoFrameRect visibleRect;
+  readonly attribute DOMRectReadOnly? codedRect;
+  readonly attribute DOMRectReadOnly? visibleRect;
   readonly attribute unsigned long displayWidth;
   readonly attribute unsigned long displayHeight;
   readonly attribute unsigned long long? duration;  // microseconds

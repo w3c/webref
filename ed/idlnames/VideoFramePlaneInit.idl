@@ -3,7 +3,7 @@ dictionary VideoFramePlaneInit {
   required PixelFormat format;
   [EnforceRange] required unsigned long codedWidth;
   [EnforceRange] required unsigned long codedHeight;
-  VideoFrameRect visibleRect;
+  DOMRectInit visibleRect;
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
   [EnforceRange] unsigned long long duration;  // microseconds
