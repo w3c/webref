@@ -537,7 +537,10 @@
       "value": "[<string> | woff | truetype | opentype | woff2 | embedded-opentype | collection | svg]"
     },
     "<font-technology>": {
-      "value": "[features | variations | color(<color-font-technology>) | palettes]"
+      "value": "[features(<font-feature-technology>) | variations | color(<color-font-technology>) | palettes]"
+    },
+    "<font-feature-technology>": {
+      "value": "[opentype | aat | graphite]"
     },
     "<color-font-technology>": {
       "value": "[COLRv0 | COLRv1 | SVG | sbix | CBDT ]"
