@@ -2371,7 +2371,7 @@
         "extAttrs": []
       },
       "GPUTextureUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SAMPLED           = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SHADER_READ       = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
         "type": "interface",
         "name": "GPUTextureUsage",
         "inheritance": null,
@@ -2412,7 +2412,7 @@
           },
           {
             "type": "const",
-            "name": "SAMPLED",
+            "name": "SHADER_READ",
             "idlType": {
               "type": "const-type",
               "extAttrs": [],
@@ -3784,14 +3784,10 @@
         "partial": false
       },
       "GPUStorageTextureAccess": {
-        "fragment": "enum GPUStorageTextureAccess {\n    \"read-only\",\n    \"write-only\",\n};",
+        "fragment": "enum GPUStorageTextureAccess {\n    \"write-only\",\n};",
         "type": "enum",
         "name": "GPUStorageTextureAccess",
         "values": [
-          {
-            "type": "enum-value",
-            "value": "read-only"
-          },
           {
             "type": "enum-value",
             "value": "write-only"
@@ -3800,7 +3796,7 @@
         "extAttrs": []
       },
       "GPUStorageTextureBindingLayout": {
-        "fragment": "dictionary GPUStorageTextureBindingLayout {\n    required GPUStorageTextureAccess access;\n    required GPUTextureFormat format;\n    GPUTextureViewDimension viewDimension = \"2d\";\n};",
+        "fragment": "dictionary GPUStorageTextureBindingLayout {\n    GPUStorageTextureAccess access = \"write-only\";\n    required GPUTextureFormat format;\n    GPUTextureViewDimension viewDimension = \"2d\";\n};",
         "type": "dictionary",
         "name": "GPUStorageTextureBindingLayout",
         "inheritance": null,
@@ -3817,8 +3813,11 @@
               "union": false,
               "idlType": "GPUStorageTextureAccess"
             },
-            "default": null,
-            "required": true
+            "default": {
+              "type": "string",
+              "value": "write-only"
+            },
+            "required": false
           },
           {
             "type": "field",

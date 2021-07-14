@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 13, 2021
+% July 14, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -14958,6 +14958,7 @@ Normative references to this spec from:
 - [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -18915,6 +18916,21 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://w3c.github.io/manifest/#dfn-installed-web-application`](https://w3c.github.io/manifest/#dfn-installed-web-application)
      * [`https://w3c.github.io/manifest/#dfn-processing-a-manifest`](https://w3c.github.io/manifest/#dfn-processing-a-manifest)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-id`](https://w3c.github.io/webdriver-bidi/#navigation-status-id)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-status`](https://w3c.github.io/webdriver-bidi/#navigation-status-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-canceled`](https://w3c.github.io/webdriver-bidi/#navigation-status-canceled)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-pending`](https://w3c.github.io/webdriver-bidi/#navigation-status-pending)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-complete`](https://w3c.github.io/webdriver-bidi/#navigation-status-complete)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-url`](https://w3c.github.io/webdriver-bidi/#navigation-status-url)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete)
+     * [`https://wicg.github.io/uuid/#dfn-generate-a-random-uuid`](https://wicg.github.io/uuid/#dfn-generate-a-random-uuid)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
      * [`https://w3c.github.io/html-aria/#el-html`](https://w3c.github.io/html-aria/#el-html)
      * [`https://w3c.github.io/html-aria/#el-head`](https://w3c.github.io/html-aria/#el-head)
@@ -26391,7 +26407,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Shortname: rfc2397
 
@@ -26418,7 +26434,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -26457,7 +26473,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Shortname: rfc6797
 
@@ -26489,7 +26505,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Shortname: rfc7034
 
@@ -26518,7 +26534,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -26539,7 +26555,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 
@@ -26564,7 +26580,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Shortname: rfc7578
 
@@ -26591,7 +26607,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Shortname: rfc8942
 
@@ -28944,7 +28960,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 12 July 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -30361,7 +30377,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -32988,21 +33006,60 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebDriver BiDi {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## WebDriver BiDi {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 29 March 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
+     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
+     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
+     * [`https://html.spec.whatwg.org/#concept-navigation-id`](https://html.spec.whatwg.org/#concept-navigation-id)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#source-browsing-context`](https://html.spec.whatwg.org/#source-browsing-context)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
+     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
+     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
+     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
+     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
+     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
+     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
+     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
+     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
+     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
      * [`https://w3c.github.io/webdriver/#dfn-remote-ends`](https://w3c.github.io/webdriver/#dfn-remote-ends)
      * [`https://w3c.github.io/webdriver/#dfn-sessions`](https://w3c.github.io/webdriver/#dfn-sessions)
@@ -33028,46 +33085,12 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webdriver/#dfn-window-handle`](https://w3c.github.io/webdriver/#dfn-window-handle)
      * [`https://w3c.github.io/webdriver/#dfn-try`](https://w3c.github.io/webdriver/#dfn-try)
      * [`https://w3c.github.io/webdriver/#dfn-no-such-frame`](https://w3c.github.io/webdriver/#dfn-no-such-frame)
+     * [`https://w3c.github.io/webdriver/#dfn-unknown-error`](https://w3c.github.io/webdriver/#dfn-unknown-error)
      * [`https://heycam.github.io/webidl/#dfn-return-type`](https://heycam.github.io/webidl/#dfn-return-type)
      * [`https://heycam.github.io/webidl/#dfn-platform-object`](https://heycam.github.io/webidl/#dfn-platform-object)
-     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
-     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
-     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
-     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
-     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
-     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
-     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
-     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
-     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
-     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
-     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
-     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
-     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
-     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
-     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
-     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
-     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
-     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
-     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
-     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
-     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
-     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
-     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
-     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
-     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
-     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
-     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
-     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://fetch.spec.whatwg.org/#header-list-contains`](https://fetch.spec.whatwg.org/#header-list-contains)
      * [`https://fetch.spec.whatwg.org/#concept-connection`](https://fetch.spec.whatwg.org/#concept-connection)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
      * [`https://fetch.spec.whatwg.org/#concept-request-window`](https://fetch.spec.whatwg.org/#concept-request-window)
      * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
      * [`https://infra.spec.whatwg.org/#implementation-defined`](https://infra.spec.whatwg.org/#implementation-defined)
@@ -33095,6 +33118,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#concept-document-url`](https://dom.spec.whatwg.org/#concept-document-url)
      * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
      * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope`](https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope)
      * [`https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope`](https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope)
@@ -33103,12 +33127,12 @@ No informative reference to this spec from other specs.
      * [`https://console.spec.whatwg.org/#formatter`](https://console.spec.whatwg.org/#formatter)
      * [`https://console.spec.whatwg.org/#namespacedef-console`](https://console.spec.whatwg.org/#namespacedef-console)
      * [`https://console.spec.whatwg.org/#printer`](https://console.spec.whatwg.org/#printer)
-- External links to outdated specs:
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -34627,7 +34651,6 @@ No informative reference to this spec from other specs.
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth)
-     * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only)
      * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only)
      * [`https://gpuweb.github.io/gpuweb/#buffer-interface`](https://gpuweb.github.io/gpuweb/#buffer-interface)
      * [`https://gpuweb.github.io/gpuweb/#coordinate-systems`](https://gpuweb.github.io/gpuweb/#coordinate-systems)

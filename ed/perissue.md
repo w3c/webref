@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 13, 2021
+% July 14, 2021
 
 426 specifications were crawled in this report.
 
@@ -1445,7 +1445,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebDriver](https://w3c.github.io/webdriver/) links to:
     * [`https://w3c.github.io/editing/contentEditable.html`](https://w3c.github.io/editing/contentEditable.html) but does not list it in its references
     * [`https://w3c.github.io/editing/execCommand.html`](https://w3c.github.io/editing/execCommand.html) but does not list it in its references
-- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/) links to [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/) but does not list it in its references
 - [WebGPU](https://gpuweb.github.io/gpuweb/) links to [`https://www.w3.org/TR/resize-observer/`](https://www.w3.org/TR/resize-observer/) but does not list it in its references
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/) links to [`https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html`](https://w3c.github.io/webrtc-interop-reports/webrtc-pc-report.html) but does not list it in its references
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/) links to [`https://encoding.spec.whatwg.org/`](https://encoding.spec.whatwg.org/) but does not list it in its references
@@ -1455,7 +1454,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 613 missing references for links found in 179 specifications
+=> 612 missing references for links found in 178 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -13531,6 +13530,21 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://w3c.github.io/manifest/#dfn-installed-web-application`](https://w3c.github.io/manifest/#dfn-installed-web-application)
      * [`https://w3c.github.io/manifest/#dfn-processing-a-manifest`](https://w3c.github.io/manifest/#dfn-processing-a-manifest)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-id`](https://w3c.github.io/webdriver-bidi/#navigation-status-id)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-status`](https://w3c.github.io/webdriver-bidi/#navigation-status-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-canceled`](https://w3c.github.io/webdriver-bidi/#navigation-status-canceled)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-pending`](https://w3c.github.io/webdriver-bidi/#navigation-status-pending)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-complete`](https://w3c.github.io/webdriver-bidi/#navigation-status-complete)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-url`](https://w3c.github.io/webdriver-bidi/#navigation-status-url)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete)
+     * [`https://wicg.github.io/uuid/#dfn-generate-a-random-uuid`](https://wicg.github.io/uuid/#dfn-generate-a-random-uuid)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
      * [`https://w3c.github.io/html-aria/#el-html`](https://w3c.github.io/html-aria/#el-html)
      * [`https://w3c.github.io/html-aria/#el-head`](https://w3c.github.io/html-aria/#el-head)
@@ -21487,6 +21501,47 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
+     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
+     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
+     * [`https://html.spec.whatwg.org/#concept-navigation-id`](https://html.spec.whatwg.org/#concept-navigation-id)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#source-browsing-context`](https://html.spec.whatwg.org/#source-browsing-context)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
+     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
+     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
+     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
+     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
+     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
+     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
+     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
+     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
+     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
      * [`https://w3c.github.io/webdriver/#dfn-remote-ends`](https://w3c.github.io/webdriver/#dfn-remote-ends)
      * [`https://w3c.github.io/webdriver/#dfn-sessions`](https://w3c.github.io/webdriver/#dfn-sessions)
@@ -21512,46 +21567,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-window-handle`](https://w3c.github.io/webdriver/#dfn-window-handle)
      * [`https://w3c.github.io/webdriver/#dfn-try`](https://w3c.github.io/webdriver/#dfn-try)
      * [`https://w3c.github.io/webdriver/#dfn-no-such-frame`](https://w3c.github.io/webdriver/#dfn-no-such-frame)
+     * [`https://w3c.github.io/webdriver/#dfn-unknown-error`](https://w3c.github.io/webdriver/#dfn-unknown-error)
      * [`https://heycam.github.io/webidl/#dfn-return-type`](https://heycam.github.io/webidl/#dfn-return-type)
      * [`https://heycam.github.io/webidl/#dfn-platform-object`](https://heycam.github.io/webidl/#dfn-platform-object)
-     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
-     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
-     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
-     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
-     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
-     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
-     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
-     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
-     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
-     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
-     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
-     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
-     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
-     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
-     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
-     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
-     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
-     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
-     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
-     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
-     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
-     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
-     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
-     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
-     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
-     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
-     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
-     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://fetch.spec.whatwg.org/#header-list-contains`](https://fetch.spec.whatwg.org/#header-list-contains)
      * [`https://fetch.spec.whatwg.org/#concept-connection`](https://fetch.spec.whatwg.org/#concept-connection)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
      * [`https://fetch.spec.whatwg.org/#concept-request-window`](https://fetch.spec.whatwg.org/#concept-request-window)
      * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
      * [`https://infra.spec.whatwg.org/#implementation-defined`](https://infra.spec.whatwg.org/#implementation-defined)
@@ -21579,6 +21600,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#concept-document-url`](https://dom.spec.whatwg.org/#concept-document-url)
      * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
      * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope`](https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope)
      * [`https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope`](https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope)
@@ -21717,7 +21739,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth)
-     * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only)
      * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only)
      * [`https://gpuweb.github.io/gpuweb/#buffer-interface`](https://gpuweb.github.io/gpuweb/#buffer-interface)
      * [`https://gpuweb.github.io/gpuweb/#coordinate-systems`](https://gpuweb.github.io/gpuweb/#coordinate-systems)
@@ -23067,7 +23088,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20829 problematic external links found in 344 specifications
+=> 20851 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -23180,8 +23201,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/):
      * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
-- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 - [WebGL 2.0 Specification](https://www.khronos.org/registry/webgl/specs/latest/2.0/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/):
@@ -23191,7 +23210,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 61 problematic external links found in 51 specifications
+=> 60 problematic external links found in 50 specifications
 
 
 ## External links that use a dated URL

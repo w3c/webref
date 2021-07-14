@@ -456,27 +456,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "internal-usage-storage-write",
-      "href": "https://gpuweb.github.io/gpuweb/#internal-usage-storage-write",
-      "linkingText": [
-        "storage-write"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "internal usage"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "programming-model-resource-usages",
-        "href": "https://gpuweb.github.io/gpuweb/#programming-model-resource-usages",
-        "title": "Resource Usages",
-        "number": "3.4.4"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "internal-usage-attachment",
       "href": "https://gpuweb.github.io/gpuweb/#internal-usage-attachment",
       "linkingText": [
@@ -4167,10 +4146,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gputextureusage-sampled",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureusage-sampled",
+      "id": "dom-gputextureusage-shader_read",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gputextureusage-shader_read",
       "linkingText": [
-        "SAMPLED"
+        "SHADER_READ"
       ],
       "localLinkingText": [],
       "type": "const",
@@ -8026,27 +8005,6 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bind-group-layout-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#bind-group-layout-creation",
-        "title": "Creation",
-        "number": "8.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpustoragetextureaccess-read-only",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only",
-      "linkingText": [
-        "\"read-only\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStorageTextureAccess"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -21083,6 +21041,25 @@
         "number": "23.6"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "copies-of-depth-and-stencil-textures",
+      "href": "https://gpuweb.github.io/gpuweb/#copies-of-depth-and-stencil-textures",
+      "linkingText": [
+        "Copies of depth and stencil textures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "depth-formats",
+        "href": "https://gpuweb.github.io/gpuweb/#depth-formats",
+        "title": "Depth/stencil formats",
+        "number": "24.1.2"
+      },
+      "definedIn": "prose"
     }
   ]
 }
