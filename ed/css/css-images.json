@@ -79,6 +79,9 @@
     "<side-or-corner>": {
       "value": "[left | right] || [top | bottom]"
     },
+    "<radial-gradient()>": {
+      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
+    },
     "<color-stop-list>": {
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
     },
@@ -87,9 +90,6 @@
     },
     "<linear-color-hint>": {
       "value": "<length-percentage>"
-    },
-    "<radial-gradient()>": {
-      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
     },
     "<ending-shape>": {
       "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise."

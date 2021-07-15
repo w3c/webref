@@ -40,14 +40,8 @@
     "<single-animation-timeline>": {
       "value": "auto | none | <timeline-name>"
     },
-    "<single-animation-composition>": {
-      "value": "replace | add | accumulate"
-    },
-    "<single-animation>": {
-      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>"
-    },
     "<timeline-name>": {
-      "prose": "Find the last timeline at-rule in document order with its name matching <timeline-name>. If such a timeline at-rule exists, then the animation’s timeline is a timeline as defined by that rule. Otherwise the animation is not associated with a timeline. <timeline-name> = <custom-ident> | <string>"
+      "value": "<custom-ident> | <string>"
     }
   }
 }
