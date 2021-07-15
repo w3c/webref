@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "enum PixelFormat {\n  \"I420\"\n};",
+    "fragment": "enum PixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 32bpp RGBA\n  \"RGBA\",\n  // 32bpp RGBX (opaque)\n  \"RGBX\",\n  // 32bpp BGRA\n  \"BGRA\",\n  // 32bpp BGRX (opaque)\n  \"BGRX\",\n};",
     "href": "https://w3c.github.io/webcodecs/#enumdef-pixelformat"
   },
   "extended": [],

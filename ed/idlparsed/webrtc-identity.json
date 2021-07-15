@@ -19,7 +19,7 @@
     },
     "idlNames": {
       "RTCIdentityProviderGlobalScope": {
-        "fragment": "[Global,\n Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
+        "fragment": "[Global, Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderGlobalScope : WorkerGlobalScope {\n    readonly        attribute RTCIdentityProviderRegistrar rtcIdentityProvider;\n};",
         "type": "interface",
         "name": "RTCIdentityProviderGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -60,7 +60,7 @@
         "partial": false
       },
       "RTCIdentityProviderRegistrar": {
-        "fragment": "[Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderRegistrar {\n    undefined register(RTCIdentityProvider idp);\n};",
+        "fragment": "[Exposed=RTCIdentityProviderGlobalScope]\ninterface RTCIdentityProviderRegistrar {\n    undefined register (RTCIdentityProvider idp);\n};",
         "type": "interface",
         "name": "RTCIdentityProviderRegistrar",
         "inheritance": null,
@@ -152,7 +152,7 @@
         "partial": false
       },
       "GenerateAssertionCallback": {
-        "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult> (DOMString contents,\nDOMString origin,\nRTCIdentityProviderOptions options);",
+        "fragment": "callback GenerateAssertionCallback = Promise<RTCIdentityAssertionResult>\n(DOMString contents, DOMString origin, RTCIdentityProviderOptions options);",
         "type": "callback",
         "name": "GenerateAssertionCallback",
         "idlType": {
@@ -225,7 +225,7 @@
         "extAttrs": []
       },
       "ValidateAssertionCallback": {
-        "fragment": "callback ValidateAssertionCallback = Promise<RTCIdentityValidationResult> (DOMString assertion,\nDOMString origin);",
+        "fragment": "callback ValidateAssertionCallback = Promise<RTCIdentityValidationResult>\n(DOMString assertion, DOMString origin);",
         "type": "callback",
         "name": "ValidateAssertionCallback",
         "idlType": {
@@ -734,7 +734,7 @@
       ],
       "RTCConfiguration": [
         {
-          "fragment": "partial dictionary RTCConfiguration {\n    DOMString peerIdentity;\n};",
+          "fragment": "partial dictionary RTCConfiguration {\n  DOMString peerIdentity;\n};",
           "type": "dictionary",
           "name": "RTCConfiguration",
           "inheritance": null,

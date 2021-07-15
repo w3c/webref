@@ -3990,13 +3990,45 @@
         "partial": false
       },
       "PixelFormat": {
-        "fragment": "enum PixelFormat {\n  \"I420\"\n};",
+        "fragment": "enum PixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 32bpp RGBA\n  \"RGBA\",\n  // 32bpp RGBX (opaque)\n  \"RGBX\",\n  // 32bpp BGRA\n  \"BGRA\",\n  // 32bpp BGRX (opaque)\n  \"BGRX\",\n};",
         "type": "enum",
         "name": "PixelFormat",
         "values": [
           {
             "type": "enum-value",
             "value": "I420"
+          },
+          {
+            "type": "enum-value",
+            "value": "I420A"
+          },
+          {
+            "type": "enum-value",
+            "value": "I422"
+          },
+          {
+            "type": "enum-value",
+            "value": "I444"
+          },
+          {
+            "type": "enum-value",
+            "value": "NV12"
+          },
+          {
+            "type": "enum-value",
+            "value": "RGBA"
+          },
+          {
+            "type": "enum-value",
+            "value": "RGBX"
+          },
+          {
+            "type": "enum-value",
+            "value": "BGRA"
+          },
+          {
+            "type": "enum-value",
+            "value": "BGRX"
           }
         ],
         "extAttrs": []
