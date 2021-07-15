@@ -796,7 +796,7 @@
         "partial": false
       },
       "PaymentRequestEvent": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  readonly attribute DOMString instrumentKey;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface PaymentRequestEvent : ExtendableEvent {\n  constructor(DOMString type, optional PaymentRequestEventInit eventInitDict = {});\n  readonly attribute USVString topOrigin;\n  readonly attribute USVString paymentRequestOrigin;\n  readonly attribute DOMString paymentRequestId;\n  readonly attribute FrozenArray<PaymentMethodData> methodData;\n  readonly attribute object total;\n  readonly attribute FrozenArray<PaymentDetailsModifier> modifiers;\n  Promise<WindowClient?> openWindow(USVString url);\n  Promise<PaymentRequestDetailsUpdate?> changePaymentMethod(DOMString methodName, optional object? methodDetails = null);\n  undefined respondWith(Promise<PaymentHandlerResponse> handlerResponsePromise);\n};",
         "type": "interface",
         "name": "PaymentRequestEvent",
         "inheritance": "ExtendableEvent",
@@ -944,21 +944,6 @@
                   "idlType": "PaymentDetailsModifier"
                 }
               ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "instrumentKey",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
             },
             "extAttrs": [],
             "special": "",
@@ -1120,7 +1105,7 @@
         "partial": false
       },
       "PaymentRequestEventInit": {
-        "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n  DOMString instrumentKey;\n};",
+        "fragment": "dictionary PaymentRequestEventInit : ExtendableEventInit {\n  USVString topOrigin;\n  USVString paymentRequestOrigin;\n  DOMString paymentRequestId;\n  sequence<PaymentMethodData> methodData;\n  PaymentCurrencyAmount total;\n  sequence<PaymentDetailsModifier> modifiers;\n};",
         "type": "dictionary",
         "name": "PaymentRequestEventInit",
         "inheritance": "ExtendableEventInit",
@@ -1229,21 +1214,6 @@
                   "idlType": "PaymentDetailsModifier"
                 }
               ]
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "instrumentKey",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
             },
             "default": null,
             "required": false

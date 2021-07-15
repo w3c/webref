@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 14, 2021
+% July 15, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -5003,6 +5003,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
+- [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
@@ -5099,6 +5100,7 @@ Normative references to this spec from:
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
@@ -5125,7 +5127,6 @@ Informative references to this spec from:
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
@@ -6102,7 +6103,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## CSS Fill and Stroke Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## CSS Fill and Stroke Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -6116,26 +6117,28 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
-     * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
+     * [`https://www.w3.org/TR/css-color-4/#typedef-color`](https://www.w3.org/TR/css-color-4/#typedef-color)
+     * [`https://www.w3.org/TR/css-color-4/#propdef-color`](https://www.w3.org/TR/css-color-4/#propdef-color)
+     * [`https://www.w3.org/TR/css-color-4/#valdef-color-transparent`](https://www.w3.org/TR/css-color-4/#valdef-color-transparent)
+     * [`https://www.w3.org/TR/css-color-4/#propdef-opacity`](https://www.w3.org/TR/css-color-4/#propdef-opacity)
      * [`https://www.w3.org/TR/css-values-4/#comb-one`](https://www.w3.org/TR/css-values-4/#comb-one)
+     * [`https://www.w3.org/TR/css-values-4/#url-value`](https://www.w3.org/TR/css-values-4/#url-value)
+     * [`https://www.w3.org/TR/css-values-4/#integer-value`](https://www.w3.org/TR/css-values-4/#integer-value)
      * [`https://www.w3.org/TR/css-values-4/#functional-notation`](https://www.w3.org/TR/css-values-4/#functional-notation)
      * [`https://www.w3.org/TR/css-values-4/#mult-comma`](https://www.w3.org/TR/css-values-4/#mult-comma)
      * [`https://www.w3.org/TR/css-values-4/#typedef-position`](https://www.w3.org/TR/css-values-4/#typedef-position)
+     * [`https://www.w3.org/TR/css-values-4/#number-value`](https://www.w3.org/TR/css-values-4/#number-value)
      * [`https://www.w3.org/TR/css-values-4/#typedef-length-percentage`](https://www.w3.org/TR/css-values-4/#typedef-length-percentage)
      * [`https://www.w3.org/TR/css-values-4/#comb-any`](https://www.w3.org/TR/css-values-4/#comb-any)
      * [`https://www.w3.org/TR/css-values-4/#mult-one-plus`](https://www.w3.org/TR/css-values-4/#mult-one-plus)
+     * [`https://www.w3.org/TR/css-values-4/#length-value`](https://www.w3.org/TR/css-values-4/#length-value)
      * [`https://www.w3.org/TR/css-images-3/#typedef-image`](https://www.w3.org/TR/css-images-3/#typedef-image)
      * [`https://www.w3.org/TR/css-images-3/#css-ambiguous-image-url`](https://www.w3.org/TR/css-images-3/#css-ambiguous-image-url)
-     * [`https://www.w3.org/TR/css-values-3/#url-value`](https://www.w3.org/TR/css-values-3/#url-value)
-     * [`https://www.w3.org/TR/css-values-3/#integer-value`](https://www.w3.org/TR/css-values-3/#integer-value)
-     * [`https://www.w3.org/TR/css-values-3/#number-value`](https://www.w3.org/TR/css-values-3/#number-value)
-     * [`https://www.w3.org/TR/css-values-3/#length-value`](https://www.w3.org/TR/css-values-3/#length-value)
      * [`https://www.w3.org/TR/css-images-4/#paint-sources`](https://www.w3.org/TR/css-images-4/#paint-sources)
      * [`https://www.w3.org/TR/css-images-4/#invalid-image`](https://www.w3.org/TR/css-images-4/#invalid-image)
      * [`https://www.w3.org/TR/css-images-4/#funcdef-image`](https://www.w3.org/TR/css-images-4/#funcdef-image)
@@ -6158,9 +6161,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://www.w3.org/TR/css-pseudo/#generated-content`](https://www.w3.org/TR/css-pseudo/#generated-content)
      * [`https://www.w3.org/TR/css-break-3/#fragment`](https://www.w3.org/TR/css-break-3/#fragment)
-     * [`https://www.w3.org/TR/css-color-4/#propdef-color`](https://www.w3.org/TR/css-color-4/#propdef-color)
-     * [`https://www.w3.org/TR/css-color-4/#valdef-color-transparent`](https://www.w3.org/TR/css-color-4/#valdef-color-transparent)
-     * [`https://www.w3.org/TR/css-color-4/#propdef-opacity`](https://www.w3.org/TR/css-color-4/#propdef-opacity)
      * [`https://www.w3.org/TR/css-display-3/#initial-containing-block`](https://www.w3.org/TR/css-display-3/#initial-containing-block)
      * [`https://www.w3.org/TR/web-animations-1/#repeatable-list`](https://www.w3.org/TR/web-animations-1/#repeatable-list)
      * [`https://www.w3.org/TR/css-cascade-5/#shorthand-property`](https://www.w3.org/TR/css-cascade-5/#shorthand-property)
@@ -6560,7 +6560,6 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/)
@@ -8440,21 +8439,21 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#comb-any`](https://drafts.csswg.org/css-values-4/#comb-any)
+     * [`https://drafts.csswg.org/css-values-4/#url-value`](https://drafts.csswg.org/css-values-4/#url-value)
      * [`https://drafts.csswg.org/css-values-4/#px`](https://drafts.csswg.org/css-values-4/#px)
      * [`https://drafts.csswg.org/css-values-4/#mult-comma`](https://drafts.csswg.org/css-values-4/#mult-comma)
      * [`https://drafts.csswg.org/css-values-4/#typedef-position`](https://drafts.csswg.org/css-values-4/#typedef-position)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
      * [`https://drafts.csswg.org/css-values-4/#mult-num-range`](https://drafts.csswg.org/css-values-4/#mult-num-range)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
      * [`https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape`](https://drafts.csswg.org/css-shapes-1/#typedef-basic-shape)
      * [`https://drafts.csswg.org/css-shapes-1/#typedef-shape-box`](https://drafts.csswg.org/css-shapes-1/#typedef-shape-box)
      * [`https://drafts.csswg.org/css-shapes-1/#funcdef-polygon`](https://drafts.csswg.org/css-shapes-1/#funcdef-polygon)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
-     * [`https://drafts.csswg.org/css-values-3/#url-value`](https://drafts.csswg.org/css-values-3/#url-value)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://www.w3.org/TR/css-shapes/#shapes-from-box-values`](https://www.w3.org/TR/css-shapes/#shapes-from-box-values)
      * [`https://drafts.csswg.org/css-cascade-5/#used-value`](https://drafts.csswg.org/css-cascade-5/#used-value)
@@ -8476,14 +8475,14 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi`](https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi)
      * [`https://drafts.csswg.org/css-display-3/#propdef-display`](https://drafts.csswg.org/css-display-3/#propdef-display)
      * [`https://drafts.csswg.org/css-display-3/#valdef-display-none`](https://drafts.csswg.org/css-display-3/#valdef-display-none)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font`](https://drafts.csswg.org/css-fonts-3/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-family`](https://drafts.csswg.org/css-fonts-3/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://drafts.csswg.org/css-writing-modes-4/#propdef-glyph-orientation-vertical`](https://drafts.csswg.org/css-writing-modes-4/#propdef-glyph-orientation-vertical)
      * [`https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode`](https://drafts.csswg.org/css-writing-modes-4/#propdef-writing-mode)
      * [`https://drafts.csswg.org/css-images-3/#propdef-image-rendering`](https://drafts.csswg.org/css-images-3/#propdef-image-rendering)
@@ -9328,7 +9327,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-4/](https://www.w3.org/TR/css-overflow-4/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-4/](https://drafts.csswg.org/css-overflow-4/)
-- Crawled version: 1 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-4/](https://drafts.csswg.org/css-overflow-4/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-4/](https://www.w3.org/TR/css-overflow-4/)
 - Shortname: css-overflow-4
@@ -10066,7 +10065,9 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#dimension`](https://drafts.csswg.org/css-values-4/#dimension)
      * [`https://drafts.csswg.org/css-values-4/#canonical-unit`](https://drafts.csswg.org/css-values-4/#canonical-unit)
      * [`https://drafts.csswg.org/css-values-4/#math-function`](https://drafts.csswg.org/css-values-4/#math-function)
+     * [`https://drafts.csswg.org/css-values-4/#url-value`](https://drafts.csswg.org/css-values-4/#url-value)
      * [`https://drafts.csswg.org/css-values-4/#interpolation`](https://drafts.csswg.org/css-values-4/#interpolation)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#em`](https://drafts.csswg.org/css-values-4/#em)
      * [`https://drafts.csswg.org/css-values-4/#ex`](https://drafts.csswg.org/css-values-4/#ex)
@@ -10076,20 +10077,18 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#lh`](https://drafts.csswg.org/css-values-4/#lh)
      * [`https://drafts.csswg.org/css-values-4/#rem`](https://drafts.csswg.org/css-values-4/#rem)
      * [`https://drafts.csswg.org/css-values-4/#rlh`](https://drafts.csswg.org/css-values-4/#rlh)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-values-4/#funcdef-calc`](https://drafts.csswg.org/css-values-4/#funcdef-calc)
+     * [`https://drafts.csswg.org/css-values-4/#integer-value`](https://drafts.csswg.org/css-values-4/#integer-value)
+     * [`https://drafts.csswg.org/css-values-4/#angle-value`](https://drafts.csswg.org/css-values-4/#angle-value)
      * [`https://drafts.csswg.org/css-values-4/#time-value`](https://drafts.csswg.org/css-values-4/#time-value)
+     * [`https://drafts.csswg.org/css-values-4/#resolution-value`](https://drafts.csswg.org/css-values-4/#resolution-value)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
      * [`https://drafts.csswg.org/css-values-4/#css-css-identifier`](https://drafts.csswg.org/css-values-4/#css-css-identifier)
      * [`https://www.w3.org/TR/css-cascade-4/#defaulting-keywords`](https://www.w3.org/TR/css-cascade-4/#defaulting-keywords)
-     * [`https://drafts.csswg.org/css-values-3/#url-value`](https://drafts.csswg.org/css-values-3/#url-value)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
-     * [`https://drafts.csswg.org/css-values-3/#integer-value`](https://drafts.csswg.org/css-values-3/#integer-value)
-     * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
-     * [`https://drafts.csswg.org/css-values-3/#resolution-value`](https://drafts.csswg.org/css-values-3/#resolution-value)
      * [`https://drafts.csswg.org/css-images-4/#computed-image`](https://drafts.csswg.org/css-images-4/#computed-image)
      * [`https://drafts.csswg.org/web-animations-1/#by-computed-value`](https://drafts.csswg.org/web-animations-1/#by-computed-value)
      * [`https://drafts.csswg.org/css-transforms-1/#propdef-transform`](https://drafts.csswg.org/css-transforms-1/#propdef-transform)
@@ -10106,7 +10105,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-syntax-3/#would-start-an-identifier`](https://www.w3.org/TR/css-syntax-3/#would-start-an-identifier)
      * [`https://www.w3.org/TR/css-syntax-3/#consume-name`](https://www.w3.org/TR/css-syntax-3/#consume-name)
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://drafts.csswg.org/css2/#propdef-line-height`](https://drafts.csswg.org/css2/#propdef-line-height)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
@@ -10120,10 +10119,10 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://drafts.csswg.org/css-color-4/#propdef-color`](https://drafts.csswg.org/css-color-4/#propdef-color)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-black`](https://drafts.csswg.org/css-color-4/#valdef-color-black)
+     * [`https://drafts.csswg.org/css-color-4/#typedef-color`](https://drafts.csswg.org/css-color-4/#typedef-color)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-red`](https://drafts.csswg.org/css-color-4/#valdef-color-red)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-blue`](https://drafts.csswg.org/css-color-4/#valdef-color-blue)
      * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-images-3/#typedef-image`](https://drafts.csswg.org/css-images-3/#typedef-image)
 
 ### Known dependencies on this specification {.dependencies}
@@ -10889,7 +10888,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-scrollbars-1/](https://www.w3.org/TR/css-scrollbars-1/)
 - Crawled URL: [https://drafts.csswg.org/css-scrollbars/](https://drafts.csswg.org/css-scrollbars/)
-- Crawled version: 9 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-scrollbars/](https://drafts.csswg.org/css-scrollbars/)
 - Latest published version: [https://www.w3.org/TR/css-scrollbars-1/](https://www.w3.org/TR/css-scrollbars-1/)
 - Shortname: css-scrollbars-1
@@ -10916,6 +10915,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-overflow-3/#scroll-container`](https://drafts.csswg.org/css-overflow-3/#scroll-container)
      * [`https://drafts.csswg.org/css-overflow-3/#propdef-overflow`](https://drafts.csswg.org/css-overflow-3/#propdef-overflow)
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
+     * [`https://drafts.csswg.org/css-color-adjust-1/#propdef-color-scheme`](https://drafts.csswg.org/css-color-adjust-1/#propdef-color-scheme)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
 
 ### Known dependencies on this specification {.dependencies}
@@ -12665,6 +12665,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-animations-1/#propdef-animation`](https://drafts.csswg.org/css-animations-1/#propdef-animation)
      * [`https://drafts.csswg.org/css-color-4/#propdef-color`](https://drafts.csswg.org/css-color-4/#propdef-color)
      * [`https://drafts.csswg.org/css-color-4/#propdef-opacity`](https://drafts.csswg.org/css-color-4/#propdef-opacity)
+     * [`https://drafts.csswg.org/css-color-4/#typedef-color`](https://drafts.csswg.org/css-color-4/#typedef-color)
      * [`https://drafts.csswg.org/css-color-4/#at-ruledef-profile`](https://drafts.csswg.org/css-color-4/#at-ruledef-profile)
      * [`https://drafts.csswg.org/css-color-4/#funcdef-rgba`](https://drafts.csswg.org/css-color-4/#funcdef-rgba)
      * [`https://drafts.csswg.org/css-color-4/#funcdef-hsla`](https://drafts.csswg.org/css-color-4/#funcdef-hsla)
@@ -12698,26 +12699,20 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatex)
      * [`https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatey`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-translatey)
      * [`https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate)
-     * [`https://drafts.csswg.org/css-values-3/#url-value`](https://drafts.csswg.org/css-values-3/#url-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
-     * [`https://drafts.csswg.org/css-values-3/#resolution-value`](https://drafts.csswg.org/css-values-3/#resolution-value)
-     * [`https://drafts.csswg.org/css-images-3/#typedef-image`](https://drafts.csswg.org/css-images-3/#typedef-image)
-     * [`https://drafts.csswg.org/css-images-3/#propdef-image-rendering`](https://drafts.csswg.org/css-images-3/#propdef-image-rendering)
-     * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
-     * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
-     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
-     * [`https://html.spec.whatwg.org/#attr-style`](https://html.spec.whatwg.org/#attr-style)
+     * [`https://drafts.csswg.org/css-values-4/#url-value`](https://drafts.csswg.org/css-values-4/#url-value)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-values-4/#typedef-dimension`](https://drafts.csswg.org/css-values-4/#typedef-dimension)
      * [`https://drafts.csswg.org/css-values-4/#compatible-units`](https://drafts.csswg.org/css-values-4/#compatible-units)
      * [`https://drafts.csswg.org/css-values-4/#in`](https://drafts.csswg.org/css-values-4/#in)
      * [`https://drafts.csswg.org/css-values-4/#px`](https://drafts.csswg.org/css-values-4/#px)
      * [`https://drafts.csswg.org/css-values-4/#canonical-unit`](https://drafts.csswg.org/css-values-4/#canonical-unit)
      * [`https://drafts.csswg.org/css-values-4/#math-function`](https://drafts.csswg.org/css-values-4/#math-function)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
+     * [`https://drafts.csswg.org/css-values-4/#angle-value`](https://drafts.csswg.org/css-values-4/#angle-value)
      * [`https://drafts.csswg.org/css-values-4/#time-value`](https://drafts.csswg.org/css-values-4/#time-value)
      * [`https://drafts.csswg.org/css-values-4/#frequency-value`](https://drafts.csswg.org/css-values-4/#frequency-value)
+     * [`https://drafts.csswg.org/css-values-4/#resolution-value`](https://drafts.csswg.org/css-values-4/#resolution-value)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#typedef-angle-percentage`](https://drafts.csswg.org/css-values-4/#typedef-angle-percentage)
      * [`https://drafts.csswg.org/css-values-4/#typedef-time-percentage`](https://drafts.csswg.org/css-values-4/#typedef-time-percentage)
@@ -12729,6 +12724,12 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-values-4/#funcdef-url`](https://drafts.csswg.org/css-values-4/#funcdef-url)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
      * [`https://drafts.csswg.org/css-values-4/#em`](https://drafts.csswg.org/css-values-4/#em)
+     * [`https://drafts.csswg.org/css-images-3/#typedef-image`](https://drafts.csswg.org/css-images-3/#typedef-image)
+     * [`https://drafts.csswg.org/css-images-3/#propdef-image-rendering`](https://drafts.csswg.org/css-images-3/#propdef-image-rendering)
+     * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
+     * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
+     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
+     * [`https://html.spec.whatwg.org/#attr-style`](https://html.spec.whatwg.org/#attr-style)
      * [`https://drafts.csswg.org/css2/#propdef-z-index`](https://drafts.csswg.org/css2/#propdef-z-index)
      * [`https://drafts.csswg.org/css2/#propdef-border-spacing`](https://drafts.csswg.org/css2/#propdef-border-spacing)
      * [`https://drafts.csswg.org/css2/#propdef-clear`](https://drafts.csswg.org/css2/#propdef-clear)
@@ -12782,7 +12783,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-images-4/#funcdef-image`](https://drafts.csswg.org/css-images-4/#funcdef-image)
      * [`https://drafts.csswg.org/css-images-4/#propdef-image-resolution`](https://drafts.csswg.org/css-images-4/#propdef-image-resolution)
      * [`https://drafts.csswg.org/css-images-4/#propdef-object-fit`](https://drafts.csswg.org/css-images-4/#propdef-object-fit)
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-color-4/#predefined`](https://www.w3.org/TR/css-color-4/#predefined)
      * [`https://drafts.csswg.org/css-color-5/#funcdef-rgb`](https://drafts.csswg.org/css-color-5/#funcdef-rgb)
      * [`https://drafts.csswg.org/css-color-5/#funcdef-hsl`](https://drafts.csswg.org/css-color-5/#funcdef-hsl)
@@ -12987,22 +12987,23 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap)
      * [`https://drafts.csswg.org/css-flexbox-1/#propdef-order`](https://drafts.csswg.org/css-flexbox-1/#propdef-order)
      * [`https://drafts.csswg.org/css-page-floats-3/#propdef-float-defer`](https://drafts.csswg.org/css-page-floats-3/#propdef-float-defer)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font`](https://drafts.csswg.org/css-fonts-3/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-family`](https://drafts.csswg.org/css-fonts-3/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
-     * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override`](https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing`](https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-palette`](https://drafts.csswg.org/css-fonts-4/#propdef-font-palette)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-size`](https://drafts.csswg.org/css-fonts-4/#propdef-font-size)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis`](https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-alternates`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-alternates)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-emoji`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-emoji)
      * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
+     * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
+     * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://drafts.csswg.org/css-writing-modes-4/#propdef-glyph-orientation-vertical`](https://drafts.csswg.org/css-writing-modes-4/#propdef-glyph-orientation-vertical)
      * [`https://drafts.csswg.org/css-writing-modes-4/#propdef-text-combine-upright`](https://drafts.csswg.org/css-writing-modes-4/#propdef-text-combine-upright)
@@ -13117,9 +13118,9 @@ Informative references to this spec from:
 - Broken external links:
      * [`https://drafts.csswg.org/css2/#value-def-identifier`](https://drafts.csswg.org/css2/#value-def-identifier)
      * [`https://drafts.csswg.org/css2/#value-def-uri`](https://drafts.csswg.org/css2/#value-def-uri)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -13271,7 +13272,6 @@ Normative references to this spec from:
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
-- [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
@@ -13317,12 +13317,10 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
-- [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [MathML Core](https://w3c.github.io/mathml-core/)
@@ -13345,7 +13343,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
-- Crawled version: 12 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -13470,7 +13468,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/mediaqueries-5/#paged-media`](https://drafts.csswg.org/mediaqueries-5/#paged-media)
      * [`https://www.w3.org/TR/css-values-3/#viewport-relative-lengths`](https://www.w3.org/TR/css-values-3/#viewport-relative-lengths)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
-     * [`https://drafts.csswg.org/css-page-3/#page-area`](https://drafts.csswg.org/css-page-3/#page-area)
      * [`https://drafts.csswg.org/css-images-3/#funcdef-linear-gradient`](https://drafts.csswg.org/css-images-3/#funcdef-linear-gradient)
      * [`https://drafts.csswg.org/css-images-3/#typedef-image`](https://drafts.csswg.org/css-images-3/#typedef-image)
      * [`https://drafts.csswg.org/css-images-4/#propdef-image-resolution`](https://drafts.csswg.org/css-images-4/#propdef-image-resolution)
@@ -13582,6 +13579,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
@@ -14880,7 +14878,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Crawled URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Shortname: ecmascript
 
@@ -16200,13 +16198,18 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#mult-one-plus`](https://drafts.csswg.org/css-values-4/#mult-one-plus)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
      * [`https://drafts.csswg.org/css-values-4/#comb-all`](https://drafts.csswg.org/css-values-4/#comb-all)
      * [`https://drafts.csswg.org/css-values-4/#mult-num-range`](https://drafts.csswg.org/css-values-4/#mult-num-range)
+     * [`https://drafts.csswg.org/css-values-4/#angle-value`](https://drafts.csswg.org/css-values-4/#angle-value)
      * [`https://drafts.csswg.org/css-values-4/#zero-value`](https://drafts.csswg.org/css-values-4/#zero-value)
      * [`https://drafts.csswg.org/css-values-4/#funcdef-calc`](https://drafts.csswg.org/css-values-4/#funcdef-calc)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
+     * [`https://drafts.csswg.org/css-values-4/#integer-value`](https://drafts.csswg.org/css-values-4/#integer-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-comma`](https://drafts.csswg.org/css-values-4/#comb-comma)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
@@ -16216,19 +16219,13 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#attr-img-crossorigin`](https://html.spec.whatwg.org/#attr-img-crossorigin)
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://drafts.csswg.org/css-color-4/#propdef-opacity`](https://drafts.csswg.org/css-color-4/#propdef-opacity)
+     * [`https://drafts.csswg.org/css-color-4/#typedef-color`](https://drafts.csswg.org/css-color-4/#typedef-color)
      * [`https://drafts.csswg.org/css-color-4/#valdef-color-transparent`](https://drafts.csswg.org/css-color-4/#valdef-color-transparent)
      * [`https://drafts.csswg.org/css-color-4/#typedef-alpha-value`](https://drafts.csswg.org/css-color-4/#typedef-alpha-value)
      * [`https://drafts.csswg.org/css-color-4/#sRGB`](https://drafts.csswg.org/css-color-4/#sRGB)
      * [`https://drafts.csswg.org/css-color-4/#linear-light-sRGB`](https://drafts.csswg.org/css-color-4/#linear-light-sRGB)
      * [`https://drafts.csswg.org/css-transforms-1/#local-coordinate-system`](https://drafts.csswg.org/css-transforms-1/#local-coordinate-system)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#integer-value`](https://drafts.csswg.org/css-values-3/#integer-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-length`](https://www.w3.org/TR/css-transitions-1/#animtype-length)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-number`](https://www.w3.org/TR/css-transitions-1/#animtype-number)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list`](https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list)
@@ -16236,17 +16233,18 @@ No informative reference to this spec from other specs.
      * [`https://drafts.fxtf.org/css-masking-1/#propdef-clip-path`](https://drafts.fxtf.org/css-masking-1/#propdef-clip-path)
      * [`https://drafts.fxtf.org/css-masking-1/#propdef-clip-rule`](https://drafts.fxtf.org/css-masking-1/#propdef-clip-rule)
      * [`https://drafts.fxtf.org/css-masking-1/#propdef-mask`](https://drafts.fxtf.org/css-masking-1/#propdef-mask)
+     * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/css-ui-4/#propdef-cursor`](https://drafts.csswg.org/css-ui-4/#propdef-cursor)
      * [`https://drafts.csswg.org/css-ui-4/#propdef-outline`](https://drafts.csswg.org/css-ui-4/#propdef-outline)
      * [`https://drafts.csswg.org/css-writing-modes-3/#propdef-direction`](https://drafts.csswg.org/css-writing-modes-3/#propdef-direction)
      * [`https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi`](https://drafts.csswg.org/css-writing-modes-3/#propdef-unicode-bidi)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font`](https://drafts.csswg.org/css-fonts-3/#propdef-font)
+     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
      * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-family`](https://drafts.csswg.org/css-fonts-3/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
      * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-3/#propdef-font-stretch)
      * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
      * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
      * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://drafts.fxtf.org/compositing-2/#propdef-isolation`](https://drafts.fxtf.org/compositing-2/#propdef-isolation)
      * [`https://drafts.fxtf.org/compositing-2/#ltblendmodegt`](https://drafts.fxtf.org/compositing-2/#ltblendmodegt)
@@ -16947,6 +16945,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#sub-deserialization`](https://html.spec.whatwg.org/#sub-deserialization)
      * [`https://html.spec.whatwg.org/#worker`](https://html.spec.whatwg.org/#worker)
      * [`https://drafts.csswg.org/css-values-4/#valdef-calc-nan`](https://drafts.csswg.org/css-values-4/#valdef-calc-nan)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#absolute-length`](https://drafts.csswg.org/css-values-4/#absolute-length)
      * [`https://drafts.csswg.org/css-values-4/#valdef-calc-infinity`](https://drafts.csswg.org/css-values-4/#valdef-calc-infinity)
      * [`https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar`](https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar)
@@ -16962,7 +16961,6 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-transforms-1/#SkewYDefined`](https://drafts.csswg.org/css-transforms-1/#SkewYDefined)
      * [`https://drafts.csswg.org/css-transforms-2/#typedef-transform-function`](https://drafts.csswg.org/css-transforms-2/#typedef-transform-function)
      * [`https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d`](https://drafts.csswg.org/css-transforms-2/#funcdef-matrix3d)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
      * [`https://drafts.csswg.org/css-syntax/#priv-sec`](https://drafts.csswg.org/css-syntax/#priv-sec)
      * [`https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect`](https://drafts.csswg.org/cssom-view-1/#dom-element-getboundingclientrect)
 
@@ -17840,7 +17838,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 13 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -17886,6 +17884,7 @@ No informative reference to this spec from other specs.
      * `"bitmaprenderer"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`bitmaprenderer`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-bitmaprenderer) with type `dfn`
      * `"webgl"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgl`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgl) with type `dfn`
      * `"webgl2"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgl2`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgl2) with type `dfn`
+     * `"webgpu"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgpu`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgpu) with type `dfn`
      * `constructor(width, height)` with type `constructor` for [`OffscreenCanvas`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `commit()` with type `method` for [`OffscreenCanvasRenderingContext2D`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d), but found [`commit()`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencontext-commit) with type `dfn`
      * `canvas` with type `attribute` for [`OffscreenCanvasRenderingContext2D`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d), but found [`canvas`](https://html.spec.whatwg.org/multipage/canvas.html#canvas) with type `element`
@@ -17995,6 +17994,7 @@ No informative reference to this spec from other specs.
      * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
      * [`https://mimesniff.spec.whatwg.org/#xml-mime-type`](https://mimesniff.spec.whatwg.org/#xml-mime-type)
      * [`https://mimesniff.spec.whatwg.org/#html-mime-type`](https://mimesniff.spec.whatwg.org/#html-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#mime-type-essence`](https://mimesniff.spec.whatwg.org/#mime-type-essence)
      * [`https://mimesniff.spec.whatwg.org/#valid-mime-type`](https://mimesniff.spec.whatwg.org/#valid-mime-type)
      * [`https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters`](https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters)
      * [`https://mimesniff.spec.whatwg.org/#javascript-mime-type`](https://mimesniff.spec.whatwg.org/#javascript-mime-type)
@@ -18344,9 +18344,12 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style`](https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style)
      * [`https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext`](https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext)
      * [`https://drafts.csswg.org/cssom/#the-stylesheet-interface`](https://drafts.csswg.org/cssom/#the-stylesheet-interface)
+     * [`https://drafts.csswg.org/cssom/#the-cssstylesheet-interface`](https://drafts.csswg.org/cssom/#the-cssstylesheet-interface)
      * [`https://drafts.csswg.org/cssom/#create-a-css-style-sheet`](https://drafts.csswg.org/cssom/#create-a-css-style-sheet)
      * [`https://drafts.csswg.org/cssom/#remove-a-css-style-sheet`](https://drafts.csswg.org/cssom/#remove-a-css-style-sheet)
      * [`https://drafts.csswg.org/cssom/#associated-css-style-sheet`](https://drafts.csswg.org/cssom/#associated-css-style-sheet)
+     * [`https://drafts.csswg.org/cssom/#create-a-constructed-cssstylesheet`](https://drafts.csswg.org/cssom/#create-a-constructed-cssstylesheet)
+     * [`https://drafts.csswg.org/cssom/#synchronously-replace-the-rules-of-a-cssstylesheet`](https://drafts.csswg.org/cssom/#synchronously-replace-the-rules-of-a-cssstylesheet)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-type`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-type)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-location`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-location)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-parent-css-style-sheet`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-parent-css-style-sheet)
@@ -18824,6 +18827,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-unobserve`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-unobserve)
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting)
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target)
+     * [`https://gpuweb.github.io/gpuweb/#canvas-context`](https://gpuweb.github.io/gpuweb/#canvas-context)
+     * [`https://gpuweb.github.io/gpuweb/#canvas-rendering`](https://gpuweb.github.io/gpuweb/#canvas-rendering)
      * [`https://w3c.github.io/webvtt/#webvtt-file`](https://w3c.github.io/webvtt/#webvtt-file)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues`](https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues)
@@ -20155,7 +20160,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -20853,7 +20860,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -22891,17 +22900,17 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
+     * [`https://drafts.csswg.org/css-values-4/#url-value`](https://drafts.csswg.org/css-values-4/#url-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-all`](https://drafts.csswg.org/css-values-4/#comb-all)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
+     * [`https://drafts.csswg.org/css-values-4/#angle-value`](https://drafts.csswg.org/css-values-4/#angle-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#typedef-position`](https://drafts.csswg.org/css-values-4/#typedef-position)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-any`](https://drafts.csswg.org/css-values-4/#comb-any)
      * [`https://drafts.csswg.org/css-values-4/#mult-req`](https://drafts.csswg.org/css-values-4/#mult-req)
-     * [`https://drafts.csswg.org/css-values-3/#url-value`](https://drafts.csswg.org/css-values-3/#url-value)
-     * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
@@ -23883,7 +23892,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
-- Crawled version: 04 June 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
@@ -23915,6 +23924,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest`](https://www.w3.org/TR/payment-request/#dom-paymentrequest)
      * [`https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary`](https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary)
      * [`https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#dfn-details`](https://www.w3.org/TR/payment-request/#dfn-details)
      * [`https://www.w3.org/TR/payment-request/#id-attribute`](https://www.w3.org/TR/payment-request/#id-attribute)
      * [`https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary)
      * [`https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods`](https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods)
@@ -25282,7 +25292,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
 - Crawled URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
-- Crawled version: 28 January 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
 - Shortname: tc39-private-fields-in-in
 
@@ -26384,7 +26394,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Shortname: rfc2397
 
@@ -26411,7 +26421,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -26450,7 +26460,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Shortname: rfc6797
 
@@ -26482,7 +26492,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Shortname: rfc7034
 
@@ -26511,7 +26521,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -26532,7 +26542,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 
@@ -26557,7 +26567,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Shortname: rfc7578
 
@@ -26584,7 +26594,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
-- Crawled version: 14 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Shortname: rfc8942
 
@@ -27567,9 +27577,12 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#css-wide-keywords`](https://drafts.csswg.org/css-values-4/#css-wide-keywords)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#funcdef-calc`](https://drafts.csswg.org/css-values-4/#funcdef-calc)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#mult-comma`](https://drafts.csswg.org/css-values-4/#mult-comma)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
      * [`https://drafts.csswg.org/css-animations-1/#propdef-animation`](https://drafts.csswg.org/css-animations-1/#propdef-animation)
      * [`https://drafts.csswg.org/css-animations-1/#interface-csskeyframesrule-findrule`](https://drafts.csswg.org/css-animations-1/#interface-csskeyframesrule-findrule)
      * [`https://drafts.csswg.org/css-animations-1/#csskeyframerule`](https://drafts.csswg.org/css-animations-1/#csskeyframerule)
@@ -27603,9 +27616,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe`](https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe)
      * [`https://drafts.csswg.org/cssom-view/#css-layout-box`](https://drafts.csswg.org/cssom-view/#css-layout-box)
      * [`https://drafts.csswg.org/cssom-view/#overflow-directions`](https://drafts.csswg.org/cssom-view/#overflow-directions)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
      * [`https://drafts.csswg.org/css-box-4/#padding-box`](https://drafts.csswg.org/css-box-4/#padding-box)
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list)
      * [`https://drafts.csswg.org/selectors-4/#typedef-id-selector`](https://drafts.csswg.org/selectors-4/#typedef-id-selector)
@@ -34506,6 +34516,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#dfn-setlike`](https://heycam.github.io/webidl/#dfn-setlike)
      * [`https://heycam.github.io/webidl/#dfn-set-entries`](https://heycam.github.io/webidl/#dfn-set-entries)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
@@ -34520,7 +34531,6 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
-     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
@@ -34602,6 +34612,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Neural Network API](https://webmachinelearning.github.io/webnn/)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/)
 

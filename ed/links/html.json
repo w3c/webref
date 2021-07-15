@@ -129,6 +129,7 @@
       "mime-type",
       "xml-mime-type",
       "html-mime-type",
+      "mime-type-essence",
       "valid-mime-type",
       "valid-mime-type-with-no-parameters",
       "javascript-mime-type",
@@ -500,9 +501,12 @@
       "dom-elementcssinlinestyle-style",
       "dom-cssstyledeclaration-csstext",
       "the-stylesheet-interface",
+      "the-cssstylesheet-interface",
       "create-a-css-style-sheet",
       "remove-a-css-style-sheet",
       "associated-css-style-sheet",
+      "create-a-constructed-cssstylesheet",
+      "synchronously-replace-the-rules-of-a-cssstylesheet",
       "concept-css-style-sheet-type",
       "concept-css-style-sheet-location",
       "concept-css-style-sheet-parent-css-style-sheet",
@@ -783,6 +787,15 @@
     ],
     "https://tc39.es/proposal-dynamic-import/": [
       "sec-hostimportmoduledynamically"
+    ],
+    "https://tc39.es/proposal-import-assertions/": [
+      "sec-modulerequest-record",
+      "sec-hostgetsupportedimportassertions"
+    ],
+    "https://tc39.es/proposal-json-modules/": [
+      "sec-createsyntheticmodule",
+      "sec-setsyntheticmoduleexport",
+      "sec-synthetic-module-records"
     ],
     "https://webassembly.github.io/spec/js-api/": [
       "module"
@@ -1165,6 +1178,10 @@
     ],
     "https://www.khronos.org/registry/webgl/specs/latest/2.0/": [
       "WebGL2RenderingContext"
+    ],
+    "https://gpuweb.github.io/gpuweb/": [
+      "canvas-context",
+      "canvas-rendering"
     ],
     "https://w3c.github.io/webvtt/": [
       "webvtt-file",
@@ -2510,6 +2527,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise": [
       "Incumbent_settings_object_tracking"
     ],
+    "https://github.com/whatwg/html/issues/6110": [],
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta": [],
     "https://github.com/whatwg/html/issues/4980": [],
     "https://github.com/heycam/webidl/issues/135": [],

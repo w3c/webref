@@ -14962,7 +14962,7 @@
         "partial": false
       },
       "RenderingContext": {
-        "fragment": "typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) RenderingContext;",
+        "fragment": "typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) RenderingContext;",
         "type": "typedef",
         "name": "RenderingContext",
         "idlType": {
@@ -15003,6 +15003,14 @@
               "nullable": false,
               "union": false,
               "idlType": "WebGL2RenderingContext"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasContext"
             }
           ]
         },
@@ -20806,7 +20814,7 @@
         "partial": false
       },
       "OffscreenRenderingContext": {
-        "fragment": "typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) OffscreenRenderingContext;",
+        "fragment": "typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) OffscreenRenderingContext;",
         "type": "typedef",
         "name": "OffscreenRenderingContext",
         "idlType": {
@@ -20847,6 +20855,14 @@
               "nullable": false,
               "union": false,
               "idlType": "WebGL2RenderingContext"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasContext"
             }
           ]
         },
@@ -20896,7 +20912,7 @@
         "partial": false
       },
       "OffscreenRenderingContextId": {
-        "fragment": "enum OffscreenRenderingContextId { \"2d\", \"bitmaprenderer\", \"webgl\", \"webgl2\" };",
+        "fragment": "enum OffscreenRenderingContextId { \"2d\", \"bitmaprenderer\", \"webgl\", \"webgl2\", \"webgpu\" };",
         "type": "enum",
         "name": "OffscreenRenderingContextId",
         "values": [
@@ -20915,6 +20931,10 @@
           {
             "type": "enum-value",
             "value": "webgl2"
+          },
+          {
+            "type": "enum-value",
+            "value": "webgpu"
           }
         ],
         "extAttrs": []
@@ -39025,6 +39045,7 @@
       "Text",
       "WebGLRenderingContext",
       "WebGL2RenderingContext",
+      "GPUCanvasContext",
       "SVGImageElement",
       "DOMMatrix",
       "DOMMatrix2DInit",

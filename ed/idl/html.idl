@@ -1240,7 +1240,7 @@ dictionary AssignedNodesOptions {
   boolean flatten = false;
 };
 
-typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) RenderingContext;
+typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) RenderingContext;
 
 [Exposed=Window]
 interface HTMLCanvasElement : HTMLElement {
@@ -1530,14 +1530,14 @@ dictionary ImageBitmapRenderingContextSettings {
   boolean alpha = true;
 };
 
-typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) OffscreenRenderingContext;
+typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) OffscreenRenderingContext;
 
 dictionary ImageEncodeOptions {
   DOMString type = "image/png";
   unrestricted double quality;
 };
 
-enum OffscreenRenderingContextId { "2d", "bitmaprenderer", "webgl", "webgl2" };
+enum OffscreenRenderingContextId { "2d", "bitmaprenderer", "webgl", "webgl2", "webgpu" };
 
 [Exposed=(Window,Worker), Transferable]
 interface OffscreenCanvas : EventTarget {
