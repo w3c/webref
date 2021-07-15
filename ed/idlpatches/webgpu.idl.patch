@@ -1,0 +1,25 @@
+From 863b2633a5fb30778202c85ad629db3363490771 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 15 Jul 2021 10:05:45 +0200
+Subject: [PATCH] Drop maxComputeWorkgroupSize attribute
+
+https://github.com/gpuweb/gpuweb/issues/1936
+---
+ ed/idl/webgpu.idl | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ed/idl/webgpu.idl b/ed/idl/webgpu.idl
+index 539183718..bc5f84d70 100644
+--- a/ed/idl/webgpu.idl
++++ b/ed/idl/webgpu.idl
+@@ -35,7 +35,6 @@ interface GPUSupportedLimits {
+     readonly attribute unsigned long maxInterStageShaderComponents;
+     readonly attribute unsigned long maxComputeWorkgroupStorageSize;
+     readonly attribute unsigned long maxComputeWorkgroupInvocations;
+-    readonly attribute GPUExtent3D maxComputeWorkgroupSize;
+     readonly attribute unsigned long maxComputePerDimensionDispatchSize;
+ };
+ 
+-- 
+2.32.0.windows.1
+
