@@ -12587,6 +12587,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
      * [`https://dom.spec.whatwg.org/#documentfragment`](https://dom.spec.whatwg.org/#documentfragment)
      * [`https://dom.spec.whatwg.org/#interface-Document`](https://dom.spec.whatwg.org/#interface-Document)
+     * [`https://dom.spec.whatwg.org/#concept-create-element`](https://dom.spec.whatwg.org/#concept-create-element)
      * [`https://dom.spec.whatwg.org/#concept-node-replace-all`](https://dom.spec.whatwg.org/#concept-node-replace-all)
      * [`https://dom.spec.whatwg.org/#concept-node-clone`](https://dom.spec.whatwg.org/#concept-node-clone)
      * [`https://dom.spec.whatwg.org/#dom-document-createdocumentfragment`](https://dom.spec.whatwg.org/#dom-document-createdocumentfragment)
@@ -12629,6 +12630,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
      * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
@@ -14059,7 +14061,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://fetch.spec.whatwg.org/#concept-request-destination`](https://fetch.spec.whatwg.org/#concept-request-destination)
      * [`https://fetch.spec.whatwg.org/#concept-request-client`](https://fetch.spec.whatwg.org/#concept-request-client)
      * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
-     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-manifest`](https://www.w3.org/TR/appmanifest/#dfn-manifest)
      * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-short_name`](https://www.w3.org/TR/appmanifest/#dfn-short_name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
@@ -20122,7 +20124,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
      * [`https://drafts.csswg.org/css-pseudo-4/#csspseudoelement`](https://drafts.csswg.org/css-pseudo-4/#csspseudoelement)
 - [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/):
-     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-manifest`](https://www.w3.org/TR/appmanifest/#dfn-manifest)
      * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
      * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
@@ -21094,7 +21096,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
@@ -21106,12 +21107,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
      * [`https://heycam.github.io/webidl/#LegacyNamespace`](https://heycam.github.io/webidl/#LegacyNamespace)
-     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
-     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
-     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#dfn-associated-realm`](https://heycam.github.io/webidl/#dfn-associated-realm)
      * [`https://heycam.github.io/webidl/#dfn-namespace-object`](https://heycam.github.io/webidl/#dfn-namespace-object)
@@ -21119,6 +21117,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
      * [`https://html.spec.whatwg.org/#concept-realm-settings-object`](https://html.spec.whatwg.org/#concept-realm-settings-object)
      * [`https://html.spec.whatwg.org/#prepare-to-run-script`](https://html.spec.whatwg.org/#prepare-to-run-script)
      * [`https://html.spec.whatwg.org/#prepare-to-run-a-callback`](https://html.spec.whatwg.org/#prepare-to-run-a-callback)
@@ -21127,7 +21126,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail`](https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail)
 - [WebAssembly Web API](https://webassembly.github.io/spec/web-api/):
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
@@ -23138,7 +23136,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20900 problematic external links found in 344 specifications
+=> 20898 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

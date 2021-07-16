@@ -14937,7 +14937,6 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web IDL](https://heycam.github.io/webidl/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
-- [WebAssembly JavaScript Interface](https://webassembly.github.io/spec/js-api/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
@@ -17773,7 +17772,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
 - Crawled URL: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
-- Crawled version: 13 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
 - Shortname: sanitizer-api
 
@@ -17788,6 +17787,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
      * [`https://dom.spec.whatwg.org/#documentfragment`](https://dom.spec.whatwg.org/#documentfragment)
      * [`https://dom.spec.whatwg.org/#interface-Document`](https://dom.spec.whatwg.org/#interface-Document)
+     * [`https://dom.spec.whatwg.org/#concept-create-element`](https://dom.spec.whatwg.org/#concept-create-element)
      * [`https://dom.spec.whatwg.org/#concept-node-replace-all`](https://dom.spec.whatwg.org/#concept-node-replace-all)
      * [`https://dom.spec.whatwg.org/#concept-node-clone`](https://dom.spec.whatwg.org/#concept-node-clone)
      * [`https://dom.spec.whatwg.org/#dom-document-createdocumentfragment`](https://dom.spec.whatwg.org/#dom-document-createdocumentfragment)
@@ -17830,6 +17830,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
 
 ### Known dependencies on this specification {.dependencies}
@@ -20141,7 +20142,7 @@ No informative reference to this spec from other specs.
      * [`https://fetch.spec.whatwg.org/#concept-request-destination`](https://fetch.spec.whatwg.org/#concept-request-destination)
      * [`https://fetch.spec.whatwg.org/#concept-request-client`](https://fetch.spec.whatwg.org/#concept-request-client)
      * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
-     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-manifest`](https://www.w3.org/TR/appmanifest/#dfn-manifest)
      * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-short_name`](https://www.w3.org/TR/appmanifest/#dfn-short_name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
@@ -21560,7 +21561,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled version: 15 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -28973,7 +28974,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 15 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -30829,7 +30830,7 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Broken external links:
-     * [`https://www.w3.org/TR/appmanifest/#dfn-application-manifest`](https://www.w3.org/TR/appmanifest/#dfn-application-manifest)
+     * [`https://www.w3.org/TR/appmanifest/#dfn-manifest`](https://www.w3.org/TR/appmanifest/#dfn-manifest)
      * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
      * [`https://www.w3.org/TR/appmanifest/#dfn-name`](https://www.w3.org/TR/appmanifest/#dfn-name)
      * [`https://www.w3.org/TR/appmanifest/#dfn-icons`](https://www.w3.org/TR/appmanifest/#dfn-icons)
@@ -32435,7 +32436,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Crawled URL: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
-- Crawled version: 1 June 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://webassembly.github.io/spec/core/bikeshed/](https://webassembly.github.io/spec/core/bikeshed/)
 - Latest published version: [https://www.w3.org/TR/wasm-core-1/](https://www.w3.org/TR/wasm-core-1/)
 - Shortname: wasm-core-1
@@ -32460,7 +32461,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
-- Crawled version: 1 June 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://webassembly.github.io/spec/js-api/](https://webassembly.github.io/spec/js-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-js-api-1/](https://www.w3.org/TR/wasm-js-api-1/)
 - Shortname: wasm-js-api-1
@@ -32483,7 +32484,6 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
      * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
@@ -32495,12 +32495,9 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#upon-rejection`](https://heycam.github.io/webidl/#upon-rejection)
      * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
      * [`https://heycam.github.io/webidl/#LegacyNamespace`](https://heycam.github.io/webidl/#LegacyNamespace)
-     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
-     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
-     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#dfn-associated-realm`](https://heycam.github.io/webidl/#dfn-associated-realm)
      * [`https://heycam.github.io/webidl/#dfn-namespace-object`](https://heycam.github.io/webidl/#dfn-namespace-object)
@@ -32508,6 +32505,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#incumbent-settings-object`](https://html.spec.whatwg.org/#incumbent-settings-object)
      * [`https://html.spec.whatwg.org/#concept-realm-settings-object`](https://html.spec.whatwg.org/#concept-realm-settings-object)
      * [`https://html.spec.whatwg.org/#prepare-to-run-script`](https://html.spec.whatwg.org/#prepare-to-run-script)
      * [`https://html.spec.whatwg.org/#prepare-to-run-a-callback`](https://html.spec.whatwg.org/#prepare-to-run-a-callback)
@@ -32534,7 +32532,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Crawled URL: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
-- Crawled version: 1 June 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://webassembly.github.io/spec/web-api/](https://webassembly.github.io/spec/web-api/)
 - Latest published version: [https://www.w3.org/TR/wasm-web-api-1/](https://www.w3.org/TR/wasm-web-api-1/)
 - Shortname: wasm-web-api-1
@@ -32547,7 +32545,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/wasm-web-api/`](https://www.w3.org/TR/wasm-web-api/)
 - Broken external links:
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
