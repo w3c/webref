@@ -203,7 +203,7 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "rs-model",
@@ -576,15 +576,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "default-readers",
-      "href": "https://streams.spec.whatwg.org/#default-readers",
+      "id": "default-reader",
+      "href": "https://streams.spec.whatwg.org/#default-reader",
       "linkingText": [
-        "default readers"
+        "default reader"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "locking",
@@ -595,15 +595,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "byob-readers",
-      "href": "https://streams.spec.whatwg.org/#byob-readers",
+      "id": "byob-reader",
+      "href": "https://streams.spec.whatwg.org/#byob-reader",
       "linkingText": [
-        "BYOB readers"
+        "BYOB reader"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "locking",
@@ -9531,11 +9531,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "readablestream-need-more-data",
-      "href": "https://streams.spec.whatwg.org/#readablestream-need-more-data",
+      "id": "readablestream-set-up-with-byte-reading-support",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support",
       "linkingText": [
-        "need more data",
-        "needs more data"
+        "set up with byte reading support"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -9553,10 +9552,95 @@
       "definedIn": "prose"
     },
     {
-      "id": "readablestream-enqueue",
-      "href": "https://streams.spec.whatwg.org/#readablestream-enqueue",
+      "id": "readablestream-set-up-with-byte-reading-support-pullalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-pullalgorithm",
       "linkingText": [
-        "enqueue"
+        "pullAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-cancelalgorithm",
+      "linkingText": [
+        "cancelAlgorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-set-up-with-byte-reading-support-highwatermark",
+      "href": "https://streams.spec.whatwg.org/#readablestream-set-up-with-byte-reading-support-highwatermark",
+      "linkingText": [
+        "highWaterMark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream/set up with byte reading support"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-desired-size-to-fill-up-to-the-high-water-mark",
+      "href": "https://streams.spec.whatwg.org/#readablestream-desired-size-to-fill-up-to-the-high-water-mark",
+      "linkingText": [
+        "desired size to fill up to the high water mark"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-need-more-data",
+      "href": "https://streams.spec.whatwg.org/#readablestream-need-more-data",
+      "linkingText": [
+        "need more data",
+        "needs more data"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -9599,6 +9683,48 @@
       "href": "https://streams.spec.whatwg.org/#readablestream-error",
       "linkingText": [
         "error"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-enqueue",
+      "href": "https://streams.spec.whatwg.org/#readablestream-enqueue",
+      "linkingText": [
+        "enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReadableStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "other-specs-rs-create",
+        "href": "https://streams.spec.whatwg.org/#other-specs-rs-create",
+        "title": "Creation and manipulation",
+        "number": "9.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "readablestream-current-byob-request-view",
+      "href": "https://streams.spec.whatwg.org/#readablestream-current-byob-request-view",
+      "linkingText": [
+        "current BYOB request view"
       ],
       "localLinkingText": [],
       "type": "dfn",
