@@ -21737,6 +21737,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#webglcontextattributes`](https://html.spec.whatwg.org/#webglcontextattributes)
      * [`https://html.spec.whatwg.org/#htmlcanvaselement`](https://html.spec.whatwg.org/#htmlcanvaselement)
      * [`https://html.spec.whatwg.org/#offscreencanvas`](https://html.spec.whatwg.org/#offscreencanvas)
+     * [`https://html.spec.whatwg.org/#concept-canvas-context-mode`](https://html.spec.whatwg.org/#concept-canvas-context-mode)
+     * [`https://html.spec.whatwg.org/#offscreencanvas-context-mode`](https://html.spec.whatwg.org/#offscreencanvas-context-mode)
      * [`https://html.spec.whatwg.org/#dom-canvas-getcontext`](https://html.spec.whatwg.org/#dom-canvas-getcontext)
      * [`https://html.spec.whatwg.org/#update-the-rendering`](https://html.spec.whatwg.org/#update-the-rendering)
      * [`https://html.spec.whatwg.org/#dom-offscreencanvas-transfertoimagebitmap`](https://html.spec.whatwg.org/#dom-offscreencanvas-transfertoimagebitmap)
@@ -23139,7 +23141,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20901 problematic external links found in 344 specifications
+=> 20903 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
