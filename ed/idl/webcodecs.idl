@@ -256,7 +256,7 @@ interface AudioData {
 
 dictionary AudioDataInit {
   required AudioSampleFormat format;
-  [EnforceRange] required float sampleRate;
+  required float sampleRate;
   [EnforceRange] required unsigned long numberOfFrames;
   [EnforceRange] required unsigned long numberOfChannels;
   [EnforceRange] required long long timestamp;  // microseconds
@@ -264,9 +264,9 @@ dictionary AudioDataInit {
 };
 
 dictionary AudioDataCopyToOptions {
-  required unsigned long planeIndex;
-  unsigned long frameOffset = 0;
-  unsigned long frameCount;
+  [EnforceRange] required unsigned long planeIndex;
+  [EnforceRange] unsigned long frameOffset = 0;
+  [EnforceRange] unsigned long frameCount;
 };
 
 enum AudioSampleFormat {

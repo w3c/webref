@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 16, 2021
+% July 17, 2021
 
 426 specifications were crawled in this report.
 
@@ -22753,6 +22753,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://immersive-web.github.io/webxr/#xrinputsource`](https://immersive-web.github.io/webxr/#xrinputsource)
      * [`https://immersive-web.github.io/webxr/#xrinputsource-input-profile-name`](https://immersive-web.github.io/webxr/#xrinputsource-input-profile-name)
      * [`https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles`](https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles)
+     * [`https://immersive-web.github.io/webxr/#primary-action`](https://immersive-web.github.io/webxr/#primary-action)
+     * [`https://immersive-web.github.io/webxr/#primary-squeeze-action`](https://immersive-web.github.io/webxr/#primary-squeeze-action)
      * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
      * [`https://immersive-web.github.io/webxr/#xrspace-native-origin`](https://immersive-web.github.io/webxr/#xrspace-native-origin)
      * [`https://immersive-web.github.io/webxr/#xrframe`](https://immersive-web.github.io/webxr/#xrframe)
@@ -22766,6 +22768,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://immersive-web.github.io/webxr/#explicit-consent`](https://immersive-web.github.io/webxr/#explicit-consent)
      * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr)
      * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
@@ -23136,7 +23139,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20898 problematic external links found in 344 specifications
+=> 20901 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

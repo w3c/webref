@@ -2969,7 +2969,7 @@
         "partial": false
       },
       "AudioDataInit": {
-        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  [EnforceRange] required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n};",
+        "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n};",
         "type": "dictionary",
         "name": "AudioDataInit",
         "inheritance": null,
@@ -2992,14 +2992,7 @@
           {
             "type": "field",
             "name": "sampleRate",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3097,7 +3090,7 @@
         "partial": false
       },
       "AudioDataCopyToOptions": {
-        "fragment": "dictionary AudioDataCopyToOptions {\n  required unsigned long planeIndex;\n  unsigned long frameOffset = 0;\n  unsigned long frameCount;\n};",
+        "fragment": "dictionary AudioDataCopyToOptions {\n  [EnforceRange] required unsigned long planeIndex;\n  [EnforceRange] unsigned long frameOffset = 0;\n  [EnforceRange] unsigned long frameCount;\n};",
         "type": "dictionary",
         "name": "AudioDataCopyToOptions",
         "inheritance": null,
@@ -3105,7 +3098,14 @@
           {
             "type": "field",
             "name": "planeIndex",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3120,7 +3120,14 @@
           {
             "type": "field",
             "name": "frameOffset",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -3138,7 +3145,14 @@
           {
             "type": "field",
             "name": "frameCount",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],

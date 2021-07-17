@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 16, 2021
+% July 17, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -441,7 +441,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 06 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -26415,7 +26415,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Shortname: rfc2397
 
@@ -26442,7 +26442,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -26481,7 +26481,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Shortname: rfc6797
 
@@ -26513,7 +26513,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Shortname: rfc7034
 
@@ -26542,7 +26542,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -26563,7 +26563,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 
@@ -26588,7 +26588,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Shortname: rfc7578
 
@@ -26615,7 +26615,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
-- Crawled version: 16 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Shortname: rfc8942
 
@@ -32591,7 +32591,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 15 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
@@ -36027,7 +36027,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
-- Crawled version: 10 May 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-hand-input/](https://immersive-web.github.io/webxr-hand-input/)
 - Latest published version: [https://www.w3.org/TR/webxr-hand-input-1/](https://www.w3.org/TR/webxr-hand-input-1/)
 - Shortname: webxr-hand-input-1
@@ -36044,6 +36044,8 @@ No informative reference to this spec from other specs.
      * [`https://immersive-web.github.io/webxr/#xrinputsource`](https://immersive-web.github.io/webxr/#xrinputsource)
      * [`https://immersive-web.github.io/webxr/#xrinputsource-input-profile-name`](https://immersive-web.github.io/webxr/#xrinputsource-input-profile-name)
      * [`https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles`](https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles)
+     * [`https://immersive-web.github.io/webxr/#primary-action`](https://immersive-web.github.io/webxr/#primary-action)
+     * [`https://immersive-web.github.io/webxr/#primary-squeeze-action`](https://immersive-web.github.io/webxr/#primary-squeeze-action)
      * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
      * [`https://immersive-web.github.io/webxr/#xrspace-native-origin`](https://immersive-web.github.io/webxr/#xrspace-native-origin)
      * [`https://immersive-web.github.io/webxr/#xrframe`](https://immersive-web.github.io/webxr/#xrframe)
@@ -36057,6 +36059,7 @@ No informative reference to this spec from other specs.
      * [`https://immersive-web.github.io/webxr/#explicit-consent`](https://immersive-web.github.io/webxr/#explicit-consent)
      * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr)
      * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-inline)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
