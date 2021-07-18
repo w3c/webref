@@ -12516,6 +12516,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
      * [`https://html.spec.whatwg.org/#attr-source-sizes`](https://html.spec.whatwg.org/#attr-source-sizes)
+     * [`https://html.spec.whatwg.org/#attr-slot`](https://html.spec.whatwg.org/#attr-slot)
      * [`https://html.spec.whatwg.org/#attr-col-span`](https://html.spec.whatwg.org/#attr-col-span)
      * [`https://html.spec.whatwg.org/#attr-colgroup-span`](https://html.spec.whatwg.org/#attr-colgroup-span)
      * [`https://html.spec.whatwg.org/#attr-spellcheck`](https://html.spec.whatwg.org/#attr-spellcheck)
@@ -23141,7 +23142,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 20903 problematic external links found in 344 specifications
+=> 20904 problematic external links found in 344 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

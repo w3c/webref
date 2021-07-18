@@ -17263,7 +17263,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Crawled version: 18 June 2021
+- Crawled version: 18 July 2021
 - Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
 - Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Shortname: html-aam-1.0
@@ -17660,6 +17660,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
      * [`https://html.spec.whatwg.org/#attr-source-sizes`](https://html.spec.whatwg.org/#attr-source-sizes)
+     * [`https://html.spec.whatwg.org/#attr-slot`](https://html.spec.whatwg.org/#attr-slot)
      * [`https://html.spec.whatwg.org/#attr-col-span`](https://html.spec.whatwg.org/#attr-col-span)
      * [`https://html.spec.whatwg.org/#attr-colgroup-span`](https://html.spec.whatwg.org/#attr-colgroup-span)
      * [`https://html.spec.whatwg.org/#attr-spellcheck`](https://html.spec.whatwg.org/#attr-spellcheck)
