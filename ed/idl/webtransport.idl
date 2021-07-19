@@ -61,10 +61,6 @@ dictionary WebTransportStats {
 interface SendStream : WritableStream /* of Uint8Array */ {
 };
 
-dictionary StreamAbortInfo {
-  [EnforceRange] octet errorCode = 0;
-};
-
 [Exposed=(Window,Worker), SecureContext]
 interface ReceiveStream : ReadableStream /* of Uint8Array */ {
 };

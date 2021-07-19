@@ -7724,6 +7724,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Infra Standard](https://infra.spec.whatwg.org/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/)
@@ -8063,7 +8064,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 23 June 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -8104,7 +8105,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#concept-origin-tuple`](https://html.spec.whatwg.org/#concept-origin-tuple)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-embedder-policy`](https://html.spec.whatwg.org/#concept-settings-object-embedder-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
+     * [`https://html.spec.whatwg.org/#policy-container-embedder-policy`](https://html.spec.whatwg.org/#policy-container-embedder-policy)
      * [`https://html.spec.whatwg.org/#coep-unsafe-none`](https://html.spec.whatwg.org/#coep-unsafe-none)
      * [`https://html.spec.whatwg.org/#embedder-policy-report-only-value`](https://html.spec.whatwg.org/#embedder-policy-report-only-value)
      * [`https://html.spec.whatwg.org/#embedder-policy-value-2`](https://html.spec.whatwg.org/#embedder-policy-value-2)
@@ -8117,7 +8119,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
      * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
      * [`https://html.spec.whatwg.org/#clone-a-policy-container`](https://html.spec.whatwg.org/#clone-a-policy-container)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
      * [`https://html.spec.whatwg.org/#policy-container-referrer-policy`](https://html.spec.whatwg.org/#policy-container-referrer-policy)
      * [`https://html.spec.whatwg.org/#concept-origin-opaque`](https://html.spec.whatwg.org/#concept-origin-opaque)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
@@ -8527,7 +8528,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Crawled URL: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://fullscreen.spec.whatwg.org/](https://fullscreen.spec.whatwg.org/)
 - Shortname: fullscreen
 
@@ -8563,7 +8564,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
      * [`https://html.spec.whatwg.org/#attr-iframe-allowfullscreen`](https://html.spec.whatwg.org/#attr-iframe-allowfullscreen)
      * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -9606,7 +9606,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 14 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -11107,7 +11107,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Crawled URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
-- Crawled version: 4 May 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Shortname: infra
 
@@ -12016,7 +12016,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 15 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -12164,6 +12164,7 @@ No informative reference to this spec from other specs.
 - Inconsistent references for links: 
      * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - External links to private terms:
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-constraints)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities`](https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-settings`](https://www.w3.org/TR/mediacapture-streams/#dfn-settings)
 - Broken external links:
@@ -14611,7 +14612,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-realms/](https://tc39.es/proposal-realms/)
 - Crawled URL: [https://tc39.es/proposal-realms/](https://tc39.es/proposal-realms/)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://tc39.es/proposal-realms/](https://tc39.es/proposal-realms/)
 - Shortname: tc39-realms
 
@@ -15137,7 +15138,9 @@ Normative references to this spec from:
 
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 
 
 ## RFC 6454: The Web Origin Concept {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -15171,6 +15174,7 @@ No normative reference to this spec from other specs.
 
 Informative references to this spec from:
 
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
@@ -15199,10 +15203,12 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/)
 
 Informative references to this spec from:
 
+- [Infra Standard](https://infra.spec.whatwg.org/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 
 
@@ -15299,7 +15305,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
 
 No informative reference to this spec from other specs.
 
@@ -20764,7 +20772,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 17 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -20830,7 +20838,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 17 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL

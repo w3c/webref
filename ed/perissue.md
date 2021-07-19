@@ -2313,6 +2313,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webdriver2/#dfn-url-variables`](https://www.w3.org/TR/webdriver2/#dfn-url-variables)
      * [`https://www.w3.org/TR/webdriver2/#dfn-getting-properties`](https://www.w3.org/TR/webdriver2/#dfn-getting-properties)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/):
+     * [`https://www.w3.org/TR/mediacapture-streams/#dfn-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-constraints)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities`](https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-settings`](https://www.w3.org/TR/mediacapture-streams/#dfn-settings)
 - [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
@@ -2787,7 +2788,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 758 problematic external links found in 146 specifications
+=> 759 problematic external links found in 146 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4864,7 +4865,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-origin-tuple`](https://html.spec.whatwg.org/#concept-origin-tuple)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-embedder-policy`](https://html.spec.whatwg.org/#concept-settings-object-embedder-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
+     * [`https://html.spec.whatwg.org/#policy-container-embedder-policy`](https://html.spec.whatwg.org/#policy-container-embedder-policy)
      * [`https://html.spec.whatwg.org/#coep-unsafe-none`](https://html.spec.whatwg.org/#coep-unsafe-none)
      * [`https://html.spec.whatwg.org/#embedder-policy-report-only-value`](https://html.spec.whatwg.org/#embedder-policy-report-only-value)
      * [`https://html.spec.whatwg.org/#embedder-policy-value-2`](https://html.spec.whatwg.org/#embedder-policy-value-2)
@@ -4877,7 +4879,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
      * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
      * [`https://html.spec.whatwg.org/#clone-a-policy-container`](https://html.spec.whatwg.org/#clone-a-policy-container)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-policy-container`](https://html.spec.whatwg.org/#concept-settings-object-policy-container)
      * [`https://html.spec.whatwg.org/#policy-container-referrer-policy`](https://html.spec.whatwg.org/#policy-container-referrer-policy)
      * [`https://html.spec.whatwg.org/#concept-origin-opaque`](https://html.spec.whatwg.org/#concept-origin-opaque)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
@@ -5001,7 +5002,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
      * [`https://html.spec.whatwg.org/#attr-iframe-allowfullscreen`](https://html.spec.whatwg.org/#attr-iframe-allowfullscreen)
      * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
 - [Gamepad](https://w3c.github.io/gamepad/):
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
@@ -8271,7 +8271,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4353 problematic external links found in 281 specifications
+=> 4352 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

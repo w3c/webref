@@ -711,41 +711,6 @@
         ],
         "partial": false
       },
-      "StreamAbortInfo": {
-        "fragment": "dictionary StreamAbortInfo {\n  [EnforceRange] octet errorCode = 0;\n};",
-        "type": "dictionary",
-        "name": "StreamAbortInfo",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "errorCode",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "octet"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "ReceiveStream": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n};",
         "type": "interface",
@@ -884,7 +849,6 @@
       "SendStream": [
         "WritableStream"
       ],
-      "StreamAbortInfo": [],
       "ReceiveStream": [
         "ReadableStream"
       ],

@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-07-19T12:50:38.052Z",
+  "date": "2021-07-19T18:45:13.481Z",
   "stats": {
     "crawled": 428,
     "errors": 0,
@@ -19759,6 +19759,11 @@
               "crawled": "https://w3c.github.io/IndexedDB/"
             },
             {
+              "url": "https://infra.spec.whatwg.org/",
+              "title": "Infra Standard",
+              "crawled": "https://infra.spec.whatwg.org/"
+            },
+            {
               "url": "https://wicg.github.io/js-self-profiling/",
               "title": "JS Self-Profiling API",
               "crawled": "https://wicg.github.io/js-self-profiling/"
@@ -20651,7 +20656,7 @@
     {
       "title": "Fetch Standard",
       "shortname": "fetch",
-      "date": "23 June 2021",
+      "date": "19 July 2021",
       "url": "https://fetch.spec.whatwg.org/",
       "nightly": {
         "url": "https://fetch.spec.whatwg.org/",
@@ -21074,7 +21079,8 @@
             "https://html.spec.whatwg.org/#concept-origin-tuple",
             "https://html.spec.whatwg.org/#same-origin",
             "https://html.spec.whatwg.org/#the-form-element",
-            "https://html.spec.whatwg.org/#concept-settings-object-embedder-policy",
+            "https://html.spec.whatwg.org/#concept-settings-object-policy-container",
+            "https://html.spec.whatwg.org/#policy-container-embedder-policy",
             "https://html.spec.whatwg.org/#coep-unsafe-none",
             "https://html.spec.whatwg.org/#embedder-policy-report-only-value",
             "https://html.spec.whatwg.org/#embedder-policy-value-2",
@@ -21087,7 +21093,6 @@
             "https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability",
             "https://html.spec.whatwg.org/#concept-settings-object-origin",
             "https://html.spec.whatwg.org/#clone-a-policy-container",
-            "https://html.spec.whatwg.org/#concept-settings-object-policy-container",
             "https://html.spec.whatwg.org/#policy-container-referrer-policy",
             "https://html.spec.whatwg.org/#concept-origin-opaque",
             "https://html.spec.whatwg.org/#relevant-settings-object",
@@ -21747,7 +21752,7 @@
     {
       "title": "Fullscreen API Standard",
       "shortname": "fullscreen",
-      "date": "23 March 2021",
+      "date": "19 July 2021",
       "url": "https://fullscreen.spec.whatwg.org/",
       "nightly": {
         "url": "https://fullscreen.spec.whatwg.org/",
@@ -21869,8 +21874,7 @@
             "https://html.spec.whatwg.org/#event-handler-content-attributes",
             "https://html.spec.whatwg.org/#concept-document-permissions-policy",
             "https://html.spec.whatwg.org/#attr-iframe-allowfullscreen",
-            "https://html.spec.whatwg.org/#attr-iframe-allow",
-            "https://dom.spec.whatwg.org/#context-object"
+            "https://html.spec.whatwg.org/#attr-iframe-allow"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -23579,7 +23583,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "14 July 2021",
+      "date": "19 July 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -33439,7 +33443,7 @@
     {
       "title": "Infra Standard",
       "shortname": "infra",
-      "date": "4 May 2021",
+      "date": "19 July 2021",
       "url": "https://infra.spec.whatwg.org/",
       "nightly": {
         "url": "https://infra.spec.whatwg.org/",
@@ -35552,7 +35556,7 @@
     {
       "title": "Media Capture and Streams",
       "shortname": "mediacapture-streams",
-      "date": "15 July 2021",
+      "date": "19 July 2021",
       "url": "https://www.w3.org/TR/mediacapture-streams/",
       "release": {
         "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -35879,6 +35883,7 @@
         },
         "xrefs": {
           "notExported": [
+            "https://www.w3.org/TR/mediacapture-streams/#dfn-constraints",
             "https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities",
             "https://www.w3.org/TR/mediacapture-streams/#dfn-settings"
           ],
@@ -40807,7 +40812,7 @@
     {
       "title": "Realms API",
       "shortname": "tc39-realms",
-      "date": "12 July 2021",
+      "date": "19 July 2021",
       "url": "https://tc39.es/proposal-realms/",
       "nightly": {
         "url": "https://tc39.es/proposal-realms/",
@@ -41817,7 +41822,13 @@
               "crawled": "https://w3c.github.io/resource-timing/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            }
+          ]
         },
         "ok": false
       }
@@ -41854,6 +41865,11 @@
         "referencedBy": {
           "normative": [],
           "informative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            },
             {
               "url": "https://www.w3.org/TR/fingerprinting-guidance/",
               "title": "Mitigating Browser Fingerprinting in Web Specifications",
@@ -41913,12 +41929,22 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            },
+            {
               "url": "https://www.w3.org/TR/network-error-logging-1/",
               "title": "Network Error Logging",
               "crawled": "https://w3c.github.io/network-error-logging/"
             }
           ],
           "informative": [
+            {
+              "url": "https://infra.spec.whatwg.org/",
+              "title": "Infra Standard",
+              "crawled": "https://infra.spec.whatwg.org/"
+            },
             {
               "url": "https://www.w3.org/TR/server-timing/",
               "title": "Server Timing",
@@ -42086,7 +42112,13 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://fetch.spec.whatwg.org/",
+              "title": "Fetch Standard",
+              "crawled": "https://fetch.spec.whatwg.org/"
+            }
+          ],
           "informative": []
         },
         "xrefs": {
@@ -56188,7 +56220,7 @@
     {
       "title": "WebGPU",
       "shortname": "webgpu",
-      "date": "17 July 2021",
+      "date": "19 July 2021",
       "url": "https://www.w3.org/TR/webgpu/",
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
@@ -56291,7 +56323,7 @@
     {
       "title": "WebGPU Shading Language",
       "shortname": "WGSL",
-      "date": "17 July 2021",
+      "date": "19 July 2021",
       "url": "https://www.w3.org/TR/WGSL/",
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
