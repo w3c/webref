@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "Sanitizer": {
-        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize(SanitizerInput input);\n  DOMString sanitizeToString(SanitizerInput input);\n\n  SanitizerConfig getConfiguration();\n  static SanitizerConfig getDefaultConfiguration();\n};",
+        "fragment": "[\n  Exposed=(Window),\n  SecureContext\n] interface Sanitizer {\n  constructor(optional SanitizerConfig config = {});\n\n  DocumentFragment sanitize((Document or DocumentFragment) input);\n  Element? sanitizeFor(DOMString element, DOMString input);\n\n  SanitizerConfig getConfiguration();\n  static SanitizerConfig getDefaultConfiguration();\n};",
         "type": "interface",
         "name": "Sanitizer",
         "inheritance": null,
@@ -64,8 +64,25 @@
                   "extAttrs": [],
                   "generic": "",
                   "nullable": false,
-                  "union": false,
-                  "idlType": "SanitizerInput"
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Document"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DocumentFragment"
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -77,16 +94,32 @@
           },
           {
             "type": "operation",
-            "name": "sanitizeToString",
+            "name": "sanitizeFor",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
-              "idlType": "DOMString"
+              "idlType": "Element"
             },
             "arguments": [
+              {
+                "type": "argument",
+                "name": "element",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
               {
                 "type": "argument",
                 "name": "input",
@@ -97,7 +130,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "SanitizerInput"
+                  "idlType": "DOMString"
                 },
                 "default": null,
                 "optional": false,
@@ -161,47 +194,8 @@
         ],
         "partial": false
       },
-      "SanitizerInput": {
-        "fragment": "typedef (DOMString or DocumentFragment or Document) SanitizerInput;",
-        "type": "typedef",
-        "name": "SanitizerInput",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DocumentFragment"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "Document"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
       "SanitizerConfig": {
-        "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n};",
+        "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowComments;\n};",
         "type": "dictionary",
         "name": "SanitizerConfig",
         "inheritance": null,
@@ -322,6 +316,21 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "allowComments",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -368,7 +377,68 @@
         "extAttrs": []
       }
     },
-    "idlExtendedNames": {},
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, Sanitizer sanitizer);\n};",
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "setHTML",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "undefined"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "sanitizer",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "Sanitizer"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
     "globals": {},
     "exposed": {
       "Window": [
@@ -379,7 +449,11 @@
       "Sanitizer": [
         "SanitizerConfig",
         "DocumentFragment",
-        "SanitizerInput"
+        "Document",
+        "Element"
+      ],
+      "Element": [
+        "Sanitizer"
       ],
       "SanitizerConfig": [
         "AttributeMatchList"
@@ -387,7 +461,8 @@
     },
     "externalDependencies": [
       "DocumentFragment",
-      "Document"
+      "Document",
+      "Element"
     ],
     "hasObsoleteIdl": false
   }

@@ -456,27 +456,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "internal-usage-storage-write",
-      "href": "https://www.w3.org/TR/webgpu/#internal-usage-storage-write",
-      "linkingText": [
-        "storage-write"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "internal usage"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "programming-model-resource-usages",
-        "href": "https://www.w3.org/TR/webgpu/#programming-model-resource-usages",
-        "title": "Resource Usages",
-        "number": "3.4.4"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "internal-usage-attachment",
       "href": "https://www.w3.org/TR/webgpu/#internal-usage-attachment",
       "linkingText": [
@@ -1436,6 +1415,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dom-supported-limits-maxcomputeworkgroupsize",
+      "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxcomputeworkgroupsize",
+      "linkingText": [
+        "maxComputeWorkgroupSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "supported limits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dom-supported-limits-maxcomputeperdimensiondispatchsize",
       "href": "https://www.w3.org/TR/webgpu/#dom-supported-limits-maxcomputeperdimensiondispatchsize",
       "linkingText": [
@@ -1921,6 +1921,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxcomputeworkgroupinvocations",
       "linkingText": [
         "maxComputeWorkgroupInvocations"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUSupportedLimits"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-supportedlimits",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-supportedlimits",
+        "title": "GPUSupportedLimits",
+        "number": "3.6.2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpusupportedlimits-maxcomputeworkgroupsize",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpusupportedlimits-maxcomputeworkgroupsize",
+      "linkingText": [
+        "maxComputeWorkgroupSize"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -4125,10 +4146,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gputextureusage-sampled",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureusage-sampled",
+      "id": "dom-gputextureusage-shader_read",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureusage-shader_read",
       "linkingText": [
-        "SAMPLED"
+        "SHADER_READ"
       ],
       "localLinkingText": [],
       "type": "const",
@@ -7984,27 +8005,6 @@
       "localLinkingText": [],
       "type": "enum",
       "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bind-group-layout-creation",
-        "href": "https://www.w3.org/TR/webgpu/#bind-group-layout-creation",
-        "title": "Creation",
-        "number": "8.1.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpustoragetextureaccess-read-only",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpustoragetextureaccess-read-only",
-      "linkingText": [
-        "\"read-only\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUStorageTextureAccess"
-      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -12527,10 +12527,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "enumdef-gpuinputstepmode",
-      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpuinputstepmode",
+      "id": "enumdef-gpuvertexstepmode",
+      "href": "https://www.w3.org/TR/webgpu/#enumdef-gpuvertexstepmode",
       "linkingText": [
-        "GPUInputStepMode"
+        "GPUVertexStepMode"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -12546,15 +12546,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuinputstepmode-vertex",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuinputstepmode-vertex",
+      "id": "dom-gpuvertexstepmode-vertex",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexstepmode-vertex",
       "linkingText": [
         "\"vertex\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUInputStepMode"
+        "GPUVertexStepMode"
       ],
       "access": "public",
       "informative": false,
@@ -12567,15 +12567,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuinputstepmode-instance",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuinputstepmode-instance",
+      "id": "dom-gpuvertexstepmode-instance",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuvertexstepmode-instance",
       "linkingText": [
         "\"instance\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "GPUInputStepMode"
+        "GPUVertexStepMode"
       ],
       "access": "public",
       "informative": false,
@@ -18549,10 +18549,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "gpupresentationcontext",
-      "href": "https://www.w3.org/TR/webgpu/#gpupresentationcontext",
+      "id": "gpucanvascontext",
+      "href": "https://www.w3.org/TR/webgpu/#gpucanvascontext",
       "linkingText": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -18560,249 +18560,249 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationcontext-canvas-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-canvas-slot",
+      "id": "dom-gpucanvascontext-canvas",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-canvas",
       "linkingText": [
-        "[[canvas]]"
+        "canvas"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-validconfiguration-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-validconfiguration-slot",
+      "id": "dom-gpucanvascontext-validconfiguration-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-validconfiguration-slot",
       "linkingText": [
         "[[validConfiguration]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-configuration-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configuration-slot",
+      "id": "dom-gpucanvascontext-configuration-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configuration-slot",
       "linkingText": [
         "[[configuration]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-size-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-size-slot",
+      "id": "dom-gpucanvascontext-size-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-size-slot",
       "linkingText": [
         "[[size]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-currenttexture-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-currenttexture-slot",
+      "id": "dom-gpucanvascontext-currenttexture-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-currenttexture-slot",
       "linkingText": [
         "[[currentTexture]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-configure",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configure",
+      "id": "dom-gpucanvascontext-configure",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configure",
       "linkingText": [
         "configure(configuration)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-configure-configuration-configuration",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-configure-configuration-configuration",
+      "id": "dom-gpucanvascontext-configure-configuration-configuration",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-configure-configuration-configuration",
       "linkingText": [
         "configuration"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUPresentationContext/configure(configuration)"
+        "GPUCanvasContext/configure(configuration)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-gpupresentationcontext-unconfigure",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-unconfigure",
+      "id": "dom-gpucanvascontext-unconfigure",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-unconfigure",
       "linkingText": [
         "unconfigure()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-getpreferredformat",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getpreferredformat",
+      "id": "dom-gpucanvascontext-getpreferredformat",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getpreferredformat",
       "linkingText": [
         "getPreferredFormat(adapter)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getpreferredformat-adapter-adapter",
+      "id": "dom-gpucanvascontext-getpreferredformat-adapter-adapter",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getpreferredformat-adapter-adapter",
       "linkingText": [
         "adapter"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUPresentationContext/getPreferredFormat(adapter)"
+        "GPUCanvasContext/getPreferredFormat(adapter)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-gpupresentationcontext-getcurrenttexture",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationcontext-getcurrenttexture",
+      "id": "dom-gpucanvascontext-getcurrenttexture",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvascontext-getcurrenttexture",
       "linkingText": [
         "getCurrentTexture()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUPresentationContext"
+        "GPUCanvasContext"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "abstract-opdef-present-the-presentation-context-content-to-the-canvas",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-present-the-presentation-context-content-to-the-canvas",
+      "id": "abstract-opdef-present-the-context-content-to-the-canvas",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-present-the-context-content-to-the-canvas",
       "linkingText": [
-        "present the presentation context content to the canvas"
+        "present the context content to the canvas"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18810,18 +18810,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-get-a-copy-of-the-image-contents-of-a-presentation-context",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-get-a-copy-of-the-image-contents-of-a-presentation-context",
+      "id": "abstract-opdef-get-a-copy-of-the-image-contents-of-a-context",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-get-a-copy-of-the-image-contents-of-a-context",
       "linkingText": [
-        "get a copy of the image contents of a presentation context"
+        "get a copy of the image contents of a context"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18829,18 +18829,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "abstract-opdef-allocating-a-new-presentation-context-texture",
-      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-allocating-a-new-presentation-context-texture",
+      "id": "abstract-opdef-allocating-a-new-context-texture",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-allocating-a-new-context-texture",
       "linkingText": [
-        "allocating a new presentation context texture"
+        "allocating a new context texture"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -18848,18 +18848,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-context",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-context",
-        "title": "GPUPresentationContext",
+        "id": "canvas-context",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-context",
+        "title": "GPUCanvasContext",
         "number": "19.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "supported-presentation-context-formats",
-      "href": "https://www.w3.org/TR/webgpu/#supported-presentation-context-formats",
+      "id": "supported-context-formats",
+      "href": "https://www.w3.org/TR/webgpu/#supported-context-formats",
       "linkingText": [
-        "supported presentation context formats"
+        "supported context formats"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -18867,9 +18867,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "prose"
@@ -18886,9 +18886,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -18907,9 +18907,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -18928,18 +18928,18 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-gpupresentationconfiguration",
-      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpupresentationconfiguration",
+      "id": "dictdef-gpucanvasconfiguration",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpucanvasconfiguration",
       "linkingText": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -18947,135 +18947,135 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-device",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-device",
+      "id": "dom-gpucanvasconfiguration-device",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-device",
       "linkingText": [
         "device"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-format",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-format",
+      "id": "dom-gpucanvasconfiguration-format",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-format",
       "linkingText": [
         "format"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-usage",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-usage",
+      "id": "dom-gpucanvasconfiguration-usage",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-usage",
       "linkingText": [
         "usage"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-colorspace",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-colorspace",
+      "id": "dom-gpucanvasconfiguration-colorspace",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-colorspace",
       "linkingText": [
         "colorSpace"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-compositingalphamode",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-compositingalphamode",
+      "id": "dom-gpucanvasconfiguration-compositingalphamode",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-compositingalphamode",
       "linkingText": [
         "compositingAlphaMode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpupresentationconfiguration-size",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpupresentationconfiguration-size",
+      "id": "dom-gpucanvasconfiguration-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "GPUPresentationConfiguration"
+        "GPUCanvasConfiguration"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "presentation-configuration",
-        "href": "https://www.w3.org/TR/webgpu/#presentation-configuration",
-        "title": "GPUPresentationConfiguration",
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
         "number": "19.3"
       },
       "definedIn": "pre"
@@ -21041,6 +21041,25 @@
         "number": "23.6"
       },
       "definedIn": "heading"
+    },
+    {
+      "id": "copies-of-depth-and-stencil-textures",
+      "href": "https://www.w3.org/TR/webgpu/#copies-of-depth-and-stencil-textures",
+      "linkingText": [
+        "Copies of depth and stencil textures"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "depth-formats",
+        "href": "https://www.w3.org/TR/webgpu/#depth-formats",
+        "title": "Depth/stencil formats",
+        "number": "24.1.2"
+      },
+      "definedIn": "prose"
     }
   ]
 }

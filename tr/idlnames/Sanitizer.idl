@@ -5,8 +5,8 @@
 ] interface Sanitizer {
   constructor(optional SanitizerConfig config = {});
 
-  DocumentFragment sanitize(SanitizerInput input);
-  DOMString sanitizeToString(SanitizerInput input);
+  DocumentFragment sanitize((Document or DocumentFragment) input);
+  Element? sanitizeFor(DOMString element, DOMString input);
 
   SanitizerConfig getConfiguration();
   static SanitizerConfig getDefaultConfiguration();

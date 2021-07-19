@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 12, 2021
+% July 19, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -210,7 +210,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Crawled URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
-- Crawled version: 17 June 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Shortname: tc39-accessible-object-hasownproperty
 
@@ -405,7 +405,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 07 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -1589,9 +1589,7 @@ Normative references to this spec from:
 
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 
-Informative references to this spec from:
-
-- [Permissions](https://www.w3.org/TR/permissions/)
+No informative reference to this spec from other specs.
 
 
 ## Compatibility Standard {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -3104,13 +3102,13 @@ Informative references to this spec from:
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 
 
-## CSS Animations Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## CSS Animations Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
 - Shortname: css-animations-2
 
@@ -3118,11 +3116,10 @@ Informative references to this spec from:
 
 - Unknown WebIDL names used: `CSSOMString`
 - Missing references for links: 
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
      * [`https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes`](https://drafts.csswg.org/web-animations-1/#dom-keyframeeffect-setkeyframes)
      * [`https://drafts.csswg.org/web-animations-1/#keyframeeffect`](https://drafts.csswg.org/web-animations-1/#keyframeeffect)
@@ -3205,9 +3202,12 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
      * [`https://drafts.csswg.org/css-values-4/#mult-comma`](https://drafts.csswg.org/css-values-4/#mult-comma)
+     * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#css-identifier`](https://drafts.csswg.org/css-values-4/#css-identifier)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#time-value`](https://drafts.csswg.org/css-values-4/#time-value)
+     * [`https://drafts.csswg.org/css-values-4/#comb-any`](https://drafts.csswg.org/css-values-4/#comb-any)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
@@ -3215,7 +3215,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://drafts.csswg.org/css-transforms-2/#propdef-scale`](https://drafts.csswg.org/css-transforms-2/#propdef-scale)
      * [`https://drafts.fxtf.org/css-masking-1/#valdef-mask-composite-add`](https://drafts.fxtf.org/css-masking-1/#valdef-mask-composite-add)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
      * [`https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states`](https://www.w3.org/TR/web-animations-1/#animation-effect-phases-and-states)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
 
@@ -3409,7 +3408,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://www.w3.org/TR/css-pseudo/#generated-content`](https://www.w3.org/TR/css-pseudo/#generated-content)
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/css-color-4/#typedef-color`](https://drafts.csswg.org/css-color-4/#typedef-color)
      * [`https://www.w3.org/TR/css3-transitions/#animtype-color`](https://www.w3.org/TR/css3-transitions/#animtype-color)
      * [`https://drafts.csswg.org/css2/#propdef-border-collapse`](https://drafts.csswg.org/css2/#propdef-border-collapse)
      * [`https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-collapse`](https://drafts.csswg.org/css-text-4/#valdef-text-space-collapse-collapse)
@@ -4495,7 +4494,6 @@ Normative references to this spec from:
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -4672,6 +4670,7 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
+- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
@@ -4850,11 +4849,13 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
+- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://www.w3.org/TR/css-color-5/)
+- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 - [CSS Image Values and Replaced Content Module Level 4](https://www.w3.org/TR/css-images-4/)
@@ -5669,7 +5670,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value)
      * [`https://drafts.csswg.org/css-syntax-3/#at-rule`](https://drafts.csswg.org/css-syntax-3/#at-rule)
      * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-comma`](https://drafts.csswg.org/css-values-4/#comb-comma)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
@@ -5736,17 +5737,17 @@ Informative references to this spec from:
 
 - Broken external links:
      * [`https://drafts.csswg.org/css-values-3/#css-css-identifier`](https://drafts.csswg.org/css-values-3/#css-css-identifier)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
      * [`https://drafts.csswg.org/selectors-4/#typedef-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-selector-list)
      * [`https://drafts.csswg.org/selectors-4/#pseudo-class`](https://drafts.csswg.org/selectors-4/#pseudo-class)
      * [`https://drafts.csswg.org/selectors-4/#matches-pseudo`](https://drafts.csswg.org/selectors-4/#matches-pseudo)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
      * [`https://drafts.csswg.org/css-values-4/#mult-one-plus`](https://drafts.csswg.org/css-values-4/#mult-one-plus)
      * [`https://drafts.csswg.org/css-values-4/#mult-comma`](https://drafts.csswg.org/css-values-4/#mult-comma)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-ident-token`](https://drafts.csswg.org/css-syntax-3/#typedef-ident-token)
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-value)
      * [`https://drafts.csswg.org/css-variables-1/#funcdef-var`](https://drafts.csswg.org/css-variables-1/#funcdef-var)
-     * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
+     * [`https://drafts.csswg.org/css-color-4/#typedef-color`](https://drafts.csswg.org/css-color-4/#typedef-color)
      * [`https://drafts.csswg.org/css-color-5/#valdef-lab-a`](https://drafts.csswg.org/css-color-5/#valdef-lab-a)
 
 ### Known dependencies on this specification {.dependencies}
@@ -6154,7 +6155,6 @@ Normative references to this spec from:
 - [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Paged Media Module Level 3](https://www.w3.org/TR/css-page-3/)
 - [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/)
 - [CSS Text Decoration Module Level 3](https://www.w3.org/TR/css-text-decor-3/)
@@ -6216,7 +6216,9 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#css-wide-keywords`](https://drafts.csswg.org/css-values-4/#css-wide-keywords)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
      * [`https://drafts.csswg.org/css-values-4/#mult-num-range`](https://drafts.csswg.org/css-values-4/#mult-num-range)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-values-4/#ex`](https://drafts.csswg.org/css-values-4/#ex)
      * [`https://drafts.csswg.org/css-values-4/#ch`](https://drafts.csswg.org/css-values-4/#ch)
      * [`https://drafts.csswg.org/css-values-4/#em`](https://drafts.csswg.org/css-values-4/#em)
@@ -6225,8 +6227,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-fonts-4/#acknowledgments`](https://www.w3.org/TR/css-fonts-4/#acknowledgments)
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
@@ -7961,16 +7961,16 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
      * [`https://drafts.csswg.org/css-values-4/#css-wide-keywords`](https://drafts.csswg.org/css-values-4/#css-wide-keywords)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-display-3/#propdef-display`](https://drafts.csswg.org/css-display-3/#propdef-display)
      * [`https://drafts.csswg.org/css-sizing-3/#propdef-height`](https://drafts.csswg.org/css-sizing-3/#propdef-height)
      * [`https://drafts.csswg.org/css-sizing-3/#valdef-width-auto`](https://drafts.csswg.org/css-sizing-3/#valdef-width-auto)
      * [`https://drafts.csswg.org/css-sizing-3/#propdef-width`](https://drafts.csswg.org/css-sizing-3/#propdef-width)
      * [`https://drafts.csswg.org/css-text-3/#valdef-white-space-pre`](https://drafts.csswg.org/css-text-3/#valdef-white-space-pre)
      * [`https://drafts.csswg.org/css-text-3/#valdef-white-space-nowrap`](https://drafts.csswg.org/css-text-3/#valdef-white-space-nowrap)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
@@ -8087,7 +8087,7 @@ Informative references to this spec from:
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/)
 
 
-## CSS Multi-column Layout Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## CSS Multi-column Layout Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -8101,10 +8101,9 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
+     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
      * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
      * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-count`](https://drafts.csswg.org/css-multicol-1/#propdef-column-count)
@@ -8121,10 +8120,10 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-break-3/#propdef-break-before`](https://drafts.csswg.org/css-break-3/#propdef-break-before)
      * [`https://drafts.csswg.org/css-break-3/#propdef-break-after`](https://drafts.csswg.org/css-break-3/#propdef-break-after)
      * [`https://drafts.csswg.org/css-break-3/#propdef-break-inside`](https://drafts.csswg.org/css-break-3/#propdef-break-inside)
-     * [`https://drafts.csswg.org/css-values-3/#integer-value`](https://drafts.csswg.org/css-values-3/#integer-value)
+     * [`https://drafts.csswg.org/css-values-4/#integer-value`](https://drafts.csswg.org/css-values-4/#integer-value)
+     * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
-     * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
@@ -8542,7 +8541,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -10102,7 +10100,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Crawled URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled version: 21 February 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
 - Shortname: css-shapes-2
 
@@ -10126,7 +10124,11 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-4/#mult-num`](https://drafts.csswg.org/css-values-4/#mult-num)
      * [`https://drafts.csswg.org/css-values-4/#mult-num-range`](https://drafts.csswg.org/css-values-4/#mult-num-range)
      * [`https://drafts.csswg.org/css-values-4/#comb-any`](https://drafts.csswg.org/css-values-4/#comb-any)
+     * [`https://drafts.csswg.org/css-values-4/#angle-value`](https://drafts.csswg.org/css-values-4/#angle-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
      * [`https://drafts.csswg.org/css-values-4/#interpolation`](https://drafts.csswg.org/css-values-4/#interpolation)
+     * [`https://drafts.csswg.org/css-values-4/#url-value`](https://drafts.csswg.org/css-values-4/#url-value)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-box-4/#border-box`](https://drafts.csswg.org/css-box-4/#border-box)
      * [`https://drafts.csswg.org/css-box-4/#margin-box`](https://drafts.csswg.org/css-box-4/#margin-box)
      * [`https://drafts.csswg.org/css-shapes-1/#propdef-shape-outside`](https://drafts.csswg.org/css-shapes-1/#propdef-shape-outside)
@@ -10145,11 +10147,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-shapes/#shape-image-threshold-property`](https://www.w3.org/TR/css-shapes/#shape-image-threshold-property)
      * [`https://www.w3.org/TR/css-shapes/#shape-margin-property`](https://www.w3.org/TR/css-shapes/#shape-margin-property)
      * [`https://drafts.csswg.org/css-variables-1/#funcdef-var`](https://drafts.csswg.org/css-variables-1/#funcdef-var)
-     * [`https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule`](https://www.w3.org/TR/css-shapes-1/#typedef-fill-rule)
-     * [`https://drafts.csswg.org/css-values-3/#angle-value`](https://drafts.csswg.org/css-values-3/#angle-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
-     * [`https://drafts.csswg.org/css-values-3/#url-value`](https://drafts.csswg.org/css-values-3/#url-value)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
      * [`https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate`](https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate)
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
@@ -10684,7 +10681,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/)
 - [CSS Ruby Annotation Layout Module Level 1](https://www.w3.org/TR/css-ruby-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
@@ -10697,6 +10693,7 @@ Informative references to this spec from:
 - [CSS Text Decoration Module Level 4](https://www.w3.org/TR/css-text-decor-4/)
 - [CSS Text Module Level 3](https://www.w3.org/TR/css-text-3/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
+- [CSS Values and Units Module Level 4](https://www.w3.org/TR/css-values-4/)
 
 
 ## CSS Text Decoration Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -12020,9 +12017,9 @@ No informative reference to this spec from other specs.
 - Broken external links:
      * [`https://drafts.csswg.org/css2/#value-def-identifier`](https://drafts.csswg.org/css2/#value-def-identifier)
      * [`https://drafts.csswg.org/css2/#value-def-uri`](https://drafts.csswg.org/css2/#value-def-uri)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
-     * [`https://drafts.csswg.org/css-values-3/#percentage-value`](https://drafts.csswg.org/css-values-3/#percentage-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
+     * [`https://drafts.csswg.org/css-values-4/#percentage-value`](https://drafts.csswg.org/css-values-4/#percentage-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12155,7 +12152,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
 - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://www.w3.org/TR/css-backgrounds-3/)
 - [CSS Basic User Interface Module Level 4](https://www.w3.org/TR/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://www.w3.org/TR/css-align-3/)
@@ -12174,7 +12170,6 @@ Normative references to this spec from:
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://www.w3.org/TR/css-variables-1/)
 - [CSS Display Module Level 3](https://www.w3.org/TR/css-display-3/)
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/)
 - [CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
@@ -12193,7 +12188,6 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://www.w3.org/TR/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://www.w3.org/TR/css-overflow-4/)
 - [CSS Page Floats](https://www.w3.org/TR/css-page-floats-3/)
@@ -12217,7 +12211,6 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
-- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Will Change Module Level 1](https://www.w3.org/TR/css-will-change-1/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Filter Effects Module Level 1](https://www.w3.org/TR/filter-effects-1/)
@@ -12248,7 +12241,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Crawled URL: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
-- Crawled version: 11 November 2020
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-values-4/](https://drafts.csswg.org/css-values-4/)
 - Latest published version: [https://www.w3.org/TR/css-values-4/](https://www.w3.org/TR/css-values-4/)
 - Shortname: css-values-4
@@ -12258,8 +12251,9 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-transitions/`](https://www.w3.org/TR/css-transitions/)
      * [`https://www.w3.org/TR/css-animations/`](https://www.w3.org/TR/css-animations/)
-     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+     * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/)
+     * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-syntax/`](https://www.w3.org/TR/css-syntax/), related reference "CSS-SYNTAX-3" uses URL [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
      * [`https://www.w3.org/TR/css3-fonts/`](https://www.w3.org/TR/css3-fonts/), related reference "CSS3-FONTS" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
@@ -12271,16 +12265,16 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background)
      * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-box-shadow`](https://www.w3.org/TR/css-backgrounds-3/#propdef-box-shadow)
      * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position)
-     * [`https://www.w3.org/TR/css-cascade-4/#valdef-all-inherit`](https://www.w3.org/TR/css-cascade-4/#valdef-all-inherit)
-     * [`https://www.w3.org/TR/css-cascade-4/#computed-value`](https://www.w3.org/TR/css-cascade-4/#computed-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#specified-value`](https://www.w3.org/TR/css-cascade-4/#specified-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#valdef-all-initial`](https://www.w3.org/TR/css-cascade-4/#valdef-all-initial)
-     * [`https://www.w3.org/TR/css-cascade-4/#valdef-all-unset`](https://www.w3.org/TR/css-cascade-4/#valdef-all-unset)
-     * [`https://www.w3.org/TR/css-cascade-4/#at-ruledef-import`](https://www.w3.org/TR/css-cascade-4/#at-ruledef-import)
-     * [`https://www.w3.org/TR/css-cascade-4/#used-value`](https://www.w3.org/TR/css-cascade-4/#used-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#actual-value`](https://www.w3.org/TR/css-cascade-4/#actual-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#inherited-value`](https://www.w3.org/TR/css-cascade-4/#inherited-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#shorthand-property`](https://www.w3.org/TR/css-cascade-4/#shorthand-property)
+     * [`https://www.w3.org/TR/css-cascade-5/#valdef-all-inherit`](https://www.w3.org/TR/css-cascade-5/#valdef-all-inherit)
+     * [`https://www.w3.org/TR/css-cascade-5/#computed-value`](https://www.w3.org/TR/css-cascade-5/#computed-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#specified-value`](https://www.w3.org/TR/css-cascade-5/#specified-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#valdef-all-initial`](https://www.w3.org/TR/css-cascade-5/#valdef-all-initial)
+     * [`https://www.w3.org/TR/css-cascade-5/#valdef-all-unset`](https://www.w3.org/TR/css-cascade-5/#valdef-all-unset)
+     * [`https://www.w3.org/TR/css-cascade-5/#at-ruledef-import`](https://www.w3.org/TR/css-cascade-5/#at-ruledef-import)
+     * [`https://www.w3.org/TR/css-cascade-5/#used-value`](https://www.w3.org/TR/css-cascade-5/#used-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#actual-value`](https://www.w3.org/TR/css-cascade-5/#actual-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#inherited-value`](https://www.w3.org/TR/css-cascade-5/#inherited-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#shorthand-property`](https://www.w3.org/TR/css-cascade-5/#shorthand-property)
      * [`https://www.w3.org/TR/css-syntax/#whitespace`](https://www.w3.org/TR/css-syntax/#whitespace)
      * [`https://www.w3.org/TR/css-syntax-3/#component-value`](https://www.w3.org/TR/css-syntax-3/#component-value)
      * [`https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token`](https://www.w3.org/TR/css-syntax-3/#typedef-dimension-token)
@@ -12306,7 +12300,6 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-ui-3/#propdef-outline-color`](https://www.w3.org/TR/css-ui-3/#propdef-outline-color)
      * [`https://www.w3.org/TR/css-ui-3/#valdef-cursor-default`](https://www.w3.org/TR/css-ui-3/#valdef-cursor-default)
      * [`https://www.w3.org/TR/css-text-decor-3/#propdef-text-decoration`](https://www.w3.org/TR/css-text-decor-3/#propdef-text-decoration)
-     * [`https://www.w3.org/TR/css-text-decor-3/#propdef-text-emphasis-color`](https://www.w3.org/TR/css-text-decor-3/#propdef-text-emphasis-color)
      * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-family`](https://www.w3.org/TR/css-fonts-3/#propdef-font-family)
      * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-size`](https://www.w3.org/TR/css-fonts-3/#propdef-font-size)
      * [`https://www.w3.org/TR/css-fonts-3/#propdef-font`](https://www.w3.org/TR/css-fonts-3/#propdef-font)
@@ -12329,7 +12322,9 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-variables-1/#funcdef-var`](https://www.w3.org/TR/css-variables-1/#funcdef-var)
      * [`https://www.w3.org/TR/css-variables-1/#substitute-a-var`](https://www.w3.org/TR/css-variables-1/#substitute-a-var)
      * [`https://www.w3.org/TR/css-color-4/#at-ruledef-profile`](https://www.w3.org/TR/css-color-4/#at-ruledef-profile)
-     * [`https://www.w3.org/TR/css-color-4/#valdef-color-currentcolor`](https://www.w3.org/TR/css-color-4/#valdef-color-currentcolor)
+     * [`https://www.w3.org/TR/css-color-4/#typedef-color`](https://www.w3.org/TR/css-color-4/#typedef-color)
+     * [`https://www.w3.org/TR/css-color-4/#interpolation`](https://www.w3.org/TR/css-color-4/#interpolation)
+     * [`https://www.w3.org/TR/css-color-4/#interpolation-alpha`](https://www.w3.org/TR/css-color-4/#interpolation-alpha)
      * [`https://www.w3.org/TR/css-color-4/#funcdef-rgba`](https://www.w3.org/TR/css-color-4/#funcdef-rgba)
      * [`https://www.w3.org/TR/css-color-4/#typedef-hex-color`](https://www.w3.org/TR/css-color-4/#typedef-hex-color)
      * [`https://www.w3.org/TR/css-color-4/#named-color`](https://www.w3.org/TR/css-color-4/#named-color)
@@ -12343,6 +12338,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-grid-2/#valdef-flex-fr`](https://www.w3.org/TR/css-grid-2/#valdef-flex-fr)
      * [`https://www.w3.org/TR/css-grid-2/#typedef-flex`](https://www.w3.org/TR/css-grid-2/#typedef-flex)
      * [`https://www.w3.org/TR/css-display-3/#containing-block`](https://www.w3.org/TR/css-display-3/#containing-block)
+     * [`https://www.w3.org/TR/css-display-3/#initial-containing-block`](https://www.w3.org/TR/css-display-3/#initial-containing-block)
      * [`https://www.w3.org/TR/css-sizing-3/#propdef-width`](https://www.w3.org/TR/css-sizing-3/#propdef-width)
      * [`https://www.w3.org/TR/css-sizing-3/#propdef-height`](https://www.w3.org/TR/css-sizing-3/#propdef-height)
      * [`https://www.w3.org/TR/css-sizing-3/#propdef-box-sizing`](https://www.w3.org/TR/css-sizing-3/#propdef-box-sizing)
@@ -12360,14 +12356,15 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-inline-3/#valdef-line-height-normal`](https://www.w3.org/TR/css-inline-3/#valdef-line-height-normal)
      * [`https://www.w3.org/TR/css-overflow-4/#propdef-max-lines`](https://www.w3.org/TR/css-overflow-4/#propdef-max-lines)
      * [`https://www.w3.org/TR/mediaqueries-5/#media-query`](https://www.w3.org/TR/mediaqueries-5/#media-query)
+     * [`https://www.w3.org/TR/mediaqueries-5/#continuous-media`](https://www.w3.org/TR/mediaqueries-5/#continuous-media)
      * [`https://www.w3.org/TR/mediaqueries-5/#paged-media`](https://www.w3.org/TR/mediaqueries-5/#paged-media)
-     * [`https://www.w3.org/TR/css-overflow-3/#propdef-overflow`](https://www.w3.org/TR/css-overflow-3/#propdef-overflow)
-     * [`https://www.w3.org/TR/css-overflow-3/#valdef-overflow-auto`](https://www.w3.org/TR/css-overflow-3/#valdef-overflow-auto)
+     * [`https://www.w3.org/TR/css-page-3/#page-area`](https://www.w3.org/TR/css-page-3/#page-area)
+     * [`https://www.w3.org/TR/css-values-3/#viewport-relative-lengths`](https://www.w3.org/TR/css-values-3/#viewport-relative-lengths)
+     * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
      * [`https://www.w3.org/TR/css-images-3/#funcdef-linear-gradient`](https://www.w3.org/TR/css-images-3/#funcdef-linear-gradient)
      * [`https://www.w3.org/TR/css-images-3/#typedef-image`](https://www.w3.org/TR/css-images-3/#typedef-image)
      * [`https://www.w3.org/TR/css-images-3/#interpolation`](https://www.w3.org/TR/css-images-3/#interpolation)
      * [`https://www.w3.org/TR/css-images-4/#propdef-image-resolution`](https://www.w3.org/TR/css-images-4/#propdef-image-resolution)
-     * [`https://www.w3.org/TR/css-color-3/#valuea-def-color`](https://www.w3.org/TR/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin`](https://www.w3.org/TR/css-transforms-1/#propdef-transform-origin)
      * [`https://drafts.csswg.org/css2/#value-def-disc`](https://drafts.csswg.org/css2/#value-def-disc)
      * [`https://drafts.csswg.org/css2/#value-def-circle`](https://drafts.csswg.org/css2/#value-def-circle)
@@ -12387,7 +12384,6 @@ Informative references to this spec from:
      * [`https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint`](https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue-percent-hint)
      * [`https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation`](https://drafts.css-houdini.org/css-typed-om-1/#css-internal-representation)
      * [`https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-size`](https://www.w3.org/TR/css-rhythm-1/#propdef-block-step-size)
-     * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -12453,6 +12449,7 @@ Normative references to this spec from:
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
+- [CSS Typed OM Level 2](https://drafts.css-houdini.org/css-typed-om-2/)
 - [CSS Values and Units Module Level 3](https://www.w3.org/TR/css-values-3/)
 - [CSS Writing Modes Level 4](https://www.w3.org/TR/css-writing-modes-4/)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/)
@@ -13660,7 +13657,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Crawled URL: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
-- Crawled version: 2 July 2021
+- Crawled version: 12 July 2021
 - Editor's Draft: [https://tc39.es/ecma402/](https://tc39.es/ecma402/)
 - Shortname: ecma-402
 
@@ -13685,7 +13682,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Crawled URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- Crawled version: 10 July 2021
+- Crawled version: 18 July 2021
 - Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Shortname: ecmascript
 
@@ -13723,6 +13720,7 @@ Normative references to this spec from:
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebCodecs](https://www.w3.org/TR/webcodecs/)
+- [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGPU](https://www.w3.org/TR/webgpu/)
 
 Informative references to this spec from:
@@ -13731,6 +13729,7 @@ Informative references to this spec from:
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
 - [Pointer Events](https://www.w3.org/TR/pointerevents3/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [User Timing Level 3](https://www.w3.org/TR/user-timing-3/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 
 
@@ -15599,7 +15598,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
-- Crawled version: 08 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -15607,24 +15606,25 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Broken external links:
-     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
-     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
-     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
-     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
      * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#queue-a-global-task`](https://html.spec.whatwg.org/#queue-a-global-task)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
-     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#list-of-active-timers`](https://html.spec.whatwg.org/#list-of-active-timers)
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
+     * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
@@ -15990,7 +15990,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Crawled URL: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
-- Crawled version: 07 June 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://w3c.github.io/hr-time/](https://w3c.github.io/hr-time/)
 - Latest published version: [https://www.w3.org/TR/hr-time-3/](https://www.w3.org/TR/hr-time-3/)
 - Shortname: hr-time-3
@@ -16582,7 +16582,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
 - Crawled URL: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
-- Crawled version: 9 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://wicg.github.io/sanitizer-api/](https://wicg.github.io/sanitizer-api/)
 - Shortname: sanitizer-api
 
@@ -16594,8 +16594,11 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/DOM-Parsing/`](https://w3c.github.io/DOM-Parsing/), related reference "DOM-Parsing" uses URL [`https://www.w3.org/TR/DOM-Parsing/`](https://www.w3.org/TR/DOM-Parsing/)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#element`](https://dom.spec.whatwg.org/#element)
+     * [`https://dom.spec.whatwg.org/#concept-document`](https://dom.spec.whatwg.org/#concept-document)
      * [`https://dom.spec.whatwg.org/#documentfragment`](https://dom.spec.whatwg.org/#documentfragment)
      * [`https://dom.spec.whatwg.org/#interface-Document`](https://dom.spec.whatwg.org/#interface-Document)
+     * [`https://dom.spec.whatwg.org/#concept-create-element`](https://dom.spec.whatwg.org/#concept-create-element)
+     * [`https://dom.spec.whatwg.org/#concept-node-replace-all`](https://dom.spec.whatwg.org/#concept-node-replace-all)
      * [`https://dom.spec.whatwg.org/#concept-node-clone`](https://dom.spec.whatwg.org/#concept-node-clone)
      * [`https://dom.spec.whatwg.org/#dom-document-createdocumentfragment`](https://dom.spec.whatwg.org/#dom-document-createdocumentfragment)
      * [`https://dom.spec.whatwg.org/#concept-node-append`](https://dom.spec.whatwg.org/#concept-node-append)
@@ -16603,20 +16606,15 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#concept-tree-order`](https://dom.spec.whatwg.org/#concept-tree-order)
      * [`https://dom.spec.whatwg.org/#concept-element-attribute`](https://dom.spec.whatwg.org/#concept-element-attribute)
      * [`https://dom.spec.whatwg.org/#concept-tree-parent`](https://dom.spec.whatwg.org/#concept-tree-parent)
-     * [`https://dom.spec.whatwg.org/#text`](https://dom.spec.whatwg.org/#text)
+     * [`https://dom.spec.whatwg.org/#comment`](https://dom.spec.whatwg.org/#comment)
      * [`https://dom.spec.whatwg.org/#boundary-point-node`](https://dom.spec.whatwg.org/#boundary-point-node)
+     * [`https://dom.spec.whatwg.org/#text`](https://dom.spec.whatwg.org/#text)
      * [`https://dom.spec.whatwg.org/#concept-element-interface`](https://dom.spec.whatwg.org/#concept-element-interface)
      * [`https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML`](https://w3c.github.io/DOM-Parsing/#widl-Element-innerHTML)
-     * [`https://w3c.github.io/DOM-Parsing/#widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type`](https://w3c.github.io/DOM-Parsing/#widl-DOMParser-parseFromString-Document-DOMString-str-SupportedType-type)
-     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
-     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
-     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
-     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
-     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-parsing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-parsing-algorithm)
+     * [`https://html.spec.whatwg.org/#parsing`](https://html.spec.whatwg.org/#parsing)
      * [`https://html.spec.whatwg.org/#html-parser`](https://html.spec.whatwg.org/#html-parser)
      * [`https://html.spec.whatwg.org/#custom-element`](https://html.spec.whatwg.org/#custom-element)
-     * [`https://html.spec.whatwg.org/#html-fragment-serialisation-algorithm`](https://html.spec.whatwg.org/#html-fragment-serialisation-algorithm)
      * [`https://html.spec.whatwg.org/#htmltemplateelement`](https://html.spec.whatwg.org/#htmltemplateelement)
      * [`https://html.spec.whatwg.org/#htmlhyperlinkelementutils`](https://html.spec.whatwg.org/#htmlhyperlinkelementutils)
      * [`https://html.spec.whatwg.org/#htmlformelement`](https://html.spec.whatwg.org/#htmlformelement)
@@ -16635,6 +16633,14 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#rcdata-state`](https://html.spec.whatwg.org/#rcdata-state)
      * [`https://html.spec.whatwg.org/#htmlslotelement`](https://html.spec.whatwg.org/#htmlslotelement)
      * [`https://html.spec.whatwg.org/#htmldataelement`](https://html.spec.whatwg.org/#htmldataelement)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://infra.spec.whatwg.org/#list-iterate`](https://infra.spec.whatwg.org/#list-iterate)
 
 ### Known dependencies on this specification {.dependencies}
@@ -16650,7 +16656,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 8 July 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -16697,6 +16703,7 @@ No informative reference to this spec from other specs.
      * `"bitmaprenderer"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`bitmaprenderer`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-bitmaprenderer) with type `dfn`
      * `"webgl"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgl`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgl) with type `dfn`
      * `"webgl2"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgl2`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgl2) with type `dfn`
+     * `"webgpu"` with type `enum-value` for [`OffscreenRenderingContextId`](https://html.spec.whatwg.org/multipage/canvas.html#offscreenrenderingcontextid), but found [`webgpu`](https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-webgpu) with type `dfn`
      * `constructor(width, height)` with type `constructor` for [`OffscreenCanvas`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvas), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `commit()` with type `method` for [`OffscreenCanvasRenderingContext2D`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d), but found [`commit()`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencontext-commit) with type `dfn`
      * `canvas` with type `attribute` for [`OffscreenCanvasRenderingContext2D`](https://html.spec.whatwg.org/multipage/canvas.html#offscreencanvasrenderingcontext2d), but found [`canvas`](https://html.spec.whatwg.org/multipage/canvas.html#canvas) with type `element`
@@ -16736,6 +16743,11 @@ No informative reference to this spec from other specs.
      * `"application/xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xml`](https://html.spec.whatwg.org/multipage/indices.html#application/xml) with type `dfn`
      * `"application/xhtml+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`application/xhtml+xml`](https://html.spec.whatwg.org/multipage/iana.html#application/xhtml+xml) with type `dfn`
      * `"image/svg+xml"` with type `enum-value` for [`DOMParserSupportedType`](https://html.spec.whatwg.org/multipage/dynamic-markup-insertion.html#domparsersupportedtype), but found [`image/svg+xml`](https://html.spec.whatwg.org/multipage/indices.html#image/svg+xml) with type `dfn`
+     * `NavigatorPlugins` with type `interface`, but found [`NavigatorPlugins`](https://html.spec.whatwg.org/multipage/system-state.html#navigatorplugins) with type `dfn`
+     * `PluginArray` with type `interface`, but found [`PluginArray`](https://html.spec.whatwg.org/multipage/system-state.html#pluginarray) with type `dfn`
+     * `MimeTypeArray` with type `interface`, but found [`MimeTypeArray`](https://html.spec.whatwg.org/multipage/system-state.html#mimetypearray) with type `dfn`
+     * `Plugin` with type `interface`, but found [`Plugin`](https://html.spec.whatwg.org/multipage/system-state.html#dom-plugin) with type `dfn`
+     * `MimeType` with type `interface`, but found [`MimeType`](https://html.spec.whatwg.org/multipage/system-state.html#mimetype) with type `dfn`
      * `constructor(type, eventInitDict)` with type `constructor` for [`MessageEvent`](https://html.spec.whatwg.org/multipage/comms.html#messageevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(url, eventSourceInitDict)` with type `constructor` for [`EventSource`](https://html.spec.whatwg.org/multipage/server-sent-events.html#eventsource), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
      * `constructor(url, protocols)` with type `constructor` for [`WebSocket`](https://html.spec.whatwg.org/multipage/web-sockets.html#websocket), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
@@ -16792,8 +16804,6 @@ No informative reference to this spec from other specs.
      * `add(data, type)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
      * `add(data)` with type `method` for [`DataTransferItemList`](https://html.spec.whatwg.org/multipage/dnd.html#datatransferitemlist), but found [`add()`](https://html.spec.whatwg.org/multipage/dnd.html#dom-datatransferitemlist-add) with type `method` for `DataTransferItemList`
      * `createImageBitmap(image, sx, sy, sw, sh, options)` with type `method` for [`WindowOrWorkerGlobalScope`](https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope), but found [`createImageBitmap(image, options)`](https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#dom-createimagebitmap) with type `method` for `WindowOrWorkerGlobalScope`
-     * `item(index)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`item()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-item) with type `method` for `Plugin`
-     * `namedItem(name)` with type `method` for [`Plugin`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin), but found [`namedItem()`](https://html.spec.whatwg.org/multipage/obsolete.html#dom-plugin-nameditem) with type `method` for `Plugin`
 - Missing references for links: 
      * [`https://spec.whatwg.org/`](https://spec.whatwg.org/)
      * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/)
@@ -16803,6 +16813,7 @@ No informative reference to this spec from other specs.
      * [`https://mimesniff.spec.whatwg.org/#mime-type`](https://mimesniff.spec.whatwg.org/#mime-type)
      * [`https://mimesniff.spec.whatwg.org/#xml-mime-type`](https://mimesniff.spec.whatwg.org/#xml-mime-type)
      * [`https://mimesniff.spec.whatwg.org/#html-mime-type`](https://mimesniff.spec.whatwg.org/#html-mime-type)
+     * [`https://mimesniff.spec.whatwg.org/#mime-type-essence`](https://mimesniff.spec.whatwg.org/#mime-type-essence)
      * [`https://mimesniff.spec.whatwg.org/#valid-mime-type`](https://mimesniff.spec.whatwg.org/#valid-mime-type)
      * [`https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters`](https://mimesniff.spec.whatwg.org/#valid-mime-type-with-no-parameters)
      * [`https://mimesniff.spec.whatwg.org/#javascript-mime-type`](https://mimesniff.spec.whatwg.org/#javascript-mime-type)
@@ -17152,9 +17163,12 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style`](https://drafts.csswg.org/cssom/#dom-elementcssinlinestyle-style)
      * [`https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext`](https://drafts.csswg.org/cssom/#dom-cssstyledeclaration-csstext)
      * [`https://drafts.csswg.org/cssom/#the-stylesheet-interface`](https://drafts.csswg.org/cssom/#the-stylesheet-interface)
+     * [`https://drafts.csswg.org/cssom/#the-cssstylesheet-interface`](https://drafts.csswg.org/cssom/#the-cssstylesheet-interface)
      * [`https://drafts.csswg.org/cssom/#create-a-css-style-sheet`](https://drafts.csswg.org/cssom/#create-a-css-style-sheet)
      * [`https://drafts.csswg.org/cssom/#remove-a-css-style-sheet`](https://drafts.csswg.org/cssom/#remove-a-css-style-sheet)
      * [`https://drafts.csswg.org/cssom/#associated-css-style-sheet`](https://drafts.csswg.org/cssom/#associated-css-style-sheet)
+     * [`https://drafts.csswg.org/cssom/#create-a-constructed-cssstylesheet`](https://drafts.csswg.org/cssom/#create-a-constructed-cssstylesheet)
+     * [`https://drafts.csswg.org/cssom/#synchronously-replace-the-rules-of-a-cssstylesheet`](https://drafts.csswg.org/cssom/#synchronously-replace-the-rules-of-a-cssstylesheet)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-type`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-type)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-location`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-location)
      * [`https://drafts.csswg.org/cssom/#concept-css-style-sheet-parent-css-style-sheet`](https://drafts.csswg.org/cssom/#concept-css-style-sheet-parent-css-style-sheet)
@@ -17292,6 +17306,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#overridden-constructor-steps`](https://heycam.github.io/webidl/#overridden-constructor-steps)
      * [`https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface`](https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface)
      * [`https://heycam.github.io/webidl/#dfn-array-index-property-name`](https://heycam.github.io/webidl/#dfn-array-index-property-name)
+     * [`https://heycam.github.io/webidl/#dfn-support-indexed-properties`](https://heycam.github.io/webidl/#dfn-support-indexed-properties)
      * [`https://heycam.github.io/webidl/#dfn-supported-property-indices`](https://heycam.github.io/webidl/#dfn-supported-property-indices)
      * [`https://heycam.github.io/webidl/#dfn-determine-the-value-of-an-indexed-property`](https://heycam.github.io/webidl/#dfn-determine-the-value-of-an-indexed-property)
      * [`https://heycam.github.io/webidl/#dfn-set-the-value-of-an-existing-indexed-property`](https://heycam.github.io/webidl/#dfn-set-the-value-of-an-existing-indexed-property)
@@ -17620,6 +17635,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit`](https://drafts.fxtf.org/geometry/#dictdef-dommatrixinit)
      * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-dictionary)
      * [`https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary`](https://drafts.fxtf.org/geometry/#create-a-dommatrix-from-the-2d-dictionary)
+     * [`https://drafts.fxtf.org/geometry/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry/#dictdef-dompointinit)
      * [`https://drafts.csswg.org/css-scoping/#flat-tree`](https://drafts.csswg.org/css-scoping/#flat-tree)
      * [`https://drafts.csswg.org/css-color-adjust/#color-scheme-prop`](https://drafts.csswg.org/css-color-adjust/#color-scheme-prop)
      * [`https://drafts.csswg.org/css-pseudo/#file-selector-button-pseudo`](https://drafts.csswg.org/css-pseudo/#file-selector-button-pseudo)
@@ -17630,6 +17646,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-unobserve`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserver-unobserve)
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-isintersecting)
      * [`https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target`](https://w3c.github.io/IntersectionObserver/#dom-intersectionobserverentry-target)
+     * [`https://gpuweb.github.io/gpuweb/#canvas-context`](https://gpuweb.github.io/gpuweb/#canvas-context)
+     * [`https://gpuweb.github.io/gpuweb/#canvas-rendering`](https://gpuweb.github.io/gpuweb/#canvas-rendering)
      * [`https://w3c.github.io/webvtt/#webvtt-file`](https://w3c.github.io/webvtt/#webvtt-file)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues`](https://w3c.github.io/webvtt/#webvtt-file-using-only-nested-cues)
@@ -17699,6 +17717,21 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/manifest/#dfn-manifest`](https://w3c.github.io/manifest/#dfn-manifest)
      * [`https://w3c.github.io/manifest/#dfn-installed-web-application`](https://w3c.github.io/manifest/#dfn-installed-web-application)
      * [`https://w3c.github.io/manifest/#dfn-processing-a-manifest`](https://w3c.github.io/manifest/#dfn-processing-a-manifest)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-id`](https://w3c.github.io/webdriver-bidi/#navigation-status-id)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-status`](https://w3c.github.io/webdriver-bidi/#navigation-status-status)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-canceled`](https://w3c.github.io/webdriver-bidi/#navigation-status-canceled)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-pending`](https://w3c.github.io/webdriver-bidi/#navigation-status-pending)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-complete`](https://w3c.github.io/webdriver-bidi/#navigation-status-complete)
+     * [`https://w3c.github.io/webdriver-bidi/#navigation-status-url`](https://w3c.github.io/webdriver-bidi/#navigation-status-url)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-aborted)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-failed)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-download-started)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-fragment-navigated)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-dom-content-loaded)
+     * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-load-complete)
+     * [`https://wicg.github.io/uuid/#dfn-generate-a-random-uuid`](https://wicg.github.io/uuid/#dfn-generate-a-random-uuid)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
      * [`https://w3c.github.io/html-aria/#el-html`](https://w3c.github.io/html-aria/#el-html)
      * [`https://w3c.github.io/html-aria/#el-head`](https://w3c.github.io/html-aria/#el-head)
@@ -18626,7 +18659,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Crawled URL: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
-- Crawled version: 23 June 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-stats/](https://w3c.github.io/webrtc-stats/)
 - Latest published version: [https://www.w3.org/TR/webrtc-stats/](https://www.w3.org/TR/webrtc-stats/)
 - Shortname: webrtc-stats
@@ -18912,7 +18945,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -19024,7 +19059,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
 - Crawled URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- Crawled version: 24 June 2021
+- Crawled version: 28 June 2021
 - Editor's Draft: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
 - Shortname: PFE
 
@@ -19600,7 +19635,9 @@ No informative reference to this spec from other specs.
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -20245,7 +20282,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled version: 05 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
@@ -20510,7 +20547,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
-- Crawled version: 01 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -22596,7 +22633,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Crawled URL: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
-- Crawled version: 04 June 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://w3c.github.io/payment-handler/](https://w3c.github.io/payment-handler/)
 - Latest published version: [https://www.w3.org/TR/payment-handler/](https://www.w3.org/TR/payment-handler/)
 - Shortname: payment-handler
@@ -22628,6 +22665,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest`](https://www.w3.org/TR/payment-request/#dom-paymentrequest)
      * [`https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary`](https://www.w3.org/TR/payment-request/#paymentcurrencyamount-dictionary)
      * [`https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsmodifier-dictionary)
+     * [`https://www.w3.org/TR/payment-request/#dfn-details`](https://www.w3.org/TR/payment-request/#dfn-details)
      * [`https://www.w3.org/TR/payment-request/#id-attribute`](https://www.w3.org/TR/payment-request/#id-attribute)
      * [`https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary`](https://www.w3.org/TR/payment-request/#paymentdetailsinit-dictionary)
      * [`https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods`](https://www.w3.org/TR/payment-request/#dom-paymentmethoddata-supportedmethods)
@@ -23102,7 +23140,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Crawled version: 24 June 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -23998,7 +24036,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
 - Crawled URL: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
-- Crawled version: 28 January 2021
+- Crawled version: 14 July 2021
 - Editor's Draft: [https://tc39.es/proposal-private-fields-in-in/](https://tc39.es/proposal-private-fields-in-in/)
 - Shortname: tc39-private-fields-in-in
 
@@ -24800,7 +24838,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
 - Crawled URL: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
-- Crawled version: 22 June 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
 - Shortname: tc39-resizablearraybuffer
 
@@ -25064,7 +25102,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc2397](https://datatracker.ietf.org/doc/html/rfc2397)
 - Shortname: rfc2397
 
@@ -25091,7 +25129,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6454](https://datatracker.ietf.org/doc/html/rfc6454)
 - Shortname: rfc6454
 
@@ -25130,7 +25168,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc6797](https://datatracker.ietf.org/doc/html/rfc6797)
 - Shortname: rfc6797
 
@@ -25162,7 +25200,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7034](https://datatracker.ietf.org/doc/html/rfc7034)
 - Shortname: rfc7034
 
@@ -25191,7 +25229,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7239](https://datatracker.ietf.org/doc/html/rfc7239)
 - Shortname: rfc7239
 
@@ -25212,7 +25250,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7469](https://datatracker.ietf.org/doc/html/rfc7469)
 - Shortname: rfc7469
 
@@ -25237,7 +25275,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc7578](https://datatracker.ietf.org/doc/html/rfc7578)
 - Shortname: rfc7578
 
@@ -25264,7 +25302,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Crawled URL: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
-- Crawled version: 12 July 2021
+- Crawled version: 19 July 2021
 - Editor's Draft: [https://datatracker.ietf.org/doc/html/rfc8942](https://datatracker.ietf.org/doc/html/rfc8942)
 - Shortname: rfc8942
 
@@ -25947,6 +25985,7 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
+- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/)
 - [CSS Transforms Module Level 2](https://www.w3.org/TR/css-transforms-2/)
 - [CSS Typed OM Level 1](https://www.w3.org/TR/css-typed-om-1/)
@@ -25982,7 +26021,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://www.w3.org/TR/css-cascade-4/)
 - [CSS Cascading and Inheritance Level 5](https://www.w3.org/TR/css-cascade-5/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Style Attributes](https://www.w3.org/TR/css-style-attr/)
 - [CSS Transitions](https://www.w3.org/TR/css-transitions-1/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
@@ -26000,7 +26038,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Crawled URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
-- Crawled version: 10 July 2021
+- Crawled version: 12 July 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
 - Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Shortname: webrtc-svc
@@ -26194,7 +26232,9 @@ Informative references to this spec from:
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ## Scroll-linked Animations {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -26227,9 +26267,12 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-values-4/#css-wide-keywords`](https://drafts.csswg.org/css-values-4/#css-wide-keywords)
      * [`https://drafts.csswg.org/css-values-4/#typedef-length-percentage`](https://drafts.csswg.org/css-values-4/#typedef-length-percentage)
      * [`https://drafts.csswg.org/css-values-4/#funcdef-calc`](https://drafts.csswg.org/css-values-4/#funcdef-calc)
+     * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
+     * [`https://drafts.csswg.org/css-values-4/#string-value`](https://drafts.csswg.org/css-values-4/#string-value)
      * [`https://drafts.csswg.org/css-values-4/#comb-one`](https://drafts.csswg.org/css-values-4/#comb-one)
      * [`https://drafts.csswg.org/css-values-4/#mult-comma`](https://drafts.csswg.org/css-values-4/#mult-comma)
+     * [`https://drafts.csswg.org/css-values-4/#number-value`](https://drafts.csswg.org/css-values-4/#number-value)
      * [`https://drafts.csswg.org/css-animations-1/#propdef-animation`](https://drafts.csswg.org/css-animations-1/#propdef-animation)
      * [`https://drafts.csswg.org/css-animations-1/#interface-csskeyframesrule-findrule`](https://drafts.csswg.org/css-animations-1/#interface-csskeyframesrule-findrule)
      * [`https://drafts.csswg.org/css-animations-1/#csskeyframerule`](https://drafts.csswg.org/css-animations-1/#csskeyframerule)
@@ -26263,9 +26306,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe`](https://html.spec.whatwg.org/#dom-animationframeprovider-requestanimationframe)
      * [`https://drafts.csswg.org/cssom-view/#css-layout-box`](https://drafts.csswg.org/cssom-view/#css-layout-box)
      * [`https://drafts.csswg.org/cssom-view/#overflow-directions`](https://drafts.csswg.org/cssom-view/#overflow-directions)
-     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
-     * [`https://drafts.csswg.org/css-values-3/#string-value`](https://drafts.csswg.org/css-values-3/#string-value)
-     * [`https://drafts.csswg.org/css-values-3/#number-value`](https://drafts.csswg.org/css-values-3/#number-value)
      * [`https://drafts.csswg.org/css-box-4/#padding-box`](https://drafts.csswg.org/css-box-4/#padding-box)
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list`](https://drafts.csswg.org/css-syntax-3/#typedef-declaration-list)
      * [`https://drafts.csswg.org/selectors-4/#typedef-id-selector`](https://drafts.csswg.org/selectors-4/#typedef-id-selector)
@@ -26355,7 +26395,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
-- Crawled version: 11 June 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Shortname: selection-api
@@ -26397,6 +26437,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
@@ -27071,7 +27113,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 8 July 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -27145,6 +27187,12 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#dfn-callback-this-value`](https://heycam.github.io/webidl/#dfn-callback-this-value)
      * [`https://heycam.github.io/webidl/#Function`](https://heycam.github.io/webidl/#Function)
      * [`https://heycam.github.io/webidl/#dfn-callback-context`](https://heycam.github.io/webidl/#dfn-callback-context)
+     * [`https://heycam.github.io/webidl/#arraybuffer-transfer`](https://heycam.github.io/webidl/#arraybuffer-transfer)
+     * [`https://heycam.github.io/webidl/#buffersource-underlying-buffer`](https://heycam.github.io/webidl/#buffersource-underlying-buffer)
+     * [`https://heycam.github.io/webidl/#arraybufferview-write`](https://heycam.github.io/webidl/#arraybufferview-write)
+     * [`https://heycam.github.io/webidl/#arraybufferview-create`](https://heycam.github.io/webidl/#arraybufferview-create)
+     * [`https://heycam.github.io/webidl/#buffersource-byte-length`](https://heycam.github.io/webidl/#buffersource-byte-length)
+     * [`https://heycam.github.io/webidl/#arraybuffer-write`](https://heycam.github.io/webidl/#arraybuffer-write)
      * [`https://heycam.github.io/webidl/#include`](https://heycam.github.io/webidl/#include)
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://dom.spec.whatwg.org/#abortsignal`](https://dom.spec.whatwg.org/#abortsignal)
@@ -27544,7 +27592,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 9 July 2021
+- Crawled version: 16 July 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -28793,7 +28841,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
 - Crawled URL: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
-- Crawled version: 08 March 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://w3c.github.io/user-timing/](https://w3c.github.io/user-timing/)
 - Latest published version: [https://www.w3.org/TR/user-timing-3/](https://www.w3.org/TR/user-timing-3/)
 - Shortname: user-timing-3
@@ -28822,6 +28870,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#dfn-read-only`](https://heycam.github.io/webidl/#dfn-read-only)
      * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
      * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://infra.spec.whatwg.org/#string-is`](https://infra.spec.whatwg.org/#string-is)
      * [`https://infra.spec.whatwg.org/#map-is-empty`](https://infra.spec.whatwg.org/#map-is-empty)
      * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
@@ -28960,7 +29009,9 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -30442,7 +30493,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Crawled URL: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
-- Crawled version: 22 June 2021
+- Crawled version: 15 July 2021
 - Editor's Draft: [https://wicg.github.io/serial/](https://wicg.github.io/serial/)
 - Shortname: serial
 
@@ -30500,6 +30551,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#dom-event-bubbles`](https://dom.spec.whatwg.org/#dom-event-bubbles)
      * [`https://dom.spec.whatwg.org/#abortsignal`](https://dom.spec.whatwg.org/#abortsignal)
      * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
      * [`https://streams.spec.whatwg.org/#readablestream`](https://streams.spec.whatwg.org/#readablestream)
      * [`https://streams.spec.whatwg.org/#writablestream`](https://streams.spec.whatwg.org/#writablestream)
      * [`https://streams.spec.whatwg.org/#default-reader-read`](https://streams.spec.whatwg.org/#default-reader-read)
@@ -31269,21 +31321,60 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## WebDriver BiDi {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## WebDriver BiDi {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Crawled URL: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
-- Crawled version: 29 March 2021
+- Crawled version: 13 July 2021
 - Editor's Draft: [https://w3c.github.io/webdriver-bidi/](https://w3c.github.io/webdriver-bidi/)
 - Shortname: webdriver-bidi
 
 ### Potential issue(s) {.anomalies}
 
-- Missing references for links: 
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
+     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
+     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
+     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
+     * [`https://html.spec.whatwg.org/#concept-navigation-id`](https://html.spec.whatwg.org/#concept-navigation-id)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#source-browsing-context`](https://html.spec.whatwg.org/#source-browsing-context)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
+     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
+     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
+     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
+     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
+     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
+     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
+     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
+     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
+     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
+     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
      * [`https://w3c.github.io/webdriver/#dfn-remote-ends`](https://w3c.github.io/webdriver/#dfn-remote-ends)
      * [`https://w3c.github.io/webdriver/#dfn-sessions`](https://w3c.github.io/webdriver/#dfn-sessions)
@@ -31309,46 +31400,12 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webdriver/#dfn-window-handle`](https://w3c.github.io/webdriver/#dfn-window-handle)
      * [`https://w3c.github.io/webdriver/#dfn-try`](https://w3c.github.io/webdriver/#dfn-try)
      * [`https://w3c.github.io/webdriver/#dfn-no-such-frame`](https://w3c.github.io/webdriver/#dfn-no-such-frame)
+     * [`https://w3c.github.io/webdriver/#dfn-unknown-error`](https://w3c.github.io/webdriver/#dfn-unknown-error)
      * [`https://heycam.github.io/webidl/#dfn-return-type`](https://heycam.github.io/webidl/#dfn-return-type)
      * [`https://heycam.github.io/webidl/#dfn-platform-object`](https://heycam.github.io/webidl/#dfn-platform-object)
-     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
-     * [`https://html.spec.whatwg.org/#shared-workers`](https://html.spec.whatwg.org/#shared-workers)
-     * [`https://html.spec.whatwg.org/#settings-object`](https://html.spec.whatwg.org/#settings-object)
-     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
-     * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
-     * [`https://html.spec.whatwg.org/#concept-realm-global`](https://html.spec.whatwg.org/#concept-realm-global)
-     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
-     * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
-     * [`https://html.spec.whatwg.org/#windowproxy`](https://html.spec.whatwg.org/#windowproxy)
-     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
-     * [`https://html.spec.whatwg.org/#parent-browsing-context`](https://html.spec.whatwg.org/#parent-browsing-context)
-     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
-     * [`https://html.spec.whatwg.org/#child-browsing-context`](https://html.spec.whatwg.org/#child-browsing-context)
-     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
-     * [`https://html.spec.whatwg.org/#realm-execution-context`](https://html.spec.whatwg.org/#realm-execution-context)
-     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#sharedworkerglobalscope`](https://html.spec.whatwg.org/#sharedworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
-     * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
-     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#concept-environment-execution-ready-flag`](https://html.spec.whatwg.org/#concept-environment-execution-ready-flag)
-     * [`https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object`](https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object)
-     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
-     * [`https://html.spec.whatwg.org/#concept-document-worklet-global-scopes`](https://html.spec.whatwg.org/#concept-document-worklet-global-scopes)
-     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
-     * [`https://html.spec.whatwg.org/#worker-event-loop-2`](https://html.spec.whatwg.org/#worker-event-loop-2)
-     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
-     * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
-     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
-     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
-     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
-     * [`https://html.spec.whatwg.org/#bcg-remove`](https://html.spec.whatwg.org/#bcg-remove)
-     * [`https://html.spec.whatwg.org/#report-the-error`](https://html.spec.whatwg.org/#report-the-error)
-     * [`https://html.spec.whatwg.org/#concept-error-handled`](https://html.spec.whatwg.org/#concept-error-handled)
      * [`https://fetch.spec.whatwg.org/#header-list-contains`](https://fetch.spec.whatwg.org/#header-list-contains)
      * [`https://fetch.spec.whatwg.org/#concept-connection`](https://fetch.spec.whatwg.org/#concept-connection)
+     * [`https://fetch.spec.whatwg.org/#concept-request`](https://fetch.spec.whatwg.org/#concept-request)
      * [`https://fetch.spec.whatwg.org/#concept-request-window`](https://fetch.spec.whatwg.org/#concept-request-window)
      * [`https://infra.spec.whatwg.org/#ordered-set`](https://infra.spec.whatwg.org/#ordered-set)
      * [`https://infra.spec.whatwg.org/#implementation-defined`](https://infra.spec.whatwg.org/#implementation-defined)
@@ -31376,6 +31433,7 @@ No informative reference to this spec from other specs.
      * [`https://dom.spec.whatwg.org/#concept-document-url`](https://dom.spec.whatwg.org/#concept-document-url)
      * [`https://dom.spec.whatwg.org/#document`](https://dom.spec.whatwg.org/#document)
      * [`https://url.spec.whatwg.org/#concept-url-serializer`](https://url.spec.whatwg.org/#concept-url-serializer)
+     * [`https://url.spec.whatwg.org/#concept-url-parser`](https://url.spec.whatwg.org/#concept-url-parser)
      * [`https://url.spec.whatwg.org/#concept-url`](https://url.spec.whatwg.org/#concept-url)
      * [`https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope`](https://w3c.github.io/ServiceWorker/#serviceworkerglobalscope)
      * [`https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope`](https://drafts.css-houdini.org/css-paint-api-1/#paintworkletglobalscope)
@@ -31384,12 +31442,12 @@ No informative reference to this spec from other specs.
      * [`https://console.spec.whatwg.org/#formatter`](https://console.spec.whatwg.org/#formatter)
      * [`https://console.spec.whatwg.org/#namespacedef-console`](https://console.spec.whatwg.org/#namespacedef-console)
      * [`https://console.spec.whatwg.org/#printer`](https://console.spec.whatwg.org/#printer)
-- External links to outdated specs:
-     * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 
 ### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 
 No informative reference to this spec from other specs.
 
@@ -32750,7 +32808,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
-- Crawled version: 11 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -32765,6 +32823,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#dfn-setlike`](https://heycam.github.io/webidl/#dfn-setlike)
      * [`https://heycam.github.io/webidl/#dfn-set-entries`](https://heycam.github.io/webidl/#dfn-set-entries)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
@@ -32779,7 +32838,6 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
-     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
@@ -32822,9 +32880,9 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
-     * [`https://html.spec.whatwg.org/#serializable`](https://html.spec.whatwg.org/#serializable)
      * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
      * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
+     * [`https://html.spec.whatwg.org/#serializable`](https://html.spec.whatwg.org/#serializable)
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
      * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
      * [`https://html.spec.whatwg.org/#imagebitmap`](https://html.spec.whatwg.org/#imagebitmap)
@@ -32833,6 +32891,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#webglcontextattributes`](https://html.spec.whatwg.org/#webglcontextattributes)
      * [`https://html.spec.whatwg.org/#htmlcanvaselement`](https://html.spec.whatwg.org/#htmlcanvaselement)
      * [`https://html.spec.whatwg.org/#offscreencanvas`](https://html.spec.whatwg.org/#offscreencanvas)
+     * [`https://html.spec.whatwg.org/#concept-canvas-context-mode`](https://html.spec.whatwg.org/#concept-canvas-context-mode)
+     * [`https://html.spec.whatwg.org/#offscreencanvas-context-mode`](https://html.spec.whatwg.org/#offscreencanvas-context-mode)
      * [`https://html.spec.whatwg.org/#dom-canvas-getcontext`](https://html.spec.whatwg.org/#dom-canvas-getcontext)
      * [`https://html.spec.whatwg.org/#update-the-rendering`](https://html.spec.whatwg.org/#update-the-rendering)
      * [`https://html.spec.whatwg.org/#dom-offscreencanvas-transfertoimagebitmap`](https://html.spec.whatwg.org/#dom-offscreencanvas-transfertoimagebitmap)
@@ -32861,6 +32921,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Web Neural Network API](https://www.w3.org/TR/webnn/)
 - [WebGPU Shading Language](https://www.w3.org/TR/WGSL/)
 
@@ -32873,7 +32934,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
-- Crawled version: 11 July 2021
+- Crawled version: 17 July 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -32907,7 +32968,6 @@ No informative reference to this spec from other specs.
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-sint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-uint)
      * [`https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth`](https://gpuweb.github.io/gpuweb/#dom-gputexturesampletype-depth)
-     * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-read-only)
      * [`https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only`](https://gpuweb.github.io/gpuweb/#dom-gpustoragetextureaccess-write-only)
      * [`https://gpuweb.github.io/gpuweb/#buffer-interface`](https://gpuweb.github.io/gpuweb/#buffer-interface)
      * [`https://gpuweb.github.io/gpuweb/#coordinate-systems`](https://gpuweb.github.io/gpuweb/#coordinate-systems)

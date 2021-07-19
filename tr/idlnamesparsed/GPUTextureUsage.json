@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=Window]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SAMPLED           = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SHADER_READ       = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
     "href": "https://www.w3.org/TR/webgpu/#gputextureusage"
   },
   "extended": [],

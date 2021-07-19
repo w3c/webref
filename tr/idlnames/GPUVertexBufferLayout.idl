@@ -1,6 +1,6 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 dictionary GPUVertexBufferLayout {
     required GPUSize64 arrayStride;
-    GPUInputStepMode stepMode = "vertex";
+    GPUVertexStepMode stepMode = "vertex";
     required sequence<GPUVertexAttribute> attributes;
 };

@@ -1,5 +1,5 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=Window]
+[Exposed=(Window, DedicatedWorker)]
 interface GPUSupportedLimits {
     readonly attribute unsigned long maxTextureDimension1D;
     readonly attribute unsigned long maxTextureDimension2D;
@@ -13,8 +13,8 @@ interface GPUSupportedLimits {
     readonly attribute unsigned long maxStorageBuffersPerShaderStage;
     readonly attribute unsigned long maxStorageTexturesPerShaderStage;
     readonly attribute unsigned long maxUniformBuffersPerShaderStage;
-    readonly attribute unsigned long maxUniformBufferBindingSize;
-    readonly attribute unsigned long maxStorageBufferBindingSize;
+    readonly attribute unsigned long long maxUniformBufferBindingSize;
+    readonly attribute unsigned long long maxStorageBufferBindingSize;
     readonly attribute unsigned long minUniformBufferOffsetAlignment;
     readonly attribute unsigned long minStorageBufferOffsetAlignment;
     readonly attribute unsigned long maxVertexBuffers;
@@ -23,5 +23,6 @@ interface GPUSupportedLimits {
     readonly attribute unsigned long maxInterStageShaderComponents;
     readonly attribute unsigned long maxComputeWorkgroupStorageSize;
     readonly attribute unsigned long maxComputeWorkgroupInvocations;
+    readonly attribute GPUExtent3D maxComputeWorkgroupSize;
     readonly attribute unsigned long maxComputePerDimensionDispatchSize;
 };

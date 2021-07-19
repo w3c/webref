@@ -1,10 +1,11 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-[Exposed=Window]
+[Exposed=Window,
+ LegacyUnenumerableNamedProperties]
 interface Plugin {
-  readonly attribute undefined name;
-  readonly attribute undefined description;
-  readonly attribute undefined filename;
-  readonly attribute undefined length;
-  getter undefined item(unsigned long index);
-  undefined namedItem(DOMString name);
+  readonly attribute DOMString name;
+  readonly attribute DOMString description;
+  readonly attribute DOMString filename;
+  readonly attribute unsigned long length;
+  getter MimeType? item(unsigned long index);
+  getter MimeType? namedItem(DOMString name);
 };

@@ -1,9 +1,9 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=Window]
+[Exposed=(Window, DedicatedWorker)]
 interface GPUTextureUsage {
     const GPUFlagsConstant COPY_SRC          = 0x01;
     const GPUFlagsConstant COPY_DST          = 0x02;
-    const GPUFlagsConstant SAMPLED           = 0x04;
+    const GPUFlagsConstant SHADER_READ       = 0x04;
     const GPUFlagsConstant STORAGE           = 0x08;
     const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;
 };

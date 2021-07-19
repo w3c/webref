@@ -1,8 +1,9 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-[Exposed=Window]
+[Exposed=Window,
+ LegacyUnenumerableNamedProperties]
 interface PluginArray {
   undefined refresh();
   readonly attribute unsigned long length;
-  getter object? item(unsigned long index);
-  object? namedItem(DOMString name);
+  getter Plugin? item(unsigned long index);
+  getter Plugin? namedItem(DOMString name);
 };

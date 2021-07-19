@@ -160,15 +160,15 @@
           "Location",
           "BeforeUnloadEvent",
           "Navigator",
+          "PluginArray",
+          "MimeTypeArray",
+          "Plugin",
+          "MimeType",
           "ImageBitmap",
           "MessagePort",
           "Worklet",
           "Storage",
-          "External",
-          "PluginArray",
-          "MimeTypeArray",
-          "Plugin",
-          "MimeType"
+          "External"
         ],
         "Worker": [
           "DOMStringList",
@@ -14962,7 +14962,7 @@
         "partial": false
       },
       "RenderingContext": {
-        "fragment": "typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) RenderingContext;",
+        "fragment": "typedef (CanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) RenderingContext;",
         "type": "typedef",
         "name": "RenderingContext",
         "idlType": {
@@ -15003,6 +15003,14 @@
               "nullable": false,
               "union": false,
               "idlType": "WebGL2RenderingContext"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasContext"
             }
           ]
         },
@@ -19109,7 +19117,7 @@
         "partial": false
       },
       "CanvasPath": {
-        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
+        "fragment": "interface mixin CanvasPath {\n  // shared path API methods\n  undefined closePath();\n  undefined moveTo(unrestricted double x, unrestricted double y);\n  undefined lineTo(unrestricted double x, unrestricted double y);\n  undefined quadraticCurveTo(unrestricted double cpx, unrestricted double cpy, unrestricted double x, unrestricted double y);\n  undefined bezierCurveTo(unrestricted double cp1x, unrestricted double cp1y, unrestricted double cp2x, unrestricted double cp2y, unrestricted double x, unrestricted double y);\n  undefined arcTo(unrestricted double x1, unrestricted double y1, unrestricted double x2, unrestricted double y2, unrestricted double radius);\n  undefined rect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h);\n  undefined roundRect(unrestricted double x, unrestricted double y, unrestricted double w, unrestricted double h, sequence<(unrestricted double or DOMPointInit)> radii);\n  undefined arc(unrestricted double x, unrestricted double y, unrestricted double radius, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n  undefined ellipse(unrestricted double x, unrestricted double y, unrestricted double radiusX, unrestricted double radiusY, unrestricted double rotation, unrestricted double startAngle, unrestricted double endAngle, optional boolean counterclockwise = false);\n};",
         "type": "interface mixin",
         "name": "CanvasPath",
         "inheritance": null,
@@ -19584,6 +19592,128 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "roundRect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "x",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "y",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "w",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "h",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unrestricted double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "radii",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": true,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "unrestricted double"
+                        },
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "DOMPointInit"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 "default": null,
                 "optional": false,
@@ -20684,7 +20814,7 @@
         "partial": false
       },
       "OffscreenRenderingContext": {
-        "fragment": "typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext) OffscreenRenderingContext;",
+        "fragment": "typedef (OffscreenCanvasRenderingContext2D or ImageBitmapRenderingContext or WebGLRenderingContext or WebGL2RenderingContext or GPUCanvasContext) OffscreenRenderingContext;",
         "type": "typedef",
         "name": "OffscreenRenderingContext",
         "idlType": {
@@ -20725,6 +20855,14 @@
               "nullable": false,
               "union": false,
               "idlType": "WebGL2RenderingContext"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUCanvasContext"
             }
           ]
         },
@@ -20774,7 +20912,7 @@
         "partial": false
       },
       "OffscreenRenderingContextId": {
-        "fragment": "enum OffscreenRenderingContextId { \"2d\", \"bitmaprenderer\", \"webgl\", \"webgl2\" };",
+        "fragment": "enum OffscreenRenderingContextId { \"2d\", \"bitmaprenderer\", \"webgl\", \"webgl2\", \"webgpu\" };",
         "type": "enum",
         "name": "OffscreenRenderingContextId",
         "values": [
@@ -20793,6 +20931,10 @@
           {
             "type": "enum-value",
             "value": "webgl2"
+          },
+          {
+            "type": "enum-value",
+            "value": "webgpu"
           }
         ],
         "extAttrs": []
@@ -27753,6 +27895,545 @@
         "extAttrs": [],
         "partial": false
       },
+      "NavigatorPlugins": {
+        "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n  readonly attribute boolean pdfViewerEnabled;\n};",
+        "type": "interface mixin",
+        "name": "NavigatorPlugins",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "plugins",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PluginArray"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "mimeTypes",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MimeTypeArray"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "javaEnabled",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "pdfViewerEnabled",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PluginArray": {
+        "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface PluginArray {\n  undefined refresh();\n  readonly attribute unsigned long length;\n  getter Plugin? item(unsigned long index);\n  getter Plugin? namedItem(DOMString name);\n};",
+        "type": "interface",
+        "name": "PluginArray",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "refresh",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "item",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Plugin"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "operation",
+            "name": "namedItem",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Plugin"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyUnenumerableNamedProperties",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MimeTypeArray": {
+        "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  getter MimeType? item(unsigned long index);\n  getter MimeType? namedItem(DOMString name);\n};",
+        "type": "interface",
+        "name": "MimeTypeArray",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "item",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "MimeType"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "operation",
+            "name": "namedItem",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "MimeType"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyUnenumerableNamedProperties",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "Plugin": {
+        "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface Plugin {\n  readonly attribute DOMString name;\n  readonly attribute DOMString description;\n  readonly attribute DOMString filename;\n  readonly attribute unsigned long length;\n  getter MimeType? item(unsigned long index);\n  getter MimeType? namedItem(DOMString name);\n};",
+        "type": "interface",
+        "name": "Plugin",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "description",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "filename",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "item",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "MimeType"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "operation",
+            "name": "namedItem",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "MimeType"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "name",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyUnenumerableNamedProperties",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "MimeType": {
+        "fragment": "[Exposed=Window]\ninterface MimeType {\n  readonly attribute DOMString type;\n  readonly attribute DOMString description;\n  readonly attribute DOMString suffixes;\n  readonly attribute Plugin enabledPlugin;\n};",
+        "type": "interface",
+        "name": "MimeType",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "type",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "description",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "suffixes",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "enabledPlugin",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Plugin"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "ImageBitmap": {
         "fragment": "[Exposed=(Window,Worker), Serializable, Transferable]\ninterface ImageBitmap {\n  readonly attribute unsigned long width;\n  readonly attribute unsigned long height;\n  undefined close();\n};",
         "type": "interface",
@@ -32761,512 +33442,6 @@
           }
         ],
         "partial": false
-      },
-      "NavigatorPlugins": {
-        "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n};",
-        "type": "interface mixin",
-        "name": "NavigatorPlugins",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "plugins",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "PluginArray"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "mimeTypes",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "MimeTypeArray"
-            },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "javaEnabled",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "PluginArray": {
-        "fragment": "[Exposed=Window]\ninterface PluginArray {\n  undefined refresh();\n  readonly attribute unsigned long length;\n  getter object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
-        "type": "interface",
-        "name": "PluginArray",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "refresh",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "length",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "item",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "index",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "getter"
-          },
-          {
-            "type": "operation",
-            "name": "namedItem",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "name",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "MimeTypeArray": {
-        "fragment": "[Exposed=Window]\ninterface MimeTypeArray {\n  readonly attribute unsigned long length;\n  getter object? item(unsigned long index);\n  object? namedItem(DOMString name);\n};",
-        "type": "interface",
-        "name": "MimeTypeArray",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "length",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "item",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "index",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "getter"
-          },
-          {
-            "type": "operation",
-            "name": "namedItem",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "object"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "name",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "Plugin": {
-        "fragment": "[Exposed=Window]\ninterface Plugin {\n  readonly attribute undefined name;\n  readonly attribute undefined description;\n  readonly attribute undefined filename;\n  readonly attribute undefined length;\n  getter undefined item(unsigned long index);\n  undefined namedItem(DOMString name);\n};",
-        "type": "interface",
-        "name": "Plugin",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "name",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "description",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "filename",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "length",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "operation",
-            "name": "item",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "index",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "unsigned long"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": "getter"
-          },
-          {
-            "type": "operation",
-            "name": "namedItem",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "name",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "DOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
-      "MimeType": {
-        "fragment": "[Exposed=Window]\ninterface MimeType {\n  readonly attribute undefined type;\n  readonly attribute undefined description;\n  readonly attribute undefined suffixes;\n  readonly attribute undefined enabledPlugin;\n};",
-        "type": "interface",
-        "name": "MimeType",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "type",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "description",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "suffixes",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "enabledPlugin",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -37963,6 +38138,10 @@
         "PromiseRejectionEvent",
         "DOMParser",
         "Navigator",
+        "PluginArray",
+        "MimeTypeArray",
+        "Plugin",
+        "MimeType",
         "ImageBitmap",
         "MessageEvent",
         "EventSource",
@@ -37981,11 +38160,7 @@
         "HTMLFrameElement",
         "HTMLDirectoryElement",
         "HTMLFontElement",
-        "External",
-        "PluginArray",
-        "MimeTypeArray",
-        "Plugin",
-        "MimeType"
+        "External"
       ],
       "Worker": [
         "DOMStringList",
@@ -38492,7 +38667,9 @@
         "CanvasFontVariantCaps",
         "CanvasTextRendering"
       ],
-      "CanvasPath": [],
+      "CanvasPath": [
+        "DOMPointInit"
+      ],
       "CanvasGradient": [],
       "CanvasPattern": [
         "DOMMatrix2DInit"
@@ -38696,6 +38873,22 @@
       "NavigatorOnLine": [],
       "NavigatorContentUtils": [],
       "NavigatorCookies": [],
+      "NavigatorPlugins": [
+        "PluginArray",
+        "MimeTypeArray"
+      ],
+      "PluginArray": [
+        "Plugin"
+      ],
+      "MimeTypeArray": [
+        "MimeType"
+      ],
+      "Plugin": [
+        "MimeType"
+      ],
+      "MimeType": [
+        "Plugin"
+      ],
       "ImageBitmap": [],
       "ImageBitmapOptions": [
         "ImageOrientation",
@@ -38828,15 +39021,7 @@
       "HTMLFontElement": [
         "HTMLElement"
       ],
-      "External": [],
-      "NavigatorPlugins": [
-        "PluginArray",
-        "MimeTypeArray"
-      ],
-      "PluginArray": [],
-      "MimeTypeArray": [],
-      "Plugin": [],
-      "MimeType": []
+      "External": []
     },
     "externalDependencies": [
       "Element",
@@ -38860,9 +39045,11 @@
       "Text",
       "WebGLRenderingContext",
       "WebGL2RenderingContext",
+      "GPUCanvasContext",
       "SVGImageElement",
       "DOMMatrix",
       "DOMMatrix2DInit",
+      "DOMPointInit",
       "ShadowRoot",
       "File",
       "MouseEvent",

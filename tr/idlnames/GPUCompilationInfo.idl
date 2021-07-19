@@ -1,5 +1,5 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=Window, Serializable]
+[Exposed=(Window, DedicatedWorker), Serializable]
 interface GPUCompilationInfo {
     readonly attribute FrozenArray<GPUCompilationMessage> messages;
 };

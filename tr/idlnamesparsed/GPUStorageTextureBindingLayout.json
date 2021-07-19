@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUStorageTextureBindingLayout {\n    required GPUStorageTextureAccess access;\n    required GPUTextureFormat format;\n    GPUTextureViewDimension viewDimension = \"2d\";\n};",
+    "fragment": "dictionary GPUStorageTextureBindingLayout {\n    GPUStorageTextureAccess access = \"write-only\";\n    required GPUTextureFormat format;\n    GPUTextureViewDimension viewDimension = \"2d\";\n};",
     "href": "https://www.w3.org/TR/webgpu/#dictdef-gpustoragetexturebindinglayout"
   },
   "extended": [],

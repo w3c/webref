@@ -129,6 +129,7 @@
       "mime-type",
       "xml-mime-type",
       "html-mime-type",
+      "mime-type-essence",
       "valid-mime-type",
       "valid-mime-type-with-no-parameters",
       "javascript-mime-type",
@@ -500,9 +501,12 @@
       "dom-elementcssinlinestyle-style",
       "dom-cssstyledeclaration-csstext",
       "the-stylesheet-interface",
+      "the-cssstylesheet-interface",
       "create-a-css-style-sheet",
       "remove-a-css-style-sheet",
       "associated-css-style-sheet",
+      "create-a-constructed-cssstylesheet",
+      "synchronously-replace-the-rules-of-a-cssstylesheet",
       "concept-css-style-sheet-type",
       "concept-css-style-sheet-location",
       "concept-css-style-sheet-parent-css-style-sheet",
@@ -709,6 +713,7 @@
       "overridden-constructor-steps",
       "internally-create-a-new-object-implementing-the-interface",
       "dfn-array-index-property-name",
+      "dfn-support-indexed-properties",
       "dfn-supported-property-indices",
       "dfn-determine-the-value-of-an-indexed-property",
       "dfn-set-the-value-of-an-existing-indexed-property",
@@ -782,6 +787,15 @@
     ],
     "https://tc39.es/proposal-dynamic-import/": [
       "sec-hostimportmoduledynamically"
+    ],
+    "https://tc39.es/proposal-import-assertions/": [
+      "sec-modulerequest-record",
+      "sec-hostgetsupportedimportassertions"
+    ],
+    "https://tc39.es/proposal-json-modules/": [
+      "sec-createsyntheticmodule",
+      "sec-setsyntheticmoduleexport",
+      "sec-synthetic-module-records"
     ],
     "https://webassembly.github.io/spec/js-api/": [
       "module"
@@ -1137,7 +1151,8 @@
       "dictdef-dommatrix2dinit",
       "dictdef-dommatrixinit",
       "create-a-dommatrix-from-the-dictionary",
-      "create-a-dommatrix-from-the-2d-dictionary"
+      "create-a-dommatrix-from-the-2d-dictionary",
+      "dictdef-dompointinit"
     ],
     "https://drafts.csswg.org/css-scoping/": [
       "flat-tree"
@@ -1163,6 +1178,10 @@
     ],
     "https://www.khronos.org/registry/webgl/specs/latest/2.0/": [
       "WebGL2RenderingContext"
+    ],
+    "https://gpuweb.github.io/gpuweb/": [
+      "canvas-context",
+      "canvas-rendering"
     ],
     "https://w3c.github.io/webvtt/": [
       "webvtt-file",
@@ -1293,6 +1312,25 @@
       "dfn-manifest",
       "dfn-installed-web-application",
       "dfn-processing-a-manifest"
+    ],
+    "https://w3c.github.io/webdriver-bidi/": [
+      "webdriver-bidi-navigation-status",
+      "navigation-status-id",
+      "navigation-status-status",
+      "navigation-status-canceled",
+      "navigation-status-pending",
+      "navigation-status-complete",
+      "navigation-status-url",
+      "webdriver-bidi-navigation-started",
+      "webdriver-bidi-navigation-aborted",
+      "webdriver-bidi-navigation-failed",
+      "webdriver-bidi-download-started",
+      "webdriver-bidi-fragment-navigated",
+      "webdriver-bidi-dom-content-loaded",
+      "webdriver-bidi-load-complete"
+    ],
+    "https://wicg.github.io/uuid/": [
+      "dfn-generate-a-random-uuid"
     ],
     "https://www.w3.org/TR/REC-xml-names/": [
       "NT-QName"
@@ -2459,6 +2497,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Location/ancestorOrigins": [],
     "https://github.com/whatwg/html/issues/1918": [],
     "https://github.com/whatwg/html/issues/1130": [],
+    "https://github.com/whatwg/html/issues/6003": [],
     "https://github.com/whatwg/html/labels/topic%3A%20javascript%3A%20URLs": [],
     "https://github.com/whatwg/html/issues/2900": [],
     "https://github.com/whatwg/html/issues/6213": [],
@@ -2488,6 +2527,7 @@
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise": [
       "Incumbent_settings_object_tracking"
     ],
+    "https://github.com/whatwg/html/issues/6110": [],
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import.meta": [],
     "https://github.com/whatwg/html/issues/4980": [],
     "https://github.com/heycam/webidl/issues/135": [],
@@ -2721,7 +2761,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event": [],
     "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/XHTML": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/HTMLObjectElement/useMap": [],
-    "https://github.com/whatwg/html/issues/6317": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ondrag": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ondragend": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/GlobalEventHandlers/ondragenter": [],

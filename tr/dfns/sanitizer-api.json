@@ -69,15 +69,36 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-sanitizer-sanitizetostring-input-input",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizetostring-input-input",
+      "id": "dom-sanitizer-sanitizefor-element-input-element",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor-element-input-element",
+      "linkingText": [
+        "element"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Sanitizer/sanitizeFor(element, input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-sanitizer-sanitizefor-element-input-input",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor-element-input-input",
       "linkingText": [
         "input"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Sanitizer/sanitizeToString(input)"
+        "Sanitizer/sanitizeFor(element, input)"
       ],
       "access": "public",
       "informative": false,
@@ -135,10 +156,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-sanitizer-sanitizetostring",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizetostring",
+      "id": "dom-sanitizer-sanitizefor",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizer-sanitizefor",
       "linkingText": [
-        "sanitizeToString(input)"
+        "sanitizeFor(element, input)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -198,23 +219,67 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedefdef-sanitizerinput",
-      "href": "https://wicg.github.io/sanitizer-api/#typedefdef-sanitizerinput",
+      "id": "dom-element-sethtml-input-sanitizer-input",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-sanitizer-input",
       "linkingText": [
-        "SanitizerInput"
+        "input"
       ],
       "localLinkingText": [],
-      "type": "typedef",
-      "for": [],
+      "type": "argument",
+      "for": [
+        "Element/setHTML(input, sanitizer)"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "inputs",
-        "href": "https://wicg.github.io/sanitizer-api/#inputs",
-        "title": "Input Types",
-        "number": "2.2"
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-element-sethtml-input-sanitizer-sanitizer",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-sanitizer-sanitizer",
+      "linkingText": [
+        "sanitizer"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/setHTML(input, sanitizer)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-element-sethtml",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml",
+      "linkingText": [
+        "setHTML(input, sanitizer)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "configuration-object",
@@ -381,6 +446,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-sanitizerconfig-allowcomments",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sanitizerconfig-allowcomments",
+      "linkingText": [
+        "allowComments"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "SanitizerConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "element-allow-list",
       "href": "https://wicg.github.io/sanitizer-api/#element-allow-list",
       "linkingText": [
@@ -495,6 +581,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "allow-comments-option",
+      "href": "https://wicg.github.io/sanitizer-api/#allow-comments-option",
+      "linkingText": [
+        "allow comments option"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "config",
+        "href": "https://wicg.github.io/sanitizer-api/#config",
+        "title": "The Configuration Dictionary",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "attribute-match-list",
       "href": "https://wicg.github.io/sanitizer-api/#attribute-match-list",
       "linkingText": [
@@ -544,18 +649,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
+        "id": "api-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#api-algorithms",
+        "title": "API Implementation",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "sanitizetostring",
-      "href": "https://wicg.github.io/sanitizer-api/#sanitizetostring",
+      "id": "sanitizefor",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitizefor",
       "linkingText": [
-        "sanitizeToString"
+        "sanitizeFor"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -563,18 +668,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
+        "id": "api-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#api-algorithms",
+        "title": "API Implementation",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "create-a-document-fragment",
-      "href": "https://wicg.github.io/sanitizer-api/#create-a-document-fragment",
+      "id": "sanitizeandset",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitizeandset",
       "linkingText": [
-        "create a document fragment"
+        "sanitizeAndSet"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -582,67 +687,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "sanitize-a-document-fragment",
-      "href": "https://wicg.github.io/sanitizer-api/#sanitize-a-document-fragment",
-      "linkingText": [
-        "sanitize a document fragment"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "sanitize-a-node",
-      "href": "https://wicg.github.io/sanitizer-api/#sanitize-a-node",
-      "linkingText": [
-        "sanitize a node"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "handle-funky-elements",
-      "href": "https://wicg.github.io/sanitizer-api/#handle-funky-elements",
-      "linkingText": [
-        "handle funky elements"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
+        "id": "api-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#api-algorithms",
+        "title": "API Implementation",
+        "number": "3.1"
       },
       "definedIn": "prose"
     },
@@ -658,10 +706,86 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "algorithms",
-        "href": "https://wicg.github.io/sanitizer-api/#algorithms",
-        "title": "Algorithms",
-        "number": "2.4"
+        "id": "api-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#api-algorithms",
+        "title": "API Implementation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-document-fragment",
+      "href": "https://wicg.github.io/sanitizer-api/#create-a-document-fragment",
+      "linkingText": [
+        "create a document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "helper-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#helper-algorithms",
+        "title": "Helper Definitions",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sanitize-a-document-fragment",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitize-a-document-fragment",
+      "linkingText": [
+        "sanitize a document fragment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-algorithms",
+        "title": "Sanitization Algorithms",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sanitize-a-node",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitize-a-node",
+      "linkingText": [
+        "sanitize a node"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-algorithms",
+        "title": "Sanitization Algorithms",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "handle-funky-elements",
+      "href": "https://wicg.github.io/sanitizer-api/#handle-funky-elements",
+      "linkingText": [
+        "handle funky elements"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-algorithms",
+        "title": "Sanitization Algorithms",
+        "number": "3.3"
       },
       "definedIn": "prose"
     },
@@ -677,10 +801,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -696,10 +820,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -715,10 +839,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -734,10 +858,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -753,10 +877,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -772,10 +896,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -791,10 +915,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -810,10 +934,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "id": "configuration-algorithms",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration-algorithms",
         "title": "The Effective Configuration",
-        "number": "2.4.1"
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -832,7 +956,7 @@
         "id": "defaults",
         "href": "https://wicg.github.io/sanitizer-api/#defaults",
         "title": "Baseline and Defaults",
-        "number": "2.4.2"
+        "number": "3.5"
       },
       "definedIn": "prose"
     },
@@ -851,7 +975,7 @@
         "id": "defaults",
         "href": "https://wicg.github.io/sanitizer-api/#defaults",
         "title": "Baseline and Defaults",
-        "number": "2.4.2"
+        "number": "3.5"
       },
       "definedIn": "prose"
     },
