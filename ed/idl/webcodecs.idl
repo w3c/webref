@@ -158,11 +158,12 @@ dictionary AudioEncoderConfig {
 
 dictionary VideoEncoderConfig {
   required DOMString codec;
-  [EnforceRange] unsigned long long bitrate;
   [EnforceRange] required unsigned long width;
   [EnforceRange] required unsigned long height;
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
+  [EnforceRange] unsigned long long bitrate;
+  [EnforceRange] double framerate;
   HardwareAcceleration hardwareAcceleration = "allow";
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
