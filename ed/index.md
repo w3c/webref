@@ -13722,7 +13722,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 13 July 2021
+- Crawled version: 20 July 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -17583,7 +17583,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
 - Crawled URL: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
-- Crawled version: 7 June 2021
+- Crawled version: 20 July 2021
 - Editor's Draft: [https://wicg.github.io/user-preference-media-features-headers/](https://wicg.github.io/user-preference-media-features-headers/)
 - Shortname: user-preference-media-features-headers
 
