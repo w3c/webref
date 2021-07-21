@@ -2052,7 +2052,7 @@
       ],
       "DocumentOrShadowRoot": [
         {
-          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n};",
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n  attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;\n};",
           "type": "interface mixin",
           "name": "DocumentOrShadowRoot",
           "inheritance": null,
@@ -2078,6 +2078,30 @@
               ],
               "special": "",
               "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "adoptedStyleSheets",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "ObservableArray",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "attribute-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSStyleSheet"
+                  }
+                ]
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
             }
           ],
           "extAttrs": [],
@@ -2233,7 +2257,8 @@
         "CSSStyleSheet"
       ],
       "DocumentOrShadowRoot": [
-        "StyleSheetList"
+        "StyleSheetList",
+        "CSSStyleSheet"
       ],
       "LinkStyle": [
         "CSSStyleSheet"
