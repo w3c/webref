@@ -1,9 +1,0 @@
-// Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=Window]
-interface GPUPresentationContext {
-    undefined configure(GPUPresentationConfiguration configuration);
-    undefined unconfigure();
-
-    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);
-    GPUTexture getCurrentTexture();
-};
