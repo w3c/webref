@@ -15,7 +15,7 @@ interface WebTransport {
   /* a ReadableStream of BidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
-  Promise<SendStream> createUnidirectionalStream();
+  Promise<WritableStream> createUnidirectionalStream();
   /* a ReadableStream of ReceiveStream objects */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
 };

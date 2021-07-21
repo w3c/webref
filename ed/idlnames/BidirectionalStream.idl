@@ -2,5 +2,5 @@
 [Exposed=(Window,Worker), SecureContext]
 interface BidirectionalStream {
   readonly attribute ReceiveStream readable;
-  readonly attribute SendStream writable;
+  readonly attribute WritableStream writable;
 };

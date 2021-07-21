@@ -895,6 +895,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-xrsession-updatetargetframerate-rate-rate",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updatetargetframerate-rate-rate",
+      "linkingText": [
+        "rate"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRSession/updateTargetFrameRate(rate)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-xrsession-requestreferencespace-type-type",
       "href": "https://immersive-web.github.io/webxr/#dom-xrsession-requestreferencespace-type-type",
       "linkingText": [
@@ -1253,6 +1274,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "apply-the-nominal-frame-rate",
+      "href": "https://immersive-web.github.io/webxr/#apply-the-nominal-frame-rate",
+      "linkingText": [
+        "apply the nominal frame rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-updatetargetframerate",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updatetargetframerate",
+      "linkingText": [
+        "updateTargetFrameRate(rate)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-xrsession-updaterenderstate",
       "href": "https://immersive-web.github.io/webxr/#dom-xrsession-updaterenderstate",
       "linkingText": [
@@ -1573,6 +1634,187 @@
       "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onvisibilitychange",
       "linkingText": [
         "onvisibilitychange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "nominal-frame-rate",
+      "href": "https://immersive-web.github.io/webxr/#nominal-frame-rate",
+      "linkingText": [
+        "nominal frame rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "effective-frame-rate",
+      "href": "https://immersive-web.github.io/webxr/#effective-frame-rate",
+      "linkingText": [
+        "effective frame rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "target-frame-rate",
+      "href": "https://immersive-web.github.io/webxr/#target-frame-rate",
+      "linkingText": [
+        "target frame rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "display-frame-rate",
+      "href": "https://immersive-web.github.io/webxr/#display-frame-rate",
+      "linkingText": [
+        "display frame rate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsession-internal-target-framerate",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-internal-target-framerate",
+      "linkingText": [
+        "internal target frameRate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsession-internal-nominal-framerate",
+      "href": "https://immersive-web.github.io/webxr/#xrsession-internal-nominal-framerate",
+      "linkingText": [
+        "internal nominal frameRate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-framerate",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-framerate",
+      "linkingText": [
+        "frameRate"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-onframeratechange",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-onframeratechange",
+      "linkingText": [
+        "onframeratechange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrsession-interface",
+        "href": "https://immersive-web.github.io/webxr/#xrsession-interface",
+        "title": "XRSession",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-supportedframerates",
+      "href": "https://immersive-web.github.io/webxr/#dom-xrsession-supportedframerates",
+      "linkingText": [
+        "supportedFrameRates"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -6643,6 +6885,27 @@
       "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-squeeze",
       "linkingText": [
         "squeeze"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-types",
+        "href": "https://immersive-web.github.io/webxr/#event-types",
+        "title": "Event Types",
+        "number": "12.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-xrsession-frameratechange",
+      "href": "https://immersive-web.github.io/webxr/#eventdef-xrsession-frameratechange",
+      "linkingText": [
+        "frameratechange"
       ],
       "localLinkingText": [],
       "type": "event",

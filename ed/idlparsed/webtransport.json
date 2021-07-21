@@ -16,13 +16,11 @@
       "functions": {
         "Window": [
           "DatagramDuplexStream",
-          "SendStream",
           "ReceiveStream",
           "BidirectionalStream"
         ],
         "Worker": [
           "DatagramDuplexStream",
-          "SendStream",
           "ReceiveStream",
           "BidirectionalStream"
         ]
@@ -153,7 +151,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<SendStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -389,7 +387,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "SendStream"
+                  "idlType": "WritableStream"
                 }
               ]
             },
@@ -679,38 +677,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "SendStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface SendStream : WritableStream /* of Uint8Array */ {\n};",
-        "type": "interface",
-        "name": "SendStream",
-        "inheritance": "WritableStream",
-        "members": [],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          }
-        ],
-        "partial": false
-      },
       "ReceiveStream": {
         "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ReceiveStream : ReadableStream /* of Uint8Array */ {\n};",
         "type": "interface",
@@ -744,7 +710,7 @@
         "partial": false
       },
       "BidirectionalStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface BidirectionalStream {\n  readonly attribute ReceiveStream readable;\n  readonly attribute SendStream writable;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface BidirectionalStream {\n  readonly attribute ReceiveStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
         "name": "BidirectionalStream",
         "inheritance": null,
@@ -773,7 +739,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "SendStream"
+              "idlType": "WritableStream"
             },
             "extAttrs": [],
             "special": "",
@@ -813,14 +779,12 @@
       "Window": [
         "DatagramDuplexStream",
         "WebTransport",
-        "SendStream",
         "ReceiveStream",
         "BidirectionalStream"
       ],
       "Worker": [
         "DatagramDuplexStream",
         "WebTransport",
-        "SendStream",
         "ReceiveStream",
         "BidirectionalStream"
       ]
@@ -837,7 +801,7 @@
         "DatagramDuplexStream",
         "BidirectionalStream",
         "ReadableStream",
-        "SendStream"
+        "WritableStream"
       ],
       "WebTransportOptions": [
         "RTCDtlsFingerprint"
@@ -846,15 +810,12 @@
       "WebTransportStats": [
         "DOMHighResTimeStamp"
       ],
-      "SendStream": [
-        "WritableStream"
-      ],
       "ReceiveStream": [
         "ReadableStream"
       ],
       "BidirectionalStream": [
         "ReceiveStream",
-        "SendStream"
+        "WritableStream"
       ]
     },
     "externalDependencies": [
