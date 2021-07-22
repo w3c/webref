@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 21, 2021
+% July 22, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -7700,7 +7700,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Crawled URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- Crawled version: 19 July 2021
+- Crawled version: 21 July 2021
 - Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Shortname: ecmascript
 
@@ -8915,7 +8915,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
-- Crawled version: 23 April 2021
+- Crawled version: 21 July 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aam/](https://w3c.github.io/graphics-aam/)
 - Latest published version: [https://www.w3.org/TR/graphics-aam-1.0/](https://www.w3.org/TR/graphics-aam-1.0/)
 - Shortname: graphics-aam-1.0
@@ -8930,13 +8930,6 @@ No informative reference to this spec from other specs.
 - Inconsistent references for links: 
      * [`https://w3c.github.io/graphics-aria/`](https://w3c.github.io/graphics-aria/), related reference "GRAPHICS-ARIA-1.0" uses URL [`https://www.w3.org/TR/graphics-aria-1.0/`](https://www.w3.org/TR/graphics-aria-1.0/)
 - External links that neither target definitions nor headings:
-     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
-     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
-     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
-- Broken external links:
      * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
      * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
      * [`https://w3c.github.io/graphics-aria/#graphics-symbol`](https://w3c.github.io/graphics-aria/#graphics-symbol)
@@ -15127,7 +15120,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Shortname: rfc2397
 
@@ -15152,7 +15145,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Shortname: rfc6454
 
@@ -15188,7 +15181,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Shortname: rfc6797
 
@@ -15221,7 +15214,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Shortname: rfc7034
 
@@ -15248,7 +15241,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Shortname: rfc7239
 
@@ -15269,7 +15262,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Shortname: rfc7469
 
@@ -15294,7 +15287,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Shortname: rfc7578
 
@@ -15321,7 +15314,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
-- Crawled version: 21 July 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Shortname: rfc8942
 
@@ -17847,7 +17840,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Crawled URL: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
-- Crawled version: 23 April 2021
+- Crawled version: 21 July 2021
 - Editor's Draft: [https://w3c.github.io/graphics-aria/](https://w3c.github.io/graphics-aria/)
 - Latest published version: [https://www.w3.org/TR/graphics-aria-1.0/](https://www.w3.org/TR/graphics-aria-1.0/)
 - Shortname: graphics-aria-1.0
@@ -17857,12 +17850,39 @@ No informative reference to this spec from other specs.
 - Missing references for links: 
      * [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/)
 - External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/aria/#none`](https://w3c.github.io/aria/#none)
+     * [`https://w3c.github.io/aria/#presentation`](https://w3c.github.io/aria/#presentation)
+     * [`https://w3c.github.io/aria/#img`](https://w3c.github.io/aria/#img)
+     * [`https://w3c.github.io/aria/#document`](https://w3c.github.io/aria/#document)
+     * [`https://w3c.github.io/aria/#figure`](https://w3c.github.io/aria/#figure)
+     * [`https://w3c.github.io/aria/#article`](https://w3c.github.io/aria/#article)
+     * [`https://w3c.github.io/aria/#aria-atomic`](https://w3c.github.io/aria/#aria-atomic)
+     * [`https://w3c.github.io/aria/#aria-braillelabel`](https://w3c.github.io/aria/#aria-braillelabel)
+     * [`https://w3c.github.io/aria/#aria-brailleroledescription`](https://w3c.github.io/aria/#aria-brailleroledescription)
+     * [`https://w3c.github.io/aria/#aria-busy`](https://w3c.github.io/aria/#aria-busy)
+     * [`https://w3c.github.io/aria/#aria-controls`](https://w3c.github.io/aria/#aria-controls)
+     * [`https://w3c.github.io/aria/#aria-current`](https://w3c.github.io/aria/#aria-current)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#aria-description`](https://w3c.github.io/aria/#aria-description)
+     * [`https://w3c.github.io/aria/#aria-details`](https://w3c.github.io/aria/#aria-details)
+     * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
+     * [`https://w3c.github.io/aria/#aria-dropeffect`](https://w3c.github.io/aria/#aria-dropeffect)
+     * [`https://w3c.github.io/aria/#aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage)
      * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-grabbed`](https://w3c.github.io/aria/#aria-grabbed)
+     * [`https://w3c.github.io/aria/#aria-haspopup`](https://w3c.github.io/aria/#aria-haspopup)
+     * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
+     * [`https://w3c.github.io/aria/#aria-invalid`](https://w3c.github.io/aria/#aria-invalid)
+     * [`https://w3c.github.io/aria/#aria-keyshortcuts`](https://w3c.github.io/aria/#aria-keyshortcuts)
+     * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
+     * [`https://w3c.github.io/aria/#aria-labelledby`](https://w3c.github.io/aria/#aria-labelledby)
+     * [`https://w3c.github.io/aria/#aria-live`](https://w3c.github.io/aria/#aria-live)
      * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-relevant`](https://w3c.github.io/aria/#aria-relevant)
+     * [`https://w3c.github.io/aria/#aria-roledescription`](https://w3c.github.io/aria/#aria-roledescription)
+     * [`https://w3c.github.io/aria/#group`](https://w3c.github.io/aria/#group)
+     * [`https://w3c.github.io/aria/#list`](https://w3c.github.io/aria/#list)
      * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
 
@@ -17870,11 +17890,11 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 
 Informative references to this spec from:
 
+- [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/)
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 
 
@@ -20788,6 +20808,7 @@ No informative reference to this spec from other specs.
      * [`https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed`](https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output`](https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input`](https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input)
+     * [`https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference`](https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#channel-formats`](https://gpuweb.github.io/gpuweb/wgsl/#channel-formats)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean`](https://html.spec.whatwg.org/#the-image-argument-is-not-origin-clean)

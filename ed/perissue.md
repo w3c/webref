@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 21, 2021
+% July 22, 2021
 
 428 specifications were crawled in this report.
 
@@ -2638,6 +2638,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed`](https://gpuweb.github.io/gpuweb/wgsl/#statically-accessed)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output`](https://gpuweb.github.io/gpuweb/wgsl/#pipeline-output)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input`](https://gpuweb.github.io/gpuweb/wgsl/#pipeline-input)
+     * [`https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference`](https://gpuweb.github.io/gpuweb/wgsl/#invalid-memory-reference)
      * [`https://gpuweb.github.io/gpuweb/wgsl/#channel-formats`](https://gpuweb.github.io/gpuweb/wgsl/#channel-formats)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/):
      * [`https://gpuweb.github.io/gpuweb/#gpu-command`](https://gpuweb.github.io/gpuweb/#gpu-command)
@@ -2791,7 +2792,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 759 problematic external links found in 146 specifications
+=> 760 problematic external links found in 146 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3074,12 +3075,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-transforms-1/#SkewXDefined`](https://drafts.csswg.org/css-transforms-1/#SkewXDefined)
      * [`https://drafts.csswg.org/css-transforms-1/#SkewYDefined`](https://drafts.csswg.org/css-transforms-1/#SkewYDefined)
 - [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/):
-     * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
-     * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
-     * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
+     * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
+     * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
+     * [`https://w3c.github.io/graphics-aria/#graphics-symbol`](https://w3c.github.io/graphics-aria/#graphics-symbol)
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/):
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
@@ -3612,12 +3610,39 @@ Links in the body of a specification should be to the same document as that poin
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/):
      * [`https://w3c.github.io/fingerprinting-guidance/#avoid-passive-increases`](https://w3c.github.io/fingerprinting-guidance/#avoid-passive-increases)
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/):
+     * [`https://w3c.github.io/aria/#none`](https://w3c.github.io/aria/#none)
+     * [`https://w3c.github.io/aria/#presentation`](https://w3c.github.io/aria/#presentation)
+     * [`https://w3c.github.io/aria/#img`](https://w3c.github.io/aria/#img)
+     * [`https://w3c.github.io/aria/#document`](https://w3c.github.io/aria/#document)
+     * [`https://w3c.github.io/aria/#figure`](https://w3c.github.io/aria/#figure)
+     * [`https://w3c.github.io/aria/#article`](https://w3c.github.io/aria/#article)
+     * [`https://w3c.github.io/aria/#aria-atomic`](https://w3c.github.io/aria/#aria-atomic)
+     * [`https://w3c.github.io/aria/#aria-braillelabel`](https://w3c.github.io/aria/#aria-braillelabel)
+     * [`https://w3c.github.io/aria/#aria-brailleroledescription`](https://w3c.github.io/aria/#aria-brailleroledescription)
+     * [`https://w3c.github.io/aria/#aria-busy`](https://w3c.github.io/aria/#aria-busy)
+     * [`https://w3c.github.io/aria/#aria-controls`](https://w3c.github.io/aria/#aria-controls)
+     * [`https://w3c.github.io/aria/#aria-current`](https://w3c.github.io/aria/#aria-current)
+     * [`https://w3c.github.io/aria/#aria-describedby`](https://w3c.github.io/aria/#aria-describedby)
+     * [`https://w3c.github.io/aria/#aria-description`](https://w3c.github.io/aria/#aria-description)
+     * [`https://w3c.github.io/aria/#aria-details`](https://w3c.github.io/aria/#aria-details)
+     * [`https://w3c.github.io/aria/#aria-disabled`](https://w3c.github.io/aria/#aria-disabled)
+     * [`https://w3c.github.io/aria/#aria-dropeffect`](https://w3c.github.io/aria/#aria-dropeffect)
+     * [`https://w3c.github.io/aria/#aria-errormessage`](https://w3c.github.io/aria/#aria-errormessage)
      * [`https://w3c.github.io/aria/#aria-flowto`](https://w3c.github.io/aria/#aria-flowto)
+     * [`https://w3c.github.io/aria/#aria-grabbed`](https://w3c.github.io/aria/#aria-grabbed)
+     * [`https://w3c.github.io/aria/#aria-haspopup`](https://w3c.github.io/aria/#aria-haspopup)
+     * [`https://w3c.github.io/aria/#aria-hidden`](https://w3c.github.io/aria/#aria-hidden)
+     * [`https://w3c.github.io/aria/#aria-invalid`](https://w3c.github.io/aria/#aria-invalid)
+     * [`https://w3c.github.io/aria/#aria-keyshortcuts`](https://w3c.github.io/aria/#aria-keyshortcuts)
+     * [`https://w3c.github.io/aria/#aria-label`](https://w3c.github.io/aria/#aria-label)
+     * [`https://w3c.github.io/aria/#aria-labelledby`](https://w3c.github.io/aria/#aria-labelledby)
+     * [`https://w3c.github.io/aria/#aria-live`](https://w3c.github.io/aria/#aria-live)
      * [`https://w3c.github.io/aria/#aria-owns`](https://w3c.github.io/aria/#aria-owns)
-     * [`https://w3c.github.io/aria/#aria-multiline`](https://w3c.github.io/aria/#aria-multiline)
+     * [`https://w3c.github.io/aria/#aria-relevant`](https://w3c.github.io/aria/#aria-relevant)
+     * [`https://w3c.github.io/aria/#aria-roledescription`](https://w3c.github.io/aria/#aria-roledescription)
+     * [`https://w3c.github.io/aria/#group`](https://w3c.github.io/aria/#group)
+     * [`https://w3c.github.io/aria/#list`](https://w3c.github.io/aria/#list)
      * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
-     * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
-     * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/):
      * [`https://heycam.github.io/webidl/#DOMString-to-es`](https://heycam.github.io/webidl/#DOMString-to-es)
      * [`https://heycam.github.io/webidl/#es-to-dictionary`](https://heycam.github.io/webidl/#es-to-dictionary)
@@ -3633,7 +3658,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 783 problematic external links found in 53 specifications
+=> 807 problematic external links found in 53 specifications
 
 
 ## Broken external links
@@ -5089,10 +5114,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-- [Graphics Accessibility API Mappings](https://w3c.github.io/graphics-aam/):
-     * [`https://w3c.github.io/graphics-aria/#graphics-document`](https://w3c.github.io/graphics-aria/#graphics-document)
-     * [`https://w3c.github.io/graphics-aria/#graphics-object`](https://w3c.github.io/graphics-aria/#graphics-object)
-     * [`https://w3c.github.io/graphics-aria/#graphics-symbol`](https://w3c.github.io/graphics-aria/#graphics-symbol)
 - [High Resolution Time](https://w3c.github.io/hr-time/):
      * [`https://html.spec.whatwg.org/#worker`](https://html.spec.whatwg.org/#worker)
      * [`https://html.spec.whatwg.org/#sharedworker`](https://html.spec.whatwg.org/#sharedworker)
@@ -8272,7 +8293,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4351 problematic external links found in 282 specifications
+=> 4348 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
