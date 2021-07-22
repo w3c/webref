@@ -260,6 +260,11 @@ partial interface MLGraphBuilder {
   MLOperator hardSigmoid(optional MLHardSigmoidOptions options = {});
 };
 
+partial interface MLGraphBuilder {
+  MLOperand hardSwish(MLOperand x);
+  MLOperator hardSwish();
+};
+
 dictionary MLInstanceNormalizationOptions {
   MLOperand scale;
   MLOperand bias;

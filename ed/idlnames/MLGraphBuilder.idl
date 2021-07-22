@@ -94,6 +94,12 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
+  MLOperand hardSwish(MLOperand x);
+  MLOperator hardSwish();
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial interface MLGraphBuilder {
   MLOperand instanceNormalization(MLOperand input, 
                                 optional MLInstanceNormalizationOptions options = {});
 };

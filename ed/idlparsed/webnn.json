@@ -4163,6 +4163,63 @@
           "partial": true
         },
         {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand x);\n  MLOperator hardSwish();\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "hardSwish",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "x",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "hardSwish",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperator"
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
           "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input, \n                                optional MLInstanceNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",

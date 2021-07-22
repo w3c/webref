@@ -91,6 +91,13 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand hardSwish(MLOperand x);\n  MLOperator hardSwish();\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input, \n                                optional MLInstanceNormalizationOptions options = {});\n};"
     },
     {
