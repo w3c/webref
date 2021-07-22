@@ -7956,7 +7956,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/floc/](https://wicg.github.io/floc/)
 - Crawled URL: [https://wicg.github.io/floc/](https://wicg.github.io/floc/)
-- Crawled version: 29 April 2021
+- Crawled version: 22 July 2021
 - Editor's Draft: [https://wicg.github.io/floc/](https://wicg.github.io/floc/)
 - Shortname: floc
 

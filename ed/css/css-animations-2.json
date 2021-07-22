@@ -37,11 +37,17 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<single-animation-composition>": {
+      "value": "replace | add | accumulate"
+    },
     "<single-animation-timeline>": {
       "value": "auto | none | <timeline-name>"
     },
     "<timeline-name>": {
       "value": "<custom-ident> | <string>"
+    },
+    "<single-animation>": {
+      "value": "<time> || <easing-function> || <time> || <single-animation-iteration-count> || <single-animation-direction> || <single-animation-fill-mode> || <single-animation-play-state> || [ none | <keyframes-name> ] || <single-animation-timeline>"
     }
   }
 }
