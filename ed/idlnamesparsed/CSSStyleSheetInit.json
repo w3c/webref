@@ -2,11 +2,11 @@
   "name": "CSSStyleSheetInit",
   "defined": {
     "spec": {
-      "title": "Constructable Stylesheet Objects",
-      "url": "https://wicg.github.io/construct-stylesheets/"
+      "title": "CSS Object Model (CSSOM)",
+      "url": "https://www.w3.org/TR/cssom-1/"
     },
-    "fragment": "dictionary CSSStyleSheetInit {\n  (MediaList or DOMString) media = \"\";\n  DOMString title = \"\";\n  boolean alternate = false;\n  boolean disabled = false;\n};",
-    "href": "https://wicg.github.io/construct-stylesheets/#dictdef-cssstylesheetinit"
+    "fragment": "dictionary CSSStyleSheetInit {\n  DOMString baseURL = null;\n  (MediaList or DOMString) media = \"\";\n  boolean disabled = false;\n};",
+    "href": "https://drafts.csswg.org/cssom/#dictdef-cssstylesheetinit"
   },
   "extended": [],
   "inheritance": null,

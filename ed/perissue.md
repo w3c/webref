@@ -2,7 +2,7 @@
 % Reffy
 % July 22, 2021
 
-428 specifications were crawled in this report.
+427 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -180,12 +180,11 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## List of WebIDL names defined in more than one spec
 
-- `CSSStyleSheetInit` defined in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/) and [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - `Keyboard` defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/) and [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - `MessageEventSource` defined in [HTML Standard](https://html.spec.whatwg.org/multipage/) and [Portals](https://wicg.github.io/portals/)
 - `PermissionState` defined in [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/) and [Permissions](https://w3c.github.io/permissions/)
 
-=> 4 WebIDL names found
+=> 3 WebIDL names found
 
 "There can be only one"...
 
@@ -1923,16 +1922,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/IndexedDB/#delete-a-database`](https://w3c.github.io/IndexedDB/#delete-a-database)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
      * [`https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information`](https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/):
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag)
 - [Content Index](https://wicg.github.io/content-index/spec/):
      * [`https://w3c.github.io/image-resource/#dfn-src`](https://w3c.github.io/image-resource/#dfn-src)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/):
@@ -2791,7 +2780,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 760 problematic external links found in 146 specifications
+=> 751 problematic external links found in 145 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4018,14 +4007,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/):
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/):
-     * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
-     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
-     * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
-     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
-     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
-     * [`https://html.spec.whatwg.org/#networking-task-source`](https://html.spec.whatwg.org/#networking-task-source)
-     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
      * [`https://html.spec.whatwg.org/#htmlbuttonelement`](https://html.spec.whatwg.org/#htmlbuttonelement)
      * [`https://html.spec.whatwg.org/#htmlimageelement`](https://html.spec.whatwg.org/#htmlimageelement)
@@ -8292,7 +8273,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4348 problematic external links found in 281 specifications
+=> 4341 problematic external links found in 280 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

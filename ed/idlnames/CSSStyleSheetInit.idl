@@ -1,7 +1,6 @@
-// Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
 dictionary CSSStyleSheetInit {
+  DOMString baseURL = null;
   (MediaList or DOMString) media = "";
-  DOMString title = "";
-  boolean alternate = false;
   boolean disabled = false;
 };

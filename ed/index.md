@@ -1169,46 +1169,6 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## Constructable Stylesheet Objects {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-xrefs=true}
-
-### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
-- Crawled URL: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
-- Crawled version: 27 April 2021
-- Editor's Draft: [https://wicg.github.io/construct-stylesheets/](https://wicg.github.io/construct-stylesheets/)
-- Shortname: construct-stylesheets
-
-### Potential issue(s) {.anomalies}
-
-- WebIDL names also defined elsewhere: 
-    * `CSSStyleSheetInit` also defined in [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-location)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-parent-css-style-sheet)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-node)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-owner-css-rule)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-title)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-alternate-flag)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-origin-clean-flag)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-media)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag`](https://drafts.csswg.org/cssom-1/#concept-css-style-sheet-disabled-flag)
-- Broken external links:
-     * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
-     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
-     * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
-     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
-     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
-     * [`https://html.spec.whatwg.org/#networking-task-source`](https://html.spec.whatwg.org/#networking-task-source)
-     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
-
-### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Contact Picker API {data-spec=true data-anomaly=true data-unknownExposedNames=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -2900,7 +2860,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
@@ -4818,7 +4777,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+## CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
@@ -4832,8 +4791,6 @@ No informative reference to this spec from other specs.
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
-- WebIDL names also defined elsewhere: 
-    * `CSSStyleSheetInit` also defined in [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/)
      * [`https://www.w3.org/TR/css-device-adapt/`](https://www.w3.org/TR/css-device-adapt/)
@@ -4871,7 +4828,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -6006,7 +5962,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
@@ -7448,7 +7403,6 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -8139,7 +8093,6 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
@@ -10168,7 +10121,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -18458,7 +18410,6 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compression Streams](https://wicg.github.io/compression/)
 - [Console Standard](https://console.spec.whatwg.org/)
-- [Constructable Stylesheet Objects](https://wicg.github.io/construct-stylesheets/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
