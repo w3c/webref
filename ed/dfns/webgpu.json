@@ -9641,6 +9641,48 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpurenderpipeline-writesdepth-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpipeline-writesdepth-slot",
+      "linkingText": [
+        "[[writesDepth]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPipeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pipeline",
+        "title": "GPURenderPipeline",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpipeline-writesstencil-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpipeline-writesstencil-slot",
+      "linkingText": [
+        "[[writesStencil]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderPipeline"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pipeline",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pipeline",
+        "title": "GPURenderPipeline",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-gpurenderpipelinedescriptor",
       "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpipelinedescriptor",
       "linkingText": [
@@ -15421,10 +15463,52 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderencoderbase-descriptor-slot",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-descriptor-slot",
+      "id": "dom-gpurenderencoderbase-layout-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-layout-slot",
       "linkingText": [
-        "[[descriptor]]"
+        "[[layout]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "15.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderencoderbase-depthreadonly-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-depthreadonly-slot",
+      "linkingText": [
+        "[[depthReadOnly]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPURenderEncoderBase"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-encoder",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-encoder",
+        "title": "GPURenderPassEncoder",
+        "number": "15.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderencoderbase-stencilreadonly-slot",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderencoderbase-stencilreadonly-slot",
+      "linkingText": [
+        "[[stencilReadOnly]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -16186,6 +16270,126 @@
         "number": "15.1.1.3"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-gpurenderpasslayout",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpurenderpasslayout",
+      "linkingText": [
+        "GPURenderPassLayout"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasslayout-colorformats",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasslayout-colorformats",
+      "linkingText": [
+        "colorFormats"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasslayout-depthstencilformat",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasslayout-depthstencilformat",
+      "linkingText": [
+        "depthStencilFormat"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpurenderpasslayout-samplecount",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasslayout-samplecount",
+      "linkingText": [
+        "sampleCount"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassLayout"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abstract-opdef-derive-render-targets-layout-from-pass",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-derive-render-targets-layout-from-pass",
+      "linkingText": [
+        "derive render targets layout from pass"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-derive-render-targets-layout-from-pipeline",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-derive-render-targets-layout-from-pipeline",
+      "linkingText": [
+        "derive render targets layout from pipeline"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "render-pass-layout",
+        "href": "https://gpuweb.github.io/gpuweb/#render-pass-layout",
+        "title": "Render Pass Layout",
+        "number": "15.1.1.4"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-gpurenderencoderbase-setpipeline",
@@ -17611,10 +17815,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderbundleencoderdescriptor-colorformats",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoderdescriptor-colorformats",
+      "id": "dom-gpurenderbundleencoderdescriptor-depthreadonly",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoderdescriptor-depthreadonly",
       "linkingText": [
-        "colorFormats"
+        "depthReadOnly"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17632,10 +17836,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpurenderbundleencoderdescriptor-depthstencilformat",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoderdescriptor-depthstencilformat",
+      "id": "dom-gpurenderbundleencoderdescriptor-stencilreadonly",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoderdescriptor-stencilreadonly",
       "linkingText": [
-        "depthStencilFormat"
+        "stencilReadOnly"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17651,65 +17855,6 @@
         "number": "16.1.2"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderbundleencoderdescriptor-samplecount",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderbundleencoderdescriptor-samplecount",
-      "linkingText": [
-        "sampleCount"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPURenderBundleEncoderDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-encoding",
-        "href": "https://gpuweb.github.io/gpuweb/#render-bundle-encoding",
-        "title": "Encoding",
-        "number": "16.1.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "abstract-opdef-derive-render-encoder-descriptor-from-pass",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-derive-render-encoder-descriptor-from-pass",
-      "linkingText": [
-        "derive render encoder descriptor from pass"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-encoding",
-        "href": "https://gpuweb.github.io/gpuweb/#render-bundle-encoding",
-        "title": "Encoding",
-        "number": "16.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "abstract-opdef-derive-render-encoder-descriptor-from-pipeline",
-      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-derive-render-encoder-descriptor-from-pipeline",
-      "linkingText": [
-        "derive render encoder descriptor from pipeline"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-encoding",
-        "href": "https://gpuweb.github.io/gpuweb/#render-bundle-encoding",
-        "title": "Encoding",
-        "number": "16.1.2"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-gpurenderbundleencoder-finish",
