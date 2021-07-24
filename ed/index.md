@@ -112,7 +112,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Crawled URL: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
-- Crawled version: 12 July 2021
+- Crawled version: 24 July 2021
 - Editor's Draft: [https://w3c.github.io/accelerometer/](https://w3c.github.io/accelerometer/)
 - Latest published version: [https://www.w3.org/TR/accelerometer/](https://www.w3.org/TR/accelerometer/)
 - Shortname: accelerometer
@@ -8617,7 +8617,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Crawled URL: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
-- Crawled version: 17 June 2021
+- Crawled version: 24 July 2021
 - Editor's Draft: [https://w3c.github.io/sensors/](https://w3c.github.io/sensors/)
 - Latest published version: [https://www.w3.org/TR/generic-sensor/](https://www.w3.org/TR/generic-sensor/)
 - Shortname: generic-sensor
@@ -8641,6 +8641,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webdriver/#dfn-no-such-window`](https://w3c.github.io/webdriver/#dfn-no-such-window)
      * [`https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts`](https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
+     * [`https://w3c.github.io/webdriver/#dfn-sessions`](https://w3c.github.io/webdriver/#dfn-sessions)
+     * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
      * [`https://w3c.github.io/webdriver/#dfn-url-variables`](https://w3c.github.io/webdriver/#dfn-url-variables)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
@@ -8661,9 +8663,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
      * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
      * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
-     * [`https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-the-visibility-state`](https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-the-visibility-state)
-     * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
-     * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
      * [`https://w3c.github.io/webdriver/#handling-errors`](https://w3c.github.io/webdriver/#handling-errors)
 
 ### Known dependencies on this specification {.dependencies}
@@ -8902,7 +8901,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
 - Crawled URL: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
-- Crawled version: 23 February 2021
+- Crawled version: 24 July 2021
 - Editor's Draft: [https://w3c.github.io/gyroscope/](https://w3c.github.io/gyroscope/)
 - Latest published version: [https://www.w3.org/TR/gyroscope/](https://www.w3.org/TR/gyroscope/)
 - Shortname: gyroscope
@@ -11743,7 +11742,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Crawled URL: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
-- Crawled version: 23 February 2021
+- Crawled version: 24 July 2021
 - Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
 - Latest published version: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Shortname: magnetometer
@@ -15120,6 +15119,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 
@@ -15942,7 +15942,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Crawled URL: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
-- Crawled version: 13 July 2021
+- Crawled version: 24 July 2021
 - Editor's Draft: [https://w3c.github.io/selection-api/](https://w3c.github.io/selection-api/)
 - Latest published version: [https://www.w3.org/TR/selection-api/](https://www.w3.org/TR/selection-api/)
 - Shortname: selection-api

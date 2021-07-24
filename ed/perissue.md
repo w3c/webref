@@ -2139,6 +2139,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webdriver/#dfn-no-such-window`](https://w3c.github.io/webdriver/#dfn-no-such-window)
      * [`https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts`](https://w3c.github.io/webdriver/#dfn-handle-any-user-prompts)
      * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
+     * [`https://w3c.github.io/webdriver/#dfn-sessions`](https://w3c.github.io/webdriver/#dfn-sessions)
+     * [`https://w3c.github.io/webdriver/#dfn-local-ends`](https://w3c.github.io/webdriver/#dfn-local-ends)
      * [`https://w3c.github.io/webdriver/#dfn-url-variables`](https://w3c.github.io/webdriver/#dfn-url-variables)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/):
      * [`https://w3c.github.io/sensors/#sensor-type`](https://w3c.github.io/sensors/#sensor-type)
@@ -2781,7 +2783,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 751 problematic external links found in 145 specifications
+=> 753 problematic external links found in 145 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -5046,9 +5048,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
      * [`https://html.spec.whatwg.org/#spin-the-event-loop`](https://html.spec.whatwg.org/#spin-the-event-loop)
      * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
-     * [`https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-the-visibility-state`](https://www.w3.org/TR/page-visibility-2/#dfn-steps-to-determine-the-visibility-state)
-     * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
-     * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
      * [`https://w3c.github.io/webdriver/#handling-errors`](https://w3c.github.io/webdriver/#handling-errors)
 - [Geolocation API](https://w3c.github.io/geolocation-api/):
      * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
@@ -8273,7 +8272,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4340 problematic external links found in 280 specifications
+=> 4337 problematic external links found in 280 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
