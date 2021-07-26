@@ -947,6 +947,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/) but does not list it in its references
+    * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/) but does not list it in its references
+    * [`https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/`](https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/) but does not list it in its references
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/) links to:
     * [`https://www.w3.org/TR/css3-regions/`](https://www.w3.org/TR/css3-regions/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
@@ -1464,7 +1467,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 619 missing references for links found in 178 specifications
+=> 622 missing references for links found in 178 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2012,9 +2015,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
-     * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
-     * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
-     * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
+     * [`https://www.w3.org/TR/css-inline-3/#ascent-metric`](https://www.w3.org/TR/css-inline-3/#ascent-metric)
+     * [`https://www.w3.org/TR/css-inline-3/#descent-metric`](https://www.w3.org/TR/css-inline-3/#descent-metric)
+     * [`https://www.w3.org/TR/css-inline-3/#line-gap-metric`](https://www.w3.org/TR/css-inline-3/#line-gap-metric)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
      * [`https://www.w3.org/TR/css3-background/#background-positioning-area`](https://www.w3.org/TR/css3-background/#background-positioning-area)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/):
@@ -8451,6 +8454,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
      * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/)
+- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
+     * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
      * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
      * [`https://www.w3.org/TR/2015/WD-css3-break-20150129/`](https://www.w3.org/TR/2015/WD-css3-break-20150129/)
@@ -8653,6 +8658,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 192 problematic external links found in 62 specifications
+=> 193 problematic external links found in 63 specifications
 
 
