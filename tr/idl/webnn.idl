@@ -75,6 +75,9 @@ dictionary MLOperandDescriptor {
 [SecureContext, Exposed=(Window, DedicatedWorker)]
 interface MLOperand {};
 
+[SecureContext, Exposed=(Window, DedicatedWorker)]
+interface MLOperator {};
+
 typedef record<DOMString, MLOperand> MLNamedOperands;
 
 dictionary MLBufferResourceView {
@@ -108,6 +111,7 @@ dictionary MLBatchNormalizationOptions {
   MLOperand bias;
   long axis = 1;
   float epsilon = 1e-5;
+  MLOperator activation;
 };
 
 partial interface MLGraphBuilder {
@@ -122,6 +126,7 @@ dictionary MLClampOptions {
 
 partial interface MLGraphBuilder {
   MLOperand clamp(MLOperand x, optional MLClampOptions options = {});
+  MLOperator clamp(optional MLClampOptions options = {});
 };
 
 partial interface MLGraphBuilder {
@@ -152,6 +157,8 @@ dictionary MLConv2dOptions {
   long groups = 1;
   MLInputOperandLayout inputLayout = "nchw";
   MLFilterOperandLayout filterLayout = "oihw";
+  MLOperand bias;
+  MLOperator activation;
 };
 
 partial interface MLGraphBuilder {
@@ -176,11 +183,17 @@ partial interface MLGraphBuilder {
   MLOperand floor(MLOperand x);
   MLOperand log(MLOperand x);
   MLOperand neg(MLOperand x);
-  MLOperand relu(MLOperand x);
-  MLOperand sigmoid(MLOperand x);
   MLOperand sin(MLOperand x);
   MLOperand tan(MLOperand x);
-  MLOperand tanh(MLOperand x);
+};
+
+dictionary MLEluOptions {
+  float alpha = 1;
+};
+
+partial interface MLGraphBuilder {
+  MLOperand elu(MLOperand x, optional MLEluOptions options = {});
+  MLOperator elu(optional MLEluOptions options = {});
 };
 
 dictionary MLGemmOptions {
@@ -200,12 +213,6 @@ enum MLRecurrentNetworkWeightLayout {
   "rzn"   // reset-update-new gate ordering
 };
 
-enum MLRecurrentNetworkActivation {
-  "relu",
-  "sigmoid",
-  "tanh"
-};
-
 enum MLRecurrentNetworkDirection {
   "forward",
   "backward",
@@ -220,7 +227,7 @@ dictionary MLGruOptions {
   boolean returnSequence = false;
   MLRecurrentNetworkDirection direction = "forward";
   MLRecurrentNetworkWeightLayout layout = "zrn";
-  sequence<MLRecurrentNetworkActivation> activations;
+  sequence<MLOperator> activations;
 };
 
 partial interface MLGraphBuilder {
@@ -234,13 +241,28 @@ dictionary MLGruCellOptions {
   MLOperand recurrentBias;
   boolean resetAfter = true;
   MLRecurrentNetworkWeightLayout layout = "zrn";
-  sequence<MLRecurrentNetworkActivation> activations;
+  sequence<MLOperator> activations;
 };
 
 partial interface MLGraphBuilder {
   MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,
 
                   MLOperand hiddenState, long hiddenSize, optional MLGruCellOptions options = {});
+};
+
+dictionary MLHardSigmoidOptions {
+  float alpha = 0.2;
+  float beta = 0.5;
+};
+
+partial interface MLGraphBuilder {
+  MLOperand hardSigmoid(MLOperand x, optional MLHardSigmoidOptions options = {});
+  MLOperator hardSigmoid(optional MLHardSigmoidOptions options = {});
+};
+
+partial interface MLGraphBuilder {
+  MLOperand hardSwish(MLOperand x);
+  MLOperator hardSwish();
 };
 
 dictionary MLInstanceNormalizationOptions {
@@ -262,10 +284,21 @@ dictionary MLLeakyReluOptions {
 
 partial interface MLGraphBuilder {
   MLOperand leakyRelu(MLOperand x, optional MLLeakyReluOptions options = {});
+  MLOperator leakyRelu(optional MLLeakyReluOptions options = {});
 };
 
 partial interface MLGraphBuilder {
   MLOperand matmul(MLOperand a, MLOperand b);
+};
+
+dictionary MLLinearOptions {
+  float alpha = 1;
+  float beta = 0;
+};
+
+partial interface MLGraphBuilder {
+  MLOperand linear(MLOperand x, optional MLLinearOptions options = {});
+  MLOperator linear(optional MLLinearOptions options = {});
 };
 
 enum MLPaddingMode {
@@ -317,6 +350,11 @@ partial interface MLGraphBuilder {
   MLOperand reduceSumSquare(MLOperand input, optional MLReduceOptions options = {});
 };
 
+partial interface MLGraphBuilder {
+  MLOperand relu(MLOperand x);
+  MLOperator relu();
+};
+
 enum MLInterpolationMode {
   "nearest-neighbor",
   "linear"
@@ -336,6 +374,11 @@ partial interface MLGraphBuilder {
   MLOperand reshape(MLOperand input, sequence<long> newShape);
 };
 
+partial interface MLGraphBuilder {
+  MLOperand sigmoid(MLOperand x);
+  MLOperator sigmoid();
+};
+
 dictionary MLSliceOptions {
   sequence<long> axes;
 };
@@ -347,6 +390,20 @@ partial interface MLGraphBuilder {
 
 partial interface MLGraphBuilder {
   MLOperand softmax(MLOperand x);
+};
+
+dictionary MLSoftplusOptions {
+  float steepness = 1;
+};
+
+partial interface MLGraphBuilder {
+  MLOperand softplus(MLOperand x, optional MLSoftplusOptions options = {});
+  MLOperator softplus(optional MLSoftplusOptions options = {});
+};
+
+partial interface MLGraphBuilder {
+  MLOperand softsign(MLOperand x);
+  MLOperator softsign();
 };
 
 dictionary MLSplitOptions {
@@ -365,6 +422,11 @@ dictionary MLSqueezeOptions {
 
 partial interface MLGraphBuilder {
   MLOperand squeeze(MLOperand input, optional MLSqueezeOptions options = {});
+};
+
+partial interface MLGraphBuilder {
+  MLOperand tanh(MLOperand x);
+  MLOperator tanh();
 };
 
 dictionary MLTransposeOptions {

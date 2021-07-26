@@ -8928,6 +8928,73 @@
         ],
         "extAttrs": []
       },
+      "GPURenderPassLayout": {
+        "fragment": "dictionary GPURenderPassLayout: GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
+        "type": "dictionary",
+        "name": "GPURenderPassLayout",
+        "inheritance": "GPUObjectDescriptorBase",
+        "members": [
+          {
+            "type": "field",
+            "name": "colorFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureFormat"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "depthStencilFormat",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUTextureFormat"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "sampleCount",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUSize32"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPURenderBundle": {
         "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPURenderBundle {\n};",
         "type": "interface",
@@ -9025,38 +9092,14 @@
         "partial": false
       },
       "GPURenderBundleEncoderDescriptor": {
-        "fragment": "dictionary GPURenderBundleEncoderDescriptor : GPUObjectDescriptorBase {\n    required sequence<GPUTextureFormat> colorFormats;\n    GPUTextureFormat depthStencilFormat;\n    GPUSize32 sampleCount = 1;\n};",
+        "fragment": "dictionary GPURenderBundleEncoderDescriptor : GPURenderPassLayout {\n    boolean depthReadOnly = false;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderBundleEncoderDescriptor",
-        "inheritance": "GPUObjectDescriptorBase",
+        "inheritance": "GPURenderPassLayout",
         "members": [
           {
             "type": "field",
-            "name": "colorFormats",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "sequence",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "dictionary-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUTextureFormat"
-                }
-              ]
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "depthStencilFormat",
+            "name": "depthReadOnly",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -9064,14 +9107,17 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUTextureFormat"
+              "idlType": "boolean"
             },
-            "default": null,
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
             "required": false
           },
           {
             "type": "field",
-            "name": "sampleCount",
+            "name": "stencilReadOnly",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -9079,11 +9125,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "GPUSize32"
+              "idlType": "boolean"
             },
             "default": {
-              "type": "number",
-              "value": "1"
+              "type": "boolean",
+              "value": false
             },
             "required": false
           }
@@ -11675,6 +11721,11 @@
         "GPUStoreOp",
         "GPUStencilValue"
       ],
+      "GPURenderPassLayout": [
+        "GPUObjectDescriptorBase",
+        "GPUTextureFormat",
+        "GPUSize32"
+      ],
       "GPURenderBundle": [
         "GPUObjectBase"
       ],
@@ -11689,9 +11740,7 @@
         "GPURenderEncoderBase"
       ],
       "GPURenderBundleEncoderDescriptor": [
-        "GPUObjectDescriptorBase",
-        "GPUTextureFormat",
-        "GPUSize32"
+        "GPURenderPassLayout"
       ],
       "GPUQueue": [
         "GPUCommandBuffer",

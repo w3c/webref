@@ -5,7 +5,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  boolean transpose = false;\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLFilterOperandLayout filterLayout = \"oihw\";\n};",
+    "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  boolean transpose = false;\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
     "href": "https://www.w3.org/TR/webnn/#dictdef-mlconv2doptions"
   },
   "extended": [],

@@ -12,11 +12,6 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? activeElement;
 };
 
-// Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
-partial interface mixin DocumentOrShadowRoot {
-  attribute FrozenArray<CSSStyleSheet> adoptedStyleSheets;
-};
-
 // Source: Picture-in-Picture (https://www.w3.org/TR/picture-in-picture/)
 partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? pictureInPictureElement;

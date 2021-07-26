@@ -5,7 +5,7 @@
       "title": "Magnetometer",
       "url": "https://www.w3.org/TR/magnetometer/"
     },
-    "fragment": "[Constructor(optional MagnetometerSensorOptions sensorOptions), SecureContext,\n  Exposed=Window]\ninterface Magnetometer : Sensor {\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
+    "fragment": "[SecureContext,\n  Exposed=Window]\ninterface Magnetometer : Sensor {\n  constructor(optional MagnetometerSensorOptions sensorOptions = {});\n  readonly attribute double? x;\n  readonly attribute double? y;\n  readonly attribute double? z;\n};",
     "href": "https://www.w3.org/TR/magnetometer/#magnetometer"
   },
   "extended": [],

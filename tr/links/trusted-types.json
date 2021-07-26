@@ -8,11 +8,11 @@
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
+    "https://www.w3.org/Consortium/Patent-Policy/": [
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/49309/status": [],
+    "https://www.w3.org/groups/wg/webappsec/ipr": [],
     "https://www.w3.org/2020/Process-20200915/": [],
     "https://w3c.github.io/webappsec-csp/": [
       "script-src",
@@ -43,7 +43,6 @@
     "https://dom.spec.whatwg.org/": [
       "document",
       "element",
-      "context-object",
       "concept-element-interface",
       "concept-child-text-content",
       "dom-node-textcontent",
@@ -68,12 +67,14 @@
       "range",
       "documentfragment"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML": [],
     "https://heycam.github.io/webidl/": [
       "Exposed",
       "idl-DOMString",
       "idl-USVString",
       "idl-boolean",
       "idl-any",
+      "this",
       "dfn-attribute",
       "interface-mixin",
       "include",
@@ -92,7 +93,6 @@
       "EnforceRange",
       "LegacyNullToEmptyString",
       "dfn-convert-ecmascript-to-idl-value",
-      "this",
       "es-security",
       "es-type-mapping",
       "dfn-platform-object",
@@ -104,6 +104,14 @@
       "idl-promise",
       "exceptiondef-evalerror"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toJSON": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML/toString": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toJSON": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScript/toString": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toString": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedScriptURL/toJSON": [],
     "https://html.spec.whatwg.org/": [
       "concept-global-object-realm",
       "concept-relevant-global",
@@ -186,6 +194,7 @@
       "attr-embed-src"
     ],
     "https://en.wikipedia.org/wiki/Object-capability_model": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory": [],
     "https://infra.spec.whatwg.org/": [
       "ordered-set",
       "ascii-lowercase",
@@ -196,17 +205,31 @@
       "list-append",
       "list-contain"
     ],
-    "https://tc39.es/ecma262/": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/createPolicy": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML": [],
+    "https://tc39.es/ecma262/multipage/": [
       "sec-object.create",
       "sec-method",
       "realm"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScript": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isScriptURL": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getPropertyType": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/getAttributeType": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyHTML": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/emptyScript": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/defaultPolicy": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/name": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createHTML": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScript": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicy/createScriptURL": [],
     "https://www.w3.org/TR/CSP3/": [
       "policy-delivery",
       "create-violation-for-global",
       "report-violation",
       "can-compile-strings",
-      "initialize-document-csp"
+      "security-inherit-csp"
     ],
     "https://tc39.es/proposal-dynamic-code-brand-checks/": [],
     "https://tc39.github.io/ecma262/": [
@@ -259,6 +282,7 @@
       "concept-url-serializer",
       "concept-url-parser"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/trusted-types": [],
     "https://tools.ietf.org/html/rfc5234": [
       "appendix-B.1"
     ],

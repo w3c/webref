@@ -7,5 +7,5 @@ dictionary MLGruOptions {
   boolean returnSequence = false;
   MLRecurrentNetworkDirection direction = "forward";
   MLRecurrentNetworkWeightLayout layout = "zrn";
-  sequence<MLRecurrentNetworkActivation> activations;
+  sequence<MLOperator> activations;
 };

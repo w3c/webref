@@ -1,7 +1,8 @@
 // Source: Magnetometer (https://www.w3.org/TR/magnetometer/)
-[Constructor(optional MagnetometerSensorOptions sensorOptions), SecureContext,
+[SecureContext,
   Exposed=Window]
 interface UncalibratedMagnetometer : Sensor {
+  constructor(optional MagnetometerSensorOptions sensorOptions = {});
   readonly attribute double? x;
   readonly attribute double? y;
   readonly attribute double? z;
