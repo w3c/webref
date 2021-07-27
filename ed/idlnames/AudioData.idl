@@ -3,7 +3,7 @@
 interface AudioData {
   constructor(AudioDataInit init);
 
-  readonly attribute AudioSampleFormat format;
+  readonly attribute AudioSampleFormat? format;
   readonly attribute float sampleRate;
   readonly attribute unsigned long numberOfFrames;
   readonly attribute unsigned long numberOfChannels;

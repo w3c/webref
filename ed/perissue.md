@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 26, 2021
+% July 27, 2021
 
 427 specifications were crawled in this report.
 
@@ -5721,6 +5721,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/hr-time/#domhighrestimestamp`](https://www.w3.org/TR/hr-time/#domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time/#time-origin`](https://www.w3.org/TR/hr-time/#time-origin)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/):
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#worker`](https://html.spec.whatwg.org/#worker)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value)
@@ -8044,6 +8045,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
      * [`https://html.spec.whatwg.org/#serializable`](https://html.spec.whatwg.org/#serializable)
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
+     * [`https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument`](https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument)
      * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
      * [`https://html.spec.whatwg.org/#imagebitmap`](https://html.spec.whatwg.org/#imagebitmap)
      * [`https://html.spec.whatwg.org/#imagebitmapoptions`](https://html.spec.whatwg.org/#imagebitmapoptions)
@@ -8062,6 +8064,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#offscreencanvas-placeholder`](https://html.spec.whatwg.org/#offscreencanvas-placeholder)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
 - [WebGPU Shading Language](https://gpuweb.github.io/gpuweb/wgsl/):
+     * [`https://gpuweb.github.io/gpuweb/#dom-gputextureusage-storage`](https://gpuweb.github.io/gpuweb/#dom-gputextureusage-storage)
      * [`https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-samplecount`](https://gpuweb.github.io/gpuweb/#dom-gpurenderpipelinedescriptor-samplecount)
 - [WebHID API](https://wicg.github.io/webhid/):
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
@@ -8275,7 +8278,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4337 problematic external links found in 280 specifications
+=> 4340 problematic external links found in 280 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

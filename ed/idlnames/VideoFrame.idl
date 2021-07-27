@@ -5,7 +5,7 @@ interface VideoFrame {
   constructor(sequence<PlaneInit> planes,
               VideoFramePlaneInit init);
 
-  readonly attribute PixelFormat format;
+  readonly attribute VideoPixelFormat? format;
   readonly attribute unsigned long codedWidth;
   readonly attribute unsigned long codedHeight;
   readonly attribute DOMRectReadOnly? codedRect;

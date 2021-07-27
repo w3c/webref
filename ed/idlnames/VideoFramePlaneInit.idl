@@ -1,6 +1,6 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 dictionary VideoFramePlaneInit {
-  required PixelFormat format;
+  required VideoPixelFormat format;
   [EnforceRange] required unsigned long codedWidth;
   [EnforceRange] required unsigned long codedHeight;
   DOMRectInit visibleRect;

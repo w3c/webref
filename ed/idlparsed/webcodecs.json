@@ -1361,7 +1361,7 @@
         "extAttrs": []
       },
       "EncodedVideoChunkMetadata": {
-        "fragment": "dictionary EncodedVideoChunkMetadata {\n  VideoDecoderConfig decoderConfig;\n  SvcOutputMetadata svc;\n};",
+        "fragment": "dictionary EncodedVideoChunkMetadata {\n  VideoDecoderConfig decoderConfig;\n  SvcOutputMetadata svc;\n  BufferSource alphaSideData;\n};",
         "type": "dictionary",
         "name": "EncodedVideoChunkMetadata",
         "inheritance": null,
@@ -1392,6 +1392,21 @@
               "nullable": false,
               "union": false,
               "idlType": "SvcOutputMetadata"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "alphaSideData",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BufferSource"
             },
             "default": null,
             "required": false
@@ -1907,7 +1922,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -2079,6 +2094,24 @@
           },
           {
             "type": "field",
+            "name": "alpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AlphaOption"
+            },
+            "default": {
+              "type": "string",
+              "value": "discard"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "scalabilityMode",
             "extAttrs": [],
             "idlType": {
@@ -2148,6 +2181,22 @@
           {
             "type": "enum-value",
             "value": "require"
+          }
+        ],
+        "extAttrs": []
+      },
+      "AlphaOption": {
+        "fragment": "enum AlphaOption {\n  \"keep\",\n  \"discard\",\n};",
+        "type": "enum",
+        "name": "AlphaOption",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "keep"
+          },
+          {
+            "type": "enum-value",
+            "value": "discard"
           }
         ],
         "extAttrs": []
@@ -2723,7 +2772,7 @@
         "extAttrs": []
       },
       "AudioData": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface AudioData {\n  constructor(AudioDataInit init);\n\n  readonly attribute AudioSampleFormat? format;\n  readonly attribute float sampleRate;\n  readonly attribute unsigned long numberOfFrames;\n  readonly attribute unsigned long numberOfChannels;\n  readonly attribute unsigned long long duration;  // microseconds\n  readonly attribute long long timestamp;          // microseconds\n\n  unsigned long allocationSize(AudioDataCopyToOptions options);\n  undefined copyTo([AllowShared] BufferSource destination, AudioDataCopyToOptions options);\n  AudioData clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "AudioData",
         "inheritance": null,
@@ -2757,7 +2806,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "AudioSampleFormat"
             },
@@ -3239,7 +3288,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<PlaneInit> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute PixelFormat format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<PlaneInit> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3338,9 +3387,9 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
-              "idlType": "PixelFormat"
+              "idlType": "VideoPixelFormat"
             },
             "extAttrs": [],
             "special": "",
@@ -3639,7 +3688,7 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -3673,13 +3722,31 @@
             },
             "default": null,
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "alpha",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AlphaOption"
+            },
+            "default": {
+              "type": "string",
+              "value": "keep"
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
         "partial": false
       },
       "VideoFramePlaneInit": {
-        "fragment": "dictionary VideoFramePlaneInit {\n  required PixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  DOMRectInit visibleRect;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long duration;  // microseconds\n  [EnforceRange] long long timestamp;          // microseconds\n};",
+        "fragment": "dictionary VideoFramePlaneInit {\n  required VideoPixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  DOMRectInit visibleRect;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long duration;  // microseconds\n  [EnforceRange] long long timestamp;          // microseconds\n};",
         "type": "dictionary",
         "name": "VideoFramePlaneInit",
         "inheritance": null,
@@ -3694,7 +3761,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "PixelFormat"
+              "idlType": "VideoPixelFormat"
             },
             "default": null,
             "required": true
@@ -4025,10 +4092,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "PixelFormat": {
-        "fragment": "enum PixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 32bpp RGBA\n  \"RGBA\",\n  // 32bpp RGBX (opaque)\n  \"RGBX\",\n  // 32bpp BGRA\n  \"BGRA\",\n  // 32bpp BGRX (opaque)\n  \"BGRX\",\n};",
+      "VideoPixelFormat": {
+        "fragment": "enum VideoPixelFormat {\n  // 4:2:0 Y, U, V\n  \"I420\",\n  // 4:2:0 Y, U, V, A\n  \"I420A\",\n  // 4:2:2 Y, U, V\n  \"I422\",\n  // 4:4:4 Y, U, V\n  \"I444\",\n  // 4:2:0 Y, UV\n  \"NV12\",\n  // 32bpp RGBA\n  \"RGBA\",\n  // 32bpp RGBX (opaque)\n  \"RGBX\",\n  // 32bpp BGRA\n  \"BGRA\",\n  // 32bpp BGRX (opaque)\n  \"BGRX\",\n};",
         "type": "enum",
-        "name": "PixelFormat",
+        "name": "VideoPixelFormat",
         "values": [
           {
             "type": "enum-value",
@@ -4906,6 +4973,7 @@
       "AudioEncoderConfig": [],
       "VideoEncoderConfig": [
         "HardwareAcceleration",
+        "AlphaOption",
         "BitrateMode",
         "LatencyMode"
       ],
@@ -4939,15 +5007,17 @@
         "VideoFrameInit",
         "PlaneInit",
         "VideoFramePlaneInit",
-        "PixelFormat",
+        "VideoPixelFormat",
         "DOMRectReadOnly",
         "VideoFrameCopyToOptions",
         "PlaneLayout",
         "VideoFrame"
       ],
-      "VideoFrameInit": [],
+      "VideoFrameInit": [
+        "AlphaOption"
+      ],
       "VideoFramePlaneInit": [
-        "PixelFormat",
+        "VideoPixelFormat",
         "DOMRectInit"
       ],
       "PlaneInit": [],

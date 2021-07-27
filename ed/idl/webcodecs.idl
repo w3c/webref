@@ -106,6 +106,7 @@ callback EncodedVideoChunkOutputCallback =
 dictionary EncodedVideoChunkMetadata {
   VideoDecoderConfig decoderConfig;
   SvcOutputMetadata svc;
+  BufferSource alphaSideData;
 };
 
 dictionary SvcOutputMetadata {
@@ -165,6 +166,7 @@ dictionary VideoEncoderConfig {
   [EnforceRange] unsigned long long bitrate;
   [EnforceRange] double framerate;
   HardwareAcceleration hardwareAcceleration = "allow";
+  AlphaOption alpha = "discard";
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
@@ -174,6 +176,11 @@ enum HardwareAcceleration {
   "allow",
   "deny",
   "require",
+};
+
+enum AlphaOption {
+  "keep",
+  "discard",
 };
 
 enum LatencyMode {
@@ -242,7 +249,7 @@ enum EncodedVideoChunkType {
 interface AudioData {
   constructor(AudioDataInit init);
 
-  readonly attribute AudioSampleFormat format;
+  readonly attribute AudioSampleFormat? format;
   readonly attribute float sampleRate;
   readonly attribute unsigned long numberOfFrames;
   readonly attribute unsigned long numberOfChannels;
@@ -289,7 +296,7 @@ interface VideoFrame {
   constructor(sequence<PlaneInit> planes,
               VideoFramePlaneInit init);
 
-  readonly attribute PixelFormat format;
+  readonly attribute VideoPixelFormat? format;
   readonly attribute unsigned long codedWidth;
   readonly attribute unsigned long codedHeight;
   readonly attribute DOMRectReadOnly? codedRect;
@@ -310,10 +317,11 @@ interface VideoFrame {
 dictionary VideoFrameInit {
   unsigned long long duration;  // microseconds
   long long timestamp;          // microseconds
+  AlphaOption alpha = "keep";
 };
 
 dictionary VideoFramePlaneInit {
-  required PixelFormat format;
+  required VideoPixelFormat format;
   [EnforceRange] required unsigned long codedWidth;
   [EnforceRange] required unsigned long codedHeight;
   DOMRectInit visibleRect;
@@ -339,7 +347,7 @@ dictionary PlaneLayout {
   [EnforceRange] required unsigned long stride;
 };
 
-enum PixelFormat {
+enum VideoPixelFormat {
   // 4:2:0 Y, U, V
   "I420",
   // 4:2:0 Y, U, V, A
