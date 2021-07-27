@@ -4,6 +4,8 @@ interface mixin WindowOrWorkerGlobalScope {
   readonly attribute boolean isSecureContext;
   readonly attribute boolean crossOriginIsolated;
 
+  undefined reportError(any e);
+
   // base64 utility methods
   DOMString btoa(DOMString data);
   ByteString atob(DOMString data);
