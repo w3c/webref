@@ -6570,16 +6570,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init-planes",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-planes-init-planes",
+      "id": "dom-videoframe-videoframe-data-init-data",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-data-init-data",
       "linkingText": [
-        "planes"
+        "data"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(planes, init)",
-        "VideoFrame/constructor(planes, init)"
+        "VideoFrame/VideoFrame(data, init)",
+        "VideoFrame/constructor(data, init)"
       ],
       "access": "public",
       "informative": false,
@@ -6592,16 +6592,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init-init",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-planes-init-init",
+      "id": "dom-videoframe-videoframe-data-init-init",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-data-init-init",
       "linkingText": [
         "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(planes, init)",
-        "VideoFrame/constructor(planes, init)"
+        "VideoFrame/VideoFrame(data, init)",
+        "VideoFrame/constructor(data, init)"
       ],
       "access": "public",
       "informative": false,
@@ -6762,10 +6762,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-videoframeplaneinit",
-      "href": "https://w3c.github.io/webcodecs/#dictdef-videoframeplaneinit",
+      "id": "dictdef-videoframebufferinit",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videoframebufferinit",
       "linkingText": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -6781,15 +6781,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-format",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-format",
+      "id": "dom-videoframebufferinit-format",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-format",
       "linkingText": [
         "format"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6802,15 +6802,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-codedwidth",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-codedwidth",
+      "id": "dom-videoframebufferinit-codedwidth",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedwidth",
       "linkingText": [
         "codedWidth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6823,15 +6823,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-codedheight",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-codedheight",
+      "id": "dom-videoframebufferinit-codedheight",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-codedheight",
       "linkingText": [
         "codedHeight"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6844,99 +6844,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-visiblerect",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-visiblerect",
-      "linkingText": [
-        "visibleRect"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-displaywidth",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-displaywidth",
-      "linkingText": [
-        "displayWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-displayheight",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-displayheight",
-      "linkingText": [
-        "displayHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-duration",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-duration",
-      "linkingText": [
-        "duration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-timestamp",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframeplaneinit-timestamp",
+      "id": "dom-videoframebufferinit-timestamp",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-timestamp",
       "linkingText": [
         "timestamp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6949,34 +6865,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-planeinit",
-      "href": "https://w3c.github.io/webcodecs/#dictdef-planeinit",
+      "id": "dom-videoframebufferinit-duration",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-duration",
       "linkingText": [
-        "PlaneInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-planeinit-data",
-      "href": "https://w3c.github.io/webcodecs/#dom-planeinit-data",
-      "linkingText": [
-        "data"
+        "duration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6989,15 +6886,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-stride",
-      "href": "https://w3c.github.io/webcodecs/#dom-planeinit-stride",
+      "id": "dom-videoframebufferinit-layout",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-layout",
       "linkingText": [
-        "stride"
+        "layout"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -7010,15 +6907,57 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-offset",
-      "href": "https://w3c.github.io/webcodecs/#dom-planeinit-offset",
+      "id": "dom-videoframebufferinit-visiblerect",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-visiblerect",
       "linkingText": [
-        "offset"
+        "visibleRect"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframebufferinit-displaywidth",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displaywidth",
+      "linkingText": [
+        "displayWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameBufferInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframebufferinit-displayheight",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -7307,11 +7246,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init",
-      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-planes-init",
+      "id": "dom-videoframe-videoframe-data-init",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe-data-init",
       "linkingText": [
-        "VideoFrame(planes, init)",
-        "constructor(planes, init)"
+        "VideoFrame(data, init)",
+        "constructor(data, init)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7518,10 +7457,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "parsed-copyto-options",
-      "href": "https://w3c.github.io/webcodecs/#parsed-copyto-options",
+      "id": "combined-buffer-layout",
+      "href": "https://w3c.github.io/webcodecs/#combined-buffer-layout",
       "linkingText": [
-        "parsed copyto options"
+        "combined buffer layout"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7537,15 +7476,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "parsed-copyto-options-allocationsize",
-      "href": "https://w3c.github.io/webcodecs/#parsed-copyto-options-allocationsize",
+      "id": "combined-buffer-layout-allocationsize",
+      "href": "https://w3c.github.io/webcodecs/#combined-buffer-layout-allocationsize",
       "linkingText": [
         "allocationSize"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "parsed copyto options"
+        "combined buffer layout"
       ],
       "access": "private",
       "informative": false,
@@ -7558,15 +7497,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "parsed-copyto-options-computedlayouts",
-      "href": "https://w3c.github.io/webcodecs/#parsed-copyto-options-computedlayouts",
+      "id": "combined-buffer-layout-computedlayouts",
+      "href": "https://w3c.github.io/webcodecs/#combined-buffer-layout-computedlayouts",
       "linkingText": [
         "computedLayouts"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "parsed copyto options"
+        "combined buffer layout"
       ],
       "access": "private",
       "informative": false,
@@ -7829,10 +7768,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "valid-videoframeplaneinit",
-      "href": "https://w3c.github.io/webcodecs/#valid-videoframeplaneinit",
+      "id": "valid-videoframebufferinit",
+      "href": "https://w3c.github.io/webcodecs/#valid-videoframebufferinit",
       "linkingText": [
-        "valid VideoFramePlaneInit"
+        "valid VideoFrameBufferInit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7949,10 +7888,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "videoframe-parse-copyto-rect",
-      "href": "https://w3c.github.io/webcodecs/#videoframe-parse-copyto-rect",
+      "id": "videoframe-parse-visible-rect",
+      "href": "https://w3c.github.io/webcodecs/#videoframe-parse-visible-rect",
       "linkingText": [
-        "Parse CopyTo Rect"
+        "Parse Visible Rect"
       ],
       "localLinkingText": [],
       "type": "dfn",

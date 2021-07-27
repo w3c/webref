@@ -1745,7 +1745,7 @@ interface Window : EventTarget {
 Window includes GlobalEventHandlers;
 Window includes WindowEventHandlers;
 
-dictionary WindowPostMessageOptions : PostMessageOptions {
+dictionary WindowPostMessageOptions : StructuredSerializeOptions {
   USVString targetOrigin = "/";
 };
 
@@ -1990,6 +1990,9 @@ interface mixin WindowOrWorkerGlobalScope {
   // ImageBitmap
   Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});
   Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});
+
+  // structured cloning
+  any structuredClone(any value, optional StructuredSerializeOptions options = {});
 };
 Window includes WindowOrWorkerGlobalScope;
 WorkerGlobalScope includes WindowOrWorkerGlobalScope;
@@ -2238,7 +2241,7 @@ interface MessageChannel {
 [Exposed=(Window,Worker,AudioWorklet), Transferable]
 interface MessagePort : EventTarget {
   undefined postMessage(any message, sequence<object> transfer);
-  undefined postMessage(any message, optional PostMessageOptions options = {});
+  undefined postMessage(any message, optional StructuredSerializeOptions options = {});
   undefined start();
   undefined close();
 
@@ -2247,7 +2250,7 @@ interface MessagePort : EventTarget {
   attribute EventHandler onmessageerror;
 };
 
-dictionary PostMessageOptions {
+dictionary StructuredSerializeOptions {
   sequence<object> transfer = [];
 };
 
@@ -2282,7 +2285,7 @@ interface DedicatedWorkerGlobalScope : WorkerGlobalScope {
   [Replaceable] readonly attribute DOMString name;
 
   undefined postMessage(any message, sequence<object> transfer);
-  undefined postMessage(any message, optional PostMessageOptions options = {});
+  undefined postMessage(any message, optional StructuredSerializeOptions options = {});
 
   undefined close();
 
@@ -2310,7 +2313,7 @@ interface Worker : EventTarget {
   undefined terminate();
 
   undefined postMessage(any message, sequence<object> transfer);
-  undefined postMessage(any message, optional PostMessageOptions options = {});
+  undefined postMessage(any message, optional StructuredSerializeOptions options = {});
   attribute EventHandler onmessage;
   attribute EventHandler onmessageerror;
 };

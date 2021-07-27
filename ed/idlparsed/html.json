@@ -23784,10 +23784,10 @@
         "partial": false
       },
       "WindowPostMessageOptions": {
-        "fragment": "dictionary WindowPostMessageOptions : PostMessageOptions {\n  USVString targetOrigin = \"/\";\n};",
+        "fragment": "dictionary WindowPostMessageOptions : StructuredSerializeOptions {\n  USVString targetOrigin = \"/\";\n};",
         "type": "dictionary",
         "name": "WindowPostMessageOptions",
-        "inheritance": "PostMessageOptions",
+        "inheritance": "StructuredSerializeOptions",
         "members": [
           {
             "type": "field",
@@ -26831,7 +26831,7 @@
         "extAttrs": []
       },
       "WindowOrWorkerGlobalScope": {
-        "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  undefined reportError(any e);\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long handle = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long handle = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n};",
+        "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  undefined reportError(any e);\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long handle = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long handle = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n\n  // structured cloning\n  any structuredClone(any value, optional StructuredSerializeOptions options = {});\n};",
         "type": "interface mixin",
         "name": "WindowOrWorkerGlobalScope",
         "inheritance": null,
@@ -27391,6 +27391,56 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "ImageBitmapOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "structuredClone",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "value",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -30370,7 +30420,7 @@
         "partial": false
       },
       "MessagePort": {
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet), Transferable]\ninterface MessagePort : EventTarget {\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  undefined start();\n  undefined close();\n\n  // event handlers\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "MessagePort",
         "inheritance": "EventTarget",
@@ -30470,7 +30520,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PostMessageOptions"
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -30572,10 +30622,10 @@
         ],
         "partial": false
       },
-      "PostMessageOptions": {
-        "fragment": "dictionary PostMessageOptions {\n  sequence<object> transfer = [];\n};",
+      "StructuredSerializeOptions": {
+        "fragment": "dictionary StructuredSerializeOptions {\n  sequence<object> transfer = [];\n};",
         "type": "dictionary",
-        "name": "PostMessageOptions",
+        "name": "StructuredSerializeOptions",
         "inheritance": null,
         "members": [
           {
@@ -30938,7 +30988,7 @@
         "partial": false
       },
       "DedicatedWorkerGlobalScope": {
-        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "DedicatedWorkerGlobalScope",
         "inheritance": "WorkerGlobalScope",
@@ -31060,7 +31110,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PostMessageOptions"
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -31261,7 +31311,7 @@
         "partial": false
       },
       "Worker": {
-        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(USVString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker,SharedWorker)]\ninterface Worker : EventTarget {\n  constructor(USVString scriptURL, optional WorkerOptions options = {});\n\n  undefined terminate();\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
         "type": "interface",
         "name": "Worker",
         "inheritance": "EventTarget",
@@ -31416,7 +31466,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PostMessageOptions"
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -38814,7 +38864,7 @@
         "External"
       ],
       "WindowPostMessageOptions": [
-        "PostMessageOptions"
+        "StructuredSerializeOptions"
       ],
       "BarProp": [],
       "History": [
@@ -38876,7 +38926,8 @@
         "TimerHandler",
         "ImageBitmap",
         "ImageBitmapSource",
-        "ImageBitmapOptions"
+        "ImageBitmapOptions",
+        "StructuredSerializeOptions"
       ],
       "WorkerGlobalScope": [
         "WindowOrWorkerGlobalScope",
@@ -38934,7 +38985,7 @@
       "DedicatedWorkerGlobalScope": [
         "AnimationFrameProvider",
         "WorkerGlobalScope",
-        "PostMessageOptions",
+        "StructuredSerializeOptions",
         "EventHandler"
       ],
       "MessageEvent": [
@@ -38972,10 +39023,10 @@
       ],
       "MessagePort": [
         "EventTarget",
-        "PostMessageOptions",
+        "StructuredSerializeOptions",
         "EventHandler"
       ],
-      "PostMessageOptions": [],
+      "StructuredSerializeOptions": [],
       "BroadcastChannel": [
         "EventTarget",
         "EventHandler"
@@ -38990,7 +39041,7 @@
       "Worker": [
         "EventTarget",
         "WorkerOptions",
-        "PostMessageOptions",
+        "StructuredSerializeOptions",
         "EventHandler",
         "AbstractWorker"
       ],

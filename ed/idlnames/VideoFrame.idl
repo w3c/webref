@@ -2,8 +2,7 @@
 [Exposed=(Window,DedicatedWorker), Serializable, Transferable]
 interface VideoFrame {
   constructor(CanvasImageSource image, optional VideoFrameInit init = {});
-  constructor(sequence<PlaneInit> planes,
-              VideoFramePlaneInit init);
+  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);
 
   readonly attribute VideoPixelFormat? format;
   readonly attribute unsigned long codedWidth;

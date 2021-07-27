@@ -3288,7 +3288,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor(sequence<PlaneInit> planes,\n              VideoFramePlaneInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3338,24 +3338,22 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "planes",
-                "extAttrs": [],
+                "name": "data",
+                "extAttrs": [
+                  {
+                    "type": "extended-attribute",
+                    "name": "AllowShared",
+                    "rhs": null,
+                    "arguments": []
+                  }
+                ],
                 "idlType": {
                   "type": "argument-type",
                   "extAttrs": [],
-                  "generic": "sequence",
+                  "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": [
-                    {
-                      "type": "argument-type",
-                      "extAttrs": [],
-                      "generic": "",
-                      "nullable": false,
-                      "union": false,
-                      "idlType": "PlaneInit"
-                    }
-                  ]
+                  "idlType": "BufferSource"
                 },
                 "default": null,
                 "optional": false,
@@ -3371,7 +3369,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "VideoFramePlaneInit"
+                  "idlType": "VideoFrameBufferInit"
                 },
                 "default": null,
                 "optional": false,
@@ -3745,10 +3743,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "VideoFramePlaneInit": {
-        "fragment": "dictionary VideoFramePlaneInit {\n  required VideoPixelFormat format;\n  [EnforceRange] required unsigned long codedWidth;\n  [EnforceRange] required unsigned long codedHeight;\n  DOMRectInit visibleRect;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long duration;  // microseconds\n  [EnforceRange] long long timestamp;          // microseconds\n};",
+      "VideoFrameBufferInit": {
+        "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n};",
         "type": "dictionary",
-        "name": "VideoFramePlaneInit",
+        "name": "VideoFrameBufferInit",
         "inheritance": null,
         "members": [
           {
@@ -3769,17 +3767,17 @@
           {
             "type": "field",
             "name": "codedWidth",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
-              "extAttrs": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
               "generic": "",
               "nullable": false,
               "union": false,
@@ -3791,6 +3789,50 @@
           {
             "type": "field",
             "name": "codedHeight",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "timestamp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "EnforceRange",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "duration",
             "extAttrs": [
               {
                 "type": "extended-attribute",
@@ -3805,10 +3847,34 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long"
+              "idlType": "unsigned long long"
             },
             "default": null,
-            "required": true
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "layout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PlaneLayout"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           },
           {
             "type": "field",
@@ -3867,122 +3933,6 @@
               "idlType": "unsigned long"
             },
             "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "duration",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long long"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "timestamp",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "long long"
-            },
-            "default": null,
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
-      "PlaneInit": {
-        "fragment": "dictionary PlaneInit {\n  required BufferSource data;\n  [EnforceRange] required unsigned long stride;\n  [EnforceRange] unsigned long offset = 0;\n};",
-        "type": "dictionary",
-        "name": "PlaneInit",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "field",
-            "name": "data",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "BufferSource"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "stride",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": null,
-            "required": true
-          },
-          {
-            "type": "field",
-            "name": "offset",
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "EnforceRange",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned long"
-            },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
             "required": false
           }
         ],
@@ -5005,8 +4955,7 @@
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",
-        "PlaneInit",
-        "VideoFramePlaneInit",
+        "VideoFrameBufferInit",
         "VideoPixelFormat",
         "DOMRectReadOnly",
         "VideoFrameCopyToOptions",
@@ -5016,11 +4965,11 @@
       "VideoFrameInit": [
         "AlphaOption"
       ],
-      "VideoFramePlaneInit": [
+      "VideoFrameBufferInit": [
         "VideoPixelFormat",
+        "PlaneLayout",
         "DOMRectInit"
       ],
-      "PlaneInit": [],
       "VideoFrameCopyToOptions": [
         "DOMRectInit",
         "PlaneLayout"

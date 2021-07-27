@@ -5,19 +5,19 @@
       "title": "HTML Standard",
       "url": "https://html.spec.whatwg.org/multipage/"
     },
-    "fragment": "dictionary WindowPostMessageOptions : PostMessageOptions {\n  USVString targetOrigin = \"/\";\n};",
+    "fragment": "dictionary WindowPostMessageOptions : StructuredSerializeOptions {\n  USVString targetOrigin = \"/\";\n};",
     "href": "https://html.spec.whatwg.org/multipage/window-object.html#windowpostmessageoptions"
   },
   "extended": [],
   "inheritance": {
-    "name": "PostMessageOptions",
+    "name": "StructuredSerializeOptions",
     "defined": {
       "spec": {
         "title": "HTML Standard",
         "url": "https://html.spec.whatwg.org/multipage/"
       },
-      "fragment": "dictionary PostMessageOptions {\n  sequence<object> transfer = [];\n};",
-      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#postmessageoptions"
+      "fragment": "dictionary StructuredSerializeOptions {\n  sequence<object> transfer = [];\n};",
+      "href": "https://html.spec.whatwg.org/multipage/web-messaging.html#structuredserializeoptions"
     },
     "extended": [],
     "inheritance": null,

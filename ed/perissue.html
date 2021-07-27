@@ -179,11 +179,12 @@
   <li><code>CSSOMString</code> used in <a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a>, <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a>, <a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>, <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/css-nesting-1/">CSS Nesting Module</a>, <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>, <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a>, <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a>, <a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a>, <a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a>, <a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a>, <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a>, <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a>, <a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
   <li><code>CSSPercentishArray</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
   <li><code>PaymentAddress</code> used in <a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a>, <a href="https://w3c.github.io/payment-method-basic-card/">Payment Method: Basic Card</a></li>
+  <li><code>PostMessageOptions</code> used in <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://w3c.github.io/ServiceWorker/">Service Workers Nightly</a></li>
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://w3c.github.io/uievents/">UI Events</a></li>
   <li><code>bigint</code> used in <a href="https://w3c.github.io/webrtc-encoded-transform/">WebRTC Encoded Transform</a></li>
   </ul>
-  <p>=&gt; 7 WebIDL names found</p>
+  <p>=&gt; 8 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -1957,6 +1958,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/"><code>https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/"><code>https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/"><code>https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/"><code>https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
@@ -2398,7 +2400,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 334 inconsistent references for links found in 181 specifications</p>
+  <p>=&gt; 335 inconsistent references for links found in 181 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -2573,9 +2575,9 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-fonts-5/">CSS Fonts Module Level 5</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/css-inline-3/#ascent-metric"><code>https://www.w3.org/TR/css-inline-3/#ascent-metric</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-inline-3/#descent-metric"><code>https://www.w3.org/TR/css-inline-3/#descent-metric</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-inline-3/#line-gap-metric"><code>https://www.w3.org/TR/css-inline-3/#line-gap-metric</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#ascent-metric"><code>https://drafts.csswg.org/css-inline-3/#ascent-metric</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#descent-metric"><code>https://drafts.csswg.org/css-inline-3/#descent-metric</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-inline-3/#line-gap-metric"><code>https://drafts.csswg.org/css-inline-3/#line-gap-metric</code></a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-break/">CSS Fragmentation Module Level 3</a>:
   <ul>
