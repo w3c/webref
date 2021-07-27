@@ -2,7 +2,7 @@
 % Reffy
 % July 27, 2021
 
-427 specifications were crawled in this report.
+428 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies

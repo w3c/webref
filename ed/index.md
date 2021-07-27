@@ -8694,7 +8694,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Crawled URL: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
-- Crawled version: 26 July 2021
+- Crawled version: 27 July 2021
 - Editor's Draft: [https://w3c.github.io/geolocation-api/](https://w3c.github.io/geolocation-api/)
 - Latest published version: [https://www.w3.org/TR/geolocation-API/](https://www.w3.org/TR/geolocation-API/)
 - Shortname: geolocation-API
@@ -12039,6 +12039,7 @@ Normative references to this spec from:
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/)
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
 - [Permissions](https://w3c.github.io/permissions/)
+- [preferCurrentTab](https://wicg.github.io/prefer-current-tab/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
@@ -14078,6 +14079,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+## preferCurrentTab {data-spec=true data-missingDfns=true data-ok=true}
+
+### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/prefer-current-tab/](https://wicg.github.io/prefer-current-tab/)
+- Crawled URL: [https://wicg.github.io/prefer-current-tab/](https://wicg.github.io/prefer-current-tab/)
+- Crawled version: 22 July 2021
+- Editor's Draft: [https://wicg.github.io/prefer-current-tab/](https://wicg.github.io/prefer-current-tab/)
+- Shortname: prefer-current-tab
+
+### Potential issue(s) {.anomalies}
+
+This specification looks good!
+
+### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Preload {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 ### Spec info {.info}
@@ -15784,6 +15806,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
+- [preferCurrentTab](https://wicg.github.io/prefer-current-tab/)
 
 Informative references to this spec from:
 
@@ -18537,6 +18560,7 @@ Normative references to this spec from:
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Pointer Lock 2.0](https://w3c.github.io/pointerlock/)
 - [Portals](https://wicg.github.io/portals/)
+- [preferCurrentTab](https://wicg.github.io/prefer-current-tab/)
 - [Presentation API](https://w3c.github.io/presentation-api/)
 - [Prioritized Task Scheduling](https://wicg.github.io/scheduling-apis/)
 - [Private Click Measurement](https://privacycg.github.io/private-click-measurement/)
