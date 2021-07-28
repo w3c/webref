@@ -2191,7 +2191,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
 - Crawled URL: [https://drafts.csswg.org/css-backgrounds/](https://drafts.csswg.org/css-backgrounds/)
-- Crawled version: 22 December 2020
+- Crawled version: 26 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-backgrounds/](https://drafts.csswg.org/css-backgrounds/)
 - Latest published version: [https://www.w3.org/TR/css-backgrounds-3/](https://www.w3.org/TR/css-backgrounds-3/)
 - Shortname: css-backgrounds-3
@@ -2510,7 +2510,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 
 
 ## CSS Box Model Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -3293,7 +3292,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Crawled URL: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
-- Crawled version: 22 July 2021
+- Crawled version: 27 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
 - Latest published version: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Shortname: css-variables-1
@@ -3309,6 +3308,8 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag`](https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
 
 ### Known dependencies on this specification {.dependencies}
 
@@ -3565,7 +3566,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Crawled URL: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
-- Crawled version: 26 February 2021
+- Crawled version: 27 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-exclusions/](https://drafts.csswg.org/css-exclusions/)
 - Latest published version: [https://www.w3.org/TR/css3-exclusions/](https://www.w3.org/TR/css3-exclusions/)
 - Shortname: css3-exclusions
@@ -3758,7 +3759,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
-- Crawled version: 27 July 2021
+- Crawled version: 28 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
 - Latest published version: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Shortname: css-fonts-4
@@ -4776,9 +4777,7 @@ Informative references to this spec from:
 
 ### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -4898,7 +4897,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
-- Crawled version: 15 July 2021
+- Crawled version: 27 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Shortname: css-overflow-3
@@ -9558,7 +9557,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 27 July 2021
+- Crawled version: 28 July 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
@@ -10978,7 +10977,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
 - Crawled URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- Crawled version: 28 June 2021
+- Crawled version: 27 July 2021
 - Editor's Draft: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
 - Shortname: PFE
 
@@ -15533,6 +15532,9 @@ Informative references to this spec from:
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
      * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
+     * [`https://www.w3.org/TR/css3-exclusions/#content-area`](https://www.w3.org/TR/css3-exclusions/#content-area)
+     * [`https://www.w3.org/TR/css3-exclusions/#wrapping-context`](https://www.w3.org/TR/css3-exclusions/#wrapping-context)
+     * [`https://www.w3.org/TR/css3-exclusions/#wrapping-area`](https://www.w3.org/TR/css3-exclusions/#wrapping-area)
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - External links that neither target definitions nor headings:
      * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
@@ -16093,6 +16095,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -19072,7 +19075,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 27 July 2021
+- Crawled version: 28 July 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
@@ -21261,7 +21264,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
-- Crawled version: 17 May 2021
+- Crawled version: 28 July 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-ar-module/](https://immersive-web.github.io/webxr-ar-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-ar-module-1/](https://www.w3.org/TR/webxr-ar-module-1/)
 - Shortname: webxr-ar-module-1
@@ -21457,7 +21460,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - Crawled URL: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
-- Crawled version: 17 May 2021
+- Crawled version: 28 July 2021
 - Editor's Draft: [https://immersive-web.github.io/webxr-gamepads-module/](https://immersive-web.github.io/webxr-gamepads-module/)
 - Latest published version: [https://www.w3.org/TR/webxr-gamepads-module-1/](https://www.w3.org/TR/webxr-gamepads-module-1/)
 - Shortname: webxr-gamepads-module-1

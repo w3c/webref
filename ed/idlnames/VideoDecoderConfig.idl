@@ -7,4 +7,5 @@ dictionary VideoDecoderConfig {
   [EnforceRange] unsigned long displayAspectWidth;
   [EnforceRange] unsigned long displayAspectHeight;
   HardwareAcceleration hardwareAcceleration = "allow";
+  boolean optimizeForLatency;
 };

@@ -3626,6 +3626,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoderconfig-optimizeforlatency",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-optimizeforlatency",
+      "linkingText": [
+        "optimizeForLatency"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-decoder-config",
+        "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+        "title": "VideoDecoderConfig",
+        "number": "7.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-audioencoderconfig",
       "href": "https://w3c.github.io/webcodecs/#dictdef-audioencoderconfig",
       "linkingText": [
@@ -6191,8 +6212,8 @@
       "id": "dom-audiosampleformat-u8",
       "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-u8",
       "linkingText": [
-        "\"U8\"",
-        "U8"
+        "\"u8\"",
+        "u8"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6213,30 +6234,8 @@
       "id": "dom-audiosampleformat-s16",
       "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s16",
       "linkingText": [
-        "\"S16\"",
-        "S16"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSampleFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-sample-formats",
-        "href": "https://w3c.github.io/webcodecs/#audio-sample-formats",
-        "title": "Audio Sample Format",
-        "number": "9.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiosampleformat-s24",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s24",
-      "linkingText": [
-        "\"S24\"",
-        "S24"
+        "\"s16\"",
+        "s16"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6257,8 +6256,8 @@
       "id": "dom-audiosampleformat-s32",
       "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s32",
       "linkingText": [
-        "\"S32\"",
-        "S32"
+        "\"s32\"",
+        "s32"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6276,11 +6275,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-flt",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-flt",
+      "id": "dom-audiosampleformat-f32",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-f32",
       "linkingText": [
-        "\"FLT\"",
-        "FLT"
+        "\"f32\"",
+        "f32"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6298,11 +6297,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-u8p",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-u8p",
+      "id": "dom-audiosampleformat-u8-planar",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-u8-planar",
       "linkingText": [
-        "\"U8P\"",
-        "U8P"
+        "\"u8-planar\"",
+        "u8-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6320,11 +6319,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s16p",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s16p",
+      "id": "dom-audiosampleformat-s16-planar",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s16-planar",
       "linkingText": [
-        "\"S16P\"",
-        "S16P"
+        "\"s16-planar\"",
+        "s16-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6342,11 +6341,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s24p",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s24p",
+      "id": "dom-audiosampleformat-s32-planar",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s32-planar",
       "linkingText": [
-        "\"S24P\"",
-        "S24P"
+        "\"s32-planar\"",
+        "s32-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6364,33 +6363,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s32p",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-s32p",
+      "id": "dom-audiosampleformat-f32-planar",
+      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-f32-planar",
       "linkingText": [
-        "\"S32P\"",
-        "S32P"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSampleFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-sample-formats",
-        "href": "https://w3c.github.io/webcodecs/#audio-sample-formats",
-        "title": "Audio Sample Format",
-        "number": "9.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiosampleformat-fltp",
-      "href": "https://w3c.github.io/webcodecs/#dom-audiosampleformat-fltp",
-      "linkingText": [
-        "\"FLTP\"",
-        "FLTP"
+        "\"f32-planar\"",
+        "f32-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",

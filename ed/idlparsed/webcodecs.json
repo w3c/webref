@@ -1685,7 +1685,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  boolean optimizeForLatency;\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1824,6 +1824,21 @@
               "type": "string",
               "value": "allow"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "optimizeForLatency",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -3240,49 +3255,41 @@
         "partial": false
       },
       "AudioSampleFormat": {
-        "fragment": "enum AudioSampleFormat {\n  \"U8\",\n  \"S16\",\n  \"S24\",\n  \"S32\",\n  \"FLT\",\n  \"U8P\",\n  \"S16P\",\n  \"S24P\",\n  \"S32P\",\n  \"FLTP\",\n};",
+        "fragment": "enum AudioSampleFormat {\n  \"u8\",\n  \"s16\",\n  \"s32\",\n  \"f32\",\n  \"u8-planar\",\n  \"s16-planar\",\n  \"s32-planar\",\n  \"f32-planar\",\n};",
         "type": "enum",
         "name": "AudioSampleFormat",
         "values": [
           {
             "type": "enum-value",
-            "value": "U8"
+            "value": "u8"
           },
           {
             "type": "enum-value",
-            "value": "S16"
+            "value": "s16"
           },
           {
             "type": "enum-value",
-            "value": "S24"
+            "value": "s32"
           },
           {
             "type": "enum-value",
-            "value": "S32"
+            "value": "f32"
           },
           {
             "type": "enum-value",
-            "value": "FLT"
+            "value": "u8-planar"
           },
           {
             "type": "enum-value",
-            "value": "U8P"
+            "value": "s16-planar"
           },
           {
             "type": "enum-value",
-            "value": "S16P"
+            "value": "s32-planar"
           },
           {
             "type": "enum-value",
-            "value": "S24P"
-          },
-          {
-            "type": "enum-value",
-            "value": "S32P"
-          },
-          {
-            "type": "enum-value",
-            "value": "FLTP"
+            "value": "f32-planar"
           }
         ],
         "extAttrs": []

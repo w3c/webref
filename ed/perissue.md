@@ -2448,6 +2448,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
      * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
+     * [`https://www.w3.org/TR/css3-exclusions/#content-area`](https://www.w3.org/TR/css3-exclusions/#content-area)
+     * [`https://www.w3.org/TR/css3-exclusions/#wrapping-context`](https://www.w3.org/TR/css3-exclusions/#wrapping-context)
+     * [`https://www.w3.org/TR/css3-exclusions/#wrapping-area`](https://www.w3.org/TR/css3-exclusions/#wrapping-area)
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/):
      * [`https://w3c.github.io/web-animations/#concept-animation`](https://w3c.github.io/web-animations/#concept-animation)
@@ -2786,7 +2789,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 753 problematic external links found in 145 specifications
+=> 756 problematic external links found in 145 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4351,6 +4354,8 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/):
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+- [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/):
+     * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/):
@@ -8277,7 +8282,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4339 problematic external links found in 280 specifications
+=> 4340 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

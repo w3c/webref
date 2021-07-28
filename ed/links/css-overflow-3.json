@@ -38,6 +38,7 @@
       "propdef-display",
       "block-box",
       "establish-an-independent-formatting-context",
+      "valdef-display-none",
       "in-flow",
       "block-formatting-context",
       "independent-formatting-context"
@@ -59,6 +60,17 @@
     "https://drafts.csswg.org/css-backgrounds-3/": [
       "propdef-box-shadow"
     ],
+    "https://drafts.csswg.org/css-box-4/": [
+      "padding-box",
+      "content-area",
+      "padding-edge",
+      "typedef-visual-box",
+      "border-edge"
+    ],
+    "https://drafts.csswg.org/css-inline-3/": [
+      "line-box",
+      "root-inline-box"
+    ],
     "https://drafts.csswg.org/css-writing-modes-4/": [
       "block-start",
       "inline-start",
@@ -68,6 +80,12 @@
       "css-end",
       "inline-size",
       "block-size"
+    ],
+    "https://drafts.csswg.org/css-grid-2/": [
+      "grid-item"
+    ],
+    "https://drafts.csswg.org/css-flexbox-1/": [
+      "flex-item"
     ],
     "https://drafts.fxtf.org/css-masking-1/": [
       "propdef-clip",
@@ -79,21 +97,13 @@
     ],
     "https://drafts.csswg.org/css-align-3/": [
       "propdef-place-content",
-      "content-distribution-properties",
       "propdef-align-content",
-      "propdef-justify-content",
-      "valdef-justify-content-normal"
+      "valdef-justify-content-normal",
+      "propdef-justify-content"
     ],
-    "https://bug748518.bmoattachments.org/attachment.cgi?id=618078": [],
     "https://jsbin.com/digadoyohi/1/edit?html,css,output": [],
     "https://jsbin.com/vexahocayi/1/edit?html,css,output": [],
     "https://github.com/w3c/csswg-drafts/issues/129": [],
-    "https://drafts.csswg.org/css-grid-2/": [
-      "grid-item"
-    ],
-    "https://drafts.csswg.org/css-flexbox-1/": [
-      "flex-item"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-x": [],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-y": [],
     "https://www.w3.org/TR/css-values/": [
@@ -119,12 +129,12 @@
     "https://drafts.csswg.org/mediaqueries-5/": [
       "paged-media"
     ],
-    "https://drafts.csswg.org/css-box-4/": [
-      "padding-box",
-      "content-area",
-      "padding-edge",
-      "typedef-visual-box",
-      "border-edge"
+    "https://drafts.csswg.org/css-sizing-3/": [
+      "propdef-height",
+      "propdef-max-height",
+      "min-content",
+      "max-content",
+      "min-content-inline-size"
     ],
     "https://www.w3.org/TR/css-align-3/": [
       "overflow-scroll-position"
@@ -132,12 +142,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow-clip-margin": [],
     "https://www.w3.org/TR/css-pseudo/": [
       "generated-content"
-    ],
-    "https://compat.spec.whatwg.org/": [
-      "valdef--webkit-background-clip-padding-box",
-      "valdef-flex--webkit-box",
-      "valdef-flex--webkit-inline-box",
-      "propdef--webkit-box-orient"
     ],
     "https://www.w3.org/TR/css-backgrounds-3/": [
       "corner-shaping"
@@ -178,10 +182,6 @@
       "soft-wrap-opportunity",
       "propdef-overflow-wrap"
     ],
-    "https://drafts.csswg.org/css-inline-3/": [
-      "root-inline-box",
-      "line-box"
-    ],
     "https://www.w3.org/TR/CSS22/": [
       "strut-element",
       "positioned-element"
@@ -193,15 +193,15 @@
       "selectordef-first-letter",
       "selectordef-first-line"
     ],
-    "https://drafts.csswg.org/css-sizing-3/": [
-      "min-content",
-      "max-content",
-      "min-content-inline-size"
-    ],
     "https://drafts.csswg.org/css-cascade-5/": [
       "shorthand-property"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp": [],
+    "https://compat.spec.whatwg.org/": [
+      "valdef-flex--webkit-box",
+      "valdef-flex--webkit-inline-box",
+      "propdef--webkit-box-orient"
+    ],
     "https://medium.com/mofed/css-line-clamp-the-good-the-bad-and-the-straight-up-broken-865413f16e5": [],
     "https://drafts.csswg.org/css-multicol-1/": [
       "multi-column-container",
@@ -266,7 +266,6 @@
     "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/css-regions-1/": [],
     "https://www.w3.org/TR/CSS1/": [],
-    "https://www.w3.org/TR/css-box-3/": [],
     "https://www.w3.org/TR/cssom-view-1/": [],
     "https://www.w3.org/TR/mediaqueries-5/": []
   }
