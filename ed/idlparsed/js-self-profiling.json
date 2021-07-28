@@ -310,7 +310,7 @@
         "partial": false
       },
       "ProfilerFrame": {
-        "fragment": "dictionary ProfilerFrame {\n  DOMString name;\n  required unsigned long long resourceId;\n  required unsigned long long line;\n  required unsigned long long column;\n};",
+        "fragment": "dictionary ProfilerFrame {\n  required DOMString name;\n  unsigned long long resourceId;\n  unsigned long long line;\n  unsigned long long column;\n};",
         "type": "dictionary",
         "name": "ProfilerFrame",
         "inheritance": null,
@@ -328,7 +328,7 @@
               "idlType": "DOMString"
             },
             "default": null,
-            "required": false
+            "required": true
           },
           {
             "type": "field",
@@ -343,7 +343,7 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -358,7 +358,7 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": true
+            "required": false
           },
           {
             "type": "field",
@@ -373,7 +373,7 @@
               "idlType": "unsigned long long"
             },
             "default": null,
-            "required": true
+            "required": false
           }
         ],
         "extAttrs": [],
