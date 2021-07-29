@@ -15339,7 +15339,7 @@
         "extAttrs": []
       },
       "CanvasImageSource": {
-        "fragment": "typedef (HTMLOrSVGImageElement or\n         HTMLVideoElement or\n         HTMLCanvasElement or\n         ImageBitmap or\n         OffscreenCanvas) CanvasImageSource;",
+        "fragment": "typedef (HTMLOrSVGImageElement or\n         HTMLVideoElement or\n         HTMLCanvasElement or\n         ImageBitmap or\n         OffscreenCanvas or\n         VideoFrame) CanvasImageSource;",
         "type": "typedef",
         "name": "CanvasImageSource",
         "idlType": {
@@ -15388,6 +15388,14 @@
               "nullable": false,
               "union": false,
               "idlType": "OffscreenCanvas"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrame"
             }
           ]
         },
@@ -39130,6 +39138,7 @@
       "WebGL2RenderingContext",
       "GPUCanvasContext",
       "SVGImageElement",
+      "VideoFrame",
       "DOMMatrix",
       "DOMMatrix2DInit",
       "DOMPointInit",

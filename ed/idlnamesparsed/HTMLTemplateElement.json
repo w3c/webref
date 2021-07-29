@@ -47,6 +47,20 @@
           "url": "https://html.spec.whatwg.org/multipage/"
         },
         "fragment": "HTMLElement includes HTMLOrSVGElement;"
+      },
+      {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "HTMLElement includes ElementCSSInlineStyle;"
+      },
+      {
+        "spec": {
+          "title": "CSSOM View Module",
+          "url": "https://www.w3.org/TR/cssom-view-1/"
+        },
+        "fragment": "partial interface HTMLElement {\n  readonly attribute Element? offsetParent;\n  readonly attribute long offsetTop;\n  readonly attribute long offsetLeft;\n  readonly attribute long offsetWidth;\n  readonly attribute long offsetHeight;\n};"
       }
     ],
     "inheritance": {
@@ -111,6 +125,55 @@
         },
         {
           "spec": {
+            "title": "CSS Spatial Navigation Level 1",
+            "url": "https://www.w3.org/TR/css-nav-1/"
+          },
+          "fragment": "partial interface Element {\n    Node getSpatialNavigationContainer();\n    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});\n    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Pseudo-Elements Module Level 4",
+            "url": "https://www.w3.org/TR/css-pseudo-4/"
+          },
+          "fragment": "partial interface Element {\n  CSSPseudoElement? pseudo(CSSOMString type);\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Regions Module Level 1",
+            "url": "https://www.w3.org/TR/css-regions-1/"
+          },
+          "fragment": "Element includes Region;"
+        },
+        {
+          "spec": {
+            "title": "CSS Shadow Parts",
+            "url": "https://www.w3.org/TR/css-shadow-parts-1/"
+          },
+          "fragment": "partial interface Element {\n  [SameObject, PutForwards=value] readonly attribute DOMTokenList part;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};"
+        },
+        {
+          "spec": {
+            "title": "CSSOM View Module",
+            "url": "https://www.w3.org/TR/cssom-view-1/"
+          },
+          "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
+        },
+        {
+          "spec": {
+            "title": "CSSOM View Module",
+            "url": "https://www.w3.org/TR/cssom-view-1/"
+          },
+          "fragment": "// like Range\nElement includes GeometryUtils;"
+        },
+        {
+          "spec": {
             "title": "DOM Parsing and Serialization",
             "url": "https://www.w3.org/TR/DOM-Parsing/"
           },
@@ -143,6 +206,13 @@
             "url": "https://www.w3.org/TR/wai-aria-1.2/"
           },
           "fragment": "Element includes ARIAMixin;"
+        },
+        {
+          "spec": {
+            "title": "Web Animations",
+            "url": "https://www.w3.org/TR/web-animations-1/"
+          },
+          "fragment": "Element includes Animatable;"
         }
       ],
       "inheritance": {
@@ -230,6 +300,34 @@
           "includes": []
         },
         {
+          "name": "Region",
+          "defined": {
+            "spec": {
+              "title": "CSS Regions Module Level 1",
+              "url": "https://www.w3.org/TR/css-regions-1/"
+            },
+            "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
+            "href": "https://drafts.csswg.org/css-regions/#region"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "GeometryUtils",
+          "defined": {
+            "spec": {
+              "title": "CSSOM View Module",
+              "url": "https://www.w3.org/TR/cssom-view-1/"
+            },
+            "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
+            "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
           "name": "InnerHTML",
           "defined": {
             "spec": {
@@ -256,6 +354,20 @@
           "extended": [],
           "inheritance": null,
           "includes": []
+        },
+        {
+          "name": "Animatable",
+          "defined": {
+            "spec": {
+              "title": "Web Animations",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            },
+            "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
+            "href": "https://drafts.csswg.org/web-animations-1/#animatable"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
         }
       ]
     },
@@ -277,6 +389,20 @@
               "url": "https://immersive-web.github.io/dom-overlays/"
             },
             "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
+          },
+          {
+            "spec": {
+              "title": "CSS Animations Level 1",
+              "url": "https://www.w3.org/TR/css-animations-1/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+          },
+          {
+            "spec": {
+              "title": "CSS Transitions",
+              "url": "https://www.w3.org/TR/css-transitions-1/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
           },
           {
             "spec": {
@@ -342,6 +468,28 @@
           "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
         },
         "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "ElementCSSInlineStyle",
+        "defined": {
+          "spec": {
+            "title": "CSS Object Model (CSSOM)",
+            "url": "https://www.w3.org/TR/cssom-1/"
+          },
+          "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+          "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
+        },
+        "extended": [
+          {
+            "spec": {
+              "title": "CSS Typed OM Level 1",
+              "url": "https://www.w3.org/TR/css-typed-om-1/"
+            },
+            "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+          }
+        ],
         "inheritance": null,
         "includes": []
       }

@@ -20,14 +20,12 @@
       "window",
       "concept-document-window",
       "windowproxy",
-      "browsing-context",
-      "responsible-browsing-context",
-      "incumbent-settings-object",
+      "concept-relevant-global",
+      "window-bc",
       "auxiliary-browsing-context",
-      "familiar-with",
       "dom-open",
       "rules-for-parsing-integers",
-      "concept-agent-event-loop",
+      "event-loop",
       "eventhandler",
       "event-handlers",
       "event-handler-event-type",
@@ -50,7 +48,6 @@
     ],
     "https://dom.spec.whatwg.org/": [
       "parent-element",
-      "context-object",
       "document",
       "concept-event-fire",
       "dom-event-type",
@@ -70,8 +67,8 @@
       "dictdef-eventinit",
       "element",
       "range",
-      "dom-range-startcontainer",
-      "dom-range-startoffset",
+      "concept-range-start-node",
+      "concept-range-start-offset",
       "concept-document-quirks",
       "node",
       "concept-node-document",
@@ -99,6 +96,12 @@
       "valdef-display-table",
       "valdef-display-inline-table"
     ],
+    "https://infra.spec.whatwg.org/": [
+      "string-is",
+      "ordered-map",
+      "map-exists",
+      "list-contain"
+    ],
     "https://drafts.csswg.org/css-values-4/": [
       "px",
       "comb-one"
@@ -115,6 +118,7 @@
       "idl-undefined",
       "idl-long",
       "idl-double",
+      "this",
       "dfn-convert-ecmascript-to-idl-value",
       "Exposed",
       "idl-boolean",
@@ -151,11 +155,6 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/outerHeight": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/open": [],
-    "https://infra.spec.whatwg.org/": [
-      "ordered-map",
-      "map-exists",
-      "list-contain"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryListEvent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MediaQueryList/media": [],
@@ -245,13 +244,11 @@
       "typographic-character-unit"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/Range/getBoundingClientRect": [],
-    "https://www.w3.org/TR/DOM-Level-3-Events/": [
-      "interface-MouseEvent"
-    ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent": [],
     "https://www.w3.org/TR/uievents/": [
+      "mouseevent",
       "dictdef-mouseeventinit"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageX": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/pageY": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/x": [],
