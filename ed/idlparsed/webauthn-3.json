@@ -927,7 +927,7 @@
         "partial": false
       },
       "CollectedClientData": {
-        "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    boolean                      crossOrigin;\n    TokenBinding                 tokenBinding;\n};",
+        "fragment": "dictionary CollectedClientData {\n    required DOMString           type;\n    required DOMString           challenge;\n    required DOMString           origin;\n    boolean                      crossOrigin;        \n};",
         "type": "dictionary",
         "name": "CollectedClientData",
         "inheritance": null,
@@ -988,21 +988,6 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "tokenBinding",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "TokenBinding"
             },
             "default": null,
             "required": false
@@ -1805,9 +1790,7 @@
         "CredentialPropertiesOutput",
         "AuthenticationExtensionsLargeBlobOutputs"
       ],
-      "CollectedClientData": [
-        "TokenBinding"
-      ],
+      "CollectedClientData": [],
       "TokenBinding": [],
       "PublicKeyCredentialDescriptor": [],
       "CredentialPropertiesOutput": [],
