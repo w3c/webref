@@ -2983,7 +2983,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 9 July 2021
+- Crawled version: 29 July 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -18190,7 +18190,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 28 July 2021
+- Crawled version: 30 July 2021
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Shortname: webauthn-3
