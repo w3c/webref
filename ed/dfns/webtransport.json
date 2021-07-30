@@ -381,15 +381,15 @@
       "definedIn": "table"
     },
     {
-      "id": "stream-event-stop_sending",
-      "href": "https://w3c.github.io/webtransport/#stream-event-stop_sending",
+      "id": "stream-signal-stop_sending",
+      "href": "https://w3c.github.io/webtransport/#stream-signal-stop_sending",
       "linkingText": [
         "STOP_SENDING"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream-event"
+        "stream-signal"
       ],
       "access": "private",
       "informative": false,
@@ -402,15 +402,15 @@
       "definedIn": "table"
     },
     {
-      "id": "stream-event-reset",
-      "href": "https://w3c.github.io/webtransport/#stream-event-reset",
+      "id": "stream-signal-reset",
+      "href": "https://w3c.github.io/webtransport/#stream-signal-reset",
       "linkingText": [
         "reset"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "stream-event"
+        "stream-signal"
       ],
       "access": "private",
       "informative": false,
@@ -2103,6 +2103,27 @@
       "definedIn": "table"
     },
     {
+      "id": "receivestream-transport",
+      "href": "https://w3c.github.io/webtransport/#receivestream-transport",
+      "linkingText": [
+        "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#receive-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "receivestream-create",
       "href": "https://w3c.github.io/webtransport/#receivestream-create",
       "linkingText": [
@@ -2125,14 +2146,37 @@
       "definedIn": "prose"
     },
     {
-      "id": "cancelalgorithm",
-      "href": "https://w3c.github.io/webtransport/#cancelalgorithm",
+      "id": "receivestream-pull-bytes",
+      "href": "https://w3c.github.io/webtransport/#receivestream-pull-bytes",
       "linkingText": [
-        "cancelAlgorithm"
+        "pull bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-procedures",
+        "href": "https://w3c.github.io/webtransport/#receive-stream-procedures",
+        "title": "Procedures",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "receivestream-cancel",
+      "href": "https://w3c.github.io/webtransport/#receivestream-cancel",
+      "linkingText": [
+        "cancel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
