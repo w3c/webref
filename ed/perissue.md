@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% July 30, 2021
+% July 31, 2021
 
 428 specifications were crawled in this report.
 
@@ -2202,6 +2202,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
      * [`https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface`](https://heycam.github.io/webidl/#internally-create-a-new-object-implementing-the-interface)
      * [`https://w3c.github.io/touch-events/#dfn-touch-point`](https://w3c.github.io/touch-events/#dfn-touch-point)
+     * [`https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event`](https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
      * [`https://fullscreen.spec.whatwg.org/#run-the-fullscreen-steps`](https://fullscreen.spec.whatwg.org/#run-the-fullscreen-steps)
      * [`https://w3c.github.io/reporting/#visible-to-reportingobservers`](https://w3c.github.io/reporting/#visible-to-reportingobservers)
@@ -2790,7 +2791,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 756 problematic external links found in 145 specifications
+=> 757 problematic external links found in 145 specifications
 
 
 ## External links that neither target definitions nor headings
