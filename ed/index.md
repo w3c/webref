@@ -3210,7 +3210,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
@@ -4563,7 +4562,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Crawled URL: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
-- Crawled version: 29 September 2019
+- Crawled version: 1 August 2021
 - Editor's Draft: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
 - Latest published version: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Shortname: css-masking-1
@@ -4586,7 +4585,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-backgrounds-3/#border-image-area`](https://drafts.csswg.org/css-backgrounds-3/#border-image-area)
 - Broken external links:
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://html.spec.whatwg.org/#font`](https://html.spec.whatwg.org/#font)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2013/WD-css-masking-20130620/`](https://www.w3.org/TR/2013/WD-css-masking-20130620/)
@@ -5896,7 +5894,6 @@ Normative references to this spec from:
 
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 
@@ -10153,7 +10150,6 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)

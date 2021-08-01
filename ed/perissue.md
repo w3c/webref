@@ -4438,7 +4438,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#lists`](https://html.spec.whatwg.org/#lists)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://html.spec.whatwg.org/#font`](https://html.spec.whatwg.org/#font)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
      * [`https://www.w3.org/TR/selectors-3/#sel-before`](https://www.w3.org/TR/selectors-3/#sel-before)
      * [`https://www.w3.org/TR/selectors-3/#sel-after`](https://www.w3.org/TR/selectors-3/#sel-after)
@@ -8282,7 +8281,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4338 problematic external links found in 281 specifications
+=> 4337 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
