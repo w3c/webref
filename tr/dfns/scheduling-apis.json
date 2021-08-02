@@ -866,6 +866,46 @@
       "definedIn": "prose"
     },
     {
+      "id": "dictdef-taskcontrollerinit",
+      "href": "https://wicg.github.io/scheduling-apis/#dictdef-taskcontrollerinit",
+      "linkingText": [
+        "TaskControllerInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-controller",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+        "title": "The TaskController Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-taskcontrollerinit-priority",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontrollerinit-priority",
+      "linkingText": [
+        "priority"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TaskControllerInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-task-controller",
+        "href": "https://wicg.github.io/scheduling-apis/#sec-task-controller",
+        "title": "The TaskController Interface",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "taskcontroller",
       "href": "https://wicg.github.io/scheduling-apis/#taskcontroller",
       "linkingText": [
@@ -885,16 +925,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-taskcontroller-taskcontroller-priority-priority",
-      "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller-priority-priority",
+      "id": "dom-taskcontroller-taskcontroller-init-init",
+      "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller-init-init",
       "linkingText": [
-        "priority"
+        "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "TaskController/TaskController(priority)",
-        "TaskController/constructor(priority)",
+        "TaskController/TaskController(init)",
+        "TaskController/constructor(init)",
         "TaskController/TaskController()",
         "TaskController/constructor()"
       ],
@@ -933,8 +973,8 @@
       "id": "dom-taskcontroller-taskcontroller",
       "href": "https://wicg.github.io/scheduling-apis/#dom-taskcontroller-taskcontroller",
       "linkingText": [
-        "TaskController(priority)",
-        "constructor(priority)",
+        "TaskController(init)",
+        "constructor(init)",
         "TaskController()",
         "constructor()"
       ],

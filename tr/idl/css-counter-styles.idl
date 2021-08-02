@@ -7,6 +7,7 @@ partial interface CSSRule {
     const unsigned short COUNTER_STYLE_RULE = 11;
 };
 
+[Exposed=Window]
 interface CSSCounterStyleRule : CSSRule {
   attribute CSSOMString name;
   attribute CSSOMString system;

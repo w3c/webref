@@ -49,7 +49,7 @@
       {
         "name": "pad",
         "for": "@counter-style",
-        "value": "<integer> && <symbol>",
+        "value": "<integer [0,∞]> && <symbol>",
         "initial": "0 \"\""
       }
     ],
@@ -73,7 +73,7 @@
       {
         "name": "additive-symbols",
         "for": "@counter-style",
-        "value": "[ <integer> && <symbol> ]#",
+        "value": "[ <integer [0,∞]> && <symbol> ]#",
         "initial": "n/a"
       }
     ],
@@ -91,13 +91,13 @@
       "value": "<string> | <image> | <custom-ident>"
     },
     "<symbols()>": {
-      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ );"
+      "value": "symbols( <symbols-type>? [ <string> | <image> ]+ )"
     },
     "<symbols-type>": {
-      "value": "cyclic | numeric | alphabetic | symbolic | fixed;"
+      "value": "cyclic | numeric | alphabetic | symbolic | fixed"
     },
     "<counter-style>": {
-      "value": "<counter-style-name> | symbols();"
+      "value": "<counter-style-name> | <symbols()>"
     }
   }
 }

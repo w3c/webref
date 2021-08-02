@@ -2371,7 +2371,7 @@
         "extAttrs": []
       },
       "GPUTextureUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant SHADER_READ       = 0x04;\n    const GPUFlagsConstant STORAGE           = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant TEXTURE_BINDING   = 0x04;\n    const GPUFlagsConstant STORAGE_BINDING   = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
         "type": "interface",
         "name": "GPUTextureUsage",
         "inheritance": null,
@@ -2412,7 +2412,7 @@
           },
           {
             "type": "const",
-            "name": "SHADER_READ",
+            "name": "TEXTURE_BINDING",
             "idlType": {
               "type": "const-type",
               "extAttrs": [],
@@ -2429,7 +2429,7 @@
           },
           {
             "type": "const",
-            "name": "STORAGE",
+            "name": "STORAGE_BINDING",
             "idlType": {
               "type": "const-type",
               "extAttrs": [],
@@ -3016,7 +3016,7 @@
         "partial": false
       },
       "GPUSamplerDescriptor": {
-        "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 0xffffffff; // TODO: What should this be? Was Number.MAX_VALUE.\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
+        "fragment": "dictionary GPUSamplerDescriptor : GPUObjectDescriptorBase {\n    GPUAddressMode addressModeU = \"clamp-to-edge\";\n    GPUAddressMode addressModeV = \"clamp-to-edge\";\n    GPUAddressMode addressModeW = \"clamp-to-edge\";\n    GPUFilterMode magFilter = \"nearest\";\n    GPUFilterMode minFilter = \"nearest\";\n    GPUFilterMode mipmapFilter = \"nearest\";\n    float lodMinClamp = 0;\n    float lodMaxClamp = 32;\n    GPUCompareFunction compare;\n    [Clamp] unsigned short maxAnisotropy = 1;\n};",
         "type": "dictionary",
         "name": "GPUSamplerDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -3161,7 +3161,7 @@
             },
             "default": {
               "type": "number",
-              "value": "0xffffffff"
+              "value": "32"
             },
             "required": false
           },
@@ -6722,7 +6722,7 @@
         "partial": false
       },
       "GPUCommandEncoderDescriptor": {
-        "fragment": "dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {\n    boolean measureExecutionTime = false;\n\n    // TODO: reusability flag?\n};",
+        "fragment": "dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {\n    boolean measureExecutionTime = false;\n};",
         "type": "dictionary",
         "name": "GPUCommandEncoderDescriptor",
         "inheritance": "GPUObjectDescriptorBase",

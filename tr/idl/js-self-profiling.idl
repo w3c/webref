@@ -32,10 +32,10 @@ dictionary ProfilerStack {
 };
 
 dictionary ProfilerFrame {
-  DOMString name;
-  required unsigned long long resourceId;
-  required unsigned long long line;
-  required unsigned long long column;
+  required DOMString name;
+  unsigned long long resourceId;
+  unsigned long long line;
+  unsigned long long column;
 };
 
 dictionary ProfilerInitOptions {

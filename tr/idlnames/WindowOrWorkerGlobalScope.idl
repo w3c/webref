@@ -4,6 +4,8 @@ interface mixin WindowOrWorkerGlobalScope {
   readonly attribute boolean isSecureContext;
   readonly attribute boolean crossOriginIsolated;
 
+  undefined reportError(any e);
+
   // base64 utility methods
   DOMString btoa(DOMString data);
   ByteString atob(DOMString data);
@@ -20,6 +22,9 @@ interface mixin WindowOrWorkerGlobalScope {
   // ImageBitmap
   Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});
   Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});
+
+  // structured cloning
+  any structuredClone(any value, optional StructuredSerializeOptions options = {});
 };
 
 // Source: Fetch Standard (https://fetch.spec.whatwg.org/)

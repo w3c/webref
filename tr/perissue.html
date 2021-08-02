@@ -20,7 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>427 specifications were crawled in this report.</p>
+  <p>428 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -218,6 +218,7 @@
   <li><code>Map</code> used in <a href="https://www.w3.org/TR/css-images-4/">CSS Image Values and Replaced Content Module Level 4</a></li>
   <li><code>MediaList</code> used in <a href="https://www.w3.org/TR/css-conditional-3/">CSS Conditional Rules Module Level 3</a></li>
   <li><code>PaymentAddress</code> used in <a href="https://wicg.github.io/contact-api/spec/">Contact Picker API</a>, <a href="https://www.w3.org/TR/payment-method-basic-card/">Payment Method: Basic Card</a></li>
+  <li><code>PostMessageOptions</code> used in <a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><code>Screen</code> used in <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a></li>
   <li><code>SupportedType</code> used in <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
@@ -225,7 +226,7 @@
   <li><code>bigint</code> used in <a href="https://w3c.github.io/webrtc-encoded-transform/">WebRTC Encoded Transform</a></li>
   <li><code>void</code> used in <a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a>, <a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a>, <a href="https://www.w3.org/TR/css-animation-worklet-1/">CSS Animation Worklet API</a>, <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-layout-api-1/">CSS Layout API Level 1</a>, <a href="https://www.w3.org/TR/css-paint-api-1/">CSS Painting API Level 1</a>, <a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a>, <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a>, <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a>, <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a>, <a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a>, <a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a>, <a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a>, <a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a>, <a href="https://www.w3.org/TR/remote-playback/">Remote Playback API</a>, <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a>, <a href="https://www.w3.org/TR/resize-observer-1/">Resize Observer</a>, <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>, <a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>, <a href="https://www.w3.org/TR/tracking-dnt/">Tracking Preference Expression (DNT)</a>, <a href="https://www.w3.org/TR/user-timing-2/">User Timing Level 2</a>, <a href="https://www.w3.org/TR/webmidi/">Web MIDI API</a>, <a href="https://www.w3.org/TR/wasm-js-api-1/">WebAssembly JavaScript Interface</a>, <a href="https://www.w3.org/TR/webxr/">WebXR Device API</a></li>
   </ul>
-  <p>=&gt; 24 WebIDL names found</p>
+  <p>=&gt; 25 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -664,6 +665,7 @@
   <li><code>constructor(type, eventInitDict)</code> with type <code>constructor</code> for <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent"><code>FormDataEvent</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor"><code>constructor</code></a> with type <code>dfn</code> for <code>custom element definition</code></li>
   <li><code>formData</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit"><code>FormDataEventInit</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-formdataevent-formdata"><code>formData</code></a> with type <code>attribute</code> for <code>FormDataEvent</code></li>
   <li><code>flatten</code> with type <code>dict-member</code> for <a href="https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions"><code>AssignedNodesOptions</code></a>, but found <a href="https://html.spec.whatwg.org/multipage/scripting.html#dom-assignednodesoptions-flatten"><code>flatten</code></a> with type <code>dict-member</code> for <code>AssignedNodeOptions</code></li>
+  <li><code>CanvasImageSource</code> with type <code>typedef</code>, but found <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvasimagesource"><code>CanvasImageSource</code></a> with type <code>dfn</code></li>
   <li><code>&quot;butt&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap"><code>CanvasLineCap</code></a></li>
   <li><code>&quot;round&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap"><code>CanvasLineCap</code></a></li>
   <li><code>&quot;square&quot;</code> with type <code>enum-value</code> for <a href="https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap"><code>CanvasLineCap</code></a></li>
@@ -1382,7 +1384,7 @@
   <li><code>multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)</code> with type <code>method</code></li>
   </ul></li>
   </ul>
-  <p>=&gt; 665 properties without definition found in 59 specifications</p>
+  <p>=&gt; 666 properties without definition found in 59 specifications</p>
   </section>
   <section id="possibly-no-definition-for-css-properties" class="level2">
   <h2>Possibly no definition for CSS properties</h2>
@@ -1711,16 +1713,17 @@
   <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css3-syntax/"><code>https://www.w3.org/TR/css3-syntax/</code></a> but does not list it in its references</li>
-  <li><a href="https://fetch.spec.whatwg.org/"><code>https://fetch.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-fonts-5/">CSS Fonts Module Level 5</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/"><code>https://www.w3.org/TR/css-syntax-3/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/"><code>https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/"><code>https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a> links to:
   <ul>
@@ -2548,7 +2551,7 @@
   <li><a href="https://www.w3.org/TR/webxr-hand-input-1/">WebXR Hand Input Module - Level 1</a> links to <a href="https://www.w3.org/TR/webxr/"><code>https://www.w3.org/TR/webxr/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 724 missing references for links found in 184 specifications</p>
+  <p>=&gt; 725 missing references for links found in 184 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -2637,7 +2640,6 @@
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/cssom-view/"><code>https://www.w3.org/TR/cssom-view/</code></a> but related reference &quot;CSSOM-VIEW-1&quot; uses URL <a href="https://www.w3.org/TR/cssom-view-1/"><code>https://www.w3.org/TR/cssom-view-1/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a> links to <a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/css-variables-1/">CSS Custom Properties for Cascading Variables Module Level 1</a> links to:
   <ul>
   <li><a href="https://dom.spec.whatwg.org/"><code>https://dom.spec.whatwg.org/</code></a> but related reference &quot;DOM&quot; uses URL <a href="http://www.w3.org/TR/dom/"><code>http://www.w3.org/TR/dom/</code></a></li>
@@ -2659,6 +2661,7 @@
   <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/"><code>https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/"><code>https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/"><code>https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/"><code>https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/</code></a> but related reference &quot;CSS-FONTS-3&quot; uses URL <a href="https://www.w3.org/TR/css-fonts-3/"><code>https://www.w3.org/TR/css-fonts-3/</code></a></li>
@@ -3125,7 +3128,7 @@
   <li><a href="https://www.w3.org/TR/webxr-gamepads-module-1/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://www.w3.org/TR/webxr-hand-input-1/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 338 inconsistent references for links found in 177 specifications</p>
+  <p>=&gt; 338 inconsistent references for links found in 176 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -6010,37 +6013,44 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-counter-styles-3/">CSS Counter Styles Level 3</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/css3-images/#image-type"><code>https://www.w3.org/TR/css3-images/#image-type</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-images-3/#typedef-image"><code>https://www.w3.org/TR/css-images-3/#typedef-image</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-images-3/#default-object-size"><code>https://www.w3.org/TR/css-images-3/#default-object-size</code></a></li>
   <li><a href="https://www.w3.org/TR/css-lists-3/#propdef-list-style-type"><code>https://www.w3.org/TR/css-lists-3/#propdef-list-style-type</code></a></li>
   <li><a href="https://www.w3.org/TR/css-lists-3/#funcdef-counter"><code>https://www.w3.org/TR/css-lists-3/#funcdef-counter</code></a></li>
   <li><a href="https://www.w3.org/TR/css-lists-3/#funcdef-counters"><code>https://www.w3.org/TR/css-lists-3/#funcdef-counters</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-lists-3/#valuedef-inside"><code>https://www.w3.org/TR/css-lists-3/#valuedef-inside</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-lists-3/#valdef-list-style-type-none"><code>https://www.w3.org/TR/css-lists-3/#valdef-list-style-type-none</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-lists-3/#valdef-list-style-position-inside"><code>https://www.w3.org/TR/css-lists-3/#valdef-list-style-position-inside</code></a></li>
   <li><a href="https://www.w3.org/TR/css-lists-3/#propdef-list-style"><code>https://www.w3.org/TR/css-lists-3/#propdef-list-style</code></a></li>
   <li><a href="https://www.w3.org/TR/css-content-3/#propdef-content"><code>https://www.w3.org/TR/css-content-3/#propdef-content</code></a></li>
   <li><a href="https://www.w3.org/TR/css-pseudo-4/#selectordef-marker"><code>https://www.w3.org/TR/css-pseudo-4/#selectordef-marker</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-text-decor-4/#valdef-text-emphasis-skip-symbols"><code>https://drafts.csswg.org/css-text-decor-4/#valdef-text-emphasis-skip-symbols</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list"><code>https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#identifier-value"><code>https://www.w3.org/TR/css3-values/#identifier-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#css-wide-keywords"><code>https://www.w3.org/TR/css3-values/#css-wide-keywords</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#comb-one"><code>https://www.w3.org/TR/css3-values/#comb-one</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#integer-value"><code>https://www.w3.org/TR/css3-values/#integer-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#mult-opt"><code>https://www.w3.org/TR/css3-values/#mult-opt</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#mult-num"><code>https://www.w3.org/TR/css3-values/#mult-num</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#mult-comma"><code>https://www.w3.org/TR/css3-values/#mult-comma</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#comb-all"><code>https://www.w3.org/TR/css3-values/#comb-all</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#mult-one-plus"><code>https://www.w3.org/TR/css3-values/#mult-one-plus</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#string-value"><code>https://www.w3.org/TR/css3-values/#string-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-values/#identifier"><code>https://www.w3.org/TR/css3-values/#identifier</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/#at-rule"><code>https://www.w3.org/TR/css-syntax-3/#at-rule</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-component-values"><code>https://www.w3.org/TR/css-syntax-3/#parse-a-list-of-component-values</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar"><code>https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#identifier-value"><code>https://www.w3.org/TR/css-values-4/#identifier-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#css-wide-keywords"><code>https://www.w3.org/TR/css-values-4/#css-wide-keywords</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#comb-one"><code>https://www.w3.org/TR/css-values-4/#comb-one</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#integer-value"><code>https://www.w3.org/TR/css-values-4/#integer-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#mult-opt"><code>https://www.w3.org/TR/css-values-4/#mult-opt</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#mult-num"><code>https://www.w3.org/TR/css-values-4/#mult-num</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#mult-comma"><code>https://www.w3.org/TR/css-values-4/#mult-comma</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#comb-all"><code>https://www.w3.org/TR/css-values-4/#comb-all</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#mult-one-plus"><code>https://www.w3.org/TR/css-values-4/#mult-one-plus</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#string-value"><code>https://www.w3.org/TR/css-values-4/#string-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#css-bracketed-range-notation"><code>https://www.w3.org/TR/css-values-4/#css-bracketed-range-notation</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scoping-1/#css-tree-scoped-name"><code>https://drafts.csswg.org/css-scoping-1/#css-tree-scoped-name</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scoping-1/#css-tree-scoped-reference"><code>https://drafts.csswg.org/css-scoping-1/#css-tree-scoped-reference</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#grapheme-cluster"><code>https://www.w3.org/TR/css-text-3/#grapheme-cluster</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#content-language"><code>https://www.w3.org/TR/css-text-3/#content-language</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-syntax-3/#at-rule"><code>https://drafts.csswg.org/css-syntax-3/#at-rule</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-component-values"><code>https://drafts.csswg.org/css-syntax-3/#parse-a-list-of-component-values</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar"><code>https://drafts.csswg.org/css-syntax-3/#css-parse-something-according-to-a-css-grammar</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-images-3/#default-object-size"><code>https://drafts.csswg.org/css-images-3/#default-object-size</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-4/#computed-value"><code>https://www.w3.org/TR/css-cascade-4/#computed-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-writing-modes-3/#writing-mode"><code>https://www.w3.org/TR/css-writing-modes-3/#writing-mode</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-cascade-5/#computed-value"><code>https://www.w3.org/TR/css-cascade-5/#computed-value</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-details-element"><code>https://html.spec.whatwg.org/#the-details-element</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-writing-modes-4/#writing-mode"><code>https://www.w3.org/TR/css-writing-modes-4/#writing-mode</code></a></li>
   <li><a href="https://www.w3.org/TR/cssom-1/#cssrule"><code>https://www.w3.org/TR/cssom-1/#cssrule</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-short"><code>https://heycam.github.io/webidl/#idl-unsigned-short</code></a></li>
-  <li><a href="https://drafts.csswg.org/cssom-1/#typedefdef-cssomstring"><code>https://drafts.csswg.org/cssom-1/#typedefdef-cssomstring</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-1/#cssomstring"><code>https://drafts.csswg.org/cssom-1/#cssomstring</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-3/#css-identifier"><code>https://www.w3.org/TR/css-values-3/#css-identifier</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-highlight-api-1/">CSS Custom Highlight API Module Level 1</a>:
   <ul>
@@ -6422,38 +6432,39 @@
   <li><a href="https://www.w3.org/TR/css-fonts-4/">CSS Fonts Module Level 4</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/css-values-3/#value-defs"><code>https://www.w3.org/TR/css-values-3/#value-defs</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#string-value"><code>https://www.w3.org/TR/css-values-3/#string-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#number-value"><code>https://www.w3.org/TR/css-values-3/#number-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#percentage-value"><code>https://www.w3.org/TR/css-values-3/#percentage-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#angle-value"><code>https://www.w3.org/TR/css-values-3/#angle-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#url-value"><code>https://www.w3.org/TR/css-values-3/#url-value</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-values-3/#integer-value"><code>https://www.w3.org/TR/css-values-3/#integer-value</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#css-wide-keywords"><code>https://www.w3.org/TR/css-values-4/#css-wide-keywords</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#comb-one"><code>https://www.w3.org/TR/css-values-4/#comb-one</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#mult-comma"><code>https://www.w3.org/TR/css-values-4/#mult-comma</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#string-value"><code>https://www.w3.org/TR/css-values-4/#string-value</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#identifier-value"><code>https://www.w3.org/TR/css-values-4/#identifier-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#number-value"><code>https://www.w3.org/TR/css-values-4/#number-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#percentage-value"><code>https://www.w3.org/TR/css-values-4/#percentage-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#angle-value"><code>https://www.w3.org/TR/css-values-4/#angle-value</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#mult-opt"><code>https://www.w3.org/TR/css-values-4/#mult-opt</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#typedef-length-percentage"><code>https://www.w3.org/TR/css-values-4/#typedef-length-percentage</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#font-relative-length"><code>https://www.w3.org/TR/css-values-4/#font-relative-length</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#em"><code>https://www.w3.org/TR/css-values-4/#em</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#rem"><code>https://www.w3.org/TR/css-values-4/#rem</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#comb-any"><code>https://www.w3.org/TR/css-values-4/#comb-any</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#url-value"><code>https://www.w3.org/TR/css-values-4/#url-value</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#mult-num-range"><code>https://www.w3.org/TR/css-values-4/#mult-num-range</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#ex"><code>https://www.w3.org/TR/css-values-4/#ex</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values-4/#typedef-ident"><code>https://www.w3.org/TR/css-values-4/#typedef-ident</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-values-4/#integer-value"><code>https://www.w3.org/TR/css-values-4/#integer-value</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#value-defs"><code>https://www.w3.org/TR/css-values/#value-defs</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#percentages"><code>https://www.w3.org/TR/css-values/#percentages</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#initial-values"><code>https://www.w3.org/TR/css-cascade/#initial-values</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#inherited-property"><code>https://www.w3.org/TR/css-cascade/#inherited-property</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#computed"><code>https://www.w3.org/TR/css-cascade/#computed</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-pseudo/#generated-content"><code>https://www.w3.org/TR/css-pseudo/#generated-content</code></a></li>
   <li><a href="https://www.w3.org/TR/web-animations/#animation-type"><code>https://www.w3.org/TR/web-animations/#animation-type</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-cascade-4/#valdef-all-inherit"><code>https://www.w3.org/TR/css-cascade-4/#valdef-all-inherit</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-cascade-5/#valdef-all-inherit"><code>https://www.w3.org/TR/css-cascade-5/#valdef-all-inherit</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#content-language"><code>https://www.w3.org/TR/css-text-3/#content-language</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#order"><code>https://www.w3.org/TR/css-text-3/#order</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#propdef-letter-spacing"><code>https://www.w3.org/TR/css-text-3/#propdef-letter-spacing</code></a></li>
   <li><a href="https://www.w3.org/TR/css-text-3/#propdef-text-transform"><code>https://www.w3.org/TR/css-text-3/#propdef-text-transform</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#css-invalid"><code>https://www.w3.org/TR/css-syntax-3/#css-invalid</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list"><code>https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values"><code>https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#typedef-urange"><code>https://www.w3.org/TR/css-syntax-3/#typedef-urange</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#typedef-rule-list"><code>https://www.w3.org/TR/css-syntax-3/#typedef-rule-list</code></a></li>
   <li><a href="https://www.w3.org/TR/css-syntax-3/#at-rule"><code>https://www.w3.org/TR/css-syntax-3/#at-rule</code></a></li>
@@ -6463,7 +6474,6 @@
   <li><a href="https://www.w3.org/TR/cssom-1/#cssrule"><code>https://www.w3.org/TR/cssom-1/#cssrule</code></a></li>
   <li><a href="https://www.w3.org/TR/cssom-1/#cssstyledeclaration"><code>https://www.w3.org/TR/cssom-1/#cssstyledeclaration</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#valdef-font-style-oblique"><code>https://drafts.csswg.org/css2/#valdef-font-style-oblique</code></a></li>
-  <li><a href="https://drafts.csswg.org/css2/#valdef-font-size-large"><code>https://drafts.csswg.org/css2/#valdef-font-size-large</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#valdef-font-size-medium"><code>https://drafts.csswg.org/css2/#valdef-font-size-medium</code></a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/#containing-block"><code>https://www.w3.org/TR/css-display-3/#containing-block</code></a></li>
   <li><a href="https://www.w3.org/TR/css-display-3/#valdef-display-block"><code>https://www.w3.org/TR/css-display-3/#valdef-display-block</code></a></li>
@@ -6471,6 +6481,7 @@
   <li><a href="https://www.w3.org/TR/css-backgrounds-3/#valdef-line-width-medium"><code>https://www.w3.org/TR/css-backgrounds-3/#valdef-line-width-medium</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#font"><code>https://html.spec.whatwg.org/#font</code></a></li>
   <li><a href="https://www.w3.org/TR/css-color-4/#propdef-color"><code>https://www.w3.org/TR/css-color-4/#propdef-color</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-color-4/#typedef-color"><code>https://www.w3.org/TR/css-color-4/#typedef-color</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-syntax/#whitespace"><code>https://www.w3.org/TR/css3-syntax/#whitespace</code></a></li>
   <li><a href="https://www.w3.org/TR/css-inline-3/#ascent-metric"><code>https://www.w3.org/TR/css-inline-3/#ascent-metric</code></a></li>
   <li><a href="https://www.w3.org/TR/css-inline-3/#descent-metric"><code>https://www.w3.org/TR/css-inline-3/#descent-metric</code></a></li>
@@ -6478,12 +6489,13 @@
   <li><a href="https://www.w3.org/TR/css-writing-modes-4/#typographic-mode"><code>https://www.w3.org/TR/css-writing-modes-4/#typographic-mode</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/#typeset-sideways"><code>https://drafts.csswg.org/css-writing-modes-4/#typeset-sideways</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes-4/#typeset-upright"><code>https://drafts.csswg.org/css-writing-modes-4/#typeset-upright</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-writing-modes-4/#vertical-typographic-mode"><code>https://drafts.csswg.org/css-writing-modes-4/#vertical-typographic-mode</code></a></li>
   <li><a href="https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations"><code>https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations</code></a></li>
   <li><a href="https://drafts.csswg.org/cssom-1/#cssomstring"><code>https://drafts.csswg.org/cssom-1/#cssomstring</code></a></li>
   <li><a href="https://www.w3.org/TR/css-transforms-1/#propdef-transform"><code>https://www.w3.org/TR/css-transforms-1/#propdef-transform</code></a></li>
-  <li><a href="https://www.w3.org/TR/css-color-3/#valuea-def-color"><code>https://www.w3.org/TR/css-color-3/#valuea-def-color</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-short"><code>https://heycam.github.io/webidl/#idl-unsigned-short</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#es-maplike"><code>https://heycam.github.io/webidl/#es-maplike</code></a></li>
@@ -6497,6 +6509,7 @@
   <li><a href="https://drafts.csswg.org/css-fonts-4/#propdef-font-style"><code>https://drafts.csswg.org/css-fonts-4/#propdef-font-style</code></a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/#propdef-font-size"><code>https://drafts.csswg.org/css-fonts-4/#propdef-font-size</code></a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/#first-available-font"><code>https://drafts.csswg.org/css-fonts-4/#first-available-font</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src"><code>https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src</code></a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position"><code>https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position</code></a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override"><code>https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override</code></a></li>
   <li><a href="https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing"><code>https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing</code></a></li>
@@ -6505,6 +6518,8 @@
   <li><a href="https://drafts.csswg.org/css-values-4/#comb-one"><code>https://drafts.csswg.org/css-values-4/#comb-one</code></a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/#mult-opt"><code>https://drafts.csswg.org/css-values-4/#mult-opt</code></a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/#number-value"><code>https://drafts.csswg.org/css-values-4/#number-value</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-4/#url-value"><code>https://drafts.csswg.org/css-values-4/#url-value</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-4/#string-value"><code>https://drafts.csswg.org/css-values-4/#string-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/#mult-num-range"><code>https://drafts.csswg.org/css-values-4/#mult-num-range</code></a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/#percentage-value"><code>https://drafts.csswg.org/css-values-4/#percentage-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css-values-4/#ex"><code>https://drafts.csswg.org/css-values-4/#ex</code></a></li>
@@ -6522,6 +6537,7 @@
   <li><a href="https://drafts.csswg.org/css-cascade-5/#used-value"><code>https://drafts.csswg.org/css-cascade-5/#used-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css-cascade-5/#computed-value"><code>https://drafts.csswg.org/css-cascade-5/#computed-value</code></a></li>
   <li><a href="https://drafts.csswg.org/css2/#propdef-line-height"><code>https://drafts.csswg.org/css2/#propdef-line-height</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values"><code>https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values</code></a></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-thickness-from-font"><code>https://drafts.csswg.org/css-text-decor-4/#valdef-text-decoration-thickness-from-font</code></a></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-thickness"><code>https://drafts.csswg.org/css-text-decor-4/#propdef-text-decoration-thickness</code></a></li>
   <li><a href="https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-offset"><code>https://drafts.csswg.org/css-text-decor-4/#propdef-text-underline-offset</code></a></li>
@@ -8659,6 +8675,7 @@
   <li><a href="https://www.w3.org/TR/css-shapes/#shape-margin-property"><code>https://www.w3.org/TR/css-shapes/#shape-margin-property</code></a></li>
   <li><a href="https://drafts.csswg.org/css-variables-1/#funcdef-var"><code>https://drafts.csswg.org/css-variables-1/#funcdef-var</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate"><code>https://drafts.csswg.org/css-transforms-1/#funcdef-transform-rotate</code></a></li>
+  <li><a href="https://www.w3.org/TR/css3-exclusions/#wrapping-context"><code>https://www.w3.org/TR/css3-exclusions/#wrapping-context</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#value-defs"><code>https://www.w3.org/TR/css-values/#value-defs</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#percentages"><code>https://www.w3.org/TR/css-values/#percentages</code></a></li>
   <li><a href="https://drafts.csswg.org/css-images-3/#typedef-image"><code>https://drafts.csswg.org/css-images-3/#typedef-image</code></a></li>
@@ -11216,7 +11233,6 @@
   <li><a href="https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate"><code>https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate</code></a></li>
   <li><a href="https://www.w3.org/TR/permissions/#enumdef-permissionname"><code>https://www.w3.org/TR/permissions/#enumdef-permissionname</code></a></li>
   <li><a href="https://www.w3.org/TR/permissions/#permission-state"><code>https://www.w3.org/TR/permissions/#permission-state</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-revocation-algorithm"><code>https://w3c.github.io/permissions/#permission-revocation-algorithm</code></a></li>
   <li><a href="https://w3c.github.io/permissions/#enumdef-permissionname"><code>https://w3c.github.io/permissions/#enumdef-permissionname</code></a></li>
   <li><a href="https://w3c.github.io/permissions/#request-permission-to-use"><code>https://w3c.github.io/permissions/#request-permission-to-use</code></a></li>
   <li><a href="https://w3c.github.io/permissions/#dictdef-permissiondescriptor"><code>https://w3c.github.io/permissions/#dictdef-permissiondescriptor</code></a></li>
@@ -12198,7 +12214,9 @@
   <li><a href="https://w3c.github.io/touch-events/#dfn-touch-point"><code>https://w3c.github.io/touch-events/#dfn-touch-point</code></a></li>
   <li><a href="https://w3c.github.io/touch-events/#event-touchend"><code>https://w3c.github.io/touch-events/#event-touchend</code></a></li>
   <li><a href="https://w3c.github.io/pointerevents/#pointerevent-interface"><code>https://w3c.github.io/pointerevents/#pointerevent-interface</code></a></li>
+  <li><a href="https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event"><code>https://w3c.github.io/pointerevents/#dfn-fire-a-pointer-event</code></a></li>
   <li><a href="https://w3c.github.io/pointerevents/#the-pointerup-event"><code>https://w3c.github.io/pointerevents/#the-pointerup-event</code></a></li>
+  <li><a href="https://w3c.github.io/pointerevents/#the-pointercancel-event"><code>https://w3c.github.io/pointerevents/#the-pointercancel-event</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml"><code>https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml"><code>https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml</code></a></li>
   <li><a href="https://w3c.github.io/selection-api/#dfn-selection"><code>https://w3c.github.io/selection-api/#dfn-selection</code></a></li>
@@ -12494,6 +12512,9 @@
   <li><a href="https://w3c.github.io/manifest/#dfn-manifest"><code>https://w3c.github.io/manifest/#dfn-manifest</code></a></li>
   <li><a href="https://w3c.github.io/manifest/#dfn-installed-web-application"><code>https://w3c.github.io/manifest/#dfn-installed-web-application</code></a></li>
   <li><a href="https://w3c.github.io/manifest/#dfn-processing-a-manifest"><code>https://w3c.github.io/manifest/#dfn-processing-a-manifest</code></a></li>
+  <li><a href="https://w3c.github.io/webcodecs/#videoframe-interface"><code>https://w3c.github.io/webcodecs/#videoframe-interface</code></a></li>
+  <li><a href="https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot"><code>https://w3c.github.io/webcodecs/#dom-videoframe-display-width-slot</code></a></li>
+  <li><a href="https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot"><code>https://w3c.github.io/webcodecs/#dom-videoframe-display-height-slot</code></a></li>
   <li><a href="https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status"><code>https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status</code></a></li>
   <li><a href="https://www.w3.org/TR/css3-color/#css2-system"><code>https://www.w3.org/TR/css3-color/#css2-system</code></a></li>
   <li><a href="https://w3c.github.io/html-aria/#el-html"><code>https://w3c.github.io/html-aria/#el-html</code></a></li>
@@ -13197,15 +13218,18 @@
   <li><a href="https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time"><code>https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp"><code>https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/#clock-resolution"><code>https://www.w3.org/TR/hr-time-2/#clock-resolution</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#worker"><code>https://html.spec.whatwg.org/#worker</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#worker"><code>https://html.spec.whatwg.org/#worker</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type</code></a></li>
@@ -14202,13 +14226,9 @@
   <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-requeststart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-requeststart</code></a></li>
   <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responsestart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responsestart</code></a></li>
   <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responseend"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-responseend</code></a></li>
-  <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-fetchstart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-fetchstart</code></a></li>
-  <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-domainlookupstart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-domainlookupstart</code></a></li>
-  <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-domainlookupend"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-domainlookupend</code></a></li>
+  <li><a href="https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry"><code>https://www.w3.org/TR/resource-timing-2/#dfn-setup-the-resource-timing-entry</code></a></li>
   <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectstart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectstart</code></a></li>
   <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectend"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-connectend</code></a></li>
-  <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectstart"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectstart</code></a></li>
-  <li><a href="https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectend"><code>https://www.w3.org/TR/resource-timing-2/#dom-performanceresourcetiming-redirectend</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/#dfn-time-origin"><code>https://www.w3.org/TR/hr-time-2/#dfn-time-origin</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp"><code>https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time-2/#dom-performance-timeorigin"><code>https://www.w3.org/TR/hr-time-2/#dom-performance-timeorigin</code></a></li>
@@ -14216,11 +14236,19 @@
   <li><a href="https://html.spec.whatwg.org/#navigate"><code>https://html.spec.whatwg.org/#navigate</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-document&#39;s-address"><code>https://html.spec.whatwg.org/#the-document's-address</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#document-load-timing-info"><code>https://html.spec.whatwg.org/#document-load-timing-info</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#document-unload-timing-info"><code>https://html.spec.whatwg.org/#document-unload-timing-info</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#unload-event-start-time"><code>https://html.spec.whatwg.org/#unload-event-start-time</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#unloading-documents"><code>https://html.spec.whatwg.org/#unloading-documents</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#unload-event-end-time"><code>https://html.spec.whatwg.org/#unload-event-end-time</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-interactive-time"><code>https://html.spec.whatwg.org/#dom-interactive-time</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#current-document-readiness"><code>https://html.spec.whatwg.org/#current-document-readiness</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#the-end:current-document-readiness"><code>https://html.spec.whatwg.org/#the-end:current-document-readiness</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-content-loaded-event-start-time"><code>https://html.spec.whatwg.org/#dom-content-loaded-event-start-time</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-end:event-domcontentloaded"><code>https://html.spec.whatwg.org/#the-end:event-domcontentloaded</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#the-end:current-document-readiness-2"><code>https://html.spec.whatwg.org/#the-end:current-document-readiness-2</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-content-loaded-event-end-time"><code>https://html.spec.whatwg.org/#dom-content-loaded-event-end-time</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-complete-time"><code>https://html.spec.whatwg.org/#dom-complete-time</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#load-event-start-time"><code>https://html.spec.whatwg.org/#load-event-start-time</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#load-event-end-time"><code>https://html.spec.whatwg.org/#load-event-end-time</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh"><code>https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#history-handling-behavior"><code>https://html.spec.whatwg.org/#history-handling-behavior</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#hh-default"><code>https://html.spec.whatwg.org/#hh-default</code></a></li>
@@ -14228,19 +14256,18 @@
   <li><a href="https://html.spec.whatwg.org/#hh-reload"><code>https://html.spec.whatwg.org/#hh-reload</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#hh-entry-update"><code>https://html.spec.whatwg.org/#hh-entry-update</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-origin"><code>https://html.spec.whatwg.org/#concept-origin</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#sandboxed-navigation-browsing-context-flag"><code>https://html.spec.whatwg.org/#sandboxed-navigation-browsing-context-flag</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag"><code>https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#sandboxed-top-level-navigation-with-user-activation-browsing-context-flag"><code>https://html.spec.whatwg.org/#sandboxed-top-level-navigation-with-user-activation-browsing-context-flag</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#browsing-context"><code>https://html.spec.whatwg.org/#browsing-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#navigate-fragid-step"><code>https://html.spec.whatwg.org/#navigate-fragid-step</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded"><code>https://html.spec.whatwg.org/#refused-to-allow-the-document-to-be-unloaded</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#relevant-application-cache"><code>https://html.spec.whatwg.org/#relevant-application-cache</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#the-end"><code>https://html.spec.whatwg.org/#the-end</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-global-object-realm"><code>https://html.spec.whatwg.org/#concept-global-object-realm</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#load-timing-info"><code>https://html.spec.whatwg.org/#load-timing-info</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#previous-document-unload-timing"><code>https://html.spec.whatwg.org/#previous-document-unload-timing</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#same-origin"><code>https://html.spec.whatwg.org/#same-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page"><code>https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#relaxing-the-same-origin-restriction"><code>https://html.spec.whatwg.org/#relaxing-the-same-origin-restriction</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#prompt-to-unload-a-document"><code>https://html.spec.whatwg.org/#prompt-to-unload-a-document</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#unload-a-document"><code>https://html.spec.whatwg.org/#unload-a-document</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#fetching-resources"><code>https://html.spec.whatwg.org/#fetching-resources</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#relevant-application-cache"><code>https://html.spec.whatwg.org/#relevant-application-cache</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-end"><code>https://html.spec.whatwg.org/#the-end</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#document"><code>https://html.spec.whatwg.org/#document</code></a></li>
   <li><a href="https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry"><code>https://www.w3.org/TR/performance-timeline-2/#dom-performanceentry</code></a></li>
   <li><a href="https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute"><code>https://www.w3.org/TR/performance-timeline-2/#supportedentrytypes-attribute</code></a></li>
@@ -14255,12 +14282,9 @@
   <li><a href="https://heycam.github.io/webidl/#idl-enums"><code>https://heycam.github.io/webidl/#idl-enums</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SameObject"><code>https://heycam.github.io/webidl/#SameObject</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#run-service-worker"><code>https://www.w3.org/TR/service-workers-1/#run-service-worker</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration"><code>https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#fetchevent"><code>https://www.w3.org/TR/service-workers-1/#fetchevent</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#dfn-active-worker"><code>https://www.w3.org/TR/service-workers-1/#dfn-active-worker</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#on-fetch-request-algorithm"><code>https://www.w3.org/TR/service-workers-1/#on-fetch-request-algorithm</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration"><code>https://www.w3.org/TR/service-workers-1/#dfn-service-worker-registration</code></a></li>
+  <li><a href="https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-start-time"><code>https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-start-time</code></a></li>
+  <li><a href="https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-fetch-event-dispatch-time"><code>https://www.w3.org/TR/service-workers-1/#service-worker-timing-info-fetch-event-dispatch-time</code></a></li>
+  <li><a href="https://www.w3.org/TR/service-workers-1/#service-worker-timing-info"><code>https://www.w3.org/TR/service-workers-1/#service-worker-timing-info</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/network-error-logging-1/">Network Error Logging</a>:
   <ul>
@@ -15169,6 +15193,13 @@
   <li><a href="https://w3c.github.io/webappsec-csp/#directive-post-request-check"><code>https://w3c.github.io/webappsec-csp/#directive-post-request-check</code></a></li>
   <li><a href="https://w3c.github.io/ServiceWorker/#serviceworker"><code>https://w3c.github.io/ServiceWorker/#serviceworker</code></a></li>
   <li><a href="https://www.w3.org/TR/fetch-metadata/#abstract-opdef-set-mode"><code>https://www.w3.org/TR/fetch-metadata/#abstract-opdef-set-mode</code></a></li>
+  </ul></li>
+  <li><a href="https://wicg.github.io/prefer-current-tab/">preferCurrentTab</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/screen-capture/#dom-mediadevices-getdisplaymedia"><code>https://www.w3.org/TR/screen-capture/#dom-mediadevices-getdisplaymedia</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#dom-mediastream"><code>https://www.w3.org/TR/mediacapture-streams/#dom-mediastream</code></a></li>
+  <li><a href="https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints"><code>https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/preload/">Preload</a>:
   <ul>
@@ -18744,6 +18775,7 @@
   <li><a href="https://heycam.github.io/webidl/#EnforceRange"><code>https://heycam.github.io/webidl/#EnforceRange</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#aborterror"><code>https://heycam.github.io/webidl/#aborterror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-float"><code>https://heycam.github.io/webidl/#idl-float</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Clamp"><code>https://heycam.github.io/webidl/#Clamp</code></a></li>
@@ -18774,6 +18806,7 @@
   <li><a href="https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability"><code>https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#serializable"><code>https://html.spec.whatwg.org/#serializable</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#htmlvideoelement"><code>https://html.spec.whatwg.org/#htmlvideoelement</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument"><code>https://html.spec.whatwg.org/#check-the-usability-of-the-image-argument</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#queue-a-microtask"><code>https://html.spec.whatwg.org/#queue-a-microtask</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#imagebitmap"><code>https://html.spec.whatwg.org/#imagebitmap</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#imagebitmapoptions"><code>https://html.spec.whatwg.org/#imagebitmapoptions</code></a></li>
@@ -19844,7 +19877,7 @@
   <li><a href="https://w3c.github.io/FileAPI/#dfn-name"><code>https://w3c.github.io/FileAPI/#dfn-name</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 15469 problematic external links found in 339 specifications</p>
+  <p>=&gt; 15496 problematic external links found in 340 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -20285,6 +20318,10 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2013/WD-css3-fonts-20130212/"><code>https://www.w3.org/TR/2013/WD-css3-fonts-20130212/</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/css-fonts-5/">CSS Fonts Module Level 5</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/"><code>https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/css-break-3/">CSS Fragmentation Module Level 3</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2011/REC-CSS2-20110607/"><code>https://www.w3.org/TR/2011/REC-CSS2-20110607/</code></a></li>
@@ -20670,7 +20707,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 287 problematic external links found in 73 specifications</p>
+  <p>=&gt; 288 problematic external links found in 74 specifications</p>
   </section>
   </body>
 </html>

@@ -18,13 +18,9 @@
       "dom-performanceresourcetiming-requeststart",
       "dom-performanceresourcetiming-responsestart",
       "dom-performanceresourcetiming-responseend",
-      "dom-performanceresourcetiming-fetchstart",
-      "dom-performanceresourcetiming-domainlookupstart",
-      "dom-performanceresourcetiming-domainlookupend",
+      "dfn-setup-the-resource-timing-entry",
       "dom-performanceresourcetiming-connectstart",
-      "dom-performanceresourcetiming-connectend",
-      "dom-performanceresourcetiming-redirectstart",
-      "dom-performanceresourcetiming-redirectend"
+      "dom-performanceresourcetiming-connectend"
     ],
     "https://www.w3.org/webperf/": [],
     "https://github.com/w3c/navigation-timing/issues/": [],
@@ -33,7 +29,7 @@
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/45211/status": [],
+    "https://www.w3.org/groups/wg/webperf/ipr": [],
     "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/TR/hr-time-2/": [
       "dfn-time-origin",
@@ -45,11 +41,19 @@
       "navigate",
       "concept-document-window",
       "the-document's-address",
+      "document-load-timing-info",
+      "document-unload-timing-info",
+      "unload-event-start-time",
       "unloading-documents",
+      "unload-event-end-time",
+      "dom-interactive-time",
       "current-document-readiness",
-      "the-end:current-document-readiness",
+      "dom-content-loaded-event-start-time",
       "the-end:event-domcontentloaded",
-      "the-end:current-document-readiness-2",
+      "dom-content-loaded-event-end-time",
+      "dom-complete-time",
+      "load-event-start-time",
+      "load-event-end-time",
       "attr-meta-http-equiv-refresh",
       "history-handling-behavior",
       "hh-default",
@@ -57,19 +61,18 @@
       "hh-reload",
       "hh-entry-update",
       "concept-origin",
-      "sandboxed-navigation-browsing-context-flag",
-      "sandboxed-top-level-navigation-without-user-activation-browsing-context-flag",
-      "sandboxed-top-level-navigation-with-user-activation-browsing-context-flag",
-      "browsing-context",
-      "navigate-fragid-step",
-      "refused-to-allow-the-document-to-be-unloaded",
-      "relevant-application-cache",
-      "the-end",
+      "concept-relevant-global",
+      "concept-global-object-realm",
+      "load-timing-info",
+      "previous-document-unload-timing",
       "same-origin",
+      "update-the-session-history-with-the-new-page",
       "relaxing-the-same-origin-restriction",
       "prompt-to-unload-a-document",
       "unload-a-document",
       "fetching-resources",
+      "relevant-application-cache",
+      "the-end",
       "document"
     ],
     "https://www.w3.org/TR/performance-timeline-2/": [
@@ -90,12 +93,9 @@
       "SameObject"
     ],
     "https://www.w3.org/TR/service-workers-1/": [
-      "run-service-worker",
-      "dfn-containing-service-worker-registration",
-      "fetchevent",
-      "dfn-active-worker",
-      "on-fetch-request-algorithm",
-      "dfn-service-worker-registration"
+      "service-worker-timing-info-start-time",
+      "service-worker-timing-info-fetch-event-dispatch-time",
+      "service-worker-timing-info"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming/unloadEventStart": [],
@@ -113,13 +113,12 @@
     "https://fetch.spec.whatwg.org/": [
       "concept-fetch",
       "redirect-status",
-      "concept-request-method",
-      "concept-request",
-      "concept-request-redirect-count"
+      "fetch-timing-info",
+      "concept-request-method"
     ],
-    "https://tools.ietf.org/html/rfc7230": [
-      "section-6.3",
-      "section-6.5"
+    "https://dom.spec.whatwg.org/": [
+      "concept-document",
+      "document"
     ],
     "https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html": [
       "sec8.1"
@@ -130,15 +129,13 @@
     "https://url.spec.whatwg.org/": [
       "concept-url-scheme"
     ],
-    "https://tools.ietf.org/html/bcp14": [],
-    "https://tc39.es/ecma262/": [],
+    "https://datatracker.ietf.org/doc/html/bcp14": [],
+    "https://tc39.es/ecma262/multipage/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
-    "https://www.w3.org/TR/resource-timing-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc2616": [],
-    "https://httpwg.org/specs/rfc7234.html": [],
-    "https://tools.ietf.org/html/rfc8174": [],
+    "https://www.rfc-editor.org/rfc/rfc2119": [],
+    "https://www.rfc-editor.org/rfc/rfc2616": [],
+    "https://www.rfc-editor.org/rfc/rfc8174": [],
     "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7329&rep=rep1&type=pdf": [],
-    "https://httpwg.org/specs/rfc7230.html": []
+    "https://httpwg.org/specs/rfc7234.html": []
   }
 }

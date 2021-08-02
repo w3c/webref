@@ -318,8 +318,36 @@
         "extAttrs": [],
         "partial": false
       },
+      "TaskControllerInit": {
+        "fragment": "dictionary TaskControllerInit {\n  TaskPriority priority = \"user-visible\";\n};",
+        "type": "dictionary",
+        "name": "TaskControllerInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "priority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "TaskPriority"
+            },
+            "default": {
+              "type": "string",
+              "value": "user-visible"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "TaskController": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskPriority priority = \"user-visible\");\n\n  undefined setPriority(TaskPriority priority);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface TaskController : AbortController {\n  constructor(optional TaskControllerInit init = {});\n\n  undefined setPriority(TaskPriority priority);\n};",
         "type": "interface",
         "name": "TaskController",
         "inheritance": "AbortController",
@@ -329,7 +357,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "priority",
+                "name": "init",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -337,11 +365,10 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "TaskPriority"
+                  "idlType": "TaskControllerInit"
                 },
                 "default": {
-                  "type": "string",
-                  "value": "user-visible"
+                  "type": "dictionary"
                 },
                 "optional": true,
                 "variadic": false
@@ -522,8 +549,12 @@
         "EventInit",
         "TaskPriority"
       ],
+      "TaskControllerInit": [
+        "TaskPriority"
+      ],
       "TaskController": [
         "AbortController",
+        "TaskControllerInit",
         "TaskPriority"
       ],
       "TaskSignal": [
