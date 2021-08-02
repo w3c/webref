@@ -1,6 +1,0 @@
-// Source: Constructable Stylesheet Objects (https://wicg.github.io/construct-stylesheets/)
-partial interface CSSStyleSheet {
-  constructor(optional CSSStyleSheetInit options = {});
-  Promise<CSSStyleSheet> replace(USVString text);
-  undefined replaceSync(USVString text);
-};
