@@ -8723,7 +8723,6 @@ Informative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
-- [Permissions](https://w3c.github.io/permissions/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
@@ -13670,7 +13669,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 28 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -15010,6 +15009,7 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer`](https://www.w3.org/TR/performance-timeline-2/#dfn-performance-entry-buffer)
      * [`https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry`](https://www.w3.org/TR/performance-timeline-2/#dfn-queue-a-performanceentry)
 - External links that neither target definitions nor headings:
+     * [`https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source`](https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source)
      * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
