@@ -2325,6 +2325,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 
 No informative reference to this spec from other specs.
@@ -4259,6 +4260,7 @@ Normative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
+- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [WebCodecs](https://w3c.github.io/webcodecs/)
@@ -4895,7 +4897,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Crawled URL: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
-- Crawled version: 31 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://drafts.csswg.org/css-overflow-3/](https://drafts.csswg.org/css-overflow-3/)
 - Latest published version: [https://www.w3.org/TR/css-overflow-3/](https://www.w3.org/TR/css-overflow-3/)
 - Shortname: css-overflow-3
@@ -4914,6 +4916,9 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://drafts.csswg.org/css-transforms-2/#3d-rendering-context`](https://drafts.csswg.org/css-transforms-2/#3d-rendering-context)
+     * [`https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area`](https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area)
+     * [`https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll`](https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll)
+     * [`https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll`](https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
      * [`https://html.spec.whatwg.org/#html-vs-xhtml`](https://html.spec.whatwg.org/#html-vs-xhtml)
@@ -5653,10 +5658,10 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 
 No informative reference to this spec from other specs.
 
@@ -6980,13 +6985,13 @@ Informative references to this spec from:
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 
 
-## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Crawled URL: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
-- Crawled version: 20 May 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://drafts.csswg.org/cssom-view/](https://drafts.csswg.org/cssom-view/)
 - Latest published version: [https://www.w3.org/TR/cssom-view-1/](https://www.w3.org/TR/cssom-view-1/)
 - Shortname: cssom-view-1
@@ -6994,11 +6999,6 @@ Informative references to this spec from:
 ### Potential issue(s) {.anomalies}
 
 - Unknown WebIDL names used: `CSSOMString`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://dom.spec.whatwg.org/#event-listener-type`](https://dom.spec.whatwg.org/#event-listener-type)
      * [`https://dom.spec.whatwg.org/#event-listener-callback`](https://dom.spec.whatwg.org/#event-listener-callback)
@@ -7032,11 +7032,11 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
@@ -7054,7 +7054,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [DOM Standard](https://dom.spec.whatwg.org/)
@@ -7321,7 +7320,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 20 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
@@ -18388,7 +18387,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
-- Crawled version: 29 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
