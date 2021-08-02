@@ -11962,7 +11962,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
-- Crawled version: 19 July 2021
+- Crawled version: 02 August 2021
 - Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
 - Latest published version: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Shortname: mediacapture-streams
@@ -14395,7 +14395,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-array-find-from-last/](https://tc39.es/proposal-array-find-from-last/)
 - Crawled URL: [https://tc39.es/proposal-array-find-from-last/](https://tc39.es/proposal-array-find-from-last/)
-- Crawled version: 14 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://tc39.es/proposal-array-find-from-last/](https://tc39.es/proposal-array-find-from-last/)
 - Shortname: tc39-array-find-from-last
 
@@ -16167,20 +16167,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-## Service Workers Nightly {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+## Service Workers Nightly {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 ### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Crawled URL: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
-- Crawled version: 25 June 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://w3c.github.io/ServiceWorker/](https://w3c.github.io/ServiceWorker/)
 - Latest published version: [https://www.w3.org/TR/service-workers-1/](https://www.w3.org/TR/service-workers-1/)
 - Shortname: service-workers-1
 
 ### Potential issue(s) {.anomalies}
 
-- Unknown WebIDL names used: `PostMessageOptions`
 - Missing references for links: 
      * [`https://w3c.github.io/push-api/`](https://w3c.github.io/push-api/)
      * [`https://notifications.spec.whatwg.org/`](https://notifications.spec.whatwg.org/)
@@ -16227,11 +16226,12 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
      * [`https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set`](https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set)
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
-     * [`https://html.spec.whatwg.org/#postmessageoptions`](https://html.spec.whatwg.org/#postmessageoptions)
+     * [`https://html.spec.whatwg.org/#structuredserializeoptions`](https://html.spec.whatwg.org/#structuredserializeoptions)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#abstractworker`](https://html.spec.whatwg.org/#abstractworker)
      * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
      * [`https://html.spec.whatwg.org/#structuredserializewithtransfer`](https://html.spec.whatwg.org/#structuredserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#dom-structuredserializeoptions-transfer`](https://html.spec.whatwg.org/#dom-structuredserializeoptions-transfer)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin`](https://html.spec.whatwg.org/#ascii-serialisation-of-an-origin)
@@ -16274,7 +16274,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
      * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
      * [`https://html.spec.whatwg.org/#windoworworkerglobalscope`](https://html.spec.whatwg.org/#windoworworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#dom-workerglobalscope-importscripts`](https://html.spec.whatwg.org/#dom-workerglobalscope-importscripts)
      * [`https://html.spec.whatwg.org/#import-scripts-into-worker-global-scope`](https://html.spec.whatwg.org/#import-scripts-into-worker-global-scope)
      * [`https://html.spec.whatwg.org/#fetching-scripts-perform-fetch`](https://html.spec.whatwg.org/#fetching-scripts-perform-fetch)
      * [`https://html.spec.whatwg.org/#unsafe-response`](https://html.spec.whatwg.org/#unsafe-response)
@@ -20948,7 +20947,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 28 June 2021
+- Crawled version: 02 August 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc

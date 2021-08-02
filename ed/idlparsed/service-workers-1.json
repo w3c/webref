@@ -39,7 +39,7 @@
     },
     "idlNames": {
       "ServiceWorker": {
-        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
+        "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
         "type": "interface",
         "name": "ServiceWorker",
         "inheritance": "EventTarget",
@@ -169,7 +169,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PostMessageOptions"
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -1247,7 +1247,7 @@
         "partial": false
       },
       "Client": {
-        "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional PostMessageOptions options = {});\n};",
+        "fragment": "[Exposed=ServiceWorker]\ninterface Client {\n  readonly attribute USVString url;\n  readonly attribute FrameType frameType;\n  readonly attribute DOMString id;\n  readonly attribute ClientType type;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n};",
         "type": "interface",
         "name": "Client",
         "inheritance": null,
@@ -1407,7 +1407,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PostMessageOptions"
+                  "idlType": "StructuredSerializeOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -3730,7 +3730,7 @@
       "ServiceWorker": [
         "EventTarget",
         "ServiceWorkerState",
-        "PostMessageOptions",
+        "StructuredSerializeOptions",
         "EventHandler",
         "AbstractWorker"
       ],
@@ -3772,7 +3772,7 @@
       "Client": [
         "FrameType",
         "ClientType",
-        "PostMessageOptions"
+        "StructuredSerializeOptions"
       ],
       "WindowClient": [
         "Client",
@@ -3839,7 +3839,7 @@
     },
     "externalDependencies": [
       "EventTarget",
-      "PostMessageOptions",
+      "StructuredSerializeOptions",
       "EventHandler",
       "Navigator",
       "WorkerNavigator",
