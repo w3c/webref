@@ -1,26 +1,43 @@
-From f7d204a5a5004b1fc1e8273c3e7b8220dc0a8ff1 Mon Sep 17 00:00:00 2001
-From: =?UTF-8?q?Philip=20J=C3=A4genstedt?= <philip@foolip.org>
-Date: Tue, 21 Jul 2020 19:56:23 +0200
-Subject: [PATCH] Remove duplicate typedef MessageEventSource
+From 91fa5ef37a36c9307e4ef74b6ed3d76eaf975692 Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Mon, 2 Aug 2021 11:43:45 +0200
+Subject: [PATCH] Patch Portals IDL to reference new version of PostMessage
+ Options
 
-https://github.com/WICG/portals/issues/230
+See https://github.com/WICG/portals/pull/273 and https://github.com/WICG/portals/issues/275 (patch has been merged but published spec not updated yet)
 ---
- ed/idl/portals.idl | 2 --
- 1 file changed, 2 deletions(-)
+ ed/idl/portals.idl | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
 
 diff --git a/ed/idl/portals.idl b/ed/idl/portals.idl
-index 0957b2a9c..d0b132889 100644
+index 20c655b92..a6043e4d7 100644
 --- a/ed/idl/portals.idl
 +++ b/ed/idl/portals.idl
-@@ -43,8 +43,6 @@ dictionary PortalActivateEventInit : EventInit {
-     any data = null;
+@@ -11,13 +11,13 @@ interface HTMLPortalElement : HTMLElement {
+     [CEReactions] attribute DOMString referrerPolicy;
+ 
+     [NewObject] Promise<undefined> activate(optional PortalActivateOptions options = {});
+-    undefined postMessage(any message, optional PostMessageOptions options = {});
++    undefined postMessage(any message, optional StructuredSerializeOptions options = {});
+ 
+     attribute EventHandler onmessage;
+     attribute EventHandler onmessageerror;
  };
  
--typedef (WindowProxy or MessagePort or ServiceWorker or HTMLPortalElement or PortalHost) MessageEventSource;
--
- partial interface mixin WindowEventHandlers {
-     attribute EventHandler onportalactivate;
+-dictionary PortalActivateOptions : PostMessageOptions {
++dictionary PortalActivateOptions : StructuredSerializeOptions {
+     any data;
  };
+ 
+@@ -27,7 +27,7 @@ partial interface Window {
+ 
+ [Exposed=Window]
+ interface PortalHost : EventTarget {
+-    undefined postMessage(any message, optional PostMessageOptions options = {});
++    undefined postMessage(any message, optional StructuredSerializeOptions options = {});
+ 
+     attribute EventHandler onmessage;
+     attribute EventHandler onmessageerror;
 -- 
-2.30.0.365.g02bc693789-goog
+2.32.0
 
