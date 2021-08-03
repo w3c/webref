@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 02, 2021
+% August 03, 2021
 
 428 specifications were crawled in this report.
 
@@ -4455,8 +4455,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#document-base-url`](https://html.spec.whatwg.org/#document-base-url)
      * [`https://html.spec.whatwg.org/#xml-parser`](https://html.spec.whatwg.org/#xml-parser)
      * [`https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts`](https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts)
-     * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
@@ -4776,11 +4776,13 @@ Links in the body of a specification should be to the same document as that poin
 - [Early detection of input events](https://wicg.github.io/is-input-pending/):
      * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#eventtarget`](https://html.spec.whatwg.org/#eventtarget)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#dragevent`](https://html.spec.whatwg.org/#dragevent)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
 - [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/multipage/):
      * [`https://html.spec.whatwg.org/#entry`](https://html.spec.whatwg.org/#entry)
      * [`https://html.spec.whatwg.org/#dom-document-all`](https://html.spec.whatwg.org/#dom-document-all)
@@ -8281,7 +8283,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4337 problematic external links found in 281 specifications
+=> 4339 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

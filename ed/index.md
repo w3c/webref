@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 02, 2021
+% August 03, 2021
 
 ## A Well-Known URL for Changing Passwords {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
@@ -222,7 +222,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 29 July 2021
+- Crawled version: 03 August 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -3292,7 +3292,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Crawled URL: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
-- Crawled version: 28 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://drafts.csswg.org/css-variables/](https://drafts.csswg.org/css-variables/)
 - Latest published version: [https://www.w3.org/TR/css-variables-1/](https://www.w3.org/TR/css-variables-1/)
 - Shortname: css-variables-1
@@ -4818,8 +4818,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#document-base-url`](https://html.spec.whatwg.org/#document-base-url)
      * [`https://html.spec.whatwg.org/#xml-parser`](https://html.spec.whatwg.org/#xml-parser)
      * [`https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts`](https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts)
-     * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#style-sheet-ready`](https://html.spec.whatwg.org/#style-sheet-ready)
      * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
@@ -7161,7 +7161,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Crawled URL: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
-- Crawled version: 08 July 2021
+- Crawled version: 02 August 2021
 - Editor's Draft: [https://w3c.github.io/device-posture/](https://w3c.github.io/device-posture/)
 - Latest published version: [https://www.w3.org/TR/device-posture/](https://www.w3.org/TR/device-posture/)
 - Shortname: device-posture
@@ -7575,7 +7575,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Crawled URL: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
-- Crawled version: 08 March 2021
+- Crawled version: 02 August 2021
 - Editor's Draft: [https://wicg.github.io/is-input-pending/](https://wicg.github.io/is-input-pending/)
 - Shortname: is-input-pending
 
@@ -7584,11 +7584,13 @@ Informative references to this spec from:
 - Broken external links:
      * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#eventtarget`](https://html.spec.whatwg.org/#eventtarget)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#dragevent`](https://html.spec.whatwg.org/#dragevent)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -11365,7 +11367,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Crawled URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Crawled version: 27 July 2021
+- Crawled version: 02 August 2021
 - Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
 - Shortname: js-self-profiling
 
@@ -14892,7 +14894,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
 - Crawled URL: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
-- Crawled version: 19 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://tc39.es/proposal-resizablearraybuffer/](https://tc39.es/proposal-resizablearraybuffer/)
 - Shortname: tc39-resizablearraybuffer
 
@@ -15088,7 +15090,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Shortname: rfc2397
 
@@ -15113,7 +15115,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Shortname: rfc6454
 
@@ -15152,7 +15154,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Shortname: rfc6797
 
@@ -15185,7 +15187,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Shortname: rfc7034
 
@@ -15214,7 +15216,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Shortname: rfc7239
 
@@ -15235,7 +15237,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Shortname: rfc7469
 
@@ -15260,7 +15262,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Shortname: rfc7578
 
@@ -15287,7 +15289,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
-- Crawled version: 2 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Shortname: rfc8942
 
@@ -16778,7 +16780,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 30 July 2021
+- Crawled version: 2 August 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
