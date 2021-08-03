@@ -31,7 +31,7 @@ interface WebTransport {
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
   Promise<WritableStream> createUnidirectionalStream();
-  /* a ReadableStream of ReceiveStream objects */
+  /* a ReadableStream of ReceiveStreams */
   readonly attribute ReadableStream incomingUnidirectionalStreams;
 };
 
@@ -58,11 +58,7 @@ dictionary WebTransportStats {
 };
 
 [Exposed=(Window,Worker), SecureContext]
-interface ReceiveStream : ReadableStream /* of Uint8Array */ {
-};
-
-[Exposed=(Window,Worker), SecureContext]
 interface BidirectionalStream {
-  readonly attribute ReceiveStream readable;
+  readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
 };

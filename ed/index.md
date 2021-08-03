@@ -4564,7 +4564,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Crawled URL: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
-- Crawled version: 1 August 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
 - Latest published version: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
 - Shortname: css-masking-1
@@ -8548,7 +8548,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Crawled URL: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
-- Crawled version: 09 July 2021
+- Crawled version: 03 August 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/](https://w3c.github.io/gamepad/)
 - Latest published version: [https://www.w3.org/TR/gamepad/](https://www.w3.org/TR/gamepad/)
 - Shortname: gamepad
@@ -8592,7 +8592,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Crawled URL: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
-- Crawled version: 09 July 2021
+- Crawled version: 03 August 2021
 - Editor's Draft: [https://w3c.github.io/gamepad/extensions.html](https://w3c.github.io/gamepad/extensions.html)
 - Shortname: gamepad-extensions
 
@@ -21073,7 +21073,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 30 July 2021
+- Crawled version: 3 August 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
