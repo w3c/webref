@@ -62,3 +62,15 @@ interface BidirectionalStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
 };
+
+[Exposed=(Window,Worker), SecureContext]
+interface WebTransportError : DOMException {
+  constructor(optional WebTransportErrorInit init = {});
+
+  readonly attribute octet? applicationProtocolCode;
+};
+
+dictionary WebTransportErrorInit {
+  octet applicationProtocolCode;
+  DOMString message;
+};

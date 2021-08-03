@@ -7,10 +7,12 @@
     "jsNames": {
       "constructors": {
         "Window": [
-          "WebTransport"
+          "WebTransport",
+          "WebTransportError"
         ],
         "Worker": [
-          "WebTransport"
+          "WebTransport",
+          "WebTransportError"
         ]
       },
       "functions": {
@@ -737,6 +739,118 @@
           }
         ],
         "partial": false
+      },
+      "WebTransportError": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n};",
+        "type": "interface",
+        "name": "WebTransportError",
+        "inheritance": "DOMException",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "init",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "WebTransportErrorInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "applicationProtocolCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "octet"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "WebTransportErrorInit": {
+        "fragment": "dictionary WebTransportErrorInit {\n  octet applicationProtocolCode;\n  DOMString message;\n};",
+        "type": "dictionary",
+        "name": "WebTransportErrorInit",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "applicationProtocolCode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "message",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {},
@@ -745,12 +859,14 @@
       "Window": [
         "DatagramDuplexStream",
         "WebTransport",
-        "BidirectionalStream"
+        "BidirectionalStream",
+        "WebTransportError"
       ],
       "Worker": [
         "DatagramDuplexStream",
         "WebTransport",
-        "BidirectionalStream"
+        "BidirectionalStream",
+        "WebTransportError"
       ]
     },
     "dependencies": {
@@ -777,13 +893,19 @@
       "BidirectionalStream": [
         "ReadableStream",
         "WritableStream"
-      ]
+      ],
+      "WebTransportError": [
+        "DOMException",
+        "WebTransportErrorInit"
+      ],
+      "WebTransportErrorInit": []
     },
     "externalDependencies": [
       "ReadableStream",
       "WritableStream",
       "RTCDtlsFingerprint",
-      "DOMHighResTimeStamp"
+      "DOMHighResTimeStamp",
+      "DOMException"
     ],
     "hasObsoleteIdl": false
   }
