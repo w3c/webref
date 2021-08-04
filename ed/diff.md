@@ -2,19 +2,11 @@
 % Reffy
 % August 04, 2021
 
-## Incremental Font Transfer
+## CSS Fonts Module Level 4
 
-- Initial URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
+- Initial URL: [https://www.w3.org/TR/css-fonts-4/](https://www.w3.org/TR/css-fonts-4/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
-- This specification was not in the reference crawl report.
-
-
-## Incremental Font Transfer
-
-- Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- Crawled URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
-- Editor's Draft: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- This specification is not in the new crawl report.
+- Editor's Draft: [https://drafts.csswg.org/css-fonts-4/](https://drafts.csswg.org/css-fonts-4/)
+- Missing references for links: *INS* https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/
 
 
