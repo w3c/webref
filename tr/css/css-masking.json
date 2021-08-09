@@ -8,12 +8,13 @@
       "name": "clip-path",
       "value": "<clip-source> | [ <basic-shape> || <geometry-box> ] | none",
       "initial": "none",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
+      "percentages": "n/a",
       "computedValue": "as specified, but with <url> values made absolute",
-      "percentages": "as specified",
-      "animatable": "as specified for <basic-shape> [CSS-SHAPES], otherwise no",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "media": "visual",
       "styleDeclaration": [
         "clip-path",
         "clipPath"
@@ -25,10 +26,11 @@
       "initial": "nonzero",
       "appliesTo": "Applies to SVG graphics elements",
       "inherited": "yes",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "clip-rule",
         "clipRule"
@@ -38,12 +40,13 @@
       "name": "mask-image",
       "value": "<mask-reference>#",
       "initial": "none",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified, but with URIs made absolute",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "the keyword none, a computed <image>, or a computed <url>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-image",
         "maskImage"
@@ -52,13 +55,14 @@
     "mask-mode": {
       "name": "mask-mode",
       "value": "<masking-mode>#",
-      "initial": "auto",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "initial": "match-source",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-mode",
         "maskMode"
@@ -67,13 +71,14 @@
     "mask-repeat": {
       "name": "mask-repeat",
       "value": "<repeat-style>#",
-      "initial": "no-repeat",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "initial": "repeat",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "Consists of: two keywords, one per dimension",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "Consists of: two keywords, one per dimension",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-repeat",
         "maskRepeat"
@@ -82,13 +87,14 @@
     "mask-position": {
       "name": "mask-position",
       "value": "<position>#",
-      "initial": "center",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "initial": "0% 0%",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "Consisting of: two keywords representing the origin and two offsets from that origin, each given as an absolute length (if given a <length>), otherwise as a percentage.",
       "percentages": "refer to size of mask painting area minus size of mask layer image; see text background-position [CSS3BG]",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc",
+      "computedValue": "Consisting of: two keywords representing the origin and two offsets from that origin, each given as an absolute length (if given a <length>), otherwise as a percentage.",
+      "canonicalOrder": "per grammar",
+      "animationType": "repeatable list",
+      "media": "visual",
       "styleDeclaration": [
         "mask-position",
         "maskPosition"
@@ -98,12 +104,13 @@
       "name": "mask-clip",
       "value": "[ <geometry-box> | no-clip ]#",
       "initial": "border-box",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-clip",
         "maskClip"
@@ -113,12 +120,13 @@
       "name": "mask-origin",
       "value": "<geometry-box>#",
       "initial": "border-box",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-origin",
         "maskOrigin"
@@ -128,12 +136,13 @@
       "name": "mask-size",
       "value": "<bg-size>#",
       "initial": "auto",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified, but with lengths made absolute",
       "percentages": "n/a",
-      "animatable": "as repeatable list of simple list of length, percentage, or calc (This means keyword values are not animatable.)",
+      "computedValue": "as specified, but with lengths made absolute",
+      "canonicalOrder": "per grammar",
+      "animationType": "repeatable list",
+      "media": "visual",
       "styleDeclaration": [
         "mask-size",
         "maskSize"
@@ -143,12 +152,13 @@
       "name": "mask-composite",
       "value": "<compositing-operator>#",
       "initial": "add",
-      "appliesTo": "All elements. In SVG, it applies to container elements without the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements without the defs element and all graphics elements",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-composite",
         "maskComposite"
@@ -158,12 +168,13 @@
       "name": "mask",
       "value": "<mask-layer>#",
       "initial": "see individual properties",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "see individual properties",
       "percentages": "see individual properties",
-      "animatable": "see individual properties",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "see individual properties",
+      "media": "visual",
       "styleDeclaration": [
         "mask"
       ]
@@ -172,12 +183,13 @@
       "name": "mask-border-source",
       "value": "none | <image>",
       "initial": "none",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "none or the image with its URI made absolute",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "they keyword none or the computed <image>",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-source",
         "maskBorderSource"
@@ -187,12 +199,13 @@
       "name": "mask-border-mode",
       "value": "luminance | alpha",
       "initial": "alpha",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-mode",
         "maskBorderMode"
@@ -200,14 +213,15 @@
     },
     "mask-border-slice": {
       "name": "mask-border-slice",
-      "value": "[<number> | <percentage>]{1,4} fill?",
+      "value": "<number-percentage>{1,4} fill?",
       "initial": "0",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "refer to size of the mask border image",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-slice",
         "maskBorderSlice"
@@ -215,14 +229,15 @@
     },
     "mask-border-width": {
       "name": "mask-border-width",
-      "value": "[ <length> | <percentage> | <number> | auto ]{1,4}",
+      "value": "[ <length-percentage> | <number> | auto ]{1,4}",
       "initial": "auto",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "all <length>s made absolute, otherwise as specified",
       "percentages": "relative to width/height of the mask border image area",
-      "animatable": "no",
+      "computedValue": "all <length>s made absolute, otherwise as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-width",
         "maskBorderWidth"
@@ -232,12 +247,13 @@
       "name": "mask-border-outset",
       "value": "[ <length> | <number> ]{1,4}",
       "initial": "0",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "all <length>s made absolute, otherwise as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "all <length>s made absolute, otherwise as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-outset",
         "maskBorderOutset"
@@ -247,12 +263,13 @@
       "name": "mask-border-repeat",
       "value": "[ stretch | repeat | round | space ]{1,2}",
       "initial": "stretch",
-      "appliesTo": "All elements. In SVG, it applies to container elements excluding the <defs> element and all graphics elements",
+      "appliesTo": "All elements. In SVG, it applies to container elements excluding the defs element, all graphics elements and the use element",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border-repeat",
         "maskBorderRepeat"
@@ -260,14 +277,15 @@
     },
     "mask-border": {
       "name": "mask-border",
-      "value": "<‘mask-border-source’> || <‘mask-border-slice’> [ / <‘mask-border-width’>? [ / <‘mask-border-outset’> ]? ]? || <‘mask-border-repeat’> || <‘mask-border-mode’>",
+      "value": "<'mask-border-source'> || <'mask-border-slice'> [ / <'mask-border-width'>? [ / <'mask-border-outset'> ]? ]? || <'mask-border-repeat'> || <'mask-border-mode'>",
       "initial": "See individual properties",
       "appliesTo": "See individual properties",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "See individual properties",
       "percentages": "n/a",
-      "animatable": "See individual properties",
+      "computedValue": "See individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "See individual properties",
+      "media": "visual",
       "styleDeclaration": [
         "mask-border",
         "maskBorder"
@@ -279,10 +297,11 @@
       "initial": "luminance",
       "appliesTo": "mask elements",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "media": "visual",
       "styleDeclaration": [
         "mask-type",
         "maskType"
@@ -290,14 +309,15 @@
     },
     "clip": {
       "name": "clip",
-      "value": "<rect()> | auto",
+      "value": "rect() | auto",
       "initial": "auto",
-      "appliesTo": "Absolutely positioned elements. In SVG, it applies to elements which establish a new viewport, <pattern> elements and mask elements.",
+      "appliesTo": "Absolutely positioned elements. In SVG, it applies to elements which establish a new viewport, pattern elements and mask elements.",
       "inherited": "no",
-      "media": "visual",
-      "computedValue": "as specified",
       "percentages": "n/a",
-      "animatable": "as rectangle",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value",
+      "media": "visual",
       "styleDeclaration": [
         "clip"
       ]
@@ -318,13 +338,16 @@
       "value": "<url>"
     },
     "<masking-mode>": {
-      "value": "alpha | luminance | auto"
+      "value": "alpha | luminance | match-source"
     },
     "<compositing-operator>": {
       "value": "add | subtract | intersect | exclude"
     },
     "<mask-layer>": {
-      "value": "<mask-reference> <masking-mode>? || <position> [ / <bg-size> ]? || <repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator>"
+      "value": "<mask-reference> || <position> [ / <bg-size> ]? ||<repeat-style> || <geometry-box> || [ <geometry-box> | no-clip ] || <compositing-operator> || <masking-mode>"
+    },
+    "<rect()>": {
+      "value": "rect( <top>, <right>, <bottom>, <left> )"
     },
     "<url>": {
       "prose": "A URL reference to a mask element (for example url(commonmasks.svg#mask)) or to a CSS image."

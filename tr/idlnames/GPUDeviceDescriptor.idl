@@ -1,5 +1,5 @@
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 dictionary GPUDeviceDescriptor : GPUObjectDescriptorBase {
     sequence<GPUFeatureName> requiredFeatures = [];
-    record<DOMString, GPUSize32> requiredLimits = {};
+    record<DOMString, GPUSize64> requiredLimits = {};
 };

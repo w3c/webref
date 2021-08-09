@@ -3,20 +3,18 @@
 // (https://github.com/w3c/webref)
 // Source: CSS Masking Module Level 1 (https://www.w3.org/TR/css-masking-1/)
 
+[Exposed=Window]
 interface SVGClipPathElement : SVGElement {
-readonly attribute SVGAnimatedEnumeration clipPathUnits;
-readonly attribute SVGAnimatedTransformList transform;
+  readonly attribute SVGAnimatedEnumeration clipPathUnits;
+  readonly attribute SVGAnimatedTransformList transform;
 };
 
-SVGClipPathElement implements SVGUnitTypes;
-
+[Exposed=Window]
 interface SVGMaskElement : SVGElement {
-readonly attribute SVGAnimatedEnumeration maskUnits;
-readonly attribute SVGAnimatedEnumeration maskContentUnits;
-readonly attribute SVGAnimatedLength x;
-readonly attribute SVGAnimatedLength y;
-readonly attribute SVGAnimatedLength width;
-readonly attribute SVGAnimatedLength height;
+  readonly attribute SVGAnimatedEnumeration maskUnits;
+  readonly attribute SVGAnimatedEnumeration maskContentUnits;
+  readonly attribute SVGAnimatedLength x;
+  readonly attribute SVGAnimatedLength y;
+  readonly attribute SVGAnimatedLength width;
+  readonly attribute SVGAnimatedLength height;
 };
-
-SVGMaskElement implements SVGUnitTypes;

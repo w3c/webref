@@ -6,15 +6,14 @@
   "properties": {
     "scrollbar-color": {
       "name": "scrollbar-color",
-      "value": "auto | dark | light | <color>{2}",
+      "value": "auto | <color>{2}",
       "initial": "auto",
-      "appliesTo": "boxes to which overflow applies",
+      "appliesTo": "scroll containers",
       "inherited": "yes",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "two computed colors or the keyword auto",
+      "computedValue": "specified keyword or two computed colors",
       "canonicalOrder": "per grammar",
-      "animationType": "color",
+      "animationType": "by computed value",
       "styleDeclaration": [
         "scrollbar-color",
         "scrollbarColor"
@@ -22,15 +21,14 @@
     },
     "scrollbar-width": {
       "name": "scrollbar-width",
-      "value": "auto | thin | none | <length>",
+      "value": "auto | thin | none",
       "initial": "auto",
-      "appliesTo": "boxes to which overflow applies",
+      "appliesTo": "scroll containers",
       "inherited": "no",
       "percentages": "n/a",
-      "media": "visual",
-      "computedValue": "absolute length or the keyword auto.",
+      "computedValue": "specified keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "length",
+      "animationType": "by computed value",
       "styleDeclaration": [
         "scrollbar-width",
         "scrollbarWidth"

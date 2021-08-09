@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 02, 2021
+% August 09, 2021
 
 428 specifications were crawled in this report.
 
@@ -13,7 +13,6 @@
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
 - [CSS Generated Content for Paged Media Module](https://www.w3.org/TR/css-gcpm-3/)
 - [CSS Line Grid Module Level 1](https://www.w3.org/TR/css-line-grid-1/)
-- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
 - [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3/)
 - [CSS Scoping Module Level 1](https://www.w3.org/TR/css-scoping-1/)
 - [CSS Shapes Module Level 1](https://www.w3.org/TR/css-shapes-1/)
@@ -87,7 +86,7 @@
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 
-=> 79 specifications found
+=> 78 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -95,7 +94,6 @@ Basically all specifications have normative dependencies on some other specifica
 ## List of specifications with invalid WebIDL content
 
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
-- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/)
 - [CSSOM View Module](https://www.w3.org/TR/cssom-view-1/)
@@ -103,7 +101,7 @@ Basically all specifications have normative dependencies on some other specifica
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
-=> 8 specifications found
+=> 7 specifications found
 
 WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly valid WebIDL content if the specification uses bleeding-edge WebIDL features
 
@@ -120,7 +118,6 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [Content Security Policy: Embedded Enforcement](https://www.w3.org/TR/csp-embedded-enforcement/)
 - [CSS Device Adaptation Module Level 1](https://www.w3.org/TR/css-device-adapt-1/)
 - [CSS Font Loading Module Level 3](https://www.w3.org/TR/css-font-loading-3/)
-- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/)
 - [CSS Regions Module Level 1](https://www.w3.org/TR/css-regions-1/)
 - [Referrer Policy](https://www.w3.org/TR/referrer-policy/)
@@ -173,7 +170,7 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 - [WebRTC Priority Control API](https://www.w3.org/TR/webrtc-priority/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 
-=> 56 specifications found
+=> 55 specifications found
 
 
 
@@ -1572,39 +1569,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/) links to:
-    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-overflow-3/`](https://www.w3.org/TR/css-overflow-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-shapes-1/`](https://www.w3.org/TR/css-shapes-1/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-cascade/`](https://www.w3.org/TR/css3-cascade/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/filter-effects/`](https://www.w3.org/TR/filter-effects/) but does not list it in its references
-    * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-ui/`](https://www.w3.org/TR/css3-ui/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/css4-images/`](https://www.w3.org/TR/css4-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/) but does not list it in its references
-    * [`https://www.w3.org/TR/css-text-decor-3/`](https://www.w3.org/TR/css-text-decor-3/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-transforms/`](https://www.w3.org/TR/css3-transforms/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-images/`](https://www.w3.org/TR/css3-images/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
-    * [`https://www.w3.org/TR/compositing-1/`](https://www.w3.org/TR/compositing-1/) but does not list it in its references
-    * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-css-masking-20130620/`](https://www.w3.org/TR/2013/WD-css-masking-20130620/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css-masking-20121115/`](https://www.w3.org/TR/2012/WD-css-masking-20121115/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/WD-compositing-1-20130625/`](https://www.w3.org/TR/2013/WD-compositing-1-20130625/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/`](https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/) but does not list it in its references
-    * [`https://www.w3.org/TR/2011/REC-CSS2-20110607`](https://www.w3.org/TR/2011/REC-CSS2-20110607) but does not list it in its references
-    * [`https://www.w3.org/TR/2012/WD-css3-transforms-20120911/`](https://www.w3.org/TR/2012/WD-css3-transforms-20120911/) but does not list it in its references
-    * [`https://www.w3.org/TR/2012/CR-css3-background-20120724/`](https://www.w3.org/TR/2012/CR-css3-background-20120724/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/CR-css3-values-20130730/`](https://www.w3.org/TR/2013/CR-css3-values-20130730/) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/CR-html5-20130806/`](https://www.w3.org/TR/2013/CR-html5-20130806/) but does not list it in its references
-    * [`https://www.w3.org/TR/2011/REC-css3-color-20110607`](https://www.w3.org/TR/2011/REC-css3-color-20110607) but does not list it in its references
-    * [`https://www.w3.org/TR/2013/WD-filter-effects-20130523/`](https://www.w3.org/TR/2013/WD-filter-effects-20130523/) but does not list it in its references
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
@@ -1713,8 +1683,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to:
-    * [`https://www.w3.org/TR/css3-color/`](https://www.w3.org/TR/css3-color/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Shadow Parts](https://www.w3.org/TR/css-shadow-parts-1/) links to [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
 - [CSS Shapes Module Level 1](https://www.w3.org/TR/css-shapes-1/) links to:
@@ -2123,7 +2093,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://www.w3.org/TR/webxr/`](https://www.w3.org/TR/webxr/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 725 missing references for links found in 184 specifications
+=> 698 missing references for links found in 184 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2231,6 +2201,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Inline Layout Module Level 3](https://www.w3.org/TR/css-inline-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Lists and Counters Module Level 3](https://www.w3.org/TR/css-lists-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/) links to:
+    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/) links to [`https://www.w3.org/TR/mediaqueries-4/`](https://www.w3.org/TR/mediaqueries-4/) but related reference "MEDIAQUERIES-4" uses URL [`http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/`](http://www.w3.org/TR/2016/WD-mediaqueries-4-20160126/)
@@ -2258,7 +2231,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/) links to:
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -2548,7 +2521,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://www.w3.org/TR/webxr-hand-input-1/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 338 inconsistent references for links found in 176 specifications
+=> 340 inconsistent references for links found in 177 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2844,7 +2817,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/wai-aria-1.1/#global_states`](https://www.w3.org/TR/wai-aria-1.1/#global_states)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-checked`](https://www.w3.org/TR/wai-aria-1.1/#aria-checked)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-disabled`](https://www.w3.org/TR/wai-aria-1.1/#aria-disabled)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-hidden`](https://www.w3.org/TR/wai-aria-1.1/#aria-hidden)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder`](https://www.w3.org/TR/wai-aria-1.1/#aria-placeholder)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax`](https://www.w3.org/TR/wai-aria-1.1/#aria-valuemax)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-readonly`](https://www.w3.org/TR/wai-aria-1.1/#aria-readonly)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-required`](https://www.w3.org/TR/wai-aria-1.1/#aria-required)
      * [`https://www.w3.org/TR/wai-aria-1.1/#aria-colspan`](https://www.w3.org/TR/wai-aria-1.1/#aria-colspan)
@@ -6671,65 +6646,92 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-scroll-snap-1/#propdef-scroll-padding`](https://www.w3.org/TR/css-scroll-snap-1/#propdef-scroll-padding)
      * [`https://www.w3.org/TR/css-scroll-snap-1/#propdef-scroll-margin`](https://www.w3.org/TR/css-scroll-snap-1/#propdef-scroll-margin)
 - [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/):
-     * [`https://www.w3.org/TR/css3-background/#background-painting-area`](https://www.w3.org/TR/css3-background/#background-painting-area)
-     * [`https://www.w3.org/TR/css3-background/#background-positioning-area`](https://www.w3.org/TR/css3-background/#background-positioning-area)
-     * [`https://www.w3.org/TR/css3-background/#border-image-area`](https://www.w3.org/TR/css3-background/#border-image-area)
-     * [`https://www.w3.org/TR/css3-background/#border-radius`](https://www.w3.org/TR/css3-background/#border-radius)
-     * [`https://www.w3.org/TR/css3-background/#ltrepeat-stylegt`](https://www.w3.org/TR/css3-background/#ltrepeat-stylegt)
-     * [`https://www.w3.org/TR/css3-background/#background-repeat`](https://www.w3.org/TR/css3-background/#background-repeat)
-     * [`https://www.w3.org/TR/css3-background/#ltpositiongt`](https://www.w3.org/TR/css3-background/#ltpositiongt)
-     * [`https://www.w3.org/TR/css3-background/#background-position`](https://www.w3.org/TR/css3-background/#background-position)
-     * [`https://www.w3.org/TR/css3-background/#ltbg-sizegt`](https://www.w3.org/TR/css3-background/#ltbg-sizegt)
-     * [`https://www.w3.org/TR/css3-background/#background-size`](https://www.w3.org/TR/css3-background/#background-size)
-     * [`https://www.w3.org/TR/css3-background/#layering`](https://www.w3.org/TR/css3-background/#layering)
-     * [`https://www.w3.org/TR/css3-background/#border-image`](https://www.w3.org/TR/css3-background/#border-image)
-     * [`https://www.w3.org/TR/css3-background/#border-image-slice`](https://www.w3.org/TR/css3-background/#border-image-slice)
-     * [`https://www.w3.org/TR/css3-background/#border-image-width`](https://www.w3.org/TR/css3-background/#border-image-width)
-     * [`https://www.w3.org/TR/css3-background/#border-width`](https://www.w3.org/TR/css3-background/#border-width)
-     * [`https://www.w3.org/TR/css3-background/#border-image-repeat`](https://www.w3.org/TR/css3-background/#border-image-repeat)
-     * [`https://www.w3.org/TR/css3-background/#border-image-process`](https://www.w3.org/TR/css3-background/#border-image-process)
-     * [`https://www.w3.org/TR/css3-background/#background`](https://www.w3.org/TR/css3-background/#background)
-     * [`https://www.w3.org/TR/css-overflow-3/#overflow`](https://www.w3.org/TR/css-overflow-3/#overflow)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#background-painting-area`](https://www.w3.org/TR/css-backgrounds-3/#background-painting-area)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#background-positioning-area`](https://www.w3.org/TR/css-backgrounds-3/#background-positioning-area)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#border-image-area`](https://www.w3.org/TR/css-backgrounds-3/#border-image-area)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-radius`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-radius)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#typedef-repeat-style`](https://www.w3.org/TR/css-backgrounds-3/#typedef-repeat-style)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background-repeat`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background-repeat)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background-position)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background-origin`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background-origin)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-size`](https://www.w3.org/TR/css-backgrounds-3/#typedef-bg-size)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background-size`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background-size)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-slice`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-slice)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-width`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-width)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-width`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-width)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-repeat`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image-repeat)
+     * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-background`](https://www.w3.org/TR/css-backgrounds-3/#propdef-background)
+     * [`https://www.w3.org/TR/css-overflow-3/#propdef-overflow`](https://www.w3.org/TR/css-overflow-3/#propdef-overflow)
+     * [`https://www.w3.org/TR/css-overflow-3/#valdef-overflow-visible`](https://www.w3.org/TR/css-overflow-3/#valdef-overflow-visible)
+     * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
+     * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
+     * [`https://www.w3.org/TR/css-values-4/#comb-one`](https://www.w3.org/TR/css-values-4/#comb-one)
+     * [`https://www.w3.org/TR/css-values-4/#comb-any`](https://www.w3.org/TR/css-values-4/#comb-any)
+     * [`https://www.w3.org/TR/css-values-4/#url-value`](https://www.w3.org/TR/css-values-4/#url-value)
+     * [`https://www.w3.org/TR/css-values-4/#px`](https://www.w3.org/TR/css-values-4/#px)
+     * [`https://www.w3.org/TR/css-values-4/#mult-comma`](https://www.w3.org/TR/css-values-4/#mult-comma)
+     * [`https://www.w3.org/TR/css-values-4/#typedef-position`](https://www.w3.org/TR/css-values-4/#typedef-position)
+     * [`https://www.w3.org/TR/css-values-4/#length-value`](https://www.w3.org/TR/css-values-4/#length-value)
+     * [`https://www.w3.org/TR/css-values-4/#mult-opt`](https://www.w3.org/TR/css-values-4/#mult-opt)
+     * [`https://www.w3.org/TR/css-values-4/#mult-num-range`](https://www.w3.org/TR/css-values-4/#mult-num-range)
+     * [`https://www.w3.org/TR/css-values-4/#typedef-length-percentage`](https://www.w3.org/TR/css-values-4/#typedef-length-percentage)
+     * [`https://www.w3.org/TR/css-values-4/#number-value`](https://www.w3.org/TR/css-values-4/#number-value)
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape`](https://www.w3.org/TR/css-shapes-1/#typedef-basic-shape)
      * [`https://www.w3.org/TR/css-shapes-1/#typedef-shape-box`](https://www.w3.org/TR/css-shapes-1/#typedef-shape-box)
      * [`https://www.w3.org/TR/css-shapes-1/#funcdef-polygon`](https://www.w3.org/TR/css-shapes-1/#funcdef-polygon)
-     * [`https://www.w3.org/TR/css3-values/#url-value`](https://www.w3.org/TR/css3-values/#url-value)
-     * [`https://www.w3.org/TR/css3-values/#length-value`](https://www.w3.org/TR/css3-values/#length-value)
-     * [`https://www.w3.org/TR/css3-values/#number-value`](https://www.w3.org/TR/css3-values/#number-value)
-     * [`https://www.w3.org/TR/css3-values/#percentage-value`](https://www.w3.org/TR/css3-values/#percentage-value)
+     * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
+     * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
+     * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
+     * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://www.w3.org/TR/css-shapes/#shapes-from-box-values`](https://www.w3.org/TR/css-shapes/#shapes-from-box-values)
-     * [`https://www.w3.org/TR/css3-color/#opacity`](https://www.w3.org/TR/css3-color/#opacity)
-     * [`https://www.w3.org/TR/css3-color/#color0`](https://www.w3.org/TR/css3-color/#color0)
-     * [`https://www.w3.org/TR/filter-effects/#propdef-color-interpolation-filters`](https://www.w3.org/TR/filter-effects/#propdef-color-interpolation-filters)
-     * [`https://www.w3.org/TR/filter-effects/#propdef-filter`](https://www.w3.org/TR/filter-effects/#propdef-filter)
-     * [`https://www.w3.org/TR/filter-effects/#propdef-flood-color`](https://www.w3.org/TR/filter-effects/#propdef-flood-color)
-     * [`https://www.w3.org/TR/filter-effects/#propdef-flood-opacity`](https://www.w3.org/TR/filter-effects/#propdef-flood-opacity)
-     * [`https://www.w3.org/TR/filter-effects/#propdef-lighting-color`](https://www.w3.org/TR/filter-effects/#propdef-lighting-color)
-     * [`https://www.w3.org/TR/css3-writing-modes/#propdef-direction`](https://www.w3.org/TR/css3-writing-modes/#propdef-direction)
-     * [`https://www.w3.org/TR/css3-writing-modes/#propdef-unicode-bidi`](https://www.w3.org/TR/css3-writing-modes/#propdef-unicode-bidi)
-     * [`https://www.w3.org/TR/css3-writing-modes/#propdef-writing-mode`](https://www.w3.org/TR/css3-writing-modes/#propdef-writing-mode)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font`](https://www.w3.org/TR/css-fonts-3/#propdef-font)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-family`](https://www.w3.org/TR/css-fonts-3/#propdef-font-family)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-size`](https://www.w3.org/TR/css-fonts-3/#propdef-font-size)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust`](https://www.w3.org/TR/css-fonts-3/#propdef-font-size-adjust)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-stretch`](https://www.w3.org/TR/css-fonts-3/#propdef-font-stretch)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-style`](https://www.w3.org/TR/css-fonts-3/#propdef-font-style)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-variant`](https://www.w3.org/TR/css-fonts-3/#propdef-font-variant)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-weight`](https://www.w3.org/TR/css-fonts-3/#propdef-font-weight)
-     * [`https://www.w3.org/TR/css3-text/#letter-spacing`](https://www.w3.org/TR/css3-text/#letter-spacing)
-     * [`https://www.w3.org/TR/css3-text/#word-spacing`](https://www.w3.org/TR/css3-text/#word-spacing)
-     * [`https://www.w3.org/TR/css-text-decor-3/#text-decoration`](https://www.w3.org/TR/css-text-decor-3/#text-decoration)
-     * [`https://www.w3.org/TR/css3-transforms/#bounding-box`](https://www.w3.org/TR/css3-transforms/#bounding-box)
-     * [`https://www.w3.org/TR/css3-transforms/#propdef-transform`](https://www.w3.org/TR/css3-transforms/#propdef-transform)
-     * [`https://www.w3.org/TR/css3-images/#image-type`](https://www.w3.org/TR/css3-images/#image-type)
-     * [`https://www.w3.org/TR/css3-transitions/#animtype-repeatable-list`](https://www.w3.org/TR/css3-transitions/#animtype-repeatable-list)
-     * [`https://www.w3.org/TR/css3-transitions/#animtype-simple-list`](https://www.w3.org/TR/css3-transitions/#animtype-simple-list)
-     * [`https://www.w3.org/TR/css3-transitions/#animtype-lpcalc`](https://www.w3.org/TR/css3-transitions/#animtype-lpcalc)
-     * [`https://www.w3.org/TR/css3-break/#box-decoration-break`](https://www.w3.org/TR/css3-break/#box-decoration-break)
+     * [`https://www.w3.org/TR/css-cascade-5/#used-value`](https://www.w3.org/TR/css-cascade-5/#used-value)
+     * [`https://www.w3.org/TR/css-color-4/#propdef-opacity`](https://www.w3.org/TR/css-color-4/#propdef-opacity)
+     * [`https://www.w3.org/TR/css-color-4/#propdef-color`](https://www.w3.org/TR/css-color-4/#propdef-color)
+     * [`https://www.w3.org/TR/css-inline-3/#propdef-alignment-baseline`](https://www.w3.org/TR/css-inline-3/#propdef-alignment-baseline)
+     * [`https://www.w3.org/TR/css-inline-3/#propdef-baseline-shift`](https://www.w3.org/TR/css-inline-3/#propdef-baseline-shift)
+     * [`https://www.w3.org/TR/css-inline-3/#propdef-dominant-baseline`](https://www.w3.org/TR/css-inline-3/#propdef-dominant-baseline)
+     * [`https://www.w3.org/TR/filter-effects-1/#propdef-color-interpolation-filters`](https://www.w3.org/TR/filter-effects-1/#propdef-color-interpolation-filters)
+     * [`https://www.w3.org/TR/filter-effects-1/#propdef-filter`](https://www.w3.org/TR/filter-effects-1/#propdef-filter)
+     * [`https://www.w3.org/TR/filter-effects-1/#propdef-flood-color`](https://www.w3.org/TR/filter-effects-1/#propdef-flood-color)
+     * [`https://www.w3.org/TR/filter-effects-1/#propdef-flood-opacity`](https://www.w3.org/TR/filter-effects-1/#propdef-flood-opacity)
+     * [`https://www.w3.org/TR/filter-effects-1/#propdef-lighting-color`](https://www.w3.org/TR/filter-effects-1/#propdef-lighting-color)
+     * [`https://www.w3.org/TR/filter-effects-1/#valdef-color-interpolation-filters-linearrgb`](https://www.w3.org/TR/filter-effects-1/#valdef-color-interpolation-filters-linearrgb)
+     * [`https://www.w3.org/TR/filter-effects-1/#elementdef-fecolormatrix`](https://www.w3.org/TR/filter-effects-1/#elementdef-fecolormatrix)
+     * [`https://www.w3.org/TR/filter-effects-1/#elementdef-filter`](https://www.w3.org/TR/filter-effects-1/#elementdef-filter)
+     * [`https://www.w3.org/TR/css-ui-3/#propdef-cursor`](https://www.w3.org/TR/css-ui-3/#propdef-cursor)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#propdef-direction`](https://www.w3.org/TR/css-writing-modes-3/#propdef-direction)
+     * [`https://www.w3.org/TR/css-writing-modes-3/#propdef-unicode-bidi`](https://www.w3.org/TR/css-writing-modes-3/#propdef-unicode-bidi)
+     * [`https://www.w3.org/TR/css-display-3/#propdef-display`](https://www.w3.org/TR/css-display-3/#propdef-display)
+     * [`https://www.w3.org/TR/css-display-3/#valdef-display-none`](https://www.w3.org/TR/css-display-3/#valdef-display-none)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font`](https://www.w3.org/TR/css-fonts-4/#propdef-font)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-family`](https://www.w3.org/TR/css-fonts-4/#propdef-font-family)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-stretch`](https://www.w3.org/TR/css-fonts-4/#propdef-font-stretch)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-style`](https://www.w3.org/TR/css-fonts-4/#propdef-font-style)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-variant`](https://www.w3.org/TR/css-fonts-4/#propdef-font-variant)
+     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-weight`](https://www.w3.org/TR/css-fonts-4/#propdef-font-weight)
+     * [`https://www.w3.org/TR/css-writing-modes-4/#propdef-glyph-orientation-vertical`](https://www.w3.org/TR/css-writing-modes-4/#propdef-glyph-orientation-vertical)
+     * [`https://www.w3.org/TR/css-writing-modes-4/#propdef-writing-mode`](https://www.w3.org/TR/css-writing-modes-4/#propdef-writing-mode)
+     * [`https://www.w3.org/TR/css-images-3/#propdef-image-rendering`](https://www.w3.org/TR/css-images-3/#propdef-image-rendering)
+     * [`https://www.w3.org/TR/css-images-3/#typedef-image`](https://www.w3.org/TR/css-images-3/#typedef-image)
+     * [`https://www.w3.org/TR/css-text-3/#propdef-letter-spacing`](https://www.w3.org/TR/css-text-3/#propdef-letter-spacing)
+     * [`https://www.w3.org/TR/css-text-3/#propdef-word-spacing`](https://www.w3.org/TR/css-text-3/#propdef-word-spacing)
+     * [`https://www.w3.org/TR/css-text-decor-3/#propdef-text-decoration`](https://www.w3.org/TR/css-text-decor-3/#propdef-text-decoration)
+     * [`https://www.w3.org/TR/css-transforms-1/#user-coordinate-system`](https://www.w3.org/TR/css-transforms-1/#user-coordinate-system)
+     * [`https://www.w3.org/TR/css-transforms-1/#propdef-transform`](https://www.w3.org/TR/css-transforms-1/#propdef-transform)
+     * [`https://www.w3.org/TR/css-break-4/#propdef-box-decoration-break`](https://www.w3.org/TR/css-break-4/#propdef-box-decoration-break)
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcover`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcover)
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcout`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcout)
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcin`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcin)
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_xor`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_xor)
+     * [`https://www.w3.org/TR/css3-background/#layering`](https://www.w3.org/TR/css3-background/#layering)
+     * [`https://www.w3.org/TR/css3-background/#border-image-process`](https://www.w3.org/TR/css3-background/#border-image-process)
+     * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/css2/#valdef-clip-auto`](https://drafts.csswg.org/css2/#valdef-clip-auto)
+     * [`https://drafts.csswg.org/web-animations-1/#animation-type`](https://drafts.csswg.org/web-animations-1/#animation-type)
+     * [`https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linejoin-miter`](https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linejoin-miter)
+     * [`https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linecap-square`](https://www.w3.org/TR/fill-stroke-3/#valdef-stroke-linecap-square)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/):
      * [`https://drafts.csswg.org/css-text-4/#propdef-text-wrap`](https://drafts.csswg.org/css-text-4/#propdef-text-wrap)
      * [`https://drafts.csswg.org/css-text-4/#propdef-white-space`](https://drafts.csswg.org/css-text-4/#propdef-white-space)
@@ -7722,20 +7724,21 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview`](https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview)
      * [`https://www.w3.org/TR/css-logical-1/#propdef-inset`](https://www.w3.org/TR/css-logical-1/#propdef-inset)
 - [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/):
+     * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
      * [`https://www.w3.org/TR/css-values-4/#css-wide-keywords`](https://www.w3.org/TR/css-values-4/#css-wide-keywords)
      * [`https://www.w3.org/TR/css-values-4/#comb-one`](https://www.w3.org/TR/css-values-4/#comb-one)
      * [`https://www.w3.org/TR/css-values-4/#mult-num`](https://www.w3.org/TR/css-values-4/#mult-num)
-     * [`https://drafts.csswg.org/css-values/#value-defs`](https://drafts.csswg.org/css-values/#value-defs)
-     * [`https://drafts.csswg.org/css-values/#percentages`](https://drafts.csswg.org/css-values/#percentages)
-     * [`https://www.w3.org/TR/css3-color/#valuea-def-color`](https://www.w3.org/TR/css3-color/#valuea-def-color)
-     * [`https://drafts.csswg.org/css-cascade/#initial-values`](https://drafts.csswg.org/css-cascade/#initial-values)
-     * [`https://drafts.csswg.org/css-cascade/#inherited-property`](https://drafts.csswg.org/css-cascade/#inherited-property)
-     * [`https://drafts.csswg.org/css-cascade/#computed`](https://drafts.csswg.org/css-cascade/#computed)
+     * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
+     * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
+     * [`https://www.w3.org/TR/css-color-4/#typedef-color`](https://www.w3.org/TR/css-color-4/#typedef-color)
+     * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
+     * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
+     * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
+     * [`https://www.w3.org/TR/css-overflow-3/#scroll-container`](https://www.w3.org/TR/css-overflow-3/#scroll-container)
      * [`https://www.w3.org/TR/css-overflow-3/#propdef-overflow`](https://www.w3.org/TR/css-overflow-3/#propdef-overflow)
-     * [`https://drafts.csswg.org/css-transitions/#animatable-properties`](https://drafts.csswg.org/css-transitions/#animatable-properties)
-     * [`https://www.w3.org/TR/css3-transitions/#animtype-color`](https://www.w3.org/TR/css3-transitions/#animtype-color)
-     * [`https://www.w3.org/TR/css3-values/#length-value`](https://www.w3.org/TR/css3-values/#length-value)
-     * [`https://drafts.csswg.org/css3-transitions/#animtype-length`](https://drafts.csswg.org/css3-transitions/#animtype-length)
+     * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
+     * [`https://www.w3.org/TR/css-color-adjust-1/#propdef-color-scheme`](https://www.w3.org/TR/css-color-adjust-1/#propdef-color-scheme)
+     * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
 - [CSS Shadow Parts](https://www.w3.org/TR/css-shadow-parts-1/):
      * [`https://www.w3.org/TR/css-scoping-1/#shadow-host`](https://www.w3.org/TR/css-scoping-1/#shadow-host)
      * [`https://www.w3.org/TR/css-scoping-1/#shadow-tree`](https://www.w3.org/TR/css-scoping-1/#shadow-tree)
@@ -9544,16 +9547,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#idl-Exposed`](https://heycam.github.io/webidl/#idl-Exposed)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
      * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
-     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
+     * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
+     * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
+     * [`https://html.spec.whatwg.org/#eventtarget`](https://html.spec.whatwg.org/#eventtarget)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#dragevent`](https://html.spec.whatwg.org/#dragevent)
-     * [`https://www.w3.org/TR/uievents/#idl-uievent`](https://www.w3.org/TR/uievents/#idl-uievent)
+     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
      * [`https://www.w3.org/TR/uievents/#event-type-mousemove`](https://www.w3.org/TR/uievents/#event-type-mousemove)
      * [`https://www.w3.org/TR/uievents/#event-type-wheel`](https://www.w3.org/TR/uievents/#event-type-wheel)
-     * [`https://www.w3.org/TR/touch-events/#touchevent-interface`](https://www.w3.org/TR/touch-events/#touchevent-interface)
+     * [`https://www.w3.org/TR/uievents/#idl-uievent`](https://www.w3.org/TR/uievents/#idl-uievent)
      * [`https://www.w3.org/TR/touch-events/#the-touchmove-event`](https://www.w3.org/TR/touch-events/#the-touchmove-event)
+     * [`https://www.w3.org/TR/touch-events/#touchevent-interface`](https://www.w3.org/TR/touch-events/#touchevent-interface)
      * [`https://www.w3.org/TR/pointerevents3/#the-pointermove-event`](https://www.w3.org/TR/pointerevents3/#the-pointermove-event)
      * [`https://www.w3.org/TR/pointerevents3/#the-pointerrawupdate-event`](https://www.w3.org/TR/pointerevents3/#the-pointerrawupdate-event)
 - [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/multipage/):
@@ -11444,6 +11449,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-scoping/#flat-tree`](https://drafts.csswg.org/css-scoping/#flat-tree)
      * [`https://drafts.csswg.org/css-color-adjust/#color-scheme-prop`](https://drafts.csswg.org/css-color-adjust/#color-scheme-prop)
      * [`https://drafts.csswg.org/css-pseudo/#file-selector-button-pseudo`](https://drafts.csswg.org/css-pseudo/#file-selector-button-pseudo)
+     * [`https://drafts.csswg.org/css-contain/#skips-its-contents`](https://drafts.csswg.org/css-contain/#skips-its-contents)
      * [`https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps`](https://w3c.github.io/IntersectionObserver/#run-the-update-intersection-observations-steps)
      * [`https://w3c.github.io/IntersectionObserver/#intersectionobserver`](https://w3c.github.io/IntersectionObserver/#intersectionobserver)
      * [`https://w3c.github.io/IntersectionObserver/#dictdef-intersectionobserverinit`](https://w3c.github.io/IntersectionObserver/#dictdef-intersectionobserverinit)
@@ -12195,6 +12201,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp`](https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp)
      * [`https://www.w3.org/TR/hr-time-2/#clock-resolution`](https://www.w3.org/TR/hr-time-2/#clock-resolution)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#classic-script`](https://html.spec.whatwg.org/#classic-script)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#worker`](https://html.spec.whatwg.org/#worker)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
@@ -13935,7 +13942,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
      * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
-     * [`https://html.spec.whatwg.org/#initiate-the-drag-and-drop-operation`](https://html.spec.whatwg.org/#initiate-the-drag-and-drop-operation)
+     * [`https://html.spec.whatwg.org/#drag-and-drop-processing-model`](https://html.spec.whatwg.org/#drag-and-drop-processing-model)
      * [`https://html.spec.whatwg.org/#event-contextmenu`](https://html.spec.whatwg.org/#event-contextmenu)
      * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
@@ -18538,7 +18545,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 15496 problematic external links found in 340 specifications
+=> 15530 problematic external links found in 340 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -18578,8 +18585,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [CSS Layout API Level 1](https://www.w3.org/TR/css-layout-api-1/):
      * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
-- [CSS Masking Module Level 1](https://www.w3.org/TR/css-masking-1/):
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [CSS Painting API Level 1](https://www.w3.org/TR/css-paint-api-1/):
      * [`https://www.w3.org/TR/worklets-1/`](https://www.w3.org/TR/worklets-1/)
 - [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/):
@@ -18712,7 +18717,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebVTT: The Web Video Text Tracks Format](https://www.w3.org/TR/webvtt1/):
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
-=> 91 problematic external links found in 71 specifications
+=> 90 problematic external links found in 70 specifications
 
 
 ## External links that use a dated URL
@@ -18835,15 +18840,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2013/WD-css-masking-20130620/`](https://www.w3.org/TR/2013/WD-css-masking-20130620/)
      * [`https://www.w3.org/TR/2012/WD-css-masking-20121115/`](https://www.w3.org/TR/2012/WD-css-masking-20121115/)
-     * [`https://www.w3.org/TR/2013/WD-compositing-1-20130625/`](https://www.w3.org/TR/2013/WD-compositing-1-20130625/)
-     * [`https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/`](https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/)
-     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607`](https://www.w3.org/TR/2011/REC-CSS2-20110607)
-     * [`https://www.w3.org/TR/2012/WD-css3-transforms-20120911/`](https://www.w3.org/TR/2012/WD-css3-transforms-20120911/)
-     * [`https://www.w3.org/TR/2012/CR-css3-background-20120724/`](https://www.w3.org/TR/2012/CR-css3-background-20120724/)
-     * [`https://www.w3.org/TR/2013/CR-css3-values-20130730/`](https://www.w3.org/TR/2013/CR-css3-values-20130730/)
-     * [`https://www.w3.org/TR/2013/CR-html5-20130806/`](https://www.w3.org/TR/2013/CR-html5-20130806/)
-     * [`https://www.w3.org/TR/2011/REC-css3-color-20110607`](https://www.w3.org/TR/2011/REC-css3-color-20110607)
-     * [`https://www.w3.org/TR/2013/WD-filter-effects-20130523/`](https://www.w3.org/TR/2013/WD-filter-effects-20130523/)
 - [CSS Multi-column Layout Module Level 1](https://www.w3.org/TR/css-multicol-1/):
      * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/)
 - [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3/):
@@ -19080,6 +19076,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 288 problematic external links found in 74 specifications
+=> 279 problematic external links found in 74 specifications
 
 
