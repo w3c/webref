@@ -10783,7 +10783,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webrtc-pc/`](https://w3c.github.io/webrtc-pc/), related reference "WEBRTC" uses URL [`https://www.w3.org/TR/webrtc/`](https://www.w3.org/TR/webrtc/)
 - External links to private terms:
-     * [`https://www.w3.org/TR/webrtc/#dfn-isclosed`](https://www.w3.org/TR/webrtc/#dfn-isclosed)
      * [`https://www.w3.org/TR/webrtc/#set-pc-configuration`](https://www.w3.org/TR/webrtc/#set-pc-configuration)
      * [`https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state`](https://w3c.github.io/webrtc-pc/#dfn-offerer-s-system-state)
      * [`https://w3c.github.io/webrtc-pc/#dfn-signaling-state`](https://w3c.github.io/webrtc-pc/#dfn-signaling-state)
@@ -11825,7 +11824,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Crawled URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled version: 07 August 2021
+- Crawled version: 09 August 2021
 - Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
 - Shortname: mathml-core
 
