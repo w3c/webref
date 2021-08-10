@@ -3,7 +3,7 @@ window.onload = function () {
     Array.prototype.slice.call(el.querySelectorAll(selector), 0);
 
   const toggleSubSections = spec =>
-    $(spec, 'h2 ~ section').forEach(
+    $(spec, 'h3 ~ section').forEach(
       section => section.hasAttribute('hidden') ?
         section.removeAttribute('hidden') :
         section.setAttribute('hidden', '')
@@ -16,7 +16,7 @@ window.onload = function () {
   let totalWarning = 0;
   $(document, 'section[data-spec]').forEach(spec => {
     total += 1;
-    const title = spec.querySelector('h2');
+    const title = spec.querySelector('h3');
 
     // Compute the set of anomaly icons to display
     let flags = [];
@@ -76,7 +76,7 @@ window.onload = function () {
     toggleSubSections(spec);
 
     // Expand/Collapse the section on click
-    const link = spec.querySelector('h2 a');
+    const link = spec.querySelector('h3 a');
     link.onclick = () => {
       toggleSubSections(spec);
       const caret = title.querySelector('i');
@@ -166,7 +166,7 @@ window.onload = function () {
   // Force browser to re-scroll to requested position
   if (document.location.hash) {
     const spec = document.getElementById(document.location.hash.substring(1));
-    spec.querySelector('h2 a').click();
+    spec.querySelector('h3 a').click();
     setTimeout(() => spec.scrollIntoView(), 0);
   }
 };
