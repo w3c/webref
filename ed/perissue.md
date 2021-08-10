@@ -1249,8 +1249,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/wai-aria-practices/`](https://www.w3.org/TR/wai-aria-practices/) but does not list it in its references
 - [Gyroscope](https://w3c.github.io/gyroscope/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [HTML Accessibility API Mappings 1.0](https://w3c.github.io/html-aam/) links to:
-    * [`https://w3c.github.io/core-aam/role-map-button-pressed`](https://w3c.github.io/core-aam/role-map-button-pressed) but does not list it in its references
-    * [`https://w3c.github.io/core-aam/role-map-button-haspopup`](https://w3c.github.io/core-aam/role-map-button-haspopup) but does not list it in its references
     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/) but does not list it in its references
     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/) but does not list it in its references
     * [`https://w3c.github.io/accname/`](https://w3c.github.io/accname/) but does not list it in its references
@@ -1456,7 +1454,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 613 missing references for links found in 173 specifications
+=> 611 missing references for links found in 173 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -5120,6 +5118,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/core-aam/#role-map-button`](https://w3c.github.io/core-aam/#role-map-button)
      * [`https://w3c.github.io/core-aam/#role-map-slider`](https://w3c.github.io/core-aam/#role-map-slider)
      * [`https://w3c.github.io/core-aam/#role-map-toolbar`](https://w3c.github.io/core-aam/#role-map-toolbar)
+     * [`https://w3c.github.io/core-aam/#role-map-button-pressed`](https://w3c.github.io/core-aam/#role-map-button-pressed)
+     * [`https://w3c.github.io/core-aam/#role-map-button-haspopup`](https://w3c.github.io/core-aam/#role-map-button-haspopup)
      * [`https://w3c.github.io/core-aam/#role-map-listbox`](https://w3c.github.io/core-aam/#role-map-listbox)
      * [`https://w3c.github.io/core-aam/#ariaMultiselectableFalse`](https://w3c.github.io/core-aam/#ariaMultiselectableFalse)
      * [`https://w3c.github.io/core-aam/#role-map-definition`](https://w3c.github.io/core-aam/#role-map-definition)
@@ -8279,7 +8279,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4342 problematic external links found in 281 specifications
+=> 4344 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

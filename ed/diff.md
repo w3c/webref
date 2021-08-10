@@ -2,11 +2,11 @@
 % Reffy
 % August 10, 2021
 
-## CSS Scoping Module Level 2
+## HTML Accessibility API Mappings 1.0
 
-- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Missing references for links: *DEL* https://w3c.github.io/core-aam/role-map-button-pressed, https://w3c.github.io/core-aam/role-map-button-haspopup
 
 
