@@ -94,7 +94,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-### ECMAScript® 2022 Language Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+### ECMAScript® 2022 Language Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -484,7 +484,7 @@ No informative reference to this spec from other specs.
 
 ## ART Area General Application Working Group Working Group {#art_area_general_application_working_group_working_group}
 
-### RFC 7578: Returning Values from Forms: multipart/form-data {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+### RFC 7578: Returning Values from Forms: multipart/form-data {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -497,6 +497,10 @@ No informative reference to this spec from other specs.
 #### Potential issue(s) {.anomalies}
 
 - No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2014/REC-html5-20141028`](https://www.w3.org/TR/2014/REC-html5-20141028)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -831,8 +835,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### Use of the Content-Disposition Header Field
-  in the Hypertext Transfer Protocol (HTTP) {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
+### Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP) {data-spec=true data-missingDfns=true data-xrefs=true data-ok=true}
 
 #### Spec info {.info}
 
@@ -970,7 +973,7 @@ Informative references to this spec from:
 
 ## Web Security Working Group {#web_security_working_group}
 
-### RFC 6454: The Web Origin Concept {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+### RFC 6454: The Web Origin Concept {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -983,6 +986,17 @@ Informative references to this spec from:
 #### Potential issue(s) {.anomalies}
 
 - No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2010/WD-cors-20100727/`](https://www.w3.org/TR/2010/WD-cors-20100727/)
+     * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
+     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/)
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2010/WD-cors-20100727/`](https://www.w3.org/TR/2010/WD-cors-20100727/)
+     * [`https://www.w3.org/TR/2011/WD-html5-20110525/`](https://www.w3.org/TR/2011/WD-html5-20110525/)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -999,7 +1013,7 @@ Informative references to this spec from:
 - [URL Standard](https://url.spec.whatwg.org/)
 
 
-### RFC 6797: HTTP Strict Transport Security (HSTS) {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+### RFC 6797: HTTP Strict Transport Security (HSTS) {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -1012,6 +1026,12 @@ Informative references to this spec from:
 #### Potential issue(s) {.anomalies}
 
 - No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224/`](https://www.w3.org/TR/1999/REC-html401-19991224/)
+     * [`https://www.w3.org/TR/2010/REC-wsc-ui-20100812`](https://www.w3.org/TR/2010/REC-wsc-ui-20100812)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -1026,7 +1046,7 @@ Informative references to this spec from:
 - [Server Timing](https://w3c.github.io/server-timing/)
 
 
-### RFC 7034: HTTP Header Field X-Frame-Options {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+### RFC 7034: HTTP Header Field X-Frame-Options {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -1039,6 +1059,12 @@ Informative references to this spec from:
 #### Potential issue(s) {.anomalies}
 
 - No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/)
+     * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2012/CR-CSP-20121115/`](https://www.w3.org/TR/2012/CR-CSP-20121115/)
+     * [`https://www.w3.org/TR/2013/WD-CSP11-20130604/`](https://www.w3.org/TR/2013/WD-CSP11-20130604/)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -1049,7 +1075,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-### RFC 7469: Public Key Pinning Extension for HTTP {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+### RFC 7469: Public Key Pinning Extension for HTTP {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -1062,6 +1088,10 @@ No informative reference to this spec from other specs.
 #### Potential issue(s) {.anomalies}
 
 - No normative references found
+- Missing references for links: 
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/1999/REC-html401-19991224`](https://www.w3.org/TR/1999/REC-html401-19991224)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -7381,7 +7411,7 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-### Proposals for the future of CSS Paged Media {data-spec=true data-missingDfns=true data-ok=true}
+### Proposals for the future of CSS Paged Media {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -7393,7 +7423,13 @@ No informative reference to this spec from other specs.
 
 #### Potential issue(s) {.anomalies}
 
-This specification looks good!
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607/`](https://www.w3.org/TR/2011/REC-CSS2-20110607/)
+     * [`https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/`](https://www.w3.org/TR/2012/WD-css3-exclusions-20120503/)
+     * [`https://www.w3.org/TR/2012/WD-css3-grid-layout-20121106/`](https://www.w3.org/TR/2012/WD-css3-grid-layout-20121106/)
+     * [`https://www.w3.org/TR/2012/WD-css3-regions-20120823/`](https://www.w3.org/TR/2012/WD-css3-regions-20120823/)
+     * [`https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/`](https://www.w3.org/TR/2011/WD-css3-gcpm-20111129/)
+     * [`https://www.w3.org/TR/2006/WD-css3-page-20061010`](https://www.w3.org/TR/2006/WD-css3-page-20061010)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -8022,7 +8058,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 6 August 2021
+- Crawled version: 11 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -8091,7 +8127,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 6 August 2021
+- Crawled version: 11 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -9099,12 +9135,12 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#htmlcanvaselement`](https://html.spec.whatwg.org/#htmlcanvaselement)
      * [`https://html.spec.whatwg.org/#imagebitmap`](https://html.spec.whatwg.org/#imagebitmap)
      * [`https://html.spec.whatwg.org/#offscreencanvas`](https://html.spec.whatwg.org/#offscreencanvas)
+     * [`https://html.spec.whatwg.org/#imagebitmapoptions`](https://html.spec.whatwg.org/#imagebitmapoptions)
+     * [`https://html.spec.whatwg.org/#dom-imagebitmapoptions-colorspaceconversion`](https://html.spec.whatwg.org/#dom-imagebitmapoptions-colorspaceconversion)
      * [`https://html.spec.whatwg.org/#live`](https://html.spec.whatwg.org/#live)
      * [`https://html.spec.whatwg.org/#premultiplyalpha`](https://html.spec.whatwg.org/#premultiplyalpha)
      * [`https://html.spec.whatwg.org/#colorspaceconversion`](https://html.spec.whatwg.org/#colorspaceconversion)
      * [`https://html.spec.whatwg.org/#dom-imagebitmapoptions-premultiplyalpha`](https://html.spec.whatwg.org/#dom-imagebitmapoptions-premultiplyalpha)
-     * [`https://html.spec.whatwg.org/#imagebitmapoptions`](https://html.spec.whatwg.org/#imagebitmapoptions)
-     * [`https://html.spec.whatwg.org/#dom-imagebitmapoptions-colorspaceconversion`](https://html.spec.whatwg.org/#dom-imagebitmapoptions-colorspaceconversion)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
@@ -17578,7 +17614,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Crawled URL: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
-- Crawled version: 17 June 2021
+- Crawled version: 11 August 2021
 - Editor's Draft: [https://wicg.github.io/web-locks/](https://wicg.github.io/web-locks/)
 - Shortname: web-locks
 
@@ -19627,7 +19663,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 10 August 2021
+- Crawled version: 11 August 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 

@@ -147,6 +147,7 @@ dictionary VideoDecoderConfig {
   [EnforceRange] unsigned long codedHeight;
   [EnforceRange] unsigned long displayAspectWidth;
   [EnforceRange] unsigned long displayAspectHeight;
+  VideoColorSpaceInit colorSpace;
   HardwareAcceleration hardwareAcceleration = "allow";
   boolean optimizeForLatency;
 };
@@ -171,6 +172,7 @@ dictionary VideoEncoderConfig {
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
+  VideoColorSpaceInit colorSpace;
 };
 
 enum HardwareAcceleration {
@@ -205,8 +207,8 @@ callback WebCodecsErrorCallback = undefined(DOMException error);
 interface EncodedAudioChunk {
   constructor(EncodedAudioChunkInit init);
   readonly attribute EncodedAudioChunkType type;
-  readonly attribute long long timestamp;    // microseconds
-  readonly attribute unsigned long duration; // microseconds
+  readonly attribute long long timestamp;          // microseconds
+  readonly attribute unsigned long long? duration; // microseconds
   readonly attribute unsigned long byteLength;
 
   undefined copyTo([AllowShared] BufferSource destination);
@@ -215,6 +217,7 @@ interface EncodedAudioChunk {
 dictionary EncodedAudioChunkInit {
   required EncodedAudioChunkType type;
   [EnforceRange] required long long timestamp;    // microseconds
+  [EnforceRange] unsigned long long duration;     // microseconds
   required BufferSource data;
 };
 
@@ -303,6 +306,8 @@ interface VideoFrame {
   readonly attribute unsigned long displayHeight;
   readonly attribute unsigned long long? duration;  // microseconds
   readonly attribute long long? timestamp;          // microseconds
+  readonly attribute VideoColorSpace? colorSpace;
+
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});
   Promise<sequence<PlaneLayout>> copyTo(
@@ -334,6 +339,8 @@ dictionary VideoFrameBufferInit {
   // Default display dimensions match visibleRect.
   [EnforceRange] unsigned long displayWidth;
   [EnforceRange] unsigned long displayHeight;
+
+  VideoColorSpaceInit colorSpace;
 };
 
 dictionary VideoFrameCopyToOptions {
@@ -365,6 +372,44 @@ enum VideoPixelFormat {
   "BGRA",
   // 32bpp BGRX (opaque)
   "BGRX",
+};
+
+[Exposed=(Window,DedicatedWorker)]
+interface VideoColorSpace {
+  constructor(VideoColorSpaceInit init);
+
+  readonly attribute VideoColorPrimaries? primaries;
+  readonly attribute VideoTransferCharacteristics? transfer;
+  readonly attribute VideoMatrixCoefficients? matrix;
+  readonly attribute boolean? fullRange;
+
+  [Default] VideoColorSpaceInit toJSON();
+};
+
+dictionary VideoColorSpaceInit {
+  VideoColorPrimaries primaries;
+  VideoTransferCharacteristics transfer;
+  VideoMatrixCoefficients matrix;
+  boolean fullRange;
+};
+
+enum VideoColorPrimaries {
+  "bt709",      // BT.709, sRGB
+  "bt470bg",    // BT.601 PAL
+  "smpte170m",  // BT.601 NTSC
+};
+
+enum VideoTransferCharacteristics {
+  "bt709",         // BT.709
+  "smpte170m",     // BT.601 (functionally the same as bt709)
+  "iec61966-2-1",  // sRGB
+};
+
+enum VideoMatrixCoefficients {
+  "rgb",        // sRGB
+  "bt709",      // BT.709
+  "bt470bg",    // BT.601 PAL
+  "smpte170m",  // BT.601 NTSC (functionally the same as bt470bg)
 };
 
 [Exposed=(Window,DedicatedWorker)]

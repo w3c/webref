@@ -158,6 +158,63 @@
       "definedIn": "dt"
     },
     {
+      "id": "rgb-format",
+      "href": "https://w3c.github.io/webcodecs/#rgb-format",
+      "linkingText": [
+        "RGB Format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "srgb-color-space",
+      "href": "https://w3c.github.io/webcodecs/#srgb-color-space",
+      "linkingText": [
+        "sRGB Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rec709-color-space",
+      "href": "https://w3c.github.io/webcodecs/#rec709-color-space",
+      "linkingText": [
+        "REC709 Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "codec-processing-model",
       "href": "https://w3c.github.io/webcodecs/#codec-processing-model",
       "linkingText": [
@@ -2566,6 +2623,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoder-active-color-space-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-active-color-space-slot",
+      "linkingText": [
+        "[[active color space]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoder-state-slot",
       "href": "https://w3c.github.io/webcodecs/#dom-videoencoder-state-slot",
       "linkingText": [
@@ -3605,6 +3683,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoderconfig-colorspace",
+      "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-decoder-config",
+        "href": "https://w3c.github.io/webcodecs/#video-decoder-config",
+        "title": "VideoDecoderConfig",
+        "number": "7.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoderconfig-hardwareacceleration",
       "href": "https://w3c.github.io/webcodecs/#dom-videodecoderconfig-hardwareacceleration",
       "linkingText": [
@@ -4042,6 +4141,27 @@
       "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-latencymode",
       "linkingText": [
         "latencyMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://w3c.github.io/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-colorspace",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoencoderconfig-colorspace",
+      "linkingText": [
+        "colorSpace"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -4560,6 +4680,27 @@
       "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunkinit-timestamp",
       "linkingText": [
         "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-interface",
+        "href": "https://w3c.github.io/webcodecs/#encodedaudiochunk-interface",
+        "title": "EncodedAudioChunk Interface",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-encodedaudiochunkinit-duration",
+      "href": "https://w3c.github.io/webcodecs/#dom-encodedaudiochunkinit-duration",
+      "linkingText": [
+        "duration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -6947,6 +7088,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-videoframebufferinit-colorspace",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframebufferinit-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameBufferInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-videoframe-resource-reference-slot",
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-resource-reference-slot",
       "linkingText": [
@@ -7199,6 +7361,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoframe-color-space-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-color-space-slot",
+      "linkingText": [
+        "[[color space]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoframe-videoframe",
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-videoframe",
       "linkingText": [
@@ -7417,6 +7600,27 @@
       "href": "https://w3c.github.io/webcodecs/#dom-videoframe-duration",
       "linkingText": [
         "duration"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-attributes",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-attributes",
+        "title": "Attributes",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoframe-colorspace",
+      "href": "https://w3c.github.io/webcodecs/#dom-videoframe-colorspace",
+      "linkingText": [
+        "colorSpace"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -7742,7 +7946,28 @@
         "title": "Algorithms",
         "number": "9.4.6"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
+    },
+    {
+      "id": "videoframe-pick-color-space",
+      "href": "https://w3c.github.io/webcodecs/#videoframe-pick-color-space",
+      "linkingText": [
+        "Pick Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "href": "https://w3c.github.io/webcodecs/#videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "valid-videoframebufferinit",
@@ -8301,6 +8526,638 @@
         "href": "https://w3c.github.io/webcodecs/#pixel-format",
         "title": "Pixel Format",
         "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videocolorspace",
+      "href": "https://w3c.github.io/webcodecs/#videocolorspace",
+      "linkingText": [
+        "VideoColorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-videocolorspace-init-init",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-videocolorspace-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoColorSpace/VideoColorSpace(init)",
+        "VideoColorSpace/constructor(init)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-tojson",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-videocolorspaceinit",
+      "href": "https://w3c.github.io/webcodecs/#dictdef-videocolorspaceinit",
+      "linkingText": [
+        "VideoColorSpaceInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-primaries",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspaceinit-primaries",
+      "linkingText": [
+        "primaries"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-transfer",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspaceinit-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-matrix",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspaceinit-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-fullrange",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspaceinit-fullrange",
+      "linkingText": [
+        "fullRange"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://w3c.github.io/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-primaries-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-primaries-slot",
+      "linkingText": [
+        "[[primaries]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-transfer-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-transfer-slot",
+      "linkingText": [
+        "[[transfer]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-matrix-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-matrix-slot",
+      "linkingText": [
+        "[[matrix]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-full-range-slot",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-full-range-slot",
+      "linkingText": [
+        "[[full range]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-videocolorspace",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-videocolorspace",
+      "linkingText": [
+        "VideoColorSpace(init)",
+        "constructor(init)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-constructors",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-constructors",
+        "title": "Constructors",
+        "number": "9.9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-videocolorspace-primaries",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-primaries",
+      "linkingText": [
+        "primaries"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-transfer",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-matrix",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-fullrange",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorspace-fullrange",
+      "linkingText": [
+        "fullRange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://w3c.github.io/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videocolorprimaries",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-videocolorprimaries",
+      "linkingText": [
+        "VideoColorPrimaries"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://w3c.github.io/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorprimaries-bt709",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorprimaries-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://w3c.github.io/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorprimaries-bt470bg",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorprimaries-bt470bg",
+      "linkingText": [
+        "\"bt470bg\"",
+        "bt470bg"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://w3c.github.io/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorprimaries-smpte170m",
+      "href": "https://w3c.github.io/webcodecs/#dom-videocolorprimaries-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://w3c.github.io/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videotransfercharacteristics",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-videotransfercharacteristics",
+      "linkingText": [
+        "VideoTransferCharacteristics"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://w3c.github.io/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-bt709",
+      "href": "https://w3c.github.io/webcodecs/#dom-videotransfercharacteristics-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://w3c.github.io/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-smpte170m",
+      "href": "https://w3c.github.io/webcodecs/#dom-videotransfercharacteristics-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://w3c.github.io/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-iec61966-2-1",
+      "href": "https://w3c.github.io/webcodecs/#dom-videotransfercharacteristics-iec61966-2-1",
+      "linkingText": [
+        "\"iec61966-2-1\"",
+        "iec61966-2-1"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://w3c.github.io/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videomatrixcoefficients",
+      "href": "https://w3c.github.io/webcodecs/#enumdef-videomatrixcoefficients",
+      "linkingText": [
+        "VideoMatrixCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://w3c.github.io/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-rgb",
+      "href": "https://w3c.github.io/webcodecs/#dom-videomatrixcoefficients-rgb",
+      "linkingText": [
+        "\"rgb\"",
+        "rgb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://w3c.github.io/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-bt709",
+      "href": "https://w3c.github.io/webcodecs/#dom-videomatrixcoefficients-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://w3c.github.io/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-bt470bg",
+      "href": "https://w3c.github.io/webcodecs/#dom-videomatrixcoefficients-bt470bg",
+      "linkingText": [
+        "\"bt470bg\"",
+        "bt470bg"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://w3c.github.io/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-smpte170m",
+      "href": "https://w3c.github.io/webcodecs/#dom-videomatrixcoefficients-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://w3c.github.io/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
       },
       "definedIn": "dt"
     },
