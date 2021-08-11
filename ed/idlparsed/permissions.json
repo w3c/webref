@@ -66,7 +66,7 @@
         "extAttrs": []
       },
       "PermissionStatus": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  attribute EventHandler onchange;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute PermissionName name;\n  attribute EventHandler onchange;\n};",
         "type": "interface",
         "name": "PermissionStatus",
         "inheritance": "EventTarget",
@@ -81,6 +81,21 @@
               "nullable": false,
               "union": false,
               "idlType": "PermissionState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PermissionName"
             },
             "extAttrs": [],
             "special": "",
@@ -556,6 +571,7 @@
       "PermissionStatus": [
         "EventTarget",
         "PermissionState",
+        "PermissionName",
         "EventHandler"
       ],
       "Navigator": [
