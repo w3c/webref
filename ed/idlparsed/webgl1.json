@@ -784,7 +784,7 @@
         "partial": false
       },
       "TexImageSource": {
-        "fragment": "typedef (ImageBitmap or\n         ImageData or\n         HTMLImageElement or\n         HTMLCanvasElement or\n         HTMLVideoElement or\n         OffscreenCanvas) TexImageSource;",
+        "fragment": "typedef (ImageBitmap or\n         ImageData or\n         HTMLImageElement or\n         HTMLCanvasElement or\n         HTMLVideoElement or\n         OffscreenCanvas or\n         VideoFrame) TexImageSource;",
         "type": "typedef",
         "name": "TexImageSource",
         "idlType": {
@@ -841,6 +841,14 @@
               "nullable": false,
               "union": false,
               "idlType": "OffscreenCanvas"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "VideoFrame"
             }
           ]
         },
@@ -13913,6 +13921,7 @@
       "HTMLCanvasElement",
       "HTMLVideoElement",
       "OffscreenCanvas",
+      "VideoFrame",
       "Event",
       "EventInit"
     ],
