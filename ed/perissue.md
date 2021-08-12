@@ -252,9 +252,8 @@ WebIDL continues to evolve. Reffy may incorrectly report as invalid perfectly va
 ## List of [Exposed] names not defined in the specifications crawled
 
 - `RTCIdentityProviderGlobalScope` used in [Identity for WebRTC 1.0](https://w3c.github.io/webrtc-identity/)
-- `SecureContext` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 
-=> 2 [Exposed] names found
+=> 1 [Exposed] name found
 
 Please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled **and** that do not have invalid IDL content.
 
@@ -274,7 +273,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 - `ComputedEffectTiming` used in [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - `EffectTiming` used in [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - `ElementCSSInlineStyle` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- `PaymentAddress` used in [Contact Picker API](https://wicg.github.io/contact-api/spec/), [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
+- `PaymentAddress` used in [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
 - `PostMessageOptions` used in [Portals](https://wicg.github.io/portals/)
 - `Screen` used in [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -3317,9 +3316,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://www.w3.org/TR/payment-request/#physical-addresses`](https://www.w3.org/TR/payment-request/#physical-addresses)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress`](https://www.w3.org/TR/payment-request/#dom-paymentaddress)
 - [Content Index](https://wicg.github.io/content-index/spec/):
      * [`https://html.spec.whatwg.org/#parallel-queue`](https://html.spec.whatwg.org/#parallel-queue)
      * [`https://html.spec.whatwg.org/#starting-a-new-parallel-queue`](https://html.spec.whatwg.org/#starting-a-new-parallel-queue)
@@ -8768,7 +8764,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 5689 problematic external links found in 222 specifications
+=> 5686 problematic external links found in 222 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

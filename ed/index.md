@@ -14374,7 +14374,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
@@ -15521,20 +15520,18 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
-### Contact Picker API {data-spec=true data-anomaly=true data-unknownExposedNames=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+### Contact Picker API {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
 - Crawled URL: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
-- Crawled version: 13 April 2021
+- Crawled version: 12 August 2021
 - Editor's Draft: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
 - Shortname: contact-api
 
 #### Potential issue(s) {.anomalies}
 
-- Unknown [Exposed] names used: `SecureContext`
-- Unknown WebIDL names used: `PaymentAddress`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/), related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
 - Broken external links:
@@ -15552,9 +15549,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#concept-request-origin`](https://html.spec.whatwg.org/#concept-request-origin)
-     * [`https://dom.spec.whatwg.org/#context-object`](https://dom.spec.whatwg.org/#context-object)
-     * [`https://www.w3.org/TR/payment-request/#physical-addresses`](https://www.w3.org/TR/payment-request/#physical-addresses)
-     * [`https://www.w3.org/TR/payment-request/#dom-paymentaddress`](https://www.w3.org/TR/payment-request/#dom-paymentaddress)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -19308,7 +19302,6 @@ Normative references to this spec from:
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clipboard API and events](https://w3c.github.io/clipboard-apis/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
