@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-08-12T18:44:38.099Z",
+  "date": "2021-08-13T00:51:01.930Z",
   "stats": {
     "crawled": 429,
     "errors": 0,
@@ -1876,9 +1876,10 @@
           "notExported": [
             "https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information"
           ],
-          "notDfn": [],
+          "notDfn": [
+            "https://drafts.csswg.org/css-flexbox-1/#propdef-order"
+          ],
           "brokenLinks": [
-            "https://drafts.csswg.org/css-flexbox-1/#propdef-order",
             "https://drafts.csswg.org/css-color-3/#valuea-def-color",
             "https://drafts.csswg.org/css-transitions/#animtype-color",
             "https://html.spec.whatwg.org/#window",
@@ -3365,7 +3366,7 @@
     {
       "title": "CSS 2",
       "shortname": "CSS21",
-      "date": "17 May 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/CSS21/",
       "release": {
         "url": "https://www.w3.org/TR/CSS21/",
@@ -3948,11 +3949,6 @@
               "crawled": "https://drafts.csswg.org/web-animations-1/"
             },
             {
-              "url": "https://drafts.csswg.org/web-animations-2/",
-              "title": "Web Animations Level 2",
-              "crawled": "https://drafts.csswg.org/web-animations-2/"
-            },
-            {
               "url": "https://www.w3.org/TR/webdriver2/",
               "title": "WebDriver",
               "crawled": "https://w3c.github.io/webdriver/"
@@ -4007,7 +4003,7 @@
     {
       "title": "CSS 2",
       "shortname": "CSS22",
-      "date": "17 May 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/CSS22/",
       "release": {
         "url": "https://www.w3.org/TR/CSS22/",
@@ -6131,12 +6127,16 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
-              "url": "https://www.w3.org/TR/css-contain-2/",
-              "title": "CSS Containment Module Level 2",
-              "crawled": "https://drafts.csswg.org/css-contain-2/"
+              "url": "https://www.w3.org/TR/css-align-3/",
+              "title": "CSS Box Alignment Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-align/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-sizing-3/",
+              "title": "CSS Box Sizing Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-sizing-3/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -6147,6 +6147,18 @@
               "url": "https://www.w3.org/TR/css-grid-2/",
               "title": "CSS Grid Layout Module Level 2",
               "crawled": "https://drafts.csswg.org/css-grid-2/"
+            },
+            {
+              "url": "https://www.w3.org/TR/css-images-3/",
+              "title": "CSS Images Module Level 3",
+              "crawled": "https://drafts.csswg.org/css-images-3/"
+            }
+          ],
+          "informative": [
+            {
+              "url": "https://www.w3.org/TR/css-contain-2/",
+              "title": "CSS Containment Module Level 2",
+              "crawled": "https://drafts.csswg.org/css-contain-2/"
             }
           ]
         },
@@ -7872,7 +7884,7 @@
     {
       "title": "CSS Custom Properties for Cascading Variables Module Level 1",
       "shortname": "css-variables-1",
-      "date": "2 August 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/css-variables-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-variables-1/",
@@ -8020,9 +8032,7 @@
             "https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag"
           ],
           "notDfn": [],
-          "brokenLinks": [
-            "https://drafts.csswg.org/css-color-3/#color0"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -8126,7 +8136,7 @@
     {
       "title": "CSS Display Module Level 3",
       "shortname": "css-display-3",
-      "date": "5 August 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/css-display-3/",
       "release": {
         "url": "https://www.w3.org/TR/css-display-3/",
@@ -8507,6 +8517,11 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://drafts.csswg.org/web-animations-1/"
+            },
+            {
+              "url": "https://drafts.csswg.org/web-animations-2/",
+              "title": "Web Animations Level 2",
+              "crawled": "https://drafts.csswg.org/web-animations-2/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -8923,7 +8938,7 @@
     {
       "title": "CSS Flexible Box Layout Module Level 1",
       "shortname": "css-flexbox-1",
-      "date": "10 August 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/css-flexbox-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -8962,6 +8977,7 @@
           "https://www.w3.org/TR/css3-mediaqueries/",
           "https://www.w3.org/TR/css-cascade/",
           "https://www.w3.org/TR/web-animations/",
+          "https://www.w3.org/TR/css-speech/",
           "https://www.w3.org/TR/css3-align/",
           "https://www.w3.org/TR/css-break/",
           "https://www.w3.org/TR/css3-break/",
@@ -9099,7 +9115,9 @@
             "https://www.w3.org/TR/css3-break/#btw-blocks",
             "https://www.w3.org/TR/css3-break/#end-block"
           ],
-          "brokenLinks": [],
+          "brokenLinks": [
+            "https://html.spec.whatwg.org/#attr-tabindex"
+          ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": [
@@ -10437,11 +10455,11 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [
+            "https://www.w3.org/TR/css-flexbox-1/#order-accessibility",
             "https://www.w3.org/TR/css3-break/#btw-blocks",
             "https://www.w3.org/TR/css3-break/#end-block"
           ],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-flexbox-1/#order-accessibility",
             "https://html.spec.whatwg.org/#attr-tabindex"
           ],
           "evolvingLinks": [],
@@ -10503,10 +10521,10 @@
           "notExported": [
             "https://drafts.csswg.org/css-grid-2/#computed-track-list"
           ],
-          "notDfn": [],
-          "brokenLinks": [
+          "notDfn": [
             "https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order"
           ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [],
           "datedUrls": []
@@ -20559,7 +20577,7 @@
     {
       "title": "ECMAScript® 2022 Internationalization API Specification",
       "shortname": "ecma-402",
-      "date": "23 July 2021",
+      "date": "12 August 2021",
       "url": "https://tc39.es/ecma402/",
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -22158,7 +22176,7 @@
     {
       "title": "File and Directory Entries API",
       "shortname": "entries-api",
-      "date": "17 June 2021",
+      "date": "12 August 2021",
       "url": "https://wicg.github.io/entries-api/",
       "nightly": {
         "url": "https://wicg.github.io/entries-api/",
@@ -24757,7 +24775,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "11 August 2021",
+      "date": "12 August 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -32666,6 +32684,11 @@
               "crawled": "https://drafts.csswg.org/css-sizing-4/"
             },
             {
+              "url": "https://www.w3.org/TR/css-flexbox-1/",
+              "title": "CSS Flexible Box Layout Module Level 1",
+              "crawled": "https://drafts.csswg.org/css-flexbox-1/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-content-3/",
               "title": "CSS Generated Content Module Level 3",
               "crawled": "https://drafts.csswg.org/css-content-3/"
@@ -34636,7 +34659,7 @@
     {
       "title": "Incremental Font Transfer",
       "shortname": "IFT",
-      "date": "30 July 2021",
+      "date": "12 August 2021",
       "url": "https://w3c.github.io/IFT/Overview.html",
       "nightly": {
         "url": "https://w3c.github.io/IFT/Overview.html",
@@ -36429,7 +36452,7 @@
     {
       "title": "Local Font Access API",
       "shortname": "local-font-access",
-      "date": "17 June 2021",
+      "date": "12 August 2021",
       "url": "https://wicg.github.io/local-font-access/",
       "nightly": {
         "url": "https://wicg.github.io/local-font-access/",
@@ -43786,7 +43809,7 @@
     {
       "title": "RFC 2397: The \"data\" URL scheme",
       "shortname": "rfc2397",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc2397",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc2397",
@@ -43836,7 +43859,7 @@
     {
       "title": "RFC 6454: The Web Origin Concept",
       "shortname": "rfc6454",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc6454",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6454",
@@ -43925,7 +43948,7 @@
     {
       "title": "RFC 6797: HTTP Strict Transport Security (HSTS)",
       "shortname": "rfc6797",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc6797",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6797",
@@ -43999,7 +44022,7 @@
     {
       "title": "RFC 7034: HTTP Header Field X-Frame-Options",
       "shortname": "rfc7034",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7034",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7034",
@@ -44057,7 +44080,7 @@
     {
       "title": "RFC 7239: Forwarded HTTP Extension",
       "shortname": "rfc7239",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7239",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7239",
@@ -44095,7 +44118,7 @@
     {
       "title": "RFC 7469: Public Key Pinning Extension for HTTP",
       "shortname": "rfc7469",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7469",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7469",
@@ -44145,7 +44168,7 @@
     {
       "title": "RFC 7578: Returning Values from Forms: multipart/form-data",
       "shortname": "rfc7578",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7578",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7578",
@@ -44201,7 +44224,7 @@
     {
       "title": "RFC 8942: HTTP Client Hints",
       "shortname": "rfc8942",
-      "date": "12 August 2021",
+      "date": "13 August 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc8942",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc8942",
@@ -51185,7 +51208,7 @@
     {
       "title": "Web IDL",
       "shortname": "WebIDL-1",
-      "date": "11 August 2021",
+      "date": "12 August 2021",
       "url": "https://www.w3.org/TR/WebIDL-1/",
       "release": {
         "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -52354,7 +52377,7 @@
     {
       "title": "Web Locks API",
       "shortname": "web-locks",
-      "date": "11 August 2021",
+      "date": "12 August 2021",
       "url": "https://wicg.github.io/web-locks/",
       "nightly": {
         "url": "https://wicg.github.io/web-locks/",
