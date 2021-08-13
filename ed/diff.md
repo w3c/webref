@@ -2,3 +2,11 @@
 % Reffy
 % August 13, 2021
 
+## HTML Accessibility API Mappings 1.0
+
+- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Missing references for links: *DEL* https://w3c.github.io/aria/core-aam/core-aam.html
+
+
