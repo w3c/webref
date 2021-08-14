@@ -9809,7 +9809,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
 - Crawled URL: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
-- Crawled version: 25 July 2021
+- Crawled version: 14 August 2021
 - Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
 - Latest published version: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
 - Shortname: orientation-sensor
