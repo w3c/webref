@@ -1,7 +1,7 @@
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 [Exposed=(Window,DedicatedWorker)]
 interface VideoColorSpace {
-  constructor(VideoColorSpaceInit init);
+  constructor(optional VideoColorSpaceInit init = {});
 
   readonly attribute VideoColorPrimaries? primaries;
   readonly attribute VideoTransferCharacteristics? transfer;

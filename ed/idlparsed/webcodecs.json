@@ -4178,7 +4178,7 @@
         "extAttrs": []
       },
       "VideoColorSpace": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoColorSpace {\n  constructor(VideoColorSpaceInit init);\n\n  readonly attribute VideoColorPrimaries? primaries;\n  readonly attribute VideoTransferCharacteristics? transfer;\n  readonly attribute VideoMatrixCoefficients? matrix;\n  readonly attribute boolean? fullRange;\n\n  [Default] VideoColorSpaceInit toJSON();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoColorSpace {\n  constructor(optional VideoColorSpaceInit init = {});\n\n  readonly attribute VideoColorPrimaries? primaries;\n  readonly attribute VideoTransferCharacteristics? transfer;\n  readonly attribute VideoMatrixCoefficients? matrix;\n  readonly attribute boolean? fullRange;\n\n  [Default] VideoColorSpaceInit toJSON();\n};",
         "type": "interface",
         "name": "VideoColorSpace",
         "inheritance": null,
@@ -4198,8 +4198,10 @@
                   "union": false,
                   "idlType": "VideoColorSpaceInit"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               }
             ],
