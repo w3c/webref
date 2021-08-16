@@ -158,6 +158,63 @@
       "definedIn": "dt"
     },
     {
+      "id": "rgb-format",
+      "href": "https://www.w3.org/TR/webcodecs/#rgb-format",
+      "linkingText": [
+        "RGB Format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://www.w3.org/TR/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "srgb-color-space",
+      "href": "https://www.w3.org/TR/webcodecs/#srgb-color-space",
+      "linkingText": [
+        "sRGB Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://www.w3.org/TR/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rec709-color-space",
+      "href": "https://www.w3.org/TR/webcodecs/#rec709-color-space",
+      "linkingText": [
+        "REC709 Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://www.w3.org/TR/webcodecs/#definitions",
+        "title": "Definitions",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "codec-processing-model",
       "href": "https://www.w3.org/TR/webcodecs/#codec-processing-model",
       "linkingText": [
@@ -2566,6 +2623,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoder-active-color-space-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-active-color-space-slot",
+      "linkingText": [
+        "[[active color space]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoEncoder"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoencoder-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
+        "title": "Internal Slots",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoder-state-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-state-slot",
       "linkingText": [
@@ -2940,6 +3018,27 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunkmetadata-svc",
       "linkingText": [
         "svc"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedVideoChunkMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encoded-video-chunk-metadata",
+        "href": "https://www.w3.org/TR/webcodecs/#encoded-video-chunk-metadata",
+        "title": "EncodedVideoChunkMetadata",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-encodedvideochunkmetadata-alphasidedata",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedvideochunkmetadata-alphasidedata",
+      "linkingText": [
+        "alphaSideData"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3584,10 +3683,52 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videodecoderconfig-colorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-decoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-decoder-config",
+        "title": "VideoDecoderConfig",
+        "number": "7.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videodecoderconfig-hardwareacceleration",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-hardwareacceleration",
       "linkingText": [
         "hardwareAcceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoDecoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-decoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-decoder-config",
+        "title": "VideoDecoderConfig",
+        "number": "7.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videodecoderconfig-optimizeforlatency",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videodecoderconfig-optimizeforlatency",
+      "linkingText": [
+        "optimizeForLatency"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3786,27 +3927,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoderconfig-bitrate",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-bitrate",
-      "linkingText": [
-        "bitrate"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "7.8"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-videoencoderconfig-width",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-width",
       "linkingText": [
@@ -3891,10 +4011,73 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoencoderconfig-bitrate",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-bitrate",
+      "linkingText": [
+        "bitrate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-framerate",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-framerate",
+      "linkingText": [
+        "framerate"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoencoderconfig-hardwareacceleration",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-hardwareacceleration",
       "linkingText": [
         "hardwareAcceleration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-alpha",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-alpha",
+      "linkingText": [
+        "alpha"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -3937,6 +4120,48 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-bitratemode",
       "linkingText": [
         "bitrateMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-latencymode",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-latencymode",
+      "linkingText": [
+        "latencyMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoEncoderConfig"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-encoder-config",
+        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
+        "title": "VideoEncoderConfig",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videoencoderconfig-colorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-colorspace",
+      "linkingText": [
+        "colorSpace"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -4039,6 +4264,132 @@
       "definedIn": "dt"
     },
     {
+      "id": "enumdef-alphaoption",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-alphaoption",
+      "linkingText": [
+        "AlphaOption"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "alpha-option",
+        "href": "https://www.w3.org/TR/webcodecs/#alpha-option",
+        "title": "Alpha Option",
+        "number": "7.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-alphaoption-keep",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-alphaoption-keep",
+      "linkingText": [
+        "\"keep\"",
+        "keep"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlphaOption"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "alpha-option",
+        "href": "https://www.w3.org/TR/webcodecs/#alpha-option",
+        "title": "Alpha Option",
+        "number": "7.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-alphaoption-discard",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-alphaoption-discard",
+      "linkingText": [
+        "\"discard\"",
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "AlphaOption"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "alpha-option",
+        "href": "https://www.w3.org/TR/webcodecs/#alpha-option",
+        "title": "Alpha Option",
+        "number": "7.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-latencymode",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-latencymode",
+      "linkingText": [
+        "LatencyMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://www.w3.org/TR/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-latencymode-quality",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-latencymode-quality",
+      "linkingText": [
+        "\"quality\"",
+        "quality"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LatencyMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://www.w3.org/TR/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-latencymode-realtime",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-latencymode-realtime",
+      "linkingText": [
+        "\"realtime\"",
+        "realtime"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "LatencyMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "latency-mode",
+        "href": "https://www.w3.org/TR/webcodecs/#latency-mode",
+        "title": "Latency Mode",
+        "number": "7.11"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "equal-dictionaries",
       "href": "https://www.w3.org/TR/webcodecs/#equal-dictionaries",
       "linkingText": [
@@ -4053,7 +4404,7 @@
         "id": "config-equivalence",
         "href": "https://www.w3.org/TR/webcodecs/#config-equivalence",
         "title": "Configuration Equivalence",
-        "number": "7.10"
+        "number": "7.12"
       },
       "definedIn": "prose"
     },
@@ -4072,7 +4423,7 @@
         "id": "video-encoder-options",
         "href": "https://www.w3.org/TR/webcodecs/#video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.11"
+        "number": "7.13"
       },
       "definedIn": "pre"
     },
@@ -4093,7 +4444,7 @@
         "id": "video-encoder-options",
         "href": "https://www.w3.org/TR/webcodecs/#video-encoder-options",
         "title": "VideoEncoderEncodeOptions",
-        "number": "7.11"
+        "number": "7.13"
       },
       "definedIn": "dt"
     },
@@ -4112,7 +4463,7 @@
         "id": "codec-state",
         "href": "https://www.w3.org/TR/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.14"
       },
       "definedIn": "pre"
     },
@@ -4134,7 +4485,7 @@
         "id": "codec-state",
         "href": "https://www.w3.org/TR/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.14"
       },
       "definedIn": "dt"
     },
@@ -4156,7 +4507,7 @@
         "id": "codec-state",
         "href": "https://www.w3.org/TR/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.14"
       },
       "definedIn": "dt"
     },
@@ -4178,7 +4529,7 @@
         "id": "codec-state",
         "href": "https://www.w3.org/TR/webcodecs/#codec-state",
         "title": "CodecState",
-        "number": "7.12"
+        "number": "7.14"
       },
       "definedIn": "dt"
     },
@@ -4197,7 +4548,7 @@
         "id": "error-callback",
         "href": "https://www.w3.org/TR/webcodecs/#error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.13"
+        "number": "7.15"
       },
       "definedIn": "pre"
     },
@@ -4218,7 +4569,7 @@
         "id": "error-callback",
         "href": "https://www.w3.org/TR/webcodecs/#error-callback",
         "title": "WebCodecsErrorCallback",
-        "number": "7.13"
+        "number": "7.15"
       },
       "definedIn": "pre"
     },
@@ -4329,6 +4680,27 @@
       "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunkinit-timestamp",
       "linkingText": [
         "timestamp"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EncodedAudioChunkInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "encodedaudiochunk-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#encodedaudiochunk-interface",
+        "title": "EncodedAudioChunk Interface",
+        "number": "8.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-encodedaudiochunkinit-duration",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-encodedaudiochunkinit-duration",
+      "linkingText": [
+        "duration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -5386,27 +5758,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-audiodata-detached-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-detached-slot",
-      "linkingText": [
-        "[[detached]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "AudioData"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audiodata-internal-slots",
-        "href": "https://www.w3.org/TR/webcodecs/#audiodata-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.2.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-audiodata-resource-reference-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiodata-resource-reference-slot",
       "linkingText": [
@@ -5803,6 +6154,44 @@
       "definedIn": "dt"
     },
     {
+      "id": "close-audiodata",
+      "href": "https://www.w3.org/TR/webcodecs/#close-audiodata",
+      "linkingText": [
+        "Close AudioData"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodata-algorithms",
+        "title": "Algorithms",
+        "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valid-audiodatainit",
+      "href": "https://www.w3.org/TR/webcodecs/#valid-audiodatainit",
+      "linkingText": [
+        "valid AudioDataInit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "audiodata-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#audiodata-algorithms",
+        "title": "Algorithms",
+        "number": "9.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dictdef-audiodatacopytooptions",
       "href": "https://www.w3.org/TR/webcodecs/#dictdef-audiodatacopytooptions",
       "linkingText": [
@@ -5817,7 +6206,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://www.w3.org/TR/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "pre"
     },
@@ -5838,7 +6227,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://www.w3.org/TR/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -5859,7 +6248,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://www.w3.org/TR/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -5880,7 +6269,7 @@
         "id": "audiodata-copy-to-options",
         "href": "https://www.w3.org/TR/webcodecs/#audiodata-copy-to-options",
         "title": "AudioDataCopyToOptions",
-        "number": "9.2.6"
+        "number": "9.2.7"
       },
       "definedIn": "dt"
     },
@@ -5964,8 +6353,8 @@
       "id": "dom-audiosampleformat-u8",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-u8",
       "linkingText": [
-        "\"U8\"",
-        "U8"
+        "\"u8\"",
+        "u8"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -5986,30 +6375,8 @@
       "id": "dom-audiosampleformat-s16",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s16",
       "linkingText": [
-        "\"S16\"",
-        "S16"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSampleFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-sample-formats",
-        "href": "https://www.w3.org/TR/webcodecs/#audio-sample-formats",
-        "title": "Audio Sample Format",
-        "number": "9.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiosampleformat-s24",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s24",
-      "linkingText": [
-        "\"S24\"",
-        "S24"
+        "\"s16\"",
+        "s16"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6030,8 +6397,8 @@
       "id": "dom-audiosampleformat-s32",
       "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s32",
       "linkingText": [
-        "\"S32\"",
-        "S32"
+        "\"s32\"",
+        "s32"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6049,11 +6416,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-flt",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-flt",
+      "id": "dom-audiosampleformat-f32",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-f32",
       "linkingText": [
-        "\"FLT\"",
-        "FLT"
+        "\"f32\"",
+        "f32"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6071,11 +6438,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-u8p",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-u8p",
+      "id": "dom-audiosampleformat-u8-planar",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-u8-planar",
       "linkingText": [
-        "\"U8P\"",
-        "U8P"
+        "\"u8-planar\"",
+        "u8-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6093,11 +6460,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s16p",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s16p",
+      "id": "dom-audiosampleformat-s16-planar",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s16-planar",
       "linkingText": [
-        "\"S16P\"",
-        "S16P"
+        "\"s16-planar\"",
+        "s16-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6115,11 +6482,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s24p",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s24p",
+      "id": "dom-audiosampleformat-s32-planar",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s32-planar",
       "linkingText": [
-        "\"S24P\"",
-        "S24P"
+        "\"s32-planar\"",
+        "s32-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6137,33 +6504,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-audiosampleformat-s32p",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-s32p",
+      "id": "dom-audiosampleformat-f32-planar",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-f32-planar",
       "linkingText": [
-        "\"S32P\"",
-        "S32P"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "AudioSampleFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "audio-sample-formats",
-        "href": "https://www.w3.org/TR/webcodecs/#audio-sample-formats",
-        "title": "Audio Sample Format",
-        "number": "9.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-audiosampleformat-fltp",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-audiosampleformat-fltp",
-      "linkingText": [
-        "\"FLTP\"",
-        "FLTP"
+        "\"f32-planar\"",
+        "f32-planar"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -6343,16 +6688,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init-planes",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init-planes",
+      "id": "dom-videoframe-videoframe-data-init-data",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-data-init-data",
       "linkingText": [
-        "planes"
+        "data"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(planes, init)",
-        "VideoFrame/constructor(planes, init)"
+        "VideoFrame/VideoFrame(data, init)",
+        "VideoFrame/constructor(data, init)"
       ],
       "access": "public",
       "informative": false,
@@ -6365,16 +6710,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init-init",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init-init",
+      "id": "dom-videoframe-videoframe-data-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-data-init-init",
       "linkingText": [
         "init"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "VideoFrame/VideoFrame(planes, init)",
-        "VideoFrame/constructor(planes, init)"
+        "VideoFrame/VideoFrame(data, init)",
+        "VideoFrame/constructor(data, init)"
       ],
       "access": "public",
       "informative": false,
@@ -6514,10 +6859,31 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-videoframeplaneinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframeplaneinit",
+      "id": "dom-videoframeinit-alpha",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeinit-alpha",
       "linkingText": [
-        "VideoFramePlaneInit"
+        "alpha"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-videoframebufferinit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframebufferinit",
+      "linkingText": [
+        "VideoFrameBufferInit"
       ],
       "localLinkingText": [],
       "type": "dictionary",
@@ -6533,15 +6899,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-format",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-format",
+      "id": "dom-videoframebufferinit-format",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-format",
       "linkingText": [
         "format"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6554,15 +6920,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-codedwidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-codedwidth",
+      "id": "dom-videoframebufferinit-codedwidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-codedwidth",
       "linkingText": [
         "codedWidth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6575,15 +6941,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-codedheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-codedheight",
+      "id": "dom-videoframebufferinit-codedheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-codedheight",
       "linkingText": [
         "codedHeight"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6596,99 +6962,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframeplaneinit-visiblerect",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-visiblerect",
-      "linkingText": [
-        "visibleRect"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-displaywidth",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-displaywidth",
-      "linkingText": [
-        "displayWidth"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-displayheight",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-displayheight",
-      "linkingText": [
-        "displayHeight"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-duration",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-duration",
-      "linkingText": [
-        "duration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFramePlaneInit"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframeplaneinit-timestamp",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframeplaneinit-timestamp",
+      "id": "dom-videoframebufferinit-timestamp",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-timestamp",
       "linkingText": [
         "timestamp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "VideoFramePlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6701,34 +6983,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dictdef-planeinit",
-      "href": "https://www.w3.org/TR/webcodecs/#dictdef-planeinit",
+      "id": "dom-videoframebufferinit-duration",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-duration",
       "linkingText": [
-        "PlaneInit"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-interface",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
-        "title": "VideoFrame Interface",
-        "number": "9.4"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-planeinit-data",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-data",
-      "linkingText": [
-        "data"
+        "duration"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6741,15 +7004,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-stride",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-stride",
+      "id": "dom-videoframebufferinit-layout",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-layout",
       "linkingText": [
-        "stride"
+        "layout"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6762,15 +7025,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-planeinit-offset",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-planeinit-offset",
+      "id": "dom-videoframebufferinit-visiblerect",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-visiblerect",
       "linkingText": [
-        "offset"
+        "visibleRect"
       ],
       "localLinkingText": [],
       "type": "dict-member",
       "for": [
-        "PlaneInit"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
@@ -6783,25 +7046,67 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-videoframe-detached-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-detached-slot",
+      "id": "dom-videoframebufferinit-displaywidth",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displaywidth",
       "linkingText": [
-        "[[detached]]"
+        "displayWidth"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dict-member",
       "for": [
-        "VideoFrame"
+        "VideoFrameBufferInit"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "videoframe-internal-slots",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-internal-slots",
-        "title": "Internal Slots",
-        "number": "9.4.1"
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
       },
-      "definedIn": "dt"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframebufferinit-displayheight",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-displayheight",
+      "linkingText": [
+        "displayHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameBufferInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videoframebufferinit-colorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframebufferinit-colorspace",
+      "linkingText": [
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoFrameBufferInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-interface",
+        "title": "VideoFrame Interface",
+        "number": "9.4"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-videoframe-resource-reference-slot",
@@ -7056,6 +7361,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-videoframe-color-space-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-color-space-slot",
+      "linkingText": [
+        "[[color space]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-videoframe-videoframe",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe",
       "linkingText": [
@@ -7080,11 +7406,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-videoframe-videoframe-planes-init",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-planes-init",
+      "id": "dom-videoframe-videoframe-data-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-videoframe-data-init",
       "linkingText": [
-        "VideoFrame(planes, init)",
-        "constructor(planes, init)"
+        "VideoFrame(data, init)",
+        "constructor(data, init)"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -7291,10 +7617,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "parsed-copyto-options",
-      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options",
+      "id": "dom-videoframe-colorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframe-colorspace",
       "linkingText": [
-        "parsed copyto options"
+        "colorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-attributes",
+        "title": "Attributes",
+        "number": "9.4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "combined-buffer-layout",
+      "href": "https://www.w3.org/TR/webcodecs/#combined-buffer-layout",
+      "linkingText": [
+        "combined buffer layout"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7310,15 +7657,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "parsed-copyto-options-allocationsize",
-      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options-allocationsize",
+      "id": "combined-buffer-layout-allocationsize",
+      "href": "https://www.w3.org/TR/webcodecs/#combined-buffer-layout-allocationsize",
       "linkingText": [
         "allocationSize"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "parsed copyto options"
+        "combined buffer layout"
       ],
       "access": "private",
       "informative": false,
@@ -7331,15 +7678,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "parsed-copyto-options-computedlayouts",
-      "href": "https://www.w3.org/TR/webcodecs/#parsed-copyto-options-computedlayouts",
+      "id": "combined-buffer-layout-computedlayouts",
+      "href": "https://www.w3.org/TR/webcodecs/#combined-buffer-layout-computedlayouts",
       "linkingText": [
         "computedLayouts"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "parsed copyto options"
+        "combined buffer layout"
       ],
       "access": "private",
       "informative": false,
@@ -7599,13 +7946,34 @@
         "title": "Algorithms",
         "number": "9.4.6"
       },
-      "definedIn": "prose"
+      "definedIn": "dt"
     },
     {
-      "id": "valid-videoframeplaneinit",
-      "href": "https://www.w3.org/TR/webcodecs/#valid-videoframeplaneinit",
+      "id": "videoframe-pick-color-space",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-pick-color-space",
       "linkingText": [
-        "valid VideoFramePlaneInit"
+        "Pick Color Space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "VideoFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valid-videoframebufferinit",
+      "href": "https://www.w3.org/TR/webcodecs/#valid-videoframebufferinit",
+      "linkingText": [
+        "valid VideoFrameBufferInit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7682,6 +8050,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "close-videoframe",
+      "href": "https://www.w3.org/TR/webcodecs/#close-videoframe",
+      "linkingText": [
+        "Close VideoFrame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "videoframe-algorithms",
+        "href": "https://www.w3.org/TR/webcodecs/#videoframe-algorithms",
+        "title": "Algorithms",
+        "number": "9.4.6"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "videoframe-parse-videoframecopytooptions",
       "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-videoframecopytooptions",
       "linkingText": [
@@ -7703,10 +8090,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "videoframe-parse-copyto-rect",
-      "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-copyto-rect",
+      "id": "videoframe-parse-visible-rect",
+      "href": "https://www.w3.org/TR/webcodecs/#videoframe-parse-visible-rect",
       "linkingText": [
-        "Parse CopyTo Rect"
+        "Parse Visible Rect"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7806,109 +8193,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dictdef-videoframerect",
-      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframerect",
-      "linkingText": [
-        "VideoFrameRect"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-videoframerect-left",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-left",
-      "linkingText": [
-        "left"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-top",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-top",
-      "linkingText": [
-        "top"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-width",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-width",
-      "linkingText": [
-        "width"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-videoframerect-height",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoframerect-height",
-      "linkingText": [
-        "height"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoFrameRect"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoframe-rect",
-        "href": "https://www.w3.org/TR/webcodecs/#videoframe-rect",
-        "title": "VideoFrame Rectangle (Rect)",
-        "number": "9.6"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dictdef-planelayout",
       "href": "https://www.w3.org/TR/webcodecs/#dictdef-planelayout",
       "linkingText": [
@@ -7970,10 +8254,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-pixelformat",
-      "href": "https://www.w3.org/TR/webcodecs/#enumdef-pixelformat",
+      "id": "enumdef-videopixelformat",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-videopixelformat",
       "linkingText": [
-        "PixelFormat"
+        "VideoPixelFormat"
       ],
       "localLinkingText": [],
       "type": "enum",
@@ -7989,8 +8273,67 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-pixelformat-i420",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-pixelformat-i420",
+      "id": "sub-sampling",
+      "href": "https://www.w3.org/TR/webcodecs/#sub-sampling",
+      "linkingText": [
+        "sub-sampling",
+        "sub-sampled"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sub-sampling-factor",
+      "href": "https://www.w3.org/TR/webcodecs/#sub-sampling-factor",
+      "linkingText": [
+        "sub-sampling factor",
+        "factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "equivalent-opaque-format",
+      "href": "https://www.w3.org/TR/webcodecs/#equivalent-opaque-format",
+      "linkingText": [
+        "equivalent opaque format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-videopixelformat-i420",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-i420",
       "linkingText": [
         "\"I420\"",
         "I420"
@@ -7998,7 +8341,7 @@
       "localLinkingText": [],
       "type": "enum-value",
       "for": [
-        "PixelFormat"
+        "VideoPixelFormat"
       ],
       "access": "public",
       "informative": false,
@@ -8007,6 +8350,818 @@
         "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
         "title": "Pixel Format",
         "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-i420a",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-i420a",
+      "linkingText": [
+        "\"I420A\"",
+        "I420A"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-i422",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-i422",
+      "linkingText": [
+        "\"I422\"",
+        "I422"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-i444",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-i444",
+      "linkingText": [
+        "\"I444\"",
+        "I444"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-nv12",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-nv12",
+      "linkingText": [
+        "\"NV12\"",
+        "NV12"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-rgba",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgba",
+      "linkingText": [
+        "\"RGBA\"",
+        "RGBA"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-rgbx",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-rgbx",
+      "linkingText": [
+        "\"RGBX\"",
+        "RGBX"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-bgra",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgra",
+      "linkingText": [
+        "\"BGRA\"",
+        "BGRA"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videopixelformat-bgrx",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videopixelformat-bgrx",
+      "linkingText": [
+        "\"BGRX\"",
+        "BGRX"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoPixelFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "pixel-format",
+        "href": "https://www.w3.org/TR/webcodecs/#pixel-format",
+        "title": "Pixel Format",
+        "number": "9.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "videocolorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#videocolorspace",
+      "linkingText": [
+        "VideoColorSpace"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-videocolorspace-init-init",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-videocolorspace-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "VideoColorSpace/VideoColorSpace(init)",
+        "VideoColorSpace/constructor(init)",
+        "VideoColorSpace/VideoColorSpace()",
+        "VideoColorSpace/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-tojson",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-videocolorspaceinit",
+      "href": "https://www.w3.org/TR/webcodecs/#dictdef-videocolorspaceinit",
+      "linkingText": [
+        "VideoColorSpaceInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-primaries",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspaceinit-primaries",
+      "linkingText": [
+        "primaries"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-transfer",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspaceinit-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-matrix",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspaceinit-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspaceinit-fullrange",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspaceinit-fullrange",
+      "linkingText": [
+        "fullRange"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "VideoColorSpaceInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "video-color-space-interface",
+        "href": "https://www.w3.org/TR/webcodecs/#video-color-space-interface",
+        "title": "Video Color Space Interface",
+        "number": "9.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorspace-primaries-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-primaries-slot",
+      "linkingText": [
+        "[[primaries]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-transfer-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-transfer-slot",
+      "linkingText": [
+        "[[transfer]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-matrix-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-matrix-slot",
+      "linkingText": [
+        "[[matrix]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-full-range-slot",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-full-range-slot",
+      "linkingText": [
+        "[[full range]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-internal-slots",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-internal-slots",
+        "title": "Internal Slots",
+        "number": "9.9.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-videocolorspace",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-videocolorspace",
+      "linkingText": [
+        "VideoColorSpace(init)",
+        "constructor(init)",
+        "VideoColorSpace()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-constructors",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-constructors",
+        "title": "Constructors",
+        "number": "9.9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-videocolorspace-primaries",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-primaries",
+      "linkingText": [
+        "primaries"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-transfer",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-transfer",
+      "linkingText": [
+        "transfer"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-matrix",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorspace-fullrange",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorspace-fullrange",
+      "linkingText": [
+        "fullRange"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "VideoColorSpace"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorspace-attributes",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorspace-attributes",
+        "title": "Attributes",
+        "number": "9.9.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videocolorprimaries",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-videocolorprimaries",
+      "linkingText": [
+        "VideoColorPrimaries"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videocolorprimaries-bt709",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorprimaries-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorprimaries-bt470bg",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorprimaries-bt470bg",
+      "linkingText": [
+        "\"bt470bg\"",
+        "bt470bg"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videocolorprimaries-smpte170m",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videocolorprimaries-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoColorPrimaries"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videocolorprimaries",
+        "href": "https://www.w3.org/TR/webcodecs/#videocolorprimaries",
+        "title": "Video Color Primaries",
+        "number": "9.10"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videotransfercharacteristics",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-videotransfercharacteristics",
+      "linkingText": [
+        "VideoTransferCharacteristics"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-bt709",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-smpte170m",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videotransfercharacteristics-iec61966-2-1",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videotransfercharacteristics-iec61966-2-1",
+      "linkingText": [
+        "\"iec61966-2-1\"",
+        "iec61966-2-1"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoTransferCharacteristics"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videotransfercharacteristics",
+        "href": "https://www.w3.org/TR/webcodecs/#videotransfercharacteristics",
+        "title": "Video Transfer Characteristics",
+        "number": "9.11"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-videomatrixcoefficients",
+      "href": "https://www.w3.org/TR/webcodecs/#enumdef-videomatrixcoefficients",
+      "linkingText": [
+        "VideoMatrixCoefficients"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-rgb",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videomatrixcoefficients-rgb",
+      "linkingText": [
+        "\"rgb\"",
+        "rgb"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-bt709",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videomatrixcoefficients-bt709",
+      "linkingText": [
+        "\"bt709\"",
+        "bt709"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-bt470bg",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videomatrixcoefficients-bt470bg",
+      "linkingText": [
+        "\"bt470bg\"",
+        "bt470bg"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-videomatrixcoefficients-smpte170m",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-videomatrixcoefficients-smpte170m",
+      "linkingText": [
+        "\"smpte170m\"",
+        "smpte170m"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "VideoMatrixCoefficients"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "videomatrixcoefficients",
+        "href": "https://www.w3.org/TR/webcodecs/#videomatrixcoefficients",
+        "title": "Video Matrix Coefficients",
+        "number": "9.12"
       },
       "definedIn": "dt"
     },

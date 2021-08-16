@@ -1,6 +1,6 @@
 {
   "spec": {
-    "title": "ECMAScript® 2022 Language Specification",
+    "title": "ECMAScript® 2022 Language Specification",
     "url": "https://tc39.es/ecma262/multipage/"
   },
   "headings": [
@@ -3215,16 +3215,22 @@
       "number": "12.8.3"
     },
     {
+      "id": "sec-numeric-literals-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 4,
+      "number": "12.8.3.1"
+    },
+    {
       "id": "sec-static-semantics-mv",
       "title": "Static Semantics: MV",
       "level": 4,
-      "number": "12.8.3.1"
+      "number": "12.8.3.2"
     },
     {
       "id": "sec-numericvalue",
       "title": "Static Semantics: NumericValue",
       "level": 4,
-      "number": "12.8.3.2"
+      "number": "12.8.3.3"
     },
     {
       "id": "sec-literals-string-literals",
@@ -3233,16 +3239,22 @@
       "number": "12.8.4"
     },
     {
+      "id": "sec-string-literals-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 4,
+      "number": "12.8.4.1"
+    },
+    {
       "id": "sec-static-semantics-sv",
       "title": "Static Semantics: SV",
       "level": 4,
-      "number": "12.8.4.1"
+      "number": "12.8.4.2"
     },
     {
       "id": "sec-string-literals-static-semantics-mv",
       "title": "Static Semantics: MV",
       "level": 4,
-      "number": "12.8.4.2"
+      "number": "12.8.4.3"
     },
     {
       "id": "sec-literals-regular-expression-literals",
@@ -5159,6 +5171,30 @@
       "number": "16.2.1.5.2.1"
     },
     {
+      "id": "sec-execute-async-module",
+      "title": "ExecuteAsyncModule ( module )",
+      "level": 6,
+      "number": "16.2.1.5.2.2"
+    },
+    {
+      "id": "sec-gather-available-ancestors",
+      "title": "GatherAvailableAncestors ( module, execList )",
+      "level": 6,
+      "number": "16.2.1.5.2.3"
+    },
+    {
+      "id": "sec-async-module-execution-fulfilled",
+      "title": "AsyncModuleExecutionFulfilled ( module )",
+      "level": 6,
+      "number": "16.2.1.5.2.4"
+    },
+    {
+      "id": "sec-async-module-execution-rejected",
+      "title": "AsyncModuleExecutionRejected ( module, error )",
+      "level": 6,
+      "number": "16.2.1.5.2.5"
+    },
+    {
       "id": "sec-example-cyclic-module-record-graphs",
       "title": "Example Cyclic Module Record Graphs",
       "level": 5,
@@ -5196,7 +5232,7 @@
     },
     {
       "id": "sec-source-text-module-record-execute-module",
-      "title": "ExecuteModule ( )",
+      "title": "ExecuteModule ( [ capability ] )",
       "level": 5,
       "number": "16.2.1.6.5"
     },
@@ -5214,7 +5250,7 @@
     },
     {
       "id": "sec-finishdynamicimport",
-      "title": "FinishDynamicImport ( referencingScriptOrModule, specifier, promiseCapability, completion )",
+      "title": "FinishDynamicImport ( referencingScriptOrModule, specifier, promiseCapability, innerPromise )",
       "level": 4,
       "number": "16.2.1.9"
     },
@@ -11241,6 +11277,12 @@
       "title": "AsyncFunctionStart ( promiseCapability, asyncFunctionBody )",
       "level": 4,
       "number": "27.7.5.1"
+    },
+    {
+      "id": "sec-asyncblockstart",
+      "title": "AsyncBlockStart ( promiseCapability, asyncBody, asyncContext )",
+      "level": 4,
+      "number": "27.7.5.2"
     },
     {
       "id": "sec-reflection",

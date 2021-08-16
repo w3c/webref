@@ -341,7 +341,7 @@
         "extAttrs": []
       },
       "SFrameTransformErrorEvent": {
-        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType type;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SFrameTransformErrorEvent : Event {\n    constructor(DOMString type, SFrameTransformErrorEventInit eventInitDict);\n\n    readonly attribute SFrameTransformErrorEventType errorType;\n    readonly attribute CryptoKeyID? keyID;\n    readonly attribute any frame;\n};",
         "type": "interface",
         "name": "SFrameTransformErrorEvent",
         "inheritance": "Event",
@@ -386,7 +386,7 @@
           },
           {
             "type": "attribute",
-            "name": "type",
+            "name": "errorType",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -451,14 +451,14 @@
         "partial": false
       },
       "SFrameTransformErrorEventInit": {
-        "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType type;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
+        "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
         "type": "dictionary",
         "name": "SFrameTransformErrorEventInit",
         "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
-            "name": "type",
+            "name": "errorType",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",

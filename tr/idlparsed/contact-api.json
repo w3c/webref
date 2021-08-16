@@ -11,9 +11,6 @@
           "Navigator",
           "ContactAddress",
           "ContactsManager"
-        ],
-        "SecureContext": [
-          "ContactsManager"
         ]
       }
     },
@@ -47,11 +44,193 @@
         "extAttrs": []
       },
       "ContactAddress": {
-        "fragment": "[Exposed=Window]\ninterface ContactAddress : PaymentAddress {};",
+        "fragment": "[Exposed=Window]\ninterface ContactAddress {\n  [Default] object toJSON();\n  readonly attribute DOMString city;\n  readonly attribute DOMString country;\n  readonly attribute DOMString dependentLocality;\n  readonly attribute DOMString organization;\n  readonly attribute DOMString phone;\n  readonly attribute DOMString postalCode;\n  readonly attribute DOMString recipient;\n  readonly attribute DOMString region;\n  readonly attribute DOMString sortingCode;\n  readonly attribute FrozenArray<DOMString> addressLine;\n};",
         "type": "interface",
         "name": "ContactAddress",
-        "inheritance": "PaymentAddress",
-        "members": [],
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "city",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "country",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "dependentLocality",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "organization",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "phone",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "postalCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "recipient",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "region",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "sortingCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "addressLine",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -224,7 +403,7 @@
         "partial": false
       },
       "ContactsManager": {
-        "fragment": "[Exposed=(Window,SecureContext)]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
+        "fragment": "[Exposed=Window,SecureContext]\ninterface ContactsManager {\n    Promise<sequence<ContactProperty>> getProperties();\n    Promise<sequence<ContactInfo>> select(sequence<ContactProperty> properties, optional ContactsSelectOptions options = {});\n};",
         "type": "interface",
         "name": "ContactsManager",
         "inheritance": null,
@@ -345,16 +524,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "SecureContext"
-                }
-              ]
+              "type": "identifier",
+              "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -419,18 +597,13 @@
         "Navigator",
         "ContactAddress",
         "ContactsManager"
-      ],
-      "SecureContext": [
-        "ContactsManager"
       ]
     },
     "dependencies": {
       "Navigator": [
         "ContactsManager"
       ],
-      "ContactAddress": [
-        "PaymentAddress"
-      ],
+      "ContactAddress": [],
       "ContactInfo": [
         "ContactAddress",
         "Blob"
@@ -444,7 +617,6 @@
     },
     "externalDependencies": [
       "Navigator",
-      "PaymentAddress",
       "Blob"
     ],
     "hasObsoleteIdl": false

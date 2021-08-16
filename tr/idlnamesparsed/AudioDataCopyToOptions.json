@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary AudioDataCopyToOptions {\n  required unsigned long planeIndex;\n  unsigned long frameOffset = 0;\n  unsigned long frameCount;\n};",
+    "fragment": "dictionary AudioDataCopyToOptions {\n  [EnforceRange] required unsigned long planeIndex;\n  [EnforceRange] unsigned long frameOffset = 0;\n  [EnforceRange] unsigned long frameCount;\n};",
     "href": "https://www.w3.org/TR/webcodecs/#dictdef-audiodatacopytooptions"
   },
   "extended": [],

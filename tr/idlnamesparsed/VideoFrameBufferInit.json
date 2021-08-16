@@ -1,0 +1,14 @@
+{
+  "name": "VideoFrameBufferInit",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary VideoFrameBufferInit {\n  required VideoPixelFormat format;\n  required [EnforceRange] unsigned long codedWidth;\n  required [EnforceRange] unsigned long codedHeight;\n  required [EnforceRange] long long timestamp;  // microseconds\n  [EnforceRange] unsigned long long duration;  // microseconds\n\n  // Default layout is tightly-packed.\n  sequence<PlaneLayout> layout;\n\n  // Default visible rect is coded size positioned at (0,0)\n  DOMRectInit visibleRect;\n\n  // Default display dimensions match visibleRect.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n\n  VideoColorSpaceInit colorSpace;\n};",
+    "href": "https://www.w3.org/TR/webcodecs/#dictdef-videoframebufferinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

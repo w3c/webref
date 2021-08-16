@@ -5,9 +5,10 @@
       "title": "Contact Picker API",
       "url": "https://wicg.github.io/contact-api/spec/"
     },
-    "fragment": "[Exposed=Window]\ninterface ContactAddress : PaymentAddress {};",
+    "fragment": "[Exposed=Window]\ninterface ContactAddress {\n  [Default] object toJSON();\n  readonly attribute DOMString city;\n  readonly attribute DOMString country;\n  readonly attribute DOMString dependentLocality;\n  readonly attribute DOMString organization;\n  readonly attribute DOMString phone;\n  readonly attribute DOMString postalCode;\n  readonly attribute DOMString recipient;\n  readonly attribute DOMString region;\n  readonly attribute DOMString sortingCode;\n  readonly attribute FrozenArray<DOMString> addressLine;\n};",
     "href": "https://wicg.github.io/contact-api/spec/#contactaddress"
   },
   "extended": [],
+  "inheritance": null,
   "includes": []
 }

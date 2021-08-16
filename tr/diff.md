@@ -1,41 +1,79 @@
-% Diff between report from "August 09, 2021" and reference report from "August 02, 2021"
+% Diff between report from "August 16, 2021" and reference report from "August 09, 2021"
 % Reffy
-% August 09, 2021
+% August 16, 2021
 
-## CSS Masking Module Level 1
+## Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
 
-- Initial URL: [https://www.w3.org/TR/css-masking-1/](https://www.w3.org/TR/css-masking-1/)
+- Initial URL: [https://www.w3.org/TR/CSS21/](https://www.w3.org/TR/CSS21/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.fxtf.org/css-masking-1/](https://drafts.fxtf.org/css-masking-1/)
-- No normative references found: *INS* false / *DEL* true
-- Invalid WebIDL content found: *INS* false / *DEL* true
-- Obsolete WebIDL constructs found: *INS* false
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-- Missing references for links: *INS* https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/ / *DEL* https://www.w3.org/TR/2011/REC-SVG11-20110816/, https://www.w3.org/TR/css-overflow-3/, https://www.w3.org/TR/css-shapes-1/, https://www.w3.org/TR/css3-values/, https://www.w3.org/TR/css3-cascade/, https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/filter-effects/, https://www.w3.org/TR/svg2/, https://www.w3.org/TR/css3-ui/, https://www.w3.org/TR/css3-writing-modes/, https://www.w3.org/TR/css-fonts-3/, https://www.w3.org/TR/css4-images/, https://www.w3.org/TR/css3-text/, https://www.w3.org/TR/css-text-decor-3/, https://www.w3.org/TR/css3-transforms/, https://www.w3.org/TR/css3-images/, https://www.w3.org/TR/css3-transitions/, https://www.w3.org/TR/css3-break/, https://www.w3.org/TR/compositing-1/, https://www.w3.org/TR/html5/, https://www.w3.org/TR/2013/WD-compositing-1-20130625/, https://www.w3.org/TR/2013/WD-css-shapes-1-20130620/, https://www.w3.org/TR/2011/REC-CSS2-20110607, https://www.w3.org/TR/2012/WD-css3-transforms-20120911/, https://www.w3.org/TR/2012/CR-css3-background-20120724/, https://www.w3.org/TR/2013/CR-css3-values-20130730/, https://www.w3.org/TR/2013/CR-html5-20130806/, https://www.w3.org/TR/2011/REC-css3-color-20110607, https://www.w3.org/TR/2013/WD-filter-effects-20130523/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/, https://www.w3.org/TR/2011/REC-SVG11-20110816/
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Spec title: *INS* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification / *DEL* Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification
 
 
-## CSS Scrollbars Module Level 1
+## Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
-- Initial URL: [https://www.w3.org/TR/css-scrollbars-1/](https://www.w3.org/TR/css-scrollbars-1/)
+- Initial URL: [https://www.w3.org/TR/CSS22/](https://www.w3.org/TR/CSS22/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-scrollbars/](https://drafts.csswg.org/css-scrollbars/)
-- Missing references for links: *INS* https://www.w3.org/TR/css-cascade/, https://www.w3.org/TR/web-animations/ / *DEL* https://www.w3.org/TR/css3-color/, https://www.w3.org/TR/css3-transitions/
-- Inconsistent references for links: *INS* https://www.w3.org/TR/css-values/ / *DEL* https://www.w3.org/TR/css3-values/
+- Editor's Draft: [https://drafts.csswg.org/css2/](https://drafts.csswg.org/css2/)
+- Spec title: *INS* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification / *DEL* Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification
 
 
-## Incremental Font Transfer
+## Client Hints Infrastructure
 
-- Initial URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
+- Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
+- Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
+- Missing references for links: *INS* https://dom.spec.whatwg.org/
+
+
+## Contact Picker API
+
+- Initial URL: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://wicg.github.io/contact-api/spec/](https://wicg.github.io/contact-api/spec/)
+- Unknown [Exposed] names used: *DEL* SecureContext
+- Unknown WebIDL names used: *DEL* PaymentAddress
+
+
+## CSS Scoping Module Level 2
+
+- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
 - This specification was not in the reference crawl report.
 
 
-## Incremental Font Transfer
+## ECMAScript® 2022 Language Specification
 
-- Initial URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- Crawled URL: [https://w3c.github.io/PFE/Overview.html](https://w3c.github.io/PFE/Overview.html)
-- This specification is not in the new crawl report.
+- Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
+- Spec title: *INS* ECMAScript® 2022 Language Specification / *DEL* ECMAScript® 2022 Language Specification
+
+
+## HTML Accessibility API Mappings 1.0
+
+- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Missing references for links: *DEL* https://www.w3.org/TR/html4/present/, https://w3c.github.io/html/interactive-elements.html, https://w3c.github.io/aria/core-aam/core-aam.html
+- Inconsistent references for links: *INS* https://w3c.github.io/core-aam/
+
+
+## Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP)
+
+- Initial URL: [https://www.rfc-editor.org/rfc/rfc6266](https://www.rfc-editor.org/rfc/rfc6266)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://httpwg.org/specs/rfc6266.html](https://httpwg.org/specs/rfc6266.html)
+- Spec title: *INS* Use of the Content-Disposition Header Field in the Hypertext Transfer Protocol (HTTP) / *DEL* Use of the Content-Disposition Header Field
+  in the Hypertext Transfer Protocol (HTTP)
+
+
+## WebGL Specification
+
+- Initial URL: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://www.khronos.org/registry/webgl/specs/latest/1.0/](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- Missing references for WebIDL names: *INS* VideoFrame
 
 
