@@ -5,7 +5,7 @@
       "title": "WebCodecs",
       "url": "https://www.w3.org/TR/webcodecs/"
     },
-    "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  VideoColorSpaceInit colorSpace;\n};",
+    "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  VideoColorSpaceInit colorSpace;\n};",
     "href": "https://w3c.github.io/webcodecs/#dictdef-videoencoderconfig"
   },
   "extended": [],

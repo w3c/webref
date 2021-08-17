@@ -1687,7 +1687,7 @@
         "partial": false
       },
       "VideoDecoderConfig": {
-        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  boolean optimizeForLatency;\n};",
+        "fragment": "dictionary VideoDecoderConfig {\n  required DOMString codec;\n  BufferSource description;\n  [EnforceRange] unsigned long codedWidth;\n  [EnforceRange] unsigned long codedHeight;\n  [EnforceRange] unsigned long displayAspectWidth;\n  [EnforceRange] unsigned long displayAspectHeight;\n  VideoColorSpaceInit colorSpace;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  boolean optimizeForLatency;\n};",
         "type": "dictionary",
         "name": "VideoDecoderConfig",
         "inheritance": null,
@@ -1839,7 +1839,7 @@
             },
             "default": {
               "type": "string",
-              "value": "allow"
+              "value": "no-preference"
             },
             "required": false
           },
@@ -1954,7 +1954,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"allow\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  VideoColorSpaceInit colorSpace;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  VideoColorSpaceInit colorSpace;\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -2120,7 +2120,7 @@
             },
             "default": {
               "type": "string",
-              "value": "allow"
+              "value": "no-preference"
             },
             "required": false
           },
@@ -2213,21 +2213,21 @@
         "partial": false
       },
       "HardwareAcceleration": {
-        "fragment": "enum HardwareAcceleration {\n  \"allow\",\n  \"deny\",\n  \"require\",\n};",
+        "fragment": "enum HardwareAcceleration {\n  \"no-preference\",\n  \"prefer-hardware\",\n  \"prefer-software\",\n};",
         "type": "enum",
         "name": "HardwareAcceleration",
         "values": [
           {
             "type": "enum-value",
-            "value": "allow"
+            "value": "no-preference"
           },
           {
             "type": "enum-value",
-            "value": "deny"
+            "value": "prefer-hardware"
           },
           {
             "type": "enum-value",
-            "value": "require"
+            "value": "prefer-software"
           }
         ],
         "extAttrs": []
