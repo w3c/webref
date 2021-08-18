@@ -4,7 +4,7 @@
 // Source: WebTransport (https://w3c.github.io/webtransport/)
 
 [Exposed=(Window,Worker), SecureContext]
-interface DatagramDuplexStream {
+interface WebTransportDatagramDuplexStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
 
@@ -24,10 +24,10 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
 
-  readonly attribute DatagramDuplexStream datagrams;
+  readonly attribute WebTransportDatagramDuplexStream datagrams;
 
-  Promise<BidirectionalStream> createBidirectionalStream();
-  /* a ReadableStream of BidirectionalStream objects */
+  Promise<WebTransportBidirectionalStream> createBidirectionalStream();
+  /* a ReadableStream of WebTransportBidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
   Promise<WritableStream> createUnidirectionalStream();
@@ -58,7 +58,7 @@ dictionary WebTransportStats {
 };
 
 [Exposed=(Window,Worker), SecureContext]
-interface BidirectionalStream {
+interface WebTransportBidirectionalStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
 };

@@ -17,20 +17,20 @@
       },
       "functions": {
         "Window": [
-          "DatagramDuplexStream",
-          "BidirectionalStream"
+          "WebTransportDatagramDuplexStream",
+          "WebTransportBidirectionalStream"
         ],
         "Worker": [
-          "DatagramDuplexStream",
-          "BidirectionalStream"
+          "WebTransportDatagramDuplexStream",
+          "WebTransportBidirectionalStream"
         ]
       }
     },
     "idlNames": {
-      "DatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
+      "WebTransportDatagramDuplexStream": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportDatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
         "type": "interface",
-        "name": "DatagramDuplexStream",
+        "name": "WebTransportDatagramDuplexStream",
         "inheritance": null,
         "members": [
           {
@@ -166,7 +166,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -326,7 +326,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DatagramDuplexStream"
+              "idlType": "WebTransportDatagramDuplexStream"
             },
             "extAttrs": [],
             "special": "",
@@ -348,7 +348,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "BidirectionalStream"
+                  "idlType": "WebTransportBidirectionalStream"
                 }
               ]
             },
@@ -677,10 +677,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "BidirectionalStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface BidirectionalStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+      "WebTransportBidirectionalStream": {
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportBidirectionalStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
-        "name": "BidirectionalStream",
+        "name": "WebTransportBidirectionalStream",
         "inheritance": null,
         "members": [
           {
@@ -895,20 +895,20 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "DatagramDuplexStream",
+        "WebTransportDatagramDuplexStream",
         "WebTransport",
-        "BidirectionalStream",
+        "WebTransportBidirectionalStream",
         "WebTransportError"
       ],
       "Worker": [
-        "DatagramDuplexStream",
+        "WebTransportDatagramDuplexStream",
         "WebTransport",
-        "BidirectionalStream",
+        "WebTransportBidirectionalStream",
         "WebTransportError"
       ]
     },
     "dependencies": {
-      "DatagramDuplexStream": [
+      "WebTransportDatagramDuplexStream": [
         "ReadableStream",
         "WritableStream"
       ],
@@ -916,8 +916,8 @@
         "WebTransportOptions",
         "WebTransportStats",
         "WebTransportCloseInfo",
-        "DatagramDuplexStream",
-        "BidirectionalStream",
+        "WebTransportDatagramDuplexStream",
+        "WebTransportBidirectionalStream",
         "ReadableStream",
         "WritableStream"
       ],
@@ -928,7 +928,7 @@
       "WebTransportStats": [
         "DOMHighResTimeStamp"
       ],
-      "BidirectionalStream": [
+      "WebTransportBidirectionalStream": [
         "ReadableStream",
         "WritableStream"
       ],

@@ -8,10 +8,10 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
 
-  readonly attribute DatagramDuplexStream datagrams;
+  readonly attribute WebTransportDatagramDuplexStream datagrams;
 
-  Promise<BidirectionalStream> createBidirectionalStream();
-  /* a ReadableStream of BidirectionalStream objects */
+  Promise<WebTransportBidirectionalStream> createBidirectionalStream();
+  /* a ReadableStream of WebTransportBidirectionalStream objects */
   readonly attribute ReadableStream incomingBidirectionalStreams;
 
   Promise<WritableStream> createUnidirectionalStream();
