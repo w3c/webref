@@ -631,6 +631,27 @@
       "definedIn": "table"
     },
     {
+      "id": "datagramduplexstream-outgoingmaxdatagramsize",
+      "href": "https://w3c.github.io/webtransport/#datagramduplexstream-outgoingmaxdatagramsize",
+      "linkingText": [
+        "[[OutgoingMaxDatagramSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "datagramduplexstream-create",
       "href": "https://w3c.github.io/webtransport/#datagramduplexstream-create",
       "linkingText": [
@@ -741,6 +762,27 @@
       "href": "https://w3c.github.io/webtransport/#dom-datagramduplexstream-incomingmaxage",
       "linkingText": [
         "incomingMaxAge"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://w3c.github.io/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-datagramduplexstream-maxdatagramsize",
+      "href": "https://w3c.github.io/webtransport/#dom-datagramduplexstream-maxdatagramsize",
+      "linkingText": [
+        "maxDatagramSize"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -1281,27 +1323,6 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransport-closed",
       "linkingText": [
         "closed"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-attributes",
-        "href": "https://w3c.github.io/webtransport/#webtransport-attributes",
-        "title": "Attributes",
-        "number": "6.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-webtransport-maxdatagramsize",
-      "href": "https://w3c.github.io/webtransport/#dom-webtransport-maxdatagramsize",
-      "linkingText": [
-        "maxDatagramSize"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -2432,10 +2453,89 @@
       "definedIn": "pre"
     },
     {
+      "id": "enumdef-webtransporterrorsource",
+      "href": "https://w3c.github.io/webtransport/#enumdef-webtransporterrorsource",
+      "linkingText": [
+        "WebTransportErrorSource"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://w3c.github.io/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorsource-stream",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransporterrorsource-stream",
+      "linkingText": [
+        "\"stream\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportErrorSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://w3c.github.io/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorsource-session",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransporterrorsource-session",
+      "linkingText": [
+        "\"session\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportErrorSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://w3c.github.io/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "webtransporterror-applicationprotocolcode",
       "href": "https://w3c.github.io/webtransport/#webtransporterror-applicationprotocolcode",
       "linkingText": [
         "[[ApplicationProtocolCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-internal-slots",
+        "href": "https://w3c.github.io/webtransport/#web-transport-error-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransporterror-source",
+      "href": "https://w3c.github.io/webtransport/#webtransporterror-source",
+      "linkingText": [
+        "[[Source]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2481,6 +2581,27 @@
       "href": "https://w3c.github.io/webtransport/#dom-webtransporterror-applicationprotocolcode",
       "linkingText": [
         "applicationProtocolCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-attributes",
+        "href": "https://w3c.github.io/webtransport/#web-transport-error-attributes",
+        "title": "Attributes",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransporterror-source",
+      "href": "https://w3c.github.io/webtransport/#dom-webtransporterror-source",
+      "linkingText": [
+        "source"
       ],
       "localLinkingText": [],
       "type": "attribute",

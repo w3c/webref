@@ -8,6 +8,7 @@ interface DatagramDuplexStream {
   readonly attribute ReadableStream readable;
   readonly attribute WritableStream writable;
 
+  readonly attribute unsigned long maxDatagramSize;
   attribute double? incomingMaxAge;
   attribute double? outgoingMaxAge;
   attribute long incomingHighWaterMark;
@@ -23,7 +24,6 @@ interface WebTransport {
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
 
-  readonly attribute unsigned short maxDatagramSize;
   readonly attribute DatagramDuplexStream datagrams;
 
   Promise<BidirectionalStream> createBidirectionalStream();
@@ -68,9 +68,15 @@ interface WebTransportError : DOMException {
   constructor(optional WebTransportErrorInit init = {});
 
   readonly attribute octet? applicationProtocolCode;
+  readonly attribute WebTransportErrorSource source;
 };
 
 dictionary WebTransportErrorInit {
-  octet applicationProtocolCode;
+  [Clamp] octet applicationProtocolCode;
   DOMString message;
+};
+
+enum WebTransportErrorSource {
+  "stream",
+  "session",
 };

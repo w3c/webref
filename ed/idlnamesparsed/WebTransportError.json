@@ -5,7 +5,7 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n  readonly attribute WebTransportErrorSource source;\n};",
     "href": "https://w3c.github.io/webtransport/#webtransporterror"
   },
   "extended": [],

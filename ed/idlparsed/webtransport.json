@@ -28,7 +28,7 @@
     },
     "idlNames": {
       "DatagramDuplexStream": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface DatagramDuplexStream {\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n\n  readonly attribute unsigned long maxDatagramSize;\n  attribute double? incomingMaxAge;\n  attribute double? outgoingMaxAge;\n  attribute long incomingHighWaterMark;\n  attribute long outgoingHighWaterMark;\n};",
         "type": "interface",
         "name": "DatagramDuplexStream",
         "inheritance": null,
@@ -58,6 +58,21 @@
               "nullable": false,
               "union": false,
               "idlType": "WritableStream"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maxDatagramSize",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
             },
             "extAttrs": [],
             "special": "",
@@ -151,7 +166,7 @@
         "partial": false
       },
       "WebTransport": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute unsigned short maxDatagramSize;\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute DatagramDuplexStream datagrams;\n\n  Promise<BidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of BidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
         "type": "interface",
         "name": "WebTransport",
         "inheritance": null,
@@ -301,21 +316,6 @@
             ],
             "extAttrs": [],
             "special": ""
-          },
-          {
-            "type": "attribute",
-            "name": "maxDatagramSize",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "unsigned short"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
           },
           {
             "type": "attribute",
@@ -741,7 +741,7 @@
         "partial": false
       },
       "WebTransportError": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n  readonly attribute WebTransportErrorSource source;\n};",
         "type": "interface",
         "name": "WebTransportError",
         "inheritance": "DOMException",
@@ -784,6 +784,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "source",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WebTransportErrorSource"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -813,7 +828,7 @@
         "partial": false
       },
       "WebTransportErrorInit": {
-        "fragment": "dictionary WebTransportErrorInit {\n  octet applicationProtocolCode;\n  DOMString message;\n};",
+        "fragment": "dictionary WebTransportErrorInit {\n  [Clamp] octet applicationProtocolCode;\n  DOMString message;\n};",
         "type": "dictionary",
         "name": "WebTransportErrorInit",
         "inheritance": null,
@@ -821,7 +836,14 @@
           {
             "type": "field",
             "name": "applicationProtocolCode",
-            "extAttrs": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Clamp",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
@@ -851,6 +873,22 @@
         ],
         "extAttrs": [],
         "partial": false
+      },
+      "WebTransportErrorSource": {
+        "fragment": "enum WebTransportErrorSource {\n  \"stream\",\n  \"session\",\n};",
+        "type": "enum",
+        "name": "WebTransportErrorSource",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "stream"
+          },
+          {
+            "type": "enum-value",
+            "value": "session"
+          }
+        ],
+        "extAttrs": []
       }
     },
     "idlExtendedNames": {},
@@ -896,7 +934,8 @@
       ],
       "WebTransportError": [
         "DOMException",
-        "WebTransportErrorInit"
+        "WebTransportErrorInit",
+        "WebTransportErrorSource"
       ],
       "WebTransportErrorInit": []
     },

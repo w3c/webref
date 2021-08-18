@@ -4,4 +4,5 @@ interface WebTransportError : DOMException {
   constructor(optional WebTransportErrorInit init = {});
 
   readonly attribute octet? applicationProtocolCode;
+  readonly attribute WebTransportErrorSource source;
 };

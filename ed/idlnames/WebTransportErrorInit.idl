@@ -1,5 +1,5 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportErrorInit {
-  octet applicationProtocolCode;
+  [Clamp] octet applicationProtocolCode;
   DOMString message;
 };
