@@ -9,4 +9,7 @@ interface OffscreenCanvas : EventTarget {
   OffscreenRenderingContext? getContext(OffscreenRenderingContextId contextId, optional any options = null);
   ImageBitmap transferToImageBitmap();
   Promise<Blob> convertToBlob(optional ImageEncodeOptions options = {});
+
+  attribute EventHandler oncontextlost;
+  attribute EventHandler oncontextrestored;
 };

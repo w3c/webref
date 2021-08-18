@@ -15586,7 +15586,7 @@
         "partial": false
       },
       "CanvasState": {
-        "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n  undefined reset(); // reset the rendering context to its default state\n};",
+        "fragment": "interface mixin CanvasState {\n  // state\n  undefined save(); // push state on state stack\n  undefined restore(); // pop state stack and restore state\n  undefined reset(); // reset the rendering context to its default state\n  boolean isContextLost(); // return whether context is lost\n};",
         "type": "interface mixin",
         "name": "CanvasState",
         "inheritance": null,
@@ -15631,6 +15631,21 @@
               "nullable": false,
               "union": false,
               "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "isContextLost",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "arguments": [],
             "extAttrs": [],
@@ -20948,7 +20963,7 @@
         "extAttrs": []
       },
       "OffscreenCanvas": {
-        "fragment": "[Exposed=(Window,Worker), Transferable]\ninterface OffscreenCanvas : EventTarget {\n  constructor([EnforceRange] unsigned long long width, [EnforceRange] unsigned long long height);\n\n  attribute [EnforceRange] unsigned long long width;\n  attribute [EnforceRange] unsigned long long height;\n\n  OffscreenRenderingContext? getContext(OffscreenRenderingContextId contextId, optional any options = null);\n  ImageBitmap transferToImageBitmap();\n  Promise<Blob> convertToBlob(optional ImageEncodeOptions options = {});\n};",
+        "fragment": "[Exposed=(Window,Worker), Transferable]\ninterface OffscreenCanvas : EventTarget {\n  constructor([EnforceRange] unsigned long long width, [EnforceRange] unsigned long long height);\n\n  attribute [EnforceRange] unsigned long long width;\n  attribute [EnforceRange] unsigned long long height;\n\n  OffscreenRenderingContext? getContext(OffscreenRenderingContextId contextId, optional any options = null);\n  ImageBitmap transferToImageBitmap();\n  Promise<Blob> convertToBlob(optional ImageEncodeOptions options = {});\n\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextrestored;\n};",
         "type": "interface",
         "name": "OffscreenCanvas",
         "inheritance": "EventTarget",
@@ -21156,6 +21171,36 @@
             ],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "oncontextlost",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "oncontextrestored",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -25489,7 +25534,7 @@
         "extAttrs": []
       },
       "GlobalEventHandlers": {
-        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
+        "fragment": "interface mixin GlobalEventHandlers {\n  attribute EventHandler onabort;\n  attribute EventHandler onauxclick;\n  attribute EventHandler onblur;\n  attribute EventHandler oncancel;\n  attribute EventHandler oncanplay;\n  attribute EventHandler oncanplaythrough;\n  attribute EventHandler onchange;\n  attribute EventHandler onclick;\n  attribute EventHandler onclose;\n  attribute EventHandler oncontextlost;\n  attribute EventHandler oncontextmenu;\n  attribute EventHandler oncontextrestored;\n  attribute EventHandler oncuechange;\n  attribute EventHandler ondblclick;\n  attribute EventHandler ondrag;\n  attribute EventHandler ondragend;\n  attribute EventHandler ondragenter;\n  attribute EventHandler ondragleave;\n  attribute EventHandler ondragover;\n  attribute EventHandler ondragstart;\n  attribute EventHandler ondrop;\n  attribute EventHandler ondurationchange;\n  attribute EventHandler onemptied;\n  attribute EventHandler onended;\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onfocus;\n  attribute EventHandler onformdata;\n  attribute EventHandler oninput;\n  attribute EventHandler oninvalid;\n  attribute EventHandler onkeydown;\n  attribute EventHandler onkeypress;\n  attribute EventHandler onkeyup;\n  attribute EventHandler onload;\n  attribute EventHandler onloadeddata;\n  attribute EventHandler onloadedmetadata;\n  attribute EventHandler onloadstart;\n  attribute EventHandler onmousedown;\n  [LegacyLenientThis] attribute EventHandler onmouseenter;\n  [LegacyLenientThis] attribute EventHandler onmouseleave;\n  attribute EventHandler onmousemove;\n  attribute EventHandler onmouseout;\n  attribute EventHandler onmouseover;\n  attribute EventHandler onmouseup;\n  attribute EventHandler onpause;\n  attribute EventHandler onplay;\n  attribute EventHandler onplaying;\n  attribute EventHandler onprogress;\n  attribute EventHandler onratechange;\n  attribute EventHandler onreset;\n  attribute EventHandler onresize;\n  attribute EventHandler onscroll;\n  attribute EventHandler onsecuritypolicyviolation;\n  attribute EventHandler onseeked;\n  attribute EventHandler onseeking;\n  attribute EventHandler onselect;\n  attribute EventHandler onslotchange;\n  attribute EventHandler onstalled;\n  attribute EventHandler onsubmit;\n  attribute EventHandler onsuspend;\n  attribute EventHandler ontimeupdate;\n  attribute EventHandler ontoggle;\n  attribute EventHandler onvolumechange;\n  attribute EventHandler onwaiting;\n  attribute EventHandler onwebkitanimationend;\n  attribute EventHandler onwebkitanimationiteration;\n  attribute EventHandler onwebkitanimationstart;\n  attribute EventHandler onwebkittransitionend;\n  attribute EventHandler onwheel;\n};",
         "type": "interface mixin",
         "name": "GlobalEventHandlers",
         "inheritance": null,
@@ -25631,7 +25676,37 @@
           },
           {
             "type": "attribute",
+            "name": "oncontextlost",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
             "name": "oncontextmenu",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "oncontextrestored",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -38790,7 +38865,8 @@
         "OffscreenRenderingContextId",
         "ImageBitmap",
         "Blob",
-        "ImageEncodeOptions"
+        "ImageEncodeOptions",
+        "EventHandler"
       ],
       "OffscreenCanvasRenderingContext2D": [
         "OffscreenCanvas",
