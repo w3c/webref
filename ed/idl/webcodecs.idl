@@ -172,7 +172,6 @@ dictionary VideoEncoderConfig {
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
-  VideoColorSpaceInit colorSpace;
 };
 
 enum HardwareAcceleration {
@@ -306,7 +305,7 @@ interface VideoFrame {
   readonly attribute unsigned long displayHeight;
   readonly attribute unsigned long long? duration;  // microseconds
   readonly attribute long long? timestamp;          // microseconds
-  readonly attribute VideoColorSpace? colorSpace;
+  readonly attribute VideoColorSpace colorSpace;
 
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});

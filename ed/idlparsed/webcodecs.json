@@ -1954,7 +1954,7 @@
         "partial": false
       },
       "VideoEncoderConfig": {
-        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n  VideoColorSpaceInit colorSpace;\n};",
+        "fragment": "dictionary VideoEncoderConfig {\n  required DOMString codec;\n  [EnforceRange] required unsigned long width;\n  [EnforceRange] required unsigned long height;\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n  [EnforceRange] unsigned long long bitrate;\n  [EnforceRange] double framerate;\n  HardwareAcceleration hardwareAcceleration = \"no-preference\";\n  AlphaOption alpha = \"discard\";\n  DOMString scalabilityMode;\n  BitrateMode bitrateMode = \"variable\";\n  LatencyMode latencyMode = \"quality\";\n};",
         "type": "dictionary",
         "name": "VideoEncoderConfig",
         "inheritance": null,
@@ -2191,21 +2191,6 @@
               "type": "string",
               "value": "quality"
             },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "colorSpace",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "VideoColorSpaceInit"
-            },
-            "default": null,
             "required": false
           }
         ],
@@ -3349,7 +3334,7 @@
         "extAttrs": []
       },
       "VideoFrame": {
-        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  readonly attribute VideoColorSpace? colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker), Serializable, Transferable]\ninterface VideoFrame {\n  constructor(CanvasImageSource image, optional VideoFrameInit init = {});\n  constructor([AllowShared] BufferSource data, VideoFrameBufferInit init);\n\n  readonly attribute VideoPixelFormat? format;\n  readonly attribute unsigned long codedWidth;\n  readonly attribute unsigned long codedHeight;\n  readonly attribute DOMRectReadOnly? codedRect;\n  readonly attribute DOMRectReadOnly? visibleRect;\n  readonly attribute unsigned long displayWidth;\n  readonly attribute unsigned long displayHeight;\n  readonly attribute unsigned long long? duration;  // microseconds\n  readonly attribute long long? timestamp;          // microseconds\n  readonly attribute VideoColorSpace colorSpace;\n\n  unsigned long allocationSize(\n      optional VideoFrameCopyToOptions options = {});\n  Promise<sequence<PlaneLayout>> copyTo(\n      [AllowShared] BufferSource destination,\n      optional VideoFrameCopyToOptions options = {});\n  VideoFrame clone();\n  undefined close();\n};",
         "type": "interface",
         "name": "VideoFrame",
         "inheritance": null,
@@ -3581,7 +3566,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
+              "nullable": false,
               "union": false,
               "idlType": "VideoColorSpace"
             },
@@ -5286,8 +5271,7 @@
         "HardwareAcceleration",
         "AlphaOption",
         "BitrateMode",
-        "LatencyMode",
-        "VideoColorSpaceInit"
+        "LatencyMode"
       ],
       "VideoEncoderEncodeOptions": [],
       "EncodedAudioChunk": [
