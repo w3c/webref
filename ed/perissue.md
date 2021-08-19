@@ -3426,7 +3426,6 @@ Links in the body of a specification should be to the same document as that poin
 - [Notifications API Standard](https://notifications.spec.whatwg.org/):
      * [`https://w3c.github.io/vibration/#idl-def-vibratepattern`](https://w3c.github.io/vibration/#idl-def-vibratepattern)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/):
-     * [`https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source`](https://w3c.github.io/performance-timeline/#dfn-performance-timeline-task-source)
      * [`https://www.w3.org/TR/hr-time-2/#idl-def-performance`](https://www.w3.org/TR/hr-time-2/#idl-def-performance)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
      * [`https://dom.spec.whatwg.org/#ref-for-dom-event-type`](https://dom.spec.whatwg.org/#ref-for-dom-event-type)
@@ -3671,7 +3670,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 813 problematic external links found in 55 specifications
+=> 812 problematic external links found in 55 specifications
 
 
 ## Broken external links
