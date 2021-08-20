@@ -92,7 +92,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n};",
+          "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n\n  [SecureContext] boolean canShare(optional ShareData data = {});\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -116,6 +116,47 @@
                     "idlType": "undefined"
                   }
                 ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "data",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "ShareData"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "canShare",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
               },
               "arguments": [
                 {
