@@ -335,6 +335,24 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-Crypto",
+      "href": "https://w3c.github.io/webcrypto/#dfn-Crypto",
+      "linkingText": [
+        "Crypto"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "crypto-interface",
+        "href": "https://w3c.github.io/webcrypto/#crypto-interface",
+        "title": "10. Crypto interface"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-windoworworkerglobalscope-crypto",
       "href": "https://w3c.github.io/webcrypto/#dom-windoworworkerglobalscope-crypto",
       "linkingText": [
@@ -355,25 +373,6 @@
         "title": "10. Crypto interface"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dfn-Crypto",
-      "href": "https://w3c.github.io/webcrypto/#dfn-Crypto",
-      "linkingText": [
-        "Crypto"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "Crypto-description",
-        "href": "https://w3c.github.io/webcrypto/#Crypto-description",
-        "title": "Description",
-        "number": "10.1"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dfn-Crypto-method-getRandomValues",
@@ -397,7 +396,7 @@
         "id": "Crypto-method-getRandomValues",
         "href": "https://w3c.github.io/webcrypto/#Crypto-method-getRandomValues",
         "title": "The getRandomValues method",
-        "number": "10.2.1"
+        "number": "10.1.1"
       },
       "definedIn": "prose"
     },
@@ -420,7 +419,7 @@
         "id": "Crypto-attribute-subtle",
         "href": "https://w3c.github.io/webcrypto/#Crypto-attribute-subtle",
         "title": "The subtle attribute",
-        "number": "10.3.1"
+        "number": "10.2.1"
       },
       "definedIn": "prose"
     },
@@ -928,7 +927,7 @@
       "id": "dfn-CryptoKey-slot-algorithm_cached",
       "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-algorithm_cached",
       "linkingText": [
-        "[algorithm_cached]"
+        "[[algorithm_cached]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -966,7 +965,7 @@
       "id": "dfn-CryptoKey-slot-usages_cached",
       "href": "https://w3c.github.io/webcrypto/#dfn-CryptoKey-slot-usages_cached",
       "linkingText": [
-        "[usages_cached]"
+        "[[usages_cached]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1102,12 +1101,11 @@
       "type": "interface",
       "for": [],
       "access": "public",
-      "informative": true,
+      "informative": false,
       "heading": {
-        "id": "subtlecrypto-interface-description",
-        "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-description",
-        "title": "Description",
-        "number": "14.1"
+        "id": "subtlecrypto-interface",
+        "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface",
+        "title": "14. SubtleCrypto interface"
       },
       "definedIn": "prose"
     },
@@ -1126,7 +1124,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "dt"
     },
@@ -1145,7 +1143,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "prose"
     },
@@ -1166,7 +1164,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "dt"
     },
@@ -1187,7 +1185,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "dt"
     },
@@ -1208,7 +1206,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "dt"
     },
@@ -1229,7 +1227,7 @@
         "id": "subtlecrypto-interface-datatypes",
         "href": "https://w3c.github.io/webcrypto/#subtlecrypto-interface-datatypes",
         "title": "Data Types",
-        "number": "14.2"
+        "number": "14.1"
       },
       "definedIn": "dt"
     },
@@ -1255,7 +1253,7 @@
         "id": "SubtleCrypto-method-encrypt",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-encrypt",
         "title": "The encrypt method",
-        "number": "14.3.1"
+        "number": "14.2.1"
       },
       "definedIn": "prose"
     },
@@ -1281,7 +1279,7 @@
         "id": "SubtleCrypto-method-decrypt",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-decrypt",
         "title": "The decrypt method",
-        "number": "14.3.2"
+        "number": "14.2.2"
       },
       "definedIn": "prose"
     },
@@ -1307,7 +1305,7 @@
         "id": "SubtleCrypto-method-sign",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-sign",
         "title": "The sign method",
-        "number": "14.3.3"
+        "number": "14.2.3"
       },
       "definedIn": "prose"
     },
@@ -1333,7 +1331,7 @@
         "id": "SubtleCrypto-method-verify",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-verify",
         "title": "The verify method",
-        "number": "14.3.4"
+        "number": "14.2.4"
       },
       "definedIn": "prose"
     },
@@ -1359,7 +1357,7 @@
         "id": "SubtleCrypto-method-digest",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-digest",
         "title": "The digest method",
-        "number": "14.3.5"
+        "number": "14.2.5"
       },
       "definedIn": "prose"
     },
@@ -1385,7 +1383,7 @@
         "id": "SubtleCrypto-method-generateKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-generateKey",
         "title": "The generateKey method",
-        "number": "14.3.6"
+        "number": "14.2.6"
       },
       "definedIn": "prose"
     },
@@ -1411,7 +1409,7 @@
         "id": "SubtleCrypto-method-deriveKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-deriveKey",
         "title": "The deriveKey method",
-        "number": "14.3.7"
+        "number": "14.2.7"
       },
       "definedIn": "prose"
     },
@@ -1437,7 +1435,7 @@
         "id": "SubtleCrypto-method-deriveBits",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-deriveBits",
         "title": "The deriveBits method",
-        "number": "14.3.8"
+        "number": "14.2.8"
       },
       "definedIn": "prose"
     },
@@ -1463,7 +1461,7 @@
         "id": "SubtleCrypto-method-importKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-importKey",
         "title": "The importKey() method",
-        "number": "14.3.9"
+        "number": "14.2.9"
       },
       "definedIn": "prose"
     },
@@ -1489,7 +1487,7 @@
         "id": "SubtleCrypto-method-exportKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-exportKey",
         "title": "The exportKey() method",
-        "number": "14.3.10"
+        "number": "14.2.10"
       },
       "definedIn": "prose"
     },
@@ -1515,7 +1513,7 @@
         "id": "SubtleCrypto-method-wrapKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-wrapKey",
         "title": "The wrapKey method",
-        "number": "14.3.11"
+        "number": "14.2.11"
       },
       "definedIn": "prose"
     },
@@ -1541,7 +1539,7 @@
         "id": "SubtleCrypto-method-unwrapKey",
         "href": "https://w3c.github.io/webcrypto/#SubtleCrypto-method-unwrapKey",
         "title": "The unwrapKey method",
-        "number": "14.3.12"
+        "number": "14.2.12"
       },
       "definedIn": "prose"
     },
@@ -1966,25 +1964,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dfn-RsaOtherPrimesInfo",
-      "href": "https://w3c.github.io/webcrypto/#dfn-RsaOtherPrimesInfo",
-      "linkingText": [
-        "RsaOtherPrimesInfo"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": true,
-      "heading": {
-        "id": "JsonWebKey-description",
-        "href": "https://w3c.github.io/webcrypto/#JsonWebKey-description",
-        "title": "Description",
-        "number": "15.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-JsonWebKey",
       "href": "https://w3c.github.io/webcrypto/#dfn-JsonWebKey",
       "linkingText": [
@@ -1994,12 +1973,29 @@
       "type": "dictionary",
       "for": [],
       "access": "public",
-      "informative": true,
+      "informative": false,
       "heading": {
-        "id": "JsonWebKey-description",
-        "href": "https://w3c.github.io/webcrypto/#JsonWebKey-description",
-        "title": "Description",
-        "number": "15.1"
+        "id": "JsonWebKey-dictionary",
+        "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-RsaOtherPrimesInfo",
+      "href": "https://w3c.github.io/webcrypto/#dfn-RsaOtherPrimesInfo",
+      "linkingText": [
+        "RsaOtherPrimesInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "JsonWebKey-dictionary",
+        "href": "https://w3c.github.io/webcrypto/#JsonWebKey-dictionary",
+        "title": "15. JsonWebKey dictionary"
       },
       "definedIn": "prose"
     },

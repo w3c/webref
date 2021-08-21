@@ -257,7 +257,7 @@
         "extAttrs": []
       },
       "CryptoKey": {
-        "fragment": "[SecureContext,Exposed=(Window,Worker)]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
+        "fragment": "[SecureContext,Exposed=(Window,Worker),Serializable]\ninterface CryptoKey {\n  readonly attribute KeyType type;\n  readonly attribute boolean extractable;\n  readonly attribute object algorithm;\n  readonly attribute object usages;\n};",
         "type": "interface",
         "name": "CryptoKey",
         "inheritance": null,
@@ -344,6 +344,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Serializable",
+            "rhs": null,
             "arguments": []
           }
         ],
