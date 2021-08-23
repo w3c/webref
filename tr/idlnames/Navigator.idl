@@ -231,6 +231,8 @@ partial interface Navigator {
 // Source: Web Share API (https://www.w3.org/TR/web-share/)
 partial interface Navigator {
   [SecureContext] Promise<undefined> share(optional ShareData data = {});
+
+  [SecureContext] boolean canShare(optional ShareData data = {});
 };
 
 // Source: WebDriver (https://www.w3.org/TR/webdriver2/)

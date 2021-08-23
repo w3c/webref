@@ -7,10 +7,9 @@ dictionary VideoEncoderConfig {
   [EnforceRange] unsigned long displayHeight;
   [EnforceRange] unsigned long long bitrate;
   [EnforceRange] double framerate;
-  HardwareAcceleration hardwareAcceleration = "allow";
+  HardwareAcceleration hardwareAcceleration = "no-preference";
   AlphaOption alpha = "discard";
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
-  VideoColorSpaceInit colorSpace;
 };

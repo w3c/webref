@@ -60597,6 +60597,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "concept-canvas-context-lost",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-context-lost",
+      "linkingText": [
+        "context lost"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-state",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+        "title": "The canvas state",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-context-2d-save",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-save",
       "linkingText": [
@@ -60669,6 +60688,27 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-canvas-state",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-canvas-state",
+        "title": "The canvas state",
+        "number": "4.12.5.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-context-2d-iscontextlost",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-context-2d-iscontextlost",
+      "linkingText": [
+        "isContextLost()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CanvasState"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-canvas-state",
@@ -64753,6 +64793,48 @@
         "number": "4.12.5.3"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "handler-offscreencanvas-oncontextlost",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#handler-offscreencanvas-oncontextlost",
+      "linkingText": [
+        "oncontextlost"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OffscreenCanvas"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-offscreencanvas-interface",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+        "title": "The OffscreenCanvas interface",
+        "number": "4.12.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-offscreencanvas-oncontextrestored",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#handler-offscreencanvas-oncontextrestored",
+      "linkingText": [
+        "oncontextrestored"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "OffscreenCanvas"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-offscreencanvas-interface",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#the-offscreencanvas-interface",
+        "title": "The OffscreenCanvas interface",
+        "number": "4.12.5.3"
+      },
+      "definedIn": "table"
     },
     {
       "id": "offscreencanvasrenderingcontext2d",
@@ -84690,6 +84772,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "context-lost-steps",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#context-lost-steps",
+      "linkingText": [
+        "context lost steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-loop-processing-model",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-loop-processing-model",
+        "title": "Processing model",
+        "number": "8.1.6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "perform-a-microtask-checkpoint",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#perform-a-microtask-checkpoint",
       "linkingText": [
@@ -85471,10 +85572,58 @@
       "definedIn": "table"
     },
     {
+      "id": "handler-oncontextlost",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextlost",
+      "linkingText": [
+        "oncontextlost"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement",
+        "Document",
+        "Window",
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+        "title": "Event handlers on elements, Document objects, and Window objects",
+        "number": "8.1.7.2"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "handler-oncontextmenu",
       "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextmenu",
       "linkingText": [
         "oncontextmenu"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLElement",
+        "Document",
+        "Window",
+        "GlobalEventHandlers"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers-on-elements,-document-objects,-and-window-objects",
+        "href": "https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers-on-elements,-document-objects,-and-window-objects",
+        "title": "Event handlers on elements, Document objects, and Window objects",
+        "number": "8.1.7.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "handler-oncontextrestored",
+      "href": "https://html.spec.whatwg.org/multipage/webappapis.html#handler-oncontextrestored",
+      "linkingText": [
+        "oncontextrestored"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -109085,6 +109234,27 @@
       "definedIn": "table"
     },
     {
+      "id": "event-contextlost",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextlost",
+      "linkingText": [
+        "contextlost"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "HTMLElement",
+        "OffscreenCanvas"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events-2",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2",
+        "title": "Events"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "event-contextmenu",
       "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextmenu",
       "linkingText": [
@@ -109094,6 +109264,27 @@
       "type": "event",
       "for": [
         "HTMLElement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "events-2",
+        "href": "https://html.spec.whatwg.org/multipage/indices.html#events-2",
+        "title": "Events"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "event-contextrestored",
+      "href": "https://html.spec.whatwg.org/multipage/indices.html#event-contextrestored",
+      "linkingText": [
+        "contextrestored"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "HTMLElement",
+        "OffscreenCanvas"
       ],
       "access": "public",
       "informative": false,

@@ -329,7 +329,7 @@
         "title": "Web Share API",
         "url": "https://www.w3.org/TR/web-share/"
       },
-      "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n};"
+      "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n\n  [SecureContext] boolean canShare(optional ShareData data = {});\n};"
     },
     {
       "spec": {

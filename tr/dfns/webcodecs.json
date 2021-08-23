@@ -2623,27 +2623,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoder-active-color-space-slot",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-active-color-space-slot",
-      "linkingText": [
-        "[[active color space]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "VideoEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "videoencoder-internal-slots",
-        "href": "https://www.w3.org/TR/webcodecs/#videoencoder-internal-slots",
-        "title": "Internal Slots",
-        "number": "6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-videoencoder-state-slot",
       "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoder-state-slot",
       "linkingText": [
@@ -4158,27 +4137,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-videoencoderconfig-colorspace",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-videoencoderconfig-colorspace",
-      "linkingText": [
-        "colorSpace"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "VideoEncoderConfig"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "video-encoder-config",
-        "href": "https://www.w3.org/TR/webcodecs/#video-encoder-config",
-        "title": "VideoEncoderConfig",
-        "number": "7.8"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "enumdef-hardwareacceleration",
       "href": "https://www.w3.org/TR/webcodecs/#enumdef-hardwareacceleration",
       "linkingText": [
@@ -4198,11 +4156,11 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-hardwareacceleration-allow",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-allow",
+      "id": "dom-hardwareacceleration-no-preference",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-no-preference",
       "linkingText": [
-        "\"allow\"",
-        "allow"
+        "\"no-preference\"",
+        "no-preference"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4220,11 +4178,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-hardwareacceleration-deny",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-deny",
+      "id": "dom-hardwareacceleration-prefer-software",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-prefer-software",
       "linkingText": [
-        "\"deny\"",
-        "deny"
+        "\"prefer-software\"",
+        "prefer-software"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -4242,11 +4200,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-hardwareacceleration-require",
-      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-require",
+      "id": "dom-hardwareacceleration-prefer-hardware",
+      "href": "https://www.w3.org/TR/webcodecs/#dom-hardwareacceleration-prefer-hardware",
       "linkingText": [
-        "\"require\"",
-        "require"
+        "\"prefer-hardware\"",
+        "prefer-hardware"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -10803,6 +10761,81 @@
         "number": "10.7.3"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "reclaim-a-codec",
+      "href": "https://www.w3.org/TR/webcodecs/#reclaim-a-codec",
+      "linkingText": [
+        "reclaim a codec"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-reclamation",
+        "href": "https://www.w3.org/TR/webcodecs/#resource-reclamation",
+        "title": "11. Resource Reclamation"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "active-codec",
+      "href": "https://www.w3.org/TR/webcodecs/#active-codec",
+      "linkingText": [
+        "active codec",
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-reclamation",
+        "href": "https://www.w3.org/TR/webcodecs/#resource-reclamation",
+        "title": "11. Resource Reclamation"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "inactive-codec",
+      "href": "https://www.w3.org/TR/webcodecs/#inactive-codec",
+      "linkingText": [
+        "inactive codec",
+        "inactive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-reclamation",
+        "href": "https://www.w3.org/TR/webcodecs/#resource-reclamation",
+        "title": "11. Resource Reclamation"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "background-codec",
+      "href": "https://www.w3.org/TR/webcodecs/#background-codec",
+      "linkingText": [
+        "background codec",
+        "background"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resource-reclamation",
+        "href": "https://www.w3.org/TR/webcodecs/#resource-reclamation",
+        "title": "11. Resource Reclamation"
+      },
+      "definedIn": "prose"
     }
   ]
 }

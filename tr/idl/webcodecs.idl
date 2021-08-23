@@ -148,7 +148,7 @@ dictionary VideoDecoderConfig {
   [EnforceRange] unsigned long displayAspectWidth;
   [EnforceRange] unsigned long displayAspectHeight;
   VideoColorSpaceInit colorSpace;
-  HardwareAcceleration hardwareAcceleration = "allow";
+  HardwareAcceleration hardwareAcceleration = "no-preference";
   boolean optimizeForLatency;
 };
 
@@ -167,18 +167,17 @@ dictionary VideoEncoderConfig {
   [EnforceRange] unsigned long displayHeight;
   [EnforceRange] unsigned long long bitrate;
   [EnforceRange] double framerate;
-  HardwareAcceleration hardwareAcceleration = "allow";
+  HardwareAcceleration hardwareAcceleration = "no-preference";
   AlphaOption alpha = "discard";
   DOMString scalabilityMode;
   BitrateMode bitrateMode = "variable";
   LatencyMode latencyMode = "quality";
-  VideoColorSpaceInit colorSpace;
 };
 
 enum HardwareAcceleration {
-  "allow",
-  "deny",
-  "require",
+  "no-preference",
+  "prefer-hardware",
+  "prefer-software",
 };
 
 enum AlphaOption {
@@ -306,7 +305,7 @@ interface VideoFrame {
   readonly attribute unsigned long displayHeight;
   readonly attribute unsigned long long? duration;  // microseconds
   readonly attribute long long? timestamp;          // microseconds
-  readonly attribute VideoColorSpace? colorSpace;
+  readonly attribute VideoColorSpace colorSpace;
 
   unsigned long allocationSize(
       optional VideoFrameCopyToOptions options = {});
