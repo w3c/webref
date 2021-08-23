@@ -12,7 +12,7 @@
 
 - Initial URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Crawled URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
-- Crawled version: 14 July 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Shortname: tc39-accessible-object-hasownproperty
 
@@ -1151,7 +1151,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - Shortname: ANGLE_instanced_arrays
 
@@ -1185,7 +1185,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - Shortname: EXT_blend_minmax
 
@@ -1211,7 +1211,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
 - Shortname: EXT_clip_cull_distance
 
@@ -1246,7 +1246,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/)
 - Shortname: EXT_color_buffer_float
 
@@ -1270,7 +1270,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/](https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/)
 - Shortname: EXT_color_buffer_half_float
 
@@ -1298,7 +1298,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/)
 - Shortname: EXT_disjoint_timer_query
 
@@ -1342,7 +1342,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 - Shortname: EXT_disjoint_timer_query_webgl2
 
@@ -1374,7 +1374,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/](https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/)
 - Shortname: EXT_float_blend
 
@@ -1398,7 +1398,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/](https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/)
 - Shortname: EXT_frag_depth
 
@@ -1422,7 +1422,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/](https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/)
 - Shortname: EXT_shader_texture_lod
 
@@ -1446,7 +1446,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/](https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/)
 - Shortname: EXT_sRGB
 
@@ -1474,7 +1474,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/)
 - Shortname: EXT_texture_compression_bptc
 
@@ -1502,7 +1502,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/)
 - Shortname: EXT_texture_compression_rgtc
 
@@ -1530,7 +1530,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/)
 - Shortname: EXT_texture_filter_anisotropic
 
@@ -1556,7 +1556,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/](https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/)
 - Shortname: EXT_texture_norm16
 
@@ -1588,7 +1588,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/](https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/)
 - Shortname: KHR_parallel_shader_compile
 
@@ -1613,7 +1613,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/](https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/)
 - Shortname: OES_draw_buffers_indexed
 
@@ -1648,7 +1648,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/](https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/)
 - Shortname: OES_element_index_uint
 
@@ -1672,7 +1672,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/](https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/)
 - Shortname: OES_fbo_render_mipmap
 
@@ -1696,7 +1696,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/](https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/)
 - Shortname: OES_standard_derivatives
 
@@ -1721,7 +1721,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float/)
 - Shortname: OES_texture_float
 
@@ -1745,7 +1745,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/)
 - Shortname: OES_texture_float_linear
 
@@ -1769,7 +1769,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/)
 - Shortname: OES_texture_half_float
 
@@ -1794,7 +1794,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/](https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/)
 - Shortname: OES_texture_half_float_linear
 
@@ -1818,7 +1818,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/](https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/)
 - Shortname: OES_vertex_array_object
 
@@ -1851,7 +1851,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/](https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/)
 - Shortname: OVR_multiview2
 
@@ -1944,7 +1944,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/](https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/)
 - Shortname: WEBGL_blend_equation_advanced_coherent
 
@@ -1983,7 +1983,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/](https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/)
 - Shortname: WEBGL_color_buffer_float
 
@@ -2010,7 +2010,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/)
 - Shortname: WEBGL_compressed_texture_astc
 
@@ -2063,7 +2063,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/)
 - Shortname: WEBGL_compressed_texture_etc
 
@@ -2097,7 +2097,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/)
 - Shortname: WEBGL_compressed_texture_etc1
 
@@ -2122,7 +2122,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/)
 - Shortname: WEBGL_compressed_texture_pvrtc
 
@@ -2150,7 +2150,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/)
 - Shortname: WEBGL_compressed_texture_s3tc
 
@@ -2178,7 +2178,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/](https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/)
 - Shortname: WEBGL_compressed_texture_s3tc_srgb
 
@@ -2206,7 +2206,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/)
 - Shortname: WEBGL_debug_renderer_info
 
@@ -2232,7 +2232,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/](https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/)
 - Shortname: WEBGL_debug_shaders
 
@@ -2259,7 +2259,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/](https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/)
 - Shortname: WEBGL_depth_texture
 
@@ -2284,7 +2284,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/)
 - Shortname: WEBGL_draw_buffers
 
@@ -2345,7 +2345,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_draw_instanced_base_vertex_base_instance
 
@@ -2377,7 +2377,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/](https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/)
 - Shortname: WEBGL_lose_context
 
@@ -2403,7 +2403,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - Shortname: WEBGL_multi_draw
 
@@ -2436,7 +2436,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Crawled URL: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 - Shortname: WEBGL_multi_draw_instanced_base_vertex_base_instance
 
@@ -3277,6 +3277,278 @@ No informative reference to this spec from other specs.
 
 ## Cascading Style Sheets (CSS) Working Group {#cascading_style_sheets_css_working_group}
 
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
+- Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
+- Shortname: css-animations-2
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [Web Animations](https://drafts.csswg.org/web-animations-1/)
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
+- Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
+- Shortname: css-backgrounds-4
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
+- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
+- Crawled URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
+- Shortname: css-env-1
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
+- Crawled URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
+- Shortname: css-extensions-1
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
+- Crawled URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
+- Shortname: css-fonts-5
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
+- Crawled URL: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
+- Shortname: css-gcpm-4
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- Crawled URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
+- Shortname: css-grid-3
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
+- Crawled URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
+- Shortname: css-multicol-2
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Shortname: css-nesting-1
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Crawled URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Shortname: css-scoping-2
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
+- Crawled URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
+- Shortname: css-shapes-2
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+
+Informative references to this spec from:
+
+- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
+
+
+### 500 Internal Server Error {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
+- Crawled URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
+- Crawled version: 23 August 2021
+- Editor's Draft: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
+- Shortname: css-size-adjust-1
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [Compatibility Standard](https://compat.spec.whatwg.org/)
+- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
+
+No informative reference to this spec from other specs.
+
+
 ### Compositing and Blending Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -3362,7 +3634,6 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
@@ -3414,7 +3685,6 @@ Normative references to this spec from:
 - [CSS 2](https://drafts.csswg.org/css2/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -3436,14 +3706,11 @@ Normative references to this spec from:
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
@@ -3452,10 +3719,8 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -3473,7 +3738,6 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -3655,6 +3919,7 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
      * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-to`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-to)
      * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
@@ -3670,7 +3935,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -3697,68 +3961,6 @@ Informative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
-
-
-### CSS Animations Level 2 {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled URL: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Crawled version: 15 July 2021
-- Editor's Draft: [https://drafts.csswg.org/css-animations-2/](https://drafts.csswg.org/css-animations-2/)
-- Shortname: css-animations-2
-
-#### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `CSSOMString`
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/web-animations-1/#play-state`](https://drafts.csswg.org/web-animations-1/#play-state)
-     * [`https://drafts.csswg.org/web-animations-1/#paused-play-state`](https://drafts.csswg.org/web-animations-1/#paused-play-state)
-     * [`https://drafts.csswg.org/web-animations-1/#target-element`](https://drafts.csswg.org/web-animations-1/#target-element)
-     * [`https://drafts.csswg.org/web-animations-1/#animation-class`](https://drafts.csswg.org/web-animations-1/#animation-class)
-     * [`https://drafts.csswg.org/web-animations-1/#idle-play-state`](https://drafts.csswg.org/web-animations-1/#idle-play-state)
-     * [`https://drafts.csswg.org/web-animations-1/#keyframe`](https://drafts.csswg.org/web-animations-1/#keyframe)
-     * [`https://drafts.csswg.org/web-animations-1/#iteration-duration`](https://drafts.csswg.org/web-animations-1/#iteration-duration)
-     * [`https://drafts.csswg.org/web-animations-1/#animation-effect`](https://drafts.csswg.org/web-animations-1/#animation-effect)
-     * [`https://drafts.csswg.org/web-animations-1/#iteration-count`](https://drafts.csswg.org/web-animations-1/#iteration-count)
-     * [`https://drafts.csswg.org/web-animations-1/#playback-direction`](https://drafts.csswg.org/web-animations-1/#playback-direction)
-     * [`https://drafts.csswg.org/web-animations-1/#play-an-animation`](https://drafts.csswg.org/web-animations-1/#play-an-animation)
-     * [`https://drafts.csswg.org/web-animations-1/#pause-an-animation`](https://drafts.csswg.org/web-animations-1/#pause-an-animation)
-     * [`https://drafts.csswg.org/web-animations-1/#start-delay`](https://drafts.csswg.org/web-animations-1/#start-delay)
-     * [`https://drafts.csswg.org/web-animations-1/#fill-mode`](https://drafts.csswg.org/web-animations-1/#fill-mode)
-     * [`https://drafts.csswg.org/web-animations-1/#composite-operation`](https://drafts.csswg.org/web-animations-1/#composite-operation)
-     * [`https://drafts.csswg.org/web-animations-1/#unresolved`](https://drafts.csswg.org/web-animations-1/#unresolved)
-     * [`https://drafts.csswg.org/web-animations-1/#active-duration`](https://drafts.csswg.org/web-animations-1/#active-duration)
-     * [`https://drafts.csswg.org/web-animations-1/#current-iteration`](https://drafts.csswg.org/web-animations-1/#current-iteration)
-     * [`https://drafts.csswg.org/web-animations-1/#iteration-start`](https://drafts.csswg.org/web-animations-1/#iteration-start)
-     * [`https://drafts.csswg.org/web-animations-1/#active-time`](https://drafts.csswg.org/web-animations-1/#active-time)
-- Broken external links:
-     * [`https://drafts.csswg.org/web-animations-1/#target-effect`](https://drafts.csswg.org/web-animations-1/#target-effect)
-     * [`https://drafts.csswg.org/web-animations-1/#before-phase`](https://drafts.csswg.org/web-animations-1/#before-phase)
-     * [`https://drafts.csswg.org/web-animations-1/#idle-phase`](https://drafts.csswg.org/web-animations-1/#idle-phase)
-     * [`https://drafts.csswg.org/web-animations-1/#current-time`](https://drafts.csswg.org/web-animations-1/#current-time)
-     * [`https://drafts.csswg.org/web-animations-1/#after-phase`](https://drafts.csswg.org/web-animations-1/#after-phase)
-     * [`https://drafts.csswg.org/web-animations-1/#target-effect-end`](https://drafts.csswg.org/web-animations-1/#target-effect-end)
-     * [`https://drafts.csswg.org/web-animations-1/#sampling`](https://drafts.csswg.org/web-animations-1/#sampling)
-     * [`https://drafts.csswg.org/web-animations-1/#pending-play-state`](https://drafts.csswg.org/web-animations-1/#pending-play-state)
-     * [`https://drafts.csswg.org/web-animations-1/#active-phase`](https://drafts.csswg.org/web-animations-1/#active-phase)
-     * [`https://drafts.csswg.org/css-values-4/#css-identifier`](https://drafts.csswg.org/css-values-4/#css-identifier)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-- [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- [Web Animations](https://drafts.csswg.org/web-animations-1/)
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Backgrounds and Borders Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -3817,7 +4019,6 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
@@ -3878,38 +4079,6 @@ Informative references to this spec from:
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Will Change Module Level 1](https://drafts.csswg.org/css-will-change/)
 - [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/)
-
-
-### CSS Backgrounds and Borders Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled URL: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Crawled version: 8 February 2021
-- Editor's Draft: [https://drafts.csswg.org/css-backgrounds-4/](https://drafts.csswg.org/css-backgrounds-4/)
-- Shortname: css-backgrounds-4
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-background/`](https://www.w3.org/TR/css3-background/)
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/)
-- Broken external links:
-     * [`https://www.w3.org/TR/css3-transitions/#animtype-color`](https://www.w3.org/TR/css3-transitions/#animtype-color)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
-- [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Basic User Interface Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -4024,11 +4193,9 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
@@ -4150,7 +4317,6 @@ Normative references to this spec from:
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
@@ -4166,7 +4332,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -4225,14 +4390,11 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
@@ -4323,6 +4485,8 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
@@ -4373,6 +4537,8 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
@@ -4428,6 +4594,8 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
@@ -4446,7 +4614,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -4462,11 +4629,9 @@ Normative references to this spec from:
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
@@ -4478,7 +4643,6 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -4594,14 +4758,12 @@ Normative references to this spec from:
 
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 5](https://drafts.csswg.org/css-color-5/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
@@ -4609,7 +4771,6 @@ Normative references to this spec from:
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -4665,7 +4826,6 @@ This specification looks good!
 Normative references to this spec from:
 
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
@@ -4712,7 +4872,6 @@ Normative references to this spec from:
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
@@ -4893,6 +5052,8 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - External links to private terms:
      * [`https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag`](https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -4901,8 +5062,6 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -4910,7 +5069,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
@@ -4940,6 +5098,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
 - Broken external links:
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
 
@@ -5032,14 +5191,12 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -5054,7 +5211,6 @@ Normative references to this spec from:
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -5087,7 +5243,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 
 
 ### CSS Easing Functions Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
@@ -5111,8 +5266,6 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -5124,28 +5277,7 @@ Informative references to this spec from:
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 
 
-### CSS Environment Variables Module Level 1 {data-spec=true data-missingDfns=true data-ok=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Crawled URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Crawled version: 17 May 2021
-- Editor's Draft: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Shortname: css-env-1
-
-#### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-### CSS Exclusions Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true}
+### CSS Exclusions Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -5165,13 +5297,14 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- Broken external links:
+     * [`https://www.w3.org/TR/css-shapes/#20120503`](https://www.w3.org/TR/css-shapes/#20120503)
 
 #### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [Proposals for the future of CSS Paged Media](https://drafts.csswg.org/css-page-4/)
 
 Informative references to this spec from:
@@ -5179,27 +5312,6 @@ Informative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-
-
-### CSS Extensions {data-spec=true data-missingDfns=true data-ok=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
-- Crawled URL: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
-- Crawled version: 26 August 2020
-- Editor's Draft: [https://drafts.csswg.org/css-extensions-1/](https://drafts.csswg.org/css-extensions-1/)
-- Shortname: css-extensions-1
-
-#### Potential issue(s) {.anomalies}
-
-This specification looks good!
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Fill and Stroke Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
@@ -5318,6 +5430,7 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#at-font-face-rule`](https://drafts.csswg.org/css-fonts-5/#at-font-face-rule)
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
@@ -5372,6 +5485,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-large`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-large)
      * [`https://html.spec.whatwg.org/#font`](https://html.spec.whatwg.org/#font)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
@@ -5383,7 +5497,6 @@ Normative references to this spec from:
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -5413,40 +5526,6 @@ Informative references to this spec from:
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
 - [Local Font Access API](https://wicg.github.io/local-font-access/)
-
-
-### CSS Fonts Module Level 5 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
-- Crawled URL: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
-- Crawled version: 4 August 2021
-- Editor's Draft: [https://drafts.csswg.org/css-fonts-5/](https://drafts.csswg.org/css-fonts-5/)
-- Shortname: css-fonts-5
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-     * [`https://www.w3.org/TR/css-syntax-3/`](https://www.w3.org/TR/css-syntax-3/)
-     * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
-     * [`https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/`](https://www.w3.org/TR/2021/WD-css-fonts-5-20210629/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
-     * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
-     * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
-- External links that use a dated URL:
-     * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Fragmentation Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -5496,7 +5575,6 @@ Normative references to this spec from:
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
@@ -5560,7 +5638,6 @@ Normative references to this spec from:
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -5624,36 +5701,9 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Page Floats](https://drafts.csswg.org/css-page-floats/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
-
-
-### CSS Generated Content for Paged Media Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
-- Crawled URL: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
-- Crawled version: 18 September 2020
-- Editor's Draft: [https://drafts.csswg.org/css-gcpm-4/](https://drafts.csswg.org/css-gcpm-4/)
-- Shortname: css-gcpm-4
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Generated Content Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -5683,7 +5733,6 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -5735,11 +5784,9 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -5756,35 +5803,6 @@ Informative references to this spec from:
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/)
-
-
-### CSS Grid Layout Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Crawled URL: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Crawled version: 21 February 2021
-- Editor's Draft: [https://drafts.csswg.org/css-grid-3/](https://drafts.csswg.org/css-grid-3/)
-- Shortname: css-grid-3
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/css-grid-2/#computed-track-list`](https://drafts.csswg.org/css-grid-2/#computed-track-list)
-- External links that neither target definitions nor headings:
-     * [`https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order`](https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Images Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -5846,7 +5864,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/)
@@ -5943,6 +5960,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-text-3/#hang`](https://drafts.csswg.org/css-text-3/#hang)
      * [`https://drafts.csswg.org/css-text-3/#word-separator`](https://drafts.csswg.org/css-text-3/#word-separator)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://html.spec.whatwg.org/#textmetrics`](https://html.spec.whatwg.org/#textmetrics)
 
 #### Known dependencies on this specification {.dependencies}
@@ -5953,7 +5971,6 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
@@ -5997,6 +6014,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
      * [`https://www.w3.org/TR/css-align-3/`](https://www.w3.org/TR/css-align-3/)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-display`](https://drafts.csswg.org/css-shapes-2/#valdef-shape-inside-display)
      * [`https://html.spec.whatwg.org/#worklet`](https://html.spec.whatwg.org/#worklet)
      * [`https://html.spec.whatwg.org/#worklet-global-scope-type`](https://html.spec.whatwg.org/#worklet-global-scope-type)
      * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
@@ -6146,7 +6164,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 
 
 ### CSS Masking Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -6177,6 +6194,9 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area`](https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area)
      * [`https://drafts.csswg.org/css-backgrounds-3/#border-image-area`](https://drafts.csswg.org/css-backgrounds-3/#border-image-area)
 - Broken external links:
+     * [`https://www.w3.org/TR/css-shapes/#shapes-from-box-values`](https://www.w3.org/TR/css-shapes/#shapes-from-box-values)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
@@ -6205,37 +6225,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
-
-
-### CSS Mobile Text Size Adjustment Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
-- Crawled URL: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
-- Crawled version: 21 February 2021
-- Editor's Draft: [https://drafts.csswg.org/css-size-adjust-1/](https://drafts.csswg.org/css-size-adjust-1/)
-- Shortname: css-size-adjust-1
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [Compatibility Standard](https://compat.spec.whatwg.org/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Multi-column Layout Module Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -6272,7 +6262,6 @@ Normative references to this spec from:
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -6286,33 +6275,6 @@ Informative references to this spec from:
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
-
-
-### CSS Multi-column Layout Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
-- Crawled URL: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
-- Crawled version: 14 March 2020
-- Editor's Draft: [https://drafts.csswg.org/css-multicol-2/](https://drafts.csswg.org/css-multicol-2/)
-- Shortname: css-multicol-2
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Namespaces Module Level 3 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -6345,32 +6307,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
-
-
-### CSS Nesting Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled version: 17 June 2021
-- Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Shortname: css-nesting-1
-
-#### Potential issue(s) {.anomalies}
-
-- Unknown WebIDL names used: `CSSOMString`
-- Missing references for links: 
-     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules`](https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules)
-     * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
 
 
 ### CSS Object Model (CSSOM) {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -6418,6 +6354,8 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#browsing-context-container`](https://html.spec.whatwg.org/#browsing-context-container)
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
+     * [`https://drafts.csswg.org/css-nesting-1/#dom-cssstylerule-cssrules`](https://drafts.csswg.org/css-nesting-1/#dom-cssstylerule-cssrules)
+     * [`https://www.w3.org/TR/css-fonts-5/#descdef-font-face-font-size`](https://www.w3.org/TR/css-fonts-5/#descdef-font-face-font-size)
      * [`https://www.w3.org/TR/css-color-3/#alphavalue-def`](https://www.w3.org/TR/css-color-3/#alphavalue-def)
 
 #### Known dependencies on this specification {.dependencies}
@@ -6427,7 +6365,6 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
@@ -6444,7 +6381,6 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Parser API](https://wicg.github.io/css-parser-api/)
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
@@ -6511,6 +6447,8 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll`](https://drafts.csswg.org/cssom-view-1/#concept-instant-scroll)
      * [`https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll`](https://drafts.csswg.org/cssom-view-1/#concept-smooth-scroll)
 - Broken external links:
+     * [`https://www.w3.org/TR/css-backgrounds/#box-shadow`](https://www.w3.org/TR/css-backgrounds/#box-shadow)
+     * [`https://drafts.csswg.org/css-backgrounds-4/#background-painting-area`](https://drafts.csswg.org/css-backgrounds-4/#background-painting-area)
      * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
      * [`https://html.spec.whatwg.org/#html-vs-xhtml`](https://html.spec.whatwg.org/#html-vs-xhtml)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
@@ -6698,6 +6636,9 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area`](https://drafts.csswg.org/css-backgrounds-3/#background-positioning-area)
 - External links that neither target definitions nor headings:
      * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-backgrounds-4/#background-painting-area`](https://drafts.csswg.org/css-backgrounds-4/#background-painting-area)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2013/WD-css3-page-20130314/`](https://www.w3.org/TR/2013/WD-css3-page-20130314/)
 
@@ -6726,7 +6667,6 @@ Informative references to this spec from:
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
@@ -6873,6 +6813,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier`](https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier)
 - Broken external links:
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
@@ -7000,8 +6941,6 @@ Normative references to this spec from:
 
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 
@@ -7140,6 +7079,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#custom-element`](https://html.spec.whatwg.org/#custom-element)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
+     * [`https://drafts.csswg.org/css-fonts-5/#at-font-face-rule`](https://drafts.csswg.org/css-fonts-5/#at-font-face-rule)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 
 #### Known dependencies on this specification {.dependencies}
@@ -7155,28 +7095,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
-
-No informative reference to this spec from other specs.
-
-
-### CSS Scoping Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Crawled URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Crawled version: 26 July 2021
-- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Shortname: css-scoping-2
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-scoping-1/`](https://www.w3.org/TR/css-scoping-1/)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -7360,7 +7278,6 @@ Normative references to this spec from:
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -7368,41 +7285,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-
-
-### CSS Shapes Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled URL: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Crawled version: 14 July 2021
-- Editor's Draft: [https://drafts.csswg.org/css-shapes-2/](https://drafts.csswg.org/css-shapes-2/)
-- Shortname: css-shapes-2
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-shapes/`](https://www.w3.org/TR/css-shapes/)
-     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
-     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- External links to private terms:
-     * [`https://drafts.csswg.org/css-shapes-1/#reference-box`](https://drafts.csswg.org/css-shapes-1/#reference-box)
-     * [`https://www.w3.org/TR/css3-exclusions/#wrapping-context`](https://www.w3.org/TR/css3-exclusions/#wrapping-context)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
-
-Informative references to this spec from:
-
-- [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 
 
 ### CSS Spatial Navigation Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -7553,6 +7435,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
+     * [`https://drafts.csswg.org/css-fonts-5/#at-font-face-rule`](https://drafts.csswg.org/css-fonts-5/#at-font-face-rule)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/selectors-api/`](https://www.w3.org/TR/selectors-api/)
 
@@ -7572,15 +7455,12 @@ Normative references to this spec from:
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
@@ -7589,7 +7469,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
@@ -7737,6 +7616,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-ruby-1/#autohide`](https://www.w3.org/TR/css-ruby-1/#autohide)
 - Broken external links:
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/1998/REC-CSS2-19980512`](https://www.w3.org/TR/1998/REC-CSS2-19980512)
 
@@ -7747,7 +7627,6 @@ Normative references to this spec from:
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -7806,7 +7685,6 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
@@ -7861,16 +7739,15 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-text-3/#other-space-separators`](https://drafts.csswg.org/css-text-3/#other-space-separators)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 
 #### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -7928,7 +7805,6 @@ Normative references to this spec from:
 - [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/)
@@ -7989,7 +7865,6 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 
 
@@ -8055,7 +7930,6 @@ Normative references to this spec from:
 Informative references to this spec from:
 
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
@@ -8135,8 +8009,16 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#attr-style`](https://html.spec.whatwg.org/#attr-style)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/css-animations-2/#propdef-animation-composition`](https://drafts.csswg.org/css-animations-2/#propdef-animation-composition)
+     * [`https://drafts.csswg.org/css-multicol-2/#propdef-column-span`](https://drafts.csswg.org/css-multicol-2/#propdef-column-span)
+     * [`https://drafts.csswg.org/css-gcpm-4/#propdef-copy-into`](https://drafts.csswg.org/css-gcpm-4/#propdef-copy-into)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
+     * [`https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside)
+     * [`https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding)
+     * [`https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust`](https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -8203,6 +8085,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#dynamic-changes-to-base-urls`](https://html.spec.whatwg.org/#dynamic-changes-to-base-urls)
      * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
      * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2013/CR-css3-values-20130730/`](https://www.w3.org/TR/2013/CR-css3-values-20130730/)
@@ -8235,17 +8118,13 @@ Normative references to this spec from:
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
@@ -8253,7 +8132,6 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/)
@@ -8270,7 +8148,6 @@ Normative references to this spec from:
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/)
@@ -8330,6 +8207,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#dynamic-changes-to-base-urls`](https://html.spec.whatwg.org/#dynamic-changes-to-base-urls)
      * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
      * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
 
 #### Known dependencies on this specification {.dependencies}
@@ -8341,9 +8219,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
-- [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -8364,21 +8240,16 @@ Normative references to this spec from:
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
 - [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
-- [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/)
@@ -8387,9 +8258,7 @@ Normative references to this spec from:
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
 - [CSS Logical Properties and Values Level 1](https://drafts.csswg.org/css-logical-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/)
 - [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/)
@@ -8404,13 +8273,11 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -8519,7 +8386,6 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
@@ -8573,7 +8439,6 @@ Informative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/)
 
 
 ### CSSOM View Module {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-xrefs=true}
@@ -8686,6 +8551,8 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-number`](https://www.w3.org/TR/css-transitions-1/#animtype-number)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list`](https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list)
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
@@ -8840,6 +8707,8 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-values-3/#relative-length`](https://drafts.csswg.org/css-values-3/#relative-length)
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
      * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -8887,6 +8756,9 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
      * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
      * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
+- Broken external links:
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-extensions-1/#typedef-extension-name`](https://drafts.csswg.org/css-extensions-1/#typedef-extension-name)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -9076,6 +8948,8 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/web-animations/#timeline-after-phase`](https://w3c.github.io/web-animations/#timeline-after-phase)
      * [`https://w3c.github.io/web-animations/#timeline-active-phase`](https://w3c.github.io/web-animations/#timeline-active-phase)
      * [`https://w3c.github.io/web-animations/#duration`](https://w3c.github.io/web-animations/#duration)
+     * [`https://drafts.csswg.org/css-animations-2/#propdef-animation-timeline`](https://drafts.csswg.org/css-animations-2/#propdef-animation-timeline)
+     * [`https://drafts.csswg.org/css-animations-2/#typedef-timeline-name`](https://drafts.csswg.org/css-animations-2/#typedef-timeline-name)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
@@ -9171,16 +9045,13 @@ Normative references to this spec from:
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/)
-- [CSS Extensions](https://drafts.csswg.org/css-extensions-1/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -9230,7 +9101,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate`](https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate)
      * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
      * [`https://drafts.csswg.org/css-easing-1/#before-flag`](https://drafts.csswg.org/css-easing-1/#before-flag)
-     * [`https://drafts.csswg.org/css-animations-2/#owning-element`](https://drafts.csswg.org/css-animations-2/#owning-element)
      * [`https://drafts.csswg.org/css-transitions-2/#owning-element`](https://drafts.csswg.org/css-transitions-2/#owning-element)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
 - External links that neither target definitions nor headings:
@@ -9260,13 +9130,15 @@ Informative references to this spec from:
      * [`https://w3c.github.io/hr-time/#time-origin`](https://w3c.github.io/hr-time/#time-origin)
      * [`https://w3c.github.io/hr-time/#domhighrestimestamp`](https://w3c.github.io/hr-time/#domhighrestimestamp)
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-animations-2/#owning-element`](https://drafts.csswg.org/css-animations-2/#owning-element)
+     * [`https://drafts.csswg.org/css-animations-2/#cssanimation`](https://drafts.csswg.org/css-animations-2/#cssanimation)
 
 #### Known dependencies on this specification {.dependencies}
 
 Normative references to this spec from:
 
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
 - [CSS Fill and Stroke Module Level 3](https://drafts.fxtf.org/fill-stroke/)
 - [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/)
@@ -10955,7 +10827,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Crawled URL: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
-- Crawled version: 20 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://w3c.github.io/webcodecs/](https://w3c.github.io/webcodecs/)
 - Latest published version: [https://www.w3.org/TR/webcodecs/](https://www.w3.org/TR/webcodecs/)
 - Shortname: webcodecs
@@ -11595,6 +11467,10 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/web-animations/#animation-interpolation`](https://drafts.csswg.org/web-animations/#animation-interpolation)
      * [`https://drafts.csswg.org/web-animations/#discrete-animation-type-section`](https://drafts.csswg.org/web-animations/#discrete-animation-type-section)
      * [`https://drafts.csswg.org/web-animations/#real-number-animation-type`](https://drafts.csswg.org/web-animations/#real-number-animation-type)
+     * [`https://www.w3.org/TR/css-shapes/#shape-outside-property`](https://www.w3.org/TR/css-shapes/#shape-outside-property)
+     * [`https://www.w3.org/TR/css-shapes/#basic-shape-interpolation`](https://www.w3.org/TR/css-shapes/#basic-shape-interpolation)
+     * [`https://www.w3.org/TR/css-shapes/#shape-image-threshold-property`](https://www.w3.org/TR/css-shapes/#shape-image-threshold-property)
+     * [`https://www.w3.org/TR/css-shapes/#shape-margin-property`](https://www.w3.org/TR/css-shapes/#shape-margin-property)
      * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
      * [`https://www.w3.org/TR/css-color-3/#svg-color`](https://www.w3.org/TR/css-color-3/#svg-color)
      * [`https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act`](https://www.w3.org/TR/css-selectors-3/#the-user-action-pseudo-classes-hover-act)
@@ -11644,7 +11520,6 @@ Normative references to this spec from:
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
-- [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -12353,6 +12228,7 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier`](https://drafts.csswg.org/css-syntax-3/#check-if-three-code-points-would-start-an-identifier)
 - Broken external links:
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
@@ -12395,8 +12271,16 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#attr-style`](https://html.spec.whatwg.org/#attr-style)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://drafts.csswg.org/css-animations-2/#propdef-animation-composition`](https://drafts.csswg.org/css-animations-2/#propdef-animation-composition)
+     * [`https://drafts.csswg.org/css-multicol-2/#propdef-column-span`](https://drafts.csswg.org/css-multicol-2/#propdef-column-span)
+     * [`https://drafts.csswg.org/css-gcpm-4/#propdef-copy-into`](https://drafts.csswg.org/css-gcpm-4/#propdef-copy-into)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
+     * [`https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size`](https://drafts.csswg.org/css-fonts-5/#descdef-font-face-font-size)
+     * [`https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust`](https://drafts.csswg.org/css-fonts-5/#propdef-font-size-adjust)
+     * [`https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-inside)
+     * [`https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding`](https://drafts.csswg.org/css-shapes-2/#propdef-shape-padding)
+     * [`https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust`](https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -16025,7 +15909,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Crawled URL: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
-- Crawled version: 19 August 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://w3c.github.io/performance-timeline/](https://w3c.github.io/performance-timeline/)
 - Latest published version: [https://www.w3.org/TR/performance-timeline-2/](https://www.w3.org/TR/performance-timeline-2/)
 - Shortname: performance-timeline-2
@@ -19149,7 +19033,6 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
@@ -19159,7 +19042,6 @@ Normative references to this spec from:
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Painting API Level 1](https://drafts.css-houdini.org/css-paint-api-1/)
 - [CSS Parser API](https://wicg.github.io/css-parser-api/)
@@ -19851,7 +19733,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Crawled URL: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
-- Crawled version: 12 July 2021
+- Crawled version: 23 August 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-svc/](https://w3c.github.io/webrtc-svc/)
 - Latest published version: [https://www.w3.org/TR/webrtc-svc/](https://www.w3.org/TR/webrtc-svc/)
 - Shortname: webrtc-svc
@@ -20206,6 +20088,7 @@ No informative reference to this spec from other specs.
 - External links that neither target definitions nor headings:
      * [`https://drafts.csswg.org/css-flexbox-1/#propdef-order`](https://drafts.csswg.org/css-flexbox-1/#propdef-order)
 - Broken external links:
+     * [`https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust`](https://drafts.csswg.org/css-size-adjust-1/#propdef-text-size-adjust)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
@@ -20355,13 +20238,11 @@ Normative references to this spec from:
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
-- [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/)
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/)
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
-- [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/)
