@@ -100,7 +100,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Crawled URL: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
-- Crawled version: 18 August 2021
+- Crawled version: 24 August 2021
 - Editor's Draft: [https://tc39.es/ecma262/multipage/](https://tc39.es/ecma262/multipage/)
 - Shortname: ecmascript
 
@@ -14929,7 +14929,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Crawled URL: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
-- Crawled version: 11 August 2021
+- Crawled version: 24 August 2021
 - Editor's Draft: [https://w3c.github.io/manifest/](https://w3c.github.io/manifest/)
 - Latest published version: [https://www.w3.org/TR/appmanifest/](https://www.w3.org/TR/appmanifest/)
 - Shortname: appmanifest
@@ -18599,7 +18599,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
 - Crawled URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
-- Crawled version: 23 August 2021
+- Crawled version: 24 August 2021
 - Editor's Draft: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
 - Shortname: uuid
 
