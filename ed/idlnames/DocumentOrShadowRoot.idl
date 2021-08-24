@@ -27,8 +27,3 @@ partial interface mixin DocumentOrShadowRoot {
 partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element ? pointerLockElement;
 };
-
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
-partial interface mixin DocumentOrShadowRoot {
-    sequence<Animation> getAnimations();
-};

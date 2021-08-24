@@ -5276,11 +5276,29 @@
         "partial": false
       },
       "GPUBlendComponent": {
-        "fragment": "dictionary GPUBlendComponent {\n    GPUBlendFactor srcFactor = \"one\";\n    GPUBlendFactor dstFactor = \"zero\";\n    GPUBlendOperation operation = \"add\";\n};",
+        "fragment": "dictionary GPUBlendComponent {\n    GPUBlendOperation operation = \"add\";\n    GPUBlendFactor srcFactor = \"one\";\n    GPUBlendFactor dstFactor = \"zero\";\n};",
         "type": "dictionary",
         "name": "GPUBlendComponent",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "operation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBlendOperation"
+            },
+            "default": {
+              "type": "string",
+              "value": "add"
+            },
+            "required": false
+          },
           {
             "type": "field",
             "name": "srcFactor",
@@ -5314,24 +5332,6 @@
             "default": {
               "type": "string",
               "value": "zero"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "operation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBlendOperation"
-            },
-            "default": {
-              "type": "string",
-              "value": "add"
             },
             "required": false
           }
@@ -11615,8 +11615,8 @@
       ],
       "GPUColorWrite": [],
       "GPUBlendComponent": [
-        "GPUBlendFactor",
-        "GPUBlendOperation"
+        "GPUBlendOperation",
+        "GPUBlendFactor"
       ],
       "GPUDepthStencilState": [
         "GPUTextureFormat",
