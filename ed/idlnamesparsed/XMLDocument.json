@@ -187,6 +187,13 @@
           "url": "https://www.w3.org/TR/SVG2/"
         },
         "fragment": "partial interface Document {\n  readonly attribute SVGSVGElement? rootElement;\n};"
+      },
+      {
+        "spec": {
+          "title": "Web Animations",
+          "url": "https://www.w3.org/TR/web-animations-1/"
+        },
+        "fragment": "partial interface Document {\n    readonly attribute DocumentTimeline timeline;\n};"
       }
     ],
     "inheritance": {
@@ -276,6 +283,13 @@
               "url": "https://www.w3.org/TR/pointerlock-2/"
             },
             "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element ? pointerLockElement;\n};"
+          },
+          {
+            "spec": {
+              "title": "Web Animations",
+              "url": "https://www.w3.org/TR/web-animations-1/"
+            },
+            "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};"
           }
         ],
         "inheritance": null,

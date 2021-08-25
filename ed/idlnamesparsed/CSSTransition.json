@@ -9,5 +9,32 @@
     "href": "https://drafts.csswg.org/css-transitions-2/#csstransition"
   },
   "extended": [],
+  "inheritance": {
+    "name": "Animation",
+    "defined": {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "[Exposed=Window]\ninterface Animation : EventTarget {\n    constructor(optional AnimationEffect? effect = null,\n                optional AnimationTimeline? timeline);\n             attribute DOMString                id;\n             attribute AnimationEffect?         effect;\n             attribute AnimationTimeline?       timeline;\n             attribute double?                  startTime;\n             attribute double?                  currentTime;\n             attribute double                   playbackRate;\n    readonly attribute AnimationPlayState       playState;\n    readonly attribute AnimationReplaceState    replaceState;\n    readonly attribute boolean                  pending;\n    readonly attribute Promise<Animation>       ready;\n    readonly attribute Promise<Animation>       finished;\n             attribute EventHandler             onfinish;\n             attribute EventHandler             oncancel;\n             attribute EventHandler             onremove;\n    undefined cancel();\n    undefined finish();\n    undefined play();\n    undefined pause();\n    undefined updatePlaybackRate(double playbackRate);\n    undefined reverse();\n    undefined persist();\n    undefined commitStyles();\n};",
+      "href": "https://drafts.csswg.org/web-animations-1/#animation"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
   "includes": []
 }
