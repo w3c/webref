@@ -175,7 +175,6 @@
   <h4>Known dependencies on this specification</h4>
   <p>Normative references to this spec from:</p>
   <ul>
-  <li><a href="https://w3c.github.io/battery/">Battery Status API</a></li>
   <li><a href="https://w3c.github.io/clipboard-apis/">Clipboard API and events</a></li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a></li>
   <li><a href="https://wicg.github.io/is-input-pending/">Early detection of input events</a></li>
@@ -7589,7 +7588,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/cssom-1/" class="uri">https://www.w3.org/TR/cssom-1/</a></li>
   <li>Crawled URL: <a href="https://drafts.csswg.org/cssom/" class="uri">https://drafts.csswg.org/cssom/</a></li>
-  <li>Crawled version: 24 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://drafts.csswg.org/cssom/" class="uri">https://drafts.csswg.org/cssom/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/cssom-1/" class="uri">https://www.w3.org/TR/cssom-1/</a></li>
   <li>Shortname: cssom-1</li>
@@ -7620,6 +7619,7 @@
   <li><a href="https://html.spec.whatwg.org/#the-style-element"><code>https://html.spec.whatwg.org/#the-style-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#document-base-url"><code>https://html.spec.whatwg.org/#document-base-url</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#xml-parser"><code>https://html.spec.whatwg.org/#xml-parser</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts"><code>https://html.spec.whatwg.org/#a-style-sheet-that-is-blocking-scripts</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-loop"><code>https://html.spec.whatwg.org/#event-loop</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#cereactions"><code>https://html.spec.whatwg.org/#cereactions</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#html-elements"><code>https://html.spec.whatwg.org/#html-elements</code></a></li>
@@ -11241,14 +11241,14 @@
   </ul>
   </section>
   </section>
-  <section id="battery-status-api" class="level3" data-spec="true" data-anomaly="true" data-missingDfns="true" data-inconsistentRef="true" data-xrefs="true">
+  <section id="battery-status-api" class="level3" data-spec="true" data-anomaly="true" data-missingDfns="true" data-xrefs="true">
   <h3>Battery Status API</h3>
   <section id="spec-info-211" class="level4 info">
   <h4>Spec info</h4>
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/battery-status/" class="uri">https://www.w3.org/TR/battery-status/</a></li>
   <li>Crawled URL: <a href="https://w3c.github.io/battery/" class="uri">https://w3c.github.io/battery/</a></li>
-  <li>Crawled version: 17 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://w3c.github.io/battery/" class="uri">https://w3c.github.io/battery/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/battery-status/" class="uri">https://www.w3.org/TR/battery-status/</a></li>
   <li>Shortname: battery-status</li>
@@ -11257,31 +11257,24 @@
   <section id="potential-issues-211" class="level4 anomalies">
   <h4>Potential issue(s)</h4>
   <ul>
-  <li>Inconsistent references for links:
-  <ul>
-  <li><a href="https://w3c.github.io/webappsec-permissions-policy/"><code>https://w3c.github.io/webappsec-permissions-policy/</code></a>, related reference &quot;PERMISSIONS-POLICY&quot; uses URL <a href="https://www.w3.org/TR/permissions-policy-1/"><code>https://www.w3.org/TR/permissions-policy-1/</code></a></li>
-  </ul></li>
   <li>Broken external links:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#navigator"><code>https://html.spec.whatwg.org/#navigator</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-relevant-realm"><code>https://html.spec.whatwg.org/#concept-relevant-realm</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#allowed-to-use"><code>https://html.spec.whatwg.org/#allowed-to-use</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#browsing-context"><code>https://html.spec.whatwg.org/#browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#active-document"><code>https://html.spec.whatwg.org/#active-document</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin"><code>https://html.spec.whatwg.org/#concept-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#same-origin-domain"><code>https://html.spec.whatwg.org/#same-origin-domain</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#current-settings-object"><code>https://html.spec.whatwg.org/#current-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#queue-a-task"><code>https://html.spec.whatwg.org/#queue-a-task</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-handlers"><code>https://html.spec.whatwg.org/#event-handlers</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-handler-event-type"><code>https://html.spec.whatwg.org/#event-handler-event-type</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#browsing-context"><code>https://html.spec.whatwg.org/#browsing-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-relevant-realm"><code>https://html.spec.whatwg.org/#concept-relevant-realm</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#relevant-settings-object"><code>https://html.spec.whatwg.org/#relevant-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#current-settings-object"><code>https://html.spec.whatwg.org/#current-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#top-level-browsing-context"><code>https://html.spec.whatwg.org/#top-level-browsing-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#incumbent-settings-object"><code>https://html.spec.whatwg.org/#incumbent-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#active-document"><code>https://html.spec.whatwg.org/#active-document</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-origin"><code>https://html.spec.whatwg.org/#concept-origin</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#same-origin-domain"><code>https://html.spec.whatwg.org/#same-origin-domain</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#allowed-to-use"><code>https://html.spec.whatwg.org/#allowed-to-use</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   </ul></li>
   </ul>
   </section>
@@ -12312,7 +12305,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webxr-ar-module-1/" class="uri">https://www.w3.org/TR/webxr-ar-module-1/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/webxr-ar-module/" class="uri">https://immersive-web.github.io/webxr-ar-module/</a></li>
-  <li>Crawled version: 19 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/webxr-ar-module/" class="uri">https://immersive-web.github.io/webxr-ar-module/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webxr-ar-module-1/" class="uri">https://www.w3.org/TR/webxr-ar-module-1/</a></li>
   <li>Shortname: webxr-ar-module-1</li>
@@ -12408,7 +12401,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webxr/" class="uri">https://www.w3.org/TR/webxr/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/webxr/" class="uri">https://immersive-web.github.io/webxr/</a></li>
-  <li>Crawled version: 24 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/webxr/" class="uri">https://immersive-web.github.io/webxr/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webxr/" class="uri">https://www.w3.org/TR/webxr/</a></li>
   <li>Shortname: webxr</li>
@@ -12549,7 +12542,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webxr-gamepads-module-1/" class="uri">https://www.w3.org/TR/webxr-gamepads-module-1/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/webxr-gamepads-module/" class="uri">https://immersive-web.github.io/webxr-gamepads-module/</a></li>
-  <li>Crawled version: 19 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/webxr-gamepads-module/" class="uri">https://immersive-web.github.io/webxr-gamepads-module/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webxr-gamepads-module-1/" class="uri">https://www.w3.org/TR/webxr-gamepads-module-1/</a></li>
   <li>Shortname: webxr-gamepads-module-1</li>
@@ -12591,7 +12584,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webxr-hand-input-1/" class="uri">https://www.w3.org/TR/webxr-hand-input-1/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/webxr-hand-input/" class="uri">https://immersive-web.github.io/webxr-hand-input/</a></li>
-  <li>Crawled version: 24 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/webxr-hand-input/" class="uri">https://immersive-web.github.io/webxr-hand-input/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webxr-hand-input-1/" class="uri">https://www.w3.org/TR/webxr-hand-input-1/</a></li>
   <li>Shortname: webxr-hand-input-1</li>
@@ -12693,7 +12686,7 @@
   <ul>
   <li>Initial URL: <a href="https://www.w3.org/TR/webxrlayers-1/" class="uri">https://www.w3.org/TR/webxrlayers-1/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
-  <li>Crawled version: 17 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/layers/" class="uri">https://immersive-web.github.io/layers/</a></li>
   <li>Latest published version: <a href="https://www.w3.org/TR/webxrlayers-1/" class="uri">https://www.w3.org/TR/webxrlayers-1/</a></li>
   <li>Shortname: webxrlayers-1</li>
@@ -24506,7 +24499,7 @@
   <ul>
   <li>Initial URL: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
   <li>Crawled URL: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
-  <li>Crawled version: 23 August 2021</li>
+  <li>Crawled version: 25 August 2021</li>
   <li>Editor's Draft: <a href="https://html.spec.whatwg.org/multipage/" class="uri">https://html.spec.whatwg.org/multipage/</a></li>
   <li>Shortname: html</li>
   </ul>
