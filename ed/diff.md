@@ -1,12 +1,12 @@
-% Diff between report from "August 25, 2021" and reference report from "August 25, 2021"
+% Diff between report from "August 26, 2021" and reference report from "August 25, 2021"
 % Reffy
-% August 25, 2021
+% August 26, 2021
 
-## Battery Status API
+## Scroll-linked Animations
 
-- Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
+- Initial URL: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
-- Inconsistent references for links: *DEL* https://w3c.github.io/webappsec-permissions-policy/
+- Editor's Draft: [https://drafts.csswg.org/scroll-animations-1/](https://drafts.csswg.org/scroll-animations-1/)
+- Missing references for links: *DEL* https://w3c.github.io/web-animations/
 
 
