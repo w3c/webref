@@ -9874,7 +9874,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Crawled URL: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
-- Crawled version: 29 June 2021
+- Crawled version: 26 August 2021
 - Editor's Draft: [https://w3c.github.io/screen-wake-lock/](https://w3c.github.io/screen-wake-lock/)
 - Latest published version: [https://www.w3.org/TR/screen-wake-lock/](https://www.w3.org/TR/screen-wake-lock/)
 - Shortname: screen-wake-lock
@@ -12930,7 +12930,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Crawled version: 11 August 2021
+- Crawled version: 26 August 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -12943,7 +12943,7 @@ Informative references to this spec from:
      * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
      * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "Permissions-Policy" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - External links to private terms:
      * [`https://storage.spec.whatwg.org/#bucket-mode`](https://storage.spec.whatwg.org/#bucket-mode)
      * [`https://w3c.github.io/webdriver/#dfn-extension-command-uri-template`](https://w3c.github.io/webdriver/#dfn-extension-command-uri-template)
@@ -12968,6 +12968,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
@@ -13930,6 +13932,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [Permissions](https://w3c.github.io/permissions/)
 - [WebHID API](https://wicg.github.io/webhid/)
 
 
@@ -15457,7 +15460,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Crawled URL: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
-- Crawled version: 07 May 2021
+- Crawled version: 26 August 2021
 - Editor's Draft: [https://w3c.github.io/payment-method-basic-card/](https://w3c.github.io/payment-method-basic-card/)
 - Latest published version: [https://www.w3.org/TR/payment-method-basic-card/](https://www.w3.org/TR/payment-method-basic-card/)
 - Shortname: payment-method-basic-card
@@ -17203,6 +17206,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#the-drag-data-item-kind`](https://html.spec.whatwg.org/#the-drag-data-item-kind)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#event-messageerror`](https://html.spec.whatwg.org/#event-messageerror)
+     * [`https://w3c.github.io/permissions/#boolean-permission-query-algorithm`](https://w3c.github.io/permissions/#boolean-permission-query-algorithm)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -18374,6 +18378,7 @@ No informative reference to this spec from other specs.
 - External links to private terms:
      * [`https://w3c.github.io/permissions/#create-a-permissionstatus`](https://w3c.github.io/permissions/#create-a-permissionstatus)
 - Broken external links:
+     * [`https://w3c.github.io/permissions/#boolean-permission-query-algorithm`](https://w3c.github.io/permissions/#boolean-permission-query-algorithm)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
 
 #### Known dependencies on this specification {.dependencies}
@@ -18382,7 +18387,6 @@ Normative references to this spec from:
 
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
-- [Permissions](https://w3c.github.io/permissions/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
 
@@ -18583,7 +18587,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
 - Crawled URL: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
-- Crawled version: 25 August 2021
+- Crawled version: 26 August 2021
 - Editor's Draft: [https://wicg.github.io/uuid/](https://wicg.github.io/uuid/)
 - Shortname: uuid
 
