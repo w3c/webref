@@ -13077,6 +13077,7 @@ Normative references to this spec from:
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation API](https://w3c.github.io/geolocation-api/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
+- [Keyboard Map](https://wicg.github.io/keyboard-map/)
 - [Media Capture and Streams](https://w3c.github.io/mediacapture-main/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
@@ -17566,13 +17567,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### Keyboard Map {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+### Keyboard Map {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
 - Crawled URL: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
-- Crawled version: 13 September 2019
+- Crawled version: 27 August 2021
 - Editor's Draft: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
 - Shortname: keyboard-map
 
@@ -17582,6 +17583,8 @@ No informative reference to this spec from other specs.
     * `Keyboard` also defined in [Keyboard Lock](https://wicg.github.io/keyboard-lock/)
 - Missing references for links: 
      * [`https://w3c.github.io/keyboard-lock/`](https://w3c.github.io/keyboard-lock/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
 - External links to private terms:
      * [`https://www.w3.org/TR/uievents/#dead-key`](https://www.w3.org/TR/uievents/#dead-key)
      * [`https://www.w3.org/TR/uievents-key/#key-attribute-value`](https://www.w3.org/TR/uievents-key/#key-attribute-value)
