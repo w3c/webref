@@ -1452,6 +1452,69 @@
       "definedIn": "dt"
     },
     {
+      "id": "curly-block",
+      "href": "https://drafts.csswg.org/css-syntax/#curly-block",
+      "linkingText": [
+        "{}-block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://drafts.csswg.org/css-syntax/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "square-block",
+      "href": "https://drafts.csswg.org/css-syntax/#square-block",
+      "linkingText": [
+        "[]-block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://drafts.csswg.org/css-syntax/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "paren-block",
+      "href": "https://drafts.csswg.org/css-syntax/#paren-block",
+      "linkingText": [
+        "()-block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://drafts.csswg.org/css-syntax/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "current-input-token",
       "href": "https://drafts.csswg.org/css-syntax/#current-input-token",
       "linkingText": [
@@ -1689,6 +1752,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "parse-a-style-blocks-contents",
+      "href": "https://drafts.csswg.org/css-syntax/#parse-a-style-blocks-contents",
+      "linkingText": [
+        "parse a style block’s contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-style-blocks-contents",
+        "href": "https://drafts.csswg.org/css-syntax/#parse-style-blocks-contents",
+        "title": "Parse a style block’s contents",
+        "number": "5.3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "parse-a-list-of-declarations",
       "href": "https://drafts.csswg.org/css-syntax/#parse-a-list-of-declarations",
       "linkingText": [
@@ -1703,7 +1785,7 @@
         "id": "parse-list-of-declarations",
         "href": "https://drafts.csswg.org/css-syntax/#parse-list-of-declarations",
         "title": "Parse a list of declarations",
-        "number": "5.3.7"
+        "number": "5.3.8"
       },
       "definedIn": "prose"
     },
@@ -1722,7 +1804,7 @@
         "id": "parse-component-value",
         "href": "https://drafts.csswg.org/css-syntax/#parse-component-value",
         "title": "Parse a component value",
-        "number": "5.3.8"
+        "number": "5.3.9"
       },
       "definedIn": "prose"
     },
@@ -1741,7 +1823,7 @@
         "id": "parse-list-of-component-values",
         "href": "https://drafts.csswg.org/css-syntax/#parse-list-of-component-values",
         "title": "Parse a list of component values",
-        "number": "5.3.9"
+        "number": "5.3.10"
       },
       "definedIn": "prose"
     },
@@ -1760,7 +1842,7 @@
         "id": "parse-comma-separated-list-of-component-values",
         "href": "https://drafts.csswg.org/css-syntax/#parse-comma-separated-list-of-component-values",
         "title": "Parse a comma-separated list of component values",
-        "number": "5.3.10"
+        "number": "5.3.11"
       },
       "definedIn": "prose"
     },
@@ -1822,6 +1904,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "consume-a-style-blocks-contents",
+      "href": "https://drafts.csswg.org/css-syntax/#consume-a-style-blocks-contents",
+      "linkingText": [
+        "consume a style block’s contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "consume-style-block",
+        "href": "https://drafts.csswg.org/css-syntax/#consume-style-block",
+        "title": "Consume a style block’s contents",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "consume-a-list-of-declarations",
       "href": "https://drafts.csswg.org/css-syntax/#consume-a-list-of-declarations",
       "linkingText": [
@@ -1836,7 +1937,7 @@
         "id": "consume-list-of-declarations",
         "href": "https://drafts.csswg.org/css-syntax/#consume-list-of-declarations",
         "title": "Consume a list of declarations",
-        "number": "5.4.4"
+        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -1855,7 +1956,7 @@
         "id": "consume-declaration",
         "href": "https://drafts.csswg.org/css-syntax/#consume-declaration",
         "title": "Consume a declaration",
-        "number": "5.4.5"
+        "number": "5.4.6"
       },
       "definedIn": "prose"
     },
@@ -1874,7 +1975,7 @@
         "id": "consume-component-value",
         "href": "https://drafts.csswg.org/css-syntax/#consume-component-value",
         "title": "Consume a component value",
-        "number": "5.4.6"
+        "number": "5.4.7"
       },
       "definedIn": "prose"
     },
@@ -1893,7 +1994,7 @@
         "id": "consume-simple-block",
         "href": "https://drafts.csswg.org/css-syntax/#consume-simple-block",
         "title": "Consume a simple block",
-        "number": "5.4.7"
+        "number": "5.4.8"
       },
       "definedIn": "prose"
     },
@@ -1912,7 +2013,7 @@
         "id": "consume-simple-block",
         "href": "https://drafts.csswg.org/css-syntax/#consume-simple-block",
         "title": "Consume a simple block",
-        "number": "5.4.7"
+        "number": "5.4.8"
       },
       "definedIn": "prose"
     },
@@ -1931,7 +2032,7 @@
         "id": "consume-function",
         "href": "https://drafts.csswg.org/css-syntax/#consume-function",
         "title": "Consume a function",
-        "number": "5.4.8"
+        "number": "5.4.9"
       },
       "definedIn": "prose"
     },
@@ -2141,6 +2242,25 @@
         "href": "https://drafts.csswg.org/css-syntax/#urange",
         "title": "The Unicode-Range microsyntax",
         "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-style-block",
+      "href": "https://drafts.csswg.org/css-syntax/#typedef-style-block",
+      "linkingText": [
+        "<style-block>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "declaration-rule-list",
+        "href": "https://drafts.csswg.org/css-syntax/#declaration-rule-list",
+        "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions",
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
