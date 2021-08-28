@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 27, 2021
+% August 28, 2021
 
 429 specifications were crawled in this report.
 
@@ -1827,7 +1827,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/) links to [`https://www.w3.org/TR/mediaqueries-5/`](https://www.w3.org/TR/mediaqueries-5/) but related reference "MEDIA-QUERIES-LEVEL-5" uses URL [`https://drafts.csswg.org/mediaqueries-5/`](https://drafts.csswg.org/mediaqueries-5/)
-- [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/) links to [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/) but related reference "FINGERPRINTING-GUIDANCE" uses URL [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/)
 - [Vibration API (Second Edition)](https://w3c.github.io/vibration/) links to [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but related reference "PAGE-VISIBILITY-2" uses URL [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/) links to:
     * [`https://w3c.github.io/hr-time/`](https://w3c.github.io/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
@@ -1877,7 +1876,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 334 inconsistent references for links found in 180 specifications
+=> 333 inconsistent references for links found in 179 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 

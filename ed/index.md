@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 27, 2021
+% August 28, 2021
 
 # Ecma International {#ecma_international}
 
@@ -492,7 +492,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Shortname: rfc7578
 
@@ -521,7 +521,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Shortname: rfc7239
 
@@ -581,7 +581,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Shortname: rfc8942
 
@@ -594,6 +594,7 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
+- [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 
 No informative reference to this spec from other specs.
 
@@ -954,7 +955,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Shortname: rfc2397
 
@@ -981,7 +982,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Shortname: rfc6454
 
@@ -1021,7 +1022,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Shortname: rfc6797
 
@@ -1054,7 +1055,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Shortname: rfc7034
 
@@ -1083,7 +1084,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
-- Crawled version: 27 August 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Shortname: rfc7469
 
@@ -11013,7 +11014,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 18 August 2021
+- Crawled version: 27 August 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -17571,7 +17572,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
 - Crawled URL: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
-- Crawled version: 8 March 2021
+- Crawled version: 13 September 2019
 - Editor's Draft: [https://wicg.github.io/keyboard-map/](https://wicg.github.io/keyboard-map/)
 - Shortname: keyboard-map
 
@@ -18537,13 +18538,13 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### User-Agent Client Hints {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+### User-Agent Client Hints {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Crawled URL: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
-- Crawled version: 30 June 2021
+- Crawled version: 27 August 2021
 - Editor's Draft: [https://wicg.github.io/ua-client-hints/](https://wicg.github.io/ua-client-hints/)
 - Shortname: ua-client-hints
 
@@ -18551,8 +18552,6 @@ No informative reference to this spec from other specs.
 
 - Missing references for links: 
      * [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/fingerprinting-guidance/`](https://w3c.github.io/fingerprinting-guidance/), related reference "FINGERPRINTING-GUIDANCE" uses URL [`https://www.w3.org/TR/fingerprinting-guidance/`](https://www.w3.org/TR/fingerprinting-guidance/)
 - External links to private terms:
      * [`https://w3c.github.io/fingerprinting-guidance/#dfn-passive-fingerprinting`](https://w3c.github.io/fingerprinting-guidance/#dfn-passive-fingerprinting)
      * [`https://w3c.github.io/fingerprinting-guidance/#dfn-active-fingerprinting`](https://w3c.github.io/fingerprinting-guidance/#dfn-active-fingerprinting)
