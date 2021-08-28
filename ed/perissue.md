@@ -258,11 +258,80 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 ## No definition for CSS properties
 
+- [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/):
+    * `margin-trim` with type `property`
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
     * `<feature-value-block>`
     * `<font-feature-value-type>`
+- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
+    * `margin-break` with type `property`
+- [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
+    * `<ratio>`
+    * `<attr-type>`
+    * `<min()>`
+    * `<max()>`
+    * `<clamp()>`
+    * `<round()>`
+    * `<mod()>`
+    * `<rem()>`
+    * `<sin()>`
+    * `<cos()>`
+    * `<tan()>`
+    * `<asin()>`
+    * `<acos()>`
+    * `<atan()>`
+    * `<atan2()>`
+    * `<pow()>`
+    * `<sqrt()>`
+    * `<hypot()>`
+    * `<log()>`
+    * `<exp()>`
+    * `<abs()>`
+    * `<sign()>`
+    * `<calc-constant>`
+- [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/):
+    * `cx` with type `property`
+    * `cy` with type `property`
+    * `r` with type `property`
+    * `rx` with type `property`
+    * `ry` with type `property`
+    * `x` with type `property`
+    * `y` with type `property`
+    * `vector-effect` with type `property`
+    * `d` with type `property`
+    * `inline-size` with type `property`
+    * `shape-inside` with type `property`
+    * `shape-subtract` with type `property`
+    * `shape-margin` with type `property`
+    * `text-anchor` with type `property`
+    * `fill` with type `property`
+    * `fill-rule` with type `property`
+    * `fill-opacity` with type `property`
+    * `stroke` with type `property`
+    * `stroke-opacity` with type `property`
+    * `stroke-width` with type `property`
+    * `stroke-linecap` with type `property`
+    * `stroke-linejoin` with type `property`
+    * `stroke-miterlimit` with type `property`
+    * `stroke-dasharray` with type `property`
+    * `stroke-dashoffset` with type `property`
+    * `marker-start` with type `property`
+    * `marker-mid` with type `property`
+    * `marker-end` with type `property`
+    * `marker` with type `property`
+    * `paint-order` with type `property`
+    * `color-interpolation` with type `property`
+    * `shape-rendering` with type `property`
+    * `text-rendering` with type `property`
+    * `image-rendering` with type `property`
+    * `pointer-events` with type `property`
+    * `stop-color` with type `property`
+    * `stop-opacity` with type `property`
+    * `<points>`
+    * `<dasharray>`
+    * `<marker-ref>`
 
-=> 2 properties without definition found in 1 specification
+=> 67 properties without definition found in 5 specifications
 
 
 ## No definition for IDL properties

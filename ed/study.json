@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-08-28T12:45:59.311Z",
+  "date": "2021-08-28T18:44:01.548Z",
   "stats": {
     "crawled": 429,
     "errors": 0,
@@ -5405,7 +5405,17 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
-          "css": [],
+          "css": [
+            {
+              "expected": {
+                "linkingText": [
+                  "margin-trim"
+                ],
+                "type": "property",
+                "for": []
+              }
+            }
+          ],
           "idl": []
         },
         "missingLinkRef": [
@@ -9584,7 +9594,17 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
-          "css": [],
+          "css": [
+            {
+              "expected": {
+                "linkingText": [
+                  "margin-break"
+                ],
+                "type": "property",
+                "for": []
+              }
+            }
+          ],
           "idl": []
         },
         "missingLinkRef": [
@@ -17196,7 +17216,192 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
-          "css": [],
+          "css": [
+            {
+              "expected": {
+                "linkingText": [
+                  "<ratio>"
+                ],
+                "value": "<number [0,∞]> [ / <number [0,∞]> ]?"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<attr-type>"
+                ],
+                "value": "string | url | ident | color | number | percentage | length | angle | time | frequency | flex | <dimension-unit>"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<min()>"
+                ],
+                "value": "min( <calc-sum># )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<max()>"
+                ],
+                "value": "max( <calc-sum># )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<clamp()>"
+                ],
+                "value": "clamp( <calc-sum>#{3} )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<round()>"
+                ],
+                "value": "round( <rounding-strategy>?, <calc-sum>, <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<mod()>"
+                ],
+                "value": "mod( <calc-sum>, <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<rem()>"
+                ],
+                "value": "rem( <calc-sum>, <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<sin()>"
+                ],
+                "value": "sin( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<cos()>"
+                ],
+                "value": "cos( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<tan()>"
+                ],
+                "value": "tan( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<asin()>"
+                ],
+                "value": "asin( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<acos()>"
+                ],
+                "value": "acos( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<atan()>"
+                ],
+                "value": "atan( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<atan2()>"
+                ],
+                "value": "atan2( <calc-sum>, <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<pow()>"
+                ],
+                "value": "pow( <calc-sum>, <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<sqrt()>"
+                ],
+                "value": "sqrt( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<hypot()>"
+                ],
+                "value": "hypot( <calc-sum># )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<log()>"
+                ],
+                "value": "log( <calc-sum>, <calc-sum>? )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<exp()>"
+                ],
+                "value": "exp( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<abs()>"
+                ],
+                "value": "abs( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<sign()>"
+                ],
+                "value": "sign( <calc-sum> )"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<calc-constant>"
+                ],
+                "value": "e | pi | infinity | -infinity | NaN"
+              }
+            }
+          ],
           "idl": []
         },
         "missingLinkRef": [
@@ -20915,6 +21120,11 @@
               "url": "https://www.w3.org/TR/webxr/",
               "title": "WebXR Device API",
               "crawled": "https://immersive-web.github.io/webxr/"
+            },
+            {
+              "url": "https://immersive-web.github.io/hit-test/",
+              "title": "WebXR Hit Test Module",
+              "crawled": "https://immersive-web.github.io/hit-test/"
             },
             {
               "url": "https://xhr.spec.whatwg.org/",
@@ -44434,7 +44644,365 @@
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
-          "css": [],
+          "css": [
+            {
+              "expected": {
+                "linkingText": [
+                  "cx"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "cy"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "r"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "rx"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "ry"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "x"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "y"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "vector-effect"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "d"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "inline-size"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "shape-inside"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "shape-subtract"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "shape-margin"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "text-anchor"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "fill"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "fill-rule"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "fill-opacity"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-opacity"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-width"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-linecap"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-linejoin"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-miterlimit"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-dasharray"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stroke-dashoffset"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "marker-start"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "marker-mid"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "marker-end"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "marker"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "paint-order"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "color-interpolation"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "shape-rendering"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "text-rendering"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "image-rendering"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "pointer-events"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stop-color"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "stop-opacity"
+                ],
+                "type": "property",
+                "for": []
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<points>"
+                ],
+                "value": "[ <number>+ ]#"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<dasharray>"
+                ],
+                "value": "[ [ <length-percentage> | <number> ]+ ]#"
+              }
+            },
+            {
+              "expected": {
+                "linkingText": [
+                  "<marker-ref>"
+                ],
+                "value": "<url>"
+              }
+            }
+          ],
           "idl": []
         },
         "missingLinkRef": [
@@ -60841,7 +61409,7 @@
     {
       "title": "WebXR Hit Test Module",
       "shortname": "hit-test",
-      "date": "1 April 2021",
+      "date": "28 August 2021",
       "url": "https://immersive-web.github.io/hit-test/",
       "nightly": {
         "url": "https://immersive-web.github.io/hit-test/",

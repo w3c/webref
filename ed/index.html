@@ -218,6 +218,7 @@
   <li><a href="https://w3c.github.io/webdriver-bidi/">WebDriver BiDi</a></li>
   <li><a href="https://gpuweb.github.io/gpuweb/">WebGPU</a></li>
   <li><a href="https://immersive-web.github.io/webxr/">WebXR Device API</a></li>
+  <li><a href="https://immersive-web.github.io/hit-test/">WebXR Hit Test Module</a></li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a></li>
   </ul>
   <p>Informative references to this spec from:</p>
@@ -4782,6 +4783,10 @@
   <section id="potential-issues-106" class="level4 anomalies">
   <h4>Potential issue(s)</h4>
   <ul>
+  <li>No definition for CSS properties:
+  <ul>
+  <li><code>margin-trim</code> with type <code>property</code></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a></li>
@@ -6446,6 +6451,10 @@
   <section id="potential-issues-133" class="level4 anomalies">
   <h4>Potential issue(s)</h4>
   <ul>
+  <li>No definition for CSS properties:
+  <ul>
+  <li><code>margin-break</code> with type <code>property</code></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-regions/"><code>https://www.w3.org/TR/css3-regions/</code></a></li>
@@ -9801,6 +9810,32 @@
   <section id="potential-issues-190" class="level4 anomalies">
   <h4>Potential issue(s)</h4>
   <ul>
+  <li>No definition for CSS properties:
+  <ul>
+  <li><code>&lt;ratio&gt;</code></li>
+  <li><code>&lt;attr-type&gt;</code></li>
+  <li><code>&lt;min()&gt;</code></li>
+  <li><code>&lt;max()&gt;</code></li>
+  <li><code>&lt;clamp()&gt;</code></li>
+  <li><code>&lt;round()&gt;</code></li>
+  <li><code>&lt;mod()&gt;</code></li>
+  <li><code>&lt;rem()&gt;</code></li>
+  <li><code>&lt;sin()&gt;</code></li>
+  <li><code>&lt;cos()&gt;</code></li>
+  <li><code>&lt;tan()&gt;</code></li>
+  <li><code>&lt;asin()&gt;</code></li>
+  <li><code>&lt;acos()&gt;</code></li>
+  <li><code>&lt;atan()&gt;</code></li>
+  <li><code>&lt;atan2()&gt;</code></li>
+  <li><code>&lt;pow()&gt;</code></li>
+  <li><code>&lt;sqrt()&gt;</code></li>
+  <li><code>&lt;hypot()&gt;</code></li>
+  <li><code>&lt;log()&gt;</code></li>
+  <li><code>&lt;exp()&gt;</code></li>
+  <li><code>&lt;abs()&gt;</code></li>
+  <li><code>&lt;sign()&gt;</code></li>
+  <li><code>&lt;calc-constant&gt;</code></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a></li>
@@ -12630,7 +12665,7 @@
   <ul>
   <li>Initial URL: <a href="https://immersive-web.github.io/hit-test/" class="uri">https://immersive-web.github.io/hit-test/</a></li>
   <li>Crawled URL: <a href="https://immersive-web.github.io/hit-test/" class="uri">https://immersive-web.github.io/hit-test/</a></li>
-  <li>Crawled version: 1 April 2021</li>
+  <li>Crawled version: 28 August 2021</li>
   <li>Editor's Draft: <a href="https://immersive-web.github.io/hit-test/" class="uri">https://immersive-web.github.io/hit-test/</a></li>
   <li>Shortname: hit-test</li>
   </ul>
@@ -13469,6 +13504,49 @@
   <ul>
   <li>Invalid WebIDL content found</li>
   <li>Spec uses WebIDL but does not reference it normatively</li>
+  <li>No definition for CSS properties:
+  <ul>
+  <li><code>cx</code> with type <code>property</code></li>
+  <li><code>cy</code> with type <code>property</code></li>
+  <li><code>r</code> with type <code>property</code></li>
+  <li><code>rx</code> with type <code>property</code></li>
+  <li><code>ry</code> with type <code>property</code></li>
+  <li><code>x</code> with type <code>property</code></li>
+  <li><code>y</code> with type <code>property</code></li>
+  <li><code>vector-effect</code> with type <code>property</code></li>
+  <li><code>d</code> with type <code>property</code></li>
+  <li><code>inline-size</code> with type <code>property</code></li>
+  <li><code>shape-inside</code> with type <code>property</code></li>
+  <li><code>shape-subtract</code> with type <code>property</code></li>
+  <li><code>shape-margin</code> with type <code>property</code></li>
+  <li><code>text-anchor</code> with type <code>property</code></li>
+  <li><code>fill</code> with type <code>property</code></li>
+  <li><code>fill-rule</code> with type <code>property</code></li>
+  <li><code>fill-opacity</code> with type <code>property</code></li>
+  <li><code>stroke</code> with type <code>property</code></li>
+  <li><code>stroke-opacity</code> with type <code>property</code></li>
+  <li><code>stroke-width</code> with type <code>property</code></li>
+  <li><code>stroke-linecap</code> with type <code>property</code></li>
+  <li><code>stroke-linejoin</code> with type <code>property</code></li>
+  <li><code>stroke-miterlimit</code> with type <code>property</code></li>
+  <li><code>stroke-dasharray</code> with type <code>property</code></li>
+  <li><code>stroke-dashoffset</code> with type <code>property</code></li>
+  <li><code>marker-start</code> with type <code>property</code></li>
+  <li><code>marker-mid</code> with type <code>property</code></li>
+  <li><code>marker-end</code> with type <code>property</code></li>
+  <li><code>marker</code> with type <code>property</code></li>
+  <li><code>paint-order</code> with type <code>property</code></li>
+  <li><code>color-interpolation</code> with type <code>property</code></li>
+  <li><code>shape-rendering</code> with type <code>property</code></li>
+  <li><code>text-rendering</code> with type <code>property</code></li>
+  <li><code>image-rendering</code> with type <code>property</code></li>
+  <li><code>pointer-events</code> with type <code>property</code></li>
+  <li><code>stop-color</code> with type <code>property</code></li>
+  <li><code>stop-opacity</code> with type <code>property</code></li>
+  <li><code>&lt;points&gt;</code></li>
+  <li><code>&lt;dasharray&gt;</code></li>
+  <li><code>&lt;marker-ref&gt;</code></li>
+  </ul></li>
   <li>Missing references for links:
   <ul>
   <li><a href="https://www.w3.org/TR/2001/REC-xlink-20010627/"><code>https://www.w3.org/TR/2001/REC-xlink-20010627/</code></a></li>

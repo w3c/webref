@@ -160,6 +160,7 @@ Normative references to this spec from:
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/)
 - [WebGPU](https://gpuweb.github.io/gpuweb/)
 - [WebXR Device API](https://immersive-web.github.io/webxr/)
+- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
 
 Informative references to this spec from:
@@ -4060,6 +4061,8 @@ Informative references to this spec from:
 
 #### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `margin-trim` with type `property`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/)
      * [`https://www.w3.org/TR/2018/WD-css3-box-20180731/`](https://www.w3.org/TR/2018/WD-css3-box-20180731/)
@@ -5461,6 +5464,8 @@ No informative reference to this spec from other specs.
 
 #### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `margin-break` with type `property`
 - Missing references for links: 
      * [`https://www.w3.org/TR/css3-regions/`](https://www.w3.org/TR/css3-regions/)
      * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/)
@@ -8187,6 +8192,30 @@ No informative reference to this spec from other specs.
 
 #### Potential issue(s) {.anomalies}
 
+- No definition for CSS properties: 
+     * `<ratio>`
+     * `<attr-type>`
+     * `<min()>`
+     * `<max()>`
+     * `<clamp()>`
+     * `<round()>`
+     * `<mod()>`
+     * `<rem()>`
+     * `<sin()>`
+     * `<cos()>`
+     * `<tan()>`
+     * `<asin()>`
+     * `<acos()>`
+     * `<atan()>`
+     * `<atan2()>`
+     * `<pow()>`
+     * `<sqrt()>`
+     * `<hypot()>`
+     * `<log()>`
+     * `<exp()>`
+     * `<abs()>`
+     * `<sign()>`
+     * `<calc-constant>`
 - Missing references for links: 
      * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
      * [`https://www.w3.org/TR/css3-page/`](https://www.w3.org/TR/css3-page/)
@@ -10560,7 +10589,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
-- Crawled version: 1 April 2021
+- Crawled version: 28 August 2021
 - Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
 - Shortname: hit-test
 
@@ -11271,6 +11300,47 @@ No informative reference to this spec from other specs.
 
 - Invalid WebIDL content found
 - Spec uses WebIDL but does not reference it normatively
+- No definition for CSS properties: 
+     * `cx` with type `property`
+     * `cy` with type `property`
+     * `r` with type `property`
+     * `rx` with type `property`
+     * `ry` with type `property`
+     * `x` with type `property`
+     * `y` with type `property`
+     * `vector-effect` with type `property`
+     * `d` with type `property`
+     * `inline-size` with type `property`
+     * `shape-inside` with type `property`
+     * `shape-subtract` with type `property`
+     * `shape-margin` with type `property`
+     * `text-anchor` with type `property`
+     * `fill` with type `property`
+     * `fill-rule` with type `property`
+     * `fill-opacity` with type `property`
+     * `stroke` with type `property`
+     * `stroke-opacity` with type `property`
+     * `stroke-width` with type `property`
+     * `stroke-linecap` with type `property`
+     * `stroke-linejoin` with type `property`
+     * `stroke-miterlimit` with type `property`
+     * `stroke-dasharray` with type `property`
+     * `stroke-dashoffset` with type `property`
+     * `marker-start` with type `property`
+     * `marker-mid` with type `property`
+     * `marker-end` with type `property`
+     * `marker` with type `property`
+     * `paint-order` with type `property`
+     * `color-interpolation` with type `property`
+     * `shape-rendering` with type `property`
+     * `text-rendering` with type `property`
+     * `image-rendering` with type `property`
+     * `pointer-events` with type `property`
+     * `stop-color` with type `property`
+     * `stop-opacity` with type `property`
+     * `<points>`
+     * `<dasharray>`
+     * `<marker-ref>`
 - Missing references for links: 
      * [`https://www.w3.org/TR/2001/REC-xlink-20010627/`](https://www.w3.org/TR/2001/REC-xlink-20010627/)
      * [`https://www.w3.org/TR/2001/REC-MathML2-20010221/`](https://www.w3.org/TR/2001/REC-MathML2-20010221/)
