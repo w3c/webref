@@ -5,7 +5,7 @@
       "title": "WebXR Hand Input Module - Level 1",
       "url": "https://www.w3.org/TR/webxr-hand-input-1/"
     },
-    "fragment": "[Exposed=Window]\ninterface XRJointSpace: XRSpace {};",
+    "fragment": "[Exposed=Window]\ninterface XRJointSpace: XRSpace {\n  readonly attribute XRHandJoint jointName;\n};",
     "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrjointspace"
   },
   "extended": [],

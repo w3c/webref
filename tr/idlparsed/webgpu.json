@@ -615,7 +615,7 @@
         "extAttrs": []
       },
       "NavigatorGPU": {
-        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject, SecureContext] readonly attribute GPU gpu;\n};",
         "type": "interface mixin",
         "name": "NavigatorGPU",
         "inheritance": null,
@@ -637,6 +637,12 @@
                 "name": "SameObject",
                 "rhs": null,
                 "arguments": []
+              },
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
               }
             ],
             "special": "",
@@ -647,7 +653,7 @@
         "partial": false
       },
       "GPU": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPU {\n    Promise<GPUAdapter?> requestAdapter(optional GPURequestAdapterOptions options = {});\n};",
         "type": "interface",
         "name": "GPU",
         "inheritance": null,
@@ -711,6 +717,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -776,7 +788,7 @@
         "extAttrs": []
       },
       "GPUAdapter": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUAdapter {\n    readonly attribute DOMString name;\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n    readonly attribute boolean isFallbackAdapter;\n\n    Promise<GPUDevice> requestDevice(optional GPUDeviceDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUAdapter",
         "inheritance": null,
@@ -915,6 +927,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -1023,7 +1041,7 @@
         "extAttrs": []
       },
       "GPUDevice": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUDevice : EventTarget {\n    [SameObject] readonly attribute GPUSupportedFeatures features;\n    [SameObject] readonly attribute GPUSupportedLimits limits;\n\n    [SameObject] readonly attribute GPUQueue queue;\n\n    undefined destroy();\n\n    GPUBuffer createBuffer(GPUBufferDescriptor descriptor);\n    GPUTexture createTexture(GPUTextureDescriptor descriptor);\n    GPUSampler createSampler(optional GPUSamplerDescriptor descriptor = {});\n    GPUExternalTexture importExternalTexture(GPUExternalTextureDescriptor descriptor);\n\n    GPUBindGroupLayout createBindGroupLayout(GPUBindGroupLayoutDescriptor descriptor);\n    GPUPipelineLayout createPipelineLayout(GPUPipelineLayoutDescriptor descriptor);\n    GPUBindGroup createBindGroup(GPUBindGroupDescriptor descriptor);\n\n    GPUShaderModule createShaderModule(GPUShaderModuleDescriptor descriptor);\n    GPUComputePipeline createComputePipeline(GPUComputePipelineDescriptor descriptor);\n    GPURenderPipeline createRenderPipeline(GPURenderPipelineDescriptor descriptor);\n    Promise<GPUComputePipeline> createComputePipelineAsync(GPUComputePipelineDescriptor descriptor);\n    Promise<GPURenderPipeline> createRenderPipelineAsync(GPURenderPipelineDescriptor descriptor);\n\n    GPUCommandEncoder createCommandEncoder(optional GPUCommandEncoderDescriptor descriptor = {});\n    GPURenderBundleEncoder createRenderBundleEncoder(GPURenderBundleEncoderDescriptor descriptor);\n\n    GPUQuerySet createQuerySet(GPUQuerySetDescriptor descriptor);\n};",
         "type": "interface",
         "name": "GPUDevice",
         "inheritance": "EventTarget",
@@ -1628,12 +1646,18 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
       },
       "GPUBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBuffer {\n    Promise<undefined> mapAsync(GPUMapModeFlags mode, optional GPUSize64 offset = 0, optional GPUSize64 size);\n    ArrayBuffer getMappedRange(optional GPUSize64 offset = 0, optional GPUSize64 size);\n    undefined unmap();\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUBuffer",
         "inheritance": null,
@@ -1811,6 +1835,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -2175,7 +2205,7 @@
         "partial": false
       },
       "GPUTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTexture {\n    GPUTextureView createView(optional GPUTextureViewDescriptor descriptor = {});\n\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUTexture",
         "inheritance": null,
@@ -2245,6 +2275,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -2513,7 +2549,7 @@
         "partial": false
       },
       "GPUTextureView": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureView {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUTextureView {\n};",
         "type": "interface",
         "name": "GPUTextureView",
         "inheritance": null,
@@ -2533,6 +2569,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -2951,7 +2993,7 @@
         "extAttrs": []
       },
       "GPUExternalTexture": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUExternalTexture {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUExternalTexture {\n};",
         "type": "interface",
         "name": "GPUExternalTexture",
         "inheritance": null,
@@ -2971,6 +3013,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -3020,7 +3068,7 @@
         "partial": false
       },
       "GPUSampler": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUSampler {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUSampler {\n};",
         "type": "interface",
         "name": "GPUSampler",
         "inheritance": null,
@@ -3040,6 +3088,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -3316,7 +3370,7 @@
         "extAttrs": []
       },
       "GPUBindGroupLayout": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUBindGroupLayout {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBindGroupLayout {\n};",
         "type": "interface",
         "name": "GPUBindGroupLayout",
         "inheritance": null,
@@ -3336,6 +3390,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -3896,7 +3956,7 @@
         "partial": false
       },
       "GPUBindGroup": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUBindGroup {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUBindGroup {\n};",
         "type": "interface",
         "name": "GPUBindGroup",
         "inheritance": null,
@@ -3916,6 +3976,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -4116,7 +4182,7 @@
         "partial": false
       },
       "GPUPipelineLayout": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUPipelineLayout {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUPipelineLayout {\n};",
         "type": "interface",
         "name": "GPUPipelineLayout",
         "inheritance": null,
@@ -4136,6 +4202,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -4176,7 +4248,7 @@
         "partial": false
       },
       "GPUShaderModule": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUShaderModule {\n    Promise<GPUCompilationInfo> compilationInfo();\n};",
         "type": "interface",
         "name": "GPUShaderModule",
         "inheritance": null,
@@ -4221,6 +4293,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -4287,7 +4365,7 @@
         "extAttrs": []
       },
       "GPUCompilationMessage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable, SecureContext]\ninterface GPUCompilationMessage {\n    readonly attribute DOMString message;\n    readonly attribute GPUCompilationMessageType type;\n    readonly attribute unsigned long long lineNum;\n    readonly attribute unsigned long long linePos;\n    readonly attribute unsigned long long offset;\n    readonly attribute unsigned long long length;\n};",
         "type": "interface",
         "name": "GPUCompilationMessage",
         "inheritance": null,
@@ -4405,12 +4483,18 @@
             "name": "Serializable",
             "rhs": null,
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
       },
       "GPUCompilationInfo": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), Serializable, SecureContext]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
         "type": "interface",
         "name": "GPUCompilationInfo",
         "inheritance": null,
@@ -4460,6 +4544,12 @@
           {
             "type": "extended-attribute",
             "name": "Serializable",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
             "rhs": null,
             "arguments": []
           }
@@ -4620,7 +4710,7 @@
         "extAttrs": []
       },
       "GPUComputePipeline": {
-        "fragment": "// May represent WGSL’s bool, f32, i32, u32.\n\n[Exposed=(Window, DedicatedWorker)]\ninterface GPUComputePipeline {\n};",
+        "fragment": "// May represent WGSL’s bool, f32, i32, u32.\n\n[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePipeline {\n};",
         "type": "interface",
         "name": "GPUComputePipeline",
         "inheritance": null,
@@ -4640,6 +4730,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -4671,7 +4767,7 @@
         "partial": false
       },
       "GPURenderPipeline": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPURenderPipeline {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderPipeline {\n};",
         "type": "interface",
         "name": "GPURenderPipeline",
         "inheritance": null,
@@ -4691,6 +4787,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -5276,11 +5378,29 @@
         "partial": false
       },
       "GPUBlendComponent": {
-        "fragment": "dictionary GPUBlendComponent {\n    GPUBlendFactor srcFactor = \"one\";\n    GPUBlendFactor dstFactor = \"zero\";\n    GPUBlendOperation operation = \"add\";\n};",
+        "fragment": "dictionary GPUBlendComponent {\n    GPUBlendOperation operation = \"add\";\n    GPUBlendFactor srcFactor = \"one\";\n    GPUBlendFactor dstFactor = \"zero\";\n};",
         "type": "dictionary",
         "name": "GPUBlendComponent",
         "inheritance": null,
         "members": [
+          {
+            "type": "field",
+            "name": "operation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUBlendOperation"
+            },
+            "default": {
+              "type": "string",
+              "value": "add"
+            },
+            "required": false
+          },
           {
             "type": "field",
             "name": "srcFactor",
@@ -5314,24 +5434,6 @@
             "default": {
               "type": "string",
               "value": "zero"
-            },
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "operation",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "GPUBlendOperation"
-            },
-            "default": {
-              "type": "string",
-              "value": "add"
             },
             "required": false
           }
@@ -6054,7 +6156,7 @@
         "partial": false
       },
       "GPUCommandBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUCommandBuffer {\n    readonly attribute Promise<double> executionTime;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandBuffer {\n    readonly attribute Promise<double> executionTime;\n};",
         "type": "interface",
         "name": "GPUCommandBuffer",
         "inheritance": null,
@@ -6100,6 +6202,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -6114,7 +6222,7 @@
         "partial": false
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -6747,6 +6855,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -7315,7 +7429,7 @@
         "partial": false
       },
       "GPUComputePassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined endPass();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPUComputePassEncoder",
         "inheritance": null,
@@ -7612,6 +7726,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -8128,7 +8248,7 @@
         "partial": false
       },
       "GPURenderPassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderPassEncoder {\n    undefined setViewport(float x, float y,\n                     float width, float height,\n                     float minDepth, float maxDepth);\n\n    undefined setScissorRect(GPUIntegerCoordinate x, GPUIntegerCoordinate y,\n                        GPUIntegerCoordinate width, GPUIntegerCoordinate height);\n\n    undefined setBlendConstant(GPUColor color);\n    undefined setStencilReference(GPUStencilValue reference);\n\n    undefined beginOcclusionQuery(GPUSize32 queryIndex);\n    undefined endOcclusionQuery();\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined executeBundles(sequence<GPURenderBundle> bundles);\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPURenderPassEncoder",
         "inheritance": null,
@@ -8620,6 +8740,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -9026,7 +9152,7 @@
         "partial": false
       },
       "GPURenderBundle": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPURenderBundle {\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderBundle {\n};",
         "type": "interface",
         "name": "GPURenderBundle",
         "inheritance": null,
@@ -9047,6 +9173,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -9061,7 +9193,7 @@
         "partial": false
       },
       "GPURenderBundleEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPURenderBundleEncoder {\n    GPURenderBundle finish(optional GPURenderBundleDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPURenderBundleEncoder",
         "inheritance": null,
@@ -9117,6 +9249,12 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
@@ -9168,7 +9306,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,
@@ -9512,12 +9650,18 @@
               ]
             },
             "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
           }
         ],
         "partial": false
       },
       "GPUQuerySet": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQuerySet {\n    undefined destroy();\n};",
         "type": "interface",
         "name": "GPUQuerySet",
         "inheritance": null,
@@ -9553,6 +9697,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -9674,7 +9824,7 @@
         "extAttrs": []
       },
       "GPUCanvasContext": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCanvasContext {\n    readonly attribute (HTMLCanvasElement or OffscreenCanvas) canvas;\n\n    undefined configure(GPUCanvasConfiguration configuration);\n    undefined unconfigure();\n\n    GPUTextureFormat getPreferredFormat(GPUAdapter adapter);\n    GPUTexture getCurrentTexture();\n};",
         "type": "interface",
         "name": "GPUCanvasContext",
         "inheritance": null,
@@ -9821,6 +9971,12 @@
                 }
               ]
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],
@@ -11615,8 +11771,8 @@
       ],
       "GPUColorWrite": [],
       "GPUBlendComponent": [
-        "GPUBlendFactor",
-        "GPUBlendOperation"
+        "GPUBlendOperation",
+        "GPUBlendFactor"
       ],
       "GPUDepthStencilState": [
         "GPUTextureFormat",

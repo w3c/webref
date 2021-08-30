@@ -283,7 +283,7 @@
         "extAttrs": []
       },
       "XRSession": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  void updateRenderState(optional XRRenderStateInit state = {});\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  void cancelAnimationFrame(unsigned long handle);\n\n  Promise<void> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRSession : EventTarget {\n  // Attributes\n  readonly attribute XRVisibilityState visibilityState;\n  readonly attribute float? frameRate;\n  readonly attribute Float32Array? supportedFrameRates;\n  [SameObject] readonly attribute XRRenderState renderState;\n  [SameObject] readonly attribute XRInputSourceArray inputSources;\n\n  // Methods\n  undefined updateRenderState(optional XRRenderStateInit state = {});\n  Promise<undefined> updateTargetFrameRate(float rate);\n  [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);\n\n  unsigned long requestAnimationFrame(XRFrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n\n  Promise<undefined> end();\n\n  // Events\n  attribute EventHandler onend;\n  attribute EventHandler oninputsourceschange;\n  attribute EventHandler onselect;\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectend;\n  attribute EventHandler onsqueeze;\n  attribute EventHandler onsqueezestart;\n  attribute EventHandler onsqueezeend;\n  attribute EventHandler onvisibilitychange;\n  attribute EventHandler onframeratechange;\n};",
         "type": "interface",
         "name": "XRSession",
         "inheritance": "EventTarget",
@@ -298,6 +298,36 @@
               "nullable": false,
               "union": false,
               "idlType": "XRVisibilityState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "frameRate",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "supportedFrameRates",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Float32Array"
             },
             "extAttrs": [],
             "special": "",
@@ -356,7 +386,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -375,6 +405,47 @@
                   "type": "dictionary"
                 },
                 "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "updateTargetFrameRate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "rate",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "float"
+                },
+                "default": null,
+                "optional": false,
                 "variadic": false
               }
             ],
@@ -470,7 +541,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -509,7 +580,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -640,6 +711,21 @@
           {
             "type": "attribute",
             "name": "onvisibilitychange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onframeratechange",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -853,7 +939,7 @@
         "partial": false
       },
       "XRFrameRequestCallback": {
-        "fragment": "callback XRFrameRequestCallback = void (DOMHighResTimeStamp time, XRFrame frame);",
+        "fragment": "callback XRFrameRequestCallback = undefined (DOMHighResTimeStamp time, XRFrame frame);",
         "type": "callback",
         "name": "XRFrameRequestCallback",
         "idlType": {
@@ -862,7 +948,7 @@
           "generic": "",
           "nullable": false,
           "union": false,
-          "idlType": "void"
+          "idlType": "undefined"
         },
         "arguments": [
           {
@@ -1232,7 +1318,7 @@
         "extAttrs": []
       },
       "XRView": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRView {\n  readonly attribute XREye eye;\n  readonly attribute Float32Array projectionMatrix;\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute double? recommendedViewportScale;\n\n  undefined requestViewportScale(double? scale);\n};",
         "type": "interface",
         "name": "XRView",
         "inheritance": null,
@@ -1288,6 +1374,53 @@
             ],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "recommendedViewportScale",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "requestViewportScale",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "scale",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "double"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -1545,7 +1678,7 @@
         "partial": false
       },
       "XRPose": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  readonly attribute boolean emulatedPosition;\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;\n  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;\n\n  readonly attribute boolean emulatedPosition;\n};",
         "type": "interface",
         "name": "XRPose",
         "inheritance": null,
@@ -1560,6 +1693,50 @@
               "nullable": false,
               "union": false,
               "idlType": "XRRigidTransform"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "linearVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "angularVelocity",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMPointReadOnly"
             },
             "extAttrs": [
               {
@@ -2100,7 +2277,7 @@
         "partial": false
       },
       "XRWebGLLayer": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
         "type": "interface",
         "name": "XRWebGLLayer",
         "inheritance": "XRLayer",
@@ -2190,6 +2367,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "fixedFoveation",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "float"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "attribute",
@@ -2957,6 +3149,31 @@
         "extAttrs": [],
         "partial": false
       },
+      "XRSessionSupportedPermissionDescriptor": {
+        "fragment": "dictionary XRSessionSupportedPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n};",
+        "type": "dictionary",
+        "name": "XRSessionSupportedPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "mode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "XRSessionMode"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "XRPermissionDescriptor": {
         "fragment": "dictionary XRPermissionDescriptor: PermissionDescriptor {\n  XRSessionMode mode;\n  sequence<any> requiredFeatures;\n  sequence<any> optionalFeatures;\n};",
         "type": "dictionary",
@@ -3148,7 +3365,7 @@
       ],
       "WebGLRenderingContextBase": [
         {
-          "fragment": "partial interface mixin WebGLRenderingContextBase {\n    [NewObject] Promise<void> makeXRCompatible();\n};",
+          "fragment": "partial interface mixin WebGLRenderingContextBase {\n    [NewObject] Promise<undefined> makeXRCompatible();\n};",
           "type": "interface mixin",
           "name": "WebGLRenderingContextBase",
           "inheritance": null,
@@ -3169,7 +3386,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "void"
+                    "idlType": "undefined"
                   }
                 ]
               },
@@ -3233,7 +3450,6 @@
         "XRVisibilityState",
         "XRRenderState",
         "XRInputSourceArray",
-        "void",
         "XRRenderStateInit",
         "XRReferenceSpace",
         "XRReferenceSpaceType",
@@ -3278,7 +3494,8 @@
         "XRRigidTransform"
       ],
       "XRPose": [
-        "XRRigidTransform"
+        "XRRigidTransform",
+        "DOMPointReadOnly"
       ],
       "XRViewerPose": [
         "XRPose",
@@ -3306,9 +3523,7 @@
         "XRView"
       ],
       "WebGLContextAttributes": [],
-      "WebGLRenderingContextBase": [
-        "void"
-      ],
+      "WebGLRenderingContextBase": [],
       "XRSessionEvent": [
         "Event",
         "XRSessionEventInit",
@@ -3351,6 +3566,10 @@
         "XRReferenceSpace",
         "XRRigidTransform"
       ],
+      "XRSessionSupportedPermissionDescriptor": [
+        "PermissionDescriptor",
+        "XRSessionMode"
+      ],
       "XRPermissionDescriptor": [
         "PermissionDescriptor",
         "XRSessionMode"
@@ -3363,7 +3582,6 @@
       "Navigator",
       "EventTarget",
       "EventHandler",
-      "void",
       "DOMHighResTimeStamp",
       "DOMPointReadOnly",
       "DOMPointInit",

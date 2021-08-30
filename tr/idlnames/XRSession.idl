@@ -2,17 +2,20 @@
 [SecureContext, Exposed=Window] interface XRSession : EventTarget {
   // Attributes
   readonly attribute XRVisibilityState visibilityState;
+  readonly attribute float? frameRate;
+  readonly attribute Float32Array? supportedFrameRates;
   [SameObject] readonly attribute XRRenderState renderState;
   [SameObject] readonly attribute XRInputSourceArray inputSources;
 
   // Methods
-  void updateRenderState(optional XRRenderStateInit state = {});
+  undefined updateRenderState(optional XRRenderStateInit state = {});
+  Promise<undefined> updateTargetFrameRate(float rate);
   [NewObject] Promise<XRReferenceSpace> requestReferenceSpace(XRReferenceSpaceType type);
 
   unsigned long requestAnimationFrame(XRFrameRequestCallback callback);
-  void cancelAnimationFrame(unsigned long handle);
+  undefined cancelAnimationFrame(unsigned long handle);
 
-  Promise<void> end();
+  Promise<undefined> end();
 
   // Events
   attribute EventHandler onend;
@@ -24,6 +27,7 @@
   attribute EventHandler onsqueezestart;
   attribute EventHandler onsqueezeend;
   attribute EventHandler onvisibilitychange;
+  attribute EventHandler onframeratechange;
 };
 
 // Source: WebXR Depth Sensing Module (https://immersive-web.github.io/depth-sensing/)
@@ -53,4 +57,10 @@ partial interface XRSession {
 partial interface XRSession {
   // Attributes
   readonly attribute XREnvironmentBlendMode environmentBlendMode;
+};
+
+// Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
+partial interface XRSession {
+  // Attributes
+  readonly attribute XRInteractionMode interactionMode;
 };

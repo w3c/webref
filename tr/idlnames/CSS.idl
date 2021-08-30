@@ -1,3 +1,9 @@
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+[Exposed=Window]
+namespace CSS {
+  CSSOMString escape(CSSOMString ident);
+};
+
 // Source: CSS Parser API (https://wicg.github.io/css-parser-api/)
 partial namespace CSS {
   Promise<sequence<CSSParserRule>> parseStylesheet(CSSStringSource css, optional CSSParserOptions options = {});

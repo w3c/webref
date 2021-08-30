@@ -5,7 +5,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), Serializable]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), Serializable, SecureContext]\ninterface GPUCompilationInfo {\n    readonly attribute FrozenArray<GPUCompilationMessage> messages;\n};",
     "href": "https://www.w3.org/TR/webgpu/#gpucompilationinfo"
   },
   "extended": [],

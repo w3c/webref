@@ -104,10 +104,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "skeleton-joint-index",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#skeleton-joint-index",
+      "id": "skeleton-joint-name",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#skeleton-joint-name",
       "linkingText": [
-        "skeleton joint index"
+        "skeleton joint name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -163,6 +163,569 @@
       "definedIn": "prose"
     },
     {
+      "id": "list-of-joints",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#list-of-joints",
+      "linkingText": [
+        "list of joints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "skeleton-joints-section",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#skeleton-joints-section",
+        "title": "Skeleton Joints",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrhandjoint",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#enumdef-xrhandjoint",
+      "linkingText": [
+        "XRHandJoint"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-wrist",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-wrist",
+      "linkingText": [
+        "\"wrist\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-thumb-metacarpal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-thumb-metacarpal",
+      "linkingText": [
+        "\"thumb-metacarpal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-thumb-phalanx-proximal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-thumb-phalanx-proximal",
+      "linkingText": [
+        "\"thumb-phalanx-proximal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-thumb-phalanx-distal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-thumb-phalanx-distal",
+      "linkingText": [
+        "\"thumb-phalanx-distal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-thumb-tip",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-thumb-tip",
+      "linkingText": [
+        "\"thumb-tip\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-index-finger-metacarpal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-index-finger-metacarpal",
+      "linkingText": [
+        "\"index-finger-metacarpal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-index-finger-phalanx-proximal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-index-finger-phalanx-proximal",
+      "linkingText": [
+        "\"index-finger-phalanx-proximal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-index-finger-phalanx-intermediate",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-index-finger-phalanx-intermediate",
+      "linkingText": [
+        "\"index-finger-phalanx-intermediate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-index-finger-phalanx-distal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-index-finger-phalanx-distal",
+      "linkingText": [
+        "\"index-finger-phalanx-distal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-index-finger-tip",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-index-finger-tip",
+      "linkingText": [
+        "\"index-finger-tip\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-middle-finger-metacarpal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-middle-finger-metacarpal",
+      "linkingText": [
+        "\"middle-finger-metacarpal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-middle-finger-phalanx-proximal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-middle-finger-phalanx-proximal",
+      "linkingText": [
+        "\"middle-finger-phalanx-proximal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-middle-finger-phalanx-intermediate",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-middle-finger-phalanx-intermediate",
+      "linkingText": [
+        "\"middle-finger-phalanx-intermediate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-middle-finger-phalanx-distal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-middle-finger-phalanx-distal",
+      "linkingText": [
+        "\"middle-finger-phalanx-distal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-middle-finger-tip",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-middle-finger-tip",
+      "linkingText": [
+        "\"middle-finger-tip\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-ring-finger-metacarpal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-ring-finger-metacarpal",
+      "linkingText": [
+        "\"ring-finger-metacarpal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-ring-finger-phalanx-proximal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-ring-finger-phalanx-proximal",
+      "linkingText": [
+        "\"ring-finger-phalanx-proximal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-ring-finger-phalanx-intermediate",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-ring-finger-phalanx-intermediate",
+      "linkingText": [
+        "\"ring-finger-phalanx-intermediate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-ring-finger-phalanx-distal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-ring-finger-phalanx-distal",
+      "linkingText": [
+        "\"ring-finger-phalanx-distal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-ring-finger-tip",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-ring-finger-tip",
+      "linkingText": [
+        "\"ring-finger-tip\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-pinky-finger-metacarpal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-pinky-finger-metacarpal",
+      "linkingText": [
+        "\"pinky-finger-metacarpal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-pinky-finger-phalanx-proximal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-pinky-finger-phalanx-proximal",
+      "linkingText": [
+        "\"pinky-finger-phalanx-proximal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-pinky-finger-phalanx-intermediate",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-pinky-finger-phalanx-intermediate",
+      "linkingText": [
+        "\"pinky-finger-phalanx-intermediate\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-pinky-finger-phalanx-distal",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-pinky-finger-phalanx-distal",
+      "linkingText": [
+        "\"pinky-finger-phalanx-distal\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhandjoint-pinky-finger-tip",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhandjoint-pinky-finger-tip",
+      "linkingText": [
+        "\"pinky-finger-tip\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHandJoint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "xrhand",
       "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand",
       "linkingText": [
@@ -182,10 +745,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-xrhand-joint",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-joint",
+      "id": "dom-xrhand-get",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-get",
       "linkingText": [
-        "joint(jointIndex)"
+        "get(key)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -203,540 +766,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-xrhand-joint-jointindex-jointindex",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-joint-jointindex-jointindex",
+      "id": "dom-xrhand-get-key-key",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-get-key-key",
       "linkingText": [
-        "jointIndex"
+        "key"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "XRHand/joint(jointIndex)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-wrist",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-wrist",
-      "linkingText": [
-        "WRIST"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-thumb_metacarpal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-thumb_metacarpal",
-      "linkingText": [
-        "THUMB_METACARPAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-thumb_phalanx_proximal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-thumb_phalanx_proximal",
-      "linkingText": [
-        "THUMB_PHALANX_PROXIMAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-thumb_phalanx_distal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-thumb_phalanx_distal",
-      "linkingText": [
-        "THUMB_PHALANX_DISTAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-thumb_phalanx_tip",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-thumb_phalanx_tip",
-      "linkingText": [
-        "THUMB_PHALANX_TIP"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-index_metacarpal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-index_metacarpal",
-      "linkingText": [
-        "INDEX_METACARPAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-index_phalanx_proximal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-index_phalanx_proximal",
-      "linkingText": [
-        "INDEX_PHALANX_PROXIMAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-index_phalanx_intermediate",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-index_phalanx_intermediate",
-      "linkingText": [
-        "INDEX_PHALANX_INTERMEDIATE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-index_phalanx_distal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-index_phalanx_distal",
-      "linkingText": [
-        "INDEX_PHALANX_DISTAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-index_phalanx_tip",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-index_phalanx_tip",
-      "linkingText": [
-        "INDEX_PHALANX_TIP"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-middle_metacarpal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-middle_metacarpal",
-      "linkingText": [
-        "MIDDLE_METACARPAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-middle_phalanx_proximal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-middle_phalanx_proximal",
-      "linkingText": [
-        "MIDDLE_PHALANX_PROXIMAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-middle_phalanx_intermediate",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-middle_phalanx_intermediate",
-      "linkingText": [
-        "MIDDLE_PHALANX_INTERMEDIATE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-middle_phalanx_distal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-middle_phalanx_distal",
-      "linkingText": [
-        "MIDDLE_PHALANX_DISTAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-middle_phalanx_tip",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-middle_phalanx_tip",
-      "linkingText": [
-        "MIDDLE_PHALANX_TIP"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-ring_metacarpal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-ring_metacarpal",
-      "linkingText": [
-        "RING_METACARPAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-ring_phalanx_proximal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-ring_phalanx_proximal",
-      "linkingText": [
-        "RING_PHALANX_PROXIMAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-ring_phalanx_intermediate",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-ring_phalanx_intermediate",
-      "linkingText": [
-        "RING_PHALANX_INTERMEDIATE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-ring_phalanx_distal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-ring_phalanx_distal",
-      "linkingText": [
-        "RING_PHALANX_DISTAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-ring_phalanx_tip",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-ring_phalanx_tip",
-      "linkingText": [
-        "RING_PHALANX_TIP"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-little_metacarpal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-little_metacarpal",
-      "linkingText": [
-        "LITTLE_METACARPAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-little_phalanx_proximal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-little_phalanx_proximal",
-      "linkingText": [
-        "LITTLE_PHALANX_PROXIMAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-little_phalanx_intermediate",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-little_phalanx_intermediate",
-      "linkingText": [
-        "LITTLE_PHALANX_INTERMEDIATE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-little_phalanx_distal",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-little_phalanx_distal",
-      "linkingText": [
-        "LITTLE_PHALANX_DISTAL"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-xrhand-little_phalanx_tip",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-little_phalanx_tip",
-      "linkingText": [
-        "LITTLE_PHALANX_TIP"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "XRHand"
+        "XRHand/get(key)"
       ],
       "access": "public",
       "informative": false,
@@ -770,31 +808,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "xrhand-list-of-joint-spaces",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-list-of-joint-spaces",
+      "id": "dom-xrhand-joints-slot",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-joints-slot",
       "linkingText": [
-        "list of joint spaces"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "XRHand"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "xrhand-interface",
-        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
-        "title": "XRHand",
-        "number": "3.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-xrhand-length",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-length",
-      "linkingText": [
-        "length"
+        "[[joints]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -812,15 +829,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-xrjointspace-joint",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrjointspace-joint",
+      "id": "dom-xrhand-size",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-size",
       "linkingText": [
-        "joint(jointIndex)"
+        "size"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRHand"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrhand-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrhand-interface",
+        "title": "XRHand",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhand-get-jointname",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrhand-get-jointname",
+      "linkingText": [
+        "get(jointName)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "XRJointSpace"
+        "XRHand"
       ],
       "access": "public",
       "informative": false,
@@ -841,6 +879,27 @@
       "localLinkingText": [],
       "type": "interface",
       "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrjointspace-interface",
+        "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrjointspace-interface",
+        "title": "XRJointSpace",
+        "number": "3.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrjointspace-jointname",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#dom-xrjointspace-jointname",
+      "linkingText": [
+        "jointName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRJointSpace"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -873,10 +932,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "xrjointspace-joint-index",
-      "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrjointspace-joint-index",
+      "id": "xrjointspace-jointname",
+      "href": "https://www.w3.org/TR/webxr-hand-input-1/#xrjointspace-jointname",
       "linkingText": [
-        "joint index"
+        "jointName"
       ],
       "localLinkingText": [],
       "type": "dfn",

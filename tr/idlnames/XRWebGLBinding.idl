@@ -4,11 +4,11 @@
 
   readonly attribute double nativeProjectionScaleFactor;
 
-  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init);
-  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init);
-  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init);
-  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init);
-  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init);
+  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});
+  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});
+  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});
+  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);

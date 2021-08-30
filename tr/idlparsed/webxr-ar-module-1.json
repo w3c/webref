@@ -9,26 +9,6 @@
       "functions": {}
     },
     "idlNames": {
-      "XRSessionMode": {
-        "fragment": "enum XRSessionMode {\n  \"inline\",\n  \"immersive-vr\",\n  \"immersive-ar\"\n};",
-        "type": "enum",
-        "name": "XRSessionMode",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "inline"
-          },
-          {
-            "type": "enum-value",
-            "value": "immersive-vr"
-          },
-          {
-            "type": "enum-value",
-            "value": "immersive-ar"
-          }
-        ],
-        "extAttrs": []
-      },
       "XREnvironmentBlendMode": {
         "fragment": "enum XREnvironmentBlendMode {\n  \"opaque\",\n  \"alpha-blend\",\n  \"additive\"\n};",
         "type": "enum",
@@ -45,6 +25,22 @@
           {
             "type": "enum-value",
             "value": "additive"
+          }
+        ],
+        "extAttrs": []
+      },
+      "XRInteractionMode": {
+        "fragment": "enum XRInteractionMode {\n    \"screen-space\",\n    \"world-space\",\n};",
+        "type": "enum",
+        "name": "XRInteractionMode",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "screen-space"
+          },
+          {
+            "type": "enum-value",
+            "value": "world-space"
           }
         ],
         "extAttrs": []
@@ -76,6 +72,58 @@
           ],
           "extAttrs": [],
           "partial": true
+        },
+        {
+          "fragment": "partial interface XRSession {\n  // Attributes\n  readonly attribute XRInteractionMode interactionMode;\n};",
+          "type": "interface",
+          "name": "XRSession",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "interactionMode",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "XRInteractionMode"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "XRView": [
+        {
+          "fragment": "partial interface XRView {\n  readonly attribute boolean isFirstPersonObserver;\n};",
+          "type": "interface",
+          "name": "XRView",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "isFirstPersonObserver",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
         }
       ]
     },
@@ -83,11 +131,14 @@
     "exposed": {},
     "dependencies": {
       "XRSession": [
-        "XREnvironmentBlendMode"
-      ]
+        "XREnvironmentBlendMode",
+        "XRInteractionMode"
+      ],
+      "XRView": []
     },
     "externalDependencies": [
-      "XRSession"
+      "XRSession",
+      "XRView"
     ],
     "hasObsoleteIdl": false
   }

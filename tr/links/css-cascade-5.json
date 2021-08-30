@@ -22,17 +22,14 @@
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
     "https://www.w3.org/TR/css-color-4/": [
       "propdef-color",
+      "typedef-color",
       "valdef-color-red",
       "valdef-color-currentcolor"
     ],
-    "https://www.w3.org/TR/css-fonts-3/": [
-      "propdef-font-size",
-      "propdef-font",
-      "propdef-font-style",
-      "propdef-font-variant",
-      "propdef-font-weight",
-      "propdef-font-family",
-      "propdef-font-size-adjust"
+    "https://www.w3.org/TR/css-fonts-5/": [
+      "descdef-font-face-font-size",
+      "propdef-font-size-adjust",
+      "at-font-face-rule"
     ],
     "https://www.w3.org/TR/css-backgrounds-3/": [
       "propdef-border-style",
@@ -48,14 +45,9 @@
       "propdef-border-left-width",
       "propdef-border-color"
     ],
-    "https://www.w3.org/TR/css-color-3/": [
-      "valuea-def-color"
-    ],
     "https://www.w3.org/TR/css-values-3/": [
       "typedef-length-percentage",
-      "url-value",
       "comb-one",
-      "string-value",
       "mult-opt",
       "funcdef-url",
       "css-wide-keywords",
@@ -64,7 +56,6 @@
       "vh",
       "vw",
       "ch",
-      "length-value",
       "typedef-ident",
       "mult-zero-plus",
       "mult-comma"
@@ -85,7 +76,14 @@
     "https://www.w3.org/TR/css-syntax-3/": [
       "at-ruledef-charset",
       "environment-encoding",
+      "at-rule",
       "typedef-stylesheet"
+    ],
+    "https://www.w3.org/TR/css-values-4/": [
+      "url-value",
+      "string-value",
+      "length-value",
+      "css-wide-keywords"
     ],
     "https://www.w3.org/TR/mediaqueries-4/": [
       "typedef-media-query-list",
@@ -131,6 +129,13 @@
       "concept-response-url",
       "cors-protocol"
     ],
+    "https://www.w3.org/TR/css-fonts-3/": [
+      "propdef-font",
+      "propdef-font-style",
+      "propdef-font-variant",
+      "propdef-font-weight",
+      "propdef-font-family"
+    ],
     "https://www.w3.org/TR/css-values/": [
       "common-keywords",
       "value-defs",
@@ -167,11 +172,6 @@
     ],
     "https://www.w3.org/TR/css-align-3/": [
       "valdef-justify-self-auto"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "valdef-font-weight-bolder",
-      "valdef-font-style-italic",
-      "valdef-generic-family-sans-serif"
     ],
     "https://www.w3.org/TR/css-sizing-3/": [
       "propdef-width",
@@ -217,12 +217,26 @@
     "https://www.w3.org/TR/selectors/": [
       "specificity"
     ],
+    "https://drafts.csswg.org/cssom/": [
+      "documentorshadowroot-final-css-style-sheets"
+    ],
+    "https://www.w3.org/TR/css-animations-1/": [
+      "at-ruledef-keyframes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues/5853": [],
+    "https://www.w3.org/TR/css-contain-1/": [
+      "valdef-contain-layout"
+    ],
     "https://github.com/w3c/csswg-drafts/issues/6323": [],
+    "https://www.w3.org/TR/2021/WD-css-cascade-5-20210608/": [],
+    "https://github.com/w3c/csswg-drafts/issues/6407": [],
+    "https://github.com/w3c/csswg-drafts/issues/6404": [],
+    "https://github.com/w3c/csswg-drafts/issues/6522": [],
+    "https://www.w3.org/TR/2021/WD-css-cascade-5-20210319/": [],
+    "https://github.com/w3c/csswg-drafts/issues/6284": [],
     "https://www.w3.org/TR/2021/WD-css-cascade-5-20210119/": [],
     "https://github.com/w3c/csswg-drafts/issues/5681": [],
     "https://github.com/w3c/csswg-drafts/issues/5793": [],
-    "https://github.com/w3c/csswg-drafts/issues/6284": [],
     "https://www.w3.org/TR/css-cascade-4/": [],
     "https://www.w3.org/TR/css-cascade-3/": [],
     "https://www.w3.org/TR/CSS21/": [
@@ -232,10 +246,9 @@
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-animations-1/": [],
     "https://www.w3.org/TR/css-scoping-1/": [],
     "https://www.w3.org/TR/css-transitions-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.w3.org/TR/selectors-3/": [],
     "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/SVG11/": []

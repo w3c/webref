@@ -27,7 +27,8 @@
       "id": "dom-scrolldirection-block",
       "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-block",
       "linkingText": [
-        "\"block\""
+        "\"block\"",
+        "block"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -42,13 +43,14 @@
         "title": "The ScrollDirection enumeration",
         "number": "3.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-scrolldirection-inline",
       "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-inline",
       "linkingText": [
-        "\"inline\""
+        "\"inline\"",
+        "inline"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -63,13 +65,14 @@
         "title": "The ScrollDirection enumeration",
         "number": "3.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-scrolldirection-horizontal",
       "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-horizontal",
       "linkingText": [
-        "\"horizontal\""
+        "\"horizontal\"",
+        "horizontal"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -84,13 +87,14 @@
         "title": "The ScrollDirection enumeration",
         "number": "3.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-scrolldirection-vertical",
       "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolldirection-vertical",
       "linkingText": [
-        "\"vertical\""
+        "\"vertical\"",
+        "vertical"
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -105,7 +109,7 @@
         "title": "The ScrollDirection enumeration",
         "number": "3.1.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "enumdef-scrolltimelineautokeyword",
@@ -417,15 +421,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "set-the-offset-value",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#set-the-offset-value",
+      "id": "dom-scrolltimeline-set-the-offset-value",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#dom-scrolltimeline-set-the-offset-value",
       "linkingText": [
         "set the offset value"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "attribute",
+      "for": [
+        "ScrollTimeline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "scrolltimeline-interface",
@@ -750,15 +756,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "effective-scroll-offsets",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#effective-scroll-offsets",
+      "id": "scroll-timeline-effective-scroll-offsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-effective-scroll-offsets",
       "linkingText": [
         "effective scroll offsets"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "scroll timeline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "effective-scroll-offsets-algorithm",
@@ -769,15 +777,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "resolve-scroll-timeline-offsets",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#resolve-scroll-timeline-offsets",
+      "id": "scroll-timeline-resolve-scroll-timeline-offsets",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-resolve-scroll-timeline-offsets",
       "linkingText": [
         "resolve scroll timeline offsets"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "scroll timeline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "effective-scroll-offsets-algorithm",
@@ -788,15 +798,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "scroll-timeline-progress",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-progress",
+      "id": "scroll-timeline-scroll-timeline-progress",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-scroll-timeline-progress",
       "linkingText": [
         "scroll timeline progress"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "scroll timeline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "progress-calculation-algorithm",
@@ -807,15 +819,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "calculate-scroll-timeline-progress",
-      "href": "https://drafts.csswg.org/scroll-animations-1/#calculate-scroll-timeline-progress",
+      "id": "scroll-timeline-calculate-scroll-timeline-progress",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-calculate-scroll-timeline-progress",
       "linkingText": [
         "calculate scroll timeline progress"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
-      "access": "private",
+      "for": [
+        "scroll timeline"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "progress-calculation-algorithm",
@@ -839,7 +853,7 @@
       "heading": {
         "id": "scroll-timeline-at-rule",
         "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-at-rule",
-        "title": "The '@scroll-timeline' at-rule",
+        "title": "The @scroll-timeline at-rule",
         "number": "3.2"
       },
       "definedIn": "prose"
@@ -864,6 +878,72 @@
         "number": "3.2.1"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "valdef-scroll-timeline-source-selector",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-scroll-timeline-source-selector",
+      "linkingText": [
+        "selector()"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@scroll-timeline/source",
+        "source"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-timeline-descriptors",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-descriptors",
+        "title": "Scroll Timeline descriptors",
+        "number": "3.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-timeline-source-auto",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-scroll-timeline-source-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@scroll-timeline/source",
+        "source"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-timeline-descriptors",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-descriptors",
+        "title": "Scroll Timeline descriptors",
+        "number": "3.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-scroll-timeline-source-none",
+      "href": "https://drafts.csswg.org/scroll-animations-1/#valdef-scroll-timeline-source-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@scroll-timeline/source",
+        "source"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scroll-timeline-descriptors",
+        "href": "https://drafts.csswg.org/scroll-animations-1/#scroll-timeline-descriptors",
+        "title": "Scroll Timeline descriptors",
+        "number": "3.2.1"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "descdef-scroll-timeline-orientation",

@@ -8,7 +8,15 @@
     "fragment": "[Exposed=Window]\ninterface ProcessingInstruction : CharacterData {\n  readonly attribute DOMString target;\n};",
     "href": "https://dom.spec.whatwg.org/#processinginstruction"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "ProcessingInstruction includes LinkStyle;"
+    }
+  ],
   "inheritance": {
     "name": "CharacterData",
     "defined": {
@@ -93,5 +101,20 @@
       }
     ]
   },
-  "includes": []
+  "includes": [
+    {
+      "name": "LinkStyle",
+      "defined": {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "interface mixin LinkStyle {\n  readonly attribute CSSStyleSheet? sheet;\n};",
+        "href": "https://www.w3.org/TR/cssom-1/#linkstyle"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

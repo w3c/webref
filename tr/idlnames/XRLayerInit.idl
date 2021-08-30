@@ -3,6 +3,7 @@ dictionary XRLayerInit {
   required XRSpace space;
   GLenum colorFormat = 0x1908; // RGBA
   GLenum? depthFormat;
+  unsigned long mipLevels = 1;
   required unsigned long viewPixelWidth;
   required unsigned long viewPixelHeight;
   XRLayerLayout layout = "mono";

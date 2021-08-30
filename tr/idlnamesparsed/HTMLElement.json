@@ -36,6 +36,13 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "HTMLElement includes HTMLOrSVGElement;"
+    },
+    {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "HTMLElement includes ElementCSSInlineStyle;"
     }
   ],
   "inheritance": {
@@ -387,6 +394,28 @@
         "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgelement"
       },
       "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "ElementCSSInlineStyle",
+      "defined": {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "href": "https://www.w3.org/TR/cssom-1/#elementcssinlinestyle"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "partial interface ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+        }
+      ],
       "inheritance": null,
       "includes": []
     }

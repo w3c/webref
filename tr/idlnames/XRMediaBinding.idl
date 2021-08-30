@@ -2,7 +2,7 @@
 [Exposed=Window] interface XRMediaBinding {
   constructor(XRSession session);
 
-  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init);
-  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init);
-  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init);
+  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init = {});
+  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init = {});
 };

@@ -126,6 +126,11 @@ partial interface Window {
     void navigate(SpatialNavigationDirection dir);
 };
 
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+partial interface Window {
+  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);
+};
+
 // Source: DeviceOrientation Event Specification (https://www.w3.org/TR/orientation-event/)
 partial interface Window {
     [SecureContext] attribute EventHandler ondeviceorientation;

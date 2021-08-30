@@ -3,12 +3,6 @@
 // (https://github.com/w3c/webref)
 // Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
 
-enum XRSessionMode {
-  "inline",
-  "immersive-vr",
-  "immersive-ar"
-};
-
 enum XREnvironmentBlendMode {
   "opaque",
   "alpha-blend",
@@ -18,4 +12,18 @@ enum XREnvironmentBlendMode {
 partial interface XRSession {
   // Attributes
   readonly attribute XREnvironmentBlendMode environmentBlendMode;
+};
+
+enum XRInteractionMode {
+    "screen-space",
+    "world-space",
+};
+
+partial interface XRSession {
+  // Attributes
+  readonly attribute XRInteractionMode interactionMode;
+};
+
+partial interface XRView {
+  readonly attribute boolean isFirstPersonObserver;
 };

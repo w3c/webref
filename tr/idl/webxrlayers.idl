@@ -16,7 +16,7 @@ enum XRLayerLayout {
 
   attribute boolean blendTextureSourceAlpha;
   attribute boolean? chromaticAberrationCorrection;
-  attribute float? fixedFoveation;
+  readonly attribute unsigned long mipLevels;
 
   readonly attribute boolean needsRedraw;
 
@@ -24,7 +24,12 @@ enum XRLayerLayout {
 };
 
 [Exposed=Window] interface XRProjectionLayer : XRCompositionLayer {
+  readonly attribute unsigned long textureWidth;
+  readonly attribute unsigned long textureHeight;
+  readonly attribute unsigned long textureArrayLength;
+
   readonly attribute boolean ignoreDepthValues;
+  attribute float? fixedFoveation;
 };
 
 [Exposed=Window] interface XRQuadLayer : XRCompositionLayer {
@@ -99,6 +104,7 @@ dictionary XRLayerInit {
   required XRSpace space;
   GLenum colorFormat = 0x1908; // RGBA
   GLenum? depthFormat;
+  unsigned long mipLevels = 1;
   required unsigned long viewPixelWidth;
   required unsigned long viewPixelHeight;
   XRLayerLayout layout = "mono";
@@ -138,11 +144,11 @@ dictionary XRCubeLayerInit : XRLayerInit {
 
   readonly attribute double nativeProjectionScaleFactor;
 
-  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init);
-  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init);
-  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init);
-  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init);
-  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init);
+  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});
+  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});
+  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});
+  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});
 
   XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = "none");
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
@@ -178,9 +184,9 @@ dictionary XRMediaEquirectLayerInit : XRMediaLayerInit {
 [Exposed=Window] interface XRMediaBinding {
   constructor(XRSession session);
 
-  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init);
-  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init);
-  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init);
+  XRQuadLayer createQuadLayer(HTMLVideoElement video, optional XRMediaQuadLayerInit init = {});
+  XRCylinderLayer createCylinderLayer(HTMLVideoElement video, optional XRMediaCylinderLayerInit init = {});
+  XREquirectLayer createEquirectLayer(HTMLVideoElement video, optional XRMediaEquirectLayerInit init = {});
 };
 
 [SecureContext, Exposed=Window] interface XRLayerEvent : Event {

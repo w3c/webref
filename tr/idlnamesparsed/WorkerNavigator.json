@@ -286,7 +286,7 @@
           "title": "WebGPU",
           "url": "https://www.w3.org/TR/webgpu/"
         },
-        "fragment": "interface mixin NavigatorGPU {\n    [SameObject] readonly attribute GPU gpu;\n};",
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject, SecureContext] readonly attribute GPU gpu;\n};",
         "href": "https://www.w3.org/TR/webgpu/#navigatorgpu"
       },
       "extended": [],
