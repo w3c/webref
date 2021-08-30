@@ -8,18 +8,86 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "PermissionStatus",
           "Navigator",
-          "Permissions"
+          "Permissions",
+          "PermissionStatus"
         ],
         "Worker": [
-          "PermissionStatus",
           "WorkerNavigator",
-          "Permissions"
+          "Permissions",
+          "PermissionStatus"
         ]
       }
     },
     "idlNames": {
+      "Permissions": {
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Permissions {\n  Promise<PermissionStatus> query(object permissionDesc);\n};",
+        "type": "interface",
+        "name": "Permissions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "query",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PermissionStatus"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "permissionDesc",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "object"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
       "PermissionDescriptor": {
         "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
         "type": "dictionary",
@@ -44,26 +112,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "PermissionState": {
-        "fragment": "enum PermissionState {\n  \"granted\",\n  \"denied\",\n  \"prompt\",\n};",
-        "type": "enum",
-        "name": "PermissionState",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "granted"
-          },
-          {
-            "type": "enum-value",
-            "value": "denied"
-          },
-          {
-            "type": "enum-value",
-            "value": "prompt"
-          }
-        ],
-        "extAttrs": []
       },
       "PermissionStatus": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface PermissionStatus : EventTarget {\n  readonly attribute PermissionState state;\n  readonly attribute PermissionName name;\n  attribute EventHandler onchange;\n};",
@@ -137,73 +185,25 @@
         ],
         "partial": false
       },
-      "Permissions": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Permissions {\n  Promise<PermissionStatus> query(object permissionDesc);\n};",
-        "type": "interface",
-        "name": "Permissions",
-        "inheritance": null,
-        "members": [
+      "PermissionState": {
+        "fragment": "enum PermissionState {\n  \"granted\",\n  \"denied\",\n  \"prompt\",\n};",
+        "type": "enum",
+        "name": "PermissionState",
+        "values": [
           {
-            "type": "operation",
-            "name": "query",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "PermissionStatus"
-                }
-              ]
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "permissionDesc",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "object"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
+            "type": "enum-value",
+            "value": "granted"
+          },
+          {
+            "type": "enum-value",
+            "value": "denied"
+          },
+          {
+            "type": "enum-value",
+            "value": "prompt"
           }
         ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
+        "extAttrs": []
       },
       "PermissionName": {
         "fragment": "enum PermissionName {\n  \"accelerometer\",\n  \"ambient-light-sensor\",\n  \"background-fetch\",\n  \"background-sync\",\n  \"bluetooth\",\n  \"camera\",\n  \"display-capture\",\n  \"geolocation\",\n  \"gyroscope\",\n  \"magnetometer\",\n  \"microphone\",\n  \"midi\",\n  \"nfc\",\n  \"notifications\",\n  \"persistent-storage\",\n  \"push\",\n  \"screen-wake-lock\",\n  \"speaker-selection\",\n  \"xr-spatial-tracking\",\n};",
@@ -500,26 +500,17 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "PermissionStatus",
         "Navigator",
-        "Permissions"
+        "Permissions",
+        "PermissionStatus"
       ],
       "Worker": [
-        "PermissionStatus",
         "WorkerNavigator",
-        "Permissions"
+        "Permissions",
+        "PermissionStatus"
       ]
     },
     "dependencies": {
-      "PermissionDescriptor": [
-        "PermissionName"
-      ],
-      "PermissionStatus": [
-        "EventTarget",
-        "PermissionState",
-        "PermissionName",
-        "EventHandler"
-      ],
       "Navigator": [
         "Permissions"
       ],
@@ -528,6 +519,15 @@
       ],
       "Permissions": [
         "PermissionStatus"
+      ],
+      "PermissionDescriptor": [
+        "PermissionName"
+      ],
+      "PermissionStatus": [
+        "EventTarget",
+        "PermissionState",
+        "PermissionName",
+        "EventHandler"
       ],
       "PushPermissionDescriptor": [
         "PermissionDescriptor"
@@ -543,10 +543,10 @@
       ]
     },
     "externalDependencies": [
-      "EventTarget",
-      "EventHandler",
       "Navigator",
-      "WorkerNavigator"
+      "WorkerNavigator",
+      "EventTarget",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }
