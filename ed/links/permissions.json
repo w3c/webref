@@ -4,11 +4,10 @@
     "url": "https://w3c.github.io/permissions/"
   },
   "links": {
-    "https://github.com/w3c/webappsec": [],
-    "https://lists.w3.org/Archives/Public/public-webappsec/": [],
-    "https://www.w3.org/Mail/Request": [],
+    "https://www.w3.org/TR/": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://github.com/user/permissions/issues/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
@@ -20,6 +19,7 @@
     ],
     "https://html.spec.whatwg.org/": [
       "environment-settings-object",
+      "concept-global-object-realm",
       "current-settings-object",
       "non-secure-context",
       "concept-document-window",
@@ -29,33 +29,17 @@
       "queue-a-task",
       "concept-realm-settings-object",
       "responsible-event-loop",
+      "window",
+      "workerglobalscope",
       "eventhandler",
       "event-handlers",
       "event-handler-event-type",
-      "window",
-      "workerglobalscope",
       "navigator",
       "workernavigator",
       "concept-document-permissions-policy",
-      "attr-iframe-allow",
-      "secure-context",
-      "active-document",
-      "concept-settings-object-origin",
-      "relevant-settings-object",
-      "concept-settings-object-global",
-      "window-bc",
-      "concept-task"
+      "secure-context"
     ],
-    "https://webbluetoothcg.github.io/web-bluetooth/": [
-      "dictdef-bluetoothlescanfilterinit",
-      "typedefdef-bluetoothserviceuuid",
-      "permission-api-integration"
-    ],
-    "https://tc39.github.io/ecma262/": [
-      "sec-code-realms",
-      "current-realm"
-    ],
-    "https://w3c.github.io/webappsec-permissions-policy/": [
+    "https://www.w3.org/TR/permissions-policy-1/": [
       "policy-controlled-feature"
     ],
     "https://www.w3.org/TR/mediacapture-streams/": [
@@ -63,12 +47,15 @@
       "dom-mediadeviceinfo-deviceid",
       "dfn-device-permission-revocation-algorithm"
     ],
+    "https://tc39.es/ecma262/multipage/": [
+      "current-realm"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": [],
     "https://infra.spec.whatwg.org/": [
-      "user-agent",
-      "list",
-      "list-append"
+      "user-agent"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/onchange": [],
     "https://heycam.github.io/webidl/": [
       "Exposed",
       "SameObject",
@@ -83,8 +70,6 @@
       "eventtarget",
       "concept-event-fire"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/onchange": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
@@ -94,34 +79,16 @@
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/midi": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/camera": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/microphone": [],
-    "https://storage.spec.whatwg.org/": [
-      "persistence",
-      "bucket-mode"
-    ],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/ambient-light-sensor": [],
-    "https://w3c.github.io/sensors/": [
+    "https://www.w3.org/TR/generic-sensor/": [
       "generic-sensor-permission-revocation-algorithm"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/accelerometer": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/gyroscope": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/magnetometer": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/display-capture": [],
-    "https://w3c.github.io/webdriver/": [
-      "dfn-extension-commands",
-      "dfn-extension-command-uri-template",
-      "dfn-remote-end-steps",
-      "dfn-error",
-      "dfn-error-code",
-      "dfn-invalid-argument",
-      "dfn-current-browsing-context",
-      "dfn-success",
-      "dfn-session",
-      "dfn-local-end"
-    ],
-    "https://tc39.es/ecma262/multipage/": [],
-    "https://www.w3.org/TR/permissions-policy-1/": [],
-    "https://datatracker.ietf.org/doc/html/rfc2119": [],
-    "https://www.w3.org/TR/webdriver1/": [],
+    "https://w3c.github.io/permissions-automation/": [],
+    "https://datatracker.ietf.org/doc/html/bcp14": [],
     "https://www.w3.org/TR/accelerometer/": [],
     "https://www.w3.org/TR/ambient-light/": [],
     "https://www.w3.org/TR/audio-output/": [],
@@ -132,9 +99,12 @@
     "https://www.w3.org/TR/magnetometer/": [],
     "https://notifications.spec.whatwg.org/": [],
     "https://www.w3.org/TR/push-api/": [],
+    "https://www.rfc-editor.org/rfc/rfc2119": [],
+    "https://www.rfc-editor.org/rfc/rfc8174": [],
     "https://www.w3.org/TR/screen-capture/": [],
     "https://www.w3.org/TR/screen-wake-lock/": [],
     "https://wicg.github.io/background-sync/spec/": [],
+    "https://webbluetoothcg.github.io/web-bluetooth/": [],
     "https://w3c.github.io/web-nfc/": [],
     "https://www.w3.org/TR/webmidi/": [],
     "https://www.w3.org/TR/webxr/": []

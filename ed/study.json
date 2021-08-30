@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-08-30T00:51:52.177Z",
+  "date": "2021-08-30T06:45:11.175Z",
   "stats": {
     "crawled": 429,
     "errors": 0,
@@ -312,15 +312,14 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/"
-            }
-          ],
-          "informative": [
+            },
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -668,18 +667,17 @@
               "crawled": "https://w3c.github.io/sensors/"
             },
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://immersive-web.github.io/lighting-estimation/",
               "title": "WebXR Lighting Estimation API Level 1",
               "crawled": "https://immersive-web.github.io/lighting-estimation/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -1142,14 +1140,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -1167,7 +1165,10 @@
             "https://html.spec.whatwg.org/#concept-relevant-global",
             "https://html.spec.whatwg.org/#transient-activation",
             "https://html.spec.whatwg.org/#allowed-to-play",
-            "https://html.spec.whatwg.org/#concept-document-permissions-policy"
+            "https://html.spec.whatwg.org/#concept-document-permissions-policy",
+            "https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://www.w3.org/TR/permissions/#prompt-the-user-to-choose"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -1238,18 +1239,17 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -1284,7 +1284,10 @@
             "https://html.spec.whatwg.org/#event-handlers",
             "https://html.spec.whatwg.org/#event-handler-event-type",
             "https://html.spec.whatwg.org/#event-handler-idl-attributes",
-            "https://html.spec.whatwg.org/#active-document"
+            "https://html.spec.whatwg.org/#active-document",
+            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#new-information-about-the-users-intent"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -1758,6 +1761,11 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
             "https://html.spec.whatwg.org/#datatransfer",
             "https://html.spec.whatwg.org/#dom-datatransfer-items",
             "https://html.spec.whatwg.org/#dom-datatransfer-files",
@@ -22737,7 +22745,6 @@
             "https://w3c.github.io/FileAPI/#UnixEpoch",
             "https://w3c.github.io/FileAPI/#snapshot-state",
             "https://w3c.github.io/FileAPI/#readOperation",
-            "https://w3c.github.io/permissions/#create-a-permissionstatus",
             "https://storage.spec.whatwg.org/#storage-endpoint-identifier",
             "https://storage.spec.whatwg.org/#storage-endpoint-types",
             "https://storage.spec.whatwg.org/#storage-endpoint-quota"
@@ -22772,7 +22779,16 @@
             "https://html.spec.whatwg.org/#the-drag-data-item-kind",
             "https://html.spec.whatwg.org/#current-settings-object",
             "https://html.spec.whatwg.org/#event-messageerror",
-            "https://w3c.github.io/permissions/#boolean-permission-query-algorithm"
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#permission-state-constraints",
+            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#boolean-permission-query-algorithm",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#create-a-permissionstatus",
+            "https://w3c.github.io/permissions/#enumdef-permissionstate"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -23253,17 +23269,17 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://www.w3.org/TR/webxr-gamepads-module-1/",
               "title": "WebXR Gamepads Module - Level 1",
               "crawled": "https://immersive-web.github.io/webxr-gamepads-module/"
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            },
             {
               "url": "https://wicg.github.io/webhid/",
               "title": "WebHID API",
@@ -23454,6 +23470,11 @@
               "crawled": "https://w3c.github.io/orientation-sensor/"
             },
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://www.w3.org/TR/proximity/",
               "title": "Proximity Sensor",
               "crawled": "https://w3c.github.io/proximity/"
@@ -23510,6 +23531,11 @@
             "https://html.spec.whatwg.org/#task-queue",
             "https://html.spec.whatwg.org/#spin-the-event-loop",
             "https://html.spec.whatwg.org/#attr-iframe-allow",
+            "https://www.w3.org/TR/permissions/#enumdef-permissionname",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#enumdef-permissionname",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
             "https://w3c.github.io/webdriver/#handling-errors"
           ],
           "evolvingLinks": [],
@@ -23591,6 +23617,7 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
+            "https://www.w3.org/TR/permissions/#request-permission-to-use",
             "https://html.spec.whatwg.org/#attr-iframe-allow",
             "https://html.spec.whatwg.org/#the-iframe-element",
             "https://html.spec.whatwg.org/#navigator",
@@ -23674,6 +23701,7 @@
           ],
           "notDfn": [],
           "brokenLinks": [
+            "https://w3c.github.io/permissions/#enumdef-permissionname",
             "https://html.spec.whatwg.org/#in-parallel"
           ],
           "evolvingLinks": [],
@@ -24059,15 +24087,14 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/"
-            }
-          ],
-          "informative": [
+            },
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -34631,7 +34658,13 @@
             "https://html.spec.whatwg.org/#queue-a-global-task",
             "https://html.spec.whatwg.org/#concept-document-window",
             "https://html.spec.whatwg.org/#allowed-to-use",
-            "https://html.spec.whatwg.org/#window"
+            "https://html.spec.whatwg.org/#window",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#boolean-feature",
+            "https://w3c.github.io/permissions/#enumdef-permissionstate",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#permission-task-source",
+            "https://w3c.github.io/permissions/#permission-state"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -36731,7 +36764,9 @@
             "https://html.spec.whatwg.org/#relevant-settings-object",
             "https://html.spec.whatwg.org/#concept-origin",
             "https://html.spec.whatwg.org/#concept-origin-opaque",
-            "https://html.spec.whatwg.org/#in-parallel"
+            "https://html.spec.whatwg.org/#in-parallel",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#request-permission-to-use"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -36928,15 +36963,14 @@
               "url": "https://www.w3.org/TR/orientation-sensor/",
               "title": "Orientation Sensor",
               "crawled": "https://w3c.github.io/orientation-sensor/"
-            }
-          ],
-          "informative": [
+            },
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -37263,7 +37297,7 @@
     {
       "title": "Media Capture and Streams",
       "shortname": "mediacapture-streams",
-      "date": "23 August 2021",
+      "date": "30 August 2021",
       "url": "https://www.w3.org/TR/mediacapture-streams/",
       "release": {
         "url": "https://www.w3.org/TR/mediacapture-streams/",
@@ -37474,7 +37508,11 @@
             "https://html.spec.whatwg.org/#nested-browsing-context",
             "https://html.spec.whatwg.org/#dom-localstorage",
             "https://html.spec.whatwg.org/#browsing-context",
-            "https://html.spec.whatwg.org/#concept-document-permissions-policy"
+            "https://html.spec.whatwg.org/#concept-document-permissions-policy",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://www.w3.org/TR/permissions/#enumdef-permissionname",
+            "https://www.w3.org/TR/permissions/#request-permission-to-use",
+            "https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -37552,6 +37590,8 @@
           ],
           "brokenLinks": [
             "https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://www.w3.org/TR/permissions/#set-permission-command",
             "https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia",
             "https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose",
             "https://html.spec.whatwg.org/#in-parallel"
@@ -38524,7 +38564,8 @@
             "https://html.spec.whatwg.org/#imagebitmap",
             "https://html.spec.whatwg.org/#dom-imagebitmap-width",
             "https://html.spec.whatwg.org/#dom-imagebitmap-height",
-            "https://html.spec.whatwg.org/#top-level-browsing-context"
+            "https://html.spec.whatwg.org/#top-level-browsing-context",
+            "https://w3c.github.io/permissions/#request-permission-to-use"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -39558,17 +39599,17 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
               "crawled": "https://w3c.github.io/push-api/"
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            },
             {
               "url": "https://wicg.github.io/permissions-request/",
               "title": "Requesting Permissions",
@@ -40990,7 +41031,7 @@
     {
       "title": "Permissions",
       "shortname": "permissions",
-      "date": "26 August 2021",
+      "date": "30 August 2021",
       "url": "https://www.w3.org/TR/permissions/",
       "release": {
         "url": "https://www.w3.org/TR/permissions/",
@@ -41035,18 +41076,9 @@
           "idl": []
         },
         "missingLinkRef": [
-          "https://w3c.github.io/sensors/",
-          "https://w3c.github.io/webdriver/"
+          "https://w3c.github.io/permissions-automation/"
         ],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/webappsec-permissions-policy/",
-            "ref": {
-              "name": "Permissions-Policy",
-              "url": "https://www.w3.org/TR/permissions-policy-1/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -41198,18 +41230,11 @@
           "informative": []
         },
         "xrefs": {
-          "notExported": [
-            "https://storage.spec.whatwg.org/#bucket-mode",
-            "https://w3c.github.io/webdriver/#dfn-extension-command-uri-template",
-            "https://w3c.github.io/webdriver/#dfn-remote-end-steps",
-            "https://w3c.github.io/webdriver/#dfn-error-code",
-            "https://w3c.github.io/webdriver/#dfn-invalid-argument",
-            "https://w3c.github.io/webdriver/#dfn-current-browsing-context",
-            "https://w3c.github.io/webdriver/#dfn-success"
-          ],
+          "notExported": [],
           "notDfn": [],
           "brokenLinks": [
             "https://html.spec.whatwg.org/#environment-settings-object",
+            "https://html.spec.whatwg.org/#concept-global-object-realm",
             "https://html.spec.whatwg.org/#current-settings-object",
             "https://html.spec.whatwg.org/#non-secure-context",
             "https://html.spec.whatwg.org/#concept-document-window",
@@ -41219,26 +41244,15 @@
             "https://html.spec.whatwg.org/#queue-a-task",
             "https://html.spec.whatwg.org/#concept-realm-settings-object",
             "https://html.spec.whatwg.org/#responsible-event-loop",
+            "https://html.spec.whatwg.org/#window",
+            "https://html.spec.whatwg.org/#workerglobalscope",
             "https://html.spec.whatwg.org/#eventhandler",
             "https://html.spec.whatwg.org/#event-handlers",
             "https://html.spec.whatwg.org/#event-handler-event-type",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#workerglobalscope",
             "https://html.spec.whatwg.org/#navigator",
             "https://html.spec.whatwg.org/#workernavigator",
             "https://html.spec.whatwg.org/#concept-document-permissions-policy",
-            "https://html.spec.whatwg.org/#attr-iframe-allow",
-            "https://html.spec.whatwg.org/#secure-context",
-            "https://html.spec.whatwg.org/#active-document",
-            "https://html.spec.whatwg.org/#concept-settings-object-origin",
-            "https://html.spec.whatwg.org/#relevant-settings-object",
-            "https://html.spec.whatwg.org/#concept-settings-object-global",
-            "https://html.spec.whatwg.org/#window-bc",
-            "https://html.spec.whatwg.org/#concept-task",
-            "https://w3c.github.io/webdriver/#dfn-extension-commands",
-            "https://w3c.github.io/webdriver/#dfn-error",
-            "https://w3c.github.io/webdriver/#dfn-session",
-            "https://w3c.github.io/webdriver/#dfn-local-end"
+            "https://html.spec.whatwg.org/#secure-context"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -42174,7 +42188,9 @@
             "https://html.spec.whatwg.org/#a-browsing-context-is-discarded",
             "https://html.spec.whatwg.org/#sandboxed-modals-flag",
             "https://html.spec.whatwg.org/#sandboxed-auxiliary-navigation-browsing-context-flag",
-            "https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag"
+            "https://html.spec.whatwg.org/#sandboxed-top-level-navigation-without-user-activation-browsing-context-flag",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://www.w3.org/TR/permissions/#permission-descriptor-type"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -42808,17 +42824,18 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            }
+          ],
           "informative": [
             {
               "url": "https://wicg.github.io/idle-detection/",
               "title": "Idle Detection API",
               "crawled": "https://wicg.github.io/idle-detection/"
-            },
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
             }
           ]
         },
@@ -43245,8 +43262,15 @@
         },
         "xrefs": {
           "notExported": [],
-          "notDfn": [],
+          "notDfn": [
+            "https://w3c.github.io/permissions/#reacting-to-revocation"
+          ],
           "brokenLinks": [
+            "https://w3c.github.io/permissions/#permissions",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#new-information-about-the-users-intent",
             "https://html.spec.whatwg.org/#in-parallel",
             "https://html.spec.whatwg.org/#queue-a-task"
           ],
@@ -43567,12 +43591,21 @@
           ]
         },
         "xrefs": {
-          "notExported": [
-            "https://w3c.github.io/permissions/#create-a-permissionstatus"
+          "notExported": [],
+          "notDfn": [
+            "https://w3c.github.io/permissions/#permission-registry",
+            "https://w3c.github.io/permissions/#requesting-more-permission"
           ],
-          "notDfn": [],
           "brokenLinks": [
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permissions",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#create-a-permissionstatus",
+            "https://w3c.github.io/permissions/#permission-result-type",
             "https://w3c.github.io/permissions/#boolean-permission-query-algorithm",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
             "https://html.spec.whatwg.org/#environment-settings-object"
           ],
           "evolvingLinks": [],
@@ -46203,18 +46236,17 @@
               "crawled": "https://w3c.github.io/mediacapture-automation/"
             },
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://wicg.github.io/prefer-current-tab/",
               "title": "preferCurrentTab",
               "crawled": "https://wicg.github.io/prefer-current-tab/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [],
@@ -46227,7 +46259,10 @@
             "https://html.spec.whatwg.org/#responsible-document",
             "https://html.spec.whatwg.org/#fully-active",
             "https://html.spec.whatwg.org/#concept-document-permissions-policy",
-            "https://html.spec.whatwg.org/#allowed-to-use"
+            "https://html.spec.whatwg.org/#allowed-to-use",
+            "https://www.w3.org/TR/permissions/#permission-state",
+            "https://www.w3.org/TR/permissions/#prompt-the-user-to-choose",
+            "https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [
@@ -46277,19 +46312,22 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
+            "https://www.w3.org/TR/permissions/#powerful-feature",
+            "https://www.w3.org/TR/permissions/#permission-revocation-algorithm",
+            "https://www.w3.org/TR/permissions/#request-permission-to-use",
             "https://html.spec.whatwg.org/#current-settings-object",
             "https://html.spec.whatwg.org/#concept-document-window",
             "https://html.spec.whatwg.org/#task-source",
@@ -47577,11 +47615,6 @@
               "url": "https://www.w3.org/TR/IndexedDB-3/",
               "title": "Indexed Database API 3.0",
               "crawled": "https://w3c.github.io/IndexedDB/"
-            },
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
             }
           ],
           "informative": [
@@ -47617,7 +47650,11 @@
             "https://html.spec.whatwg.org/#workernavigator",
             "https://html.spec.whatwg.org/#relevant-settings-object",
             "https://html.spec.whatwg.org/#in-parallel",
-            "https://html.spec.whatwg.org/#queue-a-task"
+            "https://html.spec.whatwg.org/#queue-a-task",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#permission-revocation-algorithm",
+            "https://w3c.github.io/permissions/#request-permission-to-use"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -48704,6 +48741,7 @@
             "https://html.spec.whatwg.org/#sandboxing-flag-set",
             "https://html.spec.whatwg.org/#parse-a-sandboxing-directive",
             "https://html.spec.whatwg.org/#concept-document-permissions-policy",
+            "https://w3c.github.io/permissions/#permission-task-source",
             "https://w3c.github.io/webdriver/webdriver-spec.html#dfn-extension-commands",
             "https://w3c.github.io/webdriver/webdriver-spec.html#dfn-error"
           ],
@@ -50341,7 +50379,8 @@
             "https://html.spec.whatwg.org/#windoworworkerglobalscope",
             "https://html.spec.whatwg.org/#concept-relevant-global",
             "https://html.spec.whatwg.org/#in-parallel",
-            "https://html.spec.whatwg.org/#queue-a-task"
+            "https://html.spec.whatwg.org/#queue-a-task",
+            "https://w3c.github.io/permissions/#permission-task-source"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -51508,17 +51547,17 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
             }
           ],
           "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            },
             {
               "url": "https://www.w3.org/TR/push-api/",
               "title": "Push API",
@@ -51607,13 +51646,14 @@
           }
         ],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
-            },
+            }
+          ],
+          "informative": [
             {
               "url": "https://www.w3.org/TR/secure-contexts/",
               "title": "Secure Contexts",
@@ -51652,7 +51692,20 @@
             "https://html.spec.whatwg.org/#environment-settings-object",
             "https://html.spec.whatwg.org/#concept-settings-object-global",
             "https://html.spec.whatwg.org/#event-handler-idl-attributes",
-            "https://html.spec.whatwg.org/#navigator"
+            "https://html.spec.whatwg.org/#navigator",
+            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#allowed-in-non-secure-contexts",
+            "https://w3c.github.io/permissions/#prompt-the-user-to-choose",
+            "https://w3c.github.io/permissions/#extra-permission-data",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#extra-permission-data-type",
+            "https://w3c.github.io/permissions/#extra-permission-data-constraints",
+            "https://w3c.github.io/permissions/#permission-result-type",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#permission-query-algorithm",
+            "https://w3c.github.io/permissions/#permission-revocation-algorithm"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -53033,14 +53086,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [],
@@ -53162,14 +53215,14 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
-          "informative": [
+          "normative": [
             {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://w3c.github.io/permissions/"
             }
-          ]
+          ],
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -53192,7 +53245,10 @@
             "https://html.spec.whatwg.org/#current-settings-object",
             "https://html.spec.whatwg.org/#environment-settings-object",
             "https://html.spec.whatwg.org/#unloading-document-cleanup-steps",
-            "https://html.spec.whatwg.org/#in-parallel"
+            "https://html.spec.whatwg.org/#in-parallel",
+            "https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor",
+            "https://www.w3.org/TR/permissions/#query-a-permission",
+            "https://www.w3.org/TR/permissions/#request-permission-to-use"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -53268,6 +53324,8 @@
             "https://html.spec.whatwg.org/#in-parallel",
             "https://html.spec.whatwg.org/#enqueue-the-following-steps",
             "https://html.spec.whatwg.org/#eventhandler",
+            "https://w3c.github.io/permissions/#enumdef-permissionstate",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
             "https://dom.spec.whatwg.org/#context-object"
           ],
           "evolvingLinks": [],
@@ -60055,7 +60113,7 @@
     {
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "shortname": "webrtc",
-      "date": "23 August 2021",
+      "date": "30 August 2021",
       "url": "https://www.w3.org/TR/webrtc/",
       "release": {
         "url": "https://www.w3.org/TR/webrtc/",
@@ -60588,7 +60646,15 @@
             "https://html.spec.whatwg.org/#workernavigator",
             "https://html.spec.whatwg.org/#concept-relevant-global",
             "https://html.spec.whatwg.org/#transient-activation",
-            "https://html.spec.whatwg.org/#in-parallel"
+            "https://html.spec.whatwg.org/#in-parallel",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#extra-permission-data-type",
+            "https://w3c.github.io/permissions/#permission-result-type",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#permission-query-algorithm"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [
@@ -61080,6 +61146,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://www.w3.org/TR/permissions/",
+              "title": "Permissions",
+              "crawled": "https://w3c.github.io/permissions/"
+            },
+            {
               "url": "https://immersive-web.github.io/anchors/",
               "title": "WebXR Anchors Module",
               "crawled": "https://immersive-web.github.io/anchors/"
@@ -61125,13 +61196,7 @@
               "crawled": "https://immersive-web.github.io/lighting-estimation/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/permissions/",
-              "title": "Permissions",
-              "crawled": "https://w3c.github.io/permissions/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [
@@ -61166,7 +61231,15 @@
             "https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context",
             "https://html.spec.whatwg.org/#same-origin",
             "https://html.spec.whatwg.org/#dom-navigator-useragent",
-            "https://html.spec.whatwg.org/#dom-navigator-appversion"
+            "https://html.spec.whatwg.org/#dom-navigator-appversion",
+            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#powerful-feature",
+            "https://w3c.github.io/permissions/#permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
+            "https://w3c.github.io/permissions/#permission-result-type",
+            "https://w3c.github.io/permissions/#permissionstatus",
+            "https://w3c.github.io/permissions/#permission-query-algorithm",
+            "https://w3c.github.io/permissions/#permission-state"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],

@@ -72,9 +72,3 @@ dictionary DevicePermissionDescriptor : PermissionDescriptor {
 dictionary CameraDevicePermissionDescriptor : DevicePermissionDescriptor {
   boolean panTiltZoom = false;
 };
-
-dictionary PermissionSetParameters {
-  required PermissionDescriptor descriptor;
-  required PermissionState state;
-  boolean oneRealm = false;
-};
