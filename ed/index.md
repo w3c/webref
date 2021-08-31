@@ -12,7 +12,7 @@
 
 - Initial URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Crawled URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
-- Crawled version: 29 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Shortname: tc39-accessible-object-hasownproperty
 
@@ -125,6 +125,7 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [High Resolution Time](https://w3c.github.io/hr-time/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -445,7 +446,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 30 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -10444,7 +10445,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 26 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -10512,7 +10513,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 26 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -10632,7 +10633,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- Crawled version: 30 June 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
 - Latest published version: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Shortname: media-source
@@ -10654,6 +10655,7 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#dom-media-buffered`](https://html.spec.whatwg.org/#dom-media-buffered)
      * [`https://html.spec.whatwg.org/#timeranges`](https://html.spec.whatwg.org/#timeranges)
      * [`https://html.spec.whatwg.org/#dom-media-seekable`](https://html.spec.whatwg.org/#dom-media-seekable)
+     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
@@ -10664,9 +10666,19 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#texttracklist`](https://html.spec.whatwg.org/#texttracklist)
      * [`https://html.spec.whatwg.org/#texttrack`](https://html.spec.whatwg.org/#texttrack)
      * [`https://html.spec.whatwg.org/#dom-texttrack-mode`](https://html.spec.whatwg.org/#dom-texttrack-mode)
+     * [`https://html.spec.whatwg.org/#transferable`](https://html.spec.whatwg.org/#transferable)
+     * [`https://html.spec.whatwg.org/#messageport`](https://html.spec.whatwg.org/#messageport)
+     * [`https://html.spec.whatwg.org/#messagechannel`](https://html.spec.whatwg.org/#messagechannel)
      * [`https://html.spec.whatwg.org/#dom-media-src`](https://html.spec.whatwg.org/#dom-media-src)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port1`](https://html.spec.whatwg.org/#dom-messagechannel-port1)
+     * [`https://html.spec.whatwg.org/#structuredserializewithtransfer`](https://html.spec.whatwg.org/#structuredserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port2`](https://html.spec.whatwg.org/#dom-messagechannel-port2)
+     * [`https://html.spec.whatwg.org/#structureddeserializewithtransfer`](https://html.spec.whatwg.org/#structureddeserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
      * [`https://html.spec.whatwg.org/#dom-media-readystate`](https://html.spec.whatwg.org/#dom-media-readystate)
+     * [`https://html.spec.whatwg.org/#dom-media-have_nothing`](https://html.spec.whatwg.org/#dom-media-have_nothing)
      * [`https://html.spec.whatwg.org/#dom-media-error`](https://html.spec.whatwg.org/#dom-media-error)
+     * [`https://html.spec.whatwg.org/#dom-audiotracklist-length`](https://html.spec.whatwg.org/#dom-audiotracklist-length)
      * [`https://html.spec.whatwg.org/#dom-videotrack-id`](https://html.spec.whatwg.org/#dom-videotrack-id)
      * [`https://html.spec.whatwg.org/#dom-videotrack-language`](https://html.spec.whatwg.org/#dom-videotrack-language)
      * [`https://html.spec.whatwg.org/#dom-videotrack-label`](https://html.spec.whatwg.org/#dom-videotrack-label)
@@ -10676,6 +10688,13 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#dom-texttrack-language`](https://html.spec.whatwg.org/#dom-texttrack-language)
      * [`https://html.spec.whatwg.org/#dom-texttrack-label`](https://html.spec.whatwg.org/#dom-texttrack-label)
      * [`https://html.spec.whatwg.org/#dom-texttrack-kind`](https://html.spec.whatwg.org/#dom-texttrack-kind)
+     * [`https://html.spec.whatwg.org/#dom-media-have_current_data`](https://html.spec.whatwg.org/#dom-media-have_current_data)
+     * [`https://html.spec.whatwg.org/#dom-media-have_metadata`](https://html.spec.whatwg.org/#dom-media-have_metadata)
+     * [`https://html.spec.whatwg.org/#event-media-loadedmetadata`](https://html.spec.whatwg.org/#event-media-loadedmetadata)
+     * [`https://html.spec.whatwg.org/#dom-worker-terminate`](https://html.spec.whatwg.org/#dom-worker-terminate)
+     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
+     * [`https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close`](https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
@@ -13986,7 +14005,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
-- Crawled version: 23 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -15334,7 +15353,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
 - Crawled URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
-- Crawled version: 20 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
 - Shortname: IFT
 
@@ -16720,7 +16739,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 17 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -17495,7 +17514,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - Crawled URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
-- Crawled version: 11 May 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - Shortname: idle-detection
 
@@ -17517,12 +17536,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
-     * [`https://w3c.github.io/permissions/#boolean-feature`](https://w3c.github.io/permissions/#boolean-feature)
-     * [`https://w3c.github.io/permissions/#enumdef-permissionstate`](https://w3c.github.io/permissions/#enumdef-permissionstate)
-     * [`https://w3c.github.io/permissions/#request-permission-to-use`](https://w3c.github.io/permissions/#request-permission-to-use)
-     * [`https://w3c.github.io/permissions/#permission-task-source`](https://w3c.github.io/permissions/#permission-task-source)
-     * [`https://w3c.github.io/permissions/#permission-state`](https://w3c.github.io/permissions/#permission-state)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -20306,7 +20319,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 18 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
@@ -20682,7 +20695,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 19 July 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -22107,7 +22120,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 30 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 

@@ -756,6 +756,29 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-mediasource-canconstructindedicatedworker",
+      "href": "https://w3c.github.io/media-source/#dom-mediasource-canconstructindedicatedworker",
+      "linkingText": [
+        "canConstructInDedicatedWorker"
+      ],
+      "localLinkingText": [
+        "MediaSource.canConstructInDedicatedWorker"
+      ],
+      "type": "attribute",
+      "for": [
+        "MediaSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attributes",
+        "href": "https://w3c.github.io/media-source/#attributes",
+        "title": "Attributes",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "dom-mediasource-addsourcebuffer",
       "href": "https://w3c.github.io/media-source/#dom-mediasource-addsourcebuffer",
       "linkingText": [
@@ -968,6 +991,88 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-cross-context-communication-model",
+      "href": "https://w3c.github.io/media-source/#dfn-cross-context-communication-model",
+      "linkingText": [
+        "Cross-context communication model"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediasource-in-worker-communication-model",
+        "href": "https://w3c.github.io/media-source/#mediasource-in-worker-communication-model",
+        "title": "Cross-context communication model",
+        "number": "2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-port-to-main",
+      "href": "https://w3c.github.io/media-source/#dfn-port-to-main",
+      "linkingText": [
+        "[[port to main]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediasource-in-worker-communication-model",
+        "href": "https://w3c.github.io/media-source/#mediasource-in-worker-communication-model",
+        "title": "Cross-context communication model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-port-to-worker",
+      "href": "https://w3c.github.io/media-source/#dfn-port-to-worker",
+      "linkingText": [
+        "[[port to worker]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediasource-in-worker-communication-model",
+        "href": "https://w3c.github.io/media-source/#mediasource-in-worker-communication-model",
+        "title": "Cross-context communication model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-channel-with-worker",
+      "href": "https://w3c.github.io/media-source/#dfn-channel-with-worker",
+      "linkingText": [
+        "[[channel with worker]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediasource-in-worker-communication-model",
+        "href": "https://w3c.github.io/media-source/#mediasource-in-worker-communication-model",
+        "title": "Cross-context communication model",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-attaching-to-a-media-element",
       "href": "https://w3c.github.io/media-source/#dfn-attaching-to-a-media-element",
       "linkingText": [
@@ -982,7 +1087,7 @@
         "id": "mediasource-attach",
         "href": "https://w3c.github.io/media-source/#mediasource-attach",
         "title": "Attaching to a media element",
-        "number": "2.4.1"
+        "number": "2.5.1"
       },
       "definedIn": "heading"
     },
@@ -1001,7 +1106,7 @@
         "id": "mediasource-detach",
         "href": "https://w3c.github.io/media-source/#mediasource-detach",
         "title": "Detaching from a media element",
-        "number": "2.4.2"
+        "number": "2.5.2"
       },
       "definedIn": "heading"
     },
@@ -1020,7 +1125,7 @@
         "id": "mediasource-seeking",
         "href": "https://w3c.github.io/media-source/#mediasource-seeking",
         "title": "Seeking",
-        "number": "2.4.3"
+        "number": "2.5.3"
       },
       "definedIn": "heading"
     },
@@ -1039,7 +1144,7 @@
         "id": "buffer-monitoring",
         "href": "https://w3c.github.io/media-source/#buffer-monitoring",
         "title": "SourceBuffer Monitoring",
-        "number": "2.4.4"
+        "number": "2.5.4"
       },
       "definedIn": "heading"
     },
@@ -1058,7 +1163,7 @@
         "id": "buffer-monitoring",
         "href": "https://w3c.github.io/media-source/#buffer-monitoring",
         "title": "SourceBuffer Monitoring",
-        "number": "2.4.4"
+        "number": "2.5.4"
       },
       "definedIn": "prose"
     },
@@ -1077,7 +1182,7 @@
         "id": "active-source-buffer-changes",
         "href": "https://w3c.github.io/media-source/#active-source-buffer-changes",
         "title": "Changes to selected/enabled track state",
-        "number": "2.4.5"
+        "number": "2.5.5"
       },
       "definedIn": "heading"
     },
@@ -1096,7 +1201,7 @@
         "id": "duration-change-algorithm",
         "href": "https://w3c.github.io/media-source/#duration-change-algorithm",
         "title": "Duration change",
-        "number": "2.4.6"
+        "number": "2.5.6"
       },
       "definedIn": "heading"
     },
@@ -1115,7 +1220,7 @@
         "id": "end-of-stream-algorithm",
         "href": "https://w3c.github.io/media-source/#end-of-stream-algorithm",
         "title": "End of stream",
-        "number": "2.4.7"
+        "number": "2.5.7"
       },
       "definedIn": "heading"
     },

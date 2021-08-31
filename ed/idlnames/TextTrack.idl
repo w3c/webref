@@ -20,6 +20,7 @@ interface TextTrack : EventTarget {
 };
 
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
+[Exposed=(Window,DedicatedWorker)]
 partial interface TextTrack {
     readonly        attribute SourceBuffer? sourceBuffer;
 };

@@ -14,7 +14,7 @@
         "title": "Media Source Extensions™",
         "url": "https://www.w3.org/TR/media-source/"
       },
-      "fragment": "partial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};"
+      "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};"
     }
   ],
   "inheritance": null,

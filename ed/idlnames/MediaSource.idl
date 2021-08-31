@@ -1,5 +1,5 @@
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker)]
 interface MediaSource : EventTarget {
     constructor();
     readonly        attribute SourceBufferList    sourceBuffers;
@@ -9,6 +9,7 @@ interface MediaSource : EventTarget {
                     attribute EventHandler        onsourceopen;
                     attribute EventHandler        onsourceended;
                     attribute EventHandler        onsourceclose;
+    static readonly attribute boolean canConstructInDedicatedWorker;
     SourceBuffer   addSourceBuffer (DOMString type);
     undefined           removeSourceBuffer (SourceBuffer sourceBuffer);
     undefined           endOfStream (optional EndOfStreamError error);

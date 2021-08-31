@@ -1,5 +1,5 @@
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker)]
 interface SourceBufferList : EventTarget {
     readonly        attribute unsigned long length;
                     attribute EventHandler  onaddsourcebuffer;

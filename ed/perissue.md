@@ -5686,12 +5686,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
-     * [`https://w3c.github.io/permissions/#boolean-feature`](https://w3c.github.io/permissions/#boolean-feature)
-     * [`https://w3c.github.io/permissions/#enumdef-permissionstate`](https://w3c.github.io/permissions/#enumdef-permissionstate)
-     * [`https://w3c.github.io/permissions/#request-permission-to-use`](https://w3c.github.io/permissions/#request-permission-to-use)
-     * [`https://w3c.github.io/permissions/#permission-task-source`](https://w3c.github.io/permissions/#permission-task-source)
-     * [`https://w3c.github.io/permissions/#permission-state`](https://w3c.github.io/permissions/#permission-state)
 - [Image Resource](https://w3c.github.io/image-resource/):
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
      * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
@@ -6140,6 +6134,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-media-buffered`](https://html.spec.whatwg.org/#dom-media-buffered)
      * [`https://html.spec.whatwg.org/#timeranges`](https://html.spec.whatwg.org/#timeranges)
      * [`https://html.spec.whatwg.org/#dom-media-seekable`](https://html.spec.whatwg.org/#dom-media-seekable)
+     * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
@@ -6150,9 +6145,19 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#texttracklist`](https://html.spec.whatwg.org/#texttracklist)
      * [`https://html.spec.whatwg.org/#texttrack`](https://html.spec.whatwg.org/#texttrack)
      * [`https://html.spec.whatwg.org/#dom-texttrack-mode`](https://html.spec.whatwg.org/#dom-texttrack-mode)
+     * [`https://html.spec.whatwg.org/#transferable`](https://html.spec.whatwg.org/#transferable)
+     * [`https://html.spec.whatwg.org/#messageport`](https://html.spec.whatwg.org/#messageport)
+     * [`https://html.spec.whatwg.org/#messagechannel`](https://html.spec.whatwg.org/#messagechannel)
      * [`https://html.spec.whatwg.org/#dom-media-src`](https://html.spec.whatwg.org/#dom-media-src)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port1`](https://html.spec.whatwg.org/#dom-messagechannel-port1)
+     * [`https://html.spec.whatwg.org/#structuredserializewithtransfer`](https://html.spec.whatwg.org/#structuredserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port2`](https://html.spec.whatwg.org/#dom-messagechannel-port2)
+     * [`https://html.spec.whatwg.org/#structureddeserializewithtransfer`](https://html.spec.whatwg.org/#structureddeserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
      * [`https://html.spec.whatwg.org/#dom-media-readystate`](https://html.spec.whatwg.org/#dom-media-readystate)
+     * [`https://html.spec.whatwg.org/#dom-media-have_nothing`](https://html.spec.whatwg.org/#dom-media-have_nothing)
      * [`https://html.spec.whatwg.org/#dom-media-error`](https://html.spec.whatwg.org/#dom-media-error)
+     * [`https://html.spec.whatwg.org/#dom-audiotracklist-length`](https://html.spec.whatwg.org/#dom-audiotracklist-length)
      * [`https://html.spec.whatwg.org/#dom-videotrack-id`](https://html.spec.whatwg.org/#dom-videotrack-id)
      * [`https://html.spec.whatwg.org/#dom-videotrack-language`](https://html.spec.whatwg.org/#dom-videotrack-language)
      * [`https://html.spec.whatwg.org/#dom-videotrack-label`](https://html.spec.whatwg.org/#dom-videotrack-label)
@@ -6162,6 +6167,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-texttrack-language`](https://html.spec.whatwg.org/#dom-texttrack-language)
      * [`https://html.spec.whatwg.org/#dom-texttrack-label`](https://html.spec.whatwg.org/#dom-texttrack-label)
      * [`https://html.spec.whatwg.org/#dom-texttrack-kind`](https://html.spec.whatwg.org/#dom-texttrack-kind)
+     * [`https://html.spec.whatwg.org/#dom-media-have_current_data`](https://html.spec.whatwg.org/#dom-media-have_current_data)
+     * [`https://html.spec.whatwg.org/#dom-media-have_metadata`](https://html.spec.whatwg.org/#dom-media-have_metadata)
+     * [`https://html.spec.whatwg.org/#event-media-loadedmetadata`](https://html.spec.whatwg.org/#event-media-loadedmetadata)
+     * [`https://html.spec.whatwg.org/#dom-worker-terminate`](https://html.spec.whatwg.org/#dom-worker-terminate)
+     * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
+     * [`https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close`](https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/):
      * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind)
@@ -8444,7 +8456,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4456 problematic external links found in 281 specifications
+=> 4468 problematic external links found in 281 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

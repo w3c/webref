@@ -8,12 +8,25 @@
       "constructors": {
         "Window": [
           "MediaSource"
+        ],
+        "DedicatedWorker": [
+          "MediaSource"
         ]
       },
       "functions": {
         "Window": [
           "SourceBuffer",
-          "SourceBufferList"
+          "SourceBufferList",
+          "AudioTrack",
+          "VideoTrack",
+          "TextTrack"
+        ],
+        "DedicatedWorker": [
+          "SourceBuffer",
+          "SourceBufferList",
+          "AudioTrack",
+          "VideoTrack",
+          "TextTrack"
         ]
       }
     },
@@ -55,7 +68,7 @@
         "extAttrs": []
       },
       "MediaSource": {
-        "fragment": "[Exposed=Window]\ninterface MediaSource : EventTarget {\n    constructor();\n    readonly        attribute SourceBufferList    sourceBuffers;\n    readonly        attribute SourceBufferList    activeSourceBuffers;\n    readonly        attribute ReadyState          readyState;\n                    attribute unrestricted double duration;\n                    attribute EventHandler        onsourceopen;\n                    attribute EventHandler        onsourceended;\n                    attribute EventHandler        onsourceclose;\n    SourceBuffer   addSourceBuffer (DOMString type);\n    undefined           removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined           endOfStream (optional EndOfStreamError error);\n    undefined           setLiveSeekableRange (double start, double end);\n    undefined           clearLiveSeekableRange ();\n    static boolean isTypeSupported (DOMString type);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface MediaSource : EventTarget {\n    constructor();\n    readonly        attribute SourceBufferList    sourceBuffers;\n    readonly        attribute SourceBufferList    activeSourceBuffers;\n    readonly        attribute ReadyState          readyState;\n                    attribute unrestricted double duration;\n                    attribute EventHandler        onsourceopen;\n                    attribute EventHandler        onsourceended;\n                    attribute EventHandler        onsourceclose;\n    static readonly attribute boolean canConstructInDedicatedWorker;\n    SourceBuffer   addSourceBuffer (DOMString type);\n    undefined           removeSourceBuffer (SourceBuffer sourceBuffer);\n    undefined           endOfStream (optional EndOfStreamError error);\n    undefined           setLiveSeekableRange (double start, double end);\n    undefined           clearLiveSeekableRange ();\n    static boolean isTypeSupported (DOMString type);\n};",
         "type": "interface",
         "name": "MediaSource",
         "inheritance": "EventTarget",
@@ -169,6 +182,21 @@
             "extAttrs": [],
             "special": "",
             "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "canConstructInDedicatedWorker",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "static",
+            "readonly": true
           },
           {
             "type": "operation",
@@ -367,8 +395,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -392,7 +427,7 @@
         "extAttrs": []
       },
       "SourceBuffer": {
-        "fragment": "[Exposed=Window]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBuffer : EventTarget {\n                    attribute AppendMode          mode;\n    readonly        attribute boolean             updating;\n    readonly        attribute TimeRanges          buffered;\n                    attribute double              timestampOffset;\n    readonly        attribute AudioTrackList      audioTracks;\n    readonly        attribute VideoTrackList      videoTracks;\n    readonly        attribute TextTrackList       textTracks;\n                    attribute double              appendWindowStart;\n                    attribute unrestricted double appendWindowEnd;\n                    attribute EventHandler        onupdatestart;\n                    attribute EventHandler        onupdate;\n                    attribute EventHandler        onupdateend;\n                    attribute EventHandler        onerror;\n                    attribute EventHandler        onabort;\n    undefined appendBuffer (BufferSource data);\n    undefined abort ();\n    undefined changeType (DOMString type);\n    undefined remove (double start, unrestricted double end);\n};",
         "type": "interface",
         "name": "SourceBuffer",
         "inheritance": "EventTarget",
@@ -740,8 +775,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -749,7 +791,7 @@
         "partial": false
       },
       "SourceBufferList": {
-        "fragment": "[Exposed=Window]\ninterface SourceBufferList : EventTarget {\n    readonly        attribute unsigned long length;\n                    attribute EventHandler  onaddsourcebuffer;\n                    attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
+        "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface SourceBufferList : EventTarget {\n    readonly        attribute unsigned long length;\n                    attribute EventHandler  onaddsourcebuffer;\n                    attribute EventHandler  onremovesourcebuffer;\n    getter SourceBuffer (unsigned long index);\n};",
         "type": "interface",
         "name": "SourceBufferList",
         "inheritance": "EventTarget",
@@ -837,8 +879,15 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier",
-              "value": "Window"
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
             },
             "arguments": []
           }
@@ -849,7 +898,7 @@
     "idlExtendedNames": {
       "AudioTrack": [
         {
-          "fragment": "partial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "AudioTrack",
           "inheritance": null,
@@ -870,13 +919,30 @@
               "readonly": true
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  },
+                  {
+                    "value": "DedicatedWorker"
+                  }
+                ]
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ],
       "VideoTrack": [
         {
-          "fragment": "partial interface VideoTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface VideoTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "VideoTrack",
           "inheritance": null,
@@ -897,13 +963,30 @@
               "readonly": true
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  },
+                  {
+                    "value": "DedicatedWorker"
+                  }
+                ]
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ],
       "TextTrack": [
         {
-          "fragment": "partial interface TextTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
+          "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface TextTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};",
           "type": "interface",
           "name": "TextTrack",
           "inheritance": null,
@@ -924,7 +1007,24 @@
               "readonly": true
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  },
+                  {
+                    "value": "DedicatedWorker"
+                  }
+                ]
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
@@ -934,7 +1034,18 @@
       "Window": [
         "MediaSource",
         "SourceBuffer",
-        "SourceBufferList"
+        "SourceBufferList",
+        "AudioTrack",
+        "VideoTrack",
+        "TextTrack"
+      ],
+      "DedicatedWorker": [
+        "MediaSource",
+        "SourceBuffer",
+        "SourceBufferList",
+        "AudioTrack",
+        "VideoTrack",
+        "TextTrack"
       ]
     },
     "dependencies": {

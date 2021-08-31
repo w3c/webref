@@ -1,5 +1,5 @@
 // Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
-[Exposed=Window]
+[Exposed=(Window,DedicatedWorker)]
 interface SourceBuffer : EventTarget {
                     attribute AppendMode          mode;
     readonly        attribute boolean             updating;
