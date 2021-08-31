@@ -263,7 +263,7 @@
     },
     {
       "spec": {
-        "title": "Permissions",
+        "title": "Permissions API",
         "url": "https://www.w3.org/TR/permissions/"
       },
       "fragment": "[Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute Permissions permissions;\n};"
@@ -302,6 +302,13 @@
         "url": "https://www.w3.org/TR/vibration/"
       },
       "fragment": "partial interface Navigator {\n    boolean vibrate (VibratePattern pattern);\n};"
+    },
+    {
+      "spec": {
+        "title": "VirtualKeyboard API",
+        "url": "https://www.w3.org/TR/virtual-keyboard/"
+      },
+      "fragment": "partial interface Navigator {\n    [SecureContext, SameObject] readonly attribute VirtualKeyboard virtualKeyboard;\n};"
     },
     {
       "spec": {

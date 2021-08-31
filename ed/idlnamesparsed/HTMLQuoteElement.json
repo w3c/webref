@@ -453,7 +453,15 @@
           "fragment": "interface mixin ElementContentEditable {\n  [CEReactions] attribute DOMString contentEditable;\n  [CEReactions] attribute DOMString enterKeyHint;\n  readonly attribute boolean isContentEditable;\n  [CEReactions] attribute DOMString inputMode;\n};",
           "href": "https://html.spec.whatwg.org/multipage/interaction.html#elementcontenteditable"
         },
-        "extended": [],
+        "extended": [
+          {
+            "spec": {
+              "title": "VirtualKeyboard API",
+              "url": "https://www.w3.org/TR/virtual-keyboard/"
+            },
+            "fragment": "partial interface ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
+          }
+        ],
         "inheritance": null,
         "includes": []
       },

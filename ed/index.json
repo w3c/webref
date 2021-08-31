@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-08-31T06:42:22.941Z",
+  "date": "2021-08-31T12:46:28.560Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -19,7 +19,7 @@
     ]
   },
   "stats": {
-    "crawled": 429,
+    "crawled": 430,
     "errors": 0
   },
   "results": [
@@ -156,7 +156,7 @@
       ],
       "crawled": "https://dom.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "2 August 2021",
+      "date": "31 August 2021",
       "links": "links/dom.json",
       "refs": "refs/dom.json",
       "idl": "idl/dom.idl",
@@ -1297,7 +1297,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "30 August 2021",
+      "date": "31 August 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -1320,8 +1320,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Immersive Web Community Group",
-          "url": "https://www.w3.org/community/immersive-web/"
+          "name": "Immersive Web Working Group",
+          "url": "https://www.w3.org/immersive-web/"
         }
       ],
       "nightly": {
@@ -14655,8 +14655,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Web Applications Working Group",
-          "url": "https://www.w3.org/2019/webapps/"
+          "name": "Accessible Rich Internet Applications Working Group",
+          "url": "https://www.w3.org/WAI/ARIA/"
         }
       ],
       "release": {
@@ -16263,7 +16263,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/payment-method-id/",
-        "filename": "index.html"
+        "filename": "Overview.html"
       },
       "nightly": {
         "url": "https://w3c.github.io/payment-method-id/",
@@ -16516,10 +16516,10 @@
       "nightly": {
         "url": "https://w3c.github.io/permissions/",
         "repository": "https://github.com/w3c/permissions",
-        "sourcePath": "index.bs",
+        "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Permissions",
+      "title": "Permissions API",
       "source": "w3c",
       "shortTitle": "Permissions",
       "tests": {
@@ -17246,7 +17246,7 @@
       ],
       "crawled": "https://w3c.github.io/resource-timing/",
       "generator": "respec",
-      "date": "30 August 2021",
+      "date": "31 August 2021",
       "links": "links/resource-timing-2.json",
       "refs": "refs/resource-timing-2.json",
       "idl": "idl/resource-timing.idl",
@@ -18248,6 +18248,12 @@
         "releaseUrl": "https://www.w3.org/TR/tracking-dnt/",
         "nightlyUrl": "https://w3c.github.io/dnt/drafts/tracking-dnt.html"
       },
+      "nightly": {
+        "url": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
+        "sourcePath": "drafts/tracking-dnt.html",
+        "repository": "https://github.com/w3c/dnt",
+        "filename": "tracking-dnt.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -18258,12 +18264,6 @@
       "release": {
         "url": "https://www.w3.org/TR/tracking-dnt/",
         "filename": "Overview.html"
-      },
-      "nightly": {
-        "url": "https://w3c.github.io/dnt/drafts/tracking-dnt.html",
-        "repository": "https://github.com/w3c/dnt",
-        "sourcePath": "index.html",
-        "filename": "tracking-dnt.html"
       },
       "title": "Tracking Preference Expression (DNT)",
       "source": "w3c",
@@ -18625,6 +18625,51 @@
       "headings": "headings/vibration.json",
       "ids": "ids/vibration.json",
       "idlparsed": "idlparsed/vibration.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/virtual-keyboard/",
+      "seriesComposition": "full",
+      "shortname": "virtual-keyboard",
+      "series": {
+        "shortname": "virtual-keyboard",
+        "currentSpecification": "virtual-keyboard",
+        "releaseUrl": "https://www.w3.org/TR/virtual-keyboard/",
+        "nightlyUrl": "https://w3c.github.io/virtual-keyboard/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Editing Working Group",
+          "url": "https://www.w3.org/groups/wg/webediting"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/virtual-keyboard/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/virtual-keyboard/",
+        "repository": "https://github.com/w3c/virtual-keyboard",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "VirtualKeyboard API",
+      "source": "w3c",
+      "shortTitle": "VirtualKeyboard API",
+      "versions": [
+        "https://www.w3.org/TR/virtual-keyboard/",
+        "https://w3c.github.io/virtual-keyboard/"
+      ],
+      "crawled": "https://w3c.github.io/virtual-keyboard/",
+      "generator": "respec",
+      "date": "24 August 2021",
+      "links": "links/virtual-keyboard.json",
+      "refs": "refs/virtual-keyboard.json",
+      "idl": "idl/virtual-keyboard.idl",
+      "dfns": "dfns/virtual-keyboard.json",
+      "headings": "headings/virtual-keyboard.json",
+      "ids": "ids/virtual-keyboard.json",
+      "idlparsed": "idlparsed/virtual-keyboard.json"
     },
     {
       "url": "https://www.w3.org/TR/wai-aria-1.2/",
