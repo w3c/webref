@@ -6,22 +6,26 @@
   "links": {
     "https://www.w3.org/TR/": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://lists.w3.org/Archives/Public/public-webappsec/": [],
-    "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://github.com/w3c/permissions/issues/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/groups/wg/webappsec/ipr": [],
     "https://www.w3.org/2020/Process-20200915/": [],
     "https://github.com/w3c/permissions/issues": [],
+    "https://infra.spec.whatwg.org/": [
+      "user-agent"
+    ],
     "https://www.w3.org/TR/appmanifest/": [
       "dfn-installed-web-application"
     ],
     "https://html.spec.whatwg.org/": [
       "environment-settings-object",
-      "current-settings-object",
+      "concept-global-object-realm",
+      "secure-context",
       "non-secure-context",
+      "current-settings-object",
       "concept-document-window",
       "allowed-to-use",
       "realms-settings-objects-global-objects",
@@ -29,42 +33,30 @@
       "queue-a-task",
       "concept-realm-settings-object",
       "responsible-event-loop",
+      "window",
+      "navigator",
+      "workerglobalscope",
+      "workernavigator",
       "eventhandler",
       "event-handlers",
       "event-handler-event-type",
-      "navigator",
-      "workernavigator",
-      "secure-context",
-      "active-document",
-      "concept-settings-object-origin",
-      "relevant-settings-object",
-      "concept-settings-object-global",
-      "window-bc",
-      "concept-task"
+      "concept-document-permissions-policy",
+      "attr-iframe-allow"
     ],
-    "https://webbluetoothcg.github.io/web-bluetooth/": [
-      "dictdef-bluetoothlescanfilterinit",
-      "typedefdef-bluetoothserviceuuid",
-      "permission-api-integration"
-    ],
-    "https://tc39.github.io/ecma262/": [
-      "sec-code-realms",
-      "current-realm"
-    ],
-    "https://www.w3.org/TR/permissions-policy/": [
-      "policy-controlled-feature"
-    ],
+    "https://en.wikipedia.org/wiki/Partially_ordered_set": [],
     "https://www.w3.org/TR/mediacapture-streams/": [
       "dom-mediadevices-getusermedia",
       "dom-mediadeviceinfo-deviceid",
       "dfn-device-permission-revocation-algorithm"
     ],
-    "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus": [],
-    "https://infra.spec.whatwg.org/": [
-      "user-agent",
-      "list",
-      "list-append"
+    "https://tc39.es/ecma262/multipage/": [
+      "current-realm"
     ],
+    "https://www.w3.org/TR/permissions-policy-1/": [
+      "policy-controlled-feature"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
     "https://heycam.github.io/webidl/": [
       "Exposed",
       "SameObject",
@@ -75,70 +67,47 @@
       "idl-boolean",
       "idl-DOMString"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": [],
     "https://dom.spec.whatwg.org/": [
       "eventtarget",
       "concept-event-fire"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/state": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/PermissionStatus/onchange": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/WorkerNavigator/permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions": [],
-    "https://developer.mozilla.org/en-US/docs/Web/API/Permissions/query": [],
-    "https://en.wikipedia.org/wiki/Partially_ordered_set": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/geolocation": [],
+    "https://www.w3.org/TR/geolocation/": [],
+    "https://notifications.spec.whatwg.org/": [],
+    "https://www.w3.org/TR/push-api/": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/midi": [],
+    "https://www.w3.org/TR/webmidi/": [],
+    "https://www.w3.org/TR/screen-wake-lock/": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/camera": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/microphone": [],
-    "https://wicg.github.io/permissions-request/": [
-      "permission-request-algorithm",
-      "boolean-permission-request-algorithm"
-    ],
-    "https://w3c.github.io/mediacapture-main/": [
-      "devicechange"
-    ],
-    "https://storage.spec.whatwg.org/": [
-      "persistence",
-      "bucket-mode"
-    ],
+    "https://wicg.github.io/background-fetch/": [],
+    "https://wicg.github.io/background-sync/spec/": [],
+    "https://webbluetoothcg.github.io/web-bluetooth/": [],
+    "https://storage.spec.whatwg.org/": [],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/ambient-light-sensor": [],
-    "https://w3c.github.io/sensors/": [
+    "https://www.w3.org/TR/ambient-light/": [],
+    "https://www.w3.org/TR/generic-sensor/": [
       "generic-sensor-permission-revocation-algorithm"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/accelerometer": [],
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/gyroscope": [],
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/magnetometer": [],
-    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/display-capture": [],
-    "https://w3c.github.io/webdriver/": [
-      "dfn-extension-commands",
-      "dfn-extension-command-uri-template",
-      "dfn-remote-end-steps",
-      "dfn-error",
-      "dfn-error-code",
-      "dfn-invalid-argument",
-      "dfn-current-browsing-context",
-      "dfn-success",
-      "dfn-session",
-      "dfn-local-end"
-    ],
-    "https://tc39.es/ecma262/multipage/": [],
-    "https://www.w3.org/TR/permissions-policy-1/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/webdriver1/": [],
     "https://www.w3.org/TR/accelerometer/": [],
-    "https://www.w3.org/TR/ambient-light/": [],
-    "https://www.w3.org/TR/audio-output/": [],
-    "https://wicg.github.io/background-fetch/": [],
-    "https://www.w3.org/TR/gamepad/": [],
-    "https://www.w3.org/TR/geolocation-API/": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/gyroscope": [],
     "https://www.w3.org/TR/gyroscope/": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/magnetometer": [],
     "https://www.w3.org/TR/magnetometer/": [],
-    "https://notifications.spec.whatwg.org/": [],
-    "https://www.w3.org/TR/push-api/": [],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Feature-Policy/display-capture": [],
     "https://www.w3.org/TR/screen-capture/": [],
-    "https://www.w3.org/TR/screen-wake-lock/": [],
-    "https://wicg.github.io/background-sync/spec/": [],
     "https://w3c.github.io/web-nfc/": [],
-    "https://www.w3.org/TR/webmidi/": []
+    "https://www.w3.org/TR/webxr/": [],
+    "https://datatracker.ietf.org/doc/html/bcp14": [],
+    "https://w3c.github.io/permissions-automation/": [],
+    "https://www.w3.org/TR/audio-output/": [],
+    "https://www.rfc-editor.org/rfc/rfc2119": [],
+    "https://www.rfc-editor.org/rfc/rfc8174": [],
+    "https://www.w3.org/TR/gamepad/": []
   }
 }

@@ -1,0 +1,420 @@
+{
+  "spec": {
+    "title": "VirtualKeyboard API",
+    "url": "https://www.w3.org/TR/virtual-keyboard/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#conformance",
+        "title": "Conformance",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-virtualkeyboard",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard",
+      "linkingText": [
+        "VirtualKeyboard"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-navigator-virtualkeyboard",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-navigator-virtualkeyboard",
+      "linkingText": [
+        "virtualKeyboard"
+      ],
+      "localLinkingText": [
+        "Navigator.virtualKeyboard"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-virtualkeyboard-boundingrect",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-boundingrect",
+      "linkingText": [
+        "boundingRect"
+      ],
+      "localLinkingText": [
+        "VirtualKeyboard.boundingRect"
+      ],
+      "type": "attribute",
+      "for": [
+        "VirtualKeyboard"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-virtualkeyboard-overlayscontent",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-overlayscontent",
+      "linkingText": [
+        "overlaysContent"
+      ],
+      "localLinkingText": [
+        "VirtualKeyboard.overlaysContent"
+      ],
+      "type": "attribute",
+      "for": [
+        "VirtualKeyboard"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-virtualkeyboard-show",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-show",
+      "linkingText": [
+        "show()"
+      ],
+      "localLinkingText": [
+        "VirtualKeyboard.show",
+        "VirtualKeyboard.show()",
+        "show"
+      ],
+      "type": "method",
+      "for": [
+        "VirtualKeyboard"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-virtualkeyboard-hide",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-hide",
+      "linkingText": [
+        "hide()"
+      ],
+      "localLinkingText": [
+        "VirtualKeyboard.hide",
+        "VirtualKeyboard.hide()",
+        "hide"
+      ],
+      "type": "method",
+      "for": [
+        "VirtualKeyboard"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-set-the-virtual-keyboard-bounding-rect",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-set-the-virtual-keyboard-bounding-rect",
+      "linkingText": [
+        "set the virtual keyboard bounding rect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-virtualkeyboard-ongeometrychange",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-virtualkeyboard-ongeometrychange",
+      "linkingText": [
+        "ongeometrychange"
+      ],
+      "localLinkingText": [
+        "VirtualKeyboard.ongeometrychange"
+      ],
+      "type": "attribute",
+      "for": [
+        "VirtualKeyboard"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-virtualkeyboard-interface",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#the-virtualkeyboard-interface",
+        "title": "The VirtualKeyboard Interface",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-elementcontenteditable",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-elementcontenteditable",
+      "linkingText": [
+        "ElementContentEditable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-elementcontenteditable-mixin",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+        "title": "Extensions to the ElementContentEditable mixin",
+        "number": "4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-elementcontenteditable-virtualkeyboardpolicy",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dom-elementcontenteditable-virtualkeyboardpolicy",
+      "linkingText": [
+        "virtualKeyboardPolicy"
+      ],
+      "localLinkingText": [
+        "ElementContentEditable.virtualKeyboardPolicy"
+      ],
+      "type": "attribute",
+      "for": [
+        "ElementContentEditable"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-elementcontenteditable-mixin",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+        "title": "Extensions to the ElementContentEditable mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-auto",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-elementcontenteditable-mixin",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+        "title": "Extensions to the ElementContentEditable mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-manual",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-manual",
+      "linkingText": [
+        "manual"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-elementcontenteditable-mixin",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+        "title": "Extensions to the ElementContentEditable mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-empty-string",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-empty-string",
+      "linkingText": [
+        "empty string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-elementcontenteditable-mixin",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#extensions-to-the-elementcontenteditable-mixin",
+        "title": "Extensions to the ElementContentEditable mixin",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-keyboard-inset-top",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-top",
+      "linkingText": [
+        "keyboard-inset-top"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-keyboard-inset-right",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-right",
+      "linkingText": [
+        "keyboard-inset-right"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-keyboard-inset-bottom",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-bottom",
+      "linkingText": [
+        "keyboard-inset-bottom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-keyboard-inset-left",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-left",
+      "linkingText": [
+        "keyboard-inset-left"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-keyboard-inset-width",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-width",
+      "linkingText": [
+        "keyboard-inset-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-keyboard-inset-height",
+      "href": "https://www.w3.org/TR/virtual-keyboard/#dfn-keyboard-inset-height",
+      "linkingText": [
+        "keyboard-inset-height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "keyboard-inset-variables",
+        "href": "https://www.w3.org/TR/virtual-keyboard/#keyboard-inset-variables",
+        "title": "Keyboard inset variables",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    }
+  ]
+}

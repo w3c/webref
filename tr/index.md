@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% August 30, 2021
+% September 01, 2021
 
 # Ecma International {#ecma_international}
 
@@ -12,7 +12,7 @@
 
 - Initial URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Crawled URL: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
-- Crawled version: 29 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://tc39.es/proposal-accessible-object-hasownproperty/](https://tc39.es/proposal-accessible-object-hasownproperty/)
 - Shortname: tc39-accessible-object-hasownproperty
 
@@ -54,7 +54,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Crawled URL: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
-- Crawled version: 25 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://tc39.es/proposal-class-static-block/](https://tc39.es/proposal-class-static-block/)
 - Shortname: tc39-class-static-block
 
@@ -123,6 +123,7 @@ Normative references to this spec from:
 - [File API](https://www.w3.org/TR/FileAPI/)
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [High Resolution Time](https://www.w3.org/TR/hr-time-3/)
+- [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Indexed Database API 3.0](https://www.w3.org/TR/IndexedDB-3/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -429,7 +430,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 27 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -460,9 +461,7 @@ No informative reference to this spec from other specs.
 
 #### Known dependencies on this specification {.dependencies}
 
-Normative references to this spec from:
-
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -477,7 +476,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7578](https://www.rfc-editor.org/rfc/rfc7578)
 - Shortname: rfc7578
 
@@ -506,7 +505,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7239](https://www.rfc-editor.org/rfc/rfc7239)
 - Shortname: rfc7239
 
@@ -529,7 +528,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6265](https://www.rfc-editor.org/rfc/rfc6265)
 - Crawled URL: [https://httpwg.org/specs/rfc6265.html](https://httpwg.org/specs/rfc6265.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc6265.html](https://httpwg.org/specs/rfc6265.html)
 - Shortname: rfc6265
 
@@ -561,7 +560,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc8942](https://www.rfc-editor.org/rfc/rfc8942)
 - Shortname: rfc8942
 
@@ -587,7 +586,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7235](https://www.rfc-editor.org/rfc/rfc7235)
 - Crawled URL: [https://httpwg.org/specs/rfc7235.html](https://httpwg.org/specs/rfc7235.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7235.html](https://httpwg.org/specs/rfc7235.html)
 - Shortname: rfc7235
 
@@ -612,7 +611,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7234](https://www.rfc-editor.org/rfc/rfc7234)
 - Crawled URL: [https://httpwg.org/specs/rfc7234.html](https://httpwg.org/specs/rfc7234.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7234.html](https://httpwg.org/specs/rfc7234.html)
 - Shortname: rfc7234
 
@@ -638,7 +637,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7232](https://www.rfc-editor.org/rfc/rfc7232)
 - Crawled URL: [https://httpwg.org/specs/rfc7232.html](https://httpwg.org/specs/rfc7232.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7232.html](https://httpwg.org/specs/rfc7232.html)
 - Shortname: rfc7232
 
@@ -662,7 +661,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7230](https://www.rfc-editor.org/rfc/rfc7230)
 - Crawled URL: [https://httpwg.org/specs/rfc7230.html](https://httpwg.org/specs/rfc7230.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7230.html](https://httpwg.org/specs/rfc7230.html)
 - Shortname: rfc7230
 
@@ -693,7 +692,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7233](https://www.rfc-editor.org/rfc/rfc7233)
 - Crawled URL: [https://httpwg.org/specs/rfc7233.html](https://httpwg.org/specs/rfc7233.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7233.html](https://httpwg.org/specs/rfc7233.html)
 - Shortname: rfc7233
 
@@ -716,7 +715,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7231](https://www.rfc-editor.org/rfc/rfc7231)
 - Crawled URL: [https://httpwg.org/specs/rfc7231.html](https://httpwg.org/specs/rfc7231.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7231.html](https://httpwg.org/specs/rfc7231.html)
 - Shortname: rfc7231
 
@@ -755,7 +754,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7540](https://www.rfc-editor.org/rfc/rfc7540)
 - Crawled URL: [https://httpwg.org/specs/rfc7540.html](https://httpwg.org/specs/rfc7540.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7540.html](https://httpwg.org/specs/rfc7540.html)
 - Shortname: rfc7540
 
@@ -781,7 +780,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7538](https://www.rfc-editor.org/rfc/rfc7538)
 - Crawled URL: [https://httpwg.org/specs/rfc7538.html](https://httpwg.org/specs/rfc7538.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7538.html](https://httpwg.org/specs/rfc7538.html)
 - Shortname: rfc7538
 
@@ -807,7 +806,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6266](https://www.rfc-editor.org/rfc/rfc6266)
 - Crawled URL: [https://httpwg.org/specs/rfc6266.html](https://httpwg.org/specs/rfc6266.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc6266.html](https://httpwg.org/specs/rfc6266.html)
 - Shortname: rfc6266
 
@@ -830,7 +829,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7725](https://www.rfc-editor.org/rfc/rfc7725)
 - Crawled URL: [https://httpwg.org/specs/rfc7725.html](https://httpwg.org/specs/rfc7725.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7725.html](https://httpwg.org/specs/rfc7725.html)
 - Shortname: rfc7725
 
@@ -851,7 +850,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7838](https://www.rfc-editor.org/rfc/rfc7838)
 - Crawled URL: [https://httpwg.org/specs/rfc7838.html](https://httpwg.org/specs/rfc7838.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc7838.html](https://httpwg.org/specs/rfc7838.html)
 - Shortname: rfc7838
 
@@ -872,7 +871,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8246](https://www.rfc-editor.org/rfc/rfc8246)
 - Crawled URL: [https://httpwg.org/specs/rfc8246.html](https://httpwg.org/specs/rfc8246.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc8246.html](https://httpwg.org/specs/rfc8246.html)
 - Shortname: rfc8246
 
@@ -893,7 +892,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc8470](https://www.rfc-editor.org/rfc/rfc8470)
 - Crawled URL: [https://httpwg.org/specs/rfc8470.html](https://httpwg.org/specs/rfc8470.html)
-- Crawled version: 15 March 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://httpwg.org/specs/rfc8470.html](https://httpwg.org/specs/rfc8470.html)
 - Shortname: rfc8470
 
@@ -918,7 +917,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc2397](https://www.rfc-editor.org/rfc/rfc2397)
 - Shortname: rfc2397
 
@@ -943,7 +942,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6454](https://www.rfc-editor.org/rfc/rfc6454)
 - Shortname: rfc6454
 
@@ -980,7 +979,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc6797](https://www.rfc-editor.org/rfc/rfc6797)
 - Shortname: rfc6797
 
@@ -1011,7 +1010,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7034](https://www.rfc-editor.org/rfc/rfc7034)
 - Shortname: rfc7034
 
@@ -1038,7 +1037,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Crawled URL: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
-- Crawled version: 30 August 2021
+- Crawled version: 1 September 2021
 - Editor's Draft: [https://www.rfc-editor.org/rfc/rfc7469](https://www.rfc-editor.org/rfc/rfc7469)
 - Shortname: rfc7469
 
@@ -1092,7 +1091,9 @@ Although they do not, the following specs should also normatively reference this
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [WebGL EXT_disjoint_timer_query_webgl2 Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 
 
 ### WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-missingWebIdlRef=true data-missingDfns=true}
@@ -1885,6 +1886,7 @@ Although they do not, the following specs should also normatively reference this
 Informative references to this spec from:
 
 - [Media Capture Depth Stream Extensions](https://www.w3.org/TR/mediacapture-depth/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 
 
 ### WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-noRefToWebIDL=true data-missingDfns=true}
@@ -2724,6 +2726,485 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+### HTML Accessibility API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Crawled URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Crawled version: 13 August 2021
+- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
+- Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
+- Shortname: html-aam-1.0
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
+     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
+     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
+     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
+- Inconsistent references for links: 
+     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/), related reference "core-aam-1.2" uses URL [`https://www.w3.org/TR/core-aam-1.2/`](https://www.w3.org/TR/core-aam-1.2/)
+- Broken external links:
+     * [`https://www.w3.org/TR/wai-aria/#dfn-user-agent`](https://www.w3.org/TR/wai-aria/#dfn-user-agent)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessibility-api`](https://www.w3.org/TR/wai-aria/#dfn-accessibility-api)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-role`](https://www.w3.org/TR/wai-aria/#dfn-role)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-state`](https://www.w3.org/TR/wai-aria/#dfn-state)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-property`](https://www.w3.org/TR/wai-aria/#dfn-property)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-description`](https://www.w3.org/TR/wai-aria/#dfn-accessible-description)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-object`](https://www.w3.org/TR/wai-aria/#dfn-accessible-object)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-widget`](https://www.w3.org/TR/wai-aria/#dfn-widget)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-element`](https://www.w3.org/TR/wai-aria/#dfn-element)
+     * [`https://www.w3.org/TR/wai-aria/#dfn-node`](https://www.w3.org/TR/wai-aria/#dfn-node)
+     * [`https://www.w3.org/TR/core-aam-1.2/#intro_aapi`](https://www.w3.org/TR/core-aam-1.2/#intro_aapi)
+     * [`https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree`](https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree)
+     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_general`](https://www.w3.org/TR/core-aam-1.1/#mapping_general)
+     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_conflicts`](https://www.w3.org/TR/core-aam-1.1/#mapping_conflicts)
+     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_nodirect`](https://www.w3.org/TR/core-aam-1.1/#mapping_nodirect)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription`](https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-link`](https://www.w3.org/TR/core-aam-1.1/#role-map-link)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-article`](https://www.w3.org/TR/core-aam-1.1/#role-map-article)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-complementary`](https://www.w3.org/TR/core-aam-1.1/#role-map-complementary)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button`](https://www.w3.org/TR/core-aam-1.1/#role-map-button)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-slider`](https://www.w3.org/TR/core-aam-1.1/#role-map-slider)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-toolbar`](https://www.w3.org/TR/core-aam-1.1/#role-map-toolbar)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button-pressed`](https://www.w3.org/TR/core-aam-1.1/#role-map-button-pressed)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button-haspopup`](https://www.w3.org/TR/core-aam-1.1/#role-map-button-haspopup)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-listbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-listbox)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaMultiselectableFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaMultiselectableFalse)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-definition`](https://www.w3.org/TR/core-aam-1.1/#role-map-definition)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-term`](https://www.w3.org/TR/core-aam-1.1/#role-map-term)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-dialog`](https://www.w3.org/TR/core-aam-1.1/#role-map-dialog)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-group`](https://www.w3.org/TR/core-aam-1.1/#role-map-group)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-figure`](https://www.w3.org/TR/core-aam-1.1/#role-map-figure)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-contentinfo`](https://www.w3.org/TR/core-aam-1.1/#role-map-contentinfo)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-form`](https://www.w3.org/TR/core-aam-1.1/#role-map-form)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-heading`](https://www.w3.org/TR/core-aam-1.1/#role-map-heading)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaLevel`](https://www.w3.org/TR/core-aam-1.1/#ariaLevel)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-banner`](https://www.w3.org/TR/core-aam-1.1/#role-map-banner)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-separator`](https://www.w3.org/TR/core-aam-1.1/#role-map-separator)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-img`](https://www.w3.org/TR/core-aam-1.1/#role-map-img)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-presentation`](https://www.w3.org/TR/core-aam-1.1/#role-map-presentation)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-checkbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-checkbox)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedMixed`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedMixed)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-textbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-textbox)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-spinbutton`](https://www.w3.org/TR/core-aam-1.1/#role-map-spinbutton)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-radio`](https://www.w3.org/TR/core-aam-1.1/#role-map-radio)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-searchbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-searchbox)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-combobox`](https://www.w3.org/TR/core-aam-1.1/#role-map-combobox)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaControls`](https://www.w3.org/TR/core-aam-1.1/#ariaControls)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-listitem`](https://www.w3.org/TR/core-aam-1.1/#role-map-listitem)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-main`](https://www.w3.org/TR/core-aam-1.1/#role-map-main)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-math`](https://www.w3.org/TR/core-aam-1.1/#role-map-math)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-list`](https://www.w3.org/TR/core-aam-1.1/#role-map-list)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-menu`](https://www.w3.org/TR/core-aam-1.1/#role-map-menu)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-navigation`](https://www.w3.org/TR/core-aam-1.1/#role-map-navigation)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-option`](https://www.w3.org/TR/core-aam-1.1/#role-map-option)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaSelectedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaSelectedTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-status`](https://www.w3.org/TR/core-aam-1.1/#role-map-status)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-progressbar`](https://www.w3.org/TR/core-aam-1.1/#role-map-progressbar)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueMax`](https://www.w3.org/TR/core-aam-1.1/#ariaValueMax)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueMin`](https://www.w3.org/TR/core-aam-1.1/#ariaValueMin)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueNow`](https://www.w3.org/TR/core-aam-1.1/#ariaValueNow)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-region`](https://www.w3.org/TR/core-aam-1.1/#role-map-region)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-table`](https://www.w3.org/TR/core-aam-1.1/#role-map-table)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-rowgroup`](https://www.w3.org/TR/core-aam-1.1/#role-map-rowgroup)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-cell`](https://www.w3.org/TR/core-aam-1.1/#role-map-cell)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-grid`](https://www.w3.org/TR/core-aam-1.1/#role-map-grid)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-treegrid`](https://www.w3.org/TR/core-aam-1.1/#role-map-treegrid)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-gridcell`](https://www.w3.org/TR/core-aam-1.1/#role-map-gridcell)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaMultilineTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaMultilineTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-columnheader`](https://www.w3.org/TR/core-aam-1.1/#role-map-columnheader)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-rowheader`](https://www.w3.org/TR/core-aam-1.1/#role-map-rowheader)
+     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-row`](https://www.w3.org/TR/core-aam-1.1/#role-map-row)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaAutocompleteInlineListBoth`](https://www.w3.org/TR/core-aam-1.1/#ariaAutocompleteInlineListBoth)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaFlowto`](https://www.w3.org/TR/core-aam-1.1/#ariaFlowto)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedFalse)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaColSpan`](https://www.w3.org/TR/core-aam-1.1/#ariaColSpan)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaDisabledTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaDisabledTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaHiddenTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaHiddenTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaExpandedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaExpandedTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaModalTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaModalTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaHiddenFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaHiddenFalse)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaModalFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaModalFalse)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaPlaceholder`](https://www.w3.org/TR/core-aam-1.1/#ariaPlaceholder)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaReadonlyTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaReadonlyTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRequiredTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaRequiredTrue)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRowSpan`](https://www.w3.org/TR/core-aam-1.1/#ariaRowSpan)
+     * [`https://www.w3.org/TR/core-aam-1.1/#ariaInvalidSpellingGrammar`](https://www.w3.org/TR/core-aam-1.1/#ariaInvalidSpellingGrammar)
+     * [`https://www.w3.org/TR/core-aam-1.1/#focus_state_event_table`](https://www.w3.org/TR/core-aam-1.1/#focus_state_event_table)
+     * [`https://html.spec.whatwg.org/#category-label`](https://html.spec.whatwg.org/#category-label)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#hyperlink`](https://html.spec.whatwg.org/#hyperlink)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-href`](https://html.spec.whatwg.org/#attr-hyperlink-href)
+     * [`https://html.spec.whatwg.org/#the-abbr-element`](https://html.spec.whatwg.org/#the-abbr-element)
+     * [`https://html.spec.whatwg.org/#the-address-element`](https://html.spec.whatwg.org/#the-address-element)
+     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
+     * [`https://html.spec.whatwg.org/#the-article-element`](https://html.spec.whatwg.org/#the-article-element)
+     * [`https://html.spec.whatwg.org/#the-aside-element`](https://html.spec.whatwg.org/#the-aside-element)
+     * [`https://html.spec.whatwg.org/#audio`](https://html.spec.whatwg.org/#audio)
+     * [`https://html.spec.whatwg.org/#attr-media-controls`](https://html.spec.whatwg.org/#attr-media-controls)
+     * [`https://html.spec.whatwg.org/#autonomous-custom-element`](https://html.spec.whatwg.org/#autonomous-custom-element)
+     * [`https://html.spec.whatwg.org/#the-b-element`](https://html.spec.whatwg.org/#the-b-element)
+     * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
+     * [`https://html.spec.whatwg.org/#the-bdi-element`](https://html.spec.whatwg.org/#the-bdi-element)
+     * [`https://html.spec.whatwg.org/#the-bdo-element`](https://html.spec.whatwg.org/#the-bdo-element)
+     * [`https://html.spec.whatwg.org/#the-blockquote-element`](https://html.spec.whatwg.org/#the-blockquote-element)
+     * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
+     * [`https://html.spec.whatwg.org/#the-br-element`](https://html.spec.whatwg.org/#the-br-element)
+     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
+     * [`https://html.spec.whatwg.org/#canvas`](https://html.spec.whatwg.org/#canvas)
+     * [`https://html.spec.whatwg.org/#the-caption-element`](https://html.spec.whatwg.org/#the-caption-element)
+     * [`https://html.spec.whatwg.org/#the-cite-element`](https://html.spec.whatwg.org/#the-cite-element)
+     * [`https://html.spec.whatwg.org/#the-code-element`](https://html.spec.whatwg.org/#the-code-element)
+     * [`https://html.spec.whatwg.org/#the-col-element`](https://html.spec.whatwg.org/#the-col-element)
+     * [`https://html.spec.whatwg.org/#the-colgroup-element`](https://html.spec.whatwg.org/#the-colgroup-element)
+     * [`https://html.spec.whatwg.org/#the-data-element`](https://html.spec.whatwg.org/#the-data-element)
+     * [`https://html.spec.whatwg.org/#the-datalist-element`](https://html.spec.whatwg.org/#the-datalist-element)
+     * [`https://html.spec.whatwg.org/#the-dd-element`](https://html.spec.whatwg.org/#the-dd-element)
+     * [`https://html.spec.whatwg.org/#the-del-element`](https://html.spec.whatwg.org/#the-del-element)
+     * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
+     * [`https://html.spec.whatwg.org/#the-dfn-element`](https://html.spec.whatwg.org/#the-dfn-element)
+     * [`https://html.spec.whatwg.org/#the-dialog-element`](https://html.spec.whatwg.org/#the-dialog-element)
+     * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
+     * [`https://html.spec.whatwg.org/#the-dl-element`](https://html.spec.whatwg.org/#the-dl-element)
+     * [`https://html.spec.whatwg.org/#the-dt-element`](https://html.spec.whatwg.org/#the-dt-element)
+     * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
+     * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
+     * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#the-figcaption-element`](https://html.spec.whatwg.org/#the-figcaption-element)
+     * [`https://html.spec.whatwg.org/#the-figure-element`](https://html.spec.whatwg.org/#the-figure-element)
+     * [`https://html.spec.whatwg.org/#the-footer-element`](https://html.spec.whatwg.org/#the-footer-element)
+     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
+     * [`https://html.spec.whatwg.org/#sectioning-content`](https://html.spec.whatwg.org/#sectioning-content)
+     * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://html.spec.whatwg.org/#custom-elements-face-example`](https://html.spec.whatwg.org/#custom-elements-face-example)
+     * [`https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements`](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
+     * [`https://html.spec.whatwg.org/#the-head-element`](https://html.spec.whatwg.org/#the-head-element)
+     * [`https://html.spec.whatwg.org/#the-header-element`](https://html.spec.whatwg.org/#the-header-element)
+     * [`https://html.spec.whatwg.org/#the-hgroup-element`](https://html.spec.whatwg.org/#the-hgroup-element)
+     * [`https://html.spec.whatwg.org/#the-hr-element`](https://html.spec.whatwg.org/#the-hr-element)
+     * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
+     * [`https://html.spec.whatwg.org/#the-i-element`](https://html.spec.whatwg.org/#the-i-element)
+     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://html.spec.whatwg.org/#attr-img-alt`](https://html.spec.whatwg.org/#attr-img-alt)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#attr-input-type`](https://html.spec.whatwg.org/#attr-input-type)
+     * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
+     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
+     * [`https://html.spec.whatwg.org/#dom-input-indeterminate`](https://html.spec.whatwg.org/#dom-input-indeterminate)
+     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
+     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
+     * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
+     * [`https://html.spec.whatwg.org/#email-state-(type=email)`](https://html.spec.whatwg.org/#email-state-(type=email))
+     * [`https://html.spec.whatwg.org/#concept-input-list`](https://html.spec.whatwg.org/#concept-input-list)
+     * [`https://html.spec.whatwg.org/#file-upload-state-(type=file)`](https://html.spec.whatwg.org/#file-upload-state-(type=file))
+     * [`https://html.spec.whatwg.org/#hidden-state-(type=hidden)`](https://html.spec.whatwg.org/#hidden-state-(type=hidden))
+     * [`https://html.spec.whatwg.org/#image-button-state-(type=image)`](https://html.spec.whatwg.org/#image-button-state-(type=image))
+     * [`https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local)`](https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local))
+     * [`https://html.spec.whatwg.org/#month-state-(type=month)`](https://html.spec.whatwg.org/#month-state-(type=month))
+     * [`https://html.spec.whatwg.org/#number-state-(type=number)`](https://html.spec.whatwg.org/#number-state-(type=number))
+     * [`https://html.spec.whatwg.org/#password-state-(type=password)`](https://html.spec.whatwg.org/#password-state-(type=password))
+     * [`https://html.spec.whatwg.org/#radio-button-state-(type=radio)`](https://html.spec.whatwg.org/#radio-button-state-(type=radio))
+     * [`https://html.spec.whatwg.org/#radio-button-group`](https://html.spec.whatwg.org/#radio-button-group)
+     * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
+     * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
+     * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
+     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
+     * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
+     * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
+     * [`https://html.spec.whatwg.org/#attr-input-list`](https://html.spec.whatwg.org/#attr-input-list)
+     * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
+     * [`https://html.spec.whatwg.org/#week-state-(type=week)`](https://html.spec.whatwg.org/#week-state-(type=week))
+     * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
+     * [`https://html.spec.whatwg.org/#the-kbd-element`](https://html.spec.whatwg.org/#the-kbd-element)
+     * [`https://html.spec.whatwg.org/#the-label-element`](https://html.spec.whatwg.org/#the-label-element)
+     * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
+     * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
+     * [`https://html.spec.whatwg.org/#the-ol-element`](https://html.spec.whatwg.org/#the-ol-element)
+     * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
+     * [`https://html.spec.whatwg.org/#menus`](https://html.spec.whatwg.org/#menus)
+     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
+     * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
+     * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
+     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
+     * [`https://html.spec.whatwg.org/#menuitem`](https://html.spec.whatwg.org/#menuitem)
+     * [`https://html.spec.whatwg.org/#attr-menu-type`](https://html.spec.whatwg.org/#attr-menu-type)
+     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
+     * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
+     * [`https://html.spec.whatwg.org/#the-nav-element`](https://html.spec.whatwg.org/#the-nav-element)
+     * [`https://html.spec.whatwg.org/#the-noscript-element`](https://html.spec.whatwg.org/#the-noscript-element)
+     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
+     * [`https://html.spec.whatwg.org/#the-optgroup-element`](https://html.spec.whatwg.org/#the-optgroup-element)
+     * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
+     * [`https://html.spec.whatwg.org/#concept-select-option-list`](https://html.spec.whatwg.org/#concept-select-option-list)
+     * [`https://html.spec.whatwg.org/#concept-option-selectedness`](https://html.spec.whatwg.org/#concept-option-selectedness)
+     * [`https://html.spec.whatwg.org/#the-output-element`](https://html.spec.whatwg.org/#the-output-element)
+     * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
+     * [`https://html.spec.whatwg.org/#the-param-element`](https://html.spec.whatwg.org/#the-param-element)
+     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
+     * [`https://html.spec.whatwg.org/#the-pre-element`](https://html.spec.whatwg.org/#the-pre-element)
+     * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
+     * [`https://html.spec.whatwg.org/#the-q-element`](https://html.spec.whatwg.org/#the-q-element)
+     * [`https://html.spec.whatwg.org/#the-rp-element`](https://html.spec.whatwg.org/#the-rp-element)
+     * [`https://html.spec.whatwg.org/#the-rt-element`](https://html.spec.whatwg.org/#the-rt-element)
+     * [`https://html.spec.whatwg.org/#the-ruby-element`](https://html.spec.whatwg.org/#the-ruby-element)
+     * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
+     * [`https://html.spec.whatwg.org/#the-samp-element`](https://html.spec.whatwg.org/#the-samp-element)
+     * [`https://html.spec.whatwg.org/#the-script-element`](https://html.spec.whatwg.org/#the-script-element)
+     * [`https://html.spec.whatwg.org/#the-section-element`](https://html.spec.whatwg.org/#the-section-element)
+     * [`https://html.spec.whatwg.org/#the-select-element`](https://html.spec.whatwg.org/#the-select-element)
+     * [`https://html.spec.whatwg.org/#attr-select-multiple`](https://html.spec.whatwg.org/#attr-select-multiple)
+     * [`https://html.spec.whatwg.org/#attr-select-size`](https://html.spec.whatwg.org/#attr-select-size)
+     * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
+     * [`https://html.spec.whatwg.org/#the-small-element`](https://html.spec.whatwg.org/#the-small-element)
+     * [`https://html.spec.whatwg.org/#the-source-element`](https://html.spec.whatwg.org/#the-source-element)
+     * [`https://html.spec.whatwg.org/#the-span-element`](https://html.spec.whatwg.org/#the-span-element)
+     * [`https://html.spec.whatwg.org/#the-strong-element`](https://html.spec.whatwg.org/#the-strong-element)
+     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
+     * [`https://html.spec.whatwg.org/#the-sub-element`](https://html.spec.whatwg.org/#the-sub-element)
+     * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
+     * [`https://html.spec.whatwg.org/#the-sup-element`](https://html.spec.whatwg.org/#the-sup-element)
+     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
+     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
+     * [`https://html.spec.whatwg.org/#the-tbody-element`](https://html.spec.whatwg.org/#the-tbody-element)
+     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
+     * [`https://html.spec.whatwg.org/#the-template-element`](https://html.spec.whatwg.org/#the-template-element)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
+     * [`https://html.spec.whatwg.org/#the-tfoot-element`](https://html.spec.whatwg.org/#the-tfoot-element)
+     * [`https://html.spec.whatwg.org/#the-th-element`](https://html.spec.whatwg.org/#the-th-element)
+     * [`https://html.spec.whatwg.org/#column-header`](https://html.spec.whatwg.org/#column-header)
+     * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
+     * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
+     * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
+     * [`https://html.spec.whatwg.org/#the-thead-element`](https://html.spec.whatwg.org/#the-thead-element)
+     * [`https://html.spec.whatwg.org/#the-time-element`](https://html.spec.whatwg.org/#the-time-element)
+     * [`https://html.spec.whatwg.org/#the-title-element`](https://html.spec.whatwg.org/#the-title-element)
+     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
+     * [`https://html.spec.whatwg.org/#the-track-element`](https://html.spec.whatwg.org/#the-track-element)
+     * [`https://html.spec.whatwg.org/#the-u-element`](https://html.spec.whatwg.org/#the-u-element)
+     * [`https://html.spec.whatwg.org/#the-var-element`](https://html.spec.whatwg.org/#the-var-element)
+     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
+     * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
+     * [`https://html.spec.whatwg.org/#attributes-3`](https://html.spec.whatwg.org/#attributes-3)
+     * [`https://html.spec.whatwg.org/#attr-th-abbr`](https://html.spec.whatwg.org/#attr-th-abbr)
+     * [`https://html.spec.whatwg.org/#attr-input-accept`](https://html.spec.whatwg.org/#attr-input-accept)
+     * [`https://html.spec.whatwg.org/#attr-form-accept-charset`](https://html.spec.whatwg.org/#attr-form-accept-charset)
+     * [`https://html.spec.whatwg.org/#the-accesskey-attribute`](https://html.spec.whatwg.org/#the-accesskey-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fs-action`](https://html.spec.whatwg.org/#attr-fs-action)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allowfullscreen`](https://html.spec.whatwg.org/#attr-iframe-allowfullscreen)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest`](https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest)
+     * [`https://html.spec.whatwg.org/#attr-area-alt`](https://html.spec.whatwg.org/#attr-area-alt)
+     * [`https://html.spec.whatwg.org/#attr-input-alt`](https://html.spec.whatwg.org/#attr-input-alt)
+     * [`https://html.spec.whatwg.org/#attr-link-as`](https://html.spec.whatwg.org/#attr-link-as)
+     * [`https://html.spec.whatwg.org/#attr-script-async`](https://html.spec.whatwg.org/#attr-script-async)
+     * [`https://html.spec.whatwg.org/#attr-autocapitalize`](https://html.spec.whatwg.org/#attr-autocapitalize)
+     * [`https://html.spec.whatwg.org/#attr-form-autocomplete`](https://html.spec.whatwg.org/#attr-form-autocomplete)
+     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete`](https://html.spec.whatwg.org/#attr-fe-autocomplete)
+     * [`https://html.spec.whatwg.org/#attr-fe-autofocus`](https://html.spec.whatwg.org/#attr-fe-autofocus)
+     * [`https://html.spec.whatwg.org/#attr-media-autoplay`](https://html.spec.whatwg.org/#attr-media-autoplay)
+     * [`https://html.spec.whatwg.org/#attr-meta-charset`](https://html.spec.whatwg.org/#attr-meta-charset)
+     * [`https://html.spec.whatwg.org/#attr-input-checked`](https://html.spec.whatwg.org/#attr-input-checked)
+     * [`https://html.spec.whatwg.org/#attr-blockquote-cite`](https://html.spec.whatwg.org/#attr-blockquote-cite)
+     * [`https://html.spec.whatwg.org/#attr-mod-cite`](https://html.spec.whatwg.org/#attr-mod-cite)
+     * [`https://html.spec.whatwg.org/#attr-q-cite`](https://html.spec.whatwg.org/#attr-q-cite)
+     * [`https://html.spec.whatwg.org/#classes`](https://html.spec.whatwg.org/#classes)
+     * [`https://html.spec.whatwg.org/#attr-link-color`](https://html.spec.whatwg.org/#attr-link-color)
+     * [`https://html.spec.whatwg.org/#attr-textarea-cols`](https://html.spec.whatwg.org/#attr-textarea-cols)
+     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
+     * [`https://html.spec.whatwg.org/#attr-meta-content`](https://html.spec.whatwg.org/#attr-meta-content)
+     * [`https://html.spec.whatwg.org/#attr-contenteditable`](https://html.spec.whatwg.org/#attr-contenteditable)
+     * [`https://html.spec.whatwg.org/#attr-area-coords`](https://html.spec.whatwg.org/#attr-area-coords)
+     * [`https://html.spec.whatwg.org/#attr-media-crossorigin`](https://html.spec.whatwg.org/#attr-media-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-img-crossorigin`](https://html.spec.whatwg.org/#attr-img-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-link-crossorigin`](https://html.spec.whatwg.org/#attr-link-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-script-crossorigin`](https://html.spec.whatwg.org/#attr-script-crossorigin)
+     * [`https://html.spec.whatwg.org/#attr-object-data`](https://html.spec.whatwg.org/#attr-object-data)
+     * [`https://html.spec.whatwg.org/#attr-mod-datetime`](https://html.spec.whatwg.org/#attr-mod-datetime)
+     * [`https://html.spec.whatwg.org/#attr-time-datetime`](https://html.spec.whatwg.org/#attr-time-datetime)
+     * [`https://html.spec.whatwg.org/#attr-img-decoding`](https://html.spec.whatwg.org/#attr-img-decoding)
+     * [`https://html.spec.whatwg.org/#attr-track-default`](https://html.spec.whatwg.org/#attr-track-default)
+     * [`https://html.spec.whatwg.org/#attr-script-defer`](https://html.spec.whatwg.org/#attr-script-defer)
+     * [`https://html.spec.whatwg.org/#the-dir-attribute`](https://html.spec.whatwg.org/#the-dir-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fe-dirname`](https://html.spec.whatwg.org/#attr-fe-dirname)
+     * [`https://html.spec.whatwg.org/#attr-fe-disabled`](https://html.spec.whatwg.org/#attr-fe-disabled)
+     * [`https://html.spec.whatwg.org/#attr-fieldset-disabled`](https://html.spec.whatwg.org/#attr-fieldset-disabled)
+     * [`https://html.spec.whatwg.org/#attr-optgroup-disabled`](https://html.spec.whatwg.org/#attr-optgroup-disabled)
+     * [`https://html.spec.whatwg.org/#attr-option-disabled`](https://html.spec.whatwg.org/#attr-option-disabled)
+     * [`https://html.spec.whatwg.org/#form-associated-custom-element`](https://html.spec.whatwg.org/#form-associated-custom-element)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-download`](https://html.spec.whatwg.org/#attr-hyperlink-download)
+     * [`https://html.spec.whatwg.org/#the-draggable-attribute`](https://html.spec.whatwg.org/#the-draggable-attribute)
+     * [`https://html.spec.whatwg.org/#attr-fs-enctype`](https://html.spec.whatwg.org/#attr-fs-enctype)
+     * [`https://html.spec.whatwg.org/#attr-output-for`](https://html.spec.whatwg.org/#attr-output-for)
+     * [`https://html.spec.whatwg.org/#attr-fae-form`](https://html.spec.whatwg.org/#attr-fae-form)
+     * [`https://html.spec.whatwg.org/#attr-fs-formaction`](https://html.spec.whatwg.org/#attr-fs-formaction)
+     * [`https://html.spec.whatwg.org/#attr-fs-formenctype`](https://html.spec.whatwg.org/#attr-fs-formenctype)
+     * [`https://html.spec.whatwg.org/#attr-fs-formmethod`](https://html.spec.whatwg.org/#attr-fs-formmethod)
+     * [`https://html.spec.whatwg.org/#attr-fs-formnovalidate`](https://html.spec.whatwg.org/#attr-fs-formnovalidate)
+     * [`https://html.spec.whatwg.org/#attr-fs-formtarget`](https://html.spec.whatwg.org/#attr-fs-formtarget)
+     * [`https://html.spec.whatwg.org/#attr-tdth-headers`](https://html.spec.whatwg.org/#attr-tdth-headers)
+     * [`https://html.spec.whatwg.org/#attr-canvas-height`](https://html.spec.whatwg.org/#attr-canvas-height)
+     * [`https://html.spec.whatwg.org/#attr-dim-height`](https://html.spec.whatwg.org/#attr-dim-height)
+     * [`https://html.spec.whatwg.org/#the-hidden-attribute`](https://html.spec.whatwg.org/#the-hidden-attribute)
+     * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
+     * [`https://html.spec.whatwg.org/#attr-meter-high`](https://html.spec.whatwg.org/#attr-meter-high)
+     * [`https://html.spec.whatwg.org/#attr-link-href`](https://html.spec.whatwg.org/#attr-link-href)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-hreflang`](https://html.spec.whatwg.org/#attr-hyperlink-hreflang)
+     * [`https://html.spec.whatwg.org/#attr-link-hreflang`](https://html.spec.whatwg.org/#attr-link-hreflang)
+     * [`https://html.spec.whatwg.org/#attr-meta-http-equiv`](https://html.spec.whatwg.org/#attr-meta-http-equiv)
+     * [`https://html.spec.whatwg.org/#the-id-attribute`](https://html.spec.whatwg.org/#the-id-attribute)
+     * [`https://html.spec.whatwg.org/#attr-img-ismap`](https://html.spec.whatwg.org/#attr-img-ismap)
+     * [`https://html.spec.whatwg.org/#attr-track-kind`](https://html.spec.whatwg.org/#attr-track-kind)
+     * [`https://html.spec.whatwg.org/#attr-optgroup-label`](https://html.spec.whatwg.org/#attr-optgroup-label)
+     * [`https://html.spec.whatwg.org/#attr-option-label`](https://html.spec.whatwg.org/#attr-option-label)
+     * [`https://html.spec.whatwg.org/#attr-track-label`](https://html.spec.whatwg.org/#attr-track-label)
+     * [`https://html.spec.whatwg.org/#attr-lang`](https://html.spec.whatwg.org/#attr-lang)
+     * [`https://html.spec.whatwg.org/#attr-media-loop`](https://html.spec.whatwg.org/#attr-media-loop)
+     * [`https://html.spec.whatwg.org/#attr-meter-low`](https://html.spec.whatwg.org/#attr-meter-low)
+     * [`https://html.spec.whatwg.org/#attr-input-max`](https://html.spec.whatwg.org/#attr-input-max)
+     * [`https://html.spec.whatwg.org/#attr-meter-max`](https://html.spec.whatwg.org/#attr-meter-max)
+     * [`https://html.spec.whatwg.org/#attr-progress-max`](https://html.spec.whatwg.org/#attr-progress-max)
+     * [`https://html.spec.whatwg.org/#attr-input-maxlength`](https://html.spec.whatwg.org/#attr-input-maxlength)
+     * [`https://html.spec.whatwg.org/#attr-textarea-maxlength`](https://html.spec.whatwg.org/#attr-textarea-maxlength)
+     * [`https://html.spec.whatwg.org/#attr-link-media`](https://html.spec.whatwg.org/#attr-link-media)
+     * [`https://html.spec.whatwg.org/#attr-source-media`](https://html.spec.whatwg.org/#attr-source-media)
+     * [`https://html.spec.whatwg.org/#attr-style-media`](https://html.spec.whatwg.org/#attr-style-media)
+     * [`https://html.spec.whatwg.org/#attr-fs-method`](https://html.spec.whatwg.org/#attr-fs-method)
+     * [`https://html.spec.whatwg.org/#attr-input-min`](https://html.spec.whatwg.org/#attr-input-min)
+     * [`https://html.spec.whatwg.org/#attr-meter-min`](https://html.spec.whatwg.org/#attr-meter-min)
+     * [`https://html.spec.whatwg.org/#attr-input-minlength`](https://html.spec.whatwg.org/#attr-input-minlength)
+     * [`https://html.spec.whatwg.org/#attr-textarea-minlength`](https://html.spec.whatwg.org/#attr-textarea-minlength)
+     * [`https://html.spec.whatwg.org/#attr-input-multiple`](https://html.spec.whatwg.org/#attr-input-multiple)
+     * [`https://html.spec.whatwg.org/#attr-media-muted`](https://html.spec.whatwg.org/#attr-media-muted)
+     * [`https://html.spec.whatwg.org/#attr-fe-name`](https://html.spec.whatwg.org/#attr-fe-name)
+     * [`https://html.spec.whatwg.org/#attr-form-name`](https://html.spec.whatwg.org/#attr-form-name)
+     * [`https://html.spec.whatwg.org/#attr-iframe-name`](https://html.spec.whatwg.org/#attr-iframe-name)
+     * [`https://html.spec.whatwg.org/#attr-object-name`](https://html.spec.whatwg.org/#attr-object-name)
+     * [`https://html.spec.whatwg.org/#attr-map-name`](https://html.spec.whatwg.org/#attr-map-name)
+     * [`https://html.spec.whatwg.org/#attr-meta-name`](https://html.spec.whatwg.org/#attr-meta-name)
+     * [`https://html.spec.whatwg.org/#attr-param-name`](https://html.spec.whatwg.org/#attr-param-name)
+     * [`https://html.spec.whatwg.org/#attr-slot-name`](https://html.spec.whatwg.org/#attr-slot-name)
+     * [`https://html.spec.whatwg.org/#attr-script-nomodule`](https://html.spec.whatwg.org/#attr-script-nomodule)
+     * [`https://html.spec.whatwg.org/#attr-nonce`](https://html.spec.whatwg.org/#attr-nonce)
+     * [`https://html.spec.whatwg.org/#attr-fs-novalidate`](https://html.spec.whatwg.org/#attr-fs-novalidate)
+     * [`https://html.spec.whatwg.org/#attr-details-open`](https://html.spec.whatwg.org/#attr-details-open)
+     * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
+     * [`https://html.spec.whatwg.org/#attr-meter-optimum`](https://html.spec.whatwg.org/#attr-meter-optimum)
+     * [`https://html.spec.whatwg.org/#attr-input-pattern`](https://html.spec.whatwg.org/#attr-input-pattern)
+     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
+     * [`https://html.spec.whatwg.org/#attr-input-placeholder`](https://html.spec.whatwg.org/#attr-input-placeholder)
+     * [`https://html.spec.whatwg.org/#attr-textarea-placeholder`](https://html.spec.whatwg.org/#attr-textarea-placeholder)
+     * [`https://html.spec.whatwg.org/#attr-video-playsinline`](https://html.spec.whatwg.org/#attr-video-playsinline)
+     * [`https://html.spec.whatwg.org/#attr-video-poster`](https://html.spec.whatwg.org/#attr-video-poster)
+     * [`https://html.spec.whatwg.org/#attr-media-preload`](https://html.spec.whatwg.org/#attr-media-preload)
+     * [`https://html.spec.whatwg.org/#attr-input-readonly`](https://html.spec.whatwg.org/#attr-input-readonly)
+     * [`https://html.spec.whatwg.org/#attr-textarea-readonly`](https://html.spec.whatwg.org/#attr-textarea-readonly)
+     * [`https://html.spec.whatwg.org/#attr-face-readonly`](https://html.spec.whatwg.org/#attr-face-readonly)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy`](https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-iframe-referrerpolicy`](https://html.spec.whatwg.org/#attr-iframe-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-img-referrerpolicy`](https://html.spec.whatwg.org/#attr-img-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-link-referrerpolicy`](https://html.spec.whatwg.org/#attr-link-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-script-referrerpolicy`](https://html.spec.whatwg.org/#attr-script-referrerpolicy)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-rel`](https://html.spec.whatwg.org/#attr-hyperlink-rel)
+     * [`https://html.spec.whatwg.org/#attr-link-rel`](https://html.spec.whatwg.org/#attr-link-rel)
+     * [`https://html.spec.whatwg.org/#attr-input-required`](https://html.spec.whatwg.org/#attr-input-required)
+     * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
+     * [`https://html.spec.whatwg.org/#attr-textarea-required`](https://html.spec.whatwg.org/#attr-textarea-required)
+     * [`https://html.spec.whatwg.org/#attr-ol-reversed`](https://html.spec.whatwg.org/#attr-ol-reversed)
+     * [`https://html.spec.whatwg.org/#attr-textarea-rows`](https://html.spec.whatwg.org/#attr-textarea-rows)
+     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
+     * [`https://html.spec.whatwg.org/#attr-iframe-sandbox`](https://html.spec.whatwg.org/#attr-iframe-sandbox)
+     * [`https://html.spec.whatwg.org/#attr-th-scope`](https://html.spec.whatwg.org/#attr-th-scope)
+     * [`https://html.spec.whatwg.org/#attr-option-selected`](https://html.spec.whatwg.org/#attr-option-selected)
+     * [`https://html.spec.whatwg.org/#attr-area-shape`](https://html.spec.whatwg.org/#attr-area-shape)
+     * [`https://html.spec.whatwg.org/#attr-input-size`](https://html.spec.whatwg.org/#attr-input-size)
+     * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
+     * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
+     * [`https://html.spec.whatwg.org/#attr-source-sizes`](https://html.spec.whatwg.org/#attr-source-sizes)
+     * [`https://html.spec.whatwg.org/#attr-slot`](https://html.spec.whatwg.org/#attr-slot)
+     * [`https://html.spec.whatwg.org/#attr-col-span`](https://html.spec.whatwg.org/#attr-col-span)
+     * [`https://html.spec.whatwg.org/#attr-colgroup-span`](https://html.spec.whatwg.org/#attr-colgroup-span)
+     * [`https://html.spec.whatwg.org/#attr-spellcheck`](https://html.spec.whatwg.org/#attr-spellcheck)
+     * [`https://html.spec.whatwg.org/#attr-media-src`](https://html.spec.whatwg.org/#attr-media-src)
+     * [`https://html.spec.whatwg.org/#attr-embed-src`](https://html.spec.whatwg.org/#attr-embed-src)
+     * [`https://html.spec.whatwg.org/#attr-iframe-src`](https://html.spec.whatwg.org/#attr-iframe-src)
+     * [`https://html.spec.whatwg.org/#attr-img-src`](https://html.spec.whatwg.org/#attr-img-src)
+     * [`https://html.spec.whatwg.org/#attr-input-src`](https://html.spec.whatwg.org/#attr-input-src)
+     * [`https://html.spec.whatwg.org/#attr-script-src`](https://html.spec.whatwg.org/#attr-script-src)
+     * [`https://html.spec.whatwg.org/#attr-source-src`](https://html.spec.whatwg.org/#attr-source-src)
+     * [`https://html.spec.whatwg.org/#attr-track-src`](https://html.spec.whatwg.org/#attr-track-src)
+     * [`https://html.spec.whatwg.org/#attr-iframe-srcdoc`](https://html.spec.whatwg.org/#attr-iframe-srcdoc)
+     * [`https://html.spec.whatwg.org/#attr-track-srclang`](https://html.spec.whatwg.org/#attr-track-srclang)
+     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
+     * [`https://html.spec.whatwg.org/#attr-source-srcset`](https://html.spec.whatwg.org/#attr-source-srcset)
+     * [`https://html.spec.whatwg.org/#attr-ol-start`](https://html.spec.whatwg.org/#attr-ol-start)
+     * [`https://html.spec.whatwg.org/#attr-input-step`](https://html.spec.whatwg.org/#attr-input-step)
+     * [`https://html.spec.whatwg.org/#the-style-attribute`](https://html.spec.whatwg.org/#the-style-attribute)
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-target`](https://html.spec.whatwg.org/#attr-hyperlink-target)
+     * [`https://html.spec.whatwg.org/#attr-base-target`](https://html.spec.whatwg.org/#attr-base-target)
+     * [`https://html.spec.whatwg.org/#attr-fs-target`](https://html.spec.whatwg.org/#attr-fs-target)
+     * [`https://html.spec.whatwg.org/#attr-title`](https://html.spec.whatwg.org/#attr-title)
+     * [`https://html.spec.whatwg.org/#attr-abbr-title`](https://html.spec.whatwg.org/#attr-abbr-title)
+     * [`https://html.spec.whatwg.org/#attr-dfn-title`](https://html.spec.whatwg.org/#attr-dfn-title)
+     * [`https://html.spec.whatwg.org/#attr-link-title`](https://html.spec.whatwg.org/#attr-link-title)
+     * [`https://html.spec.whatwg.org/#attr-style-title`](https://html.spec.whatwg.org/#attr-style-title)
+     * [`https://html.spec.whatwg.org/#attr-translate`](https://html.spec.whatwg.org/#attr-translate)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-type`](https://html.spec.whatwg.org/#attr-hyperlink-type)
+     * [`https://html.spec.whatwg.org/#attr-link-type`](https://html.spec.whatwg.org/#attr-link-type)
+     * [`https://html.spec.whatwg.org/#attr-button-type`](https://html.spec.whatwg.org/#attr-button-type)
+     * [`https://html.spec.whatwg.org/#attr-embed-type`](https://html.spec.whatwg.org/#attr-embed-type)
+     * [`https://html.spec.whatwg.org/#attr-object-type`](https://html.spec.whatwg.org/#attr-object-type)
+     * [`https://html.spec.whatwg.org/#attr-script-type`](https://html.spec.whatwg.org/#attr-script-type)
+     * [`https://html.spec.whatwg.org/#attr-source-type`](https://html.spec.whatwg.org/#attr-source-type)
+     * [`https://html.spec.whatwg.org/#attr-ol-type`](https://html.spec.whatwg.org/#attr-ol-type)
+     * [`https://html.spec.whatwg.org/#attr-hyperlink-usemap`](https://html.spec.whatwg.org/#attr-hyperlink-usemap)
+     * [`https://html.spec.whatwg.org/#attr-button-value`](https://html.spec.whatwg.org/#attr-button-value)
+     * [`https://html.spec.whatwg.org/#attr-option-value`](https://html.spec.whatwg.org/#attr-option-value)
+     * [`https://html.spec.whatwg.org/#attr-data-value`](https://html.spec.whatwg.org/#attr-data-value)
+     * [`https://html.spec.whatwg.org/#attr-input-value`](https://html.spec.whatwg.org/#attr-input-value)
+     * [`https://html.spec.whatwg.org/#attr-li-value`](https://html.spec.whatwg.org/#attr-li-value)
+     * [`https://html.spec.whatwg.org/#attr-meter-value`](https://html.spec.whatwg.org/#attr-meter-value)
+     * [`https://html.spec.whatwg.org/#attr-progress-value`](https://html.spec.whatwg.org/#attr-progress-value)
+     * [`https://html.spec.whatwg.org/#attr-param-value`](https://html.spec.whatwg.org/#attr-param-value)
+     * [`https://html.spec.whatwg.org/#attr-canvas-width`](https://html.spec.whatwg.org/#attr-canvas-width)
+     * [`https://html.spec.whatwg.org/#attr-dim-width`](https://html.spec.whatwg.org/#attr-dim-width)
+     * [`https://html.spec.whatwg.org/#attr-textarea-wrap`](https://html.spec.whatwg.org/#attr-textarea-wrap)
+     * [`https://html.spec.whatwg.org/#tables`](https://html.spec.whatwg.org/#tables)
+     * [`https://html.spec.whatwg.org/#sections`](https://html.spec.whatwg.org/#sections)
+     * [`https://html.spec.whatwg.org/#grouping-content`](https://html.spec.whatwg.org/#grouping-content)
+     * [`https://html.spec.whatwg.org/#the-sub-and-sup-elements`](https://html.spec.whatwg.org/#the-sub-and-sup-elements)
+     * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
+     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
+     * [`https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te`](https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
+     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
+     * [`https://w3c.github.io/core-aam/#role-map-figure`](https://w3c.github.io/core-aam/#role-map-figure)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [ARIA in HTML](https://www.w3.org/TR/html-aria/)
+- [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/)
+
+No informative reference to this spec from other specs.
+
+
 ### MathML Accessiblity API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -2826,23 +3307,118 @@ Informative references to this spec from:
 
 ## Audio Working Group {#audio_working_group}
 
-### Web Audio API {data-spec=true data-error=true}
+### Web Audio API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Crawled version: 17 June 2021
 - Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
 - Latest published version: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
 - Shortname: webaudio
 
 #### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/mediacapture-fromelement/`](https://www.w3.org/TR/mediacapture-fromelement/)
+     * [`https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/`](https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/)
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#audio`](https://html.spec.whatwg.org/#audio)
+     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
+     * [`https://html.spec.whatwg.org/#media-element-event-task-source`](https://html.spec.whatwg.org/#media-element-event-task-source)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#queue-a-media-element-task`](https://html.spec.whatwg.org/#queue-a-media-element-task)
+     * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
+     * [`https://html.spec.whatwg.org/#sticky-activation`](https://html.spec.whatwg.org/#sticky-activation)
+     * [`https://html.spec.whatwg.org/#concept-current-everything`](https://html.spec.whatwg.org/#concept-current-everything)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#event`](https://html.spec.whatwg.org/#event)
+     * [`https://html.spec.whatwg.org/#origin`](https://html.spec.whatwg.org/#origin)
+     * [`https://html.spec.whatwg.org/#cors-cross-origin`](https://html.spec.whatwg.org/#cors-cross-origin)
+     * [`https://html.spec.whatwg.org/#worklet`](https://html.spec.whatwg.org/#worklet)
+     * [`https://html.spec.whatwg.org/#worklet-global-scope-type`](https://html.spec.whatwg.org/#worklet-global-scope-type)
+     * [`https://html.spec.whatwg.org/#worklet-destination-type`](https://html.spec.whatwg.org/#worklet-destination-type)
+     * [`https://html.spec.whatwg.org/#dom-worklet-addmodule`](https://html.spec.whatwg.org/#dom-worklet-addmodule)
+     * [`https://html.spec.whatwg.org/#terminate-a-worklet-global-scope`](https://html.spec.whatwg.org/#terminate-a-worklet-global-scope)
+     * [`https://html.spec.whatwg.org/#messageport`](https://html.spec.whatwg.org/#messageport)
+     * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#errorevent`](https://html.spec.whatwg.org/#errorevent)
+     * [`https://html.spec.whatwg.org/#messagechannel`](https://html.spec.whatwg.org/#messagechannel)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port1`](https://html.spec.whatwg.org/#dom-messagechannel-port1)
+     * [`https://html.spec.whatwg.org/#dom-messagechannel-port2`](https://html.spec.whatwg.org/#dom-messagechannel-port2)
+     * [`https://html.spec.whatwg.org/#structuredserializewithtransfer`](https://html.spec.whatwg.org/#structuredserializewithtransfer)
+     * [`https://html.spec.whatwg.org/#structuredserialize`](https://html.spec.whatwg.org/#structuredserialize)
+     * [`https://html.spec.whatwg.org/#the-errorevent-interface`](https://html.spec.whatwg.org/#the-errorevent-interface)
+     * [`https://html.spec.whatwg.org/#dom-messageport-close`](https://html.spec.whatwg.org/#dom-messageport-close)
+     * [`https://html.spec.whatwg.org/#ports-and-garbage-collection`](https://html.spec.whatwg.org/#ports-and-garbage-collection)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#task-queue`](https://html.spec.whatwg.org/#task-queue)
+     * [`https://html.spec.whatwg.org/#prepare-to-run-script`](https://html.spec.whatwg.org/#prepare-to-run-script)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#prepare-to-run-a-callback`](https://html.spec.whatwg.org/#prepare-to-run-a-callback)
+     * [`https://html.spec.whatwg.org/#clean-up-after-running-a-callback`](https://html.spec.whatwg.org/#clean-up-after-running-a-callback)
+     * [`https://html.spec.whatwg.org/#clean-up-after-running-script`](https://html.spec.whatwg.org/#clean-up-after-running-script)
+     * [`https://html.spec.whatwg.org/#perform-a-microtask-checkpoint`](https://html.spec.whatwg.org/#perform-a-microtask-checkpoint)
+     * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastream`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastream)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack`](https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack)
+     * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices)
+     * [`https://www.w3.org/TR/mediacapture-streams/#media-track-supported-constraints`](https://www.w3.org/TR/mediacapture-streams/#media-track-supported-constraints)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-float`](https://heycam.github.io/webidl/#idl-float)
+     * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+     * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
+     * [`https://heycam.github.io/webidl/#indexsizeerror`](https://heycam.github.io/webidl/#indexsizeerror)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#datacloneerror`](https://heycam.github.io/webidl/#datacloneerror)
+     * [`https://heycam.github.io/webidl/#encodingerror`](https://heycam.github.io/webidl/#encodingerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-Float32Array`](https://heycam.github.io/webidl/#idl-Float32Array)
+     * [`https://heycam.github.io/webidl/#unknownerror`](https://heycam.github.io/webidl/#unknownerror)
+     * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-reference`](https://heycam.github.io/webidl/#dfn-get-buffer-source-reference)
+     * [`https://heycam.github.io/webidl/#dfn-get-buffer-source-copy`](https://heycam.github.io/webidl/#dfn-get-buffer-source-copy)
+     * [`https://heycam.github.io/webidl/#invalidaccesserror`](https://heycam.github.io/webidl/#invalidaccesserror)
+     * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
+     * [`https://heycam.github.io/webidl/#idl-Uint8Array`](https://heycam.github.io/webidl/#idl-Uint8Array)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#dfn-conforming-implementation`](https://heycam.github.io/webidl/#dfn-conforming-implementation)
+     * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
+     * [`https://heycam.github.io/webidl/#idl-object`](https://heycam.github.io/webidl/#idl-object)
+     * [`https://heycam.github.io/webidl/#Global`](https://heycam.github.io/webidl/#Global)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long-long`](https://heycam.github.io/webidl/#idl-unsigned-long-long)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#es-to-sequence`](https://heycam.github.io/webidl/#es-to-sequence)
+     * [`https://heycam.github.io/webidl/#construct-a-callback-function`](https://heycam.github.io/webidl/#construct-a-callback-function)
+     * [`https://heycam.github.io/webidl/#dictionary-to-es`](https://heycam.github.io/webidl/#dictionary-to-es)
+     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#web-idl-arguments-list`](https://heycam.github.io/webidl/#web-idl-arguments-list)
+     * [`https://heycam.github.io/webidl/#web-idl-arguments-list-converting`](https://heycam.github.io/webidl/#web-idl-arguments-list-converting)
+     * [`https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlmediaelement-capturestream`](https://www.w3.org/TR/mediacapture-fromelement/#dom-htmlmediaelement-capturestream)
+     * [`https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp`](https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp)
+     * [`https://www.w3.org/TR/hr-time-3/#sec-privacy-security`](https://www.w3.org/TR/hr-time-3/#sec-privacy-security)
+- External links to outdated specs:
+     * [`https://www.w3.org/TR/2dcontext/`](https://www.w3.org/TR/2dcontext/)
+- External links that use a dated URL:
+     * [`https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/`](https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -2931,11 +3507,11 @@ Informative references to this spec from:
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
+Normative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ## Browser Testing and Tools Working Group {#browser_testing_and_tools_working_group}
@@ -6518,7 +7094,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Crawled URL: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
-- Crawled version: 17 May 2021
+- Crawled version: 30 August 2021
 - Editor's Draft: [https://drafts.csswg.org/css-env-1/](https://drafts.csswg.org/css-env-1/)
 - Shortname: css-env-1
 
@@ -6534,6 +7110,8 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/css-syntax-3/#at-rule`](https://drafts.csswg.org/css-syntax-3/#at-rule)
      * [`https://drafts.csswg.org/css-values-4/#length-value`](https://drafts.csswg.org/css-values-4/#length-value)
      * [`https://drafts.csswg.org/css-values-4/#identifier-value`](https://drafts.csswg.org/css-values-4/#identifier-value)
+     * [`https://drafts.csswg.org/css-values-4/#integer-value`](https://drafts.csswg.org/css-values-4/#integer-value)
+     * [`https://drafts.csswg.org/css-values-4/#mult-zero-plus`](https://drafts.csswg.org/css-values-4/#mult-zero-plus)
      * [`https://drafts.csswg.org/css-values-4/#comb-comma`](https://drafts.csswg.org/css-values-4/#comb-comma)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
      * [`https://drafts.csswg.org/css-cascade-5/#shorthand-property`](https://drafts.csswg.org/css-cascade-5/#shorthand-property)
@@ -9028,7 +9606,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
-- Crawled version: 27 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
 - Shortname: css-nesting-1
 
@@ -10647,7 +11225,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
 - Crawled URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Crawled version: 27 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
 - Shortname: css-scoping-2
 
@@ -10663,8 +11241,8 @@ No informative reference to this spec from other specs.
      * [`https://drafts.csswg.org/selectors-4/#scoping-root`](https://drafts.csswg.org/selectors-4/#scoping-root)
      * [`https://drafts.csswg.org/selectors-4/#scoped-selector`](https://drafts.csswg.org/selectors-4/#scoped-selector)
      * [`https://drafts.csswg.org/selectors-4/#scope-element`](https://drafts.csswg.org/selectors-4/#scope-element)
+     * [`https://drafts.csswg.org/selectors-4/#scope-pseudo`](https://drafts.csswg.org/selectors-4/#scope-pseudo)
      * [`https://drafts.csswg.org/selectors-4/#complex`](https://drafts.csswg.org/selectors-4/#complex)
-     * [`https://drafts.csswg.org/selectors-4/#matches-pseudo`](https://drafts.csswg.org/selectors-4/#matches-pseudo)
      * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
      * [`https://drafts.csswg.org/css-syntax-3/#block-at-rule`](https://drafts.csswg.org/css-syntax-3/#block-at-rule)
      * [`https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet`](https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet)
@@ -13968,6 +14546,7 @@ Normative references to this spec from:
 - [Resize Observer](https://www.w3.org/TR/resize-observer-1/)
 - [Scalable Vector Graphics (SVG) 2](https://www.w3.org/TR/SVG2/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
+- [VirtualKeyboard API](https://www.w3.org/TR/virtual-keyboard/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [WebCodecs](https://www.w3.org/TR/webcodecs/)
 - [WebDriver](https://www.w3.org/TR/webdriver2/)
@@ -14873,10 +15452,9 @@ Normative references to this spec from:
 - [Gyroscope](https://www.w3.org/TR/gyroscope/)
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/)
-
-Informative references to this spec from:
-
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ### Ambient Light Sensor {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -14924,11 +15502,10 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/)
 
-Informative references to this spec from:
-
-- [Permissions](https://www.w3.org/TR/permissions/)
+No informative reference to this spec from other specs.
 
 
 ### Battery Status API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -14937,7 +15514,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Crawled URL: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
-- Crawled version: 27 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/battery/](https://w3c.github.io/battery/)
 - Latest published version: [https://www.w3.org/TR/battery-status/](https://www.w3.org/TR/battery-status/)
 - Shortname: battery-status
@@ -14946,8 +15523,8 @@ Informative references to this spec from:
 
 - Broken external links:
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
-     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
@@ -14963,6 +15540,8 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
      * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
@@ -15182,6 +15761,7 @@ Normative references to this spec from:
 - [Gyroscope](https://www.w3.org/TR/gyroscope/)
 - [Magnetometer](https://www.w3.org/TR/magnetometer/)
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/)
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [Proximity Sensor](https://www.w3.org/TR/proximity/)
 
 Informative references to this spec from:
@@ -15299,10 +15879,9 @@ Normative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/)
-
-Informative references to this spec from:
-
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ### HTML Media Capture {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -15394,10 +15973,9 @@ Normative references to this spec from:
 
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/)
-
-Informative references to this spec from:
-
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ### Media Capture Depth Stream Extensions {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -15703,11 +16281,11 @@ Informative references to this spec from:
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
+Normative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ### Vibration API (Second Edition) {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -15751,7 +16329,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
-- Crawled version: 26 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -15865,7 +16443,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
-- Crawled version: 26 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -15981,7 +16559,6 @@ Informative references to this spec from:
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
 - [Geolocation Sensor](https://www.w3.org/TR/geolocation-sensor/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
 
@@ -16190,61 +16767,6 @@ Informative references to this spec from:
 
 ## Immersive Web Community Group {#immersive_web_community_group}
 
-### WebXR Anchors Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Crawled version: 24 August 2021
-- Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
-- Shortname: anchors
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for WebIDL names: 
-     * `XRHitTestResult` defined in [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- External links to private terms:
-     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-frame`](https://immersive-web.github.io/hit-test/#xrhittestresult-frame)
-     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin`](https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin)
-     * [`https://immersive-web.github.io/hit-test/#hit-test`](https://immersive-web.github.io/hit-test/#hit-test)
-- Broken external links:
-     * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
-     * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
-     * [`https://www.w3.org/TR/webxr/#inline-xr-device`](https://www.w3.org/TR/webxr/#inline-xr-device)
-     * [`https://www.w3.org/TR/webxr/#xrsession-mode`](https://www.w3.org/TR/webxr/#xrsession-mode)
-     * [`https://www.w3.org/TR/webxr/#xrspace-session`](https://www.w3.org/TR/webxr/#xrspace-session)
-     * [`https://www.w3.org/TR/webxr/#xrspace-native-origin`](https://www.w3.org/TR/webxr/#xrspace-native-origin)
-     * [`https://www.w3.org/TR/webxr/#xr-device`](https://www.w3.org/TR/webxr/#xr-device)
-     * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
-     * [`https://www.w3.org/TR/webxr/#dom-xrframe-session`](https://www.w3.org/TR/webxr/#dom-xrframe-session)
-     * [`https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates`](https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates)
-     * [`https://www.w3.org/TR/webxr/#xrsession-xr-device`](https://www.w3.org/TR/webxr/#xrsession-xr-device)
-     * [`https://www.w3.org/TR/webxr/#xrspace-effective-origin`](https://www.w3.org/TR/webxr/#xrspace-effective-origin)
-     * [`https://www.w3.org/TR/webxr/#xrframe-time`](https://www.w3.org/TR/webxr/#xrframe-time)
-     * [`https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar`](https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar)
-     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
-     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
-     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
-     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
-     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
-     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
-     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
-     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
-     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
-     * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
-     * [`https://immersive-web.github.io/webxr/#xrsession`](https://immersive-web.github.io/webxr/#xrsession)
-     * [`https://immersive-web.github.io/webxr/#xrframe`](https://immersive-web.github.io/webxr/#xrframe)
-     * [`https://immersive-web.github.io/webxr/#xrrigidtransform`](https://immersive-web.github.io/webxr/#xrrigidtransform)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ### WebXR Lighting Estimation API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -16304,6 +16826,61 @@ No informative reference to this spec from other specs.
 
 
 ## Immersive Web Working Group {#immersive_web_working_group}
+
+### WebXR Anchors Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
+- Crawled URL: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
+- Crawled version: 24 August 2021
+- Editor's Draft: [https://immersive-web.github.io/anchors/](https://immersive-web.github.io/anchors/)
+- Shortname: anchors
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `XRHitTestResult` defined in [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
+- External links to private terms:
+     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-frame`](https://immersive-web.github.io/hit-test/#xrhittestresult-frame)
+     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin`](https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin)
+     * [`https://immersive-web.github.io/hit-test/#hit-test`](https://immersive-web.github.io/hit-test/#hit-test)
+- Broken external links:
+     * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
+     * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
+     * [`https://www.w3.org/TR/webxr/#inline-xr-device`](https://www.w3.org/TR/webxr/#inline-xr-device)
+     * [`https://www.w3.org/TR/webxr/#xrsession-mode`](https://www.w3.org/TR/webxr/#xrsession-mode)
+     * [`https://www.w3.org/TR/webxr/#xrspace-session`](https://www.w3.org/TR/webxr/#xrspace-session)
+     * [`https://www.w3.org/TR/webxr/#xrspace-native-origin`](https://www.w3.org/TR/webxr/#xrspace-native-origin)
+     * [`https://www.w3.org/TR/webxr/#xr-device`](https://www.w3.org/TR/webxr/#xr-device)
+     * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
+     * [`https://www.w3.org/TR/webxr/#dom-xrframe-session`](https://www.w3.org/TR/webxr/#dom-xrframe-session)
+     * [`https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates`](https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates)
+     * [`https://www.w3.org/TR/webxr/#xrsession-xr-device`](https://www.w3.org/TR/webxr/#xrsession-xr-device)
+     * [`https://www.w3.org/TR/webxr/#xrspace-effective-origin`](https://www.w3.org/TR/webxr/#xrspace-effective-origin)
+     * [`https://www.w3.org/TR/webxr/#xrframe-time`](https://www.w3.org/TR/webxr/#xrframe-time)
+     * [`https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar`](https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
+     * [`https://immersive-web.github.io/webxr/#xrsession`](https://immersive-web.github.io/webxr/#xrsession)
+     * [`https://immersive-web.github.io/webxr/#xrframe`](https://immersive-web.github.io/webxr/#xrframe)
+     * [`https://immersive-web.github.io/webxr/#xrrigidtransform`](https://immersive-web.github.io/webxr/#xrrigidtransform)
+     * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
 
 ### WebXR Augmented Reality Module - Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
@@ -16372,7 +16949,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
 - Crawled URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
-- Crawled version: 24 August 2021
+- Crawled version: 30 August 2021
 - Editor's Draft: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
 - Shortname: depth-sensing
 
@@ -16548,6 +17125,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [WebXR Anchors Module](https://immersive-web.github.io/anchors/)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/)
 - [WebXR Depth Sensing Module](https://immersive-web.github.io/depth-sensing/)
@@ -16567,7 +17145,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Crawled URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
-- Crawled version: 18 February 2021
+- Crawled version: 30 August 2021
 - Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
 - Shortname: dom-overlays
 
@@ -17294,7 +17872,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Crawled URL: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
-- Crawled version: 4 June 2021
+- Crawled version: 30 August 2021
 - Editor's Draft: [https://w3c.github.io/picture-in-picture/](https://w3c.github.io/picture-in-picture/)
 - Latest published version: [https://www.w3.org/TR/picture-in-picture/](https://www.w3.org/TR/picture-in-picture/)
 - Shortname: picture-in-picture
@@ -20569,13 +21147,13 @@ Informative references to this spec from:
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
 
 
-### Permissions {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+### Permissions {data-spec=true data-anomaly=true data-redefinedIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Crawled URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Crawled version: 20 July 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
 - Latest published version: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
 - Shortname: permissions
@@ -20585,18 +21163,14 @@ Informative references to this spec from:
 - WebIDL names also defined elsewhere: 
     * `PermissionState` also defined in [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/)
 - Missing references for links: 
-     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/)
-     * [`https://w3c.github.io/sensors/`](https://w3c.github.io/sensors/)
-     * [`https://w3c.github.io/webdriver/`](https://w3c.github.io/webdriver/)
-- Inconsistent references for links: 
-     * [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/), related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-- External links to private terms:
-     * [`https://storage.spec.whatwg.org/#bucket-mode`](https://storage.spec.whatwg.org/#bucket-mode)
+     * [`https://w3c.github.io/permissions-automation/`](https://w3c.github.io/permissions-automation/)
 - Broken external links:
      * [`https://www.w3.org/TR/appmanifest/#dfn-installed-web-application`](https://www.w3.org/TR/appmanifest/#dfn-installed-web-application)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://html.spec.whatwg.org/#non-secure-context`](https://html.spec.whatwg.org/#non-secure-context)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#realms-settings-objects-global-objects`](https://html.spec.whatwg.org/#realms-settings-objects-global-objects)
@@ -20604,22 +21178,19 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#concept-realm-settings-object`](https://html.spec.whatwg.org/#concept-realm-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-event-loop`](https://html.spec.whatwg.org/#responsible-event-loop)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
-     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
-     * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
-     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
-     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
-     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
-     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
-     * [`https://html.spec.whatwg.org/#window-bc`](https://html.spec.whatwg.org/#window-bc)
-     * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
-     * [`https://www.w3.org/TR/permissions-policy/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy/#policy-controlled-feature)
+     * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
+     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
      * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia)
      * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid`](https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-deviceid)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm`](https://www.w3.org/TR/mediacapture-streams/#dfn-device-permission-revocation-algorithm)
+     * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
@@ -20628,18 +21199,7 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
-     * [`https://w3c.github.io/mediacapture-main/#devicechange`](https://w3c.github.io/mediacapture-main/#devicechange)
-     * [`https://w3c.github.io/sensors/#generic-sensor-permission-revocation-algorithm`](https://w3c.github.io/sensors/#generic-sensor-permission-revocation-algorithm)
-     * [`https://w3c.github.io/webdriver/#dfn-extension-commands`](https://w3c.github.io/webdriver/#dfn-extension-commands)
-     * [`https://w3c.github.io/webdriver/#dfn-extension-command-uri-template`](https://w3c.github.io/webdriver/#dfn-extension-command-uri-template)
-     * [`https://w3c.github.io/webdriver/#dfn-remote-end-steps`](https://w3c.github.io/webdriver/#dfn-remote-end-steps)
-     * [`https://w3c.github.io/webdriver/#dfn-error`](https://w3c.github.io/webdriver/#dfn-error)
-     * [`https://w3c.github.io/webdriver/#dfn-error-code`](https://w3c.github.io/webdriver/#dfn-error-code)
-     * [`https://w3c.github.io/webdriver/#dfn-invalid-argument`](https://w3c.github.io/webdriver/#dfn-invalid-argument)
-     * [`https://w3c.github.io/webdriver/#dfn-current-browsing-context`](https://w3c.github.io/webdriver/#dfn-current-browsing-context)
-     * [`https://w3c.github.io/webdriver/#dfn-success`](https://w3c.github.io/webdriver/#dfn-success)
-     * [`https://w3c.github.io/webdriver/#dfn-session`](https://w3c.github.io/webdriver/#dfn-session)
-     * [`https://w3c.github.io/webdriver/#dfn-local-end`](https://w3c.github.io/webdriver/#dfn-local-end)
+     * [`https://www.w3.org/TR/generic-sensor/#generic-sensor-permission-revocation-algorithm`](https://www.w3.org/TR/generic-sensor/#generic-sensor-permission-revocation-algorithm)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -21168,7 +21728,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Crawled URL: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
-- Crawled version: 23 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/html-aria/](https://w3c.github.io/html-aria/)
 - Latest published version: [https://www.w3.org/TR/html-aria/](https://www.w3.org/TR/html-aria/)
 - Shortname: html-aria
@@ -21759,485 +22319,6 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### HTML Accessibility API Mappings 1.0 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
-- Crawled URL: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
-- Crawled version: 13 August 2021
-- Editor's Draft: [https://w3c.github.io/html-aam/](https://w3c.github.io/html-aam/)
-- Latest published version: [https://www.w3.org/TR/html-aam-1.0/](https://www.w3.org/TR/html-aam-1.0/)
-- Shortname: html-aam-1.0
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/core-aam-1.1/`](https://www.w3.org/TR/core-aam-1.1/)
-     * [`https://www.w3.org/TR/graphics-aam-1.0/`](https://www.w3.org/TR/graphics-aam-1.0/)
-     * [`https://www.w3.org/TR/accname-aam-1.1/`](https://www.w3.org/TR/accname-aam-1.1/)
-     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/), related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
-     * [`https://w3c.github.io/core-aam/`](https://w3c.github.io/core-aam/), related reference "core-aam-1.2" uses URL [`https://www.w3.org/TR/core-aam-1.2/`](https://www.w3.org/TR/core-aam-1.2/)
-- Broken external links:
-     * [`https://www.w3.org/TR/wai-aria/#dfn-user-agent`](https://www.w3.org/TR/wai-aria/#dfn-user-agent)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-accessibility-api`](https://www.w3.org/TR/wai-aria/#dfn-accessibility-api)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-role`](https://www.w3.org/TR/wai-aria/#dfn-role)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-state`](https://www.w3.org/TR/wai-aria/#dfn-state)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-property`](https://www.w3.org/TR/wai-aria/#dfn-property)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-name`](https://www.w3.org/TR/wai-aria/#dfn-accessible-name)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-description`](https://www.w3.org/TR/wai-aria/#dfn-accessible-description)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-accessible-object`](https://www.w3.org/TR/wai-aria/#dfn-accessible-object)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-widget`](https://www.w3.org/TR/wai-aria/#dfn-widget)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-element`](https://www.w3.org/TR/wai-aria/#dfn-element)
-     * [`https://www.w3.org/TR/wai-aria/#dfn-node`](https://www.w3.org/TR/wai-aria/#dfn-node)
-     * [`https://www.w3.org/TR/core-aam-1.2/#intro_aapi`](https://www.w3.org/TR/core-aam-1.2/#intro_aapi)
-     * [`https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree`](https://www.w3.org/TR/core-aam-1.2/#dfn-accessibility-tree)
-     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_general`](https://www.w3.org/TR/core-aam-1.1/#mapping_general)
-     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_conflicts`](https://www.w3.org/TR/core-aam-1.1/#mapping_conflicts)
-     * [`https://www.w3.org/TR/core-aam-1.1/#mapping_nodirect`](https://www.w3.org/TR/core-aam-1.1/#mapping_nodirect)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription`](https://www.w3.org/TR/core-aam-1.1/#ariaRoleDescription)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-link`](https://www.w3.org/TR/core-aam-1.1/#role-map-link)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-article`](https://www.w3.org/TR/core-aam-1.1/#role-map-article)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-complementary`](https://www.w3.org/TR/core-aam-1.1/#role-map-complementary)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button`](https://www.w3.org/TR/core-aam-1.1/#role-map-button)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-slider`](https://www.w3.org/TR/core-aam-1.1/#role-map-slider)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-toolbar`](https://www.w3.org/TR/core-aam-1.1/#role-map-toolbar)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button-pressed`](https://www.w3.org/TR/core-aam-1.1/#role-map-button-pressed)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-button-haspopup`](https://www.w3.org/TR/core-aam-1.1/#role-map-button-haspopup)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-listbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-listbox)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaMultiselectableFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaMultiselectableFalse)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-definition`](https://www.w3.org/TR/core-aam-1.1/#role-map-definition)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-term`](https://www.w3.org/TR/core-aam-1.1/#role-map-term)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-dialog`](https://www.w3.org/TR/core-aam-1.1/#role-map-dialog)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-group`](https://www.w3.org/TR/core-aam-1.1/#role-map-group)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-figure`](https://www.w3.org/TR/core-aam-1.1/#role-map-figure)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-contentinfo`](https://www.w3.org/TR/core-aam-1.1/#role-map-contentinfo)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-form`](https://www.w3.org/TR/core-aam-1.1/#role-map-form)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-heading`](https://www.w3.org/TR/core-aam-1.1/#role-map-heading)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaLevel`](https://www.w3.org/TR/core-aam-1.1/#ariaLevel)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-banner`](https://www.w3.org/TR/core-aam-1.1/#role-map-banner)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-separator`](https://www.w3.org/TR/core-aam-1.1/#role-map-separator)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-img`](https://www.w3.org/TR/core-aam-1.1/#role-map-img)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-presentation`](https://www.w3.org/TR/core-aam-1.1/#role-map-presentation)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-checkbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-checkbox)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedMixed`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedMixed)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-textbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-textbox)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-spinbutton`](https://www.w3.org/TR/core-aam-1.1/#role-map-spinbutton)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-radio`](https://www.w3.org/TR/core-aam-1.1/#role-map-radio)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaSetsize`](https://www.w3.org/TR/core-aam-1.1/#ariaSetsize)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaPosinset`](https://www.w3.org/TR/core-aam-1.1/#ariaPosinset)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-searchbox`](https://www.w3.org/TR/core-aam-1.1/#role-map-searchbox)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-combobox`](https://www.w3.org/TR/core-aam-1.1/#role-map-combobox)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaControls`](https://www.w3.org/TR/core-aam-1.1/#ariaControls)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-listitem`](https://www.w3.org/TR/core-aam-1.1/#role-map-listitem)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-main`](https://www.w3.org/TR/core-aam-1.1/#role-map-main)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-math`](https://www.w3.org/TR/core-aam-1.1/#role-map-math)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-list`](https://www.w3.org/TR/core-aam-1.1/#role-map-list)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-menu`](https://www.w3.org/TR/core-aam-1.1/#role-map-menu)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-navigation`](https://www.w3.org/TR/core-aam-1.1/#role-map-navigation)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-option`](https://www.w3.org/TR/core-aam-1.1/#role-map-option)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaSelectedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaSelectedTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-status`](https://www.w3.org/TR/core-aam-1.1/#role-map-status)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-progressbar`](https://www.w3.org/TR/core-aam-1.1/#role-map-progressbar)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueMax`](https://www.w3.org/TR/core-aam-1.1/#ariaValueMax)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueMin`](https://www.w3.org/TR/core-aam-1.1/#ariaValueMin)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaValueNow`](https://www.w3.org/TR/core-aam-1.1/#ariaValueNow)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-region`](https://www.w3.org/TR/core-aam-1.1/#role-map-region)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-table`](https://www.w3.org/TR/core-aam-1.1/#role-map-table)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-rowgroup`](https://www.w3.org/TR/core-aam-1.1/#role-map-rowgroup)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-cell`](https://www.w3.org/TR/core-aam-1.1/#role-map-cell)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-grid`](https://www.w3.org/TR/core-aam-1.1/#role-map-grid)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-treegrid`](https://www.w3.org/TR/core-aam-1.1/#role-map-treegrid)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-gridcell`](https://www.w3.org/TR/core-aam-1.1/#role-map-gridcell)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaMultilineTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaMultilineTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-columnheader`](https://www.w3.org/TR/core-aam-1.1/#role-map-columnheader)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-rowheader`](https://www.w3.org/TR/core-aam-1.1/#role-map-rowheader)
-     * [`https://www.w3.org/TR/core-aam-1.1/#role-map-row`](https://www.w3.org/TR/core-aam-1.1/#role-map-row)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaAutocompleteInlineListBoth`](https://www.w3.org/TR/core-aam-1.1/#ariaAutocompleteInlineListBoth)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaFlowto`](https://www.w3.org/TR/core-aam-1.1/#ariaFlowto)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaCheckedFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaCheckedFalse)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaColSpan`](https://www.w3.org/TR/core-aam-1.1/#ariaColSpan)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaDisabledTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaDisabledTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaHiddenTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaHiddenTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaExpandedTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaExpandedTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaModalTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaModalTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaHiddenFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaHiddenFalse)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaModalFalse`](https://www.w3.org/TR/core-aam-1.1/#ariaModalFalse)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaPlaceholder`](https://www.w3.org/TR/core-aam-1.1/#ariaPlaceholder)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaReadonlyTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaReadonlyTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRequiredTrue`](https://www.w3.org/TR/core-aam-1.1/#ariaRequiredTrue)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaRowSpan`](https://www.w3.org/TR/core-aam-1.1/#ariaRowSpan)
-     * [`https://www.w3.org/TR/core-aam-1.1/#ariaInvalidSpellingGrammar`](https://www.w3.org/TR/core-aam-1.1/#ariaInvalidSpellingGrammar)
-     * [`https://www.w3.org/TR/core-aam-1.1/#focus_state_event_table`](https://www.w3.org/TR/core-aam-1.1/#focus_state_event_table)
-     * [`https://html.spec.whatwg.org/#category-label`](https://html.spec.whatwg.org/#category-label)
-     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
-     * [`https://html.spec.whatwg.org/#hyperlink`](https://html.spec.whatwg.org/#hyperlink)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-href`](https://html.spec.whatwg.org/#attr-hyperlink-href)
-     * [`https://html.spec.whatwg.org/#the-abbr-element`](https://html.spec.whatwg.org/#the-abbr-element)
-     * [`https://html.spec.whatwg.org/#the-address-element`](https://html.spec.whatwg.org/#the-address-element)
-     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
-     * [`https://html.spec.whatwg.org/#the-article-element`](https://html.spec.whatwg.org/#the-article-element)
-     * [`https://html.spec.whatwg.org/#the-aside-element`](https://html.spec.whatwg.org/#the-aside-element)
-     * [`https://html.spec.whatwg.org/#audio`](https://html.spec.whatwg.org/#audio)
-     * [`https://html.spec.whatwg.org/#attr-media-controls`](https://html.spec.whatwg.org/#attr-media-controls)
-     * [`https://html.spec.whatwg.org/#autonomous-custom-element`](https://html.spec.whatwg.org/#autonomous-custom-element)
-     * [`https://html.spec.whatwg.org/#the-b-element`](https://html.spec.whatwg.org/#the-b-element)
-     * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
-     * [`https://html.spec.whatwg.org/#the-bdi-element`](https://html.spec.whatwg.org/#the-bdi-element)
-     * [`https://html.spec.whatwg.org/#the-bdo-element`](https://html.spec.whatwg.org/#the-bdo-element)
-     * [`https://html.spec.whatwg.org/#the-blockquote-element`](https://html.spec.whatwg.org/#the-blockquote-element)
-     * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://html.spec.whatwg.org/#the-br-element`](https://html.spec.whatwg.org/#the-br-element)
-     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
-     * [`https://html.spec.whatwg.org/#canvas`](https://html.spec.whatwg.org/#canvas)
-     * [`https://html.spec.whatwg.org/#the-caption-element`](https://html.spec.whatwg.org/#the-caption-element)
-     * [`https://html.spec.whatwg.org/#the-cite-element`](https://html.spec.whatwg.org/#the-cite-element)
-     * [`https://html.spec.whatwg.org/#the-code-element`](https://html.spec.whatwg.org/#the-code-element)
-     * [`https://html.spec.whatwg.org/#the-col-element`](https://html.spec.whatwg.org/#the-col-element)
-     * [`https://html.spec.whatwg.org/#the-colgroup-element`](https://html.spec.whatwg.org/#the-colgroup-element)
-     * [`https://html.spec.whatwg.org/#the-data-element`](https://html.spec.whatwg.org/#the-data-element)
-     * [`https://html.spec.whatwg.org/#the-datalist-element`](https://html.spec.whatwg.org/#the-datalist-element)
-     * [`https://html.spec.whatwg.org/#the-dd-element`](https://html.spec.whatwg.org/#the-dd-element)
-     * [`https://html.spec.whatwg.org/#the-del-element`](https://html.spec.whatwg.org/#the-del-element)
-     * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
-     * [`https://html.spec.whatwg.org/#the-dfn-element`](https://html.spec.whatwg.org/#the-dfn-element)
-     * [`https://html.spec.whatwg.org/#the-dialog-element`](https://html.spec.whatwg.org/#the-dialog-element)
-     * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
-     * [`https://html.spec.whatwg.org/#the-dl-element`](https://html.spec.whatwg.org/#the-dl-element)
-     * [`https://html.spec.whatwg.org/#the-dt-element`](https://html.spec.whatwg.org/#the-dt-element)
-     * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
-     * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
-     * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
-     * [`https://html.spec.whatwg.org/#the-figcaption-element`](https://html.spec.whatwg.org/#the-figcaption-element)
-     * [`https://html.spec.whatwg.org/#the-figure-element`](https://html.spec.whatwg.org/#the-figure-element)
-     * [`https://html.spec.whatwg.org/#the-footer-element`](https://html.spec.whatwg.org/#the-footer-element)
-     * [`https://html.spec.whatwg.org/#the-main-element`](https://html.spec.whatwg.org/#the-main-element)
-     * [`https://html.spec.whatwg.org/#sectioning-content`](https://html.spec.whatwg.org/#sectioning-content)
-     * [`https://html.spec.whatwg.org/#sectioning-root`](https://html.spec.whatwg.org/#sectioning-root)
-     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
-     * [`https://html.spec.whatwg.org/#custom-elements-face-example`](https://html.spec.whatwg.org/#custom-elements-face-example)
-     * [`https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements`](https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements)
-     * [`https://html.spec.whatwg.org/#the-head-element`](https://html.spec.whatwg.org/#the-head-element)
-     * [`https://html.spec.whatwg.org/#the-header-element`](https://html.spec.whatwg.org/#the-header-element)
-     * [`https://html.spec.whatwg.org/#the-hgroup-element`](https://html.spec.whatwg.org/#the-hgroup-element)
-     * [`https://html.spec.whatwg.org/#the-hr-element`](https://html.spec.whatwg.org/#the-hr-element)
-     * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
-     * [`https://html.spec.whatwg.org/#the-i-element`](https://html.spec.whatwg.org/#the-i-element)
-     * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
-     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
-     * [`https://html.spec.whatwg.org/#attr-img-alt`](https://html.spec.whatwg.org/#attr-img-alt)
-     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
-     * [`https://html.spec.whatwg.org/#attr-input-type`](https://html.spec.whatwg.org/#attr-input-type)
-     * [`https://html.spec.whatwg.org/#button-state-(type=button)`](https://html.spec.whatwg.org/#button-state-(type=button))
-     * [`https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)`](https://html.spec.whatwg.org/#checkbox-state-(type=checkbox))
-     * [`https://html.spec.whatwg.org/#dom-input-indeterminate`](https://html.spec.whatwg.org/#dom-input-indeterminate)
-     * [`https://html.spec.whatwg.org/#concept-fe-checked`](https://html.spec.whatwg.org/#concept-fe-checked)
-     * [`https://html.spec.whatwg.org/#color-state-(type=color)`](https://html.spec.whatwg.org/#color-state-(type=color))
-     * [`https://html.spec.whatwg.org/#date-state-(type=date)`](https://html.spec.whatwg.org/#date-state-(type=date))
-     * [`https://html.spec.whatwg.org/#email-state-(type=email)`](https://html.spec.whatwg.org/#email-state-(type=email))
-     * [`https://html.spec.whatwg.org/#concept-input-list`](https://html.spec.whatwg.org/#concept-input-list)
-     * [`https://html.spec.whatwg.org/#file-upload-state-(type=file)`](https://html.spec.whatwg.org/#file-upload-state-(type=file))
-     * [`https://html.spec.whatwg.org/#hidden-state-(type=hidden)`](https://html.spec.whatwg.org/#hidden-state-(type=hidden))
-     * [`https://html.spec.whatwg.org/#image-button-state-(type=image)`](https://html.spec.whatwg.org/#image-button-state-(type=image))
-     * [`https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local)`](https://html.spec.whatwg.org/#local-date-and-time-state-(type=datetime-local))
-     * [`https://html.spec.whatwg.org/#month-state-(type=month)`](https://html.spec.whatwg.org/#month-state-(type=month))
-     * [`https://html.spec.whatwg.org/#number-state-(type=number)`](https://html.spec.whatwg.org/#number-state-(type=number))
-     * [`https://html.spec.whatwg.org/#password-state-(type=password)`](https://html.spec.whatwg.org/#password-state-(type=password))
-     * [`https://html.spec.whatwg.org/#radio-button-state-(type=radio)`](https://html.spec.whatwg.org/#radio-button-state-(type=radio))
-     * [`https://html.spec.whatwg.org/#radio-button-group`](https://html.spec.whatwg.org/#radio-button-group)
-     * [`https://html.spec.whatwg.org/#range-state-(type=range)`](https://html.spec.whatwg.org/#range-state-(type=range))
-     * [`https://html.spec.whatwg.org/#reset-button-state-(type=reset)`](https://html.spec.whatwg.org/#reset-button-state-(type=reset))
-     * [`https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search)`](https://html.spec.whatwg.org/#text-(type=text)-state-and-search-state-(type=search))
-     * [`https://html.spec.whatwg.org/#submit-button-state-(type=submit)`](https://html.spec.whatwg.org/#submit-button-state-(type=submit))
-     * [`https://html.spec.whatwg.org/#telephone-state-(type=tel)`](https://html.spec.whatwg.org/#telephone-state-(type=tel))
-     * [`https://html.spec.whatwg.org/#url-state-(type=url)`](https://html.spec.whatwg.org/#url-state-(type=url))
-     * [`https://html.spec.whatwg.org/#attr-input-list`](https://html.spec.whatwg.org/#attr-input-list)
-     * [`https://html.spec.whatwg.org/#time-state-(type=time)`](https://html.spec.whatwg.org/#time-state-(type=time))
-     * [`https://html.spec.whatwg.org/#week-state-(type=week)`](https://html.spec.whatwg.org/#week-state-(type=week))
-     * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
-     * [`https://html.spec.whatwg.org/#the-kbd-element`](https://html.spec.whatwg.org/#the-kbd-element)
-     * [`https://html.spec.whatwg.org/#the-label-element`](https://html.spec.whatwg.org/#the-label-element)
-     * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
-     * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
-     * [`https://html.spec.whatwg.org/#the-ol-element`](https://html.spec.whatwg.org/#the-ol-element)
-     * [`https://html.spec.whatwg.org/#the-ul-element`](https://html.spec.whatwg.org/#the-ul-element)
-     * [`https://html.spec.whatwg.org/#menus`](https://html.spec.whatwg.org/#menus)
-     * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
-     * [`https://html.spec.whatwg.org/#the-map-element`](https://html.spec.whatwg.org/#the-map-element)
-     * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
-     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
-     * [`https://html.spec.whatwg.org/#menuitem`](https://html.spec.whatwg.org/#menuitem)
-     * [`https://html.spec.whatwg.org/#attr-menu-type`](https://html.spec.whatwg.org/#attr-menu-type)
-     * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
-     * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
-     * [`https://html.spec.whatwg.org/#the-nav-element`](https://html.spec.whatwg.org/#the-nav-element)
-     * [`https://html.spec.whatwg.org/#the-noscript-element`](https://html.spec.whatwg.org/#the-noscript-element)
-     * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
-     * [`https://html.spec.whatwg.org/#the-optgroup-element`](https://html.spec.whatwg.org/#the-optgroup-element)
-     * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
-     * [`https://html.spec.whatwg.org/#concept-select-option-list`](https://html.spec.whatwg.org/#concept-select-option-list)
-     * [`https://html.spec.whatwg.org/#concept-option-selectedness`](https://html.spec.whatwg.org/#concept-option-selectedness)
-     * [`https://html.spec.whatwg.org/#the-output-element`](https://html.spec.whatwg.org/#the-output-element)
-     * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
-     * [`https://html.spec.whatwg.org/#the-param-element`](https://html.spec.whatwg.org/#the-param-element)
-     * [`https://html.spec.whatwg.org/#the-picture-element`](https://html.spec.whatwg.org/#the-picture-element)
-     * [`https://html.spec.whatwg.org/#the-pre-element`](https://html.spec.whatwg.org/#the-pre-element)
-     * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
-     * [`https://html.spec.whatwg.org/#the-q-element`](https://html.spec.whatwg.org/#the-q-element)
-     * [`https://html.spec.whatwg.org/#the-rp-element`](https://html.spec.whatwg.org/#the-rp-element)
-     * [`https://html.spec.whatwg.org/#the-rt-element`](https://html.spec.whatwg.org/#the-rt-element)
-     * [`https://html.spec.whatwg.org/#the-ruby-element`](https://html.spec.whatwg.org/#the-ruby-element)
-     * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
-     * [`https://html.spec.whatwg.org/#the-samp-element`](https://html.spec.whatwg.org/#the-samp-element)
-     * [`https://html.spec.whatwg.org/#the-script-element`](https://html.spec.whatwg.org/#the-script-element)
-     * [`https://html.spec.whatwg.org/#the-section-element`](https://html.spec.whatwg.org/#the-section-element)
-     * [`https://html.spec.whatwg.org/#the-select-element`](https://html.spec.whatwg.org/#the-select-element)
-     * [`https://html.spec.whatwg.org/#attr-select-multiple`](https://html.spec.whatwg.org/#attr-select-multiple)
-     * [`https://html.spec.whatwg.org/#attr-select-size`](https://html.spec.whatwg.org/#attr-select-size)
-     * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
-     * [`https://html.spec.whatwg.org/#the-small-element`](https://html.spec.whatwg.org/#the-small-element)
-     * [`https://html.spec.whatwg.org/#the-source-element`](https://html.spec.whatwg.org/#the-source-element)
-     * [`https://html.spec.whatwg.org/#the-span-element`](https://html.spec.whatwg.org/#the-span-element)
-     * [`https://html.spec.whatwg.org/#the-strong-element`](https://html.spec.whatwg.org/#the-strong-element)
-     * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
-     * [`https://html.spec.whatwg.org/#the-sub-element`](https://html.spec.whatwg.org/#the-sub-element)
-     * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
-     * [`https://html.spec.whatwg.org/#the-sup-element`](https://html.spec.whatwg.org/#the-sup-element)
-     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
-     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
-     * [`https://html.spec.whatwg.org/#the-tbody-element`](https://html.spec.whatwg.org/#the-tbody-element)
-     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
-     * [`https://html.spec.whatwg.org/#the-template-element`](https://html.spec.whatwg.org/#the-template-element)
-     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
-     * [`https://html.spec.whatwg.org/#the-tfoot-element`](https://html.spec.whatwg.org/#the-tfoot-element)
-     * [`https://html.spec.whatwg.org/#the-th-element`](https://html.spec.whatwg.org/#the-th-element)
-     * [`https://html.spec.whatwg.org/#column-header`](https://html.spec.whatwg.org/#column-header)
-     * [`https://html.spec.whatwg.org/#row-header`](https://html.spec.whatwg.org/#row-header)
-     * [`https://html.spec.whatwg.org/#column-group-header`](https://html.spec.whatwg.org/#column-group-header)
-     * [`https://html.spec.whatwg.org/#row-group-header`](https://html.spec.whatwg.org/#row-group-header)
-     * [`https://html.spec.whatwg.org/#the-thead-element`](https://html.spec.whatwg.org/#the-thead-element)
-     * [`https://html.spec.whatwg.org/#the-time-element`](https://html.spec.whatwg.org/#the-time-element)
-     * [`https://html.spec.whatwg.org/#the-title-element`](https://html.spec.whatwg.org/#the-title-element)
-     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
-     * [`https://html.spec.whatwg.org/#the-track-element`](https://html.spec.whatwg.org/#the-track-element)
-     * [`https://html.spec.whatwg.org/#the-u-element`](https://html.spec.whatwg.org/#the-u-element)
-     * [`https://html.spec.whatwg.org/#the-var-element`](https://html.spec.whatwg.org/#the-var-element)
-     * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
-     * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
-     * [`https://html.spec.whatwg.org/#attributes-3`](https://html.spec.whatwg.org/#attributes-3)
-     * [`https://html.spec.whatwg.org/#attr-th-abbr`](https://html.spec.whatwg.org/#attr-th-abbr)
-     * [`https://html.spec.whatwg.org/#attr-input-accept`](https://html.spec.whatwg.org/#attr-input-accept)
-     * [`https://html.spec.whatwg.org/#attr-form-accept-charset`](https://html.spec.whatwg.org/#attr-form-accept-charset)
-     * [`https://html.spec.whatwg.org/#the-accesskey-attribute`](https://html.spec.whatwg.org/#the-accesskey-attribute)
-     * [`https://html.spec.whatwg.org/#attr-fs-action`](https://html.spec.whatwg.org/#attr-fs-action)
-     * [`https://html.spec.whatwg.org/#attr-iframe-allow`](https://html.spec.whatwg.org/#attr-iframe-allow)
-     * [`https://html.spec.whatwg.org/#attr-iframe-allowfullscreen`](https://html.spec.whatwg.org/#attr-iframe-allowfullscreen)
-     * [`https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest`](https://html.spec.whatwg.org/#attr-iframe-allowpaymentrequest)
-     * [`https://html.spec.whatwg.org/#attr-area-alt`](https://html.spec.whatwg.org/#attr-area-alt)
-     * [`https://html.spec.whatwg.org/#attr-input-alt`](https://html.spec.whatwg.org/#attr-input-alt)
-     * [`https://html.spec.whatwg.org/#attr-link-as`](https://html.spec.whatwg.org/#attr-link-as)
-     * [`https://html.spec.whatwg.org/#attr-script-async`](https://html.spec.whatwg.org/#attr-script-async)
-     * [`https://html.spec.whatwg.org/#attr-autocapitalize`](https://html.spec.whatwg.org/#attr-autocapitalize)
-     * [`https://html.spec.whatwg.org/#attr-form-autocomplete`](https://html.spec.whatwg.org/#attr-form-autocomplete)
-     * [`https://html.spec.whatwg.org/#attr-fe-autocomplete`](https://html.spec.whatwg.org/#attr-fe-autocomplete)
-     * [`https://html.spec.whatwg.org/#attr-fe-autofocus`](https://html.spec.whatwg.org/#attr-fe-autofocus)
-     * [`https://html.spec.whatwg.org/#attr-media-autoplay`](https://html.spec.whatwg.org/#attr-media-autoplay)
-     * [`https://html.spec.whatwg.org/#attr-meta-charset`](https://html.spec.whatwg.org/#attr-meta-charset)
-     * [`https://html.spec.whatwg.org/#attr-input-checked`](https://html.spec.whatwg.org/#attr-input-checked)
-     * [`https://html.spec.whatwg.org/#attr-blockquote-cite`](https://html.spec.whatwg.org/#attr-blockquote-cite)
-     * [`https://html.spec.whatwg.org/#attr-mod-cite`](https://html.spec.whatwg.org/#attr-mod-cite)
-     * [`https://html.spec.whatwg.org/#attr-q-cite`](https://html.spec.whatwg.org/#attr-q-cite)
-     * [`https://html.spec.whatwg.org/#classes`](https://html.spec.whatwg.org/#classes)
-     * [`https://html.spec.whatwg.org/#attr-link-color`](https://html.spec.whatwg.org/#attr-link-color)
-     * [`https://html.spec.whatwg.org/#attr-textarea-cols`](https://html.spec.whatwg.org/#attr-textarea-cols)
-     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
-     * [`https://html.spec.whatwg.org/#attr-meta-content`](https://html.spec.whatwg.org/#attr-meta-content)
-     * [`https://html.spec.whatwg.org/#attr-contenteditable`](https://html.spec.whatwg.org/#attr-contenteditable)
-     * [`https://html.spec.whatwg.org/#attr-area-coords`](https://html.spec.whatwg.org/#attr-area-coords)
-     * [`https://html.spec.whatwg.org/#attr-media-crossorigin`](https://html.spec.whatwg.org/#attr-media-crossorigin)
-     * [`https://html.spec.whatwg.org/#attr-img-crossorigin`](https://html.spec.whatwg.org/#attr-img-crossorigin)
-     * [`https://html.spec.whatwg.org/#attr-link-crossorigin`](https://html.spec.whatwg.org/#attr-link-crossorigin)
-     * [`https://html.spec.whatwg.org/#attr-script-crossorigin`](https://html.spec.whatwg.org/#attr-script-crossorigin)
-     * [`https://html.spec.whatwg.org/#attr-object-data`](https://html.spec.whatwg.org/#attr-object-data)
-     * [`https://html.spec.whatwg.org/#attr-mod-datetime`](https://html.spec.whatwg.org/#attr-mod-datetime)
-     * [`https://html.spec.whatwg.org/#attr-time-datetime`](https://html.spec.whatwg.org/#attr-time-datetime)
-     * [`https://html.spec.whatwg.org/#attr-img-decoding`](https://html.spec.whatwg.org/#attr-img-decoding)
-     * [`https://html.spec.whatwg.org/#attr-track-default`](https://html.spec.whatwg.org/#attr-track-default)
-     * [`https://html.spec.whatwg.org/#attr-script-defer`](https://html.spec.whatwg.org/#attr-script-defer)
-     * [`https://html.spec.whatwg.org/#the-dir-attribute`](https://html.spec.whatwg.org/#the-dir-attribute)
-     * [`https://html.spec.whatwg.org/#attr-fe-dirname`](https://html.spec.whatwg.org/#attr-fe-dirname)
-     * [`https://html.spec.whatwg.org/#attr-fe-disabled`](https://html.spec.whatwg.org/#attr-fe-disabled)
-     * [`https://html.spec.whatwg.org/#attr-fieldset-disabled`](https://html.spec.whatwg.org/#attr-fieldset-disabled)
-     * [`https://html.spec.whatwg.org/#attr-optgroup-disabled`](https://html.spec.whatwg.org/#attr-optgroup-disabled)
-     * [`https://html.spec.whatwg.org/#attr-option-disabled`](https://html.spec.whatwg.org/#attr-option-disabled)
-     * [`https://html.spec.whatwg.org/#form-associated-custom-element`](https://html.spec.whatwg.org/#form-associated-custom-element)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-download`](https://html.spec.whatwg.org/#attr-hyperlink-download)
-     * [`https://html.spec.whatwg.org/#the-draggable-attribute`](https://html.spec.whatwg.org/#the-draggable-attribute)
-     * [`https://html.spec.whatwg.org/#attr-fs-enctype`](https://html.spec.whatwg.org/#attr-fs-enctype)
-     * [`https://html.spec.whatwg.org/#attr-output-for`](https://html.spec.whatwg.org/#attr-output-for)
-     * [`https://html.spec.whatwg.org/#attr-fae-form`](https://html.spec.whatwg.org/#attr-fae-form)
-     * [`https://html.spec.whatwg.org/#attr-fs-formaction`](https://html.spec.whatwg.org/#attr-fs-formaction)
-     * [`https://html.spec.whatwg.org/#attr-fs-formenctype`](https://html.spec.whatwg.org/#attr-fs-formenctype)
-     * [`https://html.spec.whatwg.org/#attr-fs-formmethod`](https://html.spec.whatwg.org/#attr-fs-formmethod)
-     * [`https://html.spec.whatwg.org/#attr-fs-formnovalidate`](https://html.spec.whatwg.org/#attr-fs-formnovalidate)
-     * [`https://html.spec.whatwg.org/#attr-fs-formtarget`](https://html.spec.whatwg.org/#attr-fs-formtarget)
-     * [`https://html.spec.whatwg.org/#attr-tdth-headers`](https://html.spec.whatwg.org/#attr-tdth-headers)
-     * [`https://html.spec.whatwg.org/#attr-canvas-height`](https://html.spec.whatwg.org/#attr-canvas-height)
-     * [`https://html.spec.whatwg.org/#attr-dim-height`](https://html.spec.whatwg.org/#attr-dim-height)
-     * [`https://html.spec.whatwg.org/#the-hidden-attribute`](https://html.spec.whatwg.org/#the-hidden-attribute)
-     * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
-     * [`https://html.spec.whatwg.org/#attr-meter-high`](https://html.spec.whatwg.org/#attr-meter-high)
-     * [`https://html.spec.whatwg.org/#attr-link-href`](https://html.spec.whatwg.org/#attr-link-href)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-hreflang`](https://html.spec.whatwg.org/#attr-hyperlink-hreflang)
-     * [`https://html.spec.whatwg.org/#attr-link-hreflang`](https://html.spec.whatwg.org/#attr-link-hreflang)
-     * [`https://html.spec.whatwg.org/#attr-meta-http-equiv`](https://html.spec.whatwg.org/#attr-meta-http-equiv)
-     * [`https://html.spec.whatwg.org/#the-id-attribute`](https://html.spec.whatwg.org/#the-id-attribute)
-     * [`https://html.spec.whatwg.org/#attr-img-ismap`](https://html.spec.whatwg.org/#attr-img-ismap)
-     * [`https://html.spec.whatwg.org/#attr-track-kind`](https://html.spec.whatwg.org/#attr-track-kind)
-     * [`https://html.spec.whatwg.org/#attr-optgroup-label`](https://html.spec.whatwg.org/#attr-optgroup-label)
-     * [`https://html.spec.whatwg.org/#attr-option-label`](https://html.spec.whatwg.org/#attr-option-label)
-     * [`https://html.spec.whatwg.org/#attr-track-label`](https://html.spec.whatwg.org/#attr-track-label)
-     * [`https://html.spec.whatwg.org/#attr-lang`](https://html.spec.whatwg.org/#attr-lang)
-     * [`https://html.spec.whatwg.org/#attr-media-loop`](https://html.spec.whatwg.org/#attr-media-loop)
-     * [`https://html.spec.whatwg.org/#attr-meter-low`](https://html.spec.whatwg.org/#attr-meter-low)
-     * [`https://html.spec.whatwg.org/#attr-input-max`](https://html.spec.whatwg.org/#attr-input-max)
-     * [`https://html.spec.whatwg.org/#attr-meter-max`](https://html.spec.whatwg.org/#attr-meter-max)
-     * [`https://html.spec.whatwg.org/#attr-progress-max`](https://html.spec.whatwg.org/#attr-progress-max)
-     * [`https://html.spec.whatwg.org/#attr-input-maxlength`](https://html.spec.whatwg.org/#attr-input-maxlength)
-     * [`https://html.spec.whatwg.org/#attr-textarea-maxlength`](https://html.spec.whatwg.org/#attr-textarea-maxlength)
-     * [`https://html.spec.whatwg.org/#attr-link-media`](https://html.spec.whatwg.org/#attr-link-media)
-     * [`https://html.spec.whatwg.org/#attr-source-media`](https://html.spec.whatwg.org/#attr-source-media)
-     * [`https://html.spec.whatwg.org/#attr-style-media`](https://html.spec.whatwg.org/#attr-style-media)
-     * [`https://html.spec.whatwg.org/#attr-fs-method`](https://html.spec.whatwg.org/#attr-fs-method)
-     * [`https://html.spec.whatwg.org/#attr-input-min`](https://html.spec.whatwg.org/#attr-input-min)
-     * [`https://html.spec.whatwg.org/#attr-meter-min`](https://html.spec.whatwg.org/#attr-meter-min)
-     * [`https://html.spec.whatwg.org/#attr-input-minlength`](https://html.spec.whatwg.org/#attr-input-minlength)
-     * [`https://html.spec.whatwg.org/#attr-textarea-minlength`](https://html.spec.whatwg.org/#attr-textarea-minlength)
-     * [`https://html.spec.whatwg.org/#attr-input-multiple`](https://html.spec.whatwg.org/#attr-input-multiple)
-     * [`https://html.spec.whatwg.org/#attr-media-muted`](https://html.spec.whatwg.org/#attr-media-muted)
-     * [`https://html.spec.whatwg.org/#attr-fe-name`](https://html.spec.whatwg.org/#attr-fe-name)
-     * [`https://html.spec.whatwg.org/#attr-form-name`](https://html.spec.whatwg.org/#attr-form-name)
-     * [`https://html.spec.whatwg.org/#attr-iframe-name`](https://html.spec.whatwg.org/#attr-iframe-name)
-     * [`https://html.spec.whatwg.org/#attr-object-name`](https://html.spec.whatwg.org/#attr-object-name)
-     * [`https://html.spec.whatwg.org/#attr-map-name`](https://html.spec.whatwg.org/#attr-map-name)
-     * [`https://html.spec.whatwg.org/#attr-meta-name`](https://html.spec.whatwg.org/#attr-meta-name)
-     * [`https://html.spec.whatwg.org/#attr-param-name`](https://html.spec.whatwg.org/#attr-param-name)
-     * [`https://html.spec.whatwg.org/#attr-slot-name`](https://html.spec.whatwg.org/#attr-slot-name)
-     * [`https://html.spec.whatwg.org/#attr-script-nomodule`](https://html.spec.whatwg.org/#attr-script-nomodule)
-     * [`https://html.spec.whatwg.org/#attr-nonce`](https://html.spec.whatwg.org/#attr-nonce)
-     * [`https://html.spec.whatwg.org/#attr-fs-novalidate`](https://html.spec.whatwg.org/#attr-fs-novalidate)
-     * [`https://html.spec.whatwg.org/#attr-details-open`](https://html.spec.whatwg.org/#attr-details-open)
-     * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
-     * [`https://html.spec.whatwg.org/#attr-meter-optimum`](https://html.spec.whatwg.org/#attr-meter-optimum)
-     * [`https://html.spec.whatwg.org/#attr-input-pattern`](https://html.spec.whatwg.org/#attr-input-pattern)
-     * [`https://html.spec.whatwg.org/#ping`](https://html.spec.whatwg.org/#ping)
-     * [`https://html.spec.whatwg.org/#attr-input-placeholder`](https://html.spec.whatwg.org/#attr-input-placeholder)
-     * [`https://html.spec.whatwg.org/#attr-textarea-placeholder`](https://html.spec.whatwg.org/#attr-textarea-placeholder)
-     * [`https://html.spec.whatwg.org/#attr-video-playsinline`](https://html.spec.whatwg.org/#attr-video-playsinline)
-     * [`https://html.spec.whatwg.org/#attr-video-poster`](https://html.spec.whatwg.org/#attr-video-poster)
-     * [`https://html.spec.whatwg.org/#attr-media-preload`](https://html.spec.whatwg.org/#attr-media-preload)
-     * [`https://html.spec.whatwg.org/#attr-input-readonly`](https://html.spec.whatwg.org/#attr-input-readonly)
-     * [`https://html.spec.whatwg.org/#attr-textarea-readonly`](https://html.spec.whatwg.org/#attr-textarea-readonly)
-     * [`https://html.spec.whatwg.org/#attr-face-readonly`](https://html.spec.whatwg.org/#attr-face-readonly)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy`](https://html.spec.whatwg.org/#attr-hyperlink-referrerpolicy)
-     * [`https://html.spec.whatwg.org/#attr-iframe-referrerpolicy`](https://html.spec.whatwg.org/#attr-iframe-referrerpolicy)
-     * [`https://html.spec.whatwg.org/#attr-img-referrerpolicy`](https://html.spec.whatwg.org/#attr-img-referrerpolicy)
-     * [`https://html.spec.whatwg.org/#attr-link-referrerpolicy`](https://html.spec.whatwg.org/#attr-link-referrerpolicy)
-     * [`https://html.spec.whatwg.org/#attr-script-referrerpolicy`](https://html.spec.whatwg.org/#attr-script-referrerpolicy)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-rel`](https://html.spec.whatwg.org/#attr-hyperlink-rel)
-     * [`https://html.spec.whatwg.org/#attr-link-rel`](https://html.spec.whatwg.org/#attr-link-rel)
-     * [`https://html.spec.whatwg.org/#attr-input-required`](https://html.spec.whatwg.org/#attr-input-required)
-     * [`https://html.spec.whatwg.org/#attr-select-required`](https://html.spec.whatwg.org/#attr-select-required)
-     * [`https://html.spec.whatwg.org/#attr-textarea-required`](https://html.spec.whatwg.org/#attr-textarea-required)
-     * [`https://html.spec.whatwg.org/#attr-ol-reversed`](https://html.spec.whatwg.org/#attr-ol-reversed)
-     * [`https://html.spec.whatwg.org/#attr-textarea-rows`](https://html.spec.whatwg.org/#attr-textarea-rows)
-     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
-     * [`https://html.spec.whatwg.org/#attr-iframe-sandbox`](https://html.spec.whatwg.org/#attr-iframe-sandbox)
-     * [`https://html.spec.whatwg.org/#attr-th-scope`](https://html.spec.whatwg.org/#attr-th-scope)
-     * [`https://html.spec.whatwg.org/#attr-option-selected`](https://html.spec.whatwg.org/#attr-option-selected)
-     * [`https://html.spec.whatwg.org/#attr-area-shape`](https://html.spec.whatwg.org/#attr-area-shape)
-     * [`https://html.spec.whatwg.org/#attr-input-size`](https://html.spec.whatwg.org/#attr-input-size)
-     * [`https://html.spec.whatwg.org/#attr-link-sizes`](https://html.spec.whatwg.org/#attr-link-sizes)
-     * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
-     * [`https://html.spec.whatwg.org/#attr-source-sizes`](https://html.spec.whatwg.org/#attr-source-sizes)
-     * [`https://html.spec.whatwg.org/#attr-slot`](https://html.spec.whatwg.org/#attr-slot)
-     * [`https://html.spec.whatwg.org/#attr-col-span`](https://html.spec.whatwg.org/#attr-col-span)
-     * [`https://html.spec.whatwg.org/#attr-colgroup-span`](https://html.spec.whatwg.org/#attr-colgroup-span)
-     * [`https://html.spec.whatwg.org/#attr-spellcheck`](https://html.spec.whatwg.org/#attr-spellcheck)
-     * [`https://html.spec.whatwg.org/#attr-media-src`](https://html.spec.whatwg.org/#attr-media-src)
-     * [`https://html.spec.whatwg.org/#attr-embed-src`](https://html.spec.whatwg.org/#attr-embed-src)
-     * [`https://html.spec.whatwg.org/#attr-iframe-src`](https://html.spec.whatwg.org/#attr-iframe-src)
-     * [`https://html.spec.whatwg.org/#attr-img-src`](https://html.spec.whatwg.org/#attr-img-src)
-     * [`https://html.spec.whatwg.org/#attr-input-src`](https://html.spec.whatwg.org/#attr-input-src)
-     * [`https://html.spec.whatwg.org/#attr-script-src`](https://html.spec.whatwg.org/#attr-script-src)
-     * [`https://html.spec.whatwg.org/#attr-source-src`](https://html.spec.whatwg.org/#attr-source-src)
-     * [`https://html.spec.whatwg.org/#attr-track-src`](https://html.spec.whatwg.org/#attr-track-src)
-     * [`https://html.spec.whatwg.org/#attr-iframe-srcdoc`](https://html.spec.whatwg.org/#attr-iframe-srcdoc)
-     * [`https://html.spec.whatwg.org/#attr-track-srclang`](https://html.spec.whatwg.org/#attr-track-srclang)
-     * [`https://html.spec.whatwg.org/#attr-img-srcset`](https://html.spec.whatwg.org/#attr-img-srcset)
-     * [`https://html.spec.whatwg.org/#attr-source-srcset`](https://html.spec.whatwg.org/#attr-source-srcset)
-     * [`https://html.spec.whatwg.org/#attr-ol-start`](https://html.spec.whatwg.org/#attr-ol-start)
-     * [`https://html.spec.whatwg.org/#attr-input-step`](https://html.spec.whatwg.org/#attr-input-step)
-     * [`https://html.spec.whatwg.org/#the-style-attribute`](https://html.spec.whatwg.org/#the-style-attribute)
-     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-target`](https://html.spec.whatwg.org/#attr-hyperlink-target)
-     * [`https://html.spec.whatwg.org/#attr-base-target`](https://html.spec.whatwg.org/#attr-base-target)
-     * [`https://html.spec.whatwg.org/#attr-fs-target`](https://html.spec.whatwg.org/#attr-fs-target)
-     * [`https://html.spec.whatwg.org/#attr-title`](https://html.spec.whatwg.org/#attr-title)
-     * [`https://html.spec.whatwg.org/#attr-abbr-title`](https://html.spec.whatwg.org/#attr-abbr-title)
-     * [`https://html.spec.whatwg.org/#attr-dfn-title`](https://html.spec.whatwg.org/#attr-dfn-title)
-     * [`https://html.spec.whatwg.org/#attr-link-title`](https://html.spec.whatwg.org/#attr-link-title)
-     * [`https://html.spec.whatwg.org/#attr-style-title`](https://html.spec.whatwg.org/#attr-style-title)
-     * [`https://html.spec.whatwg.org/#attr-translate`](https://html.spec.whatwg.org/#attr-translate)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-type`](https://html.spec.whatwg.org/#attr-hyperlink-type)
-     * [`https://html.spec.whatwg.org/#attr-link-type`](https://html.spec.whatwg.org/#attr-link-type)
-     * [`https://html.spec.whatwg.org/#attr-button-type`](https://html.spec.whatwg.org/#attr-button-type)
-     * [`https://html.spec.whatwg.org/#attr-embed-type`](https://html.spec.whatwg.org/#attr-embed-type)
-     * [`https://html.spec.whatwg.org/#attr-object-type`](https://html.spec.whatwg.org/#attr-object-type)
-     * [`https://html.spec.whatwg.org/#attr-script-type`](https://html.spec.whatwg.org/#attr-script-type)
-     * [`https://html.spec.whatwg.org/#attr-source-type`](https://html.spec.whatwg.org/#attr-source-type)
-     * [`https://html.spec.whatwg.org/#attr-ol-type`](https://html.spec.whatwg.org/#attr-ol-type)
-     * [`https://html.spec.whatwg.org/#attr-hyperlink-usemap`](https://html.spec.whatwg.org/#attr-hyperlink-usemap)
-     * [`https://html.spec.whatwg.org/#attr-button-value`](https://html.spec.whatwg.org/#attr-button-value)
-     * [`https://html.spec.whatwg.org/#attr-option-value`](https://html.spec.whatwg.org/#attr-option-value)
-     * [`https://html.spec.whatwg.org/#attr-data-value`](https://html.spec.whatwg.org/#attr-data-value)
-     * [`https://html.spec.whatwg.org/#attr-input-value`](https://html.spec.whatwg.org/#attr-input-value)
-     * [`https://html.spec.whatwg.org/#attr-li-value`](https://html.spec.whatwg.org/#attr-li-value)
-     * [`https://html.spec.whatwg.org/#attr-meter-value`](https://html.spec.whatwg.org/#attr-meter-value)
-     * [`https://html.spec.whatwg.org/#attr-progress-value`](https://html.spec.whatwg.org/#attr-progress-value)
-     * [`https://html.spec.whatwg.org/#attr-param-value`](https://html.spec.whatwg.org/#attr-param-value)
-     * [`https://html.spec.whatwg.org/#attr-canvas-width`](https://html.spec.whatwg.org/#attr-canvas-width)
-     * [`https://html.spec.whatwg.org/#attr-dim-width`](https://html.spec.whatwg.org/#attr-dim-width)
-     * [`https://html.spec.whatwg.org/#attr-textarea-wrap`](https://html.spec.whatwg.org/#attr-textarea-wrap)
-     * [`https://html.spec.whatwg.org/#tables`](https://html.spec.whatwg.org/#tables)
-     * [`https://html.spec.whatwg.org/#sections`](https://html.spec.whatwg.org/#sections)
-     * [`https://html.spec.whatwg.org/#grouping-content`](https://html.spec.whatwg.org/#grouping-content)
-     * [`https://html.spec.whatwg.org/#the-sub-and-sup-elements`](https://html.spec.whatwg.org/#the-sub-and-sup-elements)
-     * [`https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document`](https://www.w3.org/TR/graphics-aam-1.0/#role-map-graphics-document)
-     * [`https://www.w3.org/TR/html/#element-attrdef-label-for`](https://www.w3.org/TR/html/#element-attrdef-label-for)
-     * [`https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te`](https://www.w3.org/TR/accname-aam-1.1/#mapping_additional_nd_te)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable`](https://www.w3.org/TR/wai-aria-1.1/#aria-multiselectable)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-label`](https://www.w3.org/TR/wai-aria-1.1/#aria-label)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby`](https://www.w3.org/TR/wai-aria-1.1/#aria-labelledby)
-     * [`https://www.w3.org/TR/wai-aria-1.1/#aria-describedby`](https://www.w3.org/TR/wai-aria-1.1/#aria-describedby)
-     * [`https://w3c.github.io/core-aam/#role-map-figure`](https://w3c.github.io/core-aam/#role-map-figure)
-- External links to outdated specs:
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-
-#### Known dependencies on this specification {.dependencies}
-
-Normative references to this spec from:
-
-- [ARIA in HTML](https://www.w3.org/TR/html-aria/)
-- [HTML Standard](https://html.spec.whatwg.org/multipage/)
-- [SVG Accessibility API Mappings](https://www.w3.org/TR/svg-aam-1.0/)
-
-No informative reference to this spec from other specs.
-
-
 ### Image Resource {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -22633,12 +22714,13 @@ Informative references to this spec from:
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 Informative references to this spec from:
 
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
-- [Permissions](https://www.w3.org/TR/permissions/)
 
 
 ### Selection API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -23238,11 +23320,12 @@ No informative reference to this spec from other specs.
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
+Normative references to this spec from:
+
+- [Permissions](https://www.w3.org/TR/permissions/)
 
 Informative references to this spec from:
 
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
 - [Web Serial API](https://wicg.github.io/serial/)
 
@@ -23283,6 +23366,57 @@ Informative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Payment Handler API](https://www.w3.org/TR/payment-handler/)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/)
+
+
+## Web Editing Working Group {#web_editing_working_group}
+
+### VirtualKeyboard API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
+- Crawled URL: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
+- Crawled version: 24 August 2021
+- Editor's Draft: [https://w3c.github.io/virtual-keyboard/](https://w3c.github.io/virtual-keyboard/)
+- Latest published version: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
+- Shortname: virtual-keyboard
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#sticky-activation`](https://html.spec.whatwg.org/#sticky-activation)
+     * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
+     * [`https://html.spec.whatwg.org/#editing-host`](https://html.spec.whatwg.org/#editing-host)
+     * [`https://html.spec.whatwg.org/#attr-contenteditable`](https://html.spec.whatwg.org/#attr-contenteditable)
+     * [`https://html.spec.whatwg.org/#input-modalities:-the-inputmode-attribute`](https://html.spec.whatwg.org/#input-modalities:-the-inputmode-attribute)
+     * [`https://html.spec.whatwg.org/#attr-inputmode-keyword-none`](https://html.spec.whatwg.org/#attr-inputmode-keyword-none)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
+     * [`https://html.spec.whatwg.org/#enumerated-attribute`](https://html.spec.whatwg.org/#enumerated-attribute)
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
+     * [`https://drafts.csswg.org/css2/#viewport`](https://drafts.csswg.org/css2/#viewport)
+     * [`https://drafts.csswg.org/css-values-3/#length-value`](https://drafts.csswg.org/css-values-3/#length-value)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Web Events Working Group {#web_events_working_group}
@@ -23352,7 +23486,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
 - Crawled URL: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
-- Crawled version: 20 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://w3c.github.io/IFT/Overview.html](https://w3c.github.io/IFT/Overview.html)
 - Shortname: IFT
 
@@ -23524,18 +23658,18 @@ No informative reference to this spec from other specs.
      * [`https://encoding.spec.whatwg.org/#decoder`](https://encoding.spec.whatwg.org/#decoder)
      * [`https://encoding.spec.whatwg.org/#encoder`](https://encoding.spec.whatwg.org/#encoder)
      * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
-     * [`https://www.w3.org/TR/permissions/#query-a-permission`](https://www.w3.org/TR/permissions/#query-a-permission)
+     * [`https://www.w3.org/TR/permissions/#dfn-query-a-permission`](https://www.w3.org/TR/permissions/#dfn-query-a-permission)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-granted`](https://www.w3.org/TR/permissions/#dom-permissionstate-granted)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-prompt`](https://www.w3.org/TR/permissions/#dom-permissionstate-prompt)
-     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
+     * [`https://www.w3.org/TR/permissions/#dfn-request-permission-to-use`](https://www.w3.org/TR/permissions/#dfn-request-permission-to-use)
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
+Normative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ## Web Payments Working Group {#web_payments_working_group}
@@ -24026,6 +24160,7 @@ Normative references to this spec from:
 - [User Timing Level 2](https://www.w3.org/TR/user-timing-2/)
 - [User Timing Level 3](https://www.w3.org/TR/user-timing-3/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebTransport](https://www.w3.org/TR/webtransport/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
@@ -25005,11 +25140,10 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
-Informative references to this spec from:
-
-- [Permissions](https://www.w3.org/TR/permissions/)
+No informative reference to this spec from other specs.
 
 
 ### Badging API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -25063,7 +25197,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Crawled URL: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
-- Crawled version: 17 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://wicg.github.io/client-hints-infrastructure/](https://wicg.github.io/client-hints-infrastructure/)
 - Shortname: client-hints-infrastructure
 
@@ -26164,7 +26298,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - Crawled URL: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
-- Crawled version: 11 May 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://wicg.github.io/idle-detection/](https://wicg.github.io/idle-detection/)
 - Shortname: idle-detection
 
@@ -26188,12 +26322,11 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
-     * [`https://w3c.github.io/permissions/#boolean-feature`](https://w3c.github.io/permissions/#boolean-feature)
-     * [`https://w3c.github.io/permissions/#enumdef-permissionstate`](https://w3c.github.io/permissions/#enumdef-permissionstate)
-     * [`https://w3c.github.io/permissions/#request-permission-to-use`](https://w3c.github.io/permissions/#request-permission-to-use)
-     * [`https://w3c.github.io/permissions/#permission-task-source`](https://w3c.github.io/permissions/#permission-task-source)
-     * [`https://w3c.github.io/permissions/#permission-state`](https://w3c.github.io/permissions/#permission-state)
+     * [`https://w3c.github.io/permissions/#dfn-powerful-feature`](https://w3c.github.io/permissions/#dfn-powerful-feature)
+     * [`https://w3c.github.io/permissions/#dom-permissionstate`](https://w3c.github.io/permissions/#dom-permissionstate)
+     * [`https://w3c.github.io/permissions/#dfn-request-permission-to-use`](https://w3c.github.io/permissions/#dfn-request-permission-to-use)
+     * [`https://w3c.github.io/permissions/#dfn-permissions-task-source`](https://w3c.github.io/permissions/#dfn-permissions-task-source)
+     * [`https://w3c.github.io/permissions/#dfn-permission-state`](https://w3c.github.io/permissions/#dfn-permission-state)
      * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
      * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
@@ -27482,7 +27615,6 @@ Normative references to this spec from:
 
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Generic Sensor API](https://www.w3.org/TR/generic-sensor/)
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [WebUSB API](https://wicg.github.io/webusb/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/)
 
@@ -27844,11 +27976,11 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/)
 
 Informative references to this spec from:
 
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [Push API](https://www.w3.org/TR/push-api/)
 
 
@@ -28655,9 +28787,11 @@ Normative references to this spec from:
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 - [uuid](https://wicg.github.io/uuid/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/)
+- [VirtualKeyboard API](https://www.w3.org/TR/virtual-keyboard/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -28769,11 +28903,11 @@ Informative references to this spec from:
 
 #### Known dependencies on this specification {.dependencies}
 
-No normative reference to this spec from other specs.
-
-Informative references to this spec from:
+Normative references to this spec from:
 
 - [Permissions](https://www.w3.org/TR/permissions/)
+
+No informative reference to this spec from other specs.
 
 
 ### IceTransport Extensions for WebRTC {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -29105,6 +29239,7 @@ Normative references to this spec from:
 - [Permissions](https://www.w3.org/TR/permissions/)
 - [preferCurrentTab](https://wicg.github.io/prefer-current-tab/)
 - [Screen Capture](https://www.w3.org/TR/screen-capture/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 
@@ -29160,7 +29295,7 @@ Informative references to this spec from:
      * [`https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-facingmode`](https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-facingmode)
      * [`https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate`](https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate)
      * [`https://www.w3.org/TR/mediacapture-streams/#mediadevices`](https://www.w3.org/TR/mediacapture-streams/#mediadevices)
-     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#dfn-permission-state`](https://www.w3.org/TR/permissions/#dfn-permission-state)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-prompt`](https://www.w3.org/TR/permissions/#dom-permissionstate-prompt)
      * [`https://www.w3.org/TR/permissions/#set-permission-command`](https://www.w3.org/TR/permissions/#set-permission-command)
      * [`https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia`](https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia)
@@ -29508,6 +29643,7 @@ Informative references to this spec from:
 - [Media Capabilities](https://www.w3.org/TR/media-capabilities/)
 - [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/mst-content-hint/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 
 
 ### MediaStreamTrack Content Hints {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -29662,11 +29798,10 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/)
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [preferCurrentTab](https://wicg.github.io/prefer-current-tab/)
 
-Informative references to this spec from:
-
-- [Permissions](https://www.w3.org/TR/permissions/)
+No informative reference to this spec from other specs.
 
 
 ### WebRTC 1.0: Real-Time Communication Between Browsers {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
@@ -29891,6 +30026,7 @@ Normative references to this spec from:
 - [Media Capture from DOM Elements](https://www.w3.org/TR/mediacapture-fromelement/)
 - [MediaStreamTrack Content Hints](https://www.w3.org/TR/mst-content-hint/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://www.w3.org/TR/webrtc-svc/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebCodecs](https://www.w3.org/TR/webcodecs/)
 - [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - [WebRTC Priority Control API](https://www.w3.org/TR/webrtc-priority/)
@@ -30360,19 +30496,18 @@ No informative reference to this spec from other specs.
 
 ## DOM Workstream {#dom_workstream}
 
-### DOM Standard {data-spec=true data-anomaly=true data-unknownExposedNames=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+### DOM Standard {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Crawled URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Crawled version: 2 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
 - Shortname: dom
 
 #### Potential issue(s) {.anomalies}
 
-- Unknown [Exposed] names used: `AudioWorklet`
 - Missing references for links: 
      * [`https://w3c.github.io/deviceorientation/spec-source-orientation.html`](https://w3c.github.io/deviceorientation/spec-source-orientation.html)
 - Inconsistent references for links: 
@@ -30411,6 +30546,7 @@ No informative reference to this spec from other specs.
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
      * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#implements`](https://heycam.github.io/webidl/#implements)
      * [`https://heycam.github.io/webidl/#hierarchyrequesterror`](https://heycam.github.io/webidl/#hierarchyrequesterror)
      * [`https://heycam.github.io/webidl/#notfounderror`](https://heycam.github.io/webidl/#notfounderror)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
@@ -30450,6 +30586,7 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
      * [`https://html.spec.whatwg.org/#html-parser`](https://html.spec.whatwg.org/#html-parser)
+     * [`https://html.spec.whatwg.org/#htmlanchorelement`](https://html.spec.whatwg.org/#htmlanchorelement)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
      * [`https://html.spec.whatwg.org/#manually-assigned-nodes`](https://html.spec.whatwg.org/#manually-assigned-nodes)
      * [`https://html.spec.whatwg.org/#similar-origin-window-agent`](https://html.spec.whatwg.org/#similar-origin-window-agent)
@@ -30629,10 +30766,12 @@ Normative references to this spec from:
 - [UI Events](https://www.w3.org/TR/uievents/)
 - [Upgrade Insecure Requests](https://www.w3.org/TR/upgrade-insecure-requests/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [VirtualKeyboard API](https://www.w3.org/TR/virtual-keyboard/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 - [Web Application Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Cryptography API](https://www.w3.org/TR/WebCryptoAPI/)
@@ -30693,7 +30832,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Crawled URL: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
-- Crawled version: 19 July 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://fetch.spec.whatwg.org/](https://fetch.spec.whatwg.org/)
 - Shortname: fetch
 
@@ -30879,6 +31018,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://www.w3.org/TR/upgrade-insecure-requests/)
 - [Web Application Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Web Share Target API](https://w3c.github.io/web-share-target/)
 - [WebAssembly Web API](https://www.w3.org/TR/wasm-web-api-1/)
@@ -30976,19 +31116,18 @@ Informative references to this spec from:
 
 ## HTML Workstream {#html_workstream}
 
-### HTML Standard {data-spec=true data-anomaly=true data-unknownExposedNames=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+### HTML Standard {data-spec=true data-anomaly=true data-unknownIdlNames=true data-redefinedIdlNames=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Crawled URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Crawled version: 25 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
 - Shortname: html
 
 #### Potential issue(s) {.anomalies}
 
-- Unknown [Exposed] names used: `AudioWorklet`
 - Unknown WebIDL names used: `WindowProxy`
 - WebIDL names also defined elsewhere: 
     * `DOMParser` also defined in [DOM Parsing and Serialization](https://www.w3.org/TR/DOM-Parsing/)
@@ -32155,10 +32294,12 @@ Normative references to this spec from:
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
 - [uuid](https://wicg.github.io/uuid/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/)
+- [VirtualKeyboard API](https://www.w3.org/TR/virtual-keyboard/)
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
 - [Web Application Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Web Background Synchronization](https://wicg.github.io/background-sync/spec/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
@@ -32240,6 +32381,7 @@ Informative references to this spec from:
 - [The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect)](https://httpwg.org/specs/rfc7538.html)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [WAI-ARIA Graphics Module](https://www.w3.org/TR/graphics-aria-1.0/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebIDL Level 1](https://www.w3.org/TR/WebIDL-1/)
 
 
@@ -32371,6 +32513,7 @@ Normative references to this spec from:
 - [uuid](https://wicg.github.io/uuid/)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - [Web Application Manifest](https://www.w3.org/TR/appmanifest/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Web Bluetooth](https://webbluetoothcg.github.io/web-bluetooth/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
@@ -32409,7 +32552,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Crawled URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
-- Crawled version: 23 March 2021
+- Crawled version: 30 August 2021
 - Editor's Draft: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Shortname: mimesniff
 
@@ -32435,6 +32578,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://www.w3.org/TR/payment-handler/)
 - [Preload](https://www.w3.org/TR/preload/)
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [WebCodecs](https://www.w3.org/TR/webcodecs/)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/)
@@ -32519,11 +32663,11 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Permissions](https://www.w3.org/TR/permissions/)
 - [Push API](https://www.w3.org/TR/push-api/)
 
 Informative references to this spec from:
 
-- [Permissions](https://www.w3.org/TR/permissions/)
 - [Requesting Permissions](https://wicg.github.io/permissions-request/)
 - [Vibration API (Second Edition)](https://www.w3.org/TR/vibration/)
 
@@ -32738,7 +32882,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 16 August 2021
+- Crawled version: 31 August 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
@@ -33060,6 +33204,7 @@ Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/)
 - [Origin Policy](https://wicg.github.io/origin-policy/)
+- [Web Audio API](https://www.w3.org/TR/webaudio/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 
 

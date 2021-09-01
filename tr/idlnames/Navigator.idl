@@ -228,6 +228,11 @@ partial interface Navigator {
     boolean vibrate(VibratePattern pattern);
 };
 
+// Source: VirtualKeyboard API (https://www.w3.org/TR/virtual-keyboard/)
+partial interface Navigator {
+    [SecureContext, SameObject] readonly attribute VirtualKeyboard virtualKeyboard;
+};
+
 // Source: Web Share API (https://www.w3.org/TR/web-share/)
 partial interface Navigator {
   [SecureContext] Promise<undefined> share(optional ShareData data = {});
