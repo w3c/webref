@@ -30,23 +30,6 @@
   attribute EventHandler onframeratechange;
 };
 
-// Source: WebXR Depth Sensing Module (https://immersive-web.github.io/depth-sensing/)
-partial interface XRSession {
-  readonly attribute XRDepthUsage depthUsage;
-  readonly attribute XRDepthDataFormat depthDataFormat;
-};
-
-// Source: WebXR DOM Overlays Module (https://immersive-web.github.io/dom-overlays/)
-partial interface XRSession {
-  readonly attribute XRDOMOverlayState? domOverlayState;
-};
-
-// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
-partial interface XRSession {
-  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);
-  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);
-};
-
 // Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
 partial interface XRSession {
   Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});
@@ -63,4 +46,21 @@ partial interface XRSession {
 partial interface XRSession {
   // Attributes
   readonly attribute XRInteractionMode interactionMode;
+};
+
+// Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
+partial interface XRSession {
+  readonly attribute XRDepthUsage depthUsage;
+  readonly attribute XRDepthDataFormat depthDataFormat;
+};
+
+// Source: WebXR DOM Overlays Module (https://www.w3.org/TR/webxr-dom-overlays-1/)
+partial interface XRSession {
+  readonly attribute XRDOMOverlayState? domOverlayState;
+};
+
+// Source: WebXR Hit Test Module (https://www.w3.org/TR/webxr-hit-test-1/)
+partial interface XRSession {
+  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);
+  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);
 };

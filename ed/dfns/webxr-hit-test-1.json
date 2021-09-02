@@ -1,0 +1,1750 @@
+{
+  "spec": {
+    "title": "WebXR Hit Test Module",
+    "url": "https://immersive-web.github.io/hit-test/"
+  },
+  "dfns": [
+    {
+      "id": "hit-test",
+      "href": "https://immersive-web.github.io/hit-test/#hit-test",
+      "linkingText": [
+        "hit-test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-feature-descriptor",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-feature-descriptor",
+        "title": "Feature descriptor",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrhittesttrackabletype",
+      "href": "https://immersive-web.github.io/hit-test/#enumdef-xrhittesttrackabletype",
+      "linkingText": [
+        "XRHitTestTrackableType"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhittesttrackabletype-point",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittesttrackabletype-point",
+      "linkingText": [
+        "\"point\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHitTestTrackableType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittesttrackabletype-plane",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittesttrackabletype-plane",
+      "linkingText": [
+        "\"plane\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHitTestTrackableType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittesttrackabletype-mesh",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittesttrackabletype-mesh",
+      "linkingText": [
+        "\"mesh\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRHitTestTrackableType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrhittestoptionsinit",
+      "href": "https://immersive-web.github.io/hit-test/#dictdef-xrhittestoptionsinit",
+      "linkingText": [
+        "XRHitTestOptionsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-options-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-options-dictionary",
+        "title": "XRHitTestOptionsInit",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhittestoptionsinit-space",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestoptionsinit-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-options-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-options-dictionary",
+        "title": "XRHitTestOptionsInit",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittestoptionsinit-entitytypes",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestoptionsinit-entitytypes",
+      "linkingText": [
+        "entityTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittestoptionsinit-offsetray",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestoptionsinit-offsetray",
+      "linkingText": [
+        "offsetRay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestoptionsinit-effective-entitytypes",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestoptionsinit-effective-entitytypes",
+      "linkingText": [
+        "effective entityTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestOptionsInit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestoptionsinit-effective-offsetray",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestoptionsinit-effective-offsetray",
+      "linkingText": [
+        "effective offsetRay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestOptionsInit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrtransientinputhittestoptionsinit",
+      "href": "https://immersive-web.github.io/hit-test/#dictdef-xrtransientinputhittestoptionsinit",
+      "linkingText": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transient-input-hit-test-options-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#transient-input-hit-test-options-dictionary",
+        "title": "XRTransientInputHitTestOptionsInit",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrtransientinputhittestoptionsinit-profile",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestoptionsinit-profile",
+      "linkingText": [
+        "profile"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transient-input-hit-test-options-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#transient-input-hit-test-options-dictionary",
+        "title": "XRTransientInputHitTestOptionsInit",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrtransientinputhittestoptionsinit-entitytypes",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestoptionsinit-entitytypes",
+      "linkingText": [
+        "entityTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrtransientinputhittestoptionsinit-offsetray",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestoptionsinit-offsetray",
+      "linkingText": [
+        "offsetRay"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestoptionsinit-effective-entitytypes",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestoptionsinit-effective-entitytypes",
+      "linkingText": [
+        "effective entityTypes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestoptionsinit-effective-offsetray",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestoptionsinit-effective-offsetray",
+      "linkingText": [
+        "effective offsetRay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestOptionsInit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestsource",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource",
+      "linkingText": [
+        "XRHitTestSource"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-source-interface",
+        "title": "XRHitTestSource",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrhittestsource-session",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-source-interface",
+        "title": "XRHitTestSource",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestsource-native-origin",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource-native-origin",
+      "linkingText": [
+        "native origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#hit-test-source-interface",
+        "title": "XRHitTestSource",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestsource-entity-types",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource-entity-types",
+      "linkingText": [
+        "entity types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestsource-offset-ray",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource-offset-ray",
+      "linkingText": [
+        "offset ray"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestsource-active",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestsource-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-hit-test-source",
+      "href": "https://immersive-web.github.io/hit-test/#create-a-hit-test-source",
+      "linkingText": [
+        "create a hit test source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittestsource-cancel",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestsource-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRHitTestSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cancel-a-hit-test-source",
+      "href": "https://immersive-web.github.io/hit-test/#cancel-a-hit-test-source",
+      "linkingText": [
+        "cancel a hit test source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestsource",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource",
+      "linkingText": [
+        "XRTransientInputHitTestSource"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "transient-input-hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#transient-input-hit-test-source-interface",
+        "title": "XRTransientInputHitTestSource",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrtransientinputhittestsource-session",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource-session",
+      "linkingText": [
+        "session"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transient-input-hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#transient-input-hit-test-source-interface",
+        "title": "XRTransientInputHitTestSource",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestsource-profile",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource-profile",
+      "linkingText": [
+        "profile"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "transient-input-hit-test-source-interface",
+        "href": "https://immersive-web.github.io/hit-test/#transient-input-hit-test-source-interface",
+        "title": "XRTransientInputHitTestSource",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestsource-entity-types",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource-entity-types",
+      "linkingText": [
+        "entity types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestsource-offset-ray",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource-offset-ray",
+      "linkingText": [
+        "offset ray"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestsource-active",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestsource-active",
+      "linkingText": [
+        "active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-hit-test-source-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#create-a-hit-test-source-for-transient-input",
+      "linkingText": [
+        "create a hit test source for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrtransientinputhittestsource-cancel",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestsource-cancel",
+      "linkingText": [
+        "cancel()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRTransientInputHitTestSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cancel-a-hit-test-source-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#cancel-a-hit-test-source-for-transient-input",
+      "linkingText": [
+        "cancel a hit test source for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestresult",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestresult",
+      "linkingText": [
+        "XRHitTestResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrhittestresult-getpose-basespace-basespace",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestresult-getpose-basespace-basespace",
+      "linkingText": [
+        "baseSpace"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRHitTestResult/getPose(baseSpace)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrhittestresult-frame",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestresult-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrhittestresult-native-origin",
+      "href": "https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin",
+      "linkingText": [
+        "native origin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRHitTestResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-hit-test-result",
+      "href": "https://immersive-web.github.io/hit-test/#create-a-hit-test-result",
+      "linkingText": [
+        "create a hit test result"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrhittestresult-getpose",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrhittestresult-getpose",
+      "linkingText": [
+        "getPose(baseSpace)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRHitTestResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-hit-test-result-interface",
+        "title": "XRHitTestResult",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrtransientinputhittestresult",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestresult",
+      "linkingText": [
+        "XRTransientInputHitTestResult"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-transient-input-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+        "title": "XRTransientInputHitTestResult",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrtransientinputhittestresult-inputsource",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestresult-inputsource",
+      "linkingText": [
+        "inputSource"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRTransientInputHitTestResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-transient-input-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+        "title": "XRTransientInputHitTestResult",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrtransientinputhittestresult-results",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrtransientinputhittestresult-results",
+      "linkingText": [
+        "results"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRTransientInputHitTestResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-transient-input-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+        "title": "XRTransientInputHitTestResult",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrtransientinputhittestresult-frame",
+      "href": "https://immersive-web.github.io/hit-test/#xrtransientinputhittestresult-frame",
+      "linkingText": [
+        "frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRTransientInputHitTestResult"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-transient-input-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+        "title": "XRTransientInputHitTestResult",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-hit-test-result-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#create-a-hit-test-result-for-transient-input",
+      "linkingText": [
+        "create a hit test result for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-transient-input-hit-test-result-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xr-transient-input-hit-test-result-interface",
+        "title": "XRTransientInputHitTestResult",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-requesthittestsource-options-options",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsource-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRSession/requestHitTestSource(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsession-requesthittestsourcefortransientinput-options-options",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsourcefortransientinput-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRSession/requestHitTestSourceForTransientInput(options)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrsession-set-of-active-hit-test-sources",
+      "href": "https://immersive-web.github.io/hit-test/#xrsession-set-of-active-hit-test-sources",
+      "linkingText": [
+        "set of active hit test sources"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrsession-set-of-active-hit-test-sources-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#xrsession-set-of-active-hit-test-sources-for-transient-input",
+      "linkingText": [
+        "set of active hit test sources for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRSession"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unreasonable-number-of-requests",
+      "href": "https://immersive-web.github.io/hit-test/#unreasonable-number-of-requests",
+      "linkingText": [
+        "unreasonable number of requests"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "request-hit-test",
+      "href": "https://immersive-web.github.io/hit-test/#request-hit-test",
+      "linkingText": [
+        "request hit test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-requesthittestsource",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsource",
+      "linkingText": [
+        "requestHitTestSource(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-requesthittestsourcefortransientinput",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrsession-requesthittestsourcefortransientinput",
+      "linkingText": [
+        "requestHitTestSourceForTransientInput(options)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "requesting-hit-test",
+        "href": "https://immersive-web.github.io/hit-test/#requesting-hit-test",
+        "title": "Requesting hit test",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-all-hit-test-results",
+      "href": "https://immersive-web.github.io/hit-test/#compute-all-hit-test-results",
+      "linkingText": [
+        "compute all hit test results"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#computing-hit-test-results",
+        "title": "Computing hit test results",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-hit-test-results",
+      "href": "https://immersive-web.github.io/hit-test/#compute-hit-test-results",
+      "linkingText": [
+        "compute hit test results"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#computing-hit-test-results",
+        "title": "Computing hit test results",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-hit-test-results-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#compute-hit-test-results-for-transient-input",
+      "linkingText": [
+        "compute hit test results for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computing-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#computing-hit-test-results",
+        "title": "Computing hit test results",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrframe-gethittestresults-hittestsource-hittestsource",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresults-hittestsource-hittestsource",
+      "linkingText": [
+        "hitTestSource"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/getHitTestResults(hitTestSource)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrframe-gethittestresultsfortransientinput-hittestsource-hittestsource",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresultsfortransientinput-hittestsource-hittestsource",
+      "linkingText": [
+        "hitTestSource"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/getHitTestResultsForTransientInput(hitTestSource)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrframe-map-of-hit-test-sources-to-hit-test-results",
+      "href": "https://immersive-web.github.io/hit-test/#xrframe-map-of-hit-test-sources-to-hit-test-results",
+      "linkingText": [
+        "map of hit test sources to hit test results"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrframe-map-of-hit-test-sources-to-hit-test-results-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#xrframe-map-of-hit-test-sources-to-hit-test-results-for-transient-input",
+      "linkingText": [
+        "map of hit test sources to hit test results for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-hit-test-results",
+      "href": "https://immersive-web.github.io/hit-test/#obtain-hit-test-results",
+      "linkingText": [
+        "obtain hit test results"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrframe-gethittestresults",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresults",
+      "linkingText": [
+        "getHitTestResults(hitTestSource)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-hit-test-results-for-transient-input",
+      "href": "https://immersive-web.github.io/hit-test/#obtain-hit-test-results-for-transient-input",
+      "linkingText": [
+        "obtain hit test results for transient input"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrframe-gethittestresultsfortransientinput",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrframe-gethittestresultsfortransientinput",
+      "linkingText": [
+        "getHitTestResultsForTransientInput(hitTestSource)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "obtaining-hit-test-results",
+        "href": "https://immersive-web.github.io/hit-test/#obtaining-hit-test-results",
+        "title": "Obtaining hit test results",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrraydirectioninit",
+      "href": "https://immersive-web.github.io/hit-test/#dictdef-xrraydirectioninit",
+      "linkingText": [
+        "XRRayDirectionInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-ray-direction-init-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#xr-ray-direction-init-dictionary",
+        "title": "XRRayDirectionInit",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrraydirectioninit-x",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrraydirectioninit-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRRayDirectionInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-ray-direction-init-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#xr-ray-direction-init-dictionary",
+        "title": "XRRayDirectionInit",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrraydirectioninit-y",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrraydirectioninit-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRRayDirectionInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-ray-direction-init-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#xr-ray-direction-init-dictionary",
+        "title": "XRRayDirectionInit",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrraydirectioninit-z",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrraydirectioninit-z",
+      "linkingText": [
+        "z"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRRayDirectionInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-ray-direction-init-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#xr-ray-direction-init-dictionary",
+        "title": "XRRayDirectionInit",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrraydirectioninit-w",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrraydirectioninit-w",
+      "linkingText": [
+        "w"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRRayDirectionInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-ray-direction-init-dictionary",
+        "href": "https://immersive-web.github.io/hit-test/#xr-ray-direction-init-dictionary",
+        "title": "XRRayDirectionInit",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrray-matrix",
+      "href": "https://immersive-web.github.io/hit-test/#xrray-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRRay"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrray",
+      "href": "https://immersive-web.github.io/hit-test/#xrray",
+      "linkingText": [
+        "XRRay"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrray-xrray-origin-direction-origin",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray-origin-direction-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRRay/XRRay(origin, direction)",
+        "XRRay/constructor(origin, direction)",
+        "XRRay/XRRay(origin)",
+        "XRRay/constructor(origin)",
+        "XRRay/XRRay()",
+        "XRRay/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrray-xrray-origin-direction-direction",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray-origin-direction-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRRay/XRRay(origin, direction)",
+        "XRRay/constructor(origin, direction)",
+        "XRRay/XRRay(origin)",
+        "XRRay/constructor(origin)",
+        "XRRay/XRRay()",
+        "XRRay/constructor()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrray-xrray-transform-transform",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray-transform-transform",
+      "linkingText": [
+        "transform"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRRay/XRRay(transform)",
+        "XRRay/constructor(transform)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrray-xrray",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray",
+      "linkingText": [
+        "XRRay(origin, direction)",
+        "constructor(origin, direction)",
+        "XRRay(origin)",
+        "constructor(origin)",
+        "XRRay()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XRRay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrray-xrray-transform",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-xrray-transform",
+      "linkingText": [
+        "XRRay(transform)",
+        "constructor(transform)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "XRRay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrray-origin",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-origin",
+      "linkingText": [
+        "origin"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRRay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrray-direction",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-direction",
+      "linkingText": [
+        "direction"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRRay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrray-matrix",
+      "href": "https://immersive-web.github.io/hit-test/#dom-xrray-matrix",
+      "linkingText": [
+        "matrix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRRay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrray-obtain-the-matrix",
+      "href": "https://immersive-web.github.io/hit-test/#xrray-obtain-the-matrix",
+      "linkingText": [
+        "obtain the matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRRay"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "distance-along-the-ray",
+      "href": "https://immersive-web.github.io/hit-test/#distance-along-the-ray",
+      "linkingText": [
+        "distance along the ray"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xrray-interface",
+        "href": "https://immersive-web.github.io/hit-test/#xrray-interface",
+        "title": "XRRay",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "native-hit-test",
+      "href": "https://immersive-web.github.io/hit-test/#native-hit-test",
+      "linkingText": [
+        "native hit test"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "native-hit-test-section",
+        "href": "https://immersive-web.github.io/hit-test/#native-hit-test-section",
+        "title": "Native hit test",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "native-entity-type",
+      "href": "https://immersive-web.github.io/hit-test/#native-entity-type",
+      "linkingText": [
+        "native entity type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "convert-from-native-entity-type",
+      "href": "https://immersive-web.github.io/hit-test/#convert-from-native-entity-type",
+      "linkingText": [
+        "convert from native entity type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title",
+        "href": "https://immersive-web.github.io/hit-test/#title",
+        "title": "WebXR Hit Test Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "native-hit-test-result",
+      "href": "https://immersive-web.github.io/hit-test/#native-hit-test-result",
+      "linkingText": [
+        "native hit test result",
+        "native hit test results"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "native-hit-test-result-section",
+        "href": "https://immersive-web.github.io/hit-test/#native-hit-test-result-section",
+        "title": "Native hit test result",
+        "number": "10.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "spec": {
+    "title": "WebXR Depth Sensing Module",
+    "url": "https://immersive-web.github.io/depth-sensing/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://immersive-web.github.io/depth-sensing/#title",
+      "level": 1,
+      "title": "WebXR Depth Sensing Module"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://immersive-web.github.io/depth-sensing/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 30 August 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://immersive-web.github.io/depth-sensing/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://immersive-web.github.io/depth-sensing/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://immersive-web.github.io/depth-sensing/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://immersive-web.github.io/depth-sensing/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://immersive-web.github.io/depth-sensing/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "initialization",
+      "href": "https://immersive-web.github.io/depth-sensing/#initialization",
+      "level": 2,
+      "title": "Initialization",
+      "number": "2"
+    },
+    {
+      "id": "feature-descriptor",
+      "href": "https://immersive-web.github.io/depth-sensing/#feature-descriptor",
+      "level": 3,
+      "title": "Feature descriptor",
+      "number": "2.1"
+    },
+    {
+      "id": "usage-and-formats",
+      "href": "https://immersive-web.github.io/depth-sensing/#usage-and-formats",
+      "level": 3,
+      "title": "Intended data usage and data formats",
+      "number": "2.2"
+    },
+    {
+      "id": "session-configuration",
+      "href": "https://immersive-web.github.io/depth-sensing/#session-configuration",
+      "level": 3,
+      "title": "Session configuration",
+      "number": "2.3"
+    },
+    {
+      "id": "obtaining-data",
+      "href": "https://immersive-web.github.io/depth-sensing/#obtaining-data",
+      "level": 2,
+      "title": "Obtaining depth data",
+      "number": "3"
+    },
+    {
+      "id": "xr-depth-info-section",
+      "href": "https://immersive-web.github.io/depth-sensing/#xr-depth-info-section",
+      "level": 3,
+      "title": "XRDepthInformation",
+      "number": "3.1"
+    },
+    {
+      "id": "xr-cpu-depth-info-section",
+      "href": "https://immersive-web.github.io/depth-sensing/#xr-cpu-depth-info-section",
+      "level": 3,
+      "title": "XRCPUDepthInformation",
+      "number": "3.2"
+    },
+    {
+      "id": "xr-gpu-depth-info-section",
+      "href": "https://immersive-web.github.io/depth-sensing/#xr-gpu-depth-info-section",
+      "level": 3,
+      "title": "XRWebGLDepthInformation",
+      "number": "3.3"
+    },
+    {
+      "id": "results-interpretation",
+      "href": "https://immersive-web.github.io/depth-sensing/#results-interpretation",
+      "level": 2,
+      "title": "Interpreting the results",
+      "number": "4"
+    },
+    {
+      "id": "native-device-concepts",
+      "href": "https://immersive-web.github.io/depth-sensing/#native-device-concepts",
+      "level": 2,
+      "title": "Native device concepts",
+      "number": "5"
+    },
+    {
+      "id": "native-depth-sensing-section",
+      "href": "https://immersive-web.github.io/depth-sensing/#native-depth-sensing-section",
+      "level": 3,
+      "title": "Native depth sensing",
+      "number": "5.1"
+    },
+    {
+      "id": "privacy-security",
+      "href": "https://immersive-web.github.io/depth-sensing/#privacy-security",
+      "level": 2,
+      "title": "Privacy & Security Considerations",
+      "number": "6"
+    },
+    {
+      "id": "ack",
+      "href": "https://immersive-web.github.io/depth-sensing/#ack",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "7"
+    },
+    {
+      "id": "index",
+      "href": "https://immersive-web.github.io/depth-sensing/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://immersive-web.github.io/depth-sensing/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://immersive-web.github.io/depth-sensing/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://immersive-web.github.io/depth-sensing/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://immersive-web.github.io/depth-sensing/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://immersive-web.github.io/depth-sensing/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://immersive-web.github.io/depth-sensing/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

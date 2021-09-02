@@ -16,20 +16,14 @@ partial interface XRFrame {
   [SameObject] readonly attribute XRAnchorSet trackedAnchors;
 };
 
-// Source: WebXR Depth Sensing Module (https://immersive-web.github.io/depth-sensing/)
-partial interface XRFrame {
-  XRCPUDepthInformation? getDepthInformation(XRView view);
-};
-
-// Source: WebXR Hit Test Module (https://immersive-web.github.io/hit-test/)
-partial interface XRFrame {
-  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);
-  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);
-};
-
 // Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
 partial interface XRFrame {
   XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);
+};
+
+// Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
+partial interface XRFrame {
+  XRCPUDepthInformation? getDepthInformation(XRView view);
 };
 
 // Source: WebXR Hand Input Module - Level 1 (https://www.w3.org/TR/webxr-hand-input-1/)
@@ -38,4 +32,10 @@ partial interface XRFrame {
     boolean fillJointRadii(sequence<XRJointSpace> jointSpaces, Float32Array radii);
 
     boolean fillPoses(sequence<XRSpace> spaces, XRSpace baseSpace, Float32Array transforms);
+};
+
+// Source: WebXR Hit Test Module (https://www.w3.org/TR/webxr-hit-test-1/)
+partial interface XRFrame {
+  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);
+  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);
 };

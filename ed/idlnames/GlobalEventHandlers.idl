@@ -70,11 +70,6 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onwheel;
 };
 
-// Source: WebXR DOM Overlays Module (https://immersive-web.github.io/dom-overlays/)
-partial interface mixin GlobalEventHandlers {
-  attribute EventHandler onbeforexrselect;
-};
-
 // Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler onanimationstart;
@@ -118,4 +113,9 @@ partial interface mixin GlobalEventHandlers {
                     attribute EventHandler ontouchend;
                     attribute EventHandler ontouchmove;
                     attribute EventHandler ontouchcancel;
+};
+
+// Source: WebXR DOM Overlays Module (https://www.w3.org/TR/webxr-dom-overlays-1/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onbeforexrselect;
 };

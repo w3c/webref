@@ -5,7 +5,7 @@ interface CSSStyleRule : CSSRule {
   [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
 };
 
-// Source: CSS Nesting Module (https://drafts.csswg.org/css-nesting-1/)
+// Source: CSS Nesting Module (https://www.w3.org/TR/css-nesting-1/)
 partial interface CSSStyleRule {
   [SameObject] readonly attribute CSSRuleList cssRules;
   unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);
