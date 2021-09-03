@@ -9882,7 +9882,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Crawled URL: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
-- Crawled version: 16 August 2021
+- Crawled version: 3 September 2021
 - Editor's Draft: [https://w3c.github.io/ambient-light/](https://w3c.github.io/ambient-light/)
 - Latest published version: [https://www.w3.org/TR/ambient-light/](https://www.w3.org/TR/ambient-light/)
 - Shortname: ambient-light
@@ -10339,7 +10339,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
 - Crawled URL: [https://w3c.github.io/proximity/](https://w3c.github.io/proximity/)
-- Crawled version: 17 August 2021
+- Crawled version: 3 September 2021
 - Editor's Draft: [https://w3c.github.io/proximity/](https://w3c.github.io/proximity/)
 - Latest published version: [https://www.w3.org/TR/proximity/](https://www.w3.org/TR/proximity/)
 - Shortname: proximity
@@ -13618,6 +13618,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
@@ -13638,6 +13639,7 @@ Normative references to this spec from:
 - [Payment Request API](https://w3c.github.io/payment-request/)
 - [Permissions](https://w3c.github.io/permissions/)
 - [Picture-in-Picture](https://w3c.github.io/picture-in-picture/)
+- [Proximity Sensor](https://w3c.github.io/proximity/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
@@ -20315,7 +20317,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 2 September 2021
+- Crawled version: 3 September 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
