@@ -20,6 +20,20 @@ interface MouseEvent : UIEvent {
   boolean getModifierState(DOMString keyArg);
 };
 
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+partial interface MouseEvent {
+  readonly attribute double screenX;
+  readonly attribute double screenY;
+  readonly attribute double pageX;
+  readonly attribute double pageY;
+  readonly attribute double clientX;
+  readonly attribute double clientY;
+  readonly attribute double x;
+  readonly attribute double y;
+  readonly attribute double offsetX;
+  readonly attribute double offsetY;
+};
+
 // Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
 partial interface MouseEvent {
   readonly attribute double movementX;
