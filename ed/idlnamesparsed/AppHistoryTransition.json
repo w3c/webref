@@ -1,0 +1,14 @@
+{
+  "name": "AppHistoryTransition",
+  "defined": {
+    "spec": {
+      "title": "App History API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AppHistoryTransition {\n  readonly attribute AppHistoryNavigationType navigationType;\n  readonly attribute AppHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  Promise<undefined> rollback(optional AppHistoryNavigationOptions options = {});\n};",
+    "href": "https://wicg.github.io/app-history/#apphistorytransition"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

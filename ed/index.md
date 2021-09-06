@@ -149,6 +149,7 @@ Normative references to this spec from:
 - [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+- [URLPattern API](https://wicg.github.io/urlpattern/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Audio API](https://webaudio.github.io/web-audio-api/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
@@ -169,6 +170,7 @@ Informative references to this spec from:
 
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [URL Standard](https://url.spec.whatwg.org/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
@@ -446,7 +448,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 2 September 2021
+- Crawled version: 6 September 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -10739,45 +10741,6 @@ Informative references to this spec from:
 - [WebCodecs](https://w3c.github.io/webcodecs/)
 
 
-## Immersive Web Community Group {#immersive_web_community_group}
-
-### WebXR Lighting Estimation API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
-- Crawled URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
-- Crawled version: 2 September 2021
-- Editor's Draft: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
-- Shortname: lighting-estimation
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for WebIDL names: 
-     * `XRWebGLBinding` defined in [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
-     * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- External links to private terms:
-     * [`https://www.w3.org/TR/webxr/#xrspace-native-origin`](https://www.w3.org/TR/webxr/#xrspace-native-origin)
-     * [`https://www.w3.org/TR/webxr/#xrsession-xr-device`](https://www.w3.org/TR/webxr/#xrsession-xr-device)
-     * [`https://www.w3.org/TR/webxr/#ended`](https://www.w3.org/TR/webxr/#ended)
-     * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
-     * [`https://immersive-web.github.io/layers/#xrwebglbinding-context`](https://immersive-web.github.io/layers/#xrwebglbinding-context)
-     * [`https://immersive-web.github.io/webxr/#feature-descriptor`](https://immersive-web.github.io/webxr/#feature-descriptor)
-- Broken external links:
-     * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
-     * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
-     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
-     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
-     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
-     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
 ## Immersive Web Working Group {#immersive_web_working_group}
 
 ### WebXR Anchors Module {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
@@ -11212,6 +11175,43 @@ Although they do not, the following specs should also normatively reference this
 No informative reference to this spec from other specs.
 
 
+### WebXR Lighting Estimation API Level 1 {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
+- Crawled URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
+- Crawled version: 2 September 2021
+- Editor's Draft: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
+- Shortname: lighting-estimation
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `XRWebGLBinding` defined in [WebXR Layers API Level 1](https://immersive-web.github.io/layers/)
+     * `WebGLTexture` defined in [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- External links to private terms:
+     * [`https://www.w3.org/TR/webxr/#xrspace-native-origin`](https://www.w3.org/TR/webxr/#xrspace-native-origin)
+     * [`https://www.w3.org/TR/webxr/#xrsession-xr-device`](https://www.w3.org/TR/webxr/#xrsession-xr-device)
+     * [`https://www.w3.org/TR/webxr/#ended`](https://www.w3.org/TR/webxr/#ended)
+     * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
+     * [`https://immersive-web.github.io/layers/#xrwebglbinding-context`](https://immersive-web.github.io/layers/#xrwebglbinding-context)
+     * [`https://immersive-web.github.io/webxr/#feature-descriptor`](https://immersive-web.github.io/webxr/#feature-descriptor)
+- Broken external links:
+     * [`https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xrsession-list-of-enabled-features)
+     * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Internationalization Working Group {#internationalization_working_group}
 
 ### Encoding Standard {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -11592,6 +11592,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
+- [Ink API](https://wicg.github.io/ink-enhancement/)
 - [UI Events](https://w3c.github.io/uievents/)
 
 No informative reference to this spec from other specs.
@@ -13301,6 +13302,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [App History API](https://wicg.github.io/app-history/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Document Policy](https://wicg.github.io/document-policy/)
 - [Preload](https://w3c.github.io/preload/)
@@ -13410,6 +13412,7 @@ No informative reference to this spec from other specs.
 
 Normative references to this spec from:
 
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 
@@ -13449,6 +13452,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [App History API](https://wicg.github.io/app-history/)
 - [Portals](https://wicg.github.io/portals/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 
@@ -13639,6 +13643,7 @@ Normative references to this spec from:
 
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
@@ -13803,6 +13808,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
 - [Geolocation API](https://w3c.github.io/geolocation-api/)
@@ -14576,6 +14582,7 @@ Normative references to this spec from:
 
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 
@@ -15191,7 +15198,13 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Although they do not, the following specs should also normatively reference this spec because they use IDL terms it defines:
+
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
+
+Informative references to this spec from:
+
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 
 
 ## Web Bluetooth Community Group {#web_bluetooth_community_group}
@@ -15575,6 +15588,7 @@ Normative references to this spec from:
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 
 No informative reference to this spec from other specs.
 
@@ -15690,10 +15704,56 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Method Manifest](https://w3c.github.io/payment-method-manifest/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 
 Informative references to this spec from:
 
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/)
+
+
+### Secure Payment Confirmation {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/TR/secure-payment-confirmation/](https://www.w3.org/TR/secure-payment-confirmation/)
+- Crawled URL: [https://w3c.github.io/secure-payment-confirmation](https://w3c.github.io/secure-payment-confirmation)
+- Crawled version: 30 August 2021
+- Editor's Draft: [https://w3c.github.io/secure-payment-confirmation](https://w3c.github.io/secure-payment-confirmation)
+- Latest published version: [https://www.w3.org/TR/secure-payment-confirmation/](https://www.w3.org/TR/secure-payment-confirmation/)
+- Shortname: secure-payment-confirmation
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for WebIDL names: 
+     * `AuthenticationExtensionsClientInputs` defined in [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+     * `CollectedClientData` defined in [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webauthn/`](https://w3c.github.io/webauthn/), related reference "WEBAUTHN-3" uses URL [`https://www.w3.org/TR/webauthn-3/`](https://www.w3.org/TR/webauthn-3/)
+     * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/), related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
+     * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/), related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
+     * [`https://w3c.github.io/payment-method-id/`](https://w3c.github.io/payment-method-id/), related reference "PAYMENT-METHOD-ID" uses URL [`https://www.w3.org/TR/payment-method-id/`](https://www.w3.org/TR/payment-method-id/)
+- External links to private terms:
+     * [`https://w3c.github.io/webauthn/#relying-party`](https://w3c.github.io/webauthn/#relying-party)
+     * [`https://w3c.github.io/webauthn/#webauthn-extensions`](https://w3c.github.io/webauthn/#webauthn-extensions)
+     * [`https://w3c.github.io/webauthn/#authentication-ceremony`](https://w3c.github.io/webauthn/#authentication-ceremony)
+     * [`https://w3c.github.io/webauthn/#client-extension`](https://w3c.github.io/webauthn/#client-extension)
+     * [`https://w3c.github.io/webauthn/#registration-extension`](https://w3c.github.io/webauthn/#registration-extension)
+     * [`https://w3c.github.io/webauthn/#authentication-extension`](https://w3c.github.io/webauthn/#authentication-extension)
+     * [`https://w3c.github.io/payment-request/#dfn-payment-method`](https://w3c.github.io/payment-request/#dfn-payment-method)
+     * [`https://w3c.github.io/payment-request/#dfn-payment-permission`](https://w3c.github.io/payment-request/#dfn-payment-permission)
+     * [`https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made`](https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made)
+     * [`https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request`](https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
 
 
 ## Web Performance Working Group {#web_performance_working_group}
@@ -16660,6 +16720,169 @@ Informative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 
 
+### App History API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
+- Crawled URL: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
+- Crawled version: 3 September 2021
+- Editor's Draft: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
+- Shortname: app-history
+
+#### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#window-bc`](https://html.spec.whatwg.org/#window-bc)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#still-on-its-initial-about:blank-document`](https://html.spec.whatwg.org/#still-on-its-initial-about:blank-document)
+     * [`https://html.spec.whatwg.org/#url-and-history-update-steps`](https://html.spec.whatwg.org/#url-and-history-update-steps)
+     * [`https://html.spec.whatwg.org/#dom-document-open`](https://html.spec.whatwg.org/#dom-document-open)
+     * [`https://html.spec.whatwg.org/#current-entry`](https://html.spec.whatwg.org/#current-entry)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#session-history-entry`](https://html.spec.whatwg.org/#session-history-entry)
+     * [`https://html.spec.whatwg.org/#structuredserializeforstorage`](https://html.spec.whatwg.org/#structuredserializeforstorage)
+     * [`https://html.spec.whatwg.org/#dom-location-href`](https://html.spec.whatwg.org/#dom-location-href)
+     * [`https://html.spec.whatwg.org/#serialized-state`](https://html.spec.whatwg.org/#serialized-state)
+     * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+     * [`https://html.spec.whatwg.org/#navigate-fragid`](https://html.spec.whatwg.org/#navigate-fragid)
+     * [`https://html.spec.whatwg.org/#parse-a-url`](https://html.spec.whatwg.org/#parse-a-url)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#resulting-url-record`](https://html.spec.whatwg.org/#resulting-url-record)
+     * [`https://html.spec.whatwg.org/#unload-counter`](https://html.spec.whatwg.org/#unload-counter)
+     * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
+     * [`https://html.spec.whatwg.org/#hh-default`](https://html.spec.whatwg.org/#hh-default)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
+     * [`https://html.spec.whatwg.org/#history-handling-behavior`](https://html.spec.whatwg.org/#history-handling-behavior)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#navigation-hh`](https://html.spec.whatwg.org/#navigation-hh)
+     * [`https://html.spec.whatwg.org/#source-browsing-context`](https://html.spec.whatwg.org/#source-browsing-context)
+     * [`https://html.spec.whatwg.org/#dom-location-assign`](https://html.spec.whatwg.org/#dom-location-assign)
+     * [`https://html.spec.whatwg.org/#same-origin-domain`](https://html.spec.whatwg.org/#same-origin-domain)
+     * [`https://html.spec.whatwg.org/#allowed-to-navigate`](https://html.spec.whatwg.org/#allowed-to-navigate)
+     * [`https://html.spec.whatwg.org/#exceptions-enabled`](https://html.spec.whatwg.org/#exceptions-enabled)
+     * [`https://html.spec.whatwg.org/#joint-session-history`](https://html.spec.whatwg.org/#joint-session-history)
+     * [`https://html.spec.whatwg.org/#enqueue-the-following-steps`](https://html.spec.whatwg.org/#enqueue-the-following-steps)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#can-have-its-url-rewritten`](https://html.spec.whatwg.org/#can-have-its-url-rewritten)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://html.spec.whatwg.org/#concept-form-submit`](https://html.spec.whatwg.org/#concept-form-submit)
+     * [`https://html.spec.whatwg.org/#dom-document-2`](https://html.spec.whatwg.org/#dom-document-2)
+     * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#she-url`](https://html.spec.whatwg.org/#she-url)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
+     * [`https://html.spec.whatwg.org/#she-document`](https://html.spec.whatwg.org/#she-document)
+     * [`https://html.spec.whatwg.org/#errorevent`](https://html.spec.whatwg.org/#errorevent)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-error`](https://html.spec.whatwg.org/#dom-errorevent-error)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-message`](https://html.spec.whatwg.org/#dom-errorevent-message)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-filename`](https://html.spec.whatwg.org/#dom-errorevent-filename)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-lineno`](https://html.spec.whatwg.org/#dom-errorevent-lineno)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-colno`](https://html.spec.whatwg.org/#dom-errorevent-colno)
+     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
+     * [`https://html.spec.whatwg.org/#uhus-serializeddata`](https://html.spec.whatwg.org/#uhus-serializeddata)
+     * [`https://html.spec.whatwg.org/#uhus-ispush`](https://html.spec.whatwg.org/#uhus-ispush)
+     * [`https://html.spec.whatwg.org/#dom-window-stop`](https://html.spec.whatwg.org/#dom-window-stop)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#active-window`](https://html.spec.whatwg.org/#active-window)
+     * [`https://html.spec.whatwg.org/#dom-history-state`](https://html.spec.whatwg.org/#dom-history-state)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#plan-to-navigate`](https://html.spec.whatwg.org/#plan-to-navigate)
+     * [`https://html.spec.whatwg.org/#navigation-navigationtype`](https://html.spec.whatwg.org/#navigation-navigationtype)
+     * [`https://html.spec.whatwg.org/#submit-body`](https://html.spec.whatwg.org/#submit-body)
+     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
+     * [`https://html.spec.whatwg.org/#traverse-the-history-by-a-delta`](https://html.spec.whatwg.org/#traverse-the-history-by-a-delta)
+     * [`https://html.spec.whatwg.org/#following-hyperlinks-2`](https://html.spec.whatwg.org/#following-hyperlinks-2)
+     * [`https://html.spec.whatwg.org/#providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element`](https://html.spec.whatwg.org/#providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#input-activation-behavior`](https://html.spec.whatwg.org/#input-activation-behavior)
+     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
+     * [`https://html.spec.whatwg.org/#concept-submit-button`](https://html.spec.whatwg.org/#concept-submit-button)
+     * [`https://html.spec.whatwg.org/#implicit-submission`](https://html.spec.whatwg.org/#implicit-submission)
+     * [`https://html.spec.whatwg.org/#shared-history-push/replace-state-steps`](https://html.spec.whatwg.org/#shared-history-push/replace-state-steps)
+     * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#queue-a-global-task`](https://html.spec.whatwg.org/#queue-a-global-task)
+     * [`https://html.spec.whatwg.org/#history-traversal-task-source`](https://html.spec.whatwg.org/#history-traversal-task-source)
+     * [`https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page`](https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page)
+     * [`https://html.spec.whatwg.org/#traverse-the-history`](https://html.spec.whatwg.org/#traverse-the-history)
+     * [`https://html.spec.whatwg.org/#stop-document-loading`](https://html.spec.whatwg.org/#stop-document-loading)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#concept-navigate-mature`](https://html.spec.whatwg.org/#concept-navigate-mature)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### Attribution Reporting {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
+- Crawled URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
+- Crawled version: 31 August 2021
+- Editor's Draft: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
+- Shortname: conversion-measurement-api
+
+#### Potential issue(s) {.anomalies}
+
+- Inconsistent references for links: 
+     * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
+- External links to private terms:
+     * [`https://fetch.spec.whatwg.org/#concept-main-fetch`](https://fetch.spec.whatwg.org/#concept-main-fetch)
+     * [`https://storage.spec.whatwg.org/#storage-bottle`](https://storage.spec.whatwg.org/#storage-bottle)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#same-site`](https://html.spec.whatwg.org/#same-site)
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#concept-element-attributes`](https://html.spec.whatwg.org/#concept-element-attributes)
+     * [`https://html.spec.whatwg.org/#rules-for-parsing-integers`](https://html.spec.whatwg.org/#rules-for-parsing-integers)
+     * [`https://html.spec.whatwg.org/#rules-for-parsing-non-negative-integers`](https://html.spec.whatwg.org/#rules-for-parsing-non-negative-integers)
+     * [`https://html.spec.whatwg.org/#concept-element-dom`](https://html.spec.whatwg.org/#concept-element-dom)
+     * [`https://html.spec.whatwg.org/#htmlanchorelement`](https://html.spec.whatwg.org/#htmlanchorelement)
+     * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
+     * [`https://html.spec.whatwg.org/#following-hyperlinks-2`](https://html.spec.whatwg.org/#following-hyperlinks-2)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#navigation-params`](https://html.spec.whatwg.org/#navigation-params)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#process-a-navigate-fetch`](https://html.spec.whatwg.org/#process-a-navigate-fetch)
+     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
+     * [`https://html.spec.whatwg.org/#site`](https://html.spec.whatwg.org/#site)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#obtain-a-site`](https://html.spec.whatwg.org/#obtain-a-site)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#concept-environment-top-level-origin`](https://html.spec.whatwg.org/#concept-environment-top-level-origin)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigation-params-origin`](https://html.spec.whatwg.org/#navigation-params-origin)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ### Background Fetch {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -16980,6 +17203,38 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+### Cross-Origin-Embedder-Policy: credentialless {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/credentiallessness/](https://wicg.github.io/credentiallessness/)
+- Crawled URL: [https://wicg.github.io/credentiallessness/](https://wicg.github.io/credentiallessness/)
+- Crawled version: 29 July 2021
+- Editor's Draft: [https://wicg.github.io/credentiallessness/](https://wicg.github.io/credentiallessness/)
+- Shortname: credentiallessness
+
+#### Potential issue(s) {.anomalies}
+
+- External links to private terms:
+     * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
+     * [`https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check`](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check)
+     * [`https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#embedder-policy-value`](https://html.spec.whatwg.org/#embedder-policy-value)
+     * [`https://html.spec.whatwg.org/#coep`](https://html.spec.whatwg.org/#coep)
+     * [`https://html.spec.whatwg.org/#obtain-an-embedder-policy`](https://html.spec.whatwg.org/#obtain-an-embedder-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-embedder-policy`](https://html.spec.whatwg.org/#concept-settings-object-embedder-policy)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#coep-unsafe-none`](https://html.spec.whatwg.org/#coep-unsafe-none)
+     * [`https://html.spec.whatwg.org/#coep-require-corp`](https://html.spec.whatwg.org/#coep-require-corp)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ### CSS Parser API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -17245,6 +17500,32 @@ Normative references to this spec from:
 
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Timing Entry Names Registry](https://w3c.github.io/timing-entrytypes-registry/)
+
+No informative reference to this spec from other specs.
+
+
+### EyeDropper API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
+- Crawled URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
+- Crawled version: 03 September 2021
+- Editor's Draft: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
+- Shortname: eyedropper-api
+
+#### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#valid-simple-colour`](https://html.spec.whatwg.org/#valid-simple-colour)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -17617,6 +17898,29 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
      * [`https://html.spec.whatwg.org/#js-hostresolveimportedmodule`](https://html.spec.whatwg.org/#js-hostresolveimportedmodule)
      * [`https://html.spec.whatwg.org/#js-hostimportmoduledynamically`](https://html.spec.whatwg.org/#js-hostimportmoduledynamically)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### Ink API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/ink-enhancement/](https://wicg.github.io/ink-enhancement/)
+- Crawled URL: [https://wicg.github.io/ink-enhancement/](https://wicg.github.io/ink-enhancement/)
+- Crawled version: 13 July 2021
+- Editor's Draft: [https://wicg.github.io/ink-enhancement/](https://wicg.github.io/ink-enhancement/)
+- Shortname: ink-enhancement
+
+#### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#dom-context-2d-canvas`](https://html.spec.whatwg.org/#dom-context-2d-canvas)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -18508,7 +18812,9 @@ No informative reference to this spec from other specs.
 
 No normative reference to this spec from other specs.
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/)
 
 
 ### Relinquishing Permissions {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -18702,6 +19008,34 @@ No informative reference to this spec from other specs.
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type)
      * [`https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value`](https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### URLPattern API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/urlpattern/](https://wicg.github.io/urlpattern/)
+- Crawled URL: [https://wicg.github.io/urlpattern/](https://wicg.github.io/urlpattern/)
+- Crawled version: 3 September 2021
+- Editor's Draft: [https://wicg.github.io/urlpattern/](https://wicg.github.io/urlpattern/)
+- Shortname: urlpattern
+
+#### Potential issue(s) {.anomalies}
+
+- External links to private terms:
+     * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
+     * [`https://url.spec.whatwg.org/#hostname-state`](https://url.spec.whatwg.org/#hostname-state)
+     * [`https://url.spec.whatwg.org/#port-state`](https://url.spec.whatwg.org/#port-state)
+     * [`https://url.spec.whatwg.org/#path-start-state`](https://url.spec.whatwg.org/#path-start-state)
+     * [`https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state`](https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state)
+     * [`https://url.spec.whatwg.org/#query-state`](https://url.spec.whatwg.org/#query-state)
+     * [`https://url.spec.whatwg.org/#fragment-state`](https://url.spec.whatwg.org/#fragment-state)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -19316,6 +19650,8 @@ Normative references to this spec from:
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
 - [Ambient Light Sensor](https://w3c.github.io/ambient-light/)
+- [App History API](https://wicg.github.io/app-history/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
@@ -19371,6 +19707,7 @@ Normative references to this spec from:
 - [Encoding Standard](https://encoding.spec.whatwg.org/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [EyeDropper API](https://wicg.github.io/eyedropper-api/)
 - [Federated Learning of Cohorts](https://wicg.github.io/floc/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File and Directory Entries API](https://wicg.github.io/entries-api/)
@@ -19401,6 +19738,7 @@ Normative references to this spec from:
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
+- [Ink API](https://wicg.github.io/ink-enhancement/)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -19464,6 +19802,7 @@ Normative references to this spec from:
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
@@ -19477,6 +19816,7 @@ Normative references to this spec from:
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [UI Events](https://w3c.github.io/uievents/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [URLPattern API](https://wicg.github.io/urlpattern/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/)
@@ -20530,6 +20870,7 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
+- [App History API](https://wicg.github.io/app-history/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Battery Status API](https://w3c.github.io/battery/)
@@ -20576,6 +20917,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [EyeDropper API](https://wicg.github.io/eyedropper-api/)
 - [Federated Learning of Cohorts](https://wicg.github.io/floc/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)
@@ -20592,6 +20934,7 @@ Normative references to this spec from:
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Ink API](https://wicg.github.io/ink-enhancement/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [JS Self-Profiling API](https://wicg.github.io/js-self-profiling/)
@@ -20783,6 +21126,7 @@ Informative references to this spec from:
 Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -20792,6 +21136,7 @@ Normative references to this spec from:
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
@@ -20850,6 +21195,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [App History API](https://wicg.github.io/app-history/)
 - [Idle Detection API](https://wicg.github.io/idle-detection/)
 - [Push API](https://w3c.github.io/push-api/)
 - [RFC 8942: HTTP Client Hints](https://www.rfc-editor.org/rfc/rfc8942)
@@ -21490,7 +21836,9 @@ Normative references to this spec from:
 - [Accelerated Shape Detection in Images](https://wicg.github.io/shape-detection-api/)
 - [Accelerated Text Detection in Images](https://wicg.github.io/shape-detection-api/text.html)
 - [Accessible Rich Internet Applications (WAI-ARIA) 1.3](https://w3c.github.io/aria/)
+- [App History API](https://wicg.github.io/app-history/)
 - [ARIA in HTML](https://w3c.github.io/html-aria/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
@@ -21509,6 +21857,7 @@ Normative references to this spec from:
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
 - [Cooperative Scheduling of Background Tasks](https://w3c.github.io/requestidlecallback/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/)
 - [CSS Animation Worklet API](https://drafts.css-houdini.org/css-animationworklet-1/)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/)
@@ -21561,6 +21910,7 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Encrypted Media Extensions](https://w3c.github.io/encrypted-media/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
+- [EyeDropper API](https://wicg.github.io/eyedropper-api/)
 - [Federated Learning of Cohorts](https://wicg.github.io/floc/)
 - [Fetch Metadata Request Headers](https://w3c.github.io/webappsec-fetch-metadata/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
@@ -21589,6 +21939,7 @@ Normative references to this spec from:
 - [Image Resource](https://w3c.github.io/image-resource/)
 - [Import Maps](https://wicg.github.io/import-maps/)
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
+- [Ink API](https://wicg.github.io/ink-enhancement/)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
@@ -21659,6 +22010,7 @@ Normative references to this spec from:
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
 - [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Server Timing](https://w3c.github.io/server-timing/)
@@ -21786,7 +22138,9 @@ Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
 - [Accelerometer](https://w3c.github.io/accelerometer/)
+- [App History API](https://wicg.github.io/app-history/)
 - [ARIA in HTML](https://w3c.github.io/html-aria/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Badging API](https://w3c.github.io/badging/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -21882,6 +22236,7 @@ Normative references to this spec from:
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Storage Standard](https://storage.spec.whatwg.org/)
@@ -21892,6 +22247,7 @@ Normative references to this spec from:
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [URL Standard](https://url.spec.whatwg.org/)
+- [URLPattern API](https://wicg.github.io/urlpattern/)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
 - [User Timing Level 3](https://w3c.github.io/user-timing/)
@@ -22126,6 +22482,7 @@ Normative references to this spec from:
 
 Informative references to this spec from:
 
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
 - [Web Locks API](https://wicg.github.io/web-locks/)
@@ -22228,6 +22585,8 @@ No informative reference to this spec from other specs.
 Normative references to this spec from:
 
 - [A Well-Known URL for Changing Passwords](https://w3c.github.io/webappsec-change-password-url/)
+- [App History API](https://wicg.github.io/app-history/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Background Fetch](https://wicg.github.io/background-fetch/)
 - [Beacon](https://w3c.github.io/beacon/)
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
@@ -22235,6 +22594,7 @@ Normative references to this spec from:
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
 - [Content Security Policy: Embedded Enforcement](https://w3c.github.io/webappsec-cspee/)
 - [Cookie Store API](https://wicg.github.io/cookie-store/)
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/)
@@ -22275,6 +22635,7 @@ Normative references to this spec from:
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
+- [URLPattern API](https://wicg.github.io/urlpattern/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
@@ -22341,6 +22702,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [App History API](https://wicg.github.io/app-history/)
 - [Credential Management Level 1](https://w3c.github.io/webappsec-credential-management/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
 - [File API](https://w3c.github.io/FileAPI/)

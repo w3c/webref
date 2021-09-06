@@ -1,0 +1,146 @@
+{
+  "spec": {
+    "title": "Attribution Reporting",
+    "url": "https://wicg.github.io/conversion-measurement-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "HTMLAnchorElement": [
+        {
+          "fragment": "partial interface HTMLAnchorElement {\n    [CEReactions] attribute USVString attributionDestination;\n    [CEReactions] attribute DOMString attributionSourceEventId;\n    [CEReactions] attribute USVString attributionReportTo;\n    [CEReactions] attribute long long attributionExpiry;\n    [CEReactions] attribute long long attributionSourcePriority;\n};",
+          "type": "interface",
+          "name": "HTMLAnchorElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "attributionDestination",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionSourceEventId",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionReportTo",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "USVString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionExpiry",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long long"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "attributionSourcePriority",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "long long"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "HTMLAnchorElement": []
+    },
+    "externalDependencies": [
+      "HTMLAnchorElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
