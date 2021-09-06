@@ -192,7 +192,7 @@
       ],
       "MediaTrackSupportedConstraints": [
         {
-          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n  boolean displaySurface = true;\n  boolean logicalSurface = true;\n  boolean cursor = true;\n  boolean restrictOwnAudio = true;\n};",
+          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n  boolean displaySurface = true;\n  boolean logicalSurface = true;\n  boolean cursor = true;\n  boolean restrictOwnAudio = true;\n  boolean suppressLocalAudioPlayback = true;\n};",
           "type": "dictionary",
           "name": "MediaTrackSupportedConstraints",
           "inheritance": null,
@@ -268,6 +268,24 @@
                 "value": true
               },
               "required": false
+            },
+            {
+              "type": "field",
+              "name": "suppressLocalAudioPlayback",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
             }
           ],
           "extAttrs": [],
@@ -276,7 +294,7 @@
       ],
       "MediaTrackConstraintSet": [
         {
-          "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString displaySurface;\n  ConstrainBoolean logicalSurface;\n  ConstrainDOMString cursor;\n  ConstrainBoolean restrictOwnAudio;\n};",
+          "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString displaySurface;\n  ConstrainBoolean logicalSurface;\n  ConstrainDOMString cursor;\n  ConstrainBoolean restrictOwnAudio;\n  ConstrainBoolean suppressLocalAudioPlayback;\n};",
           "type": "dictionary",
           "name": "MediaTrackConstraintSet",
           "inheritance": null,
@@ -329,6 +347,21 @@
             {
               "type": "field",
               "name": "restrictOwnAudio",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainBoolean"
+              },
+              "default": null,
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "suppressLocalAudioPlayback",
               "extAttrs": [],
               "idlType": {
                 "type": "dictionary-type",

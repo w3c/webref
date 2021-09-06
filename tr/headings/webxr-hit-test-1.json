@@ -1,0 +1,259 @@
+{
+  "spec": {
+    "title": "WebXR Hit Test Module",
+    "url": "https://www.w3.org/TR/webxr-hit-test-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#title",
+      "level": 1,
+      "title": "WebXR Hit Test Module"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#profile-and-date",
+      "level": 2,
+      "title": "W3C First Public Working Draft, 31 August 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "hit-test-initialization",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-initialization",
+      "level": 2,
+      "title": "Initialization",
+      "number": "2"
+    },
+    {
+      "id": "hit-test-feature-descriptor",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-feature-descriptor",
+      "level": 3,
+      "title": "Feature descriptor",
+      "number": "2.1"
+    },
+    {
+      "id": "hit-test-options",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-options",
+      "level": 2,
+      "title": "Hit test options",
+      "number": "3"
+    },
+    {
+      "id": "hit-test-trackable-type-enum",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-trackable-type-enum",
+      "level": 3,
+      "title": "XRHitTestTrackableType",
+      "number": "3.1"
+    },
+    {
+      "id": "hit-test-options-dictionary",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-options-dictionary",
+      "level": 3,
+      "title": "XRHitTestOptionsInit",
+      "number": "3.2"
+    },
+    {
+      "id": "transient-input-hit-test-options-dictionary",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#transient-input-hit-test-options-dictionary",
+      "level": 3,
+      "title": "XRTransientInputHitTestOptionsInit",
+      "number": "3.3"
+    },
+    {
+      "id": "hit-test-source",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-source",
+      "level": 2,
+      "title": "Hit test source",
+      "number": "4"
+    },
+    {
+      "id": "hit-test-source-interface",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-source-interface",
+      "level": 3,
+      "title": "XRHitTestSource",
+      "number": "4.1"
+    },
+    {
+      "id": "transient-input-hit-test-source-interface",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#transient-input-hit-test-source-interface",
+      "level": 3,
+      "title": "XRTransientInputHitTestSource",
+      "number": "4.2"
+    },
+    {
+      "id": "hit-test-result",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#hit-test-result",
+      "level": 2,
+      "title": "Hit test result",
+      "number": "5"
+    },
+    {
+      "id": "xr-hit-test-result-interface",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#xr-hit-test-result-interface",
+      "level": 3,
+      "title": "XRHitTestResult",
+      "number": "5.1"
+    },
+    {
+      "id": "xr-transient-input-hit-test-result-interface",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#xr-transient-input-hit-test-result-interface",
+      "level": 3,
+      "title": "XRTransientInputHitTestResult",
+      "number": "5.2"
+    },
+    {
+      "id": "requesting-hit-test",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#requesting-hit-test",
+      "level": 2,
+      "title": "Requesting hit test",
+      "number": "6"
+    },
+    {
+      "id": "computing-hit-test-results",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#computing-hit-test-results",
+      "level": 2,
+      "title": "Computing hit test results",
+      "number": "7"
+    },
+    {
+      "id": "obtaining-hit-test-results",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#obtaining-hit-test-results",
+      "level": 2,
+      "title": "Obtaining hit test results",
+      "number": "8"
+    },
+    {
+      "id": "geometric-primitives",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#geometric-primitives",
+      "level": 2,
+      "title": "Geometric primitives",
+      "number": "9"
+    },
+    {
+      "id": "xr-ray-direction-init-dictionary",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#xr-ray-direction-init-dictionary",
+      "level": 3,
+      "title": "XRRayDirectionInit",
+      "number": "9.1"
+    },
+    {
+      "id": "xrray-interface",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#xrray-interface",
+      "level": 3,
+      "title": "XRRay",
+      "number": "9.2"
+    },
+    {
+      "id": "native-device-concepts",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#native-device-concepts",
+      "level": 2,
+      "title": "10. Native device concepts"
+    },
+    {
+      "id": "native-hit-test-section",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-section",
+      "level": 3,
+      "title": "Native hit test",
+      "number": "10.1"
+    },
+    {
+      "id": "native-entity-type-section",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#native-entity-type-section",
+      "level": 3,
+      "title": "Native entity type",
+      "number": "10.2"
+    },
+    {
+      "id": "native-hit-test-result-section",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#native-hit-test-result-section",
+      "level": 3,
+      "title": "Native hit test result",
+      "number": "10.3"
+    },
+    {
+      "id": "privacy-security",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#privacy-security",
+      "level": 2,
+      "title": "11. Privacy & Security Considerations"
+    },
+    {
+      "id": "ack",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#ack",
+      "level": 2,
+      "title": "12. Acknowledgements"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://www.w3.org/TR/webxr-hit-test-1/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -4,12 +4,12 @@ dictionary XRSessionInit {
   sequence<any> optionalFeatures;
 };
 
-// Source: WebXR Depth Sensing Module (https://immersive-web.github.io/depth-sensing/)
+// Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
 partial dictionary XRSessionInit {
   XRDepthStateInit depthSensing;
 };
 
-// Source: WebXR DOM Overlays Module (https://immersive-web.github.io/dom-overlays/)
+// Source: WebXR DOM Overlays Module (https://www.w3.org/TR/webxr-dom-overlays-1/)
 partial dictionary XRSessionInit {
   XRDOMOverlayInit? domOverlay;
 };

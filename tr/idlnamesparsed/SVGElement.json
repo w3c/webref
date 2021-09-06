@@ -340,13 +340,6 @@
       "extended": [
         {
           "spec": {
-            "title": "WebXR DOM Overlays Module",
-            "url": "https://immersive-web.github.io/dom-overlays/"
-          },
-          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
-        },
-        {
-          "spec": {
             "title": "CSS Animations Level 1",
             "url": "https://www.w3.org/TR/css-animations-1/"
           },
@@ -372,6 +365,13 @@
             "url": "https://www.w3.org/TR/selection-api/"
           },
           "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+        },
+        {
+          "spec": {
+            "title": "WebXR DOM Overlays Module",
+            "url": "https://www.w3.org/TR/webxr-dom-overlays-1/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onbeforexrselect;\n};"
         }
       ],
       "inheritance": null,

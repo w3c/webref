@@ -1,46 +1,88 @@
-% Diff between report from "September 01, 2021" and reference report from "August 30, 2021"
+% Diff between report from "September 06, 2021" and reference report from "September 01, 2021"
 % Reffy
-% September 01, 2021
+% September 06, 2021
 
-## DOM Standard
+## CSS Display Module Level 3
 
-- Initial URL: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
+- Initial URL: [https://www.w3.org/TR/css-display-3/](https://www.w3.org/TR/css-display-3/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://dom.spec.whatwg.org/](https://dom.spec.whatwg.org/)
-- Unknown [Exposed] names used: *DEL* AudioWorklet
+- Editor's Draft: [https://drafts.csswg.org/css-display/](https://drafts.csswg.org/css-display/)
+- Missing references for links: *INS* https://www.w3.org/TR/css-grid/ / *DEL* https://www.w3.org/TR/css3-speech/
 
 
-## HTML Standard
+## CSS Nesting Module
 
-- Initial URL: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
+- Initial URL: [https://www.w3.org/TR/css-nesting-1/](https://www.w3.org/TR/css-nesting-1/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://html.spec.whatwg.org/multipage/](https://html.spec.whatwg.org/multipage/)
-- Unknown [Exposed] names used: *DEL* AudioWorklet
-
-
-## Permissions
-
-- Initial URL: [https://www.w3.org/TR/permissions/](https://www.w3.org/TR/permissions/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/permissions/](https://w3c.github.io/permissions/)
-- Missing references for links: *INS* https://w3c.github.io/permissions-automation/ / *DEL* https://www.w3.org/TR/permissions-policy/, https://w3c.github.io/sensors/, https://w3c.github.io/webdriver/
-- Inconsistent references for links: *DEL* https://w3c.github.io/mediacapture-main/
-
-
-## VirtualKeyboard API
-
-- Initial URL: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/virtual-keyboard/](https://w3c.github.io/virtual-keyboard/)
+- Editor's Draft: [https://drafts.csswg.org/css-nesting/](https://drafts.csswg.org/css-nesting/)
 - This specification was not in the reference crawl report.
 
 
-## Web Audio API
+## CSS Nesting Module
 
-- Initial URL: [https://www.w3.org/TR/webaudio/](https://www.w3.org/TR/webaudio/)
+- Initial URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- Crawled URL: [https://drafts.csswg.org/css-nesting-1/](https://drafts.csswg.org/css-nesting-1/)
+- This specification is not in the new crawl report.
+
+
+## Magnetometer
+
+- Initial URL: [https://www.w3.org/TR/magnetometer/](https://www.w3.org/TR/magnetometer/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://webaudio.github.io/web-audio-api/](https://webaudio.github.io/web-audio-api/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Editor's Draft: [https://w3c.github.io/magnetometer/](https://w3c.github.io/magnetometer/)
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
+
+
+## Orientation Sensor
+
+- Initial URL: [https://www.w3.org/TR/orientation-sensor/](https://www.w3.org/TR/orientation-sensor/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/orientation-sensor/](https://w3c.github.io/orientation-sensor/)
+- Missing references for links: *INS* https://www.w3.org/TR/permissions-policy/
+
+
+## WebXR Depth Sensing Module
+
+- Initial URL: [https://www.w3.org/TR/webxr-depth-sensing-1/](https://www.w3.org/TR/webxr-depth-sensing-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
+- This specification was not in the reference crawl report.
+
+
+## WebXR Depth Sensing Module
+
+- Initial URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
+- Crawled URL: [https://immersive-web.github.io/depth-sensing/](https://immersive-web.github.io/depth-sensing/)
+- This specification is not in the new crawl report.
+
+
+## WebXR DOM Overlays Module
+
+- Initial URL: [https://www.w3.org/TR/webxr-dom-overlays-1/](https://www.w3.org/TR/webxr-dom-overlays-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
+- This specification was not in the reference crawl report.
+
+
+## WebXR DOM Overlays Module
+
+- Initial URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
+- Crawled URL: [https://immersive-web.github.io/dom-overlays/](https://immersive-web.github.io/dom-overlays/)
+- This specification is not in the new crawl report.
+
+
+## WebXR Hit Test Module
+
+- Initial URL: [https://www.w3.org/TR/webxr-hit-test-1/](https://www.w3.org/TR/webxr-hit-test-1/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- This specification was not in the reference crawl report.
+
+
+## WebXR Hit Test Module
+
+- Initial URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- Crawled URL: [https://immersive-web.github.io/hit-test/](https://immersive-web.github.io/hit-test/)
+- This specification is not in the new crawl report.
 
 

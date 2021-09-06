@@ -14468,7 +14468,7 @@
         "partial": false
       },
       "HTMLScriptElement": {
-        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  // also has obsolete members\n};",
+        "fragment": "[Exposed=Window]\ninterface HTMLScriptElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute USVString src;\n  [CEReactions] attribute DOMString type;\n  [CEReactions] attribute boolean noModule;\n  [CEReactions] attribute boolean async;\n  [CEReactions] attribute boolean defer;\n  [CEReactions] attribute DOMString? crossOrigin;\n  [CEReactions] attribute DOMString text;\n  [CEReactions] attribute DOMString integrity;\n  [CEReactions] attribute DOMString referrerPolicy;\n\n  static boolean supports(DOMString type);\n\n  // also has obsolete members\n};",
         "type": "interface",
         "name": "HTMLScriptElement",
         "inheritance": "HTMLElement",
@@ -14682,6 +14682,38 @@
             ],
             "special": "",
             "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "supports",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "static"
           }
         ],
         "extAttrs": [

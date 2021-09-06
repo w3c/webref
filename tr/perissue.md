@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 01, 2021
+% September 06, 2021
 
 430 specifications were crawled in this report.
 
@@ -184,7 +184,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 - `AlgorithmIdentifier` used in [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
 - `CSSKeywordish` used in [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
-- `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/), [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/), [CSS Transitions](https://www.w3.org/TR/css-transitions-1/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://www.w3.org/TR/web-animations-1/)
+- `CSSOMString` used in [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://www.w3.org/TR/css-conditional-3/), [CSS Counter Styles Level 3](https://www.w3.org/TR/css-counter-styles-3/), [CSS Custom Highlight API Module Level 1](https://www.w3.org/TR/css-highlight-api-1/), [CSS Fonts Module Level 4](https://www.w3.org/TR/css-fonts-4/), [CSS Nesting Module](https://www.w3.org/TR/css-nesting-1/), [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/), [CSS Properties and Values API Level 1](https://www.w3.org/TR/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://www.w3.org/TR/css-pseudo-4/), [CSS Transitions](https://www.w3.org/TR/css-transitions-1/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://www.w3.org/TR/web-animations-1/)
 - `Crypto` used in [uuid](https://wicg.github.io/uuid/)
 - `CryptoKey` used in [WebRTC Encoded Transform](https://w3c.github.io/webrtc-encoded-transform/)
 - `DOMException` used in [Media Capture and Streams](https://www.w3.org/TR/mediacapture-streams/), [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/)
@@ -283,8 +283,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `GLint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLuint` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `GLsizei` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
-- [WebXR Anchors Module](https://immersive-web.github.io/anchors/) uses `XRHitTestResult` but does not reference [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/)
-- [WebXR Depth Sensing Module](https://immersive-web.github.io/depth-sensing/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
+- [WebXR Anchors Module](https://immersive-web.github.io/anchors/) uses `XRHitTestResult` but does not reference [WebXR Hit Test Module](https://www.w3.org/TR/webxr-hit-test-1/)
+- [WebXR Depth Sensing Module](https://www.w3.org/TR/webxr-depth-sensing-1/) uses `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 - [WebXR Device API](https://www.w3.org/TR/webxr/) uses:
     * `WebGLRenderingContext` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
     * `WebGLFramebuffer` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
@@ -770,6 +770,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `submitter` with type `dict-member` for [`SubmitEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submiteventinit), but found [`submitter`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-submitevent-submitter) with type `attribute` for `SubmitEvent`
     * `constructor(type, eventInitDict)` with type `constructor` for [`FormDataEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `formData` with type `dict-member` for [`FormDataEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit), but found [`formData`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-formdataevent-formdata) with type `attribute` for `FormDataEvent`
+    * `supports(type)` with type `method` for [`HTMLScriptElement`](https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement), but found [`supports`](https://html.spec.whatwg.org/multipage/infrastructure.html#dom-domtokenlist-supports) with type `dfn`
     * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions), but found [`flatten`](https://html.spec.whatwg.org/multipage/scripting.html#dom-assignednodesoptions-flatten) with type `dict-member` for `AssignedNodeOptions`
     * `CanvasImageSource` with type `typedef`, but found [`CanvasImageSource`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagesource) with type `dfn`
     * `"butt"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
@@ -1383,7 +1384,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 666 properties without definition found in 59 specifications
+=> 667 properties without definition found in 59 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1618,9 +1619,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-writing-modes-3/`](https://www.w3.org/TR/css-writing-modes-3/) but does not list it in its references
     * [`https://www.w3.org/TR/css-multicol-1/`](https://www.w3.org/TR/css-multicol-1/) but does not list it in its references
-    * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-grid/`](https://www.w3.org/TR/css-grid/) but does not list it in its references
 - [CSS Easing Functions Level 1](https://www.w3.org/TR/css-easing-1/) links to [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
 - [CSS Fill and Stroke Module Level 3](https://www.w3.org/TR/fill-stroke-3/) links to:
     * [`https://www.w3.org/TR/svg2/`](https://www.w3.org/TR/svg2/) but does not list it in its references
@@ -1766,7 +1767,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2011/REC-CSS2-20110607`](https://www.w3.org/TR/2011/REC-CSS2-20110607) but does not list it in its references
     * [`https://www.w3.org/TR/2009/REC-xml-names-20091208/`](https://www.w3.org/TR/2009/REC-xml-names-20091208/) but does not list it in its references
     * [`https://www.w3.org/TR/2011/REC-css3-selectors-20110929/`](https://www.w3.org/TR/2011/REC-css3-selectors-20110929/) but does not list it in its references
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/) links to [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
+- [CSS Nesting Module](https://www.w3.org/TR/css-nesting-1/) links to:
+    * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
 - [CSS Object Model (CSSOM)](https://www.w3.org/TR/cssom-1/) links to:
     * [`https://www.w3.org/TR/css3-conditional/`](https://www.w3.org/TR/css3-conditional/) but does not list it in its references
     * [`https://www.w3.org/TR/css-device-adapt/`](https://www.w3.org/TR/css-device-adapt/) but does not list it in its references
@@ -2038,7 +2041,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/pointerevents/`](https://www.w3.org/TR/pointerevents/) but does not list it in its references
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [Long Tasks API 1](https://www.w3.org/TR/longtasks-1/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
-- [Magnetometer](https://www.w3.org/TR/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+- [Magnetometer](https://www.w3.org/TR/magnetometer/) links to:
+    * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
+    * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
 - [Media Queries Level 4](https://www.w3.org/TR/mediaqueries-4/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [Media Source Extensions™](https://www.w3.org/TR/media-source/) links to [`https://w3c.github.io/encrypted-media/`](https://w3c.github.io/encrypted-media/) but does not list it in its references
@@ -2063,6 +2068,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Orientation Sensor](https://www.w3.org/TR/orientation-sensor/) links to:
     * [`https://www.w3.org/TR/2016/CR-orientation-event-20160818/`](https://www.w3.org/TR/2016/CR-orientation-event-20160818/) but does not list it in its references
     * [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
+    * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
 - [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/) links to:
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but does not list it in its references
@@ -2249,7 +2255,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 687 missing references for links found in 183 specifications
+=> 690 missing references for links found in 183 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2673,7 +2679,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME-3" uses URL [`https://www.w3.org/TR/hr-time-3/`](https://www.w3.org/TR/hr-time-3/)
     * [`https://w3c.github.io/requestidlecallback/`](https://w3c.github.io/requestidlecallback/) but related reference "REQUESTIDLECALLBACK" uses URL [`https://www.w3.org/TR/requestidlecallback/`](https://www.w3.org/TR/requestidlecallback/)
-- [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
+- [WebXR DOM Overlays Module](https://www.w3.org/TR/webxr-dom-overlays-1/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
 => 338 inconsistent references for links found in 173 specifications
@@ -2787,14 +2793,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://www.w3.org/TR/webrtc/):
      * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
-- [WebXR Anchors Module](https://immersive-web.github.io/anchors/):
-     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-frame`](https://immersive-web.github.io/hit-test/#xrhittestresult-frame)
-     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin`](https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin)
-     * [`https://immersive-web.github.io/hit-test/#hit-test`](https://immersive-web.github.io/hit-test/#hit-test)
-- [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/):
+- [WebXR DOM Overlays Module](https://www.w3.org/TR/webxr-dom-overlays-1/):
      * [`https://drafts.fxtf.org/filter-effects-2/#backdrop-root`](https://drafts.fxtf.org/filter-effects-2/#backdrop-root)
 
-=> 79 problematic external links found in 31 specifications
+=> 76 problematic external links found in 30 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -2890,6 +2892,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/screen-orientation/#dom-screen`](https://www.w3.org/TR/screen-orientation/#dom-screen)
      * [`https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type`](https://www.w3.org/TR/screen-orientation/#dfn-current-orientation-type)
      * [`https://w3c.github.io/permissions/#dom-permissionname-accelerometer`](https://w3c.github.io/permissions/#dom-permissionname-accelerometer)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
@@ -2954,6 +2958,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#mock-sensor-reading-values`](https://w3c.github.io/sensors/#mock-sensor-reading-values)
      * [`https://w3c.github.io/sensors/#sampling-frequency`](https://w3c.github.io/sensors/#sampling-frequency)
      * [`https://w3c.github.io/permissions/#dom-permissionname-ambient-light-sensor`](https://w3c.github.io/permissions/#dom-permissionname-ambient-light-sensor)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
@@ -5502,35 +5508,43 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-cascade/#initial-values`](https://www.w3.org/TR/css-cascade/#initial-values)
      * [`https://www.w3.org/TR/css-cascade/#inherited-property`](https://www.w3.org/TR/css-cascade/#inherited-property)
      * [`https://www.w3.org/TR/css-cascade/#computed`](https://www.w3.org/TR/css-cascade/#computed)
-     * [`https://www.w3.org/TR/css-cascade-4/#computed-value`](https://www.w3.org/TR/css-cascade-4/#computed-value)
-     * [`https://www.w3.org/TR/css-cascade-4/#inherited-property`](https://www.w3.org/TR/css-cascade-4/#inherited-property)
-     * [`https://www.w3.org/TR/css-cascade-4/#inheritance`](https://www.w3.org/TR/css-cascade-4/#inheritance)
+     * [`https://www.w3.org/TR/css-cascade-5/#computed-value`](https://www.w3.org/TR/css-cascade-5/#computed-value)
+     * [`https://www.w3.org/TR/css-cascade-5/#inherited-property`](https://www.w3.org/TR/css-cascade-5/#inherited-property)
+     * [`https://www.w3.org/TR/css-cascade-5/#inheritance`](https://www.w3.org/TR/css-cascade-5/#inheritance)
+     * [`https://www.w3.org/TR/css-cascade-5/#specified-value`](https://www.w3.org/TR/css-cascade-5/#specified-value)
      * [`https://www.w3.org/TR/css-backgrounds-3/#propdef-border`](https://www.w3.org/TR/css-backgrounds-3/#propdef-border)
      * [`https://www.w3.org/TR/css-tables-3/#table-grid-box`](https://www.w3.org/TR/css-tables-3/#table-grid-box)
      * [`https://www.w3.org/TR/css-tables-3/#table-wrapper-box`](https://www.w3.org/TR/css-tables-3/#table-wrapper-box)
      * [`https://www.w3.org/TR/cssom-1/#dom-window-getcomputedstyle`](https://www.w3.org/TR/cssom-1/#dom-window-getcomputedstyle)
+     * [`https://www.w3.org/TR/cssom-1/#serializing-css-values`](https://www.w3.org/TR/cssom-1/#serializing-css-values)
      * [`https://www.w3.org/TR/css-break-3/#fragment`](https://www.w3.org/TR/css-break-3/#fragment)
      * [`https://www.w3.org/TR/css-break-4/#fragmentation`](https://www.w3.org/TR/css-break-4/#fragmentation)
      * [`https://www.w3.org/TR/css-break-4/#box-fragment`](https://www.w3.org/TR/css-break-4/#box-fragment)
      * [`https://www.w3.org/TR/css-writing-modes-3/#bidi-algo`](https://www.w3.org/TR/css-writing-modes-3/#bidi-algo)
      * [`https://www.w3.org/TR/css-writing-modes-3/#text-direction`](https://www.w3.org/TR/css-writing-modes-3/#text-direction)
      * [`https://www.w3.org/TR/css-multicol-1/#spanning-columns`](https://www.w3.org/TR/css-multicol-1/#spanning-columns)
-     * [`https://www.w3.org/TR/css3-speech/#aural-model`](https://www.w3.org/TR/css3-speech/#aural-model)
+     * [`https://www.w3.org/TR/css-speech-1/#aural-model`](https://www.w3.org/TR/css-speech-1/#aural-model)
+     * [`https://www.w3.org/TR/css-speech-1/#speak`](https://www.w3.org/TR/css-speech-1/#speak)
      * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
      * [`https://www.w3.org/TR/css-values-4/#css-wide-keywords`](https://www.w3.org/TR/css-values-4/#css-wide-keywords)
      * [`https://www.w3.org/TR/css-values-4/#comb-any`](https://www.w3.org/TR/css-values-4/#comb-any)
      * [`https://www.w3.org/TR/css-values-4/#comb-one`](https://www.w3.org/TR/css-values-4/#comb-one)
      * [`https://www.w3.org/TR/css-values-4/#mult-opt`](https://www.w3.org/TR/css-values-4/#mult-opt)
      * [`https://www.w3.org/TR/css-values-4/#comb-all`](https://www.w3.org/TR/css-values-4/#comb-all)
+     * [`https://www.w3.org/TR/css-values-4/#integer-value`](https://www.w3.org/TR/css-values-4/#integer-value)
      * [`https://www.w3.org/TR/css-values/#value-defs`](https://www.w3.org/TR/css-values/#value-defs)
      * [`https://www.w3.org/TR/css-values/#percentages`](https://www.w3.org/TR/css-values/#percentages)
      * [`https://www.w3.org/TR/css-pseudo/#generated-content`](https://www.w3.org/TR/css-pseudo/#generated-content)
      * [`https://www.w3.org/TR/web-animations/#animation-type`](https://www.w3.org/TR/web-animations/#animation-type)
      * [`https://www.w3.org/TR/css-flexbox-1/#flex-container`](https://www.w3.org/TR/css-flexbox-1/#flex-container)
      * [`https://www.w3.org/TR/css-flexbox-1/#flex-formatting-context`](https://www.w3.org/TR/css-flexbox-1/#flex-formatting-context)
+     * [`https://www.w3.org/TR/css-flexbox-1/#flex-item`](https://www.w3.org/TR/css-flexbox-1/#flex-item)
+     * [`https://www.w3.org/TR/css-flexbox-1/#visibility-collapse`](https://www.w3.org/TR/css-flexbox-1/#visibility-collapse)
      * [`https://www.w3.org/TR/css-flexbox-1/#flex-layout`](https://www.w3.org/TR/css-flexbox-1/#flex-layout)
      * [`https://www.w3.org/TR/css-grid-2/#grid-container`](https://www.w3.org/TR/css-grid-2/#grid-container)
      * [`https://www.w3.org/TR/css-grid-2/#grid-formatting-context`](https://www.w3.org/TR/css-grid-2/#grid-formatting-context)
+     * [`https://www.w3.org/TR/css-grid-2/#valdef-grid-template-rows-subgrid`](https://www.w3.org/TR/css-grid-2/#valdef-grid-template-rows-subgrid)
+     * [`https://www.w3.org/TR/css-grid-2/#grid-item`](https://www.w3.org/TR/css-grid-2/#grid-item)
      * [`https://www.w3.org/TR/css-grid-2/#subgrid`](https://www.w3.org/TR/css-grid-2/#subgrid)
      * [`https://www.w3.org/TR/css-ruby-1/#ruby-container`](https://www.w3.org/TR/css-ruby-1/#ruby-container)
      * [`https://www.w3.org/TR/css-ruby-1/#ruby-formatting-context`](https://www.w3.org/TR/css-ruby-1/#ruby-formatting-context)
@@ -5542,6 +5556,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
      * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
      * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#attr-img-src`](https://html.spec.whatwg.org/#attr-img-src)
      * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
@@ -5563,6 +5578,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
+     * [`https://drafts.csswg.org/css-speech-1/#valdef-speak-always`](https://drafts.csswg.org/css-speech-1/#valdef-speak-always)
      * [`https://www.w3.org/TR/css-text-3/#white-space`](https://www.w3.org/TR/css-text-3/#white-space)
      * [`https://www.w3.org/TR/css-inline-3/#root-inline-box`](https://www.w3.org/TR/css-inline-3/#root-inline-box)
      * [`https://www.w3.org/TR/css-align-3/#propdef-align-content`](https://www.w3.org/TR/css-align-3/#propdef-align-content)
@@ -6983,42 +6999,40 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Namespaces Module Level 3](https://www.w3.org/TR/css-namespaces-3/):
      * [`https://www.w3.org/TR/selectors4/#type-selector`](https://www.w3.org/TR/selectors4/#type-selector)
      * [`https://www.w3.org/TR/css3-syntax/#at-rule`](https://www.w3.org/TR/css3-syntax/#at-rule)
-- [CSS Nesting Module](https://drafts.csswg.org/css-nesting-1/):
-     * [`https://drafts.csswg.org/css-color-4/#propdef-color`](https://drafts.csswg.org/css-color-4/#propdef-color)
-     * [`https://drafts.csswg.org/selectors-4/#simple`](https://drafts.csswg.org/selectors-4/#simple)
-     * [`https://drafts.csswg.org/selectors-4/#compound`](https://drafts.csswg.org/selectors-4/#compound)
-     * [`https://drafts.csswg.org/selectors-4/#complex`](https://drafts.csswg.org/selectors-4/#complex)
-     * [`https://drafts.csswg.org/selectors-4/#typedef-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-selector-list)
-     * [`https://drafts.csswg.org/selectors-4/#where-pseudo`](https://drafts.csswg.org/selectors-4/#where-pseudo)
-     * [`https://drafts.csswg.org/selectors-4/#matches-pseudo`](https://drafts.csswg.org/selectors-4/#matches-pseudo)
-     * [`https://drafts.csswg.org/selectors-4/#specificity`](https://drafts.csswg.org/selectors-4/#specificity)
-     * [`https://drafts.csswg.org/selectors-4/#type-selector`](https://drafts.csswg.org/selectors-4/#type-selector)
-     * [`https://drafts.csswg.org/selectors-4/#selector-list`](https://drafts.csswg.org/selectors-4/#selector-list)
+- [CSS Nesting Module](https://www.w3.org/TR/css-nesting-1/):
+     * [`https://www.w3.org/TR/css-color-4/#propdef-color`](https://www.w3.org/TR/css-color-4/#propdef-color)
+     * [`https://www.w3.org/TR/selectors-4/#simple`](https://www.w3.org/TR/selectors-4/#simple)
+     * [`https://www.w3.org/TR/selectors-4/#compound`](https://www.w3.org/TR/selectors-4/#compound)
+     * [`https://www.w3.org/TR/selectors-4/#complex`](https://www.w3.org/TR/selectors-4/#complex)
+     * [`https://www.w3.org/TR/selectors-4/#typedef-selector-list`](https://www.w3.org/TR/selectors-4/#typedef-selector-list)
+     * [`https://www.w3.org/TR/selectors-4/#where-pseudo`](https://www.w3.org/TR/selectors-4/#where-pseudo)
+     * [`https://www.w3.org/TR/selectors-4/#matches-pseudo`](https://www.w3.org/TR/selectors-4/#matches-pseudo)
+     * [`https://www.w3.org/TR/selectors-4/#specificity`](https://www.w3.org/TR/selectors-4/#specificity)
+     * [`https://www.w3.org/TR/selectors-4/#type-selector`](https://www.w3.org/TR/selectors-4/#type-selector)
+     * [`https://www.w3.org/TR/selectors-4/#selector-list`](https://www.w3.org/TR/selectors-4/#selector-list)
      * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
-     * [`https://drafts.csswg.org/css-syntax-3/#typedef-style-block`](https://drafts.csswg.org/css-syntax-3/#typedef-style-block)
-     * [`https://drafts.csswg.org/css-syntax-3/#style-rule`](https://drafts.csswg.org/css-syntax-3/#style-rule)
-     * [`https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet`](https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet)
-     * [`https://drafts.csswg.org/css-conditional-3/#conditional-group-rule`](https://drafts.csswg.org/css-conditional-3/#conditional-group-rule)
+     * [`https://www.w3.org/TR/css-syntax-3/#style-rule`](https://www.w3.org/TR/css-syntax-3/#style-rule)
+     * [`https://www.w3.org/TR/css-syntax-3/#typedef-stylesheet`](https://www.w3.org/TR/css-syntax-3/#typedef-stylesheet)
      * [`https://www.w3.org/TR/css-cascade-4/#cascade-sort`](https://www.w3.org/TR/css-cascade-4/#cascade-sort)
-     * [`https://drafts.csswg.org/cssom-1/#cssstylerule`](https://drafts.csswg.org/cssom-1/#cssstylerule)
-     * [`https://drafts.csswg.org/cssom-1/#cssrulelist`](https://drafts.csswg.org/cssom-1/#cssrulelist)
-     * [`https://drafts.csswg.org/cssom-1/#cssomstring`](https://drafts.csswg.org/cssom-1/#cssomstring)
-     * [`https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules`](https://drafts.csswg.org/cssom-1/#concept-css-rule-child-css-rules)
-     * [`https://drafts.csswg.org/cssom-1/#insert-a-css-rule`](https://drafts.csswg.org/cssom-1/#insert-a-css-rule)
-     * [`https://drafts.csswg.org/cssom-1/#remove-a-css-rule`](https://drafts.csswg.org/cssom-1/#remove-a-css-rule)
-     * [`https://drafts.csswg.org/cssom-1/#cssrule`](https://drafts.csswg.org/cssom-1/#cssrule)
-     * [`https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext`](https://drafts.csswg.org/cssom-1/#dom-cssstyledeclaration-csstext)
-     * [`https://drafts.csswg.org/cssom-1/#cssstyledeclaration`](https://drafts.csswg.org/cssom-1/#cssstyledeclaration)
-     * [`https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors`](https://drafts.csswg.org/cssom-1/#serialize-a-group-of-selectors)
-     * [`https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext`](https://drafts.csswg.org/cssom-1/#dom-cssstylerule-selectortext)
-     * [`https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors`](https://drafts.csswg.org/cssom-1/#parse-a-group-of-selectors)
-     * [`https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag`](https://drafts.csswg.org/cssom-1/#cssstyledeclaration-computed-flag)
-     * [`https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations`](https://drafts.csswg.org/cssom-1/#cssstyledeclaration-declarations)
-     * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
-     * [`https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule`](https://drafts.csswg.org/cssom-1/#cssstyledeclaration-parent-css-rule)
-     * [`https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node`](https://drafts.csswg.org/cssom-1/#cssstyledeclaration-owner-node)
-     * [`https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block`](https://drafts.csswg.org/cssom-1/#serialize-a-css-declaration-block)
-     * [`https://drafts.csswg.org/cssom-1/#serialize-a-css-rule`](https://drafts.csswg.org/cssom-1/#serialize-a-css-rule)
+     * [`https://www.w3.org/TR/cssom-1/#cssstylerule`](https://www.w3.org/TR/cssom-1/#cssstylerule)
+     * [`https://www.w3.org/TR/cssom-1/#cssrulelist`](https://www.w3.org/TR/cssom-1/#cssrulelist)
+     * [`https://www.w3.org/TR/cssom-1/#cssomstring`](https://www.w3.org/TR/cssom-1/#cssomstring)
+     * [`https://www.w3.org/TR/cssom-1/#concept-css-rule-child-css-rules`](https://www.w3.org/TR/cssom-1/#concept-css-rule-child-css-rules)
+     * [`https://www.w3.org/TR/cssom-1/#insert-a-css-rule`](https://www.w3.org/TR/cssom-1/#insert-a-css-rule)
+     * [`https://www.w3.org/TR/cssom-1/#remove-a-css-rule`](https://www.w3.org/TR/cssom-1/#remove-a-css-rule)
+     * [`https://www.w3.org/TR/cssom-1/#cssrule`](https://www.w3.org/TR/cssom-1/#cssrule)
+     * [`https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-csstext`](https://www.w3.org/TR/cssom-1/#dom-cssstyledeclaration-csstext)
+     * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration)
+     * [`https://www.w3.org/TR/cssom-1/#serialize-a-group-of-selectors`](https://www.w3.org/TR/cssom-1/#serialize-a-group-of-selectors)
+     * [`https://www.w3.org/TR/cssom-1/#dom-cssstylerule-selectortext`](https://www.w3.org/TR/cssom-1/#dom-cssstylerule-selectortext)
+     * [`https://www.w3.org/TR/cssom-1/#parse-a-group-of-selectors`](https://www.w3.org/TR/cssom-1/#parse-a-group-of-selectors)
+     * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-computed-flag`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-computed-flag)
+     * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-declarations`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-declarations)
+     * [`https://www.w3.org/TR/cssom-1/#concept-declarations-specified-order`](https://www.w3.org/TR/cssom-1/#concept-declarations-specified-order)
+     * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-parent-css-rule`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-parent-css-rule)
+     * [`https://www.w3.org/TR/cssom-1/#cssstyledeclaration-owner-node`](https://www.w3.org/TR/cssom-1/#cssstyledeclaration-owner-node)
+     * [`https://www.w3.org/TR/cssom-1/#serialize-a-css-declaration-block`](https://www.w3.org/TR/cssom-1/#serialize-a-css-declaration-block)
+     * [`https://www.w3.org/TR/cssom-1/#serialize-a-css-rule`](https://www.w3.org/TR/cssom-1/#serialize-a-css-rule)
      * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
@@ -7114,6 +7128,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-cascade-5/#computed-value`](https://www.w3.org/TR/css-cascade-5/#computed-value)
      * [`https://www.w3.org/TR/css-cascade-5/#used-value`](https://www.w3.org/TR/css-cascade-5/#used-value)
      * [`https://encoding.spec.whatwg.org/#concept-encoding-get`](https://encoding.spec.whatwg.org/#concept-encoding-get)
+     * [`https://drafts.csswg.org/css-nesting-1/#dom-cssstylerule-cssrules`](https://drafts.csswg.org/css-nesting-1/#dom-cssstylerule-cssrules)
      * [`https://www.w3.org/TR/css-fonts-4/#cssfontfacerule`](https://www.w3.org/TR/css-fonts-4/#cssfontfacerule)
      * [`https://www.w3.org/TR/css-fonts-4/#descdef-font-face-unicode-range`](https://www.w3.org/TR/css-fonts-4/#descdef-font-face-unicode-range)
      * [`https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-feature-settings`](https://www.w3.org/TR/css-fonts-4/#descdef-font-face-font-feature-settings)
@@ -10660,8 +10675,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#mock-sensor-type`](https://w3c.github.io/sensors/#mock-sensor-type)
      * [`https://w3c.github.io/sensors/#dom-mocksensortype-geolocation`](https://w3c.github.io/sensors/#dom-mocksensortype-geolocation)
      * [`https://w3c.github.io/sensors/#mock-sensor-reading-values`](https://w3c.github.io/sensors/#mock-sensor-reading-values)
-     * [`https://w3c.github.io/permissions/#enumdef-permissionname`](https://w3c.github.io/permissions/#enumdef-permissionname)
+     * [`https://w3c.github.io/permissions/#dom-permissionname`](https://w3c.github.io/permissions/#dom-permissionname)
      * [`https://w3c.github.io/permissions/#dom-permissionname-geolocation`](https://w3c.github.io/permissions/#dom-permissionname-geolocation)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
@@ -10782,6 +10799,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#dom-mocksensortype-gyroscope`](https://w3c.github.io/sensors/#dom-mocksensortype-gyroscope)
      * [`https://w3c.github.io/sensors/#mock-sensor-reading-values`](https://w3c.github.io/sensors/#mock-sensor-reading-values)
      * [`https://w3c.github.io/permissions/#dom-permissionname-gyroscope`](https://w3c.github.io/permissions/#dom-permissionname-gyroscope)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://w3c.github.io/accelerometer/#device-coordinate-system`](https://w3c.github.io/accelerometer/#device-coordinate-system)
      * [`https://w3c.github.io/accelerometer/#screen-coordinate-system`](https://w3c.github.io/accelerometer/#screen-coordinate-system)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -12757,6 +12776,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-magnetometer`](https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-magnetometer)
      * [`https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-uncalibrated-magnetometer`](https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-uncalibrated-magnetometer)
      * [`https://w3c.github.io/permissions/#dom-permissionname-magnetometer`](https://w3c.github.io/permissions/#dom-permissionname-magnetometer)
+     * [`https://www.w3.org/TR/permissions-policy/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy/#default-allowlist`](https://www.w3.org/TR/permissions-policy/#default-allowlist)
      * [`https://w3c.github.io/accelerometer/#device-coordinate-system`](https://w3c.github.io/accelerometer/#device-coordinate-system)
      * [`https://w3c.github.io/accelerometer/#screen-coordinate-system`](https://w3c.github.io/accelerometer/#screen-coordinate-system)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -13694,6 +13715,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading`](https://www.w3.org/TR/generic-sensor/#get-value-from-latest-reading)
      * [`https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-absolute-orientation`](https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-absolute-orientation)
      * [`https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-relative-orientation`](https://www.w3.org/TR/generic-sensor/#dom-mocksensortype-relative-orientation)
+     * [`https://www.w3.org/TR/permissions-policy/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy/#policy-controlled-feature)
+     * [`https://www.w3.org/TR/permissions-policy/#default-allowlist`](https://www.w3.org/TR/permissions-policy/#default-allowlist)
      * [`https://w3c.github.io/accelerometer/#accelerometer`](https://w3c.github.io/accelerometer/#accelerometer)
      * [`https://w3c.github.io/accelerometer/#device-coordinate-system`](https://w3c.github.io/accelerometer/#device-coordinate-system)
      * [`https://w3c.github.io/accelerometer/#screen-coordinate-system`](https://w3c.github.io/accelerometer/#screen-coordinate-system)
@@ -14498,6 +14521,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#sensor-type`](https://w3c.github.io/sensors/#sensor-type)
      * [`https://w3c.github.io/sensors/#sensor`](https://w3c.github.io/sensors/#sensor)
      * [`https://w3c.github.io/sensors/#default-sensor`](https://w3c.github.io/sensors/#default-sensor)
+     * [`https://w3c.github.io/sensors/#sensor-permission-names`](https://w3c.github.io/sensors/#sensor-permission-names)
      * [`https://w3c.github.io/sensors/#latest-reading`](https://w3c.github.io/sensors/#latest-reading)
      * [`https://w3c.github.io/sensors/#dictdef-sensoroptions`](https://w3c.github.io/sensors/#dictdef-sensoroptions)
      * [`https://w3c.github.io/sensors/#get-value-from-latest-reading`](https://w3c.github.io/sensors/#get-value-from-latest-reading)
@@ -14507,6 +14531,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/sensors/#mock-sensor-type`](https://w3c.github.io/sensors/#mock-sensor-type)
      * [`https://w3c.github.io/sensors/#dom-mocksensortype-proximity`](https://w3c.github.io/sensors/#dom-mocksensortype-proximity)
      * [`https://w3c.github.io/sensors/#mock-sensor-reading-values`](https://w3c.github.io/sensors/#mock-sensor-reading-values)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
@@ -15302,10 +15328,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-granted`](https://www.w3.org/TR/permissions/#dom-permissionstate-granted)
-     * [`https://www.w3.org/TR/permissions/#permission-state`](https://www.w3.org/TR/permissions/#permission-state)
+     * [`https://www.w3.org/TR/permissions/#dfn-permission-state`](https://www.w3.org/TR/permissions/#dfn-permission-state)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
-     * [`https://www.w3.org/TR/permissions/#prompt-the-user-to-choose`](https://www.w3.org/TR/permissions/#prompt-the-user-to-choose)
-     * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
+     * [`https://www.w3.org/TR/permissions/#dfn-prompt-the-user-to-choose`](https://www.w3.org/TR/permissions/#dfn-prompt-the-user-to-choose)
      * [`https://www.w3.org/TR/permissions/#dom-permissionname-display-capture`](https://www.w3.org/TR/permissions/#dom-permissionname-display-capture)
      * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
      * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
@@ -17030,24 +17055,24 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#upon-fulfillment`](https://heycam.github.io/webidl/#upon-fulfillment)
      * [`https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled`](https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled)
      * [`https://heycam.github.io/webidl/#invalidmodificationerror`](https://heycam.github.io/webidl/#invalidmodificationerror)
-     * [`https://w3c.github.io/permissions/#permission-state`](https://w3c.github.io/permissions/#permission-state)
+     * [`https://w3c.github.io/permissions/#dfn-permission-state`](https://w3c.github.io/permissions/#dfn-permission-state)
      * [`https://w3c.github.io/permissions/#dom-permissionstate-denied`](https://w3c.github.io/permissions/#dom-permissionstate-denied)
      * [`https://w3c.github.io/permissions/#dom-permissionname-bluetooth`](https://w3c.github.io/permissions/#dom-permissionname-bluetooth)
-     * [`https://w3c.github.io/permissions/#allowed-in-non-secure-contexts`](https://w3c.github.io/permissions/#allowed-in-non-secure-contexts)
-     * [`https://w3c.github.io/permissions/#prompt-the-user-to-choose`](https://w3c.github.io/permissions/#prompt-the-user-to-choose)
-     * [`https://w3c.github.io/permissions/#extra-permission-data`](https://w3c.github.io/permissions/#extra-permission-data)
+     * [`https://w3c.github.io/permissions/#dfn-allowed-in-non-secure-contexts`](https://w3c.github.io/permissions/#dfn-allowed-in-non-secure-contexts)
+     * [`https://w3c.github.io/permissions/#dfn-prompt-the-user-to-choose`](https://w3c.github.io/permissions/#dfn-prompt-the-user-to-choose)
+     * [`https://w3c.github.io/permissions/#dfn-extra-permission-data`](https://w3c.github.io/permissions/#dfn-extra-permission-data)
      * [`https://w3c.github.io/permissions/#dom-permissions-query`](https://w3c.github.io/permissions/#dom-permissions-query)
      * [`https://w3c.github.io/permissions/#dom-permissiondescriptor-name`](https://w3c.github.io/permissions/#dom-permissiondescriptor-name)
-     * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
-     * [`https://w3c.github.io/permissions/#permission-descriptor-type`](https://w3c.github.io/permissions/#permission-descriptor-type)
-     * [`https://w3c.github.io/permissions/#dictdef-permissiondescriptor`](https://w3c.github.io/permissions/#dictdef-permissiondescriptor)
-     * [`https://w3c.github.io/permissions/#extra-permission-data-type`](https://w3c.github.io/permissions/#extra-permission-data-type)
-     * [`https://w3c.github.io/permissions/#extra-permission-data-constraints`](https://w3c.github.io/permissions/#extra-permission-data-constraints)
-     * [`https://w3c.github.io/permissions/#permission-result-type`](https://w3c.github.io/permissions/#permission-result-type)
-     * [`https://w3c.github.io/permissions/#permissionstatus`](https://w3c.github.io/permissions/#permissionstatus)
-     * [`https://w3c.github.io/permissions/#permission-query-algorithm`](https://w3c.github.io/permissions/#permission-query-algorithm)
+     * [`https://w3c.github.io/permissions/#dfn-powerful-feature`](https://w3c.github.io/permissions/#dfn-powerful-feature)
+     * [`https://w3c.github.io/permissions/#dfn-permission-descriptor-type`](https://w3c.github.io/permissions/#dfn-permission-descriptor-type)
+     * [`https://w3c.github.io/permissions/#dom-permissiondescriptor`](https://w3c.github.io/permissions/#dom-permissiondescriptor)
+     * [`https://w3c.github.io/permissions/#dfn-extra-permission-data-type`](https://w3c.github.io/permissions/#dfn-extra-permission-data-type)
+     * [`https://w3c.github.io/permissions/#dfn-extra-permission-data-constraints`](https://w3c.github.io/permissions/#dfn-extra-permission-data-constraints)
+     * [`https://w3c.github.io/permissions/#dfn-permission-result-type`](https://w3c.github.io/permissions/#dfn-permission-result-type)
+     * [`https://w3c.github.io/permissions/#dom-permissionstatus`](https://w3c.github.io/permissions/#dom-permissionstatus)
+     * [`https://w3c.github.io/permissions/#dfn-permission-query-algorithm`](https://w3c.github.io/permissions/#dfn-permission-query-algorithm)
      * [`https://w3c.github.io/permissions/#dom-permissionstatus-state`](https://w3c.github.io/permissions/#dom-permissionstatus-state)
-     * [`https://w3c.github.io/permissions/#permission-revocation-algorithm`](https://w3c.github.io/permissions/#permission-revocation-algorithm)
+     * [`https://w3c.github.io/permissions/#dfn-permission-revocation-algorithm`](https://w3c.github.io/permissions/#dfn-permission-revocation-algorithm)
      * [`https://encoding.spec.whatwg.org/#utf-8-encode`](https://encoding.spec.whatwg.org/#utf-8-encode)
      * [`https://encoding.spec.whatwg.org/#utf-8-decode-without-bom`](https://encoding.spec.whatwg.org/#utf-8-decode-without-bom)
      * [`https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate`](https://www.w3.org/TR/page-visibility-2/#dom-visibilitystate)
@@ -17292,11 +17317,11 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
      * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
      * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
-     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
@@ -18412,6 +18437,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://immersive-web.github.io/webxr/#xrframe`](https://immersive-web.github.io/webxr/#xrframe)
      * [`https://immersive-web.github.io/webxr/#xrrigidtransform`](https://immersive-web.github.io/webxr/#xrrigidtransform)
      * [`https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr`](https://immersive-web.github.io/webxr/#dom-xrsessionmode-immersive-vr)
+     * [`https://immersive-web.github.io/hit-test/#xrhittestresult`](https://immersive-web.github.io/hit-test/#xrhittestresult)
+     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-frame`](https://immersive-web.github.io/hit-test/#xrhittestresult-frame)
+     * [`https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin`](https://immersive-web.github.io/hit-test/#xrhittestresult-native-origin)
+     * [`https://immersive-web.github.io/hit-test/#hit-test`](https://immersive-web.github.io/hit-test/#hit-test)
 - [WebXR Augmented Reality Module - Level 1](https://www.w3.org/TR/webxr-ar-module-1/):
      * [`https://www.w3.org/TR/webxr/#xrsession`](https://www.w3.org/TR/webxr/#xrsession)
      * [`https://www.w3.org/TR/webxr/#enumdef-xrsessionmode`](https://www.w3.org/TR/webxr/#enumdef-xrsessionmode)
@@ -18445,20 +18474,28 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcover`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_srcover)
      * [`https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_plus`](https://www.w3.org/TR/compositing-1/#porterduffcompositingoperators_plus)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
-- [WebXR Depth Sensing Module](https://immersive-web.github.io/depth-sensing/):
+- [WebXR Depth Sensing Module](https://www.w3.org/TR/webxr-depth-sensing-1/):
      * [`https://www.w3.org/TR/webxr/#xrsession-interface`](https://www.w3.org/TR/webxr/#xrsession-interface)
      * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
      * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
      * [`https://www.w3.org/TR/webxr/#inline-xr-device`](https://www.w3.org/TR/webxr/#inline-xr-device)
      * [`https://www.w3.org/TR/webxr/#feature-policy`](https://www.w3.org/TR/webxr/#feature-policy)
+     * [`https://www.w3.org/TR/webxr/#dictdef-xrsessioninit`](https://www.w3.org/TR/webxr/#dictdef-xrsessioninit)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsessioninit-requiredfeatures`](https://www.w3.org/TR/webxr/#dom-xrsessioninit-requiredfeatures)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsessioninit-optionalfeatures`](https://www.w3.org/TR/webxr/#dom-xrsessioninit-optionalfeatures)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsystem-requestsession`](https://www.w3.org/TR/webxr/#dom-xrsystem-requestsession)
+     * [`https://www.w3.org/TR/webxr/#xrrigidtransform`](https://www.w3.org/TR/webxr/#xrrigidtransform)
+     * [`https://www.w3.org/TR/webxr/#xrview`](https://www.w3.org/TR/webxr/#xrview)
      * [`https://www.w3.org/TR/webxr/#xrview-frame`](https://www.w3.org/TR/webxr/#xrview-frame)
      * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
      * [`https://www.w3.org/TR/webxr/#xrframe-animationframe`](https://www.w3.org/TR/webxr/#xrframe-animationframe)
+     * [`https://www.w3.org/TR/webxr/#dom-xrframe-session`](https://www.w3.org/TR/webxr/#dom-xrframe-session)
      * [`https://www.w3.org/TR/webxr/#xrframe-interface`](https://www.w3.org/TR/webxr/#xrframe-interface)
      * [`https://www.w3.org/TR/webxr/#xrsession-xr-device`](https://www.w3.org/TR/webxr/#xrsession-xr-device)
      * [`https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features`](https://www.w3.org/TR/webxr/#xr-device-list-of-enabled-features)
      * [`https://www.w3.org/TR/webxr/#xrsession-mode`](https://www.w3.org/TR/webxr/#xrsession-mode)
      * [`https://www.w3.org/TR/webxr/#xrframe-time`](https://www.w3.org/TR/webxr/#xrframe-time)
+     * [`https://www.w3.org/TR/webxr/#callbackdef-xrframerequestcallback`](https://www.w3.org/TR/webxr/#callbackdef-xrframerequestcallback)
      * [`https://heycam.github.io/webidl/#idl-Uint16Array`](https://heycam.github.io/webidl/#idl-Uint16Array)
      * [`https://heycam.github.io/webidl/#idl-Float32Array`](https://heycam.github.io/webidl/#idl-Float32Array)
      * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
@@ -18472,14 +18509,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#exceptiondef-rangeerror`](https://heycam.github.io/webidl/#exceptiondef-rangeerror)
-     * [`https://immersive-web.github.io/webxr/#dictdef-xrsessioninit`](https://immersive-web.github.io/webxr/#dictdef-xrsessioninit)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures`](https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures`](https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsystem-requestsession`](https://immersive-web.github.io/webxr/#dom-xrsystem-requestsession)
-     * [`https://immersive-web.github.io/webxr/#xrrigidtransform`](https://immersive-web.github.io/webxr/#xrrigidtransform)
-     * [`https://immersive-web.github.io/webxr/#xrview`](https://immersive-web.github.io/webxr/#xrview)
-     * [`https://immersive-web.github.io/webxr/#dom-xrframe-session`](https://immersive-web.github.io/webxr/#dom-xrframe-session)
-     * [`https://immersive-web.github.io/webxr/#callbackdef-xrframerequestcallback`](https://immersive-web.github.io/webxr/#callbackdef-xrframerequestcallback)
      * [`https://immersive-web.github.io/layers/#opaque-texture`](https://immersive-web.github.io/layers/#opaque-texture)
      * [`https://immersive-web.github.io/layers/#xrwebglbinding`](https://immersive-web.github.io/layers/#xrwebglbinding)
 - [WebXR Device API](https://www.w3.org/TR/webxr/):
@@ -18573,32 +18602,32 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/pointerevents/#dfn-primary-pointer`](https://www.w3.org/TR/pointerevents/#dfn-primary-pointer)
      * [`https://www.w3.org/TR/permissions-policy/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy/#policy-controlled-feature)
      * [`https://www.w3.org/TR/permissions-policy/#default-allowlist`](https://www.w3.org/TR/permissions-policy/#default-allowlist)
-- [WebXR DOM Overlays Module](https://immersive-web.github.io/dom-overlays/):
+- [WebXR DOM Overlays Module](https://www.w3.org/TR/webxr-dom-overlays-1/):
+     * [`https://www.w3.org/TR/webxr/#primary-action`](https://www.w3.org/TR/webxr/#primary-action)
+     * [`https://www.w3.org/TR/webxr/#xrsessionevent`](https://www.w3.org/TR/webxr/#xrsessionevent)
+     * [`https://www.w3.org/TR/webxr/#eventdef-xrsession-selectstart`](https://www.w3.org/TR/webxr/#eventdef-xrsession-selectstart)
+     * [`https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace`](https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace)
+     * [`https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend`](https://www.w3.org/TR/webxr/#eventdef-xrsession-selectend)
+     * [`https://www.w3.org/TR/webxr/#eventdef-xrsession-select`](https://www.w3.org/TR/webxr/#eventdef-xrsession-select)
+     * [`https://www.w3.org/TR/webxr/#xrwebgllayer`](https://www.w3.org/TR/webxr/#xrwebgllayer)
+     * [`https://www.w3.org/TR/webxr/#dictdef-xrsessioninit`](https://www.w3.org/TR/webxr/#dictdef-xrsessioninit)
+     * [`https://www.w3.org/TR/webxr/#xrsession`](https://www.w3.org/TR/webxr/#xrsession)
+     * [`https://www.w3.org/TR/webxr/#xrinputsource`](https://www.w3.org/TR/webxr/#xrinputsource)
+     * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsessioninit-requiredfeatures`](https://www.w3.org/TR/webxr/#dom-xrsessioninit-requiredfeatures)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsessioninit-optionalfeatures`](https://www.w3.org/TR/webxr/#dom-xrsessioninit-optionalfeatures)
+     * [`https://www.w3.org/TR/webxr/#immersive-session`](https://www.w3.org/TR/webxr/#immersive-session)
+     * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
+     * [`https://www.w3.org/TR/webxr/#dom-xrsession-requestanimationframe`](https://www.w3.org/TR/webxr/#dom-xrsession-requestanimationframe)
+     * [`https://www.w3.org/TR/webxr/#transient-input-sources`](https://www.w3.org/TR/webxr/#transient-input-sources)
+     * [`https://www.w3.org/TR/webxr/#auxiliary-action`](https://www.w3.org/TR/webxr/#auxiliary-action)
+     * [`https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange`](https://www.w3.org/TR/webxr/#eventdef-xrsession-inputsourceschange)
+     * [`https://www.w3.org/TR/webxr/#xrviewport`](https://www.w3.org/TR/webxr/#xrviewport)
      * [`https://www.w3.org/TR/webxr/#limiting-header`](https://www.w3.org/TR/webxr/#limiting-header)
-     * [`https://immersive-web.github.io/webxr/#primary-action`](https://immersive-web.github.io/webxr/#primary-action)
-     * [`https://immersive-web.github.io/webxr/#xrsessionevent`](https://immersive-web.github.io/webxr/#xrsessionevent)
-     * [`https://immersive-web.github.io/webxr/#eventdef-xrsession-selectstart`](https://immersive-web.github.io/webxr/#eventdef-xrsession-selectstart)
-     * [`https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace`](https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace)
-     * [`https://immersive-web.github.io/webxr/#eventdef-xrsession-selectend`](https://immersive-web.github.io/webxr/#eventdef-xrsession-selectend)
-     * [`https://immersive-web.github.io/webxr/#eventdef-xrsession-select`](https://immersive-web.github.io/webxr/#eventdef-xrsession-select)
-     * [`https://immersive-web.github.io/webxr/#xrwebgllayer`](https://immersive-web.github.io/webxr/#xrwebgllayer)
-     * [`https://immersive-web.github.io/webxr/#dictdef-xrsessioninit`](https://immersive-web.github.io/webxr/#dictdef-xrsessioninit)
-     * [`https://immersive-web.github.io/webxr/#xrsession`](https://immersive-web.github.io/webxr/#xrsession)
-     * [`https://immersive-web.github.io/webxr/#xrinputsource`](https://immersive-web.github.io/webxr/#xrinputsource)
-     * [`https://immersive-web.github.io/webxr/#feature-descriptor`](https://immersive-web.github.io/webxr/#feature-descriptor)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures`](https://immersive-web.github.io/webxr/#dom-xrsessioninit-requiredfeatures)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures`](https://immersive-web.github.io/webxr/#dom-xrsessioninit-optionalfeatures)
-     * [`https://immersive-web.github.io/webxr/#immersive-session`](https://immersive-web.github.io/webxr/#immersive-session)
-     * [`https://immersive-web.github.io/webxr/#capable-of-supporting`](https://immersive-web.github.io/webxr/#capable-of-supporting)
-     * [`https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe`](https://immersive-web.github.io/webxr/#dom-xrsession-requestanimationframe)
-     * [`https://immersive-web.github.io/webxr/#transient-input-sources`](https://immersive-web.github.io/webxr/#transient-input-sources)
-     * [`https://immersive-web.github.io/webxr/#auxiliary-action`](https://immersive-web.github.io/webxr/#auxiliary-action)
-     * [`https://immersive-web.github.io/webxr/#eventdef-xrsession-inputsourceschange`](https://immersive-web.github.io/webxr/#eventdef-xrsession-inputsourceschange)
-     * [`https://immersive-web.github.io/webxr/#xrviewport`](https://immersive-web.github.io/webxr/#xrviewport)
-     * [`https://immersive-web.github.io/webxr/#populate-the-pose`](https://immersive-web.github.io/webxr/#populate-the-pose)
-     * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
-     * [`https://immersive-web.github.io/webxr/#transient-action`](https://immersive-web.github.io/webxr/#transient-action)
-     * [`https://immersive-web.github.io/webxr/#xrsession-add-input-source`](https://immersive-web.github.io/webxr/#xrsession-add-input-source)
+     * [`https://www.w3.org/TR/webxr/#populate-the-pose`](https://www.w3.org/TR/webxr/#populate-the-pose)
+     * [`https://www.w3.org/TR/webxr/#xrspace`](https://www.w3.org/TR/webxr/#xrspace)
+     * [`https://www.w3.org/TR/webxr/#transient-action`](https://www.w3.org/TR/webxr/#transient-action)
+     * [`https://www.w3.org/TR/webxr/#xrsession-add-input-source`](https://www.w3.org/TR/webxr/#xrsession-add-input-source)
      * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#rendering-opportunity`](https://html.spec.whatwg.org/#rendering-opportunity)
@@ -18607,7 +18636,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#htmliframeelement`](https://html.spec.whatwg.org/#htmliframeelement)
      * [`https://w3c.github.io/uievents/#topmost-event-target`](https://w3c.github.io/uievents/#topmost-event-target)
-     * [`https://drafts.csswg.org/selectors-4/#pseudo-class`](https://drafts.csswg.org/selectors-4/#pseudo-class)
+     * [`https://www.w3.org/TR/selectors-4/#pseudo-class`](https://www.w3.org/TR/selectors-4/#pseudo-class)
      * [`https://heycam.github.io/webidl/#notsupportederror`](https://heycam.github.io/webidl/#notsupportederror)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/):
      * [`https://www.w3.org/TR/webxr/#xrinputsource`](https://www.w3.org/TR/webxr/#xrinputsource)
@@ -18682,15 +18711,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar`](https://immersive-web.github.io/webxr-ar-module/#dom-xrsessionmode-immersive-ar)
-- [WebXR Hit Test Module](https://immersive-web.github.io/hit-test/):
+- [WebXR Hit Test Module](https://www.w3.org/TR/webxr-hit-test-1/):
      * [`https://www.w3.org/TR/webxr/#feature-descriptor`](https://www.w3.org/TR/webxr/#feature-descriptor)
      * [`https://www.w3.org/TR/webxr/#capable-of-supporting`](https://www.w3.org/TR/webxr/#capable-of-supporting)
      * [`https://www.w3.org/TR/webxr/#inline-xr-device`](https://www.w3.org/TR/webxr/#inline-xr-device)
      * [`https://www.w3.org/TR/webxr/#feature-policy`](https://www.w3.org/TR/webxr/#feature-policy)
+     * [`https://www.w3.org/TR/webxr/#xrspace`](https://www.w3.org/TR/webxr/#xrspace)
      * [`https://www.w3.org/TR/webxr/#xrinputsource-input-profile-name`](https://www.w3.org/TR/webxr/#xrinputsource-input-profile-name)
+     * [`https://www.w3.org/TR/webxr/#xrinputsource`](https://www.w3.org/TR/webxr/#xrinputsource)
      * [`https://www.w3.org/TR/webxr/#xrsession-interface`](https://www.w3.org/TR/webxr/#xrsession-interface)
      * [`https://www.w3.org/TR/webxr/#xrspace-native-origin`](https://www.w3.org/TR/webxr/#xrspace-native-origin)
      * [`https://www.w3.org/TR/webxr/#xrspace-effective-origin`](https://www.w3.org/TR/webxr/#xrspace-effective-origin)
+     * [`https://www.w3.org/TR/webxr/#xrpose`](https://www.w3.org/TR/webxr/#xrpose)
      * [`https://www.w3.org/TR/webxr/#xr-device`](https://www.w3.org/TR/webxr/#xr-device)
      * [`https://www.w3.org/TR/webxr/#xrframe-interface`](https://www.w3.org/TR/webxr/#xrframe-interface)
      * [`https://www.w3.org/TR/webxr/#dom-xrframe-session`](https://www.w3.org/TR/webxr/#dom-xrframe-session)
@@ -18704,16 +18736,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#ended`](https://www.w3.org/TR/webxr/#ended)
      * [`https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates`](https://www.w3.org/TR/webxr/#xrsession-list-of-frame-updates)
      * [`https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources`](https://www.w3.org/TR/webxr/#list-of-active-xr-input-sources)
+     * [`https://www.w3.org/TR/webxr/#dom-xrinputsource-profiles`](https://www.w3.org/TR/webxr/#dom-xrinputsource-profiles)
+     * [`https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace`](https://www.w3.org/TR/webxr/#dom-xrinputsource-targetrayspace)
      * [`https://www.w3.org/TR/webxr/#matrix`](https://www.w3.org/TR/webxr/#matrix)
      * [`https://www.w3.org/TR/webxr/#xrrigidtransform-interface`](https://www.w3.org/TR/webxr/#xrrigidtransform-interface)
      * [`https://www.w3.org/TR/webxr/#normalize`](https://www.w3.org/TR/webxr/#normalize)
      * [`https://www.w3.org/TR/webxr/#dom-xrrigidtransform-matrix`](https://www.w3.org/TR/webxr/#dom-xrrigidtransform-matrix)
-     * [`https://immersive-web.github.io/webxr/#xrspace`](https://immersive-web.github.io/webxr/#xrspace)
-     * [`https://immersive-web.github.io/webxr/#xrinputsource`](https://immersive-web.github.io/webxr/#xrinputsource)
-     * [`https://immersive-web.github.io/webxr/#xrpose`](https://immersive-web.github.io/webxr/#xrpose)
-     * [`https://immersive-web.github.io/webxr/#dom-xrframe-session`](https://immersive-web.github.io/webxr/#dom-xrframe-session)
-     * [`https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles`](https://immersive-web.github.io/webxr/#dom-xrinputsource-profiles)
-     * [`https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace`](https://immersive-web.github.io/webxr/#dom-xrinputsource-targetrayspace)
      * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
@@ -18731,16 +18759,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-double`](https://heycam.github.io/webidl/#idl-double)
      * [`https://heycam.github.io/webidl/#idl-Float32Array`](https://heycam.github.io/webidl/#idl-Float32Array)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
-     * [`https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit`](https://drafts.fxtf.org/geometry-1/#dictdef-dompointinit)
-     * [`https://drafts.fxtf.org/geometry-1/#dompointreadonly`](https://drafts.fxtf.org/geometry-1/#dompointreadonly)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-w)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-x)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-y)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointinit-z)
-     * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-w)
+     * [`https://www.w3.org/TR/geometry-1/#dictdef-dompointinit`](https://www.w3.org/TR/geometry-1/#dictdef-dompointinit)
+     * [`https://www.w3.org/TR/geometry-1/#dompointreadonly`](https://www.w3.org/TR/geometry-1/#dompointreadonly)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointinit-w`](https://www.w3.org/TR/geometry-1/#dom-dompointinit-w)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-x`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-x)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointinit-x`](https://www.w3.org/TR/geometry-1/#dom-dompointinit-x)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-y`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-y)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointinit-y`](https://www.w3.org/TR/geometry-1/#dom-dompointinit-y)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-z`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-z)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointinit-z`](https://www.w3.org/TR/geometry-1/#dom-dompointinit-z)
+     * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-w`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly-w)
 - [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/):
      * [`https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-requiredfeatures`](https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-requiredfeatures)
      * [`https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-optionalfeatures`](https://www.w3.org/TR/webxr/#dom-xrpermissiondescriptor-optionalfeatures)
@@ -18929,7 +18957,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 15764 problematic external links found in 341 specifications
+=> 15790 problematic external links found in 341 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

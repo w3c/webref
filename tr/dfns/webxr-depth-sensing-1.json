@@ -1,0 +1,944 @@
+{
+  "spec": {
+    "title": "WebXR Depth Sensing Module",
+    "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
+  },
+  "dfns": [
+    {
+      "id": "normalized-view-coordinates",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#normalized-view-coordinates",
+      "linkingText": [
+        "normalized view coordinates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#terminology",
+        "title": "Terminology",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "depth-sensing",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#depth-sensing",
+      "linkingText": [
+        "depth-sensing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "feature-descriptor",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#feature-descriptor",
+        "title": "Feature descriptor",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrdepthusage",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#enumdef-xrdepthusage",
+      "linkingText": [
+        "XRDepthUsage"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthusage-cpu-optimized",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-cpu-optimized",
+      "linkingText": [
+        "\"cpu-optimized\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRDepthUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrdepthusage-gpu-optimized",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthusage-gpu-optimized",
+      "linkingText": [
+        "\"gpu-optimized\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRDepthUsage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-xrdepthdataformat",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#enumdef-xrdepthdataformat",
+      "linkingText": [
+        "XRDepthDataFormat"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthdataformat-luminance-alpha",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthdataformat-luminance-alpha",
+      "linkingText": [
+        "\"luminance-alpha\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRDepthDataFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrdepthdataformat-float32",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthdataformat-float32",
+      "linkingText": [
+        "\"float32\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "XRDepthDataFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-formats",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#usage-and-formats",
+        "title": "Intended data usage and data formats",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-xrdepthstateinit",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dictdef-xrdepthstateinit",
+      "linkingText": [
+        "XRDepthStateInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthstateinit-usagepreference",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthstateinit-usagepreference",
+      "linkingText": [
+        "usagePreference"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRDepthStateInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthstateinit-dataformatpreference",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthstateinit-dataformatpreference",
+      "linkingText": [
+        "dataFormatPreference"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRDepthStateInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsessioninit-depthsensing",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsessioninit-depthsensing",
+      "linkingText": [
+        "depthSensing"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "XRSessionInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "find-supported-configuration-combination",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#find-supported-configuration-combination",
+      "linkingText": [
+        "find supported configuration combination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrsession-depthusage",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthusage",
+      "linkingText": [
+        "depthUsage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrsession-depthdataformat",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrsession-depthdataformat",
+      "linkingText": [
+        "depthDataFormat"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRSession"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "session-configuration",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#session-configuration",
+        "title": "Session configuration",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrdepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation",
+      "linkingText": [
+        "XRDepthInformation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthinformation-width",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthinformation-height",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthinformation-normdepthbufferfromnormview",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-normdepthbufferfromnormview",
+      "linkingText": [
+        "normDepthBufferFromNormView"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrdepthinformation-rawvaluetometers",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrdepthinformation-rawvaluetometers",
+      "linkingText": [
+        "rawValueToMeters"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "xrdepthinformation-view",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrdepthinformation-depth-buffer",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrdepthinformation-depth-buffer",
+      "linkingText": [
+        "depth buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "XRDepthInformation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attempting-to-access-the-depth-buffer",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#attempting-to-access-the-depth-buffer",
+      "linkingText": [
+        "attempting to access the depth buffer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-depth-info-section",
+        "title": "XRDepthInformation",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrcpudepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrcpudepthinformation",
+      "linkingText": [
+        "XRCPUDepthInformation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcpudepthinformation-data",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-data",
+      "linkingText": [
+        "data"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRCPUDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcpudepthinformation-getdepthinmeters",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-getdepthinmeters",
+      "linkingText": [
+        "getDepthInMeters(x, y)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRCPUDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcpudepthinformation-getdepthinmeters-x-y-x",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-getdepthinmeters-x-y-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRCPUDepthInformation/getDepthInMeters(x, y)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrcpudepthinformation-getdepthinmeters-x-y-y",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrcpudepthinformation-getdepthinmeters-x-y-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRCPUDepthInformation/getDepthInMeters(x, y)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "obtain-depth-at-coordinates",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-depth-at-coordinates",
+      "linkingText": [
+        "obtain depth at coordinates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-xrframe-getdepthinformation-view-view",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation-view-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRFrame/getDepthInformation(view)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrframe-getdepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrframe-getdepthinformation",
+      "linkingText": [
+        "getDepthInformation(view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRFrame"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-cpu-depth-information",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-cpu-depth-information",
+      "linkingText": [
+        "obtain CPU depth information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-cpu-depth-information-instance",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-cpu-depth-information-instance",
+      "linkingText": [
+        "create a CPU depth information instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-cpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-cpu-depth-info-section",
+        "title": "XRCPUDepthInformation",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xrwebgldepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xrwebgldepthinformation",
+      "linkingText": [
+        "XRWebGLDepthInformation"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebgldepthinformation-texture",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-texture",
+      "linkingText": [
+        "texture"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "XRWebGLDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getdepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation",
+      "linkingText": [
+        "getDepthInformation(view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLBinding"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebglbinding-getdepthinformation-view-view",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebglbinding-getdepthinformation-view-view",
+      "linkingText": [
+        "view"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "XRWebGLBinding/getDepthInformation(view)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-xrwebgldepthinformation-getdepthinformation",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#dom-xrwebgldepthinformation-getdepthinformation",
+      "linkingText": [
+        "getDepthInformation(view)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "XRWebGLDepthInformation"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-webgl-depth-information",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#obtain-webgl-depth-information",
+      "linkingText": [
+        "obtain WebGL depth information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-webgl-depth-information-instance",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#create-a-webgl-depth-information-instance",
+      "linkingText": [
+        "create a WebGL depth information instance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "xr-gpu-depth-info-section",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#xr-gpu-depth-info-section",
+        "title": "XRWebGLDepthInformation",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "native-depth-sensing",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#native-depth-sensing",
+      "linkingText": [
+        "native depth sensing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "depth-coordinates-transformation-matrix",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#depth-coordinates-transformation-matrix",
+      "linkingText": [
+        "depth coordinates transformation matrix"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "support-depth-sensing-usage",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#support-depth-sensing-usage",
+      "linkingText": [
+        "support depth sensing usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "support-depth-sensing-data-format",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#support-depth-sensing-data-format",
+      "linkingText": [
+        "support depth sensing data format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "support-depth-sensing-usage-and-data-format-combination",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#support-depth-sensing-usage-and-data-format-combination",
+      "linkingText": [
+        "support depth sensing usage and data format combination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "limit-the-amount-of-information",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#limit-the-amount-of-information",
+      "linkingText": [
+        "limit the amount of information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-access",
+      "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#block-access",
+      "linkingText": [
+        "block access"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "title",
+        "href": "https://www.w3.org/TR/webxr-depth-sensing-1/#title",
+        "title": "WebXR Depth Sensing Module"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
