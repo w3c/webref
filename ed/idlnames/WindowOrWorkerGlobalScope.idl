@@ -57,11 +57,6 @@ partial interface mixin WindowOrWorkerGlobalScope {
   [SameObject] readonly attribute IDBFactory indexedDB;
 };
 
-// Source: Secure Contexts (https://www.w3.org/TR/secure-contexts/)
-partial interface WindowOrWorkerGlobalScope {
-  readonly attribute boolean isSecureContext;
-};
-
 // Source: Service Workers Nightly (https://www.w3.org/TR/service-workers-1/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [SecureContext, SameObject] readonly attribute CacheStorage caches;
