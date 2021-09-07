@@ -1,0 +1,34 @@
+From 3b7f2b507ca101a4c20276e875064f70dd2f3af3 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 7 Sep 2021 17:19:29 +0200
+Subject: [PATCH] Make dictionary argument optional
+
+Dictionary argument must be optional if it has no required fields.
+
+https://github.com/WICG/urlpattern/pull/126
+---
+ ed/idl/urlpattern.idl | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/ed/idl/urlpattern.idl b/ed/idl/urlpattern.idl
+index a8ec8577a..9e38ae13b 100644
+--- a/ed/idl/urlpattern.idl
++++ b/ed/idl/urlpattern.idl
+@@ -7,11 +7,11 @@ typedef (USVString or URLPatternInit) URLPatternInput;
+ 
+ [Exposed=(Window,Worker)]
+ interface URLPattern {
+-  constructor(URLPatternInput input, optional USVString baseURL);
++  constructor(optional URLPatternInput input = {}, optional USVString baseURL);
+ 
+-  boolean test(URLPatternInput input, optional USVString baseURL);
++  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);
+ 
+-  URLPatternResult? exec(URLPatternInput input, optional USVString baseURL);
++  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);
+ 
+   readonly attribute USVString protocol;
+   readonly attribute USVString username;
+-- 
+2.33.0.windows.2
+
