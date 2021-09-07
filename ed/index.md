@@ -571,7 +571,6 @@ Informative references to this spec from:
 - [Indexed Database API 3.0](https://w3c.github.io/IndexedDB/)
 - [Infra Standard](https://infra.spec.whatwg.org/)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 
 
@@ -10596,7 +10595,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#list-of-active-timers`](https://html.spec.whatwg.org/#list-of-active-timers)
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
-     * [`https://www.w3.org/TR/secure-contexts/#non-secure-context`](https://www.w3.org/TR/secure-contexts/#non-secure-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -10638,7 +10636,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 
@@ -11356,7 +11353,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://www.w3.org/TR/encrypted-media/#navigator-extension:-requestmediakeysystemaccess()`](https://www.w3.org/TR/encrypted-media/#navigator-extension:-requestmediakeysystemaccess())
-     * [`https://www.w3.org/TR/secure-contexts/#settings-object`](https://www.w3.org/TR/secure-contexts/#settings-object)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -13416,9 +13412,7 @@ Normative references to this spec from:
 - [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [WebOTP API](https://wicg.github.io/web-otp/)
 
-Informative references to this spec from:
-
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
+No informative reference to this spec from other specs.
 
 
 ### Fetch Metadata Request Headers {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -13772,7 +13766,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
 - Crawled URL: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
-- Crawled version: 12 January 2021
+- Crawled version: 17 November 2016
 - Editor's Draft: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
 - Latest published version: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
 - Shortname: secure-contexts
@@ -13780,18 +13774,32 @@ Informative references to this spec from:
 #### Potential issue(s) {.anomalies}
 
 - Inconsistent references for links: 
-     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
-     * [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/), related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+     * [`https://www.w3.org/TR/geolocation-API/`](https://www.w3.org/TR/geolocation-API/), related reference "GEOLOCATION-API" uses URL [`http://dev.w3.org/geo/api/spec-source.html`](http://dev.w3.org/geo/api/spec-source.html)
 - Broken external links:
+     * [`https://html.spec.whatwg.org/#opener-browsing-context`](https://html.spec.whatwg.org/#opener-browsing-context)
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
-     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
-     * [`https://html.spec.whatwg.org/#sharedworker`](https://html.spec.whatwg.org/#sharedworker)
-     * [`https://html.spec.whatwg.org/#dom-issecurecontext`](https://html.spec.whatwg.org/#dom-issecurecontext)
-     * [`https://html.spec.whatwg.org/#windoworworkerglobalscope`](https://html.spec.whatwg.org/#windoworworkerglobalscope)
-     * [`https://html.spec.whatwg.org/#environment`](https://html.spec.whatwg.org/#environment)
-     * [`https://html.spec.whatwg.org/#non-secure-context`](https://html.spec.whatwg.org/#non-secure-context)
+     * [`https://html.spec.whatwg.org/#link-type-noopener`](https://html.spec.whatwg.org/#link-type-noopener)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
      * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#parse-a-sandboxing-directive`](https://html.spec.whatwg.org/#parse-a-sandboxing-directive)
+     * [`https://html.spec.whatwg.org/#sharedworker`](https://html.spec.whatwg.org/#sharedworker)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#windoworworkerglobalscope`](https://html.spec.whatwg.org/#windoworworkerglobalscope)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-global`](https://html.spec.whatwg.org/#concept-settings-object-global)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#dom-document`](https://html.spec.whatwg.org/#dom-document)
+     * [`https://html.spec.whatwg.org/#the-worker's-documents`](https://html.spec.whatwg.org/#the-worker's-documents)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
+     * [`https://html.spec.whatwg.org/#https-state`](https://html.spec.whatwg.org/#https-state)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#active-sandboxing-flag-set`](https://html.spec.whatwg.org/#active-sandboxing-flag-set)
+     * [`https://html.spec.whatwg.org/#creator-browsing-context`](https://html.spec.whatwg.org/#creator-browsing-context)
+     * [`https://html.spec.whatwg.org/#creator-context-security`](https://html.spec.whatwg.org/#creator-context-security)
+     * [`https://html.spec.whatwg.org/#sandboxed-origin-browsing-context-flag`](https://html.spec.whatwg.org/#sandboxed-origin-browsing-context-flag)
+     * [`https://html.spec.whatwg.org/#concept-environment-creation-url`](https://html.spec.whatwg.org/#concept-environment-creation-url)
      * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
      * [`https://html.spec.whatwg.org/#concept-origin-opaque`](https://html.spec.whatwg.org/#concept-origin-opaque)
      * [`https://html.spec.whatwg.org/#concept-origin-tuple`](https://html.spec.whatwg.org/#concept-origin-tuple)
@@ -13800,7 +13808,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#concept-origin-domain`](https://html.spec.whatwg.org/#concept-origin-domain)
      * [`https://html.spec.whatwg.org/#concept-origin-port`](https://html.spec.whatwg.org/#concept-origin-port)
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
-     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
 
 #### Known dependencies on this specification {.dependencies}
@@ -13823,7 +13830,6 @@ Normative references to this spec from:
 - [Push API](https://w3c.github.io/push-api/)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/)
 - [Reporting API 1](https://w3c.github.io/reporting/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Service Workers Nightly](https://w3c.github.io/ServiceWorker/)
 - [Subresource Integrity](https://w3c.github.io/webappsec-subresource-integrity/)
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/)
@@ -14811,7 +14817,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -15115,7 +15120,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#dom-base-href`](https://html.spec.whatwg.org/#dom-base-href)
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -15297,7 +15301,6 @@ Informative references to this spec from:
 
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
-- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 
 
 ## Web Editing Working Group {#web_editing_working_group}
@@ -15668,7 +15671,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Crawled URL: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
-- Crawled version: 27 August 2021
+- Crawled version: 07 September 2021
 - Editor's Draft: [https://w3c.github.io/payment-request/](https://w3c.github.io/payment-request/)
 - Latest published version: [https://www.w3.org/TR/payment-request/](https://www.w3.org/TR/payment-request/)
 - Shortname: payment-request
@@ -15695,7 +15698,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -18341,7 +18343,6 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
      * [`https://html.spec.whatwg.org/#ready-for-post-load-tasks`](https://html.spec.whatwg.org/#ready-for-post-load-tasks)
      * [`https://html.spec.whatwg.org/#linkTypes`](https://html.spec.whatwg.org/#linkTypes)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -20677,7 +20678,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Crawled URL: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
-- Crawled version: 3 September 2021
+- Crawled version: 7 September 2021
 - Editor's Draft: [https://w3c.github.io/webtransport/](https://w3c.github.io/webtransport/)
 - Latest published version: [https://www.w3.org/TR/webtransport/](https://www.w3.org/TR/webtransport/)
 - Shortname: webtransport
@@ -22109,6 +22110,7 @@ Informative references to this spec from:
 - [Orientation Sensor](https://w3c.github.io/orientation-sensor/)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/)
 - [Permissions Policy](https://w3c.github.io/webappsec-permissions-policy/)
+- [Secure Contexts](https://w3c.github.io/webappsec-secure-contexts/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
 - [The Hypertext Transfer Protocol Status Code 308 (Permanent Redirect)](https://httpwg.org/specs/rfc7538.html)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
