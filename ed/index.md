@@ -4135,6 +4135,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -4643,7 +4644,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Crawled URL: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
-- Crawled version: 15 July 2021
+- Crawled version: 7 September 2021
 - Editor's Draft: [https://drafts.csswg.org/css-sizing-3/](https://drafts.csswg.org/css-sizing-3/)
 - Latest published version: [https://www.w3.org/TR/css-sizing-3/](https://www.w3.org/TR/css-sizing-3/)
 - Shortname: css-sizing-3
@@ -4931,6 +4932,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
@@ -4991,6 +4993,39 @@ Normative references to this spec from:
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
+
+No informative reference to this spec from other specs.
+
+
+### CSS Cascading and Inheritance Level 6 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Crawled URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Crawled version: 7 September 2021
+- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Shortname: css-scoping-2
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/)
+     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/)
+     * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/)
+     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/)
+     * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/)
+- Broken external links:
+     * [`https://www.w3.org/TR/css-cascade-5/#fragments`](https://www.w3.org/TR/css-cascade-5/#fragments)
+     * [`https://www.w3.org/TR/css-cascade-5/#layering`](https://www.w3.org/TR/css-cascade-5/#layering)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-layers`](https://drafts.csswg.org/css-cascade-5/#cascade-layers)
+     * [`https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer`](https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer)
+     * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -5719,7 +5754,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Crawled URL: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
-- Crawled version: 12 August 2021
+- Crawled version: 7 September 2021
 - Editor's Draft: [https://drafts.csswg.org/css-flexbox-1/](https://drafts.csswg.org/css-flexbox-1/)
 - Latest published version: [https://www.w3.org/TR/css-flexbox-1/](https://www.w3.org/TR/css-flexbox-1/)
 - Shortname: css-flexbox-1
@@ -6592,7 +6627,7 @@ Informative references to this spec from:
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/)
 
 
-### CSS Logical Properties and Values Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true}
+### CSS Logical Properties and Values Level 1 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -7633,6 +7668,7 @@ Normative references to this spec from:
 
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)
@@ -7640,28 +7676,6 @@ Normative references to this spec from:
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
 - [Selectors Level 4](https://drafts.csswg.org/selectors/)
-
-No informative reference to this spec from other specs.
-
-
-### CSS Scoping Module Level 2 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Crawled URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Crawled version: 7 September 2021
-- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Shortname: css-scoping-2
-
-#### Potential issue(s) {.anomalies}
-
-- Missing references for links: 
-     * [`https://www.w3.org/TR/css-scoping-1/`](https://www.w3.org/TR/css-scoping-1/)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -8050,6 +8064,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/)
@@ -8073,7 +8088,6 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Shapes Module Level 1](https://drafts.csswg.org/css-shapes/)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/)
@@ -8529,6 +8543,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
@@ -8735,6 +8750,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/)
@@ -8913,7 +8929,6 @@ Normative references to this spec from:
 - [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Scrollbars Module Level 1](https://drafts.csswg.org/css-scrollbars/)
@@ -9671,6 +9686,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/)
@@ -9684,7 +9700,6 @@ Normative references to this spec from:
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Scroll Snap Module Level 1](https://drafts.csswg.org/css-scroll-snap-1/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
@@ -11181,7 +11196,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
 - Crawled URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
-- Crawled version: 7 September 2021
+- Crawled version: 8 September 2021
 - Editor's Draft: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
 - Shortname: lighting-estimation
 
@@ -13774,7 +13789,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
 - Crawled URL: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
-- Crawled version: 7 September 2021
+- Crawled version: 8 September 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
 - Latest published version: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
 - Shortname: secure-contexts
@@ -15432,7 +15447,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Crawled URL: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
-- Crawled version: 3 September 2021
+- Crawled version: 8 September 2021
 - Editor's Draft: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
 - Latest published version: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Shortname: webnn
@@ -20884,6 +20899,7 @@ Normative references to this spec from:
 - [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/)
 - [CSS Environment Variables Module Level 1](https://drafts.csswg.org/css-env-1/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/)
@@ -20895,7 +20911,6 @@ Normative references to this spec from:
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/)
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/)
 - [CSS Shadow Parts](https://drafts.csswg.org/css-shadow-parts/)
 - [CSS Spatial Navigation Level 1](https://drafts.csswg.org/css-nav-1/)
@@ -21135,6 +21150,7 @@ Normative references to this spec from:
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/)

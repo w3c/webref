@@ -960,6 +960,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Style-20001113/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-css-cascade-4-20150421/`](https://www.w3.org/TR/2015/WD-css-cascade-4-20150421/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/) links to:
+    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -1190,7 +1196,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
 - [CSS Scoping Module Level 1](https://drafts.csswg.org/css-scoping/) links to [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/) links to [`https://www.w3.org/TR/css-scoping-1/`](https://www.w3.org/TR/css-scoping-1/) but does not list it in its references
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/) links to:
     * [`https://w3c.github.io/editing/docs/execCommand/`](https://w3c.github.io/editing/docs/execCommand/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -1539,7 +1544,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 623 missing references for links found in 179 specifications
+=> 627 missing references for links found in 179 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -4556,6 +4561,13 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints`](https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints)
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/):
+     * [`https://www.w3.org/TR/css-cascade-5/#fragments`](https://www.w3.org/TR/css-cascade-5/#fragments)
+     * [`https://www.w3.org/TR/css-cascade-5/#layering`](https://www.w3.org/TR/css-cascade-5/#layering)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-layers`](https://drafts.csswg.org/css-cascade-5/#cascade-layers)
+     * [`https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer`](https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer)
+     * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/):
      * [`https://html.spec.whatwg.org/#meta-color-scheme`](https://html.spec.whatwg.org/#meta-color-scheme)
      * [`https://html.spec.whatwg.org/#meta`](https://html.spec.whatwg.org/#meta)
@@ -8623,7 +8635,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4590 problematic external links found in 287 specifications
+=> 4596 problematic external links found in 288 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
