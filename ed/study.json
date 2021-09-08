@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-09-08T12:47:34.409Z",
+  "date": "2021-09-08T18:43:15.696Z",
   "stats": {
     "crawled": 437,
-    "errors": 0,
+    "errors": 1,
     "studied": 437
   },
   "results": [
@@ -1241,7 +1241,7 @@
     {
       "title": "Attribution Reporting",
       "shortname": "conversion-measurement-api",
-      "date": "7 September 2021",
+      "date": "8 September 2021",
       "url": "https://wicg.github.io/conversion-measurement-api/",
       "nightly": {
         "url": "https://wicg.github.io/conversion-measurement-api/",
@@ -4070,7 +4070,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -7302,7 +7302,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -7506,7 +7506,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -8221,7 +8221,7 @@
     {
       "title": "CSS Custom Highlight API Module Level 1",
       "shortname": "css-highlight-api-1",
-      "date": "23 August 2021",
+      "date": "8 September 2021",
       "url": "https://www.w3.org/TR/css-highlight-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-highlight-api-1/",
@@ -13072,7 +13072,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -15038,9 +15038,9 @@
       }
     },
     {
-      "title": "CSS Scrollbars Module Level 1",
+      "title": "CSS Scrollbars Styling Module Level 1",
       "shortname": "css-scrollbars-1",
-      "date": "28 August 2021",
+      "date": "8 September 2021",
       "url": "https://www.w3.org/TR/css-scrollbars-1/",
       "release": {
         "url": "https://www.w3.org/TR/css-scrollbars-1/",
@@ -18107,7 +18107,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -18687,7 +18687,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -25532,7 +25532,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "7 September 2021",
+      "date": "8 September 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -33563,7 +33563,7 @@
             },
             {
               "url": "https://www.w3.org/TR/css-scrollbars-1/",
-              "title": "CSS Scrollbars Module Level 1",
+              "title": "CSS Scrollbars Styling Module Level 1",
               "crawled": "https://drafts.csswg.org/css-scrollbars/"
             },
             {
@@ -43713,7 +43713,6 @@
     {
       "title": "Realms API",
       "shortname": "tc39-realms",
-      "date": "19 July 2021",
       "url": "https://tc39.es/proposal-realms/",
       "nightly": {
         "url": "https://tc39.es/proposal-realms/",
@@ -43721,7 +43720,12 @@
         "sourcePath": "spec.html",
         "filename": "index.html"
       },
-      "crawled": "https://tc39.es/proposal-realms/",
+      "crawled": {
+        "url": "https://tc39.es/proposal-realms/",
+        "repository": "https://github.com/tc39/proposal-realms",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
       "organization": "Ecma International",
       "groups": [
         {
@@ -43730,6 +43734,7 @@
         }
       ],
       "report": {
+        "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 48)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
@@ -62082,7 +62087,7 @@
     {
       "title": "WebXR Device API",
       "shortname": "webxr",
-      "date": "25 August 2021",
+      "date": "8 September 2021",
       "url": "https://www.w3.org/TR/webxr/",
       "release": {
         "url": "https://www.w3.org/TR/webxr/",
@@ -62279,15 +62284,7 @@
             "https://html.spec.whatwg.org/#currently-focused-area-of-a-top-level-browsing-context",
             "https://html.spec.whatwg.org/#same-origin",
             "https://html.spec.whatwg.org/#dom-navigator-useragent",
-            "https://html.spec.whatwg.org/#dom-navigator-appversion",
-            "https://w3c.github.io/permissions/#request-permission-to-use",
-            "https://w3c.github.io/permissions/#powerful-feature",
-            "https://w3c.github.io/permissions/#permission-descriptor-type",
-            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
-            "https://w3c.github.io/permissions/#permission-result-type",
-            "https://w3c.github.io/permissions/#permissionstatus",
-            "https://w3c.github.io/permissions/#permission-query-algorithm",
-            "https://w3c.github.io/permissions/#permission-state"
+            "https://html.spec.whatwg.org/#dom-navigator-appversion"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],

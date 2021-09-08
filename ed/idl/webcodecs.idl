@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: WebCodecs (https://w3c.github.io/webcodecs/)
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface AudioDecoder {
   constructor(AudioDecoderInit init);
 
@@ -26,7 +26,7 @@ dictionary AudioDecoderInit {
 
 callback AudioDataOutputCallback = undefined(AudioData output);
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface VideoDecoder {
   constructor(VideoDecoderInit init);
 
@@ -49,7 +49,7 @@ dictionary VideoDecoderInit {
 
 callback VideoFrameOutputCallback = undefined(VideoFrame output);
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface AudioEncoder {
   constructor(AudioEncoderInit init);
 
@@ -78,7 +78,7 @@ dictionary EncodedAudioChunkMetadata {
   AudioDecoderConfig decoderConfig;
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface VideoEncoder {
   constructor(VideoEncoderInit init);
 
@@ -421,7 +421,7 @@ enum VideoMatrixCoefficients {
   "smpte170m",  // BT.601 NTSC (functionally the same as bt470bg)
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface ImageDecoder {
   constructor(ImageDecoderInit init);
 

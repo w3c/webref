@@ -21,6 +21,14 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>437 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="%5Bobject%20Object%5D">Realms API</a>: <code>Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:95:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22) at async Promise.all (index 48) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21) at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)</code></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -39,7 +47,6 @@
   <li><a href="https://tc39.es/proposal-private-methods/">Private Methods and Accessors Proposal</a></li>
   <li><a href="https://tc39.es/proposal-array-find-from-last/">Proposal-array-find-from-last</a></li>
   <li><a href="https://tc39.es/proposal-class-fields/">Public and private instance fields proposal</a></li>
-  <li><a href="https://tc39.es/proposal-realms/">Realms API</a></li>
   <li><a href="https://tc39.es/proposal-regexp-match-indices/">RegExp Match Indices</a></li>
   <li><a href="https://tc39.es/proposal-relative-indexing-method/">Relative Indexing Method</a></li>
   <li><a href="https://tc39.es/proposal-resizablearraybuffer/">Resizable ArrayBuffer and growable SharedArrayBuffer</a></li>
@@ -96,7 +103,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/">WebGL WEBGL_multi_draw Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   </ul>
-  <p>=&gt; 71 specifications found</p>
+  <p>=&gt; 70 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -1477,7 +1484,7 @@
   <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Module Level 1</a> links to:
+  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Styling Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
@@ -2102,7 +2109,7 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-scroll-anchoring/">CSS Scroll Anchoring Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-scroll-snap-1/">CSS Scroll Snap Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Styling Module Level 1</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
   <li><a href="https://drafts.csswg.org/css-shapes/">CSS Shapes Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-values/"><code>https://www.w3.org/TR/css3-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://www.w3.org/TR/css-values-3/"><code>https://www.w3.org/TR/css-values-3/</code></a></li>
@@ -5858,7 +5865,7 @@
   <li><a href="https://html.spec.whatwg.org/#the-body-element"><code>https://html.spec.whatwg.org/#the-body-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-section-element"><code>https://html.spec.whatwg.org/#the-section-element</code></a></li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Module Level 1</a>:
+  <li><a href="https://drafts.csswg.org/css-scrollbars/">CSS Scrollbars Styling Module Level 1</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#the-body-element"><code>https://html.spec.whatwg.org/#the-body-element</code></a></li>
   </ul></li>
@@ -10066,14 +10073,6 @@
   <li><a href="https://html.spec.whatwg.org/#same-origin"><code>https://html.spec.whatwg.org/#same-origin</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#dom-navigator-useragent"><code>https://html.spec.whatwg.org/#dom-navigator-useragent</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#dom-navigator-appversion"><code>https://html.spec.whatwg.org/#dom-navigator-appversion</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#request-permission-to-use"><code>https://w3c.github.io/permissions/#request-permission-to-use</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#powerful-feature"><code>https://w3c.github.io/permissions/#powerful-feature</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-descriptor-type"><code>https://w3c.github.io/permissions/#permission-descriptor-type</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#dictdef-permissiondescriptor"><code>https://w3c.github.io/permissions/#dictdef-permissiondescriptor</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-result-type"><code>https://w3c.github.io/permissions/#permission-result-type</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permissionstatus"><code>https://w3c.github.io/permissions/#permissionstatus</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-query-algorithm"><code>https://w3c.github.io/permissions/#permission-query-algorithm</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-state"><code>https://w3c.github.io/permissions/#permission-state</code></a></li>
   </ul></li>
   <li><a href="https://immersive-web.github.io/dom-overlays/">WebXR DOM Overlays Module</a>:
   <ul>
@@ -10140,7 +10139,7 @@
   <li><a href="https://html.spec.whatwg.org/#the-progress-element"><code>https://html.spec.whatwg.org/#the-progress-element</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 4596 problematic external links found in 288 specifications</p>
+  <p>=&gt; 4588 problematic external links found in 288 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>

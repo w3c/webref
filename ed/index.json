@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-08T12:47:34.409Z",
+  "date": "2021-09-08T18:43:15.696Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 437,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -1257,7 +1257,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "7 September 2021",
+      "date": "8 September 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -2231,12 +2231,13 @@
       "versions": [
         "https://tc39.es/proposal-realms/"
       ],
-      "crawled": "https://tc39.es/proposal-realms/",
-      "date": "19 July 2021",
-      "links": "links/tc39-realms.json",
-      "dfns": "dfns/tc39-realms.json",
-      "headings": "headings/tc39-realms.json",
-      "ids": "ids/tc39-realms.json"
+      "crawled": {
+        "url": "https://tc39.es/proposal-realms/",
+        "repository": "https://github.com/tc39/proposal-realms",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 48)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://tc39.es/proposal-regexp-match-indices/",
@@ -3498,7 +3499,7 @@
       ],
       "crawled": "https://wicg.github.io/conversion-measurement-api/",
       "generator": "bikeshed",
-      "date": "7 September 2021",
+      "date": "8 September 2021",
       "links": "links/conversion-measurement-api.json",
       "refs": "refs/conversion-measurement-api.json",
       "idl": "idl/conversion-measurement-api.idl",
@@ -10858,7 +10859,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-highlight-api-1/",
       "generator": "bikeshed",
-      "date": "23 August 2021",
+      "date": "8 September 2021",
       "links": "links/css-highlight-api-1.json",
       "refs": "refs/css-highlight-api-1.json",
       "idl": "idl/css-highlight-api.idl",
@@ -12314,7 +12315,7 @@
         "sourcePath": "css-scrollbars-1/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Scrollbars Module Level 1",
+      "title": "CSS Scrollbars Styling Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scrollbars 1",
       "tests": {
@@ -12329,7 +12330,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scrollbars/",
       "generator": "bikeshed",
-      "date": "28 August 2021",
+      "date": "8 September 2021",
       "links": "links/css-scrollbars-1.json",
       "refs": "refs/css-scrollbars-1.json",
       "css": "css/css-scrollbars.json",
@@ -20312,7 +20313,7 @@
       ],
       "crawled": "https://immersive-web.github.io/webxr/",
       "generator": "bikeshed",
-      "date": "25 August 2021",
+      "date": "8 September 2021",
       "links": "links/webxr.json",
       "refs": "refs/webxr.json",
       "idl": "idl/webxr.idl",
