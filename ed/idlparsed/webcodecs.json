@@ -3215,7 +3215,7 @@
         "partial": false
       },
       "AudioDataCopyToOptions": {
-        "fragment": "dictionary AudioDataCopyToOptions {\n  [EnforceRange] required unsigned long planeIndex;\n  [EnforceRange] unsigned long frameOffset = 0;\n  [EnforceRange] unsigned long frameCount;\n};",
+        "fragment": "dictionary AudioDataCopyToOptions {\n  [EnforceRange] required unsigned long planeIndex;\n  [EnforceRange] unsigned long frameOffset = 0;\n  [EnforceRange] unsigned long frameCount;\n  AudioSampleFormat format;\n};",
         "type": "dictionary",
         "name": "AudioDataCopyToOptions",
         "inheritance": null,
@@ -3285,6 +3285,21 @@
               "nullable": false,
               "union": false,
               "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AudioSampleFormat"
             },
             "default": null,
             "required": false
@@ -3747,7 +3762,7 @@
         "partial": false
       },
       "VideoFrameInit": {
-        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n};",
+        "fragment": "dictionary VideoFrameInit {\n  unsigned long long duration;  // microseconds\n  long long timestamp;          // microseconds\n  AlphaOption alpha = \"keep\";\n\n  // Default matches image. May be used to efficiently crop. Will trigger\n  // new computation of displayWidth and displayHeight using image’s pixel\n  // aspect ratio unless an explicit displayWidth and displayHeight are given.\n  DOMRectInit visibleRect;\n\n  // Default matches image unless visibleRect is provided.\n  [EnforceRange] unsigned long displayWidth;\n  [EnforceRange] unsigned long displayHeight;\n};",
         "type": "dictionary",
         "name": "VideoFrameInit",
         "inheritance": null,
@@ -3798,6 +3813,65 @@
               "type": "string",
               "value": "keep"
             },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "visibleRect",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMRectInit"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "displayWidth",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "displayHeight",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "default": null,
             "required": false
           }
         ],
@@ -5297,7 +5371,9 @@
       "AudioDataInit": [
         "AudioSampleFormat"
       ],
-      "AudioDataCopyToOptions": [],
+      "AudioDataCopyToOptions": [
+        "AudioSampleFormat"
+      ],
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",
@@ -5310,7 +5386,8 @@
         "VideoFrame"
       ],
       "VideoFrameInit": [
-        "AlphaOption"
+        "AlphaOption",
+        "DOMRectInit"
       ],
       "VideoFrameBufferInit": [
         "VideoPixelFormat",
