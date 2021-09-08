@@ -1,0 +1,28 @@
+From b5af889ed982f66be2a28a34eb3bfabee1229576 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Tue, 7 Sep 2021 17:36:04 +0200
+Subject: [PATCH] Drop duplicate definition of attributionDestination
+
+Private Click Measurement and Attribution Reporting are two "competing"
+proposals that both extend HTMLAnchorElement with an attributionDestination
+attribute. This drops one of the definitions while we get down to a situation
+where there is but one spec.
+
+https://github.com/w3c/browser-specs/issues/373
+---
+ ed/idl/private-click-measurement.idl | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ed/idl/private-click-measurement.idl b/ed/idl/private-click-measurement.idl
+index 9a7c8dd55..3bed7ccf9 100644
+--- a/ed/idl/private-click-measurement.idl
++++ b/ed/idl/private-click-measurement.idl
+@@ -5,5 +5,4 @@
+ 
+ partial interface HTMLAnchorElement {
+     [CEReactions] attribute unsigned long attributionSourceId;
+-    [CEReactions] attribute DOMString attributionDestination;
+ };
+-- 
+2.33.0.windows.2
+
