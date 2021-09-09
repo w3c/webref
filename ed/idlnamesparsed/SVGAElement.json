@@ -1,5 +1,6 @@
 {
   "name": "SVGAElement",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Scalable Vector Graphics (SVG) 2",
@@ -26,6 +27,7 @@
   ],
   "inheritance": {
     "name": "SVGGraphicsElement",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "Scalable Vector Graphics (SVG) 2",
@@ -45,6 +47,7 @@
     ],
     "inheritance": {
       "name": "SVGElement",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "Scalable Vector Graphics (SVG) 2",
@@ -85,6 +88,7 @@
       ],
       "inheritance": {
         "name": "Element",
+        "type": "interface",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -188,6 +192,7 @@
         ],
         "inheritance": {
           "name": "Node",
+          "type": "interface",
           "defined": {
             "spec": {
               "title": "DOM Standard",
@@ -199,6 +204,7 @@
           "extended": [],
           "inheritance": {
             "name": "EventTarget",
+            "type": "interface",
             "defined": {
               "spec": {
                 "title": "DOM Standard",
@@ -216,6 +222,7 @@
         "includes": [
           {
             "name": "ParentNode",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "DOM Standard",
@@ -230,6 +237,7 @@
           },
           {
             "name": "NonDocumentTypeChildNode",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "DOM Standard",
@@ -244,6 +252,7 @@
           },
           {
             "name": "ChildNode",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "DOM Standard",
@@ -258,6 +267,7 @@
           },
           {
             "name": "Slottable",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "DOM Standard",
@@ -272,6 +282,7 @@
           },
           {
             "name": "InnerHTML",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "DOM Parsing and Serialization",
@@ -286,6 +297,7 @@
           },
           {
             "name": "ARIAMixin",
+            "type": "interface mixin",
             "defined": {
               "spec": {
                 "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
@@ -303,6 +315,7 @@
       "includes": [
         {
           "name": "GlobalEventHandlers",
+          "type": "interface mixin",
           "defined": {
             "spec": {
               "title": "HTML Standard",
@@ -346,6 +359,7 @@
         },
         {
           "name": "DocumentAndElementEventHandlers",
+          "type": "interface mixin",
           "defined": {
             "spec": {
               "title": "HTML Standard",
@@ -360,6 +374,7 @@
         },
         {
           "name": "SVGElementInstance",
+          "type": "interface mixin",
           "defined": {
             "spec": {
               "title": "Scalable Vector Graphics (SVG) 2",
@@ -374,6 +389,7 @@
         },
         {
           "name": "HTMLOrSVGElement",
+          "type": "interface mixin",
           "defined": {
             "spec": {
               "title": "HTML Standard",
@@ -391,6 +407,7 @@
     "includes": [
       {
         "name": "SVGTests",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "Scalable Vector Graphics (SVG) 2",
@@ -408,6 +425,7 @@
   "includes": [
     {
       "name": "SVGURIReference",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Scalable Vector Graphics (SVG) 2",
@@ -422,6 +440,7 @@
     },
     {
       "name": "HTMLHyperlinkElementUtils",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",

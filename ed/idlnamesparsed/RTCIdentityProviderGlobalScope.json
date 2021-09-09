@@ -1,5 +1,6 @@
 {
   "name": "RTCIdentityProviderGlobalScope",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Identity for WebRTC 1.0",
@@ -11,6 +12,7 @@
   "extended": [],
   "inheritance": {
     "name": "WorkerGlobalScope",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "HTML Standard",
@@ -30,6 +32,7 @@
     ],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -45,6 +48,7 @@
     "includes": [
       {
         "name": "WindowOrWorkerGlobalScope",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "HTML Standard",

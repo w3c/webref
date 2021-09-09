@@ -1,5 +1,6 @@
 {
   "name": "Text",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -19,6 +20,7 @@
   ],
   "inheritance": {
     "name": "CharacterData",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -45,6 +47,7 @@
     ],
     "inheritance": {
       "name": "Node",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -56,6 +59,7 @@
       "extended": [],
       "inheritance": {
         "name": "EventTarget",
+        "type": "interface",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -73,6 +77,7 @@
     "includes": [
       {
         "name": "NonDocumentTypeChildNode",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -87,6 +92,7 @@
       },
       {
         "name": "ChildNode",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -104,6 +110,7 @@
   "includes": [
     {
       "name": "Slottable",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",

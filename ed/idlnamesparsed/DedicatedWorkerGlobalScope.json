@@ -1,5 +1,6 @@
 {
   "name": "DedicatedWorkerGlobalScope",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "HTML Standard",
@@ -26,6 +27,7 @@
   ],
   "inheritance": {
     "name": "WorkerGlobalScope",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "HTML Standard",
@@ -45,6 +47,7 @@
     ],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -60,6 +63,7 @@
     "includes": [
       {
         "name": "WindowOrWorkerGlobalScope",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "HTML Standard",
@@ -134,6 +138,7 @@
   "includes": [
     {
       "name": "AnimationFrameProvider",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",

@@ -1,5 +1,6 @@
 {
   "name": "ServiceWorkerGlobalScope",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Service Workers Nightly",
@@ -75,6 +76,7 @@
   ],
   "inheritance": {
     "name": "WorkerGlobalScope",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "HTML Standard",
@@ -94,6 +96,7 @@
     ],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -109,6 +112,7 @@
     "includes": [
       {
         "name": "WindowOrWorkerGlobalScope",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "HTML Standard",

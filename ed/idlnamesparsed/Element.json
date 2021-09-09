@@ -1,5 +1,6 @@
 {
   "name": "Element",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -103,6 +104,7 @@
   ],
   "inheritance": {
     "name": "Node",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -114,6 +116,7 @@
     "extended": [],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -131,6 +134,7 @@
   "includes": [
     {
       "name": "ParentNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -145,6 +149,7 @@
     },
     {
       "name": "NonDocumentTypeChildNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -159,6 +164,7 @@
     },
     {
       "name": "ChildNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -173,6 +179,7 @@
     },
     {
       "name": "Slottable",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -187,6 +194,7 @@
     },
     {
       "name": "InnerHTML",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Parsing and Serialization",
@@ -201,6 +209,7 @@
     },
     {
       "name": "ARIAMixin",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",

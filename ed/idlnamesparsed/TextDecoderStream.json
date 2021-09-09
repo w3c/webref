@@ -1,5 +1,6 @@
 {
   "name": "TextDecoderStream",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Encoding Standard",
@@ -28,6 +29,7 @@
   "includes": [
     {
       "name": "TextDecoderCommon",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Encoding Standard",
@@ -42,6 +44,7 @@
     },
     {
       "name": "GenericTransformStream",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Streams Standard",

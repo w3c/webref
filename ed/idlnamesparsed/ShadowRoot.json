@@ -1,5 +1,6 @@
 {
   "name": "ShadowRoot",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -26,6 +27,7 @@
   ],
   "inheritance": {
     "name": "DocumentFragment",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -52,6 +54,7 @@
     ],
     "inheritance": {
       "name": "Node",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -63,6 +66,7 @@
       "extended": [],
       "inheritance": {
         "name": "EventTarget",
+        "type": "interface",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -80,6 +84,7 @@
     "includes": [
       {
         "name": "NonElementParentNode",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -94,6 +99,7 @@
       },
       {
         "name": "ParentNode",
+        "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "DOM Standard",
@@ -111,6 +117,7 @@
   "includes": [
     {
       "name": "DocumentOrShadowRoot",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -154,6 +161,7 @@
     },
     {
       "name": "InnerHTML",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Parsing and Serialization",

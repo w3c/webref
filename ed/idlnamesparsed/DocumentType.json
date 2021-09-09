@@ -1,5 +1,6 @@
 {
   "name": "DocumentType",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -19,6 +20,7 @@
   ],
   "inheritance": {
     "name": "Node",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -30,6 +32,7 @@
     "extended": [],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -47,6 +50,7 @@
   "includes": [
     {
       "name": "ChildNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
