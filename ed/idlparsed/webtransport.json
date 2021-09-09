@@ -487,7 +487,7 @@
         "partial": false
       },
       "WebTransportCloseInfo": {
-        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long long errorCode = 0;\n  DOMString reason = \"\";\n};",
+        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long errorCode;\n  DOMString reason;\n};",
         "type": "dictionary",
         "name": "WebTransportCloseInfo",
         "inheritance": null,
@@ -502,12 +502,9 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "unsigned long long"
+              "idlType": "unsigned long"
             },
-            "default": {
-              "type": "number",
-              "value": "0"
-            },
+            "default": null,
             "required": false
           },
           {
@@ -522,10 +519,7 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": {
-              "type": "string",
-              "value": ""
-            },
+            "default": null,
             "required": false
           }
         ],
@@ -741,7 +735,7 @@
         "partial": false
       },
       "WebTransportError": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute octet? applicationProtocolCode;\n  readonly attribute WebTransportErrorSource source;\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransportError : DOMException {\n  constructor(optional WebTransportErrorInit init = {});\n\n  readonly attribute WebTransportErrorSource source;\n  readonly attribute octet? streamErrorCode;\n};",
         "type": "interface",
         "name": "WebTransportError",
         "inheritance": "DOMException",
@@ -772,21 +766,6 @@
           },
           {
             "type": "attribute",
-            "name": "applicationProtocolCode",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "octet"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
             "name": "source",
             "idlType": {
               "type": "attribute-type",
@@ -795,6 +774,21 @@
               "nullable": false,
               "union": false,
               "idlType": "WebTransportErrorSource"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "streamErrorCode",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "octet"
             },
             "extAttrs": [],
             "special": "",
@@ -828,14 +822,14 @@
         "partial": false
       },
       "WebTransportErrorInit": {
-        "fragment": "dictionary WebTransportErrorInit {\n  [Clamp] octet applicationProtocolCode;\n  DOMString message;\n};",
+        "fragment": "dictionary WebTransportErrorInit {\n  [Clamp] octet streamErrorCode;\n  DOMString message;\n};",
         "type": "dictionary",
         "name": "WebTransportErrorInit",
         "inheritance": null,
         "members": [
           {
             "type": "field",
-            "name": "applicationProtocolCode",
+            "name": "streamErrorCode",
             "extAttrs": [
               {
                 "type": "extended-attribute",

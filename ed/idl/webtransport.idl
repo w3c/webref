@@ -41,8 +41,8 @@ dictionary WebTransportOptions {
 };
 
 dictionary WebTransportCloseInfo {
-  unsigned long long errorCode = 0;
-  DOMString reason = "";
+  unsigned long errorCode;
+  DOMString reason;
 };
 
 dictionary WebTransportStats {
@@ -67,12 +67,12 @@ interface WebTransportBidirectionalStream {
 interface WebTransportError : DOMException {
   constructor(optional WebTransportErrorInit init = {});
 
-  readonly attribute octet? applicationProtocolCode;
   readonly attribute WebTransportErrorSource source;
+  readonly attribute octet? streamErrorCode;
 };
 
 dictionary WebTransportErrorInit {
-  [Clamp] octet applicationProtocolCode;
+  [Clamp] octet streamErrorCode;
   DOMString message;
 };
 
