@@ -25,15 +25,11 @@
           "GPUAdapter",
           "GPUDevice",
           "GPUBuffer",
-          "GPUBufferUsage",
-          "GPUMapMode",
           "GPUTexture",
-          "GPUTextureUsage",
           "GPUTextureView",
           "GPUExternalTexture",
           "GPUSampler",
           "GPUBindGroupLayout",
-          "GPUShaderStage",
           "GPUBindGroup",
           "GPUPipelineLayout",
           "GPUShaderModule",
@@ -41,7 +37,6 @@
           "GPUCompilationInfo",
           "GPUComputePipeline",
           "GPURenderPipeline",
-          "GPUColorWrite",
           "GPUCommandBuffer",
           "GPUCommandEncoder",
           "GPUComputePassEncoder",
@@ -60,15 +55,11 @@
           "GPUAdapter",
           "GPUDevice",
           "GPUBuffer",
-          "GPUBufferUsage",
-          "GPUMapMode",
           "GPUTexture",
-          "GPUTextureUsage",
           "GPUTextureView",
           "GPUExternalTexture",
           "GPUSampler",
           "GPUBindGroupLayout",
-          "GPUShaderStage",
           "GPUBindGroup",
           "GPUPipelineLayout",
           "GPUShaderModule",
@@ -76,7 +67,6 @@
           "GPUCompilationInfo",
           "GPUComputePipeline",
           "GPURenderPipeline",
-          "GPUColorWrite",
           "GPUCommandBuffer",
           "GPUCommandEncoder",
           "GPUComputePassEncoder",
@@ -1926,8 +1916,8 @@
         "extAttrs": []
       },
       "GPUBufferUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
-        "type": "interface",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUBufferUsage {\n    const GPUFlagsConstant MAP_READ      = 0x0001;\n    const GPUFlagsConstant MAP_WRITE     = 0x0002;\n    const GPUFlagsConstant COPY_SRC      = 0x0004;\n    const GPUFlagsConstant COPY_DST      = 0x0008;\n    const GPUFlagsConstant INDEX         = 0x0010;\n    const GPUFlagsConstant VERTEX        = 0x0020;\n    const GPUFlagsConstant UNIFORM       = 0x0040;\n    const GPUFlagsConstant STORAGE       = 0x0080;\n    const GPUFlagsConstant INDIRECT      = 0x0100;\n    const GPUFlagsConstant QUERY_RESOLVE = 0x0200;\n};",
+        "type": "namespace",
         "name": "GPUBufferUsage",
         "inheritance": null,
         "members": [
@@ -2144,8 +2134,8 @@
         "extAttrs": []
       },
       "GPUMapMode": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
-        "type": "interface",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUMapMode {\n    const GPUFlagsConstant READ  = 0x0001;\n    const GPUFlagsConstant WRITE = 0x0002;\n};",
+        "type": "namespace",
         "name": "GPUMapMode",
         "inheritance": null,
         "members": [
@@ -2437,8 +2427,8 @@
         "extAttrs": []
       },
       "GPUTextureUsage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant TEXTURE_BINDING   = 0x04;\n    const GPUFlagsConstant STORAGE_BINDING   = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
-        "type": "interface",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUTextureUsage {\n    const GPUFlagsConstant COPY_SRC          = 0x01;\n    const GPUFlagsConstant COPY_DST          = 0x02;\n    const GPUFlagsConstant TEXTURE_BINDING   = 0x04;\n    const GPUFlagsConstant STORAGE_BINDING   = 0x08;\n    const GPUFlagsConstant RENDER_ATTACHMENT = 0x10;\n};",
+        "type": "namespace",
         "name": "GPUTextureUsage",
         "inheritance": null,
         "members": [
@@ -3457,8 +3447,8 @@
         "extAttrs": []
       },
       "GPUShaderStage": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
-        "type": "interface",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUShaderStage {\n    const GPUFlagsConstant VERTEX   = 0x1;\n    const GPUFlagsConstant FRAGMENT = 0x2;\n    const GPUFlagsConstant COMPUTE  = 0x4;\n};",
+        "type": "namespace",
         "name": "GPUShaderStage",
         "inheritance": null,
         "members": [
@@ -5266,8 +5256,8 @@
         "extAttrs": []
       },
       "GPUColorWrite": {
-        "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
-        "type": "interface",
+        "fragment": "[Exposed=(Window, DedicatedWorker)]\nnamespace GPUColorWrite {\n    const GPUFlagsConstant RED   = 0x1;\n    const GPUFlagsConstant GREEN = 0x2;\n    const GPUFlagsConstant BLUE  = 0x4;\n    const GPUFlagsConstant ALPHA = 0x8;\n    const GPUFlagsConstant ALL   = 0xF;\n};",
+        "type": "namespace",
         "name": "GPUColorWrite",
         "inheritance": null,
         "members": [
