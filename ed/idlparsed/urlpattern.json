@@ -48,7 +48,7 @@
         "extAttrs": []
       },
       "URLPattern": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(URLPatternInput input, optional USVString baseURL);\n\n  boolean test(URLPatternInput input, optional USVString baseURL);\n\n  URLPatternResult? exec(URLPatternInput input, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
         "type": "interface",
         "name": "URLPattern",
         "inheritance": null,
@@ -68,8 +68,10 @@
                   "union": false,
                   "idlType": "URLPatternInput"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               },
               {
@@ -115,8 +117,10 @@
                   "union": false,
                   "idlType": "URLPatternInput"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               },
               {
@@ -163,8 +167,10 @@
                   "union": false,
                   "idlType": "URLPatternInput"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
                 "variadic": false
               },
               {

@@ -7,11 +7,11 @@ typedef (USVString or URLPatternInit) URLPatternInput;
 
 [Exposed=(Window,Worker)]
 interface URLPattern {
-  constructor(URLPatternInput input, optional USVString baseURL);
+  constructor(optional URLPatternInput input = {}, optional USVString baseURL);
 
-  boolean test(URLPatternInput input, optional USVString baseURL);
+  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);
 
-  URLPatternResult? exec(URLPatternInput input, optional USVString baseURL);
+  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);
 
   readonly attribute USVString protocol;
   readonly attribute USVString username;
