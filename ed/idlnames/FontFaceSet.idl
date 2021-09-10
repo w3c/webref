@@ -3,7 +3,6 @@
 interface FontFaceSet : EventTarget {
   constructor(sequence<FontFace> initialFaces);
 
-  // FontFaceSet is Set-like!
   setlike<FontFace>;
   FontFaceSet add(FontFace font);
   boolean delete(FontFace font);

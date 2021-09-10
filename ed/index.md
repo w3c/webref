@@ -5833,7 +5833,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
 - Crawled URL: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
-- Crawled version: 30 August 2021
+- Crawled version: 9 September 2021
 - Editor's Draft: [https://drafts.csswg.org/css-font-loading/](https://drafts.csswg.org/css-font-loading/)
 - Latest published version: [https://www.w3.org/TR/css-font-loading-3/](https://www.w3.org/TR/css-font-loading-3/)
 - Shortname: css-font-loading-3
