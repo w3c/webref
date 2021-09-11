@@ -21,3 +21,10 @@ interface FontFace {
   Promise<FontFace> load();
   readonly attribute Promise<FontFace> loaded;
 };
+
+// Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
+partial interface FontFace {
+  readonly attribute FontFaceFeatures features;
+  readonly attribute FontFaceVariations variations;
+  readonly attribute FontFacePalettes palettes;
+};

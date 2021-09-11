@@ -626,6 +626,305 @@
         ],
         "partial": false
       },
+      "FontFaceFeatures": {
+        "fragment": "interface FontFaceFeatures {\n  /* The CSSWG is still discussing what goes in here */\n};",
+        "type": "interface",
+        "name": "FontFaceFeatures",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FontFaceVariationAxis": {
+        "fragment": "interface FontFaceVariationAxis {\n  readonly attribute DOMString name;\n  readonly attribute DOMString axisTag;\n  readonly attribute double minimumValue;\n  readonly attribute double maximumValue;\n  readonly attribute double defaultValue;\n};",
+        "type": "interface",
+        "name": "FontFaceVariationAxis",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "axisTag",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "minimumValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "maximumValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "defaultValue",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FontFaceVariations": {
+        "fragment": "interface FontFaceVariations {\n  readonly setlike<FontFaceVariationAxis>;\n};",
+        "type": "interface",
+        "name": "FontFaceVariations",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "setlike",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FontFaceVariationAxis"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": true,
+            "async": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FontFacePalette": {
+        "fragment": "interface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute bool usableWithLightBackground;\n  readonly attribute bool usableWithDarkBackground;\n};",
+        "type": "interface",
+        "name": "FontFacePalette",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          },
+          {
+            "type": "attribute",
+            "name": "usableWithLightBackground",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usableWithDarkBackground",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "bool"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "FontFacePalettes": {
+        "fragment": "interface FontFacePalettes {\n  iterable<FontFacePalette>;\n  readonly attribute unsigned long length;\n  getter FontFacePalette (unsigned long index);\n};",
+        "type": "interface",
+        "name": "FontFacePalettes",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "iterable",
+            "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FontFacePalette"
+              }
+            ],
+            "arguments": [],
+            "extAttrs": [],
+            "readonly": false,
+            "async": false
+          },
+          {
+            "type": "attribute",
+            "name": "length",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FontFacePalette"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "index",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "unsigned long"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": "getter"
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "FontFaceSetLoadEventInit": {
         "fragment": "dictionary FontFaceSetLoadEventInit : EventInit {\n  sequence<FontFace> fontfaces = [];\n};",
         "type": "dictionary",
@@ -1162,6 +1461,63 @@
       }
     },
     "idlExtendedNames": {
+      "FontFace": [
+        {
+          "fragment": "partial interface FontFace {\n  readonly attribute FontFaceFeatures features;\n  readonly attribute FontFaceVariations variations;\n  readonly attribute FontFacePalettes palettes;\n};",
+          "type": "interface",
+          "name": "FontFace",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "features",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FontFaceFeatures"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "variations",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FontFaceVariations"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "palettes",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "FontFacePalettes"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
       "Document": [
         {
           "fragment": "Document includes FontFaceSource;",
@@ -1203,7 +1559,21 @@
         "BinaryData",
         "FontFaceDescriptors",
         "FontFaceLoadStatus",
-        "FontFace"
+        "FontFace",
+        "FontFaceFeatures",
+        "FontFaceVariations",
+        "FontFacePalettes"
+      ],
+      "FontFaceFeatures": [],
+      "FontFaceVariationAxis": [],
+      "FontFaceVariations": [
+        "FontFaceVariationAxis"
+      ],
+      "FontFacePalette": [
+        "bool"
+      ],
+      "FontFacePalettes": [
+        "FontFacePalette"
       ],
       "FontFaceSetLoadEventInit": [
         "EventInit",
@@ -1235,6 +1605,7 @@
     },
     "externalDependencies": [
       "CSSOMString",
+      "bool",
       "EventInit",
       "Event",
       "EventTarget",
