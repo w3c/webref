@@ -22300,7 +22300,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Crawled URL: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
-- Crawled version: 9 September 2021
+- Crawled version: 11 September 2021
 - Editor's Draft: [https://mimesniff.spec.whatwg.org/](https://mimesniff.spec.whatwg.org/)
 - Shortname: mimesniff
 
