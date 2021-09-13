@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-06T01:33:13.150Z",
+  "date": "2021-09-13T01:33:47.529Z",
   "options": {
     "publishedVersion": true,
     "output": "reports/tr",
@@ -20,8 +20,8 @@
     ]
   },
   "stats": {
-    "crawled": 430,
-    "errors": 0
+    "crawled": 437,
+    "errors": 1
   },
   "results": [
     {
@@ -689,7 +689,7 @@
         "sourcePath": "css-scoping-2/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Scoping Module Level 2",
+      "title": "CSS Cascading and Inheritance Level 6",
       "source": "spec",
       "shortTitle": "CSS Scoping 2",
       "tests": {
@@ -703,7 +703,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-scoping-2/",
       "generator": "bikeshed",
-      "date": "1 September 2021",
+      "date": "9 September 2021",
       "links": "links/css-scoping-2.json",
       "refs": "refs/css-scoping-2.json",
       "dfns": "dfns/css-scoping-2.json",
@@ -936,7 +936,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "generator": "bikeshed",
-      "date": "4 August 2021",
+      "date": "7 September 2021",
       "links": "links/web-animations-2.json",
       "refs": "refs/web-animations-2.json",
       "idl": "idl/web-animations-2.idl",
@@ -1080,7 +1080,7 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "31 August 2021",
+      "date": "9 September 2021",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -1258,7 +1258,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "3 September 2021",
+      "date": "11 September 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -1326,8 +1326,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "Immersive Web Community Group",
-          "url": "https://www.w3.org/community/immersive-web/"
+          "name": "Immersive Web Working Group",
+          "url": "https://www.w3.org/immersive-web/"
         }
       ],
       "nightly": {
@@ -1344,7 +1344,7 @@
       ],
       "crawled": "https://immersive-web.github.io/lighting-estimation/",
       "generator": "bikeshed",
-      "date": "2 September 2021",
+      "date": "8 September 2021",
       "links": "links/lighting-estimation.json",
       "refs": "refs/lighting-estimation.json",
       "idl": "idl/lighting-estimation.idl",
@@ -1383,7 +1383,7 @@
       ],
       "crawled": "https://infra.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "16 August 2021",
+      "date": "10 September 2021",
       "links": "links/infra.json",
       "refs": "refs/infra.json",
       "dfns": "dfns/infra.json",
@@ -1426,7 +1426,7 @@
       ],
       "crawled": "https://mimesniff.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "30 August 2021",
+      "date": "11 September 2021",
       "links": "links/mimesniff.json",
       "refs": "refs/mimesniff.json",
       "dfns": "dfns/mimesniff.json",
@@ -1689,7 +1689,7 @@
       ],
       "crawled": "https://streams.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "31 August 2021",
+      "date": "7 September 2021",
       "links": "links/streams.json",
       "refs": "refs/streams.json",
       "idl": "idl/streams.idl",
@@ -1816,7 +1816,7 @@
         "https://tc39.es/ecma262/multipage/"
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
-      "date": "25 August 2021",
+      "date": "9 September 2021",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -1857,7 +1857,7 @@
         "https://tc39.es/ecma402/"
       ],
       "crawled": "https://tc39.es/ecma402/",
-      "date": "15 August 2021",
+      "date": "9 September 2021",
       "links": "links/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
@@ -2232,12 +2232,13 @@
       "versions": [
         "https://tc39.es/proposal-realms/"
       ],
-      "crawled": "https://tc39.es/proposal-realms/",
-      "date": "19 July 2021",
-      "links": "links/tc39-realms.json",
-      "dfns": "dfns/tc39-realms.json",
-      "headings": "headings/tc39-realms.json",
-      "ids": "ids/tc39-realms.json"
+      "crawled": {
+        "url": "https://tc39.es/proposal-realms/",
+        "repository": "https://github.com/tc39/proposal-realms",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 48)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://tc39.es/proposal-regexp-match-indices/",
@@ -2404,7 +2405,7 @@
         "https://tc39.es/proposal-temporal/"
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
-      "date": "2 September 2021",
+      "date": "10 September 2021",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -3057,7 +3058,7 @@
       ],
       "crawled": "https://w3c.github.io/webrtc-encoded-transform/",
       "generator": "bikeshed",
-      "date": "26 August 2021",
+      "date": "9 September 2021",
       "links": "links/webrtc-encoded-transform.json",
       "refs": "refs/webrtc-encoded-transform.json",
       "idl": "idl/webrtc-encoded-transform.idl",
@@ -3155,6 +3156,51 @@
       "headings": "headings/web-bluetooth.json",
       "ids": "ids/web-bluetooth.json",
       "idlparsed": "idlparsed/web-bluetooth.json"
+    },
+    {
+      "url": "https://wicg.github.io/app-history/",
+      "seriesComposition": "full",
+      "shortname": "app-history",
+      "series": {
+        "shortname": "app-history",
+        "currentSpecification": "app-history",
+        "nightlyUrl": "https://wicg.github.io/app-history/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/app-history/",
+        "repository": "https://github.com/WICG/app-history",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "App History API",
+      "source": "spec",
+      "shortTitle": "App History API",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "app-history"
+        ]
+      },
+      "versions": [
+        "https://wicg.github.io/app-history/"
+      ],
+      "crawled": "https://wicg.github.io/app-history/",
+      "generator": "bikeshed",
+      "date": "9 September 2021",
+      "links": "links/app-history.json",
+      "refs": "refs/app-history.json",
+      "idl": "idl/app-history.idl",
+      "dfns": "dfns/app-history.json",
+      "headings": "headings/app-history.json",
+      "ids": "ids/app-history.json",
+      "idlparsed": "idlparsed/app-history.json"
     },
     {
       "url": "https://wicg.github.io/background-fetch/",
@@ -3425,6 +3471,45 @@
       "idlparsed": "idlparsed/content-index.json"
     },
     {
+      "url": "https://wicg.github.io/conversion-measurement-api/",
+      "seriesComposition": "full",
+      "shortname": "conversion-measurement-api",
+      "series": {
+        "shortname": "conversion-measurement-api",
+        "currentSpecification": "conversion-measurement-api",
+        "nightlyUrl": "https://wicg.github.io/conversion-measurement-api/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/conversion-measurement-api/",
+        "repository": "https://github.com/WICG/conversion-measurement-api",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Attribution Reporting",
+      "source": "spec",
+      "shortTitle": "Attribution Reporting",
+      "versions": [
+        "https://wicg.github.io/conversion-measurement-api/"
+      ],
+      "crawled": "https://wicg.github.io/conversion-measurement-api/",
+      "generator": "bikeshed",
+      "date": "10 September 2021",
+      "links": "links/conversion-measurement-api.json",
+      "refs": "refs/conversion-measurement-api.json",
+      "idl": "idl/conversion-measurement-api.idl",
+      "dfns": "dfns/conversion-measurement-api.json",
+      "headings": "headings/conversion-measurement-api.json",
+      "ids": "ids/conversion-measurement-api.json",
+      "idlparsed": "idlparsed/conversion-measurement-api.json"
+    },
+    {
       "url": "https://wicg.github.io/cookie-store/",
       "seriesComposition": "full",
       "shortname": "cookie-store",
@@ -3507,6 +3592,43 @@
       "headings": "headings/crash-reporting.json",
       "ids": "ids/crash-reporting.json",
       "idlparsed": "idlparsed/crash-reporting.json"
+    },
+    {
+      "url": "https://wicg.github.io/credentiallessness/",
+      "seriesComposition": "full",
+      "shortname": "credentiallessness",
+      "series": {
+        "shortname": "credentiallessness",
+        "currentSpecification": "credentiallessness",
+        "nightlyUrl": "https://wicg.github.io/credentiallessness/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/credentiallessness/",
+        "repository": "https://github.com/WICG/credentiallessness",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Cross-Origin-Embedder-Policy: credentialless",
+      "source": "spec",
+      "shortTitle": "Cross-Origin-Embedder-Policy: credentialless",
+      "versions": [
+        "https://wicg.github.io/credentiallessness/"
+      ],
+      "crawled": "https://wicg.github.io/credentiallessness/",
+      "generator": "bikeshed",
+      "date": "29 July 2021",
+      "links": "links/credentiallessness.json",
+      "refs": "refs/credentiallessness.json",
+      "dfns": "dfns/credentiallessness.json",
+      "headings": "headings/credentiallessness.json",
+      "ids": "ids/credentiallessness.json"
     },
     {
       "url": "https://wicg.github.io/css-parser-api/",
@@ -3861,6 +3983,45 @@
       "idlparsed": "idlparsed/event-timing.json"
     },
     {
+      "url": "https://wicg.github.io/eyedropper-api/",
+      "seriesComposition": "full",
+      "shortname": "eyedropper-api",
+      "series": {
+        "shortname": "eyedropper-api",
+        "currentSpecification": "eyedropper-api",
+        "nightlyUrl": "https://wicg.github.io/eyedropper-api/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/eyedropper-api/",
+        "repository": "https://github.com/WICG/eyedropper-api",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "EyeDropper API",
+      "source": "spec",
+      "shortTitle": "EyeDropper API",
+      "versions": [
+        "https://wicg.github.io/eyedropper-api/"
+      ],
+      "crawled": "https://wicg.github.io/eyedropper-api/",
+      "generator": "respec",
+      "date": "03 September 2021",
+      "links": "links/eyedropper-api.json",
+      "refs": "refs/eyedropper-api.json",
+      "idl": "idl/eyedropper-api.idl",
+      "dfns": "dfns/eyedropper-api.json",
+      "headings": "headings/eyedropper-api.json",
+      "ids": "ids/eyedropper-api.json",
+      "idlparsed": "idlparsed/eyedropper-api.json"
+    },
+    {
       "url": "https://wicg.github.io/file-system-access/",
       "seriesComposition": "full",
       "shortname": "file-system-access",
@@ -4115,6 +4276,45 @@
       "dfns": "dfns/import-maps.json",
       "headings": "headings/import-maps.json",
       "ids": "ids/import-maps.json"
+    },
+    {
+      "url": "https://wicg.github.io/ink-enhancement/",
+      "seriesComposition": "full",
+      "shortname": "ink-enhancement",
+      "series": {
+        "shortname": "ink-enhancement",
+        "currentSpecification": "ink-enhancement",
+        "nightlyUrl": "https://wicg.github.io/ink-enhancement/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/ink-enhancement/",
+        "repository": "https://github.com/WICG/ink-enhancement",
+        "sourcePath": "index.bs",
+        "filename": "index.html"
+      },
+      "title": "Ink API",
+      "source": "spec",
+      "shortTitle": "Ink API",
+      "versions": [
+        "https://wicg.github.io/ink-enhancement/"
+      ],
+      "crawled": "https://wicg.github.io/ink-enhancement/",
+      "generator": "bikeshed",
+      "date": "13 July 2021",
+      "links": "links/ink-enhancement.json",
+      "refs": "refs/ink-enhancement.json",
+      "idl": "idl/ink-enhancement.idl",
+      "dfns": "dfns/ink-enhancement.json",
+      "headings": "headings/ink-enhancement.json",
+      "ids": "ids/ink-enhancement.json",
+      "idlparsed": "idlparsed/ink-enhancement.json"
     },
     {
       "url": "https://wicg.github.io/input-device-capabilities/",
@@ -5548,6 +5748,45 @@
       "idlparsed": "idlparsed/ua-client-hints.json"
     },
     {
+      "url": "https://wicg.github.io/urlpattern/",
+      "seriesComposition": "full",
+      "shortname": "urlpattern",
+      "series": {
+        "shortname": "urlpattern",
+        "currentSpecification": "urlpattern",
+        "nightlyUrl": "https://wicg.github.io/urlpattern/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/urlpattern/",
+        "repository": "https://github.com/WICG/urlpattern",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "URLPattern API",
+      "source": "spec",
+      "shortTitle": "URLPattern API",
+      "versions": [
+        "https://wicg.github.io/urlpattern/"
+      ],
+      "crawled": "https://wicg.github.io/urlpattern/",
+      "generator": "bikeshed",
+      "date": "10 September 2021",
+      "links": "links/urlpattern.json",
+      "refs": "refs/urlpattern.json",
+      "idl": "idl/urlpattern.idl",
+      "dfns": "dfns/urlpattern.json",
+      "headings": "headings/urlpattern.json",
+      "ids": "ids/urlpattern.json",
+      "idlparsed": "idlparsed/urlpattern.json"
+    },
+    {
       "url": "https://wicg.github.io/user-preference-media-features-headers/",
       "seriesComposition": "full",
       "shortname": "user-preference-media-features-headers",
@@ -5704,7 +5943,7 @@
       ],
       "crawled": "https://wicg.github.io/visual-viewport/",
       "generator": "respec",
-      "date": "27 May 2021",
+      "date": "10 September 2021",
       "links": "links/visual-viewport.json",
       "refs": "refs/visual-viewport.json",
       "idl": "idl/visual-viewport.idl",
@@ -5921,7 +6160,7 @@
       ],
       "crawled": "https://wicg.github.io/webusb/",
       "generator": "bikeshed",
-      "date": "30 March 2021",
+      "date": "9 September 2021",
       "links": "links/webusb.json",
       "refs": "refs/webusb.json",
       "idl": "idl/webusb.idl",
@@ -5965,7 +6204,7 @@
         "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "idlparsed": "idlparsed/ANGLE_instanced_arrays.json"
@@ -6005,7 +6244,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "idlparsed": "idlparsed/EXT_blend_minmax.json"
@@ -6045,7 +6284,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl",
       "idlparsed": "idlparsed/EXT_clip_cull_distance.json"
@@ -6085,7 +6324,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "idlparsed": "idlparsed/EXT_color_buffer_float.json"
@@ -6125,7 +6364,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "idlparsed": "idlparsed/EXT_color_buffer_half_float.json"
@@ -6165,7 +6404,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "idlparsed": "idlparsed/EXT_disjoint_timer_query_webgl2.json"
@@ -6205,7 +6444,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "idlparsed": "idlparsed/EXT_disjoint_timer_query.json"
@@ -6245,7 +6484,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "idlparsed": "idlparsed/EXT_float_blend.json"
@@ -6285,7 +6524,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "idlparsed": "idlparsed/EXT_frag_depth.json"
@@ -6325,7 +6564,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "idlparsed": "idlparsed/EXT_shader_texture_lod.json"
@@ -6365,7 +6604,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "idlparsed": "idlparsed/EXT_sRGB.json"
@@ -6405,7 +6644,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "idlparsed": "idlparsed/EXT_texture_compression_bptc.json"
@@ -6445,7 +6684,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "idlparsed": "idlparsed/EXT_texture_compression_rgtc.json"
@@ -6485,7 +6724,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "idlparsed": "idlparsed/EXT_texture_filter_anisotropic.json"
@@ -6525,7 +6764,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "idlparsed": "idlparsed/EXT_texture_norm16.json"
@@ -6565,7 +6804,7 @@
         "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "idlparsed": "idlparsed/KHR_parallel_shader_compile.json"
@@ -6605,7 +6844,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "idlparsed": "idlparsed/OES_draw_buffers_indexed.json"
@@ -6645,7 +6884,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "idlparsed": "idlparsed/OES_element_index_uint.json"
@@ -6685,7 +6924,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "idlparsed": "idlparsed/OES_fbo_render_mipmap.json"
@@ -6725,7 +6964,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "idlparsed": "idlparsed/OES_standard_derivatives.json"
@@ -6765,7 +7004,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "idlparsed": "idlparsed/OES_texture_float_linear.json"
@@ -6805,7 +7044,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "idlparsed": "idlparsed/OES_texture_float.json"
@@ -6845,7 +7084,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "idlparsed": "idlparsed/OES_texture_half_float_linear.json"
@@ -6885,7 +7124,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "idlparsed": "idlparsed/OES_texture_half_float.json"
@@ -6925,7 +7164,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "idlparsed": "idlparsed/OES_vertex_array_object.json"
@@ -6965,7 +7204,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "idlparsed": "idlparsed/OVR_multiview2.json"
@@ -7005,7 +7244,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "idlparsed": "idlparsed/WEBGL_blend_equation_advanced_coherent.json"
@@ -7045,7 +7284,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "idlparsed": "idlparsed/WEBGL_color_buffer_float.json"
@@ -7085,7 +7324,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_astc.json"
@@ -7125,7 +7364,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_etc.json"
@@ -7165,7 +7404,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_etc1.json"
@@ -7205,7 +7444,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_pvrtc.json"
@@ -7245,7 +7484,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_s3tc_srgb.json"
@@ -7285,7 +7524,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_s3tc.json"
@@ -7325,7 +7564,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "idlparsed": "idlparsed/WEBGL_debug_renderer_info.json"
@@ -7365,7 +7604,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "idlparsed": "idlparsed/WEBGL_debug_shaders.json"
@@ -7405,7 +7644,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "idlparsed": "idlparsed/WEBGL_depth_texture.json"
@@ -7445,7 +7684,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "idlparsed": "idlparsed/WEBGL_draw_buffers.json"
@@ -7485,7 +7724,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "idlparsed": "idlparsed/WEBGL_draw_instanced_base_vertex_base_instance.json"
@@ -7525,7 +7764,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "idlparsed": "idlparsed/WEBGL_lose_context.json"
@@ -7565,7 +7804,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "idlparsed": "idlparsed/WEBGL_multi_draw_instanced_base_vertex_base_instance.json"
@@ -7605,7 +7844,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-      "date": "2 September 2021",
+      "date": "9 September 2021",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "idlparsed": "idlparsed/WEBGL_multi_draw.json"
@@ -7648,7 +7887,7 @@
         "https://www.khronos.org/registry/webgl/specs/latest/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
-      "date": "18 August 2021",
+      "date": "9 September 2021",
       "links": "links/webgl1.json",
       "refs": "refs/webgl1.json",
       "idl": "idl/webgl1.idl",
@@ -7729,7 +7968,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -7832,7 +8071,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -7863,7 +8102,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -7894,7 +8133,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -8142,7 +8381,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -8173,7 +8412,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -8276,7 +8515,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -8451,7 +8690,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "6 September 2021",
+      "date": "13 September 2021",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -12065,7 +12304,7 @@
         "sourcePath": "css-scrollbars-1/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Scrollbars Module Level 1",
+      "title": "CSS Scrollbars Styling Module Level 1",
       "source": "w3c",
       "shortTitle": "CSS Scrollbars 1",
       "tests": {
@@ -12080,7 +12319,7 @@
       ],
       "crawled": "https://www.w3.org/TR/css-scrollbars-1/",
       "generator": "bikeshed",
-      "date": "29 August 2021",
+      "date": "8 September 2021",
       "links": "links/css-scrollbars-1.json",
       "refs": "refs/css-scrollbars-1.json",
       "css": "css/css-scrollbars.json",
@@ -16239,7 +16478,7 @@
       ],
       "crawled": "https://www.w3.org/TR/payment-request/",
       "generator": "respec",
-      "date": "27 August 2021",
+      "date": "07 September 2021",
       "links": "links/payment-request.json",
       "refs": "refs/payment-request.json",
       "idl": "idl/payment-request.idl",
@@ -16395,7 +16634,7 @@
       ],
       "crawled": "https://www.w3.org/TR/permissions/",
       "generator": "respec",
-      "date": "31 August 2021",
+      "date": "07 September 2021",
       "links": "links/permissions.json",
       "refs": "refs/permissions.json",
       "idl": "idl/permissions.idl",
@@ -17209,7 +17448,7 @@
       ],
       "crawled": "https://www.w3.org/TR/screen-orientation/",
       "generator": "respec",
-      "date": "17 June 2021",
+      "date": "06 September 2021",
       "links": "links/screen-orientation.json",
       "refs": "refs/screen-orientation.json",
       "idl": "idl/screen-orientation.idl",
@@ -17260,7 +17499,7 @@
       ],
       "crawled": "https://www.w3.org/TR/screen-wake-lock/",
       "generator": "respec",
-      "date": "26 August 2021",
+      "date": "09 September 2021",
       "links": "links/screen-wake-lock.json",
       "refs": "refs/screen-wake-lock.json",
       "idl": "idl/screen-wake-lock.idl",
@@ -17319,6 +17558,51 @@
       "headings": "headings/secure-contexts.json",
       "ids": "ids/secure-contexts.json",
       "idlparsed": "idlparsed/secure-contexts.json"
+    },
+    {
+      "url": "https://www.w3.org/TR/secure-payment-confirmation/",
+      "seriesComposition": "full",
+      "shortname": "secure-payment-confirmation",
+      "series": {
+        "shortname": "secure-payment-confirmation",
+        "currentSpecification": "secure-payment-confirmation",
+        "releaseUrl": "https://www.w3.org/TR/secure-payment-confirmation/",
+        "nightlyUrl": "https://w3c.github.io/secure-payment-confirmation"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Payments Working Group",
+          "url": "https://www.w3.org/Payments/WG/"
+        }
+      ],
+      "release": {
+        "url": "https://www.w3.org/TR/secure-payment-confirmation/",
+        "filename": "Overview.html"
+      },
+      "nightly": {
+        "url": "https://w3c.github.io/secure-payment-confirmation",
+        "repository": "https://github.com/w3c/secure-payment-confirmation",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Secure Payment Confirmation",
+      "source": "w3c",
+      "shortTitle": "Secure Payment Confirmation",
+      "versions": [
+        "https://www.w3.org/TR/secure-payment-confirmation/",
+        "https://w3c.github.io/secure-payment-confirmation"
+      ],
+      "crawled": "https://www.w3.org/TR/secure-payment-confirmation/",
+      "generator": "bikeshed",
+      "date": "31 August 2021",
+      "links": "links/secure-payment-confirmation.json",
+      "refs": "refs/secure-payment-confirmation.json",
+      "idl": "idl/secure-payment-confirmation.idl",
+      "dfns": "dfns/secure-payment-confirmation.json",
+      "headings": "headings/secure-payment-confirmation.json",
+      "ids": "ids/secure-payment-confirmation.json",
+      "idlparsed": "idlparsed/secure-payment-confirmation.json"
     },
     {
       "url": "https://www.w3.org/TR/selection-api/",
@@ -18838,7 +19122,7 @@
       ],
       "crawled": "https://www.w3.org/TR/web-share/",
       "generator": "respec",
-      "date": "03 September 2021",
+      "date": "13 September 2021",
       "links": "links/web-share.json",
       "refs": "refs/web-share.json",
       "idl": "idl/web-share.idl",
@@ -18992,7 +19276,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "generator": "bikeshed",
-      "date": "23 August 2021",
+      "date": "8 September 2021",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "idl": "idl/webcodecs.idl",
@@ -19145,7 +19429,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "generator": "bikeshed",
-      "date": "31 August 2021",
+      "date": "10 September 2021",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -19188,7 +19472,7 @@
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
-          "WebIDL"
+          "webidl"
         ]
       },
       "versions": [
@@ -19293,7 +19577,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "generator": "bikeshed",
-      "date": "3 September 2021",
+      "date": "8 September 2021",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20115,7 +20399,7 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "generator": "bikeshed",
-      "date": "31 August 2021",
+      "date": "10 September 2021",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

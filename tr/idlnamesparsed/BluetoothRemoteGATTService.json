@@ -1,5 +1,6 @@
 {
   "name": "BluetoothRemoteGATTService",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "Web Bluetooth",
@@ -26,6 +27,7 @@
   ],
   "inheritance": {
     "name": "EventTarget",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -41,6 +43,7 @@
   "includes": [
     {
       "name": "CharacteristicEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Web Bluetooth",
@@ -55,6 +58,7 @@
     },
     {
       "name": "ServiceEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Web Bluetooth",

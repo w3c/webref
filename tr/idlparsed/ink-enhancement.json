@@ -1,0 +1,314 @@
+{
+  "spec": {
+    "title": "Ink API",
+    "url": "https://wicg.github.io/ink-enhancement/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "InkPresenter",
+          "Navigator"
+        ]
+      }
+    },
+    "idlNames": {
+      "Ink": {
+        "fragment": "interface Ink {\n    Promise<InkPresenter> requestPresenter(\n        optional InkPresenterParam? param = null);\n};",
+        "type": "interface",
+        "name": "Ink",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "requestPresenter",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "InkPresenter"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "param",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": true,
+                  "union": false,
+                  "idlType": "InkPresenterParam"
+                },
+                "default": {
+                  "type": "null"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "InkPresenterParam": {
+        "fragment": "dictionary InkPresenterParam {\n    Element? presentationArea = null;\n};",
+        "type": "dictionary",
+        "name": "InkPresenterParam",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "presentationArea",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "InkPresenter": {
+        "fragment": "[Exposed=Window]\ninterface InkPresenter {\n    readonly attribute Element? presentationArea;\n    readonly attribute unsigned long expectedImprovement;\n\n    undefined updateInkTrailStartPoint(PointerEvent event, InkTrailStyle style);\n};",
+        "type": "interface",
+        "name": "InkPresenter",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "attribute",
+            "name": "presentationArea",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "Element"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "expectedImprovement",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "updateInkTrailStartPoint",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "event",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PointerEvent"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "style",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "InkTrailStyle"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "InkTrailStyle": {
+        "fragment": "dictionary InkTrailStyle {\n    required DOMString color;\n    required unrestricted double diameter;\n};",
+        "type": "dictionary",
+        "name": "InkTrailStyle",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "color",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "diameter",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unrestricted double"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Navigator": [
+        {
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SameObject] readonly attribute Ink ink;\n};",
+          "type": "interface",
+          "name": "Navigator",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "ink",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Ink"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SameObject",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "InkPresenter",
+        "Navigator"
+      ]
+    },
+    "dependencies": {
+      "Ink": [
+        "InkPresenter",
+        "InkPresenterParam"
+      ],
+      "InkPresenterParam": [
+        "Element"
+      ],
+      "InkPresenter": [
+        "Element",
+        "PointerEvent",
+        "InkTrailStyle"
+      ],
+      "InkTrailStyle": [],
+      "Navigator": [
+        "Ink"
+      ]
+    },
+    "externalDependencies": [
+      "Element",
+      "PointerEvent",
+      "Navigator"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

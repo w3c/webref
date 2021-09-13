@@ -1,5 +1,6 @@
 {
   "name": "Element",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -131,6 +132,7 @@
   ],
   "inheritance": {
     "name": "Node",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -142,6 +144,7 @@
     "extended": [],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -159,6 +162,7 @@
   "includes": [
     {
       "name": "ParentNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -173,6 +177,7 @@
     },
     {
       "name": "NonDocumentTypeChildNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -187,6 +192,7 @@
     },
     {
       "name": "ChildNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -201,6 +207,7 @@
     },
     {
       "name": "Slottable",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -215,6 +222,7 @@
     },
     {
       "name": "AccessibilityRole",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
@@ -229,6 +237,7 @@
     },
     {
       "name": "AriaAttributes",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
@@ -243,6 +252,7 @@
     },
     {
       "name": "Animatable",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Web Animations",

@@ -1,5 +1,6 @@
 {
   "name": "Navigator",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "HTML Standard",
@@ -99,6 +100,13 @@
         "url": "https://wicg.github.io/get-installed-related-apps/spec/"
       },
       "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};"
+    },
+    {
+      "spec": {
+        "title": "Ink API",
+        "url": "https://wicg.github.io/ink-enhancement/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SameObject] readonly attribute Ink ink;\n};"
     },
     {
       "spec": {
@@ -378,6 +386,7 @@
   "includes": [
     {
       "name": "NavigatorID",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -400,6 +409,7 @@
     },
     {
       "name": "NavigatorLanguage",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -414,6 +424,7 @@
     },
     {
       "name": "NavigatorOnLine",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -428,6 +439,7 @@
     },
     {
       "name": "NavigatorContentUtils",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -442,6 +454,7 @@
     },
     {
       "name": "NavigatorCookies",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -456,6 +469,7 @@
     },
     {
       "name": "NavigatorPlugins",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -469,6 +483,7 @@
     },
     {
       "name": "NavigatorConcurrentHardware",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -483,6 +498,7 @@
     },
     {
       "name": "NavigatorStorage",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Storage Standard",
@@ -497,6 +513,7 @@
     },
     {
       "name": "NavigatorBadge",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Badging API",
@@ -511,6 +528,7 @@
     },
     {
       "name": "NavigatorFonts",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Local Font Access API",
@@ -525,6 +543,7 @@
     },
     {
       "name": "NavigatorNetworkInformation",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Network Information API",
@@ -539,6 +558,7 @@
     },
     {
       "name": "NavigatorUA",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "User-Agent Client Hints",
@@ -553,6 +573,7 @@
     },
     {
       "name": "NavigatorLocks",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Web Locks API",
@@ -567,6 +588,7 @@
     },
     {
       "name": "NavigatorAutomationInformation",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebDriver",
@@ -581,6 +603,7 @@
     },
     {
       "name": "NavigatorGPU",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",
@@ -595,6 +618,7 @@
     },
     {
       "name": "NavigatorML",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "Web Neural Network API",

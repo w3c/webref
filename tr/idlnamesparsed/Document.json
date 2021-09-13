@@ -1,5 +1,6 @@
 {
   "name": "Document",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "DOM Standard",
@@ -166,6 +167,7 @@
   ],
   "inheritance": {
     "name": "Node",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -177,6 +179,7 @@
     "extended": [],
     "inheritance": {
       "name": "EventTarget",
+      "type": "interface",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -194,6 +197,7 @@
   "includes": [
     {
       "name": "NonElementParentNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -208,6 +212,7 @@
     },
     {
       "name": "DocumentOrShadowRoot",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -265,6 +270,7 @@
     },
     {
       "name": "ParentNode",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -279,6 +285,7 @@
     },
     {
       "name": "XPathEvaluatorBase",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "DOM Standard",
@@ -293,6 +300,7 @@
     },
     {
       "name": "GlobalEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -343,6 +351,7 @@
     },
     {
       "name": "DocumentAndElementEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",

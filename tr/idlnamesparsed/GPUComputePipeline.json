@@ -1,5 +1,6 @@
 {
   "name": "GPUComputePipeline",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "WebGPU",
@@ -28,6 +29,7 @@
   "includes": [
     {
       "name": "GPUObjectBase",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",
@@ -42,6 +44,7 @@
     },
     {
       "name": "GPUPipelineBase",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",

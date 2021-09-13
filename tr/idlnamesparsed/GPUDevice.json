@@ -1,5 +1,6 @@
 {
   "name": "GPUDevice",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "WebGPU",
@@ -40,6 +41,7 @@
   ],
   "inheritance": {
     "name": "EventTarget",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -55,6 +57,7 @@
   "includes": [
     {
       "name": "GPUObjectBase",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "WebGPU",

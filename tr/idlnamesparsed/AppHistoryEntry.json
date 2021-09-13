@@ -1,0 +1,29 @@
+{
+  "name": "AppHistoryEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "App History API",
+      "url": "https://wicg.github.io/app-history/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  // TODO event handlers\n};",
+    "href": "https://wicg.github.io/app-history/#apphistoryentry"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

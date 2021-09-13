@@ -1,8 +1,26 @@
 % Reffy crawl
 % Reffy
-% September 06, 2021
+% September 13, 2021
 
-430 specifications were crawled in this report.
+437 specifications were crawled in this report.
+
+
+## Specifications that could not be rendered
+
+Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
+
+- [Realms API]([object Object]): `Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed
+    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)
+    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
+    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
+    at async Promise.all (index 48)
+    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
+    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
+
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -29,7 +47,6 @@
 - [Private Methods and Accessors Proposal](https://tc39.es/proposal-private-methods/)
 - [Proposal-array-find-from-last](https://tc39.es/proposal-array-find-from-last/)
 - [Public and private instance fields proposal](https://tc39.es/proposal-class-fields/)
-- [Realms API](https://tc39.es/proposal-realms/)
 - [RegExp Match Indices](https://tc39.es/proposal-regexp-match-indices/)
 - [Relative Indexing Method](https://tc39.es/proposal-relative-indexing-method/)
 - [Resizable ArrayBuffer and growable SharedArrayBuffer](https://tc39.es/proposal-resizablearraybuffer/)
@@ -86,7 +103,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 78 specifications found
+=> 77 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -236,6 +253,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
     * `URL` but does not reference [URL Standard](https://url.spec.whatwg.org/)
 - [Remote Playback API](https://www.w3.org/TR/remote-playback/) uses `EventTarget` but does not reference [DOM Standard](https://dom.spec.whatwg.org/)
+- [Secure Payment Confirmation](https://www.w3.org/TR/secure-payment-confirmation/) uses:
+    * `AuthenticationExtensionsClientInputs` but does not reference [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
+    * `CollectedClientData` but does not reference [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://www.w3.org/TR/webauthn-3/)
 - [Subresource Integrity](https://www.w3.org/TR/SRI/) uses:
     * `HTMLLinkElement` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
     * `HTMLScriptElement` but does not reference [HTML Standard](https://html.spec.whatwg.org/multipage/)
@@ -297,7 +317,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `XRWebGLBinding` but does not reference [WebXR Layers API Level 1](https://www.w3.org/TR/webxrlayers-1/)
     * `WebGLTexture` but does not reference [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
-=> 60 missing references for IDL definitions found in 27 specifications
+=> 62 missing references for IDL definitions found in 28 specifications
 
 
 ## No definition for CSS properties
@@ -770,7 +790,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `submitter` with type `dict-member` for [`SubmitEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#submiteventinit), but found [`submitter`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-submitevent-submitter) with type `attribute` for `SubmitEvent`
     * `constructor(type, eventInitDict)` with type `constructor` for [`FormDataEvent`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataevent), but found [`constructor`](https://html.spec.whatwg.org/multipage/custom-elements.html#concept-custom-element-definition-constructor) with type `dfn` for `custom element definition`
     * `formData` with type `dict-member` for [`FormDataEventInit`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#formdataeventinit), but found [`formData`](https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#dom-formdataevent-formdata) with type `attribute` for `FormDataEvent`
-    * `supports(type)` with type `method` for [`HTMLScriptElement`](https://html.spec.whatwg.org/multipage/scripting.html#htmlscriptelement), but found [`supports`](https://html.spec.whatwg.org/multipage/infrastructure.html#dom-domtokenlist-supports) with type `dfn`
     * `flatten` with type `dict-member` for [`AssignedNodesOptions`](https://html.spec.whatwg.org/multipage/scripting.html#assignednodesoptions), but found [`flatten`](https://html.spec.whatwg.org/multipage/scripting.html#dom-assignednodesoptions-flatten) with type `dict-member` for `AssignedNodeOptions`
     * `CanvasImageSource` with type `typedef`, but found [`CanvasImageSource`](https://html.spec.whatwg.org/multipage/canvas.html#canvasimagesource) with type `dfn`
     * `"butt"` with type `enum-value` for [`CanvasLineCap`](https://html.spec.whatwg.org/multipage/canvas.html#canvaslinecap)
@@ -1384,7 +1403,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `multiDrawArraysInstancedBaseInstanceWEBGL(mode, firstsList, firstsOffset, countsList, countsOffset, instanceCountsList, instanceCountsOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
     * `multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(mode, countsList, countsOffset, type, offsetsList, offsetsOffset, instanceCountsList, instanceCountsOffset, baseVerticesList, baseVerticesOffset, baseInstancesList, baseInstancesOffset, drawCount)` with type `method`
 
-=> 667 properties without definition found in 59 specifications
+=> 666 properties without definition found in 59 specifications
 
 
 ## Possibly no definition for CSS properties
@@ -1588,6 +1607,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/) links to:
+    * [`https://www.w3.org/TR/css-style-attr/`](https://www.w3.org/TR/css-style-attr/) but does not list it in its references
+    * [`https://www.w3.org/TR/selectors/`](https://www.w3.org/TR/selectors/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-4/`](https://www.w3.org/TR/css-cascade-4/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade-3/`](https://www.w3.org/TR/css-cascade-3/) but does not list it in its references
+    * [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -1843,7 +1868,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2013/CR-css-cascade-3-20131003/`](https://www.w3.org/TR/2013/CR-css-cascade-3-20131003/) but does not list it in its references
     * [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/) but does not list it in its references
     * [`https://www.w3.org/TR/2013/WD-selectors4-20130502/`](https://www.w3.org/TR/2013/WD-selectors4-20130502/) but does not list it in its references
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/) links to [`https://www.w3.org/TR/css-scoping-1/`](https://www.w3.org/TR/css-scoping-1/) but does not list it in its references
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/css-scroll-anchoring-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
@@ -1852,7 +1876,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to:
+- [CSS Scrollbars Styling Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
@@ -2151,6 +2175,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2015/WD-svg-markers-20150407/`](https://www.w3.org/TR/2015/WD-svg-markers-20150407/) but does not list it in its references
     * [`https://www.w3.org/TR/2015/WD-svg-strokes-20150407/`](https://www.w3.org/TR/2015/WD-svg-strokes-20150407/) but does not list it in its references
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
+- [Secure Payment Confirmation](https://www.w3.org/TR/secure-payment-confirmation/) links to [`https://www.w3.org/TR/webauthn/`](https://www.w3.org/TR/webauthn/) but does not list it in its references
 - [Selection API](https://www.w3.org/TR/selection-api/) links to [`https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/`](https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/) but does not list it in its references
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) links to:
     * [`https://www.w3.org/TR/selectors4/`](https://www.w3.org/TR/selectors4/) but does not list it in its references
@@ -2253,9 +2278,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but does not list it in its references
     * [`https://w3c.github.io/page-visibility/`](https://w3c.github.io/page-visibility/) but does not list it in its references
     * [`https://www.w3.org/TR/permissions-policy/`](https://www.w3.org/TR/permissions-policy/) but does not list it in its references
+- [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 690 missing references for links found in 183 specifications
+=> 696 missing references for links found in 185 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2271,6 +2297,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/html/`](https://www.w3.org/TR/html/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/2006/REC-xml-names-20060816/`](https://www.w3.org/TR/2006/REC-xml-names-20060816/) but related reference "XML-NAMES" uses URL [`https://www.w3.org/TR/xml-names/`](https://www.w3.org/TR/xml-names/)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/) links to:
+    * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/) but related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
+    * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
 - [Background Fetch](https://wicg.github.io/background-fetch/) links to:
     * [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
     * [`https://w3c.github.io/image-resource/`](https://w3c.github.io/image-resource/) but related reference "IMAGE-RESOURCE" uses URL [`https://www.w3.org/TR/image-resource/`](https://www.w3.org/TR/image-resource/)
@@ -2391,7 +2420,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Scroll Snap Module Level 1](https://www.w3.org/TR/css-scroll-snap-1/) links to:
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW-1" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
-- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Scrollbars Styling Module Level 1](https://www.w3.org/TR/css-scrollbars-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Shapes Module Level 2](https://drafts.csswg.org/css-shapes-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Spatial Navigation Level 1](https://www.w3.org/TR/css-nav-1/) links to:
     * [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
@@ -2597,6 +2626,11 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/`](https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/) but related reference "UAAG20" uses URL [`https://www.w3.org/TR/UAAG20/`](https://www.w3.org/TR/UAAG20/)
     * [`https://www.w3.org/TR/2008/REC-CSS2-20080411/`](https://www.w3.org/TR/2008/REC-CSS2-20080411/) but related reference "CSS2" uses URL [`https://www.w3.org/TR/CSS2`](https://www.w3.org/TR/CSS2)
 - [Secure Contexts](https://www.w3.org/TR/secure-contexts/) links to [`https://w3c.github.io/webappsec-mixed-content/`](https://w3c.github.io/webappsec-mixed-content/) but related reference "MIX" uses URL [`https://www.w3.org/TR/mixed-content/`](https://www.w3.org/TR/mixed-content/)
+- [Secure Payment Confirmation](https://www.w3.org/TR/secure-payment-confirmation/) links to:
+    * [`https://w3c.github.io/webauthn/`](https://w3c.github.io/webauthn/) but related reference "WEBAUTHN-3" uses URL [`https://www.w3.org/TR/webauthn-3/`](https://www.w3.org/TR/webauthn-3/)
+    * [`https://w3c.github.io/payment-request/`](https://w3c.github.io/payment-request/) but related reference "PAYMENT-REQUEST" uses URL [`https://www.w3.org/TR/payment-request/`](https://www.w3.org/TR/payment-request/)
+    * [`https://w3c.github.io/payment-method-id/`](https://w3c.github.io/payment-method-id/) but related reference "PAYMENT-METHOD-ID" uses URL [`https://www.w3.org/TR/payment-method-id/`](https://www.w3.org/TR/payment-method-id/)
+    * [`https://w3c.github.io/webappsec-credential-management/`](https://w3c.github.io/webappsec-credential-management/) but related reference "CREDENTIAL-MANAGEMENT-1" uses URL [`https://www.w3.org/TR/credential-management-1/`](https://www.w3.org/TR/credential-management-1/)
 - [Selection API](https://www.w3.org/TR/selection-api/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [Selectors Level 4](https://www.w3.org/TR/selectors-4/) links to [`https://www.w3.org/TR/css3-values/`](https://www.w3.org/TR/css3-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [Service Workers 1](https://www.w3.org/TR/service-workers-1/) links to:
@@ -2682,19 +2716,26 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR DOM Overlays Module](https://www.w3.org/TR/webxr-dom-overlays-1/) links to [`https://w3c.github.io/uievents/`](https://w3c.github.io/uievents/) but related reference "UIEVENTS" uses URL [`https://www.w3.org/TR/uievents/`](https://www.w3.org/TR/uievents/)
 - [WebXR Gamepads Module - Level 1](https://www.w3.org/TR/webxr-gamepads-module-1/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 
-=> 338 inconsistent references for links found in 173 specifications
+=> 344 inconsistent references for links found in 175 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
 
 ## External links to private terms
 
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/):
+     * [`https://fetch.spec.whatwg.org/#concept-main-fetch`](https://fetch.spec.whatwg.org/#concept-main-fetch)
+     * [`https://storage.spec.whatwg.org/#storage-bottle`](https://storage.spec.whatwg.org/#storage-bottle)
 - [Clear Site Data](https://www.w3.org/TR/clear-site-data/):
      * [`https://fetch.spec.whatwg.org/#concept-http-network-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-fetch)
 - [Content Security Policy Level 3](https://www.w3.org/TR/CSP3/):
      * [`https://fetch.spec.whatwg.org/#concept-main-fetch`](https://fetch.spec.whatwg.org/#concept-main-fetch)
      * [`https://url.spec.whatwg.org/#concept-base-url`](https://url.spec.whatwg.org/#concept-base-url)
      * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/):
+     * [`https://fetch.spec.whatwg.org/#concept-cors-check`](https://fetch.spec.whatwg.org/#concept-cors-check)
+     * [`https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check`](https://fetch.spec.whatwg.org/#cross-origin-resource-policy-internal-check)
+     * [`https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch`](https://fetch.spec.whatwg.org/#concept-http-network-or-cache-fetch)
 - [DeviceOrientation Event Specification](https://www.w3.org/TR/orientation-event/):
      * [`https://compat.spec.whatwg.org/#event-orientationchange`](https://compat.spec.whatwg.org/#event-orientationchange)
 - [Event Timing API](https://wicg.github.io/event-timing/):
@@ -2763,6 +2804,14 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event`](https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event)
 - [Trusted Types](https://w3c.github.io/webappsec-trusted-types/dist/spec/):
      * [`https://dom.spec.whatwg.org/#handle-attribute-changes`](https://dom.spec.whatwg.org/#handle-attribute-changes)
+- [URLPattern API](https://wicg.github.io/urlpattern/):
+     * [`https://url.spec.whatwg.org/#default-port`](https://url.spec.whatwg.org/#default-port)
+     * [`https://url.spec.whatwg.org/#hostname-state`](https://url.spec.whatwg.org/#hostname-state)
+     * [`https://url.spec.whatwg.org/#port-state`](https://url.spec.whatwg.org/#port-state)
+     * [`https://url.spec.whatwg.org/#path-start-state`](https://url.spec.whatwg.org/#path-start-state)
+     * [`https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state`](https://url.spec.whatwg.org/#cannot-be-a-base-url-path-state)
+     * [`https://url.spec.whatwg.org/#query-state`](https://url.spec.whatwg.org/#query-state)
+     * [`https://url.spec.whatwg.org/#fragment-state`](https://url.spec.whatwg.org/#fragment-state)
 - [Web Animations](https://www.w3.org/TR/web-animations-1/):
      * [`https://drafts.csswg.org/web-animations-2/#iteration-composite-operation`](https://drafts.csswg.org/web-animations-2/#iteration-composite-operation)
      * [`https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate`](https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate)
@@ -2796,7 +2845,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebXR DOM Overlays Module](https://www.w3.org/TR/webxr-dom-overlays-1/):
      * [`https://drafts.fxtf.org/filter-effects-2/#backdrop-root`](https://drafts.fxtf.org/filter-effects-2/#backdrop-root)
 
-=> 76 problematic external links found in 30 specifications
+=> 88 problematic external links found in 33 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -2966,6 +3015,118 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dfn-throw`](https://heycam.github.io/webidl/#dfn-throw)
      * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
      * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+- [App History API](https://wicg.github.io/app-history/):
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
+     * [`https://html.spec.whatwg.org/#window-bc`](https://html.spec.whatwg.org/#window-bc)
+     * [`https://html.spec.whatwg.org/#session-history`](https://html.spec.whatwg.org/#session-history)
+     * [`https://html.spec.whatwg.org/#still-on-its-initial-about:blank-document`](https://html.spec.whatwg.org/#still-on-its-initial-about:blank-document)
+     * [`https://html.spec.whatwg.org/#url-and-history-update-steps`](https://html.spec.whatwg.org/#url-and-history-update-steps)
+     * [`https://html.spec.whatwg.org/#dom-document-open`](https://html.spec.whatwg.org/#dom-document-open)
+     * [`https://html.spec.whatwg.org/#current-entry`](https://html.spec.whatwg.org/#current-entry)
+     * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
+     * [`https://html.spec.whatwg.org/#session-history-entry`](https://html.spec.whatwg.org/#session-history-entry)
+     * [`https://html.spec.whatwg.org/#structuredserializeforstorage`](https://html.spec.whatwg.org/#structuredserializeforstorage)
+     * [`https://html.spec.whatwg.org/#dom-location-href`](https://html.spec.whatwg.org/#dom-location-href)
+     * [`https://html.spec.whatwg.org/#serialized-state`](https://html.spec.whatwg.org/#serialized-state)
+     * [`https://html.spec.whatwg.org/#serializable-objects`](https://html.spec.whatwg.org/#serializable-objects)
+     * [`https://html.spec.whatwg.org/#navigate-fragid`](https://html.spec.whatwg.org/#navigate-fragid)
+     * [`https://html.spec.whatwg.org/#parse-a-url`](https://html.spec.whatwg.org/#parse-a-url)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#resulting-url-record`](https://html.spec.whatwg.org/#resulting-url-record)
+     * [`https://html.spec.whatwg.org/#unload-counter`](https://html.spec.whatwg.org/#unload-counter)
+     * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
+     * [`https://html.spec.whatwg.org/#hh-default`](https://html.spec.whatwg.org/#hh-default)
+     * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
+     * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
+     * [`https://html.spec.whatwg.org/#history-handling-behavior`](https://html.spec.whatwg.org/#history-handling-behavior)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#navigation-hh`](https://html.spec.whatwg.org/#navigation-hh)
+     * [`https://html.spec.whatwg.org/#source-browsing-context`](https://html.spec.whatwg.org/#source-browsing-context)
+     * [`https://html.spec.whatwg.org/#dom-location-assign`](https://html.spec.whatwg.org/#dom-location-assign)
+     * [`https://html.spec.whatwg.org/#same-origin-domain`](https://html.spec.whatwg.org/#same-origin-domain)
+     * [`https://html.spec.whatwg.org/#allowed-to-navigate`](https://html.spec.whatwg.org/#allowed-to-navigate)
+     * [`https://html.spec.whatwg.org/#exceptions-enabled`](https://html.spec.whatwg.org/#exceptions-enabled)
+     * [`https://html.spec.whatwg.org/#joint-session-history`](https://html.spec.whatwg.org/#joint-session-history)
+     * [`https://html.spec.whatwg.org/#enqueue-the-following-steps`](https://html.spec.whatwg.org/#enqueue-the-following-steps)
+     * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
+     * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
+     * [`https://html.spec.whatwg.org/#event-handler-idl-attributes`](https://html.spec.whatwg.org/#event-handler-idl-attributes)
+     * [`https://html.spec.whatwg.org/#can-have-its-url-rewritten`](https://html.spec.whatwg.org/#can-have-its-url-rewritten)
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#the-form-element`](https://html.spec.whatwg.org/#the-form-element)
+     * [`https://html.spec.whatwg.org/#concept-form-submit`](https://html.spec.whatwg.org/#concept-form-submit)
+     * [`https://html.spec.whatwg.org/#dom-document-2`](https://html.spec.whatwg.org/#dom-document-2)
+     * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
+     * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
+     * [`https://html.spec.whatwg.org/#she-url`](https://html.spec.whatwg.org/#she-url)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
+     * [`https://html.spec.whatwg.org/#she-document`](https://html.spec.whatwg.org/#she-document)
+     * [`https://html.spec.whatwg.org/#errorevent`](https://html.spec.whatwg.org/#errorevent)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-error`](https://html.spec.whatwg.org/#dom-errorevent-error)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-message`](https://html.spec.whatwg.org/#dom-errorevent-message)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-filename`](https://html.spec.whatwg.org/#dom-errorevent-filename)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-lineno`](https://html.spec.whatwg.org/#dom-errorevent-lineno)
+     * [`https://html.spec.whatwg.org/#dom-errorevent-colno`](https://html.spec.whatwg.org/#dom-errorevent-colno)
+     * [`https://html.spec.whatwg.org/#report-the-exception`](https://html.spec.whatwg.org/#report-the-exception)
+     * [`https://html.spec.whatwg.org/#uhus-serializeddata`](https://html.spec.whatwg.org/#uhus-serializeddata)
+     * [`https://html.spec.whatwg.org/#uhus-ispush`](https://html.spec.whatwg.org/#uhus-ispush)
+     * [`https://html.spec.whatwg.org/#dom-window-stop`](https://html.spec.whatwg.org/#dom-window-stop)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#active-window`](https://html.spec.whatwg.org/#active-window)
+     * [`https://html.spec.whatwg.org/#dom-history-state`](https://html.spec.whatwg.org/#dom-history-state)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#plan-to-navigate`](https://html.spec.whatwg.org/#plan-to-navigate)
+     * [`https://html.spec.whatwg.org/#navigation-navigationtype`](https://html.spec.whatwg.org/#navigation-navigationtype)
+     * [`https://html.spec.whatwg.org/#submit-body`](https://html.spec.whatwg.org/#submit-body)
+     * [`https://html.spec.whatwg.org/#the-area-element`](https://html.spec.whatwg.org/#the-area-element)
+     * [`https://html.spec.whatwg.org/#traverse-the-history-by-a-delta`](https://html.spec.whatwg.org/#traverse-the-history-by-a-delta)
+     * [`https://html.spec.whatwg.org/#following-hyperlinks-2`](https://html.spec.whatwg.org/#following-hyperlinks-2)
+     * [`https://html.spec.whatwg.org/#providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element`](https://html.spec.whatwg.org/#providing-users-with-a-means-to-follow-hyperlinks-created-using-the-link-element)
+     * [`https://html.spec.whatwg.org/#the-input-element`](https://html.spec.whatwg.org/#the-input-element)
+     * [`https://html.spec.whatwg.org/#input-activation-behavior`](https://html.spec.whatwg.org/#input-activation-behavior)
+     * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
+     * [`https://html.spec.whatwg.org/#concept-submit-button`](https://html.spec.whatwg.org/#concept-submit-button)
+     * [`https://html.spec.whatwg.org/#implicit-submission`](https://html.spec.whatwg.org/#implicit-submission)
+     * [`https://html.spec.whatwg.org/#shared-history-push/replace-state-steps`](https://html.spec.whatwg.org/#shared-history-push/replace-state-steps)
+     * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
+     * [`https://html.spec.whatwg.org/#creating-a-new-browsing-context`](https://html.spec.whatwg.org/#creating-a-new-browsing-context)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#queue-a-global-task`](https://html.spec.whatwg.org/#queue-a-global-task)
+     * [`https://html.spec.whatwg.org/#history-traversal-task-source`](https://html.spec.whatwg.org/#history-traversal-task-source)
+     * [`https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page`](https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page)
+     * [`https://html.spec.whatwg.org/#traverse-the-history`](https://html.spec.whatwg.org/#traverse-the-history)
+     * [`https://html.spec.whatwg.org/#stop-document-loading`](https://html.spec.whatwg.org/#stop-document-loading)
+     * [`https://html.spec.whatwg.org/#a-browsing-context-is-discarded`](https://html.spec.whatwg.org/#a-browsing-context-is-discarded)
+     * [`https://html.spec.whatwg.org/#concept-navigate-mature`](https://html.spec.whatwg.org/#concept-navigate-mature)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-any`](https://heycam.github.io/webidl/#idl-any)
+     * [`https://heycam.github.io/webidl/#new`](https://heycam.github.io/webidl/#new)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
+     * [`https://heycam.github.io/webidl/#syntaxerror`](https://heycam.github.io/webidl/#syntaxerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
+     * [`https://heycam.github.io/webidl/#securityerror`](https://heycam.github.io/webidl/#securityerror)
+     * [`https://heycam.github.io/webidl/#idl-long-long`](https://heycam.github.io/webidl/#idl-long-long)
+     * [`https://heycam.github.io/webidl/#wait-for-all`](https://heycam.github.io/webidl/#wait-for-all)
+     * [`https://heycam.github.io/webidl/#idl-ArrayBuffer`](https://heycam.github.io/webidl/#idl-ArrayBuffer)
+     * [`https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site`](https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site)
 - [ARIA in HTML](https://www.w3.org/TR/html-aria/):
      * [`https://www.w3.org/TR/wai-aria-1.1/#host_general_conflict`](https://www.w3.org/TR/wai-aria-1.1/#host_general_conflict)
      * [`https://www.w3.org/TR/wai-aria-1.1/#implicit_semantics`](https://www.w3.org/TR/wai-aria-1.1/#implicit_semantics)
@@ -3220,6 +3381,44 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name`](https://www.w3.org/TR/html-aam-1.0/#dfn-accessible-name)
      * [`https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation`](https://www.w3.org/TR/html-aam-1.0/#img-element-accessible-name-computation)
      * [`https://www.w3.org/TR/svg-aam-1.0/#details-id-66`](https://www.w3.org/TR/svg-aam-1.0/#details-id-66)
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/):
+     * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
+     * [`https://html.spec.whatwg.org/#same-site`](https://html.spec.whatwg.org/#same-site)
+     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
+     * [`https://html.spec.whatwg.org/#concept-element-attributes`](https://html.spec.whatwg.org/#concept-element-attributes)
+     * [`https://html.spec.whatwg.org/#rules-for-parsing-integers`](https://html.spec.whatwg.org/#rules-for-parsing-integers)
+     * [`https://html.spec.whatwg.org/#rules-for-parsing-non-negative-integers`](https://html.spec.whatwg.org/#rules-for-parsing-non-negative-integers)
+     * [`https://html.spec.whatwg.org/#concept-element-dom`](https://html.spec.whatwg.org/#concept-element-dom)
+     * [`https://html.spec.whatwg.org/#htmlanchorelement`](https://html.spec.whatwg.org/#htmlanchorelement)
+     * [`https://html.spec.whatwg.org/#cereactions`](https://html.spec.whatwg.org/#cereactions)
+     * [`https://html.spec.whatwg.org/#following-hyperlinks-2`](https://html.spec.whatwg.org/#following-hyperlinks-2)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#navigation-params`](https://html.spec.whatwg.org/#navigation-params)
+     * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
+     * [`https://html.spec.whatwg.org/#process-a-navigate-fetch`](https://html.spec.whatwg.org/#process-a-navigate-fetch)
+     * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
+     * [`https://html.spec.whatwg.org/#site`](https://html.spec.whatwg.org/#site)
+     * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#obtain-a-site`](https://html.spec.whatwg.org/#obtain-a-site)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
+     * [`https://html.spec.whatwg.org/#concept-environment-top-level-origin`](https://html.spec.whatwg.org/#concept-environment-top-level-origin)
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
+     * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
+     * [`https://html.spec.whatwg.org/#navigation-params-origin`](https://html.spec.whatwg.org/#navigation-params-origin)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
+     * [`https://heycam.github.io/webidl/#idl-long-long`](https://heycam.github.io/webidl/#idl-long-long)
+     * [`https://heycam.github.io/webidl/#indexsizeerror`](https://heycam.github.io/webidl/#indexsizeerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
+     * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
+     * [`https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin`](https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin)
 - [Audio Output Devices API](https://www.w3.org/TR/audio-output/):
      * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
@@ -4090,6 +4289,14 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webauthn/#publickeycredential`](https://www.w3.org/TR/webauthn/#publickeycredential)
      * [`https://www.w3.org/TR/webauthn/#dom-publickeycredential-create-slot`](https://www.w3.org/TR/webauthn/#dom-publickeycredential-create-slot)
      * [`https://www.w3.org/TR/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot`](https://www.w3.org/TR/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot)
+- [Cross-Origin-Embedder-Policy: credentialless](https://wicg.github.io/credentiallessness/):
+     * [`https://html.spec.whatwg.org/#embedder-policy-value`](https://html.spec.whatwg.org/#embedder-policy-value)
+     * [`https://html.spec.whatwg.org/#coep`](https://html.spec.whatwg.org/#coep)
+     * [`https://html.spec.whatwg.org/#obtain-an-embedder-policy`](https://html.spec.whatwg.org/#obtain-an-embedder-policy)
+     * [`https://html.spec.whatwg.org/#concept-settings-object-embedder-policy`](https://html.spec.whatwg.org/#concept-settings-object-embedder-policy)
+     * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
+     * [`https://html.spec.whatwg.org/#coep-unsafe-none`](https://html.spec.whatwg.org/#coep-unsafe-none)
+     * [`https://html.spec.whatwg.org/#coep-require-corp`](https://html.spec.whatwg.org/#coep-require-corp)
 - [CSS Animation Worklet API](https://www.w3.org/TR/css-animation-worklet-1/):
      * [`https://w3c.github.io/web-animations/#animation-effect`](https://w3c.github.io/web-animations/#animation-effect)
      * [`https://w3c.github.io/web-animations/#timeline`](https://w3c.github.io/web-animations/#timeline)
@@ -5118,6 +5325,67 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets`](https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets)
      * [`https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes`](https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes)
      * [`https://www.w3.org/TR/css-contain-1/#valdef-contain-layout`](https://www.w3.org/TR/css-contain-1/#valdef-contain-layout)
+- [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-scoping-2/):
+     * [`https://www.w3.org/TR/css-cascade-5/#placement`](https://www.w3.org/TR/css-cascade-5/#placement)
+     * [`https://www.w3.org/TR/css-cascade-5/#at-import`](https://www.w3.org/TR/css-cascade-5/#at-import)
+     * [`https://www.w3.org/TR/css-cascade-5/#conditional-import`](https://www.w3.org/TR/css-cascade-5/#conditional-import)
+     * [`https://www.w3.org/TR/css-cascade-5/#import-processing`](https://www.w3.org/TR/css-cascade-5/#import-processing)
+     * [`https://www.w3.org/TR/css-cascade-5/#content-type`](https://www.w3.org/TR/css-cascade-5/#content-type)
+     * [`https://www.w3.org/TR/css-cascade-5/#shorthand`](https://www.w3.org/TR/css-cascade-5/#shorthand)
+     * [`https://www.w3.org/TR/css-cascade-5/#aliasing`](https://www.w3.org/TR/css-cascade-5/#aliasing)
+     * [`https://www.w3.org/TR/css-cascade-5/#all-shorthand`](https://www.w3.org/TR/css-cascade-5/#all-shorthand)
+     * [`https://www.w3.org/TR/css-cascade-5/#value-stages`](https://www.w3.org/TR/css-cascade-5/#value-stages)
+     * [`https://www.w3.org/TR/css-cascade-5/#declared`](https://www.w3.org/TR/css-cascade-5/#declared)
+     * [`https://www.w3.org/TR/css-cascade-5/#cascaded`](https://www.w3.org/TR/css-cascade-5/#cascaded)
+     * [`https://www.w3.org/TR/css-cascade-5/#specified`](https://www.w3.org/TR/css-cascade-5/#specified)
+     * [`https://www.w3.org/TR/css-cascade-5/#computed`](https://www.w3.org/TR/css-cascade-5/#computed)
+     * [`https://www.w3.org/TR/css-cascade-5/#used`](https://www.w3.org/TR/css-cascade-5/#used)
+     * [`https://www.w3.org/TR/css-cascade-5/#actual`](https://www.w3.org/TR/css-cascade-5/#actual)
+     * [`https://www.w3.org/TR/css-cascade-5/#stages-examples`](https://www.w3.org/TR/css-cascade-5/#stages-examples)
+     * [`https://www.w3.org/TR/css-cascade-5/#fragments`](https://www.w3.org/TR/css-cascade-5/#fragments)
+     * [`https://www.w3.org/TR/css-cascade-5/#filtering`](https://www.w3.org/TR/css-cascade-5/#filtering)
+     * [`https://www.w3.org/TR/css-cascade-5/#cascading-origins`](https://www.w3.org/TR/css-cascade-5/#cascading-origins)
+     * [`https://www.w3.org/TR/css-cascade-5/#importance`](https://www.w3.org/TR/css-cascade-5/#importance)
+     * [`https://www.w3.org/TR/css-cascade-5/#layering`](https://www.w3.org/TR/css-cascade-5/#layering)
+     * [`https://www.w3.org/TR/css-cascade-5/#defaulting`](https://www.w3.org/TR/css-cascade-5/#defaulting)
+     * [`https://www.w3.org/TR/css-cascade-5/#initial-values`](https://www.w3.org/TR/css-cascade-5/#initial-values)
+     * [`https://www.w3.org/TR/css-cascade-5/#inheriting`](https://www.w3.org/TR/css-cascade-5/#inheriting)
+     * [`https://www.w3.org/TR/css-cascade-5/#defaulting-keywords`](https://www.w3.org/TR/css-cascade-5/#defaulting-keywords)
+     * [`https://www.w3.org/TR/css-cascade-5/#initial`](https://www.w3.org/TR/css-cascade-5/#initial)
+     * [`https://www.w3.org/TR/css-cascade-5/#inherit`](https://www.w3.org/TR/css-cascade-5/#inherit)
+     * [`https://www.w3.org/TR/css-cascade-5/#inherit-initial`](https://www.w3.org/TR/css-cascade-5/#inherit-initial)
+     * [`https://www.w3.org/TR/css-cascade-5/#default`](https://www.w3.org/TR/css-cascade-5/#default)
+     * [`https://drafts.csswg.org/css-cascade-5/#at-ruledef-import`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-import)
+     * [`https://drafts.csswg.org/css-cascade-5/#propdef-all`](https://drafts.csswg.org/css-cascade-5/#propdef-all)
+     * [`https://drafts.csswg.org/css-cascade-5/#declared-value`](https://drafts.csswg.org/css-cascade-5/#declared-value)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascaded-value`](https://drafts.csswg.org/css-cascade-5/#cascaded-value)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua`](https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-origin-user`](https://drafts.csswg.org/css-cascade-5/#cascade-origin-user)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-origin-author`](https://drafts.csswg.org/css-cascade-5/#cascade-origin-author)
+     * [`https://drafts.csswg.org/css-cascade-5/#cascade-layers`](https://drafts.csswg.org/css-cascade-5/#cascade-layers)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-initial`](https://drafts.csswg.org/css-cascade-5/#valdef-all-initial)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit`](https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-unset`](https://drafts.csswg.org/css-cascade-5/#valdef-all-unset)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-revert`](https://drafts.csswg.org/css-cascade-5/#valdef-all-revert)
+     * [`https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer`](https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer)
+     * [`https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer`](https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer)
+     * [`https://drafts.csswg.org/css-scoping-1/#tree-context`](https://drafts.csswg.org/css-scoping-1/#tree-context)
+     * [`https://www.w3.org/TR/css-style-attr/#interpret`](https://www.w3.org/TR/css-style-attr/#interpret)
+     * [`https://www.w3.org/TR/selectors/#specificity`](https://www.w3.org/TR/selectors/#specificity)
+     * [`https://drafts.csswg.org/selectors-4/#scope-element`](https://drafts.csswg.org/selectors-4/#scope-element)
+     * [`https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list)
+     * [`https://drafts.csswg.org/selectors-4/#scoping-element`](https://drafts.csswg.org/selectors-4/#scoping-element)
+     * [`https://drafts.csswg.org/selectors-4/#scoping-root`](https://drafts.csswg.org/selectors-4/#scoping-root)
+     * [`https://drafts.csswg.org/selectors-4/#scoped-selector`](https://drafts.csswg.org/selectors-4/#scoped-selector)
+     * [`https://drafts.csswg.org/selectors-4/#scope-pseudo`](https://drafts.csswg.org/selectors-4/#scope-pseudo)
+     * [`https://drafts.csswg.org/selectors-4/#complex`](https://drafts.csswg.org/selectors-4/#complex)
+     * [`https://drafts.csswg.org/selectors-4/#matches-pseudo`](https://drafts.csswg.org/selectors-4/#matches-pseudo)
+     * [`https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets`](https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets)
+     * [`https://www.w3.org/TR/css-scoping-1/#shadow-dom`](https://www.w3.org/TR/css-scoping-1/#shadow-dom)
+     * [`https://drafts.csswg.org/css-values-3/#mult-opt`](https://drafts.csswg.org/css-values-3/#mult-opt)
+     * [`https://drafts.csswg.org/css-syntax-3/#block-at-rule`](https://drafts.csswg.org/css-syntax-3/#block-at-rule)
+     * [`https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet`](https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet)
+     * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
 - [CSS Color Adjustment Module Level 1](https://www.w3.org/TR/css-color-adjust-1/):
      * [`https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme`](https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-color-scheme)
      * [`https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-contrast`](https://www.w3.org/TR/mediaqueries-5/#descdef-media-prefers-contrast)
@@ -7922,19 +8190,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-text-decor-3/#text-decoration`](https://www.w3.org/TR/css-text-decor-3/#text-decoration)
      * [`https://www.w3.org/TR/css-text-decor-3/#text-shadow`](https://www.w3.org/TR/css-text-decor-3/#text-shadow)
      * [`https://www.w3.org/TR/css3-break/#box-decoration-break`](https://www.w3.org/TR/css3-break/#box-decoration-break)
-- [CSS Scoping Module Level 2](https://drafts.csswg.org/css-scoping-2/):
-     * [`https://www.w3.org/TR/css-scoping-1/#shadow-dom`](https://www.w3.org/TR/css-scoping-1/#shadow-dom)
-     * [`https://drafts.csswg.org/css-scoping-1/#default-element-styles`](https://drafts.csswg.org/css-scoping-1/#default-element-styles)
-     * [`https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list`](https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list)
-     * [`https://drafts.csswg.org/selectors-4/#scoping-element`](https://drafts.csswg.org/selectors-4/#scoping-element)
-     * [`https://drafts.csswg.org/selectors-4/#scoping-root`](https://drafts.csswg.org/selectors-4/#scoping-root)
-     * [`https://drafts.csswg.org/selectors-4/#scoped-selector`](https://drafts.csswg.org/selectors-4/#scoped-selector)
-     * [`https://drafts.csswg.org/selectors-4/#scope-element`](https://drafts.csswg.org/selectors-4/#scope-element)
-     * [`https://drafts.csswg.org/selectors-4/#scope-pseudo`](https://drafts.csswg.org/selectors-4/#scope-pseudo)
-     * [`https://drafts.csswg.org/selectors-4/#complex`](https://drafts.csswg.org/selectors-4/#complex)
-     * [`https://drafts.csswg.org/css-values-4/#mult-opt`](https://drafts.csswg.org/css-values-4/#mult-opt)
-     * [`https://drafts.csswg.org/css-syntax-3/#block-at-rule`](https://drafts.csswg.org/css-syntax-3/#block-at-rule)
-     * [`https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet`](https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet)
 - [CSS Scroll Anchoring Module Level 1](https://www.w3.org/TR/css-scroll-anchoring-1/):
      * [`https://drafts.csswg.org/cssom-view-1/#scrolling-box`](https://drafts.csswg.org/cssom-view-1/#scrolling-box)
      * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
@@ -8022,7 +8277,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/selectors-4/#target-pseudo`](https://www.w3.org/TR/selectors-4/#target-pseudo)
      * [`https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview`](https://drafts.csswg.org/cssom-view-1/#dom-element-scrollintoview)
      * [`https://www.w3.org/TR/css-logical-1/#propdef-inset`](https://www.w3.org/TR/css-logical-1/#propdef-inset)
-- [CSS Scrollbars Module Level 1](https://www.w3.org/TR/css-scrollbars-1/):
+- [CSS Scrollbars Styling Module Level 1](https://www.w3.org/TR/css-scrollbars-1/):
      * [`https://www.w3.org/TR/css-values-3/#value-defs`](https://www.w3.org/TR/css-values-3/#value-defs)
      * [`https://www.w3.org/TR/css-values-4/#css-wide-keywords`](https://www.w3.org/TR/css-values-4/#css-wide-keywords)
      * [`https://www.w3.org/TR/css-values-4/#comb-one`](https://www.w3.org/TR/css-values-4/#comb-one)
@@ -10015,6 +10270,24 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#dfn-map-entries`](https://heycam.github.io/webidl/#dfn-map-entries)
      * [`https://w3c.github.io/paint-timing/#mark-paint-timing`](https://w3c.github.io/paint-timing/#mark-paint-timing)
      * [`https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry`](https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry)
+- [EyeDropper API](https://wicg.github.io/eyedropper-api/):
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
+     * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
+     * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#aborterror`](https://heycam.github.io/webidl/#aborterror)
+     * [`https://heycam.github.io/webidl/#operationerror`](https://heycam.github.io/webidl/#operationerror)
+     * [`https://heycam.github.io/webidl/#resolve`](https://heycam.github.io/webidl/#resolve)
+     * [`https://html.spec.whatwg.org/#valid-simple-colour`](https://html.spec.whatwg.org/#valid-simple-colour)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
 - [Federated Learning of Cohorts](https://wicg.github.io/floc/):
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
@@ -12417,6 +12690,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://encoding.spec.whatwg.org/#utf-8-decode`](https://encoding.spec.whatwg.org/#utf-8-decode)
      * [`https://encoding.spec.whatwg.org/#utf-8-encode`](https://encoding.spec.whatwg.org/#utf-8-encode)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+- [Ink API](https://wicg.github.io/ink-enhancement/):
+     * [`https://www.w3.org/TR/pointerevents3/#dom-pointerevent`](https://www.w3.org/TR/pointerevents3/#dom-pointerevent)
+     * [`https://www.w3.org/TR/pointerevents3/#dom-pointerevent-getpredictedevents`](https://www.w3.org/TR/pointerevents3/#dom-pointerevent-getpredictedevents)
+     * [`https://html.spec.whatwg.org/#dom-context-2d-canvas`](https://html.spec.whatwg.org/#dom-context-2d-canvas)
+     * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
+     * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://heycam.github.io/webidl/#idl-unrestricted-double`](https://heycam.github.io/webidl/#idl-unrestricted-double)
+     * [`https://heycam.github.io/webidl/#SameObject`](https://heycam.github.io/webidl/#SameObject)
 - [Input Device Capabilities](https://wicg.github.io/input-device-capabilities/):
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
@@ -15337,9 +15622,9 @@ Links in the body of a specification should be to the same document as that poin
 - [Screen Wake Lock API](https://www.w3.org/TR/screen-wake-lock/):
      * [`https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature`](https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature)
      * [`https://www.w3.org/TR/permissions-policy-1/#default-allowlist`](https://www.w3.org/TR/permissions-policy-1/#default-allowlist)
-     * [`https://www.w3.org/TR/permissions/#powerful-feature`](https://www.w3.org/TR/permissions/#powerful-feature)
-     * [`https://www.w3.org/TR/permissions/#permission-revocation-algorithm`](https://www.w3.org/TR/permissions/#permission-revocation-algorithm)
-     * [`https://www.w3.org/TR/permissions/#request-permission-to-use`](https://www.w3.org/TR/permissions/#request-permission-to-use)
+     * [`https://www.w3.org/TR/permissions/#dfn-powerful-feature`](https://www.w3.org/TR/permissions/#dfn-powerful-feature)
+     * [`https://www.w3.org/TR/permissions/#dfn-permission-revocation-algorithm`](https://www.w3.org/TR/permissions/#dfn-permission-revocation-algorithm)
+     * [`https://www.w3.org/TR/permissions/#dfn-request-permission-to-use`](https://www.w3.org/TR/permissions/#dfn-request-permission-to-use)
      * [`https://www.w3.org/TR/permissions/#dom-permissionstate-denied`](https://www.w3.org/TR/permissions/#dom-permissionstate-denied)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
@@ -15441,6 +15726,75 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url`](https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url)
      * [`https://www.w3.org/TR/geolocation-API/#get-current-position`](https://www.w3.org/TR/geolocation-API/#get-current-position)
      * [`https://www.w3.org/TR/geolocation-API/#watch-position`](https://www.w3.org/TR/geolocation-API/#watch-position)
+- [Secure Payment Confirmation](https://www.w3.org/TR/secure-payment-confirmation/):
+     * [`https://w3c.github.io/webauthn/#relying-party`](https://w3c.github.io/webauthn/#relying-party)
+     * [`https://w3c.github.io/webauthn/#webauthn-extensions`](https://w3c.github.io/webauthn/#webauthn-extensions)
+     * [`https://w3c.github.io/webauthn/#authentication-ceremony`](https://w3c.github.io/webauthn/#authentication-ceremony)
+     * [`https://w3c.github.io/webauthn/#client-extension`](https://w3c.github.io/webauthn/#client-extension)
+     * [`https://w3c.github.io/webauthn/#registration-extension`](https://w3c.github.io/webauthn/#registration-extension)
+     * [`https://w3c.github.io/webauthn/#authentication-extension`](https://w3c.github.io/webauthn/#authentication-extension)
+     * [`https://w3c.github.io/payment-request/#dfn-payment-method`](https://w3c.github.io/payment-request/#dfn-payment-method)
+     * [`https://w3c.github.io/payment-request/#dfn-payment-permission`](https://w3c.github.io/payment-request/#dfn-payment-permission)
+     * [`https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made`](https://w3c.github.io/payment-request/#dfn-steps-to-check-if-a-payment-can-be-made)
+     * [`https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request`](https://w3c.github.io/payment-request/#dfn-steps-to-respond-to-a-payment-request)
+     * [`https://w3c.github.io/payment-request/#dfn-details`](https://w3c.github.io/payment-request/#dfn-details)
+     * [`https://w3c.github.io/payment-request/#accessibility-considerations`](https://w3c.github.io/payment-request/#accessibility-considerations)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest`](https://www.w3.org/TR/payment-request/#dom-paymentrequest)
+     * [`https://www.w3.org/TR/payment-request/#dfn-payment-handler`](https://www.w3.org/TR/payment-request/#dfn-payment-handler)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest-constructor`](https://www.w3.org/TR/payment-request/#dom-paymentrequest-constructor)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentrequest-show`](https://www.w3.org/TR/payment-request/#dom-paymentrequest-show)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount-currency`](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount-currency)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount-value`](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount-value)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentdetailsinit-total`](https://www.w3.org/TR/payment-request/#dom-paymentdetailsinit-total)
+     * [`https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount`](https://www.w3.org/TR/payment-request/#dom-paymentcurrencyamount)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-challenge`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-challenge)
+     * [`https://www.w3.org/TR/webauthn/#dictdef-collectedclientdata`](https://www.w3.org/TR/webauthn/#dictdef-collectedclientdata)
+     * [`https://www.w3.org/TR/webauthn/#dictdef-authenticationextensionsclientinputs`](https://www.w3.org/TR/webauthn/#dictdef-authenticationextensionsclientinputs)
+     * [`https://www.w3.org/TR/webauthn/#dictdef-publickeycredentialrequestoptions`](https://www.w3.org/TR/webauthn/#dictdef-publickeycredentialrequestoptions)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-timeout`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-timeout)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-userverification`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-userverification)
+     * [`https://www.w3.org/TR/webauthn/#dom-userverificationrequirement-required`](https://www.w3.org/TR/webauthn/#dom-userverificationrequirement-required)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-extensions`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-extensions)
+     * [`https://www.w3.org/TR/webauthn/#dictdef-publickeycredentialdescriptor`](https://www.w3.org/TR/webauthn/#dictdef-publickeycredentialdescriptor)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-type`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-type)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialtype-public-key`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialtype-public-key)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-id`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-id)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-transports`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialdescriptor-transports)
+     * [`https://www.w3.org/TR/webauthn/#dom-authenticatortransport-internal`](https://www.w3.org/TR/webauthn/#dom-authenticatortransport-internal)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials`](https://www.w3.org/TR/webauthn/#dom-publickeycredentialrequestoptions-allowcredentials)
+     * [`https://www.w3.org/TR/webauthn/#dom-credentialrequestoptions-publickey`](https://www.w3.org/TR/webauthn/#dom-credentialrequestoptions-publickey)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot`](https://www.w3.org/TR/webauthn/#dom-publickeycredential-discoverfromexternalsource-slot)
+     * [`https://www.w3.org/TR/webauthn/#dom-collectedclientdata-type`](https://www.w3.org/TR/webauthn/#dom-collectedclientdata-type)
+     * [`https://www.w3.org/TR/webauthn/#dom-publickeycredential-create-slot`](https://www.w3.org/TR/webauthn/#dom-publickeycredential-create-slot)
+     * [`https://www.w3.org/TR/webauthn/#dom-collectedclientdata-challenge`](https://www.w3.org/TR/webauthn/#dom-collectedclientdata-challenge)
+     * [`https://www.w3.org/TR/webauthn/#dom-collectedclientdata-origin`](https://www.w3.org/TR/webauthn/#dom-collectedclientdata-origin)
+     * [`https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-create`](https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-create)
+     * [`https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-get`](https://www.w3.org/TR/credential-management-1/#dom-credentialscontainer-get)
+     * [`https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier`](https://www.w3.org/TR/payment-method-id/#dfn-standardized-payment-method-identifier)
+     * [`https://w3c.github.io/payment-method-id/#registry`](https://w3c.github.io/payment-method-id/#registry)
+     * [`https://heycam.github.io/webidl/#BufferSource`](https://heycam.github.io/webidl/#BufferSource)
+     * [`https://heycam.github.io/webidl/#idl-frozen-array`](https://heycam.github.io/webidl/#idl-frozen-array)
+     * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
+     * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
+     * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
+     * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://www.w3.org/TR/image-resource/#dfn-fetching-an-image-resource`](https://www.w3.org/TR/image-resource/#dfn-fetching-an-image-resource)
+     * [`https://www.w3.org/TR/image-resource/#dom-imageresource-src`](https://www.w3.org/TR/image-resource/#dom-imageresource-src)
+     * [`https://w3c.github.io/webappsec-credential-management/#abstract-opdef-request-a-credential`](https://w3c.github.io/webappsec-credential-management/#abstract-opdef-request-a-credential)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-getAssertion`](https://www.w3.org/TR/webauthn-3/#sctn-getAssertion)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-createCredential`](https://www.w3.org/TR/webauthn-3/#sctn-createCredential)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-permissions-policy`](https://www.w3.org/TR/webauthn-3/#sctn-permissions-policy)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-security-considerations`](https://www.w3.org/TR/webauthn-3/#sctn-security-considerations)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-verifying-assertion`](https://www.w3.org/TR/webauthn-3/#sctn-verifying-assertion)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-privacy-considerations`](https://www.w3.org/TR/webauthn-3/#sctn-privacy-considerations)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-assertion-privacy`](https://www.w3.org/TR/webauthn-3/#sctn-assertion-privacy)
+     * [`https://www.w3.org/TR/webauthn-3/#sctn-accessiblility-considerations`](https://www.w3.org/TR/webauthn-3/#sctn-accessiblility-considerations)
 - [Selection API](https://www.w3.org/TR/selection-api/):
      * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
      * [`https://html.spec.whatwg.org/#editing-host`](https://html.spec.whatwg.org/#editing-host)
@@ -16386,6 +16740,14 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over`](https://heycam.github.io/webidl/#dfn-value-pairs-to-iterate-over)
+- [URLPattern API](https://wicg.github.io/urlpattern/):
+     * [`https://heycam.github.io/webidl/#idl-USVString`](https://heycam.github.io/webidl/#idl-USVString)
+     * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
+     * [`https://heycam.github.io/webidl/#idl-sequence`](https://heycam.github.io/webidl/#idl-sequence)
+     * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
+     * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
+     * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
 - [User Preference Media Features Client Hints Headers](https://wicg.github.io/user-preference-media-features-headers/):
      * [`https://www.w3.org/TR/mediaqueries-5/#mf-user-preferences`](https://www.w3.org/TR/mediaqueries-5/#mf-user-preferences)
      * [`https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion`](https://www.w3.org/TR/mediaqueries-5/#prefers-reduced-motion)
@@ -17305,6 +17667,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
+     * [`https://html.spec.whatwg.org/#fully-active`](https://html.spec.whatwg.org/#fully-active)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#consume-user-activation`](https://html.spec.whatwg.org/#consume-user-activation)
@@ -17319,9 +17682,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-boolean`](https://heycam.github.io/webidl/#idl-boolean)
      * [`https://heycam.github.io/webidl/#this`](https://heycam.github.io/webidl/#this)
      * [`https://heycam.github.io/webidl/#a-promise-rejected-with`](https://heycam.github.io/webidl/#a-promise-rejected-with)
-     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
-     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
      * [`https://heycam.github.io/webidl/#invalidstateerror`](https://heycam.github.io/webidl/#invalidstateerror)
+     * [`https://heycam.github.io/webidl/#idl-DOMException`](https://heycam.github.io/webidl/#idl-DOMException)
+     * [`https://heycam.github.io/webidl/#notallowederror`](https://heycam.github.io/webidl/#notallowederror)
      * [`https://heycam.github.io/webidl/#exceptiondef-typeerror`](https://heycam.github.io/webidl/#exceptiondef-typeerror)
      * [`https://heycam.github.io/webidl/#a-new-promise`](https://heycam.github.io/webidl/#a-new-promise)
      * [`https://heycam.github.io/webidl/#reject`](https://heycam.github.io/webidl/#reject)
@@ -17466,6 +17829,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#htmlmediaelement`](https://html.spec.whatwg.org/#htmlmediaelement)
      * [`https://html.spec.whatwg.org/#dom-media-src`](https://html.spec.whatwg.org/#dom-media-src)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
+     * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#idl-long`](https://heycam.github.io/webidl/#idl-long)
      * [`https://heycam.github.io/webidl/#idl-undefined`](https://heycam.github.io/webidl/#idl-undefined)
      * [`https://heycam.github.io/webidl/#idl-promise`](https://heycam.github.io/webidl/#idl-promise)
@@ -17504,6 +17868,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-constant`](https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-constant)
      * [`https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-variable`](https://www.w3.org/TR/mediastream-recording/#dom-bitratemode-variable)
      * [`https://w3c.github.io/webrtc-svc/#scalabilitymodes*`](https://w3c.github.io/webrtc-svc/#scalabilitymodes*)
+     * [`https://www.w3.org/TR/webaudio/#audiobuffer`](https://www.w3.org/TR/webaudio/#audiobuffer)
+     * [`https://www.w3.org/TR/webaudio/#audioworklet`](https://www.w3.org/TR/webaudio/#audioworklet)
      * [`https://www.w3.org/TR/geometry-1/#domrectreadonly`](https://www.w3.org/TR/geometry-1/#domrectreadonly)
      * [`https://www.w3.org/TR/geometry-1/#dictdef-domrectinit`](https://www.w3.org/TR/geometry-1/#dictdef-domrectinit)
      * [`https://www.w3.org/TR/geometry-1/#dom-domrectinit-width`](https://www.w3.org/TR/geometry-1/#dom-domrectinit-width)
@@ -17515,6 +17881,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/geometry-1/#dom-domrectinit-y`](https://www.w3.org/TR/geometry-1/#dom-domrectinit-y)
      * [`https://www.w3.org/TR/geometry-1/#dom-domrectinit-x`](https://www.w3.org/TR/geometry-1/#dom-domrectinit-x)
      * [`https://www.w3.org/TR/geometry-1/#domrect`](https://www.w3.org/TR/geometry-1/#domrect)
+     * [`https://www.w3.org/TR/geometry-1/#dom-domrect-x`](https://www.w3.org/TR/geometry-1/#dom-domrect-x)
+     * [`https://www.w3.org/TR/geometry-1/#dom-domrect-y`](https://www.w3.org/TR/geometry-1/#dom-domrect-y)
+     * [`https://www.w3.org/TR/geometry-1/#dom-domrect-width`](https://www.w3.org/TR/geometry-1/#dom-domrect-width)
+     * [`https://www.w3.org/TR/geometry-1/#dom-domrect-height`](https://www.w3.org/TR/geometry-1/#dom-domrect-height)
      * [`https://www.w3.org/TR/css-images-3/#natural-dimensions`](https://www.w3.org/TR/css-images-3/#natural-dimensions)
      * [`https://www.w3.org/TR/css-images-3/#natural-width`](https://www.w3.org/TR/css-images-3/#natural-width)
      * [`https://www.w3.org/TR/css-images-3/#natural-height`](https://www.w3.org/TR/css-images-3/#natural-height)
@@ -18278,6 +18648,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://heycam.github.io/webidl/#idl-unsigned-long`](https://heycam.github.io/webidl/#idl-unsigned-long)
      * [`https://heycam.github.io/webidl/#EnforceRange`](https://heycam.github.io/webidl/#EnforceRange)
      * [`https://heycam.github.io/webidl/#idl-octet`](https://heycam.github.io/webidl/#idl-octet)
+     * [`https://fetch.spec.whatwg.org/#obtain-a-connection-dedicated`](https://fetch.spec.whatwg.org/#obtain-a-connection-dedicated)
      * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint`](https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint)
      * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint-algorithm`](https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint-algorithm)
      * [`https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint-value`](https://www.w3.org/TR/webrtc/#dom-rtcdtlsfingerprint-value)
@@ -18315,15 +18686,15 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#transient-activation`](https://html.spec.whatwg.org/#transient-activation)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
-     * [`https://w3c.github.io/permissions/#request-permission-to-use`](https://w3c.github.io/permissions/#request-permission-to-use)
+     * [`https://w3c.github.io/permissions/#dfn-request-permission-to-use`](https://w3c.github.io/permissions/#dfn-request-permission-to-use)
      * [`https://w3c.github.io/permissions/#dom-permissionstatus-state`](https://w3c.github.io/permissions/#dom-permissionstatus-state)
-     * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
-     * [`https://w3c.github.io/permissions/#permission-descriptor-type`](https://w3c.github.io/permissions/#permission-descriptor-type)
-     * [`https://w3c.github.io/permissions/#dictdef-permissiondescriptor`](https://w3c.github.io/permissions/#dictdef-permissiondescriptor)
-     * [`https://w3c.github.io/permissions/#extra-permission-data-type`](https://w3c.github.io/permissions/#extra-permission-data-type)
-     * [`https://w3c.github.io/permissions/#permission-result-type`](https://w3c.github.io/permissions/#permission-result-type)
-     * [`https://w3c.github.io/permissions/#permissionstatus`](https://w3c.github.io/permissions/#permissionstatus)
-     * [`https://w3c.github.io/permissions/#permission-query-algorithm`](https://w3c.github.io/permissions/#permission-query-algorithm)
+     * [`https://w3c.github.io/permissions/#dfn-powerful-feature`](https://w3c.github.io/permissions/#dfn-powerful-feature)
+     * [`https://w3c.github.io/permissions/#dfn-permission-descriptor-type`](https://w3c.github.io/permissions/#dfn-permission-descriptor-type)
+     * [`https://w3c.github.io/permissions/#dom-permissiondescriptor`](https://w3c.github.io/permissions/#dom-permissiondescriptor)
+     * [`https://w3c.github.io/permissions/#dfn-extra-permission-data-type`](https://w3c.github.io/permissions/#dfn-extra-permission-data-type)
+     * [`https://w3c.github.io/permissions/#dfn-permission-result-type`](https://w3c.github.io/permissions/#dfn-permission-result-type)
+     * [`https://w3c.github.io/permissions/#dom-permissionstatus`](https://w3c.github.io/permissions/#dom-permissionstatus)
+     * [`https://w3c.github.io/permissions/#dfn-permission-query-algorithm`](https://w3c.github.io/permissions/#dfn-permission-query-algorithm)
      * [`https://w3c.github.io/permissions/#dom-permissionstate-prompt`](https://w3c.github.io/permissions/#dom-permissionstate-prompt)
      * [`https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature`](https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature)
      * [`https://w3c.github.io/webappsec-permissions-policy/#default-allowlist`](https://w3c.github.io/webappsec-permissions-policy/#default-allowlist)
@@ -18872,9 +19243,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/webxr/#ended`](https://www.w3.org/TR/webxr/#ended)
      * [`https://www.w3.org/TR/webxr/#xrframe-active`](https://www.w3.org/TR/webxr/#xrframe-active)
      * [`https://www.w3.org/TR/webxr/#xr-task-source`](https://www.w3.org/TR/webxr/#xr-task-source)
-     * [`https://immersive-web.github.io/layers/#xrwebglbinding`](https://immersive-web.github.io/layers/#xrwebglbinding)
-     * [`https://immersive-web.github.io/layers/#xrwebglbinding-context`](https://immersive-web.github.io/layers/#xrwebglbinding-context)
-     * [`https://immersive-web.github.io/layers/#session`](https://immersive-web.github.io/layers/#session)
      * [`https://heycam.github.io/webidl/#SecureContext`](https://heycam.github.io/webidl/#SecureContext)
      * [`https://heycam.github.io/webidl/#Exposed`](https://heycam.github.io/webidl/#Exposed)
      * [`https://heycam.github.io/webidl/#idl-Float32Array`](https://heycam.github.io/webidl/#idl-Float32Array)
@@ -18897,6 +19265,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-x)
      * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-y)
      * [`https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z`](https://drafts.fxtf.org/geometry-1/#dom-dompointreadonly-z)
+     * [`https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding`](https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding)
+     * [`https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding-context`](https://www.w3.org/TR/webxrlayers-1/#xrwebglbinding-context)
+     * [`https://www.w3.org/TR/webxrlayers-1/#session`](https://www.w3.org/TR/webxrlayers-1/#session)
      * [`https://www.w3.org/TR/ambient-light/#security-and-privacy`](https://www.w3.org/TR/ambient-light/#security-and-privacy)
 - [WOFF File Format 2.0](https://www.w3.org/TR/WOFF2/):
      * [`https://www.w3.org/TR/css-fonts-3/#font-face-rule`](https://www.w3.org/TR/css-fonts-3/#font-face-rule)
@@ -18957,7 +19328,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#dfn-file`](https://w3c.github.io/FileAPI/#dfn-file)
      * [`https://w3c.github.io/FileAPI/#dfn-name`](https://w3c.github.io/FileAPI/#dfn-name)
 
-=> 15790 problematic external links found in 341 specifications
+=> 16105 problematic external links found in 348 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

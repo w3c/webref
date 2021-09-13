@@ -942,7 +942,7 @@
         "partial": false
       },
       "MLClampOptions": {
-        "fragment": "dictionary MLClampOptions {\n  MLOperand minValue;\n  MLOperand maxValue;\n};",
+        "fragment": "dictionary MLClampOptions {\n  float minValue;\n  float maxValue;\n};",
         "type": "dictionary",
         "name": "MLClampOptions",
         "inheritance": null,
@@ -957,7 +957,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLOperand"
+              "idlType": "float"
             },
             "default": null,
             "required": false
@@ -972,7 +972,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLOperand"
+              "idlType": "float"
             },
             "default": null,
             "required": false
@@ -6188,9 +6188,7 @@
         "MLOperand",
         "MLOperator"
       ],
-      "MLClampOptions": [
-        "MLOperand"
-      ],
+      "MLClampOptions": [],
       "MLConv2dOptions": [
         "MLAutoPad",
         "MLInputOperandLayout",

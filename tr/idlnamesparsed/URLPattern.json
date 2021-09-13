@@ -1,0 +1,15 @@
+{
+  "name": "URLPattern",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "URLPattern API",
+      "url": "https://wicg.github.io/urlpattern/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface URLPattern {\n  constructor(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  boolean test(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  URLPatternResult? exec(optional URLPatternInput input = {}, optional USVString baseURL);\n\n  readonly attribute USVString protocol;\n  readonly attribute USVString username;\n  readonly attribute USVString password;\n  readonly attribute USVString hostname;\n  readonly attribute USVString port;\n  readonly attribute USVString pathname;\n  readonly attribute USVString search;\n  readonly attribute USVString hash;\n};",
+    "href": "https://wicg.github.io/urlpattern/#urlpattern"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

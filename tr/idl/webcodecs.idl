@@ -3,7 +3,7 @@
 // (https://github.com/w3c/webref)
 // Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface AudioDecoder {
   constructor(AudioDecoderInit init);
 
@@ -26,7 +26,7 @@ dictionary AudioDecoderInit {
 
 callback AudioDataOutputCallback = undefined(AudioData output);
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface VideoDecoder {
   constructor(VideoDecoderInit init);
 
@@ -49,7 +49,7 @@ dictionary VideoDecoderInit {
 
 callback VideoFrameOutputCallback = undefined(VideoFrame output);
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface AudioEncoder {
   constructor(AudioEncoderInit init);
 
@@ -78,7 +78,7 @@ dictionary EncodedAudioChunkMetadata {
   AudioDecoderConfig decoderConfig;
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface VideoEncoder {
   constructor(VideoEncoderInit init);
 
@@ -278,6 +278,7 @@ dictionary AudioDataCopyToOptions {
   [EnforceRange] required unsigned long planeIndex;
   [EnforceRange] unsigned long frameOffset = 0;
   [EnforceRange] unsigned long frameCount;
+  AudioSampleFormat format;
 };
 
 enum AudioSampleFormat {
@@ -320,6 +321,15 @@ dictionary VideoFrameInit {
   unsigned long long duration;  // microseconds
   long long timestamp;          // microseconds
   AlphaOption alpha = "keep";
+
+  // Default matches image. May be used to efficiently crop. Will trigger
+  // new computation of displayWidth and displayHeight using image’s pixel
+  // aspect ratio unless an explicit displayWidth and displayHeight are given.
+  DOMRectInit visibleRect;
+
+  // Default matches image unless visibleRect is provided.
+  [EnforceRange] unsigned long displayWidth;
+  [EnforceRange] unsigned long displayHeight;
 };
 
 dictionary VideoFrameBufferInit {
@@ -411,7 +421,7 @@ enum VideoMatrixCoefficients {
   "smpte170m",  // BT.601 NTSC (functionally the same as bt470bg)
 };
 
-[Exposed=(Window,DedicatedWorker)]
+[Exposed=(Window,DedicatedWorker), SecureContext]
 interface ImageDecoder {
   constructor(ImageDecoderInit init);
 

@@ -3,4 +3,5 @@ dictionary AudioDataCopyToOptions {
   [EnforceRange] required unsigned long planeIndex;
   [EnforceRange] unsigned long frameOffset = 0;
   [EnforceRange] unsigned long frameCount;
+  AudioSampleFormat format;
 };

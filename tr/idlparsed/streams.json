@@ -2836,7 +2836,7 @@
         "partial": false
       },
       "QueuingStrategySize": {
-        "fragment": "callback QueuingStrategySize = unrestricted double (optional any chunk);",
+        "fragment": "callback QueuingStrategySize = unrestricted double (any chunk);",
         "type": "callback",
         "name": "QueuingStrategySize",
         "idlType": {
@@ -2861,7 +2861,7 @@
               "idlType": "any"
             },
             "default": null,
-            "optional": true,
+            "optional": false,
             "variadic": false
           }
         ],

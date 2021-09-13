@@ -1,5 +1,6 @@
 {
   "name": "Window",
+  "type": "interface",
   "defined": {
     "spec": {
       "title": "HTML Standard",
@@ -71,6 +72,13 @@
         "url": "https://html.spec.whatwg.org/multipage/"
       },
       "fragment": "partial interface Window {\n  undefined captureEvents();\n  undefined releaseEvents();\n\n  [Replaceable, SameObject] readonly attribute External external;\n};"
+    },
+    {
+      "spec": {
+        "title": "App History API",
+        "url": "https://wicg.github.io/app-history/"
+      },
+      "fragment": "partial interface Window {\n  readonly attribute AppHistory appHistory;\n};"
     },
     {
       "spec": {
@@ -166,6 +174,7 @@
   ],
   "inheritance": {
     "name": "EventTarget",
+    "type": "interface",
     "defined": {
       "spec": {
         "title": "DOM Standard",
@@ -181,6 +190,7 @@
   "includes": [
     {
       "name": "GlobalEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -231,6 +241,7 @@
     },
     {
       "name": "WindowEventHandlers",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -260,6 +271,7 @@
     },
     {
       "name": "WindowOrWorkerGlobalScope",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -331,6 +343,7 @@
     },
     {
       "name": "AnimationFrameProvider",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -345,6 +358,7 @@
     },
     {
       "name": "WindowSessionStorage",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
@@ -359,6 +373,7 @@
     },
     {
       "name": "WindowLocalStorage",
+      "type": "interface mixin",
       "defined": {
         "spec": {
           "title": "HTML Standard",
