@@ -15,11 +15,9 @@
     "https://www.w3.org/groups/wg/das/ipr": [],
     "https://www.w3.org/2020/Process-20200915/": [],
     "https://datatracker.ietf.org/doc/html/bcp14": [],
-    "https://dom.spec.whatwg.org/": [
-      "concept-event-fire",
-      "eventtarget"
-    ],
     "https://html.spec.whatwg.org/": [
+      "task-source",
+      "concept-task",
       "navigator",
       "secure-context",
       "concept-relevant-realm",
@@ -33,9 +31,10 @@
       "current-settings-object",
       "window",
       "eventhandler",
-      "queue-a-task",
       "event-handlers",
-      "event-handler-event-type"
+      "event-handler-event-type",
+      "current-global-object",
+      "queue-a-global-task"
     ],
     "https://heycam.github.io/webidl/": [
       "idl-promise",
@@ -44,6 +43,7 @@
       "reject",
       "notallowederror",
       "idl-DOMException",
+      "new",
       "resolve",
       "Exposed",
       "idl-boolean",
@@ -56,6 +56,13 @@
     "https://www.w3.org/TR/permissions-policy-1/": [
       "policy-controlled-feature",
       "default-allowlist"
+    ],
+    "https://dom.spec.whatwg.org/": [
+      "eventtarget",
+      "concept-event-fire"
+    ],
+    "https://tc39.es/ecma262/multipage/": [
+      "sec-object-internal-methods-and-internal-slots"
     ],
     "https://www.rfc-editor.org/rfc/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc8174": []
