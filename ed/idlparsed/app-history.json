@@ -1181,7 +1181,7 @@
         "partial": false
       },
       "AppHistoryEntry": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  // TODO event handlers\n};",
+        "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
         "type": "interface",
         "name": "AppHistoryEntry",
         "inheritance": "EventTarget",
@@ -1275,6 +1275,66 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onnavigateto",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onnavigatefrom",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onfinish",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "ondispose",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -1374,7 +1434,8 @@
       ],
       "AppHistoryDestination": [],
       "AppHistoryEntry": [
-        "EventTarget"
+        "EventTarget",
+        "EventHandler"
       ]
     },
     "externalDependencies": [

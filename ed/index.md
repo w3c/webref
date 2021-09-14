@@ -2532,7 +2532,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Crawled URL: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
-- Crawled version: 31 August 2021
+- Crawled version: 14 September 2021
 - Editor's Draft: [https://w3c.github.io/aria/](https://w3c.github.io/aria/)
 - Latest published version: [https://www.w3.org/TR/wai-aria-1.2/](https://www.w3.org/TR/wai-aria-1.2/)
 - Shortname: wai-aria-1.2
@@ -16746,7 +16746,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
 - Crawled URL: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
-- Crawled version: 9 September 2021
+- Crawled version: 14 September 2021
 - Editor's Draft: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
 - Shortname: app-history
 
