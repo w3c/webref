@@ -6,7 +6,7 @@
       "title": "CSS Font Loading Module Level 3",
       "url": "https://www.w3.org/TR/css-font-loading-3/"
     },
-    "fragment": "interface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute bool usableWithLightBackground;\n  readonly attribute bool usableWithDarkBackground;\n};",
+    "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute boolean usableWithLightBackground;\n  readonly attribute boolean usableWithDarkBackground;\n};",
     "href": "https://drafts.csswg.org/css-font-loading/#fontfacepalette"
   },
   "extended": [],

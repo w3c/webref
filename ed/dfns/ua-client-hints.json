@@ -218,9 +218,7 @@
       "linkingText": [
         "return the Sec-CH-UA value for a request"
       ],
-      "localLinkingText": [
-        "set-ua"
-      ],
+      "localLinkingText": [],
       "type": "abstract-op",
       "for": [],
       "access": "public",
@@ -386,6 +384,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "http-headerdef-sec-ch-ua-full-version-list",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-full-version-list",
+      "linkingText": [
+        "Sec-CH-UA-Full-Version-List"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-full-version-list",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
+        "title": "The 'Sec-CH-UA-Full-Version-List' Header Field",
+        "number": "3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-return-the-sec-ch-ua-full-version-list-value-for-a-request",
+      "href": "https://wicg.github.io/ua-client-hints/#abstract-opdef-return-the-sec-ch-ua-full-version-list-value-for-a-request",
+      "linkingText": [
+        "return the Sec-CH-UA-Full-Version-List value for a request"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-full-version-list",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
+        "title": "The 'Sec-CH-UA-Full-Version-List' Header Field",
+        "number": "3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dictdef-navigatoruabrandversion",
       "href": "https://wicg.github.io/ua-client-hints/#dictdef-navigatoruabrandversion",
       "linkingText": [
@@ -508,27 +544,6 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-uadatavalues-platform",
-      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platform",
-      "linkingText": [
-        "platform"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "UADataValues"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "interface",
-        "href": "https://wicg.github.io/ua-client-hints/#interface",
-        "title": "Interface",
-        "number": "4"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-uadatavalues-architecture",
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-architecture",
       "linkingText": [
@@ -592,6 +607,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-uadatavalues-platform",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platform",
+      "linkingText": [
+        "platform"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "href": "https://wicg.github.io/ua-client-hints/#interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-uadatavalues-platformversion",
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-platformversion",
       "linkingText": [
@@ -617,6 +653,27 @@
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-uafullversion",
       "linkingText": [
         "uaFullVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "href": "https://wicg.github.io/ua-client-hints/#interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-uadatavalues-fullversionlist",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-fullversionlist",
+      "linkingText": [
+        "fullVersionList"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -943,6 +1000,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "windoworworkerglobalscope-full-version-list-frozen-array",
+      "href": "https://wicg.github.io/ua-client-hints/#windoworworkerglobalscope-full-version-list-frozen-array",
+      "linkingText": [
+        "full version list frozen array"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "monkeypatch-html-windoworworkerglobalscope",
+        "href": "https://wicg.github.io/ua-client-hints/#monkeypatch-html-windoworworkerglobalscope",
+        "title": "WindowOrWorkerGlobalScope",
+        "number": "4.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "create-brands",
       "href": "https://wicg.github.io/ua-client-hints/#create-brands",
       "linkingText": [
@@ -1021,6 +1099,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "create-a-brand-version-list",
+      "href": "https://wicg.github.io/ua-client-hints/#create-a-brand-version-list",
+      "linkingText": [
+        "create a brand-version list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "create-brand-version-list",
+        "href": "https://wicg.github.io/ua-client-hints/#create-brand-version-list",
+        "title": "Create a brand-version list",
+        "number": "4.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-navigatorua-gethighentropyvalues",
       "href": "https://wicg.github.io/ua-client-hints/#dom-navigatorua-gethighentropyvalues",
       "linkingText": [
@@ -1037,7 +1134,7 @@
         "id": "getHighEntropyValues",
         "href": "https://wicg.github.io/ua-client-hints/#getHighEntropyValues",
         "title": "getHighEntropyValues method",
-        "number": "4.1.5"
+        "number": "4.1.6"
       },
       "definedIn": "prose"
     },
@@ -1058,7 +1155,7 @@
         "id": "toJSON",
         "href": "https://wicg.github.io/ua-client-hints/#toJSON",
         "title": "toJSON method",
-        "number": "4.1.6"
+        "number": "4.1.7"
       },
       "definedIn": "prose"
     }

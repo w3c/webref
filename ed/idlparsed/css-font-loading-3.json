@@ -17,7 +17,22 @@
           "FontFaceSet"
         ]
       },
-      "functions": {}
+      "functions": {
+        "Window": [
+          "FontFaceFeatures",
+          "FontFaceVariationAxis",
+          "FontFaceVariations",
+          "FontFacePalette",
+          "FontFacePalettes"
+        ],
+        "Worker": [
+          "FontFaceFeatures",
+          "FontFaceVariationAxis",
+          "FontFaceVariations",
+          "FontFacePalette",
+          "FontFacePalettes"
+        ]
+      }
     },
     "idlNames": {
       "BinaryData": {
@@ -627,16 +642,33 @@
         "partial": false
       },
       "FontFaceFeatures": {
-        "fragment": "interface FontFaceFeatures {\n  /* The CSSWG is still discussing what goes in here */\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceFeatures {\n  /* The CSSWG is still discussing what goes in here */\n};",
         "type": "interface",
         "name": "FontFaceFeatures",
         "inheritance": null,
         "members": [],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "FontFaceVariationAxis": {
-        "fragment": "interface FontFaceVariationAxis {\n  readonly attribute DOMString name;\n  readonly attribute DOMString axisTag;\n  readonly attribute double minimumValue;\n  readonly attribute double maximumValue;\n  readonly attribute double defaultValue;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceVariationAxis {\n  readonly attribute DOMString name;\n  readonly attribute DOMString axisTag;\n  readonly attribute double minimumValue;\n  readonly attribute double maximumValue;\n  readonly attribute double defaultValue;\n};",
         "type": "interface",
         "name": "FontFaceVariationAxis",
         "inheritance": null,
@@ -717,11 +749,28 @@
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "FontFaceVariations": {
-        "fragment": "interface FontFaceVariations {\n  readonly setlike<FontFaceVariationAxis>;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFaceVariations {\n  readonly setlike<FontFaceVariationAxis>;\n};",
         "type": "interface",
         "name": "FontFaceVariations",
         "inheritance": null,
@@ -744,11 +793,28 @@
             "async": false
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "FontFacePalette": {
-        "fragment": "interface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute bool usableWithLightBackground;\n  readonly attribute bool usableWithDarkBackground;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalette {\n  iterable<DOMString>;\n  readonly attribute unsigned long length;\n  getter DOMString (unsigned long index);\n  readonly attribute boolean usableWithLightBackground;\n  readonly attribute boolean usableWithDarkBackground;\n};",
         "type": "interface",
         "name": "FontFacePalette",
         "inheritance": null,
@@ -826,7 +892,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "bool"
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
@@ -841,18 +907,35 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "bool"
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",
             "readonly": true
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "FontFacePalettes": {
-        "fragment": "interface FontFacePalettes {\n  iterable<FontFacePalette>;\n  readonly attribute unsigned long length;\n  getter FontFacePalette (unsigned long index);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface FontFacePalettes {\n  iterable<FontFacePalette>;\n  readonly attribute unsigned long length;\n  getter FontFacePalette (unsigned long index);\n};",
         "type": "interface",
         "name": "FontFacePalettes",
         "inheritance": null,
@@ -922,7 +1005,24 @@
             "special": "getter"
           }
         ],
-        "extAttrs": [],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "FontFaceSetLoadEventInit": {
@@ -1541,11 +1641,21 @@
     "exposed": {
       "Window": [
         "FontFace",
+        "FontFaceFeatures",
+        "FontFaceVariationAxis",
+        "FontFaceVariations",
+        "FontFacePalette",
+        "FontFacePalettes",
         "FontFaceSetLoadEvent",
         "FontFaceSet"
       ],
       "Worker": [
         "FontFace",
+        "FontFaceFeatures",
+        "FontFaceVariationAxis",
+        "FontFaceVariations",
+        "FontFacePalette",
+        "FontFacePalettes",
         "FontFaceSetLoadEvent",
         "FontFaceSet"
       ]
@@ -1569,9 +1679,7 @@
       "FontFaceVariations": [
         "FontFaceVariationAxis"
       ],
-      "FontFacePalette": [
-        "bool"
-      ],
+      "FontFacePalette": [],
       "FontFacePalettes": [
         "FontFacePalette"
       ],
@@ -1605,7 +1713,6 @@
     },
     "externalDependencies": [
       "CSSOMString",
-      "bool",
       "EventInit",
       "Event",
       "EventTarget",
