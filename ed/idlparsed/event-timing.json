@@ -16,7 +16,7 @@
     },
     "idlNames": {
       "PerformanceEventTiming": {
-        "fragment": "[Exposed=Window]\ninterface PerformanceEventTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp processingStart;\n    readonly attribute DOMHighResTimeStamp processingEnd;\n    readonly attribute boolean cancelable;\n    readonly attribute Node? target;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=Window]\ninterface PerformanceEventTiming : PerformanceEntry {\n    readonly attribute DOMHighResTimeStamp processingStart;\n    readonly attribute DOMHighResTimeStamp processingEnd;\n    readonly attribute boolean cancelable;\n    readonly attribute Node? target;\n    readonly attribute unsigned long long interactionId;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceEventTiming",
         "inheritance": "PerformanceEntry",
@@ -76,6 +76,21 @@
               "nullable": true,
               "union": false,
               "idlType": "Node"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "interactionId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
             },
             "extAttrs": [],
             "special": "",
