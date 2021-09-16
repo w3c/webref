@@ -8,9 +8,7 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "Navigator",
-          "KeyboardLayoutMap",
-          "Keyboard"
+          "KeyboardLayoutMap"
         ]
       }
     },
@@ -59,106 +57,57 @@
           }
         ],
         "partial": false
-      },
-      "Keyboard": {
-        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<KeyboardLayoutMap> getLayoutMap();\n};",
-        "type": "interface",
-        "name": "Keyboard",
-        "inheritance": null,
-        "members": [
-          {
-            "type": "operation",
-            "name": "getLayoutMap",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "KeyboardLayoutMap"
-                }
-              ]
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          }
-        ],
-        "extAttrs": [
-          {
-            "type": "extended-attribute",
-            "name": "SecureContext",
-            "rhs": null,
-            "arguments": []
-          },
-          {
-            "type": "extended-attribute",
-            "name": "Exposed",
-            "rhs": {
-              "type": "identifier",
-              "value": "Window"
-            },
-            "arguments": []
-          }
-        ],
-        "partial": false
       }
     },
     "idlExtendedNames": {
-      "Navigator": [
+      "Keyboard": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};",
+          "fragment": "partial interface Keyboard {\n  Promise<KeyboardLayoutMap> getLayoutMap();\n\n  attribute EventHandler onlayoutchange;\n};",
           "type": "interface",
-          "name": "Navigator",
+          "name": "Keyboard",
           "inheritance": null,
           "members": [
             {
+              "type": "operation",
+              "name": "getLayoutMap",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "KeyboardLayoutMap"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
               "type": "attribute",
-              "name": "keyboard",
+              "name": "onlayoutchange",
               "idlType": {
                 "type": "attribute-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "Keyboard"
+                "idlType": "EventHandler"
               },
-              "extAttrs": [
-                {
-                  "type": "extended-attribute",
-                  "name": "SecureContext",
-                  "rhs": null,
-                  "arguments": []
-                },
-                {
-                  "type": "extended-attribute",
-                  "name": "SameObject",
-                  "rhs": null,
-                  "arguments": []
-                }
-              ],
+              "extAttrs": [],
               "special": "",
-              "readonly": true
+              "readonly": false
             }
           ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
+          "extAttrs": [],
           "partial": true
         }
       ]
@@ -166,22 +115,19 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "Navigator",
-        "KeyboardLayoutMap",
-        "Keyboard"
-      ]
-    },
-    "dependencies": {
-      "Navigator": [
-        "Keyboard"
-      ],
-      "KeyboardLayoutMap": [],
-      "Keyboard": [
         "KeyboardLayoutMap"
       ]
     },
+    "dependencies": {
+      "KeyboardLayoutMap": [],
+      "Keyboard": [
+        "KeyboardLayoutMap",
+        "EventHandler"
+      ]
+    },
     "externalDependencies": [
-      "Navigator"
+      "Keyboard",
+      "EventHandler"
     ],
     "hasObsoleteIdl": false
   }
