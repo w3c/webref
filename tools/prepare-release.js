@@ -19,7 +19,7 @@
  * - Invalidate or re-request review when PR is updated?
  */
 
-const { Octokit } = require("@octokit/rest");
+const Octokit = require("./octokit");
 const fs = require("fs");
 const path = require("path");
 const os = require("os");

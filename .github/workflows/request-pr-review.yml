@@ -18,7 +18,9 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install dependencies
-      run:  npm install @octokit/rest
+      run: |
+        npm install --no-save @octokit/rest
+        npm install --no-save @octokit/plugin-throttling
 
     - name: Request review of pre-release PR
       run: node tools/request-pr-review.js
