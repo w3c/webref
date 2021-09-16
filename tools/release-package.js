@@ -3,7 +3,7 @@
  * PR is based.
  */
 
-const { Octokit } = require("@octokit/rest");
+const Octokit = require("./octokit");
 const fs = require("fs");
 const path = require("path");
 const os = require("os");
