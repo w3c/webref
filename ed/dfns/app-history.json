@@ -422,6 +422,67 @@
       "definedIn": "pre"
     },
     {
+      "id": "dictdef-apphistoryresult",
+      "href": "https://wicg.github.io/app-history/#dictdef-apphistoryresult",
+      "linkingText": [
+        "AppHistoryResult"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/app-history/#global",
+        "title": "The AppHistory class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-apphistoryresult-committed",
+      "href": "https://wicg.github.io/app-history/#dom-apphistoryresult-committed",
+      "linkingText": [
+        "committed"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AppHistoryResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/app-history/#global",
+        "title": "The AppHistory class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-apphistoryresult-finished",
+      "href": "https://wicg.github.io/app-history/#dom-apphistoryresult-finished",
+      "linkingText": [
+        "finished"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AppHistoryResult"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "global",
+        "href": "https://wicg.github.io/app-history/#global",
+        "title": "The AppHistory class",
+        "number": "1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "apphistory-entry-list",
       "href": "https://wicg.github.io/app-history/#apphistory-entry-list",
       "linkingText": [
@@ -985,6 +1046,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "app-history-api-navigation-app-history",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-app-history",
+      "linkingText": [
+        "app history"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "app-history-api-navigation-key",
       "href": "https://wicg.github.io/app-history/#app-history-api-navigation-key",
       "linkingText": [
@@ -1048,10 +1130,73 @@
       "definedIn": "prose"
     },
     {
-      "id": "app-history-api-navigation-returned-promise",
-      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-returned-promise",
+      "id": "app-history-api-navigation-committed-to-entry",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-committed-to-entry",
       "linkingText": [
-        "returned promise"
+        "committed-to entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-committed-promise",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-committed-promise",
+      "linkingText": [
+        "committed promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-finished-promise",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-finished-promise",
+      "linkingText": [
+        "finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-did-finish-before-commit",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-did-finish-before-commit",
+      "linkingText": [
+        "did finish before commit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1132,15 +1277,78 @@
       "definedIn": "prose"
     },
     {
-      "id": "apphistory-clean-up-an-api-navigation",
-      "href": "https://wicg.github.io/app-history/#apphistory-clean-up-an-api-navigation",
+      "id": "app-history-api-navigation-clean-up",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-clean-up",
       "linkingText": [
-        "clean up an API navigation"
+        "clean up"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "AppHistory"
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-notify-about-the-committed-to-entry",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-notify-about-the-committed-to-entry",
+      "linkingText": [
+        "notify about the committed-to entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-resolve-the-finished-promise",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-resolve-the-finished-promise",
+      "linkingText": [
+        "resolve the finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "ongoing-state",
+        "href": "https://wicg.github.io/app-history/#ongoing-state",
+        "title": "Ongoing navigation tracking",
+        "number": "1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "app-history-api-navigation-reject-the-finished-promise",
+      "href": "https://wicg.github.io/app-history/#app-history-api-navigation-reject-the-finished-promise",
+      "linkingText": [
+        "reject the finished promise"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "app history API navigation"
       ],
       "access": "private",
       "informative": false,
@@ -1201,6 +1409,25 @@
       "href": "https://wicg.github.io/app-history/#perform-a-non-traverse-app-history-navigation",
       "linkingText": [
         "perform a non-traverse app history navigation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "global-navigate",
+        "href": "https://wicg.github.io/app-history/#global-navigate",
+        "title": "Navigating",
+        "number": "1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "an-early-error-result",
+      "href": "https://wicg.github.io/app-history/#an-early-error-result",
+      "linkingText": [
+        "an early error result"
       ],
       "localLinkingText": [],
       "type": "dfn",

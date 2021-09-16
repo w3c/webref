@@ -21,7 +21,7 @@
     },
     "idlNames": {
       "AppHistory": {
-        "fragment": "[Exposed=Window]\ninterface AppHistory : EventTarget {\n  sequence<AppHistoryEntry> entries();\n  readonly attribute AppHistoryEntry? current;\n  undefined updateCurrent(AppHistoryUpdateCurrentOptions options);\n  readonly attribute AppHistoryTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  Promise<undefined> navigate(USVString url, optional AppHistoryNavigateOptions options = {});\n  Promise<undefined> reload(optional AppHistoryReloadOptions options = {});\n\n  Promise<undefined> goTo(DOMString key, optional AppHistoryNavigationOptions options = {});\n  Promise<undefined> back(optional AppHistoryNavigationOptions options = {});\n  Promise<undefined> forward(optional AppHistoryNavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n};",
+        "fragment": "[Exposed=Window]\ninterface AppHistory : EventTarget {\n  sequence<AppHistoryEntry> entries();\n  readonly attribute AppHistoryEntry? current;\n  undefined updateCurrent(AppHistoryUpdateCurrentOptions options);\n  readonly attribute AppHistoryTransition? transition;\n\n  readonly attribute boolean canGoBack;\n  readonly attribute boolean canGoForward;\n\n  AppHistoryResult navigate(USVString url, optional AppHistoryNavigateOptions options = {});\n  AppHistoryResult reload(optional AppHistoryReloadOptions options = {});\n\n  AppHistoryResult goTo(DOMString key, optional AppHistoryNavigationOptions options = {});\n  AppHistoryResult back(optional AppHistoryNavigationOptions options = {});\n  AppHistoryResult forward(optional AppHistoryNavigationOptions options = {});\n\n  attribute EventHandler onnavigate;\n  attribute EventHandler onnavigatesuccess;\n  attribute EventHandler onnavigateerror;\n};",
         "type": "interface",
         "name": "AppHistory",
         "inheritance": "EventTarget",
@@ -148,19 +148,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -207,19 +198,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -250,19 +232,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -309,19 +282,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -352,19 +316,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -566,8 +521,66 @@
         "extAttrs": [],
         "partial": false
       },
+      "AppHistoryResult": {
+        "fragment": "dictionary AppHistoryResult {\n  Promise<AppHistoryEntry> committed;\n  Promise<AppHistoryEntry> finished;\n};",
+        "type": "dictionary",
+        "name": "AppHistoryResult",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "committed",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AppHistoryEntry"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "finished",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AppHistoryEntry"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "AppHistoryTransition": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryTransition {\n  readonly attribute AppHistoryNavigationType navigationType;\n  readonly attribute AppHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  Promise<undefined> rollback(optional AppHistoryNavigationOptions options = {});\n};",
+        "fragment": "[Exposed=Window]\ninterface AppHistoryTransition {\n  readonly attribute AppHistoryNavigationType navigationType;\n  readonly attribute AppHistoryEntry from;\n  readonly attribute Promise<undefined> finished;\n\n  AppHistoryResult rollback(optional AppHistoryNavigationOptions options = {});\n};",
         "type": "interface",
         "name": "AppHistoryTransition",
         "inheritance": null,
@@ -632,19 +645,10 @@
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "Promise",
+              "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": [
-                {
-                  "type": "return-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "undefined"
-                }
-              ]
+              "idlType": "AppHistoryResult"
             },
             "arguments": [
               {
@@ -1399,6 +1403,7 @@
         "AppHistoryEntry",
         "AppHistoryUpdateCurrentOptions",
         "AppHistoryTransition",
+        "AppHistoryResult",
         "AppHistoryNavigateOptions",
         "AppHistoryReloadOptions",
         "AppHistoryNavigationOptions",
@@ -1412,9 +1417,13 @@
       "AppHistoryReloadOptions": [
         "AppHistoryNavigationOptions"
       ],
+      "AppHistoryResult": [
+        "AppHistoryEntry"
+      ],
       "AppHistoryTransition": [
         "AppHistoryNavigationType",
         "AppHistoryEntry",
+        "AppHistoryResult",
         "AppHistoryNavigationOptions"
       ],
       "AppHistoryNavigateEvent": [
