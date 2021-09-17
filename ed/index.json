@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-17T12:46:56.253Z",
+  "date": "2021-09-17T18:43:02.924Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -19,8 +19,8 @@
     ]
   },
   "stats": {
-    "crawled": 437,
-    "errors": 1
+    "crawled": 440,
+    "errors": 0
   },
   "results": [
     {
@@ -347,6 +347,52 @@
       "ids": "ids/css-backgrounds-4.json"
     },
     {
+      "url": "https://drafts.csswg.org/css-cascade-6/",
+      "seriesComposition": "delta",
+      "shortname": "css-cascade-6",
+      "series": {
+        "shortname": "css-cascade",
+        "currentSpecification": "css-cascade-4",
+        "releaseUrl": "https://www.w3.org/TR/css-cascade/",
+        "nightlyUrl": "https://drafts.csswg.org/css-cascade/"
+      },
+      "seriesVersion": "6",
+      "seriesPrevious": "css-cascade-5",
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Cascading Style Sheets (CSS) Working Group",
+          "url": "https://www.w3.org/Style/CSS/"
+        }
+      ],
+      "nightly": {
+        "url": "https://drafts.csswg.org/css-cascade-6/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-cascade-6/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "title": "CSS Cascading and Inheritance Level 6",
+      "source": "spec",
+      "shortTitle": "CSS Cascading and Inheritance 6",
+      "tests": {
+        "repository": "https://github.com/web-platform-tests/wpt",
+        "testPaths": [
+          "css/css-cascade"
+        ]
+      },
+      "versions": [
+        "https://drafts.csswg.org/css-cascade-6/"
+      ],
+      "crawled": "https://drafts.csswg.org/css-cascade-6/",
+      "generator": "bikeshed",
+      "date": "9 September 2021",
+      "links": "links/css-cascade-6.json",
+      "refs": "refs/css-cascade-6.json",
+      "dfns": "dfns/css-cascade-6.json",
+      "headings": "headings/css-cascade-6.json",
+      "ids": "ids/css-cascade-6.json"
+    },
+    {
       "url": "https://drafts.csswg.org/css-env-1/",
       "seriesComposition": "full",
       "shortname": "css-env-1",
@@ -662,52 +708,6 @@
       "dfns": "dfns/css-page-4.json",
       "headings": "headings/css-page-4.json",
       "ids": "ids/css-page-4.json"
-    },
-    {
-      "url": "https://drafts.csswg.org/css-scoping-2/",
-      "seriesComposition": "delta",
-      "shortname": "css-scoping-2",
-      "series": {
-        "shortname": "css-scoping",
-        "currentSpecification": "css-scoping-1",
-        "releaseUrl": "https://www.w3.org/TR/css-scoping/",
-        "nightlyUrl": "https://drafts.csswg.org/css-scoping/"
-      },
-      "seriesVersion": "2",
-      "seriesPrevious": "css-scoping-1",
-      "organization": "W3C",
-      "groups": [
-        {
-          "name": "Cascading Style Sheets (CSS) Working Group",
-          "url": "https://www.w3.org/Style/CSS/"
-        }
-      ],
-      "nightly": {
-        "url": "https://drafts.csswg.org/css-scoping-2/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-scoping-2/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "title": "CSS Cascading and Inheritance Level 6",
-      "source": "spec",
-      "shortTitle": "CSS Scoping 2",
-      "tests": {
-        "repository": "https://github.com/web-platform-tests/wpt",
-        "testPaths": [
-          "css/css-scoping"
-        ]
-      },
-      "versions": [
-        "https://drafts.csswg.org/css-scoping-2/"
-      ],
-      "crawled": "https://drafts.csswg.org/css-scoping-2/",
-      "generator": "bikeshed",
-      "date": "9 September 2021",
-      "links": "links/css-scoping-2.json",
-      "refs": "refs/css-scoping-2.json",
-      "dfns": "dfns/css-scoping-2.json",
-      "headings": "headings/css-scoping-2.json",
-      "ids": "ids/css-scoping-2.json"
     },
     {
       "url": "https://drafts.csswg.org/css-shapes-2/",
@@ -1257,7 +1257,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "16 September 2021",
+      "date": "17 September 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -2102,6 +2102,40 @@
       "ids": "ids/tc39-import-assertions.json"
     },
     {
+      "url": "https://tc39.es/proposal-intl-locale-info/",
+      "seriesComposition": "full",
+      "shortname": "tc39-intl-locale-info",
+      "series": {
+        "shortname": "tc39-intl-locale-info",
+        "currentSpecification": "tc39-intl-locale-info",
+        "nightlyUrl": "https://tc39.es/proposal-intl-locale-info/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-intl-locale-info/",
+        "repository": "https://github.com/tc39/proposal-intl-locale-info",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "title": "Intl Locale Info Proposal",
+      "source": "spec",
+      "shortTitle": "Intl Locale Info Proposal",
+      "versions": [
+        "https://tc39.es/proposal-intl-locale-info/"
+      ],
+      "crawled": "https://tc39.es/proposal-intl-locale-info/",
+      "date": "9 September 2021",
+      "links": "links/tc39-intl-locale-info.json",
+      "headings": "headings/tc39-intl-locale-info.json",
+      "ids": "ids/tc39-intl-locale-info.json"
+    },
+    {
       "url": "https://tc39.es/proposal-json-modules/",
       "seriesComposition": "full",
       "shortname": "tc39-json-modules",
@@ -2204,42 +2238,6 @@
       "ids": "ids/tc39-private-methods.json"
     },
     {
-      "url": "https://tc39.es/proposal-realms/",
-      "seriesComposition": "full",
-      "shortname": "tc39-realms",
-      "series": {
-        "shortname": "tc39-realms",
-        "currentSpecification": "tc39-realms",
-        "nightlyUrl": "https://tc39.es/proposal-realms/"
-      },
-      "organization": "Ecma International",
-      "groups": [
-        {
-          "name": "TC39",
-          "url": "https://tc39.es/"
-        }
-      ],
-      "nightly": {
-        "url": "https://tc39.es/proposal-realms/",
-        "repository": "https://github.com/tc39/proposal-realms",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "title": "Realms API",
-      "source": "spec",
-      "shortTitle": "Realms API",
-      "versions": [
-        "https://tc39.es/proposal-realms/"
-      ],
-      "crawled": {
-        "url": "https://tc39.es/proposal-realms/",
-        "repository": "https://github.com/tc39/proposal-realms",
-        "sourcePath": "spec.html",
-        "filename": "index.html"
-      },
-      "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 48)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
-    },
-    {
       "url": "https://tc39.es/proposal-regexp-match-indices/",
       "seriesComposition": "full",
       "shortname": "tc39-regexp-match-indices",
@@ -2340,6 +2338,41 @@
       "links": "links/tc39-resizablearraybuffer.json",
       "headings": "headings/tc39-resizablearraybuffer.json",
       "ids": "ids/tc39-resizablearraybuffer.json"
+    },
+    {
+      "url": "https://tc39.es/proposal-shadowrealm/",
+      "seriesComposition": "full",
+      "shortname": "tc39-shadowrealm",
+      "series": {
+        "shortname": "tc39-shadowrealm",
+        "currentSpecification": "tc39-shadowrealm",
+        "nightlyUrl": "https://tc39.es/proposal-shadowrealm/"
+      },
+      "organization": "Ecma International",
+      "groups": [
+        {
+          "name": "TC39",
+          "url": "https://tc39.es/"
+        }
+      ],
+      "nightly": {
+        "url": "https://tc39.es/proposal-shadowrealm/",
+        "repository": "https://github.com/tc39/proposal-shadowrealm",
+        "sourcePath": "spec.html",
+        "filename": "index.html"
+      },
+      "title": "ShadowRealm API",
+      "source": "spec",
+      "shortTitle": "ShadowRealm API",
+      "versions": [
+        "https://tc39.es/proposal-shadowrealm/"
+      ],
+      "crawled": "https://tc39.es/proposal-shadowrealm/",
+      "date": "8 September 2021",
+      "links": "links/tc39-shadowrealm.json",
+      "dfns": "dfns/tc39-shadowrealm.json",
+      "headings": "headings/tc39-shadowrealm.json",
+      "ids": "ids/tc39-shadowrealm.json"
     },
     {
       "url": "https://tc39.es/proposal-static-class-features/",
@@ -2638,7 +2671,7 @@
         "filename": "Overview.html"
       },
       "title": "Incremental Font Transfer",
-      "source": "spec",
+      "source": "specref",
       "shortTitle": "Incremental Font Transfer",
       "versions": [
         "https://w3c.github.io/IFT/Overview.html"
@@ -3335,6 +3368,45 @@
       "ids": "ids/client-hints-infrastructure.json"
     },
     {
+      "url": "https://wicg.github.io/close-watcher/",
+      "seriesComposition": "full",
+      "shortname": "close-watcher",
+      "series": {
+        "shortname": "close-watcher",
+        "currentSpecification": "close-watcher",
+        "nightlyUrl": "https://wicg.github.io/close-watcher/"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "nightly": {
+        "url": "https://wicg.github.io/close-watcher/",
+        "repository": "https://github.com/WICG/close-watcher",
+        "sourcePath": "spec.bs",
+        "filename": "index.html"
+      },
+      "title": "Close Watcher API",
+      "source": "spec",
+      "shortTitle": "Close Watcher API",
+      "versions": [
+        "https://wicg.github.io/close-watcher/"
+      ],
+      "crawled": "https://wicg.github.io/close-watcher/",
+      "generator": "bikeshed",
+      "date": "10 September 2021",
+      "links": "links/close-watcher.json",
+      "refs": "refs/close-watcher.json",
+      "idl": "idl/close-watcher.idl",
+      "dfns": "dfns/close-watcher.json",
+      "headings": "headings/close-watcher.json",
+      "ids": "ids/close-watcher.json",
+      "idlparsed": "idlparsed/close-watcher.json"
+    },
+    {
       "url": "https://wicg.github.io/compression/",
       "seriesComposition": "full",
       "shortname": "compression",
@@ -3628,6 +3700,45 @@
       "dfns": "dfns/credentiallessness.json",
       "headings": "headings/credentiallessness.json",
       "ids": "ids/credentiallessness.json"
+    },
+    {
+      "url": "https://wicg.github.io/csp-next/scripting-policy.html",
+      "seriesComposition": "full",
+      "shortname": "csp-next",
+      "series": {
+        "shortname": "csp-next",
+        "currentSpecification": "csp-next",
+        "nightlyUrl": "https://wicg.github.io/csp-next/scripting-policy.html"
+      },
+      "nightly": {
+        "url": "https://wicg.github.io/csp-next/scripting-policy.html",
+        "sourcePath": "scripting-policy.bs",
+        "repository": "https://github.com/WICG/csp-next",
+        "filename": "scripting-policy.html"
+      },
+      "organization": "W3C",
+      "groups": [
+        {
+          "name": "Web Platform Incubator Community Group",
+          "url": "https://www.w3.org/community/wicg/"
+        }
+      ],
+      "title": "Scripting Policy",
+      "source": "spec",
+      "shortTitle": "Scripting Policy",
+      "versions": [
+        "https://wicg.github.io/csp-next/scripting-policy.html"
+      ],
+      "crawled": "https://wicg.github.io/csp-next/scripting-policy.html",
+      "generator": "bikeshed",
+      "date": "31 August 2021",
+      "links": "links/csp-next.json",
+      "refs": "refs/csp-next.json",
+      "idl": "idl/csp-next.idl",
+      "dfns": "dfns/csp-next.json",
+      "headings": "headings/csp-next.json",
+      "ids": "ids/csp-next.json",
+      "idlparsed": "idlparsed/csp-next.json"
     },
     {
       "url": "https://wicg.github.io/css-parser-api/",
@@ -9949,6 +10060,7 @@
       "seriesVersion": "5",
       "shortTitle": "CSS Cascading 5",
       "seriesPrevious": "css-cascade-4",
+      "seriesNext": "css-cascade-6",
       "organization": "W3C",
       "groups": [
         {
@@ -11323,7 +11435,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-multicol/",
       "generator": "bikeshed",
-      "date": "6 August 2021",
+      "date": "17 September 2021",
       "links": "links/css-multicol-1.json",
       "refs": "refs/css-multicol-1.json",
       "css": "css/css-multicol.json",
@@ -12145,7 +12257,6 @@
         "nightlyUrl": "https://drafts.csswg.org/css-scoping/"
       },
       "seriesVersion": "1",
-      "seriesNext": "css-scoping-2",
       "organization": "W3C",
       "groups": [
         {
@@ -12317,7 +12428,7 @@
       },
       "title": "CSS Scrollbars Styling Module Level 1",
       "source": "w3c",
-      "shortTitle": "CSS Scrollbars 1",
+      "shortTitle": "CSS Scrollbars Styling 1",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -15778,7 +15889,7 @@
       ],
       "release": {
         "url": "https://www.w3.org/TR/mixed-content/",
-        "filename": "index.html"
+        "filename": "Overview.html"
       },
       "nightly": {
         "url": "https://w3c.github.io/webappsec-mixed-content/",
@@ -15788,7 +15899,7 @@
       },
       "title": "Mixed Content Level 2",
       "source": "w3c",
-      "shortTitle": "Mixed Content",
+      "shortTitle": "Mixed Content 2",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
         "testPaths": [
@@ -17548,7 +17659,7 @@
       "nightly": {
         "url": "https://w3c.github.io/webappsec-secure-contexts/",
         "repository": "https://github.com/w3c/webappsec-secure-contexts",
-        "sourcePath": "index.src.html",
+        "sourcePath": "index.bs",
         "filename": "index.html"
       },
       "title": "Secure Contexts",
@@ -19183,7 +19294,7 @@
       ],
       "crawled": "https://webaudio.github.io/web-audio-api/",
       "generator": "bikeshed",
-      "date": "3 September 2021",
+      "date": "17 September 2021",
       "links": "links/webaudio.json",
       "refs": "refs/webaudio.json",
       "idl": "idl/webaudio.idl",
@@ -19440,7 +19551,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "generator": "bikeshed",
-      "date": "15 September 2021",
+      "date": "17 September 2021",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
