@@ -6,7 +6,7 @@
       "title": "Web NFC",
       "url": "https://w3c.github.io/web-nfc/"
     },
-    "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  NDEFRecordDataSource data;\n};",
+    "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  any data; // DOMString or BufferSource or NDEFMessageInit\n};",
     "href": "https://w3c.github.io/web-nfc/#dom-ndefrecordinit"
   },
   "extended": [],

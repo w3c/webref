@@ -224,9 +224,7 @@
       ],
       "localLinkingText": [],
       "type": "interface",
-      "for": [
-        "NavigatorAutomationInformation"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -2479,6 +2477,25 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-timeouts-object",
+      "href": "https://w3c.github.io/webdriver/#dfn-timeouts-object",
+      "linkingText": [
+        "timeouts object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://w3c.github.io/webdriver/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-get-timeouts",
       "href": "https://w3c.github.io/webdriver/#dfn-get-timeouts",
       "linkingText": [
@@ -2834,10 +2851,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-the-windowproxy-object",
-      "href": "https://w3c.github.io/webdriver/#dfn-json-serialization-of-the-windowproxy-object",
+      "id": "dfn-windowproxy-reference-object",
+      "href": "https://w3c.github.io/webdriver/#dfn-windowproxy-reference-object",
       "linkingText": [
-        "JSON serialization of the WindowProxy object"
+        "WindowProxy reference object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3136,11 +3153,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-window-rect",
-      "href": "https://w3c.github.io/webdriver/#dfn-json-serialization-of-window-rect",
+      "id": "dfn-windowrect-object",
+      "href": "https://w3c.github.io/webdriver/#dfn-windowrect-object",
       "linkingText": [
-        "json serialization of window rect",
-        "JSON representation"
+        "WindowRect object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3435,11 +3451,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-create-an-element",
-      "href": "https://w3c.github.io/webdriver/#dfn-create-an-element",
+      "id": "dfn-get-or-create-a-web-element-reference",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-or-create-a-web-element-reference",
       "linkingText": [
-        "create an element",
-        "create a web element reference"
+        "get or create a web element reference"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3454,10 +3469,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-an-element",
-      "href": "https://w3c.github.io/webdriver/#dfn-json-serialization-of-an-element",
+      "id": "dfn-web-element-reference-object",
+      "href": "https://w3c.github.io/webdriver/#dfn-web-element-reference-object",
       "linkingText": [
-        "JSON serialization of an element"
+        "web element reference object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3874,12 +3889,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-create-a-shadow-root",
-      "href": "https://w3c.github.io/webdriver/#dfn-create-a-shadow-root",
+      "id": "dfn-get-or-create-a-shadow-root-reference",
+      "href": "https://w3c.github.io/webdriver/#dfn-get-or-create-a-shadow-root-reference",
       "linkingText": [
-        "create a shadow root",
-        "a new shadow root reference",
-        "create a shadow root reference"
+        "get or create a shadow root reference"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3895,10 +3908,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-a-shadow-root",
-      "href": "https://w3c.github.io/webdriver/#dfn-json-serialization-of-a-shadow-root",
+      "id": "dfn-shadow-root-reference-object",
+      "href": "https://w3c.github.io/webdriver/#dfn-shadow-root-reference-object",
       "linkingText": [
-        "JSON serialization of a shadow root"
+        "shadow root reference object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8577,11 +8590,13 @@
       "id": "dfn-call",
       "href": "https://w3c.github.io/webdriver/#dfn-call",
       "linkingText": [
-        "Call"
+        "[[Call]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Function"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8600,8 +8615,10 @@
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
-      "access": "public",
+      "for": [
+        "Object"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
@@ -8619,8 +8636,10 @@
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
-      "access": "public",
+      "for": [
+        "Object"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
@@ -8638,8 +8657,10 @@
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
-      "access": "public",
+      "for": [
+        "Object"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
@@ -8676,8 +8697,10 @@
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
-      "access": "public",
+      "for": [
+        "Object"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
@@ -8843,12 +8866,12 @@
       "id": "dfn-parse",
       "href": "https://w3c.github.io/webdriver/#dfn-parse",
       "linkingText": [
-        "[[Parse]]"
+        "parse"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
@@ -8881,12 +8904,12 @@
       "id": "dfn-stringify",
       "href": "https://w3c.github.io/webdriver/#dfn-stringify",
       "linkingText": [
-        "[[Stringify]]"
+        "stringify"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "index",
