@@ -75,13 +75,6 @@ partial interface Element {
   undefined setHTML(DOMString input, Sanitizer sanitizer);
 };
 
-// Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)
-partial interface Element {
-    Node getSpatialNavigationContainer();
-    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});
-    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});
-};
-
 // Source: CSS Pseudo-Elements Module Level 4 (https://www.w3.org/TR/css-pseudo-4/)
 partial interface Element {
   CSSPseudoElement? pseudo(CSSOMString type);
