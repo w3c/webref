@@ -13528,7 +13528,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Crawled URL: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
-- Crawled version: 16 September 2021
+- Crawled version: 18 September 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
 - Latest published version: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Shortname: mixed-content
