@@ -1,102 +1,86 @@
-% Diff between report from "September 13, 2021" and reference report from "September 06, 2021"
+% Diff between report from "September 20, 2021" and reference report from "September 13, 2021"
 % Reffy
-% September 13, 2021
+% September 20, 2021
 
-## App History API
+## Close Watcher API
 
-- Initial URL: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
+- Initial URL: [https://wicg.github.io/close-watcher/](https://wicg.github.io/close-watcher/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/app-history/](https://wicg.github.io/app-history/)
+- Editor's Draft: [https://wicg.github.io/close-watcher/](https://wicg.github.io/close-watcher/)
 - This specification was not in the reference crawl report.
 
 
-## Attribution Reporting
+## Compatibility Standard
 
-- Initial URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
+- Initial URL: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
-- This specification was not in the reference crawl report.
-
-
-## Cross-Origin-Embedder-Policy: credentialless
-
-- Initial URL: [https://wicg.github.io/credentiallessness/](https://wicg.github.io/credentiallessness/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/credentiallessness/](https://wicg.github.io/credentiallessness/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://compat.spec.whatwg.org/](https://compat.spec.whatwg.org/)
+- Missing references for links: *INS* https://www.w3.org/TR/css-values/
 
 
 ## CSS Cascading and Inheritance Level 6
 
-- Initial URL: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
+- Initial URL: [https://drafts.csswg.org/css-cascade-6/](https://drafts.csswg.org/css-cascade-6/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-scoping-2/](https://drafts.csswg.org/css-scoping-2/)
-- Spec title: *INS* CSS Cascading and Inheritance Level 6 / *DEL* CSS Scoping Module Level 2
-- Missing references for links: *INS* https://www.w3.org/TR/css-style-attr/, https://www.w3.org/TR/selectors/, https://www.w3.org/TR/css-cascade-4/, https://www.w3.org/TR/css-cascade-3/, https://html.spec.whatwg.org/ / *DEL* https://www.w3.org/TR/css-scoping-1/
-
-
-## CSS Scrollbars Styling Module Level 1
-
-- Initial URL: [https://www.w3.org/TR/css-scrollbars-1/](https://www.w3.org/TR/css-scrollbars-1/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://drafts.csswg.org/css-scrollbars/](https://drafts.csswg.org/css-scrollbars/)
-- Spec title: *INS* CSS Scrollbars Styling Module Level 1 / *DEL* CSS Scrollbars Module Level 1
-
-
-## EyeDropper API
-
-- Initial URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
+- Editor's Draft: [https://drafts.csswg.org/css-cascade-6/](https://drafts.csswg.org/css-cascade-6/)
 - This specification was not in the reference crawl report.
 
 
-## Ink API
+## Event Timing API
 
-- Initial URL: [https://wicg.github.io/ink-enhancement/](https://wicg.github.io/ink-enhancement/)
+- Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/ink-enhancement/](https://wicg.github.io/ink-enhancement/)
+- Editor's Draft: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
+- Inconsistent references for links: *INS* https://w3c.github.io/pointerevents/
+
+
+## Intl Locale Info Proposal
+
+- Initial URL: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
 - This specification was not in the reference crawl report.
 
 
-## Realms API
+## Mixed Content Level 2
 
-- Initial URL: [https://tc39.es/proposal-realms/](https://tc39.es/proposal-realms/)
+- Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-realms/](https://tc39.es/proposal-realms/)
-- Spec could not be rendered: *INS* Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed
-    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23)
-    at runMicrotasks (<anonymous>)
-    at processTicksAndRejections (internal/process/task_queues.js:95:5)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 48)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)
+- Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
+- Spec title: *INS* Mixed Content Level 2 / *DEL* Mixed Content
+- Inconsistent references for links: *INS* https://w3c.github.io/webappsec-secure-contexts/ / *DEL* https://www.w3.org/TR/html5/, https://w3c.github.io/webappsec-csp/, https://www.w3.org/TR/eventsource/
 
 
-## Secure Payment Confirmation
+## Scripting Policy
 
-- Initial URL: [https://www.w3.org/TR/secure-payment-confirmation/](https://www.w3.org/TR/secure-payment-confirmation/)
+- Initial URL: [https://wicg.github.io/csp-next/scripting-policy.html](https://wicg.github.io/csp-next/scripting-policy.html)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/secure-payment-confirmation](https://w3c.github.io/secure-payment-confirmation)
+- Editor's Draft: [https://wicg.github.io/csp-next/scripting-policy.html](https://wicg.github.io/csp-next/scripting-policy.html)
 - This specification was not in the reference crawl report.
 
 
-## URLPattern API
+## Secure Contexts
 
-- Initial URL: [https://wicg.github.io/urlpattern/](https://wicg.github.io/urlpattern/)
+- Initial URL: [https://www.w3.org/TR/secure-contexts/](https://www.w3.org/TR/secure-contexts/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/urlpattern/](https://wicg.github.io/urlpattern/)
+- Editor's Draft: [https://w3c.github.io/webappsec-secure-contexts/](https://w3c.github.io/webappsec-secure-contexts/)
+- Obsolete WebIDL constructs found: *DEL* false
+- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
+
+
+## ShadowRealm API
+
+- Initial URL: [https://tc39.es/proposal-shadowrealm/](https://tc39.es/proposal-shadowrealm/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://tc39.es/proposal-shadowrealm/](https://tc39.es/proposal-shadowrealm/)
 - This specification was not in the reference crawl report.
 
 
-## WebXR Lighting Estimation API Level 1
+## UI Events
 
-- Initial URL: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
+- Initial URL: [https://www.w3.org/TR/uievents/](https://www.w3.org/TR/uievents/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://immersive-web.github.io/lighting-estimation/](https://immersive-web.github.io/lighting-estimation/)
-- Missing references for links: *INS* https://www.w3.org/TR/webxrlayers-1/
+- Editor's Draft: [https://w3c.github.io/uievents/](https://w3c.github.io/uievents/)
+- Unknown WebIDL names used: *INS* WindowProxy
 
 

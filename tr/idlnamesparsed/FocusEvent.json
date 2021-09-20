@@ -6,7 +6,7 @@
       "title": "UI Events",
       "url": "https://www.w3.org/TR/uievents/"
     },
-    "fragment": "[Constructor(DOMString type, optional FocusEventInit eventInitDict), Exposed=Window]\ninterface FocusEvent : UIEvent {\n  readonly attribute EventTarget? relatedTarget;\n};",
+    "fragment": "[Exposed=Window]\ninterface FocusEvent : UIEvent {\n  constructor(DOMString type, optional FocusEventInit eventInitDict = {});\n  readonly attribute EventTarget? relatedTarget;\n};",
     "href": "https://www.w3.org/TR/uievents/#focusevent"
   },
   "extended": [],
@@ -18,7 +18,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "[Constructor(DOMString type, optional UIEventInit eventInitDict), Exposed=Window]\ninterface UIEvent : Event {\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
+      "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict = {});\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
       "href": "https://www.w3.org/TR/uievents/#uievent"
     },
     "extended": [
@@ -28,6 +28,13 @@
           "url": "https://wicg.github.io/input-device-capabilities/"
         },
         "fragment": "partial interface UIEvent {\n  readonly attribute InputDeviceCapabilities? sourceCapabilities;\n};"
+      },
+      {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
       },
       {
         "spec": {

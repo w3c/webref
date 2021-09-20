@@ -1,0 +1,29 @@
+{
+  "name": "ScriptingPolicyReportBody",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Scripting Policy",
+      "url": "https://wicg.github.io/csp-next/scripting-policy.html"
+    },
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface ScriptingPolicyReportBody : ReportBody {\n  [Default] object toJSON();\n  readonly attribute DOMString     violationType;\n  readonly attribute USVString?    violationURL;\n  readonly attribute USVString?    violationSample;\n  readonly attribute unsigned long lineno;\n  readonly attribute unsigned long colno;\n};",
+    "href": "https://wicg.github.io/csp-next/scripting-policy.html#scriptingpolicyreportbody"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "ReportBody",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Reporting API",
+        "url": "https://www.w3.org/TR/reporting-1/"
+      },
+      "fragment": "interface ReportBody {\n};",
+      "href": "https://www.w3.org/TR/reporting-1/#reportbody"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

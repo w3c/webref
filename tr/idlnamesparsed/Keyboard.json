@@ -9,7 +9,15 @@
     "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);\n  undefined unlock();\n};",
     "href": "https://wicg.github.io/keyboard-lock/#keyboard"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Keyboard Map",
+        "url": "https://wicg.github.io/keyboard-map/"
+      },
+      "fragment": "partial interface Keyboard {\n  Promise<KeyboardLayoutMap> getLayoutMap();\n\n  attribute EventHandler onlayoutchange;\n};"
+    }
+  ],
   "inheritance": null,
   "includes": []
 }

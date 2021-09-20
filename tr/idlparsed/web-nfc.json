@@ -122,45 +122,6 @@
         "extAttrs": [],
         "partial": false
       },
-      "NDEFRecordDataSource": {
-        "fragment": "typedef (DOMString or BufferSource or NDEFMessageInit) NDEFRecordDataSource;",
-        "type": "typedef",
-        "name": "NDEFRecordDataSource",
-        "idlType": {
-          "type": "typedef-type",
-          "extAttrs": [],
-          "generic": "",
-          "nullable": false,
-          "union": true,
-          "idlType": [
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "BufferSource"
-            },
-            {
-              "type": null,
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "NDEFMessageInit"
-            }
-          ]
-        },
-        "extAttrs": []
-      },
       "NDEFRecord": {
         "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFRecord {\n  constructor(NDEFRecordInit recordInit);\n\n  readonly attribute USVString recordType;\n  readonly attribute USVString? mediaType;\n  readonly attribute USVString? id;\n  readonly attribute DataView? data;\n\n  readonly attribute USVString? encoding;\n  readonly attribute USVString? lang;\n\n  sequence<NDEFRecord>? toRecords();\n};",
         "type": "interface",
@@ -324,7 +285,7 @@
         "partial": false
       },
       "NDEFRecordInit": {
-        "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  NDEFRecordDataSource data;\n};",
+        "fragment": "dictionary NDEFRecordInit {\n  required USVString recordType;\n  USVString mediaType;\n  USVString id;\n\n  USVString encoding;\n  USVString lang;\n\n  any data; // DOMString or BufferSource or NDEFMessageInit\n};",
         "type": "dictionary",
         "name": "NDEFRecordInit",
         "inheritance": null,
@@ -414,7 +375,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "NDEFRecordDataSource"
+              "idlType": "any"
             },
             "default": null,
             "required": false
@@ -860,9 +821,7 @@
         "NDEFRecordInit",
         "NDEFRecord"
       ],
-      "NDEFRecordInit": [
-        "NDEFRecordDataSource"
-      ],
+      "NDEFRecordInit": [],
       "NDEFReader": [
         "EventTarget",
         "EventHandler",

@@ -9,7 +9,15 @@
     "fragment": "dictionary KeyboardEventInit : EventModifierInit {\n  DOMString key = \"\";\n  DOMString code = \"\";\n  unsigned long location = 0;\n  boolean repeat = false;\n  boolean isComposing = false;\n};",
     "href": "https://www.w3.org/TR/uievents/#dictdef-keyboardeventinit"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "UI Events",
+        "url": "https://www.w3.org/TR/uievents/"
+      },
+      "fragment": "partial dictionary KeyboardEventInit {\n  // The following support legacy user agents\n  unsigned long charCode = 0;\n  unsigned long keyCode = 0;\n};"
+    }
+  ],
   "inheritance": {
     "name": "EventModifierInit",
     "type": "dictionary",
@@ -40,6 +48,13 @@
             "url": "https://wicg.github.io/input-device-capabilities/"
           },
           "fragment": "partial dictionary UIEventInit {\n  InputDeviceCapabilities? sourceCapabilities = null;\n};"
+        },
+        {
+          "spec": {
+            "title": "UI Events",
+            "url": "https://www.w3.org/TR/uievents/"
+          },
+          "fragment": "partial dictionary UIEventInit {\n  unsigned long which = 0;\n};"
         }
       ],
       "inheritance": {

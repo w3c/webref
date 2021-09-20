@@ -8,3 +8,8 @@ dictionary UIEventInit : EventInit {
 partial dictionary UIEventInit {
   InputDeviceCapabilities? sourceCapabilities = null;
 };
+
+// Source: UI Events (https://www.w3.org/TR/uievents/)
+partial dictionary UIEventInit {
+  unsigned long which = 0;
+};

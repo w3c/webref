@@ -209,6 +209,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-performanceeventtiming-interactionid",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-interactionid",
+      "linkingText": [
+        "interactionId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "eventcounts",
       "href": "https://wicg.github.io/event-timing/#eventcounts",
       "linkingText": [
@@ -268,10 +289,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "pending-pointer-down",
-      "href": "https://wicg.github.io/event-timing/#pending-pointer-down",
+      "id": "pending-first-pointer-down",
+      "href": "https://wicg.github.io/event-timing/#pending-first-pointer-down",
       "linkingText": [
-        "pending pointer down"
+        "pending first pointer down"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -291,6 +312,82 @@
       "href": "https://wicg.github.io/event-timing/#has-dispatched-input-event",
       "linkingText": [
         "has dispatched input event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-interaction-value",
+      "href": "https://wicg.github.io/event-timing/#user-interaction-value",
+      "linkingText": [
+        "user interaction value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-press-interaction-value-map",
+      "href": "https://wicg.github.io/event-timing/#key-press-interaction-value-map",
+      "linkingText": [
+        "key press interaction value map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pointer-interaction-value-map",
+      "href": "https://wicg.github.io/event-timing/#pointer-interaction-value-map",
+      "linkingText": [
+        "pointer interaction value map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-pointer-downs",
+      "href": "https://wicg.github.io/event-timing/#pending-pointer-downs",
+      "linkingText": [
+        "pending pointer downs"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -346,6 +443,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "compute-interactionid",
+      "href": "https://wicg.github.io/event-timing/#compute-interactionid",
+      "linkingText": [
+        "compute interactionId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-computing-interactionid",
+        "href": "https://wicg.github.io/event-timing/#sec-computing-interactionid",
+        "title": "Computing interactionId",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "initialize-event-timing",
       "href": "https://wicg.github.io/event-timing/#initialize-event-timing",
       "linkingText": [
@@ -360,7 +476,7 @@
         "id": "sec-init-event-timing",
         "href": "https://wicg.github.io/event-timing/#sec-init-event-timing",
         "title": "Initialize event timing",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "prose"
     },
@@ -379,7 +495,7 @@
         "id": "sec-fin-event-timing",
         "href": "https://wicg.github.io/event-timing/#sec-fin-event-timing",
         "title": "Finalize event timing",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "prose"
     },
@@ -398,7 +514,26 @@
         "id": "sec-dispatch-pending",
         "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
         "title": "Dispatch pending Event Timing entries",
-        "number": "3.7"
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-event-timing-entry-duration",
+      "href": "https://wicg.github.io/event-timing/#set-event-timing-entry-duration",
+      "linkingText": [
+        "set event timing entry duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-dispatch-pending",
+        "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
+        "title": "Dispatch pending Event Timing entries",
+        "number": "3.8"
       },
       "definedIn": "prose"
     }

@@ -7,5 +7,5 @@ dictionary NDEFRecordInit {
   USVString encoding;
   USVString lang;
 
-  NDEFRecordDataSource data;
+  any data; // DOMString or BufferSource or NDEFMessageInit
 };

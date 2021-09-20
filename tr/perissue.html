@@ -20,15 +20,7 @@
 <body>
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
-  <p>437 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="%5Bobject%20Object%5D">Realms API</a>: <code>Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/reffy.mjs failed at DOMWorld.addScriptTag (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:171:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:95:5) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:549:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22) at async Promise.all (index 48) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21) at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
+  <p>440 specifications were crawled in this report.</p>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -47,6 +39,7 @@
   <li><a href="https://tc39.es/proposal-error-cause/">Error Cause</a></li>
   <li><a href="https://tc39.es/proposal-import-assertions/">import assertions</a></li>
   <li><a href="https://www.w3.org/TR/input-events-2/">Input Events Level 2</a></li>
+  <li><a href="https://tc39.es/proposal-intl-locale-info/">Intl Locale Info Proposal</a></li>
   <li><a href="https://tc39.es/proposal-json-modules/">JSON modules</a></li>
   <li><a href="https://www.w3.org/TR/fingerprinting-guidance/">Mitigating Browser Fingerprinting in Web Specifications</a></li>
   <li><a href="https://www.w3.org/TR/payment-method-basic-card/">Payment Method: Basic Card</a></li>
@@ -64,6 +57,7 @@
   <li><a href="https://www.rfc-editor.org/rfc/rfc7239">RFC 7239: Forwarded HTTP Extension</a></li>
   <li><a href="https://www.rfc-editor.org/rfc/rfc7469">RFC 7469: Public Key Pinning Extension for HTTP</a></li>
   <li><a href="https://www.rfc-editor.org/rfc/rfc7578">RFC 7578: Returning Values from Forms: multipart/form-data</a></li>
+  <li><a href="https://tc39.es/proposal-shadowrealm/">ShadowRealm API</a></li>
   <li><a href="https://tc39.es/proposal-static-class-features/">Static class features</a></li>
   <li><a href="https://tc39.es/proposal-temporal/">Temporal proposal</a></li>
   <li><a href="https://tc39.es/proposal-top-level-await/">Top-Level Await</a></li>
@@ -110,7 +104,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/">WebGL WEBGL_multi_draw Extension Specification</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   </ul>
-  <p>=&gt; 77 specifications found</p>
+  <p>=&gt; 79 specifications found</p>
   <p>Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.</p>
   </section>
   <section id="list-of-specifications-with-invalid-webidl-content" class="level2">
@@ -140,7 +134,6 @@
   <li><a href="https://www.w3.org/TR/css-regions-1/">CSS Regions Module Level 1</a></li>
   <li><a href="https://www.w3.org/TR/referrer-policy/">Referrer Policy</a></li>
   <li><a href="https://www.w3.org/TR/SVG11/">Scalable Vector Graphics (SVG) 1.1 (Second Edition)</a></li>
-  <li><a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a></li>
   <li><a href="https://www.w3.org/TR/SRI/">Subresource Integrity</a></li>
   <li><a href="https://svgwg.org/specs/animations/">SVG Animations</a></li>
   <li><a href="https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/">WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification</a></li>
@@ -187,7 +180,7 @@
   <li><a href="https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/">WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification</a></li>
   <li><a href="https://www.w3.org/TR/webrtc-priority/">WebRTC Priority Control API</a></li>
   </ul>
-  <p>=&gt; 53 specifications found</p>
+  <p>=&gt; 52 specifications found</p>
   </section>
   <section id="list-of-exposed-names-not-defined-in-the-specifications-crawled" class="level2">
   <h2>List of [Exposed] names not defined in the specifications crawled</h2>
@@ -212,7 +205,7 @@
   <li><code>Screen</code> used in <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a></li>
   <li><code>SupportedType</code> used in <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a></li>
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
-  <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://www.w3.org/TR/touch-events/">Touch Events</a></li>
+  <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://www.w3.org/TR/touch-events/">Touch Events</a>, <a href="https://www.w3.org/TR/uievents/">UI Events</a></li>
   <li><code>bigint</code> used in <a href="https://w3c.github.io/webrtc-encoded-transform/">WebRTC Encoded Transform</a></li>
   <li><code>void</code> used in <a href="https://www.w3.org/TR/requestidlecallback/">Cooperative Scheduling of Background Tasks</a>, <a href="https://www.w3.org/TR/credential-management-1/">Credential Management Level 1</a>, <a href="https://www.w3.org/TR/css-animation-worklet-1/">CSS Animation Worklet API</a>, <a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a>, <a href="https://www.w3.org/TR/css-layout-api-1/">CSS Layout API Level 1</a>, <a href="https://www.w3.org/TR/css-paint-api-1/">CSS Painting API Level 1</a>, <a href="https://www.w3.org/TR/css-nav-1/">CSS Spatial Navigation Level 1</a>, <a href="https://www.w3.org/TR/css-typed-om-1/">CSS Typed OM Level 1</a>, <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a>, <a href="https://www.w3.org/TR/encrypted-media/">Encrypted Media Extensions</a>, <a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a>, <a href="https://www.w3.org/TR/webrtc-identity/">Identity for WebRTC 1.0</a>, <a href="https://www.w3.org/TR/media-source/">Media Source Extensions™</a>, <a href="https://www.w3.org/TR/pointerlock-2/">Pointer Lock 2.0</a>, <a href="https://www.w3.org/TR/remote-playback/">Remote Playback API</a>, <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a>, <a href="https://www.w3.org/TR/resize-observer-1/">Resize Observer</a>, <a href="https://www.w3.org/TR/SVG2/">Scalable Vector Graphics (SVG) 2</a>, <a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>, <a href="https://www.w3.org/TR/tracking-dnt/">Tracking Preference Expression (DNT)</a>, <a href="https://www.w3.org/TR/user-timing-2/">User Timing Level 2</a>, <a href="https://www.w3.org/TR/webmidi/">Web MIDI API</a>, <a href="https://www.w3.org/TR/wasm-js-api-1/">WebAssembly JavaScript Interface</a></li>
   </ul>
@@ -226,11 +219,10 @@
   <li><code>DOMParser</code> defined in <a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a> and <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a></li>
   <li><code>DeprecationReportBody</code> defined in <a href="https://wicg.github.io/deprecation-reporting/">Deprecation Reporting</a> and <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a></li>
   <li><code>InterventionReportBody</code> defined in <a href="https://wicg.github.io/intervention-reporting/">Intervention Reporting</a> and <a href="https://www.w3.org/TR/reporting-1/">Reporting API</a></li>
-  <li><code>Keyboard</code> defined in <a href="https://wicg.github.io/keyboard-lock/">Keyboard Lock</a> and <a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a></li>
   <li><code>MessageEventSource</code> defined in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> and <a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><code>PermissionState</code> defined in <a href="https://www.w3.org/TR/orientation-event/">DeviceOrientation Event Specification</a> and <a href="https://www.w3.org/TR/permissions/">Permissions</a></li>
   </ul>
-  <p>=&gt; 7 WebIDL names found</p>
+  <p>=&gt; 6 WebIDL names found</p>
   <p>&quot;There can be only one&quot;...</p>
   </section>
   <section id="missing-references-for-webidl-names" class="level2">
@@ -1669,6 +1661,7 @@
   <li><a href="https://www.w3.org/TR/clipboard-apis/">Clipboard API and events</a> links to <a href="https://w3c.github.io/editing/contentEditable.html"><code>https://w3c.github.io/editing/contentEditable.html</code></a> but does not list it in its references</li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a> links to:
   <ul>
+  <li><a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-pseudo/"><code>https://www.w3.org/TR/css-pseudo/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/web-animations/"><code>https://www.w3.org/TR/web-animations/</code></a> but does not list it in its references</li>
@@ -1827,7 +1820,7 @@
   <li><a href="https://www.w3.org/TR/css-cascade-4/"><code>https://www.w3.org/TR/css-cascade-4/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/css-cascade-3/"><code>https://www.w3.org/TR/css-cascade-3/</code></a> but does not list it in its references</li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-scoping-2/">CSS Cascading and Inheritance Level 6</a> links to:
+  <li><a href="https://drafts.csswg.org/css-cascade-6/">CSS Cascading and Inheritance Level 6</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-style-attr/"><code>https://www.w3.org/TR/css-style-attr/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selectors/"><code>https://www.w3.org/TR/selectors/</code></a> but does not list it in its references</li>
@@ -2357,11 +2350,7 @@
   <li><a href="https://www.w3.org/TR/DOM-Parsing/">DOM Parsing and Serialization</a> links to <a href="https://domparsing.spec.whatwg.org/"><code>https://domparsing.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html"><code>https://w3c.github.io/deviceorientation/spec-source-orientation.html</code></a> but does not list it in its references</li>
   <li><a href="https://tc39.es/ecma262/multipage/">ECMAScript® 2022 Language Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a> links to:
-  <ul>
-  <li><a href="https://w3c.github.io/pointerevents/"><code>https://w3c.github.io/pointerevents/</code></a> but does not list it in its references</li>
-  <li><a href="https://w3c.github.io/timing-entrytypes-registry/"><code>https://w3c.github.io/timing-entrytypes-registry/</code></a> but does not list it in its references</li>
-  </ul></li>
+  <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a> links to <a href="https://w3c.github.io/timing-entrytypes-registry/"><code>https://w3c.github.io/timing-entrytypes-registry/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/filter-effects-1/">Filter Effects Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-positioning/"><code>https://www.w3.org/TR/css3-positioning/</code></a> but does not list it in its references</li>
@@ -2420,7 +2409,6 @@
   <li><a href="https://www.w3.org/TR/css-masking-1/"><code>https://www.w3.org/TR/css-masking-1/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://wicg.github.io/js-self-profiling/">JS Self-Profiling API</a> links to <a href="https://w3c.github.io/webappsec-permissions-policy/document-policy.html"><code>https://w3c.github.io/webappsec-permissions-policy/document-policy.html</code></a> but does not list it in its references</li>
-  <li><a href="https://wicg.github.io/keyboard-map/">Keyboard Map</a> links to <a href="https://w3c.github.io/keyboard-lock/"><code>https://w3c.github.io/keyboard-lock/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/layout-instability/">Layout Instability API</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but does not list it in its references</li>
@@ -2442,11 +2430,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/webrtc-identity/"><code>https://www.w3.org/TR/webrtc-identity/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/fingerprinting-guidance/"><code>https://www.w3.org/TR/fingerprinting-guidance/</code></a> but does not list it in its references</li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a> links to:
-  <ul>
-  <li><a href="https://url.spec.whatwg.org/"><code>https://url.spec.whatwg.org/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/service-workers/"><code>https://www.w3.org/TR/service-workers/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/motion-1/">Motion Path Module Level 1</a> links to:
   <ul>
@@ -2568,6 +2551,7 @@
   <li><a href="https://www.w3.org/TR/2015/WD-svg-markers-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-markers-20150407/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/2015/WD-svg-strokes-20150407/"><code>https://www.w3.org/TR/2015/WD-svg-strokes-20150407/</code></a> but does not list it in its references</li>
   </ul></li>
+  <li><a href="https://wicg.github.io/csp-next/scripting-policy.html">Scripting Policy</a> links to <a href="https://w3c.github.io/webappsec-trusted-types/dist/spec/"><code>https://w3c.github.io/webappsec-trusted-types/dist/spec/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/secure-payment-confirmation/">Secure Payment Confirmation</a> links to <a href="https://www.w3.org/TR/webauthn/"><code>https://www.w3.org/TR/webauthn/</code></a> but does not list it in its references</li>
   <li><a href="https://www.w3.org/TR/selection-api/">Selection API</a> links to <a href="https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/"><code>https://www.w3.org/TR/2000/REC-DOM-Level-2-Traversal-Range-20001113/</code></a> but does not list it in its references</li>
@@ -2630,11 +2614,6 @@
   <li><a href="https://xhr.spec.whatwg.org/"><code>https://xhr.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://encoding.spec.whatwg.org/"><code>https://encoding.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/webcomponents/spec/imports/"><code>https://w3c.github.io/webcomponents/spec/imports/</code></a> but does not list it in its references</li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/uievents/">UI Events</a> links to:
-  <ul>
-  <li><a href="https://www.w3.org/TR/svg2/"><code>https://www.w3.org/TR/svg2/</code></a> but does not list it in its references</li>
-  <li><a href="https://www.w3.org/TR/2004/REC-xml-20040204/"><code>https://www.w3.org/TR/2004/REC-xml-20040204/</code></a> but does not list it in its references</li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/upgrade-insecure-requests/">Upgrade Insecure Requests</a> links to:
   <ul>
@@ -2713,7 +2692,7 @@
   <li><a href="https://immersive-web.github.io/lighting-estimation/">WebXR Lighting Estimation API Level 1</a> links to <a href="https://www.w3.org/TR/webxrlayers-1/"><code>https://www.w3.org/TR/webxrlayers-1/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 696 missing references for links found in 185 specifications</p>
+  <p>=&gt; 692 missing references for links found in 183 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -2758,7 +2737,6 @@
   <li><a href="https://w3c.github.io/permissions/"><code>https://w3c.github.io/permissions/</code></a> but related reference &quot;PERMISSIONS&quot; uses URL <a href="https://www.w3.org/TR/permissions/"><code>https://www.w3.org/TR/permissions/</code></a></li>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   </ul></li>
-  <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a> links to <a href="https://www.w3.org/TR/css-values/"><code>https://www.w3.org/TR/css-values/</code></a> but related reference &quot;CSS-VALUES-3&quot; uses URL <a href="https://drafts.csswg.org/css-values-3/"><code>https://drafts.csswg.org/css-values-3/</code></a></li>
   <li><a href="https://www.w3.org/TR/compositing-1/">Compositing and Blending Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css3-background/"><code>https://www.w3.org/TR/css3-background/</code></a> but related reference &quot;CSS3BG&quot; uses URL <a href="http://www.w3.org/TR/2012/CR-css3-background-20120724/"><code>http://www.w3.org/TR/2012/CR-css3-background-20120724/</code></a></li>
@@ -2970,6 +2948,7 @@
   <ul>
   <li><a href="https://w3c.github.io/hr-time/"><code>https://w3c.github.io/hr-time/</code></a> but related reference &quot;HR-TIME-2&quot; uses URL <a href="https://www.w3.org/TR/hr-time-2/"><code>https://www.w3.org/TR/hr-time-2/</code></a></li>
   <li><a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
+  <li><a href="https://w3c.github.io/pointerevents/"><code>https://w3c.github.io/pointerevents/</code></a> but related reference &quot;POINTEREVENTS3&quot; uses URL <a href="https://www.w3.org/TR/pointerevents3/"><code>https://www.w3.org/TR/pointerevents3/</code></a></li>
   <li><a href="https://w3c.github.io/touch-events/"><code>https://w3c.github.io/touch-events/</code></a> but related reference &quot;TOUCH-EVENTS&quot; uses URL <a href="https://www.w3.org/TR/touch-events/"><code>https://www.w3.org/TR/touch-events/</code></a></li>
   <li><a href="https://w3c.github.io/performance-timeline/"><code>https://w3c.github.io/performance-timeline/</code></a> but related reference &quot;PERFORMANCE-TIMELINE-2&quot; uses URL <a href="https://www.w3.org/TR/performance-timeline-2/"><code>https://www.w3.org/TR/performance-timeline-2/</code></a></li>
   <li><a href="https://w3c.github.io/paint-timing/"><code>https://w3c.github.io/paint-timing/</code></a> but related reference &quot;PAINT-TIMING&quot; uses URL <a href="https://www.w3.org/TR/paint-timing/"><code>https://www.w3.org/TR/paint-timing/</code></a></li>
@@ -3071,12 +3050,10 @@
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   <li><a href="https://www.w3.org/TR/hr-time/"><code>https://www.w3.org/TR/hr-time/</code></a> but related reference &quot;HR-TIME&quot; uses URL <a href="https://www.w3.org/TR/hr-time-3/"><code>https://www.w3.org/TR/hr-time-3/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a> links to:
+  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content Level 2</a> links to:
   <ul>
-  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a> but related reference &quot;XML&quot; uses URL <a href="https://www.w3.org/TR/xml"><code>https://www.w3.org/TR/xml</code></a></li>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP3&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
-  <li><a href="https://www.w3.org/TR/eventsource/"><code>https://www.w3.org/TR/eventsource/</code></a> but related reference &quot;HTML51&quot; uses URL <a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a> but related reference &quot;XML&quot; uses URL <a href="https://www.w3.org/TR/xml/"><code>https://www.w3.org/TR/xml/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/motion-1/">Motion Path Module Level 1</a> links to:
   <ul>
@@ -3179,7 +3156,12 @@
   <li><a href="https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/"><code>https://www.w3.org/TR/2015/NOTE-UAAG20-20151215/</code></a> but related reference &quot;UAAG20&quot; uses URL <a href="https://www.w3.org/TR/UAAG20/"><code>https://www.w3.org/TR/UAAG20/</code></a></li>
   <li><a href="https://www.w3.org/TR/2008/REC-CSS2-20080411/"><code>https://www.w3.org/TR/2008/REC-CSS2-20080411/</code></a> but related reference &quot;CSS2&quot; uses URL <a href="https://www.w3.org/TR/CSS2"><code>https://www.w3.org/TR/CSS2</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a> links to <a href="https://w3c.github.io/webappsec-mixed-content/"><code>https://w3c.github.io/webappsec-mixed-content/</code></a> but related reference &quot;MIX&quot; uses URL <a href="https://www.w3.org/TR/mixed-content/"><code>https://www.w3.org/TR/mixed-content/</code></a></li>
+  <li><a href="https://wicg.github.io/csp-next/scripting-policy.html">Scripting Policy</a> links to:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-csp/"><code>https://w3c.github.io/webappsec-csp/</code></a> but related reference &quot;CSP&quot; uses URL <a href="https://www.w3.org/TR/CSP3/"><code>https://www.w3.org/TR/CSP3/</code></a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/"><code>https://w3c.github.io/reporting/</code></a> but related reference &quot;REPORTING&quot; uses URL <a href="https://www.w3.org/TR/reporting-1/"><code>https://www.w3.org/TR/reporting-1/</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/secure-payment-confirmation/">Secure Payment Confirmation</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/webauthn/"><code>https://w3c.github.io/webauthn/</code></a> but related reference &quot;WEBAUTHN-3&quot; uses URL <a href="https://www.w3.org/TR/webauthn-3/"><code>https://www.w3.org/TR/webauthn-3/</code></a></li>
@@ -3230,7 +3212,6 @@
   <li><a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/uievents/">UI Events</a> links to <a href="https://www.w3.org/TR/2014/WD-uievents-20140612/"><code>https://www.w3.org/TR/2014/WD-uievents-20140612/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://wicg.github.io/user-preference-media-features-headers/">User Preference Media Features Client Hints Headers</a> links to <a href="https://www.w3.org/TR/mediaqueries-5/"><code>https://www.w3.org/TR/mediaqueries-5/</code></a> but related reference &quot;MEDIA-QUERIES-LEVEL-5&quot; uses URL <a href="https://drafts.csswg.org/mediaqueries-5/"><code>https://drafts.csswg.org/mediaqueries-5/</code></a></li>
   <li><a href="https://www.w3.org/TR/vibration/">Vibration API (Second Edition)</a> links to <a href="https://w3c.github.io/page-visibility/"><code>https://w3c.github.io/page-visibility/</code></a> but related reference &quot;PAGE-VISIBILITY-2&quot; uses URL <a href="https://www.w3.org/TR/page-visibility-2/"><code>https://www.w3.org/TR/page-visibility-2/</code></a></li>
   <li><a href="https://www.w3.org/TR/web-animations-1/">Web Animations</a> links to:
@@ -3308,7 +3289,7 @@
   <li><a href="https://www.w3.org/TR/webxr-dom-overlays-1/">WebXR DOM Overlays Module</a> links to <a href="https://w3c.github.io/uievents/"><code>https://w3c.github.io/uievents/</code></a> but related reference &quot;UIEVENTS&quot; uses URL <a href="https://www.w3.org/TR/uievents/"><code>https://www.w3.org/TR/uievents/</code></a></li>
   <li><a href="https://www.w3.org/TR/webxr-gamepads-module-1/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   </ul>
-  <p>=&gt; 344 inconsistent references for links found in 175 specifications</p>
+  <p>=&gt; 343 inconsistent references for links found in 173 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -3322,6 +3303,10 @@
   <li><a href="https://www.w3.org/TR/clear-site-data/">Clear Site Data</a>:
   <ul>
   <li><a href="https://fetch.spec.whatwg.org/#concept-http-network-fetch"><code>https://fetch.spec.whatwg.org/#concept-http-network-fetch</code></a></li>
+  </ul></li>
+  <li><a href="https://wicg.github.io/close-watcher/">Close Watcher API</a>:
+  <ul>
+  <li><a href="https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen"><code>https://fullscreen.spec.whatwg.org/#fully-exit-fullscreen</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/CSP3/">Content Security Policy Level 3</a>:
   <ul>
@@ -3429,6 +3414,10 @@
   <ul>
   <li><a href="https://fetch.spec.whatwg.org/#concept-cors-check"><code>https://fetch.spec.whatwg.org/#concept-cors-check</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/csp-next/scripting-policy.html">Scripting Policy</a>:
+  <ul>
+  <li><a href="https://fetch.spec.whatwg.org/#concept-main-fetch"><code>https://fetch.spec.whatwg.org/#concept-main-fetch</code></a></li>
+  </ul></li>
   <li><a href="https://www.w3.org/TR/service-workers-1/">Service Workers 1</a>:
   <ul>
   <li><a href="https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event"><code>https://wicg.github.io/BackgroundSync/spec/#fire-a-sync-event</code></a></li>
@@ -3502,7 +3491,7 @@
   <li><a href="https://drafts.fxtf.org/filter-effects-2/#backdrop-root"><code>https://drafts.fxtf.org/filter-effects-2/#backdrop-root</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 88 problematic external links found in 33 specifications</p>
+  <p>=&gt; 90 problematic external links found in 35 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -3792,19 +3781,19 @@
   <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-USVString"><code>https://heycam.github.io/webidl/#idl-USVString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-any"><code>https://heycam.github.io/webidl/#idl-any</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#new"><code>https://heycam.github.io/webidl/#new</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#resolve"><code>https://heycam.github.io/webidl/#resolve</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#syntaxerror"><code>https://heycam.github.io/webidl/#syntaxerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#aborterror"><code>https://heycam.github.io/webidl/#aborterror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#syntaxerror"><code>https://heycam.github.io/webidl/#syntaxerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#a-promise-rejected-with"><code>https://heycam.github.io/webidl/#a-promise-rejected-with</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-promise-resolved-with"><code>https://heycam.github.io/webidl/#a-promise-resolved-with</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-long-long"><code>https://heycam.github.io/webidl/#idl-long-long</code></a></li>
@@ -4256,6 +4245,8 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/battery-status/">Battery Status API</a>:
   <ul>
+  <li><a href="https://html.spec.whatwg.org/#task-source"><code>https://html.spec.whatwg.org/#task-source</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-task"><code>https://html.spec.whatwg.org/#concept-task</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#navigator"><code>https://html.spec.whatwg.org/#navigator</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-relevant-realm"><code>https://html.spec.whatwg.org/#concept-relevant-realm</code></a></li>
@@ -4269,15 +4260,17 @@
   <li><a href="https://html.spec.whatwg.org/#current-settings-object"><code>https://html.spec.whatwg.org/#current-settings-object</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#queue-a-task"><code>https://html.spec.whatwg.org/#queue-a-task</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-handlers"><code>https://html.spec.whatwg.org/#event-handlers</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#event-handler-event-type"><code>https://html.spec.whatwg.org/#event-handler-event-type</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#current-global-object"><code>https://html.spec.whatwg.org/#current-global-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#queue-a-global-task"><code>https://html.spec.whatwg.org/#queue-a-global-task</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#notallowederror"><code>https://heycam.github.io/webidl/#notallowederror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#new"><code>https://heycam.github.io/webidl/#new</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#resolve"><code>https://heycam.github.io/webidl/#resolve</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
@@ -4401,6 +4394,33 @@
   <li><a href="https://w3c.github.io/FileAPI/#dfn-name"><code>https://w3c.github.io/FileAPI/#dfn-name</code></a></li>
   <li><a href="https://w3c.github.io/FileAPI/#dfn-lastModified"><code>https://w3c.github.io/FileAPI/#dfn-lastModified</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/close-watcher/">Close Watcher API</a>:
+  <ul>
+  <li><a href="https://html.spec.whatwg.org/#editing"><code>https://html.spec.whatwg.org/#editing</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#queue-a-global-task"><code>https://html.spec.whatwg.org/#queue-a-global-task</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#user-interaction-task-source"><code>https://html.spec.whatwg.org/#user-interaction-task-source</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#fully-active"><code>https://html.spec.whatwg.org/#fully-active</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#queue-a-task"><code>https://html.spec.whatwg.org/#queue-a-task</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#traverse-the-history-by-a-delta"><code>https://html.spec.whatwg.org/#traverse-the-history-by-a-delta</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#transient-activation"><code>https://html.spec.whatwg.org/#transient-activation</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#event-handler-idl-attributes"><code>https://html.spec.whatwg.org/#event-handler-idl-attributes</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#event-handler-event-type"><code>https://html.spec.whatwg.org/#event-handler-event-type</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-dialog-element"><code>https://html.spec.whatwg.org/#the-dialog-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-dialog-showmodal"><code>https://html.spec.whatwg.org/#dom-dialog-showmodal</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#blocked-by-a-modal-dialog"><code>https://html.spec.whatwg.org/#blocked-by-a-modal-dialog</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#event-cancel"><code>https://html.spec.whatwg.org/#event-cancel</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#attr-dialog-open"><code>https://html.spec.whatwg.org/#attr-dialog-open</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#close-the-dialog"><code>https://html.spec.whatwg.org/#close-the-dialog</code></a></li>
+  <li><a href="https://w3c.github.io/uievents/#event-type-keydown"><code>https://w3c.github.io/uievents/#event-type-keydown</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#notallowederror"><code>https://heycam.github.io/webidl/#notallowederror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
+  </ul></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes"><code>https://drafts.csswg.org/css-animations-1/#at-ruledef-keyframes</code></a></li>
@@ -4414,12 +4434,15 @@
   <li><a href="https://drafts.csswg.org/css-animations-1/#propdef-animation-fill-mode"><code>https://drafts.csswg.org/css-animations-1/#propdef-animation-fill-mode</code></a></li>
   <li><a href="https://drafts.csswg.org/css-animations-1/#propdef-animation"><code>https://drafts.csswg.org/css-animations-1/#propdef-animation</code></a></li>
   <li><a href="https://drafts.csswg.org/css-conditional-3/#at-ruledef-media"><code>https://drafts.csswg.org/css-conditional-3/#at-ruledef-media</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-values-3/#number-value"><code>https://drafts.csswg.org/css-values-3/#number-value</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-values-3/#dppx"><code>https://drafts.csswg.org/css-values-3/#dppx</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-4/#number-value"><code>https://drafts.csswg.org/css-values-4/#number-value</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-4/#comb-one"><code>https://drafts.csswg.org/css-values-4/#comb-one</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-4/#comb-any"><code>https://drafts.csswg.org/css-values-4/#comb-any</code></a></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution</code></a></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-4/#media-feature"><code>https://drafts.csswg.org/mediaqueries-4/#media-feature</code></a></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-4/#mq-min-max"><code>https://drafts.csswg.org/mediaqueries-4/#mq-min-max</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-values-3/#dppx"><code>https://drafts.csswg.org/css-values-3/#dppx</code></a></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean"><code>https://drafts.csswg.org/mediaqueries-5/#typedef-mq-boolean</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-cascade-5/#legacy-name-alias"><code>https://drafts.csswg.org/css-cascade-5/#legacy-name-alias</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align-3/#propdef-align-items"><code>https://drafts.csswg.org/css-align-3/#propdef-align-items</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align-3/#propdef-align-content"><code>https://drafts.csswg.org/css-align-3/#propdef-align-content</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align-3/#propdef-align-self"><code>https://drafts.csswg.org/css-align-3/#propdef-align-self</code></a></li>
@@ -4448,7 +4471,6 @@
   <li><a href="https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow"><code>https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow</code></a></li>
   <li><a href="https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink"><code>https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink</code></a></li>
   <li><a href="https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap"><code>https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-flexbox-1/#propdef-order"><code>https://drafts.csswg.org/css-flexbox-1/#propdef-order</code></a></li>
   <li><a href="https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex"><code>https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex</code></a></li>
   <li><a href="https://drafts.fxtf.org/filter-effects-1/#propdef-filter"><code>https://drafts.fxtf.org/filter-effects-1/#propdef-filter</code></a></li>
   <li><a href="https://drafts.fxtf.org/css-masking-1/#propdef-mask"><code>https://drafts.fxtf.org/css-masking-1/#propdef-mask</code></a></li>
@@ -4466,6 +4488,8 @@
   <li><a href="https://drafts.fxtf.org/css-masking-1/#propdef-mask-repeat"><code>https://drafts.fxtf.org/css-masking-1/#propdef-mask-repeat</code></a></li>
   <li><a href="https://drafts.fxtf.org/css-masking-1/#propdef-mask-size"><code>https://drafts.fxtf.org/css-masking-1/#propdef-mask-size</code></a></li>
   <li><a href="https://drafts.fxtf.org/css-masking-1/#clipping-region"><code>https://drafts.fxtf.org/css-masking-1/#clipping-region</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-display-3/#propdef-order"><code>https://drafts.csswg.org/css-display-3/#propdef-order</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-display-3/#valdef-display-flex"><code>https://drafts.csswg.org/css-display-3/#valdef-display-flex</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin"><code>https://drafts.csswg.org/css-transforms-1/#propdef-transform-origin</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transforms-1/#propdef-transform"><code>https://drafts.csswg.org/css-transforms-1/#propdef-transform</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transitions-1/#propdef-transition-delay"><code>https://drafts.csswg.org/css-transitions-1/#propdef-transition-delay</code></a></li>
@@ -4475,17 +4499,14 @@
   <li><a href="https://drafts.csswg.org/css-transitions-1/#propdef-transition"><code>https://drafts.csswg.org/css-transitions-1/#propdef-transition</code></a></li>
   <li><a href="https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance"><code>https://drafts.csswg.org/css-ui-4/#propdef--webkit-appearance</code></a></li>
   <li><a href="https://drafts.csswg.org/css-ui/#appearance-switching"><code>https://drafts.csswg.org/css-ui/#appearance-switching</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-display-3/#valdef-display-flex"><code>https://drafts.csswg.org/css-display-3/#valdef-display-flex</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#value-defs"><code>https://www.w3.org/TR/css-values/#value-defs</code></a></li>
   <li><a href="https://www.w3.org/TR/css-values/#percentages"><code>https://www.w3.org/TR/css-values/#percentages</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-values-4/#comb-one"><code>https://drafts.csswg.org/css-values-4/#comb-one</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-values-4/#comb-any"><code>https://drafts.csswg.org/css-values-4/#comb-any</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#initial-values"><code>https://www.w3.org/TR/css-cascade/#initial-values</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#inherited-property"><code>https://www.w3.org/TR/css-cascade/#inherited-property</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade/#computed"><code>https://www.w3.org/TR/css-cascade/#computed</code></a></li>
   <li><a href="https://www.w3.org/TR/css-pseudo/#generated-content"><code>https://www.w3.org/TR/css-pseudo/#generated-content</code></a></li>
   <li><a href="https://www.w3.org/TR/web-animations/#animation-type"><code>https://www.w3.org/TR/web-animations/#animation-type</code></a></li>
-  <li><a href="https://drafts.csswg.org/css-color-3/#valuea-def-color"><code>https://drafts.csswg.org/css-color-3/#valuea-def-color</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-color-4/#typedef-color"><code>https://drafts.csswg.org/css-color-4/#typedef-color</code></a></li>
   <li><a href="https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor"><code>https://drafts.csswg.org/css-color-4/#valdef-color-currentcolor</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transitions/#animtype-color"><code>https://drafts.csswg.org/css-transitions/#animtype-color</code></a></li>
   <li><a href="https://w3c.github.io/pointerevents/#the-touch-action-css-property"><code>https://w3c.github.io/pointerevents/#the-touch-action-css-property</code></a></li>
@@ -6094,7 +6115,7 @@
   <li><a href="https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes"><code>https://www.w3.org/TR/css-animations-1/#at-ruledef-keyframes</code></a></li>
   <li><a href="https://www.w3.org/TR/css-contain-1/#valdef-contain-layout"><code>https://www.w3.org/TR/css-contain-1/#valdef-contain-layout</code></a></li>
   </ul></li>
-  <li><a href="https://drafts.csswg.org/css-scoping-2/">CSS Cascading and Inheritance Level 6</a>:
+  <li><a href="https://drafts.csswg.org/css-cascade-6/">CSS Cascading and Inheritance Level 6</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade-5/#placement"><code>https://www.w3.org/TR/css-cascade-5/#placement</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-5/#at-import"><code>https://www.w3.org/TR/css-cascade-5/#at-import</code></a></li>
@@ -6155,6 +6176,7 @@
   <li><a href="https://drafts.csswg.org/css-values-3/#mult-opt"><code>https://drafts.csswg.org/css-values-3/#mult-opt</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax-3/#block-at-rule"><code>https://drafts.csswg.org/css-syntax-3/#block-at-rule</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet"><code>https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-conditional-4/#funcdef-supports"><code>https://drafts.csswg.org/css-conditional-4/#funcdef-supports</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#content-type"><code>https://html.spec.whatwg.org/#content-type</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/css-color-adjust-1/">CSS Color Adjustment Module Level 1</a>:
@@ -11222,16 +11244,18 @@
   <li><a href="https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry"><code>https://w3c.github.io/performance-timeline/#dfn-queue-a-performanceentry</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Default"><code>https://heycam.github.io/webidl/#Default</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-object"><code>https://heycam.github.io/webidl/#idl-object</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SameObject"><code>https://heycam.github.io/webidl/#SameObject</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#implements"><code>https://heycam.github.io/webidl/#implements</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-map-entries"><code>https://heycam.github.io/webidl/#dfn-map-entries</code></a></li>
   <li><a href="https://w3c.github.io/paint-timing/#mark-paint-timing"><code>https://w3c.github.io/paint-timing/#mark-paint-timing</code></a></li>
   <li><a href="https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry"><code>https://w3c.github.io/timing-entrytypes-registry/#dfn-should-add-entry</code></a></li>
+  <li><a href="https://www.w3.org/TR/uievents/#keyboardevent"><code>https://www.w3.org/TR/uievents/#keyboardevent</code></a></li>
+  <li><a href="https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid"><code>https://www.w3.org/TR/pointerevents3/#dom-pointerevent-pointerid</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/eyedropper-api/">EyeDropper API</a>:
   <ul>
@@ -12921,6 +12945,7 @@
   <li><a href="https://drafts.csswg.org/css-align/#propdef-propdef-justify-content"><code>https://drafts.csswg.org/css-align/#propdef-propdef-justify-content</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/#propdef-propdef-justify-items"><code>https://drafts.csswg.org/css-align/#propdef-propdef-justify-items</code></a></li>
   <li><a href="https://drafts.csswg.org/css-display/#outer-display-type"><code>https://drafts.csswg.org/css-display/#outer-display-type</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-display/#inner-display-type"><code>https://drafts.csswg.org/css-display/#inner-display-type</code></a></li>
   <li><a href="https://drafts.csswg.org/css-display/#block-level"><code>https://drafts.csswg.org/css-display/#block-level</code></a></li>
   <li><a href="https://drafts.csswg.org/css-display/#block-container"><code>https://drafts.csswg.org/css-display/#block-container</code></a></li>
   <li><a href="https://drafts.csswg.org/css-display/#formatting-context"><code>https://drafts.csswg.org/css-display/#formatting-context</code></a></li>
@@ -12974,6 +12999,7 @@
   <li><a href="https://drafts.csswg.org/css-overflow/#propdef-overflow"><code>https://drafts.csswg.org/css-overflow/#propdef-overflow</code></a></li>
   <li><a href="https://drafts.csswg.org/css-overflow/#valdef-overflow-hidden"><code>https://drafts.csswg.org/css-overflow/#valdef-overflow-hidden</code></a></li>
   <li><a href="https://drafts.csswg.org/css-overflow/#propdef-text-overflow"><code>https://drafts.csswg.org/css-overflow/#propdef-text-overflow</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-overflow/#scroll-container"><code>https://drafts.csswg.org/css-overflow/#scroll-container</code></a></li>
   <li><a href="https://drafts.csswg.org/css-position/#absolute-position"><code>https://drafts.csswg.org/css-position/#absolute-position</code></a></li>
   <li><a href="https://drafts.csswg.org/css-position/#position-property"><code>https://drafts.csswg.org/css-position/#position-property</code></a></li>
   <li><a href="https://drafts.csswg.org/css-position/#valdef-position-static"><code>https://drafts.csswg.org/css-position/#valdef-position-static</code></a></li>
@@ -12997,6 +13023,8 @@
   <li><a href="https://drafts.csswg.org/css-writing-modes/#direction"><code>https://drafts.csswg.org/css-writing-modes/#direction</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes/#unicode-bidi"><code>https://drafts.csswg.org/css-writing-modes/#unicode-bidi</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes/#block-flow-direction"><code>https://drafts.csswg.org/css-writing-modes/#block-flow-direction</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-writing-modes/#block-axis"><code>https://drafts.csswg.org/css-writing-modes/#block-axis</code></a></li>
+  <li><a href="https://drafts.csswg.org/css-writing-modes/#inline-axis"><code>https://drafts.csswg.org/css-writing-modes/#inline-axis</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes/#block-size"><code>https://drafts.csswg.org/css-writing-modes/#block-size</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes/#inline-size"><code>https://drafts.csswg.org/css-writing-modes/#inline-size</code></a></li>
   <li><a href="https://drafts.csswg.org/css-writing-modes/#block-start"><code>https://drafts.csswg.org/css-writing-modes/#block-start</code></a></li>
@@ -13902,21 +13930,26 @@
   <li><a href="https://www.w3.org/TR/uievents/#keyboardevent"><code>https://www.w3.org/TR/uievents/#keyboardevent</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents/#dead-key"><code>https://www.w3.org/TR/uievents/#dead-key</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-key/#key-attribute-value"><code>https://www.w3.org/TR/uievents-key/#key-attribute-value</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#SameObject"><code>https://heycam.github.io/webidl/#SameObject</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#navigator"><code>https://html.spec.whatwg.org/#navigator</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#top-level-browsing-context"><code>https://html.spec.whatwg.org/#top-level-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#allowed-to-use"><code>https://html.spec.whatwg.org/#allowed-to-use</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#top-level-browsing-context"><code>https://html.spec.whatwg.org/#top-level-browsing-context</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature"><code>https://w3c.github.io/webappsec-permissions-policy/#policy-controlled-feature</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-permissions-policy/#default-allowlist"><code>https://w3c.github.io/webappsec-permissions-policy/#default-allowlist</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-code/#writing-system-keys"><code>https://www.w3.org/TR/uievents-code/#writing-system-keys</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-code/#code-quote"><code>https://www.w3.org/TR/uievents-code/#code-quote</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-code/#figure-keyboard-codes-alphanum1"><code>https://www.w3.org/TR/uievents-code/#figure-keyboard-codes-alphanum1</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-permissions-policy/#default-allowlist"><code>https://w3c.github.io/webappsec-permissions-policy/#default-allowlist</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/largest-contentful-paint/">Largest Contentful Paint</a>:
   <ul>
@@ -14039,12 +14072,13 @@
   <li><a href="https://drafts.csswg.org/css2/#viewport"><code>https://drafts.csswg.org/css2/#viewport</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin"><code>https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin</code></a></li>
   <li><a href="https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail"><code>https://encoding.spec.whatwg.org/#utf-8-decode-without-bom-or-fail</code></a></li>
-  <li><a href="https://w3c.github.io/network-error-logging/#generate-a-network-error-report"><code>https://w3c.github.io/network-error-logging/#generate-a-network-error-report</code></a></li>
-  <li><a href="https://w3c.github.io/network-error-logging/#deliver-a-network-report"><code>https://w3c.github.io/network-error-logging/#deliver-a-network-report</code></a></li>
-  <li><a href="https://w3c.github.io/network-error-logging/#dfn-nel-policies"><code>https://w3c.github.io/network-error-logging/#dfn-nel-policies</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#new"><code>https://heycam.github.io/webidl/#new</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#sequence-type"><code>https://heycam.github.io/webidl/#sequence-type</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-Uint8Array"><code>https://heycam.github.io/webidl/#idl-Uint8Array</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-ArrayBuffer"><code>https://heycam.github.io/webidl/#idl-ArrayBuffer</code></a></li>
+  <li><a href="https://w3c.github.io/network-error-logging/#generate-a-network-error-report"><code>https://w3c.github.io/network-error-logging/#generate-a-network-error-report</code></a></li>
+  <li><a href="https://w3c.github.io/network-error-logging/#deliver-a-network-report"><code>https://w3c.github.io/network-error-logging/#deliver-a-network-report</code></a></li>
+  <li><a href="https://w3c.github.io/network-error-logging/#dfn-nel-policies"><code>https://w3c.github.io/network-error-logging/#dfn-nel-policies</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/local-font-access/">Local Font Access API</a>:
   <ul>
@@ -14777,22 +14811,31 @@
   <ul>
   <li><a href="https://www.w3.org/TR/generic-sensor/#security-and-privacy"><code>https://www.w3.org/TR/generic-sensor/#security-and-privacy</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a>:
+  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content Level 2</a>:
   <ul>
-  <li><a href="https://fetch.spec.whatwg.org/#concept-response-https-state"><code>https://fetch.spec.whatwg.org/#concept-response-https-state</code></a></li>
-  <li><a href="https://fetch.spec.whatwg.org/#concept-request-target-browsing-context"><code>https://fetch.spec.whatwg.org/#concept-request-target-browsing-context</code></a></li>
-  <li><a href="https://fetch.spec.whatwg.org/#concept-request-type"><code>https://fetch.spec.whatwg.org/#concept-request-type</code></a></li>
-  <li><a href="https://www.w3.org/TR/secure-contexts/#is-url-trustworthy"><code>https://www.w3.org/TR/secure-contexts/#is-url-trustworthy</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/#background-image"><code>https://www.w3.org/TR/css3-background/#background-image</code></a></li>
-  <li><a href="https://www.w3.org/TR/css3-background/#border-image"><code>https://www.w3.org/TR/css3-background/#border-image</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#enforced"><code>https://w3c.github.io/webappsec-csp/#enforced</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#policy-directive-set"><code>https://w3c.github.io/webappsec-csp/#policy-directive-set</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#directives"><code>https://w3c.github.io/webappsec-csp/#directives</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#directive-name"><code>https://w3c.github.io/webappsec-csp/#directive-name</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#create-violation-for-global"><code>https://w3c.github.io/webappsec-csp/#create-violation-for-global</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#violation-resource"><code>https://w3c.github.io/webappsec-csp/#violation-resource</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-csp/#report-violation"><code>https://w3c.github.io/webappsec-csp/#report-violation</code></a></li>
-  <li><a href="https://www.w3.org/TR/service-workers/#service-worker-global-scope"><code>https://www.w3.org/TR/service-workers/#service-worker-global-scope</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url"><code>https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-url</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin"><code>https://w3c.github.io/webappsec-secure-contexts/#potentially-trustworthy-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document-bc"><code>https://html.spec.whatwg.org/#concept-document-bc</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-img-element"><code>https://html.spec.whatwg.org/#the-img-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#use-srcset-or-picture"><code>https://html.spec.whatwg.org/#use-srcset-or-picture</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#video"><code>https://html.spec.whatwg.org/#video</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-source-element"><code>https://html.spec.whatwg.org/#the-source-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#audio"><code>https://html.spec.whatwg.org/#audio</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#plugin"><code>https://html.spec.whatwg.org/#plugin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#top-level-browsing-context"><code>https://html.spec.whatwg.org/#top-level-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#environment-settings-object"><code>https://html.spec.whatwg.org/#environment-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-settings-object-origin"><code>https://html.spec.whatwg.org/#concept-settings-object-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#responsible-document"><code>https://html.spec.whatwg.org/#responsible-document</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#relevant-settings-object"><code>https://html.spec.whatwg.org/#relevant-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-environment-target-browsing-context"><code>https://html.spec.whatwg.org/#concept-environment-target-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#parent-browsing-context"><code>https://html.spec.whatwg.org/#parent-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#process-a-navigate-response"><code>https://html.spec.whatwg.org/#process-a-navigate-response</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#active-document"><code>https://html.spec.whatwg.org/#active-document</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#downloading-hyperlinks"><code>https://html.spec.whatwg.org/#downloading-hyperlinks</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-form-element"><code>https://html.spec.whatwg.org/#the-form-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#attr-fs-action"><code>https://html.spec.whatwg.org/#attr-fs-action</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-backgrounds-3/#propdef-background-image"><code>https://www.w3.org/TR/css-backgrounds-3/#propdef-background-image</code></a></li>
+  <li><a href="https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image"><code>https://www.w3.org/TR/css-backgrounds-3/#propdef-border-image</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/motion-1/">Motion Path Module Level 1</a>:
   <ul>
@@ -16860,6 +16903,59 @@
   <li><a href="https://www.w3.org/TR/page-visibility/#dfn-external-now-hidden-algorithm"><code>https://www.w3.org/TR/page-visibility/#dfn-external-now-hidden-algorithm</code></a></li>
   <li><a href="https://www.w3.org/TR/page-visibility/#dfn-visibility-states"><code>https://www.w3.org/TR/page-visibility/#dfn-visibility-states</code></a></li>
   </ul></li>
+  <li><a href="https://wicg.github.io/csp-next/scripting-policy.html">Scripting Policy</a>:
+  <ul>
+  <li><a href="https://w3c.github.io/webappsec-csp/#content-security-policy"><code>https://w3c.github.io/webappsec-csp/#content-security-policy</code></a></li>
+  <li><a href="https://w3c.github.io/webappsec-csp/#can-compile-strings"><code>https://w3c.github.io/webappsec-csp/#can-compile-strings</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#script"><code>https://html.spec.whatwg.org/#script</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-noncedelement-nonce"><code>https://html.spec.whatwg.org/#dom-noncedelement-nonce</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-base-element"><code>https://html.spec.whatwg.org/#the-base-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-embed-element"><code>https://html.spec.whatwg.org/#the-embed-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-object-element"><code>https://html.spec.whatwg.org/#the-object-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#workerglobalscope"><code>https://html.spec.whatwg.org/#workerglobalscope</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#workletglobalscope"><code>https://html.spec.whatwg.org/#workletglobalscope</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#prepare-a-script"><code>https://html.spec.whatwg.org/#prepare-a-script</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#attr-script-integrity"><code>https://html.spec.whatwg.org/#attr-script-integrity</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#set-the-frozen-base-url"><code>https://html.spec.whatwg.org/#set-the-frozen-base-url</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#hostensurecancompilestrings(callerrealm,-calleerealm)"><code>https://html.spec.whatwg.org/#hostensurecancompilestrings(callerrealm,-calleerealm)</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#worker"><code>https://html.spec.whatwg.org/#worker</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#sharedworker"><code>https://html.spec.whatwg.org/#sharedworker</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#environment-settings-object"><code>https://html.spec.whatwg.org/#environment-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#initialise-the-document-object"><code>https://html.spec.whatwg.org/#initialise-the-document-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#global-object"><code>https://html.spec.whatwg.org/#global-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dedicatedworkerglobalscope"><code>https://html.spec.whatwg.org/#dedicatedworkerglobalscope</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#sharedworkerglobalscope"><code>https://html.spec.whatwg.org/#sharedworkerglobalscope</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set"><code>https://html.spec.whatwg.org/#concept-WorkerGlobalScope-owner-set</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#relevant-settings-object"><code>https://html.spec.whatwg.org/#relevant-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#run-a-worker"><code>https://html.spec.whatwg.org/#run-a-worker</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#htmlscriptelement"><code>https://html.spec.whatwg.org/#htmlscriptelement</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#cryptographicnonce"><code>https://html.spec.whatwg.org/#cryptographicnonce</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#event-handler-content-attributes"><code>https://html.spec.whatwg.org/#event-handler-content-attributes</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-realm-global"><code>https://html.spec.whatwg.org/#concept-realm-global</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#same-origin"><code>https://html.spec.whatwg.org/#same-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-settings-object-origin"><code>https://html.spec.whatwg.org/#concept-settings-object-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#sandboxed-plugins-browsing-context-flag"><code>https://html.spec.whatwg.org/#sandboxed-plugins-browsing-context-flag</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-plugin-secure"><code>https://html.spec.whatwg.org/#concept-plugin-secure</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dfn-throw"><code>https://heycam.github.io/webidl/#dfn-throw</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#exceptiondef-evalerror"><code>https://heycam.github.io/webidl/#exceptiondef-evalerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Default"><code>https://heycam.github.io/webidl/#Default</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-object"><code>https://heycam.github.io/webidl/#idl-object</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-USVString"><code>https://heycam.github.io/webidl/#idl-USVString</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long</code></a></li>
+  <li><a href="https://w3c.github.io/ServiceWorker/#serviceworker"><code>https://w3c.github.io/ServiceWorker/#serviceworker</code></a></li>
+  <li><a href="https://encoding.spec.whatwg.org/#utf-8-encode"><code>https://encoding.spec.whatwg.org/#utf-8-encode</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#reportingobserver"><code>https://w3c.github.io/reporting/#reportingobserver</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#windoworworkerglobalscope-reports"><code>https://w3c.github.io/reporting/#windoworworkerglobalscope-reports</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#report-type"><code>https://w3c.github.io/reporting/#report-type</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#visible-to-reportingobservers"><code>https://w3c.github.io/reporting/#visible-to-reportingobservers</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#report-body"><code>https://w3c.github.io/reporting/#report-body</code></a></li>
+  <li><a href="https://w3c.github.io/reporting/#reportbody"><code>https://w3c.github.io/reporting/#reportbody</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/web-animations-1/#concept-animation"><code>https://drafts.csswg.org/web-animations-1/#concept-animation</code></a></li>
@@ -16922,12 +17018,29 @@
   </ul></li>
   <li><a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a>:
   <ul>
-  <li><a href="https://html.spec.whatwg.org/#link-type-noopener"><code>https://html.spec.whatwg.org/#link-type-noopener</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#top-level-browsing-context"><code>https://html.spec.whatwg.org/#top-level-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#sharedworker"><code>https://html.spec.whatwg.org/#sharedworker</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#dom-issecurecontext"><code>https://html.spec.whatwg.org/#dom-issecurecontext</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#windoworworkerglobalscope"><code>https://html.spec.whatwg.org/#windoworworkerglobalscope</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#creator-context-security"><code>https://html.spec.whatwg.org/#creator-context-security</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#blob-url-entry-environment"><code>https://html.spec.whatwg.org/#blob-url-entry-environment</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#non-secure-context"><code>https://html.spec.whatwg.org/#non-secure-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#global-object"><code>https://html.spec.whatwg.org/#global-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#relevant-settings-object"><code>https://html.spec.whatwg.org/#relevant-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin"><code>https://html.spec.whatwg.org/#concept-origin</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-opaque"><code>https://html.spec.whatwg.org/#concept-origin-opaque</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-tuple"><code>https://html.spec.whatwg.org/#concept-origin-tuple</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-scheme"><code>https://html.spec.whatwg.org/#concept-origin-scheme</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-host"><code>https://html.spec.whatwg.org/#concept-origin-host</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-domain"><code>https://html.spec.whatwg.org/#concept-origin-domain</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-origin-port"><code>https://html.spec.whatwg.org/#concept-origin-port</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#the-iframe-element"><code>https://html.spec.whatwg.org/#the-iframe-element</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#current-settings-object"><code>https://html.spec.whatwg.org/#current-settings-object</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-exposed"><code>https://heycam.github.io/webidl/#dfn-exposed</code></a></li>
-  <li><a href="https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url"><code>https://w3c.github.io/webappsec-mixed-content/#a-priori-authenticated-url</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#securityerror"><code>https://heycam.github.io/webidl/#securityerror</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
+  <li><a href="https://www.w3.org/TR/mixed-content/#a-priori-authenticated-url"><code>https://www.w3.org/TR/mixed-content/#a-priori-authenticated-url</code></a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/#get-current-position"><code>https://www.w3.org/TR/geolocation-API/#get-current-position</code></a></li>
   <li><a href="https://www.w3.org/TR/geolocation-API/#watch-position"><code>https://www.w3.org/TR/geolocation-API/#watch-position</code></a></li>
   </ul></li>
@@ -17904,18 +18017,21 @@
   <li><a href="https://www.w3.org/TR/uievents-code/#code-Digit2"><code>https://www.w3.org/TR/uievents-code/#code-Digit2</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-code/#code-ShiftLeft"><code>https://www.w3.org/TR/uievents-code/#code-ShiftLeft</code></a></li>
   <li><a href="https://www.w3.org/TR/uievents-code/#code-"><code>https://www.w3.org/TR/uievents-code/#code-</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-long"><code>https://heycam.github.io/webidl/#idl-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-short"><code>https://heycam.github.io/webidl/#idl-short</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-short"><code>https://heycam.github.io/webidl/#idl-unsigned-short</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-unsigned-long"><code>https://heycam.github.io/webidl/#idl-unsigned-long</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-double"><code>https://heycam.github.io/webidl/#idl-double</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-input-element"><code>https://html.spec.whatwg.org/#the-input-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-textarea-element"><code>https://html.spec.whatwg.org/#the-textarea-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#context-menus"><code>https://html.spec.whatwg.org/#context-menus</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#windowproxy"><code>https://html.spec.whatwg.org/#windowproxy</code></a></li>
+  <li><a href="https://www.w3.org/TR/pointerevents3/#pointerevent-interface"><code>https://www.w3.org/TR/pointerevents3/#pointerevent-interface</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/uievents-code/">UI Events KeyboardEvent code Values</a>:
   <ul>
@@ -18071,15 +18187,15 @@
   <li><a href="https://w3c.github.io/fingerprinting-guidance/#dfn-passive-fingerprinting"><code>https://w3c.github.io/fingerprinting-guidance/#dfn-passive-fingerprinting</code></a></li>
   <li><a href="https://w3c.github.io/fingerprinting-guidance/#avoid-passive-increases"><code>https://w3c.github.io/fingerprinting-guidance/#avoid-passive-increases</code></a></li>
   <li><a href="https://w3c.github.io/fingerprinting-guidance/#dfn-active-fingerprinting"><code>https://w3c.github.io/fingerprinting-guidance/#dfn-active-fingerprinting</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#dfn-dictionary"><code>https://heycam.github.io/webidl/#dfn-dictionary</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-frozen-array"><code>https://heycam.github.io/webidl/#idl-frozen-array</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-boolean"><code>https://heycam.github.io/webidl/#idl-boolean</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-create-frozen-array"><code>https://heycam.github.io/webidl/#dfn-create-frozen-array</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#dfn-dictionary"><code>https://heycam.github.io/webidl/#dfn-dictionary</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#this"><code>https://heycam.github.io/webidl/#this</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#a-new-promise"><code>https://heycam.github.io/webidl/#a-new-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#reject"><code>https://heycam.github.io/webidl/#reject</code></a></li>
@@ -18091,7 +18207,7 @@
   <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#queue-a-task"><code>https://html.spec.whatwg.org/#queue-a-task</code></a></li>
-  <li><a href="https://w3c.github.io/permissions/#permission-task-source"><code>https://w3c.github.io/permissions/#permission-task-source</code></a></li>
+  <li><a href="https://w3c.github.io/permissions/#dfn-permissions-task-source"><code>https://w3c.github.io/permissions/#dfn-permissions-task-source</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/uuid/">uuid</a>:
   <ul>
@@ -18832,13 +18948,14 @@
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-frozen-array"><code>https://heycam.github.io/webidl/#idl-frozen-array</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
-  <li><a href="https://heycam.github.io/webidl/#BufferSource"><code>https://heycam.github.io/webidl/#BufferSource</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-USVString"><code>https://heycam.github.io/webidl/#idl-USVString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DataView"><code>https://heycam.github.io/webidl/#idl-DataView</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-any"><code>https://heycam.github.io/webidl/#idl-any</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#dfn-throw"><code>https://heycam.github.io/webidl/#dfn-throw</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#notsupportederror"><code>https://heycam.github.io/webidl/#notsupportederror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#BufferSource"><code>https://heycam.github.io/webidl/#BufferSource</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SameObject"><code>https://heycam.github.io/webidl/#SameObject</code></a></li>
@@ -19430,9 +19547,10 @@
   <li><a href="https://html.spec.whatwg.org/#parent-browsing-context"><code>https://html.spec.whatwg.org/#parent-browsing-context</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#active-document"><code>https://html.spec.whatwg.org/#active-document</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#child-browsing-context"><code>https://html.spec.whatwg.org/#child-browsing-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-script-base-url"><code>https://html.spec.whatwg.org/#concept-script-base-url</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#navigate"><code>https://html.spec.whatwg.org/#navigate</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#source-browsing-context"><code>https://html.spec.whatwg.org/#source-browsing-context</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#history-handling-behavior"><code>https://html.spec.whatwg.org/#history-handling-behavior</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#concept-script-base-url"><code>https://html.spec.whatwg.org/#concept-script-base-url</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#creating-a-new-browsing-context"><code>https://html.spec.whatwg.org/#creating-a-new-browsing-context</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#realm-execution-context"><code>https://html.spec.whatwg.org/#realm-execution-context</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#dedicatedworkerglobalscope"><code>https://html.spec.whatwg.org/#dedicatedworkerglobalscope</code></a></li>
@@ -19443,6 +19561,7 @@
   <li><a href="https://html.spec.whatwg.org/#concept-environment-execution-ready-flag"><code>https://html.spec.whatwg.org/#concept-environment-execution-ready-flag</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object"><code>https://html.spec.whatwg.org/#set-up-a-window-environment-settings-object</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object"><code>https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object</code></a></li>
+  <li><a href="https://html.spec.whatwg.org/#set-up-a-worklet-environment-settings-object"><code>https://html.spec.whatwg.org/#set-up-a-worklet-environment-settings-object</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#unloading-document-cleanup-steps"><code>https://html.spec.whatwg.org/#unloading-document-cleanup-steps</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-document-worklet-global-scopes"><code>https://html.spec.whatwg.org/#concept-document-worklet-global-scopes</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-relevant-realm"><code>https://html.spec.whatwg.org/#concept-relevant-realm</code></a></li>
@@ -20693,7 +20812,7 @@
   <li><a href="https://w3c.github.io/FileAPI/#dfn-name"><code>https://w3c.github.io/FileAPI/#dfn-name</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 16105 problematic external links found in 348 specifications</p>
+  <p>=&gt; 16229 problematic external links found in 350 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
@@ -20853,13 +20972,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/html52/"><code>https://www.w3.org/TR/html52/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/html5/"><code>https://www.w3.org/TR/html5/</code></a></li>
-  <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
-  <li><a href="https://www.w3.org/TR/websockets/"><code>https://www.w3.org/TR/websockets/</code></a></li>
-  <li><a href="https://www.w3.org/TR/eventsource/"><code>https://www.w3.org/TR/eventsource/</code></a></li>
-  </ul></li>
   <li><a href="https://www.w3.org/TR/selectors-nonelement-1/">Non-element Selectors Module Level 1</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/selectors-api/"><code>https://www.w3.org/TR/selectors-api/</code></a></li>
@@ -20894,11 +21006,6 @@
   <li><a href="https://www.w3.org/TR/screen-capture/">Screen Capture</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2dcontext/"><code>https://www.w3.org/TR/2dcontext/</code></a></li>
-  </ul></li>
-  <li><a href="https://www.w3.org/TR/secure-contexts/">Secure Contexts</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
-  <li><a href="https://www.w3.org/TR/workers/"><code>https://www.w3.org/TR/workers/</code></a></li>
   </ul></li>
   <li><a href="https://www.w3.org/TR/selection-api/">Selection API</a>:
   <ul>
@@ -21003,7 +21110,7 @@
   <li><a href="https://www.w3.org/TR/html51/"><code>https://www.w3.org/TR/html51/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 90 problematic external links found in 70 specifications</p>
+  <p>=&gt; 84 problematic external links found in 68 specifications</p>
   </section>
   <section id="external-links-that-use-a-dated-url" class="level2">
   <h2>External links that use a dated URL</h2>
@@ -21311,7 +21418,7 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2013/REC-webstorage-20130730/"><code>https://www.w3.org/TR/2013/REC-webstorage-20130730/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content</a>:
+  <li><a href="https://www.w3.org/TR/mixed-content/">Mixed Content Level 2</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a></li>
   </ul></li>
@@ -21478,10 +21585,6 @@
   <ul>
   <li><a href="https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/"><code>https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/</code></a></li>
   </ul></li>
-  <li><a href="https://www.w3.org/TR/uievents/">UI Events</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/2004/REC-xml-20040204/"><code>https://www.w3.org/TR/2004/REC-xml-20040204/</code></a></li>
-  </ul></li>
   <li><a href="https://www.w3.org/TR/webaudio/">Web Audio API</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/"><code>https://www.w3.org/TR/2021/NOTE-audio-eq-cookbook-20210608/</code></a></li>
@@ -21506,7 +21609,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 278 problematic external links found in 73 specifications</p>
+  <p>=&gt; 277 problematic external links found in 72 specifications</p>
   </section>
   </body>
 </html>

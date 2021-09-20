@@ -1,38 +1,35 @@
 {
   "spec": {
-    "title": "Mixed Content",
+    "title": "Mixed Content Level 2",
     "url": "https://www.w3.org/TR/mixed-content/"
   },
   "links": {
     "https://www.w3.org/TR/": [],
     "https://www.w3.org/2011/webappsec/": [],
-    "https://www.w3.org/TR/2015/CR-mixed-content-20151008/": [],
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/Consortium/Patent-Policy-20040205/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20170801/": [
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/49309/status": [],
-    "https://www.w3.org/2015/Process-20150901/": [],
-    "https://twitter.com/ericlaw/status/469813922908758016": [],
+    "https://www.w3.org/groups/wg/webappsec/ipr": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://fetch.spec.whatwg.org/": [
       "concept-request",
       "concept-request-url",
       "concept-response",
       "concept-response-url",
-      "concept-response-https-state",
-      "navigation-request",
       "concept-request-initiator",
-      "concept-request-client",
       "concept-request-destination",
-      "concept-request-target-browsing-context",
-      "concept-request-type",
-      "concept-filtered-response-opaque",
-      "dom-global-fetch"
+      "navigation-request",
+      "concept-request-client",
+      "concept-request-mode",
+      "main-fetch",
+      "concept-response-url-list"
     ],
-    "https://tools.ietf.org/html/rfc6797": [
-      "section-12.4"
+    "https://w3c.github.io/webappsec-secure-contexts/": [
+      "potentially-trustworthy-url",
+      "potentially-trustworthy-origin"
     ],
     "https://www.w3.org/TR/wsc-ui/": [
       "securepage"
@@ -40,81 +37,55 @@
     "https://www.w3.org/TR/2008/REC-xml-20081126/": [
       "sec-mixed-content"
     ],
-    "https://www.w3.org/TR/secure-contexts/": [
-      "is-url-trustworthy"
+    "https://dom.spec.whatwg.org/": [
+      "document",
+      "concept-document-url",
+      "concept-node-document"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "concept-document-bc",
+      "the-img-element",
+      "use-srcset-or-picture",
+      "video",
+      "the-source-element",
+      "audio",
+      "plugin",
+      "top-level-browsing-context",
+      "environment-settings-object",
+      "concept-settings-object-origin",
+      "responsible-document",
+      "relevant-settings-object",
+      "concept-environment-target-browsing-context",
+      "parent-browsing-context",
+      "process-a-navigate-response",
+      "active-document",
+      "downloading-hyperlinks",
+      "the-form-element",
+      "attr-fs-action"
+    ],
+    "https://www.w3.org/TR/css-backgrounds-3/": [
+      "propdef-background-image",
+      "propdef-border-image"
+    ],
+    "https://xhr.spec.whatwg.org/": [
+      "xmlhttprequest"
     ],
     "https://url.spec.whatwg.org/": [
       "concept-url-scheme"
     ],
-    "https://www.w3.org/TR/html5/": [
-      "document",
-      "window"
+    "https://www.w3.org/TR/mixed-content/": [
+      "should-block-fetch",
+      "should-block-response",
+      "categorize-settings-object",
+      "strict-checking"
     ],
-    "https://www.w3.org/TR/html51/": [
-      "through-which-new-document-is-nested",
-      "browsing-context",
-      "the-img-element",
-      "the-picture-element",
-      "the-video-element",
-      "the-source-element",
-      "the-audio-element",
-      "plugin",
-      "top-level-browsing-context",
-      "the-meta-element",
-      "nested-browsing-contexts",
-      "initializing-a-new-document-object",
-      "settings-object",
-      "responsible-document",
-      "global-object",
-      "relevant-settings-object",
-      "parent-browsing-context",
-      "document-csp-list",
-      "the-form-element",
-      "element-attrdef-form-action"
-    ],
-    "https://www.w3.org/TR/css3-background/": [
-      "background-image",
-      "border-image"
-    ],
-    "https://www.w3.org/TR/XMLHttpRequest/": [
-      "interface-xmlhttprequest"
-    ],
-    "https://w3c.github.io/webappsec-csp/": [
-      "enforced",
-      "policy-directive-set",
-      "directives",
-      "directive-name",
-      "create-violation-for-global",
-      "violation-resource",
-      "report-violation"
-    ],
-    "https://www.w3.org/TR/service-workers/": [
-      "service-worker-global-scope"
-    ],
-    "https://www.w3.org/TR/websockets/": [
-      "the-websocket-interface",
-      "handler-websocket-onerror"
-    ],
-    "https://www.w3.org/Bugs/Public/show_bug.cgi?id=28841": [],
-    "https://tools.ietf.org/html/rfc6455": [
-      "section-4.1",
-      "section-7.1.7"
-    ],
-    "https://www.rfc-editor.org/errata_search.php?rfc=6455&eid=4398": [],
-    "https://www.w3.org/TR/eventsource/": [
-      "the-eventsource-interface"
-    ],
-    "https://cabforum.org/about-ev-ssl/": [],
     "https://tools.ietf.org/html/rfc6919": [
       "section-3"
     ],
-    "https://tools.ietf.org/html/rfc3986": [],
-    "https://www.w3.org/TR/CSP3/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://tools.ietf.org/html/rfc7762": [],
-    "https://tools.ietf.org/html/rfc3986.html": [],
-    "https://cabforum.org/baseline-requirements-documents/": [],
-    "https://www.w3.org/TR/SRI/": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
+    "https://www.w3.org/TR/secure-contexts/": [],
+    "https://www.rfc-editor.org/rfc/rfc6919": [],
+    "https://www.w3.org/TR/upgrade-insecure-requests/": [],
     "https://www.w3.org/TR/xml/": []
   }
 }

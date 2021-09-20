@@ -3,3 +3,10 @@
   Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);
   undefined unlock();
 };
+
+// Source: Keyboard Map (https://wicg.github.io/keyboard-map/)
+partial interface Keyboard {
+  Promise<KeyboardLayoutMap> getLayoutMap();
+
+  attribute EventHandler onlayoutchange;
+};

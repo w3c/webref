@@ -18,7 +18,7 @@
         "title": "UI Events",
         "url": "https://www.w3.org/TR/uievents/"
       },
-      "fragment": "[Constructor(DOMString type, optional MouseEventInit eventInitDict), Exposed=Window]\ninterface MouseEvent : UIEvent {\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
+      "fragment": "[Exposed=Window]\ninterface MouseEvent : UIEvent {\n  constructor(DOMString type, optional MouseEventInit eventInitDict = {});\n  readonly attribute long screenX;\n  readonly attribute long screenY;\n  readonly attribute long clientX;\n  readonly attribute long clientY;\n\n  readonly attribute boolean ctrlKey;\n  readonly attribute boolean shiftKey;\n  readonly attribute boolean altKey;\n  readonly attribute boolean metaKey;\n\n  readonly attribute short button;\n  readonly attribute unsigned short buttons;\n\n  readonly attribute EventTarget? relatedTarget;\n\n  boolean getModifierState(DOMString keyArg);\n};",
       "href": "https://www.w3.org/TR/uievents/#mouseevent"
     },
     "extended": [
@@ -28,6 +28,13 @@
           "url": "https://www.w3.org/TR/pointerlock-2/"
         },
         "fragment": "partial interface MouseEvent {\n  readonly attribute long movementX;\n  readonly attribute long movementY;\n};"
+      },
+      {
+        "spec": {
+          "title": "UI Events",
+          "url": "https://www.w3.org/TR/uievents/"
+        },
+        "fragment": "partial interface MouseEvent {\n  // Deprecated in this specification\n  undefined initMouseEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0,\n    optional long screenXArg = 0,\n    optional long screenYArg = 0,\n    optional long clientXArg = 0,\n    optional long clientYArg = 0,\n    optional boolean ctrlKeyArg = false,\n    optional boolean altKeyArg = false,\n    optional boolean shiftKeyArg = false,\n    optional boolean metaKeyArg = false,\n    optional short buttonArg = 0,\n    optional EventTarget? relatedTargetArg = null);\n};"
       }
     ],
     "inheritance": {
@@ -38,7 +45,7 @@
           "title": "UI Events",
           "url": "https://www.w3.org/TR/uievents/"
         },
-        "fragment": "[Constructor(DOMString type, optional UIEventInit eventInitDict), Exposed=Window]\ninterface UIEvent : Event {\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
+        "fragment": "[Exposed=Window]\ninterface UIEvent : Event {\n  constructor(DOMString type, optional UIEventInit eventInitDict = {});\n  readonly attribute Window? view;\n  readonly attribute long detail;\n};",
         "href": "https://www.w3.org/TR/uievents/#uievent"
       },
       "extended": [
@@ -48,6 +55,13 @@
             "url": "https://wicg.github.io/input-device-capabilities/"
           },
           "fragment": "partial interface UIEvent {\n  readonly attribute InputDeviceCapabilities? sourceCapabilities;\n};"
+        },
+        {
+          "spec": {
+            "title": "UI Events",
+            "url": "https://www.w3.org/TR/uievents/"
+          },
+          "fragment": "partial interface UIEvent {\n  // Deprecated in this specification\n  undefined initUIEvent(DOMString typeArg,\n    optional boolean bubblesArg = false,\n    optional boolean cancelableArg = false,\n    optional Window? viewArg = null,\n    optional long detailArg = 0);\n};"
         },
         {
           "spec": {

@@ -1,14 +1,14 @@
 {
   "spec": {
-    "title": "Mixed Content",
+    "title": "Mixed Content Level 2",
     "url": "https://www.w3.org/TR/mixed-content/"
   },
   "headings": [
     {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/mixed-content/#subtitle",
+      "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/mixed-content/#profile-and-date",
       "level": 2,
-      "title": "W3C Candidate Recommendation, 2 August 2016"
+      "title": "W3C Candidate Recommendation Draft, 18 September 2021"
     },
     {
       "id": "abstract",
@@ -50,10 +50,10 @@
       "number": "3"
     },
     {
-      "id": "category-optionally-blockable",
-      "href": "https://www.w3.org/TR/mixed-content/#category-optionally-blockable",
+      "id": "category-upgradeable",
+      "href": "https://www.w3.org/TR/mixed-content/#category-upgradeable",
       "level": 3,
-      "title": "Optionally-blockable Content",
+      "title": "Upgradeable Content",
       "number": "3.1"
     },
     {
@@ -64,74 +64,88 @@
       "number": "3.2"
     },
     {
-      "id": "strict-checking",
-      "href": "https://www.w3.org/TR/mixed-content/#strict-checking",
-      "level": 2,
-      "title": "Strict Mixed Content Checking",
-      "number": "4"
-    },
-    {
-      "id": "strict-effects",
-      "href": "https://www.w3.org/TR/mixed-content/#strict-effects",
-      "level": 3,
-      "title": "Effects",
-      "number": "4.1"
-    },
-    {
-      "id": "strict-opt-in",
-      "href": "https://www.w3.org/TR/mixed-content/#strict-opt-in",
-      "level": 3,
-      "title": "Opting-in",
-      "number": "4.2"
-    },
-    {
-      "id": "strict-nesting",
-      "href": "https://www.w3.org/TR/mixed-content/#strict-nesting",
-      "level": 3,
-      "title": "Inheriting an opt-in",
-      "number": "4.3"
-    },
-    {
       "id": "algorithms",
       "href": "https://www.w3.org/TR/mixed-content/#algorithms",
       "level": 2,
-      "title": "Insecure Content in Secure Contexts",
-      "number": "5"
+      "title": "Algorithms",
+      "number": "4"
+    },
+    {
+      "id": "upgrade-algorithm",
+      "href": "https://www.w3.org/TR/mixed-content/#upgrade-algorithm",
+      "level": 3,
+      "title": "Upgrade a mixed content request to a potentially trustworthy URL, if appropriate",
+      "number": "4.1"
+    },
+    {
+      "id": "existing-mix-algorithms",
+      "href": "https://www.w3.org/TR/mixed-content/#existing-mix-algorithms",
+      "level": 3,
+      "title": "Existing Mixed Content Algorithms and Modifications",
+      "number": "4.2"
     },
     {
       "id": "categorize-settings-object",
       "href": "https://www.w3.org/TR/mixed-content/#categorize-settings-object",
       "level": 3,
       "title": "Does settings prohibit mixed security contexts?",
-      "number": "5.1"
-    },
-    {
-      "id": "is-passthrough",
-      "href": "https://www.w3.org/TR/mixed-content/#is-passthrough",
-      "level": 3,
-      "title": "Is request a passthrough request?",
-      "number": "5.2"
+      "number": "4.3"
     },
     {
       "id": "should-block-fetch",
       "href": "https://www.w3.org/TR/mixed-content/#should-block-fetch",
       "level": 3,
       "title": "Should fetching request be blocked as mixed content?",
-      "number": "5.3"
+      "number": "4.4"
     },
     {
       "id": "should-block-response",
       "href": "https://www.w3.org/TR/mixed-content/#should-block-response",
       "level": 3,
       "title": "Should response to request be blocked as mixed content?",
-      "number": "5.4"
+      "number": "4.5"
     },
     {
-      "id": "websockets-integration",
-      "href": "https://www.w3.org/TR/mixed-content/#websockets-integration",
+      "id": "integration",
+      "href": "https://www.w3.org/TR/mixed-content/#integration",
       "level": 2,
-      "title": "Modifications to WebSockets",
+      "title": "Integrations",
+      "number": "5"
+    },
+    {
+      "id": "fetch",
+      "href": "https://www.w3.org/TR/mixed-content/#fetch",
+      "level": 3,
+      "title": "Modifications to Fetch",
+      "number": "5.1"
+    },
+    {
+      "id": "html",
+      "href": "https://www.w3.org/TR/mixed-content/#html",
+      "level": 3,
+      "title": "Modifications to HTML",
+      "number": "5.2"
+    },
+    {
+      "id": "obsolescences",
+      "href": "https://www.w3.org/TR/mixed-content/#obsolescences",
+      "level": 2,
+      "title": "Obsolescences",
       "number": "6"
+    },
+    {
+      "id": "strict-checking",
+      "href": "https://www.w3.org/TR/mixed-content/#strict-checking",
+      "level": 3,
+      "title": "Strict Mixed Content Checking",
+      "number": "6.1"
+    },
+    {
+      "id": "mixed-content-1",
+      "href": "https://www.w3.org/TR/mixed-content/#mixed-content-1",
+      "level": 3,
+      "title": "Mixed Content",
+      "number": "6.2"
     },
     {
       "id": "security-considerations",
@@ -141,60 +155,25 @@
       "number": "7"
     },
     {
-      "id": "limitations",
-      "href": "https://www.w3.org/TR/mixed-content/#limitations",
-      "level": 3,
-      "title": "Limitations",
-      "number": "7.1"
-    },
-    {
       "id": "requirements-forms",
       "href": "https://www.w3.org/TR/mixed-content/#requirements-forms",
       "level": 3,
       "title": "Form Submission",
-      "number": "7.2"
-    },
-    {
-      "id": "requirements-ux",
-      "href": "https://www.w3.org/TR/mixed-content/#requirements-ux",
-      "level": 3,
-      "title": "UI Requirements",
-      "number": "7.3"
+      "number": "7.1"
     },
     {
       "id": "requirements-user-controls",
       "href": "https://www.w3.org/TR/mixed-content/#requirements-user-controls",
       "level": 3,
       "title": "User Controls",
-      "number": "7.4"
-    },
-    {
-      "id": "service-workers",
-      "href": "https://www.w3.org/TR/mixed-content/#service-workers",
-      "level": 3,
-      "title": "Service Workers",
-      "number": "7.5"
-    },
-    {
-      "id": "further-action",
-      "href": "https://www.w3.org/TR/mixed-content/#further-action",
-      "level": 3,
-      "title": "Further Action",
-      "number": "7.6"
-    },
-    {
-      "id": "iana-considerations",
-      "href": "https://www.w3.org/TR/mixed-content/#iana-considerations",
-      "level": 2,
-      "title": "IANA Considerations",
-      "number": "8"
+      "number": "7.2"
     },
     {
       "id": "acknowledgements",
       "href": "https://www.w3.org/TR/mixed-content/#acknowledgements",
       "level": 2,
       "title": "Acknowledgements",
-      "number": "9"
+      "number": "8"
     },
     {
       "id": "conformance",
@@ -249,12 +228,6 @@
       "href": "https://www.w3.org/TR/mixed-content/#informative",
       "level": 3,
       "title": "Informative References"
-    },
-    {
-      "id": "issues-index",
-      "href": "https://www.w3.org/TR/mixed-content/#issues-index",
-      "level": 2,
-      "title": "Issues Index"
     }
   ]
 }

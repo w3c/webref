@@ -5,48 +5,6 @@
   },
   "dfns": [
     {
-      "id": "dom-navigator-keyboard",
-      "href": "https://wicg.github.io/keyboard-map/#dom-navigator-keyboard",
-      "linkingText": [
-        "keyboard"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "Navigator"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "navigator-interface",
-        "href": "https://wicg.github.io/keyboard-map/#navigator-interface",
-        "title": "Navigator Interface",
-        "number": "2.1"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "navigator-keyboard",
-      "href": "https://wicg.github.io/keyboard-map/#navigator-keyboard",
-      "linkingText": [
-        "keyboard"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "Navigator"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "h-navigator-keyboard",
-        "href": "https://wicg.github.io/keyboard-map/#h-navigator-keyboard",
-        "title": "keyboard",
-        "number": "2.1.1"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "keyboardlayoutmap",
       "href": "https://wicg.github.io/keyboard-map/#keyboardlayoutmap",
       "linkingText": [
@@ -66,14 +24,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "keyboard",
-      "href": "https://wicg.github.io/keyboard-map/#keyboard",
+      "id": "dom-keyboard-getlayoutmap",
+      "href": "https://wicg.github.io/keyboard-map/#dom-keyboard-getlayoutmap",
       "linkingText": [
-        "Keyboard"
+        "getLayoutMap()"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "method",
+      "for": [
+        "Keyboard"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -85,13 +45,13 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-keyboard-getlayoutmap",
-      "href": "https://wicg.github.io/keyboard-map/#dom-keyboard-getlayoutmap",
+      "id": "dom-keyboard-onlayoutchange",
+      "href": "https://wicg.github.io/keyboard-map/#dom-keyboard-onlayoutchange",
       "linkingText": [
-        "getLayoutMap()"
+        "onlayoutchange"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "attribute",
       "for": [
         "Keyboard"
       ],
@@ -180,6 +140,25 @@
         "href": "https://wicg.github.io/keyboard-map/#layoutchange-event",
         "title": "The layoutchange Event",
         "number": "3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "fire-a-layoutchange-event",
+      "href": "https://wicg.github.io/keyboard-map/#fire-a-layoutchange-event",
+      "linkingText": [
+        "fire a layoutchange event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "h-fire-a-layoutchange-event",
+        "href": "https://wicg.github.io/keyboard-map/#h-fire-a-layoutchange-event",
+        "title": "fire a layoutchange event",
+        "number": "3.1.1"
       },
       "definedIn": "heading"
     },

@@ -1,5 +1,6 @@
 // Source: UI Events (https://www.w3.org/TR/uievents/)
-[Constructor(DOMString type, optional FocusEventInit eventInitDict), Exposed=Window]
+[Exposed=Window]
 interface FocusEvent : UIEvent {
+  constructor(DOMString type, optional FocusEventInit eventInitDict = {});
   readonly attribute EventTarget? relatedTarget;
 };

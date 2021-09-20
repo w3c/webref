@@ -1440,31 +1440,31 @@
     },
     {
       "id": "sec-privateelementfind",
-      "title": "PrivateElementFind ( P, O )",
+      "title": "PrivateElementFind ( O, P )",
       "level": 3,
       "number": "7.3.26"
     },
     {
       "id": "sec-privatefieldadd",
-      "title": "PrivateFieldAdd ( P, O, value )",
+      "title": "PrivateFieldAdd ( O, P, value )",
       "level": 3,
       "number": "7.3.27"
     },
     {
       "id": "sec-privatemethodoraccessoradd",
-      "title": "PrivateMethodOrAccessorAdd ( method, O )",
+      "title": "PrivateMethodOrAccessorAdd ( O, method )",
       "level": 3,
       "number": "7.3.28"
     },
     {
       "id": "sec-privateget",
-      "title": "PrivateGet ( P, O )",
+      "title": "PrivateGet ( O, P )",
       "level": 3,
       "number": "7.3.29"
     },
     {
       "id": "sec-privateset",
-      "title": "PrivateSet ( P, O, value )",
+      "title": "PrivateSet ( O, P, value )",
       "level": 3,
       "number": "7.3.30"
     },
@@ -2610,7 +2610,7 @@
     },
     {
       "id": "sec-definemethodproperty",
-      "title": "DefineMethodProperty ( key, homeObject, closure, enumerable )",
+      "title": "DefineMethodProperty ( homeObject, key, closure, enumerable )",
       "level": 3,
       "number": "10.2.8"
     },
@@ -5525,238 +5525,244 @@
       "number": "19.3"
     },
     {
+      "id": "sec-constructor-properties-of-the-global-object-aggregate-error",
+      "title": "AggregateError ( . . . )",
+      "level": 3,
+      "number": "19.3.1"
+    },
+    {
       "id": "sec-constructor-properties-of-the-global-object-array",
       "title": "Array ( . . . )",
       "level": 3,
-      "number": "19.3.1"
+      "number": "19.3.2"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-arraybuffer",
       "title": "ArrayBuffer ( . . . )",
       "level": 3,
-      "number": "19.3.2"
+      "number": "19.3.3"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-bigint",
       "title": "BigInt ( . . . )",
       "level": 3,
-      "number": "19.3.3"
+      "number": "19.3.4"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-bigint64array",
       "title": "BigInt64Array ( . . . )",
       "level": 3,
-      "number": "19.3.4"
+      "number": "19.3.5"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-biguint64array",
       "title": "BigUint64Array ( . . . )",
       "level": 3,
-      "number": "19.3.5"
+      "number": "19.3.6"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-boolean",
       "title": "Boolean ( . . . )",
       "level": 3,
-      "number": "19.3.6"
+      "number": "19.3.7"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-dataview",
       "title": "DataView ( . . . )",
       "level": 3,
-      "number": "19.3.7"
+      "number": "19.3.8"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-date",
       "title": "Date ( . . . )",
       "level": 3,
-      "number": "19.3.8"
+      "number": "19.3.9"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-error",
       "title": "Error ( . . . )",
       "level": 3,
-      "number": "19.3.9"
+      "number": "19.3.10"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-evalerror",
       "title": "EvalError ( . . . )",
       "level": 3,
-      "number": "19.3.10"
+      "number": "19.3.11"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-finnalization-registry",
       "title": "FinalizationRegistry ( . . . )",
       "level": 3,
-      "number": "19.3.11"
+      "number": "19.3.12"
     },
     {
       "id": "sec-float32array",
       "title": "Float32Array ( . . . )",
       "level": 3,
-      "number": "19.3.12"
+      "number": "19.3.13"
     },
     {
       "id": "sec-float64array",
       "title": "Float64Array ( . . . )",
       "level": 3,
-      "number": "19.3.13"
+      "number": "19.3.14"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-function",
       "title": "Function ( . . . )",
       "level": 3,
-      "number": "19.3.14"
+      "number": "19.3.15"
     },
     {
       "id": "sec-int8array",
       "title": "Int8Array ( . . . )",
       "level": 3,
-      "number": "19.3.15"
+      "number": "19.3.16"
     },
     {
       "id": "sec-int16array",
       "title": "Int16Array ( . . . )",
       "level": 3,
-      "number": "19.3.16"
+      "number": "19.3.17"
     },
     {
       "id": "sec-int32array",
       "title": "Int32Array ( . . . )",
       "level": 3,
-      "number": "19.3.17"
+      "number": "19.3.18"
     },
     {
       "id": "sec-map",
       "title": "Map ( . . . )",
       "level": 3,
-      "number": "19.3.18"
+      "number": "19.3.19"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-number",
       "title": "Number ( . . . )",
       "level": 3,
-      "number": "19.3.19"
+      "number": "19.3.20"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-object",
       "title": "Object ( . . . )",
       "level": 3,
-      "number": "19.3.20"
+      "number": "19.3.21"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-promise",
       "title": "Promise ( . . . )",
       "level": 3,
-      "number": "19.3.21"
+      "number": "19.3.22"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-proxy",
       "title": "Proxy ( . . . )",
       "level": 3,
-      "number": "19.3.22"
+      "number": "19.3.23"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-rangeerror",
       "title": "RangeError ( . . . )",
       "level": 3,
-      "number": "19.3.23"
+      "number": "19.3.24"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-referenceerror",
       "title": "ReferenceError ( . . . )",
       "level": 3,
-      "number": "19.3.24"
+      "number": "19.3.25"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-regexp",
       "title": "RegExp ( . . . )",
       "level": 3,
-      "number": "19.3.25"
+      "number": "19.3.26"
     },
     {
       "id": "sec-set",
       "title": "Set ( . . . )",
       "level": 3,
-      "number": "19.3.26"
+      "number": "19.3.27"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-sharedarraybuffer",
       "title": "SharedArrayBuffer ( . . . )",
       "level": 3,
-      "number": "19.3.27"
+      "number": "19.3.28"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-string",
       "title": "String ( . . . )",
       "level": 3,
-      "number": "19.3.28"
+      "number": "19.3.29"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-symbol",
       "title": "Symbol ( . . . )",
       "level": 3,
-      "number": "19.3.29"
+      "number": "19.3.30"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-syntaxerror",
       "title": "SyntaxError ( . . . )",
       "level": 3,
-      "number": "19.3.30"
+      "number": "19.3.31"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-typeerror",
       "title": "TypeError ( . . . )",
       "level": 3,
-      "number": "19.3.31"
+      "number": "19.3.32"
     },
     {
       "id": "sec-uint8array",
       "title": "Uint8Array ( . . . )",
       "level": 3,
-      "number": "19.3.32"
+      "number": "19.3.33"
     },
     {
       "id": "sec-uint8clampedarray",
       "title": "Uint8ClampedArray ( . . . )",
       "level": 3,
-      "number": "19.3.33"
+      "number": "19.3.34"
     },
     {
       "id": "sec-uint16array",
       "title": "Uint16Array ( . . . )",
       "level": 3,
-      "number": "19.3.34"
+      "number": "19.3.35"
     },
     {
       "id": "sec-uint32array",
       "title": "Uint32Array ( . . . )",
       "level": 3,
-      "number": "19.3.35"
+      "number": "19.3.36"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-urierror",
       "title": "URIError ( . . . )",
       "level": 3,
-      "number": "19.3.36"
+      "number": "19.3.37"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakmap",
       "title": "WeakMap ( . . . )",
       "level": 3,
-      "number": "19.3.37"
+      "number": "19.3.38"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakref",
       "title": "WeakRef ( . . . )",
       "level": 3,
-      "number": "19.3.38"
+      "number": "19.3.39"
     },
     {
       "id": "sec-constructor-properties-of-the-global-object-weakset",
       "title": "WeakSet ( . . . )",
       "level": 3,
-      "number": "19.3.39"
+      "number": "19.3.40"
     },
     {
       "id": "sec-other-properties-of-the-global-object",
