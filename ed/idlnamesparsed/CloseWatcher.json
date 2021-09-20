@@ -6,7 +6,7 @@
       "title": "Close Watcher API",
       "url": "https://wicg.github.io/close-watcher/"
     },
-    "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler onclose;\n};",
+    "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
     "href": "https://wicg.github.io/close-watcher/#closewatcher"
   },
   "extended": [],

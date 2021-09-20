@@ -16,6 +16,6 @@ interface VirtualKeyboard : EventTarget {
     attribute EventHandler ongeometrychange;
 };
 
-partial interface ElementContentEditable {
+partial interface mixin ElementContentEditable {
      [CEReactions] attribute DOMString virtualKeyboardPolicy;
 };

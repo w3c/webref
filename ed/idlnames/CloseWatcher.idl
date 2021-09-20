@@ -6,5 +6,6 @@ interface CloseWatcher : EventTarget {
   undefined destroy();
   undefined signalClose();
 
+  attribute EventHandler oncancel;
   attribute EventHandler onclose;
 };
