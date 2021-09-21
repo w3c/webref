@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 20, 2021
+% September 21, 2021
 
 440 specifications were crawled in this report.
 
@@ -9,49 +9,10 @@
 
 Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
 
-- [CSS Easing Functions Level 1]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
+- [MathML Core]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
     at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-- [CSS Flexible Box Layout Module Level 1]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-- [CSS Fonts Module Level 4]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
-    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
-    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 249)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
-- [CSS Grid Layout Module Level 2]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-- [CSS Multi-column Layout Module Level 1]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-- [CSS Rhythmic Sizing]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
-    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
-    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 275)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
-- [CSS Round Display Level 1]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
-    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
-    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 276)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
 
-=> 7 specifications found
+=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -214,7 +175,7 @@ Please keep in mind that Reffy only knows about IDL terms defined in the specifi
 
 ## List of WebIDL names not defined in the specifications crawled
 
-- `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
+- `CSSOMString` used in [CSS Animations Level 1](https://drafts.csswg.org/css-animations/), [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/), [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/), [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/), [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/), [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/), [CSS Nesting Module](https://drafts.csswg.org/css-nesting/), [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/), [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/), [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/), [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/), [CSS Transitions](https://drafts.csswg.org/css-transitions/), [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/), [CSSOM View Module](https://drafts.csswg.org/cssom-view/), [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/), [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - `CSSPercentishArray` used in [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/)
 - `PostMessageOptions` used in [Portals](https://wicg.github.io/portals/)
 - `WebAppManifest` used in [Web Share Target API](https://w3c.github.io/web-share-target/)
@@ -312,6 +273,9 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 
 - [CSS Box Model Module Level 3](https://drafts.csswg.org/css-box-3/):
     * `margin-trim` with type `property`
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
+    * `<feature-value-block>`
+    * `<font-feature-value-type>`
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
     * `margin-break` with type `property`
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
@@ -380,7 +344,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `<dasharray>`
     * `<marker-ref>`
 
-=> 65 properties without definition found in 4 specifications
+=> 67 properties without definition found in 5 specifications
 
 
 ## No definition for IDL properties
@@ -1049,6 +1013,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-grid/`](https://www.w3.org/TR/css-grid/) but does not list it in its references
     * [`https://www.w3.org/TR/css-contain-1/`](https://www.w3.org/TR/css-contain-1/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
+- [CSS Easing Functions Level 1](https://drafts.csswg.org/css-easing/) links to [`https://www.w3.org/TR/css3-transitions/`](https://www.w3.org/TR/css3-transitions/) but does not list it in its references
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/) links to:
     * [`https://www.w3.org/TR/css3-box/`](https://www.w3.org/TR/css3-box/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -1059,6 +1024,25 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/) links to:
+    * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-speech/`](https://www.w3.org/TR/css-speech/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-align/`](https://www.w3.org/TR/css3-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-display/`](https://www.w3.org/TR/css-display/) but does not list it in its references
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
+    * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -1094,6 +1078,17 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to:
+    * [`https://www.w3.org/TR/css-grid-1/`](https://www.w3.org/TR/css-grid-1/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-mediaqueries/`](https://www.w3.org/TR/css3-mediaqueries/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-align/`](https://www.w3.org/TR/css-align/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-writing-modes/`](https://www.w3.org/TR/css3-writing-modes/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-speech/`](https://www.w3.org/TR/css3-speech/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/cssom/`](https://www.w3.org/TR/cssom/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-break/`](https://www.w3.org/TR/css-break/) but does not list it in its references
+    * [`https://www.w3.org/TR/css3-break/`](https://www.w3.org/TR/css3-break/) but does not list it in its references
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
@@ -1143,6 +1138,10 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/) but does not list it in its references
 - [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/) links to:
     * [`https://www.w3.org/TR/css3-multicol/`](https://www.w3.org/TR/css3-multicol/) but does not list it in its references
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but does not list it in its references
@@ -1196,6 +1195,13 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://www.w3.org/TR/2013/WD-css3-regions-20130528/`](https://www.w3.org/TR/2013/WD-css3-regions-20130528/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css3-regions-20120823/`](https://www.w3.org/TR/2012/WD-css3-regions-20120823/) but does not list it in its references
     * [`https://www.w3.org/TR/2012/WD-css3-regions-20120503/`](https://www.w3.org/TR/2012/WD-css3-regions-20120503/) but does not list it in its references
+- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-pseudo/`](https://www.w3.org/TR/css-pseudo/) but does not list it in its references
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
     * [`https://www.w3.org/TR/css3-text/`](https://www.w3.org/TR/css3-text/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -1547,7 +1553,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 592 missing references for links found in 173 specifications
+=> 628 missing references for links found in 180 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1631,7 +1637,15 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Exclusions Module Level 1](https://drafts.csswg.org/css-exclusions/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/) links to:
+    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/`](https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/`](https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/`](https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
+    * [`https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/`](https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1640,6 +1654,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/`](https://www.w3.org/TR/2014/WD-dpub-latinreq-20140313/) but related reference "DPUB-LATINREQ" uses URL [`https://www.w3.org/TR/dpub-latinreq/`](https://www.w3.org/TR/dpub-latinreq/)
 - [CSS Generated Content for Paged Media Module Level 4](https://drafts.csswg.org/css-gcpm-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1651,6 +1666,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [CSS Mobile Text Size Adjustment Module Level 1](https://drafts.csswg.org/css-size-adjust-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Overscroll Behavior Module Level 1](https://drafts.csswg.org/css-overscroll-1/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1664,6 +1680,8 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
     * [`https://www.w3.org/TR/2012/WD-dom-20120405/`](https://www.w3.org/TR/2012/WD-dom-20120405/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/dom/`](https://www.w3.org/TR/dom/) but related reference "DOM" uses URL [`https://dom.spec.whatwg.org/`](https://dom.spec.whatwg.org/)
     * [`https://www.w3.org/TR/cssom-view/`](https://www.w3.org/TR/cssom-view/) but related reference "CSSOM-VIEW" uses URL [`https://www.w3.org/TR/cssom-view-1/`](https://www.w3.org/TR/cssom-view-1/)
+- [CSS Rhythmic Sizing](https://drafts.csswg.org/css-rhythm/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+- [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/) links to [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/) links to:
     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
@@ -1959,7 +1977,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 333 inconsistent references for links found in 176 specifications
+=> 344 inconsistent references for links found in 182 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2042,6 +2060,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations#effect-stack`](https://drafts.csswg.org/web-animations#effect-stack)
      * [`https://drafts.csswg.org/web-animations#animation-class`](https://drafts.csswg.org/web-animations#animation-class)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/):
+     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
+     * [`https://drafts.csswg.org/css-easing-1/#step-easing-function`](https://drafts.csswg.org/css-easing-1/#step-easing-function)
+     * [`https://drafts.csswg.org/css-easing-1/#step-position`](https://drafts.csswg.org/css-easing-1/#step-position)
+     * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
      * [`https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order`](https://drafts.csswg.org/cssom-1/#concept-declarations-specified-order)
 - [CSS Animations Level 2](https://drafts.csswg.org/css-animations-2/):
      * [`https://drafts.csswg.org/web-animations-1/#play-state`](https://drafts.csswg.org/web-animations-1/#play-state)
@@ -2068,6 +2090,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-style-attr/#style-attribute`](https://www.w3.org/TR/css-style-attr/#style-attribute)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
      * [`https://drafts.csswg.org/css2/#line-box`](https://drafts.csswg.org/css2/#line-box)
+     * [`https://drafts.csswg.org/css-grid-1/#collapsed-gutter`](https://drafts.csswg.org/css-grid-1/#collapsed-gutter)
      * [`https://drafts.csswg.org/css-writing-modes-3/#dominant-baseline`](https://drafts.csswg.org/css-writing-modes-3/#dominant-baseline)
 - [CSS Color Adjustment Module Level 1](https://drafts.csswg.org/css-color-adjust-1/):
      * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
@@ -2083,12 +2106,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-pseudo-4/#highlight-overlay`](https://drafts.csswg.org/css-pseudo-4/#highlight-overlay)
 - [CSS Custom Properties for Cascading Variables Module Level 1](https://drafts.csswg.org/css-variables/):
      * [`https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag`](https://drafts.csswg.org/cssom-1/#css-declaration-case-sensitive-flag)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
+     * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
+     * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
+     * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
      * [`https://drafts.csswg.org/css-inline-3/#ascent-metric`](https://drafts.csswg.org/css-inline-3/#ascent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#descent-metric`](https://drafts.csswg.org/css-inline-3/#descent-metric)
      * [`https://drafts.csswg.org/css-inline-3/#line-gap-metric`](https://drafts.csswg.org/css-inline-3/#line-gap-metric)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
      * [`https://www.w3.org/TR/css3-background/#background-positioning-area`](https://www.w3.org/TR/css3-background/#background-positioning-area)
+- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/):
+     * [`https://drafts.csswg.org/css-grid-2/#computed-track-list`](https://drafts.csswg.org/css-grid-2/#computed-track-list)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://www.w3.org/TR/css3-background/#border-image-area`](https://www.w3.org/TR/css3-background/#border-image-area)
 - [CSS Images Module Level 4](https://drafts.csswg.org/css-images-4/):
@@ -2147,6 +2176,9 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/):
      * [`https://drafts.csswg.org/css-transforms-1/#reference-box`](https://drafts.csswg.org/css-transforms-1/#reference-box)
      * [`https://drafts.csswg.org/css2/#stacking-context`](https://drafts.csswg.org/css2/#stacking-context)
+- [CSS Transitions](https://drafts.csswg.org/css-transitions/):
+     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
+     * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
 - [CSS Transitions Level 2](https://drafts.csswg.org/css-transitions-2/):
      * [`https://drafts.csswg.org/web-animations/#iteration-duration`](https://drafts.csswg.org/web-animations/#iteration-duration)
      * [`https://drafts.csswg.org/web-animations/#animation-effect`](https://drafts.csswg.org/web-animations/#animation-effect)
@@ -2583,6 +2615,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Web Animations](https://drafts.csswg.org/web-animations-1/):
      * [`https://drafts.csswg.org/web-animations-2/#iteration-composite-operation`](https://drafts.csswg.org/web-animations-2/#iteration-composite-operation)
      * [`https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate`](https://drafts.csswg.org/web-animations-2/#iteration-composite-operation-accumulate)
+     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
+     * [`https://drafts.csswg.org/css-easing-1/#before-flag`](https://drafts.csswg.org/css-easing-1/#before-flag)
      * [`https://drafts.csswg.org/css-animations-2/#owning-element`](https://drafts.csswg.org/css-animations-2/#owning-element)
      * [`https://drafts.csswg.org/css-transitions-2/#owning-element`](https://drafts.csswg.org/css-transitions-2/#owning-element)
      * [`https://drafts.csswg.org/css-style-attr/#style-attribute`](https://drafts.csswg.org/css-style-attr/#style-attribute)
@@ -2857,7 +2891,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 744 problematic external links found in 146 specifications
+=> 757 problematic external links found in 149 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -3094,17 +3128,32 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/):
      * [`https://www.w3.org/TR/css-ui-3/#box-sizing`](https://www.w3.org/TR/css-ui-3/#box-sizing)
+- [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
+     * [`https://www.w3.org/TR/css-flexbox-1/#algo-main-item`](https://www.w3.org/TR/css-flexbox-1/#algo-main-item)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
      * [`https://drafts.csswg.org/css-ui-3/#propdef-text-overflow`](https://drafts.csswg.org/css-ui-3/#propdef-text-overflow)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
+     * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
+     * [`https://www.w3.org/TR/css3-break/#end-block`](https://www.w3.org/TR/css3-break/#end-block)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
      * [`https://www.w3.org/TR/css3-page/#left-right-first`](https://www.w3.org/TR/css3-page/#left-right-first)
 - [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/):
      * [`https://www.w3.org/TR/css-page-3/#left-right-first`](https://www.w3.org/TR/css-page-3/#left-right-first)
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
+     * [`https://www.w3.org/TR/css-flexbox-1/#order-accessibility`](https://www.w3.org/TR/css-flexbox-1/#order-accessibility)
+     * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
+     * [`https://www.w3.org/TR/css3-break/#end-block`](https://www.w3.org/TR/css3-break/#end-block)
+- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/):
+     * [`https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order`](https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://www.w3.org/TR/css3-background/#the-background-size`](https://www.w3.org/TR/css3-background/#the-background-size)
      * [`https://www.w3.org/TR/css3-background/#the-border-image-slice`](https://www.w3.org/TR/css3-background/#the-border-image-slice)
+- [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
+     * [`https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0`](https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
      * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
+- [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/):
+     * [`https://drafts.csswg.org/css3-multicol/#multi-column-element`](https://drafts.csswg.org/css3-multicol/#multi-column-element)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://www.w3.org/TR/css-ruby-1/#autohide`](https://www.w3.org/TR/css-ruby-1/#autohide)
      * [`https://www.w3.org/TR/css-backgrounds-3/#the-border-style`](https://www.w3.org/TR/css-backgrounds-3/#the-border-style)
@@ -3450,9 +3499,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/aria/#aria-activedescendant`](https://w3c.github.io/aria/#aria-activedescendant)
      * [`https://w3c.github.io/aria/#aria-valuenow`](https://w3c.github.io/aria/#aria-valuenow)
      * [`https://w3c.github.io/aria/#aria-valuetext`](https://w3c.github.io/aria/#aria-valuetext)
-- [MathML Core](https://w3c.github.io/mathml-core/):
-     * [`https://www.w3.org/TR/css-writing-modes-3/#extent`](https://www.w3.org/TR/css-writing-modes-3/#extent)
-     * [`https://www.w3.org/TR/css-backgrounds-3/#the-background-color`](https://www.w3.org/TR/css-backgrounds-3/#the-background-color)
 - [Media Capabilities](https://w3c.github.io/media-capabilities/):
      * [`https://www.w3.org/TR/encrypted-media/#key-system`](https://www.w3.org/TR/encrypted-media/#key-system)
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/):
@@ -3712,7 +3758,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment`](https://url.spec.whatwg.org/#syntax-url-absolute-with-fragment)
      * [`https://url.spec.whatwg.org/#syntax-url-path-absolute`](https://url.spec.whatwg.org/#syntax-url-path-absolute)
 
-=> 800 problematic external links found in 49 specifications
+=> 807 problematic external links found in 54 specifications
 
 
 ## Broken external links
@@ -4198,14 +4244,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
      * [`https://html.spec.whatwg.org/#close-the-dialog`](https://html.spec.whatwg.org/#close-the-dialog)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex`](https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
@@ -4464,14 +4502,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/web-animations/level-2/#group-effect`](https://w3c.github.io/web-animations/level-2/#group-effect)
      * [`https://w3c.github.io/web-animations/level-2/#child-effect`](https://w3c.github.io/web-animations/level-2/#child-effect)
 - [CSS Animations Level 1](https://drafts.csswg.org/css-animations/):
-     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
-     * [`https://drafts.csswg.org/css-easing-1/#step-easing-function`](https://drafts.csswg.org/css-easing-1/#step-easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#step-position`](https://drafts.csswg.org/css-easing-1/#step-position)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-steps-start`](https://drafts.csswg.org/css-easing-1/#valdef-steps-start)
-     * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out)
      * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
@@ -4490,9 +4520,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations-1/#sampling`](https://drafts.csswg.org/web-animations-1/#sampling)
      * [`https://drafts.csswg.org/web-animations-1/#pending-play-state`](https://drafts.csswg.org/web-animations-1/#pending-play-state)
      * [`https://drafts.csswg.org/web-animations-1/#active-phase`](https://drafts.csswg.org/web-animations-1/#active-phase)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-end`](https://drafts.csswg.org/css-easing-1/#valdef-step-easing-function-step-end)
-     * [`https://drafts.csswg.org/css-easing-1/#easing-function`](https://drafts.csswg.org/css-easing-1/#easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
      * [`https://drafts.csswg.org/css-values-4/#css-identifier`](https://drafts.csswg.org/css-values-4/#css-identifier)
 - [CSS Backgrounds and Borders Module Level 3](https://drafts.csswg.org/css-backgrounds/):
      * [`https://www.w3.org/TR/css-transitions-1/#animatable-types`](https://www.w3.org/TR/css-transitions-1/#animatable-types)
@@ -4503,9 +4530,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/):
      * [`https://www.w3.org/TR/css3-transitions/#animtype-color`](https://www.w3.org/TR/css3-transitions/#animtype-color)
-     * [`https://drafts.csswg.org/css-easing-1/#funcdef-cubic-bezier-easing-function-cubic-bezier`](https://drafts.csswg.org/css-easing-1/#funcdef-cubic-bezier-easing-function-cubic-bezier)
-     * [`https://drafts.csswg.org/css-grid-2/#typedef-flex`](https://drafts.csswg.org/css-grid-2/#typedef-flex)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-flex-fr`](https://drafts.csswg.org/css-grid-2/#valdef-flex-fr)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/):
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
@@ -4525,52 +4549,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-input-type-password-keyword`](https://html.spec.whatwg.org/#attr-input-type-password-keyword)
      * [`https://w3c.github.io/contentEditable/#dfn-editing-host`](https://w3c.github.io/contentEditable/#dfn-editing-host)
 - [CSS Box Alignment Module Level 3](https://drafts.csswg.org/css-align/):
-     * [`https://drafts.csswg.org/css-flexbox-1/#main-axis`](https://drafts.csswg.org/css-flexbox-1/#main-axis)
-     * [`https://drafts.csswg.org/css-flexbox-1/#cross-axis`](https://drafts.csswg.org/css-flexbox-1/#cross-axis)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-formatting-context`](https://drafts.csswg.org/css-flexbox-1/#flex-formatting-context)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row`](https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row-reverse`](https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-row-reverse)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column`](https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column-reverse`](https://drafts.csswg.org/css-flexbox-1/#valdef-flex-direction-column-reverse)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-line`](https://drafts.csswg.org/css-flexbox-1/#flex-line)
-     * [`https://drafts.csswg.org/css-flexbox-1/#multi-line-flex-container`](https://drafts.csswg.org/css-flexbox-1/#multi-line-flex-container)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-layout`](https://drafts.csswg.org/css-flexbox-1/#flex-layout)
-     * [`https://www.w3.org/TR/css-flexbox-1/#box-model`](https://www.w3.org/TR/css-flexbox-1/#box-model)
-     * [`https://www.w3.org/TR/css-flexbox-1/#abspos-items`](https://www.w3.org/TR/css-flexbox-1/#abspos-items)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-track`](https://drafts.csswg.org/css-grid-2/#grid-track)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-row`](https://drafts.csswg.org/css-grid-2/#grid-row)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-column`](https://drafts.csswg.org/css-grid-2/#grid-column)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-area`](https://drafts.csswg.org/css-grid-2/#grid-area)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-placement-property`](https://drafts.csswg.org/css-grid-2/#grid-placement-property)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-layout`](https://drafts.csswg.org/css-grid-2/#grid-layout)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
-     * [`https://drafts.csswg.org/css-multicol-1/#valdef-column-width-auto`](https://drafts.csswg.org/css-multicol-1/#valdef-column-width-auto)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
-     * [`https://drafts.csswg.org/css-multicol-1/#column-box`](https://drafts.csswg.org/css-multicol-1/#column-box)
-     * [`https://drafts.csswg.org/css-grid-1/#collapsed-gutter`](https://drafts.csswg.org/css-grid-1/#collapsed-gutter)
-     * [`https://www.w3.org/TR/css-grid-1/#grid-item-sizing`](https://www.w3.org/TR/css-grid-1/#grid-item-sizing)
-     * [`https://www.w3.org/TR/css-grid-1/#gutters`](https://www.w3.org/TR/css-grid-1/#gutters)
-     * [`https://www.w3.org/TR/css-grid-1/#static-position`](https://www.w3.org/TR/css-grid-1/#static-position)
      * [`https://drafts.csswg.org/selectors-3/#first-formatted-line0`](https://drafts.csswg.org/selectors-3/#first-formatted-line0)
-     * [`https://drafts.csswg.org/css-fonts-3/#first-available-font`](https://drafts.csswg.org/css-fonts-3/#first-available-font)
-     * [`https://www.w3.org/TR/css3-flexbox/#flex-baselines`](https://www.w3.org/TR/css3-flexbox/#flex-baselines)
-     * [`https://www.w3.org/TR/css3-grid-layout/#grid-baselines`](https://www.w3.org/TR/css3-grid-layout/#grid-baselines)
-- [CSS Box Model Module Level 4](https://drafts.csswg.org/css-box-4/):
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
 - [CSS Box Sizing Module Level 3](https://drafts.csswg.org/css-sizing-3/):
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
-     * [`https://www.w3.org/TR/css3-multicol/#pseudo-algorithm`](https://www.w3.org/TR/css3-multicol/#pseudo-algorithm)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#concept-textarea-raw-value`](https://html.spec.whatwg.org/#concept-textarea-raw-value)
      * [`https://html.spec.whatwg.org/#the-textarea-element`](https://html.spec.whatwg.org/#the-textarea-element)
@@ -4583,25 +4563,14 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
      * [`https://html.spec.whatwg.org/#the-meter-element`](https://html.spec.whatwg.org/#the-meter-element)
      * [`https://html.spec.whatwg.org/#the-marquee-element`](https://html.spec.whatwg.org/#the-marquee-element)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
-     * [`https://www.w3.org/TR/css-flexbox-1/#algo-main-item`](https://www.w3.org/TR/css-flexbox-1/#algo-main-item)
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/):
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints`](https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints)
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font`](https://drafts.csswg.org/css-fonts-3/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-family`](https://drafts.csswg.org/css-fonts-3/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
@@ -4615,16 +4584,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints`](https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints)
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder`](https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic`](https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-family-sans-serif`](https://drafts.csswg.org/css-fonts-4/#valdef-font-family-sans-serif)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
@@ -4638,16 +4597,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints`](https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints)
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder`](https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic`](https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-family-sans-serif`](https://drafts.csswg.org/css-fonts-4/#valdef-font-family-sans-serif)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
 - [CSS Cascading and Inheritance Level 6](https://drafts.csswg.org/css-cascade-6/):
      * [`https://www.w3.org/TR/css-cascade-5/#fragments`](https://www.w3.org/TR/css-cascade-5/#fragments)
      * [`https://www.w3.org/TR/css-cascade-5/#layering`](https://www.w3.org/TR/css-cascade-5/#layering)
@@ -4663,7 +4612,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-color`](https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-color)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
      * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
@@ -4677,7 +4625,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-window-focus`](https://html.spec.whatwg.org/#dom-window-focus)
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
      * [`https://html.spec.whatwg.org/#dom-innertext`](https://html.spec.whatwg.org/#dom-innertext)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-track`](https://drafts.csswg.org/css-grid-2/#grid-track)
 - [CSS Counter Styles Level 3](https://drafts.csswg.org/css-counter-styles/):
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
 - [CSS Custom Highlight API Module Level 1](https://drafts.csswg.org/css-highlight-api-1/):
@@ -4686,16 +4633,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
      * [`https://www.w3.org/TR/css3-syntax/#property-defs`](https://www.w3.org/TR/css3-syntax/#property-defs)
 - [CSS Display Module Level 3](https://drafts.csswg.org/css-display/):
-     * [`https://www.w3.org/TR/css-multicol-1/#spanning-columns`](https://www.w3.org/TR/css-multicol-1/#spanning-columns)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-formatting-context`](https://drafts.csswg.org/css-flexbox-1/#flex-formatting-context)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-layout`](https://drafts.csswg.org/css-flexbox-1/#flex-layout)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-formatting-context`](https://drafts.csswg.org/css-grid-2/#grid-formatting-context)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-subgrid`](https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-subgrid)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
-     * [`https://drafts.csswg.org/css-grid-2/#subgrid`](https://drafts.csswg.org/css-grid-2/#subgrid)
      * [`https://html.spec.whatwg.org/#the-summary-element`](https://html.spec.whatwg.org/#the-summary-element)
      * [`https://html.spec.whatwg.org/#the-legend-element`](https://html.spec.whatwg.org/#the-legend-element)
      * [`https://html.spec.whatwg.org/#the-fieldset-element`](https://html.spec.whatwg.org/#the-fieldset-element)
@@ -4721,71 +4658,23 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://www.w3.org/TR/css-flexbox-1/#visibility-collapse`](https://www.w3.org/TR/css-flexbox-1/#visibility-collapse)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/):
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings)
-     * [`https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder`](https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bolder)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-normal`](https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-normal)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
      * [`https://html.spec.whatwg.org/#offscreencanvas`](https://html.spec.whatwg.org/#offscreencanvas)
-- [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-size`](https://drafts.csswg.org/css-fonts-4/#propdef-font-size)
-     * [`https://drafts.csswg.org/css-fonts-4/#first-available-font`](https://drafts.csswg.org/css-fonts-4/#first-available-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-src)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-language-override)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing`](https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing)
-     * [`https://www.w3.org/TR/css-fonts-4/#generic-font-families`](https://www.w3.org/TR/css-fonts-4/#generic-font-families)
-     * [`https://www.w3.org/TR/css-fonts-4/#acknowledgments`](https://www.w3.org/TR/css-fonts-4/#acknowledgments)
-- [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
-     * [`https://www.w3.org/TR/css3-multicol/#column-box`](https://www.w3.org/TR/css3-multicol/#column-box)
-     * [`https://www.w3.org/TR/css-multicol-1/#spanning-columns`](https://www.w3.org/TR/css-multicol-1/#spanning-columns)
-     * [`https://www.w3.org/TR/css-flexbox-1/#pagination`](https://www.w3.org/TR/css-flexbox-1/#pagination)
-     * [`https://www.w3.org/TR/css-grid-1/#pagination`](https://www.w3.org/TR/css-grid-1/#pagination)
-- [CSS Fragmentation Module Level 4](https://drafts.csswg.org/css-break-4/):
-     * [`https://www.w3.org/TR/css-multicol-1/#spanning-columns`](https://www.w3.org/TR/css-multicol-1/#spanning-columns)
-     * [`https://www.w3.org/TR/css-multicol-1/#column-box`](https://www.w3.org/TR/css-multicol-1/#column-box)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-layout`](https://drafts.csswg.org/css-multicol-1/#multi-column-layout)
-     * [`https://www.w3.org/TR/css-flexbox-1/#pagination`](https://www.w3.org/TR/css-flexbox-1/#pagination)
-     * [`https://www.w3.org/TR/css-grid-1/#pagination`](https://www.w3.org/TR/css-grid-1/#pagination)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
+     * [`https://html.spec.whatwg.org/#font`](https://html.spec.whatwg.org/#font)
 - [CSS Generated Content for Paged Media Module](https://drafts.csswg.org/css-gcpm/):
      * [`https://www.w3.org/TR/css3-selectors/#first-letter`](https://www.w3.org/TR/css3-selectors/#first-letter)
      * [`https://drafts.csswg.org/css-color/#cmyk-colors`](https://drafts.csswg.org/css-color/#cmyk-colors)
      * [`https://drafts.csswg.org/css-overflow-3/#paginated-overflow`](https://drafts.csswg.org/css-overflow-3/#paginated-overflow)
 - [CSS Generated Content Module Level 3](https://drafts.csswg.org/css-content-3/):
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
-- [CSS Grid Layout Module Level 3](https://drafts.csswg.org/css-grid-3/):
-     * [`https://www.w3.org/TR/css-grid-2/#gutters`](https://www.w3.org/TR/css-grid-2/#gutters)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-none`](https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-none)
-     * [`https://drafts.csswg.org/css-grid-2/#computed-track-list`](https://drafts.csswg.org/css-grid-2/#computed-track-list)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-column`](https://drafts.csswg.org/css-grid-2/#propdef-grid-column)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-row`](https://drafts.csswg.org/css-grid-2/#propdef-grid-row)
-     * [`https://drafts.csswg.org/css-grid-2/#line-placement`](https://drafts.csswg.org/css-grid-2/#line-placement)
-     * [`https://drafts.csswg.org/css-grid-2/#algo-track-sizing`](https://drafts.csswg.org/css-grid-2/#algo-track-sizing)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-area`](https://drafts.csswg.org/css-grid-2/#grid-area)
-     * [`https://drafts.csswg.org/css-grid-2/#implicit-grid`](https://drafts.csswg.org/css-grid-2/#implicit-grid)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-dense`](https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-dense)
-     * [`https://drafts.csswg.org/css-grid-2/#intrinsic-sizes`](https://drafts.csswg.org/css-grid-2/#intrinsic-sizes)
-     * [`https://drafts.csswg.org/css-grid-2/#alignment`](https://drafts.csswg.org/css-grid-2/#alignment)
-     * [`https://drafts.csswg.org/css-grid-2/#subgrid`](https://drafts.csswg.org/css-grid-2/#subgrid)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid`](https://drafts.csswg.org/css-grid-2/#propdef-grid)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-position`](https://drafts.csswg.org/css-grid-2/#grid-position)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template)
-     * [`https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order`](https://drafts.csswg.org/css-flexbox-1/#order-modified-document-order)
+- [CSS Grid Layout Module Level 2](https://drafts.csswg.org/css-grid-2/):
+     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
 - [CSS Images Module Level 3](https://drafts.csswg.org/css-images-3/):
      * [`https://html.spec.whatwg.org/#concept-imagebitmap-good`](https://html.spec.whatwg.org/#concept-imagebitmap-good)
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
@@ -4798,14 +4687,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#video`](https://html.spec.whatwg.org/#video)
 - [CSS Inline Layout Module Level 3](https://drafts.csswg.org/css-inline-3/):
-     * [`https://drafts.csswg.org/css-multicol-1/#column-box`](https://drafts.csswg.org/css-multicol-1/#column-box)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-layout`](https://drafts.csswg.org/css-multicol-1/#multi-column-layout)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override`](https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override)
-     * [`https://drafts.csswg.org/css-fonts-4/#first-available-font`](https://drafts.csswg.org/css-fonts-4/#first-available-font)
      * [`https://html.spec.whatwg.org/#textmetrics`](https://html.spec.whatwg.org/#textmetrics)
 - [CSS Layout API Level 1](https://drafts.css-houdini.org/css-layout-api-1/):
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
      * [`https://html.spec.whatwg.org/#worklet`](https://html.spec.whatwg.org/#worklet)
      * [`https://html.spec.whatwg.org/#worklet-global-scope-type`](https://html.spec.whatwg.org/#worklet-global-scope-type)
      * [`https://html.spec.whatwg.org/#workletglobalscope`](https://html.spec.whatwg.org/#workletglobalscope)
@@ -4819,7 +4702,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
      * [`https://html.spec.whatwg.org/#perform-a-microtask-checkpoint`](https://html.spec.whatwg.org/#perform-a-microtask-checkpoint)
 - [CSS Line Grid Module Level 1](https://drafts.csswg.org/css-line-grid/):
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-line-height-step`](https://drafts.csswg.org/css-rhythm-1/#propdef-line-height-step)
      * [`https://drafts.csswg.org/css-inline/#central`](https://drafts.csswg.org/css-inline/#central)
 - [CSS Lists and Counters Module Level 3](https://drafts.csswg.org/css-lists-3/):
      * [`https://html.spec.whatwg.org/#the-li-element`](https://html.spec.whatwg.org/#the-li-element)
@@ -4828,24 +4710,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
      * [`https://html.spec.whatwg.org/#lists`](https://html.spec.whatwg.org/#lists)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-- [CSS Multi-column Layout Module Level 2](https://drafts.csswg.org/css-multicol-2/):
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-count`](https://drafts.csswg.org/css-multicol-1/#propdef-column-count)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-columns`](https://drafts.csswg.org/css-multicol-1/#propdef-columns)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-color`](https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-color)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-style`](https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-style)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-rule-width)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-rule`](https://drafts.csswg.org/css-multicol-1/#propdef-column-rule)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-fill`](https://drafts.csswg.org/css-multicol-1/#propdef-column-fill)
-     * [`https://drafts.csswg.org/css-multicol/#column-breaks`](https://drafts.csswg.org/css-multicol/#column-breaks)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting/):
      * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
@@ -4873,25 +4738,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#browsing-context-container`](https://html.spec.whatwg.org/#browsing-context-container)
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
-     * [`https://drafts.csswg.org/css-fonts-4/#cssfontfacerule`](https://drafts.csswg.org/css-fonts-4/#cssfontfacerule)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-feature-settings`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-feature-settings)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-stretch`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-weight`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-style`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0`](https://drafts.csswg.org/css-fonts-4/#cssfontfeaturevaluesrule%E2%91%A0)
-     * [`https://drafts.csswg.org/css-fonts-4/#family-name-value`](https://drafts.csswg.org/css-fonts-4/#family-name-value)
      * [`https://drafts.csswg.org/css-color-3/#alphavalue-def`](https://drafts.csswg.org/css-color-3/#alphavalue-def)
 - [CSS Overflow Module Level 3](https://drafts.csswg.org/css-overflow-3/):
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
      * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
      * [`https://html.spec.whatwg.org/#html-vs-xhtml`](https://html.spec.whatwg.org/#html-vs-xhtml)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
-     * [`https://drafts.csswg.org/css-multicol-1/#overflow-columns`](https://drafts.csswg.org/css-multicol-1/#overflow-columns)
 - [CSS Overflow Module Level 4](https://drafts.csswg.org/css-overflow-4/):
-     * [`https://drafts.csswg.org/css-multicol-1/#overflow-columns`](https://drafts.csswg.org/css-multicol-1/#overflow-columns)
      * [`https://drafts.csswg.org/selectors-3/#subject`](https://drafts.csswg.org/selectors-3/#subject)
      * [`https://www.w3.org/TR/css3-transitions/#animatable-types`](https://www.w3.org/TR/css3-transitions/#animatable-types)
      * [`https://html.spec.whatwg.org/#dom-dir`](https://html.spec.whatwg.org/#dom-dir)
@@ -4927,29 +4779,16 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#worklets-idempotent`](https://html.spec.whatwg.org/#worklets-idempotent)
 - [CSS Parser API](https://wicg.github.io/css-parser-api/):
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
-- [CSS Positioned Layout Module Level 3](https://drafts.csswg.org/css-position/):
-     * [`https://www.w3.org/TR/css-grid-1/#abspos-items`](https://www.w3.org/TR/css-grid-1/#abspos-items)
-     * [`https://www.w3.org/TR/css-grid-1/#static-position`](https://www.w3.org/TR/css-grid-1/#static-position)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://www.w3.org/TR/css-flexbox-1/#abspos-items`](https://www.w3.org/TR/css-flexbox-1/#abspos-items)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-container`](https://drafts.csswg.org/css-grid-2/#grid-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-area`](https://drafts.csswg.org/css-grid-2/#grid-area)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-placement-property`](https://drafts.csswg.org/css-grid-2/#grid-placement-property)
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/):
      * [`https://www.w3.org/TR/css-syntax-3/#consume-a-name`](https://www.w3.org/TR/css-syntax-3/#consume-a-name)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
 - [CSS Pseudo-Elements Module Level 4](https://drafts.csswg.org/css-pseudo-4/):
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-container`](https://drafts.csswg.org/css-multicol-1/#multi-column-container)
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Regions Module Level 1](https://drafts.csswg.org/css-regions/):
      * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
-     * [`https://drafts.csswg.org/css3-multicol/#multi-column-element`](https://drafts.csswg.org/css3-multicol/#multi-column-element)
-     * [`https://drafts.csswg.org/css3-multicol/#overflow-columns`](https://drafts.csswg.org/css3-multicol/#overflow-columns)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-fill`](https://drafts.csswg.org/css-multicol-1/#propdef-column-fill)
 - [CSS Ruby Annotation Layout Module Level 1](https://drafts.csswg.org/css-ruby-1/):
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-max-content`](https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-max-content)
      * [`https://html.spec.whatwg.org/#rtc`](https://html.spec.whatwg.org/#rtc)
      * [`https://html.spec.whatwg.org/#the-rp-element`](https://html.spec.whatwg.org/#the-rp-element)
      * [`https://html.spec.whatwg.org/#the-ruby-element`](https://html.spec.whatwg.org/#the-ruby-element)
@@ -4958,11 +4797,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-family`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values)
-     * [`https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-palette-values)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-palette`](https://drafts.csswg.org/css-fonts-4/#propdef-font-palette)
 - [CSS Scroll Anchoring Module Level 1](https://drafts.csswg.org/css-scroll-anchoring/):
      * [`https://html.spec.whatwg.org/#dom-anchor`](https://html.spec.whatwg.org/#dom-anchor)
      * [`https://html.spec.whatwg.org/#focused-area-of-the-document`](https://html.spec.whatwg.org/#focused-area-of-the-document)
@@ -5008,53 +4842,34 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css2/box.html#x14`](https://drafts.csswg.org/css2/box.html#x14)
 - [CSS Speech Module Level 1](https://drafts.csswg.org/css-speech-1/):
      * [`https://html.spec.whatwg.org/#the-span-element`](https://html.spec.whatwg.org/#the-span-element)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#family-name-value`](https://drafts.csswg.org/css-fonts-4/#family-name-value)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/):
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
      * [`https://html.spec.whatwg.org/#the-p-element`](https://html.spec.whatwg.org/#the-p-element)
      * [`https://html.spec.whatwg.org/#link-type-stylesheet`](https://html.spec.whatwg.org/#link-type-stylesheet)
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
-     * [`https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range`](https://drafts.csswg.org/css-fonts-4/#descdef-font-face-unicode-range)
-     * [`https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values`](https://drafts.csswg.org/css-fonts-4/#at-ruledef-font-feature-values)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/):
-     * [`https://drafts.csswg.org/css-grid-2/#grid`](https://drafts.csswg.org/css-grid-2/#grid)
      * [`https://drafts.csswg.org/css-transforms/#grouping-property-values`](https://drafts.csswg.org/css-transforms/#grouping-property-values)
      * [`https://html.spec.whatwg.org/#tables-2`](https://html.spec.whatwg.org/#tables-2)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
      * [`https://html.spec.whatwg.org/#the-del-element`](https://html.spec.whatwg.org/#the-del-element)
-     * [`https://www.w3.org/TR/css-fonts-4/#propdef-font-variant-position`](https://www.w3.org/TR/css-fonts-4/#propdef-font-variant-position)
-     * [`https://www.w3.org/TR/css-fonts-4/#valdef-font-variant-east-asian-ruby`](https://www.w3.org/TR/css-fonts-4/#valdef-font-variant-east-asian-ruby)
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
 - [CSS Text Decoration Module Level 4](https://drafts.csswg.org/css-text-decor-4/):
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
-     * [`https://drafts.csswg.org/css-fonts-4/#first-available-font`](https://drafts.csswg.org/css-fonts-4/#first-available-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-position)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-east-asian-ruby`](https://drafts.csswg.org/css-fonts-4/#valdef-font-variant-east-asian-ruby)
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/):
-     * [`https://www.w3.org/TR/css-fonts-3/#font-kerning-prop`](https://www.w3.org/TR/css-fonts-3/#font-kerning-prop)
      * [`https://www.w3.org/TR/css-fonts-3/#feature-precedence`](https://www.w3.org/TR/css-fonts-3/#feature-precedence)
      * [`https://html.spec.whatwg.org/#language`](https://html.spec.whatwg.org/#language)
      * [`https://html.spec.whatwg.org/#newlines`](https://html.spec.whatwg.org/#newlines)
      * [`https://html.spec.whatwg.org/#preprocessing-the-input-stream`](https://html.spec.whatwg.org/#preprocessing-the-input-stream)
      * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings)
 - [CSS Text Module Level 4](https://drafts.csswg.org/css-text-4/):
      * [`https://html.spec.whatwg.org/#the-wbr-element`](https://html.spec.whatwg.org/#the-wbr-element)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-item`](https://drafts.csswg.org/css-flexbox-1/#flex-item)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-line`](https://drafts.csswg.org/css-flexbox-1/#flex-line)
-     * [`https://drafts.csswg.org/css-flexbox-1/#multi-line-flex-container`](https://drafts.csswg.org/css-flexbox-1/#multi-line-flex-container)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap)
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/):
      * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/):
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/):
      * [`https://drafts.csswg.org/css-color-3/#opacity`](https://drafts.csswg.org/css-color-3/#opacity)
-     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
-     * [`https://drafts.csswg.org/css-easing-1/#output-progress-value`](https://drafts.csswg.org/css-easing-1/#output-progress-value)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
      * [`https://html.spec.whatwg.org/#concept-event-dispatch`](https://html.spec.whatwg.org/#concept-event-dispatch)
      * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
@@ -5071,99 +4886,27 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations/#current-time`](https://drafts.csswg.org/web-animations/#current-time)
      * [`https://drafts.csswg.org/web-animations/#pending-play-state`](https://drafts.csswg.org/web-animations/#pending-play-state)
      * [`https://drafts.csswg.org/web-animations/#target-effect-end`](https://drafts.csswg.org/web-animations/#target-effect-end)
-     * [`https://drafts.csswg.org/css-easing-1/#easing-function`](https://drafts.csswg.org/css-easing-1/#easing-function)
      * [`https://html.spec.whatwg.org/#being-rendered`](https://html.spec.whatwg.org/#being-rendered)
 - [CSS Typed OM Level 1](https://drafts.css-houdini.org/css-typed-om-1/):
      * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#attr-style`](https://html.spec.whatwg.org/#attr-style)
-     * [`https://drafts.csswg.org/css-grid-2/#typedef-flex`](https://drafts.csswg.org/css-grid-2/#typedef-flex)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid`](https://drafts.csswg.org/css-grid-2/#propdef-grid)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-area`](https://drafts.csswg.org/css-grid-2/#propdef-grid-area)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-columns`](https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-columns)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow`](https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-rows`](https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-rows)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-column`](https://drafts.csswg.org/css-grid-2/#propdef-grid-column)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-column-end`](https://drafts.csswg.org/css-grid-2/#propdef-grid-column-end)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-column-start`](https://drafts.csswg.org/css-grid-2/#propdef-grid-column-start)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-row`](https://drafts.csswg.org/css-grid-2/#propdef-grid-row)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-row-end`](https://drafts.csswg.org/css-grid-2/#propdef-grid-row-end)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-row-start`](https://drafts.csswg.org/css-grid-2/#propdef-grid-row-start)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template-areas`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template-areas)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns)
-     * [`https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows`](https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-align`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-align)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-insert`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-insert)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-round`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-round)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-size`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-size)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-line-height-step`](https://drafts.csswg.org/css-rhythm-1/#propdef-line-height-step)
-     * [`https://drafts.csswg.org/css-round-display-1/#propdef-border-boundary`](https://drafts.csswg.org/css-round-display-1/#propdef-border-boundary)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-basis)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-direction)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-grow)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-shrink)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-wrap)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override`](https://drafts.csswg.org/css-fonts-4/#propdef-font-language-override)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing`](https://drafts.csswg.org/css-fonts-4/#propdef-font-optical-sizing)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-palette`](https://drafts.csswg.org/css-fonts-4/#propdef-font-palette)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-size`](https://drafts.csswg.org/css-fonts-4/#propdef-font-size)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis`](https://drafts.csswg.org/css-fonts-4/#propdef-font-synthesis)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-alternates`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-alternates)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-emoji`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant-emoji)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variation-settings)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
      * [`https://drafts.csswg.org/css-fonts-3/#absolute-size-value`](https://drafts.csswg.org/css-fonts-3/#absolute-size-value)
      * [`https://drafts.csswg.org/css-fonts-3/#relative-size-value`](https://drafts.csswg.org/css-fonts-3/#relative-size-value)
 - [CSS Values and Units Module Level 3](https://drafts.csswg.org/css-values-3/):
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out)
      * [`https://html.spec.whatwg.org/#dynamic-changes-to-base-urls`](https://html.spec.whatwg.org/#dynamic-changes-to-base-urls)
      * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
      * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-flex-fr`](https://drafts.csswg.org/css-grid-2/#valdef-flex-fr)
-     * [`https://www.w3.org/TR/css3-fonts/#first-available-font`](https://www.w3.org/TR/css3-fonts/#first-available-font)
      * [`https://drafts.csswg.org/selectors-3/#x`](https://drafts.csswg.org/selectors-3/#x)
 - [CSS Values and Units Module Level 4](https://drafts.csswg.org/css-values-4/):
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-easing-1/#easing-function`](https://drafts.csswg.org/css-easing-1/#easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-in)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out`](https://drafts.csswg.org/css-easing-1/#valdef-cubic-bezier-easing-function-ease-out)
      * [`https://html.spec.whatwg.org/#dynamic-changes-to-base-urls`](https://html.spec.whatwg.org/#dynamic-changes-to-base-urls)
      * [`https://html.spec.whatwg.org/#the-base-element`](https://html.spec.whatwg.org/#the-base-element)
      * [`https://html.spec.whatwg.org/#dom-history-pushstate`](https://html.spec.whatwg.org/#dom-history-pushstate)
-     * [`https://drafts.csswg.org/css-grid-2/#valdef-flex-fr`](https://drafts.csswg.org/css-grid-2/#valdef-flex-fr)
-     * [`https://drafts.csswg.org/css-grid-2/#typedef-flex`](https://drafts.csswg.org/css-grid-2/#typedef-flex)
-     * [`https://www.w3.org/TR/css3-fonts/#first-available-font`](https://www.w3.org/TR/css3-fonts/#first-available-font)
      * [`https://www.w3.org/TR/css-values-3/#acknowledgements`](https://www.w3.org/TR/css-values-3/#acknowledgements)
-     * [`https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-size`](https://drafts.csswg.org/css-rhythm-1/#propdef-block-step-size)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/):
      * [`https://html.spec.whatwg.org/#bidi-rendering`](https://html.spec.whatwg.org/#bidi-rendering)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://www.w3.org/TR/css-flexbox/#box-model`](https://www.w3.org/TR/css-flexbox/#box-model)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-width`](https://drafts.csswg.org/css-multicol-1/#propdef-column-width)
-     * [`https://drafts.csswg.org/css-multicol-1/#propdef-column-count`](https://drafts.csswg.org/css-multicol-1/#propdef-column-count)
-     * [`https://drafts.csswg.org/css-multicol-1/#valdef-column-width-auto`](https://drafts.csswg.org/css-multicol-1/#valdef-column-width-auto)
-     * [`https://drafts.csswg.org/css-multicol-1/#valdef-column-count-auto`](https://drafts.csswg.org/css-multicol-1/#valdef-column-count-auto)
-     * [`https://drafts.csswg.org/css-multicol-1/#multi-column-layout`](https://drafts.csswg.org/css-multicol-1/#multi-column-layout)
-     * [`https://drafts.csswg.org/css-flexbox-1/#flex-container`](https://drafts.csswg.org/css-flexbox-1/#flex-container)
-     * [`https://drafts.csswg.org/css-grid-2/#grid-item`](https://drafts.csswg.org/css-grid-2/#grid-item)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-4/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings`](https://drafts.csswg.org/css-fonts-4/#propdef-font-feature-settings)
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/):
      * [`https://html.spec.whatwg.org/#html-elements`](https://html.spec.whatwg.org/#html-elements)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
@@ -5336,7 +5079,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
-     * [`https://drafts.csswg.org/css-fonts-4/#font-block-period`](https://drafts.csswg.org/css-fonts-4/#font-block-period)
      * [`https://w3c.github.io/resource-timing/#dfn-timing-allow-check`](https://w3c.github.io/resource-timing/#dfn-timing-allow-check)
 - [Encoding Standard](https://encoding.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#event-loop`](https://html.spec.whatwg.org/#event-loop)
@@ -5537,12 +5279,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-number`](https://www.w3.org/TR/css-transitions-1/#animtype-number)
      * [`https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list`](https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list)
      * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font`](https://drafts.csswg.org/css-fonts-4/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-family`](https://drafts.csswg.org/css-fonts-3/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-3/#propdef-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-variant`](https://drafts.csswg.org/css-fonts-3/#propdef-font-variant)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/):
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
 - [Frame Timing](https://wicg.github.io/frame-timing/):
@@ -5630,7 +5366,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#list-of-active-timers`](https://html.spec.whatwg.org/#list-of-active-timers)
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
-     * [`https://www.w3.org/TR/secure-contexts/#non-secure-context`](https://www.w3.org/TR/secure-contexts/#non-secure-context)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/):
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/):
@@ -6131,43 +5866,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
-     * [`https://drafts.csswg.org/css-flexbox/#propdef-flex-direction`](https://drafts.csswg.org/css-flexbox/#propdef-flex-direction)
-     * [`https://drafts.csswg.org/css-flexbox/#propdef-flex-wrap`](https://drafts.csswg.org/css-flexbox/#propdef-flex-wrap)
-     * [`https://drafts.csswg.org/css-fonts/#first-available-font`](https://drafts.csswg.org/css-fonts/#first-available-font)
-     * [`https://drafts.csswg.org/css-fonts/#font-family-prop`](https://drafts.csswg.org/css-fonts/#font-family-prop)
-     * [`https://drafts.csswg.org/css-fonts/#font-weight-prop`](https://drafts.csswg.org/css-fonts/#font-weight-prop)
-     * [`https://drafts.csswg.org/css-fonts/#font-size-prop`](https://drafts.csswg.org/css-fonts/#font-size-prop)
-     * [`https://drafts.csswg.org/css-fonts/#font-prop`](https://drafts.csswg.org/css-fonts/#font-prop)
-     * [`https://drafts.csswg.org/css-fonts/#propdef-font-kerning`](https://drafts.csswg.org/css-fonts/#propdef-font-kerning)
-     * [`https://drafts.csswg.org/css-fonts/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts/#propdef-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts/#propdef-font-variant-caps`](https://drafts.csswg.org/css-fonts/#propdef-font-variant-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-small-caps`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-small-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-small-caps`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-small-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-petite-caps`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-petite-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-petite-caps`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-all-petite-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-unicase`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-unicase)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-titling-caps`](https://drafts.csswg.org/css-fonts/#valdef-font-variant-caps-titling-caps)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-condensed`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-condensed)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-condensed`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-condensed)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-condensed`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-condensed)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-condensed`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-condensed)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-expanded`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-semi-expanded)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-expanded`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-expanded)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-expanded`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-extra-expanded)
-     * [`https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-expanded`](https://drafts.csswg.org/css-fonts/#valdef-font-stretch-ultra-expanded)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-auto-columns`](https://drafts.csswg.org/css-grid/#propdef-grid-auto-columns)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-auto-flow`](https://drafts.csswg.org/css-grid/#propdef-grid-auto-flow)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-auto-rows`](https://drafts.csswg.org/css-grid/#propdef-grid-auto-rows)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-column-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-column-gap)
      * [`https://drafts.csswg.org/css-grid/#propdef-grid-row-gap`](https://drafts.csswg.org/css-grid/#propdef-grid-row-gap)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-template-areas`](https://drafts.csswg.org/css-grid/#propdef-grid-template-areas)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-template-columns`](https://drafts.csswg.org/css-grid/#propdef-grid-template-columns)
-     * [`https://drafts.csswg.org/css-grid/#propdef-grid-template-rows`](https://drafts.csswg.org/css-grid/#propdef-grid-template-rows)
-     * [`https://drafts.csswg.org/css-multicol/#propdef-column-count`](https://drafts.csswg.org/css-multicol/#propdef-column-count)
-     * [`https://drafts.csswg.org/css-multicol/#propdef-column-fill`](https://drafts.csswg.org/css-multicol/#propdef-column-fill)
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
-     * [`https://drafts.csswg.org/css-multicol/#propdef-column-rule`](https://drafts.csswg.org/css-multicol/#propdef-column-rule)
-     * [`https://drafts.csswg.org/css-multicol/#propdef-column-width`](https://drafts.csswg.org/css-multicol/#propdef-column-width)
      * [`https://drafts.csswg.org/css-values/#vw`](https://drafts.csswg.org/css-values/#vw)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
      * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status)
@@ -6417,11 +6118,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://w3c.github.io/permissions/#powerful-feature`](https://w3c.github.io/permissions/#powerful-feature)
      * [`https://w3c.github.io/permissions/#request-permission-to-use`](https://w3c.github.io/permissions/#request-permission-to-use)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-family`](https://drafts.csswg.org/css-fonts-4/#propdef-font-family)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-style`](https://drafts.csswg.org/css-fonts-4/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic`](https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch`](https://drafts.csswg.org/css-fonts-4/#propdef-font-stretch)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/):
      * [`https://html.spec.whatwg.org/#concept-task`](https://html.spec.whatwg.org/#concept-task)
      * [`https://html.spec.whatwg.org/#perform-a-microtask-checkpoint`](https://html.spec.whatwg.org/#perform-a-microtask-checkpoint)
@@ -6454,46 +6150,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-object-data`](https://html.spec.whatwg.org/#attr-object-data)
      * [`https://html.spec.whatwg.org/#the-embed-element`](https://html.spec.whatwg.org/#the-embed-element)
      * [`https://html.spec.whatwg.org/#attr-embed-src`](https://html.spec.whatwg.org/#attr-embed-src)
-- [MathML Core](https://w3c.github.io/mathml-core/):
-     * [`https://www.w3.org/TR/css-fonts-4/#font-family-prop`](https://www.w3.org/TR/css-fonts-4/#font-family-prop)
-     * [`https://www.w3.org/TR/css-fonts-4/#valdef-font-family-math`](https://www.w3.org/TR/css-fonts-4/#valdef-font-family-math)
-     * [`https://www.w3.org/TR/css-fonts-4/#font-variant-alternates-prop`](https://www.w3.org/TR/css-fonts-4/#font-variant-alternates-prop)
-     * [`https://www.w3.org/TR/css-fonts-4/#first-available-font`](https://www.w3.org/TR/css-fonts-4/#first-available-font)
-     * [`https://www.w3.org/TR/css-fonts-4/#font-size-prop`](https://www.w3.org/TR/css-fonts-4/#font-size-prop)
-     * [`https://www.w3.org/TR/css-color-3/#colorunits`](https://www.w3.org/TR/css-color-3/#colorunits)
-     * [`https://www.w3.org/TR/css-color-3/#foreground`](https://www.w3.org/TR/css-color-3/#foreground)
-     * [`https://html.spec.whatwg.org/#the-id-attribute`](https://html.spec.whatwg.org/#the-id-attribute)
-     * [`https://html.spec.whatwg.org/#classes`](https://html.spec.whatwg.org/#classes)
-     * [`https://html.spec.whatwg.org/#the-style-attribute`](https://html.spec.whatwg.org/#the-style-attribute)
-     * [`https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes`](https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes)
-     * [`https://html.spec.whatwg.org/#nonce-attributes`](https://html.spec.whatwg.org/#nonce-attributes)
-     * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
-     * [`https://html.spec.whatwg.org/#presentational-hints`](https://html.spec.whatwg.org/#presentational-hints)
-     * [`https://html.spec.whatwg.org/#event-handler-content-attributes`](https://html.spec.whatwg.org/#event-handler-content-attributes)
-     * [`https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects`](https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects)
-     * [`https://html.spec.whatwg.org/#parsing`](https://html.spec.whatwg.org/#parsing)
-     * [`https://html.spec.whatwg.org/#html-integration-point`](https://html.spec.whatwg.org/#html-integration-point)
-     * [`https://html.spec.whatwg.org/#mathml-text-integration-point`](https://html.spec.whatwg.org/#mathml-text-integration-point)
-     * [`https://html.spec.whatwg.org/#tree-construction-dispatcher`](https://html.spec.whatwg.org/#tree-construction-dispatcher)
-     * [`https://html.spec.whatwg.org/#mathml`](https://html.spec.whatwg.org/#mathml)
-     * [`https://html.spec.whatwg.org/#svg-0`](https://html.spec.whatwg.org/#svg-0)
-     * [`https://html.spec.whatwg.org/#flow-content-2`](https://html.spec.whatwg.org/#flow-content-2)
-     * [`https://html.spec.whatwg.org/#phrasing-content-2`](https://html.spec.whatwg.org/#phrasing-content-2)
-     * [`https://html.spec.whatwg.org/#webappapis`](https://html.spec.whatwg.org/#webappapis)
-     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-     * [`https://html.spec.whatwg.org/#globaleventhandlers`](https://html.spec.whatwg.org/#globaleventhandlers)
-     * [`https://html.spec.whatwg.org/#documentandelementeventhandlers`](https://html.spec.whatwg.org/#documentandelementeventhandlers)
-     * [`https://html.spec.whatwg.org/#htmlorsvgelement`](https://html.spec.whatwg.org/#htmlorsvgelement)
-     * [`https://html.spec.whatwg.org/#reflect`](https://html.spec.whatwg.org/#reflect)
-     * [`https://html.spec.whatwg.org/#focus`](https://html.spec.whatwg.org/#focus)
-     * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
-     * [`https://html.spec.whatwg.org/#the-tr-element`](https://html.spec.whatwg.org/#the-tr-element)
-     * [`https://html.spec.whatwg.org/#the-td-element`](https://html.spec.whatwg.org/#the-td-element)
-     * [`https://html.spec.whatwg.org/#attr-tdth-colspan`](https://html.spec.whatwg.org/#attr-tdth-colspan)
-     * [`https://html.spec.whatwg.org/#attr-tdth-rowspan`](https://html.spec.whatwg.org/#attr-tdth-rowspan)
-     * [`https://html.spec.whatwg.org/#the-canvas-element`](https://html.spec.whatwg.org/#the-canvas-element)
-     * [`https://html.spec.whatwg.org/#security-with-canvas-elements`](https://html.spec.whatwg.org/#security-with-canvas-elements)
-     * [`https://html.spec.whatwg.org/#element`](https://html.spec.whatwg.org/#element)
 - [Measure Memory API](https://wicg.github.io/performance-measure-memory/):
      * [`https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability`](https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability)
      * [`https://html.spec.whatwg.org/#the-object-element`](https://html.spec.whatwg.org/#the-object-element)
@@ -7080,7 +6736,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#user-interaction-task-source`](https://html.spec.whatwg.org/#user-interaction-task-source)
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#concept-document-permissions-policy`](https://html.spec.whatwg.org/#concept-document-permissions-policy)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
 - [Performance Timeline Level 2](https://w3c.github.io/performance-timeline/):
      * [`https://html.spec.whatwg.org/#global-object`](https://html.spec.whatwg.org/#global-object)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
@@ -7377,9 +7033,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-table-element`](https://html.spec.whatwg.org/#the-table-element)
      * [`https://drafts.csswg.org/css-color-3/#valuea-def-color`](https://drafts.csswg.org/css-color-3/#valuea-def-color)
      * [`https://www.w3.org/TR/cssom-1/#css`](https://www.w3.org/TR/cssom-1/#css)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-size`](https://drafts.csswg.org/css-fonts-3/#propdef-font-size)
      * [`https://drafts.csswg.org/css2/visuren.html#block-container-element`](https://drafts.csswg.org/css2/visuren.html#block-container-element)
-     * [`https://drafts.csswg.org/css-multicol-1/#spanning-element`](https://drafts.csswg.org/css-multicol-1/#spanning-element)
 - [Referrer Policy](https://w3c.github.io/webappsec-referrer-policy/):
      * [`https://html.spec.whatwg.org/#link-type-noreferrer`](https://html.spec.whatwg.org/#link-type-noreferrer)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
@@ -7587,18 +7241,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#animation-frames`](https://html.spec.whatwg.org/#animation-frames)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-size-prop`](https://www.w3.org/TR/css-fonts-3/#font-size-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-family-prop`](https://www.w3.org/TR/css-fonts-3/#font-family-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-size-adjust-prop`](https://www.w3.org/TR/css-fonts-3/#font-size-adjust-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-stretch-prop`](https://www.w3.org/TR/css-fonts-3/#font-stretch-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-style-prop`](https://www.w3.org/TR/css-fonts-3/#font-style-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#propdef-font-variant`](https://www.w3.org/TR/css-fonts-3/#propdef-font-variant)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-weight-prop`](https://www.w3.org/TR/css-fonts-3/#font-weight-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-prop`](https://www.w3.org/TR/css-fonts-3/#font-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop`](https://www.w3.org/TR/css-fonts-3/#font-feature-settings-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-kerning-prop`](https://www.w3.org/TR/css-fonts-3/#font-kerning-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-variant-ligatures-prop`](https://www.w3.org/TR/css-fonts-3/#font-variant-ligatures-prop)
-     * [`https://www.w3.org/TR/css-fonts-3/#font-resources`](https://www.w3.org/TR/css-fonts-3/#font-resources)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target`](https://www.w3.org/TR/web-animations-1/#dom-keyframeeffectreadonly-target)
      * [`https://w3c.github.io/svg-aam/#details-id-69`](https://w3c.github.io/svg-aam/#details-id-69)
@@ -8251,12 +7893,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/hr-time/#time-origin`](https://w3c.github.io/hr-time/#time-origin)
      * [`https://w3c.github.io/hr-time/#domhighrestimestamp`](https://w3c.github.io/hr-time/#domhighrestimestamp)
      * [`https://heycam.github.io/webidl/#dfn-present`](https://heycam.github.io/webidl/#dfn-present)
-     * [`https://drafts.csswg.org/css-easing-1/#easing-function`](https://drafts.csswg.org/css-easing-1/#easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#linear-easing-function`](https://drafts.csswg.org/css-easing-1/#linear-easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#input-progress-value`](https://drafts.csswg.org/css-easing-1/#input-progress-value)
-     * [`https://drafts.csswg.org/css-easing-1/#before-flag`](https://drafts.csswg.org/css-easing-1/#before-flag)
-     * [`https://drafts.csswg.org/css-easing-1/#typedef-easing-function`](https://drafts.csswg.org/css-easing-1/#typedef-easing-function)
-     * [`https://drafts.csswg.org/css-fonts-4/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-4/#propdef-font-weight)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/):
      * [`https://drafts.csswg.org/web-animations-1/#current-time`](https://drafts.csswg.org/web-animations-1/#current-time)
      * [`https://drafts.csswg.org/web-animations-1/#target-effect`](https://drafts.csswg.org/web-animations-1/#target-effect)
@@ -8267,8 +7903,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/web-animations-1/#before-flag`](https://drafts.csswg.org/web-animations-1/#before-flag)
      * [`https://html.spec.whatwg.org/#concept-relevant-realm`](https://html.spec.whatwg.org/#concept-relevant-realm)
      * [`https://html.spec.whatwg.org/#perform-a-microtask-checkpoint`](https://html.spec.whatwg.org/#perform-a-microtask-checkpoint)
-     * [`https://drafts.csswg.org/css-easing-1/#easing-function`](https://drafts.csswg.org/css-easing-1/#easing-function)
-     * [`https://drafts.csswg.org/css-easing-1/#linear-easing-function`](https://drafts.csswg.org/css-easing-1/#linear-easing-function)
 - [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/):
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-description`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-description)
      * [`https://www.w3.org/TR/accname-1.2/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.2/#dfn-accessible-name)
@@ -8469,6 +8103,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
      * [`https://html.spec.whatwg.org/#unloading-document-cleanup-steps`](https://html.spec.whatwg.org/#unloading-document-cleanup-steps)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
      * [`https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor`](https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor)
 - [Web Periodic Background Synchronization](https://wicg.github.io/periodic-background-sync/):
      * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
@@ -8508,7 +8143,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#dom-base-href`](https://html.spec.whatwg.org/#dom-base-href)
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
-     * [`https://www.w3.org/TR/secure-contexts/#secure-context`](https://www.w3.org/TR/secure-contexts/#secure-context)
+     * [`https://html.spec.whatwg.org/#secure-context`](https://html.spec.whatwg.org/#secure-context)
 - [Web Share Target API](https://w3c.github.io/web-share-target/):
      * [`https://html.spec.whatwg.org/#dom-navigator-registerprotocolhandler`](https://html.spec.whatwg.org/#dom-navigator-registerprotocolhandler)
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
@@ -8939,13 +8574,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#honor-user-preferences-for-automatic-text-track-selection`](https://html.spec.whatwg.org/#honor-user-preferences-for-automatic-text-track-selection)
      * [`https://drafts.csswg.org/css-values-4/#vw`](https://drafts.csswg.org/css-values-4/#vw)
      * [`https://drafts.csswg.org/css-values-4/#vh`](https://drafts.csswg.org/css-values-4/#vh)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font`](https://drafts.csswg.org/css-fonts-3/#propdef-font)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-style`](https://drafts.csswg.org/css-fonts-3/#propdef-font-style)
-     * [`https://drafts.csswg.org/css-fonts-3/#propdef-font-weight`](https://drafts.csswg.org/css-fonts-3/#propdef-font-weight)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic`](https://drafts.csswg.org/css-fonts-4/#valdef-font-style-italic)
-     * [`https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bold`](https://drafts.csswg.org/css-fonts-4/#valdef-font-weight-bold)
-     * [`https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex`](https://drafts.csswg.org/css-flexbox-1/#valdef-display-inline-flex)
-     * [`https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow`](https://drafts.csswg.org/css-flexbox-1/#propdef-flex-flow)
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
 - [WebXR Augmented Reality Module - Level 1](https://immersive-web.github.io/webxr-ar-module/):
@@ -9011,8 +8639,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#task-source`](https://html.spec.whatwg.org/#task-source)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://www.w3.org/TR/webxrlayers-1/#session`](https://www.w3.org/TR/webxrlayers-1/#session)
-- [WOFF File Format 2.0](https://w3c.github.io/woff/woff2/):
-     * [`https://www.w3.org/TR/css-fonts-3/#font-face-rule`](https://www.w3.org/TR/css-fonts-3/#font-face-rule)
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#event-handlers`](https://html.spec.whatwg.org/#event-handlers)
@@ -9036,7 +8662,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 5023 problematic external links found in 295 specifications
+=> 4609 problematic external links found in 289 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -9213,6 +8839,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2013/CR-css3-conditional-20130404/`](https://www.w3.org/TR/2013/CR-css3-conditional-20130404/)
 - [CSS Device Adaptation Module Level 1](https://drafts.csswg.org/css-device-adapt/):
      * [`https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/`](https://www.w3.org/TR/2011/WD-css-device-adapt-20110915/)
+- [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
+     * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/)
+- [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/):
+     * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/):
      * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/)
 - [CSS Fragmentation Module Level 3](https://drafts.csswg.org/css-break/):
@@ -9234,6 +8864,8 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
      * [`https://www.w3.org/TR/2013/WD-css-masking-20130620/`](https://www.w3.org/TR/2013/WD-css-masking-20130620/)
      * [`https://www.w3.org/TR/2012/WD-css-masking-20121115/`](https://www.w3.org/TR/2012/WD-css-masking-20121115/)
+- [CSS Multi-column Layout Module Level 1](https://drafts.csswg.org/css-multicol/):
+     * [`https://www.w3.org/TR/2011/CR-css3-multicol-20110412/`](https://www.w3.org/TR/2011/CR-css3-multicol-20110412/)
 - [CSS Namespaces Module Level 3](https://drafts.csswg.org/css-namespaces/):
      * [`https://www.w3.org/TR/2011/REC-css3-namespace-20110929/`](https://www.w3.org/TR/2011/REC-css3-namespace-20110929/)
 - [CSS Paged Media Module Level 3](https://drafts.csswg.org/css-page-3/):
@@ -9415,6 +9047,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 191 problematic external links found in 61 specifications
+=> 194 problematic external links found in 64 specifications
 
 

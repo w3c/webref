@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-20T18:47:16.075Z",
+  "date": "2021-09-21T00:56:32.427Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 440,
-    "errors": 7
+    "errors": 1
   },
   "results": [
     {
@@ -2756,16 +2756,13 @@
       "versions": [
         "https://w3c.github.io/mathml-core/"
       ],
-      "crawled": "https://w3c.github.io/mathml-core/",
-      "generator": "respec",
-      "date": "16 August 2021",
-      "links": "links/mathml-core.json",
-      "refs": "refs/mathml-core.json",
-      "idl": "idl/mathml-core.idl",
-      "dfns": "dfns/mathml-core.json",
-      "headings": "headings/mathml-core.json",
-      "ids": "ids/mathml-core.json",
-      "idlparsed": "idlparsed/mathml-core.json"
+      "crawled": {
+        "url": "https://w3c.github.io/mathml-core/",
+        "repository": "https://github.com/w3c/mathml-core",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/media-playback-quality/",
@@ -8078,7 +8075,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -8181,7 +8178,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -8212,7 +8209,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -8243,7 +8240,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -8491,7 +8488,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -8522,7 +8519,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -8625,7 +8622,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -8800,7 +8797,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "20 September 2021",
+      "date": "21 September 2021",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -10661,13 +10658,15 @@
         "https://www.w3.org/TR/css-easing-1/",
         "https://drafts.csswg.org/css-easing/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-easing/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-easing-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-easing/",
+      "generator": "bikeshed",
+      "date": "17 May 2021",
+      "links": "links/css-easing-1.json",
+      "refs": "refs/css-easing-1.json",
+      "css": "css/css-easing.json",
+      "dfns": "dfns/css-easing-1.json",
+      "headings": "headings/css-easing-1.json",
+      "ids": "ids/css-easing-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -10710,13 +10709,15 @@
         "https://www.w3.org/TR/css-flexbox-1/",
         "https://drafts.csswg.org/css-flexbox-1/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-flexbox-1/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-flexbox-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-flexbox-1/",
+      "generator": "bikeshed",
+      "date": "17 September 2021",
+      "links": "links/css-flexbox-1.json",
+      "refs": "refs/css-flexbox-1.json",
+      "css": "css/css-flexbox.json",
+      "dfns": "dfns/css-flexbox-1.json",
+      "headings": "headings/css-flexbox-1.json",
+      "ids": "ids/css-flexbox-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-font-loading-3/",
@@ -10814,13 +10815,17 @@
         "https://www.w3.org/TR/css3-fonts/",
         "https://www.w3.org/TR/css-fonts-3/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-fonts-4/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-fonts-4/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 249)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-fonts-4/",
+      "generator": "bikeshed",
+      "date": "13 September 2021",
+      "links": "links/css-fonts-4.json",
+      "refs": "refs/css-fonts-4.json",
+      "idl": "idl/css-fonts.idl",
+      "css": "css/css-fonts.json",
+      "dfns": "dfns/css-fonts-4.json",
+      "headings": "headings/css-fonts-4.json",
+      "ids": "ids/css-fonts-4.json",
+      "idlparsed": "idlparsed/css-fonts-4.json"
     },
     {
       "url": "https://www.w3.org/TR/css-gcpm-3/",
@@ -10916,13 +10921,15 @@
         "https://www.w3.org/TR/css-grid-2/",
         "https://drafts.csswg.org/css-grid-2/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-grid-2/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-grid-2/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-grid-2/",
+      "generator": "bikeshed",
+      "date": "2 July 2021",
+      "links": "links/css-grid-2.json",
+      "refs": "refs/css-grid-2.json",
+      "css": "css/css-grid.json",
+      "dfns": "dfns/css-grid-2.json",
+      "headings": "headings/css-grid-2.json",
+      "ids": "ids/css-grid-2.json"
     },
     {
       "url": "https://www.w3.org/TR/css-highlight-api-1/",
@@ -11423,13 +11430,15 @@
         "https://www.w3.org/TR/css-multicol-1/",
         "https://drafts.csswg.org/css-multicol/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-multicol/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-multicol-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-multicol/",
+      "generator": "bikeshed",
+      "date": "17 September 2021",
+      "links": "links/css-multicol-1.json",
+      "refs": "refs/css-multicol-1.json",
+      "css": "css/css-multicol.json",
+      "dfns": "dfns/css-multicol-1.json",
+      "headings": "headings/css-multicol-1.json",
+      "ids": "ids/css-multicol-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-namespaces-3/",
@@ -12122,13 +12131,15 @@
         "https://www.w3.org/TR/css-rhythm-1/",
         "https://drafts.csswg.org/css-rhythm/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-rhythm/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-rhythm-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 275)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-rhythm/",
+      "generator": "bikeshed",
+      "date": "21 February 2021",
+      "links": "links/css-rhythm-1.json",
+      "refs": "refs/css-rhythm-1.json",
+      "css": "css/css-rhythm.json",
+      "dfns": "dfns/css-rhythm-1.json",
+      "headings": "headings/css-rhythm-1.json",
+      "ids": "ids/css-rhythm-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -12171,13 +12182,15 @@
         "https://www.w3.org/TR/css-round-display-1/",
         "https://drafts.csswg.org/css-round-display/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-round-display/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-round-display-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 276)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-round-display/",
+      "generator": "bikeshed",
+      "date": "21 February 2021",
+      "links": "links/css-round-display-1.json",
+      "refs": "refs/css-round-display-1.json",
+      "css": "css/css-round-display.json",
+      "dfns": "dfns/css-round-display-1.json",
+      "headings": "headings/css-round-display-1.json",
+      "ids": "ids/css-round-display-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -19227,7 +19240,7 @@
       ],
       "crawled": "https://w3c.github.io/web-share/",
       "generator": "respec",
-      "date": "13 September 2021",
+      "date": "20 September 2021",
       "links": "links/web-share.json",
       "refs": "refs/web-share.json",
       "idl": "idl/web-share.idl",
@@ -19535,7 +19548,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/",
       "generator": "bikeshed",
-      "date": "17 September 2021",
+      "date": "20 September 2021",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -20505,7 +20518,7 @@
       ],
       "crawled": "https://gpuweb.github.io/gpuweb/wgsl/",
       "generator": "bikeshed",
-      "date": "10 September 2021",
+      "date": "20 September 2021",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",
