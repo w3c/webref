@@ -21,14 +21,6 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>440 specifications were crawled in this report.</p>
-  <section id="specifications-that-could-not-be-rendered" class="level2">
-  <h2>Specifications that could not be rendered</h2>
-  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
-  <ul>
-  <li><a href="%5Bobject%20Object%5D">Media Queries Level 4</a>: <code>TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111 at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21) at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16) at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22) at async Promise.all (index 344) at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21) at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)</code></li>
-  </ul>
-  <p>=&gt; 1 specification found</p>
-  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -1693,6 +1685,7 @@
   </ul></li>
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mathml-aam/">MathML Accessiblity API Mappings 1.0</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
+  <li><a href="https://drafts.csswg.org/mediaqueries-4/">Media Queries Level 4</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a> links to <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a> links to:
   <ul>
@@ -1937,7 +1930,7 @@
   <li><a href="https://immersive-web.github.io/lighting-estimation/">WebXR Lighting Estimation API Level 1</a> links to <a href="https://www.w3.org/TR/webxrlayers-1/"><code>https://www.w3.org/TR/webxrlayers-1/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 627 missing references for links found in 179 specifications</p>
+  <p>=&gt; 628 missing references for links found in 180 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -3090,6 +3083,12 @@
   <li><a href="https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities"><code>https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities</code></a></li>
   <li><a href="https://www.w3.org/TR/mediacapture-streams/#dfn-settings"><code>https://www.w3.org/TR/mediacapture-streams/#dfn-settings</code></a></li>
   </ul></li>
+  <li><a href="https://drafts.csswg.org/mediaqueries-4/">Media Queries Level 4</a>:
+  <ul>
+  <li><a href="https://drafts.csswg.org/css-values-3/#relative-length"><code>https://drafts.csswg.org/css-values-3/#relative-length</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-view-1/#page-zoom"><code>https://drafts.csswg.org/cssom-view-1/#page-zoom</code></a></li>
+  <li><a href="https://drafts.csswg.org/cssom-view-1/#pinch-zoom"><code>https://drafts.csswg.org/cssom-view-1/#pinch-zoom</code></a></li>
+  </ul></li>
   <li><a href="https://drafts.csswg.org/mediaqueries-5/">Media Queries Level 5</a>:
   <ul>
   <li><a href="https://drafts.csswg.org/css-values-4/#relative-length"><code>https://drafts.csswg.org/css-values-4/#relative-length</code></a></li>
@@ -3705,7 +3704,7 @@
   <li><a href="https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm"><code>https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 755 problematic external links found in 148 specifications</p>
+  <p>=&gt; 758 problematic external links found in 149 specifications</p>
   </section>
   <section id="external-links-that-neither-target-definitions-nor-headings" class="level2">
   <h2>External links that neither target definitions nor headings</h2>
@@ -5206,9 +5205,6 @@
   </ul></li>
   <li><a href="https://compat.spec.whatwg.org/">Compatibility Standard</a>:
   <ul>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#media-feature"><code>https://drafts.csswg.org/mediaqueries-4/#media-feature</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#mq-min-max"><code>https://drafts.csswg.org/mediaqueries-4/#mq-min-max</code></a></li>
   <li><a href="https://drafts.csswg.org/css-transitions/#animtype-color"><code>https://drafts.csswg.org/css-transitions/#animtype-color</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#eventhandler"><code>https://html.spec.whatwg.org/#eventhandler</code></a></li>
@@ -5579,8 +5575,6 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-cascade-3/">CSS Cascading and Inheritance Level 3</a>:
   <ul>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#typedef-media-query"><code>https://drafts.csswg.org/mediaqueries-4/#typedef-media-query</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list"><code>https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#content-type"><code>https://html.spec.whatwg.org/#content-type</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#quirks-mode"><code>https://html.spec.whatwg.org/#quirks-mode</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#same-origin"><code>https://html.spec.whatwg.org/#same-origin</code></a></li>
@@ -5589,10 +5583,6 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 4</a>:
   <ul>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list"><code>https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-all"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-all</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#media-query"><code>https://drafts.csswg.org/mediaqueries-4/#media-query</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#width"><code>https://www.w3.org/TR/mediaqueries-4/#width</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-style-element"><code>https://html.spec.whatwg.org/#the-style-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#cors-same-origin"><code>https://html.spec.whatwg.org/#cors-same-origin</code></a></li>
@@ -5608,10 +5598,6 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-cascade/">CSS Cascading and Inheritance Level 4</a>:
   <ul>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list"><code>https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-all"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-all</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#media-query"><code>https://drafts.csswg.org/mediaqueries-4/#media-query</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#width"><code>https://www.w3.org/TR/mediaqueries-4/#width</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#the-style-element"><code>https://html.spec.whatwg.org/#the-style-element</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#cors-same-origin"><code>https://html.spec.whatwg.org/#cors-same-origin</code></a></li>
@@ -5656,7 +5642,6 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-conditional-4/">CSS Conditional Rules Module Level 4</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#mq-syntax"><code>https://www.w3.org/TR/mediaqueries-4/#mq-syntax</code></a></li>
   <li><a href="https://www.w3.org/TR/css-cascade-5/#typedef-declaration"><code>https://www.w3.org/TR/css-cascade-5/#typedef-declaration</code></a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-contain-2/">CSS Containment Module Level 2</a>:
@@ -5712,7 +5697,6 @@
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-flexbox-1/">CSS Flexible Box Layout Module Level 1</a>:
   <ul>
-  <li><a href="https://www.w3.org/TR/css3-mediaqueries/#width"><code>https://www.w3.org/TR/css3-mediaqueries/#width</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#attr-tabindex"><code>https://html.spec.whatwg.org/#attr-tabindex</code></a></li>
   </ul></li>
   <li><a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>:
@@ -5798,21 +5782,6 @@
   <ul>
   <li><a href="https://drafts.csswg.org/selectors-3/#sel-before"><code>https://drafts.csswg.org/selectors-3/#sel-before</code></a></li>
   <li><a href="https://drafts.csswg.org/selectors-3/#sel-after"><code>https://drafts.csswg.org/selectors-3/#sel-after</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-color"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-color</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace"><code>https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid"><code>https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-script-base-url"><code>https://html.spec.whatwg.org/#concept-script-base-url</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#concept-document-window"><code>https://html.spec.whatwg.org/#concept-document-window</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#current-global-object"><code>https://html.spec.whatwg.org/#current-global-object</code></a></li>
@@ -6088,7 +6057,6 @@
   <li><a href="https://html.spec.whatwg.org/#same-origin"><code>https://html.spec.whatwg.org/#same-origin</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#htmlelement"><code>https://html.spec.whatwg.org/#htmlelement</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#htmlimageelement"><code>https://html.spec.whatwg.org/#htmlimageelement</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-4/#mf-colors"><code>https://drafts.csswg.org/mediaqueries-4/#mf-colors</code></a></li>
   </ul></li>
   <li><a href="https://wicg.github.io/custom-state-pseudo-class/">Custom State Pseudo Class</a>:
   <ul>
@@ -6117,7 +6085,6 @@
   <li><a href="https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts"><code>https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#active-document"><code>https://html.spec.whatwg.org/#active-document</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#dom-navigator"><code>https://html.spec.whatwg.org/#dom-navigator</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context"><code>https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/deviceorientation/">DeviceOrientation Event Specification</a>:
   <ul>
@@ -7086,7 +7053,6 @@
   <li><a href="https://w3c.github.io/FileAPI/#DefinitionOfScheme"><code>https://w3c.github.io/FileAPI/#DefinitionOfScheme</code></a></li>
   <li><a href="https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml"><code>https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml</code></a></li>
   <li><a href="https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager"><code>https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager</code></a></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries/#typedef-media-condition"><code>https://drafts.csswg.org/mediaqueries/#typedef-media-condition</code></a></li>
   <li><a href="https://drafts.csswg.org/css-syntax/#conform-classes"><code>https://drafts.csswg.org/css-syntax/#conform-classes</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/#propdef-propdef-justify-content"><code>https://drafts.csswg.org/css-align/#propdef-propdef-justify-content</code></a></li>
   <li><a href="https://drafts.csswg.org/css-align/#propdef-propdef-justify-items"><code>https://drafts.csswg.org/css-align/#propdef-propdef-justify-items</code></a></li>
@@ -7617,11 +7583,6 @@
   <li><a href="https://html.spec.whatwg.org/#htmlvideoelement"><code>https://html.spec.whatwg.org/#htmlvideoelement</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#media-element-load-algorithm"><code>https://html.spec.whatwg.org/#media-element-load-algorithm</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
-  </ul></li>
-  <li><a href="https://drafts.csswg.org/mediaqueries-5/">Media Queries Level 5</a>:
-  <ul>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#units"><code>https://www.w3.org/TR/mediaqueries-4/#units</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#error-handling"><code>https://www.w3.org/TR/mediaqueries-4/#error-handling</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/mediasession/">Media Session Standard</a>:
   <ul>
@@ -9891,7 +9852,6 @@
   <li><a href="https://www.w3.org/TR/accname-1.1/#dfn-accessible-name"><code>https://www.w3.org/TR/accname-1.1/#dfn-accessible-name</code></a></li>
   <li><a href="https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum"><code>https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum</code></a></li>
   <li><a href="https://drafts.csswg.org/css-box/#visibility-prop"><code>https://drafts.csswg.org/css-box/#visibility-prop</code></a></li>
-  <li><a href="https://www.w3.org/TR/mediaqueries-4/#media-types"><code>https://www.w3.org/TR/mediaqueries-4/#media-types</code></a></li>
   </ul></li>
   <li><a href="https://w3c.github.io/webdriver-bidi/">WebDriver BiDi</a>:
   <ul>
@@ -10238,7 +10198,7 @@
   <li><a href="https://html.spec.whatwg.org/#the-progress-element"><code>https://html.spec.whatwg.org/#the-progress-element</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 4671 problematic external links found in 292 specifications</p>
+  <p>=&gt; 4635 problematic external links found in 291 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>

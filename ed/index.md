@@ -3658,7 +3658,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
-     * [`https://www.w3.org/TR/mediaqueries-4/#media-types`](https://www.w3.org/TR/mediaqueries-4/#media-types)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -3985,6 +3984,7 @@ Normative references to this spec from:
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Loading Signed Exchanges](https://wicg.github.io/webpackage/loading.html)
 - [MathML Core](https://w3c.github.io/mathml-core/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
@@ -4816,8 +4816,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query)
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
@@ -4868,10 +4866,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-all`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-all)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
-     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#cors-same-origin`](https://html.spec.whatwg.org/#cors-same-origin)
@@ -4934,10 +4928,6 @@ Informative references to this spec from:
 - Inconsistent references for links: 
      * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/), related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
 - Broken external links:
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-all`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-all)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
-     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#cors-same-origin`](https://html.spec.whatwg.org/#cors-same-origin)
@@ -5026,6 +5016,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/)
@@ -5281,6 +5272,7 @@ Normative references to this spec from:
 - [CSS Properties and Values API Level 1](https://drafts.css-houdini.org/css-properties-values-api-1/)
 - [CSS Round Display Level 1](https://drafts.csswg.org/css-round-display/)
 - [CSS Syntax Module Level 3](https://drafts.csswg.org/css-syntax/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
@@ -5309,7 +5301,6 @@ Informative references to this spec from:
 - Missing references for links: 
      * [`https://www.w3.org/TR/mediaqueries-4/`](https://www.w3.org/TR/mediaqueries-4/)
 - Broken external links:
-     * [`https://www.w3.org/TR/mediaqueries-4/#mq-syntax`](https://www.w3.org/TR/mediaqueries-4/#mq-syntax)
      * [`https://www.w3.org/TR/css-cascade-5/#typedef-declaration`](https://www.w3.org/TR/css-cascade-5/#typedef-declaration)
 
 #### Known dependencies on this specification {.dependencies}
@@ -5840,7 +5831,6 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/css3-break/#btw-blocks`](https://www.w3.org/TR/css3-break/#btw-blocks)
      * [`https://www.w3.org/TR/css3-break/#end-block`](https://www.w3.org/TR/css3-break/#end-block)
 - Broken external links:
-     * [`https://www.w3.org/TR/css3-mediaqueries/#width`](https://www.w3.org/TR/css3-mediaqueries/#width)
      * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
 - External links that use a dated URL:
      * [`https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/`](https://www.w3.org/TR/2012/CR-css3-flexbox-20120918/)
@@ -6978,21 +6968,6 @@ Informative references to this spec from:
 - Broken external links:
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid)
      * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
@@ -8175,6 +8150,7 @@ Normative references to this spec from:
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -8888,6 +8864,7 @@ Normative references to this spec from:
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/)
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [MathML Core](https://w3c.github.io/mathml-core/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/)
@@ -9031,6 +9008,7 @@ Normative references to this spec from:
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
 - [Geometry Interfaces Module Level 1](https://drafts.fxtf.org/geometry/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/)
 - [Non-element Selectors Module Level 1](https://drafts.csswg.org/selectors-nonelement/)
@@ -9159,6 +9137,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Quirks Mode Standard](https://quirks.spec.whatwg.org/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
@@ -9213,7 +9192,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
      * [`https://html.spec.whatwg.org/#htmlimageelement`](https://html.spec.whatwg.org/#htmlimageelement)
-     * [`https://drafts.csswg.org/mediaqueries-4/#mf-colors`](https://drafts.csswg.org/mediaqueries-4/#mf-colors)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -9229,6 +9207,7 @@ Normative references to this spec from:
 - [Intersection Observer](https://w3c.github.io/IntersectionObserver/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 - [Pointer Events](https://w3c.github.io/pointerevents/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
@@ -9420,32 +9399,25 @@ Informative references to this spec from:
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/)
 
 
-### Media Queries Level 4 {data-spec=true data-error=true}
+### Media Queries Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
-- Crawled URL: [[object Object]]([object Object])
+- Crawled URL: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
+- Crawled version: 17 May 2021
 - Editor's Draft: [https://drafts.csswg.org/mediaqueries-4/](https://drafts.csswg.org/mediaqueries-4/)
 - Latest published version: [https://www.w3.org/TR/mediaqueries-4/](https://www.w3.org/TR/mediaqueries-4/)
 - Shortname: mediaqueries-4
 
 #### Potential issue(s) {.anomalies}
 
-The following network or parsing error occurred:
-`TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
-    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
-    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 344)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
-
-Reffy could not render this specification as a DOM tree and cannot say anything about it as a result. In particular, it cannot include content defined in this specification in the analysis of other specifications crawled in this report.
+- Missing references for links: 
+     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/)
+- External links to private terms:
+     * [`https://drafts.csswg.org/css-values-3/#relative-length`](https://drafts.csswg.org/css-values-3/#relative-length)
+     * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
+     * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -9493,9 +9465,6 @@ Informative references to this spec from:
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
      * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
      * [`https://drafts.csswg.org/css-color-4/#css-system-colors`](https://drafts.csswg.org/css-color-4/#css-system-colors)
-- Broken external links:
-     * [`https://www.w3.org/TR/mediaqueries-4/#units`](https://www.w3.org/TR/mediaqueries-4/#units)
-     * [`https://www.w3.org/TR/mediaqueries-4/#error-handling`](https://www.w3.org/TR/mediaqueries-4/#error-handling)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -10098,7 +10067,6 @@ Informative references to this spec from:
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#dom-navigator`](https://html.spec.whatwg.org/#dom-navigator)
-     * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -15533,7 +15501,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Crawled URL: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
-- Crawled version: 20 September 2021
+- Crawled version: 22 September 2021
 - Editor's Draft: [https://webmachinelearning.github.io/webnn/](https://webmachinelearning.github.io/webnn/)
 - Latest published version: [https://www.w3.org/TR/webnn/](https://www.w3.org/TR/webnn/)
 - Shortname: webnn
@@ -18317,7 +18285,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 16 September 2021
+- Crawled version: 22 September 2021
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -20919,9 +20887,6 @@ No informative reference to this spec from other specs.
 - External links to private terms:
      * [`https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information`](https://w3c.github.io/screen-orientation/#dfn-update-the-orientation-information)
 - Broken external links:
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-feature`](https://drafts.csswg.org/mediaqueries-4/#media-feature)
-     * [`https://drafts.csswg.org/mediaqueries-4/#mq-min-max`](https://drafts.csswg.org/mediaqueries-4/#mq-min-max)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
@@ -22009,7 +21974,6 @@ Informative references to this spec from:
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager`](https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager)
-     * [`https://drafts.csswg.org/mediaqueries/#typedef-media-condition`](https://drafts.csswg.org/mediaqueries/#typedef-media-condition)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
@@ -22485,6 +22449,7 @@ Informative references to this spec from:
 
 - [CSS Text Module Level 3](https://drafts.csswg.org/css-text-3/)
 - [Input Events Level 2](https://w3c.github.io/input-events/)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/)
 
 

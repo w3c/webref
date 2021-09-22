@@ -5,25 +5,6 @@
 440 specifications were crawled in this report.
 
 
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [Media Queries Level 4]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)
-    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)
-    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)
-    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)
-    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)
-    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)
-    at async Promise.all (index 344)
-    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)
-    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)`
-
-=> 1 specification found
-
-
 ## Specifications without normative dependencies
 
 - [Accessible `Object.hasOwnProperty`](https://tc39.es/proposal-accessible-object-hasownproperty/)
@@ -1374,6 +1355,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * [`https://infra.spec.whatwg.org/`](https://infra.spec.whatwg.org/) but does not list it in its references
 - [Magnetometer](https://w3c.github.io/magnetometer/) links to [`https://w3c.github.io/motion-sensors/`](https://w3c.github.io/motion-sensors/) but does not list it in its references
 - [MathML Accessiblity API Mappings 1.0](https://w3c.github.io/mathml-aam/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/) links to [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) links to [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/) but does not list it in its references
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
     * [`https://www.w3.org/TR/webrtc-identity/`](https://www.w3.org/TR/webrtc-identity/) but does not list it in its references
@@ -1562,7 +1544,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 627 missing references for links found in 179 specifications
+=> 628 missing references for links found in 180 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -2422,6 +2404,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-constraints`](https://www.w3.org/TR/mediacapture-streams/#dfn-constraints)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities`](https://www.w3.org/TR/mediacapture-streams/#dfn-capabilities)
      * [`https://www.w3.org/TR/mediacapture-streams/#dfn-settings`](https://www.w3.org/TR/mediacapture-streams/#dfn-settings)
+- [Media Queries Level 4](https://drafts.csswg.org/mediaqueries-4/):
+     * [`https://drafts.csswg.org/css-values-3/#relative-length`](https://drafts.csswg.org/css-values-3/#relative-length)
+     * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
+     * [`https://drafts.csswg.org/cssom-view-1/#pinch-zoom`](https://drafts.csswg.org/cssom-view-1/#pinch-zoom)
 - [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/):
      * [`https://drafts.csswg.org/css-values-4/#relative-length`](https://drafts.csswg.org/css-values-4/#relative-length)
      * [`https://drafts.csswg.org/cssom-view-1/#page-zoom`](https://drafts.csswg.org/cssom-view-1/#page-zoom)
@@ -2897,7 +2883,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 755 problematic external links found in 148 specifications
+=> 758 problematic external links found in 149 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4253,9 +4239,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
      * [`https://html.spec.whatwg.org/#close-the-dialog`](https://html.spec.whatwg.org/#close-the-dialog)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-feature`](https://drafts.csswg.org/mediaqueries-4/#media-feature)
-     * [`https://drafts.csswg.org/mediaqueries-4/#mq-min-max`](https://drafts.csswg.org/mediaqueries-4/#mq-min-max)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
@@ -4578,18 +4561,12 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Box Sizing Module Level 4](https://drafts.csswg.org/css-sizing-4/):
      * [`https://html.spec.whatwg.org/#the-iframe-element`](https://html.spec.whatwg.org/#the-iframe-element)
 - [CSS Cascading and Inheritance Level 3](https://drafts.csswg.org/css-cascade-3/):
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query)
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
      * [`https://html.spec.whatwg.org/#content-type`](https://html.spec.whatwg.org/#content-type)
      * [`https://html.spec.whatwg.org/#quirks-mode`](https://html.spec.whatwg.org/#quirks-mode)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints`](https://html.spec.whatwg.org/#the-css-user-agent-style-sheet-and-presentational-hints)
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-all`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-all)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
-     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#cors-same-origin`](https://html.spec.whatwg.org/#cors-same-origin)
@@ -4603,10 +4580,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-s-element`](https://html.spec.whatwg.org/#the-s-element)
      * [`https://html.spec.whatwg.org/#the-slot-element`](https://html.spec.whatwg.org/#the-slot-element)
 - [CSS Cascading and Inheritance Level 4](https://drafts.csswg.org/css-cascade/):
-     * [`https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list`](https://drafts.csswg.org/mediaqueries-4/#typedef-media-query-list)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-all`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-all)
-     * [`https://drafts.csswg.org/mediaqueries-4/#media-query`](https://drafts.csswg.org/mediaqueries-4/#media-query)
-     * [`https://www.w3.org/TR/mediaqueries-4/#width`](https://www.w3.org/TR/mediaqueries-4/#width)
      * [`https://html.spec.whatwg.org/#the-style-element`](https://html.spec.whatwg.org/#the-style-element)
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#cors-same-origin`](https://html.spec.whatwg.org/#cors-same-origin)
@@ -4641,7 +4614,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
      * [`https://www.w3.org/TR/css-cascade-5/#typedef-declaration`](https://www.w3.org/TR/css-cascade-5/#typedef-declaration)
 - [CSS Conditional Rules Module Level 4](https://drafts.csswg.org/css-conditional-4/):
-     * [`https://www.w3.org/TR/mediaqueries-4/#mq-syntax`](https://www.w3.org/TR/mediaqueries-4/#mq-syntax)
      * [`https://www.w3.org/TR/css-cascade-5/#typedef-declaration`](https://www.w3.org/TR/css-cascade-5/#typedef-declaration)
 - [CSS Containment Module Level 2](https://drafts.csswg.org/css-contain-2/):
      * [`https://html.spec.whatwg.org/#the-html-element`](https://html.spec.whatwg.org/#the-html-element)
@@ -4685,7 +4657,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-details-element`](https://html.spec.whatwg.org/#the-details-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
 - [CSS Flexible Box Layout Module Level 1](https://drafts.csswg.org/css-flexbox-1/):
-     * [`https://www.w3.org/TR/css3-mediaqueries/#width`](https://www.w3.org/TR/css3-mediaqueries/#width)
      * [`https://html.spec.whatwg.org/#attr-tabindex`](https://html.spec.whatwg.org/#attr-tabindex)
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/):
      * [`https://drafts.csswg.org/css-fonts-3/#descdef-src`](https://drafts.csswg.org/css-fonts-3/#descdef-src)
@@ -4743,21 +4714,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Object Model (CSSOM)](https://drafts.csswg.org/cssom/):
      * [`https://drafts.csswg.org/selectors-3/#sel-before`](https://drafts.csswg.org/selectors-3/#sel-before)
      * [`https://drafts.csswg.org/selectors-3/#sel-after`](https://drafts.csswg.org/selectors-3/#sel-after)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-width)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-height)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-orientation)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-portrait)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-orientation-landscape)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-aspect-ratio)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-device-aspect-ratio)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-color-index)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-monochrome)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-resolution)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-scan)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-progressive)
-     * [`https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace`](https://drafts.csswg.org/mediaqueries-4/#valdef-media-scan-interlace)
-     * [`https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid`](https://drafts.csswg.org/mediaqueries-4/#descdef-media-grid)
      * [`https://html.spec.whatwg.org/#concept-script-base-url`](https://html.spec.whatwg.org/#concept-script-base-url)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
      * [`https://html.spec.whatwg.org/#current-global-object`](https://html.spec.whatwg.org/#current-global-object)
@@ -4971,7 +4927,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#htmlelement`](https://html.spec.whatwg.org/#htmlelement)
      * [`https://html.spec.whatwg.org/#htmlimageelement`](https://html.spec.whatwg.org/#htmlimageelement)
-     * [`https://drafts.csswg.org/mediaqueries-4/#mf-colors`](https://drafts.csswg.org/mediaqueries-4/#mf-colors)
 - [Custom State Pseudo Class](https://wicg.github.io/custom-state-pseudo-class/):
      * [`https://html.spec.whatwg.org/#custom-element`](https://html.spec.whatwg.org/#custom-element)
      * [`https://html.spec.whatwg.org/#elementinternals`](https://html.spec.whatwg.org/#elementinternals)
@@ -4992,7 +4947,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts`](https://html.spec.whatwg.org/#list-of-the-descendant-browsing-contexts)
      * [`https://html.spec.whatwg.org/#active-document`](https://html.spec.whatwg.org/#active-document)
      * [`https://html.spec.whatwg.org/#dom-navigator`](https://html.spec.whatwg.org/#dom-navigator)
-     * [`https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context`](https://www.w3.org/TR/mediaqueries-4/#mq-boolean-context)
 - [DeviceOrientation Event Specification](https://w3c.github.io/deviceorientation/):
      * [`https://html.spec.whatwg.org/#dom-window`](https://html.spec.whatwg.org/#dom-window)
      * [`https://html.spec.whatwg.org/#event-handler-event-type`](https://html.spec.whatwg.org/#event-handler-event-type)
@@ -5897,7 +5851,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/FileAPI/#DefinitionOfScheme`](https://w3c.github.io/FileAPI/#DefinitionOfScheme)
      * [`https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml`](https://w3c.github.io/DOM-Parsing/#dom-element-innerhtml)
      * [`https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager`](https://w3c.github.io/battery/#widl-Navigator-getBattery-Promise-BatteryManager)
-     * [`https://drafts.csswg.org/mediaqueries/#typedef-media-condition`](https://drafts.csswg.org/mediaqueries/#typedef-media-condition)
      * [`https://drafts.csswg.org/css-syntax/#conform-classes`](https://drafts.csswg.org/css-syntax/#conform-classes)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-content`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-content)
      * [`https://drafts.csswg.org/css-align/#propdef-propdef-justify-items`](https://drafts.csswg.org/css-align/#propdef-propdef-justify-items)
@@ -6368,9 +6321,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
      * [`https://html.spec.whatwg.org/#media-element-load-algorithm`](https://html.spec.whatwg.org/#media-element-load-algorithm)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
-- [Media Queries Level 5](https://drafts.csswg.org/mediaqueries-5/):
-     * [`https://www.w3.org/TR/mediaqueries-4/#units`](https://www.w3.org/TR/mediaqueries-4/#units)
-     * [`https://www.w3.org/TR/mediaqueries-4/#error-handling`](https://www.w3.org/TR/mediaqueries-4/#error-handling)
 - [Media Session Standard](https://w3c.github.io/mediasession/):
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#potentially-playing`](https://html.spec.whatwg.org/#potentially-playing)
@@ -8432,7 +8382,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/accname-1.1/#dfn-accessible-name`](https://www.w3.org/TR/accname-1.1/#dfn-accessible-name)
      * [`https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum`](https://www.w3.org/TR/page-visibility/#visibility-states-and-the-visibilitystate-enum)
      * [`https://drafts.csswg.org/css-box/#visibility-prop`](https://drafts.csswg.org/css-box/#visibility-prop)
-     * [`https://www.w3.org/TR/mediaqueries-4/#media-types`](https://www.w3.org/TR/mediaqueries-4/#media-types)
 - [WebDriver BiDi](https://w3c.github.io/webdriver-bidi/):
      * [`https://html.spec.whatwg.org/#in-parallel`](https://html.spec.whatwg.org/#in-parallel)
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
@@ -8736,7 +8685,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4671 problematic external links found in 292 specifications
+=> 4635 problematic external links found in 291 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
