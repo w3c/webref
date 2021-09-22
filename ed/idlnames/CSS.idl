@@ -16,12 +16,6 @@ partial namespace CSS {
   sequence<sequence<CSSToken>> parseCommaValueList(DOMString css);
 };
 
-// Source: CSS Animation Worklet API (https://www.w3.org/TR/css-animation-worklet-1/)
-[Exposed=Window]
-partial namespace CSS {
-    [SameObject] readonly attribute Worklet animationWorklet;
-};
-
 // Source: CSS Conditional Rules Module Level 3 (https://www.w3.org/TR/css-conditional-3/)
 partial namespace CSS {
   boolean supports(CSSOMString property, CSSOMString value);
