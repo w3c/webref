@@ -25,7 +25,7 @@ describe('The @webref/css module entries', () => {
     const all = await css.listAll();
 
     for (const [shortname, data] of Object.entries(all)) {
-      describe(`The ${shortname} entry in @webidl/css`, () => {
+      describe(`The ${shortname} entry in @webref/css`, () => {
         for (const { type, prop, value } of cssValues) {
           for (const [name, desc] of Object.entries(data[prop])) {
             if (!desc[value]) {
