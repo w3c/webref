@@ -2,7 +2,7 @@ const assert = require('assert').strict;
 
 const css = require('@webref/css');
 
-describe('The @webidl/css module', () => {
+describe('The @webref/css module', () => {
   it('can list all CSS properties (listAll)', async () => {
     const all = await css.listAll();
     assert(Object.keys(all).length > 0);
