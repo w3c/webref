@@ -2,7 +2,7 @@ const assert = require('assert').strict;
 
 const elements = require('@webref/elements');
 
-describe('The @webidl/elements module', () => {
+describe('The @webref/elements module', () => {
   it('can list all elements', async () => {
     const all = await elements.listAll();
     assert(Object.keys(all).length > 0);
