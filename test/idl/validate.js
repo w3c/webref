@@ -17,18 +17,29 @@ function validate(ast) {
   assert.fail(message);
 }
 
-idl.parseAll().then((all) => {
-  describe('WebIDL2.validate', () => {
-    for (const [spec, ast] of Object.entries(all)) {
-      it(spec, () => {
-        validate(ast);
-      });
-    }
+describe('The @webref/idl data', async () => {
+  before(async () => {
+    const all = await idl.parseAll();
+
+    // Register late tests
+    // (note "describe" level is needed, and there needs to remain an "it" at
+    // the parent "describe" level)
+    describe('The @webref/idl data is valid per spec', () => {
+      for (const [spec, ast] of Object.entries(all)) {
+        it(spec, () => {
+          validate(ast);
+        });
+      }
+    });
 
     // Also validate all IDL together. Some validation rules have insufficient
     // type information when looking at each spec in isolation.
-    it('all IDL together', () => {
+    it('is valid when IDL from all specs gets combined', () => {
       validate(Object.values(all).flat());
     });
   });
-}).then(run);
+
+  // Dummy test needed for "before" to run and register late tests
+  // (test will fail if before function throws, e.g. because data is invalid)
+  it('can initialize data', () => {});
+});

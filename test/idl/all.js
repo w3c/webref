@@ -2,8 +2,8 @@ const assert = require('assert').strict;
 
 const idl = require('@webref/idl');
 
-describe('@webidl/idl module', () => {
-  it('listAll', async () => {
+describe('The @webref/idl module', () => {
+  it('can list all IDL (listAll)', async () => {
     const files = await idl.listAll();
     assert(Object.keys(files).length > 0);
     for (const [shortname, file] of Object.entries(files)) {
@@ -13,7 +13,7 @@ describe('@webidl/idl module', () => {
     }
   });
 
-  it('parseAll', async () => {
+  it('can parse all IDL (parseAll)', async () => {
     const all = await idl.parseAll();
     assert(Object.keys(all).length > 0);
     for (const ast of Object.values(all)) {
