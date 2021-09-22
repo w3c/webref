@@ -1,20 +1,29 @@
-From ab2e615380eee3c617fa06e16f1007ffa340d0e1 Mon Sep 17 00:00:00 2001
-From: Kagami Sascha Rosylight <saschanaz@outlook.com>
-Date: Thu, 1 Jul 2021 13:33:00 +0200
-Subject: [PATCH] Drop duplicate `ComputedEffectTiming` dfn
+From a62322bcdd007200642e04335477f7d3a5d9a0dc Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 22 Sep 2021 19:41:13 +0200
+Subject: [PATCH] Drop duplicate `ComputedEffectTiming` and `Animation` dfns
 
-The dictionary is re-defined in Level 2 with an additional property and
-different property types. Patch is only needed because Level 2 is a delta spec.
-It will likely need to be kept around for as long as that remains the case.
+The dictionary and interface are partially re-defined in Level 2. Patch is only
+needed because Level 2 is a delta spec. It will likely need to be kept around
+for as long as that remains the case.
 ---
- ed/idl/web-animations.idl | 4 ----
- 1 file changed, 4 deletions(-)
+ ed/idl/web-animations.idl | 6 ------
+ 1 file changed, 6 deletions(-)
 
 diff --git a/ed/idl/web-animations.idl b/ed/idl/web-animations.idl
-index 6e973d195..626c82356 100644
+index 6e973d195..3f750de92 100644
 --- a/ed/idl/web-animations.idl
 +++ b/ed/idl/web-animations.idl
-@@ -86,10 +86,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
+@@ -25,8 +25,6 @@ interface Animation : EventTarget {
+              attribute DOMString                id;
+              attribute AnimationEffect?         effect;
+              attribute AnimationTimeline?       timeline;
+-             attribute double?                  startTime;
+-             attribute double?                  currentTime;
+              attribute double                   playbackRate;
+     readonly attribute AnimationPlayState       playState;
+     readonly attribute AnimationReplaceState    replaceState;
+@@ -86,10 +84,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
  
  dictionary ComputedEffectTiming : EffectTiming {
@@ -26,5 +35,5 @@ index 6e973d195..626c82356 100644
  };
  
 -- 
-2.32.0.windows.1
+2.33.0.windows.2
 
