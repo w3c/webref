@@ -19,7 +19,7 @@ describe('@webref/elements module entries', () => {
 
     const allElements = await elements.listAll();
     for (const [shortname, data] of Object.entries(allElements)) {
-      describe(`The ${shortname} entry in @webidl/elements`, () => {
+      describe(`The ${shortname} entry in @webref/elements`, () => {
         for (const el of data.elements) {
           if (!el.interface) {
             continue;
