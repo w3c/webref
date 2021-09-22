@@ -20,26 +20,34 @@ const tempIgnore = [
   { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
 ];
 
-css.listAll().then(all => {
-  for (const [shortname, data] of Object.entries(all)) {
-    describe(`The ${shortname} entry in @webidl/css`, () => {
-      for (const { type, prop, value } of cssValues) {
-        for (const [name, desc] of Object.entries(data[prop])) {
-          if (!desc[value]) {
-            continue;
+describe('The @webref/css module entries', () => {
+  before(async () => {
+    const all = await css.listAll();
+
+    for (const [shortname, data] of Object.entries(all)) {
+      describe(`The ${shortname} entry in @webidl/css`, () => {
+        for (const { type, prop, value } of cssValues) {
+          for (const [name, desc] of Object.entries(data[prop])) {
+            if (!desc[value]) {
+              continue;
+            }
+            if (tempIgnore.some(c => c.shortname === shortname &&
+                c.prop === prop && c.name === name)) {
+              continue;
+            }
+            it(`defines a valid ${type} "${name}"`, () => {
+              assert.doesNotThrow(() => {
+                const ast = definitionSyntax.parse(desc[value]);
+                assert(ast.type);
+              }, `Invalid definition value: ${desc[value]}`);
+            });
           }
-          if (tempIgnore.some(c => c.shortname === shortname &&
-              c.prop === prop && c.name === name)) {
-            continue;
-          }
-          it(`defines a valid ${type} "${name}"`, () => {
-            assert.doesNotThrow(() => {
-              const ast = definitionSyntax.parse(desc[value]);
-              assert(ast.type);
-            }, `Invalid definition value: ${desc[value]}`);
-          });
         }
-      }
-    });
-  }
-}).then(run);
+      });
+    }
+  });
+
+  // Dummy test needed for "before" to run and register late tests
+  // (test will fail if before function throws, e.g. because data is invalid)
+  it('can initialize data', () => {});
+});
