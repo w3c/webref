@@ -1,14 +1,4 @@
 {
-  "name": "CSSPseudoElement",
-  "type": "interface",
-  "defined": {
-    "spec": {
-      "title": "CSS Pseudo-Elements Module Level 4",
-      "url": "https://www.w3.org/TR/css-pseudo-4/"
-    },
-    "fragment": "[Exposed=Window]\ninterface CSSPseudoElement : EventTarget {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n};",
-    "href": "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement"
-  },
   "extended": [
     {
       "spec": {
@@ -18,21 +8,6 @@
       "fragment": "CSSPseudoElement includes GeometryUtils;"
     }
   ],
-  "inheritance": {
-    "name": "EventTarget",
-    "type": "interface",
-    "defined": {
-      "spec": {
-        "title": "DOM Standard",
-        "url": "https://dom.spec.whatwg.org/"
-      },
-      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
-      "href": "https://dom.spec.whatwg.org/#eventtarget"
-    },
-    "extended": [],
-    "inheritance": null,
-    "includes": []
-  },
   "includes": [
     {
       "name": "GeometryUtils",

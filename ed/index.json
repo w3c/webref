@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-23T06:52:58.583Z",
+  "date": "2021-09-23T12:59:31.198Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 440,
-    "errors": 17
+    "errors": 18
   },
   "results": [
     {
@@ -607,15 +607,13 @@
       "versions": [
         "https://drafts.csswg.org/css-grid-3/"
       ],
-      "crawled": "https://drafts.csswg.org/css-grid-3/",
-      "generator": "bikeshed",
-      "date": "21 February 2021",
-      "links": "links/css-grid-3.json",
-      "refs": "refs/css-grid-3.json",
-      "css": "css/css-grid-3.json",
-      "dfns": "dfns/css-grid-3.json",
-      "headings": "headings/css-grid-3.json",
-      "ids": "ids/css-grid-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-grid-3/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-grid-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 12)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://drafts.csswg.org/css-multicol-2/",
@@ -933,16 +931,13 @@
       "versions": [
         "https://drafts.csswg.org/web-animations-2/"
       ],
-      "crawled": "https://drafts.csswg.org/web-animations-2/",
-      "generator": "bikeshed",
-      "date": "22 September 2021",
-      "links": "links/web-animations-2.json",
-      "refs": "refs/web-animations-2.json",
-      "idl": "idl/web-animations-2.idl",
-      "dfns": "dfns/web-animations-2.json",
-      "headings": "headings/web-animations-2.json",
-      "ids": "ids/web-animations-2.json",
-      "idlparsed": "idlparsed/web-animations-2.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/web-animations-2/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "web-animations-2/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://drafts.fxtf.org/compositing-2/",
@@ -2061,7 +2056,7 @@
         "https://tc39.es/proposal-error-cause/"
       ],
       "crawled": "https://tc39.es/proposal-error-cause/",
-      "date": "7 July 2021",
+      "date": "23 September 2021",
       "links": "links/tc39-error-cause.json",
       "headings": "headings/tc39-error-cause.json",
       "ids": "ids/tc39-error-cause.json"
@@ -2437,7 +2432,7 @@
         "https://tc39.es/proposal-temporal/"
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
-      "date": "22 September 2021",
+      "date": "23 September 2021",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -2887,7 +2882,7 @@
       ],
       "crawled": "https://w3c.github.io/web-nfc/",
       "generator": "respec",
-      "date": "17 September 2021",
+      "date": "23 September 2021",
       "links": "links/web-nfc.json",
       "refs": "refs/web-nfc.json",
       "idl": "idl/web-nfc.idl",
@@ -3047,7 +3042,7 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "generator": "bikeshed",
-      "date": "22 September 2021",
+      "date": "23 September 2021",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
       "dfns": "dfns/webdriver-bidi.json",
@@ -9307,13 +9302,15 @@
         "https://drafts.fxtf.org/compositing-1/",
         "https://www.w3.org/TR/compositing/"
       ],
-      "crawled": {
-        "url": "https://drafts.fxtf.org/compositing-1/",
-        "repository": "https://github.com/w3c/fxtf-drafts",
-        "sourcePath": "compositing-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.fxtf.org/compositing-1/",
+      "generator": "bikeshed",
+      "date": "3 December 2019",
+      "links": "links/compositing-1.json",
+      "refs": "refs/compositing-1.json",
+      "css": "css/compositing.json",
+      "dfns": "dfns/compositing-1.json",
+      "headings": "headings/compositing-1.json",
+      "ids": "ids/compositing-1.json"
     },
     {
       "url": "https://www.w3.org/TR/core-aam-1.2/",
@@ -9564,13 +9561,15 @@
         "https://www.w3.org/TR/css-align-3/",
         "https://drafts.csswg.org/css-align/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-align/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-align-3/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-align/",
+      "generator": "bikeshed",
+      "date": "16 June 2021",
+      "links": "links/css-align-3.json",
+      "refs": "refs/css-align-3.json",
+      "css": "css/css-align.json",
+      "dfns": "dfns/css-align-3.json",
+      "headings": "headings/css-align-3.json",
+      "ids": "ids/css-align-3.json"
     },
     {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
@@ -9928,13 +9927,15 @@
         "https://www.w3.org/TR/css-break-4/",
         "https://drafts.csswg.org/css-break-4/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-break-4/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-break-4/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 232)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-break-4/",
+      "generator": "bikeshed",
+      "date": "17 May 2021",
+      "links": "links/css-break-4.json",
+      "refs": "refs/css-break-4.json",
+      "css": "css/css-break.json",
+      "dfns": "dfns/css-break-4.json",
+      "headings": "headings/css-break-4.json",
+      "ids": "ids/css-break-4.json"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -9978,13 +9979,15 @@
         "https://www.w3.org/TR/css-cascade-3/",
         "https://drafts.csswg.org/css-cascade-3/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-cascade-3/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-cascade-3/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/css-cascade-3/",
+      "generator": "bikeshed",
+      "date": "17 May 2021",
+      "links": "links/css-cascade-3.json",
+      "refs": "refs/css-cascade-3.json",
+      "css": "css/css-cascade.json",
+      "dfns": "dfns/css-cascade-3.json",
+      "headings": "headings/css-cascade-3.json",
+      "ids": "ids/css-cascade-3.json"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -10134,15 +10137,13 @@
         "https://www.w3.org/TR/css-color-4/",
         "https://drafts.csswg.org/css-color/"
       ],
-      "crawled": "https://drafts.csswg.org/css-color/",
-      "generator": "bikeshed",
-      "date": "16 September 2021",
-      "links": "links/css-color-4.json",
-      "refs": "refs/css-color-4.json",
-      "css": "css/css-color.json",
-      "dfns": "dfns/css-color-4.json",
-      "headings": "headings/css-color-4.json",
-      "ids": "ids/css-color-4.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-color/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-color-4/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-color-5/",
@@ -10496,17 +10497,13 @@
         "https://www.w3.org/TR/css-counter-styles-3/",
         "https://drafts.csswg.org/css-counter-styles/"
       ],
-      "crawled": "https://drafts.csswg.org/css-counter-styles/",
-      "generator": "bikeshed",
-      "date": "22 July 2021",
-      "links": "links/css-counter-styles-3.json",
-      "refs": "refs/css-counter-styles-3.json",
-      "idl": "idl/css-counter-styles.idl",
-      "css": "css/css-counter-styles.json",
-      "dfns": "dfns/css-counter-styles-3.json",
-      "headings": "headings/css-counter-styles-3.json",
-      "ids": "ids/css-counter-styles-3.json",
-      "idlparsed": "idlparsed/css-counter-styles-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-counter-styles/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-counter-styles-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-device-adapt-1/",
@@ -10608,7 +10605,7 @@
         "sourcePath": "css-display-3/Overview.bs",
         "filename": "Overview.html"
       },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 245)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/css-easing-1/",
@@ -10651,15 +10648,13 @@
         "https://www.w3.org/TR/css-easing-1/",
         "https://drafts.csswg.org/css-easing/"
       ],
-      "crawled": "https://drafts.csswg.org/css-easing/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/css-easing-1.json",
-      "refs": "refs/css-easing-1.json",
-      "css": "css/css-easing.json",
-      "dfns": "dfns/css-easing-1.json",
-      "headings": "headings/css-easing-1.json",
-      "ids": "ids/css-easing-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-easing/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-easing-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 246)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -11213,13 +11208,15 @@
         "https://www.w3.org/TR/css-line-grid-1/",
         "https://drafts.csswg.org/css-line-grid/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-line-grid/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-line-grid-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 257)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-line-grid/",
+      "generator": "bikeshed",
+      "date": "18 September 2020",
+      "links": "links/css-line-grid-1.json",
+      "refs": "refs/css-line-grid-1.json",
+      "css": "css/css-line-grid.json",
+      "dfns": "dfns/css-line-grid-1.json",
+      "headings": "headings/css-line-grid-1.json",
+      "ids": "ids/css-line-grid-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-lists-3/",
@@ -11250,7 +11247,7 @@
         "sourcePath": "css-lists-3/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Lists Module Level 3",
+      "title": "CSS Lists and Counters Module Level 3",
       "source": "w3c",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
@@ -11262,13 +11259,15 @@
         "https://www.w3.org/TR/css-lists-3/",
         "https://drafts.csswg.org/css-lists-3/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-lists-3/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-lists-3/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 258)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-lists-3/",
+      "generator": "bikeshed",
+      "date": "14 July 2021",
+      "links": "links/css-lists-3.json",
+      "refs": "refs/css-lists-3.json",
+      "css": "css/css-lists.json",
+      "dfns": "dfns/css-lists-3.json",
+      "headings": "headings/css-lists-3.json",
+      "ids": "ids/css-lists-3.json"
     },
     {
       "url": "https://www.w3.org/TR/css-logical-1/",
@@ -11663,13 +11662,15 @@
         "https://www.w3.org/TR/css-overflow-4/",
         "https://drafts.csswg.org/css-overflow-4/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-overflow-4/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-overflow-4/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 266)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-overflow-4/",
+      "generator": "bikeshed",
+      "date": "5 August 2021",
+      "links": "links/css-overflow-4.json",
+      "refs": "refs/css-overflow-4.json",
+      "css": "css/css-overflow-4.json",
+      "dfns": "dfns/css-overflow-4.json",
+      "headings": "headings/css-overflow-4.json",
+      "ids": "ids/css-overflow-4.json"
     },
     {
       "url": "https://www.w3.org/TR/css-overscroll-1/",
@@ -11913,15 +11914,13 @@
         "https://www.w3.org/TR/css-position-3/",
         "https://drafts.csswg.org/css-position/"
       ],
-      "crawled": "https://drafts.csswg.org/css-position/",
-      "generator": "bikeshed",
-      "date": "3 September 2021",
-      "links": "links/css-position-3.json",
-      "refs": "refs/css-position-3.json",
-      "css": "css/css-position.json",
-      "dfns": "dfns/css-position-3.json",
-      "headings": "headings/css-position-3.json",
-      "ids": "ids/css-position-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-position/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-position-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 271)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/css-properties-values-api-1/",
@@ -12064,17 +12063,13 @@
         "https://www.w3.org/TR/css-regions-1/",
         "https://drafts.csswg.org/css-regions/"
       ],
-      "crawled": "https://drafts.csswg.org/css-regions/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/css-regions-1.json",
-      "refs": "refs/css-regions-1.json",
-      "idl": "idl/css-regions.idl",
-      "css": "css/css-regions.json",
-      "dfns": "dfns/css-regions-1.json",
-      "headings": "headings/css-regions-1.json",
-      "ids": "ids/css-regions-1.json",
-      "idlparsed": "idlparsed/css-regions-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-regions/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-regions-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-rhythm-1/",
@@ -12111,15 +12106,13 @@
         "https://www.w3.org/TR/css-rhythm-1/",
         "https://drafts.csswg.org/css-rhythm/"
       ],
-      "crawled": "https://drafts.csswg.org/css-rhythm/",
-      "generator": "bikeshed",
-      "date": "21 February 2021",
-      "links": "links/css-rhythm-1.json",
-      "refs": "refs/css-rhythm-1.json",
-      "css": "css/css-rhythm.json",
-      "dfns": "dfns/css-rhythm-1.json",
-      "headings": "headings/css-rhythm-1.json",
-      "ids": "ids/css-rhythm-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-rhythm/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-rhythm-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 275)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/css-round-display-1/",
@@ -12162,13 +12155,15 @@
         "https://www.w3.org/TR/css-round-display-1/",
         "https://drafts.csswg.org/css-round-display/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css-round-display/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "css-round-display-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 276)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css-round-display/",
+      "generator": "bikeshed",
+      "date": "21 February 2021",
+      "links": "links/css-round-display-1.json",
+      "refs": "refs/css-round-display-1.json",
+      "css": "css/css-round-display.json",
+      "dfns": "dfns/css-round-display-1.json",
+      "headings": "headings/css-round-display-1.json",
+      "ids": "ids/css-round-display-1.json"
     },
     {
       "url": "https://www.w3.org/TR/css-ruby-1/",
@@ -12211,15 +12206,13 @@
         "https://www.w3.org/TR/css-ruby-1/",
         "https://drafts.csswg.org/css-ruby-1/"
       ],
-      "crawled": "https://drafts.csswg.org/css-ruby-1/",
-      "generator": "bikeshed",
-      "date": "4 August 2021",
-      "links": "links/css-ruby-1.json",
-      "refs": "refs/css-ruby-1.json",
-      "css": "css/css-ruby.json",
-      "dfns": "dfns/css-ruby-1.json",
-      "headings": "headings/css-ruby-1.json",
-      "ids": "ids/css-ruby-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-ruby-1/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-ruby-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 277)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/css-scoping-1/",
@@ -13558,15 +13551,13 @@
         "https://www.w3.org/TR/css-writing-modes-4/",
         "https://drafts.csswg.org/css-writing-modes-4/"
       ],
-      "crawled": "https://drafts.csswg.org/css-writing-modes-4/",
-      "generator": "bikeshed",
-      "date": "10 August 2021",
-      "links": "links/css-writing-modes-4.json",
-      "refs": "refs/css-writing-modes-4.json",
-      "css": "css/css-writing-modes.json",
-      "dfns": "dfns/css-writing-modes-4.json",
-      "headings": "headings/css-writing-modes-4.json",
-      "ids": "ids/css-writing-modes-4.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-writing-modes-4/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-writing-modes-4/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/CSS21/",
@@ -13626,7 +13617,7 @@
         ],
         "filename": "Overview.html"
       },
-      "title": "Cascading Style Sheets Level 2 Revision 1 (CSS 2.1) Specification",
+      "title": "CSS 2",
       "source": "w3c",
       "shortTitle": "CSS 2.1",
       "tests": {
@@ -13639,14 +13630,15 @@
         "https://www.w3.org/TR/CSS21/",
         "https://drafts.csswg.org/css2/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css2/",
-        "sourcePath": "css2/Overview.bs",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "pages": [],
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 304)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css2/",
+      "generator": "bikeshed",
+      "date": "12 August 2021",
+      "links": "links/CSS21.json",
+      "refs": "refs/CSS21.json",
+      "css": "css/CSS.json",
+      "dfns": "dfns/CSS21.json",
+      "headings": "headings/CSS21.json",
+      "ids": "ids/CSS21.json"
     },
     {
       "url": "https://www.w3.org/TR/CSS22/",
@@ -13706,7 +13698,7 @@
         ],
         "filename": "Overview.html"
       },
-      "title": "Cascading Style Sheets Level 2 Revision 2 (CSS 2.2) Specification",
+      "title": "CSS 2",
       "source": "w3c",
       "shortTitle": "CSS 2.2",
       "tests": {
@@ -13719,14 +13711,15 @@
         "https://www.w3.org/TR/CSS22/",
         "https://drafts.csswg.org/css2/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/css2/",
-        "sourcePath": "css2/Overview.bs",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "pages": [],
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 305)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/css2/",
+      "generator": "bikeshed",
+      "date": "12 August 2021",
+      "links": "links/CSS22.json",
+      "refs": "refs/CSS22.json",
+      "css": "css/CSS.json",
+      "dfns": "dfns/CSS22.json",
+      "headings": "headings/CSS22.json",
+      "ids": "ids/CSS22.json"
     },
     {
       "url": "https://www.w3.org/TR/css3-exclusions/",
@@ -13769,15 +13762,13 @@
         "https://www.w3.org/TR/css3-exclusions/",
         "https://drafts.csswg.org/css-exclusions/"
       ],
-      "crawled": "https://drafts.csswg.org/css-exclusions/",
-      "generator": "bikeshed",
-      "date": "27 July 2021",
-      "links": "links/css3-exclusions.json",
-      "refs": "refs/css3-exclusions.json",
-      "css": "css/css-exclusions.json",
-      "dfns": "dfns/css3-exclusions.json",
-      "headings": "headings/css3-exclusions.json",
-      "ids": "ids/css3-exclusions.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-exclusions/",
+        "sourcePath": "css-exclusions-1/Overview.bs",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/cssom-1/",
@@ -13873,13 +13864,16 @@
         "https://drafts.csswg.org/cssom-view/",
         "https://www.w3.org/TR/cssom-view/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/cssom-view/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "cssom-view-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 308)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
+      "crawled": "https://drafts.csswg.org/cssom-view/",
+      "generator": "bikeshed",
+      "date": "2 August 2021",
+      "links": "links/cssom-view-1.json",
+      "refs": "refs/cssom-view-1.json",
+      "idl": "idl/cssom-view.idl",
+      "dfns": "dfns/cssom-view-1.json",
+      "headings": "headings/cssom-view-1.json",
+      "ids": "ids/cssom-view-1.json",
+      "idlparsed": "idlparsed/cssom-view-1.json"
     },
     {
       "url": "https://www.w3.org/TR/device-memory-1/",
@@ -15676,15 +15670,13 @@
         "https://www.w3.org/TR/mediaqueries-4/",
         "https://drafts.csswg.org/mediaqueries-4/"
       ],
-      "crawled": "https://drafts.csswg.org/mediaqueries-4/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/mediaqueries-4.json",
-      "refs": "refs/mediaqueries-4.json",
-      "css": "css/mediaqueries.json",
-      "dfns": "dfns/mediaqueries-4.json",
-      "headings": "headings/mediaqueries-4.json",
-      "ids": "ids/mediaqueries-4.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/mediaqueries-4/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "mediaqueries-4/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 344)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/mediaqueries-5/",
@@ -15728,15 +15720,13 @@
         "https://www.w3.org/TR/mediaqueries-5/",
         "https://drafts.csswg.org/mediaqueries-5/"
       ],
-      "crawled": "https://drafts.csswg.org/mediaqueries-5/",
-      "generator": "bikeshed",
-      "date": "13 July 2021",
-      "links": "links/mediaqueries-5.json",
-      "refs": "refs/mediaqueries-5.json",
-      "css": "css/mediaqueries-5.json",
-      "dfns": "dfns/mediaqueries-5.json",
-      "headings": "headings/mediaqueries-5.json",
-      "ids": "ids/mediaqueries-5.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/mediaqueries-5/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "mediaqueries-5/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111\n    at async FrameManager.navigateFrame (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:90:21)\n    at async Frame.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:416:16)\n    at async Page.goto (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1149:16)\n    at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:460:13)\n    at async crawlSpec (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:68:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:389:22)\n    at async Promise.all (index 345)\n    at async crawlList (/home/runner/work/webref/webref/reffy/src/cli/crawl-specs.js:397:21)\n    at async Command.parseAsync (/home/runner/work/webref/webref/reffy/node_modules/commander/lib/command.js:871:5)"
     },
     {
       "url": "https://www.w3.org/TR/mediasession/",
@@ -19158,13 +19148,16 @@
         "https://www.w3.org/TR/web-animations-1/",
         "https://drafts.csswg.org/web-animations-1/"
       ],
-      "crawled": {
-        "url": "https://drafts.csswg.org/web-animations-1/",
-        "repository": "https://github.com/w3c/csswg-drafts",
-        "sourcePath": "web-animations-1/Overview.bs",
-        "filename": "Overview.html"
-      },
-      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
+      "crawled": "https://drafts.csswg.org/web-animations-1/",
+      "generator": "bikeshed",
+      "date": "20 August 2021",
+      "links": "links/web-animations-1.json",
+      "refs": "refs/web-animations-1.json",
+      "idl": "idl/web-animations.idl",
+      "dfns": "dfns/web-animations-1.json",
+      "headings": "headings/web-animations-1.json",
+      "ids": "ids/web-animations-1.json",
+      "idlparsed": "idlparsed/web-animations-1.json"
     },
     {
       "url": "https://www.w3.org/TR/web-share/",

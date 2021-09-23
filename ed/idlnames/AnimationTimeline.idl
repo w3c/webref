@@ -1,6 +1,6 @@
-// Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
+// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
 [Exposed=Window]
-partial interface AnimationTimeline {
-    readonly attribute CSSNumberish? duration;
-    Animation play (optional AnimationEffect? effect = null);
+interface AnimationTimeline {
+    readonly attribute double? currentTime;
+    readonly attribute TimelinePhase phase;
 };
