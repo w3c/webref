@@ -150,10 +150,17 @@
         },
         {
           "spec": {
-            "title": "CSS Spatial Navigation Level 1",
-            "url": "https://www.w3.org/TR/css-nav-1/"
+            "title": "CSS Pseudo-Elements Module Level 4",
+            "url": "https://www.w3.org/TR/css-pseudo-4/"
           },
-          "fragment": "partial interface Element {\n    Node getSpatialNavigationContainer();\n    sequence<Node> focusableAreas(optional FocusableAreasOption option = {});\n    Node? spatialNavigationSearch(SpatialNavigationDirection dir, optional SpatialNavigationSearchOptions options = {});\n};"
+          "fragment": "partial interface Element {\n  CSSPseudoElement? pseudo(CSSOMString type);\n};"
+        },
+        {
+          "spec": {
+            "title": "CSS Regions Module Level 1",
+            "url": "https://www.w3.org/TR/css-regions-1/"
+          },
+          "fragment": "Element includes Region;"
         },
         {
           "spec": {
@@ -311,6 +318,21 @@
             },
             "fragment": "interface mixin Slottable {\n  readonly attribute HTMLSlotElement? assignedSlot;\n};",
             "href": "https://dom.spec.whatwg.org/#slotable"
+          },
+          "extended": [],
+          "inheritance": null,
+          "includes": []
+        },
+        {
+          "name": "Region",
+          "type": "interface mixin",
+          "defined": {
+            "spec": {
+              "title": "CSS Regions Module Level 1",
+              "url": "https://www.w3.org/TR/css-regions-1/"
+            },
+            "fragment": "interface mixin Region {\n  readonly attribute CSSOMString regionOverset;\n  sequence<Range>? getRegionFlowRanges();\n};",
+            "href": "https://drafts.csswg.org/css-regions/#region"
           },
           "extended": [],
           "inheritance": null,
