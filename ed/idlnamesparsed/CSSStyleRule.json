@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "CSS Nesting Module",
+        "url": "https://www.w3.org/TR/css-nesting-1/"
+      },
+      "fragment": "partial interface CSSStyleRule {\n  [SameObject] readonly attribute CSSRuleList cssRules;\n  unsigned long insertRule(CSSOMString rule, optional unsigned long index = 0);\n  undefined deleteRule(unsigned long index);\n};"
+    },
+    {
+      "spec": {
         "title": "CSS Typed OM Level 1",
         "url": "https://www.w3.org/TR/css-typed-om-1/"
       },
@@ -30,6 +37,13 @@
       "href": "https://drafts.csswg.org/cssom/#cssrule"
     },
     "extended": [
+      {
+        "spec": {
+          "title": "CSS Animations Level 1",
+          "url": "https://www.w3.org/TR/css-animations-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};"
+      },
       {
         "spec": {
           "title": "CSS Conditional Rules Module Level 3",
@@ -57,13 +71,6 @@
           "url": "https://www.w3.org/TR/css-fonts-4/"
         },
         "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};"
-      },
-      {
-        "spec": {
-          "title": "CSS Fonts Module Level 4",
-          "url": "https://www.w3.org/TR/css-fonts-4/"
-        },
-        "fragment": "partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;\n};"
       }
     ],
     "inheritance": null,

@@ -6,7 +6,7 @@
       "title": "CSS Fonts Module Level 4",
       "url": "https://www.w3.org/TR/css-fonts-4/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSFontPaletteValuesRule : CSSRule {\n  maplike<unsigned long, CSSOMString>;\n  attribute CSSOMString fontFamily;\n  attribute CSSOMString basePalette;\n};",
+    "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColor;\n};",
     "href": "https://drafts.csswg.org/css-fonts-4/#cssfontpalettevaluesrule"
   },
   "extended": [],
@@ -22,6 +22,13 @@
       "href": "https://drafts.csswg.org/cssom/#cssrule"
     },
     "extended": [
+      {
+        "spec": {
+          "title": "CSS Animations Level 1",
+          "url": "https://www.w3.org/TR/css-animations-1/"
+        },
+        "fragment": "partial interface CSSRule {\n    const unsigned short KEYFRAMES_RULE = 7;\n    const unsigned short KEYFRAME_RULE = 8;\n};"
+      },
       {
         "spec": {
           "title": "CSS Conditional Rules Module Level 3",
@@ -49,13 +56,6 @@
           "url": "https://www.w3.org/TR/css-fonts-4/"
         },
         "fragment": "partial interface CSSRule {  const unsigned short FONT_FEATURE_VALUES_RULE = 14;\n};"
-      },
-      {
-        "spec": {
-          "title": "CSS Fonts Module Level 4",
-          "url": "https://www.w3.org/TR/css-fonts-4/"
-        },
-        "fragment": "partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;\n};"
       }
     ],
     "inheritance": null,

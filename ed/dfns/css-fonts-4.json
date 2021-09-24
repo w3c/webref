@@ -3997,10 +3997,94 @@
       "definedIn": "table"
     },
     {
-      "id": "descdef-font-palette-values-override-color",
-      "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-override-color",
+      "id": "valdef-base-palette-light",
+      "href": "https://drafts.csswg.org/css-fonts-4/#valdef-base-palette-light",
       "linkingText": [
-        "override-color"
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://drafts.csswg.org/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-base-palette-dark",
+      "href": "https://drafts.csswg.org/css-fonts-4/#valdef-base-palette-dark",
+      "linkingText": [
+        "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://drafts.csswg.org/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-base-palette-integer",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-base-palette-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://drafts.csswg.org/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-base-palette-string",
+      "href": "https://drafts.csswg.org/css-fonts-4/#typedef-base-palette-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://drafts.csswg.org/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-font-palette-values-override-colors",
+      "href": "https://drafts.csswg.org/css-fonts-4/#descdef-font-palette-values-override-colors",
+      "linkingText": [
+        "override-colors"
       ],
       "localLinkingText": [],
       "type": "descriptor",
@@ -4012,7 +4096,7 @@
       "heading": {
         "id": "override-color",
         "href": "https://drafts.csswg.org/css-fonts-4/#override-color",
-        "title": "Overriding a color from a palette: The override-color descriptor",
+        "title": "Overriding a colors from a palette: The override-colors descriptor",
         "number": "9.2.3"
       },
       "definedIn": "table"
@@ -4487,15 +4571,34 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssrule-font_palette_values_rule",
-      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssrule-font_palette_values_rule",
+      "id": "cssfontpalettevaluesrule",
+      "href": "https://drafts.csswg.org/css-fonts-4/#cssfontpalettevaluesrule",
       "linkingText": [
-        "FONT_PALETTE_VALUES_RULE"
+        "CSSFontPaletteValuesRule"
       ],
       "localLinkingText": [],
-      "type": "const",
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "om-fontpalettevalues",
+        "href": "https://drafts.csswg.org/css-fonts-4/#om-fontpalettevalues",
+        "title": "The CSSFontPaletteValuesRule interface",
+        "number": "11.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-basepalette",
+      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontpalettevaluesrule-basepalette",
+      "linkingText": [
+        "basePalette"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
       "for": [
-        "CSSRule"
+        "CSSFontPaletteValuesRule"
       ],
       "access": "public",
       "informative": false,
@@ -4508,14 +4611,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "cssfontpalettevaluesrule",
-      "href": "https://drafts.csswg.org/css-fonts-4/#cssfontpalettevaluesrule",
+      "id": "dom-cssfontpalettevaluesrule-name",
+      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontpalettevaluesrule-name",
       "linkingText": [
-        "CSSFontPaletteValuesRule"
+        "name"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
       "access": "public",
       "informative": false,
       "heading": {
@@ -4548,10 +4653,31 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-cssfontpalettevaluesrule-basepalette",
-      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontpalettevaluesrule-basepalette",
+      "id": "dom-cssfontpalettevaluesrule-basepalette①",
+      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontpalettevaluesrule-basepalette%E2%91%A0",
       "linkingText": [
         "basePalette"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "om-fontpalettevalues",
+        "href": "https://drafts.csswg.org/css-fonts-4/#om-fontpalettevalues",
+        "title": "The CSSFontPaletteValuesRule interface",
+        "number": "11.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-overridecolor",
+      "href": "https://drafts.csswg.org/css-fonts-4/#dom-cssfontpalettevaluesrule-overridecolor",
+      "linkingText": [
+        "overrideColor"
       ],
       "localLinkingText": [],
       "type": "attribute",

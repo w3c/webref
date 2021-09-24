@@ -45,10 +45,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "scope-proximity",
-      "href": "https://drafts.csswg.org/css-cascade-6/#scope-proximity",
+      "id": "strong-scoping-proximity",
+      "href": "https://drafts.csswg.org/css-cascade-6/#strong-scoping-proximity",
       "linkingText": [
-        "Scope Proximity"
+        "Strong Scoping Proximity"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -62,6 +62,44 @@
         "number": "2.1"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "weak-scoping-proximity",
+      "href": "https://drafts.csswg.org/css-cascade-6/#weak-scoping-proximity",
+      "linkingText": [
+        "Weak Scoping Proximity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cascade-sort",
+        "href": "https://drafts.csswg.org/css-cascade-6/#cascade-sort",
+        "title": "Cascade Sorting Order",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "scope-proximity",
+      "href": "https://drafts.csswg.org/css-cascade-6/#scope-proximity",
+      "linkingText": [
+        "scope proximity"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "cascade-sort",
+        "href": "https://drafts.csswg.org/css-cascade-6/#cascade-sort",
+        "title": "Cascade Sorting Order",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "output-of-the-cascade",
@@ -201,10 +239,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "scope-boundary",
-      "href": "https://drafts.csswg.org/css-cascade-6/#scope-boundary",
+      "id": "scoping-limit",
+      "href": "https://drafts.csswg.org/css-cascade-6/#scoping-limit",
       "linkingText": [
-        "Scope boundary"
+        "scoping limit"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -220,27 +258,8 @@
       "definedIn": "prose"
     },
     {
-      "id": "selectordef-in",
-      "href": "https://drafts.csswg.org/css-cascade-6/#selectordef-in",
-      "linkingText": [
-        ":in()"
-      ],
-      "localLinkingText": [],
-      "type": "selector",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "in-scope-selector",
-        "href": "https://drafts.csswg.org/css-cascade-6/#in-scope-selector",
-        "title": "The in-scope pseudo-class :in()",
-        "number": "2.5.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "at-ruledef-layer",
-      "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-layer",
+      "id": "at-ruledef-scope",
+      "href": "https://drafts.csswg.org/css-cascade-6/#at-ruledef-scope",
       "linkingText": [
         "@scope"
       ],
@@ -252,10 +271,67 @@
       "heading": {
         "id": "scope-atrule",
         "href": "https://drafts.csswg.org/css-cascade-6/#scope-atrule",
-        "title": "Scoping Styles in CSS: the @scope rule",
+        "title": "Strong Scoping: the @scope rule",
+        "number": "2.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "scoped-descendant-combinator",
+      "href": "https://drafts.csswg.org/css-cascade-6/#scoped-descendant-combinator",
+      "linkingText": [
+        "scoped descendant combinator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scope-combinator",
+        "href": "https://drafts.csswg.org/css-cascade-6/#scope-combinator",
+        "title": "Scoped Descendant Combinator",
         "number": "2.5.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "selector-scoping-notation",
+      "href": "https://drafts.csswg.org/css-cascade-6/#selector-scoping-notation",
+      "linkingText": [
+        "selector scoping notation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "selector-scoping",
+        "href": "https://drafts.csswg.org/css-cascade-6/#selector-scoping",
+        "title": "Selector Scoping Notation",
+        "number": "2.5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-selector-scope",
+      "href": "https://drafts.csswg.org/css-cascade-6/#typedef-selector-scope",
+      "linkingText": [
+        "<selector-scope>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "selector-scoping",
+        "href": "https://drafts.csswg.org/css-cascade-6/#selector-scoping",
+        "title": "Selector Scoping Notation",
+        "number": "2.5.3"
+      },
+      "definedIn": "pre"
     }
   ]
 }
