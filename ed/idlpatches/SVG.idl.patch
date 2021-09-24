@@ -1,6 +1,6 @@
-From 28b67fca45cca9a2029a5c1321d74ce9b0a31a93 Mon Sep 17 00:00:00 2001
-From: Kagami Sascha Rosylight <saschanaz@outlook.com>
-Date: Fri, 12 Mar 2021 06:48:07 +0100
+From 0a84d1e020cfcdfd18c70f75c52bb5909083c1cc Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Fri, 24 Sep 2021 10:09:13 +0200
 Subject: [PATCH] Fix SVG.idl
 
 HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
@@ -9,10 +9,10 @@ HTMLHyperlinkElementUtils: https://github.com/w3c/svgwg/issues/312
  1 file changed, 14 insertions(+), 1 deletion(-)
 
 diff --git a/ed/idl/SVG.idl b/ed/idl/SVG.idl
-index e0b013bfa..69d47018e 100644
+index 9ce619d1e..11a5c7c29 100644
 --- a/ed/idl/SVG.idl
 +++ b/ed/idl/SVG.idl
-@@ -672,7 +672,20 @@ interface SVGAElement : SVGGraphicsElement {
+@@ -673,7 +673,20 @@ interface SVGAElement : SVGGraphicsElement {
  };
  
  SVGAElement includes SVGURIReference;
@@ -35,5 +35,5 @@ index e0b013bfa..69d47018e 100644
  [Exposed=Window]
  interface SVGViewElement : SVGElement {};
 -- 
-2.30.0.windows.1
+2.33.0.windows.2
 
