@@ -1,850 +1,548 @@
 {
   "spec": {
-    "title": "Scalable Vector Graphics (SVG) 1.1 (Second Edition)",
-    "url": "https://www.w3.org/TR/SVG11/"
+    "title": "Scalable Vector Graphics (SVG) 2",
+    "url": "https://svgwg.org/svg2-draft/"
   },
   "properties": {
-    "‘writing-mode’": {
-      "name": "‘writing-mode’",
-      "value": "lr-tb | rl-tb | tb-rl | lr | rl | tb | inherit",
-      "initial": "lr-tb",
-      "appliesTo": "‘text’ elements",
-      "inherited": "yes",
-      "percentages": "N/A",
+    "cx": {
+      "name": "cx",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’ and ‘ellipse’ elements",
+      "inherited": "no",
+      "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "no",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘writing-mode’",
-        "‘writingMode’"
+        "cx"
       ]
     },
-    "‘glyph-orientation-vertical’": {
-      "name": "‘glyph-orientation-vertical’",
-      "value": "auto | <angle> | inherit",
+    "cy": {
+      "name": "cy",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’ and ‘ellipse’ elements",
+      "inherited": "no",
+      "percentages": "refer to the height of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "cy"
+      ]
+    },
+    "r": {
+      "name": "r",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘circle’ element",
+      "inherited": "no",
+      "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "r"
+      ]
+    },
+    "rx": {
+      "name": "rx",
+      "value": "<length-percentage> | auto",
       "initial": "auto",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
+      "appliesTo": "‘ellipse’, ‘rect’ elements",
+      "inherited": "no",
+      "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "no",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘glyph-orientation-vertical’",
-        "‘glyphOrientationVertical’"
+        "rx"
       ]
     },
-    "‘glyph-orientation-horizontal’": {
-      "name": "‘glyph-orientation-horizontal’",
-      "value": "<angle> | inherit",
-      "initial": "0deg",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
+    "ry": {
+      "name": "ry",
+      "value": "<length-percentage> | auto",
+      "initial": "auto",
+      "appliesTo": "‘ellipse’, ‘rect’",
+      "inherited": "no",
+      "percentages": "refer to the height of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "no",
+      "computedValue": "an absolute length or percentage",
+      "animatableType": "by computed value",
       "styleDeclaration": [
-        "‘glyph-orientation-horizontal’",
-        "‘glyphOrientationHorizontal’"
+        "ry"
       ]
     },
-    "‘direction’": {
-      "name": "‘direction’",
-      "value": "ltr | rtl | inherit",
-      "initial": "ltr",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
+    "x": {
+      "name": "x",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’ elements",
+      "inherited": "no",
+      "percentages": "refer to the width of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "no",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘direction’"
+        "x"
       ]
     },
-    "‘unicode-bidi’": {
-      "name": "‘unicode-bidi’",
-      "value": "normal | embed | bidi-override | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
+    "y": {
+      "name": "y",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘svg’, ‘rect’, ‘image’, ‘foreignObject’ elements",
+      "inherited": "no",
+      "percentages": "refer to the height of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "y"
+      ]
+    },
+    "vector-effect": {
+      "name": "vector-effect",
+      "value": "none | non-scaling-stroke | non-scaling-size | non-rotation | fixed-position",
+      "initial": "none",
+      "appliesTo": "graphics elements and ‘use’",
       "inherited": "no",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "no",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘unicode-bidi’",
-        "‘unicodeBidi’"
+        "vector-effect",
+        "vectorEffect"
       ]
     },
-    "‘text-anchor’": {
-      "name": "‘text-anchor’",
-      "value": "start | middle | end | inherit",
+    "d": {
+      "name": "d",
+      "value": "none | <string>",
+      "initial": "none",
+      "appliesTo": "‘path’",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "animationType": "See prose",
+      "styleDeclaration": [
+        "d"
+      ]
+    },
+    "inline-size": {
+      "name": "inline-size",
+      "value": "auto | <length-percentage>",
+      "initial": "auto",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Refer to the width (for horizontal text) or height (for vertical text) of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "an absolute length or percentage",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "inline-size",
+        "inlineSize"
+      ]
+    },
+    "shape-inside": {
+      "name": "shape-inside",
+      "value": "auto | [ <basic-shape> | <uri> ]+",
+      "initial": "auto",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Relative to the ‘viewBox’",
+      "media": "visual",
+      "computedValue": "computed lengths for <shape>, the absolute URI for <uri>, otherwise as specified",
+      "animationType": "See Interpolation of Basic Shapes",
+      "styleDeclaration": [
+        "shape-inside",
+        "shapeInside"
+      ]
+    },
+    "shape-subtract": {
+      "name": "shape-subtract",
+      "value": "none | [ <basic-shape>| <uri> ]+",
+      "initial": "none",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "Relative to the ‘viewBox’",
+      "media": "visual",
+      "computedValue": "computed lengths for any <basic-shape>, the absolute URI for <uri>, otherwise as specified",
+      "animationType": "See Interpolation of Basic Shapes",
+      "styleDeclaration": [
+        "shape-subtract",
+        "shapeSubtract"
+      ]
+    },
+    "shape-margin": {
+      "name": "shape-margin",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "‘text’ elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "an absolute length",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "shape-margin",
+        "shapeMargin"
+      ]
+    },
+    "text-anchor": {
+      "name": "text-anchor",
+      "value": "start | middle | end",
       "initial": "start",
       "appliesTo": "text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘text-anchor’",
-        "‘textAnchor’"
+        "text-anchor",
+        "textAnchor"
       ]
     },
-    "‘dominant-baseline’": {
-      "name": "‘dominant-baseline’",
-      "value": "auto | use-script | no-change | reset-size | ideographic | alphabetic | hanging | mathematical | central | middle | text-after-edge | text-before-edge | inherit",
-      "initial": "auto",
-      "appliesTo": "text content elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘dominant-baseline’",
-        "‘dominantBaseline’"
-      ]
-    },
-    "‘alignment-baseline’": {
-      "name": "‘alignment-baseline’",
-      "value": "auto | baseline | before-edge | text-before-edge | middle | central | after-edge | text-after-edge | ideographic | alphabetic | hanging | mathematical | inherit",
-      "initial": "auto",
-      "appliesTo": "‘tspan’, ‘tref’, ‘altGlyph’, ‘textPath’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘alignment-baseline’",
-        "‘alignmentBaseline’"
-      ]
-    },
-    "‘baseline-shift’": {
-      "name": "‘baseline-shift’",
-      "value": "baseline | sub | super | <percentage> | <length> | inherit",
-      "initial": "baseline",
-      "appliesTo": "‘tspan’, ‘tref’, ‘altGlyph’, ‘textPath’ elements",
-      "inherited": "no",
-      "percentages": "refers to the \"line-height\" of the ‘text’ element, which in the case of SVG is defined to be equal to the ‘font-size’",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘baseline-shift’",
-        "‘baselineShift’"
-      ]
-    },
-    "‘font-family’": {
-      "name": "‘font-family’",
-      "value": "[[ <family-name> | <generic-family> ],]* [<family-name> | <generic-family>] | inherit",
-      "initial": "depends on user agent",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-family’",
-        "‘fontFamily’"
-      ]
-    },
-    "‘font-style’": {
-      "name": "‘font-style’",
-      "value": "normal | italic | oblique | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-style’",
-        "‘fontStyle’"
-      ]
-    },
-    "‘font-variant’": {
-      "name": "‘font-variant’",
-      "value": "normal | small-caps | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-variant’",
-        "‘fontVariant’"
-      ]
-    },
-    "‘font-weight’": {
-      "name": "‘font-weight’",
-      "value": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-weight’",
-        "‘fontWeight’"
-      ]
-    },
-    "‘font-stretch’": {
-      "name": "‘font-stretch’",
-      "value": "normal | wider | narrower | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-stretch’",
-        "‘fontStretch’"
-      ]
-    },
-    "‘font-size’": {
-      "name": "‘font-size’",
-      "value": "<absolute-size> | <relative-size> | <length> | <percentage> | inherit",
-      "initial": "medium",
-      "appliesTo": "text content elements",
-      "inherited": "yes, the computed value is inherited",
-      "percentages": "refer to parent element's font size",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘font-size’",
-        "‘fontSize’"
-      ]
-    },
-    "‘font-size-adjust’": {
-      "name": "‘font-size-adjust’",
-      "value": "<number> | none | inherit",
-      "initial": "none",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes (non-additive)",
-      "styleDeclaration": [
-        "‘font-size-adjust’",
-        "‘fontSizeAdjust’"
-      ]
-    },
-    "‘font’": {
-      "name": "‘font’",
-      "value": "[ [ <'font-style'> || <'font-variant'> || <'font-weight'> ]? <'font-size'> [ / <'line-height'> ]? <'font-family'> ] | caption | icon | menu | message-box | small-caption | status-bar | inherit",
-      "initial": "see individual properties",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "allowed on 'font-size' and 'line-height' (Note: for the purposes of processing the ‘font’ property in SVG, 'line-height' is assumed to be equal the value for property ‘font-size’)",
-      "media": "visual",
-      "animatable": "yes (non-additive)",
-      "styleDeclaration": [
-        "‘font’"
-      ]
-    },
-    "‘kerning’": {
-      "name": "‘kerning’",
-      "value": "auto | <length> | inherit",
-      "initial": "auto",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘kerning’"
-      ]
-    },
-    "‘letter-spacing’": {
-      "name": "‘letter-spacing’",
-      "value": "normal | <length> | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘letter-spacing’",
-        "‘letterSpacing’"
-      ]
-    },
-    "‘word-spacing’": {
-      "name": "‘word-spacing’",
-      "value": "normal | <length> | inherit",
-      "initial": "normal",
-      "appliesTo": "text content elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘word-spacing’",
-        "‘wordSpacing’"
-      ]
-    },
-    "‘text-decoration’": {
-      "name": "‘text-decoration’",
-      "value": "none | [ underline || overline || line-through || blink ] | inherit",
-      "initial": "none",
-      "appliesTo": "text content elements",
-      "inherited": "no (see prose)",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘text-decoration’",
-        "‘textDecoration’"
-      ]
-    },
-    "‘fill’": {
-      "name": "‘fill’",
-      "value": "<paint> (See Specifying paint)",
+    "fill": {
+      "name": "fill",
+      "value": "<paint>",
       "initial": "black",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘fill’"
+        "fill"
       ]
     },
-    "‘fill-rule’": {
-      "name": "‘fill-rule’",
-      "value": "nonzero | evenodd | inherit",
+    "fill-rule": {
+      "name": "fill-rule",
+      "value": "nonzero | evenodd",
       "initial": "nonzero",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘fill-rule’",
-        "‘fillRule’"
+        "fill-rule",
+        "fillRule"
       ]
     },
-    "‘fill-opacity’": {
-      "name": "‘fill-opacity’",
-      "value": "<opacity-value> | inherit",
+    "fill-opacity": {
+      "name": "fill-opacity",
+      "value": "<‘opacity’>",
       "initial": "1",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "the specified value converted to a number, clamped to the range [0,1]",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘fill-opacity’",
-        "‘fillOpacity’"
+        "fill-opacity",
+        "fillOpacity"
       ]
     },
-    "‘stroke’": {
-      "name": "‘stroke’",
-      "value": "<paint> (See Specifying paint)",
+    "stroke": {
+      "name": "stroke",
+      "value": "<paint>",
       "initial": "none",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified, but with <color> values computed and <url> values made absolute",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘stroke’"
+        "stroke"
       ]
     },
-    "‘stroke-width’": {
-      "name": "‘stroke-width’",
-      "value": "<percentage> | <length> | inherit",
+    "stroke-opacity": {
+      "name": "stroke-opacity",
+      "value": "<‘opacity’>",
       "initial": "1",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
-      "percentages": "Yes",
+      "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "the specified value converted to a number, clamped to the range [0,1]",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘stroke-width’",
-        "‘strokeWidth’"
+        "stroke-opacity",
+        "strokeOpacity"
       ]
     },
-    "‘stroke-linecap’": {
-      "name": "‘stroke-linecap’",
-      "value": "butt | round | square | inherit",
+    "stroke-width": {
+      "name": "stroke-width",
+      "value": "<length-percentage> | <number>",
+      "initial": "1px",
+      "appliesTo": "shapes and text content elements",
+      "inherited": "yes",
+      "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
+      "media": "visual",
+      "computedValue": "an absolute length or percentage, numbers converted to absolute lengths first",
+      "animationType": "by computed value",
+      "styleDeclaration": [
+        "stroke-width",
+        "strokeWidth"
+      ]
+    },
+    "stroke-linecap": {
+      "name": "stroke-linecap",
+      "value": "butt | round | square",
       "initial": "butt",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘stroke-linecap’",
-        "‘strokeLinecap’"
+        "stroke-linecap",
+        "strokeLinecap"
       ]
     },
-    "‘stroke-linejoin’": {
-      "name": "‘stroke-linejoin’",
-      "value": "miter | round | bevel | inherit",
+    "stroke-linejoin": {
+      "name": "stroke-linejoin",
+      "value": "miter | miter-clip | round | bevel | arcs",
       "initial": "miter",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘stroke-linejoin’",
-        "‘strokeLinejoin’"
+        "stroke-linejoin",
+        "strokeLinejoin"
       ]
     },
-    "‘stroke-miterlimit’": {
-      "name": "‘stroke-miterlimit’",
-      "value": "<miterlimit> | inherit",
+    "stroke-miterlimit": {
+      "name": "stroke-miterlimit",
+      "value": "<number>",
       "initial": "4",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘stroke-miterlimit’",
-        "‘strokeMiterlimit’"
+        "stroke-miterlimit",
+        "strokeMiterlimit"
       ]
     },
-    "‘stroke-dasharray’": {
-      "name": "‘stroke-dasharray’",
-      "value": "none | <dasharray> | inherit",
+    "stroke-dasharray": {
+      "name": "stroke-dasharray",
+      "value": "none | <dasharray>",
       "initial": "none",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
-      "percentages": "yes (see below)",
+      "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "yes (non-additive)",
+      "computedValue": "as comma separated list of absolute lengths or percentages, numbers converted to absolute lengths first, or keyword specified",
+      "animationType": "See prose",
       "styleDeclaration": [
-        "‘stroke-dasharray’",
-        "‘strokeDasharray’"
+        "stroke-dasharray",
+        "strokeDasharray"
       ]
     },
-    "‘stroke-dashoffset’": {
-      "name": "‘stroke-dashoffset’",
-      "value": "<percentage> | <length> | inherit",
+    "stroke-dashoffset": {
+      "name": "stroke-dashoffset",
+      "value": "<length-percentage> | <number>",
       "initial": "0",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
-      "percentages": "see prose",
+      "percentages": "refer to the normalized diagonal of the current SVG viewport (see Units)",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "an absolute length or percentage, numbers converted to absolute lengths first",
+      "animationType": "by computed value",
       "styleDeclaration": [
-        "‘stroke-dashoffset’",
-        "‘strokeDashoffset’"
+        "stroke-dashoffset",
+        "strokeDashoffset"
       ]
     },
-    "‘stroke-opacity’": {
-      "name": "‘stroke-opacity’",
-      "value": "<opacity-value> | inherit",
-      "initial": "1",
+    "marker-start": {
+      "name": "marker-start",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-start",
+        "markerStart"
+      ]
+    },
+    "marker-mid": {
+      "name": "marker-mid",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-mid",
+        "markerMid"
+      ]
+    },
+    "marker-end": {
+      "name": "marker-end",
+      "value": "none | <marker-ref>",
+      "initial": "none",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified, but with <url> values (that are part of a <marker-ref>) made absolute",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker-end",
+        "markerEnd"
+      ]
+    },
+    "marker": {
+      "name": "marker",
+      "value": "none | <marker-ref>",
+      "initial": "not defined for shorthand properties",
+      "appliesTo": "shapes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "marker"
+      ]
+    },
+    "paint-order": {
+      "name": "paint-order",
+      "value": "normal | [ fill || stroke || markers ]",
+      "initial": "normal",
       "appliesTo": "shapes and text content elements",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘stroke-opacity’",
-        "‘strokeOpacity’"
+        "paint-order",
+        "paintOrder"
       ]
     },
-    "‘display’": {
-      "name": "‘display’",
-      "value": "inline | block | list-item | run-in | compact | marker | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | table-column | table-cell | table-caption | none | inherit",
-      "initial": "inline",
-      "appliesTo": "‘svg’, ‘g’, ‘switch’, ‘a’, ‘foreignObject’, graphics elements (including the ‘text’ element) and text sub-elements (i.e., ‘tspan’, ‘tref’, ‘altGlyph’, ‘textPath’)",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "all",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘display’"
-      ]
-    },
-    "‘visibility’": {
-      "name": "‘visibility’",
-      "value": "visible | hidden | collapse | inherit",
-      "initial": "visible",
-      "appliesTo": "graphics elements (including the ‘text’ element) and text sub-elements (i.e., ‘tspan’, ‘tref’, ‘altGlyph’, ‘textPath’ and ‘a’)",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘visibility’"
-      ]
-    },
-    "‘marker-start’": {
-      "name": "‘marker-start’",
-      "value": "none | <funciri> | inherit",
-      "initial": "none",
-      "appliesTo": "‘path’, ‘line’, ‘polyline’ and ‘polygon’ elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘marker-start’",
-        "‘markerStart’"
-      ]
-    },
-    "‘marker’": {
-      "name": "‘marker’",
-      "value": "see individual properties",
-      "initial": "see individual properties",
-      "appliesTo": "‘path’, ‘line’, ‘polyline’ and ‘polygon’ elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘marker’"
-      ]
-    },
-    "‘color-interpolation’": {
-      "name": "‘color-interpolation’",
-      "value": "auto | sRGB | linearRGB | inherit",
+    "color-interpolation": {
+      "name": "color-interpolation",
+      "value": "auto | sRGB | linearRGB",
       "initial": "sRGB",
-      "appliesTo": "container elements, graphics elements, ‘animate’ and ‘animateColor’",
+      "appliesTo": "container elements, graphics elements, gradient elements, ‘use’ and ‘animate’",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘color-interpolation’",
-        "‘colorInterpolation’"
+        "color-interpolation",
+        "colorInterpolation"
       ]
     },
-    "‘color-interpolation-filters’": {
-      "name": "‘color-interpolation-filters’",
-      "value": "auto | sRGB | linearRGB | inherit",
-      "initial": "linearRGB",
-      "appliesTo": "filter primitives",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘color-interpolation-filters’",
-        "‘colorInterpolationFilters’"
-      ]
-    },
-    "‘color-rendering’": {
-      "name": "‘color-rendering’",
-      "value": "auto | optimizeSpeed | optimizeQuality | inherit",
-      "initial": "auto",
-      "appliesTo": "container elements, graphics elements, ‘animate’ and ‘animateColor’",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘color-rendering’",
-        "‘colorRendering’"
-      ]
-    },
-    "‘shape-rendering’": {
-      "name": "‘shape-rendering’",
-      "value": "auto | optimizeSpeed | crispEdges | geometricPrecision | inherit",
+    "shape-rendering": {
+      "name": "shape-rendering",
+      "value": "auto | optimizeSpeed | crispEdges | geometricPrecision",
       "initial": "auto",
       "appliesTo": "shapes",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘shape-rendering’",
-        "‘shapeRendering’"
+        "shape-rendering",
+        "shapeRendering"
       ]
     },
-    "‘text-rendering’": {
-      "name": "‘text-rendering’",
-      "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit",
+    "text-rendering": {
+      "name": "text-rendering",
+      "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision",
       "initial": "auto",
-      "appliesTo": "‘text’ elements",
+      "appliesTo": "‘text’",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘text-rendering’",
-        "‘textRendering’"
+        "text-rendering",
+        "textRendering"
       ]
     },
-    "‘image-rendering’": {
-      "name": "‘image-rendering’",
-      "value": "auto | optimizeSpeed | optimizeQuality | inherit",
+    "image-rendering": {
+      "name": "image-rendering",
+      "value": "auto | optimizeQuality | optimizeSpeed",
       "initial": "auto",
       "appliesTo": "images",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘image-rendering’",
-        "‘imageRendering’"
+        "image-rendering",
+        "imageRendering"
       ]
     },
-    "‘color’": {
-      "name": "‘color’",
-      "value": "<color> | inherit",
-      "initial": "depends on user agent",
-      "appliesTo": "elements to which properties ‘fill’, ‘stroke’, ‘stop-color’, ‘flood-color’ and ‘lighting-color’ apply",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘color’"
-      ]
-    },
-    "‘src’": {
-      "name": "‘src’",
-      "values": "sRGB | <local-profile> | <iri> | (<local-profile> <iri>) | inherit",
-      "initial": "sRGB",
-      "media": "visual",
-      "styleDeclaration": [
-        "‘src’"
-      ]
-    },
-    "‘name’": {
-      "name": "‘name’",
-      "values": "<name>",
-      "initial": "undefined",
-      "media": "visual",
-      "styleDeclaration": [
-        "‘name’"
-      ]
-    },
-    "‘rendering-intent’": {
-      "name": "‘rendering-intent’",
-      "values": "auto | perceptual | relative-colorimetric | saturation | absolute-colorimetric",
+    "pointer-events": {
+      "name": "pointer-events",
+      "value": "auto | bounding-box | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none",
       "initial": "auto",
-      "media": "visual",
-      "animatable": "no",
-      "styleDeclaration": [
-        "‘rendering-intent’",
-        "‘renderingIntent’"
-      ]
-    },
-    "‘color-profile’": {
-      "name": "‘color-profile’",
-      "value": "auto | sRGB | <name> | <iri> | inherit",
-      "initial": "auto",
-      "appliesTo": "‘image’ elements that refer to raster images",
+      "appliesTo": "container elements, graphics elements and ‘use’",
       "inherited": "yes",
       "percentages": "N/A",
       "media": "visual",
-      "animatable": "yes",
+      "computedValue": "as specified",
+      "animationType": "discrete",
       "styleDeclaration": [
-        "‘color-profile’",
-        "‘colorProfile’"
+        "pointer-events",
+        "pointerEvents"
       ]
     },
-    "‘stop-color’": {
-      "name": "‘stop-color’",
-      "value": "currentColor | <color> <icccolor> | inherit",
-      "initial": "black",
-      "appliesTo": "‘stop’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
+    "stop-color": {
+      "name": "stop-color",
       "styleDeclaration": [
-        "‘stop-color’",
-        "‘stopColor’"
+        "stop-color",
+        "stopColor"
       ]
     },
-    "‘stop-opacity’": {
-      "name": "‘stop-opacity’",
-      "value": "<opacity-value> | inherit",
-      "initial": "1",
-      "appliesTo": "‘stop’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
+    "stop-opacity": {
+      "name": "stop-opacity",
       "styleDeclaration": [
-        "‘stop-opacity’",
-        "‘stopOpacity’"
-      ]
-    },
-    "‘overflow’": {
-      "name": "‘overflow’",
-      "value": "visible | hidden | scroll | auto | inherit",
-      "initial": "see prose",
-      "appliesTo": "elements which establish a new viewport, ‘pattern’ elements and ‘marker’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘overflow’"
-      ]
-    },
-    "‘clip’": {
-      "name": "‘clip’",
-      "value": "<shape> | auto | inherit",
-      "initial": "auto",
-      "appliesTo": "elements which establish a new viewport, ‘pattern’ elements and ‘marker’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘clip’"
-      ]
-    },
-    "‘clip-path’": {
-      "name": "‘clip-path’",
-      "value": "<funciri> | none | inherit",
-      "initial": "none",
-      "appliesTo": "container elements, graphics elements and ‘clipPath’",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘clip-path’",
-        "‘clipPath’"
-      ]
-    },
-    "‘clip-rule’": {
-      "name": "‘clip-rule’",
-      "value": "nonzero | evenodd | inherit",
-      "initial": "nonzero",
-      "appliesTo": "graphics elements within a ‘clipPath’ element",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘clip-rule’",
-        "‘clipRule’"
-      ]
-    },
-    "‘mask’": {
-      "name": "‘mask’",
-      "value": "<funciri> | none | inherit",
-      "initial": "none",
-      "appliesTo": "container elements and graphics elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘mask’"
-      ]
-    },
-    "‘opacity’": {
-      "name": "‘opacity’",
-      "value": "<opacity-value> | inherit",
-      "initial": "1",
-      "appliesTo": "container elements (except ‘mask’) and graphics elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘opacity’"
-      ]
-    },
-    "‘filter’": {
-      "name": "‘filter’",
-      "value": "<funciri> | none | inherit",
-      "initial": "none",
-      "appliesTo": "container elements (except ‘mask’) and graphics elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘filter’"
-      ]
-    },
-    "‘enable-background’": {
-      "name": "‘enable-background’",
-      "value": "accumulate | new [ <x> <y> <width> <height> ] | inherit",
-      "initial": "accumulate",
-      "appliesTo": "container elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "no",
-      "styleDeclaration": [
-        "‘enable-background’",
-        "‘enableBackground’"
-      ]
-    },
-    "‘lighting-color’": {
-      "name": "‘lighting-color’",
-      "value": "currentColor | <color> [<icccolor>] | inherit",
-      "initial": "white",
-      "appliesTo": "‘feDiffuseLighting’ and ‘feSpecularLighting’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘lighting-color’",
-        "‘lightingColor’"
-      ]
-    },
-    "‘flood-color’": {
-      "name": "‘flood-color’",
-      "value": "currentColor | <color> [<icccolor>] | inherit",
-      "initial": "black",
-      "appliesTo": "‘feFlood’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘flood-color’",
-        "‘floodColor’"
-      ]
-    },
-    "‘flood-opacity’": {
-      "name": "‘flood-opacity’",
-      "value": "<opacity-value> | inherit",
-      "initial": "1",
-      "appliesTo": "‘feFlood’ elements",
-      "inherited": "no",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘flood-opacity’",
-        "‘floodOpacity’"
-      ]
-    },
-    "‘pointer-events’": {
-      "name": "‘pointer-events’",
-      "value": "visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all | none | inherit",
-      "initial": "visiblePainted",
-      "appliesTo": "graphics elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘pointer-events’",
-        "‘pointerEvents’"
-      ]
-    },
-    "‘cursor’": {
-      "name": "‘cursor’",
-      "value": "[ [<funciri> ,]* [ auto | crosshair | default | pointer | move | e-resize | ne-resize | nw-resize | n-resize | se-resize | sw-resize | s-resize | w-resize| text | wait | help ] ] | inherit",
-      "initial": "auto",
-      "appliesTo": "container elements and graphics elements",
-      "inherited": "yes",
-      "percentages": "N/A",
-      "media": "visual, interactive",
-      "animatable": "yes",
-      "styleDeclaration": [
-        "‘cursor’"
+        "stop-opacity",
+        "stopOpacity"
       ]
     }
   },
   "descriptors": {},
-  "valuespaces": {}
+  "valuespaces": {
+    "<points>": {
+      "value": "[ <number>+ ]#"
+    },
+    "<dasharray>": {
+      "value": "[ [ <length-percentage> | <number> ]+ ]#"
+    },
+    "<marker-ref>": {
+      "value": "<url>"
+    }
+  }
 }

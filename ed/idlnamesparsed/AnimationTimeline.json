@@ -1,4 +1,14 @@
 {
+  "name": "AnimationTimeline",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AnimationTimeline {\n    readonly attribute double? currentTime;\n    readonly attribute TimelinePhase phase;\n};",
+    "href": "https://drafts.csswg.org/web-animations-1/#animationtimeline"
+  },
   "extended": [
     {
       "spec": {
@@ -8,5 +18,6 @@
       "fragment": "[Exposed=Window]\npartial interface AnimationTimeline {\n    readonly attribute CSSNumberish? duration;\n    Animation play (optional AnimationEffect? effect = null);\n};"
     }
   ],
+  "inheritance": null,
   "includes": []
 }
