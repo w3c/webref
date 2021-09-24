@@ -11,16 +11,14 @@
     "https://html.spec.whatwg.org/": [
       "window",
       "eventhandler",
-      "same-origin",
       "concept-relevant-global",
-      "concept-document-window",
-      "fully-active",
       "window-bc",
-      "session-history",
       "still-on-its-initial-about:blank-document",
-      "url-and-history-update-steps",
-      "dom-document-open",
+      "concept-document-window",
+      "concept-origin-opaque",
+      "session-history",
       "current-entry",
+      "same-origin",
       "concept-relevant-realm",
       "session-history-entry",
       "structuredserializeforstorage",
@@ -31,6 +29,7 @@
       "parse-a-url",
       "relevant-settings-object",
       "resulting-url-record",
+      "fully-active",
       "unload-counter",
       "hh-replace",
       "hh-default",
@@ -66,6 +65,7 @@
       "dom-errorevent-lineno",
       "dom-errorevent-colno",
       "report-the-exception",
+      "url-and-history-update-steps",
       "uhus-serializeddata",
       "uhus-ispush",
       "dom-window-stop",
@@ -87,12 +87,12 @@
       "implicit-submission",
       "shared-history-push/replace-state-steps",
       "hh-entry-update",
-      "creating-a-new-browsing-context",
       "concept-origin",
       "queue-a-global-task",
       "history-traversal-task-source",
       "update-the-session-history-with-the-new-page",
       "traverse-the-history",
+      "creating-a-new-browsing-context",
       "stop-document-loading",
       "a-browsing-context-is-discarded",
       "concept-navigate-mature"
@@ -124,7 +124,7 @@
     ],
     "https://dom.spec.whatwg.org/": [
       "eventtarget",
-      "document",
+      "concept-document-origin",
       "concept-event-fire",
       "eventdef-abortsignal-abort",
       "canceled-flag",
@@ -133,6 +133,7 @@
       "concept-document-url",
       "event",
       "dictdef-eventinit",
+      "document",
       "dom-event-istrusted",
       "dispatch-flag",
       "concept-event-create",
@@ -140,17 +141,15 @@
       "dom-event-type",
       "concept-event-dispatch",
       "abortsignal-aborted-flag",
-      "eventtarget-activation-behavior",
-      "concept-document-origin"
+      "eventtarget-activation-behavior"
     ],
     "https://infra.spec.whatwg.org/": [
       "list",
-      "list-size",
-      "assert",
       "list-is-empty",
       "list-prepend",
       "iteration-break",
       "list-append",
+      "list-size",
       "list-iterate",
       "list-clone",
       "list-contain",
@@ -160,6 +159,7 @@
       "struct-item",
       "map-exists",
       "map-remove",
+      "assert",
       "string",
       "string-is",
       "user-agent"
@@ -181,7 +181,8 @@
       "concept-url-serializer",
       "concept-url-equals",
       "url-equals-exclude-fragments",
-      "concept-url-fragment"
+      "concept-url-fragment",
+      "concept-url-scheme"
     ],
     "https://github.com/whatwg/html/pull/6315": [],
     "https://whatpr.org/html/6315/browsers.html": [
@@ -192,7 +193,10 @@
       "concept-formdata-entry"
     ],
     "https://fetch.spec.whatwg.org/": [
-      "dom-global-fetch"
+      "dom-global-fetch",
+      "concept-request",
+      "concept-request-url",
+      "fetch-scheme"
     ],
     "https://github.com/whatwg/html/issues/5381": [],
     "https://w3c.github.io/webappsec-fetch-metadata/": [
