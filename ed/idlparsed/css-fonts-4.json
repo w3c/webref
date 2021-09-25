@@ -305,26 +305,11 @@
         "partial": false
       },
       "CSSFontPaletteValuesRule": {
-        "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColor;\n};",
+        "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColor;\n};",
         "type": "interface",
         "name": "CSSFontPaletteValuesRule",
         "inheritance": "CSSRule",
         "members": [
-          {
-            "type": "attribute",
-            "name": "basePalette",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "CSSOMString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "name",
