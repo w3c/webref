@@ -11,8 +11,3 @@ interface KeyframeEffect : AnimationEffect {
     sequence<object> getKeyframes();
     undefined        setKeyframes(object? keyframes);
 };
-
-// Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
-partial interface KeyframeEffect {
-    attribute IterationCompositeOperation    iterationComposite;
-};
