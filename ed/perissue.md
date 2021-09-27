@@ -6451,15 +6451,18 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#document-load-timing-info`](https://html.spec.whatwg.org/#document-load-timing-info)
      * [`https://html.spec.whatwg.org/#document-unload-timing-info`](https://html.spec.whatwg.org/#document-unload-timing-info)
      * [`https://html.spec.whatwg.org/#unload-event-start-time`](https://html.spec.whatwg.org/#unload-event-start-time)
+     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
      * [`https://html.spec.whatwg.org/#unloading-documents`](https://html.spec.whatwg.org/#unloading-documents)
      * [`https://html.spec.whatwg.org/#unload-event-end-time`](https://html.spec.whatwg.org/#unload-event-end-time)
      * [`https://html.spec.whatwg.org/#dom-interactive-time`](https://html.spec.whatwg.org/#dom-interactive-time)
      * [`https://html.spec.whatwg.org/#current-document-readiness`](https://html.spec.whatwg.org/#current-document-readiness)
+     * [`https://html.spec.whatwg.org/#the-end`](https://html.spec.whatwg.org/#the-end)
      * [`https://html.spec.whatwg.org/#dom-content-loaded-event-start-time`](https://html.spec.whatwg.org/#dom-content-loaded-event-start-time)
      * [`https://html.spec.whatwg.org/#the-end:event-domcontentloaded`](https://html.spec.whatwg.org/#the-end:event-domcontentloaded)
      * [`https://html.spec.whatwg.org/#dom-content-loaded-event-end-time`](https://html.spec.whatwg.org/#dom-content-loaded-event-end-time)
      * [`https://html.spec.whatwg.org/#dom-complete-time`](https://html.spec.whatwg.org/#dom-complete-time)
      * [`https://html.spec.whatwg.org/#load-event-start-time`](https://html.spec.whatwg.org/#load-event-start-time)
+     * [`https://html.spec.whatwg.org/#the-end:event-event-load`](https://html.spec.whatwg.org/#the-end:event-event-load)
      * [`https://html.spec.whatwg.org/#load-event-end-time`](https://html.spec.whatwg.org/#load-event-end-time)
      * [`https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh`](https://html.spec.whatwg.org/#attr-meta-http-equiv-refresh)
      * [`https://html.spec.whatwg.org/#history-handling-behavior`](https://html.spec.whatwg.org/#history-handling-behavior)
@@ -6467,7 +6470,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#hh-replace`](https://html.spec.whatwg.org/#hh-replace)
      * [`https://html.spec.whatwg.org/#hh-reload`](https://html.spec.whatwg.org/#hh-reload)
      * [`https://html.spec.whatwg.org/#hh-entry-update`](https://html.spec.whatwg.org/#hh-entry-update)
-     * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
      * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
      * [`https://html.spec.whatwg.org/#load-timing-info`](https://html.spec.whatwg.org/#load-timing-info)
@@ -6479,7 +6481,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#unload-a-document`](https://html.spec.whatwg.org/#unload-a-document)
      * [`https://html.spec.whatwg.org/#fetching-resources`](https://html.spec.whatwg.org/#fetching-resources)
      * [`https://html.spec.whatwg.org/#relevant-application-cache`](https://html.spec.whatwg.org/#relevant-application-cache)
-     * [`https://html.spec.whatwg.org/#the-end`](https://html.spec.whatwg.org/#the-end)
      * [`https://html.spec.whatwg.org/#document`](https://html.spec.whatwg.org/#document)
      * [`https://heycam.github.io/webidl/#default-tojson-operation`](https://heycam.github.io/webidl/#default-tojson-operation)
 - [Network Error Logging](https://w3c.github.io/network-error-logging/):
@@ -8688,7 +8689,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4638 problematic external links found in 291 specifications
+=> 4639 problematic external links found in 291 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
