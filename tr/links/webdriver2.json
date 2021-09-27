@@ -7,13 +7,12 @@
     "https://www.w3.org/TR/": [],
     "https://www.w3.org/testing/browser/": [],
     "https://github.com/w3c/webdriver/issues/": [],
-    "https://lists.w3.org/Archives/Public/public-browser-tools-testing/": [],
     "https://www.w3.org/Consortium/Patent-Policy/": [
       "def-essential",
       "sec-Disclosure"
     ],
-    "https://www.w3.org/2004/01/pp-impl/49799/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
+    "https://www.w3.org/groups/wg/browser-tools-testing/ipr": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
     "https://selenium.dev/": [],
     "https://tc39.github.io/ecma262/": [
       "sec-iterable-interface",
@@ -30,12 +29,25 @@
     "https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap04.html": [
       "tag_04_15"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/Navigator/webdriver": [],
     "https://www.w3.org/TR/CSS21/": [
       "vendor-keywords"
     ],
+    "https://infra.spec.whatwg.org/": [
+      "ascii-lowercase",
+      "queue",
+      "string-length",
+      "ordered-set"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetTimeouts": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/SetTimeouts": [],
     "https://html.spec.whatwg.org/": [
       "focus",
+      "the-textarea-element",
+      "the-a-element",
+      "the-optgroup-element",
       "event-loop",
+      "canvas",
       "2d-context-creation-algorithm",
       "a-browsing-context-is-discarded",
       "a-serialisation-of-the-bitmap-as-a-file",
@@ -128,20 +140,16 @@
       "dom-confirm",
       "dom-alert",
       "dom-prompt",
-      "the-a-element",
       "the-area-element",
-      "the-canvas-element",
       "the-datalist-element",
       "frame",
       "the-html-element",
       "the-iframe-element",
       "the-input-element",
       "the-map-element",
-      "the-optgroup-element",
       "the-option-element",
       "the-output-element",
       "the-select-element",
-      "the-textarea-element",
       "color-state-(type=color)",
       "date-state-(type=date)",
       "e-mail-state-(type=email)",
@@ -170,9 +178,67 @@
       "event-pagehide",
       "event-pageshow"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/CloseWindow": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetWindowHandles": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/New_Window": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetWindowRect": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/SetWindowRect": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/Window/moveTo": [],
+    "https://dom.spec.whatwg.org/": [
+      "concept-node-document",
+      "dom-parentnode-queryselectorall",
+      "nodelist",
+      "dom-event-istrusted",
+      "concept-attribute",
+      "dom-node-comparedocumentposition",
+      "connected",
+      "concept-tree-descendant",
+      "document-element",
+      "concept-document",
+      "dom-node-document_position_disconnected",
+      "concept-documentfragment-host",
+      "dom-node-document_fragment_node",
+      "concept-document-type",
+      "concept-document-url",
+      "concept-element",
+      "concept-node-equals",
+      "event",
+      "concept-event-fire",
+      "concept-element-attributes-get-by-name",
+      "dom-element-getattribute",
+      "dom-element-getelementsbytagname",
+      "dom-element-hasattribute",
+      "htmlcollection",
+      "concept-tree-inclusive-descendant",
+      "concept-node-length",
+      "concept-node",
+      "dom-parentnode-queryselector",
+      "dom-element-tagname",
+      "text",
+      "dom-node-textcontent"
+    ],
+    "https://www.w3.org/TR/geometry-1/": [
+      "domrect"
+    ],
+    "https://www.w3.org/TR/cssom-view-1/": [
+      "dom-element-getclientrects",
+      "dom-element-getboundingclientrect"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetElementAttribute": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetElementProperty": [],
+    "https://developer.mozilla.org/en-US/docs/Web/WebDriver/Commands/GetElementTagName": [],
     "https://www.w3.org/TR/uievents/": [
       "events-compositionevents"
+    ],
+    "https://heycam.github.io/webidl/": [
+      "a-new-promise",
+      "resolve",
+      "reject",
+      "dfn-DOMException",
+      "idl-sequence",
+      "dfn-supported-property-indices",
+      "syntaxerror",
+      "this"
     ],
     "https://tools.ietf.org/html/rfc6265": [
       "section-5.3",
@@ -222,38 +288,6 @@
     ],
     "https://tools.ietf.org/html/rfc4648": [
       "section-4"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-attribute",
-      "dom-node-comparedocumentposition",
-      "connected",
-      "context-object",
-      "concept-tree-descendant",
-      "document-element",
-      "concept-document",
-      "dom-node-document_position_disconnected",
-      "concept-document-type",
-      "concept-document-url",
-      "concept-element",
-      "concept-node-equals",
-      "event",
-      "concept-event-fire",
-      "concept-element-attributes-get-by-name",
-      "dom-element-getattribute",
-      "dom-element-getelementsbytagname",
-      "dom-element-hasattribute",
-      "htmlcollection",
-      "concept-tree-inclusive-descendant",
-      "dom-event-istrusted",
-      "concept-node-document",
-      "concept-node-length",
-      "concept-node",
-      "nodelist",
-      "dom-parentnode-queryselectorall",
-      "dom-parentnode-queryselector",
-      "dom-element-tagname",
-      "text",
-      "dom-node-textcontent"
     ],
     "https://w3c.github.io/DOM-Parsing/": [
       "dfn-fragment-serializing-algorithm",
@@ -324,7 +358,7 @@
       "fully-exit-fullscreen",
       "unfullscreen-a-document"
     ],
-    "https://w3c.github.io/editing/contentEditable.html": [],
+    "https://w3c.github.io/contentEditable/": [],
     "https://w3c.github.io/editing/execCommand.html": [
       "editing-host"
     ],
@@ -336,12 +370,6 @@
     ],
     "https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml": [],
     "https://web.archive.org/web/20070602031929/http://wp.netscape.com/eng/mozilla/2.0/relnotes/demo/proxy-live.html": [],
-    "https://infra.spec.whatwg.org/": [
-      "ascii-lowercase",
-      "string-length",
-      "queues",
-      "sets"
-    ],
     "https://www.w3.org/TR/page-visibility/": [
       "dom-visibilitystate-hidden",
       "visibility-states-and-the-visibilitystate-enum",
@@ -363,9 +391,6 @@
     "https://drafts.csswg.org/css-display/": [
       "the-display-properties"
     ],
-    "https://www.w3.org/TR/geometry-1/": [
-      "dom-domrect"
-    ],
     "https://drafts.csswg.org/css-cascade-4/": [
       "computed-value"
     ],
@@ -373,10 +398,8 @@
       "resolved-value"
     ],
     "https://drafts.csswg.org/cssom-view/": [
-      "dom-element-getboundingclientrect",
       "dom-document-elementfrompoint",
       "dom-document-elementsfrompoint",
-      "dom-range-getclientrects",
       "dom-window-innerheight",
       "dom-window-innerwidth",
       "dom-window-moveto",
@@ -423,17 +446,8 @@
       "concept-url",
       "concept-url-serializer"
     ],
-    "https://heycam.github.io/webidl/": [
-      "dfn-DOMException",
-      "idl-sequence",
-      "dfn-supported-property-indices",
-      "syntaxerror"
-    ],
     "https://www.w3.org/2001/tag/doc/promises-guide": [
-      "a-new-promise",
-      "promise-calling",
-      "reject-promise",
-      "resolve-promise"
+      "promise-calling"
     ],
     "https://www.w3.org/TR/REC-xml-names/": [
       "ns-using"
@@ -447,21 +461,21 @@
     "https://www.w3.org/TR/CSP3/": [],
     "https://www.w3.org/TR/css-cascade-4/": [],
     "https://www.w3.org/TR/css-device-adapt-1/": [],
-    "https://www.w3.org/TR/CSS2/": [],
     "https://www.w3.org/TR/css-box-3/": [],
     "https://www.w3.org/TR/css-display-3/": [],
     "https://www.w3.org/TR/cssom-1/": [],
-    "https://www.w3.org/TR/cssom-view-1/": [],
     "https://www.w3.org/TR/DOM-Parsing/": [],
-    "https://tc39.es/ecma262/": [],
+    "https://tc39.es/ecma262/multipage/": [],
     "https://dvcs.w3.org/hg/editing/raw-file/tip/editing.html": [],
     "https://www.w3.org/TR/FileAPI/": [],
     "https://www.w3.org/TR/pointerevents/": [],
-    "https://tools.ietf.org/html/rfc1928": [],
-    "https://tools.ietf.org/html/rfc1929": [],
-    "https://tools.ietf.org/html/rfc3514": [],
-    "https://tools.ietf.org/html/rfc4122": [],
-    "https://tools.ietf.org/html/rfc4632": [],
+    "https://www.rfc-editor.org/rfc/rfc1928": [],
+    "https://www.rfc-editor.org/rfc/rfc1929": [],
+    "https://www.rfc-editor.org/rfc/rfc2397": [],
+    "https://www.rfc-editor.org/rfc/rfc3514": [],
+    "https://www.rfc-editor.org/rfc/rfc4122": [],
+    "https://www.rfc-editor.org/rfc/rfc4632": [],
+    "https://www.rfc-editor.org/rfc/rfc4648": [],
     "https://httpwg.org/specs/rfc6265.html": [],
     "https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis-05": [],
     "https://httpwg.org/specs/rfc7230.html": [],
@@ -469,10 +483,10 @@
     "https://httpwg.org/specs/rfc7232.html": [],
     "https://httpwg.org/specs/rfc7234.html": [],
     "https://httpwg.org/specs/rfc7235.html": [],
-    "https://www.unicode.org/reports/tr29/tr29-37.html": [],
-    "https://www.unicode.org/reports/tr44/tr44-26.html": [],
+    "https://www.unicode.org/reports/tr29/tr29-39.html": [],
+    "https://www.unicode.org/reports/tr44/tr44-28.html": [],
     "https://www.unicode.org/versions/latest/": [],
-    "https://tools.ietf.org/html/rfc6570": [],
+    "https://www.rfc-editor.org/rfc/rfc6570": [],
     "https://www.w3.org/TR/wai-aria-1.2/": [],
     "https://www.w3.org/TR/xml-names/": [],
     "https://www.w3.org/TR/xpath-10/": []

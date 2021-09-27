@@ -66,7 +66,7 @@
       "href": "https://www.w3.org/TR/webdriver2/#dfn-uuid",
       "linkingText": [
         "uuid",
-        "Universally Unique IDentifier (UUID)"
+        "Universally Unique Identifier (UUID)"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -224,9 +224,7 @@
       ],
       "localLinkingText": [],
       "type": "interface",
-      "for": [
-        "NavigatorAutomationInformation"
-      ],
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -1154,6 +1152,25 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-no-such-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-no-such-shadow-root",
+      "linkingText": [
+        "no such shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver2/#errors",
+        "title": "Errors",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dfn-script-timeout-error",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-script-timeout-error",
       "linkingText": [
@@ -1196,6 +1213,25 @@
       "href": "https://www.w3.org/TR/webdriver2/#dfn-stale-element-reference",
       "linkingText": [
         "stale element reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "errors",
+        "href": "https://www.w3.org/TR/webdriver2/#errors",
+        "title": "Errors",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-detached-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-detached-shadow-root",
+      "linkingText": [
+        "detached shadow root"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2170,6 +2206,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-current-parent-browsing-context",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-current-parent-browsing-context",
+      "linkingText": [
+        "current parent browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sessions",
+        "href": "https://www.w3.org/TR/webdriver2/#sessions",
+        "title": "Sessions",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-current-top-level-browsing-context",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-current-top-level-browsing-context",
       "linkingText": [
@@ -2420,6 +2475,25 @@
         "number": "9"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "dfn-timeouts-object",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-timeouts-object",
+      "linkingText": [
+        "timeouts object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "timeouts",
+        "href": "https://www.w3.org/TR/webdriver2/#timeouts",
+        "title": "Timeouts",
+        "number": "9"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dfn-get-timeouts",
@@ -2777,10 +2851,46 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-the-windowproxy-object",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-json-serialization-of-the-windowproxy-object",
+      "id": "dfn-windowproxy-reference-object",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-windowproxy-reference-object",
       "linkingText": [
-        "JSON serialization of the WindowProxy object"
+        "WindowProxy reference object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contexts",
+        "href": "https://www.w3.org/TR/webdriver2/#contexts",
+        "title": "11. Contexts"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-the-current-browsing-context",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-set-the-current-browsing-context",
+      "linkingText": [
+        "set the current browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contexts",
+        "href": "https://www.w3.org/TR/webdriver2/#contexts",
+        "title": "11. Contexts"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-set-the-current-top-level-browsing-context",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-set-the-current-top-level-browsing-context",
+      "linkingText": [
+        "set the current top-level browsing context"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3043,11 +3153,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-window-rect",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-json-serialization-of-window-rect",
+      "id": "dfn-windowrect-object",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-windowrect-object",
       "linkingText": [
-        "json serialization of window rect",
-        "JSON representation"
+        "WindowRect object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3342,11 +3451,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-create-an-element",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-create-an-element",
+      "id": "dfn-get-or-create-a-web-element-reference",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-get-or-create-a-web-element-reference",
       "linkingText": [
-        "create an element",
-        "create a web element reference"
+        "get or create a web element reference"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3361,10 +3469,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-json-serialization-of-an-element",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-json-serialization-of-an-element",
+      "id": "dfn-web-element-reference-object",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-web-element-reference-object",
       "linkingText": [
-        "JSON serialization of an element"
+        "web element reference object"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3666,6 +3774,197 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-shadow-roots",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-shadow-roots",
+      "linkingText": [
+        "shadow roots",
+        "shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shadow-root-identifier",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-shadow-root-identifier",
+      "linkingText": [
+        "shadow root identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shadow-root-reference",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-shadow-root-reference",
+      "linkingText": [
+        "shadow root reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-represents-a-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-represents-a-shadow-root",
+      "linkingText": [
+        "represents a shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-list-of-known-shadow-roots",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-list-of-known-shadow-roots",
+      "linkingText": [
+        "list of known shadow roots"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-a-known-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-get-a-known-shadow-root",
+      "linkingText": [
+        "get a known shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-get-or-create-a-shadow-root-reference",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-get-or-create-a-shadow-root-reference",
+      "linkingText": [
+        "get or create a shadow root reference"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-shadow-root-reference-object",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-shadow-root-reference-object",
+      "linkingText": [
+        "shadow root reference object"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-deserialize-a-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-deserialize-a-shadow-root",
+      "linkingText": [
+        "deserialize a shadow root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-is-detached",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-is-detached",
+      "linkingText": [
+        "is detached"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "shadow-roots",
+        "href": "https://www.w3.org/TR/webdriver2/#shadow-roots",
+        "title": "Shadow Roots",
+        "number": "12.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-find",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-find",
       "linkingText": [
@@ -3680,7 +3979,7 @@
         "id": "retrieval",
         "href": "https://www.w3.org/TR/webdriver2/#retrieval",
         "title": "Retrieval",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "prose"
     },
@@ -3700,7 +3999,7 @@
         "id": "locator-strategies",
         "href": "https://www.w3.org/TR/webdriver2/#locator-strategies",
         "title": "Locator strategies",
-        "number": "12.2.1"
+        "number": "12.3.1"
       },
       "definedIn": "prose"
     },
@@ -3719,7 +4018,7 @@
         "id": "locator-strategies",
         "href": "https://www.w3.org/TR/webdriver2/#locator-strategies",
         "title": "Locator strategies",
-        "number": "12.2.1"
+        "number": "12.3.1"
       },
       "definedIn": "prose"
     },
@@ -3738,7 +4037,7 @@
         "id": "css-selectors",
         "href": "https://www.w3.org/TR/webdriver2/#css-selectors",
         "title": "CSS selectors",
-        "number": "12.2.1.1"
+        "number": "12.3.1.1"
       },
       "definedIn": "prose"
     },
@@ -3758,7 +4057,7 @@
         "id": "link-text",
         "href": "https://www.w3.org/TR/webdriver2/#link-text",
         "title": "Link text",
-        "number": "12.2.1.2"
+        "number": "12.3.1.2"
       },
       "definedIn": "prose"
     },
@@ -3778,7 +4077,7 @@
         "id": "partial-link-text",
         "href": "https://www.w3.org/TR/webdriver2/#partial-link-text",
         "title": "Partial link text",
-        "number": "12.2.1.3"
+        "number": "12.3.1.3"
       },
       "definedIn": "prose"
     },
@@ -3797,7 +4096,7 @@
         "id": "tag-name",
         "href": "https://www.w3.org/TR/webdriver2/#tag-name",
         "title": "Tag name",
-        "number": "12.2.1.4"
+        "number": "12.3.1.4"
       },
       "definedIn": "prose"
     },
@@ -3816,7 +4115,7 @@
         "id": "xpath",
         "href": "https://www.w3.org/TR/webdriver2/#xpath",
         "title": "XPath",
-        "number": "12.2.1.5"
+        "number": "12.3.1.5"
       },
       "definedIn": "prose"
     },
@@ -3835,7 +4134,7 @@
         "id": "find-element",
         "href": "https://www.w3.org/TR/webdriver2/#find-element",
         "title": "Find Element",
-        "number": "12.2.2"
+        "number": "12.3.2"
       },
       "definedIn": "heading"
     },
@@ -3854,7 +4153,7 @@
         "id": "find-elements",
         "href": "https://www.w3.org/TR/webdriver2/#find-elements",
         "title": "Find Elements",
-        "number": "12.2.3"
+        "number": "12.3.3"
       },
       "definedIn": "heading"
     },
@@ -3873,7 +4172,7 @@
         "id": "find-element-from-element",
         "href": "https://www.w3.org/TR/webdriver2/#find-element-from-element",
         "title": "Find Element From Element",
-        "number": "12.2.4"
+        "number": "12.3.4"
       },
       "definedIn": "heading"
     },
@@ -3892,7 +4191,45 @@
         "id": "find-elements-from-element",
         "href": "https://www.w3.org/TR/webdriver2/#find-elements-from-element",
         "title": "Find Elements From Element",
-        "number": "12.2.5"
+        "number": "12.3.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-find-element-from-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-find-element-from-shadow-root",
+      "linkingText": [
+        "Find Element From Shadow Root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "find-element-from-shadow-root",
+        "href": "https://www.w3.org/TR/webdriver2/#find-element-from-shadow-root",
+        "title": "Find Element From Shadow Root",
+        "number": "12.3.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-find-elements-from-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-find-elements-from-shadow-root",
+      "linkingText": [
+        "Find Elements From Shadow Root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "find-elements-from-shadow-root",
+        "href": "https://www.w3.org/TR/webdriver2/#find-elements-from-shadow-root",
+        "title": "Find Elements From Shadow Root",
+        "number": "12.3.7"
       },
       "definedIn": "heading"
     },
@@ -3911,7 +4248,26 @@
         "id": "get-active-element",
         "href": "https://www.w3.org/TR/webdriver2/#get-active-element",
         "title": "Get Active Element",
-        "number": "12.2.6"
+        "number": "12.3.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-get-element-shadow-root",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-get-element-shadow-root",
+      "linkingText": [
+        "Get Element Shadow Root"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-element-shadow-root",
+        "href": "https://www.w3.org/TR/webdriver2/#get-element-shadow-root",
+        "title": "Get Element Shadow Root",
+        "number": "12.3.9"
       },
       "definedIn": "heading"
     },
@@ -3930,7 +4286,7 @@
         "id": "state",
         "href": "https://www.w3.org/TR/webdriver2/#state",
         "title": "State",
-        "number": "12.3"
+        "number": "12.4"
       },
       "definedIn": "prose"
     },
@@ -3949,7 +4305,7 @@
         "id": "state",
         "href": "https://www.w3.org/TR/webdriver2/#state",
         "title": "State",
-        "number": "12.3"
+        "number": "12.4"
       },
       "definedIn": "prose"
     },
@@ -3968,7 +4324,7 @@
         "id": "state",
         "href": "https://www.w3.org/TR/webdriver2/#state",
         "title": "State",
-        "number": "12.3"
+        "number": "12.4"
       },
       "definedIn": "prose"
     },
@@ -3987,7 +4343,7 @@
         "id": "is-element-selected",
         "href": "https://www.w3.org/TR/webdriver2/#is-element-selected",
         "title": "Is Element Selected",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "heading"
     },
@@ -4006,7 +4362,7 @@
         "id": "get-element-attribute",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-attribute",
         "title": "Get Element Attribute",
-        "number": "12.3.2"
+        "number": "12.4.2"
       },
       "definedIn": "heading"
     },
@@ -4025,7 +4381,7 @@
         "id": "get-element-property",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-property",
         "title": "Get Element Property",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "heading"
     },
@@ -4044,7 +4400,7 @@
         "id": "get-element-css-value",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-css-value",
         "title": "Get Element CSS Value",
-        "number": "12.3.4"
+        "number": "12.4.4"
       },
       "definedIn": "heading"
     },
@@ -4063,7 +4419,7 @@
         "id": "get-element-text",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-text",
         "title": "Get Element Text",
-        "number": "12.3.5"
+        "number": "12.4.5"
       },
       "definedIn": "heading"
     },
@@ -4082,7 +4438,7 @@
         "id": "get-element-text",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-text",
         "title": "Get Element Text",
-        "number": "12.3.5"
+        "number": "12.4.5"
       },
       "definedIn": "prose"
     },
@@ -4101,7 +4457,7 @@
         "id": "get-element-tag-name",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-tag-name",
         "title": "Get Element Tag Name",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "heading"
     },
@@ -4120,7 +4476,7 @@
         "id": "get-element-rect",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-rect",
         "title": "Get Element Rect",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "heading"
     },
@@ -4140,7 +4496,7 @@
         "id": "get-element-rect",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-rect",
         "title": "Get Element Rect",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "dt"
     },
@@ -4160,7 +4516,7 @@
         "id": "get-element-rect",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-rect",
         "title": "Get Element Rect",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "dt"
     },
@@ -4180,7 +4536,7 @@
         "id": "get-element-rect",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-rect",
         "title": "Get Element Rect",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "dt"
     },
@@ -4200,7 +4556,7 @@
         "id": "get-element-rect",
         "href": "https://www.w3.org/TR/webdriver2/#get-element-rect",
         "title": "Get Element Rect",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "dt"
     },
@@ -4219,7 +4575,7 @@
         "id": "is-element-enabled",
         "href": "https://www.w3.org/TR/webdriver2/#is-element-enabled",
         "title": "Is Element Enabled",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "heading"
     },
@@ -4238,7 +4594,7 @@
         "id": "get-computed-role",
         "href": "https://www.w3.org/TR/webdriver2/#get-computed-role",
         "title": "Get Computed Role",
-        "number": "12.3.9"
+        "number": "12.4.9"
       },
       "definedIn": "heading"
     },
@@ -4257,7 +4613,7 @@
         "id": "get-computed-label",
         "href": "https://www.w3.org/TR/webdriver2/#get-computed-label",
         "title": "Get Computed Label",
-        "number": "12.3.10"
+        "number": "12.4.10"
       },
       "definedIn": "heading"
     },
@@ -4276,7 +4632,7 @@
         "id": "interaction",
         "href": "https://www.w3.org/TR/webdriver2/#interaction",
         "title": "Interaction",
-        "number": "12.4"
+        "number": "12.5"
       },
       "definedIn": "prose"
     },
@@ -4295,7 +4651,7 @@
         "id": "element-click",
         "href": "https://www.w3.org/TR/webdriver2/#element-click",
         "title": "Element Click",
-        "number": "12.4.1"
+        "number": "12.5.1"
       },
       "definedIn": "heading"
     },
@@ -4314,7 +4670,7 @@
         "id": "element-clear",
         "href": "https://www.w3.org/TR/webdriver2/#element-clear",
         "title": "Element Clear",
-        "number": "12.4.2"
+        "number": "12.5.2"
       },
       "definedIn": "heading"
     },
@@ -4333,7 +4689,7 @@
         "id": "element-clear",
         "href": "https://www.w3.org/TR/webdriver2/#element-clear",
         "title": "Element Clear",
-        "number": "12.4.2"
+        "number": "12.5.2"
       },
       "definedIn": "prose"
     },
@@ -4352,7 +4708,7 @@
         "id": "element-clear",
         "href": "https://www.w3.org/TR/webdriver2/#element-clear",
         "title": "Element Clear",
-        "number": "12.4.2"
+        "number": "12.5.2"
       },
       "definedIn": "prose"
     },
@@ -4371,7 +4727,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "heading"
     },
@@ -4390,7 +4746,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4409,7 +4765,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4428,7 +4784,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4447,7 +4803,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4466,7 +4822,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4485,7 +4841,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4504,7 +4860,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -4523,7 +4879,7 @@
         "id": "element-send-keys",
         "href": "https://www.w3.org/TR/webdriver2/#element-send-keys",
         "title": "Element Send Keys",
-        "number": "12.4.3"
+        "number": "12.5.3"
       },
       "definedIn": "prose"
     },
@@ -6817,7 +7173,8 @@
       "heading": {
         "id": "print-page",
         "href": "https://www.w3.org/TR/webdriver2/#print-page",
-        "title": "Print Page"
+        "title": "Print Page",
+        "number": "18.1"
       },
       "definedIn": "heading"
     },
@@ -7015,25 +7372,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-context-object",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-context-object",
-      "linkingText": [
-        "context object"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-descendant",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-descendant",
       "linkingText": [
@@ -7095,6 +7433,44 @@
       "href": "https://www.w3.org/TR/webdriver2/#dfn-document_position_disconnected",
       "linkingText": [
         "DOCUMENT_POSITION_DISCONNECTED"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index",
+        "href": "https://www.w3.org/TR/webdriver2/#index",
+        "title": "Index",
+        "number": "E"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-document-fragment-host",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-document-fragment-host",
+      "linkingText": [
+        "document fragment host"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "index",
+        "href": "https://www.w3.org/TR/webdriver2/#index",
+        "title": "Index",
+        "number": "E"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-document_fragment_node",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-document_fragment_node",
+      "linkingText": [
+        "DOCUMENT_FRAGMENT_NODE"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -7347,45 +7723,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-is-trusted",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-is-trusted",
-      "linkingText": [
-        "is trusted",
-        "isTrusted"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-node-document",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-node-document",
-      "linkingText": [
-        "Node document"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-node-length",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-node-length",
       "linkingText": [
@@ -7409,44 +7746,6 @@
       "href": "https://www.w3.org/TR/webdriver2/#dfn-node",
       "linkingText": [
         "Node"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-nodelist",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-nodelist",
-      "linkingText": [
-        "NodeList"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-queryselectorall",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-queryselectorall",
-      "linkingText": [
-        "querySelectorAll"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8291,11 +8590,13 @@
       "id": "dfn-call",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-call",
       "linkingText": [
-        "Call"
+        "[[Call]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Function"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8313,8 +8614,10 @@
         "[[Class]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Object"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8332,8 +8635,10 @@
         "[[GetOwnProperty]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Object"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8351,8 +8656,10 @@
         "[[GetProperty]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Object"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8389,8 +8696,10 @@
         "[[Put]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
+      "type": "attribute",
+      "for": [
+        "Object"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -8557,7 +8866,7 @@
       "id": "dfn-parse",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-parse",
       "linkingText": [
-        "[[Parse]]"
+        "parse"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -8595,7 +8904,7 @@
       "id": "dfn-stringify",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-stringify",
       "linkingText": [
-        "[[Stringify]]"
+        "stringify"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -10786,50 +11095,11 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-a-elements",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-a-elements",
-      "linkingText": [
-        "a elements",
-        "a element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-area",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-area",
       "linkingText": [
         "area",
         "area element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-canvas-element",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-canvas-element",
-      "linkingText": [
-        "canvas element"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -10963,26 +11233,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-optgroup",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-optgroup",
-      "linkingText": [
-        "optgroup",
-        "optgroup element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-option-elements",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-option-elements",
       "linkingText": [
@@ -11029,27 +11279,6 @@
       "linkingText": [
         "code elements",
         "select element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-textarea-elements",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-textarea-elements",
-      "linkingText": [
-        "textarea elements",
-        "textarea",
-        "textarea element"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -11832,83 +12061,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-lowercase",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-lowercase",
-      "linkingText": [
-        "lowercase",
-        "ASCII lowercase"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-string-length",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-string-length",
-      "linkingText": [
-        "string length"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-queue",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-queue",
-      "linkingText": [
-        "queue"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-set",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-set",
-      "linkingText": [
-        "Set"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-visibility-hidden",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-visibility-hidden",
       "linkingText": [
@@ -12083,25 +12235,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-domrect",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-domrect",
-      "linkingText": [
-        "DOMRect"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-bounding-rectangle",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-bounding-rectangle",
       "linkingText": [
@@ -12240,25 +12373,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-getboundingclientrect",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-getboundingclientrect",
-      "linkingText": [
-        "getBoundingClientRect"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-element-from-point",
       "href": "https://www.w3.org/TR/webdriver2/#dfn-element-from-point",
       "linkingText": [
@@ -12284,26 +12398,6 @@
         "paint order",
         "paint tree",
         "Elements from point"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-dom-client-rectangle",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-dom-client-rectangle",
-      "linkingText": [
-        "DOM client rectangle",
-        "getClientRects"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -13106,10 +13200,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-a-new-promise",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-a-new-promise",
+      "id": "dfn-this",
+      "href": "https://www.w3.org/TR/webdriver2/#dfn-this",
       "linkingText": [
-        "A new promise"
+        "this"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -13130,44 +13224,6 @@
       "linkingText": [
         "promise-call",
         "Promise-calling"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-reject",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-reject",
-      "linkingText": [
-        "reject"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "index",
-        "href": "https://www.w3.org/TR/webdriver2/#index",
-        "title": "Index",
-        "number": "E"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-resolve",
-      "href": "https://www.w3.org/TR/webdriver2/#dfn-resolve",
-      "linkingText": [
-        "resolve"
       ],
       "localLinkingText": [],
       "type": "dfn",

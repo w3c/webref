@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "CloseWatcher": {
-        "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler onclose;\n};",
+        "fragment": "[Exposed=Window]\ninterface CloseWatcher : EventTarget {\n  constructor();\n\n  undefined destroy();\n  undefined signalClose();\n\n  attribute EventHandler oncancel;\n  attribute EventHandler onclose;\n};",
         "type": "interface",
         "name": "CloseWatcher",
         "inheritance": "EventTarget",
@@ -53,6 +53,21 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "oncancel",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
           },
           {
             "type": "attribute",

@@ -68,20 +68,6 @@
     },
     {
       "spec": {
-        "title": "Badging API",
-        "url": "https://w3c.github.io/badging/"
-      },
-      "fragment": "// Methods only exposed on documents.\n[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};"
-    },
-    {
-      "spec": {
-        "title": "Badging API",
-        "url": "https://w3c.github.io/badging/"
-      },
-      "fragment": "Navigator includes NavigatorBadge;"
-    },
-    {
-      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
@@ -128,13 +114,6 @@
         "url": "https://wicg.github.io/local-font-access/"
       },
       "fragment": "Navigator includes NavigatorFonts;"
-    },
-    {
-      "spec": {
-        "title": "Network Information API",
-        "url": "https://wicg.github.io/netinfo/"
-      },
-      "fragment": "Navigator includes NavigatorNetworkInformation;"
     },
     {
       "spec": {
@@ -505,21 +484,6 @@
       "includes": []
     },
     {
-      "name": "NavigatorBadge",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Badging API",
-          "url": "https://w3c.github.io/badging/"
-        },
-        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
-        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
       "name": "NavigatorFonts",
       "type": "interface mixin",
       "defined": {
@@ -529,21 +493,6 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
         "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "NavigatorNetworkInformation",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Network Information API",
-          "url": "https://wicg.github.io/netinfo/"
-        },
-        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
-        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
       },
       "extended": [],
       "inheritance": null,

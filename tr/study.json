@@ -2,10 +2,10 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-09-20T01:34:27.933Z",
+  "date": "2021-09-27T01:40:49.908Z",
   "stats": {
     "crawled": 440,
-    "errors": 0,
+    "errors": 14,
     "studied": 440
   },
   "results": [
@@ -782,7 +782,7 @@
     {
       "title": "App History API",
       "shortname": "app-history",
-      "date": "16 September 2021",
+      "date": "23 September 2021",
       "url": "https://wicg.github.io/app-history/",
       "nightly": {
         "url": "https://wicg.github.io/app-history/",
@@ -823,16 +823,14 @@
           "brokenLinks": [
             "https://html.spec.whatwg.org/#window",
             "https://html.spec.whatwg.org/#eventhandler",
-            "https://html.spec.whatwg.org/#same-origin",
             "https://html.spec.whatwg.org/#concept-relevant-global",
-            "https://html.spec.whatwg.org/#concept-document-window",
-            "https://html.spec.whatwg.org/#fully-active",
             "https://html.spec.whatwg.org/#window-bc",
-            "https://html.spec.whatwg.org/#session-history",
             "https://html.spec.whatwg.org/#still-on-its-initial-about:blank-document",
-            "https://html.spec.whatwg.org/#url-and-history-update-steps",
-            "https://html.spec.whatwg.org/#dom-document-open",
+            "https://html.spec.whatwg.org/#concept-document-window",
+            "https://html.spec.whatwg.org/#concept-origin-opaque",
+            "https://html.spec.whatwg.org/#session-history",
             "https://html.spec.whatwg.org/#current-entry",
+            "https://html.spec.whatwg.org/#same-origin",
             "https://html.spec.whatwg.org/#concept-relevant-realm",
             "https://html.spec.whatwg.org/#session-history-entry",
             "https://html.spec.whatwg.org/#structuredserializeforstorage",
@@ -843,6 +841,7 @@
             "https://html.spec.whatwg.org/#parse-a-url",
             "https://html.spec.whatwg.org/#relevant-settings-object",
             "https://html.spec.whatwg.org/#resulting-url-record",
+            "https://html.spec.whatwg.org/#fully-active",
             "https://html.spec.whatwg.org/#unload-counter",
             "https://html.spec.whatwg.org/#hh-replace",
             "https://html.spec.whatwg.org/#hh-default",
@@ -878,6 +877,7 @@
             "https://html.spec.whatwg.org/#dom-errorevent-lineno",
             "https://html.spec.whatwg.org/#dom-errorevent-colno",
             "https://html.spec.whatwg.org/#report-the-exception",
+            "https://html.spec.whatwg.org/#url-and-history-update-steps",
             "https://html.spec.whatwg.org/#uhus-serializeddata",
             "https://html.spec.whatwg.org/#uhus-ispush",
             "https://html.spec.whatwg.org/#dom-window-stop",
@@ -899,12 +899,12 @@
             "https://html.spec.whatwg.org/#implicit-submission",
             "https://html.spec.whatwg.org/#shared-history-push/replace-state-steps",
             "https://html.spec.whatwg.org/#hh-entry-update",
-            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
             "https://html.spec.whatwg.org/#concept-origin",
             "https://html.spec.whatwg.org/#queue-a-global-task",
             "https://html.spec.whatwg.org/#history-traversal-task-source",
             "https://html.spec.whatwg.org/#update-the-session-history-with-the-new-page",
             "https://html.spec.whatwg.org/#traverse-the-history",
+            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
             "https://html.spec.whatwg.org/#stop-document-loading",
             "https://html.spec.whatwg.org/#a-browsing-context-is-discarded",
             "https://html.spec.whatwg.org/#concept-navigate-mature",
@@ -943,7 +943,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "05 September 2021",
+      "date": "24 September 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -1301,7 +1301,7 @@
     {
       "title": "Attribution Reporting",
       "shortname": "conversion-measurement-api",
-      "date": "15 September 2021",
+      "date": "24 September 2021",
       "url": "https://wicg.github.io/conversion-measurement-api/",
       "nightly": {
         "url": "https://wicg.github.io/conversion-measurement-api/",
@@ -1665,7 +1665,6 @@
     {
       "title": "Badging API",
       "shortname": "badging",
-      "date": "03 February 2021",
       "url": "https://w3c.github.io/badging/",
       "nightly": {
         "url": "https://w3c.github.io/badging/",
@@ -1673,7 +1672,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/badging/",
+      "crawled": {
+        "url": "https://w3c.github.io/badging/",
+        "repository": "https://github.com/w3c/badging",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -1682,10 +1686,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -1699,39 +1703,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/appmanifest/#dfn-installed-web-application",
-            "https://www.w3.org/TR/appmanifest/#dfn-navigation-scope",
-            "https://www.w3.org/TR/appmanifest/#dfn-within-scope-manifest",
-            "https://heycam.github.io/webidl/#idl-unsigned-long-long",
-            "https://heycam.github.io/webidl/#SecureContext",
-            "https://heycam.github.io/webidl/#idl-promise",
-            "https://heycam.github.io/webidl/#idl-undefined",
-            "https://heycam.github.io/webidl/#EnforceRange",
-            "https://heycam.github.io/webidl/#a-promise-resolved-with",
-            "https://heycam.github.io/webidl/#a-promise-rejected-with",
-            "https://heycam.github.io/webidl/#notsupportederror",
-            "https://heycam.github.io/webidl/#idl-DOMException",
-            "https://html.spec.whatwg.org/#browsing-context",
-            "https://html.spec.whatwg.org/#top-level-browsing-context",
-            "https://html.spec.whatwg.org/#navigator",
-            "https://html.spec.whatwg.org/#workernavigator",
-            "https://html.spec.whatwg.org/#the-title-element",
-            "https://html.spec.whatwg.org/#in-parallel",
-            "https://html.spec.whatwg.org/#relevant-settings-object",
-            "https://html.spec.whatwg.org/#responsible-document",
-            "https://html.spec.whatwg.org/#environment-settings-object",
-            "https://www.w3.org/TR/service-workers-1/#dfn-service-worker-client",
-            "https://www.w3.org/TR/service-workers-1/#dfn-containing-service-worker-registration",
-            "https://www.w3.org/TR/service-workers-1/#dfn-scope-url"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -3286,11 +3257,6 @@
               "crawled": "https://wicg.github.io/webpackage/loading.html"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/pointerevents3/",
               "title": "Pointer Events",
               "crawled": "https://www.w3.org/TR/pointerevents3/"
@@ -3314,6 +3280,11 @@
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/web-animations-1/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/webdriver2/"
             },
             {
               "url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
@@ -6874,11 +6845,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
-            },
-            {
               "url": "https://wicg.github.io/responsive-image-client-hints/",
               "title": "Responsive Image Client Hints",
               "crawled": "https://wicg.github.io/responsive-image-client-hints/"
@@ -6923,7 +6889,10 @@
             "https://html.spec.whatwg.org/#set-up-a-worker-environment-settings-object",
             "https://html.spec.whatwg.org/#standard-metadata-names",
             "https://www.w3.org/TR/permissions-policy/#algo-should-request-be-allowed-to-use-feature",
-            "https://w3c.github.io/device-memory/#sec-device-memory-client-hint-header"
+            "https://w3c.github.io/device-memory/#sec-device-memory-client-hint-header",
+            "https://wicg.github.io/netinfo/#rtt-request-header-field",
+            "https://wicg.github.io/netinfo/#downlink-request-header-field",
+            "https://wicg.github.io/netinfo/#ect-request-header-field"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -7062,7 +7031,7 @@
     {
       "title": "Close Watcher API",
       "shortname": "close-watcher",
-      "date": "10 September 2021",
+      "date": "20 September 2021",
       "url": "https://wicg.github.io/close-watcher/",
       "nightly": {
         "url": "https://wicg.github.io/close-watcher/",
@@ -7092,7 +7061,15 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [],
+        "inconsistentRef": [
+          {
+            "link": "https://www.w3.org/TR/hr-time-2/",
+            "ref": {
+              "name": "HR-TIME-2",
+              "url": "https://w3c.github.io/hr-time/"
+            }
+          }
+        ],
         "referencedBy": {
           "normative": [],
           "informative": []
@@ -7110,23 +7087,27 @@
             "https://html.spec.whatwg.org/#fully-active",
             "https://html.spec.whatwg.org/#queue-a-task",
             "https://html.spec.whatwg.org/#traverse-the-history-by-a-delta",
+            "https://html.spec.whatwg.org/#window",
+            "https://html.spec.whatwg.org/#last-activation-timestamp",
+            "https://html.spec.whatwg.org/#the-dialog-element",
+            "https://html.spec.whatwg.org/#event-cancel",
             "https://html.spec.whatwg.org/#transient-activation",
             "https://html.spec.whatwg.org/#eventhandler",
             "https://html.spec.whatwg.org/#concept-document-window",
             "https://html.spec.whatwg.org/#event-handler-idl-attributes",
             "https://html.spec.whatwg.org/#event-handler-event-type",
-            "https://html.spec.whatwg.org/#the-dialog-element",
             "https://html.spec.whatwg.org/#dom-dialog-showmodal",
             "https://html.spec.whatwg.org/#blocked-by-a-modal-dialog",
-            "https://html.spec.whatwg.org/#event-cancel",
             "https://html.spec.whatwg.org/#attr-dialog-open",
             "https://html.spec.whatwg.org/#close-the-dialog",
             "https://w3c.github.io/uievents/#event-type-keydown",
+            "https://www.w3.org/TR/hr-time-2/#dom-domhighrestimestamp",
             "https://heycam.github.io/webidl/#Exposed",
             "https://heycam.github.io/webidl/#idl-undefined",
             "https://heycam.github.io/webidl/#notallowederror",
             "https://heycam.github.io/webidl/#idl-DOMException",
-            "https://heycam.github.io/webidl/#this"
+            "https://heycam.github.io/webidl/#this",
+            "https://heycam.github.io/webidl/#invalidstateerror"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -7685,7 +7666,13 @@
               "crawled": "https://w3c.github.io/webdriver-bidi/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://wicg.github.io/close-watcher/",
+              "title": "Close Watcher API",
+              "crawled": "https://wicg.github.io/close-watcher/"
+            }
+          ]
         },
         "xrefs": {
           "notExported": [],
@@ -8285,7 +8272,6 @@
     {
       "title": "ContentEditable",
       "shortname": "contentEditable",
-      "date": "30 January 2020",
       "url": "https://w3c.github.io/contentEditable/",
       "nightly": {
         "url": "https://w3c.github.io/contentEditable/",
@@ -8293,7 +8279,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/contentEditable/",
+      "crawled": {
+        "url": "https://w3c.github.io/contentEditable/",
+        "repository": "https://github.com/w3c/contentEditable",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -8302,6 +8293,7 @@
         }
       ],
       "report": {
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
         "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
@@ -8318,16 +8310,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#dom-contenteditable"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -10059,11 +10041,6 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/motion-1/"
@@ -10604,11 +10581,6 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/webvtt1/",
               "title": "WebVTT: The Web Video Text Tracks Format",
               "crawled": "https://www.w3.org/TR/webvtt1/"
@@ -10883,11 +10855,6 @@
               "crawled": "https://html.spec.whatwg.org/multipage/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/resize-observer-1/",
               "title": "Resize Observer",
               "crawled": "https://www.w3.org/TR/resize-observer-1/"
@@ -11099,11 +11066,6 @@
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/intersection-observer/"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             },
             {
               "url": "https://quirks.spec.whatwg.org/",
@@ -11406,11 +11368,6 @@
               "url": "https://www.w3.org/TR/css-writing-modes-4/",
               "title": "CSS Writing Modes Level 4",
               "crawled": "https://www.w3.org/TR/css-writing-modes-4/"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             },
             {
               "url": "https://quirks.spec.whatwg.org/",
@@ -12624,7 +12581,7 @@
     {
       "title": "CSS Cascading and Inheritance Level 6",
       "shortname": "css-cascade-6",
-      "date": "9 September 2021",
+      "date": "23 September 2021",
       "url": "https://drafts.csswg.org/css-cascade-6/",
       "nightly": {
         "url": "https://drafts.csswg.org/css-cascade-6/",
@@ -12656,8 +12613,7 @@
           "https://www.w3.org/TR/css-style-attr/",
           "https://www.w3.org/TR/selectors/",
           "https://www.w3.org/TR/css-cascade-4/",
-          "https://www.w3.org/TR/css-cascade-3/",
-          "https://html.spec.whatwg.org/"
+          "https://www.w3.org/TR/css-cascade-3/"
         ],
         "inconsistentRef": [],
         "referencedBy": {
@@ -12668,67 +12624,50 @@
           "notExported": [],
           "notDfn": [],
           "brokenLinks": [
-            "https://www.w3.org/TR/css-cascade-5/#placement",
-            "https://www.w3.org/TR/css-cascade-5/#at-import",
-            "https://www.w3.org/TR/css-cascade-5/#conditional-import",
-            "https://www.w3.org/TR/css-cascade-5/#import-processing",
-            "https://www.w3.org/TR/css-cascade-5/#content-type",
-            "https://www.w3.org/TR/css-cascade-5/#shorthand",
-            "https://www.w3.org/TR/css-cascade-5/#aliasing",
-            "https://www.w3.org/TR/css-cascade-5/#all-shorthand",
-            "https://www.w3.org/TR/css-cascade-5/#value-stages",
-            "https://www.w3.org/TR/css-cascade-5/#declared",
-            "https://www.w3.org/TR/css-cascade-5/#cascaded",
-            "https://www.w3.org/TR/css-cascade-5/#specified",
-            "https://www.w3.org/TR/css-cascade-5/#computed",
-            "https://www.w3.org/TR/css-cascade-5/#used",
-            "https://www.w3.org/TR/css-cascade-5/#actual",
-            "https://www.w3.org/TR/css-cascade-5/#stages-examples",
-            "https://www.w3.org/TR/css-cascade-5/#fragments",
-            "https://www.w3.org/TR/css-cascade-5/#filtering",
             "https://www.w3.org/TR/css-cascade-5/#cascading-origins",
             "https://www.w3.org/TR/css-cascade-5/#importance",
             "https://www.w3.org/TR/css-cascade-5/#layering",
-            "https://www.w3.org/TR/css-cascade-5/#defaulting",
-            "https://www.w3.org/TR/css-cascade-5/#initial-values",
-            "https://www.w3.org/TR/css-cascade-5/#inheriting",
-            "https://www.w3.org/TR/css-cascade-5/#defaulting-keywords",
-            "https://www.w3.org/TR/css-cascade-5/#initial",
-            "https://www.w3.org/TR/css-cascade-5/#inherit",
-            "https://www.w3.org/TR/css-cascade-5/#inherit-initial",
-            "https://www.w3.org/TR/css-cascade-5/#default",
-            "https://drafts.csswg.org/css-cascade-5/#at-ruledef-import",
-            "https://drafts.csswg.org/css-cascade-5/#propdef-all",
             "https://drafts.csswg.org/css-cascade-5/#declared-value",
             "https://drafts.csswg.org/css-cascade-5/#cascaded-value",
             "https://drafts.csswg.org/css-cascade-5/#cascade-origin-ua",
             "https://drafts.csswg.org/css-cascade-5/#cascade-origin-user",
             "https://drafts.csswg.org/css-cascade-5/#cascade-origin-author",
             "https://drafts.csswg.org/css-cascade-5/#cascade-layers",
-            "https://drafts.csswg.org/css-cascade-5/#valdef-all-initial",
-            "https://drafts.csswg.org/css-cascade-5/#valdef-all-inherit",
-            "https://drafts.csswg.org/css-cascade-5/#valdef-all-unset",
-            "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert",
+            "https://drafts.csswg.org/css-cascade-5/#at-ruledef-import",
             "https://drafts.csswg.org/css-cascade-5/#at-ruledef-layer",
             "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert-layer",
+            "https://drafts.csswg.org/css-cascade-5/#valdef-all-revert",
+            "https://drafts.csswg.org/css-cascade-5/#propdef-all",
+            "https://drafts.csswg.org/css-cascade-5/#valdef-all-initial",
+            "https://drafts.csswg.org/css-cascade-5/#valdef-all-unset",
             "https://drafts.csswg.org/css-scoping-1/#tree-context",
             "https://www.w3.org/TR/css-style-attr/#interpret",
             "https://www.w3.org/TR/selectors/#specificity",
-            "https://drafts.csswg.org/selectors-4/#scope-element",
+            "https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets",
             "https://drafts.csswg.org/selectors-4/#typedef-forgiving-selector-list",
             "https://drafts.csswg.org/selectors-4/#scoping-element",
             "https://drafts.csswg.org/selectors-4/#scoping-root",
             "https://drafts.csswg.org/selectors-4/#scoped-selector",
+            "https://drafts.csswg.org/selectors-4/#scope-element",
             "https://drafts.csswg.org/selectors-4/#scope-pseudo",
+            "https://drafts.csswg.org/selectors-4/#selector-subject",
             "https://drafts.csswg.org/selectors-4/#complex",
             "https://drafts.csswg.org/selectors-4/#matches-pseudo",
-            "https://drafts.csswg.org/cssom/#documentorshadowroot-final-css-style-sheets",
+            "https://drafts.csswg.org/selectors-4/#descendant-combinator",
+            "https://drafts.csswg.org/selectors-4/#selector",
             "https://www.w3.org/TR/css-scoping-1/#shadow-dom",
-            "https://drafts.csswg.org/css-values-3/#mult-opt",
             "https://drafts.csswg.org/css-syntax-3/#block-at-rule",
             "https://drafts.csswg.org/css-syntax-3/#typedef-stylesheet",
-            "https://drafts.csswg.org/css-conditional-4/#funcdef-supports",
-            "https://html.spec.whatwg.org/#content-type"
+            "https://drafts.csswg.org/css-syntax-3/#at-rule",
+            "https://drafts.csswg.org/css-syntax-3/#style-rule",
+            "https://drafts.csswg.org/css-values-3/#mult-opt",
+            "https://html.spec.whatwg.org/#the-img-element",
+            "https://html.spec.whatwg.org/#content-type",
+            "https://drafts.csswg.org/css-color-5/#valdef-lab-a",
+            "https://drafts.csswg.org/css-color-4/#valdef-color-plum",
+            "https://drafts.csswg.org/css-color-4/#valdef-color-teal",
+            "https://www.w3.org/TR/css-cascade-4/#aliasing",
+            "https://drafts.csswg.org/css-conditional-4/#funcdef-supports"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -13105,6 +13044,11 @@
               "crawled": "https://drafts.fxtf.org/compositing-2/"
             },
             {
+              "url": "https://drafts.csswg.org/css-cascade-6/",
+              "title": "CSS Cascading and Inheritance Level 6",
+              "crawled": "https://drafts.csswg.org/css-cascade-6/"
+            },
+            {
               "url": "https://www.w3.org/TR/css-conditional-3/",
               "title": "CSS Conditional Rules Module Level 3",
               "crawled": "https://www.w3.org/TR/css-conditional-3/"
@@ -13229,6 +13173,11 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
+            {
+              "url": "https://drafts.csswg.org/css-cascade-6/",
+              "title": "CSS Cascading and Inheritance Level 6",
+              "crawled": "https://drafts.csswg.org/css-cascade-6/"
+            },
             {
               "url": "https://www.w3.org/TR/css-color-adjust-1/",
               "title": "CSS Color Adjustment Module Level 1",
@@ -14660,11 +14609,6 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://quirks.spec.whatwg.org/",
               "title": "Quirks Mode Standard",
               "crawled": "https://quirks.spec.whatwg.org/"
@@ -14678,11 +14622,6 @@
               "url": "https://wicg.github.io/scroll-to-text-fragment/",
               "title": "Text Fragments",
               "crawled": "https://wicg.github.io/scroll-to-text-fragment/"
-            },
-            {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -15872,11 +15811,6 @@
               "url": "https://www.w3.org/TR/filter-effects-1/",
               "title": "Filter Effects Module Level 1",
               "crawled": "https://www.w3.org/TR/filter-effects-1/"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -18199,11 +18133,6 @@
               "url": "https://www.w3.org/TR/css-properties-values-api-1/",
               "title": "CSS Properties and Values API Level 1",
               "crawled": "https://www.w3.org/TR/css-properties-values-api-1/"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             }
           ]
         },
@@ -19537,7 +19466,13 @@
               "crawled": "https://www.w3.org/TR/cssom-1/"
             }
           ],
-          "informative": []
+          "informative": [
+            {
+              "url": "https://drafts.csswg.org/css-cascade-6/",
+              "title": "CSS Cascading and Inheritance Level 6",
+              "crawled": "https://drafts.csswg.org/css-cascade-6/"
+            }
+          ]
         },
         "xrefs": {
           "notExported": [],
@@ -20463,11 +20398,6 @@
               "url": "https://www.w3.org/TR/cssom-view-1/",
               "title": "CSSOM View Module",
               "crawled": "https://www.w3.org/TR/cssom-view-1/"
-            },
-            {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
             }
           ],
           "informative": [
@@ -25167,11 +25097,6 @@
               "crawled": "https://wicg.github.io/layout-instability/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://quirks.spec.whatwg.org/",
               "title": "Quirks Mode Standard",
               "crawled": "https://quirks.spec.whatwg.org/"
@@ -27566,11 +27491,6 @@
               "crawled": "https://www.w3.org/TR/intersection-observer/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediaqueries-4/",
               "title": "Media Queries Level 4",
               "crawled": "https://www.w3.org/TR/mediaqueries-4/"
@@ -27599,11 +27519,6 @@
               "url": "https://www.w3.org/TR/selectors-4/",
               "title": "Selectors Level 4",
               "crawled": "https://www.w3.org/TR/selectors-4/"
-            },
-            {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
             },
             {
               "url": "https://www.w3.org/TR/web-animations-1/",
@@ -28978,11 +28893,6 @@
               "crawled": "https://www.w3.org/TR/screen-orientation/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/appmanifest/",
               "title": "Web Application Manifest",
               "crawled": "https://www.w3.org/TR/appmanifest/"
@@ -29941,11 +29851,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://www.w3.org/TR/battery-status/"
@@ -30161,11 +30066,6 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
-              "url": "https://wicg.github.io/eyedropper-api/",
-              "title": "EyeDropper API",
-              "crawled": "https://wicg.github.io/eyedropper-api/"
-            },
-            {
               "url": "https://wicg.github.io/floc/",
               "title": "Federated Learning of Cohorts",
               "crawled": "https://wicg.github.io/floc/"
@@ -30256,11 +30156,6 @@
               "crawled": "https://www.w3.org/TR/intersection-observer/"
             },
             {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
               "url": "https://wicg.github.io/keyboard-map/",
               "title": "Keyboard Map",
               "crawled": "https://wicg.github.io/keyboard-map/"
@@ -30279,11 +30174,6 @@
               "url": "https://wicg.github.io/webpackage/loading.html",
               "title": "Loading Signed Exchanges",
               "crawled": "https://wicg.github.io/webpackage/loading.html"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             },
             {
               "url": "https://wicg.github.io/performance-measure-memory/",
@@ -30314,11 +30204,6 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/navigation-timing-2/"
-            },
-            {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -30536,11 +30421,6 @@
               "crawled": "https://www.w3.org/TR/virtual-keyboard/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/web-animations-1/"
@@ -30584,11 +30464,6 @@
               "url": "https://www.w3.org/TR/webmidi/",
               "title": "Web MIDI API",
               "crawled": "https://www.w3.org/TR/webmidi/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -30964,14 +30839,11 @@
           "brokenLinks": [
             "https://heycam.github.io/webidl/#idl-boolean",
             "https://heycam.github.io/webidl/#idl-Exposed",
-            "https://html.spec.whatwg.org/#window",
             "https://html.spec.whatwg.org/#task-queue",
-            "https://html.spec.whatwg.org/#user-interaction-task-source",
             "https://html.spec.whatwg.org/#event-loop",
             "https://html.spec.whatwg.org/#eventtarget",
             "https://html.spec.whatwg.org/#browsing-context",
             "https://html.spec.whatwg.org/#dragevent",
-            "https://html.spec.whatwg.org/#concept-task",
             "https://www.w3.org/TR/uievents/#event-type-mousemove",
             "https://www.w3.org/TR/uievents/#event-type-wheel",
             "https://www.w3.org/TR/uievents/#idl-uievent",
@@ -31040,7 +30912,7 @@
     {
       "title": "ECMAScript® 2022 Internationalization API Specification",
       "shortname": "ecma-402",
-      "date": "9 September 2021",
+      "date": "25 September 2021",
       "url": "https://tc39.es/ecma402/",
       "nightly": {
         "url": "https://tc39.es/ecma402/",
@@ -31096,7 +30968,7 @@
     {
       "title": "ECMAScript® 2022 Language Specification",
       "shortname": "ecmascript",
-      "date": "16 September 2021",
+      "date": "24 September 2021",
       "url": "https://tc39.es/ecma262/multipage/",
       "nightly": {
         "url": "https://tc39.es/ecma262/multipage/",
@@ -31221,11 +31093,6 @@
               "crawled": "https://infra.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
               "url": "https://www.w3.org/TR/media-capabilities/",
               "title": "Media Capabilities",
               "crawled": "https://www.w3.org/TR/media-capabilities/"
@@ -31234,11 +31101,6 @@
               "url": "https://www.w3.org/TR/mediacapture-streams/",
               "title": "Media Capture and Streams",
               "crawled": "https://www.w3.org/TR/mediacapture-streams/"
-            },
-            {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
             },
             {
               "url": "https://www.w3.org/TR/navigation-timing-2/",
@@ -31311,14 +31173,14 @@
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
               "crawled": "https://www.w3.org/TR/webcodecs/"
+            },
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/webdriver2/"
             },
             {
               "url": "https://w3c.github.io/webdriver-bidi/",
@@ -31376,11 +31238,6 @@
               "url": "https://www.w3.org/TR/user-timing-3/",
               "title": "User Timing Level 3",
               "crawled": "https://www.w3.org/TR/user-timing-3/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ]
         },
@@ -31691,16 +31548,6 @@
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -34223,7 +34070,7 @@
     {
       "title": "Error Cause",
       "shortname": "tc39-error-cause",
-      "date": "7 July 2021",
+      "date": "23 September 2021",
       "url": "https://tc39.es/proposal-error-cause/",
       "nightly": {
         "url": "https://tc39.es/proposal-error-cause/",
@@ -34450,7 +34297,6 @@
     {
       "title": "EyeDropper API",
       "shortname": "eyedropper-api",
-      "date": "03 September 2021",
       "url": "https://wicg.github.io/eyedropper-api/",
       "nightly": {
         "url": "https://wicg.github.io/eyedropper-api/",
@@ -34458,7 +34304,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/eyedropper-api/",
+      "crawled": {
+        "url": "https://wicg.github.io/eyedropper-api/",
+        "repository": "https://github.com/WICG/eyedropper-api",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -34467,10 +34318,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -34484,32 +34335,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-promise",
-            "https://heycam.github.io/webidl/#this",
-            "https://heycam.github.io/webidl/#a-new-promise",
-            "https://heycam.github.io/webidl/#reject",
-            "https://heycam.github.io/webidl/#notallowederror",
-            "https://heycam.github.io/webidl/#idl-DOMException",
-            "https://heycam.github.io/webidl/#invalidstateerror",
-            "https://heycam.github.io/webidl/#aborterror",
-            "https://heycam.github.io/webidl/#operationerror",
-            "https://heycam.github.io/webidl/#resolve",
-            "https://html.spec.whatwg.org/#valid-simple-colour",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#concept-relevant-global",
-            "https://html.spec.whatwg.org/#transient-activation",
-            "https://html.spec.whatwg.org/#in-parallel"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -34717,6 +34542,11 @@
               "url": "https://w3c.github.io/webappsec-change-password-url/",
               "title": "A Well-Known URL for Changing Passwords",
               "crawled": "https://w3c.github.io/webappsec-change-password-url/"
+            },
+            {
+              "url": "https://wicg.github.io/app-history/",
+              "title": "App History API",
+              "crawled": "https://wicg.github.io/app-history/"
             },
             {
               "url": "https://wicg.github.io/conversion-measurement-api/",
@@ -35014,11 +34844,6 @@
               "crawled": "https://www.w3.org/TR/webauthn-3/"
             },
             {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
-            },
-            {
               "url": "https://www.w3.org/TR/wasm-web-api-1/",
               "title": "WebAssembly Web API",
               "crawled": "https://www.w3.org/TR/wasm-web-api-1/"
@@ -35055,11 +34880,6 @@
             }
           ],
           "informative": [
-            {
-              "url": "https://wicg.github.io/app-history/",
-              "title": "App History API",
-              "crawled": "https://wicg.github.io/app-history/"
-            },
             {
               "url": "https://wicg.github.io/idle-detection/",
               "title": "Idle Detection API",
@@ -35568,7 +35388,7 @@
     {
       "title": "File System Access",
       "shortname": "file-system-access",
-      "date": "9 August 2021",
+      "date": "24 September 2021",
       "url": "https://wicg.github.io/file-system-access/",
       "nightly": {
         "url": "https://wicg.github.io/file-system-access/",
@@ -35694,20 +35514,19 @@
             "https://heycam.github.io/webidl/#idl-record",
             "https://heycam.github.io/webidl/#idl-DOMString",
             "https://heycam.github.io/webidl/#a-promise-resolved-with",
-            "https://w3c.github.io/permissions/#powerful-feature",
-            "https://w3c.github.io/permissions/#permission-descriptor-type",
-            "https://w3c.github.io/permissions/#dictdef-permissiondescriptor",
-            "https://w3c.github.io/permissions/#permission-state-constraints",
-            "https://w3c.github.io/permissions/#permission-state",
+            "https://w3c.github.io/permissions/#dfn-powerful-feature",
+            "https://w3c.github.io/permissions/#dfn-permission-descriptor-type",
+            "https://w3c.github.io/permissions/#dom-permissiondescriptor",
+            "https://w3c.github.io/permissions/#dfn-permission-state-constraints",
+            "https://w3c.github.io/permissions/#dfn-permission-state",
             "https://w3c.github.io/permissions/#dom-permissionstate-granted",
-            "https://w3c.github.io/permissions/#permissionstatus",
-            "https://w3c.github.io/permissions/#boolean-permission-query-algorithm",
+            "https://w3c.github.io/permissions/#dom-permissionstatus",
             "https://w3c.github.io/permissions/#dom-permissionstatus-state",
             "https://w3c.github.io/permissions/#dom-permissionstate-prompt",
-            "https://w3c.github.io/permissions/#request-permission-to-use",
+            "https://w3c.github.io/permissions/#dfn-request-permission-to-use",
             "https://w3c.github.io/permissions/#dom-permissiondescriptor-name",
-            "https://w3c.github.io/permissions/#create-a-permissionstatus",
-            "https://w3c.github.io/permissions/#enumdef-permissionstate",
+            "https://w3c.github.io/permissions/#dfn-create-a-permissionstatus",
+            "https://w3c.github.io/permissions/#dom-permissionstate",
             "https://w3c.github.io/permissions/#dom-navigator-permissions",
             "https://w3c.github.io/permissions/#dom-permissions-query",
             "https://encoding.spec.whatwg.org/#utf-8-encode"
@@ -36093,7 +35912,7 @@
       ],
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -36113,10 +35932,7 @@
         "xrefs": {
           "notExported": [],
           "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://html.spec.whatwg.org/#window"
-          ],
+          "brokenLinks": [],
           "evolvingLinks": [],
           "outdatedSpecs": [
             "https://www.w3.org/TR/html5/"
@@ -36437,26 +36253,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-promise",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://heycam.github.io/webidl/#idl-double",
-            "https://heycam.github.io/webidl/#idl-Float32Array",
-            "https://heycam.github.io/webidl/#SecureContext",
-            "https://heycam.github.io/webidl/#idl-unsigned-long",
-            "https://heycam.github.io/webidl/#idl-octet",
-            "https://heycam.github.io/webidl/#idl-Uint32Array",
-            "https://heycam.github.io/webidl/#idl-frozen-array",
-            "https://html.spec.whatwg.org/#window"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -37326,11 +37122,6 @@
               "crawled": "https://www.w3.org/TR/virtual-keyboard/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
               "crawled": "https://www.w3.org/TR/webcodecs/"
@@ -37715,6 +37506,11 @@
         "referencedBy": {
           "normative": [
             {
+              "url": "https://wicg.github.io/close-watcher/",
+              "title": "Close Watcher API",
+              "crawled": "https://wicg.github.io/close-watcher/"
+            },
+            {
               "url": "https://www.w3.org/TR/requestidlecallback/",
               "title": "Cooperative Scheduling of Background Tasks",
               "crawled": "https://www.w3.org/TR/requestidlecallback/"
@@ -37780,11 +37576,6 @@
               "crawled": "https://www.w3.org/TR/webrtc-identity/"
             },
             {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
               "url": "https://wicg.github.io/largest-contentful-paint/",
               "title": "Largest Contentful Paint",
               "crawled": "https://wicg.github.io/largest-contentful-paint/"
@@ -37803,11 +37594,6 @@
               "url": "https://wicg.github.io/performance-measure-memory/",
               "title": "Measure Memory API",
               "crawled": "https://wicg.github.io/performance-measure-memory/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
               "url": "https://www.w3.org/TR/mediastream-recording/",
@@ -37880,13 +37666,7 @@
               "crawled": "https://www.w3.org/TR/webxr/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [],
@@ -38642,7 +38422,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "17 September 2021",
+      "date": "20 September 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -45399,11 +45179,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://www.w3.org/TR/battery-status/"
@@ -45714,11 +45489,6 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
-              "url": "https://wicg.github.io/eyedropper-api/",
-              "title": "EyeDropper API",
-              "crawled": "https://wicg.github.io/eyedropper-api/"
-            },
-            {
               "url": "https://wicg.github.io/floc/",
               "title": "Federated Learning of Cohorts",
               "crawled": "https://wicg.github.io/floc/"
@@ -45829,11 +45599,6 @@
               "crawled": "https://wicg.github.io/video-rvfc/"
             },
             {
-              "url": "https://w3c.github.io/webrtc-ice/",
-              "title": "IceTransport Extensions for WebRTC",
-              "crawled": "https://w3c.github.io/webrtc-ice/"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc-identity/",
               "title": "Identity for WebRTC 1.0",
               "crawled": "https://www.w3.org/TR/webrtc-identity/"
@@ -45874,11 +45639,6 @@
               "crawled": "https://www.w3.org/TR/intersection-observer/"
             },
             {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
               "url": "https://wicg.github.io/keyboard-lock/",
               "title": "Keyboard Lock",
               "crawled": "https://wicg.github.io/keyboard-lock/"
@@ -45909,11 +45669,6 @@
               "crawled": "https://wicg.github.io/local-font-access/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://wicg.github.io/performance-measure-memory/",
               "title": "Measure Memory API",
               "crawled": "https://wicg.github.io/performance-measure-memory/"
@@ -45929,11 +45684,6 @@
               "crawled": "https://www.w3.org/TR/mediacapture-streams/"
             },
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/mediacapture-depth/"
@@ -45947,11 +45697,6 @@
               "url": "https://wicg.github.io/media-feeds/",
               "title": "Media Feeds",
               "crawled": "https://wicg.github.io/media-feeds/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -45989,11 +45734,6 @@
               "crawled": "https://www.w3.org/TR/network-error-logging-1/"
             },
             {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
-            },
-            {
               "url": "https://notifications.spec.whatwg.org/",
               "title": "Notifications API Standard",
               "crawled": "https://notifications.spec.whatwg.org/"
@@ -46012,11 +45752,6 @@
               "url": "https://wicg.github.io/sms-one-time-codes/",
               "title": "Origin-bound one-time codes delivered via SMS",
               "crawled": "https://wicg.github.io/sms-one-time-codes/"
-            },
-            {
-              "url": "https://wicg.github.io/overscroll-scrollend-events/",
-              "title": "overscroll and scrollend events",
-              "crawled": "https://wicg.github.io/overscroll-scrollend-events/"
             },
             {
               "url": "https://wicg.github.io/page-lifecycle/",
@@ -46319,11 +46054,6 @@
               "crawled": "https://www.w3.org/TR/virtual-keyboard/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/web-animations-1/"
@@ -46379,11 +46109,6 @@
               "crawled": "https://www.w3.org/TR/webnn/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -46397,11 +46122,6 @@
               "url": "https://www.w3.org/TR/web-share/",
               "title": "Web Share API",
               "crawled": "https://www.w3.org/TR/web-share/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/speech-api/",
@@ -46531,11 +46251,6 @@
               "crawled": "https://www.w3.org/TR/CSP3/"
             },
             {
-              "url": "https://w3c.github.io/contentEditable/",
-              "title": "ContentEditable",
-              "crawled": "https://w3c.github.io/contentEditable/"
-            },
-            {
               "url": "https://www.w3.org/TR/core-aam-1.2/",
               "title": "Core Accessibility API Mappings 1.2",
               "crawled": "https://www.w3.org/TR/core-aam-1.2/"
@@ -46554,6 +46269,11 @@
               "url": "https://www.w3.org/TR/css-sizing-4/",
               "title": "CSS Box Sizing Module Level 4",
               "crawled": "https://www.w3.org/TR/css-sizing-4/"
+            },
+            {
+              "url": "https://drafts.csswg.org/css-cascade-6/",
+              "title": "CSS Cascading and Inheritance Level 6",
+              "crawled": "https://drafts.csswg.org/css-cascade-6/"
             },
             {
               "url": "https://www.w3.org/TR/css-flexbox-1/",
@@ -48232,11 +47952,6 @@
               "crawled": "https://mimesniff.spec.whatwg.org/"
             },
             {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/presentation-api/"
@@ -48361,7 +48076,6 @@
     {
       "title": "IceTransport Extensions for WebRTC",
       "shortname": "webrtc-ice",
-      "date": "18 March 2021",
       "url": "https://w3c.github.io/webrtc-ice/",
       "nightly": {
         "url": "https://w3c.github.io/webrtc-ice/",
@@ -48369,7 +48083,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/webrtc-ice/",
+      "crawled": {
+        "url": "https://w3c.github.io/webrtc-ice/",
+        "repository": "https://github.com/w3c/webrtc-ice",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -48378,10 +48097,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -48395,54 +48114,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransport",
-            "https://www.w3.org/TR/webrtc/#dom-rtcdatachannel",
-            "https://www.w3.org/TR/webrtc/#dom-rtcdtlstransport",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransport-getlocalparameters",
-            "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceevent",
-            "https://www.w3.org/TR/webrtc/#dom-rtcpeerconnectioniceerrorevent",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicecandidate",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicecandidateinit",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceserver",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportpolicy",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicerole",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceparameters",
-            "https://www.w3.org/TR/webrtc/#dom-icetransport-state",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-closed",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceserver-urls",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceserver-username",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceserver-credentialtype",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicecredentialtype-password",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceparameters-usernamefragment",
-            "https://www.w3.org/TR/webrtc/#dom-rtciceparameters-password",
-            "https://www.w3.org/TR/webrtc/#dom-icetransport-role",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-checking",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-new",
-            "https://www.w3.org/TR/webrtc/#dom-rtcicetransportstate-completed",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://heycam.github.io/webidl/#idl-sequence",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-undefined",
-            "https://heycam.github.io/webidl/#dfn-throw",
-            "https://heycam.github.io/webidl/#invalidstateerror",
-            "https://heycam.github.io/webidl/#syntaxerror",
-            "https://heycam.github.io/webidl/#notsupportederror",
-            "https://heycam.github.io/webidl/#invalidaccesserror",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#exceptiondef-typeerror",
-            "https://heycam.github.io/webidl/#operationerror",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#eventhandler"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -49226,7 +48897,7 @@
     {
       "title": "Infra Standard",
       "shortname": "infra",
-      "date": "10 September 2021",
+      "date": "22 September 2021",
       "url": "https://infra.spec.whatwg.org/",
       "nightly": {
         "url": "https://infra.spec.whatwg.org/",
@@ -49287,11 +48958,6 @@
               "url": "https://wicg.github.io/background-fetch/",
               "title": "Background Fetch",
               "crawled": "https://wicg.github.io/background-fetch/"
-            },
-            {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
             },
             {
               "url": "https://www.w3.org/TR/clear-site-data/",
@@ -49569,11 +49235,6 @@
               "crawled": "https://www.w3.org/TR/IndexedDB-3/"
             },
             {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
-            },
-            {
               "url": "https://wicg.github.io/keyboard-lock/",
               "title": "Keyboard Lock",
               "crawled": "https://wicg.github.io/keyboard-lock/"
@@ -49597,11 +49258,6 @@
               "url": "https://www.w3.org/TR/magnetometer/",
               "title": "Magnetometer",
               "crawled": "https://www.w3.org/TR/magnetometer/"
-            },
-            {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
             },
             {
               "url": "https://wicg.github.io/performance-measure-memory/",
@@ -49839,11 +49495,6 @@
               "crawled": "https://wicg.github.io/web-locks/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -49852,11 +49503,6 @@
               "url": "https://wicg.github.io/serial/",
               "title": "Web Serial API",
               "crawled": "https://wicg.github.io/serial/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -50049,7 +49695,7 @@
       ],
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -50065,20 +49711,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://html.spec.whatwg.org/#window",
-            "https://www.w3.org/TR/uievents/#uievent",
-            "https://www.w3.org/TR/uievents/#dictdef-uieventinit"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -50442,7 +50074,6 @@
     {
       "title": "JS Self-Profiling API",
       "shortname": "js-self-profiling",
-      "date": "04 August 2021",
       "url": "https://wicg.github.io/js-self-profiling/",
       "nightly": {
         "url": "https://wicg.github.io/js-self-profiling/",
@@ -50450,7 +50081,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/js-self-profiling/",
+      "crawled": {
+        "url": "https://wicg.github.io/js-self-profiling/",
+        "repository": "https://github.com/WICG/js-self-profiling",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -50459,10 +50095,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -50471,49 +50107,11 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [
-          "https://w3c.github.io/webappsec-permissions-policy/document-policy.html"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/hr-time-2/#dfn-time-origin",
-            "https://www.w3.org/TR/hr-time-2/#dfn-current-high-resolution-time",
-            "https://www.w3.org/TR/hr-time-2/#sec-domhighrestimestamp",
-            "https://www.w3.org/TR/hr-time-2/#clock-resolution",
-            "https://html.spec.whatwg.org/#in-parallel",
-            "https://html.spec.whatwg.org/#classic-script",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#worker",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://heycam.github.io/webidl/#idl-promise",
-            "https://heycam.github.io/webidl/#a-promise-rejected-with",
-            "https://heycam.github.io/webidl/#a-new-promise",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#idl-sequence",
-            "https://heycam.github.io/webidl/#idl-unsigned-long-long",
-            "https://heycam.github.io/webidl/#idl-unsigned-long",
-            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#algo-get-policy-value",
-            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point",
-            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-type",
-            "https://w3c.github.io/webappsec-permissions-policy/document-policy.html#configuration-point-default-value",
-            "https://www.w3.org/TR/webdriver1/#dfn-extension-command",
-            "https://www.w3.org/TR/webdriver1/#dfn-remote-end-steps",
-            "https://www.w3.org/TR/webdriver1/#dfn-current-browsing-context",
-            "https://www.w3.org/TR/webdriver1/#dfn-success"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [
-            "https://www.w3.org/TR/html5/"
-          ],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -50950,6 +50548,8 @@
             "https://drafts.csswg.org/css-cascade-5/#computed-value",
             "https://www.w3.org/TR/css-color-3/#transparency",
             "https://drafts.csswg.org/css-overflow-3/#scrollable-overflow-region",
+            "https://wicg.github.io/visual-viewport/#dom-visualviewport-width",
+            "https://wicg.github.io/visual-viewport/#dom-visualviewport-height",
             "https://www.w3.org/TR/uievents/#event-type-mousedown",
             "https://www.w3.org/TR/uievents/#keydown",
             "https://www.w3.org/TR/uievents/#event-type-mousemove",
@@ -50985,7 +50585,7 @@
     {
       "title": "Loading Signed Exchanges",
       "shortname": "webpackage",
-      "date": "16 September 2021",
+      "date": "22 September 2021",
       "url": "https://wicg.github.io/webpackage/loading.html",
       "nightly": {
         "url": "https://wicg.github.io/webpackage/loading.html",
@@ -51492,7 +51092,6 @@
     {
       "title": "MathML Core",
       "shortname": "mathml-core",
-      "date": "16 August 2021",
       "url": "https://w3c.github.io/mathml-core/",
       "nightly": {
         "url": "https://w3c.github.io/mathml-core/",
@@ -51500,7 +51099,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/mathml-core/",
+      "crawled": {
+        "url": "https://w3c.github.io/mathml-core/",
+        "repository": "https://github.com/w3c/mathml-core",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -51509,10 +51113,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -51532,105 +51136,6 @@
               "crawled": "https://www.w3.org/TR/cssom-1/"
             }
           ]
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/css-fonts-4/#font-family-prop",
-            "https://www.w3.org/TR/css-fonts-4/#valdef-font-family-math",
-            "https://www.w3.org/TR/css-fonts-4/#font-variant-alternates-prop",
-            "https://www.w3.org/TR/css-fonts-4/#first-available-font",
-            "https://www.w3.org/TR/css-fonts-4/#font-size-prop",
-            "https://www.w3.org/TR/css-values-3/#integer-value",
-            "https://www.w3.org/TR/css-values-3/#typedef-length-percentage",
-            "https://www.w3.org/TR/css-values-3/#comb-one",
-            "https://www.w3.org/TR/css-color-3/#colorunits",
-            "https://www.w3.org/TR/css-color-3/#foreground",
-            "https://html.spec.whatwg.org/#the-id-attribute",
-            "https://html.spec.whatwg.org/#classes",
-            "https://html.spec.whatwg.org/#the-style-attribute",
-            "https://html.spec.whatwg.org/#embedding-custom-non-visible-data-with-the-data-*-attributes",
-            "https://html.spec.whatwg.org/#nonce-attributes",
-            "https://html.spec.whatwg.org/#attr-tabindex",
-            "https://html.spec.whatwg.org/#presentational-hints",
-            "https://html.spec.whatwg.org/#event-handler-content-attributes",
-            "https://html.spec.whatwg.org/#event-handlers-on-elements,-document-objects,-and-window-objects",
-            "https://html.spec.whatwg.org/#parsing",
-            "https://html.spec.whatwg.org/#html-integration-point",
-            "https://html.spec.whatwg.org/#mathml-text-integration-point",
-            "https://html.spec.whatwg.org/#tree-construction-dispatcher",
-            "https://html.spec.whatwg.org/#mathml",
-            "https://html.spec.whatwg.org/#svg-0",
-            "https://html.spec.whatwg.org/#flow-content-2",
-            "https://html.spec.whatwg.org/#phrasing-content-2",
-            "https://html.spec.whatwg.org/#webappapis",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#globaleventhandlers",
-            "https://html.spec.whatwg.org/#documentandelementeventhandlers",
-            "https://html.spec.whatwg.org/#htmlorsvgelement",
-            "https://html.spec.whatwg.org/#reflect",
-            "https://html.spec.whatwg.org/#focus",
-            "https://html.spec.whatwg.org/#the-table-element",
-            "https://html.spec.whatwg.org/#the-tr-element",
-            "https://html.spec.whatwg.org/#the-td-element",
-            "https://html.spec.whatwg.org/#attr-tdth-colspan",
-            "https://html.spec.whatwg.org/#attr-tdth-rowspan",
-            "https://html.spec.whatwg.org/#the-canvas-element",
-            "https://html.spec.whatwg.org/#security-with-canvas-elements",
-            "https://html.spec.whatwg.org/#element",
-            "https://www.w3.org/TR/css-writing-modes-3/#direction",
-            "https://www.w3.org/TR/css-writing-modes-3/#writing-mode",
-            "https://www.w3.org/TR/css-writing-modes-3/#abstract-dimensions",
-            "https://www.w3.org/TR/css-writing-modes-3/#block-dimension",
-            "https://www.w3.org/TR/css-writing-modes-3/#inline-dimension",
-            "https://www.w3.org/TR/css-writing-modes-3/#block-axis",
-            "https://www.w3.org/TR/css-writing-modes-3/#inline-axis",
-            "https://www.w3.org/TR/css-writing-modes-3/#block-size",
-            "https://www.w3.org/TR/css-writing-modes-3/#inline-size",
-            "https://www.w3.org/TR/css-writing-modes-3/#logical-directions",
-            "https://www.w3.org/TR/css-writing-modes-3/#inline-start",
-            "https://www.w3.org/TR/css-writing-modes-3/#inline-end",
-            "https://www.w3.org/TR/css-writing-modes-3/#block-start",
-            "https://www.w3.org/TR/css-writing-modes-3/#block-end",
-            "https://www.w3.org/TR/css-writing-modes-3/#line-relative-direction",
-            "https://www.w3.org/TR/css-writing-modes-3/#line-left",
-            "https://www.w3.org/TR/css-writing-modes-3/#line-right",
-            "https://www.w3.org/TR/css-writing-modes-3/#line-over",
-            "https://www.w3.org/TR/css-writing-modes-3/#line-under",
-            "https://www.w3.org/TR/css-writing-modes-3/#intro-baselines",
-            "https://www.w3.org/TR/css-writing-modes-3/#propdef-writing-mode",
-            "https://www.w3.org/TR/css-writing-modes-3/#extent",
-            "https://www.w3.org/TR/css-backgrounds-3/#the-background-color",
-            "https://www.w3.org/TR/css-display-3/#unbox-mathml",
-            "https://www.w3.org/TR/css-display-3/#in-flow",
-            "https://www.w3.org/TR/css-display-3/#out-of-flow",
-            "https://www.w3.org/TR/css-display-3/#block-box",
-            "https://www.w3.org/TR/css-display-3/#valdef-display-table",
-            "https://www.w3.org/TR/css-display-3/#typedef-display-inside",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#securityerror",
-            "https://heycam.github.io/webidl/#idl-DOMException",
-            "https://www.w3.org/TR/selectors-3/#title",
-            "https://www.w3.org/TR/css-sizing-3/#min-content-inline-size",
-            "https://www.w3.org/TR/css-sizing-3/#max-content-inline-size",
-            "https://www.w3.org/TR/css-align-3/#first-baseline-set",
-            "https://www.w3.org/TR/css-align-3/#last-baseline-set",
-            "https://www.w3.org/TR/css-box-3/#content-box",
-            "https://www.w3.org/TR/css-box-3/#padding-box",
-            "https://www.w3.org/TR/css-box-3/#border-box",
-            "https://www.w3.org/TR/css-box-3/#borders",
-            "https://www.w3.org/TR/css-box-3/#margin-box",
-            "https://www.w3.org/TR/css-box-3/#margin-physical",
-            "https://www.w3.org/TR/css-box-4/#propdef-padding",
-            "https://www.w3.org/TR/css-text-3/#forced-line-break",
-            "https://www.w3.org/TR/css-text-3/#soft-wrap-opportunity",
-            "https://www.w3.org/TR/css-text-3/#text-transform-property",
-            "https://www.w3.org/TR/css-layout-api-1/#registering-layout"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -51907,11 +51412,6 @@
               "crawled": "https://www.w3.org/TR/webrtc-identity/"
             },
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/mediacapture-depth/"
@@ -51940,11 +51440,6 @@
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/permissions/"
-            },
-            {
-              "url": "https://wicg.github.io/prefer-current-tab/",
-              "title": "preferCurrentTab",
-              "crawled": "https://wicg.github.io/prefer-current-tab/"
             },
             {
               "url": "https://www.w3.org/TR/screen-capture/",
@@ -52099,7 +51594,6 @@
     {
       "title": "Media Capture Automation",
       "shortname": "mediacapture-automation",
-      "date": "15 February 2021",
       "url": "https://w3c.github.io/mediacapture-automation/",
       "nightly": {
         "url": "https://w3c.github.io/mediacapture-automation/",
@@ -52107,7 +51601,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/mediacapture-automation/",
+      "crawled": {
+        "url": "https://w3c.github.io/mediacapture-automation/",
+        "repository": "https://github.com/w3c/mediacapture-automation",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -52116,10 +51615,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -52129,67 +51628,10 @@
           "idl": []
         },
         "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/mediacapture-main/",
-            "ref": {
-              "name": "mediacapture-streams",
-              "url": "https://www.w3.org/TR/mediacapture-streams/"
-            }
-          }
-        ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/webdriver2/#dfn-extension-command",
-            "https://www.w3.org/TR/webdriver2/#dfn-sessions",
-            "https://www.w3.org/TR/webdriver2/#dfn-extension-command-uri-template",
-            "https://www.w3.org/TR/webdriver2/#dfn-remote-end-steps",
-            "https://www.w3.org/TR/webdriver2/#dfn-errors",
-            "https://www.w3.org/TR/webdriver2/#dfn-error-code",
-            "https://www.w3.org/TR/webdriver2/#dfn-invalid-argument",
-            "https://www.w3.org/TR/webdriver2/#dfn-current-browsing-context",
-            "https://www.w3.org/TR/webdriver2/#dfn-no-longer-open",
-            "https://www.w3.org/TR/webdriver2/#dfn-no-such-window",
-            "https://www.w3.org/TR/webdriver2/#dfn-handle-any-user-prompts",
-            "https://www.w3.org/TR/webdriver2/#dfn-success",
-            "https://www.w3.org/TR/webdriver2/#dfn-url-variables",
-            "https://www.w3.org/TR/webdriver2/#dfn-getting-properties",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-getusermedia",
-            "https://www.w3.org/TR/mediacapture-streams/#request-permission-to-use",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-navigator-getusermedia",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediadevices-enumeratedevices",
-            "https://www.w3.org/TR/mediacapture-streams/#dfn-source",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediadeviceinfo-label",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-deviceid",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-groupid",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamtrack-kind",
-            "https://www.w3.org/TR/mediacapture-streams/#def-constraint-frameRate",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediatracksupportedconstraints-facingmode",
-            "https://www.w3.org/TR/mediacapture-streams/#def-constraint-sampleRate",
-            "https://www.w3.org/TR/mediacapture-streams/#mediadevices",
-            "https://www.w3.org/TR/permissions/#dfn-permission-state",
-            "https://www.w3.org/TR/permissions/#dom-permissionstate-prompt",
-            "https://www.w3.org/TR/permissions/#set-permission-command",
-            "https://www.w3.org/TR/screen-capture/#dfn-getdisplaymedia",
-            "https://www.w3.org/TR/screen-capture/#prompt-the-user-to-choose",
-            "https://heycam.github.io/webidl/#dfn-convert-ecmascript-to-idl-value",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#idl-double",
-            "https://heycam.github.io/webidl/#idl-unsigned-long",
-            "https://w3c.github.io/mediacapture-main/#dfn-source",
-            "https://html.spec.whatwg.org/#in-parallel"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -54230,7 +53672,6 @@
     {
       "title": "Media Playback Quality",
       "shortname": "media-playback-quality",
-      "date": "04 February 2021",
       "url": "https://w3c.github.io/media-playback-quality/",
       "nightly": {
         "url": "https://w3c.github.io/media-playback-quality/",
@@ -54238,7 +53679,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/media-playback-quality/",
+      "crawled": {
+        "url": "https://w3c.github.io/media-playback-quality/",
+        "repository": "https://github.com/w3c/media-playback-quality",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -54247,10 +53693,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -54270,22 +53716,6 @@
               "crawled": "https://www.w3.org/TR/media-capabilities/"
             }
           ]
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#htmlvideoelement",
-            "https://html.spec.whatwg.org/#media-element-load-algorithm",
-            "https://html.spec.whatwg.org/#window",
-            "https://www.w3.org/TR/hr-time-3/#dfn-current-high-resolution-time",
-            "https://www.w3.org/TR/hr-time-3/#dom-domhighrestimestamp",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-unsigned-long"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -56376,11 +55806,6 @@
               "crawled": "https://www.w3.org/TR/encrypted-media/"
             },
             {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
-            },
-            {
               "url": "https://www.w3.org/TR/webcodecs/",
               "title": "WebCodecs",
               "crawled": "https://www.w3.org/TR/webcodecs/"
@@ -56817,11 +56242,6 @@
               "url": "https://www.w3.org/TR/webaudio/",
               "title": "Web Audio API",
               "crawled": "https://www.w3.org/TR/webaudio/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://www.w3.org/TR/webcodecs/",
@@ -57513,7 +56933,6 @@
     {
       "title": "Network Information API",
       "shortname": "netinfo",
-      "date": "11 May 2020",
       "url": "https://wicg.github.io/netinfo/",
       "nightly": {
         "url": "https://wicg.github.io/netinfo/",
@@ -57521,7 +56940,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/netinfo/",
+      "crawled": {
+        "url": "https://wicg.github.io/netinfo/",
+        "repository": "https://github.com/WICG/netinfo",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -57530,10 +56954,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -57542,10 +56966,7 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [
-          "https://w3c.github.io/ServiceWorker/v1/",
-          "https://www.w3.org/TR/netinfo/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
@@ -57556,28 +56977,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://w3c.github.io/ServiceWorker/v1/#cache-objects",
-            "https://w3c.github.io/ServiceWorker/v1/#installation-algorithm",
-            "https://html.spec.whatwg.org/#navigator",
-            "https://html.spec.whatwg.org/#workernavigator",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#workerglobalscope",
-            "https://html.spec.whatwg.org/#eventhandler",
-            "https://html.spec.whatwg.org/#networking-task-source",
-            "https://html.spec.whatwg.org/#queue-a-task",
-            "https://heycam.github.io/webidl/#SameObject",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-unrestricted-double",
-            "https://heycam.github.io/webidl/#idl-unsigned-long-long"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -58220,7 +57619,6 @@
     {
       "title": "overscroll and scrollend events",
       "shortname": "overscroll-scrollend-events",
-      "date": "15 April 2020",
       "url": "https://wicg.github.io/overscroll-scrollend-events/",
       "nightly": {
         "url": "https://wicg.github.io/overscroll-scrollend-events/",
@@ -58228,7 +57626,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/overscroll-scrollend-events/",
+      "crawled": {
+        "url": "https://wicg.github.io/overscroll-scrollend-events/",
+        "repository": "https://github.com/WICG/overscroll-scrollend-events",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -58237,7 +57640,8 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
         "unknownExposedNames": [],
@@ -58248,27 +57652,11 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [
-          "https://dom.spec.whatwg.org/",
-          "https://www.w3.org/TR/cssom-view/"
-        ],
+        "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://heycam.github.io/webidl/#idl-double",
-            "https://www.w3.org/TR/cssom-view/#scrolling-events"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [
-            "https://www.w3.org/TR/html5/"
-          ],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -58506,11 +57894,6 @@
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://www.w3.org/TR/webcodecs/",
@@ -59466,11 +58849,6 @@
               "crawled": "https://www.w3.org/TR/mediacapture-streams/"
             },
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/mediacapture-depth/"
@@ -59524,11 +58902,6 @@
               "url": "https://webbluetoothcg.github.io/web-bluetooth/",
               "title": "Web Bluetooth",
               "crawled": "https://webbluetoothcg.github.io/web-bluetooth/"
-            },
-            {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
             },
             {
               "url": "https://wicg.github.io/periodic-background-sync/",
@@ -59786,6 +59159,11 @@
               "crawled": "https://wicg.github.io/user-preference-media-features-headers/"
             },
             {
+              "url": "https://wicg.github.io/ua-client-hints/",
+              "title": "User-Agent Client Hints",
+              "crawled": "https://wicg.github.io/ua-client-hints/"
+            },
+            {
               "url": "https://www.w3.org/TR/webauthn-3/",
               "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
               "crawled": "https://www.w3.org/TR/webauthn-3/"
@@ -59831,11 +59209,6 @@
               "url": "https://wicg.github.io/document-policy/",
               "title": "Document Policy",
               "crawled": "https://wicg.github.io/document-policy/"
-            },
-            {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/responsive-image-client-hints/",
@@ -60648,7 +60021,6 @@
     {
       "title": "preferCurrentTab",
       "shortname": "prefer-current-tab",
-      "date": "22 July 2021",
       "url": "https://wicg.github.io/prefer-current-tab/",
       "nightly": {
         "url": "https://wicg.github.io/prefer-current-tab/",
@@ -60656,7 +60028,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/prefer-current-tab/",
+      "crawled": {
+        "url": "https://wicg.github.io/prefer-current-tab/",
+        "repository": "https://github.com/WICG/prefer-current-tab",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -60665,10 +60042,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -60682,19 +60059,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/screen-capture/#dom-mediadevices-getdisplaymedia",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediastream",
-            "https://www.w3.org/TR/mediacapture-streams/#dom-mediastreamconstraints",
-            "https://heycam.github.io/webidl/#idl-boolean"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -63488,7 +62852,7 @@
     {
       "title": "RFC 2397: The \"data\" URL scheme",
       "shortname": "rfc2397",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc2397",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc2397",
@@ -63517,7 +62881,13 @@
         "missingLinkRef": [],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [],
+          "normative": [
+            {
+              "url": "https://www.w3.org/TR/webdriver2/",
+              "title": "WebDriver",
+              "crawled": "https://www.w3.org/TR/webdriver2/"
+            }
+          ],
           "informative": [
             {
               "url": "https://fetch.spec.whatwg.org/",
@@ -63532,7 +62902,7 @@
     {
       "title": "RFC 6454: The Web Origin Concept",
       "shortname": "rfc6454",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc6454",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6454",
@@ -63610,7 +62980,7 @@
     {
       "title": "RFC 6797: HTTP Strict Transport Security (HSTS)",
       "shortname": "rfc6797",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc6797",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc6797",
@@ -63674,7 +63044,7 @@
     {
       "title": "RFC 7034: HTTP Header Field X-Frame-Options",
       "shortname": "rfc7034",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7034",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7034",
@@ -63726,7 +63096,7 @@
     {
       "title": "RFC 7239: Forwarded HTTP Extension",
       "shortname": "rfc7239",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7239",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7239",
@@ -63764,7 +63134,7 @@
     {
       "title": "RFC 7469: Public Key Pinning Extension for HTTP",
       "shortname": "rfc7469",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7469",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7469",
@@ -63814,7 +63184,7 @@
     {
       "title": "RFC 7578: Returning Values from Forms: multipart/form-data",
       "shortname": "rfc7578",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc7578",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc7578",
@@ -63870,7 +63240,7 @@
     {
       "title": "RFC 8942: HTTP Client Hints",
       "shortname": "rfc8942",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "url": "https://www.rfc-editor.org/rfc/rfc8942",
       "nightly": {
         "url": "https://www.rfc-editor.org/rfc/rfc8942",
@@ -63937,7 +63307,7 @@
       ],
       "report": {
         "noNormativeRefs": false,
-        "noRefToWebIDL": false,
+        "noRefToWebIDL": true,
         "hasInvalidIdl": false,
         "hasObsoleteIdl": false,
         "unknownExposedNames": [],
@@ -63967,8 +63337,6 @@
           "notDfn": [],
           "brokenLinks": [
             "https://wicg.github.io/netinfo/#network-information",
-            "https://heycam.github.io/webidl/#SameObject",
-            "https://heycam.github.io/webidl/#idl-boolean",
             "https://html.spec.whatwg.org/#networking-task-source",
             "https://html.spec.whatwg.org/#queue-a-task"
           ],
@@ -65236,11 +64604,6 @@
               "crawled": "https://www.w3.org/TR/image-resource/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://www.w3.org/TR/motion-1/",
               "title": "Motion Path Module Level 1",
               "crawled": "https://www.w3.org/TR/motion-1/"
@@ -65916,19 +65279,9 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://www.w3.org/TR/permissions/",
               "title": "Permissions",
               "crawled": "https://www.w3.org/TR/permissions/"
-            },
-            {
-              "url": "https://wicg.github.io/prefer-current-tab/",
-              "title": "preferCurrentTab",
-              "crawled": "https://wicg.github.io/prefer-current-tab/"
             }
           ],
           "informative": []
@@ -66478,11 +65831,6 @@
               "url": "https://wicg.github.io/background-sync/spec/",
               "title": "Web Background Synchronization",
               "crawled": "https://wicg.github.io/background-sync/spec/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ],
           "informative": [
@@ -66510,11 +65858,6 @@
               "url": "https://wicg.github.io/private-network-access/",
               "title": "Private Network Access",
               "crawled": "https://wicg.github.io/private-network-access/"
-            },
-            {
-              "url": "https://www.w3.org/TR/web-share/",
-              "title": "Web Share API",
-              "crawled": "https://www.w3.org/TR/web-share/"
             },
             {
               "url": "https://wicg.github.io/webusb/",
@@ -67335,11 +66678,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/clear-site-data/",
               "title": "Clear Site Data",
               "crawled": "https://www.w3.org/TR/clear-site-data/"
@@ -67480,11 +66818,6 @@
               "url": "https://wicg.github.io/web-locks/",
               "title": "Web Locks API",
               "crawled": "https://wicg.github.io/web-locks/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ]
         },
@@ -68725,7 +68058,7 @@
     {
       "title": "Temporal proposal",
       "shortname": "tc39-temporal",
-      "date": "17 September 2021",
+      "date": "23 September 2021",
       "url": "https://tc39.es/proposal-temporal/",
       "nightly": {
         "url": "https://tc39.es/proposal-temporal/",
@@ -71097,19 +70430,9 @@
               "crawled": "https://www.w3.org/TR/webauthn-3/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-share/",
               "title": "Web Share API",
               "crawled": "https://www.w3.org/TR/web-share/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://www.w3.org/TR/webdriver2/",
@@ -71210,7 +70533,7 @@
     {
       "title": "URLPattern API",
       "shortname": "urlpattern",
-      "date": "10 September 2021",
+      "date": "23 September 2021",
       "url": "https://wicg.github.io/urlpattern/",
       "nightly": {
         "url": "https://wicg.github.io/urlpattern/",
@@ -71736,7 +71059,7 @@
     {
       "title": "User-Agent Client Hints",
       "shortname": "ua-client-hints",
-      "date": "13 September 2021",
+      "date": "24 September 2021",
       "url": "https://wicg.github.io/ua-client-hints/",
       "nightly": {
         "url": "https://wicg.github.io/ua-client-hints/",
@@ -71787,10 +71110,10 @@
             "https://w3c.github.io/fingerprinting-guidance/#avoid-passive-increases",
             "https://w3c.github.io/fingerprinting-guidance/#dfn-active-fingerprinting",
             "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#idl-frozen-array",
-            "https://heycam.github.io/webidl/#idl-boolean",
             "https://heycam.github.io/webidl/#idl-sequence",
+            "https://heycam.github.io/webidl/#idl-boolean",
             "https://heycam.github.io/webidl/#Exposed",
+            "https://heycam.github.io/webidl/#idl-frozen-array",
             "https://heycam.github.io/webidl/#idl-promise",
             "https://heycam.github.io/webidl/#SecureContext",
             "https://heycam.github.io/webidl/#dfn-create-frozen-array",
@@ -72102,6 +71425,7 @@
             "https://heycam.github.io/webidl/#idl-DOMString",
             "https://www.w3.org/TR/geometry-1/#domrect",
             "https://drafts.csswg.org/css2/#viewport",
+            "https://wicg.github.io/visual-viewport/#dom-visualviewport",
             "https://drafts.csswg.org/css-values-3/#length-value"
           ],
           "evolvingLinks": [],
@@ -72114,7 +71438,6 @@
     {
       "title": "Visual Viewport API",
       "shortname": "visual-viewport",
-      "date": "10 September 2021",
       "url": "https://wicg.github.io/visual-viewport/",
       "nightly": {
         "url": "https://wicg.github.io/visual-viewport/",
@@ -72122,7 +71445,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://wicg.github.io/visual-viewport/",
+      "crawled": {
+        "url": "https://wicg.github.io/visual-viewport/",
+        "repository": "https://github.com/WICG/visual-viewport",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -72131,10 +71459,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -72154,35 +71482,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#concept-document-window",
-            "https://html.spec.whatwg.org/#fully-active",
-            "https://html.spec.whatwg.org/#document",
-            "https://html.spec.whatwg.org/#browsing-context",
-            "https://html.spec.whatwg.org/#eventhandler",
-            "https://heycam.github.io/webidl/#SameObject",
-            "https://heycam.github.io/webidl/#Replaceable",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-double",
-            "https://heycam.github.io/webidl/#idl-frozen-array",
-            "https://www.w3.org/TR/geometry-1/#domrect",
-            "https://www.w3.org/TR/css-display-3/#initial-containing-block",
-            "https://www.w3.org/TR/css-overflow-4/#classic-scrollbars",
-            "https://www.w3.org/TR/css-values-3/#reference-pixel",
-            "https://www.w3.org/TR/cssom-view-1/#page-zoom",
-            "https://www.w3.org/TR/cssom-view-1/#pinch-zoom",
-            "https://www.w3.org/TR/cssom-view-1/#dom-window-devicepixelratio",
-            "https://www.w3.org/TR/cssom-view-1/#resizing-viewports",
-            "https://www.w3.org/TR/cssom-view-1/#scrolling-events"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -72547,7 +71846,7 @@
     {
       "title": "Web Animations Level 2",
       "shortname": "web-animations-2",
-      "date": "7 September 2021",
+      "date": "22 September 2021",
       "url": "https://drafts.csswg.org/web-animations-2/",
       "nightly": {
         "url": "https://drafts.csswg.org/web-animations-2/",
@@ -72675,13 +71974,15 @@
             "https://heycam.github.io/webidl/#idl-sequence",
             "https://heycam.github.io/webidl/#idl-unrestricted-double",
             "https://heycam.github.io/webidl/#idl-unsigned-long",
+            "https://drafts.csswg.org/css-values-4/#time-value",
+            "https://drafts.csswg.org/css-values-4/#accumulation",
             "https://html.spec.whatwg.org/#concept-relevant-realm",
             "https://html.spec.whatwg.org/#perform-a-microtask-checkpoint",
             "https://drafts.csswg.org/css-easing-1/#easing-function",
             "https://drafts.csswg.org/css-easing-1/#linear-easing-function",
-            "https://drafts.csswg.org/css-values-4/#accumulation",
             "https://www.w3.org/TR/web-animations-1/#effect-composition",
             "https://drafts.css-houdini.org/css-typed-om-1/#typedefdef-cssnumberish",
+            "https://drafts.css-houdini.org/css-typed-om-1/#cssnumericvalue",
             "https://drafts.csswg.org/css-display-3/#propdef-visibility",
             "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement"
           ],
@@ -72803,11 +72104,6 @@
         "referencedBy": {
           "normative": [
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://wicg.github.io/get-installed-related-apps/spec/",
               "title": "Get Installed Related Apps API",
               "crawled": "https://wicg.github.io/get-installed-related-apps/spec/"
@@ -72836,11 +72132,6 @@
               "url": "https://www.w3.org/TR/manifest-app-info/",
               "title": "Web App Manifest - Application Information",
               "crawled": "https://www.w3.org/TR/manifest-app-info/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             }
           ],
           "informative": [
@@ -74417,7 +73708,7 @@
     {
       "title": "Web Neural Network API",
       "shortname": "webnn",
-      "date": "8 September 2021",
+      "date": "22 September 2021",
       "url": "https://www.w3.org/TR/webnn/",
       "release": {
         "url": "https://www.w3.org/TR/webnn/",
@@ -74507,9 +73798,8 @@
       }
     },
     {
-      "title": "Web NFC",
+      "title": "Web NFC API",
       "shortname": "web-nfc",
-      "date": "17 September 2021",
       "url": "https://w3c.github.io/web-nfc/",
       "nightly": {
         "url": "https://w3c.github.io/web-nfc/",
@@ -74517,7 +73807,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/web-nfc/",
+      "crawled": {
+        "url": "https://w3c.github.io/web-nfc/",
+        "repository": "https://github.com/w3c/web-nfc",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -74526,10 +73821,10 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
@@ -74549,72 +73844,6 @@
             }
           ],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [
-            "https://url.spec.whatwg.org/#concept-domain-to-ascii",
-            "https://dom.spec.whatwg.org/#abortsignal-abort-algorithms"
-          ],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://html.spec.whatwg.org/#top-level-browsing-context",
-            "https://html.spec.whatwg.org/#window",
-            "https://html.spec.whatwg.org/#browsing-context",
-            "https://html.spec.whatwg.org/#eventhandler",
-            "https://html.spec.whatwg.org/#relevant-settings-object",
-            "https://html.spec.whatwg.org/#active-document",
-            "https://html.spec.whatwg.org/#concept-origin",
-            "https://html.spec.whatwg.org/#global-object",
-            "https://html.spec.whatwg.org/#responsible-document",
-            "https://html.spec.whatwg.org/#current-settings-object",
-            "https://html.spec.whatwg.org/#environment-settings-object",
-            "https://html.spec.whatwg.org/#unloading-document-cleanup-steps",
-            "https://html.spec.whatwg.org/#in-parallel",
-            "https://www.w3.org/TR/page-visibility/#dom-visibilitystate-visible",
-            "https://www.w3.org/TR/page-visibility/#dfn-visibility-states",
-            "https://heycam.github.io/webidl/#SecureContext",
-            "https://heycam.github.io/webidl/#Exposed",
-            "https://heycam.github.io/webidl/#idl-frozen-array",
-            "https://heycam.github.io/webidl/#idl-sequence",
-            "https://heycam.github.io/webidl/#idl-USVString",
-            "https://heycam.github.io/webidl/#idl-DataView",
-            "https://heycam.github.io/webidl/#idl-any",
-            "https://heycam.github.io/webidl/#dfn-throw",
-            "https://heycam.github.io/webidl/#notsupportederror",
-            "https://heycam.github.io/webidl/#idl-DOMException",
-            "https://heycam.github.io/webidl/#BufferSource",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://heycam.github.io/webidl/#idl-promise",
-            "https://heycam.github.io/webidl/#idl-undefined",
-            "https://heycam.github.io/webidl/#SameObject",
-            "https://heycam.github.io/webidl/#aborterror",
-            "https://heycam.github.io/webidl/#idl-boolean",
-            "https://heycam.github.io/webidl/#invalidstateerror",
-            "https://heycam.github.io/webidl/#dfn-perform-steps-once-promise-is-settled",
-            "https://heycam.github.io/webidl/#notallowederror",
-            "https://heycam.github.io/webidl/#notreadableerror",
-            "https://heycam.github.io/webidl/#networkerror",
-            "https://heycam.github.io/webidl/#exceptiondef-typeerror",
-            "https://heycam.github.io/webidl/#syntaxerror",
-            "https://encoding.spec.whatwg.org/#name",
-            "https://encoding.spec.whatwg.org/#label",
-            "https://encoding.spec.whatwg.org/#concept-encoding-get",
-            "https://encoding.spec.whatwg.org/#concept-stream",
-            "https://encoding.spec.whatwg.org/#utf-8-encode",
-            "https://encoding.spec.whatwg.org/#concept-stream-read",
-            "https://encoding.spec.whatwg.org/#end-of-stream",
-            "https://encoding.spec.whatwg.org/#utf-8-decode",
-            "https://encoding.spec.whatwg.org/#decoder",
-            "https://encoding.spec.whatwg.org/#encoder",
-            "https://www.w3.org/TR/permissions/#dictdef-permissiondescriptor",
-            "https://www.w3.org/TR/permissions/#dfn-query-a-permission",
-            "https://www.w3.org/TR/permissions/#dom-permissionstate-granted",
-            "https://www.w3.org/TR/permissions/#dom-permissionstate-prompt",
-            "https://www.w3.org/TR/permissions/#dfn-request-permission-to-use"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -74831,7 +74060,7 @@
     {
       "title": "Web Share API",
       "shortname": "web-share",
-      "date": "13 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.w3.org/TR/web-share/",
       "release": {
         "url": "https://www.w3.org/TR/web-share/",
@@ -74869,13 +74098,7 @@
         ],
         "inconsistentRef": [],
         "referencedBy": {
-          "normative": [
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
-            }
-          ],
+          "normative": [],
           "informative": []
         },
         "xrefs": {
@@ -74895,6 +74118,7 @@
             "https://html.spec.whatwg.org/#in-parallel",
             "https://html.spec.whatwg.org/#dom-base-href",
             "https://html.spec.whatwg.org/#the-a-element",
+            "https://html.spec.whatwg.org/#secure-context",
             "https://heycam.github.io/webidl/#SecureContext",
             "https://heycam.github.io/webidl/#idl-promise",
             "https://heycam.github.io/webidl/#idl-undefined",
@@ -74914,8 +74138,7 @@
             "https://heycam.github.io/webidl/#idl-USVString",
             "https://heycam.github.io/webidl/#idl-DOMString",
             "https://heycam.github.io/webidl/#dfn-exposed",
-            "https://www.w3.org/TR/permissions-policy-1/#default-allowlist",
-            "https://www.w3.org/TR/secure-contexts/#secure-context"
+            "https://www.w3.org/TR/permissions-policy-1/#default-allowlist"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -74927,7 +74150,6 @@
     {
       "title": "Web Share Target API",
       "shortname": "web-share-target",
-      "date": "04 February 2021",
       "url": "https://w3c.github.io/web-share-target/",
       "nightly": {
         "url": "https://w3c.github.io/web-share-target/",
@@ -74935,7 +74157,12 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "crawled": "https://w3c.github.io/web-share-target/",
+      "crawled": {
+        "url": "https://w3c.github.io/web-share-target/",
+        "repository": "https://github.com/w3c/web-share-target",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
       "organization": "W3C",
       "groups": [
         {
@@ -74944,14 +74171,12 @@
         }
       ],
       "report": {
-        "noNormativeRefs": false,
+        "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111",
+        "noNormativeRefs": true,
         "noRefToWebIDL": false,
         "hasInvalidIdl": false,
-        "hasObsoleteIdl": false,
         "unknownExposedNames": [],
-        "unknownIdlNames": [
-          "WebAppManifest"
-        ],
+        "unknownIdlNames": [],
         "redefinedIdlNames": [],
         "missingWebIdlRef": [],
         "missingDfns": {
@@ -74963,41 +74188,6 @@
         "referencedBy": {
           "normative": [],
           "informative": []
-        },
-        "xrefs": {
-          "notExported": [],
-          "notDfn": [],
-          "brokenLinks": [
-            "https://www.w3.org/TR/web-share/#dom-sharedata",
-            "https://www.w3.org/TR/web-share/#dfn-share-target",
-            "https://www.w3.org/TR/web-share/#dom-navigator-share",
-            "https://www.w3.org/TR/web-share/#dom-sharedata-url",
-            "https://html.spec.whatwg.org/#dom-navigator-registerprotocolhandler",
-            "https://html.spec.whatwg.org/#navigator",
-            "https://html.spec.whatwg.org/#multipart/form-data-encoding-algorithm",
-            "https://html.spec.whatwg.org/#multipart/form-data-boundary-string",
-            "https://html.spec.whatwg.org/#creating-a-new-browsing-context",
-            "https://html.spec.whatwg.org/#top-level-browsing-context",
-            "https://html.spec.whatwg.org/#navigate",
-            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest",
-            "https://www.w3.org/TR/appmanifest/#dfn-extension-point",
-            "https://www.w3.org/TR/appmanifest/#dfn-processing-a-manifest",
-            "https://www.w3.org/TR/appmanifest/#dom-webappmanifest-scope",
-            "https://www.w3.org/TR/appmanifest/#dfn-issue-a-developer-warning",
-            "https://www.w3.org/TR/appmanifest/#dfn-within-scope",
-            "https://www.w3.org/TR/appmanifest/#dfn-navigation-scope",
-            "https://www.w3.org/TR/appmanifest/#dfn-install",
-            "https://www.w3.org/TR/service-workers-1/#service-worker-concept",
-            "https://heycam.github.io/webidl/#idl-USVString",
-            "https://heycam.github.io/webidl/#idl-DOMString",
-            "https://www.w3.org/TR/secure-contexts/#is-origin-trustworthy",
-            "https://www.w3.org/TR/secure-contexts/#potentially-trustworthy-origin",
-            "https://encoding.spec.whatwg.org/#utf-8-encode",
-            "https://encoding.spec.whatwg.org/#utf-8"
-          ],
-          "evolvingLinks": [],
-          "outdatedSpecs": [],
-          "datedUrls": []
         },
         "ok": false
       }
@@ -75300,7 +74490,7 @@
     {
       "title": "WebCodecs",
       "shortname": "webcodecs",
-      "date": "8 September 2021",
+      "date": "24 September 2021",
       "url": "https://www.w3.org/TR/webcodecs/",
       "release": {
         "url": "https://www.w3.org/TR/webcodecs/",
@@ -75494,7 +74684,7 @@
     {
       "title": "WebDriver",
       "shortname": "webdriver2",
-      "date": "24 August 2020",
+      "date": "21 September 2021",
       "url": "https://www.w3.org/TR/webdriver2/",
       "release": {
         "url": "https://www.w3.org/TR/webdriver2/",
@@ -75528,7 +74718,7 @@
           "idl": []
         },
         "missingLinkRef": [
-          "https://w3c.github.io/editing/contentEditable.html",
+          "https://w3c.github.io/contentEditable/",
           "https://w3c.github.io/editing/execCommand.html"
         ],
         "inconsistentRef": [
@@ -75576,11 +74766,6 @@
               "crawled": "https://www.w3.org/TR/generic-sensor/"
             },
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://w3c.github.io/webdriver-bidi/",
               "title": "WebDriver BiDi",
               "crawled": "https://w3c.github.io/webdriver-bidi/"
@@ -75603,7 +74788,11 @@
           ],
           "brokenLinks": [
             "https://html.spec.whatwg.org/#focus",
+            "https://html.spec.whatwg.org/#the-textarea-element",
+            "https://html.spec.whatwg.org/#the-a-element",
+            "https://html.spec.whatwg.org/#the-optgroup-element",
             "https://html.spec.whatwg.org/#event-loop",
+            "https://html.spec.whatwg.org/#canvas",
             "https://html.spec.whatwg.org/#2d-context-creation-algorithm",
             "https://html.spec.whatwg.org/#a-browsing-context-is-discarded",
             "https://html.spec.whatwg.org/#a-serialisation-of-the-bitmap-as-a-file",
@@ -75696,20 +74885,16 @@
             "https://html.spec.whatwg.org/#dom-confirm",
             "https://html.spec.whatwg.org/#dom-alert",
             "https://html.spec.whatwg.org/#dom-prompt",
-            "https://html.spec.whatwg.org/#the-a-element",
             "https://html.spec.whatwg.org/#the-area-element",
-            "https://html.spec.whatwg.org/#the-canvas-element",
             "https://html.spec.whatwg.org/#the-datalist-element",
             "https://html.spec.whatwg.org/#frame",
             "https://html.spec.whatwg.org/#the-html-element",
             "https://html.spec.whatwg.org/#the-iframe-element",
             "https://html.spec.whatwg.org/#the-input-element",
             "https://html.spec.whatwg.org/#the-map-element",
-            "https://html.spec.whatwg.org/#the-optgroup-element",
             "https://html.spec.whatwg.org/#the-option-element",
             "https://html.spec.whatwg.org/#the-output-element",
             "https://html.spec.whatwg.org/#the-select-element",
-            "https://html.spec.whatwg.org/#the-textarea-element",
             "https://html.spec.whatwg.org/#color-state-(type=color)",
             "https://html.spec.whatwg.org/#date-state-(type=date)",
             "https://html.spec.whatwg.org/#e-mail-state-(type=email)",
@@ -75737,7 +74922,18 @@
             "https://html.spec.whatwg.org/#event-load",
             "https://html.spec.whatwg.org/#event-pagehide",
             "https://html.spec.whatwg.org/#event-pageshow",
+            "https://www.w3.org/TR/geometry-1/#domrect",
+            "https://www.w3.org/TR/cssom-view-1/#dom-element-getclientrects",
+            "https://www.w3.org/TR/cssom-view-1/#dom-element-getboundingclientrect",
             "https://www.w3.org/TR/uievents/#events-compositionevents",
+            "https://heycam.github.io/webidl/#a-new-promise",
+            "https://heycam.github.io/webidl/#resolve",
+            "https://heycam.github.io/webidl/#reject",
+            "https://heycam.github.io/webidl/#dfn-DOMException",
+            "https://heycam.github.io/webidl/#idl-sequence",
+            "https://heycam.github.io/webidl/#dfn-supported-property-indices",
+            "https://heycam.github.io/webidl/#syntaxerror",
+            "https://heycam.github.io/webidl/#this",
             "https://w3c.github.io/uievents/#keydown",
             "https://w3c.github.io/uievents/#keypress",
             "https://w3c.github.io/uievents/#keyup",
@@ -75763,7 +74959,6 @@
             "https://www.w3.org/TR/accname-1.1/#dfn-accessible-name",
             "https://www.w3.org/TR/accname-1.1/#mapping_additional_nd_te",
             "https://w3c.github.io/webappsec-csp/#should-block-navigation-response",
-            "https://dom.spec.whatwg.org/#context-object",
             "https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm",
             "https://w3c.github.io/DOM-Parsing/#dom-innerhtml-innerhtml",
             "https://w3c.github.io/DOM-Parsing/#dom-element-outerhtml",
@@ -75779,13 +74974,10 @@
             "https://drafts.csswg.org/css-box/#visibility-prop",
             "https://drafts.csswg.org/css-device-adapt/#initial-viewport",
             "https://drafts.csswg.org/css-display/#the-display-properties",
-            "https://www.w3.org/TR/geometry-1/#dom-domrect",
             "https://drafts.csswg.org/css-cascade-4/#computed-value",
             "https://drafts.csswg.org/cssom/#resolved-value",
-            "https://drafts.csswg.org/cssom-view/#dom-element-getboundingclientrect",
             "https://drafts.csswg.org/cssom-view/#dom-document-elementfrompoint",
             "https://drafts.csswg.org/cssom-view/#dom-document-elementsfrompoint",
-            "https://drafts.csswg.org/cssom-view/#dom-range-getclientrects",
             "https://drafts.csswg.org/cssom-view/#dom-window-innerheight",
             "https://drafts.csswg.org/cssom-view/#dom-window-innerwidth",
             "https://drafts.csswg.org/cssom-view/#dom-window-moveto",
@@ -75802,11 +74994,7 @@
             "https://drafts.csswg.org/cssom-view/#dictdef-scrollintoviewoptions",
             "https://drafts.csswg.org/cssom-view/#dom-scrollintoviewoptions-block",
             "https://drafts.csswg.org/cssom-view/#dom-scrollintoviewoptions-inline",
-            "https://www.w3.org/TR/mediaqueries-4/#media-types",
-            "https://heycam.github.io/webidl/#dfn-DOMException",
-            "https://heycam.github.io/webidl/#idl-sequence",
-            "https://heycam.github.io/webidl/#dfn-supported-property-indices",
-            "https://heycam.github.io/webidl/#syntaxerror"
+            "https://www.w3.org/TR/mediaqueries-4/#media-types"
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
@@ -75818,7 +75006,7 @@
     {
       "title": "WebDriver BiDi",
       "shortname": "webdriver-bidi",
-      "date": "15 September 2021",
+      "date": "23 September 2021",
       "url": "https://w3c.github.io/webdriver-bidi/",
       "nightly": {
         "url": "https://w3c.github.io/webdriver-bidi/",
@@ -75908,17 +75096,17 @@
             "https://w3c.github.io/webdriver/#dfn-local-ends",
             "https://w3c.github.io/webdriver/#dfn-remote-ends",
             "https://w3c.github.io/webdriver/#dfn-sessions",
+            "https://w3c.github.io/webdriver/#dfn-active-session",
             "https://w3c.github.io/webdriver/#dfn-remote-end-steps",
             "https://w3c.github.io/webdriver/#dfn-success",
             "https://w3c.github.io/webdriver/#dfn-errors",
             "https://w3c.github.io/webdriver/#dfn-error-code",
             "https://w3c.github.io/webdriver/#dfn-invalid-argument",
-            "https://w3c.github.io/webdriver/#dfn-active-session",
             "https://w3c.github.io/webdriver/#dfn-session-id",
             "https://w3c.github.io/webdriver/#dfn-intermediary-node",
             "https://w3c.github.io/webdriver/#dfn-endpoint-node",
+            "https://w3c.github.io/webdriver/#dfn-invalid-session-id",
             "https://w3c.github.io/webdriver/#dfn-unknown-command",
-            "https://w3c.github.io/webdriver/#dfn-current-session",
             "https://w3c.github.io/webdriver/#dfn-additional-webdriver-capability",
             "https://w3c.github.io/webdriver/#dfn-capability-name",
             "https://w3c.github.io/webdriver/#dfn-additional-capability-deserialization-algorithm",
@@ -75926,9 +75114,13 @@
             "https://w3c.github.io/webdriver/#dfn-webdriver-new-session-algorithm",
             "https://w3c.github.io/webdriver/#dfn-get-a-property",
             "https://w3c.github.io/webdriver/#dfn-set-a-property",
+            "https://w3c.github.io/webdriver/#dfn-http-session",
             "https://w3c.github.io/webdriver/#dfn-web-element-reference",
             "https://w3c.github.io/webdriver/#dfn-window-handle",
             "https://w3c.github.io/webdriver/#dfn-try",
+            "https://w3c.github.io/webdriver/#dfn-session-not-created",
+            "https://w3c.github.io/webdriver/#dfn-processing-capabilities",
+            "https://w3c.github.io/webdriver/#dfn-create-a-session",
             "https://w3c.github.io/webdriver/#dfn-no-such-frame",
             "https://w3c.github.io/webdriver/#dfn-unknown-error",
             "https://heycam.github.io/webidl/#dfn-return-type",
@@ -76026,7 +75218,7 @@
     {
       "title": "WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification",
       "shortname": "ANGLE_instanced_arrays",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
@@ -76183,7 +75375,7 @@
     {
       "title": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "shortname": "EXT_blend_minmax",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
@@ -76263,7 +75455,7 @@
     {
       "title": "WebGL EXT_clip_cull_distance Extension Draft Specification",
       "shortname": "EXT_clip_cull_distance",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
@@ -76460,7 +75652,7 @@
     {
       "title": "WebGL EXT_color_buffer_float Extension Specification",
       "shortname": "EXT_color_buffer_float",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
@@ -76514,7 +75706,7 @@
     {
       "title": "WebGL EXT_color_buffer_half_float Extension Specification",
       "shortname": "EXT_color_buffer_half_float",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
@@ -76620,7 +75812,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query Extension Specification",
       "shortname": "EXT_disjoint_timer_query",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
@@ -76914,7 +76106,7 @@
     {
       "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
       "shortname": "EXT_disjoint_timer_query_webgl2",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
@@ -77054,7 +76246,7 @@
     {
       "title": "WebGL EXT_float_blend Extension Specification",
       "shortname": "EXT_float_blend",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
@@ -77108,7 +76300,7 @@
     {
       "title": "WebGL EXT_frag_depth Khronos Ratified Extension Specification",
       "shortname": "EXT_frag_depth",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
@@ -77162,7 +76354,7 @@
     {
       "title": "WebGL EXT_shader_texture_lod Khronos Ratified Extension Specification",
       "shortname": "EXT_shader_texture_lod",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
@@ -77216,7 +76408,7 @@
     {
       "title": "WebGL EXT_sRGB Extension Specification",
       "shortname": "EXT_sRGB",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
@@ -77322,7 +76514,7 @@
     {
       "title": "WebGL EXT_texture_compression_bptc Extension Specification",
       "shortname": "EXT_texture_compression_bptc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
@@ -77428,7 +76620,7 @@
     {
       "title": "WebGL EXT_texture_compression_rgtc Extension Specification",
       "shortname": "EXT_texture_compression_rgtc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
@@ -77534,7 +76726,7 @@
     {
       "title": "WebGL EXT_texture_filter_anisotropic Khronos Ratified Extension Specification",
       "shortname": "EXT_texture_filter_anisotropic",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
@@ -77614,7 +76806,7 @@
     {
       "title": "WebGL EXT_texture_norm16 Extension Specification",
       "shortname": "EXT_texture_norm16",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
@@ -77772,7 +76964,7 @@
     {
       "title": "WebGL KHR_parallel_shader_compile Extension Specification",
       "shortname": "KHR_parallel_shader_compile",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
@@ -77839,7 +77031,7 @@
     {
       "title": "WebGL OES_draw_buffers_indexed Extension Draft Specification",
       "shortname": "OES_draw_buffers_indexed",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
@@ -78015,7 +77207,7 @@
     {
       "title": "WebGL OES_element_index_uint Khronos Ratified Extension Specification",
       "shortname": "OES_element_index_uint",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
@@ -78069,7 +77261,7 @@
     {
       "title": "WebGL OES_fbo_render_mipmap Extension Specification",
       "shortname": "OES_fbo_render_mipmap",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
@@ -78123,7 +77315,7 @@
     {
       "title": "WebGL OES_standard_derivatives Khronos Ratified Extension Specification",
       "shortname": "OES_standard_derivatives",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
@@ -78190,7 +77382,7 @@
     {
       "title": "WebGL OES_texture_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
@@ -78244,7 +77436,7 @@
     {
       "title": "WebGL OES_texture_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_float_linear",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
@@ -78298,7 +77490,7 @@
     {
       "title": "WebGL OES_texture_half_float Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
@@ -78365,7 +77557,7 @@
     {
       "title": "WebGL OES_texture_half_float_linear Khronos Ratified Extension Specification",
       "shortname": "OES_texture_half_float_linear",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
@@ -78419,7 +77611,7 @@
     {
       "title": "WebGL OES_vertex_array_object Khronos Ratified Extension Specification",
       "shortname": "OES_vertex_array_object",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
@@ -78571,7 +77763,7 @@
     {
       "title": "WebGL OVR_multiview2 Extension Specification",
       "shortname": "OVR_multiview2",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
@@ -78845,7 +78037,7 @@
     {
       "title": "WebGL WEBGL_blend_equation_advanced_coherent Extension Draft Specification",
       "shortname": "WEBGL_blend_equation_advanced_coherent",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
@@ -79094,7 +78286,7 @@
     {
       "title": "WebGL WEBGL_color_buffer_float Extension Specification",
       "shortname": "WEBGL_color_buffer_float",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
@@ -79187,7 +78379,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_astc Extension Specification",
       "shortname": "WEBGL_compressed_texture_astc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
@@ -79618,7 +78810,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
@@ -79802,7 +78994,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_etc1 Extension Specification",
       "shortname": "WEBGL_compressed_texture_etc1",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
@@ -79869,7 +79061,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_pvrtc Extension Specification",
       "shortname": "WEBGL_compressed_texture_pvrtc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
@@ -79975,7 +79167,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc Khronos Ratified Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
@@ -80081,7 +79273,7 @@
     {
       "title": "WebGL WEBGL_compressed_texture_s3tc_srgb Extension Specification",
       "shortname": "WEBGL_compressed_texture_s3tc_srgb",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
@@ -80187,7 +79379,7 @@
     {
       "title": "WebGL WEBGL_debug_renderer_info Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_renderer_info",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
@@ -80267,7 +79459,7 @@
     {
       "title": "WebGL WEBGL_debug_shaders Khronos Ratified Extension Specification",
       "shortname": "WEBGL_debug_shaders",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
@@ -80345,7 +79537,7 @@
     {
       "title": "WebGL WEBGL_depth_texture Khronos Ratified Extension Specification",
       "shortname": "WEBGL_depth_texture",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
@@ -80412,7 +79604,7 @@
     {
       "title": "WebGL WEBGL_draw_buffers Khronos Ratified Extension Specification",
       "shortname": "WEBGL_draw_buffers",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
@@ -80932,7 +80124,7 @@
     {
       "title": "WebGL WEBGL_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_draw_instanced_base_vertex_base_instance",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
@@ -81063,7 +80255,7 @@
     {
       "title": "WebGL WEBGL_lose_context Khronos Ratified Extension Specification",
       "shortname": "WEBGL_lose_context",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
@@ -81143,7 +80335,7 @@
     {
       "title": "WebGL WEBGL_multi_draw Extension Specification",
       "shortname": "WEBGL_multi_draw",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
@@ -81290,7 +80482,7 @@
     {
       "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
       "shortname": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
       "nightly": {
         "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
@@ -81411,7 +80603,7 @@
     {
       "title": "WebGPU",
       "shortname": "webgpu",
-      "date": "17 September 2021",
+      "date": "21 September 2021",
       "url": "https://www.w3.org/TR/webgpu/",
       "release": {
         "url": "https://www.w3.org/TR/webgpu/",
@@ -81569,7 +80761,7 @@
     {
       "title": "WebGPU Shading Language",
       "shortname": "WGSL",
-      "date": "10 September 2021",
+      "date": "21 September 2021",
       "url": "https://www.w3.org/TR/WGSL/",
       "release": {
         "url": "https://www.w3.org/TR/WGSL/",
@@ -81863,11 +81055,6 @@
               "crawled": "https://wicg.github.io/background-fetch/"
             },
             {
-              "url": "https://w3c.github.io/badging/",
-              "title": "Badging API",
-              "crawled": "https://w3c.github.io/badging/"
-            },
-            {
               "url": "https://www.w3.org/TR/battery-status/",
               "title": "Battery Status API",
               "crawled": "https://www.w3.org/TR/battery-status/"
@@ -82113,11 +81300,6 @@
               "crawled": "https://wicg.github.io/event-timing/"
             },
             {
-              "url": "https://wicg.github.io/eyedropper-api/",
-              "title": "EyeDropper API",
-              "crawled": "https://wicg.github.io/eyedropper-api/"
-            },
-            {
               "url": "https://wicg.github.io/floc/",
               "title": "Federated Learning of Cohorts",
               "crawled": "https://wicg.github.io/floc/"
@@ -82151,11 +81333,6 @@
               "url": "https://drafts.css-houdini.org/font-metrics-api-1/",
               "title": "Font Metrics API Level 1",
               "crawled": "https://drafts.css-houdini.org/font-metrics-api-1/"
-            },
-            {
-              "url": "https://wicg.github.io/frame-timing/",
-              "title": "Frame Timing",
-              "crawled": "https://wicg.github.io/frame-timing/"
             },
             {
               "url": "https://fullscreen.spec.whatwg.org/",
@@ -82228,11 +81405,6 @@
               "crawled": "https://wicg.github.io/video-rvfc/"
             },
             {
-              "url": "https://w3c.github.io/webrtc-ice/",
-              "title": "IceTransport Extensions for WebRTC",
-              "crawled": "https://w3c.github.io/webrtc-ice/"
-            },
-            {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",
               "crawled": "https://www.w3.org/TR/webrtc-stats/"
@@ -82273,11 +81445,6 @@
               "crawled": "https://wicg.github.io/ink-enhancement/"
             },
             {
-              "url": "https://wicg.github.io/input-device-capabilities/",
-              "title": "Input Device Capabilities",
-              "crawled": "https://wicg.github.io/input-device-capabilities/"
-            },
-            {
               "url": "https://www.w3.org/TR/intersection-observer/",
               "title": "Intersection Observer",
               "crawled": "https://www.w3.org/TR/intersection-observer/"
@@ -82286,11 +81453,6 @@
               "url": "https://wicg.github.io/intervention-reporting/",
               "title": "Intervention Reporting",
               "crawled": "https://wicg.github.io/intervention-reporting/"
-            },
-            {
-              "url": "https://wicg.github.io/js-self-profiling/",
-              "title": "JS Self-Profiling API",
-              "crawled": "https://wicg.github.io/js-self-profiling/"
             },
             {
               "url": "https://wicg.github.io/keyboard-lock/",
@@ -82333,11 +81495,6 @@
               "crawled": "https://www.w3.org/TR/magnetometer/"
             },
             {
-              "url": "https://w3c.github.io/mathml-core/",
-              "title": "MathML Core",
-              "crawled": "https://w3c.github.io/mathml-core/"
-            },
-            {
               "url": "https://wicg.github.io/performance-measure-memory/",
               "title": "Measure Memory API",
               "crawled": "https://wicg.github.io/performance-measure-memory/"
@@ -82353,11 +81510,6 @@
               "crawled": "https://www.w3.org/TR/mediacapture-streams/"
             },
             {
-              "url": "https://w3c.github.io/mediacapture-automation/",
-              "title": "Media Capture Automation",
-              "crawled": "https://w3c.github.io/mediacapture-automation/"
-            },
-            {
               "url": "https://www.w3.org/TR/mediacapture-depth/",
               "title": "Media Capture Depth Stream Extensions",
               "crawled": "https://www.w3.org/TR/mediacapture-depth/"
@@ -82366,11 +81518,6 @@
               "url": "https://www.w3.org/TR/mediacapture-fromelement/",
               "title": "Media Capture from DOM Elements",
               "crawled": "https://www.w3.org/TR/mediacapture-fromelement/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
             },
             {
               "url": "https://www.w3.org/TR/mediasession/",
@@ -82401,11 +81548,6 @@
               "url": "https://www.w3.org/TR/navigation-timing-2/",
               "title": "Navigation Timing Level 2",
               "crawled": "https://www.w3.org/TR/navigation-timing-2/"
-            },
-            {
-              "url": "https://wicg.github.io/netinfo/",
-              "title": "Network Information API",
-              "crawled": "https://wicg.github.io/netinfo/"
             },
             {
               "url": "https://notifications.spec.whatwg.org/",
@@ -82483,11 +81625,6 @@
               "crawled": "https://wicg.github.io/portals/"
             },
             {
-              "url": "https://wicg.github.io/prefer-current-tab/",
-              "title": "preferCurrentTab",
-              "crawled": "https://wicg.github.io/prefer-current-tab/"
-            },
-            {
               "url": "https://www.w3.org/TR/presentation-api/",
               "title": "Presentation API",
               "crawled": "https://www.w3.org/TR/presentation-api/"
@@ -82541,11 +81678,6 @@
               "url": "https://www.w3.org/TR/resource-timing-2/",
               "title": "Resource Timing Level 2",
               "crawled": "https://www.w3.org/TR/resource-timing-2/"
-            },
-            {
-              "url": "https://wicg.github.io/savedata/",
-              "title": "Save Data API",
-              "crawled": "https://wicg.github.io/savedata/"
             },
             {
               "url": "https://www.w3.org/TR/SVG2/",
@@ -82683,11 +81815,6 @@
               "crawled": "https://www.w3.org/TR/virtual-keyboard/"
             },
             {
-              "url": "https://wicg.github.io/visual-viewport/",
-              "title": "Visual Viewport API",
-              "crawled": "https://wicg.github.io/visual-viewport/"
-            },
-            {
               "url": "https://www.w3.org/TR/web-animations-1/",
               "title": "Web Animations",
               "crawled": "https://www.w3.org/TR/web-animations-1/"
@@ -82733,11 +81860,6 @@
               "crawled": "https://www.w3.org/TR/webnn/"
             },
             {
-              "url": "https://w3c.github.io/web-nfc/",
-              "title": "Web NFC",
-              "crawled": "https://w3c.github.io/web-nfc/"
-            },
-            {
               "url": "https://wicg.github.io/periodic-background-sync/",
               "title": "Web Periodic Background Synchronization",
               "crawled": "https://wicg.github.io/periodic-background-sync/"
@@ -82751,11 +81873,6 @@
               "url": "https://www.w3.org/TR/web-share/",
               "title": "Web Share API",
               "crawled": "https://www.w3.org/TR/web-share/"
-            },
-            {
-              "url": "https://w3c.github.io/web-share-target/",
-              "title": "Web Share Target API",
-              "crawled": "https://w3c.github.io/web-share-target/"
             },
             {
               "url": "https://wicg.github.io/speech-api/",
@@ -82918,11 +82035,6 @@
               "url": "https://www.w3.org/TR/input-events-2/",
               "title": "Input Events Level 2",
               "crawled": "https://www.w3.org/TR/input-events-2/"
-            },
-            {
-              "url": "https://wicg.github.io/overscroll-scrollend-events/",
-              "title": "overscroll and scrollend events",
-              "crawled": "https://wicg.github.io/overscroll-scrollend-events/"
             },
             {
               "url": "https://www.w3.org/TR/WebIDL-1/",
@@ -83211,11 +82323,6 @@
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
-            {
-              "url": "https://w3c.github.io/webrtc-ice/",
-              "title": "IceTransport Extensions for WebRTC",
-              "crawled": "https://w3c.github.io/webrtc-ice/"
-            },
             {
               "url": "https://www.w3.org/TR/webrtc-stats/",
               "title": "Identifiers for WebRTC's Statistics API",

@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-09-20T01:34:27.933Z",
+  "date": "2021-09-27T01:40:49.908Z",
   "options": {
     "publishedVersion": true,
     "output": "reports/tr",
@@ -21,7 +21,7 @@
   },
   "stats": {
     "crawled": 440,
-    "errors": 0
+    "errors": 14
   },
   "results": [
     {
@@ -386,9 +386,10 @@
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-6/",
       "generator": "bikeshed",
-      "date": "9 September 2021",
+      "date": "23 September 2021",
       "links": "links/css-cascade-6.json",
       "refs": "refs/css-cascade-6.json",
+      "css": "css/css-cascade-6.json",
       "dfns": "dfns/css-cascade-6.json",
       "headings": "headings/css-cascade-6.json",
       "ids": "ids/css-cascade-6.json"
@@ -936,7 +937,7 @@
       ],
       "crawled": "https://drafts.csswg.org/web-animations-2/",
       "generator": "bikeshed",
-      "date": "7 September 2021",
+      "date": "22 September 2021",
       "links": "links/web-animations-2.json",
       "refs": "refs/web-animations-2.json",
       "idl": "idl/web-animations-2.idl",
@@ -1258,7 +1259,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "17 September 2021",
+      "date": "20 September 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -1383,7 +1384,7 @@
       ],
       "crawled": "https://infra.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "10 September 2021",
+      "date": "22 September 2021",
       "links": "links/infra.json",
       "refs": "refs/infra.json",
       "dfns": "dfns/infra.json",
@@ -1816,7 +1817,7 @@
         "https://tc39.es/ecma262/multipage/"
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
-      "date": "16 September 2021",
+      "date": "24 September 2021",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -1857,7 +1858,7 @@
         "https://tc39.es/ecma402/"
       ],
       "crawled": "https://tc39.es/ecma402/",
-      "date": "9 September 2021",
+      "date": "25 September 2021",
       "links": "links/ecma-402.json",
       "dfns": "dfns/ecma-402.json",
       "headings": "headings/ecma-402.json",
@@ -2062,7 +2063,7 @@
         "https://tc39.es/proposal-error-cause/"
       ],
       "crawled": "https://tc39.es/proposal-error-cause/",
-      "date": "7 July 2021",
+      "date": "23 September 2021",
       "links": "links/tc39-error-cause.json",
       "headings": "headings/tc39-error-cause.json",
       "ids": "ids/tc39-error-cause.json"
@@ -2438,7 +2439,7 @@
         "https://tc39.es/proposal-temporal/"
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
-      "date": "17 September 2021",
+      "date": "23 September 2021",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -2557,16 +2558,13 @@
       "versions": [
         "https://w3c.github.io/badging/"
       ],
-      "crawled": "https://w3c.github.io/badging/",
-      "generator": "respec",
-      "date": "03 February 2021",
-      "links": "links/badging.json",
-      "refs": "refs/badging.json",
-      "idl": "idl/badging.idl",
-      "dfns": "dfns/badging.json",
-      "headings": "headings/badging.json",
-      "ids": "ids/badging.json",
-      "idlparsed": "idlparsed/badging.json"
+      "crawled": {
+        "url": "https://w3c.github.io/badging/",
+        "repository": "https://github.com/w3c/badging",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/contentEditable/",
@@ -2602,13 +2600,13 @@
       "versions": [
         "https://w3c.github.io/contentEditable/"
       ],
-      "crawled": "https://w3c.github.io/contentEditable/",
-      "generator": "respec",
-      "date": "30 January 2020",
-      "links": "links/contentEditable.json",
-      "refs": "refs/contentEditable.json",
-      "headings": "headings/contentEditable.json",
-      "ids": "ids/contentEditable.json"
+      "crawled": {
+        "url": "https://w3c.github.io/contentEditable/",
+        "repository": "https://github.com/w3c/contentEditable",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/gamepad/extensions.html",
@@ -2757,16 +2755,13 @@
       "versions": [
         "https://w3c.github.io/mathml-core/"
       ],
-      "crawled": "https://w3c.github.io/mathml-core/",
-      "generator": "respec",
-      "date": "16 August 2021",
-      "links": "links/mathml-core.json",
-      "refs": "refs/mathml-core.json",
-      "idl": "idl/mathml-core.idl",
-      "dfns": "dfns/mathml-core.json",
-      "headings": "headings/mathml-core.json",
-      "ids": "ids/mathml-core.json",
-      "idlparsed": "idlparsed/mathml-core.json"
+      "crawled": {
+        "url": "https://w3c.github.io/mathml-core/",
+        "repository": "https://github.com/w3c/mathml-core",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/media-playback-quality/",
@@ -2802,16 +2797,13 @@
       "versions": [
         "https://w3c.github.io/media-playback-quality/"
       ],
-      "crawled": "https://w3c.github.io/media-playback-quality/",
-      "generator": "respec",
-      "date": "04 February 2021",
-      "links": "links/media-playback-quality.json",
-      "refs": "refs/media-playback-quality.json",
-      "idl": "idl/media-playback-quality.idl",
-      "dfns": "dfns/media-playback-quality.json",
-      "headings": "headings/media-playback-quality.json",
-      "ids": "ids/media-playback-quality.json",
-      "idlparsed": "idlparsed/media-playback-quality.json"
+      "crawled": {
+        "url": "https://w3c.github.io/media-playback-quality/",
+        "repository": "https://github.com/w3c/media-playback-quality",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/mediacapture-automation/",
@@ -2841,16 +2833,13 @@
       "versions": [
         "https://w3c.github.io/mediacapture-automation/"
       ],
-      "crawled": "https://w3c.github.io/mediacapture-automation/",
-      "generator": "respec",
-      "date": "15 February 2021",
-      "links": "links/mediacapture-automation.json",
-      "refs": "refs/mediacapture-automation.json",
-      "idl": "idl/mediacapture-automation.idl",
-      "dfns": "dfns/mediacapture-automation.json",
-      "headings": "headings/mediacapture-automation.json",
-      "ids": "ids/mediacapture-automation.json",
-      "idlparsed": "idlparsed/mediacapture-automation.json"
+      "crawled": {
+        "url": "https://w3c.github.io/mediacapture-automation/",
+        "repository": "https://github.com/w3c/mediacapture-automation",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/web-nfc/",
@@ -2874,7 +2863,7 @@
         "sourcePath": "index.html",
         "filename": "index.html"
       },
-      "title": "Web NFC",
+      "title": "Web NFC API",
       "source": "specref",
       "shortTitle": "Web NFC API",
       "tests": {
@@ -2886,16 +2875,13 @@
       "versions": [
         "https://w3c.github.io/web-nfc/"
       ],
-      "crawled": "https://w3c.github.io/web-nfc/",
-      "generator": "respec",
-      "date": "17 September 2021",
-      "links": "links/web-nfc.json",
-      "refs": "refs/web-nfc.json",
-      "idl": "idl/web-nfc.idl",
-      "dfns": "dfns/web-nfc.json",
-      "headings": "headings/web-nfc.json",
-      "ids": "ids/web-nfc.json",
-      "idlparsed": "idlparsed/web-nfc.json"
+      "crawled": {
+        "url": "https://w3c.github.io/web-nfc/",
+        "repository": "https://github.com/w3c/web-nfc",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/web-share-target/",
@@ -2925,16 +2911,13 @@
       "versions": [
         "https://w3c.github.io/web-share-target/"
       ],
-      "crawled": "https://w3c.github.io/web-share-target/",
-      "generator": "respec",
-      "date": "04 February 2021",
-      "links": "links/web-share-target.json",
-      "refs": "refs/web-share-target.json",
-      "idl": "idl/web-share-target.idl",
-      "dfns": "dfns/web-share-target.json",
-      "headings": "headings/web-share-target.json",
-      "ids": "ids/web-share-target.json",
-      "idlparsed": "idlparsed/web-share-target.json"
+      "crawled": {
+        "url": "https://w3c.github.io/web-share-target/",
+        "repository": "https://github.com/w3c/web-share-target",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://w3c.github.io/webappsec-change-password-url/",
@@ -3048,7 +3031,7 @@
       ],
       "crawled": "https://w3c.github.io/webdriver-bidi/",
       "generator": "bikeshed",
-      "date": "15 September 2021",
+      "date": "23 September 2021",
       "links": "links/webdriver-bidi.json",
       "refs": "refs/webdriver-bidi.json",
       "dfns": "dfns/webdriver-bidi.json",
@@ -3134,16 +3117,13 @@
       "versions": [
         "https://w3c.github.io/webrtc-ice/"
       ],
-      "crawled": "https://w3c.github.io/webrtc-ice/",
-      "generator": "respec",
-      "date": "18 March 2021",
-      "links": "links/webrtc-ice.json",
-      "refs": "refs/webrtc-ice.json",
-      "idl": "idl/webrtc-ice.idl",
-      "dfns": "dfns/webrtc-ice.json",
-      "headings": "headings/webrtc-ice.json",
-      "ids": "ids/webrtc-ice.json",
-      "idlparsed": "idlparsed/webrtc-ice.json"
+      "crawled": {
+        "url": "https://w3c.github.io/webrtc-ice/",
+        "repository": "https://github.com/w3c/webrtc-ice",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -3226,7 +3206,7 @@
       ],
       "crawled": "https://wicg.github.io/app-history/",
       "generator": "bikeshed",
-      "date": "16 September 2021",
+      "date": "23 September 2021",
       "links": "links/app-history.json",
       "refs": "refs/app-history.json",
       "idl": "idl/app-history.idl",
@@ -3398,7 +3378,7 @@
       ],
       "crawled": "https://wicg.github.io/close-watcher/",
       "generator": "bikeshed",
-      "date": "10 September 2021",
+      "date": "20 September 2021",
       "links": "links/close-watcher.json",
       "refs": "refs/close-watcher.json",
       "idl": "idl/close-watcher.idl",
@@ -3572,7 +3552,7 @@
       ],
       "crawled": "https://wicg.github.io/conversion-measurement-api/",
       "generator": "bikeshed",
-      "date": "15 September 2021",
+      "date": "24 September 2021",
       "links": "links/conversion-measurement-api.json",
       "refs": "refs/conversion-measurement-api.json",
       "idl": "idl/conversion-measurement-api.idl",
@@ -4121,16 +4101,13 @@
       "versions": [
         "https://wicg.github.io/eyedropper-api/"
       ],
-      "crawled": "https://wicg.github.io/eyedropper-api/",
-      "generator": "respec",
-      "date": "03 September 2021",
-      "links": "links/eyedropper-api.json",
-      "refs": "refs/eyedropper-api.json",
-      "idl": "idl/eyedropper-api.idl",
-      "dfns": "dfns/eyedropper-api.json",
-      "headings": "headings/eyedropper-api.json",
-      "ids": "ids/eyedropper-api.json",
-      "idlparsed": "idlparsed/eyedropper-api.json"
+      "crawled": {
+        "url": "https://wicg.github.io/eyedropper-api/",
+        "repository": "https://github.com/WICG/eyedropper-api",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/file-system-access/",
@@ -4168,7 +4145,7 @@
       ],
       "crawled": "https://wicg.github.io/file-system-access/",
       "generator": "bikeshed",
-      "date": "9 August 2021",
+      "date": "24 September 2021",
       "links": "links/file-system-access.json",
       "refs": "refs/file-system-access.json",
       "idl": "idl/file-system-access.idl",
@@ -4596,16 +4573,13 @@
       "versions": [
         "https://wicg.github.io/js-self-profiling/"
       ],
-      "crawled": "https://wicg.github.io/js-self-profiling/",
-      "generator": "respec",
-      "date": "04 August 2021",
-      "links": "links/js-self-profiling.json",
-      "refs": "refs/js-self-profiling.json",
-      "idl": "idl/js-self-profiling.idl",
-      "dfns": "dfns/js-self-profiling.json",
-      "headings": "headings/js-self-profiling.json",
-      "ids": "ids/js-self-profiling.json",
-      "idlparsed": "idlparsed/js-self-profiling.json"
+      "crawled": {
+        "url": "https://wicg.github.io/js-self-profiling/",
+        "repository": "https://github.com/WICG/js-self-profiling",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/keyboard-lock/",
@@ -4897,16 +4871,13 @@
       "versions": [
         "https://wicg.github.io/netinfo/"
       ],
-      "crawled": "https://wicg.github.io/netinfo/",
-      "generator": "respec",
-      "date": "11 May 2020",
-      "links": "links/netinfo.json",
-      "refs": "refs/netinfo.json",
-      "idl": "idl/netinfo.idl",
-      "dfns": "dfns/netinfo.json",
-      "headings": "headings/netinfo.json",
-      "ids": "ids/netinfo.json",
-      "idlparsed": "idlparsed/netinfo.json"
+      "crawled": {
+        "url": "https://wicg.github.io/netinfo/",
+        "repository": "https://github.com/WICG/netinfo",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/origin-policy/",
@@ -4981,14 +4952,13 @@
       "versions": [
         "https://wicg.github.io/overscroll-scrollend-events/"
       ],
-      "crawled": "https://wicg.github.io/overscroll-scrollend-events/",
-      "generator": "respec",
-      "date": "15 April 2020",
-      "links": "links/overscroll-scrollend-events.json",
-      "refs": "refs/overscroll-scrollend-events.json",
-      "dfns": "dfns/overscroll-scrollend-events.json",
-      "headings": "headings/overscroll-scrollend-events.json",
-      "ids": "ids/overscroll-scrollend-events.json"
+      "crawled": {
+        "url": "https://wicg.github.io/overscroll-scrollend-events/",
+        "repository": "https://github.com/WICG/overscroll-scrollend-events",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/page-lifecycle/",
@@ -5289,16 +5259,13 @@
       "versions": [
         "https://wicg.github.io/prefer-current-tab/"
       ],
-      "crawled": "https://wicg.github.io/prefer-current-tab/",
-      "generator": "respec",
-      "date": "22 July 2021",
-      "links": "links/prefer-current-tab.json",
-      "refs": "refs/prefer-current-tab.json",
-      "idl": "idl/prefer-current-tab.idl",
-      "dfns": "dfns/prefer-current-tab.json",
-      "headings": "headings/prefer-current-tab.json",
-      "ids": "ids/prefer-current-tab.json",
-      "idlparsed": "idlparsed/prefer-current-tab.json"
+      "crawled": {
+        "url": "https://wicg.github.io/prefer-current-tab/",
+        "repository": "https://github.com/WICG/prefer-current-tab",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/priority-hints/",
@@ -5849,7 +5816,7 @@
       ],
       "crawled": "https://wicg.github.io/ua-client-hints/",
       "generator": "bikeshed",
-      "date": "13 September 2021",
+      "date": "24 September 2021",
       "links": "links/ua-client-hints.json",
       "refs": "refs/ua-client-hints.json",
       "idl": "idl/ua-client-hints.idl",
@@ -5888,7 +5855,7 @@
       ],
       "crawled": "https://wicg.github.io/urlpattern/",
       "generator": "bikeshed",
-      "date": "10 September 2021",
+      "date": "23 September 2021",
       "links": "links/urlpattern.json",
       "refs": "refs/urlpattern.json",
       "idl": "idl/urlpattern.idl",
@@ -6052,16 +6019,13 @@
       "versions": [
         "https://wicg.github.io/visual-viewport/"
       ],
-      "crawled": "https://wicg.github.io/visual-viewport/",
-      "generator": "respec",
-      "date": "10 September 2021",
-      "links": "links/visual-viewport.json",
-      "refs": "refs/visual-viewport.json",
-      "idl": "idl/visual-viewport.idl",
-      "dfns": "dfns/visual-viewport.json",
-      "headings": "headings/visual-viewport.json",
-      "ids": "ids/visual-viewport.json",
-      "idlparsed": "idlparsed/visual-viewport.json"
+      "crawled": {
+        "url": "https://wicg.github.io/visual-viewport/",
+        "repository": "https://github.com/WICG/visual-viewport",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://wicg.github.io/web-locks/",
@@ -6228,7 +6192,7 @@
       ],
       "crawled": "https://wicg.github.io/webpackage/loading.html",
       "generator": "bikeshed",
-      "date": "16 September 2021",
+      "date": "22 September 2021",
       "links": "links/webpackage.json",
       "refs": "refs/webpackage.json",
       "dfns": "dfns/webpackage.json",
@@ -6315,7 +6279,7 @@
         "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/ANGLE_instanced_arrays.json",
       "idl": "idl/ANGLE_instanced_arrays.idl",
       "idlparsed": "idlparsed/ANGLE_instanced_arrays.json"
@@ -6355,7 +6319,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_blend_minmax.json",
       "idl": "idl/EXT_blend_minmax.idl",
       "idlparsed": "idlparsed/EXT_blend_minmax.json"
@@ -6395,7 +6359,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_clip_cull_distance.json",
       "idl": "idl/EXT_clip_cull_distance.idl",
       "idlparsed": "idlparsed/EXT_clip_cull_distance.json"
@@ -6435,7 +6399,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_float/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_color_buffer_float.json",
       "idl": "idl/EXT_color_buffer_float.idl",
       "idlparsed": "idlparsed/EXT_color_buffer_float.json"
@@ -6475,7 +6439,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_color_buffer_half_float/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_color_buffer_half_float.json",
       "idl": "idl/EXT_color_buffer_half_float.idl",
       "idlparsed": "idlparsed/EXT_color_buffer_half_float.json"
@@ -6515,7 +6479,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_disjoint_timer_query_webgl2.json",
       "idl": "idl/EXT_disjoint_timer_query_webgl2.idl",
       "idlparsed": "idlparsed/EXT_disjoint_timer_query_webgl2.json"
@@ -6555,7 +6519,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_disjoint_timer_query.json",
       "idl": "idl/EXT_disjoint_timer_query.idl",
       "idlparsed": "idlparsed/EXT_disjoint_timer_query.json"
@@ -6595,7 +6559,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_float_blend/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_float_blend.json",
       "idl": "idl/EXT_float_blend.idl",
       "idlparsed": "idlparsed/EXT_float_blend.json"
@@ -6635,7 +6599,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_frag_depth/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_frag_depth.json",
       "idl": "idl/EXT_frag_depth.idl",
       "idlparsed": "idlparsed/EXT_frag_depth.json"
@@ -6675,7 +6639,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_shader_texture_lod/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_shader_texture_lod.json",
       "idl": "idl/EXT_shader_texture_lod.idl",
       "idlparsed": "idlparsed/EXT_shader_texture_lod.json"
@@ -6715,7 +6679,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_sRGB/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_sRGB.json",
       "idl": "idl/EXT_sRGB.idl",
       "idlparsed": "idlparsed/EXT_sRGB.json"
@@ -6755,7 +6719,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_bptc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_texture_compression_bptc.json",
       "idl": "idl/EXT_texture_compression_bptc.idl",
       "idlparsed": "idlparsed/EXT_texture_compression_bptc.json"
@@ -6795,7 +6759,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_compression_rgtc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_texture_compression_rgtc.json",
       "idl": "idl/EXT_texture_compression_rgtc.idl",
       "idlparsed": "idlparsed/EXT_texture_compression_rgtc.json"
@@ -6835,7 +6799,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_filter_anisotropic/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_texture_filter_anisotropic.json",
       "idl": "idl/EXT_texture_filter_anisotropic.idl",
       "idlparsed": "idlparsed/EXT_texture_filter_anisotropic.json"
@@ -6875,7 +6839,7 @@
         "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/EXT_texture_norm16/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/EXT_texture_norm16.json",
       "idl": "idl/EXT_texture_norm16.idl",
       "idlparsed": "idlparsed/EXT_texture_norm16.json"
@@ -6915,7 +6879,7 @@
         "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/KHR_parallel_shader_compile/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/KHR_parallel_shader_compile.json",
       "idl": "idl/KHR_parallel_shader_compile.idl",
       "idlparsed": "idlparsed/KHR_parallel_shader_compile.json"
@@ -6955,7 +6919,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_draw_buffers_indexed/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_draw_buffers_indexed.json",
       "idl": "idl/OES_draw_buffers_indexed.idl",
       "idlparsed": "idlparsed/OES_draw_buffers_indexed.json"
@@ -6995,7 +6959,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_element_index_uint/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_element_index_uint.json",
       "idl": "idl/OES_element_index_uint.idl",
       "idlparsed": "idlparsed/OES_element_index_uint.json"
@@ -7035,7 +6999,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_fbo_render_mipmap/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_fbo_render_mipmap.json",
       "idl": "idl/OES_fbo_render_mipmap.idl",
       "idlparsed": "idlparsed/OES_fbo_render_mipmap.json"
@@ -7075,7 +7039,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_standard_derivatives/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_standard_derivatives.json",
       "idl": "idl/OES_standard_derivatives.idl",
       "idlparsed": "idlparsed/OES_standard_derivatives.json"
@@ -7115,7 +7079,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float_linear/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_texture_float_linear.json",
       "idl": "idl/OES_texture_float_linear.idl",
       "idlparsed": "idlparsed/OES_texture_float_linear.json"
@@ -7155,7 +7119,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_float/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_texture_float.json",
       "idl": "idl/OES_texture_float.idl",
       "idlparsed": "idlparsed/OES_texture_float.json"
@@ -7195,7 +7159,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float_linear/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_texture_half_float_linear.json",
       "idl": "idl/OES_texture_half_float_linear.idl",
       "idlparsed": "idlparsed/OES_texture_half_float_linear.json"
@@ -7235,7 +7199,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_texture_half_float/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_texture_half_float.json",
       "idl": "idl/OES_texture_half_float.idl",
       "idlparsed": "idlparsed/OES_texture_half_float.json"
@@ -7275,7 +7239,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OES_vertex_array_object/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OES_vertex_array_object.json",
       "idl": "idl/OES_vertex_array_object.idl",
       "idlparsed": "idlparsed/OES_vertex_array_object.json"
@@ -7315,7 +7279,7 @@
         "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/OVR_multiview2/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/OVR_multiview2.json",
       "idl": "idl/OVR_multiview2.idl",
       "idlparsed": "idlparsed/OVR_multiview2.json"
@@ -7355,7 +7319,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_blend_equation_advanced_coherent.json",
       "idl": "idl/WEBGL_blend_equation_advanced_coherent.idl",
       "idlparsed": "idlparsed/WEBGL_blend_equation_advanced_coherent.json"
@@ -7395,7 +7359,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_color_buffer_float/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_color_buffer_float.json",
       "idl": "idl/WEBGL_color_buffer_float.idl",
       "idlparsed": "idlparsed/WEBGL_color_buffer_float.json"
@@ -7435,7 +7399,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_astc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_astc.json",
       "idl": "idl/WEBGL_compressed_texture_astc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_astc.json"
@@ -7475,7 +7439,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_etc.json",
       "idl": "idl/WEBGL_compressed_texture_etc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_etc.json"
@@ -7515,7 +7479,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_etc1/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_etc1.json",
       "idl": "idl/WEBGL_compressed_texture_etc1.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_etc1.json"
@@ -7555,7 +7519,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_pvrtc.json",
       "idl": "idl/WEBGL_compressed_texture_pvrtc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_pvrtc.json"
@@ -7595,7 +7559,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_s3tc_srgb.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc_srgb.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_s3tc_srgb.json"
@@ -7635,7 +7599,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_compressed_texture_s3tc/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_compressed_texture_s3tc.json",
       "idl": "idl/WEBGL_compressed_texture_s3tc.idl",
       "idlparsed": "idlparsed/WEBGL_compressed_texture_s3tc.json"
@@ -7675,7 +7639,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_renderer_info/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_debug_renderer_info.json",
       "idl": "idl/WEBGL_debug_renderer_info.idl",
       "idlparsed": "idlparsed/WEBGL_debug_renderer_info.json"
@@ -7715,7 +7679,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_debug_shaders/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_debug_shaders.json",
       "idl": "idl/WEBGL_debug_shaders.idl",
       "idlparsed": "idlparsed/WEBGL_debug_shaders.json"
@@ -7755,7 +7719,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_depth_texture/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_depth_texture.json",
       "idl": "idl/WEBGL_depth_texture.idl",
       "idlparsed": "idlparsed/WEBGL_depth_texture.json"
@@ -7795,7 +7759,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_buffers/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_draw_buffers.json",
       "idl": "idl/WEBGL_draw_buffers.idl",
       "idlparsed": "idlparsed/WEBGL_draw_buffers.json"
@@ -7835,7 +7799,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_draw_instanced_base_vertex_base_instance.idl",
       "idlparsed": "idlparsed/WEBGL_draw_instanced_base_vertex_base_instance.json"
@@ -7875,7 +7839,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_lose_context/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_lose_context.json",
       "idl": "idl/WEBGL_lose_context.idl",
       "idlparsed": "idlparsed/WEBGL_lose_context.json"
@@ -7915,7 +7879,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_multi_draw_instanced_base_vertex_base_instance.json",
       "idl": "idl/WEBGL_multi_draw_instanced_base_vertex_base_instance.idl",
       "idlparsed": "idlparsed/WEBGL_multi_draw_instanced_base_vertex_base_instance.json"
@@ -7955,7 +7919,7 @@
         "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/"
       ],
       "crawled": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/",
-      "date": "16 September 2021",
+      "date": "20 September 2021",
       "links": "links/WEBGL_multi_draw.json",
       "idl": "idl/WEBGL_multi_draw.idl",
       "idlparsed": "idlparsed/WEBGL_multi_draw.json"
@@ -8079,7 +8043,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -8182,7 +8146,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -8213,7 +8177,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -8244,7 +8208,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -8492,7 +8456,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -8523,7 +8487,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -8626,7 +8590,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -8801,7 +8765,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "20 September 2021",
+      "date": "27 September 2021",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
@@ -14933,7 +14897,7 @@
       ],
       "crawled": "https://www.w3.org/TR/html-aria/",
       "generator": "respec",
-      "date": "05 September 2021",
+      "date": "24 September 2021",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
@@ -19231,7 +19195,7 @@
       ],
       "crawled": "https://www.w3.org/TR/web-share/",
       "generator": "respec",
-      "date": "13 September 2021",
+      "date": "20 September 2021",
       "links": "links/web-share.json",
       "refs": "refs/web-share.json",
       "idl": "idl/web-share.idl",
@@ -19385,7 +19349,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webcodecs/",
       "generator": "bikeshed",
-      "date": "8 September 2021",
+      "date": "24 September 2021",
       "links": "links/webcodecs.json",
       "refs": "refs/webcodecs.json",
       "idl": "idl/webcodecs.idl",
@@ -19487,7 +19451,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webdriver2/",
       "generator": "respec",
-      "date": "24 August 2020",
+      "date": "21 September 2021",
       "links": "links/webdriver2.json",
       "refs": "refs/webdriver2.json",
       "idl": "idl/webdriver.idl",
@@ -19538,7 +19502,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webgpu/",
       "generator": "bikeshed",
-      "date": "17 September 2021",
+      "date": "21 September 2021",
       "links": "links/webgpu.json",
       "refs": "refs/webgpu.json",
       "idl": "idl/webgpu.idl",
@@ -19686,7 +19650,7 @@
       ],
       "crawled": "https://www.w3.org/TR/webnn/",
       "generator": "bikeshed",
-      "date": "8 September 2021",
+      "date": "22 September 2021",
       "links": "links/webnn.json",
       "refs": "refs/webnn.json",
       "idl": "idl/webnn.idl",
@@ -20508,7 +20472,7 @@
       ],
       "crawled": "https://www.w3.org/TR/WGSL/",
       "generator": "bikeshed",
-      "date": "10 September 2021",
+      "date": "21 September 2021",
       "links": "links/WGSL.json",
       "refs": "refs/WGSL.json",
       "dfns": "dfns/WGSL.json",

@@ -14,6 +14,7 @@
       "functions": {
         "Window": [
           "AnimationTimeline",
+          "Animation",
           "AnimationEffect",
           "AnimationNodeList"
         ]
@@ -596,6 +597,58 @@
           "partial": true
         }
       ],
+      "Animation": [
+        {
+          "fragment": "[Exposed=Window]\npartial interface Animation {\n    attribute CSSNumberish?       startTime;\n    attribute CSSNumberish?       currentTime;\n};",
+          "type": "interface",
+          "name": "Animation",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "startTime",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "currentTime",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "CSSNumberish"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ],
       "AnimationEffect": [
         {
           "fragment": "[Exposed=Window]\npartial interface AnimationEffect {\n    // Timing hierarchy\n    readonly attribute GroupEffect?     parent;\n    readonly attribute AnimationEffect? previousSibling;\n    readonly attribute AnimationEffect? nextSibling;\n\n    undefined before (AnimationEffect... effects);\n    undefined after (AnimationEffect... effects);\n    undefined replace (AnimationEffect... effects);\n    undefined remove ();\n};",
@@ -980,6 +1033,7 @@
     "exposed": {
       "Window": [
         "AnimationTimeline",
+        "Animation",
         "AnimationEffect",
         "GroupEffect",
         "AnimationNodeList",
@@ -991,6 +1045,9 @@
         "CSSNumberish",
         "Animation",
         "AnimationEffect"
+      ],
+      "Animation": [
+        "CSSNumberish"
       ],
       "AnimationEffect": [
         "GroupEffect",
