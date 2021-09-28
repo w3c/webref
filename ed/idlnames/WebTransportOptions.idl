@@ -1,5 +1,5 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
 dictionary WebTransportOptions {
   boolean allowPooling;
-  sequence<RTCDtlsFingerprint> serverCertificateFingerprints;
+  sequence<WebTransportHash> serverCertificateHashes;
 };
