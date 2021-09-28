@@ -64,7 +64,7 @@
         "partial": false
       },
       "EyeDropper": {
-        "fragment": "[Exposed=Window]\ninterface EyeDropper {\n    constructor();\n    Promise<ColorSelectionResult> open(optional ColorSelectionOptions options = {});\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface EyeDropper {\n    constructor();\n    Promise<ColorSelectionResult> open(optional ColorSelectionOptions options = {});\n};",
         "type": "interface",
         "name": "EyeDropper",
         "inheritance": null,
@@ -126,6 +126,12 @@
               "type": "identifier",
               "value": "Window"
             },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
             "arguments": []
           }
         ],

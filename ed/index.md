@@ -471,7 +471,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 27 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -13264,7 +13264,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Crawled URL: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
-- Crawled version: 16 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://w3c.github.io/webappsec-csp/](https://w3c.github.io/webappsec-csp/)
 - Latest published version: [https://www.w3.org/TR/CSP3/](https://www.w3.org/TR/CSP3/)
 - Shortname: CSP3
@@ -15378,7 +15378,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
 - Crawled URL: [https://w3c.github.io/virtual-keyboard/](https://w3c.github.io/virtual-keyboard/)
-- Crawled version: 20 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://w3c.github.io/virtual-keyboard/](https://w3c.github.io/virtual-keyboard/)
 - Latest published version: [https://www.w3.org/TR/virtual-keyboard/](https://www.w3.org/TR/virtual-keyboard/)
 - Shortname: virtual-keyboard
@@ -17629,7 +17629,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
 - Crawled URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
-- Crawled version: 03 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
 - Shortname: eyedropper-api
 
@@ -18292,7 +18292,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Crawled URL: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
-- Crawled version: 22 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://wicg.github.io/webpackage/loading.html](https://wicg.github.io/webpackage/loading.html)
 - Shortname: webpackage
 
@@ -22294,7 +22294,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Crawled URL: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
-- Crawled version: 22 September 2021
+- Crawled version: 28 September 2021
 - Editor's Draft: [https://infra.spec.whatwg.org/](https://infra.spec.whatwg.org/)
 - Shortname: infra
 
