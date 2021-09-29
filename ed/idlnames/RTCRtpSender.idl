@@ -11,7 +11,7 @@ interface RTCRtpSender {
   Promise<RTCStatsReport> getStats();
 };
 
-// Source: WebRTC Encoded Transform (https://w3c.github.io/webrtc-encoded-transform/)
+// Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 // New methods for RTCRtpSender and RTCRtpReceiver
 partial interface RTCRtpSender {
     attribute RTCRtpTransform? transform;

@@ -201,6 +201,27 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
+### Extend TimeZoneName Option Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
+- Crawled URL: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
+- Crawled version: 3 July 2021
+- Editor's Draft: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
+- Shortname: tc39-intl-extend-timezonename
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ### import assertions {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
@@ -230,6 +251,27 @@ Normative references to this spec from:
 No informative reference to this spec from other specs.
 
 
+### Intl Enumeration API Specification {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
+- Crawled URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
+- Crawled version: 5 August 2021
+- Editor's Draft: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
+- Shortname: tc39-intl-enumeration
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ### Intl Locale Info Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
 
 #### Spec info {.info}
@@ -239,6 +281,48 @@ No informative reference to this spec from other specs.
 - Crawled version: 9 September 2021
 - Editor's Draft: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
 - Shortname: tc39-intl-locale-info
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### Intl.DisplayNames v2 Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
+- Crawled URL: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
+- Crawled version: 3 July 2021
+- Editor's Draft: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
+- Shortname: tc39-intl-displaynames-v2
+
+#### Potential issue(s) {.anomalies}
+
+- No normative references found
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
+### Intl.Segmenter Proposal {data-spec=true data-anomaly=true data-noNormativeRefs=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
+- Crawled URL: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
+- Crawled version: 22 August 2021
+- Editor's Draft: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
+- Shortname: tc39-intl-segmenter
 
 #### Potential issue(s) {.anomalies}
 
@@ -471,7 +555,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Crawled URL: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
-- Crawled version: 28 September 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://tc39.es/proposal-temporal/](https://tc39.es/proposal-temporal/)
 - Shortname: tc39-temporal
 
@@ -8881,7 +8965,9 @@ Normative references to this spec from:
 - [WebDriver](https://w3c.github.io/webdriver/)
 - [WebVTT: The Web Video Text Tracks Format](https://w3c.github.io/webvtt/)
 
-No informative reference to this spec from other specs.
+Informative references to this spec from:
+
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 
 ### CSS Values and Units Module Level 4 {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -15861,6 +15947,7 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
+- [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
 
 
 ### Cooperative Scheduling of Background Tasks {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
@@ -16515,7 +16602,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Crawled URL: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
-- Crawled version: 31 August 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://w3c.github.io/resource-timing/](https://w3c.github.io/resource-timing/)
 - Latest published version: [https://www.w3.org/TR/resource-timing-2/](https://www.w3.org/TR/resource-timing-2/)
 - Shortname: resource-timing-2
@@ -17164,6 +17251,28 @@ This specification looks good!
 Normative references to this spec from:
 
 - [Streams Standard](https://streams.spec.whatwg.org/)
+
+No informative reference to this spec from other specs.
+
+
+### Compute Pressure API {data-spec=true data-anomaly=true data-missingDfns=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Crawled URL: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Crawled version: 22 September 2021
+- Editor's Draft: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Shortname: compute-pressure
+
+#### Potential issue(s) {.anomalies}
+
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
 
 No informative reference to this spec from other specs.
 
@@ -19823,6 +19932,7 @@ Normative references to this spec from:
 - [Close Watcher API](https://wicg.github.io/close-watcher/)
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compression Streams](https://wicg.github.io/compression/)
+- [Compute Pressure API](https://wicg.github.io/compute-pressure/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
@@ -20671,10 +20781,11 @@ Informative references to this spec from:
 
 #### Spec info {.info}
 
-- Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
+- Initial URL: [https://www.w3.org/TR/webrtc-encoded-transform/](https://www.w3.org/TR/webrtc-encoded-transform/)
 - Crawled URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
 - Crawled version: 9 September 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
+- Latest published version: [https://www.w3.org/TR/webrtc-encoded-transform/](https://www.w3.org/TR/webrtc-encoded-transform/)
 - Shortname: webrtc-encoded-transform
 
 #### Potential issue(s) {.anomalies}
@@ -22017,6 +22128,7 @@ Normative references to this spec from:
 - [Compatibility Standard](https://compat.spec.whatwg.org/)
 - [Compositing and Blending Level 1](https://drafts.fxtf.org/compositing-1/)
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/)
+- [Compute Pressure API](https://wicg.github.io/compute-pressure/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)
 - [Content Security Policy Level 3](https://w3c.github.io/webappsec-csp/)
@@ -22315,6 +22427,7 @@ Normative references to this spec from:
 - [Clear Site Data](https://w3c.github.io/webappsec-clear-site-data/)
 - [Client Hints Infrastructure](https://wicg.github.io/client-hints-infrastructure/)
 - [Close Watcher API](https://wicg.github.io/close-watcher/)
+- [Compute Pressure API](https://wicg.github.io/compute-pressure/)
 - [Console Standard](https://console.spec.whatwg.org/)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/)
 - [Content Index](https://wicg.github.io/content-index/spec/)

@@ -2,7 +2,7 @@
 % Reffy
 % September 29, 2021
 
-440 specifications were crawled in this report.
+445 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -14,8 +14,12 @@
 - [ECMAScript® 2022 Internationalization API Specification](https://tc39.es/ecma402/)
 - [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/multipage/)
 - [Error Cause](https://tc39.es/proposal-error-cause/)
+- [Extend TimeZoneName Option Proposal](https://tc39.es/proposal-intl-extend-timezonename/)
 - [import assertions](https://tc39.es/proposal-import-assertions/)
+- [Intl Enumeration API Specification](https://tc39.es/proposal-intl-enumeration/)
 - [Intl Locale Info Proposal](https://tc39.es/proposal-intl-locale-info/)
+- [Intl.DisplayNames v2 Proposal](https://tc39.es/intl-displaynames-v2/)
+- [Intl.Segmenter Proposal](https://tc39.es/proposal-intl-segmenter/)
 - [JSON modules](https://tc39.es/proposal-json-modules/)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
 - [Payment Method: Basic Card](https://w3c.github.io/payment-method-basic-card/)
@@ -80,7 +84,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 72 specifications found
+=> 76 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -4256,6 +4260,8 @@ Links in the body of a specification should be to the same document as that poin
 - [Compositing and Blending Level 2](https://drafts.fxtf.org/compositing-2/):
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
+- [Compute Pressure API](https://wicg.github.io/compute-pressure/):
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
 - [Contact Picker API](https://wicg.github.io/contact-api/spec/):
      * [`https://html.spec.whatwg.org/#htmlbuttonelement`](https://html.spec.whatwg.org/#htmlbuttonelement)
      * [`https://html.spec.whatwg.org/#htmlimageelement`](https://html.spec.whatwg.org/#htmlimageelement)
@@ -8689,7 +8695,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4639 problematic external links found in 291 specifications
+=> 4640 problematic external links found in 292 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

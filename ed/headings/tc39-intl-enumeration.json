@@ -1,0 +1,200 @@
+{
+  "spec": {
+    "title": "Intl Enumeration API Specification",
+    "url": "https://tc39.es/proposal-intl-enumeration/"
+  },
+  "headings": [
+    {
+      "id": "locales-currencies-tz",
+      "title": "Identification of Locales, Currencies, Time Zones, and Measurement Units, Numbering Systems, Collations, and Calendars",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-case-sensitivity-and-case-mapping",
+      "title": "Case Sensitivity and Case Mapping",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-language-tags",
+      "title": "Language Tags",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-currency-codes",
+      "title": "Currency Codes",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-iswellformedcurrencycode",
+      "title": "IsWellFormedCurrencyCode ( currency )",
+      "level": 3,
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-availablecurrencies",
+      "title": "AvailableCurrencies ( )",
+      "level": 3,
+      "number": "1.3.2"
+    },
+    {
+      "id": "sec-time-zone-names",
+      "title": "Time Zone Names",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "sec-isvalidtimezonename",
+      "title": "IsValidTimeZoneName ( timeZone )",
+      "level": 3,
+      "number": "1.4.1"
+    },
+    {
+      "id": "sec-canonicalizetimezonename",
+      "title": "CanonicalizeTimeZoneName",
+      "level": 3,
+      "number": "1.4.2"
+    },
+    {
+      "id": "sec-defaulttimezone",
+      "title": "DefaultTimeZone ()",
+      "level": 3,
+      "number": "1.4.3"
+    },
+    {
+      "id": "sec-availabletimezones",
+      "title": "AvailableTimeZones ()",
+      "level": 3,
+      "number": "1.4.4"
+    },
+    {
+      "id": "sec-measurement-unit-identifiers",
+      "title": "Measurement Unit Identifiers",
+      "level": 2,
+      "number": "1.5"
+    },
+    {
+      "id": "sec-iswellformedunitidentifier",
+      "title": "IsWellFormedUnitIdentifier ( unitIdentifier )",
+      "level": 3,
+      "number": "1.5.1"
+    },
+    {
+      "id": "sec-issanctionedsimpleunitidentifier",
+      "title": "IsSanctionedSimpleUnitIdentifier ( unitIdentifier )",
+      "level": 3,
+      "number": "1.5.2"
+    },
+    {
+      "id": "sec-availableunits",
+      "title": "AvailableUnits ( )",
+      "level": 3,
+      "number": "1.5.3"
+    },
+    {
+      "id": "sec-numberingsystem-identifiers",
+      "title": "Numbering System Identifiers",
+      "level": 2,
+      "number": "1.6"
+    },
+    {
+      "id": "sec-availablenumberingsystems",
+      "title": "AvailableNumberingSystems ( )",
+      "level": 3,
+      "number": "1.6.1"
+    },
+    {
+      "id": "sec-collation-types",
+      "title": "Collation Types",
+      "level": 2,
+      "number": "1.7"
+    },
+    {
+      "id": "sec-availablecollations",
+      "title": "AvailableCollations ( )",
+      "level": 3,
+      "number": "1.7.1"
+    },
+    {
+      "id": "sec-calendar-types",
+      "title": "Calendar Types",
+      "level": 2,
+      "number": "1.8"
+    },
+    {
+      "id": "sec-availablecalendars",
+      "title": "AvailableCalendars ( )",
+      "level": 3,
+      "number": "1.8.1"
+    },
+    {
+      "id": "intl-object",
+      "title": "The Intl Object",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-constructor-properties-of-the-intl-object",
+      "title": "Constructor Properties of the Intl Object",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-intl.locale-intro",
+      "title": "Intl.Locale (...)",
+      "level": 3,
+      "number": "2.1.1"
+    },
+    {
+      "id": "sec-intl.collator-intro",
+      "title": "Intl.Collator (...)",
+      "level": 3,
+      "number": "2.1.2"
+    },
+    {
+      "id": "sec-intl.numberformat-intro",
+      "title": "Intl.NumberFormat (...)",
+      "level": 3,
+      "number": "2.1.3"
+    },
+    {
+      "id": "sec-intl.datetimeformat-intro",
+      "title": "Intl.DateTimeFormat (...)",
+      "level": 3,
+      "number": "2.1.4"
+    },
+    {
+      "id": "sec-intl.relativetimeformat-intro",
+      "title": "Intl.RelativeTimeFormat (...)",
+      "level": 3,
+      "number": "2.1.5"
+    },
+    {
+      "id": "sec-intl.pluralrules-intro",
+      "title": "Intl.PluralRules (...)",
+      "level": 3,
+      "number": "2.1.6"
+    },
+    {
+      "id": "sec-function-properties-of-the-intl-object",
+      "title": "Function Properties of the Intl Object",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "sec-intl.getcanonicallocales",
+      "title": "Intl.getCanonicalLocales ( locales )",
+      "level": 3,
+      "number": "2.2.1"
+    },
+    {
+      "id": "sec-intl.supportedvaluesof",
+      "title": "Intl.supportedValuesOf ( key )",
+      "level": 3,
+      "number": "2.2.2"
+    }
+  ]
+}

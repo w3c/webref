@@ -1,0 +1,182 @@
+{
+  "spec": {
+    "title": "Intl.Segmenter Proposal",
+    "url": "https://tc39.es/proposal-intl-segmenter/"
+  },
+  "headings": [
+    {
+      "id": "segmenter-objects",
+      "title": "Segmenter Objects",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-intl-segmenter-constructor",
+      "title": "The Intl.Segmenter Constructor",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-intl.segmenter",
+      "title": "Intl.Segmenter ([ locales [ , options ]])",
+      "level": 3,
+      "number": "1.1.1"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-constructor",
+      "title": "Properties of the Intl.Segmenter Constructor",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype",
+      "title": "Intl.Segmenter.prototype",
+      "level": 3,
+      "number": "1.2.1"
+    },
+    {
+      "id": "sec-intl.segmenter.supportedlocalesof",
+      "title": "Intl.Segmenter.supportedLocalesOf ( locales [, options ])",
+      "level": 3,
+      "number": "1.2.2"
+    },
+    {
+      "id": "sec-intl.segmenter-internal-slots",
+      "title": "Internal slots",
+      "level": 3,
+      "number": "1.2.3"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-prototype-object",
+      "title": "Properties of the Intl.Segmenter Prototype Object",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.constructor",
+      "title": "Intl.Segmenter.prototype.constructor",
+      "level": 3,
+      "number": "1.3.1"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype-@@tostringtag",
+      "title": "Intl.Segmenter.prototype [ @@toStringTag ]",
+      "level": 3,
+      "number": "1.3.2"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.segment",
+      "title": "Intl.Segmenter.prototype.segment ( string )",
+      "level": 3,
+      "number": "1.3.3"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.resolvedoptions",
+      "title": "Intl.Segmenter.prototype.resolvedOptions ()",
+      "level": 3,
+      "number": "1.3.4"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-instances",
+      "title": "Properties of Intl.Segmenter Instances",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "sec-segments-objects",
+      "title": "Segments Objects",
+      "level": 2,
+      "number": "1.5"
+    },
+    {
+      "id": "sec-createsegmentsobject",
+      "title": "CreateSegmentsObject ( segmenter, string )",
+      "level": 3,
+      "number": "1.5.1"
+    },
+    {
+      "id": "sec-%segmentsprototype%-object",
+      "title": "The %Segments.prototype% Object",
+      "level": 3,
+      "number": "1.5.2"
+    },
+    {
+      "id": "sec-%segmentsprototype%.containing",
+      "title": "%Segments.prototype%.containing ( index )",
+      "level": 4,
+      "number": "1.5.2.1"
+    },
+    {
+      "id": "sec-%segmentsprototype%-@@iterator",
+      "title": "%Segments.prototype% [ @@iterator ] ()",
+      "level": 4,
+      "number": "1.5.2.2"
+    },
+    {
+      "id": "sec-properties-of-segments-instances",
+      "title": "Properties of Segments Instances",
+      "level": 3,
+      "number": "1.5.3"
+    },
+    {
+      "id": "sec-segment-iterator-objects",
+      "title": "Segment Iterator Objects",
+      "level": 2,
+      "number": "1.6"
+    },
+    {
+      "id": "sec-createsegmentiterator",
+      "title": "CreateSegmentIterator ( segmenter, string )",
+      "level": 3,
+      "number": "1.6.1"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%-object",
+      "title": "The %SegmentIterator.prototype% Object",
+      "level": 3,
+      "number": "1.6.2"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%.next",
+      "title": "%SegmentIterator.prototype%.next ()",
+      "level": 4,
+      "number": "1.6.2.1"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%.@@tostringtag",
+      "title": "%SegmentIterator.prototype% [ @@toStringTag ]",
+      "level": 4,
+      "number": "1.6.2.2"
+    },
+    {
+      "id": "sec-properties-of-segment-iterator-instances",
+      "title": "Properties of Segment Iterator Instances",
+      "level": 3,
+      "number": "1.6.3"
+    },
+    {
+      "id": "sec-segment-data-objects",
+      "title": "Segment Data Objects",
+      "level": 2,
+      "number": "1.7"
+    },
+    {
+      "id": "sec-createsegmentdataobject",
+      "title": "CreateSegmentDataObject ( segmenter, string, startIndex, endIndex )",
+      "level": 3,
+      "number": "1.7.1"
+    },
+    {
+      "id": "sec-intl-segmenter-abstracts",
+      "title": "Abstract Operations for Segmenter Objects",
+      "level": 2,
+      "number": "1.8"
+    },
+    {
+      "id": "sec-findboundary",
+      "title": "FindBoundary ( segmenter, string, startIndex, direction )",
+      "level": 3,
+      "number": "1.8.1"
+    }
+  ]
+}
