@@ -2,7 +2,7 @@
 % Reffy
 % September 29, 2021
 
-445 specifications were crawled in this report.
+447 specifications were crawled in this report.
 
 
 ## Specifications without normative dependencies
@@ -1504,6 +1504,15 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [Upgrade Insecure Requests](https://w3c.github.io/webappsec-upgrade-insecure-requests/) links to [`https://w3c.github.io/webappsec/specs/mixedcontent/`](https://w3c.github.io/webappsec/specs/mixedcontent/) but does not list it in its references
 - [User-Agent Client Hints](https://wicg.github.io/ua-client-hints/) links to [`https://w3c.github.io/device-memory/`](https://w3c.github.io/device-memory/) but does not list it in its references
 - [VirtualKeyboard API](https://w3c.github.io/virtual-keyboard/) links to [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but does not list it in its references
+- [W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/) links to [`https://w3c.github.io/w3process/`](https://w3c.github.io/w3process/) but does not list it in its references
+- [W3C Process Document](https://www.w3.org/Consortium/Process/) links to:
+    * [`https://w3c.github.io/w3process/issues-20190301`](https://w3c.github.io/w3process/issues-20190301) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html) but does not list it in its references
+    * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14) but does not list it in its references
 - [WAI-ARIA Graphics Module](https://w3c.github.io/graphics-aria/) links to [`https://w3c.github.io/aria/`](https://w3c.github.io/aria/) but does not list it in its references
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/) links to [`https://www.w3.org/TR/animation-timing/`](https://www.w3.org/TR/animation-timing/) but does not list it in its references
 - [Web Audio API](https://webaudio.github.io/web-audio-api/) links to:
@@ -1546,7 +1555,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 627 missing references for links found in 180 specifications
+=> 635 missing references for links found in 182 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 

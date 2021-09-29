@@ -3439,6 +3439,38 @@ Informative references to this spec from:
 - [SVG Accessibility API Mappings](https://w3c.github.io/svg-aam/)
 
 
+## Advisory Board {#advisory_board}
+
+### W3C Process Document {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Crawled URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Crawled version: 15 September 2020
+- Editor's Draft: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Shortname: w3c-process
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/w3process/issues-20190301`](https://w3c.github.io/w3process/issues-20190301)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14)
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/)
+
+No informative reference to this spec from other specs.
+
+
 ## Audio Working Group {#audio_working_group}
 
 ### Web Audio API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
@@ -8599,7 +8631,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Crawled URL: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
-- Crawled version: 16 June 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://drafts.csswg.org/css-transforms-2/](https://drafts.csswg.org/css-transforms-2/)
 - Latest published version: [https://www.w3.org/TR/css-transforms-2/](https://www.w3.org/TR/css-transforms-2/)
 - Shortname: css-transforms-2
@@ -10634,7 +10666,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
-- Crawled version: 28 September 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/](https://gpuweb.github.io/gpuweb/)
 - Latest published version: [https://www.w3.org/TR/webgpu/](https://www.w3.org/TR/webgpu/)
 - Shortname: webgpu
@@ -10702,7 +10734,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Crawled URL: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
-- Crawled version: 28 September 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://gpuweb.github.io/gpuweb/wgsl/](https://gpuweb.github.io/gpuweb/wgsl/)
 - Latest published version: [https://www.w3.org/TR/WGSL/](https://www.w3.org/TR/WGSL/)
 - Shortname: WGSL
@@ -11712,6 +11744,30 @@ Informative references to this spec from:
 - [WebGL Specification](https://www.khronos.org/registry/webgl/specs/latest/1.0/)
 
 
+## Patents and Standards Interest Group {#patents_and_standards_interest_group}
+
+### W3C Patent Policy {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
+- Crawled URL: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
+- Crawled version: 15 September 2020
+- Editor's Draft: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
+- Shortname: w3c-patent-policy
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/w3process/`](https://w3c.github.io/w3process/)
+
+#### Known dependencies on this specification {.dependencies}
+
+No normative reference to this spec from other specs.
+
+No informative reference to this spec from other specs.
+
+
 ## Pointer Events Working Group {#pointer_events_working_group}
 
 ### Pointer Events {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
@@ -11720,7 +11776,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Crawled URL: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
-- Crawled version: 13 September 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://w3c.github.io/pointerevents/](https://w3c.github.io/pointerevents/)
 - Latest published version: [https://www.w3.org/TR/pointerevents3/](https://www.w3.org/TR/pointerevents3/)
 - Shortname: pointerevents3
@@ -13268,6 +13324,38 @@ No normative reference to this spec from other specs.
 Informative references to this spec from:
 
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
+
+
+## W3C Process Community Group  {#w3c_process_community_group_}
+
+### W3C Process Document {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+
+#### Spec info {.info}
+
+- Initial URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Crawled URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Crawled version: 15 September 2020
+- Editor's Draft: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
+- Shortname: w3c-process
+
+#### Potential issue(s) {.anomalies}
+
+- Missing references for links: 
+     * [`https://w3c.github.io/w3process/issues-20190301`](https://w3c.github.io/w3process/issues-20190301)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-06-25)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fwww.w3.org%2F2019%2FProcess-20190301%2F&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2019-02-04-bikesheded.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-before-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-01-09-refactor.html)
+     * [`https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14`](https://services.w3.org/htmldiff?doc1=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2Fafter-everblue.html&doc2=https%3A%2F%2Fw3c.github.io%2Fw3process%2Fsnapshots%2F2020-08-14)
+
+#### Known dependencies on this specification {.dependencies}
+
+Normative references to this spec from:
+
+- [W3C Patent Policy](https://www.w3.org/Consortium/Patent-Policy/)
+
+No informative reference to this spec from other specs.
 
 
 ## Web Application Security Working Group {#web_application_security_working_group}
@@ -15422,7 +15510,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
 - Crawled URL: [https://w3c.github.io/webcrypto/](https://w3c.github.io/webcrypto/)
-- Crawled version: 15 September 2021
+- Crawled version: 29 September 2021
 - Editor's Draft: [https://w3c.github.io/webcrypto/](https://w3c.github.io/webcrypto/)
 - Latest published version: [https://www.w3.org/TR/WebCryptoAPI/](https://www.w3.org/TR/WebCryptoAPI/)
 - Shortname: WebCryptoAPI

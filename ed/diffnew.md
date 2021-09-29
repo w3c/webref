@@ -2,51 +2,19 @@
 % Reffy
 % September 29, 2021
 
-## Compute Pressure API
+## W3C Patent Policy
 
-- Initial URL: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Initial URL: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Editor's Draft: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
 - This specification was not in the reference crawl report.
 
 
-## Extend TimeZoneName Option Proposal
+## W3C Process Document
 
-- Initial URL: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
+- Initial URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
-- This specification was not in the reference crawl report.
-
-
-## Intl Enumeration API Specification
-
-- Initial URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
-- This specification was not in the reference crawl report.
-
-
-## Intl.DisplayNames v2 Proposal
-
-- Initial URL: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
-- This specification was not in the reference crawl report.
-
-
-## Intl.Segmenter Proposal
-
-- Initial URL: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
-- This specification was not in the reference crawl report.
-
-
-## WebRTC Encoded Transform
-
-- Initial URL: [https://www.w3.org/TR/webrtc-encoded-transform/](https://www.w3.org/TR/webrtc-encoded-transform/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
+- Editor's Draft: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
 - This specification was not in the reference crawl report.
 
 
