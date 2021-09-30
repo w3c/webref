@@ -22,10 +22,12 @@
     "https://drafts.csswg.org/web-animations-1/": [
       "animation-effect",
       "iteration-duration",
+      "animation-hold-time",
+      "animation",
+      "current-time",
+      "timeline-timeline-phase",
       "end-delay",
       "timeline",
-      "current-time",
-      "animation-hold-time",
       "unresolved",
       "finished-play-state",
       "iteration-progress",
@@ -33,7 +35,7 @@
       "keyframe-effect",
       "inactive-timeline",
       "time-value",
-      "animation",
+      "timeline-timeline-active-phase",
       "ready",
       "animation-associated-effect",
       "current-finished-promise",
@@ -43,8 +45,8 @@
       "active-time",
       "active-phase",
       "fill-mode",
-      "before-phase",
-      "after-phase",
+      "timeline-timeline-before-phase",
+      "timeline-timeline-after-phase",
       "iteration-count",
       "animation-playback-rate",
       "transformed-progress",
@@ -71,7 +73,6 @@
       "dom-effecttiming-fill",
       "dom-effecttiming-iterationstart",
       "dom-effecttiming-iterations",
-      "dom-effecttiming-duration",
       "dom-effecttiming-direction",
       "dom-effecttiming-easing",
       "dictdef-computedeffecttiming",
@@ -95,8 +96,9 @@
       "Exposed",
       "idl-undefined",
       "idl-double",
-      "idl-sequence",
       "idl-unrestricted-double",
+      "idl-DOMString",
+      "idl-sequence",
       "idl-unsigned-long"
     ],
     "https://drafts.csswg.org/css-values-4/": [
@@ -146,7 +148,9 @@
       "propdef-visibility"
     ],
     "https://dom.spec.whatwg.org/": [
-      "element"
+      "element",
+      "event",
+      "dictdef-eventinit"
     ],
     "https://drafts.csswg.org/css-pseudo-4/": [
       "csspseudoelement"
