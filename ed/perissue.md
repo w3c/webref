@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 29, 2021
+% September 30, 2021
 
 447 specifications were crawled in this report.
 
@@ -296,6 +296,8 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `<abs()>`
     * `<sign()>`
     * `<calc-constant>`
+    * `<start-value>`
+    * `<end-value>`
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/):
     * `cx` with type `property`
     * `cy` with type `property`
@@ -338,7 +340,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `<dasharray>`
     * `<marker-ref>`
 
-=> 67 properties without definition found in 5 specifications
+=> 69 properties without definition found in 5 specifications
 
 
 ## No definition for IDL properties
@@ -1795,7 +1797,6 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [Media Capture Automation](https://w3c.github.io/mediacapture-automation/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "mediacapture-streams" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture Depth Stream Extensions](https://w3c.github.io/mediacapture-depth/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "GETUSERMEDIA" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/) links to [`https://w3c.github.io/mediacapture-main/`](https://w3c.github.io/mediacapture-main/) but related reference "mediacapture-streams" uses URL [`https://www.w3.org/TR/mediacapture-streams/`](https://www.w3.org/TR/mediacapture-streams/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/) links to [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
@@ -1980,7 +1981,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 345 inconsistent references for links found in 182 specifications
+=> 344 inconsistent references for links found in 181 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -6358,19 +6359,30 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-media-audiotracks`](https://html.spec.whatwg.org/#dom-media-audiotracks)
      * [`https://html.spec.whatwg.org/#dom-videotrack-selected`](https://html.spec.whatwg.org/#dom-videotrack-selected)
      * [`https://html.spec.whatwg.org/#dom-media-videotracks`](https://html.spec.whatwg.org/#dom-media-videotracks)
+     * [`https://html.spec.whatwg.org/#dom-texttrack-showing`](https://html.spec.whatwg.org/#dom-texttrack-showing)
+     * [`https://html.spec.whatwg.org/#dom-texttrack-hidden`](https://html.spec.whatwg.org/#dom-texttrack-hidden)
      * [`https://html.spec.whatwg.org/#dom-media-texttracks`](https://html.spec.whatwg.org/#dom-media-texttracks)
+     * [`https://html.spec.whatwg.org/#media-timeline`](https://html.spec.whatwg.org/#media-timeline)
      * [`https://html.spec.whatwg.org/#concept-origin`](https://html.spec.whatwg.org/#concept-origin)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#security-with-canvas-elements`](https://html.spec.whatwg.org/#security-with-canvas-elements)
+     * [`https://html.spec.whatwg.org/#current-playback-position`](https://html.spec.whatwg.org/#current-playback-position)
+     * [`https://html.spec.whatwg.org/#earliest-possible-position`](https://html.spec.whatwg.org/#earliest-possible-position)
      * [`https://html.spec.whatwg.org/#dom-media-buffered`](https://html.spec.whatwg.org/#dom-media-buffered)
      * [`https://html.spec.whatwg.org/#timeranges`](https://html.spec.whatwg.org/#timeranges)
+     * [`https://html.spec.whatwg.org/#normalised-timeranges-object`](https://html.spec.whatwg.org/#normalised-timeranges-object)
      * [`https://html.spec.whatwg.org/#dom-media-seekable`](https://html.spec.whatwg.org/#dom-media-seekable)
      * [`https://html.spec.whatwg.org/#dedicatedworkerglobalscope`](https://html.spec.whatwg.org/#dedicatedworkerglobalscope)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
+     * [`https://html.spec.whatwg.org/#dom-media-have_metadata`](https://html.spec.whatwg.org/#dom-media-have_metadata)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#audiotracklist`](https://html.spec.whatwg.org/#audiotracklist)
      * [`https://html.spec.whatwg.org/#audiotrack`](https://html.spec.whatwg.org/#audiotrack)
+     * [`https://html.spec.whatwg.org/#event-media-removetrack`](https://html.spec.whatwg.org/#event-media-removetrack)
+     * [`https://html.spec.whatwg.org/#trackevent`](https://html.spec.whatwg.org/#trackevent)
+     * [`https://html.spec.whatwg.org/#dom-trackevent-track`](https://html.spec.whatwg.org/#dom-trackevent-track)
+     * [`https://html.spec.whatwg.org/#event-media-change`](https://html.spec.whatwg.org/#event-media-change)
      * [`https://html.spec.whatwg.org/#videotracklist`](https://html.spec.whatwg.org/#videotracklist)
      * [`https://html.spec.whatwg.org/#videotrack`](https://html.spec.whatwg.org/#videotrack)
      * [`https://html.spec.whatwg.org/#texttracklist`](https://html.spec.whatwg.org/#texttracklist)
@@ -6380,15 +6392,34 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#messageport`](https://html.spec.whatwg.org/#messageport)
      * [`https://html.spec.whatwg.org/#messagechannel`](https://html.spec.whatwg.org/#messagechannel)
      * [`https://html.spec.whatwg.org/#dom-media-src`](https://html.spec.whatwg.org/#dom-media-src)
+     * [`https://html.spec.whatwg.org/#concept-media-load-resource`](https://html.spec.whatwg.org/#concept-media-load-resource)
+     * [`https://html.spec.whatwg.org/#media-data-processing-steps-list`](https://html.spec.whatwg.org/#media-data-processing-steps-list)
+     * [`https://html.spec.whatwg.org/#delaying-the-load-event-flag`](https://html.spec.whatwg.org/#delaying-the-load-event-flag)
      * [`https://html.spec.whatwg.org/#dom-messagechannel-port1`](https://html.spec.whatwg.org/#dom-messagechannel-port1)
      * [`https://html.spec.whatwg.org/#structuredserializewithtransfer`](https://html.spec.whatwg.org/#structuredserializewithtransfer)
      * [`https://html.spec.whatwg.org/#dom-messagechannel-port2`](https://html.spec.whatwg.org/#dom-messagechannel-port2)
      * [`https://html.spec.whatwg.org/#structureddeserializewithtransfer`](https://html.spec.whatwg.org/#structureddeserializewithtransfer)
      * [`https://html.spec.whatwg.org/#environment-settings-object's-realm`](https://html.spec.whatwg.org/#environment-settings-object's-realm)
+     * [`https://html.spec.whatwg.org/#dom-media-network_empty`](https://html.spec.whatwg.org/#dom-media-network_empty)
+     * [`https://html.spec.whatwg.org/#event-media-emptied`](https://html.spec.whatwg.org/#event-media-emptied)
+     * [`https://html.spec.whatwg.org/#dom-media-seek`](https://html.spec.whatwg.org/#dom-media-seek)
      * [`https://html.spec.whatwg.org/#dom-media-readystate`](https://html.spec.whatwg.org/#dom-media-readystate)
+     * [`https://html.spec.whatwg.org/#ready-states`](https://html.spec.whatwg.org/#ready-states)
+     * [`https://html.spec.whatwg.org/#dom-media-have_enough_data`](https://html.spec.whatwg.org/#dom-media-have_enough_data)
+     * [`https://html.spec.whatwg.org/#dom-media-have_future_data`](https://html.spec.whatwg.org/#dom-media-have_future_data)
      * [`https://html.spec.whatwg.org/#dom-media-have_nothing`](https://html.spec.whatwg.org/#dom-media-have_nothing)
+     * [`https://html.spec.whatwg.org/#dom-media-have_current_data`](https://html.spec.whatwg.org/#dom-media-have_current_data)
+     * [`https://html.spec.whatwg.org/#dom-texttrack-disabled`](https://html.spec.whatwg.org/#dom-texttrack-disabled)
+     * [`https://html.spec.whatwg.org/#dom-media-duration`](https://html.spec.whatwg.org/#dom-media-duration)
+     * [`https://html.spec.whatwg.org/#durationChange`](https://html.spec.whatwg.org/#durationChange)
+     * [`https://html.spec.whatwg.org/#fatal-decode-error`](https://html.spec.whatwg.org/#fatal-decode-error)
      * [`https://html.spec.whatwg.org/#dom-media-error`](https://html.spec.whatwg.org/#dom-media-error)
+     * [`https://html.spec.whatwg.org/#dom-audiotrack-id`](https://html.spec.whatwg.org/#dom-audiotrack-id)
+     * [`https://html.spec.whatwg.org/#dom-audiotrack-language`](https://html.spec.whatwg.org/#dom-audiotrack-language)
+     * [`https://html.spec.whatwg.org/#dom-audiotrack-label`](https://html.spec.whatwg.org/#dom-audiotrack-label)
+     * [`https://html.spec.whatwg.org/#dom-audiotrack-kind`](https://html.spec.whatwg.org/#dom-audiotrack-kind)
      * [`https://html.spec.whatwg.org/#dom-audiotracklist-length`](https://html.spec.whatwg.org/#dom-audiotracklist-length)
+     * [`https://html.spec.whatwg.org/#event-media-addtrack`](https://html.spec.whatwg.org/#event-media-addtrack)
      * [`https://html.spec.whatwg.org/#dom-videotrack-id`](https://html.spec.whatwg.org/#dom-videotrack-id)
      * [`https://html.spec.whatwg.org/#dom-videotrack-language`](https://html.spec.whatwg.org/#dom-videotrack-language)
      * [`https://html.spec.whatwg.org/#dom-videotrack-label`](https://html.spec.whatwg.org/#dom-videotrack-label)
@@ -6398,13 +6429,12 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#dom-texttrack-language`](https://html.spec.whatwg.org/#dom-texttrack-language)
      * [`https://html.spec.whatwg.org/#dom-texttrack-label`](https://html.spec.whatwg.org/#dom-texttrack-label)
      * [`https://html.spec.whatwg.org/#dom-texttrack-kind`](https://html.spec.whatwg.org/#dom-texttrack-kind)
-     * [`https://html.spec.whatwg.org/#dom-media-have_current_data`](https://html.spec.whatwg.org/#dom-media-have_current_data)
-     * [`https://html.spec.whatwg.org/#dom-media-have_metadata`](https://html.spec.whatwg.org/#dom-media-have_metadata)
      * [`https://html.spec.whatwg.org/#event-media-loadedmetadata`](https://html.spec.whatwg.org/#event-media-loadedmetadata)
      * [`https://html.spec.whatwg.org/#dom-worker-terminate`](https://html.spec.whatwg.org/#dom-worker-terminate)
      * [`https://html.spec.whatwg.org/#terminate-a-worker`](https://html.spec.whatwg.org/#terminate-a-worker)
      * [`https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close`](https://html.spec.whatwg.org/#dom-dedicatedworkerglobalscope-close)
      * [`https://html.spec.whatwg.org/#concept-global-object-realm`](https://html.spec.whatwg.org/#concept-global-object-realm)
+     * [`https://html.spec.whatwg.org/#concept-video-intrinsic-width`](https://html.spec.whatwg.org/#concept-video-intrinsic-width)
      * [`https://html.spec.whatwg.org/#htmlvideoelement`](https://html.spec.whatwg.org/#htmlvideoelement)
 - [MediaStream Image Capture](https://w3c.github.io/mediacapture-image/):
      * [`https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind`](https://www.w3.org/TR/mediacapture-streams/#widl-MediaStreamTrack-kind)
@@ -8704,7 +8734,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4640 problematic external links found in 292 specifications
+=> 4669 problematic external links found in 292 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -8767,8 +8797,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/):
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
-- [Media Source Extensions™](https://w3c.github.io/media-source/):
-     * [`https://www.w3.org/TR/html51/`](https://www.w3.org/TR/html51/)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/):
      * [`https://www.w3.org/TR/html52/`](https://www.w3.org/TR/html52/)
 - [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/):
@@ -8825,7 +8853,7 @@ Links in the body of a specification should be to the same document as that poin
 - [WebUSB API](https://wicg.github.io/webusb/):
      * [`https://www.w3.org/TR/cors/`](https://www.w3.org/TR/cors/)
 
-=> 59 problematic external links found in 50 specifications
+=> 58 problematic external links found in 49 specifications
 
 
 ## External links that use a dated URL

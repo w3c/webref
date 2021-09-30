@@ -1,20 +1,12 @@
-% Diff between report from "September 29, 2021" and reference report from "September 29, 2021"
+% Diff between report from "September 30, 2021" and reference report from "September 29, 2021"
 % Reffy
-% September 29, 2021
+% September 30, 2021
 
-## W3C Patent Policy
+## Media Source Extensions™
 
-- Initial URL: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
+- Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
-- This specification was not in the reference crawl report.
-
-
-## W3C Process Document
-
-- Initial URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
+- Inconsistent references for links: *DEL* https://www.w3.org/TR/html51/
 
 
