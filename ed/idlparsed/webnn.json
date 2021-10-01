@@ -1953,8 +1953,24 @@
         "extAttrs": [],
         "partial": false
       },
+      "MLRoundingType": {
+        "fragment": "enum MLRoundingType {\n  \"floor\",\n  \"ceil\"\n};",
+        "type": "enum",
+        "name": "MLRoundingType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "floor"
+          },
+          {
+            "type": "enum-value",
+            "value": "ceil"
+          }
+        ],
+        "extAttrs": []
+      },
       "MLPool2dOptions": {
-        "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n};",
+        "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<long> outputSizes;\n};",
         "type": "dictionary",
         "name": "MLPool2dOptions",
         "inheritance": null,
@@ -2090,6 +2106,48 @@
               "value": "nchw"
             },
             "required": false
+          },
+          {
+            "type": "field",
+            "name": "roundingType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLRoundingType"
+            },
+            "default": {
+              "type": "string",
+              "value": "floor"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "outputSizes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -2165,10 +2223,10 @@
         ],
         "extAttrs": []
       },
-      "MLResampleOptions": {
-        "fragment": "dictionary MLResampleOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<long> sizes;\n};",
+      "MLResample2dOptions": {
+        "fragment": "dictionary MLResample2dOptions {\n  MLInterpolationMode mode = \"nearest-neighbor\";\n  sequence<float> scales;\n  sequence<long> sizes;\n  sequence<long> axes;\n};",
         "type": "dictionary",
-        "name": "MLResampleOptions",
+        "name": "MLResample2dOptions",
         "inheritance": null,
         "members": [
           {
@@ -2216,6 +2274,30 @@
           {
             "type": "field",
             "name": "sizes",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "axes",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -5329,14 +5411,14 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand resample(MLOperand input, optional MLResampleOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand resample2d(MLOperand input, optional MLResample2dOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
           "members": [
             {
               "type": "operation",
-              "name": "resample",
+              "name": "resample2d",
               "idlType": {
                 "type": "return-type",
                 "extAttrs": [],
@@ -5372,7 +5454,7 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "MLResampleOptions"
+                    "idlType": "MLResample2dOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -6177,7 +6259,7 @@
         "MLPadOptions",
         "MLPool2dOptions",
         "MLReduceOptions",
-        "MLResampleOptions",
+        "MLResample2dOptions",
         "MLSliceOptions",
         "MLSoftplusOptions",
         "MLSplitOptions",
@@ -6223,10 +6305,11 @@
       ],
       "MLPool2dOptions": [
         "MLAutoPad",
-        "MLInputOperandLayout"
+        "MLInputOperandLayout",
+        "MLRoundingType"
       ],
       "MLReduceOptions": [],
-      "MLResampleOptions": [
+      "MLResample2dOptions": [
         "MLInterpolationMode"
       ],
       "MLSliceOptions": [],

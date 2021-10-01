@@ -6,7 +6,7 @@
       "title": "Web Neural Network API",
       "url": "https://www.w3.org/TR/webnn/"
     },
-    "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n};",
+    "fragment": "dictionary MLPool2dOptions {\n  sequence<long> windowDimensions;\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  MLInputOperandLayout layout = \"nchw\";\n  MLRoundingType roundingType = \"floor\";\n  sequence<long> outputSizes;\n};",
     "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlpool2doptions"
   },
   "extended": [],

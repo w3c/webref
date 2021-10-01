@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% September 30, 2021
+% October 01, 2021
 
 447 specifications were crawled in this report.
 
@@ -41,6 +41,7 @@
 - [Static class features](https://tc39.es/proposal-static-class-features/)
 - [Temporal proposal](https://tc39.es/proposal-temporal/)
 - [Top-Level Await](https://tc39.es/proposal-top-level-await/)
+- [Web App Manifest - Application Information](https://w3c.github.io/manifest-app-info/)
 - [WebGL ANGLE_instanced_arrays Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/ANGLE_instanced_arrays/)
 - [WebGL EXT_blend_minmax Khronos Ratified Extension Specification](https://www.khronos.org/registry/webgl/extensions/EXT_blend_minmax/)
 - [WebGL EXT_clip_cull_distance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/EXT_clip_cull_distance/)
@@ -84,7 +85,7 @@
 - [WebGL WEBGL_multi_draw Extension Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw/)
 - [WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification](https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/)
 
-=> 76 specifications found
+=> 77 specifications found
 
 Basically all specifications have normative dependencies on some other specification. Reffy could not find any normative dependencies for the specifications mentioned above, which seems strange.
 
@@ -296,6 +297,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `<abs()>`
     * `<sign()>`
     * `<calc-constant>`
+    * `<rounding-strategy>`
     * `<start-value>`
     * `<end-value>`
 - [Scalable Vector Graphics (SVG) 1.1 (Second Edition)](https://www.w3.org/TR/SVG11/):
@@ -340,7 +342,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
     * `<dasharray>`
     * `<marker-ref>`
 
-=> 69 properties without definition found in 5 specifications
+=> 70 properties without definition found in 5 specifications
 
 
 ## No definition for IDL properties
