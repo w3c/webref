@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-10-01T12:46:20.281Z",
+  "date": "2021-10-01T18:54:00.454Z",
   "options": {
     "output": "reports/ed",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 447,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -14566,18 +14566,13 @@
         "https://www.w3.org/TR/filter-effects-1/",
         "https://drafts.fxtf.org/filter-effects-1/"
       ],
-      "crawled": "https://drafts.fxtf.org/filter-effects-1/",
-      "generator": "bikeshed",
-      "date": "30 October 2019",
-      "links": "links/filter-effects-1.json",
-      "refs": "refs/filter-effects-1.json",
-      "idl": "idl/filter-effects.idl",
-      "css": "css/filter-effects.json",
-      "dfns": "dfns/filter-effects-1.json",
-      "elements": "elements/filter-effects-1.json",
-      "headings": "headings/filter-effects-1.json",
-      "ids": "ids/filter-effects-1.json",
-      "idlparsed": "idlparsed/filter-effects-1.json"
+      "crawled": {
+        "url": "https://drafts.fxtf.org/filter-effects-1/",
+        "repository": "https://github.com/w3c/fxtf-drafts",
+        "sourcePath": "filter-effects/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/fingerprinting-guidance/",
@@ -17929,7 +17924,7 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation",
       "generator": "bikeshed",
-      "date": "20 September 2021",
+      "date": "1 October 2021",
       "links": "links/secure-payment-confirmation.json",
       "refs": "refs/secure-payment-confirmation.json",
       "idl": "idl/secure-payment-confirmation.idl",
@@ -20736,7 +20731,7 @@
       ],
       "crawled": "https://immersive-web.github.io/layers/",
       "generator": "bikeshed",
-      "date": "30 September 2021",
+      "date": "1 October 2021",
       "links": "links/webxrlayers-1.json",
       "refs": "refs/webxrlayers-1.json",
       "idl": "idl/webxrlayers.idl",
