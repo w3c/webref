@@ -205,6 +205,7 @@
   <ul>
   <li><a href="https://wicg.github.io/shape-detection-api/">Accelerated Shape Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
   <li><a href="https://wicg.github.io/shape-detection-api/text.html">Accelerated Text Detection in Images</a> uses <code>Point2D</code> but does not reference <a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a></li>
+  <li><a href="https://w3c.github.io/FileAPI/">File API</a> uses <code>MediaSource</code> but does not reference <a href="https://w3c.github.io/media-source/">Media Source Extensions™</a></li>
   <li><a href="https://w3c.github.io/gamepad/extensions.html">Gamepad Extensions</a> uses <code>Gamepad</code> but does not reference <a href="https://w3c.github.io/gamepad/">Gamepad</a></li>
   <li><a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a> uses <code>WebGL2RenderingContext</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">WebGL 2.0 Specification</a></li>
   <li><a href="https://w3c.github.io/IntersectionObserver/">Intersection Observer</a> uses <code>DOMHighResTimeStamp</code> but does not reference <a href="https://w3c.github.io/hr-time/">High Resolution Time</a></li>
@@ -295,7 +296,7 @@
   <li><code>WebGLTexture</code> but does not reference <a href="https://www.khronos.org/registry/webgl/specs/latest/1.0/">WebGL Specification</a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 52 missing references for IDL definitions found in 24 specifications</p>
+  <p>=&gt; 53 missing references for IDL definitions found in 25 specifications</p>
   </section>
   <section id="no-definition-for-css-properties" class="level2">
   <h2>No definition for CSS properties</h2>
@@ -1623,6 +1624,7 @@
   <li><a href="https://dom.spec.whatwg.org/">DOM Standard</a> links to <a href="https://w3c.github.io/deviceorientation/spec-source-orientation.html"><code>https://w3c.github.io/deviceorientation/spec-source-orientation.html</code></a> but does not list it in its references</li>
   <li><a href="https://tc39.es/ecma262/multipage/">ECMAScript® 2022 Language Specification</a> links to <a href="https://html.spec.whatwg.org/"><code>https://html.spec.whatwg.org/</code></a> but does not list it in its references</li>
   <li><a href="https://wicg.github.io/event-timing/">Event Timing API</a> links to <a href="https://w3c.github.io/timing-entrytypes-registry/"><code>https://w3c.github.io/timing-entrytypes-registry/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/FileAPI/">File API</a> links to <a href="https://w3c.github.io/media-source/"><code>https://w3c.github.io/media-source/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.fxtf.org/filter-effects-1/">Filter Effects Module Level 1</a> links to:
   <ul>
   <li><a href="https://www.w3.org/TR/css-cascade/"><code>https://www.w3.org/TR/css-cascade/</code></a> but does not list it in its references</li>
@@ -1693,6 +1695,11 @@
   <li><a href="https://w3c.github.io/magnetometer/">Magnetometer</a> links to <a href="https://w3c.github.io/motion-sensors/"><code>https://w3c.github.io/motion-sensors/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mathml-aam/">MathML Accessiblity API Mappings 1.0</a> links to <a href="https://w3c.github.io/aria/"><code>https://w3c.github.io/aria/</code></a> but does not list it in its references</li>
   <li><a href="https://drafts.csswg.org/mediaqueries-4/">Media Queries Level 4</a> links to <a href="https://www.w3.org/TR/security-privacy-questionnaire/"><code>https://www.w3.org/TR/security-privacy-questionnaire/</code></a> but does not list it in its references</li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a> links to:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2016/REC-media-source-20161117/"><code>https://www.w3.org/TR/2016/REC-media-source-20161117/</code></a> but does not list it in its references</li>
+  <li><a href="https://www.w3.org/TR/2016/CR-media-source-20160705/"><code>https://www.w3.org/TR/2016/CR-media-source-20160705/</code></a> but does not list it in its references</li>
+  </ul></li>
   <li><a href="https://w3c.github.io/mediacapture-image/">MediaStream Image Capture</a> links to <a href="https://www.w3.org/TR/page-visibility/"><code>https://www.w3.org/TR/page-visibility/</code></a> but does not list it in its references</li>
   <li><a href="https://w3c.github.io/mediacapture-record/">MediaStream Recording</a> links to:
   <ul>
@@ -1948,7 +1955,7 @@
   <li><a href="https://immersive-web.github.io/lighting-estimation/">WebXR Lighting Estimation API Level 1</a> links to <a href="https://www.w3.org/TR/webxrlayers-1/"><code>https://www.w3.org/TR/webxrlayers-1/</code></a> but does not list it in its references</li>
   <li><a href="https://xhr.spec.whatwg.org/">XMLHttpRequest Standard</a> links to <a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a> but does not list it in its references</li>
   </ul>
-  <p>=&gt; 636 missing references for links found in 182 specifications</p>
+  <p>=&gt; 639 missing references for links found in 184 specifications</p>
   <p>Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.</p>
   <p>Note Reffy only reports on links to &quot;well-known&quot; specs and ignores links to non-usual specs (e.g. PDF documents, etc.) for now.</p>
   </section>
@@ -2188,7 +2195,6 @@
   <li><a href="https://wicg.github.io/floc/">Federated Learning of Cohorts</a> links to <a href="https://w3c.github.io/webappsec-permissions-policy/"><code>https://w3c.github.io/webappsec-permissions-policy/</code></a> but related reference &quot;PERMISSIONS-POLICY&quot; uses URL <a href="https://www.w3.org/TR/permissions-policy-1/"><code>https://www.w3.org/TR/permissions-policy-1/</code></a></li>
   <li><a href="https://w3c.github.io/webappsec-fetch-metadata/">Fetch Metadata Request Headers</a> links to <a href="https://w3c.github.io/webappsec-secure-contexts/"><code>https://w3c.github.io/webappsec-secure-contexts/</code></a> but related reference &quot;SECURE-CONTEXTS&quot; uses URL <a href="https://www.w3.org/TR/secure-contexts/"><code>https://www.w3.org/TR/secure-contexts/</code></a></li>
   <li><a href="https://wicg.github.io/entries-api/">File and Directory Entries API</a> links to <a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FileAPI&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
-  <li><a href="https://w3c.github.io/FileAPI/">File API</a> links to <a href="https://w3c.github.io/media-source/"><code>https://w3c.github.io/media-source/</code></a> but related reference &quot;MEDIA-SOURCE&quot; uses URL <a href="https://www.w3.org/TR/media-source/"><code>https://www.w3.org/TR/media-source/</code></a></li>
   <li><a href="https://wicg.github.io/file-system-access/">File System Access</a> links to:
   <ul>
   <li><a href="https://w3c.github.io/FileAPI/"><code>https://w3c.github.io/FileAPI/</code></a> but related reference &quot;FILE-API&quot; uses URL <a href="https://www.w3.org/TR/FileAPI/"><code>https://www.w3.org/TR/FileAPI/</code></a></li>
@@ -2510,7 +2516,7 @@
   <li><a href="https://immersive-web.github.io/webxr-gamepads-module/">WebXR Gamepads Module - Level 1</a> links to <a href="https://w3c.github.io/gamepad/"><code>https://w3c.github.io/gamepad/</code></a> but related reference &quot;GAMEPAD&quot; uses URL <a href="https://www.w3.org/TR/gamepad/"><code>https://www.w3.org/TR/gamepad/</code></a></li>
   <li><a href="https://immersive-web.github.io/webxr-hand-input/">WebXR Hand Input Module - Level 1</a> links to <a href="https://w3c.github.io/ServiceWorker/"><code>https://w3c.github.io/ServiceWorker/</code></a> but related reference &quot;SERVICE-WORKERS-1&quot; uses URL <a href="https://www.w3.org/TR/service-workers-1/"><code>https://www.w3.org/TR/service-workers-1/</code></a></li>
   </ul>
-  <p>=&gt; 344 inconsistent references for links found in 181 specifications</p>
+  <p>=&gt; 343 inconsistent references for links found in 180 specifications</p>
   <p>Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.</p>
   </section>
   <section id="external-links-to-private-terms" class="level2">
@@ -10896,6 +10902,11 @@
   <li><a href="https://www.w3.org/TR/2015/REC-IndexedDB-20150108/"><code>https://www.w3.org/TR/2015/REC-IndexedDB-20150108/</code></a></li>
   <li><a href="https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/"><code>https://www.w3.org/TR/2018/REC-IndexedDB-2-20180130/</code></a></li>
   </ul></li>
+  <li><a href="https://w3c.github.io/media-source/">Media Source Extensions™</a>:
+  <ul>
+  <li><a href="https://www.w3.org/TR/2016/REC-media-source-20161117/"><code>https://www.w3.org/TR/2016/REC-media-source-20161117/</code></a></li>
+  <li><a href="https://www.w3.org/TR/2016/CR-media-source-20160705/"><code>https://www.w3.org/TR/2016/CR-media-source-20160705/</code></a></li>
+  </ul></li>
   <li><a href="https://w3c.github.io/webappsec-mixed-content/">Mixed Content Level 2</a>:
   <ul>
   <li><a href="https://www.w3.org/TR/2008/REC-xml-20081126/"><code>https://www.w3.org/TR/2008/REC-xml-20081126/</code></a></li>
@@ -11068,7 +11079,7 @@
   <li><a href="https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/"><code>https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 194 problematic external links found in 64 specifications</p>
+  <p>=&gt; 196 problematic external links found in 65 specifications</p>
   </section>
   </body>
 </html>

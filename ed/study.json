@@ -2,7 +2,7 @@
   "type": "study",
   "title": "Reffy crawl",
   "description": "",
-  "date": "2021-10-01T06:44:00.937Z",
+  "date": "2021-10-01T12:46:20.281Z",
   "stats": {
     "crawled": 447,
     "errors": 0,
@@ -888,7 +888,7 @@
     {
       "title": "ARIA in HTML",
       "shortname": "html-aria",
-      "date": "24 September 2021",
+      "date": "01 October 2021",
       "url": "https://www.w3.org/TR/html-aria/",
       "release": {
         "url": "https://www.w3.org/TR/html-aria/",
@@ -21017,7 +21017,7 @@
               "crawled": "https://w3c.github.io/mediacapture-main/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             },
@@ -23570,21 +23570,26 @@
         "unknownExposedNames": [],
         "unknownIdlNames": [],
         "redefinedIdlNames": [],
-        "missingWebIdlRef": [],
+        "missingWebIdlRef": [
+          {
+            "name": "MediaSource",
+            "refs": [
+              {
+                "url": "https://www.w3.org/TR/media-source-2/",
+                "title": "Media Source Extensions™",
+                "crawled": "https://w3c.github.io/media-source/"
+              }
+            ]
+          }
+        ],
         "missingDfns": {
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
-        "inconsistentRef": [
-          {
-            "link": "https://w3c.github.io/media-source/",
-            "ref": {
-              "name": "MEDIA-SOURCE",
-              "url": "https://www.w3.org/TR/media-source/"
-            }
-          }
+        "missingLinkRef": [
+          "https://w3c.github.io/media-source/"
         ],
+        "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
@@ -23633,7 +23638,7 @@
               "crawled": "https://wicg.github.io/local-font-access/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             },
@@ -26093,7 +26098,7 @@
     {
       "title": "HTML Standard",
       "shortname": "html",
-      "date": "30 September 2021",
+      "date": "1 October 2021",
       "url": "https://html.spec.whatwg.org/multipage/",
       "nightly": {
         "url": "https://html.spec.whatwg.org/multipage/",
@@ -33450,7 +33455,7 @@
               "crawled": "https://w3c.github.io/mediasession/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             },
@@ -39263,7 +39268,7 @@
               "crawled": "https://w3c.github.io/media-capabilities/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             }
@@ -39725,11 +39730,11 @@
     },
     {
       "title": "Media Source Extensions™",
-      "shortname": "media-source",
+      "shortname": "media-source-2",
       "date": "29 September 2021",
-      "url": "https://www.w3.org/TR/media-source/",
+      "url": "https://www.w3.org/TR/media-source-2/",
       "release": {
-        "url": "https://www.w3.org/TR/media-source/",
+        "url": "https://www.w3.org/TR/media-source-2/",
         "filename": "Overview.html"
       },
       "nightly": {
@@ -39742,8 +39747,8 @@
       "organization": "W3C",
       "groups": [
         {
-          "name": "HTML Media Extensions Working Group",
-          "url": "https://www.w3.org/html/wg/"
+          "name": "Media Working Group",
+          "url": "https://www.w3.org/media-wg/"
         }
       ],
       "report": {
@@ -39759,24 +39764,17 @@
           "css": [],
           "idl": []
         },
-        "missingLinkRef": [],
+        "missingLinkRef": [
+          "https://www.w3.org/TR/2016/REC-media-source-20161117/",
+          "https://www.w3.org/TR/2016/CR-media-source-20160705/"
+        ],
         "inconsistentRef": [],
         "referencedBy": {
           "normative": [
             {
-              "url": "https://www.w3.org/TR/FileAPI/",
-              "title": "File API",
-              "crawled": "https://w3c.github.io/FileAPI/"
-            },
-            {
               "url": "https://html.spec.whatwg.org/multipage/",
               "title": "HTML Standard",
               "crawled": "https://html.spec.whatwg.org/multipage/"
-            },
-            {
-              "url": "https://www.w3.org/TR/media-capabilities/",
-              "title": "Media Capabilities",
-              "crawled": "https://w3c.github.io/media-capabilities/"
             },
             {
               "url": "https://url.spec.whatwg.org/",
@@ -39784,23 +39782,7 @@
               "crawled": "https://url.spec.whatwg.org/"
             }
           ],
-          "informative": [
-            {
-              "url": "https://www.w3.org/TR/encrypted-media/",
-              "title": "Encrypted Media Extensions",
-              "crawled": "https://w3c.github.io/encrypted-media/"
-            },
-            {
-              "url": "https://w3c.github.io/media-playback-quality/",
-              "title": "Media Playback Quality",
-              "crawled": "https://w3c.github.io/media-playback-quality/"
-            },
-            {
-              "url": "https://www.w3.org/TR/webcodecs/",
-              "title": "WebCodecs",
-              "crawled": "https://w3c.github.io/webcodecs/"
-            }
-          ]
+          "informative": []
         },
         "xrefs": {
           "notExported": [],
@@ -39891,7 +39873,10 @@
           ],
           "evolvingLinks": [],
           "outdatedSpecs": [],
-          "datedUrls": []
+          "datedUrls": [
+            "https://www.w3.org/TR/2016/REC-media-source-20161117/",
+            "https://www.w3.org/TR/2016/CR-media-source-20160705/"
+          ]
         },
         "ok": false
       }
@@ -51769,7 +51754,7 @@
               "crawled": "https://wicg.github.io/sanitizer-api/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             },
@@ -54425,7 +54410,7 @@
               "crawled": "https://w3c.github.io/mediasession/"
             },
             {
-              "url": "https://www.w3.org/TR/media-source/",
+              "url": "https://www.w3.org/TR/media-source-2/",
               "title": "Media Source Extensions™",
               "crawled": "https://w3c.github.io/media-source/"
             },
@@ -55639,7 +55624,7 @@
     {
       "title": "WebAssembly Core Specification",
       "shortname": "wasm-core-1",
-      "date": "28 September 2021",
+      "date": "1 October 2021",
       "url": "https://www.w3.org/TR/wasm-core-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-core-1/",
@@ -55687,7 +55672,7 @@
     {
       "title": "WebAssembly JavaScript Interface",
       "shortname": "wasm-js-api-1",
-      "date": "28 September 2021",
+      "date": "1 October 2021",
       "url": "https://www.w3.org/TR/wasm-js-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-js-api-1/",
@@ -55778,7 +55763,7 @@
     {
       "title": "WebAssembly Web API",
       "shortname": "wasm-web-api-1",
-      "date": "28 September 2021",
+      "date": "1 October 2021",
       "url": "https://www.w3.org/TR/wasm-web-api-1/",
       "release": {
         "url": "https://www.w3.org/TR/wasm-web-api-1/",
@@ -62567,7 +62552,7 @@
     {
       "title": "WebTransport",
       "shortname": "webtransport",
-      "date": "28 September 2021",
+      "date": "1 October 2021",
       "url": "https://www.w3.org/TR/webtransport/",
       "release": {
         "url": "https://www.w3.org/TR/webtransport/",
