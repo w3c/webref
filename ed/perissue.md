@@ -1,18 +1,8 @@
 % Reffy crawl
 % Reffy
-% October 01, 2021
+% October 02, 2021
 
 447 specifications were crawled in this report.
-
-
-## Specifications that could not be rendered
-
-Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.
-
-- [Filter Effects Module Level 1]([object Object]): `TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111`
-
-=> 1 specification found
 
 
 ## Specifications without normative dependencies
@@ -1049,7 +1039,6 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/) links to:
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
     * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
-    * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/) but does not list it in its references
     * [`https://www.w3.org/TR/css3-syntax/`](https://www.w3.org/TR/css3-syntax/) but does not list it in its references
     * [`https://www.w3.org/TR/security-privacy-questionnaire/`](https://www.w3.org/TR/security-privacy-questionnaire/) but does not list it in its references
 - [CSS Fonts Module Level 5](https://drafts.csswg.org/css-fonts-5/) links to:
@@ -1325,6 +1314,12 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [ECMAScript® 2022 Language Specification](https://tc39.es/ecma262/multipage/) links to [`https://html.spec.whatwg.org/`](https://html.spec.whatwg.org/) but does not list it in its references
 - [Event Timing API](https://wicg.github.io/event-timing/) links to [`https://w3c.github.io/timing-entrytypes-registry/`](https://w3c.github.io/timing-entrytypes-registry/) but does not list it in its references
 - [File API](https://w3c.github.io/FileAPI/) links to [`https://w3c.github.io/media-source/`](https://w3c.github.io/media-source/) but does not list it in its references
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/) links to:
+    * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
+    * [`https://www.w3.org/TR/web-animations/`](https://www.w3.org/TR/web-animations/) but does not list it in its references
+    * [`https://www.w3.org/TR/css-transitions-1/`](https://www.w3.org/TR/css-transitions-1/) but does not list it in its references
+    * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
+    * [`https://www.w3.org/TR/2012/WD-filter-effects-20121025/`](https://www.w3.org/TR/2012/WD-filter-effects-20121025/) but does not list it in its references
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but does not list it in its references
     * [`https://www.w3.org/TR/css-cascade/`](https://www.w3.org/TR/css-cascade/) but does not list it in its references
@@ -1569,7 +1564,7 @@ Also, please keep in mind that Reffy only knows about IDL terms defined in the s
 - [WebXR Lighting Estimation API Level 1](https://immersive-web.github.io/lighting-estimation/) links to [`https://www.w3.org/TR/webxrlayers-1/`](https://www.w3.org/TR/webxrlayers-1/) but does not list it in its references
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/) links to [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/) but does not list it in its references
 
-=> 634 missing references for links found in 183 specifications
+=> 638 missing references for links found in 184 specifications
 
 Any link to an external document from within a specification should trigger the creation of a corresponding entry in the references section.
 
@@ -1657,6 +1652,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [CSS Font Loading Module Level 3](https://drafts.csswg.org/css-font-loading/) links to [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/) but related reference "HTML" uses URL [`https://html.spec.whatwg.org/multipage/`](https://html.spec.whatwg.org/multipage/)
 - [CSS Fonts Module Level 4](https://drafts.csswg.org/css-fonts-4/) links to:
     * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS-VALUES-3" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/`](https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/) but related reference "PFE-report" uses URL [`https://www.w3.org/TR/PFE-evaluation/`](https://www.w3.org/TR/PFE-evaluation/)
     * [`https://www.w3.org/TR/css-fonts-4/`](https://www.w3.org/TR/css-fonts-4/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
     * [`https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/`](https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
     * [`https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/`](https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/) but related reference "CSS-FONTS-3" uses URL [`https://www.w3.org/TR/css-fonts-3/`](https://www.w3.org/TR/css-fonts-3/)
@@ -1760,6 +1756,9 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [File System Access](https://wicg.github.io/file-system-access/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FILE-API" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/) but related reference "PERMISSIONS" uses URL [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/) links to:
+    * [`https://www.w3.org/TR/css-values/`](https://www.w3.org/TR/css-values/) but related reference "CSS3VAL" uses URL [`https://www.w3.org/TR/css-values-3/`](https://www.w3.org/TR/css-values-3/)
+    * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/) but related reference "SVG11" uses URL [`https://www.w3.org/TR/SVG11/`](https://www.w3.org/TR/SVG11/)
 - [Generic Sensor API](https://w3c.github.io/sensors/) links to:
     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/) but related reference "PAGE-VISIBILITY" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
     * [`https://www.w3.org/TR/permissions/`](https://www.w3.org/TR/permissions/) but related reference "PERMISSIONS" uses URL [`https://w3c.github.io/permissions/`](https://w3c.github.io/permissions/)
@@ -1811,7 +1810,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [MediaStream Recording](https://w3c.github.io/mediacapture-record/) links to:
     * [`https://w3c.github.io/FileAPI/`](https://w3c.github.io/FileAPI/) but related reference "FileAPI" uses URL [`https://www.w3.org/TR/FileAPI/`](https://www.w3.org/TR/FileAPI/)
     * [`https://www.w3.org/TR/hr-time/`](https://www.w3.org/TR/hr-time/) but related reference "HR-TIME" uses URL [`https://www.w3.org/TR/hr-time-2/`](https://www.w3.org/TR/hr-time-2/)
-- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/) links to:
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/) links to:
     * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/) but related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
     * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/) but related reference "XML" uses URL [`https://www.w3.org/TR/xml/`](https://www.w3.org/TR/xml/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/) links to:
@@ -1989,7 +1988,7 @@ Note Reffy only reports on links to "well-known" specs and ignores links to non-
 - [WebXR Gamepads Module - Level 1](https://immersive-web.github.io/webxr-gamepads-module/) links to [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/) but related reference "GAMEPAD" uses URL [`https://www.w3.org/TR/gamepad/`](https://www.w3.org/TR/gamepad/)
 - [WebXR Hand Input Module - Level 1](https://immersive-web.github.io/webxr-hand-input/) links to [`https://w3c.github.io/ServiceWorker/`](https://w3c.github.io/ServiceWorker/) but related reference "SERVICE-WORKERS-1" uses URL [`https://www.w3.org/TR/service-workers-1/`](https://www.w3.org/TR/service-workers-1/)
 
-=> 341 inconsistent references for links found in 179 specifications
+=> 344 inconsistent references for links found in 180 specifications
 
 Links in the body of a specification should be to the same document as that pointed to by the related reference in the References section. The specifications reported here use a different URL. For instance, they may use a link to the Editor's Draft but target the latest published version in the References section. There should be some consistency across the specification.
 
@@ -2347,6 +2346,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://storage.spec.whatwg.org/#storage-endpoint-identifier`](https://storage.spec.whatwg.org/#storage-endpoint-identifier)
      * [`https://storage.spec.whatwg.org/#storage-endpoint-types`](https://storage.spec.whatwg.org/#storage-endpoint-types)
      * [`https://storage.spec.whatwg.org/#storage-endpoint-quota`](https://storage.spec.whatwg.org/#storage-endpoint-quota)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/):
+     * [`https://www.w3.org/TR/css-cascade/#applies-to`](https://www.w3.org/TR/css-cascade/#applies-to)
+     * [`https://drafts.csswg.org/web-animations-1/#composite-operation-replace`](https://drafts.csswg.org/web-animations-1/#composite-operation-replace)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/):
      * [`https://www.w3.org/TR/css-cascade/#applies-to`](https://www.w3.org/TR/css-cascade/#applies-to)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/):
@@ -2659,6 +2661,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Responsive Image Client Hints](https://wicg.github.io/responsive-image-client-hints/):
      * [`https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting`](https://www.w3.org/TR/fingerprinting-guidance/#dfn-passive-fingerprinting)
 - [Scalable Vector Graphics (SVG) 2](https://svgwg.org/svg2-draft/):
+     * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
      * [`https://w3c.github.io/selection-api/#dfn-direction`](https://w3c.github.io/selection-api/#dfn-direction)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)
      * [`https://www.w3.org/TR/css3-exclusions/#content-area`](https://www.w3.org/TR/css3-exclusions/#content-area)
@@ -3018,7 +3021,7 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm`](https://w3c.github.io/DOM-Parsing/#dfn-fragment-serializing-algorithm)
 
-=> 829 problematic external links found in 192 specifications
+=> 832 problematic external links found in 193 specifications
 
 
 ## External links that neither target definitions nor headings
@@ -4374,7 +4377,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-dialog-open`](https://html.spec.whatwg.org/#attr-dialog-open)
      * [`https://html.spec.whatwg.org/#close-the-dialog`](https://html.spec.whatwg.org/#close-the-dialog)
 - [Compatibility Standard](https://compat.spec.whatwg.org/):
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
      * [`https://drafts.csswg.org/css-transitions/#animtype-color`](https://drafts.csswg.org/css-transitions/#animtype-color)
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
      * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
@@ -4661,7 +4663,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/selectors-3/#sel-first-line`](https://www.w3.org/TR/selectors-3/#sel-first-line)
      * [`https://www.w3.org/TR/selectors-3/#first-letter0`](https://www.w3.org/TR/selectors-3/#first-letter0)
      * [`https://www.w3.org/TR/css-color-3/#color0`](https://www.w3.org/TR/css-color-3/#color0)
-     * [`https://www.w3.org/TR/filter-effects-1/#funcdef-filter-drop-shadow`](https://www.w3.org/TR/filter-effects-1/#funcdef-filter-drop-shadow)
 - [CSS Backgrounds and Borders Module Level 4](https://drafts.csswg.org/css-backgrounds-4/):
      * [`https://www.w3.org/TR/css3-transitions/#animtype-color`](https://www.w3.org/TR/css3-transitions/#animtype-color)
 - [CSS Basic User Interface Module Level 4](https://drafts.csswg.org/css-ui-4/):
@@ -4747,12 +4748,9 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-em-element`](https://html.spec.whatwg.org/#the-em-element)
      * [`https://html.spec.whatwg.org/#the-button-element`](https://html.spec.whatwg.org/#the-button-element)
      * [`https://html.spec.whatwg.org/#the-body-element`](https://html.spec.whatwg.org/#the-body-element)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-flood-color`](https://drafts.fxtf.org/filter-effects-1/#propdef-flood-color)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-lighting-color`](https://drafts.fxtf.org/filter-effects-1/#propdef-lighting-color)
 - [CSS Color Module Level 4](https://drafts.csswg.org/css-color/):
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
      * [`https://html.spec.whatwg.org/#the-mark-element`](https://html.spec.whatwg.org/#the-mark-element)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
 - [CSS Conditional Rules Module Level 3](https://drafts.csswg.org/css-conditional-3/):
      * [`https://html.spec.whatwg.org/#the-link-element`](https://html.spec.whatwg.org/#the-link-element)
      * [`https://www.w3.org/TR/css-cascade-5/#typedef-declaration`](https://www.w3.org/TR/css-cascade-5/#typedef-declaration)
@@ -4851,14 +4849,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-option-element`](https://html.spec.whatwg.org/#the-option-element)
      * [`https://html.spec.whatwg.org/#lists`](https://html.spec.whatwg.org/#lists)
 - [CSS Masking Module Level 1](https://drafts.fxtf.org/css-masking-1/):
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-color-interpolation-filters`](https://drafts.fxtf.org/filter-effects-1/#propdef-color-interpolation-filters)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-flood-color`](https://drafts.fxtf.org/filter-effects-1/#propdef-flood-color)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-flood-opacity`](https://drafts.fxtf.org/filter-effects-1/#propdef-flood-opacity)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-lighting-color`](https://drafts.fxtf.org/filter-effects-1/#propdef-lighting-color)
-     * [`https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb`](https://drafts.fxtf.org/filter-effects-1/#valdef-color-interpolation-filters-linearrgb)
-     * [`https://drafts.fxtf.org/filter-effects-1/#elementdef-fecolormatrix`](https://drafts.fxtf.org/filter-effects-1/#elementdef-fecolormatrix)
-     * [`https://drafts.fxtf.org/filter-effects-1/#elementdef-filter`](https://drafts.fxtf.org/filter-effects-1/#elementdef-filter)
      * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
 - [CSS Nesting Module](https://drafts.csswg.org/css-nesting/):
      * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
@@ -4998,7 +4988,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#attr-img-sizes`](https://html.spec.whatwg.org/#attr-img-sizes)
 - [CSS Table Module Level 3](https://drafts.csswg.org/css-tables-3/):
      * [`https://drafts.csswg.org/css-transforms/#grouping-property-values`](https://drafts.csswg.org/css-transforms/#grouping-property-values)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
      * [`https://html.spec.whatwg.org/#tables-2`](https://html.spec.whatwg.org/#tables-2)
 - [CSS Text Decoration Module Level 3](https://drafts.csswg.org/css-text-decor-3/):
      * [`https://html.spec.whatwg.org/#the-ins-element`](https://html.spec.whatwg.org/#the-ins-element)
@@ -5017,7 +5006,6 @@ Links in the body of a specification should be to the same document as that poin
 - [CSS Transforms Module Level 1](https://drafts.csswg.org/css-transforms/):
      * [`https://html.spec.whatwg.org/#the-div-element`](https://html.spec.whatwg.org/#the-div-element)
 - [CSS Transforms Module Level 2](https://drafts.csswg.org/css-transforms-2/):
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
      * [`https://html.spec.whatwg.org/#the-a-element`](https://html.spec.whatwg.org/#the-a-element)
 - [CSS Transitions](https://drafts.csswg.org/css-transitions/):
      * [`https://drafts.csswg.org/css-color-3/#opacity`](https://drafts.csswg.org/css-color-3/#opacity)
@@ -5410,13 +5398,17 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#the-drag-data-item-kind`](https://html.spec.whatwg.org/#the-drag-data-item-kind)
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#event-messageerror`](https://html.spec.whatwg.org/#event-messageerror)
-- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/):
-     * [`https://drafts.fxtf.org/filter-effects-1/#typedef-filter-value-list`](https://drafts.fxtf.org/filter-effects-1/#typedef-filter-value-list)
-     * [`https://drafts.fxtf.org/filter-effects-1/#elementdef-filter`](https://drafts.fxtf.org/filter-effects-1/#elementdef-filter)
-     * [`https://drafts.fxtf.org/filter-effects-1/#blurEquivalent`](https://drafts.fxtf.org/filter-effects-1/#blurEquivalent)
-     * [`https://drafts.fxtf.org/filter-effects-1/#propdef-filter`](https://drafts.fxtf.org/filter-effects-1/#propdef-filter)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/):
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
-     * [`https://www.w3.org/TR/filter-effects-1/#tainted-filter-primitives`](https://www.w3.org/TR/filter-effects-1/#tainted-filter-primitives)
+     * [`https://html.spec.whatwg.org/#attr-img-crossorigin`](https://html.spec.whatwg.org/#attr-img-crossorigin)
+     * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
+     * [`https://www.w3.org/TR/css-values-3/#typedef-number-percentage`](https://www.w3.org/TR/css-values-3/#typedef-number-percentage)
+     * [`https://www.w3.org/TR/css-transitions-1/#animtype-length`](https://www.w3.org/TR/css-transitions-1/#animtype-length)
+     * [`https://www.w3.org/TR/css-transitions-1/#animtype-number`](https://www.w3.org/TR/css-transitions-1/#animtype-number)
+     * [`https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list`](https://www.w3.org/TR/css-transitions-1/#animtype-shadow-list)
+     * [`https://drafts.csswg.org/css-color-3/#color0`](https://drafts.csswg.org/css-color-3/#color0)
+- [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/):
+     * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
 - [Frame Timing](https://wicg.github.io/frame-timing/):
      * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/):
@@ -6008,7 +6000,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://drafts.csswg.org/css-multicol/#propdef-column-gap`](https://drafts.csswg.org/css-multicol/#propdef-column-gap)
      * [`https://drafts.csswg.org/css-values/#vw`](https://drafts.csswg.org/css-values/#vw)
      * [`https://w3c.github.io/webvtt/#webvtt-file-using-cue-text`](https://w3c.github.io/webvtt/#webvtt-file-using-cue-text)
-     * [`https://drafts.fxtf.org/filter-effects/#typedef-filter-value-list`](https://drafts.fxtf.org/filter-effects/#typedef-filter-value-list)
      * [`https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status`](https://w3c.github.io/webdriver-bidi/#webdriver-bidi-navigation-status)
      * [`https://www.w3.org/TR/css3-color/#css2-system`](https://www.w3.org/TR/css3-color/#css2-system)
 - [HTMLVideoElement.requestVideoFrameCallback()](https://wicg.github.io/video-rvfc/):
@@ -6602,7 +6593,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#script`](https://html.spec.whatwg.org/#script)
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/):
      * [`https://html.spec.whatwg.org/#user-tracking`](https://html.spec.whatwg.org/#user-tracking)
-- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/):
      * [`https://html.spec.whatwg.org/#concept-document-bc`](https://html.spec.whatwg.org/#concept-document-bc)
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#use-srcset-or-picture`](https://html.spec.whatwg.org/#use-srcset-or-picture)
@@ -7445,117 +7436,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#htmlhyperlinkelementutils`](https://html.spec.whatwg.org/#htmlhyperlinkelementutils)
      * [`https://html.spec.whatwg.org/#limited-to-only-known-values`](https://html.spec.whatwg.org/#limited-to-only-known-values)
      * [`https://html.spec.whatwg.org/#animation-frames`](https://html.spec.whatwg.org/#animation-frames)
-     * [`https://drafts.fxtf.org/filter-effects/#FilterProperty`](https://drafts.fxtf.org/filter-effects/#FilterProperty)
-     * [`https://drafts.fxtf.org/filter-effects/#operating-coordinate-space`](https://drafts.fxtf.org/filter-effects/#operating-coordinate-space)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-numoctaves`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-numoctaves)
-     * [`https://drafts.fxtf.org/filter-effects/#feTurbulenceElement`](https://drafts.fxtf.org/filter-effects/#feTurbulenceElement)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-order`](https://drafts.fxtf.org/filter-effects/#element-attrdef-order)
-     * [`https://drafts.fxtf.org/filter-effects/#feConvolveMatrixElement`](https://drafts.fxtf.org/filter-effects/#feConvolveMatrixElement)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-kernelunitlength`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-kernelunitlength)
-     * [`https://drafts.fxtf.org/filter-effects/#feDiffuseLightingElement`](https://drafts.fxtf.org/filter-effects/#feDiffuseLightingElement)
-     * [`https://drafts.fxtf.org/filter-effects/#FilterElement`](https://drafts.fxtf.org/filter-effects/#FilterElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feBlendElement`](https://drafts.fxtf.org/filter-effects/#feBlendElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feColorMatrixElement`](https://drafts.fxtf.org/filter-effects/#feColorMatrixElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feComponentTransferElement`](https://drafts.fxtf.org/filter-effects/#feComponentTransferElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feCompositeElement`](https://drafts.fxtf.org/filter-effects/#feCompositeElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feDisplacementMapElement`](https://drafts.fxtf.org/filter-effects/#feDisplacementMapElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feDistantLightElement`](https://drafts.fxtf.org/filter-effects/#feDistantLightElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feDropShadowElement`](https://drafts.fxtf.org/filter-effects/#feDropShadowElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feFloodElement`](https://drafts.fxtf.org/filter-effects/#feFloodElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feFuncAElement`](https://drafts.fxtf.org/filter-effects/#feFuncAElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feFuncBElement`](https://drafts.fxtf.org/filter-effects/#feFuncBElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feFuncGElement`](https://drafts.fxtf.org/filter-effects/#feFuncGElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feFuncRElement`](https://drafts.fxtf.org/filter-effects/#feFuncRElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feGaussianBlurElement`](https://drafts.fxtf.org/filter-effects/#feGaussianBlurElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feImageElement`](https://drafts.fxtf.org/filter-effects/#feImageElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feMergeElement`](https://drafts.fxtf.org/filter-effects/#feMergeElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feMorphologyElement`](https://drafts.fxtf.org/filter-effects/#feMorphologyElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feOffsetElement`](https://drafts.fxtf.org/filter-effects/#feOffsetElement)
-     * [`https://drafts.fxtf.org/filter-effects/#fePointLightElement`](https://drafts.fxtf.org/filter-effects/#fePointLightElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feSpecularLightingElement`](https://drafts.fxtf.org/filter-effects/#feSpecularLightingElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feSpotLightElement`](https://drafts.fxtf.org/filter-effects/#feSpotLightElement)
-     * [`https://drafts.fxtf.org/filter-effects/#feTileElement`](https://drafts.fxtf.org/filter-effects/#feTileElement)
-     * [`https://drafts.fxtf.org/filter-effects/#ColorInterpolationFiltersProperty`](https://drafts.fxtf.org/filter-effects/#ColorInterpolationFiltersProperty)
-     * [`https://drafts.fxtf.org/filter-effects/#FloodColorProperty`](https://drafts.fxtf.org/filter-effects/#FloodColorProperty)
-     * [`https://drafts.fxtf.org/filter-effects/#FloodOpacityProperty`](https://drafts.fxtf.org/filter-effects/#FloodOpacityProperty)
-     * [`https://drafts.fxtf.org/filter-effects/#LightingColorProperty`](https://drafts.fxtf.org/filter-effects/#LightingColorProperty)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-filterunits`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-filterunits)
-     * [`https://drafts.fxtf.org/filter-effects/#FilterPrimitiveSubRegion`](https://drafts.fxtf.org/filter-effects/#FilterPrimitiveSubRegion)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-x`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-x)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-y`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-y)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-width`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-width)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-height`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-height)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitiveunits`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitiveunits)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-amplitude`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-amplitude)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedistantlight-azimuth`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedistantlight-azimuth)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-basefrequency`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-basefrequency)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-bias`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-bias)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-crossorigin`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-crossorigin)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-diffuseconstant`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-diffuseconstant)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-divisor`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-divisor)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-dx`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-dx)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feoffset-dx`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feoffset-dx)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-dy`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-dy)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feoffset-dy`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feoffset-dy)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-edgemode`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-edgemode)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fegaussianblur-edgemode`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fegaussianblur-edgemode)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedistantlight-elevation`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedistantlight-elevation)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-exponent`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-exponent)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-height`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-height)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-href`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-href)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-in`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-in)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feblend-in2`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feblend-in2)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-in2`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-in2)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-in2`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-in2)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-intercept`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-intercept)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k1`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k1)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k2`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k2)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k3`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k3)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k4`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-k4)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-kernelmatrix`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-kernelmatrix)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-kernelunitlength`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-kernelunitlength)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-kernelunitlength`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-kernelunitlength)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-limitingconeangle`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-limitingconeangle)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feblend-mode`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feblend-mode)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-offset`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-offset)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-operator`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomposite-operator)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-femorphology-operator`](https://drafts.fxtf.org/filter-effects/#element-attrdef-femorphology-operator)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsatx`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsatx)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsaty`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsaty)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsatz`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-pointsatz)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-preservealpha`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-preservealpha)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-femorphology-radius`](https://drafts.fxtf.org/filter-effects/#element-attrdef-femorphology-radius)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-result`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-result)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-scale`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-scale)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-seed`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-seed)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-slope`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-slope)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-specularconstant`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-specularconstant)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-specularexponent`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-specularexponent)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-specularexponent`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-specularexponent)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-stddeviation`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedropshadow-stddeviation)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fegaussianblur-stddeviation`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fegaussianblur-stddeviation)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-stitchtiles`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-stitchtiles)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-surfacescale`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fediffuselighting-surfacescale)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-surfacescale`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespecularlighting-surfacescale)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-tablevalues`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-tablevalues)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-targetx`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-targetx)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-targety`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feconvolvematrix-targety)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecolormatrix-type`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecolormatrix-type)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-type`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecomponenttransfer-type)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-type`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feturbulence-type)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fecolormatrix-values`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fecolormatrix-values)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-width`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-width)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-x`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-x)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-x`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-x)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-x`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-x)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-xchannelselector`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-xchannelselector)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-xlinkhref`](https://drafts.fxtf.org/filter-effects/#element-attrdef-feimage-xlinkhref)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-y`](https://drafts.fxtf.org/filter-effects/#element-attrdef-filter-primitive-y)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-y`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-y)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-y`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-y)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-ychannelselector`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fedisplacementmap-ychannelselector)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-z`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fepointlight-z)
-     * [`https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-z`](https://drafts.fxtf.org/filter-effects/#element-attrdef-fespotlight-z)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompoint`](https://www.w3.org/TR/geometry-1/#dom-dompoint)
      * [`https://www.w3.org/TR/geometry-1/#dom-dompointreadonly`](https://www.w3.org/TR/geometry-1/#dom-dompointreadonly)
      * [`https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly`](https://www.w3.org/TR/web-animations-1/#keyframeeffectreadonly)
@@ -8980,7 +8860,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4795 problematic external links found in 291 specifications
+=> 4671 problematic external links found in 292 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
@@ -9219,6 +9099,10 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://www.w3.org/TR/2013/CR-css3-values-20130404/`](https://www.w3.org/TR/2013/CR-css3-values-20130404/)
 - [CSS Writing Modes Level 4](https://drafts.csswg.org/css-writing-modes-4/):
      * [`https://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/`](https://www.w3.org/TR/2015/CR-css-writing-modes-3-20151215/)
+- [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/):
+     * [`https://www.w3.org/TR/2011/REC-SVG11-20110816/`](https://www.w3.org/TR/2011/REC-SVG11-20110816/)
+     * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
+     * [`https://www.w3.org/TR/2012/WD-filter-effects-20121025/`](https://www.w3.org/TR/2012/WD-filter-effects-20121025/)
 - [HTML Media Capture](https://w3c.github.io/html-media-capture/):
      * [`https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/`](https://www.w3.org/TR/2016/REC-WebIDL-1-20161215/)
 - [HTML Standard](https://html.spec.whatwg.org/multipage/):
@@ -9234,7 +9118,7 @@ Links in the body of a specification should be to the same document as that poin
 - [Media Source Extensions™](https://w3c.github.io/media-source/):
      * [`https://www.w3.org/TR/2016/REC-media-source-20161117/`](https://www.w3.org/TR/2016/REC-media-source-20161117/)
      * [`https://www.w3.org/TR/2016/CR-media-source-20160705/`](https://www.w3.org/TR/2016/CR-media-source-20160705/)
-- [Mixed Content Level 2](https://w3c.github.io/webappsec-mixed-content/):
+- [Mixed Content](https://w3c.github.io/webappsec-mixed-content/):
      * [`https://www.w3.org/TR/2008/REC-xml-20081126/`](https://www.w3.org/TR/2008/REC-xml-20081126/)
 - [Motion Path Module Level 1](https://drafts.fxtf.org/motion-1/):
      * [`https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/`](https://www.w3.org/TR/2016/WD-css-round-display-1-20160301/)
@@ -9362,6 +9246,6 @@ Links in the body of a specification should be to the same document as that poin
 - [XMLHttpRequest Standard](https://xhr.spec.whatwg.org/):
      * [`https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/`](https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/)
 
-=> 193 problematic external links found in 64 specifications
+=> 196 problematic external links found in 65 specifications
 
 
