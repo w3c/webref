@@ -43,6 +43,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "hold-phase",
+      "href": "https://drafts.csswg.org/web-animations-2/#hold-phase",
+      "linkingText": [
+        "hold phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animations",
+        "href": "https://drafts.csswg.org/web-animations-2/#animations",
+        "title": "Animations",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "time-based-animation-to-a-proportional-animation",
       "href": "https://drafts.csswg.org/web-animations-2/#time-based-animation-to-a-proportional-animation",
       "linkingText": [
@@ -375,6 +394,67 @@
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-phases-and-states",
+        "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-phases-and-states",
+        "title": "Animation effect phases and states",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "effective-timeline-phase",
+      "href": "https://drafts.csswg.org/web-animations-2/#effective-timeline-phase",
+      "linkingText": [
+        "effective timeline phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-phases-and-states",
+        "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-phases-and-states",
+        "title": "Animation effect phases and states",
+        "number": "3.4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "animation-effect-before-phase",
+      "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-before-phase",
+      "linkingText": [
+        "before phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-phases-and-states",
+        "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-phases-and-states",
+        "title": "Animation effect phases and states",
+        "number": "3.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "animation-effect-after-phase",
+      "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-after-phase",
+      "linkingText": [
+        "after phase"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "animation effect"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "animation-effect-phases-and-states",
@@ -1163,6 +1243,27 @@
         "number": "5.3"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-effecttiming-duration",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-effecttiming-duration",
+      "linkingText": [
+        "duration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-effecttiming-dictionaries",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-effecttiming-dictionaries",
+        "title": "The EffectTiming and OptionalEffectTiming dictionaries",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-optionaleffecttiming-playbackrate",
@@ -2399,6 +2500,200 @@
         "href": "https://drafts.csswg.org/web-animations-2/#the-animatable-interface",
         "title": "The Animatable interface",
         "number": "5.13"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "animationplaybackevent",
+      "href": "https://drafts.csswg.org/web-animations-2/#animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-animationplaybackevent",
+      "linkingText": [
+        "AnimationPlaybackEvent(type, eventInitDict)",
+        "constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent(type)",
+        "constructor(type)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-type",
+      "linkingText": [
+        "type"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-animationplaybackevent-type-eventinitdict-eventinitdict",
+      "linkingText": [
+        "eventInitDict"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type, eventInitDict)",
+        "AnimationPlaybackEvent/constructor(type, eventInitDict)",
+        "AnimationPlaybackEvent/AnimationPlaybackEvent(type)",
+        "AnimationPlaybackEvent/constructor(type)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-animationplaybackeventinit",
+      "href": "https://drafts.csswg.org/web-animations-2/#dictdef-animationplaybackeventinit",
+      "linkingText": [
+        "AnimationPlaybackEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-animationplaybackevent-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackevent-timelinetime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackevent-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AnimationPlaybackEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackeventinit-currenttime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-currenttime",
+      "linkingText": [
+        "currentTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-animationplaybackeventinit-timelinetime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-animationplaybackeventinit-timelinetime",
+      "linkingText": [
+        "timelineTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "AnimationPlaybackEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-animationplaybackevent-interface",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-animationplaybackevent-interface",
+        "title": "The AnimationPlaybackEvent interface",
+        "number": "5.14"
       },
       "definedIn": "dt"
     }

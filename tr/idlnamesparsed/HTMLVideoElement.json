@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "Media Playback Quality",
+        "url": "https://w3c.github.io/media-playback-quality/"
+      },
+      "fragment": "partial interface HTMLVideoElement {\n  VideoPlaybackQuality getVideoPlaybackQuality();\n};"
+    },
+    {
+      "spec": {
         "title": "HTMLVideoElement.requestVideoFrameCallback()",
         "url": "https://wicg.github.io/video-rvfc/"
       },
@@ -467,7 +474,7 @@
                 "title": "VirtualKeyboard API",
                 "url": "https://www.w3.org/TR/virtual-keyboard/"
               },
-              "fragment": "partial interface ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
+              "fragment": "partial interface mixin ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
             }
           ],
           "inheritance": null,

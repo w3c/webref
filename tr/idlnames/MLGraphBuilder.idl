@@ -155,7 +155,7 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
-  MLOperand resample(MLOperand input, optional MLResampleOptions options = {});
+  MLOperand resample2d(MLOperand input, optional MLResample2dOptions options = {});
 };
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)

@@ -1,17 +1,19 @@
-// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
-[Constructor]
+// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source-2/)
+[Exposed=(Window,DedicatedWorker)]
 interface MediaSource : EventTarget {
-    readonly attribute SourceBufferList    sourceBuffers;
-    readonly attribute SourceBufferList    activeSourceBuffers;
-    readonly attribute ReadyState          readyState;
-             attribute unrestricted double duration;
-             attribute EventHandler        onsourceopen;
-             attribute EventHandler        onsourceended;
-             attribute EventHandler        onsourceclose;
-    SourceBuffer addSourceBuffer(DOMString type);
-    void         removeSourceBuffer(SourceBuffer sourceBuffer);
-    void         endOfStream(optional EndOfStreamError error);
-    void         setLiveSeekableRange(double start, double end);
-    void         clearLiveSeekableRange();
-    static boolean isTypeSupported(DOMString type);
+    constructor();
+    readonly        attribute SourceBufferList    sourceBuffers;
+    readonly        attribute SourceBufferList    activeSourceBuffers;
+    readonly        attribute ReadyState          readyState;
+                    attribute unrestricted double duration;
+                    attribute EventHandler        onsourceopen;
+                    attribute EventHandler        onsourceended;
+                    attribute EventHandler        onsourceclose;
+    static readonly attribute boolean canConstructInDedicatedWorker;
+    SourceBuffer   addSourceBuffer (DOMString type);
+    undefined           removeSourceBuffer (SourceBuffer sourceBuffer);
+    undefined           endOfStream (optional EndOfStreamError error);
+    undefined           setLiveSeekableRange (double start, double end);
+    undefined           clearLiveSeekableRange ();
+    static boolean isTypeSupported (DOMString type);
 };

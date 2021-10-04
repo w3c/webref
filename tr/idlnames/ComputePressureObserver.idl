@@ -1,0 +1,10 @@
+// Source: Compute Pressure API (https://wicg.github.io/compute-pressure/)
+[Exposed=Window]
+interface ComputePressureObserver {
+  constructor(
+    ComputePressureUpdateCallback callback,
+    optional ComputePressureObserverOptions options = {}
+  );
+  undefined observe();
+  undefined unobserve();
+};

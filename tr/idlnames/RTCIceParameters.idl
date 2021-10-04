@@ -3,3 +3,8 @@ dictionary RTCIceParameters {
   DOMString usernameFragment;
   DOMString password;
 };
+
+// Source: IceTransport Extensions for WebRTC (https://w3c.github.io/webrtc-ice/)
+partial dictionary RTCIceParameters {
+             boolean   iceLite;
+};

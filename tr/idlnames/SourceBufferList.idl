@@ -1,7 +1,8 @@
-// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source/)
+// Source: Media Source Extensions™ (https://www.w3.org/TR/media-source-2/)
+[Exposed=(Window,DedicatedWorker)]
 interface SourceBufferList : EventTarget {
-    readonly attribute unsigned long length;
-             attribute EventHandler  onaddsourcebuffer;
-             attribute EventHandler  onremovesourcebuffer;
+    readonly        attribute unsigned long length;
+                    attribute EventHandler  onaddsourcebuffer;
+                    attribute EventHandler  onremovesourcebuffer;
     getter SourceBuffer (unsigned long index);
 };

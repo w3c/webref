@@ -8,7 +8,8 @@
       "constructors": {
         "Window": [
           "GroupEffect",
-          "SequenceEffect"
+          "SequenceEffect",
+          "AnimationPlaybackEvent"
         ]
       },
       "functions": {
@@ -523,6 +524,140 @@
           }
         ],
         "extAttrs": []
+      },
+      "AnimationPlaybackEvent": {
+        "fragment": "[Exposed=Window]\ninterface AnimationPlaybackEvent : Event {\n    constructor(DOMString type, optional AnimationPlaybackEventInit\n    eventInitDict = {});\n    readonly attribute CSSNumberish? currentTime;\n    readonly attribute CSSNumberish? timelineTime;\n};",
+        "type": "interface",
+        "name": "AnimationPlaybackEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AnimationPlaybackEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "currentTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "timelineTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "AnimationPlaybackEventInit": {
+        "fragment": "dictionary AnimationPlaybackEventInit : EventInit {\n    CSSNumberish? currentTime = null;\n    CSSNumberish? timelineTime = null;\n};",
+        "type": "dictionary",
+        "name": "AnimationPlaybackEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "currentTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "timelineTime",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "CSSNumberish"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -829,7 +964,7 @@
       ],
       "EffectTiming": [
         {
-          "fragment": "partial dictionary EffectTiming {\n    double playbackRate = 1.0;\n};",
+          "fragment": "partial dictionary EffectTiming {\n    double playbackRate = 1.0;\n    (unrestricted double or CSSNumericValue or DOMString) duration = \"auto\";\n};",
           "type": "dictionary",
           "name": "EffectTiming",
           "inheritance": null,
@@ -849,6 +984,49 @@
               "default": {
                 "type": "number",
                 "value": "1.0"
+              },
+              "required": false
+            },
+            {
+              "type": "field",
+              "name": "duration",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": true,
+                "idlType": [
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "unrestricted double"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "CSSNumericValue"
+                  },
+                  {
+                    "type": null,
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "DOMString"
+                  }
+                ]
+              },
+              "default": {
+                "type": "string",
+                "value": "auto"
               },
               "required": false
             }
@@ -1037,7 +1215,8 @@
         "AnimationEffect",
         "GroupEffect",
         "AnimationNodeList",
-        "SequenceEffect"
+        "SequenceEffect",
+        "AnimationPlaybackEvent"
       ]
     },
     "dependencies": {
@@ -1053,7 +1232,9 @@
         "GroupEffect",
         "AnimationEffect"
       ],
-      "EffectTiming": [],
+      "EffectTiming": [
+        "CSSNumericValue"
+      ],
       "OptionalEffectTiming": [],
       "ComputedEffectTiming": [
         "CSSNumberish"
@@ -1078,6 +1259,15 @@
       ],
       "KeyframeEffectOptions": [
         "IterationCompositeOperation"
+      ],
+      "AnimationPlaybackEvent": [
+        "Event",
+        "AnimationPlaybackEventInit",
+        "CSSNumberish"
+      ],
+      "AnimationPlaybackEventInit": [
+        "EventInit",
+        "CSSNumberish"
       ]
     },
     "externalDependencies": [
@@ -1086,12 +1276,15 @@
       "Animation",
       "AnimationEffect",
       "EffectTiming",
+      "CSSNumericValue",
       "OptionalEffectTiming",
       "ComputedEffectTiming",
       "KeyframeEffect",
       "KeyframeEffectOptions",
       "Element",
-      "CSSPseudoElement"
+      "CSSPseudoElement",
+      "Event",
+      "EventInit"
     ],
     "hasObsoleteIdl": false
   }

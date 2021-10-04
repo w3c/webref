@@ -1,5 +1,5 @@
 // Source: EyeDropper API (https://wicg.github.io/eyedropper-api/)
-[Exposed=Window]
+[Exposed=Window, SecureContext]
 interface EyeDropper {
     constructor();
     Promise<ColorSelectionResult> open(optional ColorSelectionOptions options = {});

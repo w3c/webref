@@ -6,4 +6,6 @@ dictionary MLPool2dOptions {
   sequence<long> dilations;
   MLAutoPad autoPad = "explicit";
   MLInputOperandLayout layout = "nchw";
+  MLRoundingType roundingType = "floor";
+  sequence<long> outputSizes;
 };
