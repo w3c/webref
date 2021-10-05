@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 04, 2021
+% October 05, 2021
 
 447 specifications were crawled in this report.
 
@@ -6894,9 +6894,6 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#structureddeserialize`](https://html.spec.whatwg.org/#structureddeserialize)
      * [`https://html.spec.whatwg.org/#queue-a-microtask`](https://html.spec.whatwg.org/#queue-a-microtask)
      * [`https://html.spec.whatwg.org/#concept-relevant-global`](https://html.spec.whatwg.org/#concept-relevant-global)
-     * [`https://www.w3.org/TR/payment-method-basic-card/#method-id`](https://www.w3.org/TR/payment-method-basic-card/#method-id)
-     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportednetworks`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportednetworks)
-     * [`https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes`](https://www.w3.org/TR/payment-method-basic-card/#dom-basiccardrequest-supportedtypes)
      * [`https://www.w3.org/TR/appmanifest/#fetching-image-resources`](https://www.w3.org/TR/appmanifest/#fetching-image-resources)
 - [Payment Method Identifiers](https://w3c.github.io/payment-method-id/):
      * [`https://html.spec.whatwg.org/#case-sensitive`](https://html.spec.whatwg.org/#case-sensitive)
@@ -8879,7 +8876,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 4690 problematic external links found in 292 specifications
+=> 4687 problematic external links found in 292 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification

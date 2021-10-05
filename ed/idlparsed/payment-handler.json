@@ -364,7 +364,7 @@
         "partial": false
       },
       "PaymentInstrument": {
-        "fragment": "dictionary PaymentInstrument {\n  required DOMString name;\n  sequence<ImageObject> icons;\n  DOMString method;\n  object capabilities;\n};",
+        "fragment": "dictionary PaymentInstrument {\n  required DOMString name;\n  sequence<ImageObject> icons;\n  DOMString method;\n};",
         "type": "dictionary",
         "name": "PaymentInstrument",
         "inheritance": null,
@@ -419,21 +419,6 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
-            },
-            "default": null,
-            "required": false
-          },
-          {
-            "type": "field",
-            "name": "capabilities",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "object"
             },
             "default": null,
             "required": false
