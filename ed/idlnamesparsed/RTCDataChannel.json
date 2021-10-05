@@ -1,14 +1,4 @@
 {
-  "name": "RTCDataChannel",
-  "type": "interface",
-  "defined": {
-    "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-      "url": "https://www.w3.org/TR/webrtc/"
-    },
-    "fragment": "[Exposed=Window]\ninterface RTCDataChannel : EventTarget {\n  readonly attribute USVString label;\n  readonly attribute boolean ordered;\n  readonly attribute unsigned short? maxPacketLifeTime;\n  readonly attribute unsigned short? maxRetransmits;\n  readonly attribute USVString protocol;\n  readonly attribute boolean negotiated;\n  readonly attribute unsigned short? id;\n  readonly attribute RTCDataChannelState readyState;\n  readonly attribute unsigned long bufferedAmount;\n  [EnforceRange] attribute unsigned long bufferedAmountLowThreshold;\n  attribute EventHandler onopen;\n  attribute EventHandler onbufferedamountlow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclosing;\n  attribute EventHandler onclose;\n  undefined close();\n  attribute EventHandler onmessage;\n  attribute BinaryType binaryType;\n  undefined send(USVString data);\n  undefined send(Blob data);\n  undefined send(ArrayBuffer data);\n  undefined send(ArrayBufferView data);\n};",
-    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcdatachannel"
-  },
   "extended": [
     {
       "spec": {
@@ -18,20 +8,5 @@
       "fragment": "partial interface RTCDataChannel {\n  readonly attribute RTCPriorityType priority;\n};"
     }
   ],
-  "inheritance": {
-    "name": "EventTarget",
-    "type": "interface",
-    "defined": {
-      "spec": {
-        "title": "DOM Standard",
-        "url": "https://dom.spec.whatwg.org/"
-      },
-      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
-      "href": "https://dom.spec.whatwg.org/#eventtarget"
-    },
-    "extended": [],
-    "inheritance": null,
-    "includes": []
-  },
   "includes": []
 }

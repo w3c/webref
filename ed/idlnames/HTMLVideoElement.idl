@@ -11,11 +11,6 @@ interface HTMLVideoElement : HTMLMediaElement {
   [CEReactions] attribute boolean playsInline;
 };
 
-// Source: Media Playback Quality (https://w3c.github.io/media-playback-quality/)
-partial interface HTMLVideoElement {
-  VideoPlaybackQuality getVideoPlaybackQuality();
-};
-
 // Source: HTMLVideoElement.requestVideoFrameCallback() (https://wicg.github.io/video-rvfc/)
 partial interface HTMLVideoElement {
     unsigned long requestVideoFrameCallback(VideoFrameRequestCallback callback);

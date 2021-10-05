@@ -1,14 +1,4 @@
 {
-  "name": "MediaTrackCapabilities",
-  "type": "dictionary",
-  "defined": {
-    "spec": {
-      "title": "Media Capture and Streams",
-      "url": "https://www.w3.org/TR/mediacapture-streams/"
-    },
-    "fragment": "dictionary MediaTrackCapabilities {\n  ULongRange width;\n  ULongRange height;\n  DoubleRange aspectRatio;\n  DoubleRange frameRate;\n  sequence<DOMString> facingMode;\n  sequence<DOMString> resizeMode;\n  ULongRange sampleRate;\n  ULongRange sampleSize;\n  sequence<boolean> echoCancellation;\n  sequence<boolean> autoGainControl;\n  sequence<boolean> noiseSuppression;\n  DoubleRange latency;\n  ULongRange channelCount;\n  DOMString deviceId;\n  DOMString groupId;\n};",
-    "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackcapabilities"
-  },
   "extended": [
     {
       "spec": {
@@ -23,15 +13,7 @@
         "url": "https://www.w3.org/TR/mediacapture-depth/"
       },
       "fragment": "partial dictionary MediaTrackCapabilities {\n    // Applies to both depth stream track and color stream track:\n    DOMString videoKind;\n};"
-    },
-    {
-      "spec": {
-        "title": "Screen Capture",
-        "url": "https://www.w3.org/TR/screen-capture/"
-      },
-      "fragment": "partial dictionary MediaTrackCapabilities {\n  DOMString displaySurface;\n  boolean logicalSurface;\n  sequence<DOMString> cursor;\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }

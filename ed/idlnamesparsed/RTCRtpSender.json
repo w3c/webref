@@ -1,14 +1,4 @@
 {
-  "name": "RTCRtpSender",
-  "type": "interface",
-  "defined": {
-    "spec": {
-      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-      "url": "https://www.w3.org/TR/webrtc/"
-    },
-    "fragment": "[Exposed=Window]\ninterface RTCRtpSender {\n  readonly attribute MediaStreamTrack? track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  Promise<undefined> setParameters(RTCRtpSendParameters parameters);\n  RTCRtpSendParameters getParameters();\n  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);\n  undefined setStreams(MediaStream... streams);\n  Promise<RTCStatsReport> getStats();\n};",
-    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpsender"
-  },
   "extended": [
     {
       "spec": {
@@ -16,15 +6,7 @@
         "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
       },
       "fragment": "// New methods for RTCRtpSender and RTCRtpReceiver\npartial interface RTCRtpSender {\n    attribute RTCRtpTransform? transform;\n};"
-    },
-    {
-      "spec": {
-        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
-        "url": "https://www.w3.org/TR/webrtc/"
-      },
-      "fragment": "partial interface RTCRtpSender {\n  readonly attribute RTCDTMFSender? dtmf;\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }

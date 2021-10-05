@@ -47,11 +47,6 @@ partial interface mixin WindowOrWorkerGlobalScope {
   readonly attribute Scheduler scheduler;
 };
 
-// Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
-partial interface mixin WindowOrWorkerGlobalScope {
-  [Replaceable] readonly attribute Performance performance;
-};
-
 // Source: Indexed Database API 3.0 (https://www.w3.org/TR/IndexedDB-3/)
 partial interface mixin WindowOrWorkerGlobalScope {
   [SameObject] readonly attribute IDBFactory indexedDB;
