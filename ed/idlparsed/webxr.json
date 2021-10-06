@@ -987,7 +987,7 @@
         "extAttrs": []
       },
       "XRFrame": {
-        "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
+        "fragment": "[SecureContext, Exposed=Window] interface XRFrame {\n  [SameObject] readonly attribute XRSession session;\n  readonly attribute DOMHighResTimeStamp predictedDisplayTime;\n\n  XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);\n  XRPose? getPose(XRSpace space, XRSpace baseSpace);\n};",
         "type": "interface",
         "name": "XRFrame",
         "inheritance": null,
@@ -1011,6 +1011,21 @@
                 "arguments": []
               }
             ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "predictedDisplayTime",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMHighResTimeStamp"
+            },
+            "extAttrs": [],
             "special": "",
             "readonly": true
           },
@@ -3465,6 +3480,7 @@
       ],
       "XRFrame": [
         "XRSession",
+        "DOMHighResTimeStamp",
         "XRViewerPose",
         "XRReferenceSpace",
         "XRPose",

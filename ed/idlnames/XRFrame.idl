@@ -1,6 +1,7 @@
 // Source: WebXR Device API (https://www.w3.org/TR/webxr/)
 [SecureContext, Exposed=Window] interface XRFrame {
   [SameObject] readonly attribute XRSession session;
+  readonly attribute DOMHighResTimeStamp predictedDisplayTime;
 
   XRViewerPose? getViewerPose(XRReferenceSpace referenceSpace);
   XRPose? getPose(XRSpace space, XRSpace baseSpace);

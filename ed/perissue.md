@@ -1,6 +1,6 @@
 % Reffy crawl
 % Reffy
-% October 05, 2021
+% October 06, 2021
 
 447 specifications were crawled in this report.
 
@@ -3645,6 +3645,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
      * [`https://html.spec.whatwg.org/#site`](https://html.spec.whatwg.org/#site)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
+     * [`https://html.spec.whatwg.org/#concept-origin-opaque`](https://html.spec.whatwg.org/#concept-origin-opaque)
      * [`https://html.spec.whatwg.org/#obtain-a-site`](https://html.spec.whatwg.org/#obtain-a-site)
      * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
@@ -9761,7 +9762,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://html.spec.whatwg.org/#constructing-the-form-data-set`](https://html.spec.whatwg.org/#constructing-the-form-data-set)
      * [`https://html.spec.whatwg.org/#the-progress-element`](https://html.spec.whatwg.org/#the-progress-element)
 
-=> 6061 problematic external links found in 256 specifications
+=> 6062 problematic external links found in 256 specifications
 
 
 ## External links to terms that no longer exist in the latest version of the targeted specification
