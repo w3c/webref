@@ -1,9 +1,0 @@
-// Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline-2/)
-[Exposed=(Window,Worker)]
-interface PerformanceObserver {
-  constructor(PerformanceObserverCallback callback);
-  undefined observe (optional PerformanceObserverInit options = {});
-  undefined disconnect ();
-  PerformanceEntryList takeRecords();
-  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;
-};
