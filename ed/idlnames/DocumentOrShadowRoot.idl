@@ -23,6 +23,11 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? pictureInPictureElement;
 };
 
+// Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
+partial interface mixin DocumentOrShadowRoot {
+  readonly attribute Element ? pointerLockElement;
+};
+
 // Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
 partial interface mixin DocumentOrShadowRoot {
     sequence<Animation> getAnimations();

@@ -1,3 +1,22 @@
+// Source: Media Capture and Streams (https://www.w3.org/TR/mediacapture-streams/)
+dictionary MediaTrackSettings {
+  long width;
+  long height;
+  double aspectRatio;
+  double frameRate;
+  DOMString facingMode;
+  DOMString resizeMode;
+  long sampleRate;
+  long sampleSize;
+  boolean echoCancellation;
+  boolean autoGainControl;
+  boolean noiseSuppression;
+  double latency;
+  long channelCount;
+  DOMString deviceId;
+  DOMString groupId;
+};
+
 // Source: MediaStream Image Capture (https://www.w3.org/TR/image-capture/)
 partial dictionary MediaTrackSettings {
   DOMString         whiteBalanceMode;
@@ -27,4 +46,12 @@ partial dictionary MediaTrackSettings {
 partial dictionary MediaTrackSettings {
     // Applies to both depth stream track and color stream track:
     DOMString           videoKind;
+};
+
+// Source: Screen Capture (https://www.w3.org/TR/screen-capture/)
+partial dictionary MediaTrackSettings {
+  DOMString displaySurface;
+  boolean logicalSurface;
+  DOMString cursor;
+  boolean restrictOwnAudio;
 };

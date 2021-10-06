@@ -110,6 +110,13 @@
     },
     {
       "spec": {
+        "title": "Visual Viewport API",
+        "url": "https://wicg.github.io/visual-viewport/"
+      },
+      "fragment": "partial interface Window {\n  [SameObject, Replaceable] readonly attribute VisualViewport visualViewport;\n};"
+    },
+    {
+      "spec": {
         "title": "CSS Spatial Navigation Level 1",
         "url": "https://www.w3.org/TR/css-nav-1/"
       },
@@ -156,6 +163,20 @@
         "url": "https://www.w3.org/TR/orientation-event/"
       },
       "fragment": "partial interface Window {\n    [SecureContext] attribute EventHandler ondevicemotion;\n};"
+    },
+    {
+      "spec": {
+        "title": "Cooperative Scheduling of Background Tasks",
+        "url": "https://www.w3.org/TR/requestidlecallback/"
+      },
+      "fragment": "partial interface Window {\n  unsigned long requestIdleCallback(IdleRequestCallback callback, optional IdleRequestOptions options = {});\n  undefined cancelIdleCallback(unsigned long handle);\n};"
+    },
+    {
+      "spec": {
+        "title": "Selection API",
+        "url": "https://www.w3.org/TR/selection-api/"
+      },
+      "fragment": "partial interface Window {\n  Selection? getSelection();\n};"
     }
   ],
   "inheritance": {
@@ -202,6 +223,20 @@
         },
         {
           "spec": {
+            "title": "Pointer Events",
+            "url": "https://www.w3.org/TR/pointerevents3/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+        },
+        {
+          "spec": {
+            "title": "Selection API",
+            "url": "https://www.w3.org/TR/selection-api/"
+          },
+          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+        },
+        {
+          "spec": {
             "title": "Touch Events - Level 2",
             "url": "https://www.w3.org/TR/touch-events/"
           },
@@ -236,6 +271,13 @@
             "url": "https://wicg.github.io/portals/"
           },
           "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};"
+        },
+        {
+          "spec": {
+            "title": "Gamepad",
+            "url": "https://www.w3.org/TR/gamepad/"
+          },
+          "fragment": "partial interface mixin WindowEventHandlers {\n  attribute EventHandler ongamepadconnected;\n  attribute EventHandler ongamepaddisconnected;\n};"
         }
       ],
       "inheritance": null,
@@ -280,6 +322,13 @@
             "url": "https://wicg.github.io/scheduling-apis/"
           },
           "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute Scheduler scheduler;\n};"
+        },
+        {
+          "spec": {
+            "title": "High Resolution Time",
+            "url": "https://www.w3.org/TR/hr-time-3/"
+          },
+          "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};"
         },
         {
           "spec": {

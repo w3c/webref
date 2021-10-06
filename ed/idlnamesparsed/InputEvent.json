@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface InputEvent : UIEvent {\n  constructor(DOMString type, optional InputEventInit eventInitDict = {});\n  readonly attribute DOMString? data;\n  readonly attribute boolean isComposing;\n  readonly attribute DOMString inputType;\n};",
     "href": "https://w3c.github.io/uievents/#inputevent"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Input Events Level 2",
+        "url": "https://www.w3.org/TR/input-events-2/"
+      },
+      "fragment": "partial interface InputEvent {\n   readonly attribute DataTransfer? dataTransfer;\n   sequence<StaticRange> getTargetRanges();\n};"
+    }
+  ],
   "inheritance": {
     "name": "UIEvent",
     "type": "interface",

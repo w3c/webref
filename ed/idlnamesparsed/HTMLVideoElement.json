@@ -12,6 +12,13 @@
   "extended": [
     {
       "spec": {
+        "title": "Media Playback Quality",
+        "url": "https://w3c.github.io/media-playback-quality/"
+      },
+      "fragment": "partial interface HTMLVideoElement {\n  VideoPlaybackQuality getVideoPlaybackQuality();\n};"
+    },
+    {
+      "spec": {
         "title": "HTMLVideoElement.requestVideoFrameCallback()",
         "url": "https://wicg.github.io/video-rvfc/"
       },
@@ -39,10 +46,31 @@
     "extended": [
       {
         "spec": {
+          "title": "Audio Output Devices API",
+          "url": "https://www.w3.org/TR/audio-output/"
+        },
+        "fragment": "partial interface HTMLMediaElement {\n  [SecureContext] readonly attribute DOMString sinkId;\n  [SecureContext] Promise<undefined> setSinkId (DOMString sinkId);\n};"
+      },
+      {
+        "spec": {
           "title": "Encrypted Media Extensions",
           "url": "https://www.w3.org/TR/encrypted-media/"
         },
         "fragment": "[Exposed=Window] partial interface HTMLMediaElement {\n    [SecureContext] readonly        attribute MediaKeys?   mediaKeys;\n                                    attribute EventHandler onencrypted;\n                                    attribute EventHandler onwaitingforkey;\n    [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);\n};"
+      },
+      {
+        "spec": {
+          "title": "Media Capture from DOM Elements",
+          "url": "https://www.w3.org/TR/mediacapture-fromelement/"
+        },
+        "fragment": "partial interface HTMLMediaElement {\n    MediaStream captureStream ();\n};"
+      },
+      {
+        "spec": {
+          "title": "Remote Playback API",
+          "url": "https://www.w3.org/TR/remote-playback/"
+        },
+        "fragment": "partial interface HTMLMediaElement {\n  [SameObject] readonly attribute RemotePlayback remote;\n\n  [CEReactions] attribute boolean disableRemotePlayback;\n};"
       }
     ],
     "inheritance": {
@@ -223,6 +251,20 @@
               "url": "https://www.w3.org/TR/DOM-Parsing/"
             },
             "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};"
+          },
+          {
+            "spec": {
+              "title": "Pointer Events",
+              "url": "https://www.w3.org/TR/pointerevents3/"
+            },
+            "fragment": "partial interface Element {\n  undefined setPointerCapture (long pointerId);\n  undefined releasePointerCapture (long pointerId);\n  boolean hasPointerCapture (long pointerId);\n};"
+          },
+          {
+            "spec": {
+              "title": "Pointer Lock 2.0",
+              "url": "https://www.w3.org/TR/pointerlock-2/"
+            },
+            "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
           },
           {
             "spec": {
@@ -435,6 +477,20 @@
             },
             {
               "spec": {
+                "title": "Pointer Events",
+                "url": "https://www.w3.org/TR/pointerevents3/"
+              },
+              "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+            },
+            {
+              "spec": {
+                "title": "Selection API",
+                "url": "https://www.w3.org/TR/selection-api/"
+              },
+              "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+            },
+            {
+              "spec": {
                 "title": "Touch Events - Level 2",
                 "url": "https://www.w3.org/TR/touch-events/"
               },
@@ -477,7 +533,15 @@
             "fragment": "interface mixin ElementContentEditable {\n  [CEReactions] attribute DOMString contentEditable;\n  [CEReactions] attribute DOMString enterKeyHint;\n  readonly attribute boolean isContentEditable;\n  [CEReactions] attribute DOMString inputMode;\n};",
             "href": "https://html.spec.whatwg.org/multipage/interaction.html#elementcontenteditable"
           },
-          "extended": [],
+          "extended": [
+            {
+              "spec": {
+                "title": "VirtualKeyboard API",
+                "url": "https://www.w3.org/TR/virtual-keyboard/"
+              },
+              "fragment": "partial interface mixin ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
+            }
+          ],
           "inheritance": null,
           "includes": []
         },

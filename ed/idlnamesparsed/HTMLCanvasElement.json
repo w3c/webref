@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface HTMLCanvasElement : HTMLElement {\n  [HTMLConstructor] constructor();\n\n  [CEReactions] attribute unsigned long width;\n  [CEReactions] attribute unsigned long height;\n\n  RenderingContext? getContext(DOMString contextId, optional any options = null);\n\n  USVString toDataURL(optional DOMString type = \"image/png\", optional any quality);\n  undefined toBlob(BlobCallback _callback, optional DOMString type = \"image/png\", optional any quality);\n  OffscreenCanvas transferControlToOffscreen();\n};",
     "href": "https://html.spec.whatwg.org/multipage/canvas.html#htmlcanvaselement"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "Media Capture from DOM Elements",
+        "url": "https://www.w3.org/TR/mediacapture-fromelement/"
+      },
+      "fragment": "partial interface HTMLCanvasElement {\n    MediaStream captureStream (optional double frameRequestRate);\n};"
+    }
+  ],
   "inheritance": {
     "name": "HTMLElement",
     "type": "interface",
@@ -188,6 +196,20 @@
             "url": "https://www.w3.org/TR/DOM-Parsing/"
           },
           "fragment": "partial interface Element {\n  [CEReactions] attribute [LegacyNullToEmptyString] DOMString outerHTML;\n  [CEReactions] undefined insertAdjacentHTML(DOMString position, DOMString text);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Events",
+            "url": "https://www.w3.org/TR/pointerevents3/"
+          },
+          "fragment": "partial interface Element {\n  undefined setPointerCapture (long pointerId);\n  undefined releasePointerCapture (long pointerId);\n  boolean hasPointerCapture (long pointerId);\n};"
+        },
+        {
+          "spec": {
+            "title": "Pointer Lock 2.0",
+            "url": "https://www.w3.org/TR/pointerlock-2/"
+          },
+          "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};"
         },
         {
           "spec": {
@@ -400,6 +422,20 @@
           },
           {
             "spec": {
+              "title": "Pointer Events",
+              "url": "https://www.w3.org/TR/pointerevents3/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n    attribute EventHandler ongotpointercapture;\n    attribute EventHandler onlostpointercapture;\n    attribute EventHandler onpointerdown;\n    attribute EventHandler onpointermove;\n    [SecureContext] attribute EventHandler onpointerrawupdate;\n    attribute EventHandler onpointerup;\n    attribute EventHandler onpointercancel;\n    attribute EventHandler onpointerover;\n    attribute EventHandler onpointerout;\n    attribute EventHandler onpointerenter;\n    attribute EventHandler onpointerleave;\n};"
+          },
+          {
+            "spec": {
+              "title": "Selection API",
+              "url": "https://www.w3.org/TR/selection-api/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onselectstart;\n  attribute EventHandler onselectionchange;\n};"
+          },
+          {
+            "spec": {
               "title": "Touch Events - Level 2",
               "url": "https://www.w3.org/TR/touch-events/"
             },
@@ -442,7 +478,15 @@
           "fragment": "interface mixin ElementContentEditable {\n  [CEReactions] attribute DOMString contentEditable;\n  [CEReactions] attribute DOMString enterKeyHint;\n  readonly attribute boolean isContentEditable;\n  [CEReactions] attribute DOMString inputMode;\n};",
           "href": "https://html.spec.whatwg.org/multipage/interaction.html#elementcontenteditable"
         },
-        "extended": [],
+        "extended": [
+          {
+            "spec": {
+              "title": "VirtualKeyboard API",
+              "url": "https://www.w3.org/TR/virtual-keyboard/"
+            },
+            "fragment": "partial interface mixin ElementContentEditable {\n     [CEReactions] attribute DOMString virtualKeyboardPolicy;\n};"
+          }
+        ],
         "inheritance": null,
         "includes": []
       },

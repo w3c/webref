@@ -1,5 +1,23 @@
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+[Exposed=Window]
+interface RTCRtpSender {
+  readonly attribute MediaStreamTrack? track;
+  readonly attribute RTCDtlsTransport? transport;
+  static RTCRtpCapabilities? getCapabilities(DOMString kind);
+  Promise<undefined> setParameters(RTCRtpSendParameters parameters);
+  RTCRtpSendParameters getParameters();
+  Promise<undefined> replaceTrack(MediaStreamTrack? withTrack);
+  undefined setStreams(MediaStream... streams);
+  Promise<RTCStatsReport> getStats();
+};
+
 // Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
 // New methods for RTCRtpSender and RTCRtpReceiver
 partial interface RTCRtpSender {
     attribute RTCRtpTransform? transform;
+};
+
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+partial interface RTCRtpSender {
+  readonly attribute RTCDTMFSender? dtmf;
 };
