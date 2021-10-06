@@ -11115,7 +11115,7 @@ Informative references to this spec from:
 - [Mitigating Browser Fingerprinting in Web Specifications](https://w3c.github.io/fingerprinting-guidance/)
 
 
-### Screen Wake Lock API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-inconsistentRef=true data-xrefs=true}
+### Screen Wake Lock API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -11130,8 +11130,6 @@ Informative references to this spec from:
 
 - Missing references for links: 
      * [`https://webidl.spec.whatwg.org/`](https://webidl.spec.whatwg.org/)
-- Inconsistent references for links: 
-     * [`https://www.w3.org/TR/page-visibility-2/`](https://www.w3.org/TR/page-visibility-2/), related reference "page-visibility" uses URL [`https://www.w3.org/TR/page-visibility/`](https://www.w3.org/TR/page-visibility/)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#current-settings-object`](https://html.spec.whatwg.org/#current-settings-object)
      * [`https://html.spec.whatwg.org/#concept-document-window`](https://html.spec.whatwg.org/#concept-document-window)
@@ -17429,7 +17427,6 @@ Normative references to this spec from:
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
 - [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Generic Sensor API](https://w3c.github.io/sensors/)
 - [Geolocation Sensor](https://w3c.github.io/geolocation-sensor/)
@@ -17816,7 +17813,6 @@ Normative references to this spec from:
 
 - [Element Timing API](https://wicg.github.io/element-timing/)
 - [Event Timing API](https://wicg.github.io/event-timing/)
-- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Largest Contentful Paint](https://wicg.github.io/largest-contentful-paint/)
 - [Layout Instability API](https://wicg.github.io/layout-instability/)
 - [Long Tasks API 1](https://w3c.github.io/longtasks/)
@@ -19552,29 +19548,6 @@ Informative references to this spec from:
      * [`https://heycam.github.io/webidl/#idl-record`](https://heycam.github.io/webidl/#idl-record)
      * [`https://heycam.github.io/webidl/#idl-DOMString`](https://heycam.github.io/webidl/#idl-DOMString)
      * [`https://heycam.github.io/webidl/#a-promise-resolved-with`](https://heycam.github.io/webidl/#a-promise-resolved-with)
-
-#### Known dependencies on this specification {.dependencies}
-
-No normative reference to this spec from other specs.
-
-No informative reference to this spec from other specs.
-
-
-### Frame Timing {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-xrefs=true}
-
-#### Spec info {.info}
-
-- Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Crawled URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Crawled version: 05 October 2021
-- Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Shortname: frame-timing
-
-#### Potential issue(s) {.anomalies}
-
-- Spec uses WebIDL but does not reference it normatively
-- External links to outdated specs:
-     * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -21899,7 +21872,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Crawled URL: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
-- Crawled version: 5 October 2021
+- Crawled version: 6 October 2021
 - Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - Latest published version: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
 - Shortname: WebIDL-1
@@ -24518,7 +24491,6 @@ Normative references to this spec from:
 - [File System Access](https://wicg.github.io/file-system-access/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Filter Effects Module Level 2](https://drafts.fxtf.org/filter-effects-2/)
-- [Frame Timing](https://wicg.github.io/frame-timing/)
 - [Fullscreen API Standard](https://fullscreen.spec.whatwg.org/)
 - [Gamepad](https://w3c.github.io/gamepad/)
 - [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
