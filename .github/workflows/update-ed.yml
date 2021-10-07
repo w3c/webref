@@ -42,6 +42,6 @@ jobs:
         REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
         git commit -m "Update of ED report from new reffy run" -m "Using reffy commit $REFFY_SHA."
         #npm version patch
-        git push origin HEAD:master
+        git push origin HEAD:main
         #git push origin --tags
       working-directory: webref

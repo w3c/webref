@@ -7,7 +7,7 @@ name: "Publish @webref package if needed"
 on:
   pull_request:
     branches:
-      - master
+      - main
     types:
       - closed
 
@@ -24,7 +24,7 @@ jobs:
     - name: Checkout latest version of release script
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: main
 
     - name: Install dependencies
       run: |

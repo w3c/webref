@@ -8,7 +8,7 @@ Specifications covered by this repository are technical Web specifications that 
 
 This repository contains **raw** and **automatically-generated** extracts from web browser specifications. These extracts come with no guarantee on validity or consistency. For instance, if a specification defines invalid IDL snippets or uses an unknown IDL type, the corresponding IDL extract in this repository will be invalid as well.
 
-Curated subsets of the repository content are published as NPM [packages](https://github.com/w3c/webref/tree/master/packages), updated on a weekly basis when the underlying content has changed:
+Curated subsets of the repository content are published as NPM [packages](https://github.com/w3c/webref/tree/main/packages), updated on a weekly basis when the underlying content has changed:
 - [@webref/idl](https://www.npmjs.com/package/@webref/idl) contains a [curated](packages/idl#guarantees) version of the [ed/idl](ed/idl) folder.
 - [@webref/css](https://www.npmjs.com/package/@webref/css) contains a [curated](packages/css#guarantees) version of the [ed/css](ed/css) folder.
 - [@webref/elements](https://www.npmjs.com/package/@webref/elements) contains a [curated](packages/elements#guarantees) version of the [ed/elements](ed/elements) folder.
