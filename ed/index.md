@@ -258,7 +258,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
 - Crawled URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
-- Crawled version: 5 August 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
 - Shortname: tc39-intl-enumeration
 
@@ -279,7 +279,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
 - Crawled URL: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
-- Crawled version: 9 September 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://tc39.es/proposal-intl-locale-info/](https://tc39.es/proposal-intl-locale-info/)
 - Shortname: tc39-intl-locale-info
 
@@ -5273,7 +5273,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Crawled URL: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
-- Crawled version: 29 September 2021
+- Crawled version: 6 October 2021
 - Editor's Draft: [https://drafts.csswg.org/css-color/](https://drafts.csswg.org/css-color/)
 - Latest published version: [https://www.w3.org/TR/css-color-4/](https://www.w3.org/TR/css-color-4/)
 - Shortname: css-color-4
@@ -5394,7 +5394,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Crawled URL: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
-- Crawled version: 20 September 2021
+- Crawled version: 6 October 2021
 - Editor's Draft: [https://drafts.csswg.org/css-conditional-3/](https://drafts.csswg.org/css-conditional-3/)
 - Latest published version: [https://www.w3.org/TR/css-conditional-3/](https://www.w3.org/TR/css-conditional-3/)
 - Shortname: css-conditional-3
@@ -14918,7 +14918,7 @@ Informative references to this spec from:
 - [WebHID API](https://wicg.github.io/webhid/)
 
 
-### Gamepad Extensions {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true}
+### Gamepad Extensions {data-spec=true data-anomaly=true data-missingWebIdlRef=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -14934,6 +14934,8 @@ Informative references to this spec from:
      * `Gamepad` defined in [Gamepad](https://w3c.github.io/gamepad/)
 - Missing references for links: 
      * [`https://w3c.github.io/gamepad/`](https://w3c.github.io/gamepad/)
+- Broken external links:
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
 
 #### Known dependencies on this specification {.dependencies}
 
@@ -15528,7 +15530,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Crawled URL: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
-- Crawled version: 6 October 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
 - Latest published version: [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 - Shortname: webauthn-3
@@ -15758,6 +15760,8 @@ No informative reference to this spec from other specs.
      * [`https://www.w3.org/TR/touch-events-extensions/`](https://www.w3.org/TR/touch-events-extensions/)
 - Broken external links:
      * [`https://dom.spec.whatwg.org/#event-retargeting-steps`](https://dom.spec.whatwg.org/#event-retargeting-steps)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
 - External links to outdated specs:
      * [`https://www.w3.org/TR/html5/`](https://www.w3.org/TR/html5/)
 
@@ -16108,7 +16112,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://www.w3.org/TR/secure-payment-confirmation/](https://www.w3.org/TR/secure-payment-confirmation/)
 - Crawled URL: [https://w3c.github.io/secure-payment-confirmation](https://w3c.github.io/secure-payment-confirmation)
-- Crawled version: 6 October 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://w3c.github.io/secure-payment-confirmation](https://w3c.github.io/secure-payment-confirmation)
 - Latest published version: [https://www.w3.org/TR/secure-payment-confirmation/](https://www.w3.org/TR/secure-payment-confirmation/)
 - Shortname: secure-payment-confirmation
@@ -17242,18 +17246,19 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### Attribution Reporting {data-spec=true data-anomaly=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
+### Attribution Reporting {data-spec=true data-anomaly=true data-unknownIdlNames=true data-missingDfns=true data-inconsistentRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
 - Initial URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
 - Crawled URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
-- Crawled version: 6 October 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
 - Shortname: conversion-measurement-api
 
 #### Potential issue(s) {.anomalies}
 
+- Unknown WebIDL names used: `void`
 - Inconsistent references for links: 
      * [`https://w3c.github.io/webappsec-permissions-policy/`](https://w3c.github.io/webappsec-permissions-policy/), related reference "PERMISSIONS-POLICY-1" uses URL [`https://www.w3.org/TR/permissions-policy-1/`](https://www.w3.org/TR/permissions-policy-1/)
      * [`https://w3c.github.io/webappsec-secure-contexts/`](https://w3c.github.io/webappsec-secure-contexts/), related reference "SECURE-CONTEXTS" uses URL [`https://www.w3.org/TR/secure-contexts/`](https://www.w3.org/TR/secure-contexts/)
@@ -17276,18 +17281,19 @@ No informative reference to this spec from other specs.
      * [`https://html.spec.whatwg.org/#navigate`](https://html.spec.whatwg.org/#navigate)
      * [`https://html.spec.whatwg.org/#process-a-navigate-fetch`](https://html.spec.whatwg.org/#process-a-navigate-fetch)
      * [`https://html.spec.whatwg.org/#initialise-the-document-object`](https://html.spec.whatwg.org/#initialise-the-document-object)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
+     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#site`](https://html.spec.whatwg.org/#site)
      * [`https://html.spec.whatwg.org/#environment-settings-object`](https://html.spec.whatwg.org/#environment-settings-object)
      * [`https://html.spec.whatwg.org/#concept-origin-opaque`](https://html.spec.whatwg.org/#concept-origin-opaque)
      * [`https://html.spec.whatwg.org/#obtain-a-site`](https://html.spec.whatwg.org/#obtain-a-site)
-     * [`https://html.spec.whatwg.org/#relevant-settings-object`](https://html.spec.whatwg.org/#relevant-settings-object)
      * [`https://html.spec.whatwg.org/#responsible-document`](https://html.spec.whatwg.org/#responsible-document)
      * [`https://html.spec.whatwg.org/#allowed-to-use`](https://html.spec.whatwg.org/#allowed-to-use)
      * [`https://html.spec.whatwg.org/#concept-environment-top-level-origin`](https://html.spec.whatwg.org/#concept-environment-top-level-origin)
      * [`https://html.spec.whatwg.org/#browsing-context`](https://html.spec.whatwg.org/#browsing-context)
      * [`https://html.spec.whatwg.org/#top-level-browsing-context`](https://html.spec.whatwg.org/#top-level-browsing-context)
      * [`https://html.spec.whatwg.org/#navigation-params-origin`](https://html.spec.whatwg.org/#navigation-params-origin)
-     * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
      * [`https://html.spec.whatwg.org/#same-origin`](https://html.spec.whatwg.org/#same-origin)
      * [`https://html.spec.whatwg.org/#concept-settings-object-origin`](https://html.spec.whatwg.org/#concept-settings-object-origin)
 
@@ -17938,7 +17944,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Crawled URL: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
-- Crawled version: 16 September 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://wicg.github.io/event-timing/](https://wicg.github.io/event-timing/)
 - Shortname: event-timing
 
@@ -18805,7 +18811,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### Network Information API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+### Network Information API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -18817,13 +18823,15 @@ No informative reference to this spec from other specs.
 
 #### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://w3c.github.io/ServiceWorker/v1/`](https://w3c.github.io/ServiceWorker/v1/)
      * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#navigator`](https://html.spec.whatwg.org/#navigator)
      * [`https://html.spec.whatwg.org/#workernavigator`](https://html.spec.whatwg.org/#workernavigator)
+     * [`https://html.spec.whatwg.org/#window`](https://html.spec.whatwg.org/#window)
+     * [`https://html.spec.whatwg.org/#workerglobalscope`](https://html.spec.whatwg.org/#workerglobalscope)
+     * [`https://html.spec.whatwg.org/#eventhandler`](https://html.spec.whatwg.org/#eventhandler)
      * [`https://html.spec.whatwg.org/#networking-task-source`](https://html.spec.whatwg.org/#networking-task-source)
      * [`https://html.spec.whatwg.org/#queue-a-task`](https://html.spec.whatwg.org/#queue-a-task)
 
@@ -19377,7 +19385,7 @@ No normative reference to this spec from other specs.
 No informative reference to this spec from other specs.
 
 
-### Save Data API {data-spec=true data-anomaly=true data-noRefToWebIDL=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
+### Save Data API {data-spec=true data-anomaly=true data-missingDfns=true data-missingLinkRef=true data-xrefs=true}
 
 #### Spec info {.info}
 
@@ -19389,7 +19397,6 @@ No informative reference to this spec from other specs.
 
 #### Potential issue(s) {.anomalies}
 
-- Spec uses WebIDL but does not reference it normatively
 - Missing references for links: 
      * [`https://www.w3.org/TR/netinfo/`](https://www.w3.org/TR/netinfo/)
 - Broken external links:
@@ -20670,7 +20677,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Crawled URL: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
-- Crawled version: 13 September 2021
+- Crawled version: 07 October 2021
 - Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
 - Latest published version: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
 - Shortname: webrtc
@@ -22907,7 +22914,7 @@ Informative references to this spec from:
 
 - Initial URL: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
 - Crawled URL: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
-- Crawled version: 6 October 2021
+- Crawled version: 7 October 2021
 - Editor's Draft: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
 - Shortname: webidl
 
@@ -22951,6 +22958,7 @@ Informative references to this spec from:
 
 Normative references to this spec from:
 
+- [Attribution Reporting](https://wicg.github.io/conversion-measurement-api/)
 - [Audio Output Devices API](https://w3c.github.io/mediacapture-output/)
 - [Battery Status API](https://w3c.github.io/battery/)
 - [Beacon](https://w3c.github.io/beacon/)
@@ -22982,6 +22990,7 @@ Normative references to this spec from:
 - [CSSOM View Module](https://drafts.csswg.org/cssom-view/)
 - [Device Posture API](https://w3c.github.io/device-posture/)
 - [Early detection of input events](https://wicg.github.io/is-input-pending/)
+- [Event Timing API](https://wicg.github.io/event-timing/)
 - [EyeDropper API](https://wicg.github.io/eyedropper-api/)
 - [Filter Effects Module Level 1](https://drafts.fxtf.org/filter-effects-1/)
 - [Font Metrics API Level 1](https://drafts.css-houdini.org/font-metrics-api-1/)
@@ -23004,6 +23013,7 @@ Normative references to this spec from:
 - [Media Capture from DOM Elements](https://w3c.github.io/mediacapture-fromelement/)
 - [Media Playback Quality](https://w3c.github.io/media-playback-quality/)
 - [MediaStreamTrack Content Hints](https://w3c.github.io/mst-content-hint/)
+- [Network Information API](https://wicg.github.io/netinfo/)
 - [Page Visibility Level 2](https://w3c.github.io/page-visibility/)
 - [Payment Handler API](https://w3c.github.io/payment-handler/)
 - [Payment Request API](https://w3c.github.io/payment-request/)
@@ -23016,10 +23026,12 @@ Normative references to this spec from:
 - [Remote Playback API](https://w3c.github.io/remote-playback/)
 - [Resize Observer](https://drafts.csswg.org/resize-observer/)
 - [Resource Timing Level 2](https://w3c.github.io/resource-timing/)
+- [Save Data API](https://wicg.github.io/savedata/)
 - [Scalable Video Coding (SVC) Extension for WebRTC](https://w3c.github.io/webrtc-svc/)
 - [Screen Capture](https://w3c.github.io/mediacapture-screen-share/)
 - [Screen Wake Lock API](https://w3c.github.io/screen-wake-lock/)
 - [Scroll-linked Animations](https://drafts.csswg.org/scroll-animations-1/)
+- [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
@@ -23031,6 +23043,7 @@ Normative references to this spec from:
 - [Visual Viewport API](https://wicg.github.io/visual-viewport/)
 - [Web Animations](https://drafts.csswg.org/web-animations-1/)
 - [Web Animations Level 2](https://drafts.csswg.org/web-animations-2/)
+- [Web Authentication: An API for accessing Public Key Credentials - Level 3](https://w3c.github.io/webauthn/)
 - [Web MIDI API](https://webaudio.github.io/web-midi-api/)
 - [Web NFC](https://w3c.github.io/web-nfc/)
 - [Web Share API](https://w3c.github.io/web-share/)
@@ -23043,6 +23056,7 @@ Although they do not, the following specs should also normatively reference this
 
 Informative references to this spec from:
 
+- [overscroll and scrollend events](https://wicg.github.io/overscroll-scrollend-events/)
 - [Tracking Preference Expression (DNT)](https://w3c.github.io/dnt/drafts/tracking-dnt.html)
 - [Web Application Manifest](https://w3c.github.io/manifest/)
 

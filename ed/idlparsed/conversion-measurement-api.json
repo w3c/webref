@@ -6,9 +6,166 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "AttributionReporting"
+        ]
+      }
     },
-    "idlNames": {},
+    "idlNames": {
+      "AttributionSourceParams": {
+        "fragment": "dictionary AttributionSourceParams {\n  required USVString attributionDestination;\n  required DOMString attributionSourceEventId;\n  USVString attributionReportTo;\n  long long attributionExpiry;\n  long long attributionSourcePriority;\n};",
+        "type": "dictionary",
+        "name": "AttributionSourceParams",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "attributionDestination",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "attributionSourceEventId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "attributionReportTo",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attributionExpiry",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "attributionSourcePriority",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long long"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "AttributionReporting": {
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<void> registerAttributionSource(AttributionSourceParams params);\n};",
+        "type": "interface",
+        "name": "AttributionReporting",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "registerAttributionSource",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "void"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "params",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "AttributionSourceParams"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
     "idlExtendedNames": {
       "HTMLAnchorElement": [
         {
@@ -153,15 +310,63 @@
           "extAttrs": [],
           "partial": true
         }
+      ],
+      "Window": [
+        {
+          "fragment": "[SecureContext]\npartial interface Window {\n  readonly attribute AttributionReporting attributionReporting;\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "attributionReporting",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AttributionReporting"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "SecureContext",
+              "rhs": null,
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "AttributionReporting"
+      ]
+    },
     "dependencies": {
-      "HTMLAnchorElement": []
+      "HTMLAnchorElement": [],
+      "AttributionSourceParams": [],
+      "AttributionReporting": [
+        "void",
+        "AttributionSourceParams"
+      ],
+      "Window": [
+        "AttributionReporting"
+      ]
     },
     "externalDependencies": [
-      "HTMLAnchorElement"
+      "HTMLAnchorElement",
+      "void",
+      "Window"
     ],
     "hasObsoleteIdl": false
   }

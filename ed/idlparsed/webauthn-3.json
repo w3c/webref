@@ -17,7 +17,7 @@
     },
     "idlNames": {
       "PublicKeyCredential": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface PublicKeyCredential : Credential {\n    [SameObject] readonly attribute ArrayBuffer              rawId;\n    [SameObject] readonly attribute AuthenticatorResponse    response;\n    AuthenticationExtensionsClientOutputs getClientExtensionResults();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface PublicKeyCredential : Credential {\n    [SameObject] readonly attribute ArrayBuffer              rawId;\n    [SameObject] readonly attribute AuthenticatorResponse    response;\n    [SameObject] readonly attribute DOMString?               authenticatorAttachment;\n    AuthenticationExtensionsClientOutputs getClientExtensionResults();\n};",
         "type": "interface",
         "name": "PublicKeyCredential",
         "inheritance": "Credential",
@@ -54,6 +54,28 @@
               "nullable": false,
               "union": false,
               "idlType": "AuthenticatorResponse"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "authenticatorAttachment",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "DOMString"
             },
             "extAttrs": [
               {
