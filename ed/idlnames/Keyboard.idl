@@ -1,5 +1,6 @@
 // Source: Keyboard Lock (https://wicg.github.io/keyboard-lock/)
-[SecureContext, Exposed=Window] interface Keyboard {
+[SecureContext, Exposed=Window]
+interface Keyboard : EventTarget {
   Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);
   undefined unlock();
 };

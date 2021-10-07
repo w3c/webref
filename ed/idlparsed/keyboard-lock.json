@@ -14,10 +14,10 @@
     },
     "idlNames": {
       "Keyboard": {
-        "fragment": "[SecureContext, Exposed=Window] interface Keyboard {\n  Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);\n  undefined unlock();\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface Keyboard : EventTarget {\n  Promise<undefined> lock(optional sequence<DOMString> keyCodes = []);\n  undefined unlock();\n};",
         "type": "interface",
         "name": "Keyboard",
-        "inheritance": null,
+        "inheritance": "EventTarget",
         "members": [
           {
             "type": "operation",
@@ -160,10 +160,13 @@
       "Navigator": [
         "Keyboard"
       ],
-      "Keyboard": []
+      "Keyboard": [
+        "EventTarget"
+      ]
     },
     "externalDependencies": [
-      "Navigator"
+      "Navigator",
+      "EventTarget"
     ],
     "hasObsoleteIdl": false
   }

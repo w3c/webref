@@ -21,6 +21,14 @@
     <h1>Reffy crawl report (per issue)</h1>
   <p><a href="https://github.com/w3c/reffy">Reffy</a> is a <i>spec exploration tool</i>. It crawls a list of specifications to study the WebIDL content, the links that they contain, and the references that these specifications contain.</p>
   <p>446 specifications were crawled in this report.</p>
+  <section id="specifications-that-could-not-be-rendered" class="level2">
+  <h2>Specifications that could not be rendered</h2>
+  <p>Reffy could not fetch or render these specifications for some reason. This may happen when a network error occurred or when a specification uses an old version of ReSpec.</p>
+  <ul>
+  <li><a href="%5Bobject%20Object%5D">WebIDL Level 1</a>: <code>Error: Execution context was destroyed, most likely because of a navigation. Error: Execution context was destroyed, most likely because of a navigation. at rewriteError (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:265:23) at runMicrotasks (&lt;anonymous&gt;) at processTicksAndRejections (internal/process/task_queues.js:95:5) at async ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:219:60) at async ExecutionContext.evaluate (/home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16) at async processSpecification (/home/runner/work/webref/webref/reffy/src/lib/util.js:515:9) at async crawlSpec (/home/runner/work/webref/webref/reffy/src/lib/specs-crawler.js:51:24) at async crawlSpecAndPromise (/home/runner/work/webref/webref/reffy/src/lib/specs-crawler.js:372:22) at async Promise.all (index 424) at async crawlList (/home/runner/work/webref/webref/reffy/src/lib/specs-crawler.js:380:21)</code></li>
+  </ul>
+  <p>=&gt; 1 specification found</p>
+  </section>
   <section id="specifications-without-normative-dependencies" class="level2">
   <h2>Specifications without normative dependencies</h2>
   <ul>
@@ -185,12 +193,13 @@
   <ul>
   <li><code>CSSOMString</code> used in <a href="https://drafts.csswg.org/css-animations/">CSS Animations Level 1</a>, <a href="https://drafts.csswg.org/css-animations-2/">CSS Animations Level 2</a>, <a href="https://drafts.csswg.org/css-conditional-3/">CSS Conditional Rules Module Level 3</a>, <a href="https://drafts.csswg.org/css-counter-styles/">CSS Counter Styles Level 3</a>, <a href="https://drafts.csswg.org/css-font-loading/">CSS Font Loading Module Level 3</a>, <a href="https://drafts.csswg.org/css-fonts-4/">CSS Fonts Module Level 4</a>, <a href="https://drafts.csswg.org/css-nesting/">CSS Nesting Module</a>, <a href="https://drafts.csswg.org/cssom/">CSS Object Model (CSSOM)</a>, <a href="https://drafts.css-houdini.org/css-properties-values-api-1/">CSS Properties and Values API Level 1</a>, <a href="https://drafts.csswg.org/css-pseudo-4/">CSS Pseudo-Elements Module Level 4</a>, <a href="https://drafts.csswg.org/css-regions/">CSS Regions Module Level 1</a>, <a href="https://drafts.csswg.org/css-transitions/">CSS Transitions</a>, <a href="https://drafts.csswg.org/css-transitions-2/">CSS Transitions Level 2</a>, <a href="https://drafts.csswg.org/cssom-view/">CSSOM View Module</a>, <a href="https://drafts.csswg.org/scroll-animations-1/">Scroll-linked Animations</a>, <a href="https://drafts.csswg.org/web-animations-1/">Web Animations</a></li>
   <li><code>CSSPercentishArray</code> used in <a href="https://drafts.css-houdini.org/css-typed-om-1/">CSS Typed OM Level 1</a></li>
+  <li><code>DOMException</code> used in <a href="https://w3c.github.io/mediacapture-main/">Media Capture and Streams</a>, <a href="https://w3c.github.io/webrtc-pc/">WebRTC 1.0: Real-Time Communication Between Browsers</a>, <a href="https://w3c.github.io/webtransport/">WebTransport</a></li>
   <li><code>PostMessageOptions</code> used in <a href="https://wicg.github.io/portals/">Portals</a></li>
   <li><code>WebAppManifest</code> used in <a href="https://w3c.github.io/web-share-target/">Web Share Target API</a></li>
   <li><code>WindowProxy</code> used in <a href="https://html.spec.whatwg.org/multipage/">HTML Standard</a>, <a href="https://wicg.github.io/portals/">Portals</a>, <a href="https://svgwg.org/specs/animations/">SVG Animations</a>, <a href="https://w3c.github.io/uievents/">UI Events</a></li>
   <li><code>bigint</code> used in <a href="https://w3c.github.io/webrtc-encoded-transform/">WebRTC Encoded Transform</a></li>
   </ul>
-  <p>=&gt; 6 WebIDL names found</p>
+  <p>=&gt; 7 WebIDL names found</p>
   <p>Some of them may be type errors in specs (e.g. &quot;int&quot; does not exist, &quot;Array&quot; cannot be used on its own, etc.) Also, please keep in mind that Reffy only knows about IDL terms defined in the specifications that were crawled <strong>and</strong> that do not have invalid IDL content.</p>
   </section>
   <section id="list-of-webidl-names-defined-in-more-than-one-spec" class="level2">
@@ -8441,7 +8450,9 @@
   <li><a href="https://heycam.github.io/webidl/#SecureContext"><code>https://heycam.github.io/webidl/#SecureContext</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#SameObject"><code>https://heycam.github.io/webidl/#SameObject</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#Exposed"><code>https://heycam.github.io/webidl/#Exposed</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-promise"><code>https://heycam.github.io/webidl/#idl-promise</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-undefined"><code>https://heycam.github.io/webidl/#idl-undefined</code></a></li>
+  <li><a href="https://heycam.github.io/webidl/#idl-sequence"><code>https://heycam.github.io/webidl/#idl-sequence</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMString"><code>https://heycam.github.io/webidl/#idl-DOMString</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#invalidstateerror"><code>https://heycam.github.io/webidl/#invalidstateerror</code></a></li>
   <li><a href="https://heycam.github.io/webidl/#idl-DOMException"><code>https://heycam.github.io/webidl/#idl-DOMException</code></a></li>
@@ -11423,37 +11434,6 @@
   <li><a href="https://html.spec.whatwg.org/#concept-relevant-global"><code>https://html.spec.whatwg.org/#concept-relevant-global</code></a></li>
   <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
   </ul></li>
-  <li><a href="https://webidl.spec.whatwg.org/">Web IDL Standard</a>:
-  <ul>
-  <li><a href="https://html.spec.whatwg.org/#concept-realm-global"><code>https://html.spec.whatwg.org/#concept-realm-global</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#window"><code>https://html.spec.whatwg.org/#window</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#windoworworkerglobalscope"><code>https://html.spec.whatwg.org/#windoworworkerglobalscope</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#dom-context-2d-stroke"><code>https://html.spec.whatwg.org/#dom-context-2d-stroke</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#canvasdrawpath"><code>https://html.spec.whatwg.org/#canvasdrawpath</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#path2d"><code>https://html.spec.whatwg.org/#path2d</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#incumbent-settings-object"><code>https://html.spec.whatwg.org/#incumbent-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#htmlallcollection"><code>https://html.spec.whatwg.org/#htmlallcollection</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#location"><code>https://html.spec.whatwg.org/#location</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-relevant-realm"><code>https://html.spec.whatwg.org/#concept-relevant-realm</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#queue-a-microtask"><code>https://html.spec.whatwg.org/#queue-a-microtask</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#task-source"><code>https://html.spec.whatwg.org/#task-source</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#in-parallel"><code>https://html.spec.whatwg.org/#in-parallel</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#queue-a-task"><code>https://html.spec.whatwg.org/#queue-a-task</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability"><code>https://html.spec.whatwg.org/#concept-settings-object-cross-origin-isolated-capability</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#concept-realm-settings-object"><code>https://html.spec.whatwg.org/#concept-realm-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#secure-context"><code>https://html.spec.whatwg.org/#secure-context</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#relevant-settings-object"><code>https://html.spec.whatwg.org/#relevant-settings-object</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#worklet"><code>https://html.spec.whatwg.org/#worklet</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#windowproxy"><code>https://html.spec.whatwg.org/#windowproxy</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#prepare-to-run-script"><code>https://html.spec.whatwg.org/#prepare-to-run-script</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#prepare-to-run-a-callback"><code>https://html.spec.whatwg.org/#prepare-to-run-a-callback</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#clean-up-after-running-a-callback"><code>https://html.spec.whatwg.org/#clean-up-after-running-a-callback</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#clean-up-after-running-script"><code>https://html.spec.whatwg.org/#clean-up-after-running-script</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#serializable"><code>https://html.spec.whatwg.org/#serializable</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#serializable-objects"><code>https://html.spec.whatwg.org/#serializable-objects</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#serialization-steps"><code>https://html.spec.whatwg.org/#serialization-steps</code></a></li>
-  <li><a href="https://html.spec.whatwg.org/#deserialization-steps"><code>https://html.spec.whatwg.org/#deserialization-steps</code></a></li>
-  </ul></li>
   <li><a href="https://wicg.github.io/web-locks/">Web Locks API</a>:
   <ul>
   <li><a href="https://html.spec.whatwg.org/#integration-with-the-javascript-agent-cluster-formalism"><code>https://html.spec.whatwg.org/#integration-with-the-javascript-agent-cluster-formalism</code></a></li>
@@ -12616,7 +12596,7 @@
   <li><a href="https://html.spec.whatwg.org/#the-progress-element"><code>https://html.spec.whatwg.org/#the-progress-element</code></a></li>
   </ul></li>
   </ul>
-  <p>=&gt; 6751 problematic external links found in 304 specifications</p>
+  <p>=&gt; 6725 problematic external links found in 303 specifications</p>
   </section>
   <section id="external-links-to-terms-that-no-longer-exist-in-the-latest-version-of-the-targeted-specification" class="level2">
   <h2>External links to terms that no longer exist in the latest version of the targeted specification</h2>
