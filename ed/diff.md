@@ -2,11 +2,11 @@
 % Reffy
 % October 08, 2021
 
-## Attribution Reporting
+## Trusted Types
 
-- Initial URL: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
+- Initial URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/conversion-measurement-api/](https://wicg.github.io/conversion-measurement-api/)
-- Unknown WebIDL names used: *DEL* void
+- Editor's Draft: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+- Missing references for links: *INS* https://w3c.github.io/editing/docs/execCommand/
 
 
