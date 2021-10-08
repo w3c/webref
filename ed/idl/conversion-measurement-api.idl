@@ -22,7 +22,7 @@ dictionary AttributionSourceParams {
 
 [Exposed=Window, SecureContext]
 interface AttributionReporting {
-  Promise<void> registerAttributionSource(AttributionSourceParams params);
+  Promise<undefined> registerAttributionSource(AttributionSourceParams params);
 };
 
 [SecureContext]

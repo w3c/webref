@@ -99,7 +99,7 @@
         "partial": false
       },
       "AttributionReporting": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<void> registerAttributionSource(AttributionSourceParams params);\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface AttributionReporting {\n  Promise<undefined> registerAttributionSource(AttributionSourceParams params);\n};",
         "type": "interface",
         "name": "AttributionReporting",
         "inheritance": null,
@@ -120,7 +120,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "void"
+                  "idlType": "undefined"
                 }
               ]
             },
@@ -356,7 +356,6 @@
       "HTMLAnchorElement": [],
       "AttributionSourceParams": [],
       "AttributionReporting": [
-        "void",
         "AttributionSourceParams"
       ],
       "Window": [
@@ -365,7 +364,6 @@
     },
     "externalDependencies": [
       "HTMLAnchorElement",
-      "void",
       "Window"
     ],
     "hasObsoleteIdl": false
