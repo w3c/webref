@@ -30,6 +30,20 @@
         },
         "extAttrs": []
       },
+      "EpochTimeStamp": {
+        "fragment": "typedef unsigned long long EpochTimeStamp;",
+        "type": "typedef",
+        "name": "EpochTimeStamp",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "unsigned long long"
+        },
+        "extAttrs": []
+      },
       "Performance": {
         "fragment": "[Exposed=(Window,Worker)]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
         "type": "interface",
