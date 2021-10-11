@@ -1,260 +1,85 @@
-% Diff between report from "October 04, 2021" and reference report from "September 27, 2021"
+% Diff between report from "October 11, 2021" and reference report from "October 04, 2021"
 % Reffy
-% October 04, 2021
+% October 11, 2021
 
 ## Badging API
 
 - Initial URL: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
 - Crawled URL: [undefined](undefined)
 - Editor's Draft: [https://w3c.github.io/badging/](https://w3c.github.io/badging/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Missing references for links: *INS* https://webidl.spec.whatwg.org/
 
 
-## Compute Pressure API
+## Compression Streams
 
-- Initial URL: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
+- Initial URL: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/compute-pressure/](https://wicg.github.io/compute-pressure/)
-- This specification was not in the reference crawl report.
+- Editor's Draft: [https://wicg.github.io/compression/](https://wicg.github.io/compression/)
+- Spec is OK: *INS* true / *DEL* false
 
 
-## ContentEditable
+## Console Standard
 
-- Initial URL: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
+- Initial URL: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/contentEditable/](https://w3c.github.io/contentEditable/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Extend TimeZoneName Option Proposal
-
-- Initial URL: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-extend-timezonename/](https://tc39.es/proposal-intl-extend-timezonename/)
-- This specification was not in the reference crawl report.
-
-
-## EyeDropper API
-
-- Initial URL: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/eyedropper-api/](https://wicg.github.io/eyedropper-api/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## File API
-
-- Initial URL: [https://www.w3.org/TR/FileAPI/](https://www.w3.org/TR/FileAPI/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/FileAPI/](https://w3c.github.io/FileAPI/)
-- Missing references for WebIDL names: *INS* MediaSource
-- Missing references for links: *INS* https://w3c.github.io/media-source/
-- Inconsistent references for links: *DEL* https://w3c.github.io/media-source/
+- Editor's Draft: [https://console.spec.whatwg.org/](https://console.spec.whatwg.org/)
+- Spec is OK: *INS* true / *DEL* false
 
 
 ## Frame Timing
 
 - Initial URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## IceTransport Extensions for WebRTC
-
-- Initial URL: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-ice/](https://w3c.github.io/webrtc-ice/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Input Device Capabilities
-
-- Initial URL: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/input-device-capabilities/](https://wicg.github.io/input-device-capabilities/)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Intl Enumeration API Specification
-
-- Initial URL: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-enumeration/](https://tc39.es/proposal-intl-enumeration/)
-- This specification was not in the reference crawl report.
-
-
-## Intl.DisplayNames v2 Proposal
-
-- Initial URL: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/intl-displaynames-v2/](https://tc39.es/intl-displaynames-v2/)
-- This specification was not in the reference crawl report.
-
-
-## Intl.Segmenter Proposal
-
-- Initial URL: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://tc39.es/proposal-intl-segmenter/](https://tc39.es/proposal-intl-segmenter/)
-- This specification was not in the reference crawl report.
-
-
-## JS Self-Profiling API
-
-- Initial URL: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/js-self-profiling/](https://wicg.github.io/js-self-profiling/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## MathML Core
-
-- Initial URL: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/mathml-core/](https://w3c.github.io/mathml-core/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Media Capture Automation
-
-- Initial URL: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/mediacapture-automation/](https://w3c.github.io/mediacapture-automation/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Media Playback Quality
-
-- Initial URL: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/media-playback-quality/](https://w3c.github.io/media-playback-quality/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Media Source Extensions™
-
-- Initial URL: [https://www.w3.org/TR/media-source-2/](https://www.w3.org/TR/media-source-2/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
-- This specification was not in the reference crawl report.
-
-
-## Media Source Extensions™
-
-- Initial URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
-- Crawled URL: [https://www.w3.org/TR/media-source/](https://www.w3.org/TR/media-source/)
-- Editor's Draft: [https://w3c.github.io/media-source/](https://w3c.github.io/media-source/)
+- Crawled URL: [https://wicg.github.io/frame-timing/](https://wicg.github.io/frame-timing/)
 - This specification is not in the new crawl report.
 
 
-## Network Information API
+## Media Capture and Streams
 
-- Initial URL: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
+- Initial URL: [https://www.w3.org/TR/mediacapture-streams/](https://www.w3.org/TR/mediacapture-streams/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/netinfo/](https://wicg.github.io/netinfo/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Editor's Draft: [https://w3c.github.io/mediacapture-main/](https://w3c.github.io/mediacapture-main/)
+- Unknown WebIDL names used: *DEL* DOMException
+- Missing references for WebIDL names: *INS* DOMException
 
 
-## overscroll and scrollend events
+## Mixed Content
 
-- Initial URL: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
+- Initial URL: [https://www.w3.org/TR/mixed-content/](https://www.w3.org/TR/mixed-content/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/overscroll-scrollend-events/](https://wicg.github.io/overscroll-scrollend-events/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Editor's Draft: [https://w3c.github.io/webappsec-mixed-content/](https://w3c.github.io/webappsec-mixed-content/)
+- Spec title: *INS* Mixed Content / *DEL* Mixed Content Level 2
 
 
-## preferCurrentTab
+## Trusted Types
 
-- Initial URL: [https://wicg.github.io/prefer-current-tab/](https://wicg.github.io/prefer-current-tab/)
+- Initial URL: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/prefer-current-tab/](https://wicg.github.io/prefer-current-tab/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
+- Editor's Draft: [https://w3c.github.io/webappsec-trusted-types/dist/spec/](https://w3c.github.io/webappsec-trusted-types/dist/spec/)
+- Missing references for links: *INS* https://w3c.github.io/editing/docs/execCommand/
 
 
-## Save Data API
+## Web IDL Standard
 
-- Initial URL: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
+- Initial URL: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
 - Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/savedata/](https://wicg.github.io/savedata/)
-- Spec does not reference WebIDL normatively: *INS* false / *DEL* true
-
-
-## Visual Viewport API
-
-- Initial URL: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://wicg.github.io/visual-viewport/](https://wicg.github.io/visual-viewport/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## W3C Patent Policy
-
-- Initial URL: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://www.w3.org/Consortium/Patent-Policy/](https://www.w3.org/Consortium/Patent-Policy/)
+- Editor's Draft: [https://webidl.spec.whatwg.org/](https://webidl.spec.whatwg.org/)
 - This specification was not in the reference crawl report.
 
 
-## W3C Process Document
+## WebIDL Level 1
 
-- Initial URL: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://www.w3.org/Consortium/Process/](https://www.w3.org/Consortium/Process/)
-- This specification was not in the reference crawl report.
-
-
-## Web App Manifest - Application Information
-
-- Initial URL: [https://www.w3.org/TR/manifest-app-info/](https://www.w3.org/TR/manifest-app-info/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/manifest-app-info/](https://w3c.github.io/manifest-app-info/)
-- No normative references found: *INS* true / *DEL* false
-
-
-## Web NFC
-
-- Initial URL: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/web-nfc/](https://w3c.github.io/web-nfc/)
-- Spec title: *INS* Web NFC / *DEL* Web NFC API
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## Web Share Target API
-
-- Initial URL: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/web-share-target/](https://w3c.github.io/web-share-target/)
-- Spec could not be rendered: *DEL* TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded
-    at /home/runner/work/webref/webref/reffy/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111
-
-
-## WebRTC Encoded Transform
-
-- Initial URL: [https://www.w3.org/TR/webrtc-encoded-transform/](https://www.w3.org/TR/webrtc-encoded-transform/)
-- Crawled URL: [undefined](undefined)
-- Editor's Draft: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- This specification was not in the reference crawl report.
-
-
-## WebRTC Encoded Transform
-
-- Initial URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
-- Crawled URL: [https://w3c.github.io/webrtc-encoded-transform/](https://w3c.github.io/webrtc-encoded-transform/)
+- Initial URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
+- Crawled URL: [https://www.w3.org/TR/WebIDL-1/](https://www.w3.org/TR/WebIDL-1/)
+- Editor's Draft: [https://heycam.github.io/webidl/](https://heycam.github.io/webidl/)
 - This specification is not in the new crawl report.
+
+
+## WebRTC 1.0: Real-Time Communication Between Browsers
+
+- Initial URL: [https://www.w3.org/TR/webrtc/](https://www.w3.org/TR/webrtc/)
+- Crawled URL: [undefined](undefined)
+- Editor's Draft: [https://w3c.github.io/webrtc-pc/](https://w3c.github.io/webrtc-pc/)
+- Unknown WebIDL names used: *DEL* DOMException
+- Missing references for WebIDL names: *INS* DOMException
 
 

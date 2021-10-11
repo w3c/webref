@@ -97,6 +97,12 @@ partial interface Window {
   readonly attribute AppHistory appHistory;
 };
 
+// Source: Attribution Reporting (https://wicg.github.io/conversion-measurement-api/)
+[SecureContext]
+partial interface Window {
+  readonly attribute AttributionReporting attributionReporting;
+};
+
 // Source: Cookie Store API (https://wicg.github.io/cookie-store/)
 [SecureContext]
 partial interface Window {
