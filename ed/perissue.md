@@ -2698,7 +2698,7 @@ Links in the body of a specification should be to the same document as that poin
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-canmakepaymentevent)
      * [`https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent`](https://w3c.github.io/payment-handler/#dfn-handling-a-paymentrequestevent)
 - [Streams Standard](https://streams.spec.whatwg.org/):
-     * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
+     * [`https://webidl.spec.whatwg.org/#idl-constructors`](https://webidl.spec.whatwg.org/#idl-constructors)
 - [Text Fragments](https://wicg.github.io/scroll-to-text-fragment/):
      * [`https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view`](https://drafts.csswg.org/cssom-view-1/#scroll-an-element-into-view)
      * [`https://w3c.github.io/selection-api/#dfn-selection`](https://w3c.github.io/selection-api/#dfn-selection)

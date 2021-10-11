@@ -514,7 +514,7 @@ No informative reference to this spec from other specs.
 
 - Initial URL: [https://tc39.es/proposal-shadowrealm/](https://tc39.es/proposal-shadowrealm/)
 - Crawled URL: [https://tc39.es/proposal-shadowrealm/](https://tc39.es/proposal-shadowrealm/)
-- Crawled version: 5 October 2021
+- Crawled version: 11 October 2021
 - Editor's Draft: [https://tc39.es/proposal-shadowrealm/](https://tc39.es/proposal-shadowrealm/)
 - Shortname: tc39-shadowrealm
 
@@ -22743,14 +22743,14 @@ Informative references to this spec from:
 
 - Initial URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Crawled URL: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
-- Crawled version: 7 September 2021
+- Crawled version: 11 October 2021
 - Editor's Draft: [https://streams.spec.whatwg.org/](https://streams.spec.whatwg.org/)
 - Shortname: streams
 
 #### Potential issue(s) {.anomalies}
 
 - External links to private terms:
-     * [`https://heycam.github.io/webidl/#idl-constructors`](https://heycam.github.io/webidl/#idl-constructors)
+     * [`https://webidl.spec.whatwg.org/#idl-constructors`](https://webidl.spec.whatwg.org/#idl-constructors)
 - Broken external links:
      * [`https://html.spec.whatwg.org/#the-img-element`](https://html.spec.whatwg.org/#the-img-element)
      * [`https://html.spec.whatwg.org/#transferable`](https://html.spec.whatwg.org/#transferable)
@@ -23033,6 +23033,7 @@ Normative references to this spec from:
 - [Secure Payment Confirmation](https://w3c.github.io/secure-payment-confirmation)
 - [Selection API](https://w3c.github.io/selection-api/)
 - [Server Timing](https://w3c.github.io/server-timing/)
+- [Streams Standard](https://streams.spec.whatwg.org/)
 - [The Screen Orientation API](https://w3c.github.io/screen-orientation/)
 - [The Storage Access API](https://privacycg.github.io/storage-access/)
 - [Touch Events - Level 2](https://w3c.github.io/touch-events/)
