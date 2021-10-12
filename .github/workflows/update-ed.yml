@@ -7,41 +7,42 @@ jobs:
   update:
     runs-on: ubuntu-18.04
     steps:
-    - name: Checkout reffy
-      uses: actions/checkout@v2
-      with:
-        repository: w3c/reffy
-        ref: main
-        fetch-depth: 1
-        path: reffy
     - name: Setup node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '14'
-    - name: Install pandoc
-      run: sudo apt-get install pandoc
-    - name: Setup Reffy
-      run: |
-        npm ci
-      working-directory: reffy
+        node-version: 14
+
+    - name: Install reffy
+      run: npm install reffy
+
     - name: Run Reffy's crawler
-      run: npm run ed
-      working-directory: reffy
+      run: |
+        mkdir report
+        node_modules/.bin/reffy --output report
+
     - name: Checkout webref
       uses: actions/checkout@v2
       with:
         path: webref
-    - name: Copy reports
-      run: rsync -av --exclude=README.md reffy/reports/ webref/
+
+    - name: Copy report
+      run: rsync -av report/ webref/
+
     - name: Push updates to git
       run: |
         git config user.name "reffy-bot"
         git config user.email "<>"
         git remote set-url --push origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
         git add -A
-        REFFY_SHA=$(git --git-dir=../reffy/.git rev-parse HEAD)
+        REFFY_SHA=$(../node_modules/.bin/reffy --version)
         git commit -m "Update of ED report from new reffy run" -m "Using reffy commit $REFFY_SHA."
-        #npm version patch
         git push origin HEAD:main
-        #git push origin --tags
       working-directory: webref
+
+    - name: Notify webref-analysis that it should update itself
+      run: |
+        curl -X POST \
+          -H "Authorization: Bearer ${{secrets.WEBREF_ANALYSIS_TOKEN}}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          https://api.github.com/repos/w3c/webref-analysis/actions/workflows/analyze.yml/dispatches \
+          -d '{"ref": "main"}'
