@@ -1,0 +1,15 @@
+{
+  "name": "CountQueuingStrategy",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Streams Standard",
+      "url": "https://streams.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
+    "href": "https://streams.spec.whatwg.org/#countqueuingstrategy"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

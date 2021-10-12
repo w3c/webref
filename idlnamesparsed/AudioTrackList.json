@@ -1,0 +1,29 @@
+{
+  "name": "AudioTrackList",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface AudioTrackList : EventTarget {\n  readonly attribute unsigned long length;\n  getter AudioTrack (unsigned long index);\n  AudioTrack? getTrackById(DOMString id);\n\n  attribute EventHandler onchange;\n  attribute EventHandler onaddtrack;\n  attribute EventHandler onremovetrack;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/media.html#audiotracklist"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

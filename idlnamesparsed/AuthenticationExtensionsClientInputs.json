@@ -1,0 +1,58 @@
+{
+  "name": "AuthenticationExtensionsClientInputs",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+      "url": "https://www.w3.org/TR/webauthn-3/"
+    },
+    "fragment": "dictionary AuthenticationExtensionsClientInputs {\n};",
+    "href": "https://w3c.github.io/webauthn/#dictdef-authenticationextensionsclientinputs"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Secure Payment Confirmation",
+        "url": "https://www.w3.org/TR/secure-payment-confirmation/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  AuthenticationExtensionsPaymentInputs payment;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appid;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  USVString appidExclude;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n  boolean uvm;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    boolean credProps;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Authentication: An API for accessing Public Key Credentials - Level 3",
+        "url": "https://www.w3.org/TR/webauthn-3/"
+      },
+      "fragment": "partial dictionary AuthenticationExtensionsClientInputs {\n    AuthenticationExtensionsLargeBlobInputs largeBlob;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

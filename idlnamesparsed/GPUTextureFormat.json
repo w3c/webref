@@ -1,0 +1,14 @@
+{
+  "name": "GPUTextureFormat",
+  "type": "enum",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth and stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#enumdef-gputextureformat"
+  },
+  "extended": [],
+  "includes": []
+}

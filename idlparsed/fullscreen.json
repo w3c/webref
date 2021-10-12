@@ -1,0 +1,323 @@
+{
+  "spec": {
+    "title": "Fullscreen API Standard",
+    "url": "https://fullscreen.spec.whatwg.org/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "FullscreenNavigationUI": {
+        "fragment": "enum FullscreenNavigationUI {\n  \"auto\",\n  \"show\",\n  \"hide\"\n};",
+        "type": "enum",
+        "name": "FullscreenNavigationUI",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "auto"
+          },
+          {
+            "type": "enum-value",
+            "value": "show"
+          },
+          {
+            "type": "enum-value",
+            "value": "hide"
+          }
+        ],
+        "extAttrs": []
+      },
+      "FullscreenOptions": {
+        "fragment": "dictionary FullscreenOptions {\n  FullscreenNavigationUI navigationUI = \"auto\";\n};",
+        "type": "dictionary",
+        "name": "FullscreenOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "navigationUI",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "FullscreenNavigationUI"
+            },
+            "default": {
+              "type": "string",
+              "value": "auto"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {
+      "Element": [
+        {
+          "fragment": "partial interface Element {\n  Promise<undefined> requestFullscreen(optional FullscreenOptions options = {});\n\n  attribute EventHandler onfullscreenchange;\n  attribute EventHandler onfullscreenerror;\n};",
+          "type": "interface",
+          "name": "Element",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "requestFullscreen",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "FullscreenOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "onfullscreenchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onfullscreenerror",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  [LegacyLenientSetter] readonly attribute boolean fullscreenEnabled;\n  [LegacyLenientSetter, Unscopable] readonly attribute boolean fullscreen; // historical\n\n  Promise<undefined> exitFullscreen();\n\n  attribute EventHandler onfullscreenchange;\n  attribute EventHandler onfullscreenerror;\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "fullscreenEnabled",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyLenientSetter",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "attribute",
+              "name": "fullscreen",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyLenientSetter",
+                  "rhs": null,
+                  "arguments": []
+                },
+                {
+                  "type": "extended-attribute",
+                  "name": "Unscopable",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            },
+            {
+              "type": "operation",
+              "name": "exitFullscreen",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [],
+              "extAttrs": [],
+              "special": ""
+            },
+            {
+              "type": "attribute",
+              "name": "onfullscreenchange",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            },
+            {
+              "type": "attribute",
+              "name": "onfullscreenerror",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "DocumentOrShadowRoot": [
+        {
+          "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [LegacyLenientSetter] readonly attribute Element? fullscreenElement;\n};",
+          "type": "interface mixin",
+          "name": "DocumentOrShadowRoot",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "fullscreenElement",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "Element"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "LegacyLenientSetter",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "FullscreenOptions": [
+        "FullscreenNavigationUI"
+      ],
+      "Element": [
+        "FullscreenOptions",
+        "EventHandler"
+      ],
+      "Document": [
+        "EventHandler"
+      ],
+      "DocumentOrShadowRoot": [
+        "Element"
+      ]
+    },
+    "externalDependencies": [
+      "Element",
+      "EventHandler",
+      "Document",
+      "DocumentOrShadowRoot"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

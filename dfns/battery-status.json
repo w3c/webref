@@ -1,0 +1,533 @@
+{
+  "spec": {
+    "title": "Battery Status API",
+    "url": "https://w3c.github.io/battery/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-user-agent",
+      "href": "https://w3c.github.io/battery/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://w3c.github.io/battery/#conformance",
+        "title": "Conformance",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-battery-status-task-source",
+      "href": "https://w3c.github.io/battery/#dfn-battery-status-task-source",
+      "linkingText": [
+        "battery status task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "concepts",
+        "href": "https://w3c.github.io/battery/#concepts",
+        "title": "Concepts",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-batterypromise",
+      "href": "https://w3c.github.io/battery/#dfn-batterypromise",
+      "linkingText": [
+        "[[BatteryPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://w3c.github.io/battery/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-batterymanager",
+      "href": "https://w3c.github.io/battery/#dfn-batterymanager",
+      "linkingText": [
+        "[[BatteryManager]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://w3c.github.io/battery/#internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-navigator-getbattery",
+      "href": "https://w3c.github.io/battery/#dom-navigator-getbattery",
+      "linkingText": [
+        "getBattery()"
+      ],
+      "localLinkingText": [
+        "Navigator.getBattery",
+        "Navigator.getBattery()",
+        "getBattery"
+      ],
+      "type": "method",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-getbattery-method",
+        "href": "https://w3c.github.io/battery/#the-getbattery-method",
+        "title": "The getBattery() method",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-batterymanager",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager",
+      "linkingText": [
+        "BatteryManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-batterymanager-interface",
+        "href": "https://w3c.github.io/battery/#the-batterymanager-interface",
+        "title": "The BatteryManager interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-current-battery-status-information",
+      "href": "https://w3c.github.io/battery/#dfn-current-battery-status-information",
+      "linkingText": [
+        "current battery status information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-batterymanager-interface",
+        "href": "https://w3c.github.io/battery/#the-batterymanager-interface",
+        "title": "The BatteryManager interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-unable-to-report-the-battery-status-information",
+      "href": "https://w3c.github.io/battery/#dfn-unable-to-report-the-battery-status-information",
+      "linkingText": [
+        "unable to report the battery status information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-batterymanager-interface",
+        "href": "https://w3c.github.io/battery/#the-batterymanager-interface",
+        "title": "The BatteryManager interface",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-charging",
+      "href": "https://w3c.github.io/battery/#dfn-charging",
+      "linkingText": [
+        "[[Charging]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/battery/#internal-slots-0",
+        "title": "Internal slots",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-chargingtime",
+      "href": "https://w3c.github.io/battery/#dfn-chargingtime",
+      "linkingText": [
+        "[[ChargingTime]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/battery/#internal-slots-0",
+        "title": "Internal slots",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-dischargingtime",
+      "href": "https://w3c.github.io/battery/#dfn-dischargingtime",
+      "linkingText": [
+        "[[DischargingTime]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/battery/#internal-slots-0",
+        "title": "Internal slots",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-level",
+      "href": "https://w3c.github.io/battery/#dfn-level",
+      "linkingText": [
+        "[[Level]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots-0",
+        "href": "https://w3c.github.io/battery/#internal-slots-0",
+        "title": "Internal slots",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-batterymanager-charging",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-charging",
+      "linkingText": [
+        "charging"
+      ],
+      "localLinkingText": [
+        "BatteryManager.charging"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-charging-attribute",
+        "href": "https://w3c.github.io/battery/#the-charging-attribute",
+        "title": "The charging attribute",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-batterymanager-chargingtime",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-chargingtime",
+      "linkingText": [
+        "chargingTime"
+      ],
+      "localLinkingText": [
+        "BatteryManager.chargingTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-chargingtime-attribute",
+        "href": "https://w3c.github.io/battery/#the-chargingtime-attribute",
+        "title": "The chargingTime attribute",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-batterymanager-dischargingtime",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-dischargingtime",
+      "linkingText": [
+        "dischargingTime"
+      ],
+      "localLinkingText": [
+        "BatteryManager.dischargingTime"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-dischargingtime-attribute",
+        "href": "https://w3c.github.io/battery/#the-dischargingtime-attribute",
+        "title": "The dischargingTime attribute",
+        "number": "6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-batterymanager-level",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-level",
+      "linkingText": [
+        "level"
+      ],
+      "localLinkingText": [
+        "BatteryManager.level"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-level-attribute",
+        "href": "https://w3c.github.io/battery/#the-level-attribute",
+        "title": "The level attribute",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-batterymanager-onchargingchange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingchange",
+      "linkingText": [
+        "onchargingchange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onchargingchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-chargingchange",
+      "href": "https://w3c.github.io/battery/#dfn-chargingchange",
+      "linkingText": [
+        "chargingchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-batterymanager-onchargingtimechange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onchargingtimechange",
+      "linkingText": [
+        "onchargingtimechange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onchargingtimechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-chargingtimechange",
+      "href": "https://w3c.github.io/battery/#dfn-chargingtimechange",
+      "linkingText": [
+        "chargingtimechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-batterymanager-ondischargingtimechange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-ondischargingtimechange",
+      "linkingText": [
+        "ondischargingtimechange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.ondischargingtimechange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-dischargingtimechange",
+      "href": "https://w3c.github.io/battery/#dfn-dischargingtimechange",
+      "linkingText": [
+        "dischargingtimechange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-batterymanager-onlevelchange",
+      "href": "https://w3c.github.io/battery/#dom-batterymanager-onlevelchange",
+      "linkingText": [
+        "onlevelchange"
+      ],
+      "localLinkingText": [
+        "BatteryManager.onlevelchange"
+      ],
+      "type": "attribute",
+      "for": [
+        "BatteryManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-levelchange",
+      "href": "https://w3c.github.io/battery/#dfn-levelchange",
+      "linkingText": [
+        "levelchange"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "event-handlers",
+        "href": "https://w3c.github.io/battery/#event-handlers",
+        "title": "Event handlers",
+        "number": "6.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-update-the-battery-status-and-notify",
+      "href": "https://w3c.github.io/battery/#dfn-update-the-battery-status-and-notify",
+      "linkingText": [
+        "update the battery status and notify"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algorithms",
+        "href": "https://w3c.github.io/battery/#algorithms",
+        "title": "Algorithms",
+        "number": "6.7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

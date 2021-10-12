@@ -1,0 +1,804 @@
+{
+  "spec": {
+    "title": "HTML Standard",
+    "url": "https://html.spec.whatwg.org/multipage/"
+  },
+  "refs": {
+    "normative": [
+      {
+        "name": "ABNF",
+        "url": "https://tools.ietf.org/html/std68"
+      },
+      {
+        "name": "ABOUT",
+        "url": "https://tools.ietf.org/html/rfc6694"
+      },
+      {
+        "name": "ARIA",
+        "url": "https://w3c.github.io/aria/"
+      },
+      {
+        "name": "ARIAHTML",
+        "url": "https://w3c.github.io/html-aria/"
+      },
+      {
+        "name": "BCP47",
+        "url": "https://tools.ietf.org/html/bcp47"
+      },
+      {
+        "name": "BEZIER",
+        "url": ""
+      },
+      {
+        "name": "BIDI",
+        "url": "https://www.unicode.org/reports/tr9/"
+      },
+      {
+        "name": "COMPOSITE",
+        "url": "https://drafts.fxtf.org/compositing/"
+      },
+      {
+        "name": "COOKIES",
+        "url": "https://tools.ietf.org/html/rfc6265"
+      },
+      {
+        "name": "CSP",
+        "url": "https://w3c.github.io/webappsec-csp/"
+      },
+      {
+        "name": "CSS",
+        "url": "https://drafts.csswg.org/css2/"
+      },
+      {
+        "name": "CSSALIGN",
+        "url": "https://drafts.csswg.org/css-align/"
+      },
+      {
+        "name": "CSSANIMATIONS",
+        "url": "https://drafts.csswg.org/css-animations/"
+      },
+      {
+        "name": "CSSATTR",
+        "url": "https://drafts.csswg.org/css-style-attr/"
+      },
+      {
+        "name": "CSSBG",
+        "url": "https://drafts.csswg.org/css-backgrounds/"
+      },
+      {
+        "name": "CSSBOX",
+        "url": "https://drafts.csswg.org/css-box-3/"
+      },
+      {
+        "name": "CSSCASCADE",
+        "url": "https://drafts.csswg.org/css-cascade/"
+      },
+      {
+        "name": "CSSCONTAIN",
+        "url": "https://drafts.csswg.org/css-contain/"
+      },
+      {
+        "name": "CSSCOLOR",
+        "url": "https://drafts.csswg.org/css-color/"
+      },
+      {
+        "name": "CSSCOLORADJUST",
+        "url": "https://drafts.csswg.org/css-color-adjust/"
+      },
+      {
+        "name": "CSSDEVICEADAPT",
+        "url": "https://drafts.csswg.org/css-device-adapt/"
+      },
+      {
+        "name": "CSSDISPLAY",
+        "url": "https://drafts.csswg.org/css-display/"
+      },
+      {
+        "name": "CSSFONTLOAD",
+        "url": "https://drafts.csswg.org/css-font-loading/"
+      },
+      {
+        "name": "CSSFONTS",
+        "url": "https://drafts.csswg.org/css-fonts/"
+      },
+      {
+        "name": "CSSFLEXBOX",
+        "url": "https://drafts.csswg.org/css-flexbox/"
+      },
+      {
+        "name": "CSSGC",
+        "url": "https://drafts.csswg.org/css-content/"
+      },
+      {
+        "name": "CSSGRID",
+        "url": "https://drafts.csswg.org/css-grid/"
+      },
+      {
+        "name": "CSSIMAGES",
+        "url": "https://drafts.csswg.org/css-images/"
+      },
+      {
+        "name": "CSSIMAGES4",
+        "url": "https://drafts.csswg.org/css-images-4/"
+      },
+      {
+        "name": "CSSINLINE",
+        "url": "https://drafts.csswg.org/css-inline/"
+      },
+      {
+        "name": "CSSLISTS",
+        "url": "https://drafts.csswg.org/css-lists/"
+      },
+      {
+        "name": "CSSLOGICAL",
+        "url": "https://drafts.csswg.org/css-logical/"
+      },
+      {
+        "name": "CSSMULTICOL",
+        "url": "https://drafts.csswg.org/css-multicol/"
+      },
+      {
+        "name": "CSSOM",
+        "url": "https://drafts.csswg.org/cssom/"
+      },
+      {
+        "name": "CSSOMVIEW",
+        "url": "https://drafts.csswg.org/cssom-view/"
+      },
+      {
+        "name": "CSSOVERFLOW",
+        "url": "https://drafts.csswg.org/css-overflow-3/"
+      },
+      {
+        "name": "CSSPOSITION",
+        "url": "https://drafts.csswg.org/css-position/"
+      },
+      {
+        "name": "CSSPSEUDO",
+        "url": "https://drafts.csswg.org/css-pseudo/"
+      },
+      {
+        "name": "CSSRUBY",
+        "url": "https://drafts.csswg.org/css-ruby/"
+      },
+      {
+        "name": "CSSSCOPING",
+        "url": "https://drafts.csswg.org/css-scoping/"
+      },
+      {
+        "name": "CSSSIZING",
+        "url": "https://drafts.csswg.org/css-sizing/"
+      },
+      {
+        "name": "CSSUI",
+        "url": "https://drafts.csswg.org/css-ui/"
+      },
+      {
+        "name": "CSSSYNTAX",
+        "url": "https://drafts.csswg.org/css-syntax/"
+      },
+      {
+        "name": "CSSTABLE",
+        "url": "https://drafts.csswg.org/css-tables/"
+      },
+      {
+        "name": "CSSTEXT",
+        "url": "https://drafts.csswg.org/css-text/"
+      },
+      {
+        "name": "CSSVALUES",
+        "url": "https://drafts.csswg.org/css-values/"
+      },
+      {
+        "name": "CSSWM",
+        "url": "https://drafts.csswg.org/css-writing-modes/"
+      },
+      {
+        "name": "DASH",
+        "url": "https://www.iso.org/standard/65274.html"
+      },
+      {
+        "name": "DOM",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      {
+        "name": "DOMPARSING",
+        "url": "https://w3c.github.io/DOM-Parsing/"
+      },
+      {
+        "name": "E163",
+        "url": ""
+      },
+      {
+        "name": "ENCODING",
+        "url": "https://encoding.spec.whatwg.org/"
+      },
+      {
+        "name": "EXECCOMMAND",
+        "url": "https://w3c.github.io/editing/docs/execCommand/"
+      },
+      {
+        "name": "FETCH",
+        "url": "https://fetch.spec.whatwg.org/"
+      },
+      {
+        "name": "FILEAPI",
+        "url": "https://w3c.github.io/FileAPI/"
+      },
+      {
+        "name": "FILTERS",
+        "url": "https://drafts.fxtf.org/filter-effects/"
+      },
+      {
+        "name": "FULLSCREEN",
+        "url": "https://fullscreen.spec.whatwg.org/"
+      },
+      {
+        "name": "GEOMETRY",
+        "url": "https://drafts.fxtf.org/geometry/"
+      },
+      {
+        "name": "HRT",
+        "url": "https://w3c.github.io/hr-time/"
+      },
+      {
+        "name": "HTMLAAM",
+        "url": "https://w3c.github.io/html-aam/"
+      },
+      {
+        "name": "HTTP",
+        "url": "https://tools.ietf.org/html/rfc7230"
+      },
+      {
+        "name": "INDEXEDDB",
+        "url": "https://w3c.github.io/IndexedDB/"
+      },
+      {
+        "name": "INBAND",
+        "url": "https://dev.w3.org/html5/html-sourcing-inband-tracks/"
+      },
+      {
+        "name": "INFRA",
+        "url": "https://infra.spec.whatwg.org/"
+      },
+      {
+        "name": "INTERSECTIONOBSERVER",
+        "url": "https://w3c.github.io/IntersectionObserver/"
+      },
+      {
+        "name": "ISO3166",
+        "url": "https://www.iso.org/iso-3166-country-codes.html"
+      },
+      {
+        "name": "ISO4217",
+        "url": "https://www.iso.org/iso-4217-currency-codes.html"
+      },
+      {
+        "name": "JAVASCRIPT",
+        "url": "https://tc39.es/ecma262/"
+      },
+      {
+        "name": "JLREQ",
+        "url": "https://www.w3.org/TR/jlreq/"
+      },
+      {
+        "name": "JPEG",
+        "url": "https://www.w3.org/Graphics/JPEG/jfif3.pdf"
+      },
+      {
+        "name": "JSIMPORTASSERTIONS",
+        "url": "https://tc39.es/proposal-import-assertions/"
+      },
+      {
+        "name": "JSJSONMODULES",
+        "url": "https://tc39.es/proposal-json-modules/"
+      },
+      {
+        "name": "JSINTL",
+        "url": "https://tc39.es/ecma402/"
+      },
+      {
+        "name": "JSON",
+        "url": "https://tools.ietf.org/html/rfc8259"
+      },
+      {
+        "name": "LONGTASKS",
+        "url": "https://w3c.github.io/longtasks/"
+      },
+      {
+        "name": "MANIFEST",
+        "url": "https://www.w3.org/TR/appmanifest/"
+      },
+      {
+        "name": "MATHML",
+        "url": "https://www.w3.org/Math/draft-spec/"
+      },
+      {
+        "name": "MEDIAFRAG",
+        "url": "https://www.w3.org/TR/media-frags/"
+      },
+      {
+        "name": "MEDIASOURCE",
+        "url": "https://w3c.github.io/media-source/"
+      },
+      {
+        "name": "MEDIASTREAM",
+        "url": "https://w3c.github.io/mediacapture-main/getusermedia.html"
+      },
+      {
+        "name": "REPORTING",
+        "url": "https://w3c.github.io/reporting/"
+      },
+      {
+        "name": "MFREL",
+        "url": "https://microformats.org/wiki/existing-rel-values#HTML5_link_type_extensions"
+      },
+      {
+        "name": "MIMESNIFF",
+        "url": "https://mimesniff.spec.whatwg.org/"
+      },
+      {
+        "name": "MIX",
+        "url": "https://w3c.github.io/webappsec-mixed-content/"
+      },
+      {
+        "name": "MNG",
+        "url": "http://www.libpng.org/pub/mng/spec/"
+      },
+      {
+        "name": "MPEG2",
+        "url": ""
+      },
+      {
+        "name": "MPEG4",
+        "url": ""
+      },
+      {
+        "name": "MQ",
+        "url": "https://drafts.csswg.org/mediaqueries/"
+      },
+      {
+        "name": "NAVIGATIONTIMING",
+        "url": "https://w3c.github.io/navigation-timing/"
+      },
+      {
+        "name": "NAVMODEL",
+        "url": "https://arxiv.org/abs/1608.05444"
+      },
+      {
+        "name": "OGGSKELETONHEADERS",
+        "url": "https://wiki.xiph.org/SkeletonHeaders"
+      },
+      {
+        "name": "OPENSEARCH",
+        "url": "http://www.opensearch.org/Specifications/OpenSearch/1.1#Autodiscovery_in_HTML.2FXHTML"
+      },
+      {
+        "name": "PAINTTIMING",
+        "url": "https://w3c.github.io/paint-timing/"
+      },
+      {
+        "name": "PAYMENTREQUEST",
+        "url": "https://w3c.github.io/payment-request/"
+      },
+      {
+        "name": "PERMISSIONSPOLICY",
+        "url": "https://w3c.github.io/webappsec-feature-policy/"
+      },
+      {
+        "name": "PINGBACK",
+        "url": "https://www.hixie.ch/specs/pingback/pingback"
+      },
+      {
+        "name": "PNG",
+        "url": "https://www.w3.org/TR/PNG/"
+      },
+      {
+        "name": "POINTEREVENTS",
+        "url": "https://w3c.github.io/pointerevents/"
+      },
+      {
+        "name": "POINTERLOCK",
+        "url": "https://w3c.github.io/pointerlock/"
+      },
+      {
+        "name": "PRELOAD",
+        "url": "https://w3c.github.io/preload/"
+      },
+      {
+        "name": "PRESENTATION",
+        "url": "https://w3c.github.io/presentation-api/"
+      },
+      {
+        "name": "REFERRERPOLICY",
+        "url": "https://w3c.github.io/webappsec-referrer-policy/"
+      },
+      {
+        "name": "REQUESTIDLECALLBACK",
+        "url": "https://w3c.github.io/requestidlecallback/"
+      },
+      {
+        "name": "RESOURCEHINTS",
+        "url": "https://w3c.github.io/resource-hints/"
+      },
+      {
+        "name": "RFC1034",
+        "url": "https://tools.ietf.org/html/rfc1034"
+      },
+      {
+        "name": "RFC1123",
+        "url": "https://tools.ietf.org/html/rfc1123"
+      },
+      {
+        "name": "RFC2046",
+        "url": "https://tools.ietf.org/html/rfc2046"
+      },
+      {
+        "name": "RFC2397",
+        "url": "https://tools.ietf.org/html/rfc2397"
+      },
+      {
+        "name": "RFC5545",
+        "url": "https://tools.ietf.org/html/rfc5545"
+      },
+      {
+        "name": "RFC2483",
+        "url": "https://tools.ietf.org/html/rfc2483"
+      },
+      {
+        "name": "RFC3676",
+        "url": "https://tools.ietf.org/html/rfc3676"
+      },
+      {
+        "name": "RFC3864",
+        "url": "https://tools.ietf.org/html/rfc3864"
+      },
+      {
+        "name": "RFC7595",
+        "url": "https://tools.ietf.org/html/rfc7595"
+      },
+      {
+        "name": "RFC5322",
+        "url": "https://tools.ietf.org/html/rfc5322"
+      },
+      {
+        "name": "RFC6381",
+        "url": "https://tools.ietf.org/html/rfc6381"
+      },
+      {
+        "name": "RFC6266",
+        "url": "https://tools.ietf.org/html/rfc6266"
+      },
+      {
+        "name": "RFC6350",
+        "url": "https://tools.ietf.org/html/rfc6350"
+      },
+      {
+        "name": "RFC6596",
+        "url": "https://tools.ietf.org/html/rfc6596"
+      },
+      {
+        "name": "RFC7303",
+        "url": "https://tools.ietf.org/html/rfc7303"
+      },
+      {
+        "name": "RFC7578",
+        "url": "https://tools.ietf.org/html/rfc7578"
+      },
+      {
+        "name": "SCREENORIENTATION",
+        "url": "https://w3c.github.io/screen-orientation/"
+      },
+      {
+        "name": "SECURE-CONTEXTS",
+        "url": "https://w3c.github.io/webappsec-secure-contexts/"
+      },
+      {
+        "name": "SELECTION",
+        "url": "https://w3c.github.io/selection-api/"
+      },
+      {
+        "name": "SELECTORS",
+        "url": "https://drafts.csswg.org/selectors/"
+      },
+      {
+        "name": "STRUCTURED-FIELDS",
+        "url": "https://httpwg.org/http-extensions/draft-ietf-httpbis-header-structure.html"
+      },
+      {
+        "name": "SRI",
+        "url": "https://w3c.github.io/webappsec-subresource-integrity/"
+      },
+      {
+        "name": "STORAGE",
+        "url": "https://storage.spec.whatwg.org/"
+      },
+      {
+        "name": "SVG",
+        "url": "https://svgwg.org/svg2-draft/"
+      },
+      {
+        "name": "SW",
+        "url": "https://w3c.github.io/ServiceWorker/"
+      },
+      {
+        "name": "TOUCH",
+        "url": "https://w3c.github.io/touch-events/"
+      },
+      {
+        "name": "UIEVENTS",
+        "url": "https://w3c.github.io/uievents/"
+      },
+      {
+        "name": "UNICODE",
+        "url": "https://www.unicode.org/versions/"
+      },
+      {
+        "name": "URL",
+        "url": "https://url.spec.whatwg.org/"
+      },
+      {
+        "name": "URN",
+        "url": "https://tools.ietf.org/html/rfc2141"
+      },
+      {
+        "name": "UUID",
+        "url": "https://wicg.github.io/uuid/"
+      },
+      {
+        "name": "WEBANIMATIONS",
+        "url": "https://drafts.csswg.org/web-animations/"
+      },
+      {
+        "name": "WEBCODECS",
+        "url": "https://w3c.github.io/webcodecs/"
+      },
+      {
+        "name": "WEBDRIVERBIDI",
+        "url": "https://w3c.github.io/webdriver-bidi/"
+      },
+      {
+        "name": "WEBGL",
+        "url": "https://www.khronos.org/registry/webgl/specs/latest/"
+      },
+      {
+        "name": "WEBGPU",
+        "url": "https://gpuweb.github.io/gpuweb/"
+      },
+      {
+        "name": "WEBIDL",
+        "url": "https://heycam.github.io/webidl/"
+      },
+      {
+        "name": "WEBLINK",
+        "url": "https://tools.ietf.org/html/rfc8288"
+      },
+      {
+        "name": "WEBMCG",
+        "url": "https://www.webmproject.org/docs/container/"
+      },
+      {
+        "name": "WEBVTT",
+        "url": "https://w3c.github.io/webvtt/"
+      },
+      {
+        "name": "WHATWGWIKI",
+        "url": "https://wiki.whatwg.org/"
+      },
+      {
+        "name": "WSP",
+        "url": "https://tools.ietf.org/html/rfc6455"
+      },
+      {
+        "name": "X121",
+        "url": ""
+      },
+      {
+        "name": "XFN",
+        "url": "https://gmpg.org/xfn/11"
+      },
+      {
+        "name": "XHR",
+        "url": "https://xhr.spec.whatwg.org/"
+      },
+      {
+        "name": "XML",
+        "url": "https://www.w3.org/TR/xml/"
+      },
+      {
+        "name": "XMLNS",
+        "url": "https://www.w3.org/TR/xml-names/"
+      },
+      {
+        "name": "XMLSSPI",
+        "url": "https://www.w3.org/TR/xml-stylesheet/"
+      },
+      {
+        "name": "XPATH10",
+        "url": "https://www.w3.org/TR/1999/REC-xpath-19991116/"
+      }
+    ],
+    "informative": [
+      {
+        "name": "APNG",
+        "url": "https://wiki.mozilla.org/APNG_Specification"
+      },
+      {
+        "name": "ATAG",
+        "url": "https://www.w3.org/TR/ATAG20/"
+      },
+      {
+        "name": "ATOM",
+        "url": "https://tools.ietf.org/html/rfc4287"
+      },
+      {
+        "name": "BATTERY",
+        "url": "https://w3c.github.io/battery/"
+      },
+      {
+        "name": "BOCU1",
+        "url": "https://www.unicode.org/notes/tn6/"
+      },
+      {
+        "name": "CESU8",
+        "url": "https://www.unicode.org/reports/tr26/"
+      },
+      {
+        "name": "CHARMOD",
+        "url": "https://www.w3.org/TR/charmod/"
+      },
+      {
+        "name": "CHARMODNORM",
+        "url": "https://w3c.github.io/charmod-norm/"
+      },
+      {
+        "name": "COMPUTABLE",
+        "url": "http://www.turingarchive.org/browse.php/B/12"
+      },
+      {
+        "name": "CSSPAINT",
+        "url": "https://drafts.css-houdini.org/css-paint-api/"
+      },
+      {
+        "name": "CSSTRANSITIONS",
+        "url": "https://drafts.csswg.org/css-transitions/"
+      },
+      {
+        "name": "DOT",
+        "url": "https://graphviz.org/doc/info/lang.html"
+      },
+      {
+        "name": "EXIF",
+        "url": "https://www.jeita.or.jp/cgi-bin/standard_e/list.cgi?cateid=1&subcateid=4"
+      },
+      {
+        "name": "GIF",
+        "url": "https://www.w3.org/Graphics/GIF/spec-gif89a.txt"
+      },
+      {
+        "name": "GRAPHICS",
+        "url": ""
+      },
+      {
+        "name": "GREGORIAN",
+        "url": ""
+      },
+      {
+        "name": "ISO8601",
+        "url": "http://isotc.iso.org/livelink/livelink/4021199/ISO_8601_2004_E.zip?func=doc.Fetch&nodeid=4021199"
+      },
+      {
+        "name": "JSERRORSTACKS",
+        "url": "https://tc39.es/proposal-error-stacks/"
+      },
+      {
+        "name": "MAILTO",
+        "url": "https://tools.ietf.org/html/rfc6068"
+      },
+      {
+        "name": "MULTIPLEBUFFERING",
+        "url": "https://en.wikipedia.org/wiki/Multiple_buffering"
+      },
+      {
+        "name": "NPAPI",
+        "url": "https://developer.mozilla.org/en-US/docs/Plugins/Guide"
+      },
+      {
+        "name": "ORIGIN",
+        "url": "https://tools.ietf.org/html/rfc6454"
+      },
+      {
+        "name": "PAGEVIS",
+        "url": "https://w3c.github.io/page-visibility/"
+      },
+      {
+        "name": "PDF",
+        "url": "https://www.adobe.com/content/dam/Adobe/en/devnet/acrobat/pdfs/PDF32000_2008.pdf"
+      },
+      {
+        "name": "PPUTF8",
+        "url": "https://www.sw.it.aoyama.ac.jp/2012/pub/IUC11-UTF-8.pdf"
+      },
+      {
+        "name": "RFC4329",
+        "url": "https://tools.ietf.org/html/rfc4329"
+      },
+      {
+        "name": "RFC4337",
+        "url": "https://tools.ietf.org/html/rfc4337"
+      },
+      {
+        "name": "RFC7034",
+        "url": "https://tools.ietf.org/html/rfc7034"
+      },
+      {
+        "name": "SCSU",
+        "url": "https://www.unicode.org/reports/tr6/"
+      },
+      {
+        "name": "SMS",
+        "url": "https://tools.ietf.org/html/rfc5724"
+      },
+      {
+        "name": "TOR",
+        "url": "https://www.torproject.org/"
+      },
+      {
+        "name": "TZDATABASE",
+        "url": "https://www.iana.org/time-zones"
+      },
+      {
+        "name": "UAAG",
+        "url": "https://www.w3.org/TR/UAAG20/"
+      },
+      {
+        "name": "UNIVCHARDET",
+        "url": "https://www-archive.mozilla.org/projects/intl/UniversalCharsetDetection.html"
+      },
+      {
+        "name": "UTF7",
+        "url": "https://tools.ietf.org/html/rfc2152"
+      },
+      {
+        "name": "UTF8DET",
+        "url": "https://www.w3.org/International/questions/qa-forms-utf-8"
+      },
+      {
+        "name": "UTR36",
+        "url": "https://www.unicode.org/reports/tr36/"
+      },
+      {
+        "name": "WASMJS",
+        "url": "https://webassembly.github.io/spec/js-api/"
+      },
+      {
+        "name": "WCAG",
+        "url": "https://w3c.github.io/wcag/guidelines/"
+      },
+      {
+        "name": "WEBAUDIO",
+        "url": "https://webaudio.github.io/web-audio-api/"
+      },
+      {
+        "name": "WEBCRYPTO",
+        "url": "https://w3c.github.io/webcrypto/Overview.html"
+      },
+      {
+        "name": "XKCD1288",
+        "url": "https://xkcd.com/1288/"
+      },
+      {
+        "name": "XMLENTITY",
+        "url": "https://www.w3.org/2003/entities/2007doc/"
+      },
+      {
+        "name": "XSLT10",
+        "url": "https://www.w3.org/TR/1999/REC-xslt-19991116"
+      },
+      {
+        "name": "XSLTP",
+        "url": "https://wiki.whatwg.org/wiki/DOM_XSLTProcessor"
+      }
+    ]
+  }
+}

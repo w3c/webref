@@ -1,0 +1,15 @@
+{
+  "name": "Touch",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Touch Events - Level 2",
+      "url": "https://www.w3.org/TR/touch-events/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Touch {\n    constructor(TouchInit touchInitDict);\n    readonly        attribute long        identifier;\n    readonly        attribute EventTarget target;\n    readonly        attribute double      screenX;\n    readonly        attribute double      screenY;\n    readonly        attribute double      clientX;\n    readonly        attribute double      clientY;\n    readonly        attribute double      pageX;\n    readonly        attribute double      pageY;\n    readonly        attribute float       radiusX;\n    readonly        attribute float       radiusY;\n    readonly        attribute float       rotationAngle;\n    readonly        attribute float       force;\n    readonly        attribute float       altitudeAngle;\n    readonly        attribute float       azimuthAngle;\n    readonly        attribute TouchType   touchType;\n};",
+    "href": "https://w3c.github.io/touch-events/#dom-touch"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

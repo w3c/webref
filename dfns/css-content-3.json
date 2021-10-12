@@ -1,0 +1,1094 @@
+{
+  "spec": {
+    "title": "CSS Generated Content Module Level 3",
+    "url": "https://drafts.csswg.org/css-content-3/"
+  },
+  "dfns": [
+    {
+      "id": "propdef-content",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-content",
+      "linkingText": [
+        "content"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-content-normal",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-normal",
+      "linkingText": [
+        "normal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-none",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-content-content-replacement",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-replacement",
+      "linkingText": [
+        "<content-replacement>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-content-content-list",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-content-content-list",
+      "linkingText": [
+        "<content-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content---string--counter",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content---string--counter",
+      "linkingText": [
+        "/ [ <string> | <counter> ]+"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-property",
+        "href": "https://drafts.csswg.org/css-content-3/#content-property",
+        "title": "Inserting and replacing content with the content property",
+        "number": "1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-string",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "strings",
+        "href": "https://drafts.csswg.org/css-content-3/#strings",
+        "title": "String",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-list-image",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-list-image",
+      "linkingText": [
+        "<image>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-uri",
+        "href": "https://drafts.csswg.org/css-content-3/#content-uri",
+        "title": "<image>",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-contents",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-contents",
+      "linkingText": [
+        "contents"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "element-content",
+        "href": "https://drafts.csswg.org/css-content-3/#element-content",
+        "title": "Element Content",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-quotes",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-quotes",
+      "linkingText": [
+        "quotes"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quotes-property",
+        "href": "https://drafts.csswg.org/css-content-3/#quotes-property",
+        "title": "Specifying quotes with the quotes property",
+        "number": "2.4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-quotes-none",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-quotes-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "quotes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quotes-property",
+        "href": "https://drafts.csswg.org/css-content-3/#quotes-property",
+        "title": "Specifying quotes with the quotes property",
+        "number": "2.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-quotes-auto",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-quotes-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "quotes"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quotes-property",
+        "href": "https://drafts.csswg.org/css-content-3/#quotes-property",
+        "title": "Specifying quotes with the quotes property",
+        "number": "2.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-quote",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-quote",
+      "linkingText": [
+        "<quote>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quote-values",
+        "href": "https://drafts.csswg.org/css-content-3/#quote-values",
+        "title": "The *-quote values of the content property",
+        "number": "2.4.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-content-open-quote",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-open-quote",
+      "linkingText": [
+        "open-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quote-values",
+        "href": "https://drafts.csswg.org/css-content-3/#quote-values",
+        "title": "The *-quote values of the content property",
+        "number": "2.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-close-quote",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-close-quote",
+      "linkingText": [
+        "close-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quote-values",
+        "href": "https://drafts.csswg.org/css-content-3/#quote-values",
+        "title": "The *-quote values of the content property",
+        "number": "2.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-no-open-quote",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-open-quote",
+      "linkingText": [
+        "no-open-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quote-values",
+        "href": "https://drafts.csswg.org/css-content-3/#quote-values",
+        "title": "The *-quote values of the content property",
+        "number": "2.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-no-close-quote",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-no-close-quote",
+      "linkingText": [
+        "no-close-quote"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content",
+        "<content-list>",
+        "<quote>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "quote-values",
+        "href": "https://drafts.csswg.org/css-content-3/#quote-values",
+        "title": "The *-quote values of the content property",
+        "number": "2.4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-content-leader",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-content-leader",
+      "linkingText": [
+        "leader()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [
+        "content",
+        "<content-list>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-leader",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-leader",
+      "linkingText": [
+        "leader()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-leader-type",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-leader-type",
+      "linkingText": [
+        "<leader-type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-leader-dotted",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-leader-dotted",
+      "linkingText": [
+        "dotted"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-leader-solid",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-leader-solid",
+      "linkingText": [
+        "solid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-leader-space",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-leader-space",
+      "linkingText": [
+        "space"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-leader-string",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-leader-string",
+      "linkingText": [
+        "<string>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "leader()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "leader-function",
+        "href": "https://drafts.csswg.org/css-content-3/#leader-function",
+        "title": "The leader() function",
+        "number": "2.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-target",
+      "href": "https://drafts.csswg.org/css-content-3/#typedef-target",
+      "linkingText": [
+        "<target>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cross-references",
+        "href": "https://drafts.csswg.org/css-content-3/#cross-references",
+        "title": "Cross references and the target-* functions",
+        "number": "2.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-target-counter",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-target-counter",
+      "linkingText": [
+        "target-counter()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "target-counter",
+        "href": "https://drafts.csswg.org/css-content-3/#target-counter",
+        "title": "The target-counter() function",
+        "number": "2.6.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-target-counters",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-target-counters",
+      "linkingText": [
+        "target-counters()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "target-counters",
+        "href": "https://drafts.csswg.org/css-content-3/#target-counters",
+        "title": "The target-counters() function",
+        "number": "2.6.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "target-text-function",
+      "href": "https://drafts.csswg.org/css-content-3/#target-text-function",
+      "linkingText": [
+        "target-text()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "target-text",
+        "href": "https://drafts.csswg.org/css-content-3/#target-text",
+        "title": "The target-text() function",
+        "number": "2.6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "named-string",
+      "href": "https://drafts.csswg.org/css-content-3/#named-string",
+      "linkingText": [
+        "named string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "named-strings",
+        "href": "https://drafts.csswg.org/css-content-3/#named-strings",
+        "title": "Named strings",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-string-set",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-string-set",
+      "linkingText": [
+        "string-set"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-set",
+        "href": "https://drafts.csswg.org/css-content-3/#string-set",
+        "title": "The string-set property",
+        "number": "2.7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-string-set-none",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-string-set-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string-set"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-set",
+        "href": "https://drafts.csswg.org/css-content-3/#string-set",
+        "title": "The string-set property",
+        "number": "2.7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "funcdef-string",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-string",
+      "linkingText": [
+        "string()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-string-first",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-string-first",
+      "linkingText": [
+        "first"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-string-start",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-string-start",
+      "linkingText": [
+        "start"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-string-last",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-string-last",
+      "linkingText": [
+        "last"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-string-first-except",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-string-first-except",
+      "linkingText": [
+        "first-except"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "string()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "entry-value",
+      "href": "https://drafts.csswg.org/css-content-3/#entry-value",
+      "linkingText": [
+        "entry value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exit-value",
+      "href": "https://drafts.csswg.org/css-content-3/#exit-value",
+      "linkingText": [
+        "exit value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "string-function",
+        "href": "https://drafts.csswg.org/css-content-3/#string-function",
+        "title": "The string() function",
+        "number": "2.7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-content",
+      "href": "https://drafts.csswg.org/css-content-3/#funcdef-content",
+      "linkingText": [
+        "content()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-content-text",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-before",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-before",
+      "linkingText": [
+        "before"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-after",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-after",
+      "linkingText": [
+        "after"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-first-letter",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-first-letter",
+      "linkingText": [
+        "first-letter"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-content-marker",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-content-marker",
+      "linkingText": [
+        "marker"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "content()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "content-function",
+        "href": "https://drafts.csswg.org/css-content-3/#content-function",
+        "title": "The content() function",
+        "number": "2.7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "bookmarks",
+      "href": "https://drafts.csswg.org/css-content-3/#bookmarks",
+      "linkingText": [
+        "bookmarks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-generation",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-generation",
+        "title": "Bookmarks",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-bookmark-level",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-bookmark-level",
+      "linkingText": [
+        "bookmark-level"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-level",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-level",
+        "title": "bookmark-level",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-bookmark-level-integer",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-level-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-level"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-level",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-level",
+        "title": "bookmark-level",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-bookmark-level-none",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-level-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-level"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-level",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-level",
+        "title": "bookmark-level",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-bookmark-label",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-bookmark-label",
+      "linkingText": [
+        "bookmark-label"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-label",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-label",
+        "title": "bookmark-label",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-bookmark-label-content-list",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-label-content-list",
+      "linkingText": [
+        "<content-list>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-label"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-label",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-label",
+        "title": "bookmark-label",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-bookmark-state",
+      "href": "https://drafts.csswg.org/css-content-3/#propdef-bookmark-state",
+      "linkingText": [
+        "bookmark-state"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-state",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-state",
+        "title": "bookmark-state",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-bookmark-state-open",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-state-open",
+      "linkingText": [
+        "open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-state"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-state",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-state",
+        "title": "bookmark-state",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-bookmark-state-closed",
+      "href": "https://drafts.csswg.org/css-content-3/#valdef-bookmark-state-closed",
+      "linkingText": [
+        "closed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "bookmark-state"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "bookmark-state",
+        "href": "https://drafts.csswg.org/css-content-3/#bookmark-state",
+        "title": "bookmark-state",
+        "number": "4.3"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

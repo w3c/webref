@@ -1,0 +1,15 @@
+{
+  "name": "HTMLAllCollection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window,\n LegacyUnenumerableNamedProperties]\ninterface HTMLAllCollection {\n  readonly attribute unsigned long length;\n  getter Element (unsigned long index);\n  getter (HTMLCollection or Element)? namedItem(DOMString name);\n  (HTMLCollection or Element)? item(optional DOMString nameOrIndex);\n\n  // Note: HTMLAllCollection objects have a custom [[Call]] internal method and an [[IsHTMLDDA]] internal slot.\n};",
+    "href": "https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#htmlallcollection"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

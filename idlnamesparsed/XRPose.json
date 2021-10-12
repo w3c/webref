@@ -1,0 +1,15 @@
+{
+  "name": "XRPose",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRPose {\n  [SameObject] readonly attribute XRRigidTransform transform;\n  [SameObject] readonly attribute DOMPointReadOnly? linearVelocity;\n  [SameObject] readonly attribute DOMPointReadOnly? angularVelocity;\n\n  readonly attribute boolean emulatedPosition;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrpose"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

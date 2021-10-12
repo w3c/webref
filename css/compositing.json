@@ -1,0 +1,67 @@
+{
+  "spec": {
+    "title": "Compositing and Blending Level 2",
+    "url": "https://drafts.fxtf.org/compositing-2/"
+  },
+  "properties": {
+    "mix-blend-mode": {
+      "name": "mix-blend-mode",
+      "value": "<blend-mode>",
+      "initial": "normal",
+      "appliesTo": "All elements. In SVG, it applies to container elements, graphics elements and graphics referencing elements. [SVG11]",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "mix-blend-mode",
+        "mixBlendMode"
+      ]
+    },
+    "isolation": {
+      "name": "isolation",
+      "value": "<isolation-mode>",
+      "initial": "auto",
+      "appliesTo": "All elements. In SVG, it applies to container elements, graphics elements and graphics referencing elements. [SVG11]",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "isolation"
+      ]
+    },
+    "background-blend-mode": {
+      "name": "background-blend-mode",
+      "value": "<blend-mode>#",
+      "initial": "normal",
+      "appliesTo": "All HTML elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "media": "visual",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "background-blend-mode",
+        "backgroundBlendMode"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<blend-mode>": {
+      "value": "normal | multiply | screen | overlay | darken | lighten | color-dodge |color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity"
+    },
+    "<isolation-mode>": {
+      "value": "auto | isolate"
+    },
+    "<composite-mode>": {
+      "value": "clear | copy | source-over | destination-over | source-in | destination-in | source-out | destination-out | source-atop | destination-atop | xor | lighter | plus-darker | plus-lighter"
+    }
+  }
+}

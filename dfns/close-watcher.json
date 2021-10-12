@@ -1,0 +1,433 @@
+{
+  "spec": {
+    "title": "Close Watcher API",
+    "url": "https://wicg.github.io/close-watcher/"
+  },
+  "dfns": [
+    {
+      "id": "close-signal",
+      "href": "https://wicg.github.io/close-watcher/#close-signal",
+      "linkingText": [
+        "close signal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-signals",
+        "href": "https://wicg.github.io/close-watcher/#close-signals",
+        "title": "Close signals",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-signal-steps",
+      "href": "https://wicg.github.io/close-watcher/#close-signal-steps",
+      "linkingText": [
+        "close signal steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-signals",
+        "href": "https://wicg.github.io/close-watcher/#close-signals",
+        "title": "Close signals",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-stack",
+      "href": "https://wicg.github.io/close-watcher/#close-watcher-stack",
+      "linkingText": [
+        "close watcher stack"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "timestamp-of-last-activation-used-for-close-watchers",
+      "href": "https://wicg.github.io/close-watcher/#timestamp-of-last-activation-used-for-close-watchers",
+      "linkingText": [
+        "timestamp of last activation used for close watchers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher",
+      "href": "https://wicg.github.io/close-watcher/#close-watcher",
+      "linkingText": [
+        "close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-close-action",
+      "href": "https://wicg.github.io/close-watcher/#close-watcher-close-action",
+      "linkingText": [
+        "close action"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "close watcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-is-still-valid",
+      "href": "https://wicg.github.io/close-watcher/#close-watcher-is-still-valid",
+      "linkingText": [
+        "is still valid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "close watcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "close-watcher-blocks-further-developer-controlled-close-watchers",
+      "href": "https://wicg.github.io/close-watcher/#close-watcher-blocks-further-developer-controlled-close-watchers",
+      "linkingText": [
+        "blocks further developer-controlled close watchers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "close watcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "signal-close",
+      "href": "https://wicg.github.io/close-watcher/#signal-close",
+      "linkingText": [
+        "signal close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "can-create-a-developer-controlled-close-watcher",
+      "href": "https://wicg.github.io/close-watcher/#can-create-a-developer-controlled-close-watcher",
+      "linkingText": [
+        "can create a developer-controlled close watcher",
+        "cannot create a developer-controlled close watcher"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watchers",
+        "href": "https://wicg.github.io/close-watcher/#close-watchers",
+        "title": "Close watcher infrastructure",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "closewatcher",
+      "href": "https://wicg.github.io/close-watcher/#closewatcher",
+      "linkingText": [
+        "CloseWatcher"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "closewatcher-is-active",
+      "href": "https://wicg.github.io/close-watcher/#closewatcher-is-active",
+      "linkingText": [
+        "is active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-closewatcher",
+      "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-closewatcher",
+      "linkingText": [
+        "CloseWatcher()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-destroy",
+      "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-destroy",
+      "linkingText": [
+        "destroy()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-signalclose",
+      "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-signalclose",
+      "linkingText": [
+        "signalClose()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-oncancel",
+      "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-oncancel",
+      "linkingText": [
+        "oncancel"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-closewatcher-onclose",
+      "href": "https://wicg.github.io/close-watcher/#dom-closewatcher-onclose",
+      "linkingText": [
+        "onclose"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-closewatcher-cancel",
+      "href": "https://wicg.github.io/close-watcher/#eventdef-closewatcher-cancel",
+      "linkingText": [
+        "cancel"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventdef-closewatcher-close",
+      "href": "https://wicg.github.io/close-watcher/#eventdef-closewatcher-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "event",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "closewatcher-signal-close",
+      "href": "https://wicg.github.io/close-watcher/#closewatcher-signal-close",
+      "linkingText": [
+        "signal close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CloseWatcher"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "close-watcher-api",
+        "href": "https://wicg.github.io/close-watcher/#close-watcher-api",
+        "title": "Close watcher API",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "cancel-the-dialog",
+      "href": "https://wicg.github.io/close-watcher/#cancel-the-dialog",
+      "linkingText": [
+        "cancel the dialog"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "patch-dialog",
+        "href": "https://wicg.github.io/close-watcher/#patch-dialog",
+        "title": "The dialog element",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

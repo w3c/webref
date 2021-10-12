@@ -1,0 +1,16 @@
+// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
+[Exposed=(Window,DedicatedWorker), SecureContext]
+interface AudioEncoder {
+  constructor(AudioEncoderInit init);
+
+  readonly attribute CodecState state;
+  readonly attribute long encodeQueueSize;
+
+  undefined configure(AudioEncoderConfig config);
+  undefined encode(AudioData data);
+  Promise<undefined> flush();
+  undefined reset();
+  undefined close();
+
+  static Promise<AudioEncoderSupport> isConfigSupported(AudioEncoderConfig config);
+};

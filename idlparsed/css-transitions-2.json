@@ -1,0 +1,71 @@
+{
+  "spec": {
+    "title": "CSS Transitions Level 2",
+    "url": "https://drafts.csswg.org/css-transitions-2/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "CSSTransition"
+        ]
+      }
+    },
+    "idlNames": {
+      "CSSTransition": {
+        "fragment": "[Exposed=Window]\ninterface CSSTransition : Animation {\n  readonly attribute CSSOMString transitionProperty;\n};",
+        "type": "interface",
+        "name": "CSSTransition",
+        "inheritance": "Animation",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "transitionProperty",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "CSSTransition"
+      ]
+    },
+    "dependencies": {
+      "CSSTransition": [
+        "Animation",
+        "CSSOMString"
+      ]
+    },
+    "externalDependencies": [
+      "Animation",
+      "CSSOMString"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

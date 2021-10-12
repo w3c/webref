@@ -1,0 +1,15 @@
+{
+  "name": "VideoColorSpace",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker)]\ninterface VideoColorSpace {\n  constructor(optional VideoColorSpaceInit init = {});\n\n  readonly attribute VideoColorPrimaries? primaries;\n  readonly attribute VideoTransferCharacteristics? transfer;\n  readonly attribute VideoMatrixCoefficients? matrix;\n  readonly attribute boolean? fullRange;\n\n  [Default] VideoColorSpaceInit toJSON();\n};",
+    "href": "https://w3c.github.io/webcodecs/#videocolorspace"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "USBIsochronousInTransferPacket",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "[\n  Exposed=(DedicatedWorker,SharedWorker,Window),\n  SecureContext\n]\ninterface USBIsochronousInTransferPacket {\n  constructor(USBTransferStatus status, optional DataView? data);\n  readonly attribute DataView? data;\n  readonly attribute USBTransferStatus status;\n};",
+    "href": "https://wicg.github.io/webusb/#usbisochronousintransferpacket"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

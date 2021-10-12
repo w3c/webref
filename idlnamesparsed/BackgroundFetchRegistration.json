@@ -1,0 +1,29 @@
+{
+  "name": "BackgroundFetchRegistration",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Background Fetch",
+      "url": "https://wicg.github.io/background-fetch/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface BackgroundFetchRegistration : EventTarget {\n  readonly attribute DOMString id;\n  readonly attribute unsigned long long uploadTotal;\n  readonly attribute unsigned long long uploaded;\n  readonly attribute unsigned long long downloadTotal;\n  readonly attribute unsigned long long downloaded;\n  readonly attribute BackgroundFetchResult result;\n  readonly attribute BackgroundFetchFailureReason failureReason;\n  readonly attribute boolean recordsAvailable;\n\n  attribute EventHandler onprogress;\n\n  Promise<boolean> abort();\n  Promise<BackgroundFetchRecord> match(RequestInfo request, optional CacheQueryOptions options = {});\n  Promise<sequence<BackgroundFetchRecord>> matchAll(optional RequestInfo request, optional CacheQueryOptions options = {});\n};",
+    "href": "https://wicg.github.io/background-fetch/#backgroundfetchregistration"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

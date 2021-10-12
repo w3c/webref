@@ -1,0 +1,1200 @@
+{
+  "spec": {
+    "title": "CSS Logical Properties and Values Level 1",
+    "url": "https://drafts.csswg.org/css-logical-1/"
+  },
+  "dfns": [
+    {
+      "id": "directional-keyword",
+      "href": "https://drafts.csswg.org/css-logical-1/#directional-keyword",
+      "linkingText": [
+        "directional keyword"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "directional-keywords",
+        "href": "https://drafts.csswg.org/css-logical-1/#directional-keywords",
+        "title": "Flow-Relative Values: block-start, block-end, inline-start, inline-end",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-logical-page-recto",
+      "href": "https://drafts.csswg.org/css-logical-1/#valdef-logical-page-recto",
+      "linkingText": [
+        "recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page",
+        "href": "https://drafts.csswg.org/css-logical-1/#page",
+        "title": "Flow-Relative Page Classifications",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-logical-page-verso",
+      "href": "https://drafts.csswg.org/css-logical-1/#valdef-logical-page-verso",
+      "linkingText": [
+        "verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page",
+        "href": "https://drafts.csswg.org/css-logical-1/#page",
+        "title": "Flow-Relative Page Classifications",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-logical-page-selector-recto",
+      "href": "https://drafts.csswg.org/css-logical-1/#valdef-logical-page-selector-recto",
+      "linkingText": [
+        ":recto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page-selector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page",
+        "href": "https://drafts.csswg.org/css-logical-1/#page",
+        "title": "Flow-Relative Page Classifications",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-logical-page-selector-verso",
+      "href": "https://drafts.csswg.org/css-logical-1/#valdef-logical-page-selector-verso",
+      "linkingText": [
+        ":verso"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "logical-page-selector"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page",
+        "href": "https://drafts.csswg.org/css-logical-1/#page",
+        "title": "Flow-Relative Page Classifications",
+        "number": "3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "mapping-logic",
+      "href": "https://drafts.csswg.org/css-logical-1/#mapping-logic",
+      "linkingText": [
+        "mapping logic"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box",
+        "href": "https://drafts.csswg.org/css-logical-1/#box",
+        "title": "Flow-Relative Box Model Properties",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "logical-property-group",
+      "href": "https://drafts.csswg.org/css-logical-1/#logical-property-group",
+      "linkingText": [
+        "logical property group"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "box",
+        "href": "https://drafts.csswg.org/css-logical-1/#box",
+        "title": "Flow-Relative Box Model Properties",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-block-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-block-size",
+      "linkingText": [
+        "block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inline-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inline-size",
+      "linkingText": [
+        "inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-min-block-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-min-block-size",
+      "linkingText": [
+        "min-block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-min-inline-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-min-inline-size",
+      "linkingText": [
+        "min-inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-max-block-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-max-block-size",
+      "linkingText": [
+        "max-block-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-max-inline-size",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-max-inline-size",
+      "linkingText": [
+        "max-inline-size"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "dimension-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#dimension-properties",
+        "title": "Logical Height and Logical Width: the block-size/inline-size, min-block-size/min-inline-size, and max-block-size/max-inline-size properties",
+        "number": "4.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-block-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-block-start",
+      "linkingText": [
+        "margin-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-block-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-block-end",
+      "linkingText": [
+        "margin-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-inline-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-inline-start",
+      "linkingText": [
+        "margin-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-inline-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-inline-end",
+      "linkingText": [
+        "margin-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-block",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-block",
+      "linkingText": [
+        "margin-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-margin-inline",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-margin-inline",
+      "linkingText": [
+        "margin-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "margin-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#margin-properties",
+        "title": "Flow-Relative Margins: the margin-block-start, margin-block-end, margin-inline-start, margin-inline-end properties and margin-block and margin-inline shorthands",
+        "number": "4.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "inset-properties",
+      "href": "https://drafts.csswg.org/css-logical-1/#inset-properties",
+      "linkingText": [
+        "inset properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-inset-block-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-block-start",
+      "linkingText": [
+        "inset-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-block-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-block-end",
+      "linkingText": [
+        "inset-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-inline-start",
+      "linkingText": [
+        "inset-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-inline-end",
+      "linkingText": [
+        "inset-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-block",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-block",
+      "linkingText": [
+        "inset-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset-inline",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset-inline",
+      "linkingText": [
+        "inset-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-inset",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-inset",
+      "linkingText": [
+        "inset"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "position-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#position-properties",
+        "title": "Flow-Relative Offsets: the inset-block-start, inset-block-end, inset-inline-start, inset-inline-end properties and inset-block, inset-inline, and inset shorthands",
+        "number": "4.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-block-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-block-start",
+      "linkingText": [
+        "padding-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-block-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-block-end",
+      "linkingText": [
+        "padding-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-inline-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-inline-start",
+      "linkingText": [
+        "padding-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-inline-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-inline-end",
+      "linkingText": [
+        "padding-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-block",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-block",
+      "linkingText": [
+        "padding-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-padding-inline",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-padding-inline",
+      "linkingText": [
+        "padding-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "padding-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#padding-properties",
+        "title": "Flow-Relative Padding: the padding-block-start, padding-block-end, padding-inline-start, padding-inline-end properties and padding-block and padding-inline shorthands",
+        "number": "4.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-start-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-start-width",
+      "linkingText": [
+        "border-block-start-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-end-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-end-width",
+      "linkingText": [
+        "border-block-end-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-start-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-start-width",
+      "linkingText": [
+        "border-inline-start-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-end-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-end-width",
+      "linkingText": [
+        "border-inline-end-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-width",
+      "linkingText": [
+        "border-block-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-width",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-width",
+      "linkingText": [
+        "border-inline-width"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-width",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-width",
+        "title": "Flow-Relative Border Widths: the border-block-start-width, border-block-end-width, border-inline-start-width, border-inline-end-width properties and border-block-width and border-inline-width shorthands",
+        "number": "4.5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-start-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-start-style",
+      "linkingText": [
+        "border-block-start-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-end-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-end-style",
+      "linkingText": [
+        "border-block-end-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-start-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-start-style",
+      "linkingText": [
+        "border-inline-start-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-end-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-end-style",
+      "linkingText": [
+        "border-inline-end-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-style",
+      "linkingText": [
+        "border-block-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-style",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-style",
+      "linkingText": [
+        "border-inline-style"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-style",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-style",
+        "title": "Flow-Relative Border Styles: the border-block-start-style, border-block-end-style, border-inline-start-style, border-inline-end-style properties and border-block-style and border-inline-style shorthands",
+        "number": "4.5.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-start-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-start-color",
+      "linkingText": [
+        "border-block-start-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-end-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-end-color",
+      "linkingText": [
+        "border-block-end-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-start-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-start-color",
+      "linkingText": [
+        "border-inline-start-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-end-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-end-color",
+      "linkingText": [
+        "border-inline-end-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-color",
+      "linkingText": [
+        "border-block-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-color",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-color",
+      "linkingText": [
+        "border-inline-color"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-color",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-color",
+        "title": "Flow-Relative Border Colors: the border-block-start-color, border-block-end-color, border-inline-start-color, border-inline-end-color properties and border-block-color and border-inline-color shorthands",
+        "number": "4.5.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-start",
+      "linkingText": [
+        "border-block-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block-end",
+      "linkingText": [
+        "border-block-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-start",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-start",
+      "linkingText": [
+        "border-inline-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline-end",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline-end",
+      "linkingText": [
+        "border-inline-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-block",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-block",
+      "linkingText": [
+        "border-block"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-inline",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-inline",
+      "linkingText": [
+        "border-inline"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-shorthands",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-shorthands",
+        "title": "Flow-Relative Border Shorthands: the border-block-start, border-block-end, border-inline-start, border-inline-end properties and border-block and border-inline shorthands",
+        "number": "4.5.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-start-start-radius",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-start-start-radius",
+      "linkingText": [
+        "border-start-start-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-radius-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-radius-properties",
+        "title": "Flow-Relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
+        "number": "4.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-start-end-radius",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-start-end-radius",
+      "linkingText": [
+        "border-start-end-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-radius-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-radius-properties",
+        "title": "Flow-Relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
+        "number": "4.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-end-start-radius",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-end-start-radius",
+      "linkingText": [
+        "border-end-start-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-radius-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-radius-properties",
+        "title": "Flow-Relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
+        "number": "4.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-border-end-end-radius",
+      "href": "https://drafts.csswg.org/css-logical-1/#propdef-border-end-end-radius",
+      "linkingText": [
+        "border-end-end-radius"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "border-radius-properties",
+        "href": "https://drafts.csswg.org/css-logical-1/#border-radius-properties",
+        "title": "Flow-Relative Corner Rounding: the border-start-start-radius, border-start-end-radius, border-end-start-radius, border-end-end-radius properties",
+        "number": "4.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-margin-logical",
+      "href": "https://drafts.csswg.org/css-logical-1/#valdef-margin-logical",
+      "linkingText": [
+        "logical"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "margin",
+        "padding",
+        "border-color",
+        "border-style",
+        "border-width"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "logical-shorthand-keyword",
+        "href": "https://drafts.csswg.org/css-logical-1/#logical-shorthand-keyword",
+        "title": "Four-Directional Shorthand Properties: the margin, padding, border-width, border-style, and border-color shorthands",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "RequestInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "dictionary RequestInit {\n  ByteString method;\n  HeadersInit headers;\n  BodyInit? body;\n  USVString referrer;\n  ReferrerPolicy referrerPolicy;\n  RequestMode mode;\n  RequestCredentials credentials;\n  RequestCache cache;\n  RequestRedirect redirect;\n  DOMString integrity;\n  boolean keepalive;\n  AbortSignal? signal;\n  any window; // can only be set to null\n};",
+    "href": "https://fetch.spec.whatwg.org/#requestinit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,2339 @@
+{
+  "spec": {
+    "title": "CSS Counter Styles Level 3",
+    "url": "https://drafts.csswg.org/css-counter-styles/"
+  },
+  "dfns": [
+    {
+      "id": "counter-style",
+      "href": "https://drafts.csswg.org/css-counter-styles/#counter-style",
+      "linkingText": [
+        "counter style"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-styles",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-styles",
+        "title": "Counter Styles",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-a-counter",
+      "href": "https://drafts.csswg.org/css-counter-styles/#generate-a-counter",
+      "linkingText": [
+        "generate a counter",
+        "generate a counter representation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-styles",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-styles",
+        "title": "Counter Styles",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initial-representation-for-the-counter-value",
+      "href": "https://drafts.csswg.org/css-counter-styles/#initial-representation-for-the-counter-value",
+      "linkingText": [
+        "initial representation for the counter value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "counter-styles",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-styles",
+        "title": "Counter Styles",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "at-ruledef-counter-style",
+      "href": "https://drafts.csswg.org/css-counter-styles/#at-ruledef-counter-style",
+      "linkingText": [
+        "@counter-style"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-counter-style-rule",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-counter-style-rule",
+        "title": "Defining Custom Counter Styles: the @counter-style rule",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-counter-style-name",
+      "href": "https://drafts.csswg.org/css-counter-styles/#typedef-counter-style-name",
+      "linkingText": [
+        "<counter-style-name>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-counter-style-rule",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-counter-style-rule",
+        "title": "Defining Custom Counter Styles: the @counter-style rule",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-counter-style-system",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-system",
+      "linkingText": [
+        "system"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-system",
+        "title": "Counter algorithms: the system descriptor",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-counter-style-system-cyclic",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-cyclic",
+      "linkingText": [
+        "cyclic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "cyclic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#cyclic-system",
+        "title": "Cycling Symbols: the cyclic system",
+        "number": "3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "triangle",
+      "href": "https://drafts.csswg.org/css-counter-styles/#triangle",
+      "linkingText": [
+        "triangle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "cyclic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#cyclic-system",
+        "title": "Cycling Symbols: the cyclic system",
+        "number": "3.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-counter-style-system-fixed",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-fixed",
+      "linkingText": [
+        "fixed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fixed-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#fixed-system",
+        "title": "Exhaustible Symbols: the fixed system",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "first-symbol-value",
+      "href": "https://drafts.csswg.org/css-counter-styles/#first-symbol-value",
+      "linkingText": [
+        "first symbol value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fixed-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#fixed-system",
+        "title": "Exhaustible Symbols: the fixed system",
+        "number": "3.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "box-corner",
+      "href": "https://drafts.csswg.org/css-counter-styles/#box-corner",
+      "linkingText": [
+        "box-corner"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "fixed-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#fixed-system",
+        "title": "Exhaustible Symbols: the fixed system",
+        "number": "3.1.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-system-symbolic",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-system-symbolic",
+      "linkingText": [
+        "symbolic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "symbolic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#symbolic-system",
+        "title": "Repeating Symbols: the symbolic system",
+        "number": "3.1.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "footnote",
+      "href": "https://drafts.csswg.org/css-counter-styles/#footnote",
+      "linkingText": [
+        "footnote"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "symbolic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#symbolic-system",
+        "title": "Repeating Symbols: the symbolic system",
+        "number": "3.1.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "upper-alpha-legal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#upper-alpha-legal",
+      "linkingText": [
+        "upper-alpha-legal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "symbolic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#symbolic-system",
+        "title": "Repeating Symbols: the symbolic system",
+        "number": "3.1.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-counter-style-system-alphabetic",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-alphabetic",
+      "linkingText": [
+        "alphabetic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "alphabetic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#alphabetic-system",
+        "title": "Bijective Numerals: the alphabetic system",
+        "number": "3.1.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "go",
+      "href": "https://drafts.csswg.org/css-counter-styles/#go",
+      "linkingText": [
+        "go"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "alphabetic-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#alphabetic-system",
+        "title": "Bijective Numerals: the alphabetic system",
+        "number": "3.1.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-counter-style-system-numeric",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-numeric",
+      "linkingText": [
+        "numeric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "numeric-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#numeric-system",
+        "title": "Positional Numerals: the numeric system",
+        "number": "3.1.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "trinary",
+      "href": "https://drafts.csswg.org/css-counter-styles/#trinary",
+      "linkingText": [
+        "trinary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "numeric-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#numeric-system",
+        "title": "Positional Numerals: the numeric system",
+        "number": "3.1.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-counter-style-system-additive",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-additive",
+      "linkingText": [
+        "additive"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additive-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#additive-system",
+        "title": "Accumulating Numerals: the additive system",
+        "number": "3.1.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dice",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dice",
+      "linkingText": [
+        "dice"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "additive-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#additive-system",
+        "title": "Accumulating Numerals: the additive system",
+        "number": "3.1.6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-counter-style-system-extends",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-system-extends",
+      "linkingText": [
+        "extends"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/system"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extends-system",
+        "href": "https://drafts.csswg.org/css-counter-styles/#extends-system",
+        "title": "Building from Existing Counter Styles: the extends system",
+        "number": "3.1.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-counter-style-negative",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-negative",
+      "linkingText": [
+        "negative"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-negative",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-negative",
+        "title": "Formatting negative values: the negative descriptor",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "use-a-negative-sign",
+      "href": "https://drafts.csswg.org/css-counter-styles/#use-a-negative-sign",
+      "linkingText": [
+        "use a negative sign",
+        "uses a negative sign"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-negative",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-negative",
+        "title": "Formatting negative values: the negative descriptor",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-counter-style-prefix",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-prefix",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-prefix",
+        "title": "Symbols before the marker: the prefix descriptor",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-counter-style-suffix",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-suffix",
+      "linkingText": [
+        "suffix"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-suffix",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-suffix",
+        "title": "Symbols after the marker: the suffix descriptor",
+        "number": "3.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-counter-style-range",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-range",
+      "linkingText": [
+        "range"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-range",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-range",
+        "title": "Limiting the counter scope: the range descriptor",
+        "number": "3.5"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-counter-style-range-auto",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-range-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/range"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-range",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-range",
+        "title": "Limiting the counter scope: the range descriptor",
+        "number": "3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-counter-style-pad",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-pad",
+      "linkingText": [
+        "pad"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-pad",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-pad",
+        "title": "Zero-Padding and Constant-Width Representations: the pad descriptor",
+        "number": "3.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-counter-style-fallback",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-fallback",
+      "linkingText": [
+        "fallback"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-fallback",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-fallback",
+        "title": "Defining fallback: the fallback descriptor",
+        "number": "3.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-counter-style-symbols",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-symbols",
+      "linkingText": [
+        "symbols"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-symbols",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+        "title": "Marker characters: the symbols and additive-symbols descriptors",
+        "number": "3.8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-counter-style-additive-symbols",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-additive-symbols",
+      "linkingText": [
+        "additive-symbols"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-symbols",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+        "title": "Marker characters: the symbols and additive-symbols descriptors",
+        "number": "3.8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-symbol",
+      "href": "https://drafts.csswg.org/css-counter-styles/#typedef-symbol",
+      "linkingText": [
+        "<symbol>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-symbols",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+        "title": "Marker characters: the symbols and additive-symbols descriptors",
+        "number": "3.8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "counter-symbol",
+      "href": "https://drafts.csswg.org/css-counter-styles/#counter-symbol",
+      "linkingText": [
+        "counter symbol"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-symbols",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+        "title": "Marker characters: the symbols and additive-symbols descriptors",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "additive-tuple",
+      "href": "https://drafts.csswg.org/css-counter-styles/#additive-tuple",
+      "linkingText": [
+        "additive tuple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-symbols",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-symbols",
+        "title": "Marker characters: the symbols and additive-symbols descriptors",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "descdef-counter-style-speak-as",
+      "href": "https://drafts.csswg.org/css-counter-styles/#descdef-counter-style-speak-as",
+      "linkingText": [
+        "speak-as"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@counter-style"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-auto",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-bullets",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-bullets",
+      "linkingText": [
+        "bullets"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-numbers",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-numbers",
+      "linkingText": [
+        "numbers"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-words",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-words",
+      "linkingText": [
+        "words"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-spell-out",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-spell-out",
+      "linkingText": [
+        "spell-out"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-speak-as-counter-style-name",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-speak-as-counter-style-name",
+      "linkingText": [
+        "<counter-style-name>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "@counter-style/speak-as"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "circled-lower-latin",
+      "href": "https://drafts.csswg.org/css-counter-styles/#circled-lower-latin",
+      "linkingText": [
+        "circled-lower-latin"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "counter-style-speak-as",
+        "href": "https://drafts.csswg.org/css-counter-styles/#counter-style-speak-as",
+        "title": "Speech Synthesis: the speak-as descriptor",
+        "number": "3.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "funcdef-symbols",
+      "href": "https://drafts.csswg.org/css-counter-styles/#funcdef-symbols",
+      "linkingText": [
+        "symbols()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "symbols-function",
+        "href": "https://drafts.csswg.org/css-counter-styles/#symbols-function",
+        "title": "Defining Anonymous Counter Styles: the symbols() function",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-symbols-type",
+      "href": "https://drafts.csswg.org/css-counter-styles/#typedef-symbols-type",
+      "linkingText": [
+        "<symbols-type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "symbols-function",
+        "href": "https://drafts.csswg.org/css-counter-styles/#symbols-function",
+        "title": "Defining Anonymous Counter Styles: the symbols() function",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-counter-style",
+      "href": "https://drafts.csswg.org/css-counter-styles/#typedef-counter-style",
+      "linkingText": [
+        "<counter-style>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extending-css2",
+        "href": "https://drafts.csswg.org/css-counter-styles/#extending-css2",
+        "title": "Extending list-style-type, counter(), and counters()",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "decimal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#decimal",
+      "linkingText": [
+        "decimal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "decimal-leading-zero",
+      "href": "https://drafts.csswg.org/css-counter-styles/#decimal-leading-zero",
+      "linkingText": [
+        "decimal-leading-zero"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-arabic-indic",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-arabic-indic",
+      "linkingText": [
+        "arabic-indic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "armenian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#armenian",
+      "linkingText": [
+        "armenian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-upper-armenian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-upper-armenian",
+      "linkingText": [
+        "upper-armenian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-lower-armenian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-lower-armenian",
+      "linkingText": [
+        "lower-armenian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-bengali",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-bengali",
+      "linkingText": [
+        "bengali"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-cambodian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-cambodian",
+      "linkingText": [
+        "cambodian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-khmer",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-khmer",
+      "linkingText": [
+        "khmer"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cjk-decimal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#cjk-decimal",
+      "linkingText": [
+        "cjk-decimal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-devanagari",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-devanagari",
+      "linkingText": [
+        "devanagari"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "georgian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#georgian",
+      "linkingText": [
+        "georgian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-gujarati",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-gujarati",
+      "linkingText": [
+        "gujarati"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-gurmukhi",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-gurmukhi",
+      "linkingText": [
+        "gurmukhi"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "hebrew",
+      "href": "https://drafts.csswg.org/css-counter-styles/#hebrew",
+      "linkingText": [
+        "hebrew"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-kannada",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-kannada",
+      "linkingText": [
+        "kannada"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-lao",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-lao",
+      "linkingText": [
+        "lao"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-malayalam",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-malayalam",
+      "linkingText": [
+        "malayalam"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-mongolian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-mongolian",
+      "linkingText": [
+        "mongolian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-myanmar",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-myanmar",
+      "linkingText": [
+        "myanmar"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-oriya",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-oriya",
+      "linkingText": [
+        "oriya"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-persian",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-persian",
+      "linkingText": [
+        "persian"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "lower-roman",
+      "href": "https://drafts.csswg.org/css-counter-styles/#lower-roman",
+      "linkingText": [
+        "lower-roman"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "upper-roman",
+      "href": "https://drafts.csswg.org/css-counter-styles/#upper-roman",
+      "linkingText": [
+        "upper-roman"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-tamil",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-tamil",
+      "linkingText": [
+        "tamil"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-telugu",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-telugu",
+      "linkingText": [
+        "telugu"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-thai",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-thai",
+      "linkingText": [
+        "thai"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-tibetan",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-tibetan",
+      "linkingText": [
+        "tibetan"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-numeric",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-numeric",
+        "title": "Numeric: decimal, decimal-leading-zero, arabic-indic, armenian, upper-armenian, lower-armenian, bengali, cambodian, khmer, cjk-decimal, devanagari, georgian, gujarati, gurmukhi, hebrew, kannada, lao, malayalam, mongolian, myanmar, oriya, persian, lower-roman, upper-roman, tamil, telugu, thai, tibetan",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "lower-alpha",
+      "href": "https://drafts.csswg.org/css-counter-styles/#lower-alpha",
+      "linkingText": [
+        "lower-alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "lower-latin",
+      "href": "https://drafts.csswg.org/css-counter-styles/#lower-latin",
+      "linkingText": [
+        "lower-latin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "upper-alpha",
+      "href": "https://drafts.csswg.org/css-counter-styles/#upper-alpha",
+      "linkingText": [
+        "upper-alpha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "upper-latin",
+      "href": "https://drafts.csswg.org/css-counter-styles/#upper-latin",
+      "linkingText": [
+        "upper-latin"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "lower-greek",
+      "href": "https://drafts.csswg.org/css-counter-styles/#lower-greek",
+      "linkingText": [
+        "lower-greek"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "hiragana",
+      "href": "https://drafts.csswg.org/css-counter-styles/#hiragana",
+      "linkingText": [
+        "hiragana"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "hiragana-iroha",
+      "href": "https://drafts.csswg.org/css-counter-styles/#hiragana-iroha",
+      "linkingText": [
+        "hiragana-iroha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "katakana",
+      "href": "https://drafts.csswg.org/css-counter-styles/#katakana",
+      "linkingText": [
+        "katakana"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "katakana-iroha",
+      "href": "https://drafts.csswg.org/css-counter-styles/#katakana-iroha",
+      "linkingText": [
+        "katakana-iroha"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-alphabetic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-alphabetic",
+        "title": "Alphabetic: lower-alpha, lower-latin, upper-alpha, upper-latin, lower-greek, hiragana, hiragana-iroha, katakana, katakana-iroha",
+        "number": "6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disc",
+      "href": "https://drafts.csswg.org/css-counter-styles/#disc",
+      "linkingText": [
+        "disc"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-symbolic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-symbolic",
+        "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "circle",
+      "href": "https://drafts.csswg.org/css-counter-styles/#circle",
+      "linkingText": [
+        "circle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-symbolic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-symbolic",
+        "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "square",
+      "href": "https://drafts.csswg.org/css-counter-styles/#square",
+      "linkingText": [
+        "square"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-symbolic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-symbolic",
+        "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disclosure-open",
+      "href": "https://drafts.csswg.org/css-counter-styles/#disclosure-open",
+      "linkingText": [
+        "disclosure-open"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-symbolic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-symbolic",
+        "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "disclosure-closed",
+      "href": "https://drafts.csswg.org/css-counter-styles/#disclosure-closed",
+      "linkingText": [
+        "disclosure-closed"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-symbolic",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-symbolic",
+        "title": "Symbolic: disc, circle, square, disclosure-open, disclosure-closed",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-cjk-earthly-branch",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-cjk-earthly-branch",
+      "linkingText": [
+        "cjk-earthly-branch"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-fixed",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-fixed",
+        "title": "Fixed: cjk-earthly-branch, cjk-heavenly-stem",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-cjk-heavenly-stem",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-cjk-heavenly-stem",
+      "linkingText": [
+        "cjk-heavenly-stem"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "simple-fixed",
+        "href": "https://drafts.csswg.org/css-counter-styles/#simple-fixed",
+        "title": "Fixed: cjk-earthly-branch, cjk-heavenly-stem",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "japanese-informal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#japanese-informal",
+      "linkingText": [
+        "japanese-informal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-japanese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-japanese",
+        "title": "Japanese: japanese-informal and japanese-formal",
+        "number": "7.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "japanese-formal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#japanese-formal",
+      "linkingText": [
+        "japanese-formal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-japanese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-japanese",
+        "title": "Japanese: japanese-informal and japanese-formal",
+        "number": "7.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "korean-hangul-formal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#korean-hangul-formal",
+      "linkingText": [
+        "korean-hangul-formal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-korean",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-korean",
+        "title": "Korean: korean-hangul-formal, korean-hanja-informal, and korean-hanja-formal",
+        "number": "7.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "korean-hanja-informal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#korean-hanja-informal",
+      "linkingText": [
+        "korean-hanja-informal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-korean",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-korean",
+        "title": "Korean: korean-hangul-formal, korean-hanja-informal, and korean-hanja-formal",
+        "number": "7.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "korean-hanja-formal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#korean-hanja-formal",
+      "linkingText": [
+        "korean-hanja-formal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-korean",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-korean",
+        "title": "Korean: korean-hangul-formal, korean-hanja-informal, and korean-hanja-formal",
+        "number": "7.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "simp-chinese-informal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#simp-chinese-informal",
+      "linkingText": [
+        "simp-chinese-informal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-chinese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-chinese",
+        "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal",
+        "number": "7.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "simp-chinese-formal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#simp-chinese-formal",
+      "linkingText": [
+        "simp-chinese-formal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-chinese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-chinese",
+        "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal",
+        "number": "7.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "trad-chinese-informal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#trad-chinese-informal",
+      "linkingText": [
+        "trad-chinese-informal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-chinese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-chinese",
+        "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal",
+        "number": "7.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "trad-chinese-formal",
+      "href": "https://drafts.csswg.org/css-counter-styles/#trad-chinese-formal",
+      "linkingText": [
+        "trad-chinese-formal"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-chinese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-chinese",
+        "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal",
+        "number": "7.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cjk-ideographic",
+      "href": "https://drafts.csswg.org/css-counter-styles/#cjk-ideographic",
+      "linkingText": [
+        "cjk-ideographic"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "limited-chinese",
+        "href": "https://drafts.csswg.org/css-counter-styles/#limited-chinese",
+        "title": "Chinese: simp-chinese-informal, simp-chinese-formal, trad-chinese-informal, and trad-chinese-formal",
+        "number": "7.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-counter-style-name-ethiopic-numeric",
+      "href": "https://drafts.csswg.org/css-counter-styles/#valdef-counter-style-name-ethiopic-numeric",
+      "linkingText": [
+        "ethiopic-numeric"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<counter-style-name>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "ethiopic-numeric-counter-style",
+        "href": "https://drafts.csswg.org/css-counter-styles/#ethiopic-numeric-counter-style",
+        "title": "Ethiopic Numeric Counter Style: ethiopic-numeric",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssrule-counter_style_rule",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-cssrule-counter_style_rule",
+      "linkingText": [
+        "COUNTER_STYLE_RULE"
+      ],
+      "localLinkingText": [],
+      "type": "const",
+      "for": [
+        "CSSRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-cssrule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#extensions-to-cssrule-interface",
+        "title": "Extensions to the CSSRule interface",
+        "number": "9.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "csscounterstylerule",
+      "href": "https://drafts.csswg.org/css-counter-styles/#csscounterstylerule",
+      "linkingText": [
+        "CSSCounterStyleRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csscounterstylerule-name",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-system",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-system",
+      "linkingText": [
+        "system"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-symbols",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-symbols",
+      "linkingText": [
+        "symbols"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-additivesymbols",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-additivesymbols",
+      "linkingText": [
+        "additiveSymbols"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-negative",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-negative",
+      "linkingText": [
+        "negative"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-prefix",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-prefix",
+      "linkingText": [
+        "prefix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-suffix",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-suffix",
+      "linkingText": [
+        "suffix"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-range",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-range",
+      "linkingText": [
+        "range"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-pad",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-pad",
+      "linkingText": [
+        "pad"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-speakas",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-speakas",
+      "linkingText": [
+        "speakAs"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csscounterstylerule-fallback",
+      "href": "https://drafts.csswg.org/css-counter-styles/#dom-csscounterstylerule-fallback",
+      "linkingText": [
+        "fallback"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSCounterStyleRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csscounterstylerule-interface",
+        "href": "https://drafts.csswg.org/css-counter-styles/#the-csscounterstylerule-interface",
+        "title": "The CSSCounterStyleRule interface",
+        "number": "9.2"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

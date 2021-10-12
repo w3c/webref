@@ -1,0 +1,15 @@
+{
+  "name": "AudioDataInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "dictionary AudioDataInit {\n  required AudioSampleFormat format;\n  required float sampleRate;\n  [EnforceRange] required unsigned long numberOfFrames;\n  [EnforceRange] required unsigned long numberOfChannels;\n  [EnforceRange] required long long timestamp;  // microseconds\n  required BufferSource data;\n};",
+    "href": "https://w3c.github.io/webcodecs/#dictdef-audiodatainit"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,1226 @@
+{
+  "spec": {
+    "title": "Contact Picker API",
+    "url": "https://wicg.github.io/contact-api/spec/"
+  },
+  "dfns": [
+    {
+      "id": "contact-picker-task-source",
+      "href": "https://wicg.github.io/contact-api/spec/#contact-picker-task-source",
+      "linkingText": [
+        "contact picker task source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure",
+        "title": "Infrastructure",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "queue-a-contact-picker-task",
+      "href": "https://wicg.github.io/contact-api/spec/#queue-a-contact-picker-task",
+      "linkingText": [
+        "queue a contact picker task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure",
+        "title": "Infrastructure",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address",
+      "linkingText": [
+        "physical address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-country",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-address-line",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-address-line",
+      "linkingText": [
+        "address line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-region",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-city",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-dependent-locality",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-dependent-locality",
+      "linkingText": [
+        "dependent locality"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-postal-code",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-postal-code",
+      "linkingText": [
+        "postal code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-sorting-code",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-sorting-code",
+      "linkingText": [
+        "sorting code"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-organization",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-recipient",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "physical-address-phone-number",
+      "href": "https://wicg.github.io/contact-api/spec/#physical-address-phone-number",
+      "linkingText": [
+        "phone number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "physical address"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-physical-address",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-physical-address",
+        "title": "Physical address",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact",
+      "linkingText": [
+        "user contact"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact-names",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact-names",
+      "linkingText": [
+        "names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user contact"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact-emails",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact-emails",
+      "linkingText": [
+        "emails"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user contact"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact-numbers",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact-numbers",
+      "linkingText": [
+        "numbers"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user contact"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact-addresses",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact-addresses",
+      "linkingText": [
+        "addresses"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user contact"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-contact-icons",
+      "href": "https://wicg.github.io/contact-api/spec/#user-contact-icons",
+      "linkingText": [
+        "icons"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user contact"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-user-contact",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-user-contact",
+        "title": "User contact",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contacts-source",
+      "href": "https://wicg.github.io/contact-api/spec/#contacts-source",
+      "linkingText": [
+        "contacts source"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-contacts-source",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-contacts-source",
+        "title": "Contacts source",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contacts-source-available-contacts",
+      "href": "https://wicg.github.io/contact-api/spec/#contacts-source-available-contacts",
+      "linkingText": [
+        "available contacts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "contacts source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-contacts-source",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-contacts-source",
+        "title": "Contacts source",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contacts-source-supported-properties",
+      "href": "https://wicg.github.io/contact-api/spec/#contacts-source-supported-properties",
+      "linkingText": [
+        "supported properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "contacts source"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "infrastructure-contacts-source",
+        "href": "https://wicg.github.io/contact-api/spec/#infrastructure-contacts-source",
+        "title": "Contacts source",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigator-contacts-manager",
+      "href": "https://wicg.github.io/contact-api/spec/#navigator-contacts-manager",
+      "linkingText": [
+        "contacts manager"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Navigator"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://wicg.github.io/contact-api/spec/#extensions-to-navigator",
+        "title": "Extensions to Navigator",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator-contacts",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-navigator-contacts",
+      "linkingText": [
+        "contacts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://wicg.github.io/contact-api/spec/#extensions-to-navigator",
+        "title": "Extensions to Navigator",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contact-picker-is-showing-flag",
+      "href": "https://wicg.github.io/contact-api/spec/#contact-picker-is-showing-flag",
+      "linkingText": [
+        "contact picker is showing flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-navigator",
+        "href": "https://wicg.github.io/contact-api/spec/#extensions-to-navigator",
+        "title": "Extensions to Navigator",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-contactproperty",
+      "href": "https://wicg.github.io/contact-api/spec/#enumdef-contactproperty",
+      "linkingText": [
+        "ContactProperty"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactproperty-address",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactproperty-address",
+      "linkingText": [
+        "\"address\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContactProperty"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactproperty-email",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactproperty-email",
+      "linkingText": [
+        "\"email\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContactProperty"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactproperty-icon",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactproperty-icon",
+      "linkingText": [
+        "\"icon\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContactProperty"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactproperty-name",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactproperty-name",
+      "linkingText": [
+        "\"name\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContactProperty"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactproperty-tel",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactproperty-tel",
+      "linkingText": [
+        "\"tel\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ContactProperty"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "available",
+      "href": "https://wicg.github.io/contact-api/spec/#available",
+      "linkingText": [
+        "available"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contact-property",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-property",
+        "title": "ContactProperty",
+        "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contactaddress",
+      "href": "https://wicg.github.io/contact-api/spec/#contactaddress",
+      "linkingText": [
+        "ContactAddress"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactaddress-tojson",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "contactaddress-address",
+      "href": "https://wicg.github.io/contact-api/spec/#contactaddress-address",
+      "linkingText": [
+        "address"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-city",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-city",
+      "linkingText": [
+        "city"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-country",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-country",
+      "linkingText": [
+        "country"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-dependentlocality",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-dependentlocality",
+      "linkingText": [
+        "dependentLocality"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-organization",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-organization",
+      "linkingText": [
+        "organization"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-phone",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-phone",
+      "linkingText": [
+        "phone"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-postalcode",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-postalcode",
+      "linkingText": [
+        "postalCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-recipient",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-recipient",
+      "linkingText": [
+        "recipient"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-region",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-region",
+      "linkingText": [
+        "region"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-sortingcode",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-sortingcode",
+      "linkingText": [
+        "sortingCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactaddress-addressline",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactaddress-addressline",
+      "linkingText": [
+        "addressLine"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ContactAddress"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contact-address",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-address",
+        "title": "ContactAddress",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-contactinfo",
+      "href": "https://wicg.github.io/contact-api/spec/#dictdef-contactinfo",
+      "linkingText": [
+        "ContactInfo"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactinfo-address",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactinfo-address",
+      "linkingText": [
+        "address"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactinfo-email",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactinfo-email",
+      "linkingText": [
+        "email"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactinfo-icon",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactinfo-icon",
+      "linkingText": [
+        "icon"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactinfo-name",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactinfo-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactinfo-tel",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactinfo-tel",
+      "linkingText": [
+        "tel"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactInfo"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-contactsselectoptions",
+      "href": "https://wicg.github.io/contact-api/spec/#dictdef-contactsselectoptions",
+      "linkingText": [
+        "ContactsSelectOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactsselectoptions-multiple",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactsselectoptions-multiple",
+      "linkingText": [
+        "multiple"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ContactsSelectOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "contactsmanager",
+      "href": "https://wicg.github.io/contact-api/spec/#contactsmanager",
+      "linkingText": [
+        "ContactsManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactsmanager-select-properties-options-properties",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactsmanager-select-properties-options-properties",
+      "linkingText": [
+        "properties"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ContactsManager/select(properties, options)",
+        "ContactsManager/select(properties)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactsmanager-select-properties-options-options",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactsmanager-select-properties-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ContactsManager/select(properties, options)",
+        "ContactsManager/select(properties)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager",
+        "title": "ContactsManager",
+        "number": "5.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-contactsmanager-getproperties",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactsmanager-getproperties",
+      "linkingText": [
+        "getProperties()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ContactsManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager-getproperties",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager-getproperties",
+        "title": "getProperties()",
+        "number": "5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-contactsmanager-select",
+      "href": "https://wicg.github.io/contact-api/spec/#dom-contactsmanager-select",
+      "linkingText": [
+        "select(properties, options)",
+        "select(properties)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ContactsManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "contacts-manager-select",
+        "href": "https://wicg.github.io/contact-api/spec/#contacts-manager-select",
+        "title": "select()",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contactsmanager-launching-a-contact-picker",
+      "href": "https://wicg.github.io/contact-api/spec/#contactsmanager-launching-a-contact-picker",
+      "linkingText": [
+        "launching a contact picker"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ContactsManager"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "contact-picker",
+        "href": "https://wicg.github.io/contact-api/spec/#contact-picker",
+        "title": "Contact Picker",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

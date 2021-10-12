@@ -1,0 +1,14 @@
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+interface mixin GPUProgrammablePassEncoder {
+    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,
+                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);
+
+    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,
+                      Uint32Array dynamicOffsetsData,
+                      GPUSize64 dynamicOffsetsDataStart,
+                      GPUSize32 dynamicOffsetsDataLength);
+
+    undefined pushDebugGroup(USVString groupLabel);
+    undefined popDebugGroup();
+    undefined insertDebugMarker(USVString markerLabel);
+};

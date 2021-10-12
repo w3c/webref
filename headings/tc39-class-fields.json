@@ -1,0 +1,428 @@
+{
+  "spec": {
+    "title": "Public and private instance fields proposal",
+    "url": "https://tc39.es/proposal-class-fields/"
+  },
+  "headings": [
+    {
+      "id": "sec-syntax",
+      "title": "Syntax",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-lexical-grammar",
+      "title": "Lexical Grammar",
+      "level": 2,
+      "number": "1.1"
+    },
+    {
+      "id": "sec-new-syntax",
+      "title": "New Syntactic Grammar Productions",
+      "level": 2,
+      "number": "1.2"
+    },
+    {
+      "id": "sec-updated-syntax",
+      "title": "Updated Syntactic Grammar Productions",
+      "level": 2,
+      "number": "1.3"
+    },
+    {
+      "id": "sec-static-semantics-early-errors",
+      "title": "Static Semantics: Early Errors",
+      "level": 2,
+      "number": "1.4"
+    },
+    {
+      "id": "sec-all-private-identifiers-valid",
+      "title": "Static Semantics: AllPrivateIdentifiersValid",
+      "level": 2,
+      "number": "1.5"
+    },
+    {
+      "id": "sec-internal-algorithms",
+      "title": "Modified algorithms",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "static-semantics-propname",
+      "title": "Static Semantics: PropName",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-runtime-semantics-evaluate-name",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "static-semantics-class-element-evaluation",
+      "title": "Runtime Semantics: ClassElementEvaluation",
+      "level": 2,
+      "number": "2.3"
+    },
+    {
+      "id": "runtime-semantics-class-field-definition-evaluation",
+      "title": "Runtime Semantics: ClassFieldDefinitionEvaluation",
+      "level": 2,
+      "number": "2.4"
+    },
+    {
+      "id": "runtime-semantics-class-public-field-definition-evaluation",
+      "title": "Runtime Semantics: EvaluateBody",
+      "level": 2,
+      "number": "2.5"
+    },
+    {
+      "id": "sec-setfunctionname",
+      "title": "SetFunctionName ( F, name [ , prefix ] )",
+      "level": 2,
+      "number": "2.6"
+    },
+    {
+      "id": "sec-define-field",
+      "title": "DefineField(receiver, fieldRecord)",
+      "level": 2,
+      "number": "2.7"
+    },
+    {
+      "id": "initialize-public-instance-fields",
+      "title": "InitializeInstanceFields ( O, constructor )",
+      "level": 2,
+      "number": "2.8"
+    },
+    {
+      "id": "sec-private-names-static-semantics-stringvalue",
+      "title": "Static Semantics: StringValue",
+      "level": 2,
+      "number": "2.9"
+    },
+    {
+      "id": "sec-private-bound-identifiers",
+      "title": "Static Semantics: PrivateBoundIdentifiers",
+      "level": 2,
+      "number": "2.10"
+    },
+    {
+      "id": "sec-static-semantics-contains-arguments",
+      "title": "Static Semantics: ContainsArguments",
+      "level": 2,
+      "number": "2.11"
+    },
+    {
+      "id": "class-definitions",
+      "title": "Class Definitions",
+      "level": 2,
+      "number": "2.12"
+    },
+    {
+      "id": "static-semantics-is-static",
+      "title": "Static Semantics: IsStatic",
+      "level": 3,
+      "number": "2.12.1"
+    },
+    {
+      "id": "runtime-semantics-class-definition-evaluation",
+      "title": "Runtime Semantics: ClassDefinitionEvaluation",
+      "level": 3,
+      "number": "2.12.2"
+    },
+    {
+      "id": "[[construct]]",
+      "title": "[[Construct]] ( argumentsList, newTarget)",
+      "level": 2,
+      "number": "2.13"
+    },
+    {
+      "id": "the-super-keyword",
+      "title": "The super Keyword",
+      "level": 2,
+      "number": "2.14"
+    },
+    {
+      "id": "sec-super-keyword-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 3,
+      "number": "2.14.1"
+    },
+    {
+      "id": "sec-delete-operator",
+      "title": "The delete Operator",
+      "level": 2,
+      "number": "2.15"
+    },
+    {
+      "id": "sec-delete-operator-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 3,
+      "number": "2.15.1"
+    },
+    {
+      "id": "sec-createdynamicfunction",
+      "title": "Runtime Semantics: CreateDynamicFunction( constructor, newTarget, kind, args )",
+      "level": 2,
+      "number": "2.16"
+    },
+    {
+      "id": "sec-eval-x",
+      "title": "eval ( x )",
+      "level": 2,
+      "number": "2.17"
+    },
+    {
+      "id": "sec-performeval",
+      "title": "Runtime Semantics: PerformEval ( x, evalRealm, strictCaller, direct )",
+      "level": 3,
+      "number": "2.17.1"
+    },
+    {
+      "id": "sec-performeval-rules-in-initializer",
+      "title": "Additional Early Error Rules for Eval Inside Initializer",
+      "level": 3,
+      "number": "2.17.2"
+    },
+    {
+      "id": "sec-evaldeclarationinstantiation",
+      "title": "Runtime Semantics: EvalDeclarationInstantiation( body, varEnv, lexEnv,  privateEnv, strict )",
+      "level": 3,
+      "number": "2.17.3"
+    },
+    {
+      "id": "sec-moduledeclarationenvironmentsetup",
+      "title": "ModuleDeclarationEnvironmentSetup( module )",
+      "level": 2,
+      "number": "2.18"
+    },
+    {
+      "id": "sec-functiondeclarationinstantiation",
+      "title": "FunctionDeclarationInstantiation ( func, argumentsList )",
+      "level": 2,
+      "number": "2.19"
+    },
+    {
+      "id": "sec-blockdeclarationinstantiation",
+      "title": "Runtime Semantics: BlockDeclarationInstantiation( code, env )",
+      "level": 2,
+      "number": "2.20"
+    },
+    {
+      "id": "sec-arrow-function-definitions-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 2,
+      "number": "2.21"
+    },
+    {
+      "id": "sec-runtime-semantics-definemethod",
+      "title": "Runtime Semantics: DefineMethod",
+      "level": 2,
+      "number": "2.22"
+    },
+    {
+      "id": "sec-method-definitions-runtime-semantics-propertydefinitionevaluation",
+      "title": "Runtime Semantics: PropertyDefinitionEvaluation",
+      "level": 2,
+      "number": "2.23"
+    },
+    {
+      "id": "sec-private-names",
+      "title": "Private Names and references",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-notational-conventions",
+      "title": "Notational Conventions",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-newprivatename",
+      "title": "NewPrivateName ( description )",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-privatefieldfind",
+      "title": "PrivateFieldFind (P, O)",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "sec-privatefieldadd",
+      "title": "PrivateFieldAdd (P, O, value)",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "sec-privatefieldget",
+      "title": "PrivateFieldGet (P, O )",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "sec-privatefieldset",
+      "title": "PrivateFieldSet (P, O, value )",
+      "level": 2,
+      "number": "3.6"
+    },
+    {
+      "id": "sec-private-references-runtime-semantics-evaluation",
+      "title": "Runtime Semantics: Evaluation",
+      "level": 2,
+      "number": "3.7"
+    },
+    {
+      "id": "sec-private-references-runtime-semantics-chainevaluation",
+      "title": "Runtime Semantics: ChainEvaluation",
+      "level": 2,
+      "number": "3.8"
+    },
+    {
+      "id": "sec-reference-specification-type",
+      "title": "The Reference Specification Type",
+      "level": 2,
+      "number": "3.9"
+    },
+    {
+      "id": "sec-getvalue",
+      "title": "GetValue ( V )",
+      "level": 3,
+      "number": "3.9.1"
+    },
+    {
+      "id": "sec-putvalue",
+      "title": "PutValue ( V, W )",
+      "level": 3,
+      "number": "3.9.2"
+    },
+    {
+      "id": "sec-makeprivatereference",
+      "title": "MakePrivateReference ( baseValue, privateIdentifier )",
+      "level": 3,
+      "number": "3.9.3"
+    },
+    {
+      "id": "sec-lexically-scoped-private-identifiers",
+      "title": "Lexically Scoped Private Identifiers",
+      "level": 2,
+      "number": "3.10"
+    },
+    {
+      "id": "sec-execution-contexts",
+      "title": "Execution Contexts",
+      "level": 3,
+      "number": "3.10.1"
+    },
+    {
+      "id": "sec-ecmascript-function-objects",
+      "title": "ECMAScript Function Objects",
+      "level": 3,
+      "number": "3.10.2"
+    },
+    {
+      "id": "sec-functioninitialize",
+      "title": "FunctionInitialize ( F, kind, ParameterList, Body, Scope, PrivateScope )",
+      "level": 3,
+      "number": "3.10.3"
+    },
+    {
+      "id": "sec-functioncreate",
+      "title": "FunctionCreate ( kind, ParameterList, Body, Scope,  PrivateScope, Strict [ , prototype ] )",
+      "level": 3,
+      "number": "3.10.4"
+    },
+    {
+      "id": "sec-generatorfunctioncreate",
+      "title": "GeneratorFunctionCreate ( kind, ParameterList, Body, Scope,  PrivateScope, Strict )",
+      "level": 3,
+      "number": "3.10.5"
+    },
+    {
+      "id": "sec-asyncgeneratorfunctioncreate",
+      "title": "AsyncGeneratorFunctionCreate (kind, ParameterList, Body, Scope,  PrivateScope, Strict)",
+      "level": 3,
+      "number": "3.10.6"
+    },
+    {
+      "id": "sec-async-functions-abstract-operations-async-function-create",
+      "title": "AsyncFunctionCreate ( kind, parameters, body, Scope,  PrivateScope, Strict )",
+      "level": 3,
+      "number": "3.10.7"
+    },
+    {
+      "id": "sec-runtime-semantics-scriptevaluation",
+      "title": "ScriptEvaluation ( scriptRecord )",
+      "level": 3,
+      "number": "3.10.8"
+    },
+    {
+      "id": "sec-prepareforordinarycall",
+      "title": "PrepareForOrdinaryCall ( F, newTarget )",
+      "level": 3,
+      "number": "3.10.9"
+    },
+    {
+      "id": "sec-function-definitions-runtime-semantics-instantiatefunctionobject",
+      "title": "Runtime Semantics: InstantiateFunctionObject",
+      "level": 3,
+      "number": "3.10.10"
+    },
+    {
+      "id": "sec-generator-function-definitions-runtime-semantics-instantiatefunctionobject",
+      "title": "Runtime Semantics: InstantiateFunctionObject",
+      "level": 3,
+      "number": "3.10.11"
+    },
+    {
+      "id": "sec-asyncgenerator-definitions-instantiatefunctionobject",
+      "title": "Runtime Semantics: InstantiateFunctionObject",
+      "level": 3,
+      "number": "3.10.12"
+    },
+    {
+      "id": "sec-async-function-definitions-InstantiateFunctionObject",
+      "title": "Runtime Semantics: InstantiateFunctionObject",
+      "level": 3,
+      "number": "3.10.13"
+    },
+    {
+      "id": "sec-automatic-semicolon-insertion",
+      "title": "Automatic Semicolon Insertion",
+      "level": 1,
+      "number": "4"
+    },
+    {
+      "id": "sec-rules-of-automatic-semicolon-insertion",
+      "title": "Rules of Automatic Semicolon Insertion",
+      "level": 2,
+      "number": "4.1"
+    },
+    {
+      "id": "sec-examples-of-automatic-semicolon-insertion",
+      "title": "Examples of Automatic Semicolon Insertion",
+      "level": 2,
+      "number": "4.2"
+    },
+    {
+      "id": "sec-hazards-of-automatic-semicolon-insertion",
+      "title": "Hazards of Automatic Semicolon Insertion",
+      "level": 2,
+      "number": "4.3"
+    },
+    {
+      "id": "sec-asi-hazards-in-statement-lists",
+      "title": "Automatic Semicolon Insertion Hazards in Statement Lists",
+      "level": 3,
+      "number": "4.3.1"
+    },
+    {
+      "id": "sec-asi-hazards-in-class-bodies",
+      "title": "Automatic Semicolon Insertion Hazards in the Top Level of Class Bodies",
+      "level": 3,
+      "number": "4.3.2"
+    }
+  ]
+}

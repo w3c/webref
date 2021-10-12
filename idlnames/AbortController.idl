@@ -1,0 +1,9 @@
+// Source: DOM Standard (https://dom.spec.whatwg.org/)
+[Exposed=(Window,Worker)]
+interface AbortController {
+  constructor();
+
+  [SameObject] readonly attribute AbortSignal signal;
+
+  undefined abort();
+};

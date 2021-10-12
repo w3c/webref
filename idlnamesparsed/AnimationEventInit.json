@@ -1,0 +1,29 @@
+{
+  "name": "AnimationEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "CSS Animations Level 1",
+      "url": "https://www.w3.org/TR/css-animations-1/"
+    },
+    "fragment": "dictionary AnimationEventInit : EventInit {\n  CSSOMString animationName = \"\";\n  double elapsedTime = 0.0;\n  CSSOMString pseudoElement = \"\";\n};",
+    "href": "https://drafts.csswg.org/css-animations/#dictdef-animationeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

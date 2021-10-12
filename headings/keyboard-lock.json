@@ -1,0 +1,232 @@
+{
+  "spec": {
+    "title": "Keyboard Lock",
+    "url": "https://wicg.github.io/keyboard-lock/"
+  },
+  "headings": [
+    {
+      "id": "profile-and-date",
+      "href": "https://wicg.github.io/keyboard-lock/#profile-and-date",
+      "level": 2,
+      "title": "Draft Community Group Report, 6 October 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/keyboard-lock/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/keyboard-lock/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/keyboard-lock/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/keyboard-lock/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "API",
+      "href": "https://wicg.github.io/keyboard-lock/#API",
+      "level": 2,
+      "title": "Keyboard Lock API",
+      "number": "2"
+    },
+    {
+      "id": "navigator-interface",
+      "href": "https://wicg.github.io/keyboard-lock/#navigator-interface",
+      "level": 3,
+      "title": "Navigator Interface",
+      "number": "2.1"
+    },
+    {
+      "id": "h-navigator-keyboard",
+      "href": "https://wicg.github.io/keyboard-lock/#h-navigator-keyboard",
+      "level": 4,
+      "title": "keyboard",
+      "number": "2.1.1"
+    },
+    {
+      "id": "keyboard-interface",
+      "href": "https://wicg.github.io/keyboard-lock/#keyboard-interface",
+      "level": 3,
+      "title": "Keyboard Interface",
+      "number": "2.2"
+    },
+    {
+      "id": "h-keyboard-lock",
+      "href": "https://wicg.github.io/keyboard-lock/#h-keyboard-lock",
+      "level": 4,
+      "title": "lock()",
+      "number": "2.2.1"
+    },
+    {
+      "id": "h-keyboard-unlock",
+      "href": "https://wicg.github.io/keyboard-lock/#h-keyboard-unlock",
+      "level": 4,
+      "title": "unlock()",
+      "number": "2.2.2"
+    },
+    {
+      "id": "handling-events",
+      "href": "https://wicg.github.io/keyboard-lock/#handling-events",
+      "level": 2,
+      "title": "Handling Keyboard Key Presses",
+      "number": "3"
+    },
+    {
+      "id": "key-press-handler",
+      "href": "https://wicg.github.io/keyboard-lock/#key-press-handler",
+      "level": 3,
+      "title": "System Key Press Handler",
+      "number": "3.1"
+    },
+    {
+      "id": "registering",
+      "href": "https://wicg.github.io/keyboard-lock/#registering",
+      "level": 4,
+      "title": "Registering",
+      "number": "3.1.1"
+    },
+    {
+      "id": "unregistering",
+      "href": "https://wicg.github.io/keyboard-lock/#unregistering",
+      "level": 4,
+      "title": "Unregistering",
+      "number": "3.1.2"
+    },
+    {
+      "id": "handling-keyboard-events",
+      "href": "https://wicg.github.io/keyboard-lock/#handling-keyboard-events",
+      "level": 3,
+      "title": "Handling Keyboard Events",
+      "number": "3.2"
+    },
+    {
+      "id": "interactions",
+      "href": "https://wicg.github.io/keyboard-lock/#interactions",
+      "level": 2,
+      "title": "Integration With Other Web Platform APIs",
+      "number": "4"
+    },
+    {
+      "id": "escape-key",
+      "href": "https://wicg.github.io/keyboard-lock/#escape-key",
+      "level": 3,
+      "title": "Special Considerations with the Escape Key",
+      "number": "4.1"
+    },
+    {
+      "id": "fullscreen-considerations",
+      "href": "https://wicg.github.io/keyboard-lock/#fullscreen-considerations",
+      "level": 3,
+      "title": "Fullscreen Considerations",
+      "number": "4.2"
+    },
+    {
+      "id": "pointerlock-considerations",
+      "href": "https://wicg.github.io/keyboard-lock/#pointerlock-considerations",
+      "level": 2,
+      "title": "Pointer Lock Considerations",
+      "number": "5"
+    },
+    {
+      "id": "mobile",
+      "href": "https://wicg.github.io/keyboard-lock/#mobile",
+      "level": 2,
+      "title": "Mobile Device Considerations",
+      "number": "6"
+    },
+    {
+      "id": "security",
+      "href": "https://wicg.github.io/keyboard-lock/#security",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "7"
+    },
+    {
+      "id": "privacy",
+      "href": "https://wicg.github.io/keyboard-lock/#privacy",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "8"
+    },
+    {
+      "id": "acknowledgements-contributors",
+      "href": "https://wicg.github.io/keyboard-lock/#acknowledgements-contributors",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "9"
+    },
+    {
+      "id": "conformance",
+      "href": "https://wicg.github.io/keyboard-lock/#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://wicg.github.io/keyboard-lock/#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://wicg.github.io/keyboard-lock/#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/keyboard-lock/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/keyboard-lock/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/keyboard-lock/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/keyboard-lock/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/keyboard-lock/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/keyboard-lock/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/keyboard-lock/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

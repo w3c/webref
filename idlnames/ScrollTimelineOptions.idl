@@ -1,0 +1,6 @@
+// Source: Scroll-linked Animations (https://drafts.csswg.org/scroll-animations-1/)
+dictionary ScrollTimelineOptions {
+  Element? source;
+  ScrollDirection orientation = "block";
+  sequence<ScrollTimelineOffset> scrollOffsets = [];
+};

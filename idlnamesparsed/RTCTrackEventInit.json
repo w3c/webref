@@ -1,0 +1,29 @@
+{
+  "name": "RTCTrackEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCTrackEventInit : EventInit {\n  required RTCRtpReceiver receiver;\n  required MediaStreamTrack track;\n  sequence<MediaStream> streams = [];\n  required RTCRtpTransceiver transceiver;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtctrackeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

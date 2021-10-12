@@ -1,0 +1,15 @@
+{
+  "name": "MutationObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface MutationObserver {\n  constructor(MutationCallback callback);\n\n  undefined observe(Node target, optional MutationObserverInit options = {});\n  undefined disconnect();\n  sequence<MutationRecord> takeRecords();\n};",
+    "href": "https://dom.spec.whatwg.org/#mutationobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

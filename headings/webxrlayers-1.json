@@ -1,0 +1,407 @@
+{
+  "spec": {
+    "title": "WebXR Layers API Level 1",
+    "url": "https://immersive-web.github.io/layers/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://immersive-web.github.io/layers/#title",
+      "level": 1,
+      "title": "WebXR Layers API Level 1"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://immersive-web.github.io/layers/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 1 October 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://immersive-web.github.io/layers/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://immersive-web.github.io/layers/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://immersive-web.github.io/layers/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://immersive-web.github.io/layers/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://immersive-web.github.io/layers/#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "applicationflow",
+      "href": "https://immersive-web.github.io/layers/#applicationflow",
+      "level": 3,
+      "title": "Application flow",
+      "number": "1.2"
+    },
+    {
+      "id": "initialization",
+      "href": "https://immersive-web.github.io/layers/#initialization",
+      "level": 2,
+      "title": "Initialization",
+      "number": "2"
+    },
+    {
+      "id": "xrlayertypes",
+      "href": "https://immersive-web.github.io/layers/#xrlayertypes",
+      "level": 2,
+      "title": "Layer types",
+      "number": "3"
+    },
+    {
+      "id": "monovsstereo",
+      "href": "https://immersive-web.github.io/layers/#monovsstereo",
+      "level": 3,
+      "title": "Mono and stereo layers",
+      "number": "3.1"
+    },
+    {
+      "id": "xrlayerlayouttype",
+      "href": "https://immersive-web.github.io/layers/#xrlayerlayouttype",
+      "level": 3,
+      "title": "XRLayerLayout",
+      "number": "3.2"
+    },
+    {
+      "id": "xrcompositionlayertype",
+      "href": "https://immersive-web.github.io/layers/#xrcompositionlayertype",
+      "level": 3,
+      "title": "XRCompositionLayer",
+      "number": "3.3"
+    },
+    {
+      "id": "xrprojectionlayertype",
+      "href": "https://immersive-web.github.io/layers/#xrprojectionlayertype",
+      "level": 3,
+      "title": "XRProjectionLayer",
+      "number": "3.4"
+    },
+    {
+      "id": "xrquadlayertype",
+      "href": "https://immersive-web.github.io/layers/#xrquadlayertype",
+      "level": 3,
+      "title": "XRQuadLayer",
+      "number": "3.5"
+    },
+    {
+      "id": "xrcylinderayertype",
+      "href": "https://immersive-web.github.io/layers/#xrcylinderayertype",
+      "level": 3,
+      "title": "XRCylinderLayer",
+      "number": "3.6"
+    },
+    {
+      "id": "xrequirectlayertype",
+      "href": "https://immersive-web.github.io/layers/#xrequirectlayertype",
+      "level": 3,
+      "title": "XREquirectLayer",
+      "number": "3.7"
+    },
+    {
+      "id": "xcubelayertype",
+      "href": "https://immersive-web.github.io/layers/#xcubelayertype",
+      "level": 3,
+      "title": "XRCubeLayer",
+      "number": "3.8"
+    },
+    {
+      "id": "spaces",
+      "href": "https://immersive-web.github.io/layers/#spaces",
+      "level": 2,
+      "title": "Spaces",
+      "number": "4"
+    },
+    {
+      "id": "rendering",
+      "href": "https://immersive-web.github.io/layers/#rendering",
+      "level": 2,
+      "title": "Rendering",
+      "number": "5"
+    },
+    {
+      "id": "xrsubimagetype",
+      "href": "https://immersive-web.github.io/layers/#xrsubimagetype",
+      "level": 3,
+      "title": "XRSubImage",
+      "number": "5.1"
+    },
+    {
+      "id": "xrwebglsubimagetype",
+      "href": "https://immersive-web.github.io/layers/#xrwebglsubimagetype",
+      "level": 3,
+      "title": "XRWebGLSubImage",
+      "number": "5.2"
+    },
+    {
+      "id": "xrtexturetype",
+      "href": "https://immersive-web.github.io/layers/#xrtexturetype",
+      "level": 3,
+      "title": "XRTextureType",
+      "number": "5.3"
+    },
+    {
+      "id": "gpulayer",
+      "href": "https://immersive-web.github.io/layers/#gpulayer",
+      "level": 2,
+      "title": "GPU layer and view creation",
+      "number": "6"
+    },
+    {
+      "id": "xrgpulayeroverview",
+      "href": "https://immersive-web.github.io/layers/#xrgpulayeroverview",
+      "level": 3,
+      "title": "Overview",
+      "number": "6.1"
+    },
+    {
+      "id": "xropaquetextures",
+      "href": "https://immersive-web.github.io/layers/#xropaquetextures",
+      "level": 3,
+      "title": "Opaque textures",
+      "number": "6.2"
+    },
+    {
+      "id": "xrprojectionlayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrprojectionlayerinittype",
+      "level": 3,
+      "title": "XRProjectionLayerInit",
+      "number": "6.3"
+    },
+    {
+      "id": "xrlayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrlayerinittype",
+      "level": 3,
+      "title": "XRLayerInit",
+      "number": "6.4"
+    },
+    {
+      "id": "xrquadlayerinit",
+      "href": "https://immersive-web.github.io/layers/#xrquadlayerinit",
+      "level": 3,
+      "title": "XRQuadLayerInit",
+      "number": "6.5"
+    },
+    {
+      "id": "xrcylinderlayerinit",
+      "href": "https://immersive-web.github.io/layers/#xrcylinderlayerinit",
+      "level": 3,
+      "title": "XRCylinderLayerInit",
+      "number": "6.6"
+    },
+    {
+      "id": "xrequirectlayerinit",
+      "href": "https://immersive-web.github.io/layers/#xrequirectlayerinit",
+      "level": 3,
+      "title": "XREquirectLayerInit",
+      "number": "6.7"
+    },
+    {
+      "id": "xrcubelayerinit",
+      "href": "https://immersive-web.github.io/layers/#xrcubelayerinit",
+      "level": 3,
+      "title": "XRCubeLayerInit",
+      "number": "6.8"
+    },
+    {
+      "id": "XRWebGLBindingtype",
+      "href": "https://immersive-web.github.io/layers/#XRWebGLBindingtype",
+      "level": 3,
+      "title": "XRWebGLBinding",
+      "number": "6.9"
+    },
+    {
+      "id": "videolayer",
+      "href": "https://immersive-web.github.io/layers/#videolayer",
+      "level": 2,
+      "title": "Video layer creation",
+      "number": "7"
+    },
+    {
+      "id": "xrmedialayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrmedialayerinittype",
+      "level": 3,
+      "title": "XRMediaLayerInit",
+      "number": "7.1"
+    },
+    {
+      "id": "xrmediaquadlayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrmediaquadlayerinittype",
+      "level": 3,
+      "title": "XRMediaQuadLayerInit",
+      "number": "7.2"
+    },
+    {
+      "id": "xrmediacylinderlayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrmediacylinderlayerinittype",
+      "level": 3,
+      "title": "XRMediaCylinderLayerInit",
+      "number": "7.3"
+    },
+    {
+      "id": "xrmediaequirectlayerinittype",
+      "href": "https://immersive-web.github.io/layers/#xrmediaequirectlayerinittype",
+      "level": 3,
+      "title": "XRMediaEquirectLayerInit",
+      "number": "7.4"
+    },
+    {
+      "id": "xrmediabindingtype",
+      "href": "https://immersive-web.github.io/layers/#xrmediabindingtype",
+      "level": 3,
+      "title": "XRMediaBinding",
+      "number": "7.5"
+    },
+    {
+      "id": "events",
+      "href": "https://immersive-web.github.io/layers/#events",
+      "level": 2,
+      "title": "Events",
+      "number": "8"
+    },
+    {
+      "id": "xrlayerevent-interface",
+      "href": "https://immersive-web.github.io/layers/#xrlayerevent-interface",
+      "level": 3,
+      "title": "XRLayerEvent",
+      "number": "8.1"
+    },
+    {
+      "id": "event-types",
+      "href": "https://immersive-web.github.io/layers/#event-types",
+      "level": 3,
+      "title": "Event Types",
+      "number": "8.2"
+    },
+    {
+      "id": "webxrintegration",
+      "href": "https://immersive-web.github.io/layers/#webxrintegration",
+      "level": 2,
+      "title": "WebXR Device API Integration",
+      "number": "9"
+    },
+    {
+      "id": "xrrenderstatechanges",
+      "href": "https://immersive-web.github.io/layers/#xrrenderstatechanges",
+      "level": 3,
+      "title": "XRRenderState changes",
+      "number": "9.1"
+    },
+    {
+      "id": "updaterenderstatechanges",
+      "href": "https://immersive-web.github.io/layers/#updaterenderstatechanges",
+      "level": 3,
+      "title": "updateRenderState changes",
+      "number": "9.2"
+    },
+    {
+      "id": "xrcompositorchanges",
+      "href": "https://immersive-web.github.io/layers/#xrcompositorchanges",
+      "level": 3,
+      "title": "XRCompositor changes",
+      "number": "9.3"
+    },
+    {
+      "id": "xrviewchanges",
+      "href": "https://immersive-web.github.io/layers/#xrviewchanges",
+      "level": 3,
+      "title": "XRView changes",
+      "number": "9.4"
+    },
+    {
+      "id": "animationframeschanges",
+      "href": "https://immersive-web.github.io/layers/#animationframeschanges",
+      "level": 3,
+      "title": "Animation frames changes",
+      "number": "9.5"
+    },
+    {
+      "id": "security",
+      "href": "https://immersive-web.github.io/layers/#security",
+      "level": 2,
+      "title": "10. Security and Privacy Considerations"
+    },
+    {
+      "id": "xrcompositiontiming",
+      "href": "https://immersive-web.github.io/layers/#xrcompositiontiming",
+      "level": 3,
+      "title": "Timing of the composition",
+      "number": "10.1"
+    },
+    {
+      "id": "xrlayerallocation",
+      "href": "https://immersive-web.github.io/layers/#xrlayerallocation",
+      "level": 3,
+      "title": "Allocation of layers",
+      "number": "10.2"
+    },
+    {
+      "id": "index",
+      "href": "https://immersive-web.github.io/layers/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://immersive-web.github.io/layers/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://immersive-web.github.io/layers/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://immersive-web.github.io/layers/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://immersive-web.github.io/layers/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://immersive-web.github.io/layers/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://immersive-web.github.io/layers/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://immersive-web.github.io/layers/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

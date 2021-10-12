@@ -1,0 +1,161 @@
+{
+  "spec": {
+    "title": "Media Capture Depth Stream Extensions",
+    "url": "https://w3c.github.io/mediacapture-depth/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "VideoKindEnum": {
+        "fragment": "enum VideoKindEnum {\n    \"color\",\n    \"depth\"\n};",
+        "type": "enum",
+        "name": "VideoKindEnum",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "color"
+          },
+          {
+            "type": "enum-value",
+            "value": "depth"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "MediaTrackSupportedConstraints": [
+        {
+          "fragment": "partial dictionary MediaTrackSupportedConstraints {\n    // Applies to both depth stream track and color stream track:\n    boolean videoKind = true;\n};",
+          "type": "dictionary",
+          "name": "MediaTrackSupportedConstraints",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "boolean"
+              },
+              "default": {
+                "type": "boolean",
+                "value": true
+              },
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackCapabilities": [
+        {
+          "fragment": "partial dictionary MediaTrackCapabilities {\n    // Applies to both depth stream track and color stream track:\n    DOMString videoKind;\n};",
+          "type": "dictionary",
+          "name": "MediaTrackCapabilities",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackConstraintSet": [
+        {
+          "fragment": "partial dictionary MediaTrackConstraintSet {\n    // Applies to both depth stream track and color stream track:\n    ConstrainDOMString videoKind;\n};",
+          "type": "dictionary",
+          "name": "MediaTrackConstraintSet",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "ConstrainDOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "MediaTrackSettings": [
+        {
+          "fragment": "partial dictionary MediaTrackSettings {\n    // Applies to both depth stream track and color stream track:\n    DOMString           videoKind;\n};",
+          "type": "dictionary",
+          "name": "MediaTrackSettings",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "videoKind",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "MediaTrackSupportedConstraints": [],
+      "MediaTrackCapabilities": [],
+      "MediaTrackConstraintSet": [
+        "ConstrainDOMString"
+      ],
+      "MediaTrackSettings": []
+    },
+    "externalDependencies": [
+      "MediaTrackSupportedConstraints",
+      "MediaTrackCapabilities",
+      "MediaTrackConstraintSet",
+      "ConstrainDOMString",
+      "MediaTrackSettings"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

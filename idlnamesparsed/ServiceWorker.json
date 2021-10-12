@@ -1,0 +1,53 @@
+{
+  "name": "ServiceWorker",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Service Workers Nightly",
+      "url": "https://www.w3.org/TR/service-workers-1/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window,Worker)]\ninterface ServiceWorker : EventTarget {\n  readonly attribute USVString scriptURL;\n  readonly attribute ServiceWorkerState state;\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  // event\n  attribute EventHandler onstatechange;\n};",
+    "href": "https://w3c.github.io/ServiceWorker/#serviceworker"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "ServiceWorker includes AbstractWorker;"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": [
+    {
+      "name": "AbstractWorker",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin AbstractWorker {\n  attribute EventHandler onerror;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#abstractworker"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

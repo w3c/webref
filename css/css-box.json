@@ -1,0 +1,186 @@
+{
+  "spec": {
+    "title": "CSS Box Model Module Level 4",
+    "url": "https://drafts.csswg.org/css-box-4/"
+  },
+  "properties": {
+    "margin-top": {
+      "name": "margin-top",
+      "value": "<length-percentage> | auto",
+      "initial": "0",
+      "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "margin-top",
+        "marginTop"
+      ]
+    },
+    "margin-right": {
+      "name": "margin-right",
+      "value": "<length-percentage> | auto",
+      "initial": "0",
+      "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "margin-right",
+        "marginRight"
+      ]
+    },
+    "margin-bottom": {
+      "name": "margin-bottom",
+      "value": "<length-percentage> | auto",
+      "initial": "0",
+      "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "margin-bottom",
+        "marginBottom"
+      ]
+    },
+    "margin-left": {
+      "name": "margin-left",
+      "value": "<length-percentage> | auto",
+      "initial": "0",
+      "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "the keyword auto or a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "margin-left",
+        "marginLeft"
+      ]
+    },
+    "margin": {
+      "name": "margin",
+      "value": "<'margin-top'>{1,4}",
+      "initial": "0",
+      "appliesTo": "all elements except internal table elements, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "margin"
+      ]
+    },
+    "margin-trim": {
+      "name": "margin-trim",
+      "value": "none | in-flow | all",
+      "initial": "none",
+      "appliesTo": "block containers, multi-column containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "keyword as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "margin-trim",
+        "marginTrim"
+      ]
+    },
+    "padding-top": {
+      "name": "padding-top",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "padding-top",
+        "paddingTop"
+      ]
+    },
+    "padding-right": {
+      "name": "padding-right",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "padding-right",
+        "paddingRight"
+      ]
+    },
+    "padding-bottom": {
+      "name": "padding-bottom",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "padding-bottom",
+        "paddingBottom"
+      ]
+    },
+    "padding-left": {
+      "name": "padding-left",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "a computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "padding-left",
+        "paddingLeft"
+      ]
+    },
+    "padding": {
+      "name": "padding",
+      "value": "<'padding-top'>{1,4}",
+      "initial": "0",
+      "appliesTo": "all elements except: internal table elements other than table cells, ruby base containers, and ruby annotation containers",
+      "inherited": "no",
+      "percentages": "refer to logical width of containing block",
+      "computedValue": "see individual properties",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "padding"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<visual-box>": {
+      "value": "content-box | padding-box | border-box"
+    },
+    "<layout-box>": {
+      "value": "content-box | padding-box | border-box | margin-box"
+    },
+    "<paint-box>": {
+      "value": "content-box | padding-box | border-box | fill-box | stroke-box"
+    },
+    "<coord-box>": {
+      "value": "content-box | padding-box | border-box | fill-box | stroke-box | view-box"
+    }
+  }
+}

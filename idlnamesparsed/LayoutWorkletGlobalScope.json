@@ -1,0 +1,29 @@
+{
+  "name": "LayoutWorkletGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Global=(Worklet,LayoutWorklet),Exposed=LayoutWorklet]\ninterface LayoutWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerLayout(DOMString name, VoidFunction layoutCtor);\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutworkletglobalscope"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "WorkletGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worklet, SecureContext]\ninterface WorkletGlobalScope {};",
+      "href": "https://html.spec.whatwg.org/multipage/worklets.html#workletglobalscope"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

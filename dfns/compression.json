@@ -1,0 +1,313 @@
+{
+  "spec": {
+    "title": "Compression Streams",
+    "url": "https://wicg.github.io/compression/"
+  },
+  "dfns": [
+    {
+      "id": "compression-context",
+      "href": "https://wicg.github.io/compression/#compression-context",
+      "linkingText": [
+        "compression context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terminology",
+        "href": "https://wicg.github.io/compression/#terminology",
+        "title": "Terminology",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compressionstream",
+      "href": "https://wicg.github.io/compression/#compressionstream",
+      "linkingText": [
+        "CompressionStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-compressionstream-compressionstream-format-format",
+      "href": "https://wicg.github.io/compression/#dom-compressionstream-compressionstream-format-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CompressionStream/CompressionStream(format)",
+        "CompressionStream/constructor(format)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "compressionstream-format",
+      "href": "https://wicg.github.io/compression/#compressionstream-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CompressionStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compressionstream-context",
+      "href": "https://wicg.github.io/compression/#compressionstream-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CompressionStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-compressionstream-compressionstream",
+      "href": "https://wicg.github.io/compression/#dom-compressionstream-compressionstream",
+      "linkingText": [
+        "CompressionStream(format)",
+        "constructor(format)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CompressionStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compress-and-enqueue-a-chunk",
+      "href": "https://wicg.github.io/compression/#compress-and-enqueue-a-chunk",
+      "linkingText": [
+        "compress and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compress-flush-and-enqueue",
+      "href": "https://wicg.github.io/compression/#compress-flush-and-enqueue",
+      "linkingText": [
+        "compress flush and enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compression-stream",
+        "href": "https://wicg.github.io/compression/#compression-stream",
+        "title": "Interface CompressionStream",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decompressionstream",
+      "href": "https://wicg.github.io/compression/#decompressionstream",
+      "linkingText": [
+        "DecompressionStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-decompressionstream-decompressionstream-format-format",
+      "href": "https://wicg.github.io/compression/#dom-decompressionstream-decompressionstream-format-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "DecompressionStream/DecompressionStream(format)",
+        "DecompressionStream/constructor(format)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "decompressionstream-format",
+      "href": "https://wicg.github.io/compression/#decompressionstream-format",
+      "linkingText": [
+        "format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DecompressionStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decompressionstream-context",
+      "href": "https://wicg.github.io/compression/#decompressionstream-context",
+      "linkingText": [
+        "context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DecompressionStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-decompressionstream-decompressionstream",
+      "href": "https://wicg.github.io/compression/#dom-decompressionstream-decompressionstream",
+      "linkingText": [
+        "DecompressionStream(format)",
+        "constructor(format)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "DecompressionStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decompress-and-enqueue-a-chunk",
+      "href": "https://wicg.github.io/compression/#decompress-and-enqueue-a-chunk",
+      "linkingText": [
+        "decompress and enqueue a chunk"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "decompress-flush-and-enqueue",
+      "href": "https://wicg.github.io/compression/#decompress-flush-and-enqueue",
+      "linkingText": [
+        "decompress flush and enqueue"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "decompression-stream",
+        "href": "https://wicg.github.io/compression/#decompression-stream",
+        "title": "Interface DecompressionStream",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

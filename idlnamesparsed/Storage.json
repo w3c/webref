@@ -1,0 +1,15 @@
+{
+  "name": "Storage",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Storage {\n  readonly attribute unsigned long length;\n  DOMString? key(unsigned long index);\n  getter DOMString? getItem(DOMString key);\n  setter undefined setItem(DOMString key, DOMString value);\n  deleter undefined removeItem(DOMString key);\n  undefined clear();\n};",
+    "href": "https://html.spec.whatwg.org/multipage/webstorage.html#storage-2"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

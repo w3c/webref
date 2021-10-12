@@ -1,0 +1,15 @@
+{
+  "name": "SyncManager",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Background Synchronization",
+      "url": "https://wicg.github.io/background-sync/spec/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface SyncManager {\n  Promise<undefined> register(DOMString tag);\n  Promise<sequence<DOMString>> getTags();\n};",
+    "href": "https://wicg.github.io/background-sync/spec/#syncmanager"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

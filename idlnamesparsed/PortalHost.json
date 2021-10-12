@@ -1,0 +1,29 @@
+{
+  "name": "PortalHost",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Portals",
+      "url": "https://wicg.github.io/portals/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PortalHost : EventTarget {\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
+    "href": "https://wicg.github.io/portals/#portalhost"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

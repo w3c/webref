@@ -1,0 +1,29 @@
+{
+  "name": "ClipboardPermissionDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Clipboard API and events",
+      "url": "https://www.w3.org/TR/clipboard-apis/"
+    },
+    "fragment": "dictionary ClipboardPermissionDescriptor : PermissionDescriptor {\n  boolean allowWithoutGesture = false;\n};",
+    "href": "https://w3c.github.io/clipboard-apis/#dictdef-clipboardpermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

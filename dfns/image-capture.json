@@ -1,0 +1,2688 @@
+{
+  "spec": {
+    "title": "MediaStream Image Capture",
+    "url": "https://w3c.github.io/mediacapture-image/"
+  },
+  "dfns": [
+    {
+      "id": "imagecapture",
+      "href": "https://w3c.github.io/mediacapture-image/#imagecapture",
+      "linkingText": [
+        "ImageCapture"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecaptureapi",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecaptureapi",
+        "title": "Image Capture API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagecapture-imagecapture-videotrack-videotrack",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-imagecapture-videotrack-videotrack",
+      "linkingText": [
+        "videoTrack"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageCapture/ImageCapture(videoTrack)",
+        "ImageCapture/constructor(videoTrack)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecaptureapi",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecaptureapi",
+        "title": "Image Capture API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagecapture-takephoto-photosettings-photosettings",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-takephoto-photosettings-photosettings",
+      "linkingText": [
+        "photoSettings"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "ImageCapture/takePhoto(photoSettings)",
+        "ImageCapture/takePhoto()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecaptureapi",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecaptureapi",
+        "title": "Image Capture API",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-imagecapture-track",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-track",
+      "linkingText": [
+        "track"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-attributes",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-attributes",
+        "title": "Attributes",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagecapture-imagecapture",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-imagecapture",
+      "linkingText": [
+        "ImageCapture(videoTrack)",
+        "constructor(videoTrack)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-methods",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+        "title": "Methods",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagecapture-takephoto",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-takephoto",
+      "linkingText": [
+        "takePhoto(photoSettings)",
+        "takePhoto()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-methods",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+        "title": "Methods",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagecapture-getphotocapabilities",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotocapabilities",
+      "linkingText": [
+        "getPhotoCapabilities()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-methods",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+        "title": "Methods",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagecapture-getphotosettings",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-getphotosettings",
+      "linkingText": [
+        "getPhotoSettings()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-methods",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+        "title": "Methods",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-imagecapture-grabframe",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-imagecapture-grabframe",
+      "linkingText": [
+        "grabFrame()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "ImageCapture"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "imagecapture-methods",
+        "href": "https://w3c.github.io/mediacapture-image/#imagecapture-methods",
+        "title": "Methods",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-photocapabilities",
+      "href": "https://w3c.github.io/mediacapture-image/#dictdef-photocapabilities",
+      "linkingText": [
+        "PhotoCapabilities"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photocapabilities-section",
+        "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-section",
+        "title": "PhotoCapabilities",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-photocapabilities-redeyereduction",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-redeyereduction",
+      "linkingText": [
+        "redEyeReduction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photocapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-members",
+        "title": "Members",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photocapabilities-imageheight",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-imageheight",
+      "linkingText": [
+        "imageHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photocapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-members",
+        "title": "Members",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photocapabilities-imagewidth",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-imagewidth",
+      "linkingText": [
+        "imageWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photocapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-members",
+        "title": "Members",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photocapabilities-filllightmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photocapabilities-filllightmode",
+      "linkingText": [
+        "fillLightMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photocapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photocapabilities-members",
+        "title": "Members",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-photosettings",
+      "href": "https://w3c.github.io/mediacapture-image/#dictdef-photosettings",
+      "linkingText": [
+        "PhotoSettings"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photosettings-section",
+        "href": "https://w3c.github.io/mediacapture-image/#photosettings-section",
+        "title": "PhotoSettings",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-photosettings-redeyereduction",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-redeyereduction",
+      "linkingText": [
+        "redEyeReduction"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photosettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photosettings-members",
+        "title": "Members",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photosettings-imageheight",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-imageheight",
+      "linkingText": [
+        "imageHeight"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photosettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photosettings-members",
+        "title": "Members",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photosettings-imagewidth",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-imagewidth",
+      "linkingText": [
+        "imageWidth"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photosettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photosettings-members",
+        "title": "Members",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-photosettings-filllightmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-photosettings-filllightmode",
+      "linkingText": [
+        "fillLightMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PhotoSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "photosettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#photosettings-members",
+        "title": "Members",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-mediasettingsrange",
+      "href": "https://w3c.github.io/mediacapture-image/#dictdef-mediasettingsrange",
+      "linkingText": [
+        "MediaSettingsRange"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediasettingsrange-section",
+        "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-section",
+        "title": "MediaSettingsRange",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-mediasettingsrange-max",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-max",
+      "linkingText": [
+        "max"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSettingsRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediasettingsrange-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-members",
+        "title": "Members",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediasettingsrange-min",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-min",
+      "linkingText": [
+        "min"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSettingsRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediasettingsrange-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-members",
+        "title": "Members",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediasettingsrange-step",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediasettingsrange-step",
+      "linkingText": [
+        "step"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaSettingsRange"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediasettingsrange-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediasettingsrange-members",
+        "title": "Members",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-redeyereduction",
+      "href": "https://w3c.github.io/mediacapture-image/#enumdef-redeyereduction",
+      "linkingText": [
+        "RedEyeReduction"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "redeyereduction-section",
+        "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-section",
+        "title": "RedEyeReduction",
+        "number": "7"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-redeyereduction-never",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-never",
+      "linkingText": [
+        "\"never\"",
+        "never"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RedEyeReduction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "redeyereduction-values",
+        "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-values",
+        "title": "Values",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-redeyereduction-always",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-always",
+      "linkingText": [
+        "\"always\"",
+        "always"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RedEyeReduction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "redeyereduction-values",
+        "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-values",
+        "title": "Values",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-redeyereduction-controllable",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-redeyereduction-controllable",
+      "linkingText": [
+        "\"controllable\"",
+        "controllable"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "RedEyeReduction"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "redeyereduction-values",
+        "href": "https://w3c.github.io/mediacapture-image/#redeyereduction-values",
+        "title": "Values",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "enumdef-filllightmode",
+      "href": "https://w3c.github.io/mediacapture-image/#enumdef-filllightmode",
+      "linkingText": [
+        "FillLightMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "filllightmode-section",
+        "href": "https://w3c.github.io/mediacapture-image/#filllightmode-section",
+        "title": "FillLightMode",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-filllightmode-auto",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-auto",
+      "linkingText": [
+        "\"auto\"",
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillLightMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "filllightmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#filllightmode-values",
+        "title": "Values",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-filllightmode-off",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-off",
+      "linkingText": [
+        "\"off\"",
+        "off"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillLightMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "filllightmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#filllightmode-values",
+        "title": "Values",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-filllightmode-flash",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-filllightmode-flash",
+      "linkingText": [
+        "\"flash\"",
+        "flash"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "FillLightMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "filllightmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#filllightmode-values",
+        "title": "Values",
+        "number": "8.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-whitebalancemode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-whitebalancemode",
+      "linkingText": [
+        "whiteBalanceMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-colortemperature",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-colortemperature",
+      "linkingText": [
+        "colorTemperature"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-exposuremode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposuremode",
+      "linkingText": [
+        "exposureMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-exposurecompensation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposurecompensation",
+      "linkingText": [
+        "exposureCompensation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-exposuretime",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-iso",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-iso",
+      "linkingText": [
+        "iso"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-focusmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-focusmode",
+      "linkingText": [
+        "focusMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-pointsofinterest",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-pointsofinterest",
+      "linkingText": [
+        "pointsOfInterest"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-brightness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-brightness",
+      "linkingText": [
+        "brightness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-contrast",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-pan",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-saturation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-sharpness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-sharpness",
+      "linkingText": [
+        "sharpness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-focusdistance",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-focusdistance",
+      "linkingText": [
+        "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-tilt",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-tilt",
+      "linkingText": [
+        "tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-zoom",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksupportedconstraints-torch",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksupportedconstraints-torch",
+      "linkingText": [
+        "torch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSupportedConstraints"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksupportedconstraints-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksupportedconstraints-members",
+        "title": "Members",
+        "number": "9.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-whitebalancemode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-whitebalancemode",
+      "linkingText": [
+        "whiteBalanceMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-colortemperature",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-colortemperature",
+      "linkingText": [
+        "colorTemperature"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-exposuremode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposuremode",
+      "linkingText": [
+        "exposureMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-exposurecompensation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposurecompensation",
+      "linkingText": [
+        "exposureCompensation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-exposuretime",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-iso",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-iso",
+      "linkingText": [
+        "iso"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-focusmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-focusmode",
+      "linkingText": [
+        "focusMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-brightness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-brightness",
+      "linkingText": [
+        "brightness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-contrast",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-pan",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-saturation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-sharpness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-sharpness",
+      "linkingText": [
+        "sharpness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-focusdistance",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-focusdistance",
+      "linkingText": [
+        "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-tilt",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-tilt",
+      "linkingText": [
+        "tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-zoom",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackcapabilities-torch",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackcapabilities-torch",
+      "linkingText": [
+        "torch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackCapabilities"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackcapabilities-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackcapabilities-members",
+        "title": "Members",
+        "number": "9.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-whitebalancemode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-whitebalancemode",
+      "linkingText": [
+        "whiteBalanceMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-exposuremode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuremode",
+      "linkingText": [
+        "exposureMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-focusmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusmode",
+      "linkingText": [
+        "focusMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-colortemperature",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-colortemperature",
+      "linkingText": [
+        "colorTemperature"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-exposurecompensation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposurecompensation",
+      "linkingText": [
+        "exposureCompensation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-exposuretime",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-iso",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-iso",
+      "linkingText": [
+        "iso"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-pointsofinterest",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pointsofinterest",
+      "linkingText": [
+        "pointsOfInterest"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-brightness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-brightness",
+      "linkingText": [
+        "brightness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-contrast",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-pan",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-saturation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-sharpness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-sharpness",
+      "linkingText": [
+        "sharpness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-focusdistance",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-focusdistance",
+      "linkingText": [
+        "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-tilt",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-tilt",
+      "linkingText": [
+        "tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-zoom",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatrackconstraintset-torch",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatrackconstraintset-torch",
+      "linkingText": [
+        "torch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackConstraintSet"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatrackconstraintset-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatrackconstraintset-members",
+        "title": "Members",
+        "number": "9.3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-whitebalancemode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-whitebalancemode",
+      "linkingText": [
+        "whiteBalanceMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-exposuremode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposuremode",
+      "linkingText": [
+        "exposureMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-colortemperature",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-colortemperature",
+      "linkingText": [
+        "colorTemperature"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-exposurecompensation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposurecompensation",
+      "linkingText": [
+        "exposureCompensation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-exposuretime",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-exposuretime",
+      "linkingText": [
+        "exposureTime"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-iso",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-iso",
+      "linkingText": [
+        "iso"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-focusmode",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-focusmode",
+      "linkingText": [
+        "focusMode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-pointsofinterest",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-pointsofinterest",
+      "linkingText": [
+        "pointsOfInterest"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-brightness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-brightness",
+      "linkingText": [
+        "brightness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-contrast",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-contrast",
+      "linkingText": [
+        "contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-pan",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-pan",
+      "linkingText": [
+        "pan"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-saturation",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-sharpness",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-sharpness",
+      "linkingText": [
+        "sharpness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-focusdistance",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-focusdistance",
+      "linkingText": [
+        "focusDistance"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-tilt",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-tilt",
+      "linkingText": [
+        "tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-zoom",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-zoom",
+      "linkingText": [
+        "zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-mediatracksettings-torch",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-mediatracksettings-torch",
+      "linkingText": [
+        "torch"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MediaTrackSettings"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediatracksettings-members",
+        "href": "https://w3c.github.io/mediacapture-image/#mediatracksettings-members",
+        "title": "Members",
+        "number": "9.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-constrainpoint2dparameters",
+      "href": "https://w3c.github.io/mediacapture-image/#dictdef-constrainpoint2dparameters",
+      "linkingText": [
+        "ConstrainPoint2DParameters"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additional-constrainable-props",
+        "href": "https://w3c.github.io/mediacapture-image/#additional-constrainable-props",
+        "title": "Additional Constrainable Properties",
+        "number": "9.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedefdef-constrainpoint2d",
+      "href": "https://w3c.github.io/mediacapture-image/#typedefdef-constrainpoint2d",
+      "linkingText": [
+        "ConstrainPoint2D"
+      ],
+      "localLinkingText": [],
+      "type": "typedef",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "additional-constrainable-props",
+        "href": "https://w3c.github.io/mediacapture-image/#additional-constrainable-props",
+        "title": "Additional Constrainable Properties",
+        "number": "9.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-constrainpoint2dparameters-exact",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-exact",
+      "linkingText": [
+        "exact"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ConstrainPoint2DParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constraintpoint2d-members",
+        "href": "https://w3c.github.io/mediacapture-image/#constraintpoint2d-members",
+        "title": "Members",
+        "number": "9.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-constrainpoint2dparameters-ideal",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-constrainpoint2dparameters-ideal",
+      "linkingText": [
+        "ideal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ConstrainPoint2DParameters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "constraintpoint2d-members",
+        "href": "https://w3c.github.io/mediacapture-image/#constraintpoint2d-members",
+        "title": "Members",
+        "number": "9.5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "white-balance-mode",
+      "href": "https://w3c.github.io/mediacapture-image/#white-balance-mode",
+      "linkingText": [
+        "White balance mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "color-temperature",
+      "href": "https://w3c.github.io/mediacapture-image/#color-temperature",
+      "linkingText": [
+        "Color temperature"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exposure",
+      "href": "https://w3c.github.io/mediacapture-image/#exposure",
+      "linkingText": [
+        "Exposure"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "focus-mode",
+      "href": "https://w3c.github.io/mediacapture-image/#focus-mode",
+      "linkingText": [
+        "Focus mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "points-of-interest",
+      "href": "https://w3c.github.io/mediacapture-image/#points-of-interest",
+      "linkingText": [
+        "Points of interest"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exposure-compensation",
+      "href": "https://w3c.github.io/mediacapture-image/#exposure-compensation",
+      "linkingText": [
+        "Exposure Compensation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "exposure-time",
+      "href": "https://w3c.github.io/mediacapture-image/#exposure-time",
+      "linkingText": [
+        "Exposure Time"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "iso",
+      "href": "https://w3c.github.io/mediacapture-image/#iso",
+      "linkingText": [
+        "ISO"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "red-eye-reduction",
+      "href": "https://w3c.github.io/mediacapture-image/#red-eye-reduction",
+      "linkingText": [
+        "Red Eye Reduction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "brightness",
+      "href": "https://w3c.github.io/mediacapture-image/#brightness",
+      "linkingText": [
+        "brightness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "contrast",
+      "href": "https://w3c.github.io/mediacapture-image/#contrast",
+      "linkingText": [
+        "Contrast"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "saturation",
+      "href": "https://w3c.github.io/mediacapture-image/#saturation",
+      "linkingText": [
+        "saturation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sharpness",
+      "href": "https://w3c.github.io/mediacapture-image/#sharpness",
+      "linkingText": [
+        "Sharpness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "image-width",
+      "href": "https://w3c.github.io/mediacapture-image/#image-width",
+      "linkingText": [
+        "Image width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "image-height",
+      "href": "https://w3c.github.io/mediacapture-image/#image-height",
+      "linkingText": [
+        "image height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "focus-distance",
+      "href": "https://w3c.github.io/mediacapture-image/#focus-distance",
+      "linkingText": [
+        "Focus distance"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pan",
+      "href": "https://w3c.github.io/mediacapture-image/#pan",
+      "linkingText": [
+        "Pan"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "tilt",
+      "href": "https://w3c.github.io/mediacapture-image/#tilt",
+      "linkingText": [
+        "Tilt"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "zoom",
+      "href": "https://w3c.github.io/mediacapture-image/#zoom",
+      "linkingText": [
+        "Zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fill-light-mode",
+      "href": "https://w3c.github.io/mediacapture-image/#fill-light-mode",
+      "linkingText": [
+        "Fill light mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "torch",
+      "href": "https://w3c.github.io/mediacapture-image/#torch",
+      "linkingText": [
+        "Torch"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "constrainable-properties",
+        "href": "https://w3c.github.io/mediacapture-image/#constrainable-properties",
+        "title": "10. Photo Capabilities and Constrainable Properties"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-meteringmode",
+      "href": "https://w3c.github.io/mediacapture-image/#enumdef-meteringmode",
+      "linkingText": [
+        "MeteringMode"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meteringmode-section",
+        "href": "https://w3c.github.io/mediacapture-image/#meteringmode-section",
+        "title": "11. MeteringMode"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-meteringmode-none",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-none",
+      "linkingText": [
+        "\"none\"",
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MeteringMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meteringmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#meteringmode-values",
+        "title": "Values",
+        "number": "11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-meteringmode-manual",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-manual",
+      "linkingText": [
+        "\"manual\"",
+        "manual"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MeteringMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meteringmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#meteringmode-values",
+        "title": "Values",
+        "number": "11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-meteringmode-single-shot",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-single-shot",
+      "linkingText": [
+        "\"single-shot\"",
+        "single-shot"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MeteringMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meteringmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#meteringmode-values",
+        "title": "Values",
+        "number": "11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-meteringmode-continuous",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-meteringmode-continuous",
+      "linkingText": [
+        "\"continuous\"",
+        "continuous"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "MeteringMode"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "meteringmode-values",
+        "href": "https://w3c.github.io/mediacapture-image/#meteringmode-values",
+        "title": "Values",
+        "number": "11.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dictdef-point2d",
+      "href": "https://w3c.github.io/mediacapture-image/#dictdef-point2d",
+      "linkingText": [
+        "Point2D"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "point2d-section",
+        "href": "https://w3c.github.io/mediacapture-image/#point2d-section",
+        "title": "12. Point2D"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-point2d-x",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-point2d-x",
+      "linkingText": [
+        "x"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Point2D"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "point2d-members",
+        "href": "https://w3c.github.io/mediacapture-image/#point2d-members",
+        "title": "Members",
+        "number": "12.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-point2d-y",
+      "href": "https://w3c.github.io/mediacapture-image/#dom-point2d-y",
+      "linkingText": [
+        "y"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "Point2D"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "point2d-members",
+        "href": "https://w3c.github.io/mediacapture-image/#point2d-members",
+        "title": "Members",
+        "number": "12.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

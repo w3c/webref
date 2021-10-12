@@ -1,0 +1,8 @@
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+[Exposed=(Window, DedicatedWorker), SecureContext]
+interface GPUCommandBuffer {
+    readonly attribute Promise<double> executionTime;
+};
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPUCommandBuffer includes GPUObjectBase;

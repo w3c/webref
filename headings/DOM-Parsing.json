@@ -1,0 +1,215 @@
+{
+  "spec": {
+    "title": "DOM Parsing and Serialization",
+    "url": "https://w3c.github.io/DOM-Parsing/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/DOM-Parsing/#title",
+      "level": 1,
+      "title": "DOM Parsing and Serialization"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/DOM-Parsing/#subtitle",
+      "level": 2,
+      "title": "DOMParser, XMLSerializer, innerHTML, and similar APIs"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/DOM-Parsing/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/DOM-Parsing/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "apis-for-parsing-and-serializing-dom",
+      "href": "https://w3c.github.io/DOM-Parsing/#apis-for-parsing-and-serializing-dom",
+      "level": 2,
+      "title": "APIs for parsing and serializing DOM",
+      "number": "2"
+    },
+    {
+      "id": "the-domparser-interface",
+      "href": "https://w3c.github.io/DOM-Parsing/#the-domparser-interface",
+      "level": 3,
+      "title": "The DOMParser interface",
+      "number": "2.1"
+    },
+    {
+      "id": "the-xmlserializer-interface",
+      "href": "https://w3c.github.io/DOM-Parsing/#the-xmlserializer-interface",
+      "level": 3,
+      "title": "The XMLSerializer interface",
+      "number": "2.2"
+    },
+    {
+      "id": "the-innerhtml-mixin",
+      "href": "https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin",
+      "level": 3,
+      "title": "The InnerHTML mixin",
+      "number": "2.3"
+    },
+    {
+      "id": "extensions-to-the-element-interface",
+      "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-element-interface",
+      "level": 3,
+      "title": "Extensions to the Element interface",
+      "number": "2.4"
+    },
+    {
+      "id": "extensions-to-the-range-interface",
+      "href": "https://w3c.github.io/DOM-Parsing/#extensions-to-the-range-interface",
+      "level": 3,
+      "title": "Extensions to the Range interface",
+      "number": "2.5"
+    },
+    {
+      "id": "algorithms-for-parsing-and-serializing",
+      "href": "https://w3c.github.io/DOM-Parsing/#algorithms-for-parsing-and-serializing",
+      "level": 2,
+      "title": "Algorithms for parsing and serializing",
+      "number": "3"
+    },
+    {
+      "id": "parsing",
+      "href": "https://w3c.github.io/DOM-Parsing/#parsing",
+      "level": 3,
+      "title": "Parsing",
+      "number": "3.1"
+    },
+    {
+      "id": "serializing",
+      "href": "https://w3c.github.io/DOM-Parsing/#serializing",
+      "level": 3,
+      "title": "Serializing",
+      "number": "3.2"
+    },
+    {
+      "id": "xml-serialization",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serialization",
+      "level": 4,
+      "title": "XML Serialization",
+      "number": "3.2.1"
+    },
+    {
+      "id": "xml-serializing-an-element-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-an-element-node",
+      "level": 5,
+      "title": "XML serializing an Element node",
+      "number": "3.2.1.1"
+    },
+    {
+      "id": "recording-the-namespace",
+      "href": "https://w3c.github.io/DOM-Parsing/#recording-the-namespace",
+      "level": 6,
+      "title": "Recording the namespace",
+      "number": "3.2.1.1.1"
+    },
+    {
+      "id": "the-namespace-prefix-map",
+      "href": "https://w3c.github.io/DOM-Parsing/#the-namespace-prefix-map",
+      "level": 6,
+      "title": "The Namespace Prefix Map",
+      "number": "3.2.1.1.2"
+    },
+    {
+      "id": "serializing-an-element-s-attributes",
+      "href": "https://w3c.github.io/DOM-Parsing/#serializing-an-element-s-attributes",
+      "level": 6,
+      "title": "Serializing an Element's attributes",
+      "number": "3.2.1.1.3"
+    },
+    {
+      "id": "generating-namespace-prefixes",
+      "href": "https://w3c.github.io/DOM-Parsing/#generating-namespace-prefixes",
+      "level": 6,
+      "title": "Generating namespace prefixes",
+      "number": "3.2.1.1.4"
+    },
+    {
+      "id": "xml-serializing-a-document-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-document-node",
+      "level": 5,
+      "title": "XML serializing a Document node",
+      "number": "3.2.1.2"
+    },
+    {
+      "id": "xml-serializing-a-comment-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-comment-node",
+      "level": 5,
+      "title": "XML serializing a Comment node",
+      "number": "3.2.1.3"
+    },
+    {
+      "id": "xml-serializing-a-text-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-text-node",
+      "level": 5,
+      "title": "XML serializing a Text node",
+      "number": "3.2.1.4"
+    },
+    {
+      "id": "xml-serializing-a-documentfragment-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-documentfragment-node",
+      "level": 5,
+      "title": "XML serializing a DocumentFragment node",
+      "number": "3.2.1.5"
+    },
+    {
+      "id": "xml-serializing-a-documenttype-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-documenttype-node",
+      "level": 5,
+      "title": "XML serializing a DocumentType node",
+      "number": "3.2.1.6"
+    },
+    {
+      "id": "xml-serializing-a-processinginstruction-node",
+      "href": "https://w3c.github.io/DOM-Parsing/#xml-serializing-a-processinginstruction-node",
+      "level": 5,
+      "title": "XML serializing a ProcessingInstruction node",
+      "number": "3.2.1.7"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/DOM-Parsing/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "A"
+    },
+    {
+      "id": "revision-history",
+      "href": "https://w3c.github.io/DOM-Parsing/#revision-history",
+      "level": 2,
+      "title": "Revision History",
+      "number": "B"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/DOM-Parsing/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "C"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/DOM-Parsing/#references",
+      "level": 2,
+      "title": "References",
+      "number": "D"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/DOM-Parsing/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "D.1"
+    }
+  ]
+}

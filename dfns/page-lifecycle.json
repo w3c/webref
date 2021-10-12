@@ -1,0 +1,489 @@
+{
+  "spec": {
+    "title": "Page Lifecycle",
+    "url": "https://wicg.github.io/page-lifecycle/"
+  },
+  "dfns": [
+    {
+      "id": "dom-document-onfreeze",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-document-onfreeze",
+      "linkingText": [
+        "onfreeze"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-api",
+        "href": "https://wicg.github.io/page-lifecycle/#sec-api",
+        "title": "API",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-onresume",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-document-onresume",
+      "linkingText": [
+        "onresume"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-api",
+        "href": "https://wicg.github.io/page-lifecycle/#sec-api",
+        "title": "API",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-wasdiscarded",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-document-wasdiscarded",
+      "linkingText": [
+        "wasDiscarded"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-api",
+        "href": "https://wicg.github.io/page-lifecycle/#sec-api",
+        "title": "API",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "execution-while-not-rendered",
+      "href": "https://wicg.github.io/page-lifecycle/#execution-while-not-rendered",
+      "linkingText": [
+        "execution-while-not-rendered"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feature-policies",
+        "href": "https://wicg.github.io/page-lifecycle/#feature-policies",
+        "title": "Feature Policies",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "execution-while-out-of-viewport",
+      "href": "https://wicg.github.io/page-lifecycle/#execution-while-out-of-viewport",
+      "linkingText": [
+        "execution-while-out-of-viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feature-policies",
+        "href": "https://wicg.github.io/page-lifecycle/#feature-policies",
+        "title": "Feature Policies",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-document-frozenness-steps",
+      "href": "https://wicg.github.io/page-lifecycle/#update-document-frozenness-steps",
+      "linkingText": [
+        "update document frozenness steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "feature-policies",
+        "href": "https://wicg.github.io/page-lifecycle/#feature-policies",
+        "title": "Feature Policies",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dedicatedworkerglobalscope-owning-document",
+      "href": "https://wicg.github.io/page-lifecycle/#dedicatedworkerglobalscope-owning-document",
+      "linkingText": [
+        "owning document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DedicatedWorkerGlobalScope"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "worklets-workers",
+        "href": "https://wicg.github.io/page-lifecycle/#worklets-workers",
+        "title": "Modifications to worklet and worker behavior",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "htmlmediaelement-resume-frozen-flag",
+      "href": "https://wicg.github.io/page-lifecycle/#htmlmediaelement-resume-frozen-flag",
+      "linkingText": [
+        "resume frozen flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "HTMLMediaElement"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "html-media-elements",
+        "href": "https://wicg.github.io/page-lifecycle/#html-media-elements",
+        "title": "HTMLMediaElement",
+        "number": "5.2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-client-lifecyclestate",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-client-lifecyclestate",
+      "linkingText": [
+        "lifecycleState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Client"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serviceworker-client-dfn",
+        "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+        "title": "Client",
+        "number": "5.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-clientlifecyclestate",
+      "href": "https://wicg.github.io/page-lifecycle/#enumdef-clientlifecyclestate",
+      "linkingText": [
+        "ClientLifecycleState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serviceworker-client-dfn",
+        "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+        "title": "Client",
+        "number": "5.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-clientlifecyclestate-active",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-clientlifecyclestate-active",
+      "linkingText": [
+        "\"active\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientLifecycleState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serviceworker-client-dfn",
+        "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+        "title": "Client",
+        "number": "5.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-clientlifecyclestate-frozen",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-clientlifecyclestate-frozen",
+      "linkingText": [
+        "\"frozen\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ClientLifecycleState"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "serviceworker-client-dfn",
+        "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+        "title": "Client",
+        "number": "5.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dfn-service-worker-client-lifecycle-state",
+      "href": "https://wicg.github.io/page-lifecycle/#dfn-service-worker-client-lifecycle-state",
+      "linkingText": [
+        "lifecycle state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Client"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "serviceworker-client-dfn",
+        "href": "https://wicg.github.io/page-lifecycle/#serviceworker-client-dfn",
+        "title": "Client",
+        "number": "5.3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-serviceworkerclient-lifecyclestate",
+      "href": "https://wicg.github.io/page-lifecycle/#dom-serviceworkerclient-lifecyclestate",
+      "linkingText": [
+        "lifecycleState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "ServiceWorkerClient"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "service-worker-client-lifecycle-state",
+        "href": "https://wicg.github.io/page-lifecycle/#service-worker-client-lifecycle-state",
+        "title": "lifecycleState",
+        "number": "5.3.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-client-lifecycle-state",
+      "href": "https://wicg.github.io/page-lifecycle/#get-client-lifecycle-state",
+      "linkingText": [
+        "Get Client Lifecycle State"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "get-client-lifecycle-state-algorithm",
+        "href": "https://wicg.github.io/page-lifecycle/#get-client-lifecycle-state-algorithm",
+        "title": "Get Client Lifecycle State",
+        "number": "5.3.2.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "document-frozenness",
+      "href": "https://wicg.github.io/page-lifecycle/#document-frozenness",
+      "linkingText": [
+        "FROZENNESS"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frozenness-state",
+        "href": "https://wicg.github.io/page-lifecycle/#frozenness-state",
+        "title": "FROZENNESS state",
+        "number": "5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "frozen",
+      "href": "https://wicg.github.io/page-lifecycle/#frozen",
+      "linkingText": [
+        "frozen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "frozenness-state",
+        "href": "https://wicg.github.io/page-lifecycle/#frozenness-state",
+        "title": "FROZENNESS state",
+        "number": "5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unfrozen",
+      "href": "https://wicg.github.io/page-lifecycle/#unfrozen",
+      "linkingText": [
+        "unfrozen"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "frozenness-state",
+        "href": "https://wicg.github.io/page-lifecycle/#frozenness-state",
+        "title": "FROZENNESS state",
+        "number": "5.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "change-the-frozenness-of-a-top-level-document",
+      "href": "https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-top-level-document",
+      "linkingText": [
+        "change the frozenness of a top-level document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "changing-frozenness",
+        "href": "https://wicg.github.io/page-lifecycle/#changing-frozenness",
+        "title": "Changing the frozenness of documents",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "change-the-frozenness-of-a-document",
+      "href": "https://wicg.github.io/page-lifecycle/#change-the-frozenness-of-a-document",
+      "linkingText": [
+        "change the frozenness of a document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "changing-frozenness",
+        "href": "https://wicg.github.io/page-lifecycle/#changing-frozenness",
+        "title": "Changing the frozenness of documents",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "freeze-steps",
+      "href": "https://wicg.github.io/page-lifecycle/#freeze-steps",
+      "linkingText": [
+        "freeze steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "changing-frozenness",
+        "href": "https://wicg.github.io/page-lifecycle/#changing-frozenness",
+        "title": "Changing the frozenness of documents",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "resume-steps",
+      "href": "https://wicg.github.io/page-lifecycle/#resume-steps",
+      "linkingText": [
+        "resume steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "changing-frozenness",
+        "href": "https://wicg.github.io/page-lifecycle/#changing-frozenness",
+        "title": "Changing the frozenness of documents",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "document-discarded",
+      "href": "https://wicg.github.io/page-lifecycle/#document-discarded",
+      "linkingText": [
+        "discarded"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Document"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "discarding",
+        "href": "https://wicg.github.io/page-lifecycle/#discarding",
+        "title": "Discarding",
+        "number": "5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "discarded",
+      "href": "https://wicg.github.io/page-lifecycle/#discarded",
+      "linkingText": [
+        "discarded",
+        "discard"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "discarding",
+        "href": "https://wicg.github.io/page-lifecycle/#discarding",
+        "title": "Discarding",
+        "number": "5.4.3"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

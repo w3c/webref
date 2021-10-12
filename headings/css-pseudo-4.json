@@ -1,0 +1,358 @@
+{
+  "spec": {
+    "title": "CSS Pseudo-Elements Module Level 4",
+    "url": "https://drafts.csswg.org/css-pseudo-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#title",
+      "level": 1,
+      "title": "CSS Pseudo-Elements Module Level 4"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 17 May 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "typographic-pseudos",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#typographic-pseudos",
+      "level": 2,
+      "title": "Typographic Pseudo-elements",
+      "number": "2"
+    },
+    {
+      "id": "first-line-pseudo",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-line-pseudo",
+      "level": 3,
+      "title": "The ::first-line pseudo-element",
+      "number": "2.1"
+    },
+    {
+      "id": "first-text-line",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-text-line",
+      "level": 4,
+      "title": "Finding the First Formatted Line",
+      "number": "2.1.1"
+    },
+    {
+      "id": "first-line-styling",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-line-styling",
+      "level": 4,
+      "title": "Styling the First Line Pseudo-element",
+      "number": "2.1.2"
+    },
+    {
+      "id": "first-line-inheritance",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-line-inheritance",
+      "level": 4,
+      "title": "Inheritance and the ::first-line Pseudo-element",
+      "number": "2.1.3"
+    },
+    {
+      "id": "first-letter-pseudo",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-letter-pseudo",
+      "level": 3,
+      "title": "The ::first-letter pseudo-element",
+      "number": "2.2"
+    },
+    {
+      "id": "first-letter-application",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-letter-application",
+      "level": 4,
+      "title": "Finding the First Letter Text",
+      "number": "2.2.1"
+    },
+    {
+      "id": "first-letter-tree",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-letter-tree",
+      "level": 4,
+      "title": "Inheritance and Box Tree Structure of the ::first-letter Pseudo-element",
+      "number": "2.2.2"
+    },
+    {
+      "id": "first-letter-styling",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#first-letter-styling",
+      "level": 4,
+      "title": "Styling the ::first-letter Pseudo-element",
+      "number": "2.2.3"
+    },
+    {
+      "id": "highlight-pseudos",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-pseudos",
+      "level": 2,
+      "title": "Highlight Pseudo-elements",
+      "number": "3"
+    },
+    {
+      "id": "highlight-selectors",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-selectors",
+      "level": 3,
+      "title": "Selecting Highlighted Content: the ::selection, ::target-text, ::spelling-error, and ::grammar-error pseudo-elements",
+      "number": "3.1"
+    },
+    {
+      "id": "highlight-styling",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-styling",
+      "level": 3,
+      "title": "Styling Highlights",
+      "number": "3.2"
+    },
+    {
+      "id": "highlight-ua-styles",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-ua-styles",
+      "level": 3,
+      "title": "Default UA Styles",
+      "number": "3.3"
+    },
+    {
+      "id": "highlight-bounds",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-bounds",
+      "level": 3,
+      "title": "Area of a Highlight",
+      "number": "3.4"
+    },
+    {
+      "id": "highlight-cascade",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-cascade",
+      "level": 3,
+      "title": "Cascading and Per-Element Highlight Styles",
+      "number": "3.5"
+    },
+    {
+      "id": "highlight-painting",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-painting",
+      "level": 3,
+      "title": "Painting the Highlight",
+      "number": "3.6"
+    },
+    {
+      "id": "highlight-backgrounds",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-backgrounds",
+      "level": 4,
+      "title": "Backgrounds",
+      "number": "3.6.1"
+    },
+    {
+      "id": "highlight-shadows",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-shadows",
+      "level": 4,
+      "title": "Shadows",
+      "number": "3.6.2"
+    },
+    {
+      "id": "highlight-text",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-text",
+      "level": 4,
+      "title": "Text and Text Decorations",
+      "number": "3.6.3"
+    },
+    {
+      "id": "highlight-replaced",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-replaced",
+      "level": 4,
+      "title": "Replaced Elements",
+      "number": "3.6.4"
+    },
+    {
+      "id": "highlight-security",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#highlight-security",
+      "level": 3,
+      "title": "Security and Privacy Considerations",
+      "number": "3.7"
+    },
+    {
+      "id": "treelike",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#treelike",
+      "level": 2,
+      "title": "Tree-Abiding Pseudo-elements",
+      "number": "4"
+    },
+    {
+      "id": "generated-content",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#generated-content",
+      "level": 3,
+      "title": "Generated Content Pseudo-elements: ::before and ::after",
+      "number": "4.1"
+    },
+    {
+      "id": "marker-pseudo",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#marker-pseudo",
+      "level": 3,
+      "title": "List Markers: the ::marker pseudo-element",
+      "number": "4.2"
+    },
+    {
+      "id": "placeholder-pseudo",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#placeholder-pseudo",
+      "level": 3,
+      "title": "Placeholder Input: the ::placeholder pseudo-element",
+      "number": "4.3"
+    },
+    {
+      "id": "file-selector-button-pseudo",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#file-selector-button-pseudo",
+      "level": 3,
+      "title": "File Selector Button: the ::file-selector-button pseudo-element",
+      "number": "4.4"
+    },
+    {
+      "id": "interactions",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#interactions",
+      "level": 2,
+      "title": "Overlapping Pseudo-element Interactions",
+      "number": "5"
+    },
+    {
+      "id": "cssom",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#cssom",
+      "level": 2,
+      "title": "Additions to the CSS Object Model",
+      "number": "6"
+    },
+    {
+      "id": "CSSPseudoElement-interface",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#CSSPseudoElement-interface",
+      "level": 3,
+      "title": "CSSPseudoElement Interface",
+      "number": "6.1"
+    },
+    {
+      "id": "window-interface",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#window-interface",
+      "level": 3,
+      "title": "pseudo() method of the Element interface",
+      "number": "6.2"
+    },
+    {
+      "id": "css2-compat",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#css2-compat",
+      "level": 2,
+      "title": "Compatibility Syntax",
+      "number": "7"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-pseudo-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

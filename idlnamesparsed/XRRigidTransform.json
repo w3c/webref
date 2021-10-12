@@ -1,0 +1,15 @@
+{
+  "name": "XRRigidTransform",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRRigidTransform {\n  constructor(optional DOMPointInit position = {}, optional DOMPointInit orientation = {});\n  [SameObject] readonly attribute DOMPointReadOnly position;\n  [SameObject] readonly attribute DOMPointReadOnly orientation;\n  readonly attribute Float32Array matrix;\n  [SameObject] readonly attribute XRRigidTransform inverse;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrrigidtransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

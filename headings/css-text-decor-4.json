@@ -1,0 +1,397 @@
+{
+  "spec": {
+    "title": "CSS Text Decoration Module Level 4",
+    "url": "https://drafts.csswg.org/css-text-decor-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#title",
+      "level": 1,
+      "title": "CSS Text Decoration Module Level 4"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 14 June 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "terms",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#terms",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.3"
+    },
+    {
+      "id": "line-decoration",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#line-decoration",
+      "level": 2,
+      "title": "Line Decoration: Underline, Overline, and Strike-Through",
+      "number": "2"
+    },
+    {
+      "id": "text-decoration-line-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-line-property",
+      "level": 3,
+      "title": "Text Decoration Lines: the text-decoration-line property",
+      "number": "2.1"
+    },
+    {
+      "id": "text-decoration-style-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-style-property",
+      "level": 3,
+      "title": "Text Decoration Style: the text-decoration-style property",
+      "number": "2.2"
+    },
+    {
+      "id": "text-decoration-color-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-color-property",
+      "level": 3,
+      "title": "Text Decoration Color: the text-decoration-color property",
+      "number": "2.3"
+    },
+    {
+      "id": "text-decoration-width-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-width-property",
+      "level": 3,
+      "title": "Text Decoration Line Thickness: the text-decoration-thickness property",
+      "number": "2.4"
+    },
+    {
+      "id": "text-decoration-thickness",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-thickness",
+      "level": 4,
+      "title": "Automatic Thickness of Text Decoration Lines",
+      "number": "2.4.1"
+    },
+    {
+      "id": "line-position",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#line-position",
+      "level": 3,
+      "title": "Determining the Position and Thickness of Line Decorations",
+      "number": "2.5"
+    },
+    {
+      "id": "text-decoration-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-property",
+      "level": 3,
+      "title": "Text Decoration Shorthand: the text-decoration property",
+      "number": "2.6"
+    },
+    {
+      "id": "text-underline-position-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-underline-position-property",
+      "level": 3,
+      "title": "Text Underline Position: the text-underline-position property",
+      "number": "2.7"
+    },
+    {
+      "id": "underline-offset",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#underline-offset",
+      "level": 3,
+      "title": "Text Underline Offset: the text-underline-offset property",
+      "number": "2.8"
+    },
+    {
+      "id": "line-offset-zero",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#line-offset-zero",
+      "level": 4,
+      "title": "Underline Offset Origin (Zero Position)",
+      "number": "2.8.1"
+    },
+    {
+      "id": "line-auto-offset",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#line-auto-offset",
+      "level": 4,
+      "title": "Using Font Metrics for Automatic Positioning",
+      "number": "2.8.2"
+    },
+    {
+      "id": "text-line-constancy",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-line-constancy",
+      "level": 3,
+      "title": "Text Decoration Line Uniformity",
+      "number": "2.9"
+    },
+    {
+      "id": "text-decoration-skipping",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skipping",
+      "level": 3,
+      "title": "Text Decoration Line Continuity: the text-decoration-skip shorthand and its sub-properties",
+      "number": "2.10"
+    },
+    {
+      "id": "text-decoration-skip-self-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-self-property",
+      "level": 4,
+      "title": "Skipping Spaces: the text-decoration-skip-self property",
+      "number": "2.10.1"
+    },
+    {
+      "id": "text-decoration-skip-box-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-box-property",
+      "level": 4,
+      "title": "Skipping Spaces: the text-decoration-skip-box property",
+      "number": "2.10.2"
+    },
+    {
+      "id": "text-decoration-skip-inset-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-inset-property",
+      "level": 4,
+      "title": "Inset Edges: the text-decoration-skip-inset property",
+      "number": "2.10.3"
+    },
+    {
+      "id": "text-decoration-skip-spaces-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-spaces-property",
+      "level": 4,
+      "title": "Skipping Spaces: the text-decoration-skip-spaces property",
+      "number": "2.10.4"
+    },
+    {
+      "id": "text-decoration-skip-ink-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-decoration-skip-ink-property",
+      "level": 4,
+      "title": "Skipping Glyphs: the text-decoration-skip-ink property",
+      "number": "2.10.5"
+    },
+    {
+      "id": "ink-skip-shape",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#ink-skip-shape",
+      "level": 4,
+      "title": "Shaping Interruptions",
+      "number": "2.10.6"
+    },
+    {
+      "id": "emphasis-marks",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#emphasis-marks",
+      "level": 2,
+      "title": "Additional Controls for Emphasis Marks",
+      "number": "3"
+    },
+    {
+      "id": "text-emphasis-style-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-style-property",
+      "level": 3,
+      "title": "Emphasis Mark Style: the text-emphasis-style property",
+      "number": "3.1"
+    },
+    {
+      "id": "text-emphasis-color-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-color-property",
+      "level": 3,
+      "title": "Emphasis Mark Color: the text-emphasis-color property",
+      "number": "3.2"
+    },
+    {
+      "id": "text-emphasis-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-property",
+      "level": 3,
+      "title": "Emphasis Mark Shorthand: the text-emphasis property",
+      "number": "3.3"
+    },
+    {
+      "id": "text-emphasis-position-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-position-property",
+      "level": 3,
+      "title": "Emphasis Mark Position: the text-emphasis-position property",
+      "number": "3.4"
+    },
+    {
+      "id": "text-emphasis-skip",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-emphasis-skip",
+      "level": 3,
+      "title": "Emphasis Mark Skip: the text-emphasis-skip property",
+      "number": "3.5"
+    },
+    {
+      "id": "text-shadow-property",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#text-shadow-property",
+      "level": 2,
+      "title": "Text Shadows: the text-shadow property",
+      "number": "4"
+    },
+    {
+      "id": "painting",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#painting",
+      "level": 2,
+      "title": "Painting Text Decorations",
+      "number": "5"
+    },
+    {
+      "id": "painting-order",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#painting-order",
+      "level": 3,
+      "title": "Painting Order of Text Decorations",
+      "number": "5.1"
+    },
+    {
+      "id": "overflow",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#overflow",
+      "level": 3,
+      "title": "Overflow of Text Decorations",
+      "number": "5.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#acknowledgements",
+      "level": 2,
+      "title": "Appendix A: Acknowledgements"
+    },
+    {
+      "id": "default-stylesheet",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#default-stylesheet",
+      "level": 2,
+      "title": "Appendix B: Default UA Stylesheet"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#changes",
+      "level": 2,
+      "title": "Appendix C: Changes"
+    },
+    {
+      "id": "changes-2018",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#changes-2018",
+      "level": 3,
+      "title": "Changes since the 13 March 2018 Working Draft"
+    },
+    {
+      "id": "additions-l3",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#additions-l3",
+      "level": 3,
+      "title": "Additions Since Level 3"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#priv-sec",
+      "level": 2,
+      "title": "Privacy and Security Considerations",
+      "number": "6"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-text-decor-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "spec": {
+    "title": "Picture-in-Picture",
+    "url": "https://w3c.github.io/picture-in-picture/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/picture-in-picture/#title",
+      "level": 1,
+      "title": "Picture-in-Picture"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://w3c.github.io/picture-in-picture/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 30 August 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/picture-in-picture/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://w3c.github.io/picture-in-picture/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/picture-in-picture/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/picture-in-picture/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/picture-in-picture/#examples",
+      "level": 2,
+      "title": "Examples",
+      "number": "2"
+    },
+    {
+      "id": "example-add-custom-pip-button",
+      "href": "https://w3c.github.io/picture-in-picture/#example-add-custom-pip-button",
+      "level": 3,
+      "title": "Add a custom Picture-in-Picture button",
+      "number": "2.1"
+    },
+    {
+      "id": "example-monitor-video-pip-changes",
+      "href": "https://w3c.github.io/picture-in-picture/#example-monitor-video-pip-changes",
+      "level": 3,
+      "title": "Monitor video Picture-in-Picture changes",
+      "number": "2.2"
+    },
+    {
+      "id": "example-update-video-on-window-size-changes",
+      "href": "https://w3c.github.io/picture-in-picture/#example-update-video-on-window-size-changes",
+      "level": 3,
+      "title": "Update video size based on Picture-in-Picture window size changes",
+      "number": "2.3"
+    },
+    {
+      "id": "concepts",
+      "href": "https://w3c.github.io/picture-in-picture/#concepts",
+      "level": 2,
+      "title": "Concepts",
+      "number": "3"
+    },
+    {
+      "id": "request-pip",
+      "href": "https://w3c.github.io/picture-in-picture/#request-pip",
+      "level": 3,
+      "title": "Request Picture-in-Picture",
+      "number": "3.1"
+    },
+    {
+      "id": "exit-pip",
+      "href": "https://w3c.github.io/picture-in-picture/#exit-pip",
+      "level": 3,
+      "title": "Exit Picture-in-Picture",
+      "number": "3.2"
+    },
+    {
+      "id": "disable-pip",
+      "href": "https://w3c.github.io/picture-in-picture/#disable-pip",
+      "level": 3,
+      "title": "Disable Picture-in-Picture",
+      "number": "3.3"
+    },
+    {
+      "id": "auto-pip",
+      "href": "https://w3c.github.io/picture-in-picture/#auto-pip",
+      "level": 3,
+      "title": "Auto Picture-in-Picture",
+      "number": "3.4"
+    },
+    {
+      "id": "fullscreen",
+      "href": "https://w3c.github.io/picture-in-picture/#fullscreen",
+      "level": 3,
+      "title": "Interaction with Fullscreen",
+      "number": "3.5"
+    },
+    {
+      "id": "remote-playback",
+      "href": "https://w3c.github.io/picture-in-picture/#remote-playback",
+      "level": 3,
+      "title": "Interaction with Remote Playback",
+      "number": "3.6"
+    },
+    {
+      "id": "media-session",
+      "href": "https://w3c.github.io/picture-in-picture/#media-session",
+      "level": 3,
+      "title": "Interaction with Media Session",
+      "number": "3.7"
+    },
+    {
+      "id": "page-visibility",
+      "href": "https://w3c.github.io/picture-in-picture/#page-visibility",
+      "level": 3,
+      "title": "Interaction with Page Visibility",
+      "number": "3.8"
+    },
+    {
+      "id": "one-pip-window",
+      "href": "https://w3c.github.io/picture-in-picture/#one-pip-window",
+      "level": 3,
+      "title": "One Picture-in-Picture window",
+      "number": "3.9"
+    },
+    {
+      "id": "api",
+      "href": "https://w3c.github.io/picture-in-picture/#api",
+      "level": 2,
+      "title": "API",
+      "number": "4"
+    },
+    {
+      "id": "htmlvideoelement-extensions",
+      "href": "https://w3c.github.io/picture-in-picture/#htmlvideoelement-extensions",
+      "level": 3,
+      "title": "Extensions to HTMLVideoElement",
+      "number": "4.1"
+    },
+    {
+      "id": "document-extensions",
+      "href": "https://w3c.github.io/picture-in-picture/#document-extensions",
+      "level": 3,
+      "title": "Extensions to Document",
+      "number": "4.2"
+    },
+    {
+      "id": "documentorshadowroot-extension",
+      "href": "https://w3c.github.io/picture-in-picture/#documentorshadowroot-extension",
+      "level": 3,
+      "title": "Extension to DocumentOrShadowRoot",
+      "number": "4.3"
+    },
+    {
+      "id": "interface-picture-in-picture-window",
+      "href": "https://w3c.github.io/picture-in-picture/#interface-picture-in-picture-window",
+      "level": 3,
+      "title": "Interface PictureInPictureWindow",
+      "number": "4.4"
+    },
+    {
+      "id": "event-types",
+      "href": "https://w3c.github.io/picture-in-picture/#event-types",
+      "level": 3,
+      "title": "Event types",
+      "number": "4.5"
+    },
+    {
+      "id": "task-source",
+      "href": "https://w3c.github.io/picture-in-picture/#task-source",
+      "level": 3,
+      "title": "Task source",
+      "number": "4.6"
+    },
+    {
+      "id": "css-pseudo-class",
+      "href": "https://w3c.github.io/picture-in-picture/#css-pseudo-class",
+      "level": 3,
+      "title": "CSS pseudo-class",
+      "number": "4.7"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://w3c.github.io/picture-in-picture/#security-considerations",
+      "level": 2,
+      "title": "Security considerations",
+      "number": "5"
+    },
+    {
+      "id": "secure-context",
+      "href": "https://w3c.github.io/picture-in-picture/#secure-context",
+      "level": 3,
+      "title": "Secure Context",
+      "number": "5.1"
+    },
+    {
+      "id": "feature-policy",
+      "href": "https://w3c.github.io/picture-in-picture/#feature-policy",
+      "level": 3,
+      "title": "Feature Policy",
+      "number": "5.2"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/picture-in-picture/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "6"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/picture-in-picture/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/picture-in-picture/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://w3c.github.io/picture-in-picture/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/picture-in-picture/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/picture-in-picture/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/picture-in-picture/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/picture-in-picture/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}

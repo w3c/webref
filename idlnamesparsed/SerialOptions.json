@@ -1,0 +1,15 @@
+{
+  "name": "SerialOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Serial API",
+      "url": "https://wicg.github.io/serial/"
+    },
+    "fragment": "dictionary SerialOptions {\n  required [EnforceRange] unsigned long baudRate;\n  [EnforceRange] octet dataBits = 8;\n  [EnforceRange] octet stopBits = 1;\n  ParityType parity = \"none\";\n  [EnforceRange] unsigned long bufferSize = 255;\n  FlowControlType flowControl = \"none\";\n};",
+    "href": "https://wicg.github.io/serial/#dom-serialoptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

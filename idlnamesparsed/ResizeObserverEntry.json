@@ -1,0 +1,15 @@
+{
+  "name": "ResizeObserverEntry",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Resize Observer",
+      "url": "https://www.w3.org/TR/resize-observer-1/"
+    },
+    "fragment": "[Exposed=Window]\ninterface ResizeObserverEntry {\n    readonly attribute Element target;\n    readonly attribute DOMRectReadOnly contentRect;\n    readonly attribute FrozenArray<ResizeObserverSize> borderBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> contentBoxSize;\n    readonly attribute FrozenArray<ResizeObserverSize> devicePixelContentBoxSize;\n};",
+    "href": "https://drafts.csswg.org/resize-observer/#resizeobserverentry"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

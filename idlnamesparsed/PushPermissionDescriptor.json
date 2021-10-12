@@ -1,0 +1,29 @@
+{
+  "name": "PushPermissionDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Permissions",
+      "url": "https://www.w3.org/TR/permissions/"
+    },
+    "fragment": "dictionary PushPermissionDescriptor : PermissionDescriptor {\n  boolean userVisibleOnly = false;\n};",
+    "href": "https://w3c.github.io/permissions/#dom-pushpermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

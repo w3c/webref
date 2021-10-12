@@ -1,0 +1,29 @@
+{
+  "name": "SFrameTransformErrorEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC Encoded Transform",
+      "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+    },
+    "fragment": "dictionary SFrameTransformErrorEventInit : EventInit {\n    required SFrameTransformErrorEventType errorType;\n    required any frame;\n    CryptoKeyID? keyID;\n};",
+    "href": "https://w3c.github.io/webrtc-encoded-transform/#dictdef-sframetransformerroreventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

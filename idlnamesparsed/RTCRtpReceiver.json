@@ -1,0 +1,23 @@
+{
+  "name": "RTCRtpReceiver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCRtpReceiver {\n  readonly attribute MediaStreamTrack track;\n  readonly attribute RTCDtlsTransport? transport;\n  static RTCRtpCapabilities? getCapabilities(DOMString kind);\n  RTCRtpReceiveParameters getParameters();\n  sequence<RTCRtpContributingSource> getContributingSources();\n  sequence<RTCRtpSynchronizationSource> getSynchronizationSources();\n  Promise<RTCStatsReport> getStats();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiver"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC Encoded Transform",
+        "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
+      },
+      "fragment": "partial interface RTCRtpReceiver {\n    attribute RTCRtpTransform? transform;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

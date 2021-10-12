@@ -1,0 +1,543 @@
+{
+  "spec": {
+    "title": "Visual Viewport API",
+    "url": "https://wicg.github.io/visual-viewport/"
+  },
+  "dfns": [
+    {
+      "id": "dom-window",
+      "href": "https://wicg.github.io/visual-viewport/#dom-window",
+      "linkingText": [
+        "Window"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-window-visualviewport",
+      "href": "https://wicg.github.io/visual-viewport/#dom-window-visualviewport",
+      "linkingText": [
+        "visualViewport"
+      ],
+      "localLinkingText": [
+        "Window.visualViewport"
+      ],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-associated-document",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-associated-document",
+      "linkingText": [
+        "associated Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-fully-active",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-fully-active",
+      "linkingText": [
+        "fully active"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-document",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-document",
+      "linkingText": [
+        "Document"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dfn-browsing-context",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-browsing-context",
+      "linkingText": [
+        "browsing context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "extensions-to-the-window-interface",
+        "href": "https://wicg.github.io/visual-viewport/#extensions-to-the-window-interface",
+        "title": "Extensions to the Window interface",
+        "number": "3.1"
+      },
+      "definedIn": "note"
+    },
+    {
+      "id": "dom-visualviewport",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport",
+      "linkingText": [
+        "VisualViewport"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-visualviewport-offsetleft",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-offsetleft",
+      "linkingText": [
+        "offsetLeft"
+      ],
+      "localLinkingText": [
+        "VisualViewport.offsetLeft"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-offsettop",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-offsettop",
+      "linkingText": [
+        "offsetTop"
+      ],
+      "localLinkingText": [
+        "VisualViewport.offsetTop"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-pageleft",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-pageleft",
+      "linkingText": [
+        "pageLeft"
+      ],
+      "localLinkingText": [
+        "VisualViewport.pageLeft"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-initial-containing-block",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-initial-containing-block",
+      "linkingText": [
+        "initial containing block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-pagetop",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-pagetop",
+      "linkingText": [
+        "pageTop"
+      ],
+      "localLinkingText": [
+        "VisualViewport.pageTop"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-width",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-width",
+      "linkingText": [
+        "width"
+      ],
+      "localLinkingText": [
+        "VisualViewport.width"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-classic-scrollbar",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-classic-scrollbar",
+      "linkingText": [
+        "classic scrollbar"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-height",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-height",
+      "linkingText": [
+        "height"
+      ],
+      "localLinkingText": [
+        "VisualViewport.height"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-scale",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-scale",
+      "linkingText": [
+        "scale"
+      ],
+      "localLinkingText": [
+        "VisualViewport.scale"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-reference-pixel",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-reference-pixel",
+      "linkingText": [
+        "reference pixel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-page-zoom",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-page-zoom",
+      "linkingText": [
+        "page zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pinch-zoom",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-pinch-zoom",
+      "linkingText": [
+        "pinch zoom"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-devicepixelratio",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-devicepixelratio",
+      "linkingText": [
+        "devicePixelRatio"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-visualviewport-segments",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-segments",
+      "linkingText": [
+        "segments"
+      ],
+      "localLinkingText": [
+        "VisualViewport.segments"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-onresize",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-onresize",
+      "linkingText": [
+        "onresize"
+      ],
+      "localLinkingText": [
+        "VisualViewport.onresize"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-visualviewport-onscroll",
+      "href": "https://wicg.github.io/visual-viewport/#dom-visualviewport-onscroll",
+      "linkingText": [
+        "onscroll"
+      ],
+      "localLinkingText": [
+        "VisualViewport.onscroll"
+      ],
+      "type": "attribute",
+      "for": [
+        "VisualViewport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visualviewport-interface",
+        "href": "https://wicg.github.io/visual-viewport/#the-visualviewport-interface",
+        "title": "The VisualViewport interface",
+        "number": "3.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-event",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-event",
+      "linkingText": [
+        "Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resizing-the-viewport",
+        "href": "https://wicg.github.io/visual-viewport/#resizing-the-viewport",
+        "title": "Resizing the viewport"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-section-12-1",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-section-12-1",
+      "linkingText": [
+        "section 12.1"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "resizing-the-viewport",
+        "href": "https://wicg.github.io/visual-viewport/#resizing-the-viewport",
+        "title": "Resizing the viewport"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-section-12-2",
+      "href": "https://wicg.github.io/visual-viewport/#dfn-section-12-2",
+      "linkingText": [
+        "section 12.2"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scrolling",
+        "href": "https://wicg.github.io/visual-viewport/#scrolling",
+        "title": "Scrolling"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

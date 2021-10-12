@@ -1,0 +1,12 @@
+// Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
+dictionary RTCRtpCodecCapability {
+  required DOMString mimeType;
+  required unsigned long clockRate;
+  unsigned short channels;
+  DOMString sdpFmtpLine;
+};
+
+// Source: Scalable Video Coding (SVC) Extension for WebRTC (https://www.w3.org/TR/webrtc-svc/)
+partial dictionary RTCRtpCodecCapability {
+             sequence<DOMString> scalabilityModes;
+};

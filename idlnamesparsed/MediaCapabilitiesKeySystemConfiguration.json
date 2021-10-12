@@ -1,0 +1,15 @@
+{
+  "name": "MediaCapabilitiesKeySystemConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capabilities",
+      "url": "https://www.w3.org/TR/media-capabilities/"
+    },
+    "fragment": "dictionary MediaCapabilitiesKeySystemConfiguration {\n    required DOMString keySystem;\n    DOMString initDataType = \"\";\n    MediaKeysRequirement distinctiveIdentifier = \"optional\";\n    MediaKeysRequirement persistentState = \"optional\";\n    sequence<DOMString> sessionTypes;\n    KeySystemTrackConfiguration audio;\n    KeySystemTrackConfiguration video;\n  };",
+    "href": "https://w3c.github.io/media-capabilities/#dictdef-mediacapabilitieskeysystemconfiguration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

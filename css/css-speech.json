@@ -1,0 +1,282 @@
+{
+  "spec": {
+    "title": "CSS Speech Module Level 1",
+    "url": "https://drafts.csswg.org/css-speech-1/"
+  },
+  "properties": {
+    "voice-volume": {
+      "name": "voice-volume",
+      "value": "silent | [[x-soft | soft | medium | loud | x-loud] || <decibel>]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "silent, or a keyword value and optionally also a decibel offset (if not zero)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-volume",
+        "voiceVolume"
+      ]
+    },
+    "voice-balance": {
+      "name": "voice-balance",
+      "value": "<number> | left | center | right | leftwards | rightwards",
+      "initial": "center",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "the specified value resolved to a <number> between -100 and 100 (inclusive)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-balance",
+        "voiceBalance"
+      ]
+    },
+    "speak": {
+      "name": "speak",
+      "value": "auto | never | always",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "speak"
+      ]
+    },
+    "speak-as": {
+      "name": "speak-as",
+      "value": "normal | spell-out || digits || [ literal-punctuation | no-punctuation ]",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "speak-as",
+        "speakAs"
+      ]
+    },
+    "pause-before": {
+      "name": "pause-before",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause-before",
+        "pauseBefore"
+      ]
+    },
+    "pause-after": {
+      "name": "pause-after",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause-after",
+        "pauseAfter"
+      ]
+    },
+    "pause": {
+      "name": "pause",
+      "value": "<'pause-before'> <'pause-after'>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "pause"
+      ]
+    },
+    "rest-before": {
+      "name": "rest-before",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest-before",
+        "restBefore"
+      ]
+    },
+    "rest-after": {
+      "name": "rest-after",
+      "value": "<time> | none | x-weak | weak | medium | strong | x-strong",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest-after",
+        "restAfter"
+      ]
+    },
+    "rest": {
+      "name": "rest",
+      "value": "<'rest-before'> <'rest-after'>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "rest"
+      ]
+    },
+    "cue-before": {
+      "name": "cue-before",
+      "value": "<uri> <decibel>? | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue-before",
+        "cueBefore"
+      ]
+    },
+    "cue-after": {
+      "name": "cue-after",
+      "value": "<uri> <decibel>? | none",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue-after",
+        "cueAfter"
+      ]
+    },
+    "cue": {
+      "name": "cue",
+      "value": "<'cue-before'> <'cue-after'>?",
+      "initial": "N/A (see individual properties)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "N/A (see individual properties)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "cue"
+      ]
+    },
+    "voice-family": {
+      "name": "voice-family",
+      "value": "[[<family-name> | <generic-voice>],]* [<family-name> | <generic-voice>] | preserve",
+      "initial": "implementation-dependent",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-family",
+        "voiceFamily"
+      ]
+    },
+    "voice-rate": {
+      "name": "voice-rate",
+      "value": "[normal | x-slow | slow | medium | fast | x-fast] || <percentage>",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to default value",
+      "computedValue": "a keyword value, and optionally also a percentage relative to the keyword (if not 100%)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-rate",
+        "voiceRate"
+      ]
+    },
+    "voice-pitch": {
+      "name": "voice-pitch",
+      "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to inherited value",
+      "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-pitch",
+        "voicePitch"
+      ]
+    },
+    "voice-range": {
+      "name": "voice-range",
+      "value": "<frequency> && absolute | [[x-low | low | medium | high | x-high] || [<frequency> | <semitones> | <percentage>]]",
+      "initial": "medium",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "refer to inherited value",
+      "computedValue": "one of the predefined pitch keywords if only the keyword is specified by itself, otherwise an absolute frequency calculated by converting the keyword value (if any) to a fixed frequency based on the current voice-family and by applying the specified relative offset (if any)",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-range",
+        "voiceRange"
+      ]
+    },
+    "voice-stress": {
+      "name": "voice-stress",
+      "value": "normal | strong | moderate | none | reduced",
+      "initial": "normal",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-stress",
+        "voiceStress"
+      ]
+    },
+    "voice-duration": {
+      "name": "voice-duration",
+      "value": "auto | <time>",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "voice-duration",
+        "voiceDuration"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<generic-voice>": {
+      "value": "[<age>? <gender> <integer>?]"
+    },
+    "<age>": {
+      "prose": "Possible values are child, young and old, indicating the preferred age category to match during voice selection."
+    },
+    "<gender>": {
+      "prose": "One of the keywords male, female, or neutral, specifying a male, female, or neutral voice, respectively."
+    }
+  }
+}

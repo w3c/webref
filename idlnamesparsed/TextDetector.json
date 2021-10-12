@@ -1,0 +1,15 @@
+{
+  "name": "TextDetector",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Accelerated Text Detection in Images",
+      "url": "https://wicg.github.io/shape-detection-api/text.html"
+    },
+    "fragment": "[\n    Exposed=(Window,Worker),\n    SecureContext\n] interface TextDetector {\n    constructor();\n    Promise<sequence<DetectedText>> detect(ImageBitmapSource image);\n};",
+    "href": "https://wicg.github.io/shape-detection-api/text.html#textdetector"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

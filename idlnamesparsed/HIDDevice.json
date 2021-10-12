@@ -1,0 +1,29 @@
+{
+  "name": "HIDDevice",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebHID API",
+      "url": "https://wicg.github.io/webhid/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface HIDDevice : EventTarget {\n    attribute EventHandler oninputreport;\n    readonly attribute boolean opened;\n    readonly attribute unsigned short vendorId;\n    readonly attribute unsigned short productId;\n    readonly attribute DOMString productName;\n    readonly attribute FrozenArray<HIDCollectionInfo> collections;\n    Promise<undefined> open();\n    Promise<undefined> close();\n    Promise<undefined> sendReport([EnforceRange] octet reportId, BufferSource data);\n    Promise<undefined> sendFeatureReport(\n        [EnforceRange] octet reportId,\n        BufferSource data);\n    Promise<DataView> receiveFeatureReport([EnforceRange] octet reportId);\n};",
+    "href": "https://wicg.github.io/webhid/#dom-hiddevice"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

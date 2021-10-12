@@ -1,0 +1,65 @@
+{
+  "name": "RTCPeerConnection",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCPeerConnection : EventTarget  {\n  constructor(optional RTCConfiguration configuration = {});\n  Promise<RTCSessionDescriptionInit> createOffer(optional RTCOfferOptions options = {});\n  Promise<RTCSessionDescriptionInit> createAnswer(optional RTCAnswerOptions options = {});\n  Promise<undefined> setLocalDescription(optional RTCLocalSessionDescriptionInit description = {});\n  readonly attribute RTCSessionDescription? localDescription;\n  readonly attribute RTCSessionDescription? currentLocalDescription;\n  readonly attribute RTCSessionDescription? pendingLocalDescription;\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description);\n  readonly attribute RTCSessionDescription? remoteDescription;\n  readonly attribute RTCSessionDescription? currentRemoteDescription;\n  readonly attribute RTCSessionDescription? pendingRemoteDescription;\n  Promise<undefined> addIceCandidate(optional RTCIceCandidateInit candidate = {});\n  readonly attribute RTCSignalingState signalingState;\n  readonly attribute RTCIceGatheringState iceGatheringState;\n  readonly attribute RTCIceConnectionState iceConnectionState;\n  readonly attribute RTCPeerConnectionState connectionState;\n  readonly attribute boolean? canTrickleIceCandidates;\n  undefined restartIce();\n  RTCConfiguration getConfiguration();\n  undefined setConfiguration(optional RTCConfiguration configuration = {});\n  undefined close();\n  attribute EventHandler onnegotiationneeded;\n  attribute EventHandler onicecandidate;\n  attribute EventHandler onicecandidateerror;\n  attribute EventHandler onsignalingstatechange;\n  attribute EventHandler oniceconnectionstatechange;\n  attribute EventHandler onicegatheringstatechange;\n  attribute EventHandler onconnectionstatechange;\n\n  // Legacy Interface Extensions\n  // Supporting the methods in this section is optional.\n  // If these methods are supported\n  // they must be implemented as defined\n  // in section \"Legacy Interface Extensions\"\n  Promise<undefined> createOffer(RTCSessionDescriptionCallback successCallback,\n                            RTCPeerConnectionErrorCallback failureCallback,\n                            optional RTCOfferOptions options = {});\n  Promise<undefined> setLocalDescription(RTCLocalSessionDescriptionInit description,\n                                    VoidFunction successCallback,\n                                    RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> createAnswer(RTCSessionDescriptionCallback successCallback,\n                             RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> setRemoteDescription(RTCSessionDescriptionInit description,\n                                     VoidFunction successCallback,\n                                     RTCPeerConnectionErrorCallback failureCallback);\n  Promise<undefined> addIceCandidate(RTCIceCandidateInit candidate,\n                                VoidFunction successCallback,\n                                RTCPeerConnectionErrorCallback failureCallback);\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcpeerconnection"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Identity for WebRTC 1.0",
+        "url": "https://www.w3.org/TR/webrtc-identity/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n    undefined               setIdentityProvider (DOMString provider, optional RTCIdentityProviderOptions options = {});\n    Promise<DOMString> getIdentityAssertion ();\n    readonly        attribute Promise<RTCIdentityAssertion> peerIdentity;\n    readonly        attribute DOMString?                    idpLoginUrl;\n    readonly        attribute DOMString?                    idpErrorInfo;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  static Promise<RTCCertificate>\n      generateCertificate(AlgorithmIdentifier keygenAlgorithm);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  sequence<RTCRtpSender> getSenders();\n  sequence<RTCRtpReceiver> getReceivers();\n  sequence<RTCRtpTransceiver> getTransceivers();\n  RTCRtpSender addTrack(MediaStreamTrack track, MediaStream... streams);\n  undefined removeTrack(RTCRtpSender sender);\n  RTCRtpTransceiver addTransceiver((MediaStreamTrack or DOMString) trackOrKind,\n                                   optional RTCRtpTransceiverInit init = {});\n  attribute EventHandler ontrack;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  readonly attribute RTCSctpTransport? sctp;\n  RTCDataChannel createDataChannel(USVString label,\n                                   optional RTCDataChannelInit dataChannelDict = {});\n  attribute EventHandler ondatachannel;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial interface RTCPeerConnection {\n  Promise<RTCStatsReport> getStats(optional MediaStreamTrack? selector = null);\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

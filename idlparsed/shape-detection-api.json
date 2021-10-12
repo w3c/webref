@@ -1,0 +1,653 @@
+{
+  "spec": {
+    "title": "Accelerated Shape Detection in Images",
+    "url": "https://wicg.github.io/shape-detection-api/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "FaceDetector",
+          "BarcodeDetector"
+        ],
+        "Worker": [
+          "FaceDetector",
+          "BarcodeDetector"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "FaceDetector": {
+        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface FaceDetector {\n  constructor(optional FaceDetectorOptions faceDetectorOptions = {});\n  Promise<sequence<DetectedFace>> detect(ImageBitmapSource image);\n};",
+        "type": "interface",
+        "name": "FaceDetector",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "faceDetectorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "FaceDetectorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "detect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DetectedFace"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "image",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageBitmapSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "FaceDetectorOptions": {
+        "fragment": "dictionary FaceDetectorOptions {\n  unsigned short maxDetectedFaces;\n  boolean fastMode;\n};",
+        "type": "dictionary",
+        "name": "FaceDetectorOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "maxDetectedFaces",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned short"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "fastMode",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DetectedFace": {
+        "fragment": "dictionary DetectedFace {\n  required DOMRectReadOnly boundingBox;\n  required FrozenArray<Landmark>? landmarks;\n};",
+        "type": "dictionary",
+        "name": "DetectedFace",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "boundingBox",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMRectReadOnly"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "landmarks",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": true,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Landmark"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "Landmark": {
+        "fragment": "dictionary Landmark {\n  required FrozenArray<Point2D> locations;\n  LandmarkType type;\n};",
+        "type": "dictionary",
+        "name": "Landmark",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "locations",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Point2D"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "type",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "LandmarkType"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "LandmarkType": {
+        "fragment": "enum LandmarkType {\n  \"mouth\",\n  \"eye\",\n  \"nose\"\n};",
+        "type": "enum",
+        "name": "LandmarkType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "mouth"
+          },
+          {
+            "type": "enum-value",
+            "value": "eye"
+          },
+          {
+            "type": "enum-value",
+            "value": "nose"
+          }
+        ],
+        "extAttrs": []
+      },
+      "BarcodeDetector": {
+        "fragment": "[Exposed=(Window,Worker),\n SecureContext]\ninterface BarcodeDetector {\n  constructor(optional BarcodeDetectorOptions barcodeDetectorOptions = {});\n  static Promise<sequence<BarcodeFormat>> getSupportedFormats();\n\n  Promise<sequence<DetectedBarcode>> detect(ImageBitmapSource image);\n};",
+        "type": "interface",
+        "name": "BarcodeDetector",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "barcodeDetectorOptions",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BarcodeDetectorOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "getSupportedFormats",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "BarcodeFormat"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "detect",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "return-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DetectedBarcode"
+                    }
+                  ]
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "image",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ImageBitmapSource"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "BarcodeDetectorOptions": {
+        "fragment": "dictionary BarcodeDetectorOptions {\n  sequence<BarcodeFormat> formats;\n};",
+        "type": "dictionary",
+        "name": "BarcodeDetectorOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "formats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "BarcodeFormat"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "DetectedBarcode": {
+        "fragment": "dictionary DetectedBarcode {\n  required DOMRectReadOnly boundingBox;\n  required DOMString rawValue;\n  required BarcodeFormat format;\n  required FrozenArray<Point2D> cornerPoints;\n};",
+        "type": "dictionary",
+        "name": "DetectedBarcode",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "boundingBox",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMRectReadOnly"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "rawValue",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "format",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "BarcodeFormat"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "cornerPoints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "Point2D"
+                }
+              ]
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "BarcodeFormat": {
+        "fragment": "enum BarcodeFormat {\n  \"aztec\",\n  \"code_128\",\n  \"code_39\",\n  \"code_93\",\n  \"codabar\",\n  \"data_matrix\",\n  \"ean_13\",\n  \"ean_8\",\n  \"itf\",\n  \"pdf417\",\n  \"qr_code\",\n  \"unknown\",\n  \"upc_a\",\n  \"upc_e\"\n};",
+        "type": "enum",
+        "name": "BarcodeFormat",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "aztec"
+          },
+          {
+            "type": "enum-value",
+            "value": "code_128"
+          },
+          {
+            "type": "enum-value",
+            "value": "code_39"
+          },
+          {
+            "type": "enum-value",
+            "value": "code_93"
+          },
+          {
+            "type": "enum-value",
+            "value": "codabar"
+          },
+          {
+            "type": "enum-value",
+            "value": "data_matrix"
+          },
+          {
+            "type": "enum-value",
+            "value": "ean_13"
+          },
+          {
+            "type": "enum-value",
+            "value": "ean_8"
+          },
+          {
+            "type": "enum-value",
+            "value": "itf"
+          },
+          {
+            "type": "enum-value",
+            "value": "pdf417"
+          },
+          {
+            "type": "enum-value",
+            "value": "qr_code"
+          },
+          {
+            "type": "enum-value",
+            "value": "unknown"
+          },
+          {
+            "type": "enum-value",
+            "value": "upc_a"
+          },
+          {
+            "type": "enum-value",
+            "value": "upc_e"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "FaceDetector",
+        "BarcodeDetector"
+      ],
+      "Worker": [
+        "FaceDetector",
+        "BarcodeDetector"
+      ]
+    },
+    "dependencies": {
+      "FaceDetector": [
+        "FaceDetectorOptions",
+        "DetectedFace",
+        "ImageBitmapSource"
+      ],
+      "FaceDetectorOptions": [],
+      "DetectedFace": [
+        "DOMRectReadOnly",
+        "Landmark"
+      ],
+      "Landmark": [
+        "Point2D",
+        "LandmarkType"
+      ],
+      "BarcodeDetector": [
+        "BarcodeDetectorOptions",
+        "BarcodeFormat",
+        "DetectedBarcode",
+        "ImageBitmapSource"
+      ],
+      "BarcodeDetectorOptions": [
+        "BarcodeFormat"
+      ],
+      "DetectedBarcode": [
+        "DOMRectReadOnly",
+        "BarcodeFormat",
+        "Point2D"
+      ]
+    },
+    "externalDependencies": [
+      "ImageBitmapSource",
+      "DOMRectReadOnly",
+      "Point2D"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

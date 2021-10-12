@@ -1,0 +1,39 @@
+{
+  "name": "Request",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Fetch Standard",
+      "url": "https://fetch.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Request {\n  constructor(RequestInfo input, optional RequestInit init = {});\n\n  readonly attribute ByteString method;\n  readonly attribute USVString url;\n  [SameObject] readonly attribute Headers headers;\n\n  readonly attribute RequestDestination destination;\n  readonly attribute USVString referrer;\n  readonly attribute ReferrerPolicy referrerPolicy;\n  readonly attribute RequestMode mode;\n  readonly attribute RequestCredentials credentials;\n  readonly attribute RequestCache cache;\n  readonly attribute RequestRedirect redirect;\n  readonly attribute DOMString integrity;\n  readonly attribute boolean keepalive;\n  readonly attribute boolean isReloadNavigation;\n  readonly attribute boolean isHistoryNavigation;\n  readonly attribute AbortSignal signal;\n\n  [NewObject] Request clone();\n};",
+    "href": "https://fetch.spec.whatwg.org/#request"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Fetch Standard",
+        "url": "https://fetch.spec.whatwg.org/"
+      },
+      "fragment": "Request includes Body;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "Body",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Fetch Standard",
+          "url": "https://fetch.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin Body {\n  readonly attribute ReadableStream? body;\n  readonly attribute boolean bodyUsed;\n  [NewObject] Promise<ArrayBuffer> arrayBuffer();\n  [NewObject] Promise<Blob> blob();\n  [NewObject] Promise<FormData> formData();\n  [NewObject] Promise<any> json();\n  [NewObject] Promise<USVString> text();\n};",
+        "href": "https://fetch.spec.whatwg.org/#body"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

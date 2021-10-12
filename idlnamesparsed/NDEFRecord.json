@@ -1,0 +1,15 @@
+{
+  "name": "NDEFRecord",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web NFC",
+      "url": "https://w3c.github.io/web-nfc/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFRecord {\n  constructor(NDEFRecordInit recordInit);\n\n  readonly attribute USVString recordType;\n  readonly attribute USVString? mediaType;\n  readonly attribute USVString? id;\n  readonly attribute DataView? data;\n\n  readonly attribute USVString? encoding;\n  readonly attribute USVString? lang;\n\n  sequence<NDEFRecord>? toRecords();\n};",
+    "href": "https://w3c.github.io/web-nfc/#dom-ndefrecord"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

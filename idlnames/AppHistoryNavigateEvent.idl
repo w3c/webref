@@ -1,0 +1,16 @@
+// Source: App History API (https://wicg.github.io/app-history/)
+[Exposed=Window]
+interface AppHistoryNavigateEvent : Event {
+  constructor(DOMString type, AppHistoryNavigateEventInit eventInit);
+
+  readonly attribute AppHistoryNavigationType navigationType;
+  readonly attribute AppHistoryDestination destination;
+  readonly attribute boolean canTransition;
+  readonly attribute boolean userInitiated;
+  readonly attribute boolean hashChange;
+  readonly attribute AbortSignal signal;
+  readonly attribute FormData? formData;
+  readonly attribute any info;
+
+  undefined transitionWhile(Promise<undefined> newNavigationAction);
+};

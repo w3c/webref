@@ -1,0 +1,534 @@
+{
+  "spec": {
+    "title": "User-Agent Client Hints",
+    "url": "https://wicg.github.io/ua-client-hints/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/ua-client-hints/#title",
+      "level": 1,
+      "title": "User-Agent Client Hints"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://wicg.github.io/ua-client-hints/#profile-and-date",
+      "level": 2,
+      "title": "Draft Community Group Report, 24 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/ua-client-hints/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/ua-client-hints/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/ua-client-hints/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/ua-client-hints/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "examples",
+      "href": "https://wicg.github.io/ua-client-hints/#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "1.1"
+    },
+    {
+      "id": "use-cases",
+      "href": "https://wicg.github.io/ua-client-hints/#use-cases",
+      "level": 3,
+      "title": "Use Cases",
+      "number": "1.2"
+    },
+    {
+      "id": "differential-serving-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#differential-serving-use-case",
+      "level": 4,
+      "title": "Differential serving",
+      "number": "1.2.1"
+    },
+    {
+      "id": "based-on-browser-features-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#based-on-browser-features-use-case",
+      "level": 5,
+      "title": "Based on browser features",
+      "number": "1.2.1.1"
+    },
+    {
+      "id": "browser-bug-workaround-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#browser-bug-workaround-use-case",
+      "level": 5,
+      "title": "Browser bug workaround",
+      "number": "1.2.1.2"
+    },
+    {
+      "id": "marketshare-analytics-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#marketshare-analytics-use-case",
+      "level": 4,
+      "title": "Marketshare Analytics",
+      "number": "1.2.2"
+    },
+    {
+      "id": "content-adaptation-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#content-adaptation-use-case",
+      "level": 4,
+      "title": "Content adaptation",
+      "number": "1.2.3"
+    },
+    {
+      "id": "browser-based-adaptation-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#browser-based-adaptation-use-case",
+      "level": 5,
+      "title": "Browser based adaptation",
+      "number": "1.2.3.1"
+    },
+    {
+      "id": "mobile-specific-site-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#mobile-specific-site-use-case",
+      "level": 5,
+      "title": "Mobile specific site",
+      "number": "1.2.3.2"
+    },
+    {
+      "id": "low-powered-devices-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#low-powered-devices-use-case",
+      "level": 5,
+      "title": "Low-powered devices",
+      "number": "1.2.3.3"
+    },
+    {
+      "id": "os-specific-styles-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#os-specific-styles-use-case",
+      "level": 5,
+      "title": "OS specific styles",
+      "number": "1.2.3.4"
+    },
+    {
+      "id": "os-integration-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#os-integration-use-case",
+      "level": 5,
+      "title": "OS integration",
+      "number": "1.2.3.5"
+    },
+    {
+      "id": "browser-os-experiments-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#browser-os-experiments-use-case",
+      "level": 5,
+      "title": "Browser and OS specific experiments",
+      "number": "1.2.3.6"
+    },
+    {
+      "id": "user-login-notification-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#user-login-notification-use-case",
+      "level": 4,
+      "title": "User login notification",
+      "number": "1.2.4"
+    },
+    {
+      "id": "binary-executable-downloads",
+      "href": "https://wicg.github.io/ua-client-hints/#binary-executable-downloads",
+      "level": 4,
+      "title": "Download of appropriate binary executables",
+      "number": "1.2.5"
+    },
+    {
+      "id": "conversion-modeling-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#conversion-modeling-use-case",
+      "level": 4,
+      "title": "Conversion modeling",
+      "number": "1.2.6"
+    },
+    {
+      "id": "vulnerability-filtering-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#vulnerability-filtering-use-case",
+      "level": 4,
+      "title": "Vulnerability filtering",
+      "number": "1.2.7"
+    },
+    {
+      "id": "logs-debugging-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#logs-debugging-use-case",
+      "level": 4,
+      "title": "Logs and debugging",
+      "number": "1.2.8"
+    },
+    {
+      "id": "fingerprinting-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#fingerprinting-use-case",
+      "level": 4,
+      "title": "Fingerprinting",
+      "number": "1.2.9"
+    },
+    {
+      "id": "spam-filtering-bots-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#spam-filtering-bots-use-case",
+      "level": 5,
+      "title": "Spam filtering and bot detection",
+      "number": "1.2.9.1"
+    },
+    {
+      "id": "persistent-user-tracking",
+      "href": "https://wicg.github.io/ua-client-hints/#persistent-user-tracking",
+      "level": 5,
+      "title": "Persistent user tracking",
+      "number": "1.2.9.2"
+    },
+    {
+      "id": "blocking-known-bots-crawlers-use-case",
+      "href": "https://wicg.github.io/ua-client-hints/#blocking-known-bots-crawlers-use-case",
+      "level": 5,
+      "title": "Blocking known bots and crawlers",
+      "number": "1.2.9.3"
+    },
+    {
+      "id": "infrastructure",
+      "href": "https://wicg.github.io/ua-client-hints/#infrastructure",
+      "level": 2,
+      "title": "Infrastructure",
+      "number": "2"
+    },
+    {
+      "id": "http-ua-hints",
+      "href": "https://wicg.github.io/ua-client-hints/#http-ua-hints",
+      "level": 2,
+      "title": "User Agent Hints",
+      "number": "3"
+    },
+    {
+      "id": "sec-ch-ua",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua",
+      "level": 3,
+      "title": "The 'Sec-CH-UA' Header Field",
+      "number": "3.1"
+    },
+    {
+      "id": "sec-ch-ua-arch",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Arch' Header Field",
+      "number": "3.2"
+    },
+    {
+      "id": "sec-ch-ua-bitness",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-bitness",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Bitness' Header Field",
+      "number": "3.3"
+    },
+    {
+      "id": "sec-ch-ua-full-version",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Full-Version' Header Field",
+      "number": "3.4"
+    },
+    {
+      "id": "sec-ch-ua-mobile",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Mobile' Header Field",
+      "number": "3.5"
+    },
+    {
+      "id": "sec-ch-ua-model",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-model",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Model' Header Field",
+      "number": "3.6"
+    },
+    {
+      "id": "sec-ch-ua-platform",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Platform' Header Field",
+      "number": "3.7"
+    },
+    {
+      "id": "sec-ch-ua-platform-version",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
+      "number": "3.8"
+    },
+    {
+      "id": "sec-ch-ua-full-version-list",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
+      "level": 3,
+      "title": "The 'Sec-CH-UA-Full-Version-List' Header Field",
+      "number": "3.9"
+    },
+    {
+      "id": "interface",
+      "href": "https://wicg.github.io/ua-client-hints/#interface",
+      "level": 2,
+      "title": "Interface",
+      "number": "4"
+    },
+    {
+      "id": "processing",
+      "href": "https://wicg.github.io/ua-client-hints/#processing",
+      "level": 3,
+      "title": "Processing model",
+      "number": "4.1"
+    },
+    {
+      "id": "monkeypatch-html-windoworworkerglobalscope",
+      "href": "https://wicg.github.io/ua-client-hints/#monkeypatch-html-windoworworkerglobalscope",
+      "level": 4,
+      "title": "WindowOrWorkerGlobalScope",
+      "number": "4.1.1"
+    },
+    {
+      "id": "create-ua-list-section",
+      "href": "https://wicg.github.io/ua-client-hints/#create-ua-list-section",
+      "level": 4,
+      "title": "Create brands",
+      "number": "4.1.2"
+    },
+    {
+      "id": "create-arbitrary-brands-section",
+      "href": "https://wicg.github.io/ua-client-hints/#create-arbitrary-brands-section",
+      "level": 4,
+      "title": "Create arbitrary brand and version values",
+      "number": "4.1.3"
+    },
+    {
+      "id": "create-brand-version-list",
+      "href": "https://wicg.github.io/ua-client-hints/#create-brand-version-list",
+      "level": 4,
+      "title": "Create a brand-version list",
+      "number": "4.1.4"
+    },
+    {
+      "id": "getters",
+      "href": "https://wicg.github.io/ua-client-hints/#getters",
+      "level": 4,
+      "title": "Getters",
+      "number": "4.1.5"
+    },
+    {
+      "id": "getHighEntropyValues",
+      "href": "https://wicg.github.io/ua-client-hints/#getHighEntropyValues",
+      "level": 4,
+      "title": "getHighEntropyValues method",
+      "number": "4.1.6"
+    },
+    {
+      "id": "toJSON",
+      "href": "https://wicg.github.io/ua-client-hints/#toJSON",
+      "level": 4,
+      "title": "toJSON method",
+      "number": "4.1.7"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://wicg.github.io/ua-client-hints/#security-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "5"
+    },
+    {
+      "id": "secure-transport",
+      "href": "https://wicg.github.io/ua-client-hints/#secure-transport",
+      "level": 3,
+      "title": "Secure Transport",
+      "number": "5.1"
+    },
+    {
+      "id": "delegation",
+      "href": "https://wicg.github.io/ua-client-hints/#delegation",
+      "level": 3,
+      "title": "Delegation",
+      "number": "5.2"
+    },
+    {
+      "id": "fingerprinting",
+      "href": "https://wicg.github.io/ua-client-hints/#fingerprinting",
+      "level": 3,
+      "title": "Fingerprinting",
+      "number": "5.3"
+    },
+    {
+      "id": "access",
+      "href": "https://wicg.github.io/ua-client-hints/#access",
+      "level": 3,
+      "title": "Access Restrictions",
+      "number": "5.4"
+    },
+    {
+      "id": "impl-considerations",
+      "href": "https://wicg.github.io/ua-client-hints/#impl-considerations",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "6"
+    },
+    {
+      "id": "user-agent",
+      "href": "https://wicg.github.io/ua-client-hints/#user-agent",
+      "level": 3,
+      "title": "The 'User-Agent' Header",
+      "number": "6.1"
+    },
+    {
+      "id": "grease",
+      "href": "https://wicg.github.io/ua-client-hints/#grease",
+      "level": 3,
+      "title": "GREASE-like UA Brand Lists",
+      "number": "6.2"
+    },
+    {
+      "id": "sec-ch",
+      "href": "https://wicg.github.io/ua-client-hints/#sec-ch",
+      "level": 3,
+      "title": "The 'Sec-CH-' prefix",
+      "number": "6.3"
+    },
+    {
+      "id": "iana",
+      "href": "https://wicg.github.io/ua-client-hints/#iana",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "7"
+    },
+    {
+      "id": "iana-ua",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-ua",
+      "level": 3,
+      "title": "'Sec-CH-UA' Header Field",
+      "number": "7.1"
+    },
+    {
+      "id": "iana-arch",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-arch",
+      "level": 3,
+      "title": "'Sec-CH-UA-Arch' Header Field",
+      "number": "7.2"
+    },
+    {
+      "id": "iana-bitness",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-bitness",
+      "level": 3,
+      "title": "'Sec-CH-UA-Bitness' Header Field",
+      "number": "7.3"
+    },
+    {
+      "id": "iana-full-version",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-full-version",
+      "level": 3,
+      "title": "'Sec-CH-UA-Full-Version' Header Field",
+      "number": "7.4"
+    },
+    {
+      "id": "iana-mobile",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-mobile",
+      "level": 3,
+      "title": "'Sec-CH-UA-Mobile' Header Field",
+      "number": "7.5"
+    },
+    {
+      "id": "iana-model",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-model",
+      "level": 3,
+      "title": "'Sec-CH-UA-Model' Header Field",
+      "number": "7.6"
+    },
+    {
+      "id": "iana-platform",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-platform",
+      "level": 3,
+      "title": "'Sec-CH-UA-Platform' Header Field",
+      "number": "7.7"
+    },
+    {
+      "id": "iana-platform-version",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-platform-version",
+      "level": 3,
+      "title": "'Sec-CH-UA-Platform-Version' Header Field",
+      "number": "7.8"
+    },
+    {
+      "id": "iana-full-version-list",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-full-version-list",
+      "level": 3,
+      "title": "'Sec-CH-UA-Full-Version-List' Header Field",
+      "number": "7.9"
+    },
+    {
+      "id": "iana-user-agent",
+      "href": "https://wicg.github.io/ua-client-hints/#iana-user-agent",
+      "level": 3,
+      "title": "'User-Agent' Header Field",
+      "number": "7.10"
+    },
+    {
+      "id": "ack",
+      "href": "https://wicg.github.io/ua-client-hints/#ack",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "8"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/ua-client-hints/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/ua-client-hints/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/ua-client-hints/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/ua-client-hints/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/ua-client-hints/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/ua-client-hints/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/ua-client-hints/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/ua-client-hints/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

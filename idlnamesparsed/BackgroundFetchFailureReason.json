@@ -1,0 +1,14 @@
+{
+  "name": "BackgroundFetchFailureReason",
+  "type": "enum",
+  "defined": {
+    "spec": {
+      "title": "Background Fetch",
+      "url": "https://wicg.github.io/background-fetch/"
+    },
+    "fragment": "enum BackgroundFetchFailureReason {\n  // The background fetch has not completed yet, or was successful.\n  \"\",\n  // The operation was aborted by the user, or abort() was called.\n  \"aborted\",\n  // A response had a not-ok-status.\n  \"bad-status\",\n  // A fetch failed for other reasons, e.g. CORS, MIX, an invalid partial response,\n  // or a general network failure for a fetch that cannot be retried.\n  \"fetch-error\",\n  // Storage quota was reached during the operation.\n  \"quota-exceeded\",\n  // The provided downloadTotal was exceeded.\n  \"download-total-exceeded\"\n};",
+    "href": "https://wicg.github.io/background-fetch/#enumdef-backgroundfetchfailurereason"
+  },
+  "extended": [],
+  "includes": []
+}

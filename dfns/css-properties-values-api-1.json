@@ -1,0 +1,707 @@
+{
+  "spec": {
+    "title": "CSS Properties and Values API Level 1",
+    "url": "https://drafts.css-houdini.org/css-properties-values-api-1/"
+  },
+  "dfns": [
+    {
+      "id": "registered-custom-property",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#registered-custom-property",
+      "linkingText": [
+        "registered custom property"
+      ],
+      "localLinkingText": [
+        "registered"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "behavior-of-custom-properties",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#behavior-of-custom-properties",
+        "title": "Registered Custom Properties",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "custom-property-registration",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#custom-property-registration",
+      "linkingText": [
+        "custom property registration"
+      ],
+      "localLinkingText": [
+        "registration"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "determining-registration",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#determining-registration",
+        "title": "Determining the Registration",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "equivalent-token-sequence",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#equivalent-token-sequence",
+      "linkingText": [
+        "equivalent token sequence"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "substitution",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#substitution",
+        "title": "Substitution via var()",
+        "number": "2.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "at-ruledef-property",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#at-ruledef-property",
+      "linkingText": [
+        "@property"
+      ],
+      "localLinkingText": [],
+      "type": "at-rule",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-property-rule",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#at-property-rule",
+        "title": "The @property Rule",
+        "number": "3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "descdef-property-syntax",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-syntax",
+      "linkingText": [
+        "syntax"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@property"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-syntax-descriptor",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-syntax-descriptor",
+        "title": "The syntax Descriptor",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-property-inherits",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-inherits",
+      "linkingText": [
+        "inherits"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@property"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "inherits-descriptor",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#inherits-descriptor",
+        "title": "The inherits Descriptor",
+        "number": "3.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "descdef-property-initial-value",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#descdef-property-initial-value",
+      "linkingText": [
+        "initial-value"
+      ],
+      "localLinkingText": [],
+      "type": "descriptor",
+      "for": [
+        "@property"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "initial-value-descriptor",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#initial-value-descriptor",
+        "title": "The initial-value Descriptor",
+        "number": "3.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-css-registerproperty-definition-definition",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-css-registerproperty-definition-definition",
+      "linkingText": [
+        "definition"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "CSS/registerProperty(definition)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-custom-properties",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#registering-custom-properties",
+        "title": "Registering Custom Properties in JS",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-window-registeredpropertyset-slot",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-window-registeredpropertyset-slot",
+      "linkingText": [
+        "[[registeredPropertySet]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Window"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "registering-custom-properties",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#registering-custom-properties",
+        "title": "Registering Custom Properties in JS",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-css-registerproperty",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-css-registerproperty",
+      "linkingText": [
+        "registerProperty(definition)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-registerproperty-function",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-registerproperty-function",
+        "title": "The registerProperty() Function",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "register-a-custom-property",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#register-a-custom-property",
+      "linkingText": [
+        "register a custom property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-registerproperty-function",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-registerproperty-function",
+        "title": "The registerProperty() Function",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computationally-independent",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#computationally-independent",
+      "linkingText": [
+        "computationally independent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-registerproperty-function",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-registerproperty-function",
+        "title": "The registerProperty() Function",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-propertydefinition",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dictdef-propertydefinition",
+      "linkingText": [
+        "PropertyDefinition"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-propertydefinition-dictionary",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-propertydefinition-dictionary",
+        "title": "The PropertyDefinition Dictionary",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-propertydefinition-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-propertydefinition-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PropertyDefinition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-propertydefinition-dictionary",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-propertydefinition-dictionary",
+        "title": "The PropertyDefinition Dictionary",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-propertydefinition-syntax",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-propertydefinition-syntax",
+      "linkingText": [
+        "syntax"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PropertyDefinition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-propertydefinition-dictionary",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-propertydefinition-dictionary",
+        "title": "The PropertyDefinition Dictionary",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-propertydefinition-inherits",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-propertydefinition-inherits",
+      "linkingText": [
+        "inherits"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PropertyDefinition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-propertydefinition-dictionary",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-propertydefinition-dictionary",
+        "title": "The PropertyDefinition Dictionary",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-propertydefinition-initialvalue",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-propertydefinition-initialvalue",
+      "linkingText": [
+        "initialValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PropertyDefinition"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-propertydefinition-dictionary",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-propertydefinition-dictionary",
+        "title": "The PropertyDefinition Dictionary",
+        "number": "4.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "syntax-string",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-string",
+      "linkingText": [
+        "syntax string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntax-strings",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-strings",
+        "title": "Syntax Strings",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-supported-syntax-component-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#css-supported-syntax-component-name",
+      "linkingText": [
+        "supported syntax component name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "supported-names",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#supported-names",
+        "title": "Supported Names",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "data-type-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#data-type-name",
+      "linkingText": [
+        "data type name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pre-multiplied-data-type-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#pre-multiplied-data-type-name",
+      "linkingText": [
+        "pre-multiplied data type name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "syntax-component",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-component",
+      "linkingText": [
+        "syntax component"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "syntax-component-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-component-name",
+      "linkingText": [
+        "syntax component name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "syntax-definition",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#syntax-definition",
+      "linkingText": [
+        "syntax definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "universal-syntax-definition",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#universal-syntax-definition",
+      "linkingText": [
+        "universal syntax definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing-definitions",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#parsing-definitions",
+        "title": "Definitions",
+        "number": "5.4.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "consume-a-syntax-definition",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-a-syntax-definition",
+      "linkingText": [
+        "consume a syntax definition"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "consume-syntax-definition",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-syntax-definition",
+        "title": "Consume a Syntax Definition",
+        "number": "5.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "consume-a-syntax-component",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-a-syntax-component",
+      "linkingText": [
+        "consume a syntax component"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "consume-syntax-component",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-syntax-component",
+        "title": "Consume a Syntax Component",
+        "number": "5.4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "consume-a-data-type-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-a-data-type-name",
+      "linkingText": [
+        "consume a data type name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "consume-data-type-name",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#consume-data-type-name",
+        "title": "Consume a Data Type Name",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csspropertyrule",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#csspropertyrule",
+      "linkingText": [
+        "CSSPropertyRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-csspropertyrule-name",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-csspropertyrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPropertyRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csspropertyrule-syntax",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-csspropertyrule-syntax",
+      "linkingText": [
+        "syntax"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPropertyRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csspropertyrule-inherits",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-csspropertyrule-inherits",
+      "linkingText": [
+        "inherits"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPropertyRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-csspropertyrule-initialvalue",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#dom-csspropertyrule-initialvalue",
+      "linkingText": [
+        "initialValue"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSPropertyRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "serialize-a-csspropertyrule",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#serialize-a-csspropertyrule",
+      "linkingText": [
+        "serialize a CSSPropertyRule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-css-property-rule-interface",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#the-css-property-rule-interface",
+        "title": "The CSSPropertyRule Interface",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "reify-a-registered-custom-property-value",
+      "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#reify-a-registered-custom-property-value",
+      "linkingText": [
+        "reify a registered custom property value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "css-style-value-reification",
+        "href": "https://drafts.css-houdini.org/css-properties-values-api-1/#css-style-value-reification",
+        "title": "CSSStyleValue Reification",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "XPathEvaluator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface XPathEvaluator {\n  constructor();\n};",
+    "href": "https://dom.spec.whatwg.org/#xpathevaluator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "XPathEvaluator includes XPathEvaluatorBase;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "XPathEvaluatorBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "interface mixin XPathEvaluatorBase {\n  [NewObject] XPathExpression createExpression(DOMString expression, optional XPathNSResolver? resolver = null);\n  XPathNSResolver createNSResolver(Node nodeResolver);\n  // XPathResult.ANY_TYPE = 0\n  XPathResult evaluate(DOMString expression, Node contextNode, optional XPathNSResolver? resolver = null, optional unsigned short type = 0, optional XPathResult? result = null);\n};",
+        "href": "https://dom.spec.whatwg.org/#xpathevaluatorbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

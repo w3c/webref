@@ -1,0 +1,269 @@
+{
+  "spec": {
+    "title": "CSS Text Module Level 4",
+    "url": "https://drafts.csswg.org/css-text-4/"
+  },
+  "properties": {
+    "word-boundary-detection": {
+      "name": "word-boundary-detection",
+      "value": "normal | manual | auto(<lang>)",
+      "initial": "normal",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified (However, see special provision for unsupported <lang>)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "word-boundary-detection",
+        "wordBoundaryDetection"
+      ]
+    },
+    "word-boundary-expansion": {
+      "name": "word-boundary-expansion",
+      "value": "none | space | ideographic-space",
+      "initial": "none",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "as specified",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "word-boundary-expansion",
+        "wordBoundaryExpansion"
+      ]
+    },
+    "text-space-collapse": {
+      "name": "text-space-collapse",
+      "value": "collapse | discard | preserve | preserve-breaks | preserve-spaces",
+      "initial": "collapse",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-space-collapse",
+        "textSpaceCollapse"
+      ]
+    },
+    "text-space-trim": {
+      "name": "text-space-trim",
+      "value": "none | trim-inner || discard-before || discard-after",
+      "initial": "none",
+      "appliesTo": "inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-space-trim",
+        "textSpaceTrim"
+      ]
+    },
+    "text-wrap": {
+      "name": "text-wrap",
+      "value": "wrap | nowrap | balance | stable | pretty",
+      "initial": "wrap",
+      "appliesTo": "text and block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-wrap",
+        "textWrap"
+      ]
+    },
+    "wrap-before": {
+      "name": "wrap-before",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "wrap-before",
+        "wrapBefore"
+      ]
+    },
+    "wrap-after": {
+      "name": "wrap-after",
+      "value": "auto | avoid | avoid-line | avoid-flex | line | flex",
+      "initial": "auto",
+      "appliesTo": "inline-level boxes and flex items",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "wrap-after",
+        "wrapAfter"
+      ]
+    },
+    "wrap-inside": {
+      "name": "wrap-inside",
+      "value": "auto | avoid",
+      "initial": "auto",
+      "appliesTo": "inline boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "wrap-inside",
+        "wrapInside"
+      ]
+    },
+    "white-space": {
+      "name": "white-space",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line",
+      "initial": "auto",
+      "appliesTo": "See individual properties",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "see individual properties",
+      "animationType": "discrete",
+      "canonicalOrder": "per grammar",
+      "styleDeclaration": [
+        "white-space",
+        "whiteSpace"
+      ]
+    },
+    "hyphenate-character": {
+      "name": "hyphenate-character",
+      "value": "auto | <string>",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hyphenate-character",
+        "hyphenateCharacter"
+      ]
+    },
+    "hyphenate-limit-zone": {
+      "name": "hyphenate-limit-zone",
+      "value": "<length-percentage>",
+      "initial": "0",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "refers to length of the line box",
+      "computedValue": "computed <length-percentage> value",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-zone",
+        "hyphenateLimitZone"
+      ]
+    },
+    "hyphenate-limit-chars": {
+      "name": "hyphenate-limit-chars",
+      "value": "[ auto | <integer> ]{1,3}",
+      "initial": "auto",
+      "appliesTo": "text",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "three values, each either the auto keyword or an integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-chars",
+        "hyphenateLimitChars"
+      ]
+    },
+    "hyphenate-limit-lines": {
+      "name": "hyphenate-limit-lines",
+      "value": "no-limit | <integer>",
+      "initial": "no-limit",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword or integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "hyphenate-limit-lines",
+        "hyphenateLimitLines"
+      ]
+    },
+    "hyphenate-limit-last": {
+      "name": "hyphenate-limit-last",
+      "value": "none | always | column | page | spread",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "hyphenate-limit-last",
+        "hyphenateLimitLast"
+      ]
+    },
+    "text-group-align": {
+      "name": "text-group-align",
+      "value": "none | start | end | left | right | center",
+      "initial": "none",
+      "appliesTo": "block containers",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-group-align",
+        "textGroupAlign"
+      ]
+    },
+    "line-padding": {
+      "name": "line-padding",
+      "value": "<length>",
+      "initial": "0",
+      "appliesTo": "inline boxes",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "absolute length",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "line-padding",
+        "linePadding"
+      ]
+    },
+    "text-spacing": {
+      "name": "text-spacing",
+      "value": "normal | none | auto | [ trim-start | space-start | space-first ] || [ trim-end | space-end | allow-end ] || [ trim-adjacent | space-adjacent ] || no-compress || ideograph-alpha || ideograph-numeric || punctuation",
+      "initial": "normal",
+      "appliesTo": "block containers",
+      "inherited": "yes",
+      "percentages": "N/A",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "text-spacing",
+        "textSpacing"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<auto()>": {
+      "value": "auto(<lang>)"
+    }
+  }
+}

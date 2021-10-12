@@ -1,0 +1,29 @@
+{
+  "name": "USBPermissionDescriptor",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebUSB API",
+      "url": "https://wicg.github.io/webusb/"
+    },
+    "fragment": "dictionary USBPermissionDescriptor : PermissionDescriptor {\n  sequence<USBDeviceFilter> filters;\n};",
+    "href": "https://wicg.github.io/webusb/#dictdef-usbpermissiondescriptor"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "PermissionDescriptor",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "dictionary PermissionDescriptor {\n  required PermissionName name;\n};",
+      "href": "https://w3c.github.io/permissions/#dom-permissiondescriptor"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

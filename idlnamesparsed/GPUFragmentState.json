@@ -1,0 +1,29 @@
+{
+  "name": "GPUFragmentState",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "dictionary GPUFragmentState: GPUProgrammableStage {\n    required sequence<GPUColorTargetState> targets;\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpufragmentstate"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "GPUProgrammableStage",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "dictionary GPUProgrammableStage {\n    required GPUShaderModule module;\n    required USVString entryPoint;\n    record<USVString, GPUPipelineConstantValue> constants;\n};",
+      "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpuprogrammablestage"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

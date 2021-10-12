@@ -1,0 +1,51 @@
+{
+  "name": "MediaDevices",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "[Exposed=Window, SecureContext]\ninterface MediaDevices : EventTarget {\n  attribute EventHandler ondevicechange;\n  Promise<sequence<MediaDeviceInfo>> enumerateDevices();\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediadevices"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Audio Output Devices API",
+        "url": "https://www.w3.org/TR/audio-output/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaDeviceInfo> selectAudioOutput(optional AudioOutputOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture and Streams",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      "fragment": "partial interface MediaDevices {\n  MediaTrackSupportedConstraints getSupportedConstraints();\n  Promise<MediaStream> getUserMedia(optional MediaStreamConstraints constraints = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Capture",
+        "url": "https://www.w3.org/TR/screen-capture/"
+      },
+      "fragment": "partial interface MediaDevices {\n  Promise<MediaStream> getDisplayMedia(optional DisplayMediaStreamConstraints constraints = {});\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

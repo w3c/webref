@@ -1,0 +1,15 @@
+{
+  "name": "History",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface History {\n  readonly attribute unsigned long length;\n  attribute ScrollRestoration scrollRestoration;\n  readonly attribute any state;\n  undefined go(optional long delta = 0);\n  undefined back();\n  undefined forward();\n  undefined pushState(any data, DOMString unused, optional USVString? url = null);\n  undefined replaceState(any data, DOMString unused, optional USVString? url = null);\n};",
+    "href": "https://html.spec.whatwg.org/multipage/history.html#history-3"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

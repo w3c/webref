@@ -1,0 +1,2957 @@
+{
+  "spec": {
+    "title": "CSS Grid Layout Module Level 2",
+    "url": "https://drafts.csswg.org/css-grid-2/"
+  },
+  "dfns": [
+    {
+      "id": "grid-layout",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-layout",
+      "linkingText": [
+        "grid layout"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-concepts",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-concepts",
+        "title": "Grid Layout Concepts and Terminology",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid",
+      "linkingText": [
+        "grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-concepts",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-concepts",
+        "title": "Grid Layout Concepts and Terminology",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-column",
+      "linkingText": [
+        "grid column"
+      ],
+      "localLinkingText": [
+        "column"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-concepts",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-concepts",
+        "title": "Grid Layout Concepts and Terminology",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-row",
+      "linkingText": [
+        "grid row"
+      ],
+      "localLinkingText": [
+        "row"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-concepts",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-concepts",
+        "title": "Grid Layout Concepts and Terminology",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-line",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-line",
+      "linkingText": [
+        "grid line",
+        "grid row line",
+        "grid column line"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-line-concept",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-line-concept",
+        "title": "Grid Lines",
+        "number": "3.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-track",
+      "linkingText": [
+        "Grid track"
+      ],
+      "localLinkingText": [
+        "track"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-track-concept",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-track-concept",
+        "title": "Grid Tracks and Cells",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-cell",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-cell",
+      "linkingText": [
+        "grid cell"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-track-concept",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-track-concept",
+        "title": "Grid Tracks and Cells",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-area",
+      "linkingText": [
+        "grid area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-area-concept",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-area-concept",
+        "title": "Grid Areas",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "nested-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#nested-grid",
+      "linkingText": [
+        "nested grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subgrid-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#subgrid-items",
+        "title": "Nested vs. Subgridded Items",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parent-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#parent-grid",
+      "linkingText": [
+        "parent grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subgrid-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#subgrid-items",
+        "title": "Nested vs. Subgridded Items",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subgrid",
+      "href": "https://drafts.csswg.org/css-grid-2/#subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "subgrid-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#subgrid-items",
+        "title": "Nested vs. Subgridded Items",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "standalone-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#standalone-grid",
+      "linkingText": [
+        "standalone grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "subgrid-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#subgrid-items",
+        "title": "Nested vs. Subgridded Items",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-display-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-display-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-containers",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-containers",
+        "title": "Establishing Grid Containers: the grid and inline-grid display values",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-display-inline-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-display-inline-grid",
+      "linkingText": [
+        "inline-grid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "display"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-containers",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-containers",
+        "title": "Establishing Grid Containers: the grid and inline-grid display values",
+        "number": "5.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-container",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-container",
+      "linkingText": [
+        "grid container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-containers",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-containers",
+        "title": "Establishing Grid Containers: the grid and inline-grid display values",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-formatting-context",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-formatting-context",
+      "linkingText": [
+        "grid formatting context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-containers",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-containers",
+        "title": "Establishing Grid Containers: the grid and inline-grid display values",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "clamp-a-grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#clamp-a-grid-area",
+      "linkingText": [
+        "clamp a grid area"
+      ],
+      "localLinkingText": [
+        "clamp"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "overlarge-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#overlarge-grids",
+        "title": "Limiting Large Grids",
+        "number": "5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-item",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-item",
+      "linkingText": [
+        "grid item"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-items",
+        "title": "Grid Items",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-level",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-level",
+      "linkingText": [
+        "grid-level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-item-display",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-item-display",
+        "title": "Grid Item Display",
+        "number": "6.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "content-based-minimum-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#content-based-minimum-size",
+      "linkingText": [
+        "content-based minimum size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-grid-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Grid Items",
+        "number": "6.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "specified-size-suggestion",
+      "href": "https://drafts.csswg.org/css-grid-2/#specified-size-suggestion",
+      "linkingText": [
+        "specified size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-grid-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Grid Items",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "transferred-size-suggestion",
+      "href": "https://drafts.csswg.org/css-grid-2/#transferred-size-suggestion",
+      "linkingText": [
+        "transferred size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-grid-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Grid Items",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "content-size-suggestion",
+      "href": "https://drafts.csswg.org/css-grid-2/#content-size-suggestion",
+      "linkingText": [
+        "content size suggestion"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "min-size-auto",
+        "href": "https://drafts.csswg.org/css-grid-2/#min-size-auto",
+        "title": "Automatic Minimum Size of Grid Items",
+        "number": "6.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "explicit-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid",
+      "linkingText": [
+        "explicit grid"
+      ],
+      "localLinkingText": [
+        "explicit"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grids",
+        "title": "The Explicit Grid",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "explicit-grid-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-track",
+      "linkingText": [
+        "explicit grid track",
+        "explicit grid row",
+        "explicit grid column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grids",
+        "title": "The Explicit Grid",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "explicit-grid-properties",
+      "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-properties",
+      "linkingText": [
+        "explicit grid properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grids",
+        "title": "The Explicit Grid",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-template-columns",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-columns",
+      "linkingText": [
+        "grid-template-columns"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-template-rows",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-rows",
+      "linkingText": [
+        "grid-template-rows"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "track-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#track-list",
+      "linkingText": [
+        "track list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-grid-template-rows-none",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "track-listing",
+      "href": "https://drafts.csswg.org/css-grid-2/#track-listing",
+      "linkingText": [
+        "<track-list> | <auto-track-list>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-template-rows-track-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-rows-track-sizing-function",
+      "linkingText": [
+        "track sizing function",
+        "sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subgrid-listing",
+      "href": "https://drafts.csswg.org/css-grid-2/#subgrid-listing",
+      "linkingText": [
+        "subgrid <line-name-list>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-rows-subgrid",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-rows-subgrid",
+      "linkingText": [
+        "subgrid"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-rows",
+        "grid-template-columns"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "subgridded-axis",
+      "href": "https://drafts.csswg.org/css-grid-2/#subgridded-axis",
+      "linkingText": [
+        "subgridded axis"
+      ],
+      "localLinkingText": [
+        "subgridded"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "standalone-axis",
+      "href": "https://drafts.csswg.org/css-grid-2/#standalone-axis",
+      "linkingText": [
+        "standalone axis"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-track-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-list",
+      "linkingText": [
+        "<track-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-track-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-track-list",
+      "linkingText": [
+        "<auto-track-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-explicit-track-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-explicit-track-list",
+      "linkingText": [
+        "<explicit-track-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-line-name-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-name-list",
+      "linkingText": [
+        "<line-name-list>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-track-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-size",
+      "linkingText": [
+        "<track-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-fixed-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-size",
+      "linkingText": [
+        "<fixed-size>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-track-breadth",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-breadth",
+      "linkingText": [
+        "<track-breadth>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-inflexible-breadth",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-inflexible-breadth",
+      "linkingText": [
+        "<inflexible-breadth>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-fixed-breadth",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-breadth",
+      "linkingText": [
+        "<fixed-breadth>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-line-names",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-line-names",
+      "linkingText": [
+        "<line-names>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizing",
+        "title": "Explicit Track Sizing: the grid-template-rows and grid-template-columns properties",
+        "number": "7.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-grid-template-columns-length-percentage",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-length-percentage",
+      "linkingText": [
+        "<length-percentage>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-columns-flex",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-flex",
+      "linkingText": [
+        "<flex>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-template-columns-flex-factor",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-columns-flex-factor",
+      "linkingText": [
+        "flex factor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-grid-template-columns-minmax",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-minmax",
+      "linkingText": [
+        "minmax()"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-columns-auto",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-columns-max-content",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-max-content",
+      "linkingText": [
+        "max-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-columns-min-content",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-min-content",
+      "linkingText": [
+        "min-content"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-columns-fit-content",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-columns-fit-content",
+      "linkingText": [
+        "fit-content()"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-columns",
+        "grid-template-rows"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "track-sizes",
+        "href": "https://drafts.csswg.org/css-grid-2/#track-sizes",
+        "title": "Track Sizes",
+        "number": "7.2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "line-name",
+      "href": "https://drafts.csswg.org/css-grid-2/#line-name",
+      "linkingText": [
+        "line name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "named-lines",
+        "href": "https://drafts.csswg.org/css-grid-2/#named-lines",
+        "title": "Naming Grid Lines: the [<custom-ident>*] syntax",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "explicitly-assigned-line-name",
+      "href": "https://drafts.csswg.org/css-grid-2/#explicitly-assigned-line-name",
+      "linkingText": [
+        "explicitly-assigned line name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "named-lines",
+        "href": "https://drafts.csswg.org/css-grid-2/#named-lines",
+        "title": "Naming Grid Lines: the [<custom-ident>*] syntax",
+        "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-repeat",
+      "href": "https://drafts.csswg.org/css-grid-2/#funcdef-repeat",
+      "linkingText": [
+        "repeat()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-notation",
+        "href": "https://drafts.csswg.org/css-grid-2/#repeat-notation",
+        "title": "Repeating Rows and Columns: the repeat() notation",
+        "number": "7.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-track-repeat",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-track-repeat",
+      "linkingText": [
+        "<track-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-syntax",
+        "href": "https://drafts.csswg.org/css-grid-2/#repeat-syntax",
+        "title": "Syntax of repeat()",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-auto-repeat",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-auto-repeat",
+      "linkingText": [
+        "<auto-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-syntax",
+        "href": "https://drafts.csswg.org/css-grid-2/#repeat-syntax",
+        "title": "Syntax of repeat()",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-fixed-repeat",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-fixed-repeat",
+      "linkingText": [
+        "<fixed-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-syntax",
+        "href": "https://drafts.csswg.org/css-grid-2/#repeat-syntax",
+        "title": "Syntax of repeat()",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-name-repeat",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-name-repeat",
+      "linkingText": [
+        "<name-repeat>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "repeat-syntax",
+        "href": "https://drafts.csswg.org/css-grid-2/#repeat-syntax",
+        "title": "Syntax of repeat()",
+        "number": "7.2.3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "valdef-repeat-auto-fill",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fill",
+      "linkingText": [
+        "auto-fill"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "repeat()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-repeat",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-repeat",
+        "title": "Repeat-to-fill: auto-fill and auto-fit repetitions",
+        "number": "7.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-repeat-auto-fit",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-repeat-auto-fit",
+      "linkingText": [
+        "auto-fit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "repeat()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-repeat",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-repeat",
+        "title": "Repeat-to-fill: auto-fill and auto-fit repetitions",
+        "number": "7.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsed-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#collapsed-track",
+      "linkingText": [
+        "collapsed track"
+      ],
+      "localLinkingText": [
+        "collapse"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto-repeat",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-repeat",
+        "title": "Repeat-to-fill: auto-fill and auto-fit repetitions",
+        "number": "7.2.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flexible-length",
+      "href": "https://drafts.csswg.org/css-grid-2/#flexible-length",
+      "linkingText": [
+        "flexible length"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fr-unit",
+        "href": "https://drafts.csswg.org/css-grid-2/#fr-unit",
+        "title": "Flexible Lengths: the fr unit",
+        "number": "7.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-flex",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-flex",
+      "linkingText": [
+        "<flex>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fr-unit",
+        "href": "https://drafts.csswg.org/css-grid-2/#fr-unit",
+        "title": "Flexible Lengths: the fr unit",
+        "number": "7.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-flex-fr",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-flex-fr",
+      "linkingText": [
+        "fr",
+        "fr unit"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<flex>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fr-unit",
+        "href": "https://drafts.csswg.org/css-grid-2/#fr-unit",
+        "title": "Flexible Lengths: the fr unit",
+        "number": "7.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flexible-tracks",
+      "href": "https://drafts.csswg.org/css-grid-2/#flexible-tracks",
+      "linkingText": [
+        "flexible tracks"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fr-unit",
+        "href": "https://drafts.csswg.org/css-grid-2/#fr-unit",
+        "title": "Flexible Lengths: the fr unit",
+        "number": "7.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flex-fraction",
+      "href": "https://drafts.csswg.org/css-grid-2/#flex-fraction",
+      "linkingText": [
+        "flex fraction"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fr-unit",
+        "href": "https://drafts.csswg.org/css-grid-2/#fr-unit",
+        "title": "Flexible Lengths: the fr unit",
+        "number": "7.2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-track-list",
+      "href": "https://drafts.csswg.org/css-grid-2/#computed-track-list",
+      "linkingText": [
+        "computed track list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "line-name-set",
+      "href": "https://drafts.csswg.org/css-grid-2/#line-name-set",
+      "linkingText": [
+        "line name set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "track-section",
+      "href": "https://drafts.csswg.org/css-grid-2/#track-section",
+      "linkingText": [
+        "track section"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-track-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#computed-track-size",
+      "linkingText": [
+        "computed track size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "computed-repeat-notation",
+      "href": "https://drafts.csswg.org/css-grid-2/#computed-repeat-notation",
+      "linkingText": [
+        "computed repeat notation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "computed-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#computed-tracks",
+        "title": "Computed Value of a Track Listing",
+        "number": "7.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-template-areas",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template-areas",
+      "linkingText": [
+        "grid-template-areas"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "named-grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#named-grid-area",
+      "linkingText": [
+        "named grid area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-grid-template-areas-none",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-areas-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-areas"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-template-areas-string",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-areas-string",
+      "linkingText": [
+        "<string>+"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template-areas"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-template-areas-named-cell-token",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-named-cell-token",
+      "linkingText": [
+        "named cell token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "grid-template-areas"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-template-areas-null-cell-token",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-null-cell-token",
+      "linkingText": [
+        "null cell token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "grid-template-areas"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-template-areas-trash-token",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-trash-token",
+      "linkingText": [
+        "trash token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "grid-template-areas"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "grid-template-areas-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-template-areas-property",
+        "title": "Named Areas: the grid-template-areas property",
+        "number": "7.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implicitly-assigned-line-name",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicitly-assigned-line-name",
+      "linkingText": [
+        "implicitly-assigned line name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-named-lines",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-named-lines",
+        "title": "Implicitly-Assigned Line Names",
+        "number": "7.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implicitly-named-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicitly-named-area",
+      "linkingText": [
+        "implicitly-named area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-named-areas",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-named-areas",
+        "title": "Implicitly-Named Areas",
+        "number": "7.3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-template",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-template",
+      "linkingText": [
+        "grid-template"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-shorthand",
+        "title": "Explicit Grid Shorthand: the grid-template property",
+        "number": "7.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-grid-template-none",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-template-none",
+      "linkingText": [
+        "none"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-shorthand",
+        "title": "Explicit Grid Shorthand: the grid-template property",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-template-rowcol",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-rowcol",
+      "linkingText": [
+        "<'grid-template-rows'> / <'grid-template-columns'>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-shorthand",
+        "title": "Explicit Grid Shorthand: the grid-template property",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-template-ascii",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-template-ascii",
+      "linkingText": [
+        "[ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-template"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "explicit-grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#explicit-grid-shorthand",
+        "title": "Explicit Grid Shorthand: the grid-template property",
+        "number": "7.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "implicit-grid-track",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicit-grid-track",
+      "linkingText": [
+        "implicit grid track",
+        "implicit grid row",
+        "implicit grid column"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-grids",
+        "title": "The Implicit Grid",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implicit-grid-lines",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicit-grid-lines",
+      "linkingText": [
+        "implicit grid lines"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "implicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-grids",
+        "title": "The Implicit Grid",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implicit-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicit-grid",
+      "linkingText": [
+        "implicit grid"
+      ],
+      "localLinkingText": [
+        "implicit"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "implicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-grids",
+        "title": "The Implicit Grid",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implicit-grid-properties",
+      "href": "https://drafts.csswg.org/css-grid-2/#implicit-grid-properties",
+      "linkingText": [
+        "implicit grid properties"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "implicit-grids",
+        "href": "https://drafts.csswg.org/css-grid-2/#implicit-grids",
+        "title": "The Implicit Grid",
+        "number": "7.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-auto-columns",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-columns",
+      "linkingText": [
+        "grid-auto-columns"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-tracks",
+        "title": "Implicit Track Sizing: the grid-auto-rows and grid-auto-columns properties",
+        "number": "7.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-auto-rows",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-rows",
+      "linkingText": [
+        "grid-auto-rows"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-tracks",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-tracks",
+        "title": "Implicit Track Sizing: the grid-auto-rows and grid-auto-columns properties",
+        "number": "7.6"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "auto-placement",
+      "href": "https://drafts.csswg.org/css-grid-2/#auto-placement",
+      "linkingText": [
+        "auto-placement",
+        "automatic placement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-auto-flow-property",
+        "title": "Automatic Placement: the grid-auto-flow property",
+        "number": "7.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "propdef-grid-auto-flow",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-auto-flow",
+      "linkingText": [
+        "grid-auto-flow"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-auto-flow-property",
+        "title": "Automatic Placement: the grid-auto-flow property",
+        "number": "7.7"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "valdef-grid-auto-flow-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-row",
+      "linkingText": [
+        "row"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-auto-flow-property",
+        "title": "Automatic Placement: the grid-auto-flow property",
+        "number": "7.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-auto-flow-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-column",
+      "linkingText": [
+        "column"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-auto-flow-property",
+        "title": "Automatic Placement: the grid-auto-flow property",
+        "number": "7.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-grid-auto-flow-dense",
+      "href": "https://drafts.csswg.org/css-grid-2/#valdef-grid-auto-flow-dense",
+      "linkingText": [
+        "dense"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid-auto-flow"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-auto-flow-property",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-auto-flow-property",
+        "title": "Automatic Placement: the grid-auto-flow property",
+        "number": "7.7"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid",
+      "linkingText": [
+        "grid"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-shorthand",
+        "title": "Grid Definition Shorthand: the grid property",
+        "number": "7.8"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "grid-s-auto-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-s-auto-row",
+      "linkingText": [
+        "<'grid-template-rows'> / [ auto-flow && dense? ] <'grid-auto-columns'>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-shorthand",
+        "title": "Grid Definition Shorthand: the grid property",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-s-auto-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-s-auto-column",
+      "linkingText": [
+        "[ auto-flow && dense? ] <'grid-auto-rows'>? / <'grid-template-columns'>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "grid"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-shorthand",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-shorthand",
+        "title": "Grid Definition Shorthand: the grid property",
+        "number": "7.8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-placement",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement",
+      "linkingText": [
+        "grid placement"
+      ],
+      "localLinkingText": [
+        "placement"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-position",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-position",
+      "linkingText": [
+        "grid position"
+      ],
+      "localLinkingText": [
+        "position",
+        "row position",
+        "column position"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "definite-grid-position",
+      "href": "https://drafts.csswg.org/css-grid-2/#definite-grid-position",
+      "linkingText": [
+        "definite grid position",
+        "definite row position",
+        "definite column position",
+        "definite position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "automatic-grid-position",
+      "href": "https://drafts.csswg.org/css-grid-2/#automatic-grid-position",
+      "linkingText": [
+        "automatic grid position",
+        "automatic row position",
+        "automatic column position",
+        "automatic position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-span",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-span",
+      "linkingText": [
+        "grid span"
+      ],
+      "localLinkingText": [
+        "span",
+        "row span",
+        "column span"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "indefinite-grid-span",
+      "href": "https://drafts.csswg.org/css-grid-2/#indefinite-grid-span",
+      "linkingText": [
+        "indefinite grid span",
+        "indefinite row span",
+        "indefinite column span",
+        "indefinite span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "definite-grid-span",
+      "href": "https://drafts.csswg.org/css-grid-2/#definite-grid-span",
+      "linkingText": [
+        "definite grid span",
+        "definite row span",
+        "definite column span",
+        "definite span"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-placement-property",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-property",
+      "linkingText": [
+        "grid-placement property"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement",
+        "title": "Placing Grid Items",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "propdef-grid-row-start",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row-start",
+      "linkingText": [
+        "grid-row-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-column-start",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column-start",
+      "linkingText": [
+        "grid-column-start"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-row-end",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row-end",
+      "linkingText": [
+        "grid-row-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-column-end",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column-end",
+      "linkingText": [
+        "grid-column-end"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "typedef-grid-row-start-grid-line",
+      "href": "https://drafts.csswg.org/css-grid-2/#typedef-grid-row-start-grid-line",
+      "linkingText": [
+        "<grid-line>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "grid-row-start",
+        "grid-column-start",
+        "grid-row-end",
+        "grid-column-end"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grid-placement-slot",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-slot",
+      "linkingText": [
+        "<custom-ident>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<grid-line>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-placement-int",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-int",
+      "linkingText": [
+        "<integer> && <custom-ident>?"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<grid-line>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-placement-span-int",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-span-int",
+      "linkingText": [
+        "span && [ <integer> || <custom-ident> ]"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<grid-line>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "grid-placement-auto",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-placement-auto",
+      "linkingText": [
+        "auto"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "<grid-line>"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "line-placement",
+        "href": "https://drafts.csswg.org/css-grid-2/#line-placement",
+        "title": "Line-based Placement: the grid-row-start, grid-column-start, grid-row-end, and grid-column-end properties",
+        "number": "8.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "propdef-grid-row",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-row",
+      "linkingText": [
+        "grid-row"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement-shorthands",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement-shorthands",
+        "title": "Placement Shorthands: the grid-column, grid-row, and grid-area properties",
+        "number": "8.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-column",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-column",
+      "linkingText": [
+        "grid-column"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement-shorthands",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement-shorthands",
+        "title": "Placement Shorthands: the grid-column, grid-row, and grid-area properties",
+        "number": "8.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "propdef-grid-area",
+      "href": "https://drafts.csswg.org/css-grid-2/#propdef-grid-area",
+      "linkingText": [
+        "grid-area"
+      ],
+      "localLinkingText": [],
+      "type": "property",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "placement-shorthands",
+        "href": "https://drafts.csswg.org/css-grid-2/#placement-shorthands",
+        "title": "Placement Shorthands: the grid-column, grid-row, and grid-area properties",
+        "number": "8.4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "grid-item-placement-algorithm",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-item-placement-algorithm",
+      "linkingText": [
+        "grid item placement algorithm"
+      ],
+      "localLinkingText": [
+        "auto-placement algorithm"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-placement-algo",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-placement-algo",
+        "title": "Grid Item Placement Algorithm",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "occupied",
+      "href": "https://drafts.csswg.org/css-grid-2/#occupied",
+      "linkingText": [
+        "occupied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto-placement-algo",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-placement-algo",
+        "title": "Grid Item Placement Algorithm",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "unoccupied",
+      "href": "https://drafts.csswg.org/css-grid-2/#unoccupied",
+      "linkingText": [
+        "unoccupied"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "auto-placement-algo",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-placement-algo",
+        "title": "Grid Item Placement Algorithm",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "auto-placement-cursor",
+      "href": "https://drafts.csswg.org/css-grid-2/#auto-placement-cursor",
+      "linkingText": [
+        "auto-placement cursor"
+      ],
+      "localLinkingText": [
+        "cursor"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "auto-placement-algo",
+        "href": "https://drafts.csswg.org/css-grid-2/#auto-placement-algo",
+        "title": "Grid Item Placement Algorithm",
+        "number": "8.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "augmented-grid",
+      "href": "https://drafts.csswg.org/css-grid-2/#augmented-grid",
+      "linkingText": [
+        "augmented grid"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "abspos-items",
+        "href": "https://drafts.csswg.org/css-grid-2/#abspos-items",
+        "title": "With a Grid Container as Containing Block",
+        "number": "10.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "collapsed-gutter",
+      "href": "https://drafts.csswg.org/css-grid-2/#collapsed-gutter",
+      "linkingText": [
+        "collapsed gutter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "gutters",
+        "href": "https://drafts.csswg.org/css-grid-2/#gutters",
+        "title": "Gutters: the row-gap, column-gap, and gap properties",
+        "number": "11.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-order",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-order",
+      "linkingText": [
+        "grid order",
+        "grid-modified document order"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "grid-baselines",
+        "href": "https://drafts.csswg.org/css-grid-2/#grid-baselines",
+        "title": "Grid Container Baselines",
+        "number": "11.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grid-sizing-algorithm",
+      "href": "https://drafts.csswg.org/css-grid-2/#grid-sizing-algorithm",
+      "linkingText": [
+        "grid sizing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "layout-algorithm",
+        "href": "https://drafts.csswg.org/css-grid-2/#layout-algorithm",
+        "title": "12. Grid Sizing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fixed-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#fixed-sizing-function",
+      "linkingText": [
+        "fixed sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-algorithm",
+        "href": "https://drafts.csswg.org/css-grid-2/#layout-algorithm",
+        "title": "12. Grid Sizing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intrinsic-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#intrinsic-sizing-function",
+      "linkingText": [
+        "intrinsic sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-algorithm",
+        "href": "https://drafts.csswg.org/css-grid-2/#layout-algorithm",
+        "title": "12. Grid Sizing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flexible-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#flexible-sizing-function",
+      "linkingText": [
+        "flexible sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "layout-algorithm",
+        "href": "https://drafts.csswg.org/css-grid-2/#layout-algorithm",
+        "title": "12. Grid Sizing"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "min-track-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#min-track-sizing-function",
+      "linkingText": [
+        "min track sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-terms",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-terms",
+        "title": "Track Sizing Terminology",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "max-track-sizing-function",
+      "href": "https://drafts.csswg.org/css-grid-2/#max-track-sizing-function",
+      "linkingText": [
+        "max track sizing function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-terms",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-terms",
+        "title": "Track Sizing Terminology",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "available-grid-space",
+      "href": "https://drafts.csswg.org/css-grid-2/#available-grid-space",
+      "linkingText": [
+        "available grid space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-terms",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-terms",
+        "title": "Track Sizing Terminology",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "free-space",
+      "href": "https://drafts.csswg.org/css-grid-2/#free-space",
+      "linkingText": [
+        "free space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-terms",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-terms",
+        "title": "Track Sizing Terminology",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "span-count",
+      "href": "https://drafts.csswg.org/css-grid-2/#span-count",
+      "linkingText": [
+        "span count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-terms",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-terms",
+        "title": "Track Sizing Terminology",
+        "number": "12.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "track-sizing-algorithm",
+      "href": "https://drafts.csswg.org/css-grid-2/#track-sizing-algorithm",
+      "linkingText": [
+        "track sizing algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-track-sizing",
+        "title": "Track Sizing Algorithm",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "base-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#base-size",
+      "linkingText": [
+        "base size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-track-sizing",
+        "title": "Track Sizing Algorithm",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "growth-limit",
+      "href": "https://drafts.csswg.org/css-grid-2/#growth-limit",
+      "linkingText": [
+        "growth limit"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-track-sizing",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-track-sizing",
+        "title": "Track Sizing Algorithm",
+        "number": "12.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "limited-contribution",
+      "href": "https://drafts.csswg.org/css-grid-2/#limited-contribution",
+      "linkingText": [
+        "limited min-content contribution",
+        "limited max-content contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-content",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-content",
+        "title": "Resolve Intrinsic Track Sizes",
+        "number": "12.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "minimum-contribution",
+      "href": "https://drafts.csswg.org/css-grid-2/#minimum-contribution",
+      "linkingText": [
+        "minimum contribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-content",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-content",
+        "title": "Resolve Intrinsic Track Sizes",
+        "number": "12.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "infinitely-growable",
+      "href": "https://drafts.csswg.org/css-grid-2/#infinitely-growable",
+      "linkingText": [
+        "infinitely growable"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-content",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-content",
+        "title": "Resolve Intrinsic Track Sizes",
+        "number": "12.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "distribute-extra-space",
+      "href": "https://drafts.csswg.org/css-grid-2/#distribute-extra-space",
+      "linkingText": [
+        "distribute extra space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extra-space",
+        "href": "https://drafts.csswg.org/css-grid-2/#extra-space",
+        "title": "Distributing Extra Space Across Spanned Tracks",
+        "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "space-to-fill",
+      "href": "https://drafts.csswg.org/css-grid-2/#space-to-fill",
+      "linkingText": [
+        "space to fill"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-find-fr-size",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-find-fr-size",
+        "title": "Find the Size of an fr",
+        "number": "12.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "leftover-space",
+      "href": "https://drafts.csswg.org/css-grid-2/#leftover-space",
+      "linkingText": [
+        "leftover space"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-find-fr-size",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-find-fr-size",
+        "title": "Find the Size of an fr",
+        "number": "12.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "flex-factor-sum",
+      "href": "https://drafts.csswg.org/css-grid-2/#flex-factor-sum",
+      "linkingText": [
+        "flex factor sum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-find-fr-size",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-find-fr-size",
+        "title": "Find the Size of an fr",
+        "number": "12.7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "hypothetical-fr-size",
+      "href": "https://drafts.csswg.org/css-grid-2/#hypothetical-fr-size",
+      "linkingText": [
+        "hypothetical fr size"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "algo-find-fr-size",
+        "href": "https://drafts.csswg.org/css-grid-2/#algo-find-fr-size",
+        "title": "Find the Size of an fr",
+        "number": "12.7.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

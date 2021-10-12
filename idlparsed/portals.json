@@ -1,0 +1,634 @@
+{
+  "spec": {
+    "title": "Portals",
+    "url": "https://wicg.github.io/portals/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "HTMLPortalElement",
+          "PortalActivateEvent"
+        ]
+      },
+      "functions": {
+        "Window": [
+          "PortalHost"
+        ]
+      }
+    },
+    "idlNames": {
+      "HTMLPortalElement": {
+        "fragment": "[Exposed=Window]\ninterface HTMLPortalElement : HTMLElement {\n    [HTMLConstructor] constructor();\n\n    [CEReactions] attribute USVString src;\n    [CEReactions] attribute DOMString referrerPolicy;\n\n    [NewObject] Promise<undefined> activate(optional PortalActivateOptions options = {});\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
+        "type": "interface",
+        "name": "HTMLPortalElement",
+        "inheritance": "HTMLElement",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "HTMLConstructor",
+                "rhs": null,
+                "arguments": []
+              }
+            ]
+          },
+          {
+            "type": "attribute",
+            "name": "src",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "USVString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "referrerPolicy",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "CEReactions",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "activate",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PortalActivateOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "NewObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "postMessage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PostMessageOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onmessage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onmessageerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PortalActivateOptions": {
+        "fragment": "dictionary PortalActivateOptions : PostMessageOptions {\n    any data;\n};",
+        "type": "dictionary",
+        "name": "PortalActivateOptions",
+        "inheritance": "PostMessageOptions",
+        "members": [
+          {
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "PortalHost": {
+        "fragment": "[Exposed=Window]\ninterface PortalHost : EventTarget {\n    undefined postMessage(any message, optional PostMessageOptions options = {});\n\n    attribute EventHandler onmessage;\n    attribute EventHandler onmessageerror;\n};",
+        "type": "interface",
+        "name": "PortalHost",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "operation",
+            "name": "postMessage",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "message",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PostMessageOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "onmessage",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "onmessageerror",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PortalActivateEvent": {
+        "fragment": "[Exposed=Window]\ninterface PortalActivateEvent : Event {\n    constructor(DOMString type, optional PortalActivateEventInit eventInitDict = {});\n\n    readonly attribute any data;\n    HTMLPortalElement adoptPredecessor();\n};",
+        "type": "interface",
+        "name": "PortalActivateEvent",
+        "inheritance": "Event",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "eventInitDict",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PortalActivateEventInit"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "data",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "adoptPredecessor",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLPortalElement"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "PortalActivateEventInit": {
+        "fragment": "dictionary PortalActivateEventInit : EventInit {\n    any data = null;\n};",
+        "type": "dictionary",
+        "name": "PortalActivateEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "data",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            },
+            "default": {
+              "type": "null"
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MessageEventSource": {
+        "fragment": "typedef (WindowProxy or MessagePort or ServiceWorker or HTMLPortalElement or PortalHost) MessageEventSource;",
+        "type": "typedef",
+        "name": "MessageEventSource",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "WindowProxy"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MessagePort"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "ServiceWorker"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "HTMLPortalElement"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "PortalHost"
+            }
+          ]
+        },
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Window": [
+        {
+          "fragment": "partial interface Window {\n    readonly attribute PortalHost? portalHost;\n};",
+          "type": "interface",
+          "name": "Window",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "portalHost",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": true,
+                "union": false,
+                "idlType": "PortalHost"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "WindowEventHandlers": [
+        {
+          "fragment": "partial interface mixin WindowEventHandlers {\n    attribute EventHandler onportalactivate;\n};",
+          "type": "interface mixin",
+          "name": "WindowEventHandlers",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "onportalactivate",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "EventHandler"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "HTMLPortalElement",
+        "PortalHost",
+        "PortalActivateEvent"
+      ]
+    },
+    "dependencies": {
+      "HTMLPortalElement": [
+        "HTMLElement",
+        "PortalActivateOptions",
+        "PostMessageOptions",
+        "EventHandler"
+      ],
+      "PortalActivateOptions": [
+        "PostMessageOptions"
+      ],
+      "Window": [
+        "PortalHost"
+      ],
+      "PortalHost": [
+        "EventTarget",
+        "PostMessageOptions",
+        "EventHandler"
+      ],
+      "PortalActivateEvent": [
+        "Event",
+        "PortalActivateEventInit",
+        "HTMLPortalElement"
+      ],
+      "PortalActivateEventInit": [
+        "EventInit"
+      ],
+      "WindowEventHandlers": [
+        "EventHandler"
+      ]
+    },
+    "externalDependencies": [
+      "HTMLElement",
+      "PostMessageOptions",
+      "EventHandler",
+      "Window",
+      "EventTarget",
+      "Event",
+      "EventInit",
+      "WindowProxy",
+      "MessagePort",
+      "ServiceWorker",
+      "WindowEventHandlers"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

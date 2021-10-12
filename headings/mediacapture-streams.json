@@ -1,0 +1,617 @@
+{
+  "spec": {
+    "title": "Media Capture and Streams",
+    "url": "https://w3c.github.io/mediacapture-main/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/mediacapture-main/#title",
+      "level": 1,
+      "title": "Media Capture and Streams"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/mediacapture-main/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/mediacapture-main/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/mediacapture-main/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "terminology",
+      "href": "https://w3c.github.io/mediacapture-main/#terminology",
+      "level": 2,
+      "title": "Terminology",
+      "number": "3"
+    },
+    {
+      "id": "stream-api",
+      "href": "https://w3c.github.io/mediacapture-main/#stream-api",
+      "level": 2,
+      "title": "MediaStream API",
+      "number": "4"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/mediacapture-main/#introduction",
+      "level": 3,
+      "title": "Introduction",
+      "number": "4.1"
+    },
+    {
+      "id": "mediastream",
+      "href": "https://w3c.github.io/mediacapture-main/#mediastream",
+      "level": 3,
+      "title": "MediaStream",
+      "number": "4.2"
+    },
+    {
+      "id": "constructors-0",
+      "href": "https://w3c.github.io/mediacapture-main/#constructors-0",
+      "level": 4,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-0",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-0",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods",
+      "href": "https://w3c.github.io/mediacapture-main/#methods",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "mediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+      "level": 3,
+      "title": "MediaStreamTrack",
+      "number": "4.3"
+    },
+    {
+      "id": "life-cycle-and-media-flow",
+      "href": "https://w3c.github.io/mediacapture-main/#life-cycle-and-media-flow",
+      "level": 4,
+      "title": "Life-cycle and Media Flow",
+      "number": "4.3.1"
+    },
+    {
+      "id": "life-cycle",
+      "href": "https://w3c.github.io/mediacapture-main/#life-cycle",
+      "level": 4,
+      "title": "Life-cycle"
+    },
+    {
+      "id": "media-flow",
+      "href": "https://w3c.github.io/mediacapture-main/#media-flow",
+      "level": 4,
+      "title": "Media Flow"
+    },
+    {
+      "id": "tracks-and-constraints",
+      "href": "https://w3c.github.io/mediacapture-main/#tracks-and-constraints",
+      "level": 4,
+      "title": "Tracks and Constraints",
+      "number": "4.3.2"
+    },
+    {
+      "id": "media-stream-track-interface-definition",
+      "href": "https://w3c.github.io/mediacapture-main/#media-stream-track-interface-definition",
+      "level": 4,
+      "title": "Interface Definition",
+      "number": "4.3.3"
+    },
+    {
+      "id": "attributes-1",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-1",
+      "level": 5,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-0",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-0",
+      "level": 5,
+      "title": "Methods"
+    },
+    {
+      "id": "media-track-supported-constraints",
+      "href": "https://w3c.github.io/mediacapture-main/#media-track-supported-constraints",
+      "level": 4,
+      "title": "MediaTrackSupportedConstraints",
+      "number": "4.3.4"
+    },
+    {
+      "id": "dictionary-mediatracksupportedconstraints-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatracksupportedconstraints-members",
+      "level": 5,
+      "title": "Dictionary MediaTrackSupportedConstraints Members"
+    },
+    {
+      "id": "media-track-capabilities",
+      "href": "https://w3c.github.io/mediacapture-main/#media-track-capabilities",
+      "level": 4,
+      "title": "MediaTrackCapabilities",
+      "number": "4.3.5"
+    },
+    {
+      "id": "dictionary-mediatrackcapabilities-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackcapabilities-members",
+      "level": 5,
+      "title": "Dictionary MediaTrackCapabilities Members"
+    },
+    {
+      "id": "media-track-constraints",
+      "href": "https://w3c.github.io/mediacapture-main/#media-track-constraints",
+      "level": 4,
+      "title": "MediaTrackConstraints",
+      "number": "4.3.6"
+    },
+    {
+      "id": "dictionary-mediatrackconstraints-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraints-members",
+      "level": 5,
+      "title": "Dictionary MediaTrackConstraints Members"
+    },
+    {
+      "id": "dictionary-mediatrackconstraintset-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatrackconstraintset-members",
+      "level": 5,
+      "title": "Dictionary MediaTrackConstraintSet Members"
+    },
+    {
+      "id": "media-track-settings",
+      "href": "https://w3c.github.io/mediacapture-main/#media-track-settings",
+      "level": 4,
+      "title": "MediaTrackSettings",
+      "number": "4.3.7"
+    },
+    {
+      "id": "dictionary-mediatracksettings-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediatracksettings-members",
+      "level": 5,
+      "title": "Dictionary MediaTrackSettings Members"
+    },
+    {
+      "id": "constrainable-properties",
+      "href": "https://w3c.github.io/mediacapture-main/#constrainable-properties",
+      "level": 4,
+      "title": "Constrainable Properties",
+      "number": "4.3.8"
+    },
+    {
+      "id": "mediastreamtrackevent",
+      "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrackevent",
+      "level": 3,
+      "title": "MediaStreamTrackEvent",
+      "number": "4.4"
+    },
+    {
+      "id": "constructors-1",
+      "href": "https://w3c.github.io/mediacapture-main/#constructors-1",
+      "level": 4,
+      "title": "Constructors"
+    },
+    {
+      "id": "attributes-2",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-2",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "dictionary-mediastreamtrackeventinit-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediastreamtrackeventinit-members",
+      "level": 4,
+      "title": "Dictionary MediaStreamTrackEventInit Members"
+    },
+    {
+      "id": "the-model-sources-sinks-constraints-and-settings",
+      "href": "https://w3c.github.io/mediacapture-main/#the-model-sources-sinks-constraints-and-settings",
+      "level": 2,
+      "title": "The model: sources, sinks, constraints, and settings",
+      "number": "5"
+    },
+    {
+      "id": "mediastreams-in-media-elements",
+      "href": "https://w3c.github.io/mediacapture-main/#mediastreams-in-media-elements",
+      "level": 2,
+      "title": "MediaStreams in Media Elements",
+      "number": "6"
+    },
+    {
+      "id": "error-handling",
+      "href": "https://w3c.github.io/mediacapture-main/#error-handling",
+      "level": 2,
+      "title": "Error Handling",
+      "number": "7"
+    },
+    {
+      "id": "overconstrainederror-interface",
+      "href": "https://w3c.github.io/mediacapture-main/#overconstrainederror-interface",
+      "level": 3,
+      "title": "OverconstrainedError Interface",
+      "number": "7.1"
+    },
+    {
+      "id": "constructors",
+      "href": "https://w3c.github.io/mediacapture-main/#constructors",
+      "level": 4,
+      "title": "Constructors",
+      "number": "7.1.1"
+    },
+    {
+      "id": "attributes",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes",
+      "level": 4,
+      "title": "Attributes",
+      "number": "7.1.2"
+    },
+    {
+      "id": "event-summary",
+      "href": "https://w3c.github.io/mediacapture-main/#event-summary",
+      "level": 2,
+      "title": "Event summary",
+      "number": "8"
+    },
+    {
+      "id": "enumerating-devices",
+      "href": "https://w3c.github.io/mediacapture-main/#enumerating-devices",
+      "level": 2,
+      "title": "Enumerating Local Media Devices",
+      "number": "9"
+    },
+    {
+      "id": "navigator-interface-extensions",
+      "href": "https://w3c.github.io/mediacapture-main/#navigator-interface-extensions",
+      "level": 3,
+      "title": "Navigator Interface Extensions",
+      "number": "9.1"
+    },
+    {
+      "id": "attributes-3",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-3",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "mediadevices",
+      "href": "https://w3c.github.io/mediacapture-main/#mediadevices",
+      "level": 3,
+      "title": "MediaDevices",
+      "number": "9.2"
+    },
+    {
+      "id": "attributes-4",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-4",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-1",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-1",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "access-control-model",
+      "href": "https://w3c.github.io/mediacapture-main/#access-control-model",
+      "level": 4,
+      "title": "Access control model",
+      "number": "9.2.1"
+    },
+    {
+      "id": "device-information-exposure",
+      "href": "https://w3c.github.io/mediacapture-main/#device-information-exposure",
+      "level": 4,
+      "title": "Device information exposure",
+      "number": "9.2.2"
+    },
+    {
+      "id": "set-device-information-exposure-0",
+      "href": "https://w3c.github.io/mediacapture-main/#set-device-information-exposure-0",
+      "level": 4,
+      "title": "Set device information exposure",
+      "number": "9.2.3"
+    },
+    {
+      "id": "exposure-decision-algorithm-for-devices-other-than-camera-and-microphone",
+      "href": "https://w3c.github.io/mediacapture-main/#exposure-decision-algorithm-for-devices-other-than-camera-and-microphone",
+      "level": 4,
+      "title": "Exposure decision algorithm for devices other than camera and microphone",
+      "number": "9.2.4"
+    },
+    {
+      "id": "device-info",
+      "href": "https://w3c.github.io/mediacapture-main/#device-info",
+      "level": 3,
+      "title": "Device Info",
+      "number": "9.3"
+    },
+    {
+      "id": "attributes-5",
+      "href": "https://w3c.github.io/mediacapture-main/#attributes-5",
+      "level": 4,
+      "title": "Attributes"
+    },
+    {
+      "id": "methods-2",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-2",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "input-specific-device-info",
+      "href": "https://w3c.github.io/mediacapture-main/#input-specific-device-info",
+      "level": 3,
+      "title": "Input-specific Device Info",
+      "number": "9.4"
+    },
+    {
+      "id": "methods-3",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-3",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "local-content",
+      "href": "https://w3c.github.io/mediacapture-main/#local-content",
+      "level": 2,
+      "title": "10. Obtaining local multimedia content"
+    },
+    {
+      "id": "legacy-interface-extensions",
+      "href": "https://w3c.github.io/mediacapture-main/#legacy-interface-extensions",
+      "level": 3,
+      "title": "Legacy Interface Extensions",
+      "number": "10.1"
+    },
+    {
+      "id": "methods-4",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-4",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "mediadevices-interface-extensions",
+      "href": "https://w3c.github.io/mediacapture-main/#mediadevices-interface-extensions",
+      "level": 3,
+      "title": "MediaDevices Interface Extensions",
+      "number": "10.2"
+    },
+    {
+      "id": "methods-5",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-5",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "mediastreamconstraints",
+      "href": "https://w3c.github.io/mediacapture-main/#mediastreamconstraints",
+      "level": 3,
+      "title": "MediaStreamConstraints",
+      "number": "10.3"
+    },
+    {
+      "id": "dictionary-mediastreamconstraints-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-mediastreamconstraints-members",
+      "level": 4,
+      "title": "Dictionary MediaStreamConstraints Members"
+    },
+    {
+      "id": "navigatorusermediasuccesscallback",
+      "href": "https://w3c.github.io/mediacapture-main/#navigatorusermediasuccesscallback",
+      "level": 3,
+      "title": "NavigatorUserMediaSuccessCallback",
+      "number": "10.4"
+    },
+    {
+      "id": "callback-navigatorusermediasuccesscallback-parameters",
+      "href": "https://w3c.github.io/mediacapture-main/#callback-navigatorusermediasuccesscallback-parameters",
+      "level": 4,
+      "title": "Callback NavigatorUserMediaSuccessCallback Parameters"
+    },
+    {
+      "id": "navigatorusermediaerrorcallback",
+      "href": "https://w3c.github.io/mediacapture-main/#navigatorusermediaerrorcallback",
+      "level": 3,
+      "title": "NavigatorUserMediaErrorCallback",
+      "number": "10.5"
+    },
+    {
+      "id": "callback-navigatorusermediaerrorcallback-parameters",
+      "href": "https://w3c.github.io/mediacapture-main/#callback-navigatorusermediaerrorcallback-parameters",
+      "level": 4,
+      "title": "Callback NavigatorUserMediaErrorCallback Parameters"
+    },
+    {
+      "id": "implementation-suggestions",
+      "href": "https://w3c.github.io/mediacapture-main/#implementation-suggestions",
+      "level": 3,
+      "title": "Implementation Suggestions",
+      "number": "10.6"
+    },
+    {
+      "id": "constrainable-interface",
+      "href": "https://w3c.github.io/mediacapture-main/#constrainable-interface",
+      "level": 2,
+      "title": "11. Constrainable Pattern"
+    },
+    {
+      "id": "interface-definition",
+      "href": "https://w3c.github.io/mediacapture-main/#interface-definition",
+      "level": 3,
+      "title": "Interface Definition",
+      "number": "11.1"
+    },
+    {
+      "id": "methods-6",
+      "href": "https://w3c.github.io/mediacapture-main/#methods-6",
+      "level": 4,
+      "title": "Methods"
+    },
+    {
+      "id": "types-for-constrainable-properties",
+      "href": "https://w3c.github.io/mediacapture-main/#types-for-constrainable-properties",
+      "level": 3,
+      "title": "Types for Constrainable Properties",
+      "number": "11.2"
+    },
+    {
+      "id": "dictionary-doublerange-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-doublerange-members",
+      "level": 4,
+      "title": "Dictionary DoubleRange Members"
+    },
+    {
+      "id": "dictionary-constraindoublerange-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-constraindoublerange-members",
+      "level": 4,
+      "title": "Dictionary ConstrainDoubleRange Members"
+    },
+    {
+      "id": "dictionary-ulongrange-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-ulongrange-members",
+      "level": 4,
+      "title": "Dictionary ULongRange Members"
+    },
+    {
+      "id": "dictionary-constrainulongrange-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-constrainulongrange-members",
+      "level": 4,
+      "title": "Dictionary ConstrainULongRange Members"
+    },
+    {
+      "id": "dictionary-constrainbooleanparameters-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-constrainbooleanparameters-members",
+      "level": 4,
+      "title": "Dictionary ConstrainBooleanParameters Members"
+    },
+    {
+      "id": "dictionary-constraindomstringparameters-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-constraindomstringparameters-members",
+      "level": 4,
+      "title": "Dictionary ConstrainDOMStringParameters Members"
+    },
+    {
+      "id": "capabilities",
+      "href": "https://w3c.github.io/mediacapture-main/#capabilities",
+      "level": 3,
+      "title": "Capabilities",
+      "number": "11.3"
+    },
+    {
+      "id": "settings",
+      "href": "https://w3c.github.io/mediacapture-main/#settings",
+      "level": 3,
+      "title": "Settings",
+      "number": "11.4"
+    },
+    {
+      "id": "constraints",
+      "href": "https://w3c.github.io/mediacapture-main/#constraints",
+      "level": 3,
+      "title": "Constraints and ConstraintSet",
+      "number": "11.5"
+    },
+    {
+      "id": "dictionary-constraints-members",
+      "href": "https://w3c.github.io/mediacapture-main/#dictionary-constraints-members",
+      "level": 4,
+      "title": "Dictionary Constraints Members",
+      "number": "11.5.1"
+    },
+    {
+      "id": "examples",
+      "href": "https://w3c.github.io/mediacapture-main/#examples",
+      "level": 2,
+      "title": "12. Examples"
+    },
+    {
+      "id": "permissions-policy-integration-0",
+      "href": "https://w3c.github.io/mediacapture-main/#permissions-policy-integration-0",
+      "level": 2,
+      "title": "13. Permissions Policy Integration"
+    },
+    {
+      "id": "privacy-indicator-requirements",
+      "href": "https://w3c.github.io/mediacapture-main/#privacy-indicator-requirements",
+      "level": 2,
+      "title": "14. Privacy Indicator Requirements"
+    },
+    {
+      "id": "privacy-and-security-considerations",
+      "href": "https://w3c.github.io/mediacapture-main/#privacy-and-security-considerations",
+      "level": 2,
+      "title": "15. Privacy and Security Considerations"
+    },
+    {
+      "id": "extensibility",
+      "href": "https://w3c.github.io/mediacapture-main/#extensibility",
+      "level": 2,
+      "title": "16. Extensibility"
+    },
+    {
+      "id": "defining-a-new-media-type-beyond-the-existing-audio-and-video-types",
+      "href": "https://w3c.github.io/mediacapture-main/#defining-a-new-media-type-beyond-the-existing-audio-and-video-types",
+      "level": 3,
+      "title": "Defining a new media type (beyond the existing Audio and Video types)",
+      "number": "16.1"
+    },
+    {
+      "id": "defining-a-new-constrainable-property",
+      "href": "https://w3c.github.io/mediacapture-main/#defining-a-new-constrainable-property",
+      "level": 3,
+      "title": "Defining a new constrainable property",
+      "number": "16.2"
+    },
+    {
+      "id": "defining-new-consumers-of-mediastreams-and-mediastreamtracks",
+      "href": "https://w3c.github.io/mediacapture-main/#defining-new-consumers-of-mediastreams-and-mediastreamtracks",
+      "level": 3,
+      "title": "Defining new consumers of MediaStreams and MediaStreamTracks",
+      "number": "16.3"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/mediacapture-main/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgements",
+      "number": "A"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/mediacapture-main/#references",
+      "level": 2,
+      "title": "References",
+      "number": "B"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/mediacapture-main/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "B.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/mediacapture-main/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "B.2"
+    }
+  ]
+}

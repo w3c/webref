@@ -1,0 +1,15 @@
+{
+  "name": "NodeIterator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=Window]\ninterface NodeIterator {\n  [SameObject] readonly attribute Node root;\n  readonly attribute Node referenceNode;\n  readonly attribute boolean pointerBeforeReferenceNode;\n  readonly attribute unsigned long whatToShow;\n  readonly attribute NodeFilter? filter;\n\n  Node? nextNode();\n  Node? previousNode();\n\n  undefined detach();\n};",
+    "href": "https://dom.spec.whatwg.org/#nodeiterator"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

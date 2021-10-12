@@ -1,0 +1,15 @@
+{
+  "name": "SVGTransform",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Scalable Vector Graphics (SVG) 2",
+      "url": "https://www.w3.org/TR/SVG2/"
+    },
+    "fragment": "[Exposed=Window]\ninterface SVGTransform {\n\n  // Transform Types\n  const unsigned short SVG_TRANSFORM_UNKNOWN = 0;\n  const unsigned short SVG_TRANSFORM_MATRIX = 1;\n  const unsigned short SVG_TRANSFORM_TRANSLATE = 2;\n  const unsigned short SVG_TRANSFORM_SCALE = 3;\n  const unsigned short SVG_TRANSFORM_ROTATE = 4;\n  const unsigned short SVG_TRANSFORM_SKEWX = 5;\n  const unsigned short SVG_TRANSFORM_SKEWY = 6;\n\n  readonly attribute unsigned short type;\n  [SameObject] readonly attribute DOMMatrix matrix;\n  readonly attribute float angle;\n\n  undefined setMatrix(optional DOMMatrix2DInit matrix = {});\n  undefined setTranslate(float tx, float ty);\n  undefined setScale(float sx, float sy);\n  undefined setRotate(float angle, float cx, float cy);\n  undefined setSkewX(float angle);\n  undefined setSkewY(float angle);\n};",
+    "href": "https://svgwg.org/svg2-draft/coords.html#InterfaceSVGTransform"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

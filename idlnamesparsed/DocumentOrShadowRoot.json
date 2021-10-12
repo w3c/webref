@@ -1,0 +1,58 @@
+{
+  "name": "DocumentOrShadowRoot",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "DOM Standard",
+      "url": "https://dom.spec.whatwg.org/"
+    },
+    "fragment": "interface mixin DocumentOrShadowRoot {\n};",
+    "href": "https://dom.spec.whatwg.org/#documentorshadowroot"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "Fullscreen API Standard",
+        "url": "https://fullscreen.spec.whatwg.org/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [LegacyLenientSetter] readonly attribute Element? fullscreenElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? activeElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  [SameObject] readonly attribute StyleSheetList styleSheets;\n  attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;\n};"
+    },
+    {
+      "spec": {
+        "title": "Picture-in-Picture",
+        "url": "https://www.w3.org/TR/picture-in-picture/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element? pictureInPictureElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "Pointer Lock 2.0",
+        "url": "https://www.w3.org/TR/pointerlock-2/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n  readonly attribute Element ? pointerLockElement;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Animations",
+        "url": "https://www.w3.org/TR/web-animations-1/"
+      },
+      "fragment": "partial interface mixin DocumentOrShadowRoot {\n    sequence<Animation> getAnimations();\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

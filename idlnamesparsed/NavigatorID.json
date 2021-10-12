@@ -1,0 +1,23 @@
+{
+  "name": "NavigatorID",
+  "type": "interface mixin",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+    "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

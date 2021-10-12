@@ -1,0 +1,619 @@
+{
+  "spec": {
+    "title": "Referrer Policy",
+    "url": "https://w3c.github.io/webappsec-referrer-policy/"
+  },
+  "dfns": [
+    {
+      "id": "same-origin-referrer-request",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#same-origin-referrer-request",
+      "linkingText": [
+        "same-origin-referrer request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "cross-origin-referrer-request",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#cross-origin-referrer-request",
+      "linkingText": [
+        "cross-origin-referrer request"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "terms",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#terms",
+        "title": "Key Concepts and Terminology",
+        "number": "2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "referrer-policy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy",
+      "linkingText": [
+        "referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "enumdef-referrerpolicy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#enumdef-referrerpolicy",
+      "linkingText": [
+        "ReferrerPolicy"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy",
+      "linkingText": [
+        "\"\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-no-referrer",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-no-referrer",
+      "linkingText": [
+        "\"no-referrer\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-no-referrer-when-downgrade",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-no-referrer-when-downgrade",
+      "linkingText": [
+        "\"no-referrer-when-downgrade\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-same-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-same-origin",
+      "linkingText": [
+        "\"same-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-origin",
+      "linkingText": [
+        "\"origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-strict-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-strict-origin",
+      "linkingText": [
+        "\"strict-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-origin-when-cross-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-origin-when-cross-origin",
+      "linkingText": [
+        "\"origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-strict-origin-when-cross-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-strict-origin-when-cross-origin",
+      "linkingText": [
+        "\"strict-origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-referrerpolicy-unsafe-url",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#dom-referrerpolicy-unsafe-url",
+      "linkingText": [
+        "\"unsafe-url\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ReferrerPolicy"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "default-referrer-policy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#default-referrer-policy",
+      "linkingText": [
+        "default referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policies",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policies",
+        "title": "Referrer Policies",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "referrer-policy-no-referrer",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-no-referrer",
+      "linkingText": [
+        "\"no-referrer\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-no-referrer",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-no-referrer",
+        "title": "\"no-referrer\"",
+        "number": "3.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-no-referrer-when-downgrade",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-no-referrer-when-downgrade",
+      "linkingText": [
+        "\"no-referrer-when-downgrade\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-no-referrer-when-downgrade",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-no-referrer-when-downgrade",
+        "title": "\"no-referrer-when-downgrade\"",
+        "number": "3.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-same-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-same-origin",
+      "linkingText": [
+        "\"same-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-same-origin",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-same-origin",
+        "title": "\"same-origin\"",
+        "number": "3.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-origin",
+      "linkingText": [
+        "\"origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-origin",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-origin",
+        "title": "\"origin\"",
+        "number": "3.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-strict-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin",
+      "linkingText": [
+        "\"strict-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-strict-origin",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin",
+        "title": "\"strict-origin\"",
+        "number": "3.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-origin-when-cross-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-origin-when-cross-origin",
+      "linkingText": [
+        "\"origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-origin-when-cross-origin",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-origin-when-cross-origin",
+        "title": "\"origin-when-cross-origin\"",
+        "number": "3.6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-strict-origin-when-cross-origin",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin-when-cross-origin",
+      "linkingText": [
+        "\"strict-origin-when-cross-origin\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-strict-origin-when-cross-origin",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-strict-origin-when-cross-origin",
+        "title": "\"strict-origin-when-cross-origin\"",
+        "number": "3.7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-unsafe-url",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-unsafe-url",
+      "linkingText": [
+        "\"unsafe-url\""
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-unsafe-url",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-unsafe-url",
+        "title": "\"unsafe-url\"",
+        "number": "3.8"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-empty-string",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-empty-string",
+      "linkingText": [
+        "The empty string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-empty-string",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-empty-string",
+        "title": "The empty string",
+        "number": "3.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrer-policy-header-dfn",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header-dfn",
+      "linkingText": [
+        "Referrer-Policy"
+      ],
+      "localLinkingText": [
+        "referrer-policy header"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-header",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header",
+        "title": "Delivery via Referrer-Policy header",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "grammardef-policy-token",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#grammardef-policy-token",
+      "linkingText": [
+        "policy-token"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-header",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header",
+        "title": "Delivery via Referrer-Policy header",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "grammardef-extension-token",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#grammardef-extension-token",
+      "linkingText": [
+        "extension-token"
+      ],
+      "localLinkingText": [],
+      "type": "grammar",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "referrer-policy-header",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#referrer-policy-header",
+        "title": "Delivery via Referrer-Policy header",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "cssstylesheet-referrer-policy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#cssstylesheet-referrer-policy",
+      "linkingText": [
+        "referrer policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSSStyleSheet"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "integration-with-css",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#integration-with-css",
+        "title": "Integration with CSS",
+        "number": "7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-requests-referrer-policy-on-redirect",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#set-requests-referrer-policy-on-redirect",
+      "linkingText": [
+        "Set request’s referrer policy on redirect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "set-requests-referrer-policy-on-redirect",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#set-requests-referrer-policy-on-redirect",
+        "title": "Set request’s referrer policy on redirect",
+        "number": "8.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "determine-requests-referrer",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#determine-requests-referrer",
+      "linkingText": [
+        "Determine request’s Referrer"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "determine-requests-referrer",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#determine-requests-referrer",
+        "title": "Determine request’s Referrer",
+        "number": "8.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "referrerurl",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#referrerurl",
+      "linkingText": [
+        "referrerURL"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "determine-requests-referrer",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#determine-requests-referrer",
+        "title": "Determine request’s Referrer",
+        "number": "8.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "origin-only-flag",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/#origin-only-flag",
+      "linkingText": [
+        "origin-only flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "strip-url",
+        "href": "https://w3c.github.io/webappsec-referrer-policy/#strip-url",
+        "title": "Strip url for use as a referrer",
+        "number": "8.4"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "spec": {
+    "title": "uuid",
+    "url": "https://wicg.github.io/uuid/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "Crypto"
+        ],
+        "Worker": [
+          "Crypto"
+        ]
+      }
+    },
+    "idlNames": {},
+    "idlExtendedNames": {
+      "Crypto": [
+        {
+          "fragment": "[Exposed=(Window,Worker)]\npartial interface Crypto {\n  [SecureContext] DOMString randomUUID();\n};",
+          "type": "interface",
+          "name": "Crypto",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "randomUUID",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "arguments": [],
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "SecureContext",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": ""
+            }
+          ],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier-list",
+                "value": [
+                  {
+                    "value": "Window"
+                  },
+                  {
+                    "value": "Worker"
+                  }
+                ]
+              },
+              "arguments": []
+            }
+          ],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "Crypto"
+      ],
+      "Worker": [
+        "Crypto"
+      ]
+    },
+    "dependencies": {
+      "Crypto": []
+    },
+    "externalDependencies": [
+      "Crypto"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

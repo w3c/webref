@@ -1,0 +1,30 @@
+{
+  "name": "XRInputSource",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRInputSource {\n  readonly attribute XRHandedness handedness;\n  readonly attribute XRTargetRayMode targetRayMode;\n  [SameObject] readonly attribute XRSpace targetRaySpace;\n  [SameObject] readonly attribute XRSpace? gripSpace;\n  [SameObject] readonly attribute FrozenArray<DOMString> profiles;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrinputsource"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebXR Gamepads Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-gamepads-module-1/"
+      },
+      "fragment": "partial interface XRInputSource {\n  [SameObject] readonly attribute Gamepad? gamepad;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Hand Input Module - Level 1",
+        "url": "https://www.w3.org/TR/webxr-hand-input-1/"
+      },
+      "fragment": "partial interface XRInputSource {\n   [SameObject] readonly attribute XRHand? hand;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "LayoutConstraints",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Layout API Level 1",
+      "url": "https://www.w3.org/TR/css-layout-api-1/"
+    },
+    "fragment": "[Exposed=LayoutWorklet]\ninterface LayoutConstraints {\n    readonly attribute double availableInlineSize;\n    readonly attribute double availableBlockSize;\n\n    readonly attribute double? fixedInlineSize;\n    readonly attribute double? fixedBlockSize;\n\n    readonly attribute double percentageInlineSize;\n    readonly attribute double percentageBlockSize;\n\n    readonly attribute double? blockFragmentationOffset;\n    readonly attribute BlockFragmentationType blockFragmentationType;\n\n    readonly attribute any data;\n};",
+    "href": "https://drafts.css-houdini.org/css-layout-api-1/#layoutconstraints"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

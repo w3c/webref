@@ -1,0 +1,15 @@
+{
+  "name": "FileReaderSync",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "File API",
+      "url": "https://www.w3.org/TR/FileAPI/"
+    },
+    "fragment": "[Exposed=(DedicatedWorker,SharedWorker)]\ninterface FileReaderSync {\n  constructor();\n  // Synchronously return strings\n\n  ArrayBuffer readAsArrayBuffer(Blob blob);\n  DOMString readAsBinaryString(Blob blob);\n  DOMString readAsText(Blob blob, optional DOMString encoding);\n  DOMString readAsDataURL(Blob blob);\n};",
+    "href": "https://w3c.github.io/FileAPI/#dfn-FileReaderSync"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

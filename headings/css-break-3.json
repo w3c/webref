@@ -1,0 +1,327 @@
+{
+  "spec": {
+    "title": "CSS Fragmentation Module Level 3",
+    "url": "https://drafts.csswg.org/css-break/"
+  },
+  "headings": [
+    {
+      "id": "profile-and-date",
+      "href": "https://drafts.csswg.org/css-break/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 17 May 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-break/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/css-break/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-break/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-break/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-break/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-break/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "fragmentation-model",
+      "href": "https://drafts.csswg.org/css-break/#fragmentation-model",
+      "level": 2,
+      "title": "Fragmentation Model and Terminology",
+      "number": "2"
+    },
+    {
+      "id": "parallel-flows",
+      "href": "https://drafts.csswg.org/css-break/#parallel-flows",
+      "level": 3,
+      "title": "Parallel Fragmentation Flows",
+      "number": "2.1"
+    },
+    {
+      "id": "nested-flows",
+      "href": "https://drafts.csswg.org/css-break/#nested-flows",
+      "level": 3,
+      "title": "Nested Fragmentation Flows",
+      "number": "2.2"
+    },
+    {
+      "id": "breaking-controls",
+      "href": "https://drafts.csswg.org/css-break/#breaking-controls",
+      "level": 2,
+      "title": "Controlling Breaks",
+      "number": "3"
+    },
+    {
+      "id": "break-between",
+      "href": "https://drafts.csswg.org/css-break/#break-between",
+      "level": 3,
+      "title": "Breaks Between Boxes: the break-before and break-after properties",
+      "number": "3.1"
+    },
+    {
+      "id": "generic-break-values",
+      "href": "https://drafts.csswg.org/css-break/#generic-break-values",
+      "level": 4,
+      "title": "Generic Break Values"
+    },
+    {
+      "id": "page-break-values",
+      "href": "https://drafts.csswg.org/css-break/#page-break-values",
+      "level": 4,
+      "title": "Page Break Values"
+    },
+    {
+      "id": "column-break-values",
+      "href": "https://drafts.csswg.org/css-break/#column-break-values",
+      "level": 4,
+      "title": "Column Break Values"
+    },
+    {
+      "id": "region-break-values",
+      "href": "https://drafts.csswg.org/css-break/#region-break-values",
+      "level": 4,
+      "title": "Region Break Values"
+    },
+    {
+      "id": "break-propagation",
+      "href": "https://drafts.csswg.org/css-break/#break-propagation",
+      "level": 4,
+      "title": "Child→Parent Break Propagation",
+      "number": "3.1.1"
+    },
+    {
+      "id": "break-within",
+      "href": "https://drafts.csswg.org/css-break/#break-within",
+      "level": 3,
+      "title": "Breaks Within Boxes: the break-inside property",
+      "number": "3.2"
+    },
+    {
+      "id": "widows-orphans",
+      "href": "https://drafts.csswg.org/css-break/#widows-orphans",
+      "level": 3,
+      "title": "Breaks Between Lines: orphans, widows",
+      "number": "3.3"
+    },
+    {
+      "id": "page-break-properties",
+      "href": "https://drafts.csswg.org/css-break/#page-break-properties",
+      "level": 3,
+      "title": "Page Break Aliases: the page-break-before, page-break-after, and page-break-inside properties",
+      "number": "3.4"
+    },
+    {
+      "id": "breaking-rules",
+      "href": "https://drafts.csswg.org/css-break/#breaking-rules",
+      "level": 2,
+      "title": "Rules for Breaking",
+      "number": "4"
+    },
+    {
+      "id": "possible-breaks",
+      "href": "https://drafts.csswg.org/css-break/#possible-breaks",
+      "level": 3,
+      "title": "Possible Break Points",
+      "number": "4.1"
+    },
+    {
+      "id": "break-types",
+      "href": "https://drafts.csswg.org/css-break/#break-types",
+      "level": 3,
+      "title": "Types of Breaks",
+      "number": "4.2"
+    },
+    {
+      "id": "forced-breaks",
+      "href": "https://drafts.csswg.org/css-break/#forced-breaks",
+      "level": 3,
+      "title": "Forced Breaks",
+      "number": "4.3"
+    },
+    {
+      "id": "unforced-breaks",
+      "href": "https://drafts.csswg.org/css-break/#unforced-breaks",
+      "level": 3,
+      "title": "Unforced Breaks",
+      "number": "4.4"
+    },
+    {
+      "id": "best-breaks",
+      "href": "https://drafts.csswg.org/css-break/#best-breaks",
+      "level": 3,
+      "title": "Optimizing Unforced Breaks",
+      "number": "4.5"
+    },
+    {
+      "id": "breaking-boxes",
+      "href": "https://drafts.csswg.org/css-break/#breaking-boxes",
+      "level": 2,
+      "title": "Box Model for Breaking",
+      "number": "5"
+    },
+    {
+      "id": "varying-size-boxes",
+      "href": "https://drafts.csswg.org/css-break/#varying-size-boxes",
+      "level": 3,
+      "title": "Breaking into Varying-size Fragmentainers",
+      "number": "5.1"
+    },
+    {
+      "id": "break-margins",
+      "href": "https://drafts.csswg.org/css-break/#break-margins",
+      "level": 3,
+      "title": "Adjoining Margins at Breaks",
+      "number": "5.2"
+    },
+    {
+      "id": "box-splitting",
+      "href": "https://drafts.csswg.org/css-break/#box-splitting",
+      "level": 3,
+      "title": "Splitting Boxes",
+      "number": "5.3"
+    },
+    {
+      "id": "break-decoration",
+      "href": "https://drafts.csswg.org/css-break/#break-decoration",
+      "level": 3,
+      "title": "Fragmented Borders and Backgrounds: the box-decoration-break property",
+      "number": "5.4"
+    },
+    {
+      "id": "joining-boxes",
+      "href": "https://drafts.csswg.org/css-break/#joining-boxes",
+      "level": 4,
+      "title": "Joining Boxes for slice",
+      "number": "5.4.1"
+    },
+    {
+      "id": "transforms",
+      "href": "https://drafts.csswg.org/css-break/#transforms",
+      "level": 3,
+      "title": "Transforms, Positioning, and Pagination",
+      "number": "5.5"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-break/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-break/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "priv-sec",
+      "href": "https://drafts.csswg.org/css-break/#priv-sec",
+      "level": 2,
+      "title": "Privacy and Security Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-break/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-break/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-break/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-break/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-break/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-break/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-break/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-break/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-break/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-break/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-break/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-break/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-break/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}

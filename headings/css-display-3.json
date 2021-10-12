@@ -1,0 +1,311 @@
+{
+  "spec": {
+    "title": "CSS Display Module Level 3",
+    "url": "https://drafts.csswg.org/css-display/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-display/#title",
+      "level": 1,
+      "title": "CSS Display Module Level 3"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://drafts.csswg.org/css-display/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 3 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-display/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/css-display/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-display/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-display/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-display/#placement",
+      "level": 3,
+      "title": "Module interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-display/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "1.2"
+    },
+    {
+      "id": "the-display-properties",
+      "href": "https://drafts.csswg.org/css-display/#the-display-properties",
+      "level": 2,
+      "title": "Box Layout Modes: the display property",
+      "number": "2"
+    },
+    {
+      "id": "outer-role",
+      "href": "https://drafts.csswg.org/css-display/#outer-role",
+      "level": 3,
+      "title": "Outer Display Roles for Flow Layout: the block, inline, and run-in keywords",
+      "number": "2.1"
+    },
+    {
+      "id": "inner-model",
+      "href": "https://drafts.csswg.org/css-display/#inner-model",
+      "level": 3,
+      "title": "Inner Display Layout Models: the flow, flow-root, table, flex, grid, and ruby keywords",
+      "number": "2.2"
+    },
+    {
+      "id": "list-items",
+      "href": "https://drafts.csswg.org/css-display/#list-items",
+      "level": 3,
+      "title": "Generating Marker Boxes: the list-item keyword",
+      "number": "2.3"
+    },
+    {
+      "id": "layout-specific-display",
+      "href": "https://drafts.csswg.org/css-display/#layout-specific-display",
+      "level": 3,
+      "title": "Layout-Internal Display Types: the table-* and ruby-* keywords",
+      "number": "2.4"
+    },
+    {
+      "id": "box-generation",
+      "href": "https://drafts.csswg.org/css-display/#box-generation",
+      "level": 3,
+      "title": "Box Generation: the none and contents keywords",
+      "number": "2.5"
+    },
+    {
+      "id": "legacy-display",
+      "href": "https://drafts.csswg.org/css-display/#legacy-display",
+      "level": 3,
+      "title": "Precomposed Inline-level Display Values",
+      "number": "2.6"
+    },
+    {
+      "id": "transformations",
+      "href": "https://drafts.csswg.org/css-display/#transformations",
+      "level": 3,
+      "title": "Automatic Box Type Transformations",
+      "number": "2.7"
+    },
+    {
+      "id": "order-property",
+      "href": "https://drafts.csswg.org/css-display/#order-property",
+      "level": 2,
+      "title": "Display Order: the order property",
+      "number": "3"
+    },
+    {
+      "id": "quiet-pubrules-1",
+      "href": "https://drafts.csswg.org/css-display/#quiet-pubrules-1",
+      "level": 1,
+      "title": "Computer Starter Kit"
+    },
+    {
+      "id": "order-accessibility",
+      "href": "https://drafts.csswg.org/css-display/#order-accessibility",
+      "level": 3,
+      "title": "Reordering and Accessibility",
+      "number": "3.1"
+    },
+    {
+      "id": "visibility",
+      "href": "https://drafts.csswg.org/css-display/#visibility",
+      "level": 2,
+      "title": "Invisibility: the visibility property",
+      "number": "4"
+    },
+    {
+      "id": "run-in-layout",
+      "href": "https://drafts.csswg.org/css-display/#run-in-layout",
+      "level": 2,
+      "title": "Run-In Layout",
+      "number": "5"
+    },
+    {
+      "id": "glossary",
+      "href": "https://drafts.csswg.org/css-display/#glossary",
+      "level": 2,
+      "title": "Appendix A: Glossary"
+    },
+    {
+      "id": "unbox",
+      "href": "https://drafts.csswg.org/css-display/#unbox",
+      "level": 2,
+      "title": "Appendix B: Effects of display: contents on Unusual Elements"
+    },
+    {
+      "id": "unbox-html",
+      "href": "https://drafts.csswg.org/css-display/#unbox-html",
+      "level": 3,
+      "title": "HTML Elements"
+    },
+    {
+      "id": "unbox-svg",
+      "href": "https://drafts.csswg.org/css-display/#unbox-svg",
+      "level": 3,
+      "title": "SVG Elements"
+    },
+    {
+      "id": "unbox-mathml",
+      "href": "https://drafts.csswg.org/css-display/#unbox-mathml",
+      "level": 3,
+      "title": "MathML Elements"
+    },
+    {
+      "id": "box-guidelines",
+      "href": "https://drafts.csswg.org/css-display/#box-guidelines",
+      "level": 2,
+      "title": "Appendix C: Box Construction Guidelines for Spec Authors"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-display/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-display/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-2020",
+      "href": "https://drafts.csswg.org/css-display/#changes-2020",
+      "level": 3,
+      "title": "Changes Since 2020 Candidate Recommendation"
+    },
+    {
+      "id": "changes-2019",
+      "href": "https://drafts.csswg.org/css-display/#changes-2019",
+      "level": 3,
+      "title": "Changes Since 2019 Candidate Recommendation"
+    },
+    {
+      "id": "changes-wd",
+      "href": "https://drafts.csswg.org/css-display/#changes-wd",
+      "level": 3,
+      "title": "Changes Prior to Candidate Recommendation Status"
+    },
+    {
+      "id": "priv",
+      "href": "https://drafts.csswg.org/css-display/#priv",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "sec",
+      "href": "https://drafts.csswg.org/css-display/#sec",
+      "level": 3,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "security-privacy-self-review",
+      "href": "https://drafts.csswg.org/css-display/#security-privacy-self-review",
+      "level": 3,
+      "title": "Self-Review Questionaire"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-display/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-display/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-display/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-display/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-display/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-display/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-display/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-display/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-display/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-display/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-display/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-display/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-display/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    }
+  ]
+}

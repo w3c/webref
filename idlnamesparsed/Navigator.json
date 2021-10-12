@@ -1,0 +1,622 @@
+{
+  "name": "Navigator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Navigator {\n  // objects implementing this interface also implement the interfaces given below\n};",
+    "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorID;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorLanguage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorOnLine;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorContentUtils;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorCookies;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorPlugins;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorConcurrentHardware;"
+    },
+    {
+      "spec": {
+        "title": "Storage Standard",
+        "url": "https://storage.spec.whatwg.org/"
+      },
+      "fragment": "Navigator includes NavigatorStorage;"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "// Methods only exposed on documents.\n[SecureContext]\npartial interface Navigator {\n  Promise<undefined> setClientBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearClientBadge();\n};"
+    },
+    {
+      "spec": {
+        "title": "Badging API",
+        "url": "https://w3c.github.io/badging/"
+      },
+      "fragment": "Navigator includes NavigatorBadge;"
+    },
+    {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject]\n  readonly attribute Bluetooth bluetooth;\n};"
+    },
+    {
+      "spec": {
+        "title": "Contact Picker API",
+        "url": "https://wicg.github.io/contact-api/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
+    },
+    {
+      "spec": {
+        "title": "Get Installed Related Apps API",
+        "url": "https://wicg.github.io/get-installed-related-apps/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext] Promise<sequence<RelatedApplication>> getInstalledRelatedApps();\n};"
+    },
+    {
+      "spec": {
+        "title": "Ink API",
+        "url": "https://wicg.github.io/ink-enhancement/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SameObject] readonly attribute Ink ink;\n};"
+    },
+    {
+      "spec": {
+        "title": "Early detection of input events",
+        "url": "https://wicg.github.io/is-input-pending/"
+      },
+      "fragment": "partial interface Navigator {\n  readonly attribute Scheduling scheduling;\n};"
+    },
+    {
+      "spec": {
+        "title": "Keyboard Lock",
+        "url": "https://wicg.github.io/keyboard-lock/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Keyboard keyboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Local Font Access API",
+        "url": "https://wicg.github.io/local-font-access/"
+      },
+      "fragment": "Navigator includes NavigatorFonts;"
+    },
+    {
+      "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "Navigator includes NavigatorNetworkInformation;"
+    },
+    {
+      "spec": {
+        "title": "Web Serial API",
+        "url": "https://wicg.github.io/serial/"
+      },
+      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute Serial serial;\n};"
+    },
+    {
+      "spec": {
+        "title": "User-Agent Client Hints",
+        "url": "https://wicg.github.io/ua-client-hints/"
+      },
+      "fragment": "Navigator includes NavigatorUA;"
+    },
+    {
+      "spec": {
+        "title": "Web Locks API",
+        "url": "https://wicg.github.io/web-locks/"
+      },
+      "fragment": "Navigator includes NavigatorLocks;"
+    },
+    {
+      "spec": {
+        "title": "WebHID API",
+        "url": "https://wicg.github.io/webhid/"
+      },
+      "fragment": "[SecureContext] partial interface Navigator {\n    [SameObject] readonly attribute HID hid;\n};"
+    },
+    {
+      "spec": {
+        "title": "WebUSB API",
+        "url": "https://wicg.github.io/webusb/"
+      },
+      "fragment": "[Exposed=Window, SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute USB usb;\n};"
+    },
+    {
+      "spec": {
+        "title": "Battery Status API",
+        "url": "https://www.w3.org/TR/battery-status/"
+      },
+      "fragment": "partial interface Navigator {\n  Promise<BatteryManager> getBattery();\n};"
+    },
+    {
+      "spec": {
+        "title": "Beacon",
+        "url": "https://www.w3.org/TR/beacon/"
+      },
+      "fragment": "partial interface Navigator {\n    boolean sendBeacon(USVString url, optional BodyInit? data = null);\n};"
+    },
+    {
+      "spec": {
+        "title": "Clipboard API and events",
+        "url": "https://www.w3.org/TR/clipboard-apis/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Clipboard clipboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Credential Management Level 1",
+        "url": "https://www.w3.org/TR/credential-management-1/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute CredentialsContainer credentials;\n};"
+    },
+    {
+      "spec": {
+        "title": "Device Memory 1",
+        "url": "https://www.w3.org/TR/device-memory-1/"
+      },
+      "fragment": "Navigator includes NavigatorDeviceMemory;"
+    },
+    {
+      "spec": {
+        "title": "Device Posture API",
+        "url": "https://www.w3.org/TR/device-posture/"
+      },
+      "fragment": "[SecureContext, Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute DevicePosture devicePosture;\n};"
+    },
+    {
+      "spec": {
+        "title": "Encrypted Media Extensions",
+        "url": "https://www.w3.org/TR/encrypted-media/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n    [SecureContext] Promise<MediaKeySystemAccess> requestMediaKeySystemAccess (DOMString keySystem, sequence<MediaKeySystemConfiguration> supportedConfigurations);\n};"
+    },
+    {
+      "spec": {
+        "title": "Gamepad",
+        "url": "https://www.w3.org/TR/gamepad/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  sequence<Gamepad?> getGamepads();\n};"
+    },
+    {
+      "spec": {
+        "title": "Geolocation API",
+        "url": "https://www.w3.org/TR/geolocation-API/"
+      },
+      "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute Geolocation geolocation;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capabilities",
+        "url": "https://www.w3.org/TR/media-capabilities/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SameObject] readonly attribute MediaCapabilities mediaCapabilities;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture and Streams",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      "fragment": "partial interface Navigator {\n  [SameObject, SecureContext] readonly attribute MediaDevices mediaDevices;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture and Streams",
+        "url": "https://www.w3.org/TR/mediacapture-streams/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext] undefined getUserMedia(MediaStreamConstraints constraints,\n                                    NavigatorUserMediaSuccessCallback successCallback,\n                                    NavigatorUserMediaErrorCallback errorCallback);\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Session Standard",
+        "url": "https://www.w3.org/TR/mediasession/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SameObject] readonly attribute MediaSession mediaSession;\n};"
+    },
+    {
+      "spec": {
+        "title": "Permissions",
+        "url": "https://www.w3.org/TR/permissions/"
+      },
+      "fragment": "[Exposed=(Window)]\npartial interface Navigator {\n  [SameObject] readonly attribute Permissions permissions;\n};"
+    },
+    {
+      "spec": {
+        "title": "Pointer Events",
+        "url": "https://www.w3.org/TR/pointerevents3/"
+      },
+      "fragment": "partial interface Navigator {\n    readonly  attribute long maxTouchPoints;\n};"
+    },
+    {
+      "spec": {
+        "title": "Presentation API",
+        "url": "https://www.w3.org/TR/presentation-api/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute Presentation presentation;\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Wake Lock API",
+        "url": "https://www.w3.org/TR/screen-wake-lock/"
+      },
+      "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject] readonly attribute WakeLock wakeLock;\n};"
+    },
+    {
+      "spec": {
+        "title": "Service Workers Nightly",
+        "url": "https://www.w3.org/TR/service-workers-1/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ServiceWorkerContainer serviceWorker;\n};"
+    },
+    {
+      "spec": {
+        "title": "Vibration API (Second Edition)",
+        "url": "https://www.w3.org/TR/vibration/"
+      },
+      "fragment": "partial interface Navigator {\n    boolean vibrate (VibratePattern pattern);\n};"
+    },
+    {
+      "spec": {
+        "title": "VirtualKeyboard API",
+        "url": "https://www.w3.org/TR/virtual-keyboard/"
+      },
+      "fragment": "partial interface Navigator {\n    [SecureContext, SameObject] readonly attribute VirtualKeyboard virtualKeyboard;\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Share API",
+        "url": "https://www.w3.org/TR/web-share/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext] Promise<undefined> share(optional ShareData data = {});\n\n  [SecureContext] boolean canShare(optional ShareData data = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "WebDriver",
+        "url": "https://www.w3.org/TR/webdriver2/"
+      },
+      "fragment": "Navigator includes NavigatorAutomationInformation;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "Navigator includes NavigatorGPU;"
+    },
+    {
+      "spec": {
+        "title": "Web MIDI API",
+        "url": "https://www.w3.org/TR/webmidi/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext]\n  Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
+      "fragment": "Navigator includes NavigatorML;"
+    },
+    {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute XRSystem xr;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "NavigatorID",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLanguage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorOnLine",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorContentUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorContentUtils {\n  [SecureContext] undefined registerProtocolHandler(DOMString scheme, USVString url);\n  [SecureContext] undefined unregisterProtocolHandler(DOMString scheme, USVString url);\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcontentutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorCookies",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorCookies {\n  readonly attribute boolean cookieEnabled;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcookies"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorPlugins",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n  readonly attribute boolean pdfViewerEnabled;\n};"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorConcurrentHardware",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorStorage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Storage Standard",
+          "url": "https://storage.spec.whatwg.org/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorStorage {\n  [SameObject] readonly attribute StorageManager storage;\n};",
+        "href": "https://storage.spec.whatwg.org/#navigatorstorage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorBadge",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Badging API",
+          "url": "https://w3c.github.io/badging/"
+        },
+        "fragment": "// Methods exposed on both documents and service workers.\n[SecureContext]\ninterface mixin NavigatorBadge {\n  Promise<undefined> setAppBadge(optional [EnforceRange] unsigned long long contents);\n  Promise<undefined> clearAppBadge();\n};",
+        "href": "https://w3c.github.io/badging/#dom-navigatorbadge"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorFonts",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Local Font Access API",
+          "url": "https://wicg.github.io/local-font-access/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
+        "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorUA",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "User-Agent Client Hints",
+          "url": "https://wicg.github.io/ua-client-hints/"
+        },
+        "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
+        "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://wicg.github.io/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://wicg.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorDeviceMemory",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Device Memory 1",
+          "url": "https://www.w3.org/TR/device-memory-1/"
+        },
+        "fragment": "[\n    SecureContext,\n    Exposed=(Window,Worker)\n] interface mixin NavigatorDeviceMemory {\n    readonly attribute double deviceMemory;\n};",
+        "href": "https://w3c.github.io/device-memory/#navigatordevicememory"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorAutomationInformation",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebDriver",
+          "url": "https://www.w3.org/TR/webdriver2/"
+        },
+        "fragment": "interface mixin NavigatorAutomationInformation {\n  readonly attribute boolean webdriver;\n};",
+        "href": "https://w3c.github.io/webdriver/#dom-navigatorautomationinformation"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorGPU",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin NavigatorGPU {\n    [SameObject, SecureContext] readonly attribute GPU gpu;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#navigatorgpu"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorML",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Neural Network API",
+          "url": "https://www.w3.org/TR/webnn/"
+        },
+        "fragment": "interface mixin NavigatorML {\n  [SecureContext, SameObject] readonly attribute ML ml;\n};",
+        "href": "https://webmachinelearning.github.io/webnn/#navigatorml"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

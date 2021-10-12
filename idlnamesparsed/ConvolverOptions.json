@@ -1,0 +1,29 @@
+{
+  "name": "ConvolverOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "dictionary ConvolverOptions : AudioNodeOptions {\n  AudioBuffer? buffer;\n  boolean disableNormalization = false;\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#dictdef-convolveroptions"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNodeOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "dictionary AudioNodeOptions {\n  unsigned long channelCount;\n  ChannelCountMode channelCountMode;\n  ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#dictdef-audionodeoptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

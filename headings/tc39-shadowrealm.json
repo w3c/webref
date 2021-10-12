@@ -1,0 +1,134 @@
+{
+  "spec": {
+    "title": "ShadowRealm API",
+    "url": "https://tc39.es/proposal-shadowrealm/"
+  },
+  "headings": [
+    {
+      "id": "sec-well-known-intrinsic-objects",
+      "title": "Well-known intrinsic objects",
+      "level": 1,
+      "number": "1"
+    },
+    {
+      "id": "sec-wrapped-function-exotic-objects",
+      "title": "Wrapped Function Exotic Objects",
+      "level": 1,
+      "number": "2"
+    },
+    {
+      "id": "sec-wrapped-function-exotic-objects-call-thisargument-argumentslist",
+      "title": "[[Call]] ( thisArgument, argumentsList )",
+      "level": 2,
+      "number": "2.1"
+    },
+    {
+      "id": "sec-wrappedfunctioncreate",
+      "title": "WrappedFunctionCreate ( callerRealm, targetFunction )",
+      "level": 2,
+      "number": "2.2"
+    },
+    {
+      "id": "sec-shadowrealm-objects",
+      "title": "ShadowRealm Objects",
+      "level": 1,
+      "number": "3"
+    },
+    {
+      "id": "sec-shadowrealm-abstracts",
+      "title": "ShadowRealm Abstract Operations",
+      "level": 2,
+      "number": "3.1"
+    },
+    {
+      "id": "sec-performshadowrealmeval",
+      "title": "PerformShadowRealmEval ( sourceText, callerRealm, evalRealm )",
+      "level": 3,
+      "number": "3.1.1"
+    },
+    {
+      "id": "sec-shadowrealmimportvalue",
+      "title": "ShadowRealmImportValue ( specifierString, exportNameString, callerRealm, evalRealm, evalContext )",
+      "level": 3,
+      "number": "3.1.2"
+    },
+    {
+      "id": "sec-getwrappedvalue",
+      "title": "GetWrappedValue ( callerRealm, value )",
+      "level": 3,
+      "number": "3.1.3"
+    },
+    {
+      "id": "sec-validateshadowrealmobject",
+      "title": "ValidateShadowRealmObject ( O )",
+      "level": 3,
+      "number": "3.1.4"
+    },
+    {
+      "id": "sec-shadowrealm-constructor",
+      "title": "The ShadowRealm Constructor",
+      "level": 2,
+      "number": "3.2"
+    },
+    {
+      "id": "sec-shadowrealm",
+      "title": "ShadowRealm ( )",
+      "level": 3,
+      "number": "3.2.1"
+    },
+    {
+      "id": "sec-properties-of-the-shadowRealm-constructor",
+      "title": "Properties of the ShadowRealm Constructor",
+      "level": 2,
+      "number": "3.3"
+    },
+    {
+      "id": "sec-shadowrealm.prototype",
+      "title": "ShadowRealm.prototype",
+      "level": 3,
+      "number": "3.3.1"
+    },
+    {
+      "id": "sec-properties-of-the-shadowrealm-prototype-object",
+      "title": "Properties of the ShadowRealm Prototype Object",
+      "level": 2,
+      "number": "3.4"
+    },
+    {
+      "id": "sec-shadowrealm.prototype.evaluate",
+      "title": "ShadowRealm.prototype.evaluate ( sourceText )",
+      "level": 3,
+      "number": "3.4.1"
+    },
+    {
+      "id": "sec-shadowrealm.prototype.importvalue",
+      "title": "ShadowRealm.prototype.importValue ( specifier, exportName )",
+      "level": 3,
+      "number": "3.4.2"
+    },
+    {
+      "id": "sec-shadowrealm.prototype-@@tostringtag",
+      "title": "ShadowRealm.prototype [ @@toStringTag ]",
+      "level": 3,
+      "number": "3.4.3"
+    },
+    {
+      "id": "sec-properties-of-shadowrealm-instances",
+      "title": "Properties of ShadowRealm Instances",
+      "level": 2,
+      "number": "3.5"
+    },
+    {
+      "id": "sec-shadowrealm-host-operations",
+      "title": "Host operations",
+      "level": 2,
+      "number": "3.6"
+    },
+    {
+      "id": "sec-host-initialize-shadow-shadowrealm",
+      "title": "Runtime Semantics: HostInitializeShadowRealm ( realm )",
+      "level": 3,
+      "number": "3.6.1"
+    }
+  ]
+}

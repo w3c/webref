@@ -1,0 +1,915 @@
+{
+  "spec": {
+    "title": "Storage Standard",
+    "url": "https://storage.spec.whatwg.org/"
+  },
+  "dfns": [
+    {
+      "id": "storage-endpoint",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint",
+      "linkingText": [
+        "storage endpoint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-endpoint-identifier",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-identifier",
+      "linkingText": [
+        "identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-endpoint-types",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-endpoint-quota",
+      "href": "https://storage.spec.whatwg.org/#storage-endpoint-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage endpoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-identifier",
+      "href": "https://storage.spec.whatwg.org/#storage-identifier",
+      "linkingText": [
+        "storage identifier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-type",
+      "href": "https://storage.spec.whatwg.org/#storage-type",
+      "linkingText": [
+        "storage type"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "registered-storage-endpoints",
+      "href": "https://storage.spec.whatwg.org/#registered-storage-endpoints",
+      "linkingText": [
+        "registered storage endpoints"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-endpoints",
+        "href": "https://storage.spec.whatwg.org/#storage-endpoints",
+        "title": "Storage endpoints",
+        "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-key",
+      "href": "https://storage.spec.whatwg.org/#storage-key",
+      "linkingText": [
+        "storage key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-keys",
+        "href": "https://storage.spec.whatwg.org/#storage-keys",
+        "title": "Storage keys",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-storage-key",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-storage-key",
+      "linkingText": [
+        "obtain a storage key"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-keys",
+        "href": "https://storage.spec.whatwg.org/#storage-keys",
+        "title": "Storage keys",
+        "number": "4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-shed",
+      "href": "https://storage.spec.whatwg.org/#storage-shed",
+      "linkingText": [
+        "storage shed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-agent-storage-shed",
+      "href": "https://storage.spec.whatwg.org/#user-agent-storage-shed",
+      "linkingText": [
+        "storage shed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user agent"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "local-storage",
+      "href": "https://storage.spec.whatwg.org/#local-storage",
+      "linkingText": [
+        "local storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "browsing-session-storage-shed",
+      "href": "https://storage.spec.whatwg.org/#browsing-session-storage-shed",
+      "linkingText": [
+        "storage shed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "browsing session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-storage",
+      "href": "https://storage.spec.whatwg.org/#session-storage",
+      "linkingText": [
+        "session storage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "legacy-clone-a-browsing-session-storage-shed",
+      "href": "https://storage.spec.whatwg.org/#legacy-clone-a-browsing-session-storage-shed",
+      "linkingText": [
+        "legacy-clone a browsing session storage shed"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-sheds",
+        "href": "https://storage.spec.whatwg.org/#storage-sheds",
+        "title": "Storage sheds",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#storage-shelf",
+      "linkingText": [
+        "storage shelf",
+        "storage shelves"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-shelves",
+        "href": "https://storage.spec.whatwg.org/#storage-shelves",
+        "title": "Storage shelves",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bucket-map",
+      "href": "https://storage.spec.whatwg.org/#bucket-map",
+      "linkingText": [
+        "bucket map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-shelves",
+        "href": "https://storage.spec.whatwg.org/#storage-shelves",
+        "title": "Storage shelves",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-storage-shelf",
+      "linkingText": [
+        "obtain a storage shelf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-shelves",
+        "href": "https://storage.spec.whatwg.org/#storage-shelves",
+        "title": "Storage shelves",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-local-storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-local-storage-shelf",
+      "linkingText": [
+        "obtain a local storage shelf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-shelves",
+        "href": "https://storage.spec.whatwg.org/#storage-shelves",
+        "title": "Storage shelves",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-storage-shelf",
+      "href": "https://storage.spec.whatwg.org/#create-a-storage-shelf",
+      "linkingText": [
+        "create a storage shelf"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-shelves",
+        "href": "https://storage.spec.whatwg.org/#storage-shelves",
+        "title": "Storage shelves",
+        "number": "4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bucket",
+      "href": "https://storage.spec.whatwg.org/#storage-bucket",
+      "linkingText": [
+        "storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bottle-map",
+      "href": "https://storage.spec.whatwg.org/#bottle-map",
+      "linkingText": [
+        "bottle map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bucket",
+      "href": "https://storage.spec.whatwg.org/#bucket",
+      "linkingText": [
+        "local storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "bucket-mode",
+      "href": "https://storage.spec.whatwg.org/#bucket-mode",
+      "linkingText": [
+        "mode"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "local storage bucket"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "session-storage-bucket",
+      "href": "https://storage.spec.whatwg.org/#session-storage-bucket",
+      "linkingText": [
+        "session storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "create-a-storage-bucket",
+      "href": "https://storage.spec.whatwg.org/#create-a-storage-bucket",
+      "linkingText": [
+        "create a storage bucket"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "buckets",
+        "href": "https://storage.spec.whatwg.org/#buckets",
+        "title": "Storage buckets",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bottle",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle",
+      "linkingText": [
+        "storage bottle"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle-map",
+      "linkingText": [
+        "map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage bottle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bottle-proxy-map-reference-set",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle-proxy-map-reference-set",
+      "linkingText": [
+        "proxy map reference set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage bottle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-bottle-quota",
+      "href": "https://storage.spec.whatwg.org/#storage-bottle-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage bottle"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-storage-bottle-map",
+      "linkingText": [
+        "obtain a storage bottle map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-local-storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-local-storage-bottle-map",
+      "linkingText": [
+        "obtain a local storage bottle map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-session-storage-bottle-map",
+      "href": "https://storage.spec.whatwg.org/#obtain-a-session-storage-bottle-map",
+      "linkingText": [
+        "obtain a session storage bottle map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "storage-bottles",
+        "href": "https://storage.spec.whatwg.org/#storage-bottles",
+        "title": "Storage bottles",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-proxy-map",
+      "href": "https://storage.spec.whatwg.org/#storage-proxy-map",
+      "linkingText": [
+        "storage proxy map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-proxy-maps",
+        "href": "https://storage.spec.whatwg.org/#storage-proxy-maps",
+        "title": "Storage proxy maps",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-proxy-map-backing-map",
+      "href": "https://storage.spec.whatwg.org/#storage-proxy-map-backing-map",
+      "linkingText": [
+        "backing map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "storage proxy map"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "storage-proxy-maps",
+        "href": "https://storage.spec.whatwg.org/#storage-proxy-maps",
+        "title": "Storage proxy maps",
+        "number": "4.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-usage",
+      "href": "https://storage.spec.whatwg.org/#storage-usage",
+      "linkingText": [
+        "storage usage"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-quota",
+        "href": "https://storage.spec.whatwg.org/#usage-and-quota",
+        "title": "Usage and quota",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storage-quota",
+      "href": "https://storage.spec.whatwg.org/#storage-quota",
+      "linkingText": [
+        "storage quota"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "usage-and-quota",
+        "href": "https://storage.spec.whatwg.org/#usage-and-quota",
+        "title": "Usage and quota",
+        "number": "6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "navigatorstorage",
+      "href": "https://storage.spec.whatwg.org/#navigatorstorage",
+      "linkingText": [
+        "NavigatorStorage"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-navigatorstorage-storage",
+      "href": "https://storage.spec.whatwg.org/#dom-navigatorstorage-storage",
+      "linkingText": [
+        "storage"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NavigatorStorage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "storagemanager",
+      "href": "https://storage.spec.whatwg.org/#storagemanager",
+      "linkingText": [
+        "StorageManager"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-storageestimate",
+      "href": "https://storage.spec.whatwg.org/#dictdef-storageestimate",
+      "linkingText": [
+        "StorageEstimate"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageestimate-usage",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-usage",
+      "linkingText": [
+        "usage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storageestimate-quota",
+      "href": "https://storage.spec.whatwg.org/#dom-storageestimate-quota",
+      "linkingText": [
+        "quota"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "StorageEstimate"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-storagemanager-persisted",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persisted",
+      "linkingText": [
+        "persisted()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagemanager-persist",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-persist",
+      "linkingText": [
+        "persist()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-storagemanager-estimate",
+      "href": "https://storage.spec.whatwg.org/#dom-storagemanager-estimate",
+      "linkingText": [
+        "estimate()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "StorageManager"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "api",
+        "href": "https://storage.spec.whatwg.org/#api",
+        "title": "API",
+        "number": "8"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

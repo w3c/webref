@@ -1,0 +1,290 @@
+{
+  "spec": {
+    "title": "Idle Detection API",
+    "url": "https://wicg.github.io/idle-detection/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {
+        "Window": [
+          "IdleDetector"
+        ],
+        "DedicatedWorker": [
+          "IdleDetector"
+        ]
+      },
+      "functions": {}
+    },
+    "idlNames": {
+      "UserIdleState": {
+        "fragment": "enum UserIdleState {\n    \"active\",\n    \"idle\"\n};",
+        "type": "enum",
+        "name": "UserIdleState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "active"
+          },
+          {
+            "type": "enum-value",
+            "value": "idle"
+          }
+        ],
+        "extAttrs": []
+      },
+      "ScreenIdleState": {
+        "fragment": "enum ScreenIdleState {\n    \"locked\",\n    \"unlocked\"\n};",
+        "type": "enum",
+        "name": "ScreenIdleState",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "locked"
+          },
+          {
+            "type": "enum-value",
+            "value": "unlocked"
+          }
+        ],
+        "extAttrs": []
+      },
+      "IdleOptions": {
+        "fragment": "dictionary IdleOptions {\n  [EnforceRange] unsigned long long threshold;\n  AbortSignal signal;\n};",
+        "type": "dictionary",
+        "name": "IdleOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "threshold",
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "EnforceRange",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "unsigned long long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "IdleDetector": {
+        "fragment": "[\n  SecureContext,\n  Exposed=(Window,DedicatedWorker)\n] interface IdleDetector : EventTarget {\n  constructor();\n  readonly attribute UserIdleState? userState;\n  readonly attribute ScreenIdleState? screenState;\n  attribute EventHandler onchange;\n  [Exposed=Window] static Promise<PermissionState> requestPermission();\n  Promise<undefined> start(optional IdleOptions options = {});\n};",
+        "type": "interface",
+        "name": "IdleDetector",
+        "inheritance": "EventTarget",
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [],
+            "extAttrs": []
+          },
+          {
+            "type": "attribute",
+            "name": "userState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "UserIdleState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "screenState",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "ScreenIdleState"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "onchange",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "EventHandler"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "operation",
+            "name": "requestPermission",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "PermissionState"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Exposed",
+                "rhs": {
+                  "type": "identifier",
+                  "value": "Window"
+                },
+                "arguments": []
+              }
+            ],
+            "special": "static"
+          },
+          {
+            "type": "operation",
+            "name": "start",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "IdleOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "SecureContext",
+            "rhs": null,
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "DedicatedWorker"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "IdleDetector"
+      ],
+      "DedicatedWorker": [
+        "IdleDetector"
+      ]
+    },
+    "dependencies": {
+      "IdleOptions": [
+        "AbortSignal"
+      ],
+      "IdleDetector": [
+        "EventTarget",
+        "UserIdleState",
+        "ScreenIdleState",
+        "EventHandler",
+        "PermissionState",
+        "IdleOptions"
+      ]
+    },
+    "externalDependencies": [
+      "AbortSignal",
+      "EventTarget",
+      "EventHandler",
+      "PermissionState"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

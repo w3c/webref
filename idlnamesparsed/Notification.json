@@ -1,0 +1,29 @@
+{
+  "name": "Notification",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Notifications API Standard",
+      "url": "https://notifications.spec.whatwg.org/"
+    },
+    "fragment": "[Exposed=(Window,Worker)]\ninterface Notification : EventTarget {\n  constructor(DOMString title, optional NotificationOptions options = {});\n\n  static readonly attribute NotificationPermission permission;\n  [Exposed=Window] static Promise<NotificationPermission> requestPermission(optional NotificationPermissionCallback deprecatedCallback);\n\n  static readonly attribute unsigned long maxActions;\n\n  attribute EventHandler onclick;\n  attribute EventHandler onshow;\n  attribute EventHandler onerror;\n  attribute EventHandler onclose;\n\n  readonly attribute DOMString title;\n  readonly attribute NotificationDirection dir;\n  readonly attribute DOMString lang;\n  readonly attribute DOMString body;\n  readonly attribute DOMString tag;\n  readonly attribute USVString image;\n  readonly attribute USVString icon;\n  readonly attribute USVString badge;\n  [SameObject] readonly attribute FrozenArray<unsigned long> vibrate;\n  readonly attribute DOMTimeStamp timestamp;\n  readonly attribute boolean renotify;\n  readonly attribute boolean silent;\n  readonly attribute boolean requireInteraction;\n  [SameObject] readonly attribute any data;\n  [SameObject] readonly attribute FrozenArray<NotificationAction> actions;\n\n  undefined close();\n};",
+    "href": "https://notifications.spec.whatwg.org/#notification"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

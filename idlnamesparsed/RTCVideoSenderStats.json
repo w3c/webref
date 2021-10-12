@@ -1,0 +1,57 @@
+{
+  "name": "RTCVideoSenderStats",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Identifiers for WebRTC's Statistics API",
+      "url": "https://www.w3.org/TR/webrtc-stats/"
+    },
+    "fragment": "dictionary RTCVideoSenderStats : RTCVideoHandlerStats {\n             DOMString           mediaSourceId;\n};",
+    "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideosenderstats"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCVideoHandlerStats",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Identifiers for WebRTC's Statistics API",
+        "url": "https://www.w3.org/TR/webrtc-stats/"
+      },
+      "fragment": "dictionary RTCVideoHandlerStats : RTCMediaHandlerStats {\n};",
+      "href": "https://w3c.github.io/webrtc-stats/#dom-rtcvideohandlerstats"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "RTCMediaHandlerStats",
+      "type": "dictionary",
+      "defined": {
+        "spec": {
+          "title": "Identifiers for WebRTC's Statistics API",
+          "url": "https://www.w3.org/TR/webrtc-stats/"
+        },
+        "fragment": "dictionary RTCMediaHandlerStats : RTCStats {\n             DOMString           trackIdentifier;\n             boolean             ended;\n             required DOMString  kind;\n};",
+        "href": "https://w3c.github.io/webrtc-stats/#dom-rtcmediahandlerstats"
+      },
+      "extended": [],
+      "inheritance": {
+        "name": "RTCStats",
+        "type": "dictionary",
+        "defined": {
+          "spec": {
+            "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+            "url": "https://www.w3.org/TR/webrtc/"
+          },
+          "fragment": "dictionary RTCStats {\n  required DOMHighResTimeStamp timestamp;\n  required RTCStatsType type;\n  required DOMString id;\n};",
+          "href": "https://w3c.github.io/webrtc-pc/#dom-rtcstats"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      },
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

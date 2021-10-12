@@ -1,0 +1,335 @@
+{
+  "spec": {
+    "title": "Core Accessibility API Mappings 1.2",
+    "url": "https://w3c.github.io/core-aam/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/core-aam/#title",
+      "level": 1,
+      "title": "Core Accessibility API Mappings 1.2"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/core-aam/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/core-aam/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "intro_aapi",
+      "href": "https://w3c.github.io/core-aam/#intro_aapi",
+      "level": 3,
+      "title": "Accessibility APIs",
+      "number": "1.1"
+    },
+    {
+      "id": "comparing-accessibility-apis",
+      "href": "https://w3c.github.io/core-aam/#comparing-accessibility-apis",
+      "level": 3,
+      "title": "Comparing Accessibility APIs",
+      "number": "1.2"
+    },
+    {
+      "id": "atk-at-spi",
+      "href": "https://w3c.github.io/core-aam/#atk-at-spi",
+      "level": 4,
+      "title": "ATK/AT-SPI",
+      "number": "1.2.1"
+    },
+    {
+      "id": "uia-ui-automation",
+      "href": "https://w3c.github.io/core-aam/#uia-ui-automation",
+      "level": 4,
+      "title": "UIA (UI Automation)",
+      "number": "1.2.2"
+    },
+    {
+      "id": "accessible-names-and-descriptions",
+      "href": "https://w3c.github.io/core-aam/#accessible-names-and-descriptions",
+      "level": 4,
+      "title": "Accessible Names and Descriptions",
+      "number": "1.2.3"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/core-aam/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "rfc-2119-keywords",
+      "href": "https://w3c.github.io/core-aam/#rfc-2119-keywords",
+      "level": 3,
+      "title": "RFC-2119 Keywords",
+      "number": "2.1"
+    },
+    {
+      "id": "normative-and-informative-sections",
+      "href": "https://w3c.github.io/core-aam/#normative-and-informative-sections",
+      "level": 3,
+      "title": "Normative and Informative Sections",
+      "number": "2.2"
+    },
+    {
+      "id": "features-deprecated-in-wai-aria",
+      "href": "https://w3c.github.io/core-aam/#features-deprecated-in-wai-aria",
+      "level": 3,
+      "title": "Features Deprecated in WAI-ARIA",
+      "number": "2.3"
+    },
+    {
+      "id": "glossary",
+      "href": "https://w3c.github.io/core-aam/#glossary",
+      "level": 2,
+      "title": "Important Terms",
+      "number": "3"
+    },
+    {
+      "id": "mapping",
+      "href": "https://w3c.github.io/core-aam/#mapping",
+      "level": 2,
+      "title": "Mapping WAI-ARIA to Accessibility APIs",
+      "number": "4"
+    },
+    {
+      "id": "mapping_general",
+      "href": "https://w3c.github.io/core-aam/#mapping_general",
+      "level": 3,
+      "title": "General rules for exposing WAI-ARIA semantics",
+      "number": "4.1"
+    },
+    {
+      "id": "mapping_conflicts",
+      "href": "https://w3c.github.io/core-aam/#mapping_conflicts",
+      "level": 3,
+      "title": "Conflicts between native markup semantics and WAI-ARIA",
+      "number": "4.2"
+    },
+    {
+      "id": "mapping_nodirect",
+      "href": "https://w3c.github.io/core-aam/#mapping_nodirect",
+      "level": 3,
+      "title": "Exposing attributes that do not directly map to accessibility API properties",
+      "number": "4.3"
+    },
+    {
+      "id": "mapping_role",
+      "href": "https://w3c.github.io/core-aam/#mapping_role",
+      "level": 3,
+      "title": "Role mapping",
+      "number": "4.4"
+    },
+    {
+      "id": "roleMappingGeneralRules",
+      "href": "https://w3c.github.io/core-aam/#roleMappingGeneralRules",
+      "level": 4,
+      "title": "General rules",
+      "number": "4.4.1"
+    },
+    {
+      "id": "mapping_role_table",
+      "href": "https://w3c.github.io/core-aam/#mapping_role_table",
+      "level": 4,
+      "title": "Role Mapping Table",
+      "number": "4.4.2"
+    },
+    {
+      "id": "mapping_state-property",
+      "href": "https://w3c.github.io/core-aam/#mapping_state-property",
+      "level": 3,
+      "title": "State and Property Mapping",
+      "number": "4.5"
+    },
+    {
+      "id": "statePropertyMappingGeneralRules",
+      "href": "https://w3c.github.io/core-aam/#statePropertyMappingGeneralRules",
+      "level": 4,
+      "title": "General rules",
+      "number": "4.5.1"
+    },
+    {
+      "id": "mapping_state-property_table",
+      "href": "https://w3c.github.io/core-aam/#mapping_state-property_table",
+      "level": 4,
+      "title": "State and Property Mapping Table",
+      "number": "4.5.2"
+    },
+    {
+      "id": "not_mapped",
+      "href": "https://w3c.github.io/core-aam/#not_mapped",
+      "level": 5,
+      "title": "Not Mapped",
+      "number": "4.5.2.1"
+    },
+    {
+      "id": "mapping_additional",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional",
+      "level": 3,
+      "title": "Special Processing Requiring Additional Computation",
+      "number": "4.6"
+    },
+    {
+      "id": "mapping_additional_nd",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional_nd",
+      "level": 4,
+      "title": "Name and Description",
+      "number": "4.6.1"
+    },
+    {
+      "id": "mapping_additional_relations",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional_relations",
+      "level": 4,
+      "title": "Relations",
+      "number": "4.6.2"
+    },
+    {
+      "id": "mapping_additional_relations_reverse_relations",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional_relations_reverse_relations",
+      "level": 5,
+      "title": "Reverse Relations",
+      "number": "4.6.2.1"
+    },
+    {
+      "id": "mapping_additional_relations_implied",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional_relations_implied",
+      "level": 5,
+      "title": "Implied reverse relations",
+      "number": "4.6.2.2"
+    },
+    {
+      "id": "mapping_additional_position",
+      "href": "https://w3c.github.io/core-aam/#mapping_additional_position",
+      "level": 4,
+      "title": "Group Position",
+      "number": "4.6.3"
+    },
+    {
+      "id": "mapping_actions",
+      "href": "https://w3c.github.io/core-aam/#mapping_actions",
+      "level": 3,
+      "title": "Actions",
+      "number": "4.7"
+    },
+    {
+      "id": "mapping_events",
+      "href": "https://w3c.github.io/core-aam/#mapping_events",
+      "level": 3,
+      "title": "Events",
+      "number": "4.8"
+    },
+    {
+      "id": "mapping_events_state-change",
+      "href": "https://w3c.github.io/core-aam/#mapping_events_state-change",
+      "level": 4,
+      "title": "State and Property Change Events",
+      "number": "4.8.1"
+    },
+    {
+      "id": "mapping_events_visibility",
+      "href": "https://w3c.github.io/core-aam/#mapping_events_visibility",
+      "level": 4,
+      "title": "Changes to document content or node visibility",
+      "number": "4.8.2"
+    },
+    {
+      "id": "focus_state_event_table",
+      "href": "https://w3c.github.io/core-aam/#focus_state_event_table",
+      "level": 4,
+      "title": "Focus Changes",
+      "number": "4.8.3"
+    },
+    {
+      "id": "mapping_events_selection",
+      "href": "https://w3c.github.io/core-aam/#mapping_events_selection",
+      "level": 4,
+      "title": "Selection",
+      "number": "4.8.4"
+    },
+    {
+      "id": "mapping_events_menus",
+      "href": "https://w3c.github.io/core-aam/#mapping_events_menus",
+      "level": 4,
+      "title": "Special Events for Menus",
+      "number": "4.8.5"
+    },
+    {
+      "id": "changelog",
+      "href": "https://w3c.github.io/core-aam/#changelog",
+      "level": 2,
+      "title": "Change Log",
+      "number": "A"
+    },
+    {
+      "id": "substantive-changes-since-the-last-public-working-draft",
+      "href": "https://w3c.github.io/core-aam/#substantive-changes-since-the-last-public-working-draft",
+      "level": 3,
+      "title": "Substantive changes since the last public working draft",
+      "number": "A.1"
+    },
+    {
+      "id": "substantive-changes-since-the-core-accessibility-api-mappings-1-1-recommendation",
+      "href": "https://w3c.github.io/core-aam/#substantive-changes-since-the-core-accessibility-api-mappings-1-1-recommendation",
+      "level": 3,
+      "title": "Substantive changes since the Core Accessibility API Mappings 1.1 Recommendation",
+      "number": "A.2"
+    },
+    {
+      "id": "acknowledgements",
+      "href": "https://w3c.github.io/core-aam/#acknowledgements",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "B"
+    },
+    {
+      "id": "ack_group",
+      "href": "https://w3c.github.io/core-aam/#ack_group",
+      "level": 3,
+      "title": "Participants active in the ARIA WG at the time of publication",
+      "number": "B.1"
+    },
+    {
+      "id": "ack_others",
+      "href": "https://w3c.github.io/core-aam/#ack_others",
+      "level": 3,
+      "title": "Other ARIA contributors, commenters, and previously active participants",
+      "number": "B.2"
+    },
+    {
+      "id": "ack_funders",
+      "href": "https://w3c.github.io/core-aam/#ack_funders",
+      "level": 3,
+      "title": "Enabling funders",
+      "number": "B.3"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/core-aam/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/core-aam/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/core-aam/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    }
+  ]
+}

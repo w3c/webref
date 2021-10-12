@@ -1,0 +1,29 @@
+{
+  "name": "XREquirectLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "dictionary XREquirectLayerInit : XRLayerInit {\n  XRTextureType textureType = \"texture\";\n  XRRigidTransform? transform;\n  float radius = 0;\n  float centralHorizontalAngle = 6.28318;\n  float upperVerticalAngle = 1.570795;\n  float lowerVerticalAngle = -1.570795;\n};",
+    "href": "https://immersive-web.github.io/layers/#dictdef-xrequirectlayerinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRLayerInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n};",
+      "href": "https://immersive-web.github.io/layers/#dictdef-xrlayerinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

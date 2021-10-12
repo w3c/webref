@@ -1,0 +1,132 @@
+{
+  "spec": {
+    "title": "CSS Generated Content Module Level 3",
+    "url": "https://drafts.csswg.org/css-content-3/"
+  },
+  "properties": {
+    "content": {
+      "name": "content",
+      "value": "normal | none | [ <content-replacement> | <content-list> ] [/ [ <string> | <counter> ]+ ]?",
+      "initial": "normal",
+      "appliesTo": "all elements, tree-abiding pseudo-elements, and page margin boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "See prose below",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "content"
+      ]
+    },
+    "quotes": {
+      "name": "quotes",
+      "value": "auto | none | [ <string> <string> ]+",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the keyword none, the keyword auto, or a list, each item a pair of string values",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "quotes"
+      ]
+    },
+    "string-set": {
+      "name": "string-set",
+      "value": "none | [ <custom-ident> <string>+ ]#",
+      "initial": "none",
+      "appliesTo": "all elements, but not pseudo-elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword none or a list, each item an identifier paired with a list of string values",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "string-set",
+        "stringSet"
+      ]
+    },
+    "bookmark-level": {
+      "name": "bookmark-level",
+      "value": "none | <integer>",
+      "initial": "none",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "the keyword none or the specified integer",
+      "canonicalOrder": "per grammar",
+      "animationType": "by computed value type",
+      "styleDeclaration": [
+        "bookmark-level",
+        "bookmarkLevel"
+      ]
+    },
+    "bookmark-label": {
+      "name": "bookmark-label",
+      "value": "<content-list>",
+      "initial": "content(text)",
+      "appliesTo": "all elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "bookmark-label",
+        "bookmarkLabel"
+      ]
+    },
+    "bookmark-state": {
+      "name": "bookmark-state",
+      "value": "open | closed",
+      "initial": "open",
+      "appliesTo": "block-level elements",
+      "inherited": "no",
+      "percentages": "N/A",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "bookmark-state",
+        "bookmarkState"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<quote>": {
+      "value": "open-quote | close-quote | no-open-quote | no-close-quote"
+    },
+    "<leader()>": {
+      "value": "leader( <leader-type> )"
+    },
+    "<leader-type>": {
+      "value": "dotted | solid | space | <string>"
+    },
+    "<target>": {
+      "value": "<target-counter()> | <target-counters()> | <target-text()>"
+    },
+    "<target-counter()>": {
+      "value": "target-counter( [ <string> | <url> ] , <custom-ident> , <counter-style>? )"
+    },
+    "<target-counters()>": {
+      "value": "target-counters( [ <string> | <url> ] , <custom-ident> , <string> , <counter-style>? )"
+    },
+    "<target-text()>": {
+      "value": "target-text( [ <string> | <url> ] , [ content | before | after | first-letter ]? )"
+    },
+    "<string()>": {
+      "value": "string( <custom-ident> , [ first | start | last | first-except ]? )"
+    },
+    "<content()>": {
+      "value": "content( [ text | before | after | first-letter | marker ]? )"
+    },
+    "<content-replacement>": {
+      "value": "<image>"
+    },
+    "<content-list>": {
+      "value": "[ <string> | contents | <image> | <counter> | <quote> | <target> | <leader()> ]+"
+    }
+  }
+}

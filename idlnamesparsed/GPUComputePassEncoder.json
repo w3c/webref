@@ -1,0 +1,61 @@
+{
+  "name": "GPUComputePassEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/"
+    },
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);\n    undefined endPipelineStatisticsQuery();\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined endPass();\n};",
+    "href": "https://gpuweb.github.io/gpuweb/#gpucomputepassencoder"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUComputePassEncoder includes GPUProgrammablePassEncoder;"
+    }
+  ],
+  "inheritance": null,
+  "includes": [
+    {
+      "name": "GPUObjectBase",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUProgrammablePassEncoder",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "href": "https://gpuweb.github.io/gpuweb/#gpuprogrammablepassencoder"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "XRCubeLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "dictionary XRCubeLayerInit : XRLayerInit {\n  DOMPointReadOnly? orientation;\n};",
+    "href": "https://immersive-web.github.io/layers/#dictdef-xrcubelayerinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRLayerInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "dictionary XRLayerInit {\n  required XRSpace space;\n  GLenum colorFormat = 0x1908; // RGBA\n  GLenum? depthFormat;\n  unsigned long mipLevels = 1;\n  required unsigned long viewPixelWidth;\n  required unsigned long viewPixelHeight;\n  XRLayerLayout layout = \"mono\";\n  boolean isStatic = false;\n};",
+      "href": "https://immersive-web.github.io/layers/#dictdef-xrlayerinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,0 +1,101 @@
+{
+  "spec": {
+    "title": "CSS Images Module Level 3",
+    "url": "https://drafts.csswg.org/css-images-3/"
+  },
+  "properties": {
+    "object-fit": {
+      "name": "object-fit",
+      "value": "fill | contain | cover | none | scale-down",
+      "initial": "fill",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "object-fit",
+        "objectFit"
+      ]
+    },
+    "object-position": {
+      "name": "object-position",
+      "value": "<position>",
+      "initial": "50% 50%",
+      "appliesTo": "replaced elements",
+      "inherited": "no",
+      "percentages": "refer to width and height of element itself",
+      "computedValue": "as for background-position",
+      "canonicalOrder": "the horizontal component of the <position>, followed by the vertical component",
+      "animationType": "as for background-position",
+      "styleDeclaration": [
+        "object-position",
+        "objectPosition"
+      ]
+    },
+    "image-orientation": {
+      "name": "image-orientation",
+      "value": "from-image | none | [ <angle> || flip ]",
+      "initial": "from-image",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "the specified keyword, or an <angle>, rounded and normalized (see text), plus optionally a flip keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "image-orientation",
+        "imageOrientation"
+      ]
+    },
+    "image-rendering": {
+      "name": "image-rendering",
+      "value": "auto | smooth | high-quality | pixelated | crisp-edges",
+      "initial": "auto",
+      "appliesTo": "all elements",
+      "inherited": "yes",
+      "percentages": "n/a",
+      "computedValue": "specified keyword",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "image-rendering",
+        "imageRendering"
+      ]
+    }
+  },
+  "descriptors": {},
+  "valuespaces": {
+    "<image>": {
+      "value": "<url> | <gradient>"
+    },
+    "<gradient>": {
+      "value": "<linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()>"
+    },
+    "<linear-gradient()>": {
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? , <color-stop-list> )"
+    },
+    "<side-or-corner>": {
+      "value": "[left | right] || [top | bottom]"
+    },
+    "<radial-gradient()>": {
+      "value": "radial-gradient( [ <ending-shape> || <size> ]? [ at <position> ]? , <color-stop-list> )"
+    },
+    "<color-stop-list>": {
+      "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
+    },
+    "<linear-color-stop>": {
+      "value": "<color> && <length-percentage>?"
+    },
+    "<linear-color-hint>": {
+      "value": "<length-percentage>"
+    },
+    "<ending-shape>": {
+      "prose": "Can be either circle or ellipse; determines whether the gradient’s ending shape is a circle or an ellipse, respectively. If <ending-shape> is omitted, the ending shape defaults to a circle if the <size> is a single <length>, and to an ellipse otherwise."
+    },
+    "<length>": {
+      "prose": "Gives the radius of the circle explicitly. Negative values are invalid."
+    }
+  }
+}

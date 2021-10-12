@@ -1,0 +1,14 @@
+{
+  "name": "EXT_disjoint_timer_query_webgl2",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebGL EXT_disjoint_timer_query_webgl2 Extension Specification",
+      "url": "https://www.khronos.org/registry/webgl/extensions/EXT_disjoint_timer_query_webgl2/"
+    },
+    "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface EXT_disjoint_timer_query_webgl2 {\n  const GLenum QUERY_COUNTER_BITS_EXT      = 0x8864;\n  const GLenum TIME_ELAPSED_EXT            = 0x88BF;\n  const GLenum TIMESTAMP_EXT               = 0x8E28;\n  const GLenum GPU_DISJOINT_EXT            = 0x8FBB;\n\n  undefined queryCounterEXT(WebGLQuery query, GLenum target);\n};"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,776 @@
+{
+  "spec": {
+    "title": "WebGL WEBGL_multi_draw_instanced_base_vertex_base_instance Extension Draft Specification",
+    "url": "https://www.khronos.org/registry/webgl/extensions/WEBGL_multi_draw_instanced_base_vertex_base_instance/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "WEBGL_multi_draw_instanced_base_vertex_base_instance"
+        ],
+        "Worker": [
+          "WEBGL_multi_draw_instanced_base_vertex_base_instance"
+        ]
+      }
+    },
+    "idlNames": {
+      "WEBGL_multi_draw_instanced_base_vertex_base_instance": {
+        "fragment": "[Exposed=(Window,Worker), LegacyNoInterfaceObject]\ninterface WEBGL_multi_draw_instanced_base_vertex_base_instance {\n  undefined multiDrawArraysInstancedBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLint>) firstsList, GLuint firstsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n  undefined multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL(\n      GLenum mode,\n      ([AllowShared] Int32Array or sequence<GLsizei>) countsList, GLuint countsOffset,\n      GLenum type,\n      ([AllowShared] Int32Array or sequence<GLsizei>) offsetsList, GLuint offsetsOffset,\n      ([AllowShared] Int32Array or sequence<GLsizei>) instanceCountsList, GLuint instanceCountsOffset,\n      ([AllowShared] Int32Array or sequence<GLint>) baseVerticesList, GLuint baseVerticesOffset,\n      ([AllowShared] Uint32Array or sequence<GLuint>) baseInstancesList, GLuint baseInstancesOffset,\n      GLsizei drawCount\n  );\n};",
+        "type": "interface",
+        "name": "WEBGL_multi_draw_instanced_base_vertex_base_instance",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "operation",
+            "name": "multiDrawArraysInstancedBaseInstanceWEBGL",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "mode",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "firstsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "countsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLsizei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "countsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCountsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLsizei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCountsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseInstancesList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Uint32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLuint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseInstancesOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "drawCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLsizei"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "multiDrawElementsInstancedBaseVertexBaseInstanceWEBGL",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "mode",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "countsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLsizei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "countsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "type",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLenum"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "offsetsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLsizei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "offsetsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCountsList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLsizei"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "instanceCountsOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseVerticesList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Int32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseVerticesOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseInstancesList",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [
+                        {
+                          "type": "extended-attribute",
+                          "name": "AllowShared",
+                          "rhs": null,
+                          "arguments": []
+                        }
+                      ],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "Uint32Array"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "GLuint"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "baseInstancesOffset",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLuint"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              },
+              {
+                "type": "argument",
+                "name": "drawCount",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GLsizei"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                }
+              ]
+            },
+            "arguments": []
+          },
+          {
+            "type": "extended-attribute",
+            "name": "LegacyNoInterfaceObject",
+            "rhs": null,
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "WEBGL_multi_draw_instanced_base_vertex_base_instance"
+      ],
+      "Worker": [
+        "WEBGL_multi_draw_instanced_base_vertex_base_instance"
+      ]
+    },
+    "dependencies": {
+      "WEBGL_multi_draw_instanced_base_vertex_base_instance": [
+        "GLenum",
+        "GLint",
+        "GLuint",
+        "GLsizei"
+      ]
+    },
+    "externalDependencies": [
+      "GLenum",
+      "GLint",
+      "GLuint",
+      "GLsizei"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

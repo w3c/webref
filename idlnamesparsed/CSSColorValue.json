@@ -1,0 +1,29 @@
+{
+  "name": "CSSColorValue",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "CSS Typed OM Level 1",
+      "url": "https://www.w3.org/TR/css-typed-om-1/"
+    },
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+    "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolorvalue"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "CSSStyleValue",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "CSS Typed OM Level 1",
+        "url": "https://www.w3.org/TR/css-typed-om-1/"
+      },
+      "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSStyleValue {\n    stringifier;\n    [Exposed=Window] static CSSStyleValue parse(USVString property, USVString cssText);\n    [Exposed=Window] static sequence<CSSStyleValue> parseAll(USVString property, USVString cssText);\n};",
+      "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssstylevalue"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

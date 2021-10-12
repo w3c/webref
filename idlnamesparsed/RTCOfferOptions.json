@@ -1,0 +1,37 @@
+{
+  "name": "RTCOfferOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCOfferOptions : RTCOfferAnswerOptions {\n  boolean iceRestart = false;\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferoptions"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "partial dictionary RTCOfferOptions {\n  boolean offerToReceiveAudio;\n  boolean offerToReceiveVideo;\n};"
+    }
+  ],
+  "inheritance": {
+    "name": "RTCOfferAnswerOptions",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCOfferAnswerOptions {};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcofferansweroptions"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

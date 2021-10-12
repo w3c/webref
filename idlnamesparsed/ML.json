@@ -1,0 +1,15 @@
+{
+  "name": "ML",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "[SecureContext, Exposed=(Window, DedicatedWorker)]\ninterface ML {\n  // Create a context with options\n  MLContext createContext(optional MLContextOptions options = {});\n\n  // Create a context from WebGL rendering context\n  MLContext createContext(WebGLRenderingContext glContext);\n\n  // Create a context from WebGPU device\n  MLContext createContext(GPUDevice gpuDevice);\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#ml"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

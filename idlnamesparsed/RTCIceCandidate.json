@@ -1,0 +1,15 @@
+{
+  "name": "RTCIceCandidate",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "[Exposed=Window]\ninterface RTCIceCandidate {\n  constructor(optional RTCIceCandidateInit candidateInitDict = {});\n  readonly attribute DOMString candidate;\n  readonly attribute DOMString? sdpMid;\n  readonly attribute unsigned short? sdpMLineIndex;\n  readonly attribute DOMString? foundation;\n  readonly attribute RTCIceComponent? component;\n  readonly attribute unsigned long? priority;\n  readonly attribute DOMString? address;\n  readonly attribute RTCIceProtocol? protocol;\n  readonly attribute unsigned short? port;\n  readonly attribute RTCIceCandidateType? type;\n  readonly attribute RTCIceTcpCandidateType? tcpType;\n  readonly attribute DOMString? relatedAddress;\n  readonly attribute unsigned short? relatedPort;\n  readonly attribute DOMString? usernameFragment;\n  RTCIceCandidateInit toJSON();\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcicecandidate"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

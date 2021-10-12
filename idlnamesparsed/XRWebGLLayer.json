@@ -1,0 +1,43 @@
+{
+  "name": "XRWebGLLayer",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window]\ninterface XRWebGLLayer: XRLayer {\n  constructor(XRSession session,\n             XRWebGLRenderingContext context,\n             optional XRWebGLLayerInit layerInit = {});\n  // Attributes\n  readonly attribute boolean antialias;\n  readonly attribute boolean ignoreDepthValues;\n  attribute float? fixedFoveation;\n\n  [SameObject] readonly attribute WebGLFramebuffer? framebuffer;\n  readonly attribute unsigned long framebufferWidth;\n  readonly attribute unsigned long framebufferHeight;\n\n  // Methods\n  XRViewport? getViewport(XRView view);\n\n  // Static Methods\n  static double getNativeFramebufferScaleFactor(XRSession session);\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrwebgllayer"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRLayer",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "WebXR Device API",
+        "url": "https://www.w3.org/TR/webxr/"
+      },
+      "fragment": "[SecureContext, Exposed=Window]\ninterface XRLayer : EventTarget {};",
+      "href": "https://immersive-web.github.io/webxr/#xrlayer"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

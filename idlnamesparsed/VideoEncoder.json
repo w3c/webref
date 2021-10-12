@@ -1,0 +1,15 @@
+{
+  "name": "VideoEncoder",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebCodecs",
+      "url": "https://www.w3.org/TR/webcodecs/"
+    },
+    "fragment": "[Exposed=(Window,DedicatedWorker), SecureContext]\ninterface VideoEncoder {\n  constructor(VideoEncoderInit init);\n\n  readonly attribute CodecState state;\n  readonly attribute long encodeQueueSize;\n\n  undefined configure(VideoEncoderConfig config);\n  undefined encode(VideoFrame frame, optional VideoEncoderEncodeOptions options = {});\n  Promise<undefined> flush();\n  undefined reset();\n  undefined close();\n\n  static Promise<boolean> isConfigSupported(VideoEncoderConfig config);\n};",
+    "href": "https://w3c.github.io/webcodecs/#videoencoder"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

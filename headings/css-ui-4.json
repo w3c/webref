@@ -1,0 +1,428 @@
+{
+  "spec": {
+    "title": "CSS Basic User Interface Module Level 4",
+    "url": "https://drafts.csswg.org/css-ui-4/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-ui-4/#title",
+      "level": 1,
+      "title": "CSS Basic User Interface Module Level 4"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://drafts.csswg.org/css-ui-4/#profile-and-date",
+      "level": 2,
+      "title": "Editor’s Draft, 29 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-ui-4/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://drafts.csswg.org/css-ui-4/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-ui-4/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-ui-4/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "purpose",
+      "href": "https://drafts.csswg.org/css-ui-4/#purpose",
+      "level": 3,
+      "title": "Purpose",
+      "number": "1.1"
+    },
+    {
+      "id": "interaction",
+      "href": "https://drafts.csswg.org/css-ui-4/#interaction",
+      "level": 2,
+      "title": "Module Interactions",
+      "number": "2"
+    },
+    {
+      "id": "values",
+      "href": "https://drafts.csswg.org/css-ui-4/#values",
+      "level": 3,
+      "title": "Value Definitions",
+      "number": "2.1"
+    },
+    {
+      "id": "outline-props",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline-props",
+      "level": 2,
+      "title": "Outline properties",
+      "number": "3"
+    },
+    {
+      "id": "outline",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline",
+      "level": 3,
+      "title": "Outlines Shorthand: the outline property",
+      "number": "3.1"
+    },
+    {
+      "id": "outline-width",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline-width",
+      "level": 3,
+      "title": "Outline Thickness: the outline-width property",
+      "number": "3.2"
+    },
+    {
+      "id": "outline-style",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline-style",
+      "level": 3,
+      "title": "Outline Patterns: the outline-style property",
+      "number": "3.3"
+    },
+    {
+      "id": "outline-color",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline-color",
+      "level": 3,
+      "title": "Outline Colors: the outline-color property",
+      "number": "3.4"
+    },
+    {
+      "id": "outline-offset",
+      "href": "https://drafts.csswg.org/css-ui-4/#outline-offset",
+      "level": 3,
+      "title": "Offsetting the Outline: the outline-offset property",
+      "number": "3.5"
+    },
+    {
+      "id": "resizing",
+      "href": "https://drafts.csswg.org/css-ui-4/#resizing",
+      "level": 2,
+      "title": "Resizing",
+      "number": "4"
+    },
+    {
+      "id": "resize",
+      "href": "https://drafts.csswg.org/css-ui-4/#resize",
+      "level": 3,
+      "title": "Resizing Boxes: the resize property",
+      "number": "4.1"
+    },
+    {
+      "id": "pointing-keyboard",
+      "href": "https://drafts.csswg.org/css-ui-4/#pointing-keyboard",
+      "level": 2,
+      "title": "Pointing Devices and Keyboards",
+      "number": "5"
+    },
+    {
+      "id": "pointer-interaction",
+      "href": "https://drafts.csswg.org/css-ui-4/#pointer-interaction",
+      "level": 3,
+      "title": "Pointer interaction",
+      "number": "5.1"
+    },
+    {
+      "id": "cursor",
+      "href": "https://drafts.csswg.org/css-ui-4/#cursor",
+      "level": 4,
+      "title": "Styling the Cursor: the cursor property",
+      "number": "5.1.1"
+    },
+    {
+      "id": "canvas_cursor",
+      "href": "https://drafts.csswg.org/css-ui-4/#canvas_cursor",
+      "level": 5,
+      "title": "Cursor of the canvas",
+      "number": "5.1.1.1"
+    },
+    {
+      "id": "insertion-caret",
+      "href": "https://drafts.csswg.org/css-ui-4/#insertion-caret",
+      "level": 3,
+      "title": "Insertion caret",
+      "number": "5.2"
+    },
+    {
+      "id": "caret-color",
+      "href": "https://drafts.csswg.org/css-ui-4/#caret-color",
+      "level": 4,
+      "title": "Coloring the Insertion Caret: the caret-color property",
+      "number": "5.2.1"
+    },
+    {
+      "id": "caret-shape",
+      "href": "https://drafts.csswg.org/css-ui-4/#caret-shape",
+      "level": 4,
+      "title": "Shape of the insertion caret: caret-shape",
+      "number": "5.2.2"
+    },
+    {
+      "id": "caret",
+      "href": "https://drafts.csswg.org/css-ui-4/#caret",
+      "level": 4,
+      "title": "Insertion caret shorthand: caret",
+      "number": "5.2.3"
+    },
+    {
+      "id": "keyboard",
+      "href": "https://drafts.csswg.org/css-ui-4/#keyboard",
+      "level": 3,
+      "title": "Keyboard control",
+      "number": "5.3"
+    },
+    {
+      "id": "nav-dir",
+      "href": "https://drafts.csswg.org/css-ui-4/#nav-dir",
+      "level": 4,
+      "title": "Directional Focus Navigation: the nav-up, nav-right, nav-down, nav-left properties",
+      "number": "5.3.1"
+    },
+    {
+      "id": "example-positioned-buttons",
+      "href": "https://drafts.csswg.org/css-ui-4/#example-positioned-buttons",
+      "level": 5,
+      "title": "Example: positioned buttons",
+      "number": "5.3.1.1"
+    },
+    {
+      "id": "example-moving-focus-to-inside-a-frame",
+      "href": "https://drafts.csswg.org/css-ui-4/#example-moving-focus-to-inside-a-frame",
+      "level": 5,
+      "title": "Example: moving focus to inside a frame",
+      "number": "5.3.1.2"
+    },
+    {
+      "id": "input-method-editor",
+      "href": "https://drafts.csswg.org/css-ui-4/#input-method-editor",
+      "level": 4,
+      "title": "Obsolete: the ime-mode property",
+      "number": "5.3.2"
+    },
+    {
+      "id": "user-interaction",
+      "href": "https://drafts.csswg.org/css-ui-4/#user-interaction",
+      "level": 2,
+      "title": "User Interaction",
+      "number": "6"
+    },
+    {
+      "id": "content-selection",
+      "href": "https://drafts.csswg.org/css-ui-4/#content-selection",
+      "level": 3,
+      "title": "Controlling content selection",
+      "number": "6.1"
+    },
+    {
+      "id": "pointer-events-control",
+      "href": "https://drafts.csswg.org/css-ui-4/#pointer-events-control",
+      "level": 3,
+      "title": "Exclusion from Hit-testing: the pointer-events property",
+      "number": "6.2"
+    },
+    {
+      "id": "styling-widgets",
+      "href": "https://drafts.csswg.org/css-ui-4/#styling-widgets",
+      "level": 2,
+      "title": "Styling Widgets",
+      "number": "7"
+    },
+    {
+      "id": "widget-accent",
+      "href": "https://drafts.csswg.org/css-ui-4/#widget-accent",
+      "level": 3,
+      "title": "Widget Accent Colors: the accent-color property",
+      "number": "7.1"
+    },
+    {
+      "id": "appearance-switching",
+      "href": "https://drafts.csswg.org/css-ui-4/#appearance-switching",
+      "level": 3,
+      "title": "Switching appearance: the appearance property",
+      "number": "7.2"
+    },
+    {
+      "id": "appearance-decorative",
+      "href": "https://drafts.csswg.org/css-ui-4/#appearance-decorative",
+      "level": 4,
+      "title": "Effects of appearance on Decorative Aspects of Elements",
+      "number": "7.2.1"
+    },
+    {
+      "id": "appearance-semantics",
+      "href": "https://drafts.csswg.org/css-ui-4/#appearance-semantics",
+      "level": 4,
+      "title": "Effects of appearance on Semantic Aspects of Elements",
+      "number": "7.2.2"
+    },
+    {
+      "id": "input-security",
+      "href": "https://drafts.csswg.org/css-ui-4/#input-security",
+      "level": 3,
+      "title": "Obscuring sensitive input: the input-security property",
+      "number": "7.3"
+    },
+    {
+      "id": "control-specific-rules",
+      "href": "https://drafts.csswg.org/css-ui-4/#control-specific-rules",
+      "level": 3,
+      "title": "Control Specific Rules",
+      "number": "7.4"
+    },
+    {
+      "id": "input-rules",
+      "href": "https://drafts.csswg.org/css-ui-4/#input-rules",
+      "level": 4,
+      "title": "Single-Line Text Input Controls",
+      "number": "7.4.1"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-ui-4/#acknowledgments",
+      "level": 2,
+      "title": "Appendix A. Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes",
+      "level": 2,
+      "title": "Appendix B. Changes"
+    },
+    {
+      "id": "changes-2021-03-16",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes-2021-03-16",
+      "level": 3,
+      "title": "Changes from the 16 March 2021 Working Draft"
+    },
+    {
+      "id": "changes-24-1-2020",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes-24-1-2020",
+      "level": 3,
+      "title": "Changes from the 24 January 2020 Working Draft"
+    },
+    {
+      "id": "changes-2-1-2020",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes-2-1-2020",
+      "level": 3,
+      "title": "Changes from the 2 January 2020 Working Draft"
+    },
+    {
+      "id": "changes-22-12-2017",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes-22-12-2017",
+      "level": 3,
+      "title": "Changes from the 22 December 2017 Working Draft"
+    },
+    {
+      "id": "changes-22-09-2015",
+      "href": "https://drafts.csswg.org/css-ui-4/#changes-22-09-2015",
+      "level": 3,
+      "title": "Changes from the 22 Sep 2015 First Public Working Draft"
+    },
+    {
+      "id": "security-privacy-considerations",
+      "href": "https://drafts.csswg.org/css-ui-4/#security-privacy-considerations",
+      "level": 2,
+      "title": "Appendix C. Considerations for Security and Privacy"
+    },
+    {
+      "id": "default-style-sheet",
+      "href": "https://drafts.csswg.org/css-ui-4/#default-style-sheet",
+      "level": 2,
+      "title": "Appendix D. Default style sheet additions for HTML"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-ui-4/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-ui-4/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-ui-4/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-ui-4/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-ui-4/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-ui-4/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-ui-4/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "property-index",
+      "href": "https://drafts.csswg.org/css-ui-4/#property-index",
+      "level": 2,
+      "title": "Property Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-ui-4/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

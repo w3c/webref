@@ -1,0 +1,29 @@
+{
+  "name": "GravityReadingValues",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Accelerometer",
+      "url": "https://www.w3.org/TR/accelerometer/"
+    },
+    "fragment": "dictionary GravityReadingValues : AccelerometerReadingValues {\n};",
+    "href": "https://w3c.github.io/accelerometer/#dictdef-gravityreadingvalues"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AccelerometerReadingValues",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Accelerometer",
+        "url": "https://www.w3.org/TR/accelerometer/"
+      },
+      "fragment": "dictionary AccelerometerReadingValues {\n  required double? x;\n  required double? y;\n  required double? z;\n};",
+      "href": "https://w3c.github.io/accelerometer/#dictdef-accelerometerreadingvalues"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

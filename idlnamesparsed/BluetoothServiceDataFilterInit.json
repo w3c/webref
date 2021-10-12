@@ -1,0 +1,29 @@
+{
+  "name": "BluetoothServiceDataFilterInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Bluetooth",
+      "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+    },
+    "fragment": "dictionary BluetoothServiceDataFilterInit : BluetoothDataFilterInit {\n  required BluetoothServiceUUID service;\n};",
+    "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothservicedatafilterinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "BluetoothDataFilterInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "Web Bluetooth",
+        "url": "https://webbluetoothcg.github.io/web-bluetooth/"
+      },
+      "fragment": "dictionary BluetoothDataFilterInit {\n  BufferSource dataPrefix;\n  BufferSource mask;\n};",
+      "href": "https://webbluetoothcg.github.io/web-bluetooth/#dictdef-bluetoothdatafilterinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

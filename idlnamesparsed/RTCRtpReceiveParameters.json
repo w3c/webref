@@ -1,0 +1,29 @@
+{
+  "name": "RTCRtpReceiveParameters",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+      "url": "https://www.w3.org/TR/webrtc/"
+    },
+    "fragment": "dictionary RTCRtpReceiveParameters : RTCRtpParameters {\n};",
+    "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpreceiveparameters"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "RTCRtpParameters",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
+        "url": "https://www.w3.org/TR/webrtc/"
+      },
+      "fragment": "dictionary RTCRtpParameters {\n  required sequence<RTCRtpHeaderExtensionParameters> headerExtensions;\n  required RTCRtcpParameters rtcp;\n  required sequence<RTCRtpCodecParameters> codecs;\n};",
+      "href": "https://w3c.github.io/webrtc-pc/#dom-rtcrtpparameters"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ResizeObserver",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Resize Observer",
+      "url": "https://www.w3.org/TR/resize-observer-1/"
+    },
+    "fragment": "[Exposed=(Window)]\ninterface ResizeObserver {\n    constructor(ResizeObserverCallback callback);\n    undefined observe(Element target, optional ResizeObserverOptions options = {});\n    undefined unobserve(Element target);\n    undefined disconnect();\n};",
+    "href": "https://drafts.csswg.org/resize-observer/#resizeobserver"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

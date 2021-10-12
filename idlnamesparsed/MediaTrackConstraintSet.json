@@ -1,0 +1,37 @@
+{
+  "name": "MediaTrackConstraintSet",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capture and Streams",
+      "url": "https://www.w3.org/TR/mediacapture-streams/"
+    },
+    "fragment": "dictionary MediaTrackConstraintSet {\n  ConstrainULong width;\n  ConstrainULong height;\n  ConstrainDouble aspectRatio;\n  ConstrainDouble frameRate;\n  ConstrainDOMString facingMode;\n  ConstrainDOMString resizeMode;\n  ConstrainULong sampleRate;\n  ConstrainULong sampleSize;\n  ConstrainBoolean echoCancellation;\n  ConstrainBoolean autoGainControl;\n  ConstrainBoolean noiseSuppression;\n  ConstrainDouble latency;\n  ConstrainULong channelCount;\n  ConstrainDOMString deviceId;\n  ConstrainDOMString groupId;\n};",
+    "href": "https://w3c.github.io/mediacapture-main/#dom-mediatrackconstraintset"
+  },
+  "extended": [
+    {
+      "spec": {
+        "title": "MediaStream Image Capture",
+        "url": "https://www.w3.org/TR/image-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString           whiteBalanceMode;\n  ConstrainDOMString           exposureMode;\n  ConstrainDOMString           focusMode;\n  ConstrainPoint2D             pointsOfInterest;\n\n  ConstrainDouble              exposureCompensation;\n  ConstrainDouble              exposureTime;\n  ConstrainDouble              colorTemperature;\n  ConstrainDouble              iso;\n\n  ConstrainDouble              brightness;\n  ConstrainDouble              contrast;\n  ConstrainDouble              saturation;\n  ConstrainDouble              sharpness;\n\n  ConstrainDouble              focusDistance;\n  (boolean or ConstrainDouble) pan;\n  (boolean or ConstrainDouble) tilt;\n  (boolean or ConstrainDouble) zoom;\n\n  ConstrainBoolean             torch;\n};"
+    },
+    {
+      "spec": {
+        "title": "Media Capture Depth Stream Extensions",
+        "url": "https://www.w3.org/TR/mediacapture-depth/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n    // Applies to both depth stream track and color stream track:\n    ConstrainDOMString videoKind;\n};"
+    },
+    {
+      "spec": {
+        "title": "Screen Capture",
+        "url": "https://www.w3.org/TR/screen-capture/"
+      },
+      "fragment": "partial dictionary MediaTrackConstraintSet {\n  ConstrainDOMString displaySurface;\n  ConstrainBoolean logicalSurface;\n  ConstrainDOMString cursor;\n  ConstrainBoolean restrictOwnAudio;\n  ConstrainBoolean suppressLocalAudioPlayback;\n};"
+    }
+  ],
+  "inheritance": null,
+  "includes": []
+}

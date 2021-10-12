@@ -1,0 +1,29 @@
+{
+  "name": "XRMediaEquirectLayerInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "WebXR Layers API Level 1",
+      "url": "https://www.w3.org/TR/webxrlayers-1/"
+    },
+    "fragment": "dictionary XRMediaEquirectLayerInit : XRMediaLayerInit {\n  XRRigidTransform? transform;\n  float radius = 0.0;\n  float centralHorizontalAngle = 6.28318;\n  float upperVerticalAngle = 1.570795;\n  float lowerVerticalAngle = -1.570795;\n};",
+    "href": "https://immersive-web.github.io/layers/#dictdef-xrmediaequirectlayerinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "XRMediaLayerInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "WebXR Layers API Level 1",
+        "url": "https://www.w3.org/TR/webxrlayers-1/"
+      },
+      "fragment": "dictionary XRMediaLayerInit {\n  required XRSpace space;\n  XRLayerLayout layout = \"mono\";\n  boolean invertStereo = false;\n};",
+      "href": "https://immersive-web.github.io/layers/#dictdef-xrmedialayerinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

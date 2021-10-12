@@ -1,0 +1,676 @@
+{
+  "spec": {
+    "title": "Measure Memory API",
+    "url": "https://wicg.github.io/performance-measure-memory/"
+  },
+  "dfns": [
+    {
+      "id": "dictdef-memorymeasurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorymeasurement",
+      "linkingText": [
+        "MemoryMeasurement"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorymeasurement-bytes",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryMeasurement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorymeasurement-breakdown",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memorymeasurement-breakdown",
+      "linkingText": [
+        "breakdown"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryMeasurement"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-memorybreakdownentry",
+      "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memorybreakdownentry",
+      "linkingText": [
+        "MemoryBreakdownEntry"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorybreakdownentry-bytes",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryBreakdownEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorybreakdownentry-attribution",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-attribution",
+      "linkingText": [
+        "attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryBreakdownEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memorybreakdownentry-types",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memorybreakdownentry-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryBreakdownEntry"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-memoryattribution",
+      "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memoryattribution",
+      "linkingText": [
+        "MemoryAttribution"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memoryattribution-url",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memoryattribution-container",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-container",
+      "linkingText": [
+        "container"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memoryattribution-scope",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattribution-scope",
+      "linkingText": [
+        "scope"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryAttribution"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-memoryattributioncontainer",
+      "href": "https://wicg.github.io/performance-measure-memory/#dictdef-memoryattributioncontainer",
+      "linkingText": [
+        "MemoryAttributionContainer"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memoryattributioncontainer-id",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-id",
+      "linkingText": [
+        "id"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryAttributionContainer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-memoryattributioncontainer-src",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-memoryattributioncontainer-src",
+      "linkingText": [
+        "src"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MemoryAttributionContainer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "memory-measurement-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-result",
+        "title": "Memory measurement result",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "intermediate-memory-measurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement",
+      "linkingText": [
+        "intermediate memory measurement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intermediate-memory-measurement-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement-section",
+        "title": "Intermediate memory measurement",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intermediate-memory-breakdown-entry",
+      "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry",
+      "linkingText": [
+        "intermediate memory breakdown entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intermediate-memory-measurement-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement-section",
+        "title": "Intermediate memory measurement",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "intermediate-memory-breakdown-entry-bytes",
+      "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-bytes",
+      "linkingText": [
+        "bytes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "intermediate memory breakdown entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intermediate-memory-measurement-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement-section",
+        "title": "Intermediate memory measurement",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intermediate-memory-breakdown-entry-realms",
+      "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-realms",
+      "linkingText": [
+        "realms"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "intermediate memory breakdown entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intermediate-memory-measurement-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement-section",
+        "title": "Intermediate memory measurement",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "intermediate-memory-breakdown-entry-types",
+      "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-breakdown-entry-types",
+      "linkingText": [
+        "types"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "intermediate memory breakdown entry"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "intermediate-memory-measurement-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#intermediate-memory-measurement-section",
+        "title": "Intermediate memory measurement",
+        "number": "2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "memory-attribution-token",
+      "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token",
+      "linkingText": [
+        "memory attribution token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-attribution-token-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token-section",
+        "title": "Memory attribution token",
+        "number": "2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-attribution-token-container",
+      "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token-container",
+      "linkingText": [
+        "container"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "memory attribution token"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-attribution-token-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token-section",
+        "title": "Memory attribution token",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "memory-attribution-token-cross-origin-aggregated-flag",
+      "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token-cross-origin-aggregated-flag",
+      "linkingText": [
+        "cross-origin aggregated flag"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "memory attribution token"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "memory-attribution-token-section",
+        "href": "https://wicg.github.io/performance-measure-memory/#memory-attribution-token-section",
+        "title": "Memory attribution token",
+        "number": "2.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-performance-measureuseragentspecificmemory",
+      "href": "https://wicg.github.io/performance-measure-memory/#dom-performance-measureuseragentspecificmemory",
+      "linkingText": [
+        "measureUserAgentSpecificMemory()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "top-level-algorithms",
+        "href": "https://wicg.github.io/performance-measure-memory/#top-level-algorithms",
+        "title": "Top-level algorithms",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-measurement-allowed-predicate",
+      "href": "https://wicg.github.io/performance-measure-memory/#memory-measurement-allowed-predicate",
+      "linkingText": [
+        "memory measurement allowed predicate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "top-level-algorithms",
+        "href": "https://wicg.github.io/performance-measure-memory/#top-level-algorithms",
+        "title": "Top-level algorithms",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "getting-all-agent-clusters",
+      "href": "https://wicg.github.io/performance-measure-memory/#getting-all-agent-clusters",
+      "linkingText": [
+        "getting all agent clusters",
+        "get all agent clusters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "top-level-algorithms",
+        "href": "https://wicg.github.io/performance-measure-memory/#top-level-algorithms",
+        "title": "Top-level algorithms",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "implementation-defined-memory-measurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#implementation-defined-memory-measurement",
+      "linkingText": [
+        "implementation-defined memory measurement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "top-level-algorithms",
+        "href": "https://wicg.github.io/performance-measure-memory/#top-level-algorithms",
+        "title": "Top-level algorithms",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creating-a-new-memory-measurement",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-measurement",
+      "linkingText": [
+        "creating a new memory measurement",
+        "create a new memory measurement"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "converting-an-intermediate-memory-measurement-to-the-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#converting-an-intermediate-memory-measurement-to-the-result",
+        "title": "Converting an intermediate memory measurement to the result",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creating-a-new-memory-breakdown-entry",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-breakdown-entry",
+      "linkingText": [
+        "creating a new memory breakdown entry",
+        "create a new memory breakdown entry"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "converting-an-intermediate-memory-measurement-to-the-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#converting-an-intermediate-memory-measurement-to-the-result",
+        "title": "Converting an intermediate memory measurement to the result",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "creating-a-new-memory-attribution",
+      "href": "https://wicg.github.io/performance-measure-memory/#creating-a-new-memory-attribution",
+      "linkingText": [
+        "creating a new memory attribution",
+        "create a new memory attribution"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "converting-an-intermediate-memory-measurement-to-the-result",
+        "href": "https://wicg.github.io/performance-measure-memory/#converting-an-intermediate-memory-measurement-to-the-result",
+        "title": "Converting an intermediate memory measurement to the result",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-window-memory-attribution-token",
+      "href": "https://wicg.github.io/performance-measure-memory/#obtain-a-window-memory-attribution-token",
+      "linkingText": [
+        "obtain a window memory attribution token",
+        "obtaining a window memory attribution token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-or-obtaining-a-memory-attribution-token",
+        "href": "https://wicg.github.io/performance-measure-memory/#creating-or-obtaining-a-memory-attribution-token",
+        "title": "Creating or obtaining a memory attribution token",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "obtain-a-worker-memory-attribution-token",
+      "href": "https://wicg.github.io/performance-measure-memory/#obtain-a-worker-memory-attribution-token",
+      "linkingText": [
+        "obtain a worker memory attribution token",
+        "obtaining a worker memory attribution token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-or-obtaining-a-memory-attribution-token",
+        "href": "https://wicg.github.io/performance-measure-memory/#creating-or-obtaining-a-memory-attribution-token",
+        "title": "Creating or obtaining a memory attribution token",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "extract-container-element-attributes",
+      "href": "https://wicg.github.io/performance-measure-memory/#extract-container-element-attributes",
+      "linkingText": [
+        "extract container element attributes",
+        "extracting container element attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "creating-or-obtaining-a-memory-attribution-token",
+        "href": "https://wicg.github.io/performance-measure-memory/#creating-or-obtaining-a-memory-attribution-token",
+        "title": "Creating or obtaining a memory attribution token",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "windoworworkerglobalscope-memory-attribution-token",
+      "href": "https://wicg.github.io/performance-measure-memory/#windoworworkerglobalscope-memory-attribution-token",
+      "linkingText": [
+        "memory attribution token"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WindowOrWorkerGlobalScope"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extension-to-window-or-worker-global-scope",
+        "href": "https://wicg.github.io/performance-measure-memory/#extension-to-window-or-worker-global-scope",
+        "title": "Extension to WindowOrWorkerGlobalScope",
+        "number": "4.1"
+      },
+      "definedIn": "dt"
+    }
+  ]
+}

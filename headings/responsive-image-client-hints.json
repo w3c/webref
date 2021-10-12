@@ -1,0 +1,224 @@
+{
+  "spec": {
+    "title": "Responsive Image Client Hints",
+    "url": "https://wicg.github.io/responsive-image-client-hints/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#title",
+      "level": 1,
+      "title": "Responsive Image Client Hints"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#profile-and-date",
+      "level": 2,
+      "title": "Draft Community Group Report, 1 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "responsive-image-hints",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#responsive-image-hints",
+      "level": 2,
+      "title": "Responsive Image Hints",
+      "number": "2"
+    },
+    {
+      "id": "sec-ch-width",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#sec-ch-width",
+      "level": 3,
+      "title": "The Sec-CH-Width Header Field",
+      "number": "2.1"
+    },
+    {
+      "id": "sec-ch-viewport-width",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#sec-ch-viewport-width",
+      "level": 3,
+      "title": "The Sec-CH-Viewport-Width Header Field",
+      "number": "2.2"
+    },
+    {
+      "id": "sec-ch-viewport-height",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#sec-ch-viewport-height",
+      "level": 3,
+      "title": "The Sec-CH-Viewport-Height Header Field",
+      "number": "2.3"
+    },
+    {
+      "id": "sec-ch-dpr",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#sec-ch-dpr",
+      "level": 3,
+      "title": "The Sec-CH-DPR Header Field",
+      "number": "2.4"
+    },
+    {
+      "id": "fetch-integration",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#fetch-integration",
+      "level": 3,
+      "title": "Integration with Fetch",
+      "number": "2.5"
+    },
+    {
+      "id": "security-privacy",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#security-privacy",
+      "level": 2,
+      "title": "Security and Privacy Considerations",
+      "number": "3"
+    },
+    {
+      "id": "secure-transport",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#secure-transport",
+      "level": 3,
+      "title": "Secure Transport",
+      "number": "3.1"
+    },
+    {
+      "id": "delegation",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#delegation",
+      "level": 3,
+      "title": "Delegation",
+      "number": "3.2"
+    },
+    {
+      "id": "access-and-accuracy",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#access-and-accuracy",
+      "level": 3,
+      "title": "Access and Accuracy Restrictions",
+      "number": "3.3"
+    },
+    {
+      "id": "processing",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#processing",
+      "level": 2,
+      "title": "Interface and Processing model",
+      "number": "4"
+    },
+    {
+      "id": "impl-considerations",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#impl-considerations",
+      "level": 2,
+      "title": "Implementation Considerations",
+      "number": "5"
+    },
+    {
+      "id": "sec-ch-prefix",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#sec-ch-prefix",
+      "level": 3,
+      "title": "The Sec-CH prefix",
+      "number": "5.1"
+    },
+    {
+      "id": "iana-considerations",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#iana-considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "6"
+    },
+    {
+      "id": "iana-width",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#iana-width",
+      "level": 3,
+      "title": "Sec-CH-Width Header Field",
+      "number": "6.1"
+    },
+    {
+      "id": "iana-viewport-width",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#iana-viewport-width",
+      "level": 3,
+      "title": "Sec-CH-Viewport-Width Header Field",
+      "number": "6.2"
+    },
+    {
+      "id": "iana-dpr",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#iana-dpr",
+      "level": 3,
+      "title": "Sec-CH-DPR Header Field",
+      "number": "6.3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/responsive-image-client-hints/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

@@ -1,0 +1,541 @@
+{
+  "spec": {
+    "title": "Event Timing API",
+    "url": "https://wicg.github.io/event-timing/"
+  },
+  "dfns": [
+    {
+      "id": "considered-for-event-timing",
+      "href": "https://wicg.github.io/event-timing/#considered-for-event-timing",
+      "linkingText": [
+        "considered for Event Timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-events-exposed",
+        "href": "https://wicg.github.io/event-timing/#sec-events-exposed",
+        "title": "Events exposed",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "performanceeventtiming",
+      "href": "https://wicg.github.io/event-timing/#performanceeventtiming",
+      "linkingText": [
+        "PerformanceEventTiming"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performanceeventtiming-target",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performanceeventtiming-tojson",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-tojson",
+      "linkingText": [
+        "toJSON()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "performanceeventtiming-eventtarget",
+      "href": "https://wicg.github.io/event-timing/#performanceeventtiming-eventtarget",
+      "linkingText": [
+        "eventTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "target",
+      "href": "https://wicg.github.io/event-timing/#target",
+      "linkingText": [
+        "target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "performanceeventtiming-associated-event",
+      "href": "https://wicg.github.io/event-timing/#performanceeventtiming-associated-event",
+      "linkingText": [
+        "associated Event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performanceeventtiming-processingstart",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-processingstart",
+      "linkingText": [
+        "processingStart"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performanceeventtiming-processingend",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-processingend",
+      "linkingText": [
+        "processingEnd"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performanceeventtiming-cancelable",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-cancelable",
+      "linkingText": [
+        "cancelable"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performanceeventtiming-interactionid",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceeventtiming-interactionid",
+      "linkingText": [
+        "interactionId"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "PerformanceEventTiming"
+      ],
+      "access": "public",
+      "informative": true,
+      "heading": {
+        "id": "sec-performance-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-performance-event-timing",
+        "title": "PerformanceEventTiming interface",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "eventcounts",
+      "href": "https://wicg.github.io/event-timing/#eventcounts",
+      "linkingText": [
+        "EventCounts"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-event-counts",
+        "href": "https://wicg.github.io/event-timing/#sec-event-counts",
+        "title": "EventCounts interface",
+        "number": "2.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performance-eventcounts",
+      "href": "https://wicg.github.io/event-timing/#dom-performance-eventcounts",
+      "linkingText": [
+        "eventCounts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-extensions",
+        "href": "https://wicg.github.io/event-timing/#sec-extensions",
+        "title": "Extensions to the Performance interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "pending-event-entries",
+      "href": "https://wicg.github.io/event-timing/#pending-event-entries",
+      "linkingText": [
+        "pending event entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-first-pointer-down",
+      "href": "https://wicg.github.io/event-timing/#pending-first-pointer-down",
+      "linkingText": [
+        "pending first pointer down"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "has-dispatched-input-event",
+      "href": "https://wicg.github.io/event-timing/#has-dispatched-input-event",
+      "linkingText": [
+        "has dispatched input event"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "user-interaction-value",
+      "href": "https://wicg.github.io/event-timing/#user-interaction-value",
+      "linkingText": [
+        "user interaction value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "key-press-interaction-value-map",
+      "href": "https://wicg.github.io/event-timing/#key-press-interaction-value-map",
+      "linkingText": [
+        "key press interaction value map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pointer-interaction-value-map",
+      "href": "https://wicg.github.io/event-timing/#pointer-interaction-value-map",
+      "linkingText": [
+        "pointer interaction value map"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "pending-pointer-downs",
+      "href": "https://wicg.github.io/event-timing/#pending-pointer-downs",
+      "linkingText": [
+        "pending pointer downs"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-performanceobserverinit-durationthreshold",
+      "href": "https://wicg.github.io/event-timing/#dom-performanceobserverinit-durationthreshold",
+      "linkingText": [
+        "durationThreshold"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PerformanceObserverInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-perf-timeline",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-perf-timeline",
+        "title": "Modifications to the Performance Timeline specification",
+        "number": "3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "should-add-performanceeventtiming",
+      "href": "https://wicg.github.io/event-timing/#should-add-performanceeventtiming",
+      "linkingText": [
+        "should add PerformanceEventTiming"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-should-add-performanceeventtiming",
+        "href": "https://wicg.github.io/event-timing/#sec-should-add-performanceeventtiming",
+        "title": "Should add PerformanceEventTiming",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compute-interactionid",
+      "href": "https://wicg.github.io/event-timing/#compute-interactionid",
+      "linkingText": [
+        "compute interactionId"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-computing-interactionid",
+        "href": "https://wicg.github.io/event-timing/#sec-computing-interactionid",
+        "title": "Computing interactionId",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "initialize-event-timing",
+      "href": "https://wicg.github.io/event-timing/#initialize-event-timing",
+      "linkingText": [
+        "initialize event timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-init-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-init-event-timing",
+        "title": "Initialize event timing",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "finalize-event-timing",
+      "href": "https://wicg.github.io/event-timing/#finalize-event-timing",
+      "linkingText": [
+        "finalize event timing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-fin-event-timing",
+        "href": "https://wicg.github.io/event-timing/#sec-fin-event-timing",
+        "title": "Finalize event timing",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dispatch-pending-event-timing-entries",
+      "href": "https://wicg.github.io/event-timing/#dispatch-pending-event-timing-entries",
+      "linkingText": [
+        "dispatch pending Event Timing entries"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-dispatch-pending",
+        "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
+        "title": "Dispatch pending Event Timing entries",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "set-event-timing-entry-duration",
+      "href": "https://wicg.github.io/event-timing/#set-event-timing-entry-duration",
+      "linkingText": [
+        "set event timing entry duration"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-dispatch-pending",
+        "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
+        "title": "Dispatch pending Event Timing entries",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

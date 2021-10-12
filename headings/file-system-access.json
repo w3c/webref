@@ -1,0 +1,384 @@
+{
+  "spec": {
+    "title": "File System Access",
+    "url": "https://wicg.github.io/file-system-access/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://wicg.github.io/file-system-access/#title",
+      "level": 1,
+      "title": "File System Access"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://wicg.github.io/file-system-access/#profile-and-date",
+      "level": 2,
+      "title": "Draft Community Group Report, 24 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://wicg.github.io/file-system-access/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://wicg.github.io/file-system-access/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://wicg.github.io/file-system-access/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://wicg.github.io/file-system-access/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "files-and-directories",
+      "href": "https://wicg.github.io/file-system-access/#files-and-directories",
+      "level": 2,
+      "title": "Files and Directories",
+      "number": "2"
+    },
+    {
+      "id": "concepts",
+      "href": "https://wicg.github.io/file-system-access/#concepts",
+      "level": 3,
+      "title": "Concepts",
+      "number": "2.1"
+    },
+    {
+      "id": "permissions",
+      "href": "https://wicg.github.io/file-system-access/#permissions",
+      "level": 3,
+      "title": "Permissions",
+      "number": "2.2"
+    },
+    {
+      "id": "api-filesystemhandle",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle",
+      "level": 3,
+      "title": "The FileSystemHandle interface",
+      "number": "2.3"
+    },
+    {
+      "id": "api-filesystemhandle-issameentry",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-issameentry",
+      "level": 4,
+      "title": "The isSameEntry() method",
+      "number": "2.3.1"
+    },
+    {
+      "id": "api-filesystemhandle-querypermission",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-querypermission",
+      "level": 4,
+      "title": "The queryPermission() method",
+      "number": "2.3.2"
+    },
+    {
+      "id": "api-filesystemhandle-requestpermission",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemhandle-requestpermission",
+      "level": 4,
+      "title": "The requestPermission() method",
+      "number": "2.3.3"
+    },
+    {
+      "id": "api-filesystemfilehandle",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemfilehandle",
+      "level": 3,
+      "title": "The FileSystemFileHandle interface",
+      "number": "2.4"
+    },
+    {
+      "id": "api-filesystemfilehandle-getfile",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemfilehandle-getfile",
+      "level": 4,
+      "title": "The getFile() method",
+      "number": "2.4.1"
+    },
+    {
+      "id": "api-filesystemfilehandle-createwritable",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemfilehandle-createwritable",
+      "level": 4,
+      "title": "The createWritable() method",
+      "number": "2.4.2"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle",
+      "level": 3,
+      "title": "The FileSystemDirectoryHandle interface",
+      "number": "2.5"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle-asynciterable",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-asynciterable",
+      "level": 4,
+      "title": "Directory iteration",
+      "number": "2.5.1"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle-getfilehandle",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-getfilehandle",
+      "level": 4,
+      "title": "The getFileHandle() method",
+      "number": "2.5.2"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle-getdirectoryhandle",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-getdirectoryhandle",
+      "level": 4,
+      "title": "The getDirectoryHandle() method",
+      "number": "2.5.3"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle-removeentry",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-removeentry",
+      "level": 4,
+      "title": "The removeEntry() method",
+      "number": "2.5.4"
+    },
+    {
+      "id": "api-filesystemdirectoryhandle-resolve",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemdirectoryhandle-resolve",
+      "level": 4,
+      "title": "The resolve() method",
+      "number": "2.5.5"
+    },
+    {
+      "id": "api-filesystemwritablefilestream",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream",
+      "level": 3,
+      "title": "The FileSystemWritableFileStream interface",
+      "number": "2.6"
+    },
+    {
+      "id": "api-filesystemwritablefilestream-write",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-write",
+      "level": 4,
+      "title": "The write() method",
+      "number": "2.6.1"
+    },
+    {
+      "id": "api-filesystemwritablefilestream-seek",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-seek",
+      "level": 4,
+      "title": "The seek() method",
+      "number": "2.6.2"
+    },
+    {
+      "id": "api-filesystemwritablefilestream-truncate",
+      "href": "https://wicg.github.io/file-system-access/#api-filesystemwritablefilestream-truncate",
+      "level": 4,
+      "title": "The truncate() method",
+      "number": "2.6.3"
+    },
+    {
+      "id": "local-filesystem",
+      "href": "https://wicg.github.io/file-system-access/#local-filesystem",
+      "level": 2,
+      "title": "Accessing Local File System",
+      "number": "3"
+    },
+    {
+      "id": "local-file-system-permissions",
+      "href": "https://wicg.github.io/file-system-access/#local-file-system-permissions",
+      "level": 3,
+      "title": "Local File System Permissions",
+      "number": "3.1"
+    },
+    {
+      "id": "api-filepickeroptions",
+      "href": "https://wicg.github.io/file-system-access/#api-filepickeroptions",
+      "level": 3,
+      "title": "File picker options",
+      "number": "3.2"
+    },
+    {
+      "id": "api-filepickeroptions-types",
+      "href": "https://wicg.github.io/file-system-access/#api-filepickeroptions-types",
+      "level": 4,
+      "title": "Accepted file types",
+      "number": "3.2.1"
+    },
+    {
+      "id": "api-filepickeroptions-starting-directory",
+      "href": "https://wicg.github.io/file-system-access/#api-filepickeroptions-starting-directory",
+      "level": 4,
+      "title": "Starting Directory",
+      "number": "3.2.2"
+    },
+    {
+      "id": "api-showopenfilepicker",
+      "href": "https://wicg.github.io/file-system-access/#api-showopenfilepicker",
+      "level": 3,
+      "title": "The showOpenFilePicker() method",
+      "number": "3.3"
+    },
+    {
+      "id": "api-showsavefilepicker",
+      "href": "https://wicg.github.io/file-system-access/#api-showsavefilepicker",
+      "level": 3,
+      "title": "The showSaveFilePicker() method",
+      "number": "3.4"
+    },
+    {
+      "id": "api-showdirectorypicker",
+      "href": "https://wicg.github.io/file-system-access/#api-showdirectorypicker",
+      "level": 3,
+      "title": "The showDirectoryPicker() method",
+      "number": "3.5"
+    },
+    {
+      "id": "drag-and-drop",
+      "href": "https://wicg.github.io/file-system-access/#drag-and-drop",
+      "level": 3,
+      "title": "Drag and Drop",
+      "number": "3.6"
+    },
+    {
+      "id": "sandboxed-filesystem",
+      "href": "https://wicg.github.io/file-system-access/#sandboxed-filesystem",
+      "level": 2,
+      "title": "Accessing the Origin Private File System",
+      "number": "4"
+    },
+    {
+      "id": "accessibility-considerations",
+      "href": "https://wicg.github.io/file-system-access/#accessibility-considerations",
+      "level": 2,
+      "title": "Accessibility Considerations",
+      "number": "5"
+    },
+    {
+      "id": "privacy-considerations",
+      "href": "https://wicg.github.io/file-system-access/#privacy-considerations",
+      "level": 2,
+      "title": "Privacy Considerations",
+      "number": "6"
+    },
+    {
+      "id": "privacy-wide-access",
+      "href": "https://wicg.github.io/file-system-access/#privacy-wide-access",
+      "level": 3,
+      "title": "Users giving access to more, or more sensitive files than they intended.",
+      "number": "6.1"
+    },
+    {
+      "id": "privacy-tracking",
+      "href": "https://wicg.github.io/file-system-access/#privacy-tracking",
+      "level": 3,
+      "title": "Websites trying to use this API for tracking.",
+      "number": "6.2"
+    },
+    {
+      "id": "privacy-third-party",
+      "href": "https://wicg.github.io/file-system-access/#privacy-third-party",
+      "level": 3,
+      "title": "First-party vs third-party contexts.",
+      "number": "6.3"
+    },
+    {
+      "id": "security-considerations",
+      "href": "https://wicg.github.io/file-system-access/#security-considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "7"
+    },
+    {
+      "id": "security-malware",
+      "href": "https://wicg.github.io/file-system-access/#security-malware",
+      "level": 3,
+      "title": "Malware",
+      "number": "7.1"
+    },
+    {
+      "id": "security-ransomware",
+      "href": "https://wicg.github.io/file-system-access/#security-ransomware",
+      "level": 3,
+      "title": "Ransomware attacks",
+      "number": "7.2"
+    },
+    {
+      "id": "filling-up-disk",
+      "href": "https://wicg.github.io/file-system-access/#filling-up-disk",
+      "level": 3,
+      "title": "Filling up a users disk",
+      "number": "7.3"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://wicg.github.io/file-system-access/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://wicg.github.io/file-system-access/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformant-algorithms",
+      "href": "https://wicg.github.io/file-system-access/#w3c-conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "index",
+      "href": "https://wicg.github.io/file-system-access/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://wicg.github.io/file-system-access/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://wicg.github.io/file-system-access/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://wicg.github.io/file-system-access/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://wicg.github.io/file-system-access/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://wicg.github.io/file-system-access/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://wicg.github.io/file-system-access/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://wicg.github.io/file-system-access/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

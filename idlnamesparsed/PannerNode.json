@@ -1,0 +1,43 @@
+{
+  "name": "PannerNode",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "Web Audio API",
+      "url": "https://www.w3.org/TR/webaudio/"
+    },
+    "fragment": "[Exposed=Window]\ninterface PannerNode : AudioNode {\n  constructor (BaseAudioContext context, optional PannerOptions options = {});\n  attribute PanningModelType panningModel;\n  readonly attribute AudioParam positionX;\n  readonly attribute AudioParam positionY;\n  readonly attribute AudioParam positionZ;\n  readonly attribute AudioParam orientationX;\n  readonly attribute AudioParam orientationY;\n  readonly attribute AudioParam orientationZ;\n  attribute DistanceModelType distanceModel;\n  attribute double refDistance;\n  attribute double maxDistance;\n  attribute double rolloffFactor;\n  attribute double coneInnerAngle;\n  attribute double coneOuterAngle;\n  attribute double coneOuterGain;\n  undefined setPosition (float x, float y, float z);\n  undefined setOrientation (float x, float y, float z);\n};",
+    "href": "https://webaudio.github.io/web-audio-api/#pannernode"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "AudioNode",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "Web Audio API",
+        "url": "https://www.w3.org/TR/webaudio/"
+      },
+      "fragment": "[Exposed=Window]\ninterface AudioNode : EventTarget {\n  AudioNode connect (AudioNode destinationNode,\n                     optional unsigned long output = 0,\n                     optional unsigned long input = 0);\n  undefined connect (AudioParam destinationParam, optional unsigned long output = 0);\n  undefined disconnect ();\n  undefined disconnect (unsigned long output);\n  undefined disconnect (AudioNode destinationNode);\n  undefined disconnect (AudioNode destinationNode, unsigned long output);\n  undefined disconnect (AudioNode destinationNode,\n                        unsigned long output,\n                        unsigned long input);\n  undefined disconnect (AudioParam destinationParam);\n  undefined disconnect (AudioParam destinationParam, unsigned long output);\n  readonly attribute BaseAudioContext context;\n  readonly attribute unsigned long numberOfInputs;\n  readonly attribute unsigned long numberOfOutputs;\n  attribute unsigned long channelCount;\n  attribute ChannelCountMode channelCountMode;\n  attribute ChannelInterpretation channelInterpretation;\n};",
+      "href": "https://webaudio.github.io/web-audio-api/#audionode"
+    },
+    "extended": [],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": []
+  },
+  "includes": []
+}

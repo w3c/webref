@@ -1,0 +1,29 @@
+{
+  "name": "PresentationConnectionCloseEventInit",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Presentation API",
+      "url": "https://www.w3.org/TR/presentation-api/"
+    },
+    "fragment": "dictionary PresentationConnectionCloseEventInit : EventInit {\n  required PresentationConnectionCloseReason reason;\n  DOMString message = \"\";\n};",
+    "href": "https://w3c.github.io/presentation-api/#dom-presentationconnectioncloseeventinit"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventInit",
+    "type": "dictionary",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "dictionary EventInit {\n  boolean bubbles = false;\n  boolean cancelable = false;\n  boolean composed = false;\n};",
+      "href": "https://dom.spec.whatwg.org/#dictdef-eventinit"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

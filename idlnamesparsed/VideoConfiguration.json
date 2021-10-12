@@ -1,0 +1,15 @@
+{
+  "name": "VideoConfiguration",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Media Capabilities",
+      "url": "https://www.w3.org/TR/media-capabilities/"
+    },
+    "fragment": "dictionary VideoConfiguration {\n  required DOMString contentType;\n  required unsigned long width;\n  required unsigned long height;\n  required unsigned long long bitrate;\n  required double framerate;\n  boolean hasAlphaChannel;\n  HdrMetadataType hdrMetadataType;\n  ColorGamut colorGamut;\n  TransferFunction transferFunction;\n  DOMString scalabilityMode;\n};",
+    "href": "https://w3c.github.io/media-capabilities/#dictdef-videoconfiguration"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

@@ -1,0 +1,29 @@
+{
+  "name": "XRSystem",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "WebXR Device API",
+      "url": "https://www.w3.org/TR/webxr/"
+    },
+    "fragment": "[SecureContext, Exposed=Window] interface XRSystem : EventTarget {\n  // Methods\n  Promise<boolean> isSessionSupported(XRSessionMode mode);\n  [NewObject] Promise<XRSession> requestSession(XRSessionMode mode, optional XRSessionInit options = {});\n\n  // Events\n  attribute EventHandler ondevicechange;\n};",
+    "href": "https://immersive-web.github.io/webxr/#xrsystem"
+  },
+  "extended": [],
+  "inheritance": {
+    "name": "EventTarget",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "href": "https://dom.spec.whatwg.org/#eventtarget"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
+  "includes": []
+}

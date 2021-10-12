@@ -1,0 +1,258 @@
+{
+  "spec": {
+    "title": "Hypertext Transfer Protocol (HTTP/1.1): Conditional Requests",
+    "url": "https://httpwg.org/specs/rfc7232.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc7232.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc7232.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://httpwg.org/specs/rfc7232.html#conformance",
+      "level": 3,
+      "title": "Conformance and Error Handling",
+      "number": "1.1"
+    },
+    {
+      "id": "notation",
+      "href": "https://httpwg.org/specs/rfc7232.html#notation",
+      "level": 3,
+      "title": "Syntax Notation",
+      "number": "1.2"
+    },
+    {
+      "id": "validators",
+      "href": "https://httpwg.org/specs/rfc7232.html#validators",
+      "level": 2,
+      "title": "Validators",
+      "number": "2"
+    },
+    {
+      "id": "weak.and.strong.validators",
+      "href": "https://httpwg.org/specs/rfc7232.html#weak.and.strong.validators",
+      "level": 3,
+      "title": "Weak versus Strong",
+      "number": "2.1"
+    },
+    {
+      "id": "header.last-modified",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.last-modified",
+      "level": 3,
+      "title": "Last-Modified",
+      "number": "2.2"
+    },
+    {
+      "id": "lastmod.generation",
+      "href": "https://httpwg.org/specs/rfc7232.html#lastmod.generation",
+      "level": 4,
+      "title": "Generation",
+      "number": "2.2.1"
+    },
+    {
+      "id": "lastmod.comparison",
+      "href": "https://httpwg.org/specs/rfc7232.html#lastmod.comparison",
+      "level": 4,
+      "title": "Comparison",
+      "number": "2.2.2"
+    },
+    {
+      "id": "header.etag",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.etag",
+      "level": 3,
+      "title": "ETag",
+      "number": "2.3"
+    },
+    {
+      "id": "entity.tag.generation",
+      "href": "https://httpwg.org/specs/rfc7232.html#entity.tag.generation",
+      "level": 4,
+      "title": "Generation",
+      "number": "2.3.1"
+    },
+    {
+      "id": "entity.tag.comparison",
+      "href": "https://httpwg.org/specs/rfc7232.html#entity.tag.comparison",
+      "level": 4,
+      "title": "Comparison",
+      "number": "2.3.2"
+    },
+    {
+      "id": "example.entity.tag.vs.conneg",
+      "href": "https://httpwg.org/specs/rfc7232.html#example.entity.tag.vs.conneg",
+      "level": 4,
+      "title": "Example: Entity-Tags Varying on Content-Negotiated Resources",
+      "number": "2.3.3"
+    },
+    {
+      "id": "when.to.use.entity.tags.and.last-modified.dates",
+      "href": "https://httpwg.org/specs/rfc7232.html#when.to.use.entity.tags.and.last-modified.dates",
+      "level": 3,
+      "title": "When to Use Entity-Tags and Last-Modified Dates",
+      "number": "2.4"
+    },
+    {
+      "id": "preconditions",
+      "href": "https://httpwg.org/specs/rfc7232.html#preconditions",
+      "level": 2,
+      "title": "Precondition Header Fields",
+      "number": "3"
+    },
+    {
+      "id": "header.if-match",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.if-match",
+      "level": 3,
+      "title": "If-Match",
+      "number": "3.1"
+    },
+    {
+      "id": "header.if-none-match",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.if-none-match",
+      "level": 3,
+      "title": "If-None-Match",
+      "number": "3.2"
+    },
+    {
+      "id": "header.if-modified-since",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.if-modified-since",
+      "level": 3,
+      "title": "If-Modified-Since",
+      "number": "3.3"
+    },
+    {
+      "id": "header.if-unmodified-since",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.if-unmodified-since",
+      "level": 3,
+      "title": "If-Unmodified-Since",
+      "number": "3.4"
+    },
+    {
+      "id": "header.if-range",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.if-range",
+      "level": 3,
+      "title": "If-Range",
+      "number": "3.5"
+    },
+    {
+      "id": "status.code.definitions",
+      "href": "https://httpwg.org/specs/rfc7232.html#status.code.definitions",
+      "level": 2,
+      "title": "Status Code Definitions",
+      "number": "4"
+    },
+    {
+      "id": "status.304",
+      "href": "https://httpwg.org/specs/rfc7232.html#status.304",
+      "level": 3,
+      "title": "304 Not Modified",
+      "number": "4.1"
+    },
+    {
+      "id": "status.412",
+      "href": "https://httpwg.org/specs/rfc7232.html#status.412",
+      "level": 3,
+      "title": "412 Precondition Failed",
+      "number": "4.2"
+    },
+    {
+      "id": "evaluation",
+      "href": "https://httpwg.org/specs/rfc7232.html#evaluation",
+      "level": 2,
+      "title": "Evaluation",
+      "number": "5"
+    },
+    {
+      "id": "precedence",
+      "href": "https://httpwg.org/specs/rfc7232.html#precedence",
+      "level": 2,
+      "title": "Precedence",
+      "number": "6"
+    },
+    {
+      "id": "IANA.considerations",
+      "href": "https://httpwg.org/specs/rfc7232.html#IANA.considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "7"
+    },
+    {
+      "id": "status.code.registration",
+      "href": "https://httpwg.org/specs/rfc7232.html#status.code.registration",
+      "level": 3,
+      "title": "Status Code Registration",
+      "number": "7.1"
+    },
+    {
+      "id": "header.field.registration",
+      "href": "https://httpwg.org/specs/rfc7232.html#header.field.registration",
+      "level": 3,
+      "title": "Header Field Registration",
+      "number": "7.2"
+    },
+    {
+      "id": "security.considerations",
+      "href": "https://httpwg.org/specs/rfc7232.html#security.considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "8"
+    },
+    {
+      "id": "acks",
+      "href": "https://httpwg.org/specs/rfc7232.html#acks",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "9"
+    },
+    {
+      "id": "rfc.references",
+      "href": "https://httpwg.org/specs/rfc7232.html#rfc.references",
+      "level": 2,
+      "title": "10. References"
+    },
+    {
+      "id": "rfc.references.1",
+      "href": "https://httpwg.org/specs/rfc7232.html#rfc.references.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "10.1"
+    },
+    {
+      "id": "rfc.references.2",
+      "href": "https://httpwg.org/specs/rfc7232.html#rfc.references.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "10.2"
+    },
+    {
+      "id": "changes.from.rfc.2616",
+      "href": "https://httpwg.org/specs/rfc7232.html#changes.from.rfc.2616",
+      "level": 2,
+      "title": "Changes from RFC 2616",
+      "number": "A"
+    },
+    {
+      "id": "imported.abnf",
+      "href": "https://httpwg.org/specs/rfc7232.html#imported.abnf",
+      "level": 2,
+      "title": "Imported ABNF",
+      "number": "B"
+    },
+    {
+      "id": "collected.abnf",
+      "href": "https://httpwg.org/specs/rfc7232.html#collected.abnf",
+      "level": 2,
+      "title": "Collected ABNF",
+      "number": "C"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "spec": {
+    "title": "Long Tasks API 1",
+    "url": "https://w3c.github.io/longtasks/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {
+        "Window": [
+          "PerformanceLongTaskTiming",
+          "TaskAttributionTiming"
+        ]
+      }
+    },
+    "idlNames": {
+      "PerformanceLongTaskTiming": {
+        "fragment": "[Exposed=Window]\ninterface PerformanceLongTaskTiming : PerformanceEntry {\n    readonly attribute FrozenArray<TaskAttributionTiming> attribution;\n    [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "PerformanceLongTaskTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "attribution",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "TaskAttributionTiming"
+                }
+              ]
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      },
+      "TaskAttributionTiming": {
+        "fragment": "[Exposed=Window]\ninterface TaskAttributionTiming : PerformanceEntry {\n    readonly attribute DOMString containerType;\n    readonly attribute DOMString containerSrc;\n    readonly attribute DOMString containerId;\n    readonly attribute DOMString containerName;\n    [Default] object toJSON();\n};",
+        "type": "interface",
+        "name": "TaskAttributionTiming",
+        "inheritance": "PerformanceEntry",
+        "members": [
+          {
+            "type": "attribute",
+            "name": "containerType",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerSrc",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerId",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "containerName",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "toJSON",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "object"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "Default",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": ""
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier",
+              "value": "Window"
+            },
+            "arguments": []
+          }
+        ],
+        "partial": false
+      }
+    },
+    "idlExtendedNames": {},
+    "globals": {},
+    "exposed": {
+      "Window": [
+        "PerformanceLongTaskTiming",
+        "TaskAttributionTiming"
+      ]
+    },
+    "dependencies": {
+      "PerformanceLongTaskTiming": [
+        "PerformanceEntry",
+        "TaskAttributionTiming"
+      ],
+      "TaskAttributionTiming": [
+        "PerformanceEntry"
+      ]
+    },
+    "externalDependencies": [
+      "PerformanceEntry"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

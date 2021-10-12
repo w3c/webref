@@ -1,0 +1,356 @@
+{
+  "spec": {
+    "title": "Incremental Font Transfer",
+    "url": "https://w3c.github.io/IFT/Overview.html"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/IFT/Overview.html#title",
+      "level": 1,
+      "title": "Incremental Font Transfer"
+    },
+    {
+      "id": "subtitle",
+      "href": "https://w3c.github.io/IFT/Overview.html#subtitle",
+      "level": 2,
+      "title": "W3C First Public Working Draft, 31 August 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/IFT/Overview.html#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/IFT/Overview.html#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/IFT/Overview.html#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://w3c.github.io/IFT/Overview.html#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "patch-incxfer",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-incxfer",
+      "level": 2,
+      "title": "Patch Based Incremental Transfer",
+      "number": "2"
+    },
+    {
+      "id": "patch-overview",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-overview",
+      "level": 3,
+      "title": "Overview",
+      "number": "2.1"
+    },
+    {
+      "id": "font-subset",
+      "href": "https://w3c.github.io/IFT/Overview.html#font-subset",
+      "level": 4,
+      "title": "Font Subset",
+      "number": "2.1.1"
+    },
+    {
+      "id": "data-types",
+      "href": "https://w3c.github.io/IFT/Overview.html#data-types",
+      "level": 3,
+      "title": "Data Types",
+      "number": "2.2"
+    },
+    {
+      "id": "encoding",
+      "href": "https://w3c.github.io/IFT/Overview.html#encoding",
+      "level": 4,
+      "title": "Encoding",
+      "number": "2.2.1"
+    },
+    {
+      "id": "primitives",
+      "href": "https://w3c.github.io/IFT/Overview.html#primitives",
+      "level": 4,
+      "title": "Primitives",
+      "number": "2.2.2"
+    },
+    {
+      "id": "protocol-version",
+      "href": "https://w3c.github.io/IFT/Overview.html#protocol-version",
+      "level": 4,
+      "title": "ProtocolVersion",
+      "number": "2.2.3"
+    },
+    {
+      "id": "sparsebitset",
+      "href": "https://w3c.github.io/IFT/Overview.html#sparsebitset",
+      "level": 4,
+      "title": "SparseBitSet",
+      "number": "2.2.4"
+    },
+    {
+      "id": "integerlist",
+      "href": "https://w3c.github.io/IFT/Overview.html#integerlist",
+      "level": 4,
+      "title": "IntegerList",
+      "number": "2.2.5"
+    },
+    {
+      "id": "integerlist-deltas",
+      "href": "https://w3c.github.io/IFT/Overview.html#integerlist-deltas",
+      "level": 5,
+      "title": "Delta Encoding",
+      "number": "2.2.5.1"
+    },
+    {
+      "id": "integerlist-zigzag",
+      "href": "https://w3c.github.io/IFT/Overview.html#integerlist-zigzag",
+      "level": 5,
+      "title": "Zig-Zag Encoding",
+      "number": "2.2.5.2"
+    },
+    {
+      "id": "integerlist-uintbase128",
+      "href": "https://w3c.github.io/IFT/Overview.html#integerlist-uintbase128",
+      "level": 5,
+      "title": "UIntBase128 Encoding",
+      "number": "2.2.5.3"
+    },
+    {
+      "id": "sortedintegerlist",
+      "href": "https://w3c.github.io/IFT/Overview.html#sortedintegerlist",
+      "level": 4,
+      "title": "SortedIntegerList",
+      "number": "2.2.6"
+    },
+    {
+      "id": "rangelist",
+      "href": "https://w3c.github.io/IFT/Overview.html#rangelist",
+      "level": 4,
+      "title": "RangeList",
+      "number": "2.2.7"
+    },
+    {
+      "id": "AxisSpace",
+      "href": "https://w3c.github.io/IFT/Overview.html#AxisSpace",
+      "level": 4,
+      "title": "AxisSpace",
+      "number": "2.2.8"
+    },
+    {
+      "id": "objects",
+      "href": "https://w3c.github.io/IFT/Overview.html#objects",
+      "level": 4,
+      "title": "Objects",
+      "number": "2.2.9"
+    },
+    {
+      "id": "schemas",
+      "href": "https://w3c.github.io/IFT/Overview.html#schemas",
+      "level": 3,
+      "title": "Object Schemas",
+      "number": "2.3"
+    },
+    {
+      "id": "CompressedSet",
+      "href": "https://w3c.github.io/IFT/Overview.html#CompressedSet",
+      "level": 4,
+      "title": "CompressedSet",
+      "number": "2.3.1"
+    },
+    {
+      "id": "AxisInterval",
+      "href": "https://w3c.github.io/IFT/Overview.html#AxisInterval",
+      "level": 4,
+      "title": "AxisInterval",
+      "number": "2.3.2"
+    },
+    {
+      "id": "PatchRequest",
+      "href": "https://w3c.github.io/IFT/Overview.html#PatchRequest",
+      "level": 4,
+      "title": "PatchRequest",
+      "number": "2.3.3"
+    },
+    {
+      "id": "PatchResponse",
+      "href": "https://w3c.github.io/IFT/Overview.html#PatchResponse",
+      "level": 4,
+      "title": "PatchResponse",
+      "number": "2.3.4"
+    },
+    {
+      "id": "client",
+      "href": "https://w3c.github.io/IFT/Overview.html#client",
+      "level": 3,
+      "title": "Client",
+      "number": "2.4"
+    },
+    {
+      "id": "client-state",
+      "href": "https://w3c.github.io/IFT/Overview.html#client-state",
+      "level": 4,
+      "title": "Client State",
+      "number": "2.4.1"
+    },
+    {
+      "id": "extend-subset",
+      "href": "https://w3c.github.io/IFT/Overview.html#extend-subset",
+      "level": 4,
+      "title": "Extending the Font Subset",
+      "number": "2.4.2"
+    },
+    {
+      "id": "handling-patch-response",
+      "href": "https://w3c.github.io/IFT/Overview.html#handling-patch-response",
+      "level": 4,
+      "title": "Handling PatchResponse",
+      "number": "2.4.3"
+    },
+    {
+      "id": "client-side-checksum-mismatch",
+      "href": "https://w3c.github.io/IFT/Overview.html#client-side-checksum-mismatch",
+      "level": 4,
+      "title": "Client Side Checksum Mismatch",
+      "number": "2.4.4"
+    },
+    {
+      "id": "handling-patch-request",
+      "href": "https://w3c.github.io/IFT/Overview.html#handling-patch-request",
+      "level": 3,
+      "title": "Server: Responding to a PatchRequest",
+      "number": "2.5"
+    },
+    {
+      "id": "computing-checksums",
+      "href": "https://w3c.github.io/IFT/Overview.html#computing-checksums",
+      "level": 3,
+      "title": "Computing Checksums",
+      "number": "2.6"
+    },
+    {
+      "id": "codepoint-reordering",
+      "href": "https://w3c.github.io/IFT/Overview.html#codepoint-reordering",
+      "level": 3,
+      "title": "Codepoint Reordering",
+      "number": "2.7"
+    },
+    {
+      "id": "reordering-checksum",
+      "href": "https://w3c.github.io/IFT/Overview.html#reordering-checksum",
+      "level": 4,
+      "title": "Codepoint Reordering Checksum",
+      "number": "2.7.1"
+    },
+    {
+      "id": "patch-formats",
+      "href": "https://w3c.github.io/IFT/Overview.html#patch-formats",
+      "level": 3,
+      "title": "Patch Formats",
+      "number": "2.8"
+    },
+    {
+      "id": "connection-speeds",
+      "href": "https://w3c.github.io/IFT/Overview.html#connection-speeds",
+      "level": 3,
+      "title": "Connection Speeds",
+      "number": "2.9"
+    },
+    {
+      "id": "range-request-incxfer",
+      "href": "https://w3c.github.io/IFT/Overview.html#range-request-incxfer",
+      "level": 2,
+      "title": "Range Request Incremental Transfer",
+      "number": "3"
+    },
+    {
+      "id": "declaring-fonts",
+      "href": "https://w3c.github.io/IFT/Overview.html#declaring-fonts",
+      "level": 2,
+      "title": "Declaring Incremental Fonts",
+      "number": "4"
+    },
+    {
+      "id": "negotiating-transfer-type",
+      "href": "https://w3c.github.io/IFT/Overview.html#negotiating-transfer-type",
+      "level": 2,
+      "title": "Negotiating Incremental Font Transfer",
+      "number": "5"
+    },
+    {
+      "id": "priv",
+      "href": "https://w3c.github.io/IFT/Overview.html#priv",
+      "level": 2,
+      "title": "Privacy Considerations"
+    },
+    {
+      "id": "sec",
+      "href": "https://w3c.github.io/IFT/Overview.html#sec",
+      "level": 2,
+      "title": "Security Considerations"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/IFT/Overview.html#conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "conventions",
+      "href": "https://w3c.github.io/IFT/Overview.html#conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "conformant-algorithms",
+      "href": "https://w3c.github.io/IFT/Overview.html#conformant-algorithms",
+      "level": 3,
+      "title": "Conformant Algorithms"
+    },
+    {
+      "id": "conformance-classes",
+      "href": "https://w3c.github.io/IFT/Overview.html#conformance-classes",
+      "level": 3,
+      "title": "Conformance Classes"
+    },
+    {
+      "id": "index",
+      "href": "https://w3c.github.io/IFT/Overview.html#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://w3c.github.io/IFT/Overview.html#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/IFT/Overview.html#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://w3c.github.io/IFT/Overview.html#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://w3c.github.io/IFT/Overview.html#informative",
+      "level": 3,
+      "title": "Informative References"
+    }
+  ]
+}

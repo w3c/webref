@@ -1,0 +1,435 @@
+{
+  "spec": {
+    "title": "Filter Effects Module Level 1",
+    "url": "https://drafts.fxtf.org/filter-effects-1/"
+  },
+  "links": {
+    "https://drafts.csswg.org/css-images-3/": [
+      "typedef-image",
+      "propdef-image-rendering",
+      "concrete-object-size"
+    ],
+    "https://github.com/w3c/fxtf-drafts/issues": [],
+    "https://lists.w3.org/Archives/Public/public-fxtf-archive/": [],
+    "https://lists.w3.org/Archives/Public/public-fx/": [],
+    "https://www.w3.org/Style/CSS/": [],
+    "https://www.w3.org/Style/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
+      "def-essential",
+      "sec-Disclosure"
+    ],
+    "https://www.w3.org/2004/01/pp-impl/32061/status": [],
+    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/TR/CSS2/": [],
+    "https://drafts.csswg.org/css-display-3/": [
+      "containing-block",
+      "propdef-display",
+      "propdef-visibility"
+    ],
+    "https://svgwg.org/svg2-draft/render.html": [
+      "TermStackingContext"
+    ],
+    "https://drafts.csswg.org/css-backgrounds-3/": [
+      "propdef-border",
+      "propdef-box-shadow",
+      "propdef-border-image"
+    ],
+    "https://www.w3.org/TR/CSS21/": [
+      "property-defs",
+      "value-def-inherit",
+      "style-sheet",
+      "user-agent",
+      "ignore"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filter": [],
+    "https://www.w3.org/TR/css-values/": [
+      "value-defs",
+      "percentages"
+    ],
+    "https://drafts.csswg.org/css-values-4/": [
+      "comb-one",
+      "mult-one-plus",
+      "length-value",
+      "mult-opt",
+      "comb-all",
+      "mult-num-range",
+      "angle-value",
+      "zero-value",
+      "funcdef-calc",
+      "number-value",
+      "typedef-length-percentage",
+      "identifier-value",
+      "integer-value",
+      "string-value",
+      "comb-comma"
+    ],
+    "https://www.w3.org/TR/css-cascade/": [
+      "initial-values",
+      "applies-to",
+      "inherited-property",
+      "computed"
+    ],
+    "https://svgwg.org/svg2-draft/struct.html": [
+      "container-element",
+      "elementdef-defs",
+      "graphics-element",
+      "elementdef-use",
+      "elementdef-desc",
+      "elementdef-title",
+      "elementdef-metadata",
+      "TermDescriptiveElement"
+    ],
+    "https://www.w3.org/TR/web-animations/": [
+      "animation-type"
+    ],
+    "https://html.spec.whatwg.org/": [
+      "browsing-context",
+      "attr-img-crossorigin",
+      "the-img-element"
+    ],
+    "https://www.w3.org/TR/CSS21/z": [],
+    "https://drafts.csswg.org/css-color-4/": [
+      "propdef-opacity",
+      "typedef-color",
+      "valdef-color-transparent",
+      "typedef-alpha-value",
+      "sRGB",
+      "linear-light-sRGB"
+    ],
+    "https://drafts.csswg.org/css-transforms-1/": [
+      "local-coordinate-system"
+    ],
+    "https://www.w3.org/TR/SVG11/": [
+      "Introduction",
+      "AnimateElement",
+      "SetElement",
+      "AlignmentBaselineProperty",
+      "BaselineShiftProperty",
+      "ColorRenderingProperty",
+      "DominantBaselineProperty",
+      "EnableBackgroundProperty",
+      "GlyphOrientationHorizontalProperty",
+      "GlyphOrientationVerticalProperty",
+      "KerningProperty",
+      "SimpleAlphaBlending",
+      "AnimateTransformElement",
+      "Units_viewport_percentage"
+    ],
+    "https://www.w3.org/TR/2011/REC-SVG11-20110816/": [
+      "TermPresentationAttribute",
+      "TermDescriptiveElement",
+      "TermCoreAttributes",
+      "IDAttribute",
+      "XMLBaseAttribute",
+      "XMLLangAttribute",
+      "XMLSpaceAttribute",
+      "ClassAttribute",
+      "StyleAttribute",
+      "ExternalResourcesRequiredAttribute"
+    ],
+    "https://github.com/w3c/fxtf-drafts/issues/238": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function": [],
+    "https://svgwg.org/svg2-draft/types.html": [
+      "TermInitialValue",
+      "InterfaceSVGElement",
+      "InterfaceSVGAnimatedEnumeration",
+      "InterfaceSVGAnimatedLength",
+      "InterfaceSVGURIReference",
+      "InterfaceSVGUnitTypes",
+      "InterfaceSVGAnimatedString",
+      "InterfaceSVGAnimatedNumberList",
+      "InterfaceSVGAnimatedNumber",
+      "InterfaceSVGAnimatedInteger",
+      "InterfaceSVGAnimatedBoolean"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/blur()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/brightness()": [],
+    "https://www.w3.org/TR/css-values-3/": [
+      "typedef-number-percentage"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/contrast()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/grayscale()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/hue-rotate()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/invert()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/opacity()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/saturate()": [],
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/sepia()": [],
+    "https://www.w3.org/TR/css-transitions-1/": [
+      "animtype-length",
+      "animtype-number",
+      "animtype-shadow-list"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/filter": [],
+    "https://svgwg.org/svg2-draft/interact.html": [
+      "elementdef-script"
+    ],
+    "https://www.w3.org/TR/2008/REC-SVGTiny12-20081222/": [
+      "TermPresentationAttribute",
+      "TermUnsupportedValue"
+    ],
+    "https://drafts.fxtf.org/css-masking-1/": [
+      "propdef-clip",
+      "propdef-clip-path",
+      "propdef-clip-rule",
+      "propdef-mask"
+    ],
+    "https://drafts.csswg.org/css-color-3/": [
+      "color0"
+    ],
+    "https://svgwg.org/svg2-draft/painting.html": [
+      "ColorInterpolationProperty",
+      "FillProperty",
+      "FillOpacityProperty",
+      "FillRuleProperty",
+      "MarkerProperty",
+      "MarkerEndProperty",
+      "MarkerMidProperty",
+      "MarkerStartProperty",
+      "ShapeRenderingProperty",
+      "StrokeProperty",
+      "StrokeDasharrayProperty",
+      "StrokeDashoffsetProperty",
+      "StrokeLinecapProperty",
+      "StrokeLinejoinProperty",
+      "StrokeMiterlimitProperty",
+      "StrokeOpacityProperty",
+      "StrokeWidthProperty",
+      "TextRenderingProperty"
+    ],
+    "https://drafts.csswg.org/css-ui-4/": [
+      "propdef-cursor",
+      "propdef-pointer-events",
+      "propdef-outline"
+    ],
+    "https://drafts.csswg.org/css-writing-modes-3/": [
+      "propdef-direction",
+      "propdef-unicode-bidi"
+    ],
+    "https://drafts.csswg.org/css-fonts-4/": [
+      "propdef-font"
+    ],
+    "https://drafts.csswg.org/css-fonts-3/": [
+      "propdef-font-family",
+      "propdef-font-stretch",
+      "propdef-font-style",
+      "propdef-font-variant",
+      "propdef-font-weight"
+    ],
+    "https://drafts.csswg.org/css-fonts-5/": [
+      "descdef-font-face-font-size",
+      "propdef-font-size-adjust"
+    ],
+    "https://drafts.fxtf.org/compositing-2/": [
+      "propdef-isolation",
+      "ltblendmodegt",
+      "backdrop",
+      "valdef-blend-mode-multiply",
+      "valdef-blend-mode-darken",
+      "valdef-blend-mode-lighten",
+      "valdef-blend-mode-overlay",
+      "valdef-blend-mode-color-dodge",
+      "valdef-blend-mode-color-burn",
+      "valdef-blend-mode-hard-light",
+      "valdef-blend-mode-soft-light",
+      "valdef-blend-mode-difference",
+      "valdef-blend-mode-exclusion",
+      "valdef-blend-mode-hue",
+      "valdef-blend-mode-luminosity"
+    ],
+    "https://drafts.csswg.org/css-text-3/": [
+      "propdef-letter-spacing",
+      "propdef-word-spacing"
+    ],
+    "https://drafts.csswg.org/css-overflow-3/": [
+      "propdef-overflow"
+    ],
+    "https://svgwg.org/svg2-draft/pservers.html": [
+      "StopColorProperty",
+      "StopOpacityProperty"
+    ],
+    "https://svgwg.org/svg2-draft/text.html": [
+      "TextAnchorProperty"
+    ],
+    "https://drafts.csswg.org/css-text-decor-4/": [
+      "propdef-text-decoration",
+      "propdef-text-shadow"
+    ],
+    "https://drafts.csswg.org/css-writing-modes-4/": [
+      "propdef-writing-mode"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/filterUnits": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/primitiveUnits": [],
+    "https://svgwg.org/svg2-draft/coords.html": [
+      "ObjectBoundingBoxUnits",
+      "bounding-box",
+      "InterfaceSVGAnimatedPreserveAspectRatio"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/x": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/y": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/width": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/height": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/in": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feBlend": [],
+    "https://drafts.fxtf.org/compositing-1/": [
+      "valdef-blend-mode-normal",
+      "valdef-blend-mode-screen",
+      "valdef-blend-mode-saturation",
+      "valdef-blend-mode-color"
+    ],
+    "https://www.w3.org/TR/compositing-1/": [
+      "blending",
+      "porterduffcompositingoperators_srcover"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feColorMatrix": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComponentTransfer": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncR": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncG": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncB": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFuncA": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feComposite": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feConvolveMatrix": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/order": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelMatrix": [],
+    "https://github.com/w3c/fxtf-drafts/issues/237": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/divisor": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/bias": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetX": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/targetY": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/edgeMode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/kernelUnitLength": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/preserveAlpha": [],
+    "https://drafts.csswg.org/mediaqueries-5/": [
+      "valdef-custom-media-false"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDiffuseLighting": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/surfaceScale": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/diffuseConstant": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDisplacementMap": [],
+    "https://github.com/w3c/fxtf-drafts/issues/113": [],
+    "https://drafts.csswg.org/css-color-5/": [
+      "valdef-lab-a",
+      "valdef-rgb-r",
+      "valdef-rgb-g",
+      "valdef-rgb-b"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDropShadow": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feFlood": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-color": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/flood-opacity": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feGaussianBlur": [],
+    "https://en.wikipedia.org/wiki/Periodic_boundary_conditions": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feImage": [],
+    "https://svgwg.org/svg2-draft/embedded.html": [
+      "elementdef-image"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/href": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMerge": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMergeNode": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feMorphology": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feOffset": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpecularLighting": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTile": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feTurbulence": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/baseFrequency": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/numOctaves": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/seed": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stitchTiles": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/color-interpolation-filters": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feDistantLight": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/azimuth": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/elevation": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/fePointLight": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Element/feSpotLight": [],
+    "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/lighting-color": [],
+    "https://github.com/w3c/fxtf-drafts/issues/91": [],
+    "https://svgwg.org/svg2-draft/shapes.html": [
+      "elementdef-rect"
+    ],
+    "https://drafts.csswg.org/css-cascade-5/": [
+      "used-value",
+      "specified-value"
+    ],
+    "https://drafts.csswg.org/web-animations-1/": [
+      "composite-operation-replace"
+    ],
+    "https://drafts.csswg.org/selectors-4/": [
+      "visited-pseudo"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "cors-request"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFilterElement": [],
+    "https://webidl.spec.whatwg.org/": [
+      "Exposed",
+      "idl-unsigned-short",
+      "idl-undefined",
+      "idl-float"
+    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEBlendElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEColorMatrixElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEComponentTransferElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGComponentTransferFunctionElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncRElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncGElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncBElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFuncAElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFECompositeElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEConvolveMatrixElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDiffuseLightingElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDistantLightElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEPointLightElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpotLightElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDisplacementMapElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEDropShadowElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEFloodElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEGaussianBlurElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEImageElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMergeNodeElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEMorphologyElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFEOffsetElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFESpecularLightingElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETileElement": [],
+    "https://developer.mozilla.org/en-US/docs/Web/API/SVGFETurbulenceElement": [],
+    "https://www.w3.org/TR/2014/WD-filter-effects-1-20141125/": [],
+    "https://www.w3.org/TR/2013/WD-filter-effects-1-20131126/": [],
+    "https://www.w3.org/TR/2012/WD-filter-effects-20121025/": [],
+    "https://www.w3.org/TR/CSS/": [
+      "future-proofing",
+      "unstable",
+      "proprietary-extension"
+    ],
+    "https://www.w3.org/Style/CSS/Test/": [],
+    "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
+    "https://www.w3.org/TR/css-cascade-5/": [],
+    "https://www.w3.org/TR/css-color-4/": [],
+    "https://www.w3.org/TR/css-color-5/": [],
+    "https://www.w3.org/TR/css-display-3/": [],
+    "https://www.w3.org/TR/css-fonts-3/": [],
+    "https://www.w3.org/TR/css-fonts-4/": [],
+    "https://www.w3.org/TR/css-fonts-5/": [],
+    "https://www.w3.org/TR/css-images-3/": [],
+    "https://www.w3.org/TR/css-masking-1/": [],
+    "https://www.w3.org/TR/css-overflow-3/": [],
+    "https://www.w3.org/TR/css-text-3/": [],
+    "https://www.w3.org/TR/css-text-decor-4/": [],
+    "https://www.w3.org/TR/css-transforms-1/": [],
+    "https://www.w3.org/TR/css-ui-4/": [],
+    "https://www.w3.org/TR/css-values-4/": [],
+    "https://www.w3.org/TR/css-writing-modes-3/": [],
+    "https://www.w3.org/TR/css-writing-modes-4/": [],
+    "https://www.w3.org/TR/css-backgrounds-3/": [],
+    "https://www.w3.org/TR/css-color-3/": [],
+    "https://www.w3.org/TR/mediaqueries-5/": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
+    "https://www.w3.org/TR/selectors-4/": [],
+    "https://www.w3.org/TR/SVG2/": [],
+    "https://www.w3.org/TR/web-animations-1/": [],
+    "https://wiki.mozilla.org/User:Bjacob/ArithmeticTimingDifferences": [],
+    "https://webstore.iec.ch/publication/6169": [],
+    "https://www.w3.org/TR/css-animations-1/": []
+  }
+}
