@@ -510,7 +510,7 @@
       {
         "name": "base-palette",
         "for": "@font-palette-values",
-        "value": "light | dark | <integer [0,∞]> | <string>",
+        "value": "light | dark | <integer [0,∞]>",
         "initial": "N/A"
       }
     ],
@@ -518,7 +518,7 @@
       {
         "name": "override-colors",
         "for": "@font-palette-values",
-        "value": "[ [ <string> | <integer [0,∞]> ] <absolute-color> ]#",
+        "value": "[ <integer [0,∞]> <absolute-color> ]#",
         "initial": "N/A"
       }
     ]
@@ -607,9 +607,6 @@
     },
     "<generic-family>": {
       "prose": "Each <generic-family> keyword represents a generic font choice, and behaves as an alias for one or more locally-installed fonts belonging to the specified generic font category. A <generic-family> can thus be used as a reliable fallback for when an author’s more specific font choices are not available. Authors are encouraged to append a generic font family as a last alternative for improved robustness. Note that <generic-family> keywords cannot be quoted (otherwise they are interpreted as a <family-name>). The set of generic family keywords is defined in § 2.1.3 Generic font families."
-    },
-    "<string>": {
-      "prose": "single four-character case-sensitive OpenType language system tag, specifies the OpenType language system to be used instead of the language system implied by the language of the element. If the string is shorter than four characters, it is padded at the end with space (U+0020) characters such that the length is 4, before being matched."
     },
     "<palette-identifier>": {
       "prose": "This value identifies an CSS-defined palette to use. Users can define a palette by using the @font-palette-values rule. If no applicable @font-palette-values rule is present, this value behaves as normal. <palette-identifier> is parsed as a <dashed-ident>."
