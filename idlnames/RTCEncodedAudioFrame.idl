@@ -1,7 +1,0 @@
-// Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
-[Exposed=(Window,DedicatedWorker)]
-interface RTCEncodedAudioFrame {
-    readonly attribute unsigned long long timestamp;
-    attribute ArrayBuffer data;
-    RTCEncodedAudioFrameMetadata getMetadata();
-};

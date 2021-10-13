@@ -1,8 +1,0 @@
-// Source: WebXR Layers API Level 1 (https://www.w3.org/TR/webxrlayers-1/)
-[Exposed=Window] interface XRWebGLSubImage : XRSubImage {
-  [SameObject] readonly attribute WebGLTexture colorTexture;
-  [SameObject] readonly attribute WebGLTexture? depthStencilTexture;
-  readonly attribute unsigned long? imageIndex;
-  readonly attribute unsigned long textureWidth;
-  readonly attribute unsigned long textureHeight;
-};

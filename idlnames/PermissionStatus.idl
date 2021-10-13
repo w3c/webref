@@ -1,7 +1,0 @@
-// Source: Permissions (https://www.w3.org/TR/permissions/)
-[Exposed=(Window,Worker)]
-interface PermissionStatus : EventTarget {
-  readonly attribute PermissionState state;
-  readonly attribute PermissionName name;
-  attribute EventHandler onchange;
-};

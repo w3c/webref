@@ -1,8 +1,0 @@
-// Source: WebGPU (https://www.w3.org/TR/webgpu/)
-[Exposed=(Window, DedicatedWorker), SecureContext]
-interface GPUShaderModule {
-    Promise<GPUCompilationInfo> compilationInfo();
-};
-
-// Source: WebGPU (https://www.w3.org/TR/webgpu/)
-GPUShaderModule includes GPUObjectBase;

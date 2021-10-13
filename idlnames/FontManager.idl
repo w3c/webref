@@ -1,6 +1,0 @@
-// Source: Local Font Access API (https://wicg.github.io/local-font-access/)
-[SecureContext,
- Exposed=(Window,Worker)]
-interface FontManager {
-  Promise<sequence<FontMetadata>> query(optional QueryOptions options = {});
-};

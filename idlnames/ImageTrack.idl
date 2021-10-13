@@ -1,9 +1,0 @@
-// Source: WebCodecs (https://www.w3.org/TR/webcodecs/)
-[Exposed=(Window,DedicatedWorker)]
-interface ImageTrack : EventTarget {
-  readonly attribute boolean animated;
-  [EnforceRange] readonly attribute unsigned long frameCount;
-  [EnforceRange] readonly attribute unrestricted float repetitionCount;
-  attribute EventHandler onchange;
-  attribute boolean selected;
-};

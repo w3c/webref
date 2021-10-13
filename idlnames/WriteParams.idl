@@ -1,7 +1,0 @@
-// Source: File System Access (https://wicg.github.io/file-system-access/)
-dictionary WriteParams {
-  required WriteCommandType type;
-  unsigned long long? size;
-  unsigned long long? position;
-  (BufferSource or Blob or USVString)? data;
-};

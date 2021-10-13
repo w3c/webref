@@ -1,6 +1,0 @@
-// Source: Long Tasks API 1 (https://www.w3.org/TR/longtasks-1/)
-[Exposed=Window]
-interface PerformanceLongTaskTiming : PerformanceEntry {
-    readonly attribute FrozenArray<TaskAttributionTiming> attribution;
-    [Default] object toJSON();
-};
