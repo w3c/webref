@@ -1765,6 +1765,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "get-exception-details",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-exception-details",
+      "linkingText": [
+        "get exception details"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-ExceptionDetails",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-script-ExceptionDetails",
+        "title": "The script.ExceptionDetails type",
+        "number": "6.3.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "realm-id",
       "href": "https://w3c.github.io/webdriver-bidi/#realm-id",
       "linkingText": [
@@ -1779,7 +1798,26 @@
         "id": "type-script-Realm",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-Realm",
         "title": "The script.Realm type",
-        "number": "6.3.2.1"
+        "number": "6.3.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-realm",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-a-realm",
+      "linkingText": [
+        "get a realm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Realm",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-script-Realm",
+        "title": "The script.Realm type",
+        "number": "6.3.2.2"
       },
       "definedIn": "prose"
     },
@@ -1798,7 +1836,226 @@
         "id": "type-script-RealmInfo",
         "href": "https://w3c.github.io/webdriver-bidi/#type-script-RealmInfo",
         "title": "The script.RealmInfo type",
-        "number": "6.3.2.2"
+        "number": "6.3.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "list-of-stack-frames",
+      "href": "https://w3c.github.io/webdriver-bidi/#list-of-stack-frames",
+      "linkingText": [
+        "list of stack frames"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stack-frame",
+      "href": "https://w3c.github.io/webdriver-bidi/#stack-frame",
+      "linkingText": [
+        "stack frame"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stackframe-script-url",
+      "href": "https://w3c.github.io/webdriver-bidi/#stackframe-script-url",
+      "linkingText": [
+        "script url"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-function",
+      "href": "https://w3c.github.io/webdriver-bidi/#stackframe-function",
+      "linkingText": [
+        "function"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-line-number",
+      "href": "https://w3c.github.io/webdriver-bidi/#stackframe-line-number",
+      "linkingText": [
+        "line number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "stackframe-column-number",
+      "href": "https://w3c.github.io/webdriver-bidi/#stackframe-column-number",
+      "linkingText": [
+        "column number"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stackframe"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "construct-a-stack-trace",
+      "href": "https://w3c.github.io/webdriver-bidi/#construct-a-stack-trace",
+      "linkingText": [
+        "construct a stack trace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "current-stack-trace",
+      "href": "https://w3c.github.io/webdriver-bidi/#current-stack-trace",
+      "linkingText": [
+        "current stack trace"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stack-trace-for-an-exception",
+      "href": "https://w3c.github.io/webdriver-bidi/#stack-trace-for-an-exception",
+      "linkingText": [
+        "stack trace for an exception"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "types-script-StackTrace",
+        "href": "https://w3c.github.io/webdriver-bidi/#types-script-StackTrace",
+        "title": "The script.StackTrace type",
+        "number": "6.3.2.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "get-a-realm-from-a-target",
+      "href": "https://w3c.github.io/webdriver-bidi/#get-a-realm-from-a-target",
+      "linkingText": [
+        "get a realm from a target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-script-Target",
+        "href": "https://w3c.github.io/webdriver-bidi/#type-script-Target",
+        "title": "The script.Target type",
+        "number": "6.3.2.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "commands-scriptevaluate",
+      "href": "https://w3c.github.io/webdriver-bidi/#commands-scriptevaluate",
+      "linkingText": [
+        "script.evaluate"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "commands"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "command-script-evaluate",
+        "href": "https://w3c.github.io/webdriver-bidi/#command-script-evaluate",
+        "title": "The script.evaluate Command",
+        "number": "6.3.3.1"
       },
       "definedIn": "prose"
     },
@@ -1819,7 +2076,7 @@
         "id": "command-script-getRealms",
         "href": "https://w3c.github.io/webdriver-bidi/#command-script-getRealms",
         "title": "The script.getRealms Command",
-        "number": "6.3.3.1"
+        "number": "6.3.3.2"
       },
       "definedIn": "prose"
     },
@@ -1879,25 +2136,6 @@
         "href": "https://w3c.github.io/webdriver-bidi/#module-log",
         "title": "Log",
         "number": "6.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "current-stack-trace",
-      "href": "https://w3c.github.io/webdriver-bidi/#current-stack-trace",
-      "linkingText": [
-        "current stack trace"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "types-log-stackframe",
-        "href": "https://w3c.github.io/webdriver-bidi/#types-log-stackframe",
-        "title": "log.StackFrame",
-        "number": "6.4.2.2"
       },
       "definedIn": "prose"
     },
