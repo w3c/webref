@@ -26,7 +26,7 @@ jobs:
         path: webref
 
     - name: Copy report
-      run: rsync -av report/ webref/
+      run: rsync -av report/ webref/tr/
 
     - name: Push updates to git
       run: |
