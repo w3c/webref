@@ -2743,6 +2743,37 @@
         ],
         "partial": false
       },
+      "CSSPerspectiveValue": {
+        "fragment": "typedef (CSSNumericValue or CSSKeywordish) CSSPerspectiveValue;",
+        "type": "typedef",
+        "name": "CSSPerspectiveValue",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": true,
+          "idlType": [
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSNumericValue"
+            },
+            {
+              "type": null,
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSKeywordish"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
       "CSSTransformComponent": {
         "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSTransformComponent {\n    stringifier;\n    attribute boolean is2D;\n    DOMMatrix toMatrix();\n};",
         "type": "interface",
@@ -3504,7 +3535,7 @@
         "partial": false
       },
       "CSSPerspective": {
-        "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSPerspective : CSSTransformComponent {\n    constructor(CSSNumericValue length);\n    attribute CSSNumericValue length;\n};",
+        "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSPerspective : CSSTransformComponent {\n    constructor(CSSPerspectiveValue length);\n    attribute CSSPerspectiveValue length;\n};",
         "type": "interface",
         "name": "CSSPerspective",
         "inheritance": "CSSTransformComponent",
@@ -3522,7 +3553,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "CSSNumericValue"
+                  "idlType": "CSSPerspectiveValue"
                 },
                 "default": null,
                 "optional": false,
@@ -3540,7 +3571,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSNumericValue"
+              "idlType": "CSSPerspectiveValue"
             },
             "extAttrs": [],
             "special": "",
@@ -6492,7 +6523,7 @@
       ],
       "CSSPerspective": [
         "CSSTransformComponent",
-        "CSSNumericValue"
+        "CSSPerspectiveValue"
       ],
       "CSSMatrixComponent": [
         "CSSTransformComponent",

@@ -6,7 +6,7 @@
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSPerspective : CSSTransformComponent {\n    constructor(CSSNumericValue length);\n    attribute CSSNumericValue length;\n};",
+    "fragment": "/* Note that skew(x,y) is *not* the same as skewX(x) skewY(y),\n   thus the separate interfaces for all three. */\n\n[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSPerspective : CSSTransformComponent {\n    constructor(CSSPerspectiveValue length);\n    attribute CSSPerspectiveValue length;\n};",
     "href": "https://drafts.css-houdini.org/css-typed-om-1/#cssperspective"
   },
   "extended": [],

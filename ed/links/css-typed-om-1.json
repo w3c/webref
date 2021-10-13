@@ -108,12 +108,11 @@
       "funcdef-var",
       "typedef-custom-property-name"
     ],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
+    "https://drafts.csswg.org/css2/": [
       "propdef-background-image",
-      "propdef-border-image-source",
+      "propdef-z-index",
       "propdef-background",
       "propdef-background-attachment",
-      "propdef-background-clip",
       "propdef-background-color",
       "propdef-background-position",
       "propdef-background-repeat",
@@ -131,28 +130,30 @@
       "propdef-border-left-color",
       "propdef-border-left-style",
       "propdef-border-left-width",
-      "propdef-border-radius",
       "propdef-border-right",
       "propdef-border-right-color",
       "propdef-border-right-style",
       "propdef-border-right-width",
+      "propdef-border-spacing",
       "propdef-border-style",
       "propdef-border-width",
-      "propdef-border-image",
-      "propdef-border-image-slice",
-      "border-image-slice-fill",
-      "propdef-border-image-width",
-      "propdef-border-image-outset",
-      "propdef-border-image-repeat",
-      "valdef-border-image-repeat-stretch"
+      "propdef-clear",
+      "propdef-float",
+      "propdef-letter-spacing",
+      "propdef-line-height",
+      "propdef-page-break-after",
+      "propdef-page-break-before",
+      "propdef-page-break-inside",
+      "propdef-text-indent",
+      "propdef-text-transform",
+      "propdef-word-spacing"
     ],
     "https://drafts.csswg.org/css-animations-1/": [
       "propdef-animation"
     ],
-    "https://drafts.csswg.org/css-color-4/": [
+    "https://www.w3.org/TR/css-color-4/": [
       "propdef-color",
-      "propdef-opacity",
-      "typedef-color",
+      "predefined",
       "at-ruledef-profile",
       "funcdef-rgba",
       "funcdef-hsla",
@@ -259,15 +260,9 @@
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/CSSKeywordValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSKeywordValue/value": [],
-    "https://drafts.csswg.org/css2/": [
-      "propdef-z-index",
-      "propdef-border-spacing",
-      "propdef-clear",
-      "propdef-float",
-      "propdef-line-height",
-      "propdef-page-break-after",
-      "propdef-page-break-before",
-      "propdef-page-break-inside"
+    "https://drafts.csswg.org/css-color-3/": [
+      "opacity",
+      "valuea-def-color"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSNumericValue/add": [],
@@ -400,13 +395,19 @@
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSMatrixComponent/CSSMatrixComponent": [],
     "https://developer.mozilla.org/en-US/docs/Web/API/CSSImageValue": [],
+    "https://www.w3.org/TR/css-backgrounds-3/": [
+      "propdef-border-image-source",
+      "propdef-border-image",
+      "propdef-border-image-slice",
+      "border-image-slice-fill",
+      "propdef-border-image-width",
+      "propdef-border-image-outset",
+      "propdef-border-image-repeat",
+      "valdef-border-image-repeat-stretch"
+    ],
     "https://drafts.csswg.org/css-images-4/": [
       "funcdef-image",
-      "propdef-image-resolution",
       "propdef-object-fit"
-    ],
-    "https://www.w3.org/TR/css-color-4/": [
-      "predefined"
     ],
     "https://drafts.csswg.org/css-color-5/": [
       "funcdef-rgb",
@@ -678,7 +679,7 @@
     "https://svgwg.org/svg2-draft/paths.html": [
       "DProperty"
     ],
-    "https://drafts.csswg.org/css-writing-modes-3/": [
+    "https://www.w3.org/TR/css-writing-modes-3/": [
       "propdef-direction",
       "propdef-unicode-bidi"
     ],
@@ -748,12 +749,9 @@
       "propdef-text-orientation",
       "propdef-writing-mode"
     ],
-    "https://drafts.csswg.org/css-text-3/": [
-      "propdef-letter-spacing",
-      "propdef-text-align",
-      "propdef-text-indent",
-      "propdef-text-transform",
-      "propdef-word-spacing"
+    "https://drafts.csswg.org/css-gcpm-3/2009-06-10.html": [
+      "image-resolution0",
+      "page"
     ],
     "https://drafts.csswg.org/css-box-4/": [
       "propdef-margin",
@@ -785,9 +783,6 @@
     "https://drafts.csswg.org/css-scroll-anchoring-1/": [
       "propdef-overflow-anchor"
     ],
-    "https://drafts.csswg.org/css-page-3/": [
-      "propdef-page"
-    ],
     "https://drafts.csswg.org/css-preslev-1/": [
       "presentation-level"
     ],
@@ -799,7 +794,7 @@
       "propdef-ruby-merge",
       "propdef-ruby-position"
     ],
-    "https://drafts.csswg.org/css-scroll-snap-1/": [
+    "https://www.w3.org/TR/css-scroll-snap-1/": [
       "propdef-scroll-margin",
       "propdef-scroll-margin-block",
       "propdef-scroll-margin-block-end",
@@ -813,7 +808,6 @@
       "propdef-scroll-margin-top",
       "propdef-scroll-padding",
       "propdef-scroll-padding-block",
-      "propdef-scroll-padding-block-end",
       "propdef-scroll-padding-block-start",
       "propdef-scroll-padding-bottom",
       "propdef-scroll-padding-inline",
@@ -821,7 +815,10 @@
       "propdef-scroll-padding-inline-start",
       "propdef-scroll-padding-left",
       "propdef-scroll-padding-right",
-      "propdef-scroll-padding-top",
+      "propdef-scroll-padding-top"
+    ],
+    "https://drafts.csswg.org/css-scroll-snap-1/Proposal.html": [
+      "propdef-scroll-padding-block-end",
       "propdef-scroll-snap-align",
       "propdef-scroll-snap-stop",
       "propdef-scroll-snap-type"
@@ -841,6 +838,9 @@
       "StopColorProperty",
       "StopOpacityProperty"
     ],
+    "https://www.w3.org/TR/css-text-3/": [
+      "propdef-text-align"
+    ],
     "https://drafts.csswg.org/css-text-decor-4/": [
       "propdef-text-decoration",
       "propdef-text-decoration-skip",
@@ -855,7 +855,7 @@
     "https://drafts.csswg.org/css-size-adjust-1/": [
       "propdef-text-size-adjust"
     ],
-    "https://drafts.csswg.org/css-transitions-1/": [
+    "https://www.w3.org/TR/css-transitions-1/": [
       "propdef-transition",
       "propdef-transition-delay",
       "propdef-transition-duration",
@@ -891,11 +891,11 @@
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://www.w3.org/TR/css-align-3/": [],
     "https://www.w3.org/TR/css-animations-1/": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": [],
     "https://www.w3.org/TR/css-box-4/": [],
     "https://www.w3.org/TR/css-break-3/": [],
     "https://www.w3.org/TR/css-break-4/": [],
     "https://www.w3.org/TR/css-cascade-5/": [],
+    "https://www.w3.org/TR/css-color-3/": [],
     "https://www.w3.org/TR/css-color-5/": [],
     "https://www.w3.org/TR/css-color-adjust-1/": [],
     "https://www.w3.org/TR/css-contain-2/": [],
@@ -905,6 +905,7 @@
     "https://www.w3.org/TR/css-fonts-3/": [],
     "https://www.w3.org/TR/css-fonts-4/": [],
     "https://www.w3.org/TR/css-fonts-5/": [],
+    "https://www.w3.org/TR/css-gcpm-3/": [],
     "https://www.w3.org/TR/css-grid-2/": [],
     "https://www.w3.org/TR/css-images-3/": [],
     "https://www.w3.org/TR/css-images-4/": [],
@@ -915,7 +916,6 @@
     "https://www.w3.org/TR/css-masking-1/": [],
     "https://www.w3.org/TR/css-overflow-3/": [],
     "https://www.w3.org/TR/css-overflow-4/": [],
-    "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/css-page-floats-3/": [],
     "https://www.w3.org/TR/css-position-3/": [],
     "https://www.w3.org/TR/css3-preslev/": [],
@@ -924,21 +924,17 @@
     "https://www.w3.org/TR/css-round-display-1/": [],
     "https://www.w3.org/TR/css-ruby-1/": [],
     "https://www.w3.org/TR/css-scroll-anchoring-1/": [],
-    "https://www.w3.org/TR/css-scroll-snap-1/": [],
     "https://www.w3.org/TR/css-shapes-1/": [],
     "https://www.w3.org/TR/css-sizing-3/": [],
     "https://www.w3.org/TR/css-speech-1/": [],
     "https://www.w3.org/TR/css-tables-3/": [],
-    "https://www.w3.org/TR/css-text-3/": [],
     "https://www.w3.org/TR/css-text-4/": [],
     "https://www.w3.org/TR/css-text-decor-4/": [],
     "https://www.w3.org/TR/css-transforms-2/": [],
-    "https://www.w3.org/TR/css-transitions-1/": [],
     "https://www.w3.org/TR/css-ui-4/": [],
     "https://www.w3.org/TR/css-values-4/": [],
     "https://www.w3.org/TR/css-variables-1/": [],
     "https://www.w3.org/TR/css-will-change-1/": [],
-    "https://www.w3.org/TR/css-writing-modes-3/": [],
     "https://www.w3.org/TR/css-writing-modes-4/": [],
     "https://www.w3.org/TR/fill-stroke-3/": [],
     "https://www.w3.org/TR/motion-1/": [],

@@ -4,6 +4,6 @@
 
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSPerspective : CSSTransformComponent {
-    constructor(CSSNumericValue length);
-    attribute CSSNumericValue length;
+    constructor(CSSPerspectiveValue length);
+    attribute CSSPerspectiveValue length;
 };

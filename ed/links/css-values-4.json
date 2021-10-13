@@ -28,13 +28,19 @@
     "https://drafts.csswg.org/css-counter-styles-3/": [
       "disc"
     ],
-    "https://drafts.csswg.org/css-backgrounds-3/": [
+    "https://drafts.csswg.org/css2/": [
       "propdef-border-width",
       "propdef-background-attachment",
+      "value-def-border-width",
       "propdef-border-color",
       "propdef-background",
-      "propdef-box-shadow",
-      "propdef-background-position"
+      "valdef-text-align-center",
+      "propdef-border-collapse",
+      "propdef-line-height",
+      "propdef-background-position",
+      "value-def-disc",
+      "value-def-circle",
+      "value-def-square"
     ],
     "https://drafts.csswg.org/css-cascade-5/": [
       "valdef-all-inherit",
@@ -47,15 +53,6 @@
       "actual-value",
       "inherited-value",
       "shorthand-property"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "value-def-border-width",
-      "propdef-border-collapse",
-      "propdef-line-height",
-      "value-def-disc",
-      "value-def-circle",
-      "value-def-square",
-      "propdef-background-position"
     ],
     "https://www.w3.org/TR/css-syntax/": [
       "whitespace"
@@ -80,9 +77,8 @@
     "https://drafts.csswg.org/css-break-3/": [
       "propdef-orphans"
     ],
-    "https://drafts.csswg.org/css-text-3/": [
+    "https://www.w3.org/TR/css-text-3/": [
       "propdef-text-align",
-      "valdef-text-align-center",
       "propdef-tab-size"
     ],
     "https://drafts.csswg.org/css-box-4/": [
@@ -98,6 +94,9 @@
     "https://drafts.csswg.org/css-fonts-4/": [
       "propdef-font-family",
       "propdef-font"
+    ],
+    "https://www.w3.org/TR/css-backgrounds-3/": [
+      "propdef-box-shadow"
     ],
     "https://www.w3.org/TR/css-transitions/": [],
     "https://www.w3.org/TR/css-animations/": [],
@@ -149,13 +148,14 @@
       "substitute-a-var",
       "invalid-at-computed-value-time"
     ],
-    "https://drafts.csswg.org/css-color-4/": [
+    "https://www.w3.org/TR/css-color-4/": [
       "at-ruledef-profile",
       "typedef-color",
+      "interpolation",
+      "interpolation-alpha",
       "funcdef-rgba",
       "typedef-hex-color",
-      "named-color",
-      "propdef-opacity"
+      "named-color"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/string": [],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/url()": [],
@@ -528,12 +528,8 @@
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-transitions/transition-duration-001.html": [],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/frequency": [],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/resolution": [],
-    "https://drafts.csswg.org/css-images-4/": [
-      "propdef-image-resolution"
-    ],
-    "https://www.w3.org/TR/css-color-4/": [
-      "interpolation",
-      "interpolation-alpha"
+    "https://drafts.csswg.org/css-gcpm-3/2009-06-10.html": [
+      "image-resolution0"
     ],
     "https://www.w3.org/TR/css-images-3/": [
       "interpolation"
@@ -583,6 +579,9 @@
     ],
     "https://github.com/sass/sass/issues/684": [],
     "https://www.modularscale.com/": [],
+    "https://drafts.csswg.org/css-color-3/": [
+      "opacity"
+    ],
     "https://wpt.fyi/results/css/css-values/calc-integer.html": [],
     "https://wpt.live/css/css-values/calc-integer.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-values/calc-integer.html": [],
@@ -627,8 +626,8 @@
     "https://www.w3.org/TR/css-easing-1/": [],
     "https://www.w3.org/TR/css-fonts-4/": [],
     "https://www.w3.org/TR/css-fonts-5/": [],
+    "https://www.w3.org/TR/css-gcpm-3/": [],
     "https://www.w3.org/TR/css-grid-2/": [],
-    "https://www.w3.org/TR/css-images-4/": [],
     "https://www.w3.org/TR/css-inline-3/": [],
     "https://www.w3.org/TR/css-page-3/": [],
     "https://www.w3.org/TR/css-sizing-3/": [],
@@ -636,7 +635,6 @@
     "https://www.w3.org/TR/css-ui-4/": [],
     "https://www.w3.org/TR/css-variables-1/": [],
     "https://www.w3.org/TR/css-writing-modes-4/": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": [],
     "https://www.w3.org/TR/css-fonts-3/": [],
     "https://www.w3.org/TR/css-cascade-3/": [],
     "https://www.w3.org/TR/mediaqueries-5/": [],
@@ -652,7 +650,6 @@
     "https://www.w3.org/TR/css-grid-1/": [],
     "https://www.w3.org/TR/css-overflow-4/": [],
     "https://www.w3.org/TR/css-rhythm-1/": [],
-    "https://www.w3.org/TR/css-text-3/": [],
     "https://www.w3.org/TR/css-text-decor-4/": [],
     "https://www.w3.org/TR/css-transforms-1/": [],
     "https://www.w3.org/TR/mediaqueries-4/": [],
