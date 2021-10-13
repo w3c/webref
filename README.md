@@ -41,7 +41,7 @@ Raw WebIDL extracts are used in [web-platform-tests](https://github.com/web-plat
 
 ## Potential spec anomalies
 
-On top of data extracted from the specifications, this repository also contains [analyses of potential anomalies](https://w3c.github.io/webref) that specifications may have, such as missing references and invalid WebIDL definitions. Anomaly reports may contain false positives.
+This repository used to contain analyses of potential spec anomalies, such as missing references and invalid Web IDL definitions. These analyses are now published in the companion [w3c/webref-analysis](https://github.com/w3c/webref-analysis) repository.
 
 
 ## How to suggest changes or report an error
