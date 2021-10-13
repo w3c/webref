@@ -63,9 +63,6 @@
     "<color>": {
       "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
     },
-    "<absolute-color>": {
-      "value": "<absolute-color-base> | <absolute-device-cmyk>"
-    },
     "<absolute-color-base>": {
       "value": "<hex-color> | <named-color> | transparent | <rgb()> | <rgba()> | <hsl()> | <hsla()> | <hwb()> | <lab()> | <lch()> | <color()>"
     },
@@ -91,13 +88,10 @@
       "value": "lch( [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<color()>": {
-      "value": "color( [<ident> | <dashed-ident>] [ <number-percentage>+ ] [ / <alpha-value> ]? )"
+      "value": "color( [<ident> | <dashed-ident>] [<number-percentage> | none]+ [ / [<alpha-value> | none] ]? )"
     },
     "<device-cmyk()>": {
-      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <color>? )"
-    },
-    "<absolute-device-cmyk>": {
-      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? , <absolute-color>? )"
+      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
     },
     "<cmyk-component>": {
       "value": "<number> | <percentage>"
