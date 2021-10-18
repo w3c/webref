@@ -1,21 +1,20 @@
 // Source: WebTransport (https://www.w3.org/TR/webtransport/)
-[Exposed=(Window,Worker)]
+[Exposed=(Window,Worker), SecureContext]
 interface WebTransport {
   constructor(USVString url, optional WebTransportOptions options = {});
 
   Promise<WebTransportStats> getStats();
-  readonly attribute WebTransportState state;
   readonly attribute Promise<undefined> ready;
   readonly attribute Promise<WebTransportCloseInfo> closed;
   undefined close(optional WebTransportCloseInfo closeInfo = {});
-  attribute EventHandler onstatechange;
+
+  readonly attribute WebTransportDatagramDuplexStream datagrams;
+
+  Promise<WebTransportBidirectionalStream> createBidirectionalStream();
+  /* a ReadableStream of WebTransportBidirectionalStream objects */
+  readonly attribute ReadableStream incomingBidirectionalStreams;
+
+  Promise<WritableStream> createUnidirectionalStream();
+  /* a ReadableStream of ReceiveStreams */
+  readonly attribute ReadableStream incomingUnidirectionalStreams;
 };
-
-// Source: WebTransport (https://www.w3.org/TR/webtransport/)
-WebTransport includes UnidirectionalStreamsTransport;
-
-// Source: WebTransport (https://www.w3.org/TR/webtransport/)
-WebTransport includes BidirectionalStreamsTransport;
-
-// Source: WebTransport (https://www.w3.org/TR/webtransport/)
-WebTransport includes DatagramTransport;

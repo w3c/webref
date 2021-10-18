@@ -5,279 +5,220 @@
   },
   "dfns": [
     {
-      "id": "unidirectionalstreamstransport",
-      "href": "https://www.w3.org/TR/webtransport/#unidirectionalstreamstransport",
+      "id": "protocol-webtransport-session",
+      "href": "https://www.w3.org/TR/webtransport/#protocol-webtransport-session",
       "linkingText": [
-        "UnidirectionalStreamsTransport"
+        "WebTransport session"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
+      "type": "dfn",
+      "for": [
+        "protocol"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "unidirectional-streams-transport",
-        "href": "https://www.w3.org/TR/webtransport/#unidirectional-streams-transport",
-        "title": "UnidirectionalStreamsTransport Mixin",
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
         "number": "4"
       },
-      "definedIn": "pre"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-unidirectionalstreamstransport-createunidirectionalstream-parameters-parameters",
-      "href": "https://www.w3.org/TR/webtransport/#dom-unidirectionalstreamstransport-createunidirectionalstream-parameters-parameters",
+      "id": "session-send-a-datagram",
+      "href": "https://www.w3.org/TR/webtransport/#session-send-a-datagram",
       "linkingText": [
-        "parameters"
+        "send a datagram"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dfn",
       "for": [
-        "UnidirectionalStreamsTransport/createUnidirectionalStream(parameters)",
-        "UnidirectionalStreamsTransport/createUnidirectionalStream()"
+        "session"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "unidirectional-streams-transport",
-        "href": "https://www.w3.org/TR/webtransport/#unidirectional-streams-transport",
-        "title": "UnidirectionalStreamsTransport Mixin",
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
         "number": "4"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
-      "id": "dom-unidirectionalstreamstransport-createunidirectionalstream",
-      "href": "https://www.w3.org/TR/webtransport/#dom-unidirectionalstreamstransport-createunidirectionalstream",
+      "id": "session-receive-a-datagram",
+      "href": "https://www.w3.org/TR/webtransport/#session-receive-a-datagram",
       "linkingText": [
-        "createUnidirectionalStream(parameters)",
-        "createUnidirectionalStream()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "UnidirectionalStreamsTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "unidirectional-streams-transport-methods",
-        "href": "https://www.w3.org/TR/webtransport/#unidirectional-streams-transport-methods",
-        "title": "Methods",
-        "number": "4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-unidirectionalstreamstransport-incomingunidirectionalstreams",
-      "href": "https://www.w3.org/TR/webtransport/#dom-unidirectionalstreamstransport-incomingunidirectionalstreams",
-      "linkingText": [
-        "incomingUnidirectionalStreams"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "UnidirectionalStreamsTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "unidirectional-streams-transport-methods",
-        "href": "https://www.w3.org/TR/webtransport/#unidirectional-streams-transport-methods",
-        "title": "Methods",
-        "number": "4.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "sendstream-create",
-      "href": "https://www.w3.org/TR/webtransport/#sendstream-create",
-      "linkingText": [
-        "create",
-        "creating"
+        "receive a datagram"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "SendStream"
+        "session"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "add-sendstream",
-        "href": "https://www.w3.org/TR/webtransport/#add-sendstream",
-        "title": "Add SendStream to UnidirectionalStreamsTransport",
-        "number": "4.2.1"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
-      "definedIn": "prose"
+      "definedIn": "table"
     },
     {
-      "id": "dictdef-sendstreamparameters",
-      "href": "https://www.w3.org/TR/webtransport/#dictdef-sendstreamparameters",
+      "id": "session-create-an-outgoing-unidirectional-stream",
+      "href": "https://www.w3.org/TR/webtransport/#session-create-an-outgoing-unidirectional-stream",
       "linkingText": [
-        "SendStreamParameters"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "send-stream-parameters",
-        "href": "https://www.w3.org/TR/webtransport/#send-stream-parameters",
-        "title": "SendStreamParameters Dictionary",
-        "number": "4.3"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "bidirectionalstreamstransport",
-      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstreamstransport",
-      "linkingText": [
-        "BidirectionalStreamsTransport"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bidirectional-streams-transport",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-streams-transport",
-        "title": "BidirectionalStreamsTransport Mixin",
-        "number": "5"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-bidirectionalstreamstransport-createbidirectionalstream",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstreamstransport-createbidirectionalstream",
-      "linkingText": [
-        "createBidirectionalStream()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "BidirectionalStreamsTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bidirectional-streams-transport-methods",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-streams-transport-methods",
-        "title": "Methods",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-bidirectionalstreamstransport-incomingbidirectionalstreams",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstreamstransport-incomingbidirectionalstreams",
-      "linkingText": [
-        "incomingBidirectionalStreams"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "BidirectionalStreamsTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "bidirectional-streams-transport-methods",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-streams-transport-methods",
-        "title": "Methods",
-        "number": "5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "bidirectionalstream-create",
-      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-create",
-      "linkingText": [
-        "create",
-        "creating"
+        "create an outgoing unidirectional stream"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "BidirectionalStream"
+        "session"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "add-bidirectionalstream",
-        "href": "https://www.w3.org/TR/webtransport/#add-bidirectionalstream",
-        "title": "Add BidirectionalStream to BidirectionalStreamsTransport",
-        "number": "5.2.1"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "session-create-a-bidirectional-stream",
+      "href": "https://www.w3.org/TR/webtransport/#session-create-a-bidirectional-stream",
+      "linkingText": [
+        "create a bidirectional stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "session-receive-an-incoming-unidirectional-stream",
+      "href": "https://www.w3.org/TR/webtransport/#session-receive-an-incoming-unidirectional-stream",
+      "linkingText": [
+        "receive an incoming unidirectional stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "session-receive-a-bidirectional-stream",
+      "href": "https://www.w3.org/TR/webtransport/#session-receive-a-bidirectional-stream",
+      "linkingText": [
+        "receive a bidirectional stream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "session-establish",
+      "href": "https://www.w3.org/TR/webtransport/#session-establish",
+      "linkingText": [
+        "establish"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "datagramtransport",
-      "href": "https://www.w3.org/TR/webtransport/#datagramtransport",
+      "id": "session-terminate",
+      "href": "https://www.w3.org/TR/webtransport/#session-terminate",
       "linkingText": [
-        "DatagramTransport"
+        "terminate"
       ],
       "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
+      "type": "dfn",
+      "for": [
+        "session"
+      ],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "datagram-transport",
-        "href": "https://www.w3.org/TR/webtransport/#datagram-transport",
-        "title": "DatagramTransport Mixin",
-        "number": "6"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-datagramtransport-maxdatagramsize",
-      "href": "https://www.w3.org/TR/webtransport/#dom-datagramtransport-maxdatagramsize",
+      "id": "session-terminated",
+      "href": "https://www.w3.org/TR/webtransport/#session-terminated",
       "linkingText": [
-        "maxDatagramSize"
+        "terminated"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
-        "DatagramTransport"
+        "session"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "datagram-transport-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#datagram-transport-attributes",
-        "title": "Attributes",
-        "number": "6.1"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-datagramtransport-datagrams",
-      "href": "https://www.w3.org/TR/webtransport/#dom-datagramtransport-datagrams",
+      "id": "webtransport-stream",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-stream",
       "linkingText": [
-        "datagrams"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "DatagramTransport"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "datagram-transport-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#datagram-transport-attributes",
-        "title": "Attributes",
-        "number": "6.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "readdatagrams",
-      "href": "https://www.w3.org/TR/webtransport/#readdatagrams",
-      "linkingText": [
-        "readDatagrams"
+        "WebTransport stream"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -285,56 +226,207 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "datagrams-transport-procedures",
-        "href": "https://www.w3.org/TR/webtransport/#datagrams-transport-procedures",
-        "title": "Procedures",
-        "number": "6.2"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "writedatagrams",
-      "href": "https://www.w3.org/TR/webtransport/#writedatagrams",
+      "id": "stream-incoming-unidirectional",
+      "href": "https://www.w3.org/TR/webtransport/#stream-incoming-unidirectional",
       "linkingText": [
-        "writeDatagrams"
+        "incoming unidirectional"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "datagrams-transport-procedures",
-        "href": "https://www.w3.org/TR/webtransport/#datagrams-transport-procedures",
-        "title": "Procedures",
-        "number": "6.2"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "senddatagrams",
-      "href": "https://www.w3.org/TR/webtransport/#senddatagrams",
+      "id": "stream-outgoing-unidirectional",
+      "href": "https://www.w3.org/TR/webtransport/#stream-outgoing-unidirectional",
       "linkingText": [
-        "sendDatagrams"
+        "outgoing unidirectional"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "stream"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "datagrams-transport-procedures",
-        "href": "https://www.w3.org/TR/webtransport/#datagrams-transport-procedures",
-        "title": "Procedures",
-        "number": "6.2"
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "datagramduplexstream",
-      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream",
+      "id": "stream-bidirectional",
+      "href": "https://www.w3.org/TR/webtransport/#stream-bidirectional",
       "linkingText": [
-        "DatagramDuplexStream"
+        "bidirectional"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "stream-send",
+      "href": "https://www.w3.org/TR/webtransport/#stream-send",
+      "linkingText": [
+        "send"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-receive",
+      "href": "https://www.w3.org/TR/webtransport/#stream-receive",
+      "linkingText": [
+        "receive"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-send-stop_sending",
+      "href": "https://www.w3.org/TR/webtransport/#stream-send-stop_sending",
+      "linkingText": [
+        "send STOP_SENDING"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-reset",
+      "href": "https://www.w3.org/TR/webtransport/#stream-reset",
+      "linkingText": [
+        "reset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-signal-stop_sending",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-stop_sending",
+      "linkingText": [
+        "STOP_SENDING"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream-signal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "stream-signal-reset",
+      "href": "https://www.w3.org/TR/webtransport/#stream-signal-reset",
+      "linkingText": [
+        "reset"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "stream-signal"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "protocol-concepts",
+        "href": "https://www.w3.org/TR/webtransport/#protocol-concepts",
+        "title": "Protocol concepts",
+        "number": "4"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransportdatagramduplexstream",
+      "href": "https://www.w3.org/TR/webtransport/#webtransportdatagramduplexstream",
+      "linkingText": [
+        "WebTransportDatagramDuplexStream"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -344,10 +436,220 @@
       "heading": {
         "id": "duplex-stream",
         "href": "https://www.w3.org/TR/webtransport/#duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "title": "WebTransportDatagramDuplexStream Interface",
+        "number": "5"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "datagramduplexstream-readable",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-readable",
+      "linkingText": [
+        "[[Readable]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-writable",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-writable",
+      "linkingText": [
+        "[[Writable]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-incomingdatagramsqueue",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-incomingdatagramsqueue",
+      "linkingText": [
+        "[[IncomingDatagramsQueue]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-incomingdatagramspullpromise",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-incomingdatagramspullpromise",
+      "linkingText": [
+        "[[IncomingDatagramsPullPromise]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-incomingdatagramshighwatermark",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-incomingdatagramshighwatermark",
+      "linkingText": [
+        "[[IncomingDatagramsHighWaterMark]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-incomingdatagramsexpirationduration",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-incomingdatagramsexpirationduration",
+      "linkingText": [
+        "[[IncomingDatagramsExpirationDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-outgoingdatagramsqueue",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-outgoingdatagramsqueue",
+      "linkingText": [
+        "[[OutgoingDatagramsQueue]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-outgoingdatagramshighwatermark",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-outgoingdatagramshighwatermark",
+      "linkingText": [
+        "[[OutgoingDatagramsHighWaterMark]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-outgoingdatagramsexpirationduration",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-outgoingdatagramsexpirationduration",
+      "linkingText": [
+        "[[OutgoingDatagramsExpirationDuration]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "datagramduplexstream-outgoingmaxdatagramsize",
+      "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-outgoingmaxdatagramsize",
+      "linkingText": [
+        "[[OutgoingMaxDatagramSize]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "DatagramDuplexStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
+      },
+      "definedIn": "table"
     },
     {
       "id": "datagramduplexstream-create",
@@ -364,10 +666,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "href": "https://www.w3.org/TR/webtransport/#duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -385,10 +687,10 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "href": "https://www.w3.org/TR/webtransport/#duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
@@ -406,54 +708,235 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream",
-        "href": "https://www.w3.org/TR/webtransport/#duplex-stream",
-        "title": "DatagramDuplexStream Interface",
-        "number": "7"
+        "id": "datagramduplexstream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#datagramduplexstream-internal-slots",
+        "title": "Internal slots",
+        "number": "5.1"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-datagramduplexstream-readable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-datagramduplexstream-readable",
+      "id": "dom-webtransportdatagramduplexstream-readable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-readable",
       "linkingText": [
         "readable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "DatagramDuplexStream"
+        "WebTransportDatagramDuplexStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#duplex-stream-attributes",
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
         "title": "Attributes",
-        "number": "7.1"
+        "number": "5.2"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-datagramduplexstream-writable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-datagramduplexstream-writable",
+      "id": "dom-webtransportdatagramduplexstream-writable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-writable",
       "linkingText": [
         "writable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "DatagramDuplexStream"
+        "WebTransportDatagramDuplexStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "duplex-stream-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#duplex-stream-attributes",
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
         "title": "Attributes",
-        "number": "7.1"
+        "number": "5.2"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramduplexstream-incomingmaxage",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incomingmaxage",
+      "linkingText": [
+        "incomingMaxAge"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramduplexstream-maxdatagramsize",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-maxdatagramsize",
+      "linkingText": [
+        "maxDatagramSize"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramduplexstream-outgoingmaxage",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoingmaxage",
+      "linkingText": [
+        "outgoingMaxAge"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramduplexstream-incominghighwatermark",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-incominghighwatermark",
+      "linkingText": [
+        "incomingHighWaterMark"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportdatagramduplexstream-outgoinghighwatermark",
+      "linkingText": [
+        "outgoingHighWaterMark"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportDatagramDuplexStream"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-attributes",
+        "title": "Attributes",
+        "number": "5.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "pulldatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#pulldatagrams",
+      "linkingText": [
+        "pullDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-procedures",
+        "title": "Procedures",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "receivedatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#receivedatagrams",
+      "linkingText": [
+        "receiveDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-procedures",
+        "title": "Procedures",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "writedatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#writedatagrams",
+      "linkingText": [
+        "writeDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-procedures",
+        "title": "Procedures",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "senddatagrams",
+      "href": "https://www.w3.org/TR/webtransport/#senddatagrams",
+      "linkingText": [
+        "sendDatagrams"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "datagram-duplex-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#datagram-duplex-stream-procedures",
+        "title": "Procedures",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "webtransport",
@@ -470,7 +953,7 @@
         "id": "web-transport",
         "href": "https://www.w3.org/TR/webtransport/#web-transport",
         "title": "WebTransport Interface",
-        "number": "8"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -494,7 +977,7 @@
         "id": "web-transport",
         "href": "https://www.w3.org/TR/webtransport/#web-transport",
         "title": "WebTransport Interface",
-        "number": "8"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -518,7 +1001,7 @@
         "id": "web-transport",
         "href": "https://www.w3.org/TR/webtransport/#web-transport",
         "title": "WebTransport Interface",
-        "number": "8"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -542,7 +1025,7 @@
         "id": "web-transport",
         "href": "https://www.w3.org/TR/webtransport/#web-transport",
         "title": "WebTransport Interface",
-        "number": "8"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -564,15 +1047,15 @@
         "id": "web-transport",
         "href": "https://www.w3.org/TR/webtransport/#web-transport",
         "title": "WebTransport Interface",
-        "number": "8"
+        "number": "6"
       },
       "definedIn": "pre"
     },
     {
-      "id": "webtransport-outgoingstreams",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-outgoingstreams",
+      "id": "webtransport-sendstreams",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-sendstreams",
       "linkingText": [
-        "[[OutgoingStreams]]"
+        "[[SendStreams]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -585,15 +1068,15 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "webtransport-receivedstreams",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-receivedstreams",
+      "id": "webtransport-receivestreams",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-receivestreams",
       "linkingText": [
-        "[[ReceivedStreams]]"
+        "[[ReceiveStreams]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -606,15 +1089,15 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "webtransport-receivedbidirectionalstreams",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-receivedbidirectionalstreams",
+      "id": "webtransport-incomingbidirectionalstreams",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-incomingbidirectionalstreams",
       "linkingText": [
-        "[[ReceivedBidirectionalStreams]]"
+        "[[IncomingBidirectionalStreams]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -627,7 +1110,28 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransport-incomingunidirectionalstreams",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-incomingunidirectionalstreams",
+      "linkingText": [
+        "[[IncomingUnidirectionalStreams]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
+        "title": "Internal slots",
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -648,7 +1152,7 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -669,7 +1173,7 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -690,7 +1194,7 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -711,15 +1215,15 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "webtransport-outgoingdatagramsqueue",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-outgoingdatagramsqueue",
+      "id": "webtransport-session",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-session",
       "linkingText": [
-        "[[OutgoingDatagramsQueue]]"
+        "[[Session]]"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -732,70 +1236,7 @@
         "id": "webtransport-internal-slots",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
         "title": "Internal slots",
-        "number": "8.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "webtransport-outgoingdatagramshighwatermark",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-outgoingdatagramshighwatermark",
-      "linkingText": [
-        "[[OutgoingDatagramsHighWaterMark]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-internal-slots",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
-        "title": "Internal slots",
-        "number": "8.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "webtransport-outgoingdatagramsexpirationduration",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-outgoingdatagramsexpirationduration",
-      "linkingText": [
-        "[[OutgoingDatagramsExpirationDuration]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-internal-slots",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
-        "title": "Internal slots",
-        "number": "8.1"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "webtransport-connection",
-      "href": "https://www.w3.org/TR/webtransport/#webtransport-connection",
-      "linkingText": [
-        "[[Connection]]"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-internal-slots",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-internal-slots",
-        "title": "Internal slots",
-        "number": "8.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -814,30 +1255,47 @@
         "id": "webtransport-constructor",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-constructor",
         "title": "Constructor",
-        "number": "8.2"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-webtransport-state",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-state",
+      "id": "pullbidirectionalstream",
+      "href": "https://www.w3.org/TR/webtransport/#pullbidirectionalstream",
       "linkingText": [
-        "state"
+        "pullBidirectionalStream"
       ],
       "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "WebTransport"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "webtransport-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
-        "title": "Attributes",
-        "number": "8.3"
+        "id": "webtransport-constructor",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-constructor",
+        "title": "Constructor",
+        "number": "6.2"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
+    },
+    {
+      "id": "pullunidirectionalstream",
+      "href": "https://www.w3.org/TR/webtransport/#pullunidirectionalstream",
+      "linkingText": [
+        "pullUnidirectionalStream"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-constructor",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-constructor",
+        "title": "Constructor",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "dom-webtransport-ready",
@@ -856,7 +1314,7 @@
         "id": "webtransport-attributes",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
         "title": "Attributes",
-        "number": "8.3"
+        "number": "6.3"
       },
       "definedIn": "dt"
     },
@@ -877,15 +1335,15 @@
         "id": "webtransport-attributes",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
         "title": "Attributes",
-        "number": "8.3"
+        "number": "6.3"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-webtransport-onstatechange",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-onstatechange",
+      "id": "dom-webtransport-datagrams",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-datagrams",
       "linkingText": [
-        "onstatechange"
+        "datagrams"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -898,7 +1356,49 @@
         "id": "webtransport-attributes",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
         "title": "Attributes",
-        "number": "8.3"
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransport-incomingbidirectionalstreams",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-incomingbidirectionalstreams",
+      "linkingText": [
+        "incomingBidirectionalStreams"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
+        "title": "Attributes",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransport-incomingunidirectionalstreams",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-incomingunidirectionalstreams",
+      "linkingText": [
+        "incomingUnidirectionalStreams"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-attributes",
+        "title": "Attributes",
+        "number": "6.3"
       },
       "definedIn": "dt"
     },
@@ -920,28 +1420,9 @@
         "id": "webtransport-methods",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-methods",
         "title": "Methods",
-        "number": "8.4"
+        "number": "6.4"
       },
       "definedIn": "dt"
-    },
-    {
-      "id": "immediate-close",
-      "href": "https://www.w3.org/TR/webtransport/#immediate-close",
-      "linkingText": [
-        "Immediate Close"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "webtransport-methods",
-        "href": "https://www.w3.org/TR/webtransport/#webtransport-methods",
-        "title": "Methods",
-        "number": "8.4"
-      },
-      "definedIn": "prose"
     },
     {
       "id": "dom-webtransport-getstats",
@@ -960,9 +1441,154 @@
         "id": "webtransport-methods",
         "href": "https://www.w3.org/TR/webtransport/#webtransport-methods",
         "title": "Methods",
-        "number": "8.4"
+        "number": "6.4"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransport-createbidirectionalstream",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createbidirectionalstream",
+      "linkingText": [
+        "createBidirectionalStream()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-methods",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-methods",
+        "title": "Methods",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransport-createunidirectionalstream",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransport-createunidirectionalstream",
+      "linkingText": [
+        "createUnidirectionalStream()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-methods",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-methods",
+        "title": "Methods",
+        "number": "6.4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "webtransport-cleanup",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-cleanup",
+      "linkingText": [
+        "cleanup"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-procedures",
+        "title": "Procedures",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webtransport-queue-a-network-task",
+      "href": "https://www.w3.org/TR/webtransport/#webtransport-queue-a-network-task",
+      "linkingText": [
+        "queue a network task"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransport"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "webtransport-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#webtransport-procedures",
+        "title": "Procedures",
+        "number": "6.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dictdef-webtransporthash",
+      "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransporthash",
+      "linkingText": [
+        "WebTransportHash"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporthash-algorithm",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporthash-algorithm",
+      "linkingText": [
+        "algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportHash"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporthash-value",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporthash-value",
+      "linkingText": [
+        "value"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportHash"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-configuration",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
+        "title": "Configuration",
+        "number": "6.9"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dictdef-webtransportoptions",
@@ -979,7 +1605,7 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "prose"
     },
@@ -1000,15 +1626,15 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-webtransportoptions-servercertificatefingerprints",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-servercertificatefingerprints",
+      "id": "dom-webtransportoptions-servercertificatehashes",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportoptions-servercertificatehashes",
       "linkingText": [
-        "serverCertificateFingerprints"
+        "serverCertificateHashes"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1021,15 +1647,15 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "dt"
     },
     {
-      "id": "compute-a-certificate-fingerprint",
-      "href": "https://www.w3.org/TR/webtransport/#compute-a-certificate-fingerprint",
+      "id": "compute-a-certificate-hash",
+      "href": "https://www.w3.org/TR/webtransport/#compute-a-certificate-hash",
       "linkingText": [
-        "compute a certificate fingerprint"
+        "compute a certificate hash"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1040,15 +1666,15 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "prose"
     },
     {
-      "id": "verify-a-certificate-fingerprint",
-      "href": "https://www.w3.org/TR/webtransport/#verify-a-certificate-fingerprint",
+      "id": "verify-a-certificate-hash",
+      "href": "https://www.w3.org/TR/webtransport/#verify-a-certificate-hash",
       "linkingText": [
-        "verify a certificate fingerprint"
+        "verify a certificate hash"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1059,7 +1685,7 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "prose"
     },
@@ -1078,112 +1704,9 @@
         "id": "web-transport-configuration",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-configuration",
         "title": "Configuration",
-        "number": "8.5"
+        "number": "6.9"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "enumdef-webtransportstate",
-      "href": "https://www.w3.org/TR/webtransport/#enumdef-webtransportstate",
-      "linkingText": [
-        "WebTransportState"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-state-enum",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-state-enum",
-        "title": "WebTransportState Enum",
-        "number": "8.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-webtransportstate-connecting",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstate-connecting",
-      "linkingText": [
-        "\"connecting\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "WebTransportState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-state-enum",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-state-enum",
-        "title": "WebTransportState Enum",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-webtransportstate-connected",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstate-connected",
-      "linkingText": [
-        "\"connected\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "WebTransportState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-state-enum",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-state-enum",
-        "title": "WebTransportState Enum",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-webtransportstate-closed",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstate-closed",
-      "linkingText": [
-        "\"closed\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "WebTransportState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-state-enum",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-state-enum",
-        "title": "WebTransportState Enum",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-webtransportstate-failed",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportstate-failed",
-      "linkingText": [
-        "\"failed\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "WebTransportState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "web-transport-state-enum",
-        "href": "https://www.w3.org/TR/webtransport/#web-transport-state-enum",
-        "title": "WebTransportState Enum",
-        "number": "8.6"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dictdef-webtransportcloseinfo",
@@ -1200,15 +1723,15 @@
         "id": "web-transport-close-info",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "8.7"
+        "number": "6.10"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-webtransportcloseinfo-errorcode",
-      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportcloseinfo-errorcode",
+      "id": "dom-webtransportcloseinfo-closecode",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportcloseinfo-closecode",
       "linkingText": [
-        "errorCode"
+        "closeCode"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1221,7 +1744,7 @@
         "id": "web-transport-close-info",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "8.7"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1242,7 +1765,7 @@
         "id": "web-transport-close-info",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-close-info",
         "title": "WebTransportCloseInfo Dictionary",
-        "number": "8.7"
+        "number": "6.10"
       },
       "definedIn": "dt"
     },
@@ -1261,7 +1784,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "prose"
     },
@@ -1282,7 +1805,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1303,7 +1826,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1324,7 +1847,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1345,7 +1868,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1366,7 +1889,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1387,7 +1910,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1408,7 +1931,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1429,7 +1952,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1450,7 +1973,7 @@
         "id": "web-transport-stats",
         "href": "https://www.w3.org/TR/webtransport/#web-transport-stats",
         "title": "WebTransportStats Dictionary",
-        "number": "8.8"
+        "number": "6.11"
       },
       "definedIn": "dt"
     },
@@ -1468,115 +1991,158 @@
       "heading": {
         "id": "send-stream",
         "href": "https://www.w3.org/TR/webtransport/#send-stream",
-        "title": "Interface SendStream",
-        "number": "9"
+        "title": "SendStream",
+        "number": "7"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-sendstream-abortwriting-abortinfo-abortinfo",
-      "href": "https://www.w3.org/TR/webtransport/#dom-sendstream-abortwriting-abortinfo-abortinfo",
+      "id": "sendstream-internalstream",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-internalstream",
       "linkingText": [
-        "abortInfo"
+        "[[InternalStream]]"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dfn",
       "for": [
-        "SendStream/abortWriting(abortInfo)",
-        "SendStream/abortWriting()"
+        "SendStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "send-stream",
-        "href": "https://www.w3.org/TR/webtransport/#send-stream",
-        "title": "Interface SendStream",
-        "number": "9"
+        "id": "send-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
-      "id": "dom-sendstream-writingaborted",
-      "href": "https://www.w3.org/TR/webtransport/#dom-sendstream-writingaborted",
+      "id": "sendstream-pendingoperation",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-pendingoperation",
       "linkingText": [
-        "writingAborted"
+        "[[PendingOperation]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sendstream-transport",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-transport",
+      "linkingText": [
+        "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "7.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "sendstream-create",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "SendStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "outgoing-stream-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#outgoing-stream-attributes",
-        "title": "Attributes",
-        "number": "9.2"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-sendstream-abortwriting",
-      "href": "https://www.w3.org/TR/webtransport/#dom-sendstream-abortwriting",
-      "linkingText": [
-        "abortWriting(abortInfo)",
-        "abortWriting()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "SendStream"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "outgoing-stream-methods",
-        "href": "https://www.w3.org/TR/webtransport/#outgoing-stream-methods",
-        "title": "Methods",
-        "number": "9.3"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dictdef-streamabortinfo",
-      "href": "https://www.w3.org/TR/webtransport/#dictdef-streamabortinfo",
-      "linkingText": [
-        "StreamAbortInfo"
-      ],
-      "localLinkingText": [],
-      "type": "dictionary",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "stream-abort-info",
-        "href": "https://www.w3.org/TR/webtransport/#stream-abort-info",
-        "title": "StreamAbortInfo Dictionary",
-        "number": "9.4"
+        "id": "send-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-procedures",
+        "title": "Procedures",
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-streamabortinfo-errorcode",
-      "href": "https://www.w3.org/TR/webtransport/#dom-streamabortinfo-errorcode",
+      "id": "sendstream-write",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-write",
       "linkingText": [
-        "errorCode"
+        "write"
       ],
       "localLinkingText": [],
-      "type": "dict-member",
+      "type": "dfn",
       "for": [
-        "StreamAbortInfo"
+        "SendStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "stream-abort-info",
-        "href": "https://www.w3.org/TR/webtransport/#stream-abort-info",
-        "title": "StreamAbortInfo Dictionary",
-        "number": "9.4"
+        "id": "send-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-procedures",
+        "title": "Procedures",
+        "number": "7.2"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
+    },
+    {
+      "id": "sendstream-close",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-close",
+      "linkingText": [
+        "close"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-procedures",
+        "title": "Procedures",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sendstream-abort",
+      "href": "https://www.w3.org/TR/webtransport/#sendstream-abort",
+      "linkingText": [
+        "abort"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "SendStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "send-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#send-stream-procedures",
+        "title": "Procedures",
+        "number": "7.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "receivestream",
@@ -1592,79 +2158,122 @@
       "heading": {
         "id": "receive-stream",
         "href": "https://www.w3.org/TR/webtransport/#receive-stream",
-        "title": "10. Interface ReceiveStream"
+        "title": "ReceiveStream",
+        "number": "8"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dom-receivestream-abortreading-abortinfo-abortinfo",
-      "href": "https://www.w3.org/TR/webtransport/#dom-receivestream-abortreading-abortinfo-abortinfo",
+      "id": "receivestream-internalstream",
+      "href": "https://www.w3.org/TR/webtransport/#receivestream-internalstream",
       "linkingText": [
-        "abortInfo"
+        "[[InternalStream]]"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dfn",
       "for": [
-        "ReceiveStream/abortReading(abortInfo)",
-        "ReceiveStream/abortReading()"
+        "ReceiveStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "receive-stream",
-        "href": "https://www.w3.org/TR/webtransport/#receive-stream",
-        "title": "10. Interface ReceiveStream"
+        "id": "receive-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#receive-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1"
       },
-      "definedIn": "pre"
+      "definedIn": "table"
     },
     {
-      "id": "dom-receivestream-readingaborted",
-      "href": "https://www.w3.org/TR/webtransport/#dom-receivestream-readingaborted",
+      "id": "receivestream-transport",
+      "href": "https://www.w3.org/TR/webtransport/#receivestream-transport",
       "linkingText": [
-        "readingAborted"
+        "[[Transport]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#receive-stream-internal-slots",
+        "title": "Internal Slots",
+        "number": "8.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "receivestream-create",
+      "href": "https://www.w3.org/TR/webtransport/#receivestream-create",
+      "linkingText": [
+        "create",
+        "creating"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
       "for": [
         "ReceiveStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "incoming-stream-attributes",
-        "href": "https://www.w3.org/TR/webtransport/#incoming-stream-attributes",
-        "title": "Attributes",
-        "number": "10.2"
+        "id": "receive-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#receive-stream-procedures",
+        "title": "Procedures",
+        "number": "8.2"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "dom-receivestream-abortreading",
-      "href": "https://www.w3.org/TR/webtransport/#dom-receivestream-abortreading",
+      "id": "receivestream-pull-bytes",
+      "href": "https://www.w3.org/TR/webtransport/#receivestream-pull-bytes",
       "linkingText": [
-        "abortReading(abortInfo)",
-        "abortReading()"
+        "pull bytes"
       ],
       "localLinkingText": [],
-      "type": "method",
+      "type": "dfn",
       "for": [
         "ReceiveStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "incoming-stream-methods",
-        "href": "https://www.w3.org/TR/webtransport/#incoming-stream-methods",
-        "title": "Methods",
-        "number": "10.3"
+        "id": "receive-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#receive-stream-procedures",
+        "title": "Procedures",
+        "number": "8.2"
       },
-      "definedIn": "dt"
+      "definedIn": "prose"
     },
     {
-      "id": "bidirectionalstream",
-      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream",
+      "id": "receivestream-cancel",
+      "href": "https://www.w3.org/TR/webtransport/#receivestream-cancel",
       "linkingText": [
-        "BidirectionalStream"
+        "cancel"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "ReceiveStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "receive-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#receive-stream-procedures",
+        "title": "Procedures",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webtransportbidirectionalstream",
+      "href": "https://www.w3.org/TR/webtransport/#webtransportbidirectionalstream",
+      "linkingText": [
+        "WebTransportBidirectionalStream"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -1674,87 +2283,441 @@
       "heading": {
         "id": "bidirectional-stream",
         "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "11. Interface BidirectionalStream"
+        "title": "Interface WebTransportBidirectionalStream",
+        "number": "9"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-bidirectionalstream-readable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstream-readable",
+      "id": "dom-webtransportbidirectionalstream-readable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-readable",
       "linkingText": [
         "readable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "BidirectionalStream"
+        "WebTransportBidirectionalStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "bidirectional-stream",
         "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "11. Interface BidirectionalStream"
+        "title": "Interface WebTransportBidirectionalStream",
+        "number": "9"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-bidirectionalstream-writable",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstream-writable",
+      "id": "dom-webtransportbidirectionalstream-writable",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransportbidirectionalstream-writable",
       "linkingText": [
         "writable"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "BidirectionalStream"
+        "WebTransportBidirectionalStream"
       ],
       "access": "public",
       "informative": false,
       "heading": {
         "id": "bidirectional-stream",
         "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "11. Interface BidirectionalStream"
+        "title": "Interface WebTransportBidirectionalStream",
+        "number": "9"
       },
       "definedIn": "pre"
     },
     {
-      "id": "dom-bidirectionalstream-readable-slot",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstream-readable-slot",
+      "id": "bidirectionalstream-readable",
+      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-readable",
       "linkingText": [
         "[[Readable]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "BidirectionalStream"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
-        "id": "bidirectional-stream",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "11. Interface BidirectionalStream"
+        "id": "bidirectional-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "9.1"
       },
-      "definedIn": "prose"
+      "definedIn": "table"
     },
     {
-      "id": "dom-bidirectionalstream-writable-slot",
-      "href": "https://www.w3.org/TR/webtransport/#dom-bidirectionalstream-writable-slot",
+      "id": "bidirectionalstream-writable",
+      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-writable",
       "linkingText": [
         "[[Writable]]"
       ],
       "localLinkingText": [],
-      "type": "attribute",
+      "type": "dfn",
       "for": [
         "BidirectionalStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "9.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "bidirectionalstream-transport",
+      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-transport",
+      "linkingText": [
+        "[[Transport]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-internal-slots",
+        "title": "Internal slots",
+        "number": "9.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "bidirectionalstream-create",
+      "href": "https://www.w3.org/TR/webtransport/#bidirectionalstream-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "BidirectionalStream"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "bidirectional-stream-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream-procedures",
+        "title": "Procedures",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webtransporterror",
+      "href": "https://www.w3.org/TR/webtransport/#webtransporterror",
+      "linkingText": [
+        "WebTransportError"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransporterror-webtransporterror-init-init",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterror-webtransporterror-init-init",
+      "linkingText": [
+        "init"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "WebTransportError/WebTransportError(init)",
+        "WebTransportError/constructor(init)",
+        "WebTransportError/WebTransportError()",
+        "WebTransportError/constructor()"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "bidirectional-stream",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectional-stream",
-        "title": "11. Interface BidirectionalStream"
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dictdef-webtransporterrorinit",
+      "href": "https://www.w3.org/TR/webtransport/#dictdef-webtransporterrorinit",
+      "linkingText": [
+        "WebTransportErrorInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorinit-streamerrorcode",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterrorinit-streamerrorcode",
+      "linkingText": [
+        "streamErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportErrorInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorinit-message",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterrorinit-message",
+      "linkingText": [
+        "message"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WebTransportErrorInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "enumdef-webtransporterrorsource",
+      "href": "https://www.w3.org/TR/webtransport/#enumdef-webtransporterrorsource",
+      "linkingText": [
+        "WebTransportErrorSource"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorsource-stream",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterrorsource-stream",
+      "linkingText": [
+        "\"stream\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportErrorSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-webtransporterrorsource-session",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterrorsource-session",
+      "linkingText": [
+        "\"session\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "WebTransportErrorSource"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-interface",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-interface",
+        "title": "10. WebTransportError Interface"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "webtransporterror-source",
+      "href": "https://www.w3.org/TR/webtransport/#webtransporterror-source",
+      "linkingText": [
+        "[[Source]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "webtransporterror-streamerrorcode",
+      "href": "https://www.w3.org/TR/webtransport/#webtransporterror-streamerrorcode",
+      "linkingText": [
+        "[[StreamErrorCode]]"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-internal-slots",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-internal-slots",
+        "title": "Internal slots",
+        "number": "10.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-webtransporterror-webtransporterror",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterror-webtransporterror",
+      "linkingText": [
+        "WebTransportError(init)",
+        "constructor(init)",
+        "WebTransportError()",
+        "constructor()"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-constructor1",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-constructor1",
+        "title": "Constructor",
+        "number": "10.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-webtransporterror-source",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterror-source",
+      "linkingText": [
+        "source"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-attributes",
+        "title": "Attributes",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-webtransporterror-streamerrorcode",
+      "href": "https://www.w3.org/TR/webtransport/#dom-webtransporterror-streamerrorcode",
+      "linkingText": [
+        "streamErrorCode"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-attributes",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-attributes",
+        "title": "Attributes",
+        "number": "10.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "webtransporterror-create",
+      "href": "https://www.w3.org/TR/webtransport/#webtransporterror-create",
+      "linkingText": [
+        "create"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-procedures",
+        "title": "Procedures",
+        "number": "10.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "webtransporterror-set-up",
+      "href": "https://www.w3.org/TR/webtransport/#webtransporterror-set-up",
+      "linkingText": [
+        "set up"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "WebTransportError"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "web-transport-error-procedures",
+        "href": "https://www.w3.org/TR/webtransport/#web-transport-error-procedures",
+        "title": "Procedures",
+        "number": "10.4"
       },
       "definedIn": "prose"
     }

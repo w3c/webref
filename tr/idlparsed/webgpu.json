@@ -999,7 +999,7 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clamping\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"timestamp-query\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clamping\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1022,6 +1022,14 @@
           {
             "type": "enum-value",
             "value": "texture-compression-bc"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-etc2"
+          },
+          {
+            "type": "enum-value",
+            "value": "texture-compression-astc"
           },
           {
             "type": "enum-value",
@@ -2747,7 +2755,7 @@
         "extAttrs": []
       },
       "GPUTextureFormat": {
-        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth and stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n};",
+        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth and stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n};",
         "type": "enum",
         "name": "GPUTextureFormat",
         "values": [
@@ -2970,6 +2978,158 @@
           {
             "type": "enum-value",
             "value": "bc7-rgba-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgb8unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgb8unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgb8a1unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgb8a1unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgba8unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "etc2-rgba8unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "eac-r11unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "eac-r11snorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "eac-rg11unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "eac-rg11snorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-4x4-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-4x4-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-5x4-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-5x4-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-5x5-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-5x5-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-6x5-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-6x5-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-6x6-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-6x6-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x5-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x5-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x6-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x6-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x8-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-8x8-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x5-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x5-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x6-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x6-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x8-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x8-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x10-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-10x10-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-12x10-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-12x10-unorm-srgb"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-12x12-unorm"
+          },
+          {
+            "type": "enum-value",
+            "value": "astc-12x12-unorm-srgb"
           },
           {
             "type": "enum-value",

@@ -6,20 +6,6 @@ interface AnimationEffect {
     undefined            updateTiming(optional OptionalEffectTiming timing = {});
 };
 
-// Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
-[Exposed=Window]
-partial interface AnimationEffect {
-    // Timing hierarchy
-    readonly attribute GroupEffect?     parent;
-    readonly attribute AnimationEffect? previousSibling;
-    readonly attribute AnimationEffect? nextSibling;
-
-    undefined before (AnimationEffect... effects);
-    undefined after (AnimationEffect... effects);
-    undefined replace (AnimationEffect... effects);
-    undefined remove ();
-};
-
 // Source: CSS Animation Worklet API (https://www.w3.org/TR/css-animation-worklet-1/)
 [Exposed=AnimationWorklet]
 partial interface AnimationEffect {

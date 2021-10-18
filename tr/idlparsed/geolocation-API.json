@@ -347,7 +347,7 @@
         "partial": false
       },
       "GeolocationPosition": {
-        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute DOMTimeStamp timestamp;\n};",
+        "fragment": "[Exposed=Window, SecureContext]\ninterface GeolocationPosition {\n  readonly attribute GeolocationCoordinates coords;\n  readonly attribute EpochTimeStamp timestamp;\n};",
         "type": "interface",
         "name": "GeolocationPosition",
         "inheritance": null,
@@ -376,7 +376,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMTimeStamp"
+              "idlType": "EpochTimeStamp"
             },
             "extAttrs": [],
             "special": "",
@@ -691,13 +691,15 @@
       ],
       "PositionOptions": [],
       "GeolocationPosition": [
-        "GeolocationCoordinates"
+        "GeolocationCoordinates",
+        "EpochTimeStamp"
       ],
       "GeolocationCoordinates": [],
       "GeolocationPositionError": []
     },
     "externalDependencies": [
-      "Navigator"
+      "Navigator",
+      "EpochTimeStamp"
     ],
     "hasObsoleteIdl": false
   }

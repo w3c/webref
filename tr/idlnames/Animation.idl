@@ -26,10 +26,3 @@ interface Animation : EventTarget {
     undefined persist();
     undefined commitStyles();
 };
-
-// Source: Web Animations Level 2 (https://drafts.csswg.org/web-animations-2/)
-[Exposed=Window]
-partial interface Animation {
-    attribute CSSNumberish?       startTime;
-    attribute CSSNumberish?       currentTime;
-};

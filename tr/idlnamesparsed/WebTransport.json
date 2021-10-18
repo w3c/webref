@@ -6,78 +6,10 @@
       "title": "WebTransport",
       "url": "https://www.w3.org/TR/webtransport/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute WebTransportState state;\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n  attribute EventHandler onstatechange;\n};",
+    "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface WebTransport {\n  constructor(USVString url, optional WebTransportOptions options = {});\n\n  Promise<WebTransportStats> getStats();\n  readonly attribute Promise<undefined> ready;\n  readonly attribute Promise<WebTransportCloseInfo> closed;\n  undefined close(optional WebTransportCloseInfo closeInfo = {});\n\n  readonly attribute WebTransportDatagramDuplexStream datagrams;\n\n  Promise<WebTransportBidirectionalStream> createBidirectionalStream();\n  /* a ReadableStream of WebTransportBidirectionalStream objects */\n  readonly attribute ReadableStream incomingBidirectionalStreams;\n\n  Promise<WritableStream> createUnidirectionalStream();\n  /* a ReadableStream of ReceiveStreams */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
     "href": "https://www.w3.org/TR/webtransport/#webtransport"
   },
-  "extended": [
-    {
-      "spec": {
-        "title": "WebTransport",
-        "url": "https://www.w3.org/TR/webtransport/"
-      },
-      "fragment": "WebTransport includes UnidirectionalStreamsTransport;"
-    },
-    {
-      "spec": {
-        "title": "WebTransport",
-        "url": "https://www.w3.org/TR/webtransport/"
-      },
-      "fragment": "WebTransport includes BidirectionalStreamsTransport;"
-    },
-    {
-      "spec": {
-        "title": "WebTransport",
-        "url": "https://www.w3.org/TR/webtransport/"
-      },
-      "fragment": "WebTransport includes DatagramTransport;"
-    }
-  ],
+  "extended": [],
   "inheritance": null,
-  "includes": [
-    {
-      "name": "UnidirectionalStreamsTransport",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "WebTransport",
-          "url": "https://www.w3.org/TR/webtransport/"
-        },
-        "fragment": "interface mixin UnidirectionalStreamsTransport {\n  Promise<SendStream> createUnidirectionalStream(optional SendStreamParameters parameters = {});\n  /* a ReadableStream of ReceiveStream objects */\n  readonly attribute ReadableStream incomingUnidirectionalStreams;\n};",
-        "href": "https://www.w3.org/TR/webtransport/#unidirectionalstreamstransport"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "BidirectionalStreamsTransport",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "WebTransport",
-          "url": "https://www.w3.org/TR/webtransport/"
-        },
-        "fragment": "interface mixin BidirectionalStreamsTransport {\n    Promise<BidirectionalStream> createBidirectionalStream();\n    /* a ReadableStream of BidirectionalStream objects */\n    readonly attribute ReadableStream incomingBidirectionalStreams;\n};",
-        "href": "https://www.w3.org/TR/webtransport/#bidirectionalstreamstransport"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "DatagramTransport",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "WebTransport",
-          "url": "https://www.w3.org/TR/webtransport/"
-        },
-        "fragment": "interface mixin DatagramTransport {\n    readonly attribute unsigned short maxDatagramSize;\n    readonly attribute DatagramDuplexStream datagrams;\n};",
-        "href": "https://www.w3.org/TR/webtransport/#datagramtransport"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    }
-  ]
+  "includes": []
 }
