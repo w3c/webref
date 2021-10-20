@@ -19012,7 +19012,7 @@
         "partial": false
       },
       "CanvasTextDrawingStyles": {
-        "fragment": "interface mixin CanvasTextDrawingStyles {\n  // text\n  attribute DOMString font; // (default 10px sans-serif)\n  attribute CanvasTextAlign textAlign; // (default: \"start\")\n  attribute CanvasTextBaseline textBaseline; // (default: \"alphabetic\")\n  attribute CanvasDirection direction; // (default: \"inherit\")\n  attribute double textLetterSpacing; // (default: 0)\n  attribute double textWordSpacing; // (default: 0)\n  attribute CanvasFontKerning fontKerning; // (default: \"auto\")\n  attribute CanvasFontStretch fontStretch; // (default: \"normal\")\n  attribute CanvasFontVariantCaps fontVariantCaps; // (default: \"normal\")\n  attribute CanvasTextRendering textRendering; // (default: \"auto\")\n};",
+        "fragment": "interface mixin CanvasTextDrawingStyles {\n  // text\n  attribute DOMString font; // (default 10px sans-serif)\n  attribute CanvasTextAlign textAlign; // (default: \"start\")\n  attribute CanvasTextBaseline textBaseline; // (default: \"alphabetic\")\n  attribute CanvasDirection direction; // (default: \"inherit\")\n  attribute double letterSpacing; // (default: 0)\n  attribute CanvasFontKerning fontKerning; // (default: \"auto\")\n  attribute CanvasFontStretch fontStretch; // (default: \"normal\")\n  attribute CanvasFontVariantCaps fontVariantCaps; // (default: \"normal\")\n  attribute CanvasTextRendering textRendering; // (default: \"auto\")\n  attribute double wordSpacing; // (default: 0)\n};",
         "type": "interface mixin",
         "name": "CanvasTextDrawingStyles",
         "inheritance": null,
@@ -19079,22 +19079,7 @@
           },
           {
             "type": "attribute",
-            "name": "textLetterSpacing",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "double"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": false
-          },
-          {
-            "type": "attribute",
-            "name": "textWordSpacing",
+            "name": "letterSpacing",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -19162,6 +19147,21 @@
               "nullable": false,
               "union": false,
               "idlType": "CanvasTextRendering"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": false
+          },
+          {
+            "type": "attribute",
+            "name": "wordSpacing",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "double"
             },
             "extAttrs": [],
             "special": "",
