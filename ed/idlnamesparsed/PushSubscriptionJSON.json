@@ -6,7 +6,7 @@
       "title": "Push API",
       "url": "https://www.w3.org/TR/push-api/"
     },
-    "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  DOMTimeStamp? expirationTime;\n  record<DOMString, USVString> keys;\n};",
+    "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  EpochTimeStamp? expirationTime = null;\n  record<DOMString, USVString> keys;\n};",
     "href": "https://w3c.github.io/push-api/#dom-pushsubscriptionjson"
   },
   "extended": [],
