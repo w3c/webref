@@ -1,0 +1,23 @@
+From 29657e572cd9016c02cd97746ccbffca727b2183 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 21 Oct 2021 08:19:49 +0200
+Subject: [PATCH] Drop onvisibilitychange, integrated in HTML
+
+https://github.com/w3c/page-visibility/pull/73
+---
+ ed/idl/page-visibility.idl | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/ed/idl/page-visibility.idl b/ed/idl/page-visibility.idl
+index 1c638f343..2ebbde233 100644
+--- a/ed/idl/page-visibility.idl
++++ b/ed/idl/page-visibility.idl
+@@ -10,5 +10,4 @@ enum VisibilityState {
+ partial interface Document {
+   readonly attribute boolean hidden;
+   readonly attribute VisibilityState visibilityState;
+-  attribute EventHandler onvisibilitychange;
+ };
+-- 
+2.33.0.windows.2
+
