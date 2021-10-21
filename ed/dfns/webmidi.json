@@ -195,23 +195,44 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-midi-fp",
-      "href": "https://webaudio.github.io/web-midi-api/#dfn-midi-fp",
+      "id": "dom-midipermissiondescriptor",
+      "href": "https://webaudio.github.io/web-midi-api/#dom-midipermissiondescriptor",
       "linkingText": [
-        "midi-fp"
+        "MidiPermissionDescriptor"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
       "informative": false,
       "heading": {
-        "id": "permissions-policy-integration",
-        "href": "https://webaudio.github.io/web-midi-api/#permissions-policy-integration",
-        "title": "Permissions Policy Integration",
+        "id": "permissions-integration",
+        "href": "https://webaudio.github.io/web-midi-api/#permissions-integration",
+        "title": "Permissions Integration",
         "number": "4.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-midipermissiondescriptor-sysex",
+      "href": "https://webaudio.github.io/web-midi-api/#dom-midipermissiondescriptor-sysex",
+      "linkingText": [
+        "sysex"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "MidiPermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration",
+        "href": "https://webaudio.github.io/web-midi-api/#permissions-integration",
+        "title": "Permissions Integration",
+        "number": "4.1"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-navigator",
@@ -228,7 +249,7 @@
         "id": "extensions-to-the-navigator-interface",
         "href": "https://webaudio.github.io/web-midi-api/#extensions-to-the-navigator-interface",
         "title": "Extensions to the Navigator interface",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "heading"
     },
@@ -254,7 +275,7 @@
         "id": "extensions-to-the-navigator-interface",
         "href": "https://webaudio.github.io/web-midi-api/#extensions-to-the-navigator-interface",
         "title": "Extensions to the Navigator interface",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "dt"
     },
@@ -273,7 +294,7 @@
         "id": "extensions-to-the-navigator-interface",
         "href": "https://webaudio.github.io/web-midi-api/#extensions-to-the-navigator-interface",
         "title": "Extensions to the Navigator interface",
-        "number": "4.2"
+        "number": "4.3"
       },
       "definedIn": "prose"
     },
@@ -292,7 +313,7 @@
         "id": "midioptions-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midioptions-dictionary",
         "title": "MIDIOptions Dictionary",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "heading"
     },
@@ -313,7 +334,7 @@
         "id": "midioptions-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midioptions-dictionary",
         "title": "MIDIOptions Dictionary",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -334,7 +355,7 @@
         "id": "midioptions-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midioptions-dictionary",
         "title": "MIDIOptions Dictionary",
-        "number": "4.3"
+        "number": "4.4"
       },
       "definedIn": "dt"
     },
@@ -353,7 +374,7 @@
         "id": "midiinputmap-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiinputmap-interface",
         "title": "MIDIInputMap Interface",
-        "number": "4.4"
+        "number": "4.5"
       },
       "definedIn": "heading"
     },
@@ -372,7 +393,7 @@
         "id": "midioutputmap-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midioutputmap-interface",
         "title": "MIDIOutputMap Interface",
-        "number": "4.5"
+        "number": "4.6"
       },
       "definedIn": "heading"
     },
@@ -391,7 +412,7 @@
         "id": "midiaccess-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
         "title": "MIDIAccess Interface",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "heading"
     },
@@ -414,7 +435,7 @@
         "id": "midiaccess-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
         "title": "MIDIAccess Interface",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "dt"
     },
@@ -437,7 +458,7 @@
         "id": "midiaccess-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
         "title": "MIDIAccess Interface",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "dt"
     },
@@ -460,7 +481,7 @@
         "id": "midiaccess-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
         "title": "MIDIAccess Interface",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "dt"
     },
@@ -483,7 +504,7 @@
         "id": "midiaccess-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiaccess-interface",
         "title": "MIDIAccess Interface",
-        "number": "4.6"
+        "number": "4.7"
       },
       "definedIn": "dt"
     },
@@ -502,7 +523,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "heading"
     },
@@ -525,7 +546,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -548,7 +569,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -571,7 +592,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -594,7 +615,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -617,7 +638,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -640,7 +661,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -663,7 +684,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -686,7 +707,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -711,7 +732,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -731,7 +752,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -756,7 +777,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "dt"
     },
@@ -775,7 +796,7 @@
         "id": "midiport-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiport-interface",
         "title": "MIDIPort Interface",
-        "number": "4.7"
+        "number": "4.8"
       },
       "definedIn": "prose"
     },
@@ -794,7 +815,7 @@
         "id": "midiinput-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
         "title": "MIDIInput Interface",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "heading"
     },
@@ -817,7 +838,7 @@
         "id": "midiinput-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiinput-interface",
         "title": "MIDIInput Interface",
-        "number": "4.7.1"
+        "number": "4.8.1"
       },
       "definedIn": "dt"
     },
@@ -836,7 +857,7 @@
         "id": "midioutput-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midioutput-interface",
         "title": "MIDIOutput Interface",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "heading"
     },
@@ -863,7 +884,7 @@
         "id": "midioutput-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midioutput-interface",
         "title": "MIDIOutput Interface",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "dt"
     },
@@ -888,7 +909,7 @@
         "id": "midioutput-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midioutput-interface",
         "title": "MIDIOutput Interface",
-        "number": "4.7.2"
+        "number": "4.8.2"
       },
       "definedIn": "dt"
     },
@@ -907,7 +928,7 @@
         "id": "midiporttype-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiporttype-enum",
         "title": "MIDIPortType Enum",
-        "number": "4.7.3"
+        "number": "4.8.3"
       },
       "definedIn": "heading"
     },
@@ -928,7 +949,7 @@
         "id": "midiporttype-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiporttype-enum",
         "title": "MIDIPortType Enum",
-        "number": "4.7.3"
+        "number": "4.8.3"
       },
       "definedIn": "dt"
     },
@@ -949,7 +970,7 @@
         "id": "midiporttype-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiporttype-enum",
         "title": "MIDIPortType Enum",
-        "number": "4.7.3"
+        "number": "4.8.3"
       },
       "definedIn": "dt"
     },
@@ -968,7 +989,7 @@
         "id": "midiportdevicestate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportdevicestate-enum",
         "title": "MIDIPortDeviceState Enum",
-        "number": "4.7.4"
+        "number": "4.8.4"
       },
       "definedIn": "heading"
     },
@@ -989,7 +1010,7 @@
         "id": "midiportdevicestate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportdevicestate-enum",
         "title": "MIDIPortDeviceState Enum",
-        "number": "4.7.4"
+        "number": "4.8.4"
       },
       "definedIn": "dt"
     },
@@ -1010,7 +1031,7 @@
         "id": "midiportdevicestate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportdevicestate-enum",
         "title": "MIDIPortDeviceState Enum",
-        "number": "4.7.4"
+        "number": "4.8.4"
       },
       "definedIn": "dt"
     },
@@ -1029,7 +1050,7 @@
         "id": "midiportconnectionstate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportconnectionstate-enum",
         "title": "MIDIPortConnectionState Enum",
-        "number": "4.7.5"
+        "number": "4.8.5"
       },
       "definedIn": "heading"
     },
@@ -1050,7 +1071,7 @@
         "id": "midiportconnectionstate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportconnectionstate-enum",
         "title": "MIDIPortConnectionState Enum",
-        "number": "4.7.5"
+        "number": "4.8.5"
       },
       "definedIn": "dt"
     },
@@ -1071,7 +1092,7 @@
         "id": "midiportconnectionstate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportconnectionstate-enum",
         "title": "MIDIPortConnectionState Enum",
-        "number": "4.7.5"
+        "number": "4.8.5"
       },
       "definedIn": "dt"
     },
@@ -1092,7 +1113,7 @@
         "id": "midiportconnectionstate-enum",
         "href": "https://webaudio.github.io/web-midi-api/#midiportconnectionstate-enum",
         "title": "MIDIPortConnectionState Enum",
-        "number": "4.7.5"
+        "number": "4.8.5"
       },
       "definedIn": "dt"
     },
@@ -1111,7 +1132,7 @@
         "id": "midimessageevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midimessageevent-interface",
         "title": "MIDIMessageEvent Interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "heading"
     },
@@ -1138,7 +1159,7 @@
         "id": "midimessageevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midimessageevent-interface",
         "title": "MIDIMessageEvent Interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "pre"
     },
@@ -1161,7 +1182,7 @@
         "id": "midimessageevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midimessageevent-interface",
         "title": "MIDIMessageEvent Interface",
-        "number": "4.8"
+        "number": "4.9"
       },
       "definedIn": "dt"
     },
@@ -1180,7 +1201,7 @@
         "id": "midimessageeventinit-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midimessageeventinit-dictionary",
         "title": "MIDIMessageEventInit Dictionary",
-        "number": "4.8.1"
+        "number": "4.9.1"
       },
       "definedIn": "heading"
     },
@@ -1201,7 +1222,7 @@
         "id": "midimessageeventinit-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midimessageeventinit-dictionary",
         "title": "MIDIMessageEventInit Dictionary",
-        "number": "4.8.1"
+        "number": "4.9.1"
       },
       "definedIn": "dt"
     },
@@ -1220,7 +1241,7 @@
         "id": "midiconnectionevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiconnectionevent-interface",
         "title": "MIDIConnectionEvent Interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "heading"
     },
@@ -1247,7 +1268,7 @@
         "id": "midiconnectionevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiconnectionevent-interface",
         "title": "MIDIConnectionEvent Interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "pre"
     },
@@ -1270,7 +1291,7 @@
         "id": "midiconnectionevent-interface",
         "href": "https://webaudio.github.io/web-midi-api/#midiconnectionevent-interface",
         "title": "MIDIConnectionEvent Interface",
-        "number": "4.9"
+        "number": "4.10"
       },
       "definedIn": "dt"
     },
@@ -1289,7 +1310,7 @@
         "id": "midiconnectioneventinit-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midiconnectioneventinit-dictionary",
         "title": "MIDIConnectionEventInit Dictionary",
-        "number": "4.9.1"
+        "number": "4.10.1"
       },
       "definedIn": "heading"
     },
@@ -1310,7 +1331,7 @@
         "id": "midiconnectioneventinit-dictionary",
         "href": "https://webaudio.github.io/web-midi-api/#midiconnectioneventinit-dictionary",
         "title": "MIDIConnectionEventInit Dictionary",
-        "number": "4.9.1"
+        "number": "4.10.1"
       },
       "definedIn": "dt"
     }
