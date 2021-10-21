@@ -372,8 +372,7 @@ dictionary RTCRtpContributingSource {
   required unsigned long rtpTimestamp;
 };
 
-dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {
-};
+dictionary RTCRtpSynchronizationSource : RTCRtpContributingSource {};
 
 [Exposed=Window]
 interface RTCRtpTransceiver {
