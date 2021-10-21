@@ -1,0 +1,28 @@
+From a151643e4673b8dec40c1d131c05a5255b34e1a0 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Thu, 21 Oct 2021 11:12:22 +0200
+Subject: [PATCH] Drop duplicate MidiPersmissionDescriptor definition
+
+https://github.com/WebAudio/web-midi-api/pull/222
+---
+ ed/idl/webmidi.idl | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/ed/idl/webmidi.idl b/ed/idl/webmidi.idl
+index 1acf1ac1d..89847c3d4 100644
+--- a/ed/idl/webmidi.idl
++++ b/ed/idl/webmidi.idl
+@@ -3,10 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Web MIDI API (https://webaudio.github.io/web-midi-api/)
+ 
+-dictionary MidiPermissionDescriptor : PermissionDescriptor {
+-  boolean sysex = false;
+-};
+-
+ partial interface Navigator {
+   [SecureContext]
+   Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});
+-- 
+2.33.0.windows.2
+
