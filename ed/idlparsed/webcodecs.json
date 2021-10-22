@@ -5350,7 +5350,8 @@
       ],
       "EncodedVideoChunkMetadata": [
         "VideoDecoderConfig",
-        "SvcOutputMetadata"
+        "SvcOutputMetadata",
+        "BufferSource"
       ],
       "SvcOutputMetadata": [],
       "AudioDecoderSupport": [
@@ -5365,8 +5366,11 @@
       "VideoEncoderSupport": [
         "VideoEncoderConfig"
       ],
-      "AudioDecoderConfig": [],
+      "AudioDecoderConfig": [
+        "BufferSource"
+      ],
       "VideoDecoderConfig": [
+        "BufferSource",
         "VideoColorSpaceInit",
         "HardwareAcceleration"
       ],
@@ -5380,26 +5384,32 @@
       "VideoEncoderEncodeOptions": [],
       "EncodedAudioChunk": [
         "EncodedAudioChunkInit",
-        "EncodedAudioChunkType"
+        "EncodedAudioChunkType",
+        "BufferSource"
       ],
       "EncodedAudioChunkInit": [
-        "EncodedAudioChunkType"
+        "EncodedAudioChunkType",
+        "BufferSource"
       ],
       "EncodedVideoChunk": [
         "EncodedVideoChunkInit",
-        "EncodedVideoChunkType"
+        "EncodedVideoChunkType",
+        "BufferSource"
       ],
       "EncodedVideoChunkInit": [
-        "EncodedVideoChunkType"
+        "EncodedVideoChunkType",
+        "BufferSource"
       ],
       "AudioData": [
         "AudioDataInit",
         "AudioSampleFormat",
         "AudioDataCopyToOptions",
+        "BufferSource",
         "AudioData"
       ],
       "AudioDataInit": [
-        "AudioSampleFormat"
+        "AudioSampleFormat",
+        "BufferSource"
       ],
       "AudioDataCopyToOptions": [
         "AudioSampleFormat"
@@ -5407,6 +5417,7 @@
       "VideoFrame": [
         "CanvasImageSource",
         "VideoFrameInit",
+        "BufferSource",
         "VideoFrameBufferInit",
         "VideoPixelFormat",
         "DOMRectReadOnly",
@@ -5465,6 +5476,7 @@
       ]
     },
     "externalDependencies": [
+      "BufferSource",
       "BitrateMode",
       "CanvasImageSource",
       "DOMRectReadOnly",

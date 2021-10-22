@@ -1087,11 +1087,16 @@
         "PushSubscriptionOptionsInit",
         "PushPermissionState"
       ],
-      "PushSubscriptionOptions": [],
-      "PushSubscriptionOptionsInit": [],
+      "PushSubscriptionOptions": [
+        "ArrayBuffer"
+      ],
+      "PushSubscriptionOptionsInit": [
+        "BufferSource"
+      ],
       "PushSubscription": [
         "EpochTimeStamp",
         "PushSubscriptionOptions",
+        "ArrayBuffer",
         "PushEncryptionKeyName",
         "PushSubscriptionJSON"
       ],
@@ -1099,6 +1104,7 @@
         "EpochTimeStamp"
       ],
       "PushMessageData": [
+        "ArrayBuffer",
         "Blob"
       ],
       "ServiceWorkerGlobalScope": [
@@ -1125,6 +1131,8 @@
     },
     "externalDependencies": [
       "ServiceWorkerRegistration",
+      "ArrayBuffer",
+      "BufferSource",
       "EpochTimeStamp",
       "Blob",
       "ServiceWorkerGlobalScope",

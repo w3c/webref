@@ -2763,7 +2763,8 @@
         "Crypto"
       ],
       "Crypto": [
-        "SubtleCrypto"
+        "SubtleCrypto",
+        "ArrayBufferView"
       ],
       "Algorithm": [],
       "KeyAlgorithm": [],
@@ -2773,7 +2774,9 @@
       "SubtleCrypto": [
         "AlgorithmIdentifier",
         "CryptoKey",
+        "BufferSource",
         "KeyUsage",
+        "ArrayBuffer",
         "KeyFormat",
         "JsonWebKey"
       ],
@@ -2808,7 +2811,8 @@
         "Algorithm"
       ],
       "RsaOaepParams": [
-        "Algorithm"
+        "Algorithm",
+        "BufferSource"
       ],
       "EcdsaParams": [
         "Algorithm",
@@ -2831,7 +2835,8 @@
         "CryptoKey"
       ],
       "AesCtrParams": [
-        "Algorithm"
+        "Algorithm",
+        "BufferSource"
       ],
       "AesKeyAlgorithm": [
         "KeyAlgorithm"
@@ -2843,10 +2848,12 @@
         "Algorithm"
       ],
       "AesCbcParams": [
-        "Algorithm"
+        "Algorithm",
+        "BufferSource"
       ],
       "AesGcmParams": [
-        "Algorithm"
+        "Algorithm",
+        "BufferSource"
       ],
       "HmacImportParams": [
         "Algorithm",
@@ -2861,15 +2868,21 @@
       ],
       "HkdfParams": [
         "Algorithm",
-        "HashAlgorithmIdentifier"
+        "HashAlgorithmIdentifier",
+        "BufferSource"
       ],
       "Pbkdf2Params": [
         "Algorithm",
+        "BufferSource",
         "HashAlgorithmIdentifier"
       ]
     },
     "externalDependencies": [
-      "WindowOrWorkerGlobalScope"
+      "WindowOrWorkerGlobalScope",
+      "ArrayBufferView",
+      "BufferSource",
+      "ArrayBuffer",
+      "Uint8Array"
     ],
     "hasObsoleteIdl": false
   }

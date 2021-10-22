@@ -8318,6 +8318,7 @@
         "ScriptProcessorNode",
         "StereoPannerNode",
         "WaveShaperNode",
+        "ArrayBuffer",
         "DecodeSuccessCallback",
         "DecodeErrorCallback"
       ],
@@ -8356,7 +8357,8 @@
         "AudioBuffer"
       ],
       "AudioBuffer": [
-        "AudioBufferOptions"
+        "AudioBufferOptions",
+        "Float32Array"
       ],
       "AudioBufferOptions": [],
       "AudioNode": [
@@ -8382,7 +8384,9 @@
       "AnalyserNode": [
         "AudioNode",
         "BaseAudioContext",
-        "AnalyserOptions"
+        "AnalyserOptions",
+        "Float32Array",
+        "Uint8Array"
       ],
       "AnalyserOptions": [
         "AudioNodeOptions"
@@ -8417,7 +8421,8 @@
         "BaseAudioContext",
         "BiquadFilterOptions",
         "BiquadFilterType",
-        "AudioParam"
+        "AudioParam",
+        "Float32Array"
       ],
       "BiquadFilterOptions": [
         "AudioNodeOptions",
@@ -8486,7 +8491,8 @@
       "IIRFilterNode": [
         "AudioNode",
         "BaseAudioContext",
-        "IIRFilterOptions"
+        "IIRFilterOptions",
+        "Float32Array"
       ],
       "IIRFilterOptions": [
         "AudioNodeOptions"
@@ -8574,6 +8580,7 @@
         "AudioNode",
         "BaseAudioContext",
         "WaveShaperOptions",
+        "Float32Array",
         "OverSampleType"
       ],
       "WaveShaperOptions": [
@@ -8611,12 +8618,15 @@
     "externalDependencies": [
       "EventTarget",
       "EventHandler",
+      "ArrayBuffer",
       "HTMLMediaElement",
       "MediaStream",
       "MediaStreamTrack",
       "DOMHighResTimeStamp",
       "Event",
       "EventInit",
+      "Float32Array",
+      "Uint8Array",
       "Worklet",
       "WorkletGlobalScope",
       "MessagePort"

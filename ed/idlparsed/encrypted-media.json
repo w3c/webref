@@ -1542,25 +1542,30 @@
       ],
       "MediaKeys": [
         "MediaKeySession",
-        "MediaKeySessionType"
+        "MediaKeySessionType",
+        "BufferSource"
       ],
       "MediaKeySession": [
         "EventTarget",
         "MediaKeySessionClosedReason",
         "MediaKeyStatusMap",
-        "EventHandler"
+        "EventHandler",
+        "BufferSource"
       ],
       "MediaKeyStatusMap": [
+        "BufferSource",
         "MediaKeyStatus"
       ],
       "MediaKeyMessageEvent": [
         "Event",
         "MediaKeyMessageEventInit",
-        "MediaKeyMessageType"
+        "MediaKeyMessageType",
+        "ArrayBuffer"
       ],
       "MediaKeyMessageEventInit": [
         "EventInit",
-        "MediaKeyMessageType"
+        "MediaKeyMessageType",
+        "ArrayBuffer"
       ],
       "HTMLMediaElement": [
         "MediaKeys",
@@ -1568,17 +1573,21 @@
       ],
       "MediaEncryptedEvent": [
         "Event",
-        "MediaEncryptedEventInit"
+        "MediaEncryptedEventInit",
+        "ArrayBuffer"
       ],
       "MediaEncryptedEventInit": [
-        "EventInit"
+        "EventInit",
+        "ArrayBuffer"
       ]
     },
     "externalDependencies": [
       "Navigator",
+      "BufferSource",
       "EventTarget",
       "EventHandler",
       "Event",
+      "ArrayBuffer",
       "EventInit",
       "HTMLMediaElement"
     ],

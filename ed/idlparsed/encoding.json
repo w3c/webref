@@ -648,12 +648,14 @@
       "TextDecodeOptions": [],
       "TextDecoder": [
         "TextDecoderOptions",
+        "BufferSource",
         "TextDecodeOptions",
         "TextDecoderCommon"
       ],
       "TextEncoderCommon": [],
       "TextEncoderEncodeIntoResult": [],
       "TextEncoder": [
+        "Uint8Array",
         "TextEncoderEncodeIntoResult",
         "TextEncoderCommon"
       ],
@@ -667,7 +669,10 @@
         "GenericTransformStream"
       ]
     },
-    "externalDependencies": [],
+    "externalDependencies": [
+      "BufferSource",
+      "Uint8Array"
+    ],
     "hasObsoleteIdl": false
   }
 }
