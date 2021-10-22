@@ -52,7 +52,7 @@ async function main() {
 
   console.log('Commit patch file to a separate branch...');
   const branchName = 'patch-' + (new Date()).toISOString().replace(/[^\d]/g, '');
-  await execFile('git', ['co', '-b', branchName]);
+  await execFile('git', ['checkout', '-b', branchName]);
   await execFile('git', ['add', finalPatchFile]);
   await execFile('git', ['commit', '-m', `Add patch for ${commitFile}`, '-m', patchTitle]);
   console.log(`  committed to branch ${branchName}`);
