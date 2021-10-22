@@ -1,0 +1,25 @@
+From 1921eecacab1bada0c3fe0bf35c36f40bb8d6185 Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Fri, 22 Oct 2021 09:41:45 +0200
+Subject: [PATCH] Reinstate DOMTimeStamp
+
+Still needed in cookiestore and webrtc
+https://github.com/WICG/cookie-store/issues/205
+https://github.com/w3c/webrtc-pc/issues/2674
+---
+ ed/idl/webidl.idl | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/ed/idl/webidl.idl b/ed/idl/webidl.idl
+index 2fb5af470..43748c5ac 100644
+--- a/ed/idl/webidl.idl
++++ b/ed/idl/webidl.idl
+@@ -46,3 +46,5 @@ interface DOMException { // but see below note about ECMAScript binding
+ 
+ callback Function = any (any... arguments);
+ callback VoidFunction = undefined ();
++
++typedef unsigned long long DOMTimeStamp;
+-- 
+2.33.1
+
