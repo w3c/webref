@@ -14499,7 +14499,7 @@
         "id": "sec-runtime-semantics-repeatmatcher-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-repeatmatcher-abstract-operation",
         "title": "RepeatMatcher ( m, min, max, greedy, x, c, parenIndex, parenCount )",
-        "number": "22.2.2.5.1"
+        "number": "22.2.2.3.1"
       },
       "definedIn": "heading"
     },
@@ -14518,7 +14518,7 @@
         "id": "sec-runtime-semantics-iswordchar-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-iswordchar-abstract-operation",
         "title": "IsWordChar ( e )",
-        "number": "22.2.2.6.1"
+        "number": "22.2.2.4.1"
       },
       "definedIn": "heading"
     },
@@ -14537,64 +14537,7 @@
         "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-charactersetmatcher-abstract-operation",
         "title": "CharacterSetMatcher ( A, invert, direction )",
-        "number": "22.2.2.8.1"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "sec-runtime-semantics-canonicalize-ch",
-      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
-      "linkingText": [
-        "Canonicalize(ch)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-runtime-semantics-canonicalize-ch",
-        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
-        "title": "Canonicalize ( ch )",
-        "number": "22.2.2.8.2"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "sec-runtime-semantics-unicodematchproperty-p",
-      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
-      "linkingText": [
-        "UnicodeMatchProperty(p)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-runtime-semantics-unicodematchproperty-p",
-        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
-        "title": "UnicodeMatchProperty ( p )",
-        "number": "22.2.2.8.3"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
-      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v",
-      "linkingText": [
-        "UnicodeMatchPropertyValue(p, v)"
-      ],
-      "localLinkingText": [],
-      "type": "abstract-op",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
-        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v",
-        "title": "UnicodeMatchPropertyValue ( p, v )",
-        "number": "22.2.2.8.4"
+        "number": "22.2.2.7.1"
       },
       "definedIn": "heading"
     },
@@ -14613,7 +14556,26 @@
         "id": "sec-backreference-matcher",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-backreference-matcher",
         "title": "BackreferenceMatcher ( n, direction )",
-        "number": "22.2.2.9.1"
+        "number": "22.2.2.7.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-runtime-semantics-canonicalize-ch",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
+      "linkingText": [
+        "Canonicalize(ch)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-runtime-semantics-canonicalize-ch",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-canonicalize-ch",
+        "title": "Canonicalize ( ch )",
+        "number": "22.2.2.7.3"
       },
       "definedIn": "heading"
     },
@@ -14632,7 +14594,45 @@
         "id": "sec-runtime-semantics-characterrange-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-characterrange-abstract-operation",
         "title": "CharacterRange ( A, B )",
-        "number": "22.2.2.15.1"
+        "number": "22.2.2.9.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-runtime-semantics-unicodematchproperty-p",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
+      "linkingText": [
+        "UnicodeMatchProperty(p)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-runtime-semantics-unicodematchproperty-p",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchproperty-p",
+        "title": "UnicodeMatchProperty ( p )",
+        "number": "22.2.2.9.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
+      "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v",
+      "linkingText": [
+        "UnicodeMatchPropertyValue(p, v)"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
+        "href": "https://tc39.es/ecma262/multipage/text-processing.html#sec-runtime-semantics-unicodematchpropertyvalue-p-v",
+        "title": "UnicodeMatchPropertyValue ( p, v )",
+        "number": "22.2.2.9.3"
       },
       "definedIn": "heading"
     },
@@ -22861,7 +22861,7 @@
         "id": "sec-runtime-semantics-characterrangeorunion-abstract-operation",
         "href": "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-runtime-semantics-characterrangeorunion-abstract-operation",
         "title": "CharacterRangeOrUnion ( A, B )",
-        "number": "B.1.2.4.1"
+        "number": "B.1.2.7.1"
       },
       "definedIn": "heading"
     },
