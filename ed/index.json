@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-10-23T12:47:03.614Z",
+  "date": "2021-10-23T18:49:18.515Z",
   "options": {
     "output": "report",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 446,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -10088,15 +10088,13 @@
         "https://www.w3.org/TR/css-break-3/",
         "https://drafts.csswg.org/css-break/"
       ],
-      "crawled": "https://drafts.csswg.org/css-break/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/css-break-3.json",
-      "refs": "refs/css-break-3.json",
-      "css": "css/css-break.json",
-      "dfns": "dfns/css-break-3.json",
-      "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-break/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-break-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
