@@ -17,8 +17,6 @@ interface GPURenderPassEncoder {
     undefined beginPipelineStatisticsQuery(GPUQuerySet querySet, GPUSize32 queryIndex);
     undefined endPipelineStatisticsQuery();
 
-    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);
-
     undefined executeBundles(sequence<GPURenderBundle> bundles);
     undefined endPass();
 };
