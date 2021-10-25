@@ -96,16 +96,16 @@
   },
   "valuespaces": {
     "<font-format>": {
-      "value": "[<string> | woff | truetype | opentype | woff2 | embedded-opentype | collection | svg]"
+      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
     },
     "<font-technology>": {
-      "value": "[features(<font-feature-technology>) | variations | color(<color-font-technology>) | palettes | incremental ]"
+      "value": "[<font-feature-technology> | <color-font-technology> | variations | palettes | incremental ]"
     },
     "<font-feature-technology>": {
-      "value": "[opentype | aat | graphite]"
+      "value": "[feature-opentype | feature-aat | feature-graphite]"
     },
     "<color-font-technology>": {
-      "value": "[COLRv0 | COLRv1 | SVG | sbix | CBDT ]"
+      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
     }
   }
 }

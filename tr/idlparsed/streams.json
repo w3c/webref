@@ -3202,14 +3202,20 @@
       "ReadableStreamBYOBReader": [
         "ReadableStream",
         "ReadableStreamBYOBReadResult",
+        "ArrayBufferView",
         "ReadableStreamGenericReader"
       ],
-      "ReadableStreamBYOBReadResult": [],
+      "ReadableStreamBYOBReadResult": [
+        "ArrayBufferView"
+      ],
       "ReadableStreamDefaultController": [],
       "ReadableByteStreamController": [
-        "ReadableStreamBYOBRequest"
+        "ReadableStreamBYOBRequest",
+        "ArrayBufferView"
       ],
-      "ReadableStreamBYOBRequest": [],
+      "ReadableStreamBYOBRequest": [
+        "ArrayBufferView"
+      ],
       "WritableStream": [
         "QueuingStrategy",
         "WritableStreamDefaultWriter"
@@ -3242,10 +3248,12 @@
       ],
       "QueuingStrategyInit": [],
       "ByteLengthQueuingStrategy": [
-        "QueuingStrategyInit"
+        "QueuingStrategyInit",
+        "Function"
       ],
       "CountQueuingStrategy": [
-        "QueuingStrategyInit"
+        "QueuingStrategyInit",
+        "Function"
       ],
       "GenericTransformStream": [
         "ReadableStream",
@@ -3253,7 +3261,9 @@
       ]
     },
     "externalDependencies": [
-      "AbortSignal"
+      "AbortSignal",
+      "ArrayBufferView",
+      "Function"
     ],
     "hasObsoleteIdl": false
   }

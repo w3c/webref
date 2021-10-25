@@ -470,8 +470,13 @@
       "GamepadHapticActuator": [
         "GamepadHapticActuatorType"
       ],
-      "GamepadPose": [],
-      "GamepadTouch": [],
+      "GamepadPose": [
+        "Float32Array"
+      ],
+      "GamepadTouch": [
+        "Float32Array",
+        "Uint32Array"
+      ],
       "Gamepad": [
         "GamepadHand",
         "GamepadHapticActuator",
@@ -480,6 +485,8 @@
       ]
     },
     "externalDependencies": [
+      "Float32Array",
+      "Uint32Array",
       "Gamepad"
     ],
     "hasObsoleteIdl": false

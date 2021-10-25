@@ -31,7 +31,7 @@ dictionary PushSubscriptionOptionsInit {
 [Exposed=(Window,Worker), SecureContext]
 interface PushSubscription {
   readonly attribute USVString endpoint;
-  readonly attribute DOMTimeStamp? expirationTime;
+  readonly attribute EpochTimeStamp? expirationTime;
   [SameObject] readonly attribute PushSubscriptionOptions options;
   ArrayBuffer? getKey(PushEncryptionKeyName name);
   Promise<boolean> unsubscribe();
@@ -41,7 +41,7 @@ interface PushSubscription {
 
 dictionary PushSubscriptionJSON {
   USVString endpoint;
-  DOMTimeStamp? expirationTime;
+  EpochTimeStamp? expirationTime = null;
   record<DOMString, USVString> keys;
 };
 

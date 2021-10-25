@@ -1429,6 +1429,7 @@
         "Instance"
       ],
       "WebAssembly": [
+        "BufferSource",
         "Module",
         "WebAssemblyInstantiatedSource",
         "Instance"
@@ -1440,22 +1441,26 @@
         "ImportExportKind"
       ],
       "Module": [
+        "BufferSource",
         "ModuleExportDescriptor",
         "Module",
-        "ModuleImportDescriptor"
+        "ModuleImportDescriptor",
+        "ArrayBuffer"
       ],
       "Instance": [
         "Module"
       ],
       "MemoryDescriptor": [],
       "Memory": [
-        "MemoryDescriptor"
+        "MemoryDescriptor",
+        "ArrayBuffer"
       ],
       "TableDescriptor": [
         "TableKind"
       ],
       "Table": [
         "TableDescriptor",
+        "Function",
         "void"
       ],
       "GlobalDescriptor": [
@@ -1469,6 +1474,9 @@
       "RuntimeError": []
     },
     "externalDependencies": [
+      "BufferSource",
+      "ArrayBuffer",
+      "Function",
       "void"
     ],
     "hasObsoleteIdl": false

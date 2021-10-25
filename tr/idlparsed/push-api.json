@@ -336,7 +336,7 @@
         "partial": false
       },
       "PushSubscription": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscription {\n  readonly attribute USVString endpoint;\n  readonly attribute DOMTimeStamp? expirationTime;\n  [SameObject] readonly attribute PushSubscriptionOptions options;\n  ArrayBuffer? getKey(PushEncryptionKeyName name);\n  Promise<boolean> unsubscribe();\n\n  PushSubscriptionJSON toJSON();\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushSubscription {\n  readonly attribute USVString endpoint;\n  readonly attribute EpochTimeStamp? expirationTime;\n  [SameObject] readonly attribute PushSubscriptionOptions options;\n  ArrayBuffer? getKey(PushEncryptionKeyName name);\n  Promise<boolean> unsubscribe();\n\n  PushSubscriptionJSON toJSON();\n};",
         "type": "interface",
         "name": "PushSubscription",
         "inheritance": null,
@@ -365,7 +365,7 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMTimeStamp"
+              "idlType": "EpochTimeStamp"
             },
             "extAttrs": [],
             "special": "",
@@ -492,7 +492,7 @@
         "partial": false
       },
       "PushSubscriptionJSON": {
-        "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  DOMTimeStamp? expirationTime;\n  record<DOMString, USVString> keys;\n};",
+        "fragment": "dictionary PushSubscriptionJSON {\n  USVString endpoint;\n  EpochTimeStamp? expirationTime = null;\n  record<DOMString, USVString> keys;\n};",
         "type": "dictionary",
         "name": "PushSubscriptionJSON",
         "inheritance": null,
@@ -522,9 +522,11 @@
               "generic": "",
               "nullable": true,
               "union": false,
-              "idlType": "DOMTimeStamp"
+              "idlType": "EpochTimeStamp"
             },
-            "default": null,
+            "default": {
+              "type": "null"
+            },
             "required": false
           },
           {
@@ -1085,15 +1087,24 @@
         "PushSubscriptionOptionsInit",
         "PushPermissionState"
       ],
-      "PushSubscriptionOptions": [],
-      "PushSubscriptionOptionsInit": [],
+      "PushSubscriptionOptions": [
+        "ArrayBuffer"
+      ],
+      "PushSubscriptionOptionsInit": [
+        "BufferSource"
+      ],
       "PushSubscription": [
+        "EpochTimeStamp",
         "PushSubscriptionOptions",
+        "ArrayBuffer",
         "PushEncryptionKeyName",
         "PushSubscriptionJSON"
       ],
-      "PushSubscriptionJSON": [],
+      "PushSubscriptionJSON": [
+        "EpochTimeStamp"
+      ],
       "PushMessageData": [
+        "ArrayBuffer",
         "Blob"
       ],
       "ServiceWorkerGlobalScope": [
@@ -1120,6 +1131,9 @@
     },
     "externalDependencies": [
       "ServiceWorkerRegistration",
+      "ArrayBuffer",
+      "BufferSource",
+      "EpochTimeStamp",
       "Blob",
       "ServiceWorkerGlobalScope",
       "EventHandler",

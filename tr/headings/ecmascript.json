@@ -1134,9 +1134,21 @@
     },
     {
       "id": "sec-stringtobigint",
-      "title": "StringToBigInt ( argument )",
+      "title": "StringToBigInt ( str )",
       "level": 3,
       "number": "7.1.14"
+    },
+    {
+      "id": "sec-stringintegerliteral-grammar",
+      "title": "StringIntegerLiteral Grammar",
+      "level": 4,
+      "number": "7.1.14.1"
+    },
+    {
+      "id": "sec-runtime-semantics-mv-for-stringintegerliteral",
+      "title": "Runtime Semantics: MV",
+      "level": 4,
+      "number": "7.1.14.2"
     },
     {
       "id": "sec-tobigint64",
@@ -8051,160 +8063,100 @@
       "number": "22.2.2.1"
     },
     {
-      "id": "sec-pattern",
-      "title": "Pattern",
+      "id": "sec-compilepattern",
+      "title": "Runtime Semantics: CompilePattern",
       "level": 4,
       "number": "22.2.2.2"
     },
     {
-      "id": "sec-disjunction",
-      "title": "Disjunction",
+      "id": "sec-compilesubpattern",
+      "title": "Runtime Semantics: CompileSubpattern",
       "level": 4,
       "number": "22.2.2.3"
-    },
-    {
-      "id": "sec-alternative",
-      "title": "Alternative",
-      "level": 4,
-      "number": "22.2.2.4"
-    },
-    {
-      "id": "sec-term",
-      "title": "Term",
-      "level": 4,
-      "number": "22.2.2.5"
     },
     {
       "id": "sec-runtime-semantics-repeatmatcher-abstract-operation",
       "title": "RepeatMatcher ( m, min, max, greedy, x, c, parenIndex, parenCount )",
       "level": 5,
-      "number": "22.2.2.5.1"
+      "number": "22.2.2.3.1"
     },
     {
-      "id": "sec-assertion",
-      "title": "Assertion",
+      "id": "sec-compileassertion",
+      "title": "Runtime Semantics: CompileAssertion",
       "level": 4,
-      "number": "22.2.2.6"
+      "number": "22.2.2.4"
     },
     {
       "id": "sec-runtime-semantics-iswordchar-abstract-operation",
       "title": "IsWordChar ( e )",
       "level": 5,
-      "number": "22.2.2.6.1"
+      "number": "22.2.2.4.1"
     },
     {
-      "id": "sec-quantifier",
-      "title": "Quantifier",
+      "id": "sec-compilequantifier",
+      "title": "Runtime Semantics: CompileQuantifier",
+      "level": 4,
+      "number": "22.2.2.5"
+    },
+    {
+      "id": "sec-compilequantifierprefix",
+      "title": "Runtime Semantics: CompileQuantifierPrefix",
+      "level": 4,
+      "number": "22.2.2.6"
+    },
+    {
+      "id": "sec-compileatom",
+      "title": "Runtime Semantics: CompileAtom",
       "level": 4,
       "number": "22.2.2.7"
-    },
-    {
-      "id": "sec-atom",
-      "title": "Atom",
-      "level": 4,
-      "number": "22.2.2.8"
     },
     {
       "id": "sec-runtime-semantics-charactersetmatcher-abstract-operation",
       "title": "CharacterSetMatcher ( A, invert, direction )",
       "level": 5,
-      "number": "22.2.2.8.1"
-    },
-    {
-      "id": "sec-runtime-semantics-canonicalize-ch",
-      "title": "Canonicalize ( ch )",
-      "level": 5,
-      "number": "22.2.2.8.2"
-    },
-    {
-      "id": "sec-runtime-semantics-unicodematchproperty-p",
-      "title": "UnicodeMatchProperty ( p )",
-      "level": 5,
-      "number": "22.2.2.8.3"
-    },
-    {
-      "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
-      "title": "UnicodeMatchPropertyValue ( p, v )",
-      "level": 5,
-      "number": "22.2.2.8.4"
-    },
-    {
-      "id": "sec-atomescape",
-      "title": "AtomEscape",
-      "level": 4,
-      "number": "22.2.2.9"
+      "number": "22.2.2.7.1"
     },
     {
       "id": "sec-backreference-matcher",
       "title": "BackreferenceMatcher ( n, direction )",
       "level": 5,
-      "number": "22.2.2.9.1"
+      "number": "22.2.2.7.2"
     },
     {
-      "id": "sec-characterescape",
-      "title": "CharacterEscape",
-      "level": 4,
-      "number": "22.2.2.10"
+      "id": "sec-runtime-semantics-canonicalize-ch",
+      "title": "Canonicalize ( ch )",
+      "level": 5,
+      "number": "22.2.2.7.3"
     },
     {
-      "id": "sec-decimalescape",
-      "title": "DecimalEscape",
+      "id": "sec-compilecharacterclass",
+      "title": "Runtime Semantics: CompileCharacterClass",
       "level": 4,
-      "number": "22.2.2.11"
+      "number": "22.2.2.8"
     },
     {
-      "id": "sec-characterclassescape",
-      "title": "CharacterClassEscape",
+      "id": "sec-compiletocharset",
+      "title": "Runtime Semantics: CompileToCharSet",
       "level": 4,
-      "number": "22.2.2.12"
-    },
-    {
-      "id": "sec-characterclass",
-      "title": "CharacterClass",
-      "level": 4,
-      "number": "22.2.2.13"
-    },
-    {
-      "id": "sec-classranges",
-      "title": "ClassRanges",
-      "level": 4,
-      "number": "22.2.2.14"
-    },
-    {
-      "id": "sec-nonemptyclassranges",
-      "title": "NonemptyClassRanges",
-      "level": 4,
-      "number": "22.2.2.15"
+      "number": "22.2.2.9"
     },
     {
       "id": "sec-runtime-semantics-characterrange-abstract-operation",
       "title": "CharacterRange ( A, B )",
       "level": 5,
-      "number": "22.2.2.15.1"
+      "number": "22.2.2.9.1"
     },
     {
-      "id": "sec-nonemptyclassrangesnodash",
-      "title": "NonemptyClassRangesNoDash",
-      "level": 4,
-      "number": "22.2.2.16"
+      "id": "sec-runtime-semantics-unicodematchproperty-p",
+      "title": "UnicodeMatchProperty ( p )",
+      "level": 5,
+      "number": "22.2.2.9.2"
     },
     {
-      "id": "sec-classatom",
-      "title": "ClassAtom",
-      "level": 4,
-      "number": "22.2.2.17"
-    },
-    {
-      "id": "sec-classatomnodash",
-      "title": "ClassAtomNoDash",
-      "level": 4,
-      "number": "22.2.2.18"
-    },
-    {
-      "id": "sec-classescape",
-      "title": "ClassEscape",
-      "level": 4,
-      "number": "22.2.2.19"
+      "id": "sec-runtime-semantics-unicodematchpropertyvalue-p-v",
+      "title": "UnicodeMatchPropertyValue ( p, v )",
+      "level": 5,
+      "number": "22.2.2.9.3"
     },
     {
       "id": "sec-regexp-constructor",

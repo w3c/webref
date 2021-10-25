@@ -423,6 +423,25 @@
       "definedIn": "dt"
     },
     {
+      "id": "at-progress-timeline-boundary",
+      "href": "https://drafts.csswg.org/web-animations-2/#at-progress-timeline-boundary",
+      "linkingText": [
+        "at progress timeline boundary"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "animation-effect-phases-and-states",
+        "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-phases-and-states",
+        "title": "Animation effect phases and states",
+        "number": "3.4.4"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "animation-effect-before-phase",
       "href": "https://drafts.csswg.org/web-animations-2/#animation-effect-before-phase",
       "linkingText": [
@@ -1422,90 +1441,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-computedeffecttiming-endtime",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-endtime",
-      "linkingText": [
-        "endTime"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ComputedEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-computedeffecttiming-dictionary",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-computedeffecttiming-dictionary",
-        "title": "The ComputedEffectTiming dictionary",
-        "number": "5.6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-computedeffecttiming-activeduration",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-activeduration",
-      "linkingText": [
-        "activeDuration"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ComputedEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-computedeffecttiming-dictionary",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-computedeffecttiming-dictionary",
-        "title": "The ComputedEffectTiming dictionary",
-        "number": "5.6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-computedeffecttiming-localtime",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-localtime",
-      "linkingText": [
-        "localTime"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ComputedEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-computedeffecttiming-dictionary",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-computedeffecttiming-dictionary",
-        "title": "The ComputedEffectTiming dictionary",
-        "number": "5.6"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-computedeffecttiming-progress",
-      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-progress",
-      "linkingText": [
-        "progress"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "ComputedEffectTiming"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "the-computedeffecttiming-dictionary",
-        "href": "https://drafts.csswg.org/web-animations-2/#the-computedeffecttiming-dictionary",
-        "title": "The ComputedEffectTiming dictionary",
-        "number": "5.6"
-      },
-      "definedIn": "pre"
-    },
-    {
       "id": "dom-computedeffecttiming-starttime",
       "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-starttime",
       "linkingText": [
@@ -1527,15 +1462,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "endtime",
-      "href": "https://drafts.csswg.org/web-animations-2/#endtime",
+      "id": "dom-computedeffecttiming-endtime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-endtime",
       "linkingText": [
         "endTime"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-computedeffecttiming-dictionary",
@@ -1546,15 +1483,38 @@
       "definedIn": "dt"
     },
     {
-      "id": "localtime",
-      "href": "https://drafts.csswg.org/web-animations-2/#localtime",
+      "id": "dom-computedeffecttiming-activeduration",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-activeduration",
+      "linkingText": [
+        "activeDuration"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computedeffecttiming-dictionary",
+        "href": "https://drafts.csswg.org/web-animations-2/#the-computedeffecttiming-dictionary",
+        "title": "The ComputedEffectTiming dictionary",
+        "number": "5.6"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-computedeffecttiming-localtime",
+      "href": "https://drafts.csswg.org/web-animations-2/#dom-computedeffecttiming-localtime",
       "linkingText": [
         "localTime"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
+      "type": "dict-member",
+      "for": [
+        "ComputedEffectTiming"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "the-computedeffecttiming-dictionary",

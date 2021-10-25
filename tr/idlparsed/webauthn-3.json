@@ -1757,6 +1757,7 @@
     "dependencies": {
       "PublicKeyCredential": [
         "Credential",
+        "ArrayBuffer",
         "AuthenticatorResponse",
         "AuthenticationExtensionsClientOutputs"
       ],
@@ -1766,13 +1767,17 @@
       "CredentialRequestOptions": [
         "PublicKeyCredentialRequestOptions"
       ],
-      "AuthenticatorResponse": [],
+      "AuthenticatorResponse": [
+        "ArrayBuffer"
+      ],
       "AuthenticatorAttestationResponse": [
         "AuthenticatorResponse",
+        "ArrayBuffer",
         "COSEAlgorithmIdentifier"
       ],
       "AuthenticatorAssertionResponse": [
-        "AuthenticatorResponse"
+        "AuthenticatorResponse",
+        "ArrayBuffer"
       ],
       "PublicKeyCredentialParameters": [
         "COSEAlgorithmIdentifier"
@@ -1780,6 +1785,7 @@
       "PublicKeyCredentialCreationOptions": [
         "PublicKeyCredentialRpEntity",
         "PublicKeyCredentialUserEntity",
+        "BufferSource",
         "PublicKeyCredentialParameters",
         "PublicKeyCredentialDescriptor",
         "AuthenticatorSelectionCriteria",
@@ -1790,10 +1796,12 @@
         "PublicKeyCredentialEntity"
       ],
       "PublicKeyCredentialUserEntity": [
-        "PublicKeyCredentialEntity"
+        "PublicKeyCredentialEntity",
+        "BufferSource"
       ],
       "AuthenticatorSelectionCriteria": [],
       "PublicKeyCredentialRequestOptions": [
+        "BufferSource",
         "PublicKeyCredentialDescriptor",
         "AuthenticationExtensionsClientInputs"
       ],
@@ -1809,15 +1817,23 @@
         "TokenBinding"
       ],
       "TokenBinding": [],
-      "PublicKeyCredentialDescriptor": [],
+      "PublicKeyCredentialDescriptor": [
+        "BufferSource"
+      ],
       "CredentialPropertiesOutput": [],
-      "AuthenticationExtensionsLargeBlobInputs": [],
-      "AuthenticationExtensionsLargeBlobOutputs": []
+      "AuthenticationExtensionsLargeBlobInputs": [
+        "BufferSource"
+      ],
+      "AuthenticationExtensionsLargeBlobOutputs": [
+        "ArrayBuffer"
+      ]
     },
     "externalDependencies": [
       "Credential",
+      "ArrayBuffer",
       "CredentialCreationOptions",
-      "CredentialRequestOptions"
+      "CredentialRequestOptions",
+      "BufferSource"
     ],
     "hasObsoleteIdl": false
   }

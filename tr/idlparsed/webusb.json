@@ -3247,6 +3247,7 @@
         "USBInTransferResult",
         "USBControlTransferParameters",
         "USBOutTransferResult",
+        "BufferSource",
         "USBDirection",
         "USBIsochronousInTransferResult",
         "USBIsochronousOutTransferResult"
@@ -3256,16 +3257,19 @@
         "USBRecipient"
       ],
       "USBInTransferResult": [
-        "USBTransferStatus"
+        "USBTransferStatus",
+        "DataView"
       ],
       "USBOutTransferResult": [
         "USBTransferStatus"
       ],
       "USBIsochronousInTransferPacket": [
-        "USBTransferStatus"
+        "USBTransferStatus",
+        "DataView"
       ],
       "USBIsochronousInTransferResult": [
-        "USBIsochronousInTransferPacket"
+        "USBIsochronousInTransferPacket",
+        "DataView"
       ],
       "USBIsochronousOutTransferPacket": [
         "USBTransferStatus"
@@ -3310,6 +3314,8 @@
       "WorkerNavigator",
       "EventInit",
       "Event",
+      "BufferSource",
+      "DataView",
       "PermissionDescriptor",
       "PermissionStatus"
     ],

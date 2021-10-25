@@ -6731,6 +6731,7 @@
         "EventHandler",
         "RTCSessionDescriptionCallback",
         "RTCPeerConnectionErrorCallback",
+        "VoidFunction",
         "RTCCertificate",
         "AlgorithmIdentifier",
         "RTCRtpSender",
@@ -6778,8 +6779,11 @@
       "RTCPeerConnectionIceErrorEventInit": [
         "EventInit"
       ],
-      "RTCCertificateExpiration": [],
+      "RTCCertificateExpiration": [
+        "DOMTimeStamp"
+      ],
       "RTCCertificate": [
+        "DOMTimeStamp",
         "RTCDtlsFingerprint"
       ],
       "RTCRtpTransceiverInit": [
@@ -6849,6 +6853,7 @@
         "EventTarget",
         "RTCIceTransport",
         "RTCDtlsTransportState",
+        "ArrayBuffer",
         "EventHandler"
       ],
       "RTCDtlsFingerprint": [],
@@ -6893,7 +6898,9 @@
         "RTCDataChannelState",
         "EventHandler",
         "BinaryType",
-        "Blob"
+        "Blob",
+        "ArrayBuffer",
+        "ArrayBufferView"
       ],
       "RTCDataChannelInit": [],
       "RTCDataChannelEvent": [
@@ -6942,14 +6949,18 @@
     "externalDependencies": [
       "EventTarget",
       "EventHandler",
+      "VoidFunction",
       "Event",
       "EventInit",
       "AlgorithmIdentifier",
+      "DOMTimeStamp",
       "MediaStreamTrack",
       "MediaStream",
       "DOMHighResTimeStamp",
+      "ArrayBuffer",
       "BinaryType",
       "Blob",
+      "ArrayBufferView",
       "RTCStatsType",
       "DOMException"
     ],
