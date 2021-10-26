@@ -23,34 +23,6 @@
       }
     },
     "idlNames": {
-      "MidiPermissionDescriptor": {
-        "fragment": "dictionary MidiPermissionDescriptor : PermissionDescriptor {\n  boolean sysex = false;\n};",
-        "type": "dictionary",
-        "name": "MidiPermissionDescriptor",
-        "inheritance": "PermissionDescriptor",
-        "members": [
-          {
-            "type": "field",
-            "name": "sysex",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "MIDIOptions": {
         "fragment": "dictionary MIDIOptions {\n  boolean sysex;\n  boolean software;\n};",
         "type": "dictionary",
@@ -958,9 +930,6 @@
       ]
     },
     "dependencies": {
-      "MidiPermissionDescriptor": [
-        "PermissionDescriptor"
-      ],
       "Navigator": [
         "MIDIAccess",
         "MIDIOptions"
@@ -1014,7 +983,6 @@
       ]
     },
     "externalDependencies": [
-      "PermissionDescriptor",
       "Navigator",
       "EventTarget",
       "EventHandler",
