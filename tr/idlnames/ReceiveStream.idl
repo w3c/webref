@@ -1,6 +1,0 @@
-// Source: WebTransport (https://www.w3.org/TR/webtransport/)
-[ Exposed=(Window,Worker) ]
-interface ReceiveStream : ReadableStream /* of Uint8Array */ {
-  readonly attribute Promise<StreamAbortInfo> readingAborted;
-  undefined abortReading(optional StreamAbortInfo abortInfo = {});
-};
