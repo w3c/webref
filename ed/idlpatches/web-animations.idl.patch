@@ -31,18 +31,18 @@ index 6e973d195..2b5f672b9 100644
      PlaybackDirection                  direction = "normal";
      DOMString                          easing = "linear";
  };
-@@ -86,10 +83,6 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
+@@ -86,10 +83,7 @@ enum FillMode { "none", "forwards", "backwards", "both", "auto" };
  enum PlaybackDirection { "normal", "reverse", "alternate", "alternate-reverse" };
  
  dictionary ComputedEffectTiming : EffectTiming {
 -    unrestricted double  endTime;
 -    unrestricted double  activeDuration;
 -    double?              localTime;
--    double?              progress;
+     double?              progress;
      unrestricted double? currentIteration;
  };
  
-@@ -158,14 +151,3 @@ partial interface mixin DocumentOrShadowRoot {
+@@ -158,14 +152,3 @@ partial interface mixin DocumentOrShadowRoot {
  };
  
  Element includes Animatable;
