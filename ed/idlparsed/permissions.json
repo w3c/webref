@@ -289,34 +289,6 @@
         ],
         "extAttrs": []
       },
-      "MidiPermissionDescriptor": {
-        "fragment": "dictionary MidiPermissionDescriptor : PermissionDescriptor {\n  boolean sysex = false;\n};",
-        "type": "dictionary",
-        "name": "MidiPermissionDescriptor",
-        "inheritance": "PermissionDescriptor",
-        "members": [
-          {
-            "type": "field",
-            "name": "sysex",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "DevicePermissionDescriptor": {
         "fragment": "dictionary DevicePermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n};",
         "type": "dictionary",
@@ -500,9 +472,6 @@
         "PermissionState",
         "PermissionName",
         "EventHandler"
-      ],
-      "MidiPermissionDescriptor": [
-        "PermissionDescriptor"
       ],
       "DevicePermissionDescriptor": [
         "PermissionDescriptor"
