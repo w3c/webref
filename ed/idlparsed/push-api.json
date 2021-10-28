@@ -29,8 +29,36 @@
       }
     },
     "idlNames": {
+      "PushPermissionDescriptor": {
+        "fragment": "dictionary PushPermissionDescriptor : PermissionDescriptor {\n  boolean userVisibleOnly = false;\n};",
+        "type": "dictionary",
+        "name": "PushPermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "userVisibleOnly",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "PushManager": {
-        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PushPermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
+        "fragment": "[Exposed=(Window,Worker), SecureContext]\ninterface PushManager {\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedContentEncodings;\n\n  Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});\n  Promise<PushSubscription?> getSubscription();\n  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});\n};",
         "type": "interface",
         "name": "PushManager",
         "inheritance": null,
@@ -149,7 +177,7 @@
                   "generic": "",
                   "nullable": false,
                   "union": false,
-                  "idlType": "PushPermissionState"
+                  "idlType": "PermissionState"
                 }
               ]
             },
@@ -943,26 +971,6 @@
         ],
         "extAttrs": [],
         "partial": false
-      },
-      "PushPermissionState": {
-        "fragment": "enum PushPermissionState {\n  \"denied\",\n  \"granted\",\n  \"prompt\",\n};",
-        "type": "enum",
-        "name": "PushPermissionState",
-        "values": [
-          {
-            "type": "enum-value",
-            "value": "denied"
-          },
-          {
-            "type": "enum-value",
-            "value": "granted"
-          },
-          {
-            "type": "enum-value",
-            "value": "prompt"
-          }
-        ],
-        "extAttrs": []
       }
     },
     "idlExtendedNames": {
@@ -1079,13 +1087,16 @@
       ]
     },
     "dependencies": {
+      "PushPermissionDescriptor": [
+        "PermissionDescriptor"
+      ],
       "ServiceWorkerRegistration": [
         "PushManager"
       ],
       "PushManager": [
         "PushSubscription",
         "PushSubscriptionOptionsInit",
-        "PushPermissionState"
+        "PermissionState"
       ],
       "PushSubscriptionOptions": [
         "ArrayBuffer"
@@ -1130,7 +1141,9 @@
       ]
     },
     "externalDependencies": [
+      "PermissionDescriptor",
       "ServiceWorkerRegistration",
+      "PermissionState",
       "ArrayBuffer",
       "BufferSource",
       "EpochTimeStamp",

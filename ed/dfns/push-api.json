@@ -215,15 +215,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-express-permission",
-      "href": "https://w3c.github.io/push-api/#dfn-express-permission",
+      "id": "dom-pushpermissiondescriptor",
+      "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor",
       "linkingText": [
-        "express permission"
+        "PushPermissionDescriptor"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://w3c.github.io/push-api/#permission",
+        "title": "Permission",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushpermissiondescriptor-uservisibleonly",
+      "href": "https://w3c.github.io/push-api/#dom-pushpermissiondescriptor-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushPermissionDescriptor"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "permission",
@@ -1390,84 +1411,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-pushpermissionstate",
-      "href": "https://w3c.github.io/push-api/#dom-pushpermissionstate",
-      "linkingText": [
-        "PushPermissionState"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://w3c.github.io/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-pushpermissionstate-granted",
-      "href": "https://w3c.github.io/push-api/#dom-pushpermissionstate-granted",
-      "linkingText": [
-        "granted"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://w3c.github.io/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-pushpermissionstate-denied",
-      "href": "https://w3c.github.io/push-api/#dom-pushpermissionstate-denied",
-      "linkingText": [
-        "denied"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://w3c.github.io/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-pushpermissionstate-prompt",
-      "href": "https://w3c.github.io/push-api/#dom-pushpermissionstate-prompt",
-      "linkingText": [
-        "prompt"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://w3c.github.io/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "dfn-user-agent",
       "href": "https://w3c.github.io/push-api/#dfn-user-agent",
       "linkingText": [
@@ -1481,7 +1424,7 @@
       "heading": {
         "id": "conformance",
         "href": "https://w3c.github.io/push-api/#conformance",
-        "title": "13. Conformance"
+        "title": "12. Conformance"
       },
       "definedIn": "prose"
     }

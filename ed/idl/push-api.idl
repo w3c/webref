@@ -3,6 +3,10 @@
 // (https://github.com/w3c/webref)
 // Source: Push API (https://w3c.github.io/push-api/)
 
+dictionary PushPermissionDescriptor : PermissionDescriptor {
+  boolean userVisibleOnly = false;
+};
+
 [SecureContext]
 partial interface ServiceWorkerRegistration {
   readonly attribute PushManager pushManager;
@@ -14,7 +18,7 @@ interface PushManager {
 
   Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});
   Promise<PushSubscription?> getSubscription();
-  Promise<PushPermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});
+  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});
 };
 
 [Exposed=(Window,Worker), SecureContext]
@@ -86,10 +90,4 @@ interface PushSubscriptionChangeEvent : ExtendableEvent {
 dictionary PushSubscriptionChangeEventInit : ExtendableEventInit {
   PushSubscription newSubscription = null;
   PushSubscription oldSubscription = null;
-};
-
-enum PushPermissionState {
-  "denied",
-  "granted",
-  "prompt",
 };
