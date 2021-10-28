@@ -1,0 +1,28 @@
+From 98e077f3ab8aaf8bd9e205830f182846477ed985 Mon Sep 17 00:00:00 2001
+From: Dominique Hazael-Massieux <dom@w3.org>
+Date: Thu, 28 Oct 2021 09:03:25 +0200
+Subject: [PATCH] Remove duplication definition of PushPermissionDescriptor
+
+https://github.com/w3c/push-api/issues/343
+---
+ ed/idl/push-api.idl | 4 ----
+ 1 file changed, 4 deletions(-)
+
+diff --git a/ed/idl/push-api.idl b/ed/idl/push-api.idl
+index f58278880..3adb96f58 100644
+--- a/ed/idl/push-api.idl
++++ b/ed/idl/push-api.idl
+@@ -3,10 +3,6 @@
+ // (https://github.com/w3c/webref)
+ // Source: Push API (https://w3c.github.io/push-api/)
+ 
+-dictionary PushPermissionDescriptor : PermissionDescriptor {
+-  boolean userVisibleOnly = false;
+-};
+-
+ [SecureContext]
+ partial interface ServiceWorkerRegistration {
+   readonly attribute PushManager pushManager;
+-- 
+2.33.1
+
