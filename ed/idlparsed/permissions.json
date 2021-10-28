@@ -289,34 +289,6 @@
         ],
         "extAttrs": []
       },
-      "PushPermissionDescriptor": {
-        "fragment": "dictionary PushPermissionDescriptor : PermissionDescriptor {\n  boolean userVisibleOnly = false;\n};",
-        "type": "dictionary",
-        "name": "PushPermissionDescriptor",
-        "inheritance": "PermissionDescriptor",
-        "members": [
-          {
-            "type": "field",
-            "name": "userVisibleOnly",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
-        "extAttrs": [],
-        "partial": false
-      },
       "MidiPermissionDescriptor": {
         "fragment": "dictionary MidiPermissionDescriptor : PermissionDescriptor {\n  boolean sysex = false;\n};",
         "type": "dictionary",
@@ -528,9 +500,6 @@
         "PermissionState",
         "PermissionName",
         "EventHandler"
-      ],
-      "PushPermissionDescriptor": [
-        "PermissionDescriptor"
       ],
       "MidiPermissionDescriptor": [
         "PermissionDescriptor"
