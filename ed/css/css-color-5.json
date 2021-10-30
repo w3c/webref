@@ -19,25 +19,28 @@
       "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large | AAA | AAA-large]]? )"
     },
     "<rgb()>": {
-      "value": "rgb( <percentage>{3} [ / <alpha-value> ]? ) | rgb( <number>{3} [ / <alpha-value> ]? ) | rgb( [ from <color> ]? [ <number> | <percentage> ]{3} [ / <alpha-value> ]? )"
+      "value": "rgb( [<percentage> | none]{3} [ / [<alpha-value> | none] ]? ) | rgb( [<number> | none]{3} [ / [<alpha-value> | none] ]? rgb( [ from <color> ]? [ <number> | <percentage> | none]{3} [ / <alpha-value> ]? )"
+    },
+    "<alpha-value>": {
+      "value": "<number> | <percentage>"
     },
     "<hsl()>": {
-      "value": "hsl([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+      "value": "hsl(([from <color>]? [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<hwb()>": {
-      "value": "hwb([from <color>]? <hue> <percentage> <percentage> [ / <alpha-value> ]? )"
+      "value": "hwb([from <color>]? [<hue> | none] [<percentage> | none] [<percentage> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<lab()>": {
-      "value": "lab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
+      "value": "lab([from <color>]? [<percentage> | none] [<number> | none] [<number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<oklab()>": {
-      "value": "oklab([from <color>]? <percentage> <number> <number> [ / <alpha-value> ]? )"
+      "value": "oklab([from <color>]? [<percentage> | none] [<number> | none] [<number> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<lch()>": {
-      "value": "lch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+      "value": "lch([from <color>]? [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<oklch()>": {
-      "value": "oklch([from <color>]? <percentage> <number> <hue> [ / <alpha-value> ]? )"
+      "value": "oklch([from <color>]? [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<color()>": {
       "value": "color( [from <color>]? <colorspace-params> [ / <alpha-value> ]? )"
