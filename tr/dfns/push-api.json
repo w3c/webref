@@ -215,15 +215,36 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-express-permission",
-      "href": "https://www.w3.org/TR/push-api/#dfn-express-permission",
+      "id": "dom-pushpermissiondescriptor",
+      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissiondescriptor",
       "linkingText": [
-        "express permission"
+        "PushPermissionDescriptor"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "dictionary",
       "for": [],
-      "access": "private",
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permission",
+        "href": "https://www.w3.org/TR/push-api/#permission",
+        "title": "Permission",
+        "number": "3.5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-pushpermissiondescriptor-uservisibleonly",
+      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissiondescriptor-uservisibleonly",
+      "linkingText": [
+        "userVisibleOnly"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "PushPermissionDescriptor"
+      ],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "permission",
@@ -1388,84 +1409,6 @@
         "number": "10.5.2"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-pushpermissionstate",
-      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissionstate",
-      "linkingText": [
-        "PushPermissionState"
-      ],
-      "localLinkingText": [],
-      "type": "enum",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://www.w3.org/TR/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "heading"
-    },
-    {
-      "id": "dom-pushpermissionstate-granted",
-      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissionstate-granted",
-      "linkingText": [
-        "granted"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://www.w3.org/TR/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-pushpermissionstate-denied",
-      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissionstate-denied",
-      "linkingText": [
-        "denied"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://www.w3.org/TR/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-pushpermissionstate-prompt",
-      "href": "https://www.w3.org/TR/push-api/#dom-pushpermissionstate-prompt",
-      "linkingText": [
-        "prompt"
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "PushPermissionState"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "pushpermissionstate-enumeration",
-        "href": "https://www.w3.org/TR/push-api/#pushpermissionstate-enumeration",
-        "title": "11. PushPermissionState Enumeration"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dfn-user-agent",

@@ -2241,26 +2241,11 @@
         "partial": false
       },
       "WritableStreamDefaultController": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  readonly attribute any abortReason;\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
+        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "WritableStreamDefaultController",
         "inheritance": null,
         "members": [
-          {
-            "type": "attribute",
-            "name": "abortReason",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "any"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
           {
             "type": "attribute",
             "name": "signal",

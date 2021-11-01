@@ -226,14 +226,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "declared-document-policy",
-      "href": "https://wicg.github.io/document-policy/#declared-document-policy",
+      "id": "document-document-policy",
+      "href": "https://wicg.github.io/document-policy/#document-document-policy",
       "linkingText": [
-        "declared document policy"
+        "document policy"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "Document"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -302,14 +304,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "directive-name",
-      "href": "https://wicg.github.io/document-policy/#directive-name",
+      "id": "document-policy-directive-directive-name",
+      "href": "https://wicg.github.io/document-policy/#document-policy-directive-directive-name",
       "linkingText": [
         "directive name"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "document policy directive"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -435,25 +439,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "get-and-parse-a-structured-header",
-      "href": "https://wicg.github.io/document-policy/#get-and-parse-a-structured-header",
-      "linkingText": [
-        "get and parse a structured header"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "integration-with-fetch",
-        "href": "https://wicg.github.io/document-policy/#integration-with-fetch",
-        "title": "Integration with Fetch",
-        "number": "8.2"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "is-policy-compatible",
       "href": "https://wicg.github.io/document-policy/#is-policy-compatible",
       "linkingText": [
@@ -473,25 +458,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "process-response-policy",
-      "href": "https://wicg.github.io/document-policy/#process-response-policy",
-      "linkingText": [
-        "Process response policy"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "algo-process-response-policy",
-        "href": "https://wicg.github.io/document-policy/#algo-process-response-policy",
-        "title": "Process response policy",
-        "number": "9.2"
-      },
-      "definedIn": "heading"
-    },
-    {
       "id": "parse-document-policy",
       "href": "https://wicg.github.io/document-policy/#parse-document-policy",
       "linkingText": [
@@ -506,7 +472,7 @@
         "id": "algo-parse-document-policy",
         "href": "https://wicg.github.io/document-policy/#algo-parse-document-policy",
         "title": "Parse document policy",
-        "number": "9.3"
+        "number": "9.2"
       },
       "definedIn": "heading"
     },
@@ -525,7 +491,7 @@
         "id": "algo-serialize-required-policy",
         "href": "https://wicg.github.io/document-policy/#algo-serialize-required-policy",
         "title": "Serialize required policy",
-        "number": "9.4"
+        "number": "9.3"
       },
       "definedIn": "heading"
     },
@@ -544,7 +510,7 @@
         "id": "algo-create-for-browsingcontext",
         "href": "https://wicg.github.io/document-policy/#algo-create-for-browsingcontext",
         "title": "Create a required policy for a browsing context",
-        "number": "9.5"
+        "number": "9.4"
       },
       "definedIn": "heading"
     },
@@ -562,7 +528,26 @@
       "heading": {
         "id": "algo-create-document-policy",
         "href": "https://wicg.github.io/document-policy/#algo-create-document-policy",
-        "title": "Create a document Policy for a browsing context from response",
+        "title": "Create a document Policy from response",
+        "number": "9.5"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "create-nested-context-required-document-policy",
+      "href": "https://wicg.github.io/document-policy/#create-nested-context-required-document-policy",
+      "linkingText": [
+        "create-nested-context-required-document-policy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "algo-create-nested-context-required-document-policy",
+        "href": "https://wicg.github.io/document-policy/#algo-create-nested-context-required-document-policy",
+        "title": "Create a nested context required document policy from response",
         "number": "9.6"
       },
       "definedIn": "heading"

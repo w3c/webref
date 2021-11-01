@@ -5,5 +5,5 @@ interface PushManager {
 
   Promise<PushSubscription> subscribe(optional PushSubscriptionOptionsInit options = {});
   Promise<PushSubscription?> getSubscription();
-  Promise<PushPermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});
+  Promise<PermissionState> permissionState(optional PushSubscriptionOptionsInit options = {});
 };
