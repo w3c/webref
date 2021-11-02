@@ -11078,10 +11078,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-gpuprimitivestate-clampdepth",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprimitivestate-clampdepth",
+      "id": "dom-gpuprimitivestate-unclippeddepth",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuprimitivestate-unclippeddepth",
       "linkingText": [
-        "clampDepth"
+        "unclippedDepth"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -13869,27 +13869,6 @@
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpucommandbuffer-executiontime",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-executiontime",
-      "linkingText": [
-        "executionTime"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUCommandBuffer"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-buffer",
-        "href": "https://gpuweb.github.io/gpuweb/#command-buffer",
-        "title": "GPUCommandBuffer",
-        "number": "11.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpucommandbuffer-command_list-slot",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandbuffer-command_list-slot",
       "linkingText": [
@@ -14012,15 +13991,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "enumdef-encoder-state",
-      "href": "https://gpuweb.github.io/gpuweb/#enumdef-encoder-state",
+      "id": "encoder-state",
+      "href": "https://gpuweb.github.io/gpuweb/#encoder-state",
       "linkingText": [
         "encoder state"
       ],
       "localLinkingText": [],
-      "type": "enum",
+      "type": "dfn",
       "for": [],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "command-encoder",
@@ -14031,17 +14010,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-encoder-state-open",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-encoder-state-open",
+      "id": "encoder-state-open",
+      "href": "https://gpuweb.github.io/gpuweb/#encoder-state-open",
       "linkingText": [
         "open"
       ],
       "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dfn",
       "for": [
         "encoder state"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "command-encoder",
@@ -14052,17 +14031,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-encoder-state-encoding-a-render-pass",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-encoder-state-encoding-a-render-pass",
+      "id": "encoder-state-encoding-a-render-pass",
+      "href": "https://gpuweb.github.io/gpuweb/#encoder-state-encoding-a-render-pass",
       "linkingText": [
         "encoding a render pass"
       ],
       "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dfn",
       "for": [
         "encoder state"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "command-encoder",
@@ -14073,17 +14052,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-encoder-state-encoding-a-compute-pass",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-encoder-state-encoding-a-compute-pass",
+      "id": "encoder-state-encoding-a-compute-pass",
+      "href": "https://gpuweb.github.io/gpuweb/#encoder-state-encoding-a-compute-pass",
       "linkingText": [
         "encoding a compute pass"
       ],
       "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dfn",
       "for": [
         "encoder state"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "command-encoder",
@@ -14094,17 +14073,17 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-encoder-state-closed",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-encoder-state-closed",
+      "id": "encoder-state-closed",
+      "href": "https://gpuweb.github.io/gpuweb/#encoder-state-closed",
       "linkingText": [
         "closed"
       ],
       "localLinkingText": [],
-      "type": "enum-value",
+      "type": "dfn",
       "for": [
         "encoder state"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "command-encoder",
@@ -14132,27 +14111,6 @@
         "number": "12.1.1"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpucommandencoderdescriptor-measureexecutiontime",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucommandencoderdescriptor-measureexecutiontime",
-      "linkingText": [
-        "measureExecutionTime"
-      ],
-      "localLinkingText": [],
-      "type": "dict-member",
-      "for": [
-        "GPUCommandEncoderDescriptor"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-creation",
-        "href": "https://gpuweb.github.io/gpuweb/#command-encoder-creation",
-        "title": "Creation",
-        "number": "12.1.1"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-createcommandencoder",
@@ -21696,7 +21654,7 @@
         "id": "alpha-to-coverage",
         "href": "https://gpuweb.github.io/gpuweb/#alpha-to-coverage",
         "title": "Alpha to Coverage",
-        "number": "21.3.8"
+        "number": "21.3.9"
       },
       "definedIn": "prose"
     },
@@ -21715,7 +21673,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.10"
+        "number": "21.3.11"
       },
       "definedIn": "prose"
     },
@@ -21734,7 +21692,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.10"
+        "number": "21.3.11"
       },
       "definedIn": "prose"
     },
@@ -21753,7 +21711,7 @@
         "id": "sample-masking",
         "href": "https://gpuweb.github.io/gpuweb/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.10"
+        "number": "21.3.11"
       },
       "definedIn": "prose"
     },
@@ -22567,10 +22525,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpufeaturename-depth-clamping",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-depth-clamping",
+      "id": "dom-gpufeaturename-depth-clip-control",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpufeaturename-depth-clip-control",
       "linkingText": [
-        "\"depth-clamping\""
+        "\"depth-clip-control\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -22580,9 +22538,9 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "depth-clamping",
-        "href": "https://gpuweb.github.io/gpuweb/#depth-clamping",
-        "title": "\"depth-clamping\"",
+        "id": "depth-clip-control",
+        "href": "https://gpuweb.github.io/gpuweb/#depth-clip-control",
+        "title": "\"depth-clip-control\"",
         "number": "23.1"
       },
       "definedIn": "heading"

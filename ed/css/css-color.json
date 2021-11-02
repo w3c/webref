@@ -101,6 +101,18 @@
     },
     "<cmyk-component>": {
       "value": "<number> | <percentage>"
+    },
+    "<rectangular-color-space>": {
+      "value": "srgb | lab | oklab | xyz | xyz-d50 | xyz-d65"
+    },
+    "<polar-color-space>": {
+      "value": "hsl | hwb lch | oklch"
+    },
+    "<hue-interpolation-method>": {
+      "value": "[ shorter | longer | increasing | decreasing | specified ] hue"
+    },
+    "<color-interpolation-method>": {
+      "value": "in [ <rectangular-color-space> | <polar-color-space> <hue-interpolation-method>? ]"
     }
   }
 }

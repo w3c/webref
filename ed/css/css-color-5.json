@@ -6,14 +6,8 @@
   "properties": {},
   "descriptors": {},
   "valuespaces": {
-    "<color-space>": {
-      "value": "srgb | hsl | hwb | xyz | lab | lch | oklab | oklch"
-    },
     "<color-mix()>": {
-      "value": "color-mix( in <color-space> , [ <color> && <percentage [0,100]>? ]#{2} <hue-adjuster>?)"
-    },
-    "<hue-adjuster>": {
-      "value": "shorter | longer | increasing | decreasing | specified"
+      "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
     },
     "<color-contrast()>": {
       "value": "color-contrast( <color> vs <color>#{2,} [ to [<number> | AA | AA-large | AAA | AAA-large]]? )"

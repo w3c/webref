@@ -67,8 +67,17 @@
     "<gradient>": {
       "value": "[ <linear-gradient()> | <repeating-linear-gradient()> | <radial-gradient()> | <repeating-radial-gradient()> | <conic-gradient()> | <repeating-conic-gradient()> ]"
     },
+    "<linear-gradient()>": {
+      "value": "linear-gradient( [ <angle> | to <side-or-corner> ]? || <color-interpolation-method>, <color-stop-list> )"
+    },
+    "<side-or-corner>": {
+      "value": "[left | right] || [top | bottom]"
+    },
+    "<radial-gradient()>": {
+      "value": "radial-gradient( [[ <ending-shape> || <size> ]? [ at <position> ]? ] || <color-interpolation-method>, <color-stop-list> )"
+    },
     "<conic-gradient()>": {
-      "value": "conic-gradient( [ from <angle> ]? [ at <position> ]?, <angular-color-stop-list> )"
+      "value": "conic-gradient( [ [ from <angle> ]? [ at <position> ]? ] || <color-interpolation-method>, <angular-color-stop-list> )"
     },
     "<color-stop-list>": {
       "value": "<linear-color-stop> , [ <linear-color-hint>? , <linear-color-stop> ]#"
