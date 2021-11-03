@@ -762,7 +762,7 @@
         "partial": false
       },
       "GPUPowerPreference": {
-        "fragment": "enum GPUPowerPreference {\n    \"low-power\",\n    \"high-performance\"\n};",
+        "fragment": "enum GPUPowerPreference {\n    \"low-power\",\n    \"high-performance\",\n};",
         "type": "enum",
         "name": "GPUPowerPreference",
         "values": [
@@ -2703,7 +2703,7 @@
         "partial": false
       },
       "GPUTextureViewDimension": {
-        "fragment": "enum GPUTextureViewDimension {\n    \"1d\",\n    \"2d\",\n    \"2d-array\",\n    \"cube\",\n    \"cube-array\",\n    \"3d\"\n};",
+        "fragment": "enum GPUTextureViewDimension {\n    \"1d\",\n    \"2d\",\n    \"2d-array\",\n    \"cube\",\n    \"cube-array\",\n    \"3d\",\n};",
         "type": "enum",
         "name": "GPUTextureViewDimension",
         "values": [
@@ -2735,7 +2735,7 @@
         "extAttrs": []
       },
       "GPUTextureAspect": {
-        "fragment": "enum GPUTextureAspect {\n    \"all\",\n    \"stencil-only\",\n    \"depth-only\"\n};",
+        "fragment": "enum GPUTextureAspect {\n    \"all\",\n    \"stencil-only\",\n    \"depth-only\",\n};",
         "type": "enum",
         "name": "GPUTextureAspect",
         "values": [
@@ -3444,7 +3444,7 @@
         "partial": false
       },
       "GPUAddressMode": {
-        "fragment": "enum GPUAddressMode {\n    \"clamp-to-edge\",\n    \"repeat\",\n    \"mirror-repeat\"\n};",
+        "fragment": "enum GPUAddressMode {\n    \"clamp-to-edge\",\n    \"repeat\",\n    \"mirror-repeat\",\n};",
         "type": "enum",
         "name": "GPUAddressMode",
         "values": [
@@ -3464,7 +3464,7 @@
         "extAttrs": []
       },
       "GPUFilterMode": {
-        "fragment": "enum GPUFilterMode {\n    \"nearest\",\n    \"linear\"\n};",
+        "fragment": "enum GPUFilterMode {\n    \"nearest\",\n    \"linear\",\n};",
         "type": "enum",
         "name": "GPUFilterMode",
         "values": [
@@ -3480,7 +3480,7 @@
         "extAttrs": []
       },
       "GPUCompareFunction": {
-        "fragment": "enum GPUCompareFunction {\n    \"never\",\n    \"less\",\n    \"equal\",\n    \"less-equal\",\n    \"greater\",\n    \"not-equal\",\n    \"greater-equal\",\n    \"always\"\n};",
+        "fragment": "enum GPUCompareFunction {\n    \"never\",\n    \"less\",\n    \"equal\",\n    \"less-equal\",\n    \"greater\",\n    \"not-equal\",\n    \"greater-equal\",\n    \"always\",\n};",
         "type": "enum",
         "name": "GPUCompareFunction",
         "values": [
@@ -4495,7 +4495,7 @@
         "partial": false
       },
       "GPUCompilationMessageType": {
-        "fragment": "enum GPUCompilationMessageType {\n    \"error\",\n    \"warning\",\n    \"info\"\n};",
+        "fragment": "enum GPUCompilationMessageType {\n    \"error\",\n    \"warning\",\n    \"info\",\n};",
         "type": "enum",
         "name": "GPUCompilationMessageType",
         "values": [
@@ -5038,7 +5038,7 @@
         "partial": false
       },
       "GPUPrimitiveTopology": {
-        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\"\n};",
+        "fragment": "enum GPUPrimitiveTopology {\n    \"point-list\",\n    \"line-list\",\n    \"line-strip\",\n    \"triangle-list\",\n    \"triangle-strip\",\n};",
         "type": "enum",
         "name": "GPUPrimitiveTopology",
         "values": [
@@ -5163,7 +5163,7 @@
         "partial": false
       },
       "GPUFrontFace": {
-        "fragment": "enum GPUFrontFace {\n    \"ccw\",\n    \"cw\"\n};",
+        "fragment": "enum GPUFrontFace {\n    \"ccw\",\n    \"cw\",\n};",
         "type": "enum",
         "name": "GPUFrontFace",
         "values": [
@@ -5179,7 +5179,7 @@
         "extAttrs": []
       },
       "GPUCullMode": {
-        "fragment": "enum GPUCullMode {\n    \"none\",\n    \"front\",\n    \"back\"\n};",
+        "fragment": "enum GPUCullMode {\n    \"none\",\n    \"front\",\n    \"back\",\n};",
         "type": "enum",
         "name": "GPUCullMode",
         "values": [
@@ -5592,7 +5592,7 @@
         "partial": false
       },
       "GPUBlendFactor": {
-        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src\",\n    \"one-minus-src\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst\",\n    \"one-minus-dst\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"constant\",\n    \"one-minus-constant\"\n};",
+        "fragment": "enum GPUBlendFactor {\n    \"zero\",\n    \"one\",\n    \"src\",\n    \"one-minus-src\",\n    \"src-alpha\",\n    \"one-minus-src-alpha\",\n    \"dst\",\n    \"one-minus-dst\",\n    \"dst-alpha\",\n    \"one-minus-dst-alpha\",\n    \"src-alpha-saturated\",\n    \"constant\",\n    \"one-minus-constant\",\n};",
         "type": "enum",
         "name": "GPUBlendFactor",
         "values": [
@@ -5652,7 +5652,7 @@
         "extAttrs": []
       },
       "GPUBlendOperation": {
-        "fragment": "enum GPUBlendOperation {\n    \"add\",\n    \"subtract\",\n    \"reverse-subtract\",\n    \"min\",\n    \"max\"\n};",
+        "fragment": "enum GPUBlendOperation {\n    \"add\",\n    \"subtract\",\n    \"reverse-subtract\",\n    \"min\",\n    \"max\",\n};",
         "type": "enum",
         "name": "GPUBlendOperation",
         "values": [
@@ -5947,7 +5947,7 @@
         "partial": false
       },
       "GPUStencilOperation": {
-        "fragment": "enum GPUStencilOperation {\n    \"keep\",\n    \"zero\",\n    \"replace\",\n    \"invert\",\n    \"increment-clamp\",\n    \"decrement-clamp\",\n    \"increment-wrap\",\n    \"decrement-wrap\"\n};",
+        "fragment": "enum GPUStencilOperation {\n    \"keep\",\n    \"zero\",\n    \"replace\",\n    \"invert\",\n    \"increment-clamp\",\n    \"decrement-clamp\",\n    \"increment-wrap\",\n    \"decrement-wrap\",\n};",
         "type": "enum",
         "name": "GPUStencilOperation",
         "values": [
@@ -5987,7 +5987,7 @@
         "extAttrs": []
       },
       "GPUIndexFormat": {
-        "fragment": "enum GPUIndexFormat {\n    \"uint16\",\n    \"uint32\"\n};",
+        "fragment": "enum GPUIndexFormat {\n    \"uint16\",\n    \"uint32\",\n};",
         "type": "enum",
         "name": "GPUIndexFormat",
         "values": [
@@ -6131,7 +6131,7 @@
         "extAttrs": []
       },
       "GPUVertexStepMode": {
-        "fragment": "enum GPUVertexStepMode {\n    \"vertex\",\n    \"instance\"\n};",
+        "fragment": "enum GPUVertexStepMode {\n    \"vertex\",\n    \"instance\",\n};",
         "type": "enum",
         "name": "GPUVertexStepMode",
         "values": [
@@ -7860,7 +7860,7 @@
         "partial": false
       },
       "GPUComputePassTimestampLocation": {
-        "fragment": "enum GPUComputePassTimestampLocation {\n    \"beginning\",\n    \"end\"\n};",
+        "fragment": "enum GPUComputePassTimestampLocation {\n    \"beginning\",\n    \"end\",\n};",
         "type": "enum",
         "name": "GPUComputePassTimestampLocation",
         "values": [
@@ -8938,7 +8938,7 @@
         "partial": false
       },
       "GPURenderPassTimestampLocation": {
-        "fragment": "enum GPURenderPassTimestampLocation {\n    \"beginning\",\n    \"end\"\n};",
+        "fragment": "enum GPURenderPassTimestampLocation {\n    \"beginning\",\n    \"end\",\n};",
         "type": "enum",
         "name": "GPURenderPassTimestampLocation",
         "values": [
@@ -9356,7 +9356,7 @@
         "partial": false
       },
       "GPULoadOp": {
-        "fragment": "enum GPULoadOp {\n    \"load\"\n};",
+        "fragment": "enum GPULoadOp {\n    \"load\",\n};",
         "type": "enum",
         "name": "GPULoadOp",
         "values": [
@@ -9368,7 +9368,7 @@
         "extAttrs": []
       },
       "GPUStoreOp": {
-        "fragment": "enum GPUStoreOp {\n    \"store\",\n    \"discard\"\n};",
+        "fragment": "enum GPUStoreOp {\n    \"store\",\n    \"discard\",\n};",
         "type": "enum",
         "name": "GPUStoreOp",
         "values": [
@@ -10075,7 +10075,7 @@
         "partial": false
       },
       "GPUQueryType": {
-        "fragment": "enum GPUQueryType {\n    \"occlusion\",\n    \"pipeline-statistics\",\n    \"timestamp\"\n};",
+        "fragment": "enum GPUQueryType {\n    \"occlusion\",\n    \"pipeline-statistics\",\n    \"timestamp\",\n};",
         "type": "enum",
         "name": "GPUQueryType",
         "values": [
@@ -10095,7 +10095,7 @@
         "extAttrs": []
       },
       "GPUPipelineStatisticName": {
-        "fragment": "enum GPUPipelineStatisticName {\n    \"vertex-shader-invocations\",\n    \"clipper-invocations\",\n    \"clipper-primitives-out\",\n    \"fragment-shader-invocations\",\n    \"compute-shader-invocations\"\n};",
+        "fragment": "enum GPUPipelineStatisticName {\n    \"vertex-shader-invocations\",\n    \"clipper-invocations\",\n    \"clipper-primitives-out\",\n    \"fragment-shader-invocations\",\n    \"compute-shader-invocations\",\n};",
         "type": "enum",
         "name": "GPUPipelineStatisticName",
         "values": [
@@ -10493,7 +10493,7 @@
         "partial": false
       },
       "GPUErrorFilter": {
-        "fragment": "enum GPUErrorFilter {\n    \"out-of-memory\",\n    \"validation\"\n};",
+        "fragment": "enum GPUErrorFilter {\n    \"out-of-memory\",\n    \"validation\",\n};",
         "type": "enum",
         "name": "GPUErrorFilter",
         "values": [
