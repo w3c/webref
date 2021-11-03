@@ -1363,7 +1363,7 @@
         "partial": false
       },
       "XRWebGLBinding": {
-        "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
+        "fragment": "[Exposed=Window] interface XRWebGLBinding {\n  constructor(XRSession session, XRWebGLRenderingContext context);\n\n  readonly attribute double nativeProjectionScaleFactor;\n  readonly attribute boolean usesDepthValues;\n\n  XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});\n  XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});\n  XRCylinderLayer createCylinderLayer(optional XRCylinderLayerInit init = {});\n  XREquirectLayer createEquirectLayer(optional XREquirectLayerInit init = {});\n  XRCubeLayer createCubeLayer(optional XRCubeLayerInit init = {});\n\n  XRWebGLSubImage getSubImage(XRCompositionLayer layer, XRFrame frame, optional XREye eye = \"none\");\n  XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);\n};",
         "type": "interface",
         "name": "XRWebGLBinding",
         "inheritance": null,
@@ -1416,6 +1416,21 @@
               "nullable": false,
               "union": false,
               "idlType": "double"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "usesDepthValues",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "extAttrs": [],
             "special": "",

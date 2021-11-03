@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-11-03T12:47:56.479Z",
+  "date": "2021-11-03T18:48:08.044Z",
   "options": {
     "output": "report",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 446,
-    "errors": 2
+    "errors": 3
   },
   "results": [
     {
@@ -1080,7 +1080,7 @@
       ],
       "crawled": "https://fetch.spec.whatwg.org/",
       "generator": "bikeshed",
-      "date": "1 November 2021",
+      "date": "3 November 2021",
       "links": "links/fetch.json",
       "refs": "refs/fetch.json",
       "idl": "idl/fetch.idl",
@@ -1258,7 +1258,7 @@
         "https://www.w3.org/html/wg/drafts/html/master/webappapis.html"
       ],
       "crawled": "https://html.spec.whatwg.org/multipage/",
-      "date": "2 November 2021",
+      "date": "3 November 2021",
       "links": "links/html.json",
       "refs": "refs/html.json",
       "idl": "idl/html.idl",
@@ -9774,15 +9774,13 @@
         "https://www.w3.org/TR/css-align-3/",
         "https://drafts.csswg.org/css-align/"
       ],
-      "crawled": "https://drafts.csswg.org/css-align/",
-      "generator": "bikeshed",
-      "date": "16 June 2021",
-      "links": "links/css-align-3.json",
-      "refs": "refs/css-align-3.json",
-      "css": "css/css-align.json",
-      "dfns": "dfns/css-align-3.json",
-      "headings": "headings/css-align-3.json",
-      "ids": "ids/css-align-3.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-align/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-align-3/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-animation-worklet-1/",
@@ -9878,17 +9876,13 @@
         "https://www.w3.org/TR/css-animations-1/",
         "https://drafts.csswg.org/css-animations/"
       ],
-      "crawled": "https://drafts.csswg.org/css-animations/",
-      "generator": "bikeshed",
-      "date": "15 July 2021",
-      "links": "links/css-animations-1.json",
-      "refs": "refs/css-animations-1.json",
-      "idl": "idl/css-animations.idl",
-      "css": "css/css-animations.json",
-      "dfns": "dfns/css-animations-1.json",
-      "headings": "headings/css-animations-1.json",
-      "ids": "ids/css-animations-1.json",
-      "idlparsed": "idlparsed/css-animations-1.json"
+      "crawled": {
+        "url": "https://drafts.csswg.org/css-animations/",
+        "repository": "https://github.com/w3c/csswg-drafts",
+        "sourcePath": "css-animations-1/Overview.bs",
+        "filename": "Overview.html"
+      },
+      "error": "TimeoutError: Navigation timeout of 120000 ms exceeded TimeoutError: Navigation timeout of 120000 ms exceeded\n    at /home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:106:111"
     },
     {
       "url": "https://www.w3.org/TR/css-backgrounds-3/",
@@ -9971,7 +9965,7 @@
         "sourcePath": "css-box-3/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Box Model Module Level 3",
+      "title": "500 Internal Server Error",
       "source": "w3c",
       "shortTitle": "CSS Box Model 3",
       "tests": {
@@ -9985,14 +9979,7 @@
         "https://drafts.csswg.org/css-box-3/"
       ],
       "crawled": "https://drafts.csswg.org/css-box-3/",
-      "generator": "bikeshed",
-      "date": "14 July 2021",
-      "links": "links/css-box-3.json",
-      "refs": "refs/css-box-3.json",
-      "css": "css/css-box.json",
-      "dfns": "dfns/css-box-3.json",
-      "headings": "headings/css-box-3.json",
-      "ids": "ids/css-box-3.json"
+      "date": "3 November 2021"
     },
     {
       "url": "https://www.w3.org/TR/css-box-4/",
@@ -10023,7 +10010,7 @@
         "sourcePath": "css-box-4/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Box Model Module Level 4",
+      "title": "500 Internal Server Error",
       "source": "w3c",
       "shortTitle": "CSS Box Model 4",
       "tests": {
@@ -10037,14 +10024,7 @@
         "https://drafts.csswg.org/css-box-4/"
       ],
       "crawled": "https://drafts.csswg.org/css-box-4/",
-      "generator": "bikeshed",
-      "date": "14 July 2021",
-      "links": "links/css-box-4.json",
-      "refs": "refs/css-box-4.json",
-      "css": "css/css-box.json",
-      "dfns": "dfns/css-box-4.json",
-      "headings": "headings/css-box-4.json",
-      "ids": "ids/css-box-4.json"
+      "date": "3 November 2021"
     },
     {
       "url": "https://www.w3.org/TR/css-break-3/",
@@ -10075,7 +10055,7 @@
         "sourcePath": "css-break-3/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Fragmentation Module Level 3",
+      "title": "500 Internal Server Error",
       "source": "w3c",
       "shortTitle": "CSS Fragmentation 3",
       "tests": {
@@ -10089,14 +10069,7 @@
         "https://drafts.csswg.org/css-break/"
       ],
       "crawled": "https://drafts.csswg.org/css-break/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/css-break-3.json",
-      "refs": "refs/css-break-3.json",
-      "css": "css/css-break.json",
-      "dfns": "dfns/css-break-3.json",
-      "headings": "headings/css-break-3.json",
-      "ids": "ids/css-break-3.json"
+      "date": "3 November 2021"
     },
     {
       "url": "https://www.w3.org/TR/css-break-4/",
@@ -10127,7 +10100,7 @@
         "sourcePath": "css-break-4/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Fragmentation Module Level 4",
+      "title": "500 Internal Server Error",
       "source": "w3c",
       "shortTitle": "CSS Fragmentation 4",
       "tests": {
@@ -10141,14 +10114,7 @@
         "https://drafts.csswg.org/css-break-4/"
       ],
       "crawled": "https://drafts.csswg.org/css-break-4/",
-      "generator": "bikeshed",
-      "date": "17 May 2021",
-      "links": "links/css-break-4.json",
-      "refs": "refs/css-break-4.json",
-      "css": "css/css-break.json",
-      "dfns": "dfns/css-break-4.json",
-      "headings": "headings/css-break-4.json",
-      "ids": "ids/css-break-4.json"
+      "date": "3 November 2021"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-3/",
@@ -10180,7 +10146,7 @@
         "sourcePath": "css-cascade-3/Overview.bs",
         "filename": "Overview.html"
       },
-      "title": "CSS Cascading and Inheritance Level 3",
+      "title": "500 Internal Server Error",
       "source": "w3c",
       "tests": {
         "repository": "https://github.com/web-platform-tests/wpt",
@@ -10193,14 +10159,7 @@
         "https://drafts.csswg.org/css-cascade-3/"
       ],
       "crawled": "https://drafts.csswg.org/css-cascade-3/",
-      "generator": "bikeshed",
-      "date": "18 October 2021",
-      "links": "links/css-cascade-3.json",
-      "refs": "refs/css-cascade-3.json",
-      "css": "css/css-cascade.json",
-      "dfns": "dfns/css-cascade-3.json",
-      "headings": "headings/css-cascade-3.json",
-      "ids": "ids/css-cascade-3.json"
+      "date": "3 November 2021"
     },
     {
       "url": "https://www.w3.org/TR/css-cascade-4/",
@@ -11284,7 +11243,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-images-4/",
       "generator": "bikeshed",
-      "date": "1 November 2021",
+      "date": "3 November 2021",
       "links": "links/css-images-4.json",
       "refs": "refs/css-images-4.json",
       "idl": "idl/css-images-4.idl",
@@ -17929,7 +17888,7 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation",
       "generator": "bikeshed",
-      "date": "2 November 2021",
+      "date": "3 November 2021",
       "links": "links/secure-payment-confirmation.json",
       "refs": "refs/secure-payment-confirmation.json",
       "idl": "idl/secure-payment-confirmation.idl",
@@ -20106,13 +20065,16 @@
         "https://www.w3.org/TR/webrtc-svc/",
         "https://w3c.github.io/webrtc-svc/"
       ],
-      "crawled": {
-        "url": "https://w3c.github.io/webrtc-svc/",
-        "repository": "https://github.com/w3c/webrtc-svc",
-        "sourcePath": "index.html",
-        "filename": "index.html"
-      },
-      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:515:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:51:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:372:22)\n    at async Promise.all (index 431)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:21)"
+      "crawled": "https://w3c.github.io/webrtc-svc/",
+      "generator": "respec",
+      "date": "03 November 2021",
+      "links": "links/webrtc-svc.json",
+      "refs": "refs/webrtc-svc.json",
+      "idl": "idl/webrtc-svc.idl",
+      "dfns": "dfns/webrtc-svc.json",
+      "headings": "headings/webrtc-svc.json",
+      "ids": "ids/webrtc-svc.json",
+      "idlparsed": "idlparsed/webrtc-svc.json"
     },
     {
       "url": "https://www.w3.org/TR/webrtc/",
@@ -20678,7 +20640,7 @@
       ],
       "crawled": "https://immersive-web.github.io/layers/",
       "generator": "bikeshed",
-      "date": "24 October 2021",
+      "date": "3 November 2021",
       "links": "links/webxrlayers-1.json",
       "refs": "refs/webxrlayers-1.json",
       "idl": "idl/webxrlayers.idl",

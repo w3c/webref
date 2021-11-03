@@ -25107,6 +25107,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "documentvisibilitystate",
+      "href": "https://html.spec.whatwg.org/multipage/dom.html#documentvisibilitystate",
+      "linkingText": [
+        "DocumentVisibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-document-object",
+        "href": "https://html.spec.whatwg.org/multipage/dom.html#the-document-object",
+        "title": "The Document object",
+        "number": "3.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "htmlorsvgscriptelement",
       "href": "https://html.spec.whatwg.org/multipage/dom.html#htmlorsvgscriptelement",
       "linkingText": [
@@ -70015,6 +70034,124 @@
       "definedIn": "prose"
     },
     {
+      "id": "system-visibility-state",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#system-visibility-state",
+      "linkingText": [
+        "system visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "visibility-state",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#visibility-state",
+      "linkingText": [
+        "visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-visibilitystate",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-visibilitystate",
+      "linkingText": [
+        "visibilityState"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-document-hidden",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#dom-document-hidden",
+      "linkingText": [
+        "hidden"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Document"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "update-the-visibility-state",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#update-the-visibility-state",
+      "linkingText": [
+        "update the visibility state"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "page-visibility-change-steps",
+      "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility-change-steps",
+      "linkingText": [
+        "page visibility change steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "page-visibility",
+        "href": "https://html.spec.whatwg.org/multipage/interaction.html#page-visibility",
+        "title": "Page visibility",
+        "number": "6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "inert",
       "href": "https://html.spec.whatwg.org/multipage/interaction.html#inert",
       "linkingText": [
@@ -70029,7 +70166,7 @@
         "id": "inert-subtrees",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees",
         "title": "Inert subtrees",
-        "number": "6.2"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -70048,7 +70185,7 @@
         "id": "inert-subtrees",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees",
         "title": "Inert subtrees",
-        "number": "6.2"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -70067,7 +70204,7 @@
         "id": "inert-subtrees",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#inert-subtrees",
         "title": "Inert subtrees",
-        "number": "6.2"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -70086,7 +70223,7 @@
         "id": "user-activation-data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-data-model",
         "title": "Data model",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -70105,7 +70242,7 @@
         "id": "user-activation-data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-data-model",
         "title": "Data model",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -70124,7 +70261,7 @@
         "id": "user-activation-data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-data-model",
         "title": "Data model",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "dt"
     },
@@ -70143,7 +70280,7 @@
         "id": "user-activation-data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-data-model",
         "title": "Data model",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "dt"
     },
@@ -70162,7 +70299,7 @@
         "id": "user-activation-data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-data-model",
         "title": "Data model",
-        "number": "6.3.1"
+        "number": "6.4.1"
       },
       "definedIn": "prose"
     },
@@ -70181,7 +70318,7 @@
         "id": "user-activation-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-processing-model",
         "title": "Processing model",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -70200,7 +70337,7 @@
         "id": "user-activation-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-processing-model",
         "title": "Processing model",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -70219,7 +70356,7 @@
         "id": "user-activation-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-processing-model",
         "title": "Processing model",
-        "number": "6.3.2"
+        "number": "6.4.2"
       },
       "definedIn": "prose"
     },
@@ -70238,7 +70375,7 @@
         "id": "user-activation-gated-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-gated-apis",
         "title": "APIs gated by user activation",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "dt"
     },
@@ -70257,7 +70394,7 @@
         "id": "user-activation-gated-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-gated-apis",
         "title": "APIs gated by user activation",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "dt"
     },
@@ -70276,7 +70413,7 @@
         "id": "user-activation-gated-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#user-activation-gated-apis",
         "title": "APIs gated by user activation",
-        "number": "6.3.3"
+        "number": "6.4.3"
       },
       "definedIn": "dt"
     },
@@ -70295,7 +70432,7 @@
         "id": "activation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#activation",
         "title": "Activation behavior of elements",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
@@ -70316,7 +70453,7 @@
         "id": "activation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#activation",
         "title": "Activation behavior of elements",
-        "number": "6.4"
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
@@ -70337,7 +70474,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70356,7 +70493,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70375,7 +70512,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70394,7 +70531,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70413,7 +70550,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70432,7 +70569,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70451,7 +70588,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70470,7 +70607,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70489,7 +70626,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70508,7 +70645,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70527,7 +70664,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70546,7 +70683,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70565,7 +70702,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70584,7 +70721,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70603,7 +70740,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70622,7 +70759,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70641,7 +70778,7 @@
         "id": "data-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#data-model",
         "title": "Data model",
-        "number": "6.5.2"
+        "number": "6.6.2"
       },
       "definedIn": "prose"
     },
@@ -70662,7 +70799,7 @@
         "id": "the-tabindex-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute",
         "title": "The tabindex attribute",
-        "number": "6.5.3"
+        "number": "6.6.3"
       },
       "definedIn": "prose"
     },
@@ -70681,7 +70818,7 @@
         "id": "the-tabindex-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute",
         "title": "The tabindex attribute",
-        "number": "6.5.3"
+        "number": "6.6.3"
       },
       "definedIn": "prose"
     },
@@ -70702,7 +70839,7 @@
         "id": "the-tabindex-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-tabindex-attribute",
         "title": "The tabindex attribute",
-        "number": "6.5.3"
+        "number": "6.6.3"
       },
       "definedIn": "prose"
     },
@@ -70721,7 +70858,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70740,7 +70877,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70759,7 +70896,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70778,7 +70915,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70797,7 +70934,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70816,7 +70953,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70835,7 +70972,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70854,7 +70991,7 @@
         "id": "focus-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-processing-model",
         "title": "Processing model",
-        "number": "6.5.4"
+        "number": "6.6.4"
       },
       "definedIn": "prose"
     },
@@ -70873,7 +71010,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "heading"
     },
@@ -70892,7 +71029,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -70911,7 +71048,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -70930,7 +71067,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -70949,7 +71086,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -70968,7 +71105,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -70987,7 +71124,7 @@
         "id": "sequential-focus-navigation",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#sequential-focus-navigation",
         "title": "Sequential focus navigation",
-        "number": "6.5.5"
+        "number": "6.6.5"
       },
       "definedIn": "prose"
     },
@@ -71006,7 +71143,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "pre"
     },
@@ -71027,7 +71164,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71048,7 +71185,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71069,7 +71206,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71090,7 +71227,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71111,7 +71248,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71130,7 +71267,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71151,7 +71288,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71172,7 +71309,7 @@
         "id": "focus-management-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#focus-management-apis",
         "title": "Focus management APIs",
-        "number": "6.5.6"
+        "number": "6.6.6"
       },
       "definedIn": "prose"
     },
@@ -71193,7 +71330,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71212,7 +71349,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71231,7 +71368,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71250,7 +71387,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71269,7 +71406,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71290,7 +71427,7 @@
         "id": "the-autofocus-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-autofocus-attribute",
         "title": "The autofocus attribute",
-        "number": "6.5.7"
+        "number": "6.6.7"
       },
       "definedIn": "prose"
     },
@@ -71311,7 +71448,7 @@
         "id": "the-accesskey-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#the-accesskey-attribute",
         "title": "The accesskey attribute",
-        "number": "6.6.2"
+        "number": "6.7.2"
       },
       "definedIn": "heading"
     },
@@ -71330,7 +71467,7 @@
         "id": "keyboard-shortcuts-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#keyboard-shortcuts-processing-model",
         "title": "Processing model",
-        "number": "6.6.3"
+        "number": "6.7.3"
       },
       "definedIn": "prose"
     },
@@ -71351,7 +71488,7 @@
         "id": "keyboard-shortcuts-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#keyboard-shortcuts-processing-model",
         "title": "Processing model",
-        "number": "6.6.3"
+        "number": "6.7.3"
       },
       "definedIn": "prose"
     },
@@ -71372,7 +71509,7 @@
         "id": "keyboard-shortcuts-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#keyboard-shortcuts-processing-model",
         "title": "Processing model",
-        "number": "6.6.3"
+        "number": "6.7.3"
       },
       "definedIn": "prose"
     },
@@ -71391,7 +71528,7 @@
         "id": "contenteditable",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
         "title": "Making document regions editable: The contenteditable content attribute",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "pre"
     },
@@ -71412,7 +71549,7 @@
         "id": "contenteditable",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
         "title": "Making document regions editable: The contenteditable content attribute",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "prose"
     },
@@ -71433,7 +71570,7 @@
         "id": "contenteditable",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
         "title": "Making document regions editable: The contenteditable content attribute",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "prose"
     },
@@ -71454,7 +71591,7 @@
         "id": "contenteditable",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#contenteditable",
         "title": "Making document regions editable: The contenteditable content attribute",
-        "number": "6.7.1"
+        "number": "6.8.1"
       },
       "definedIn": "prose"
     },
@@ -71473,7 +71610,7 @@
         "id": "making-entire-documents-editable:-the-designmode-idl-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#making-entire-documents-editable:-the-designmode-idl-attribute",
         "title": "Making entire documents editable: the designMode getter and setter",
-        "number": "6.7.2"
+        "number": "6.8.2"
       },
       "definedIn": "prose"
     },
@@ -71494,7 +71631,7 @@
         "id": "making-entire-documents-editable:-the-designmode-idl-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#making-entire-documents-editable:-the-designmode-idl-attribute",
         "title": "Making entire documents editable: the designMode getter and setter",
-        "number": "6.7.2"
+        "number": "6.8.2"
       },
       "definedIn": "prose"
     },
@@ -71513,7 +71650,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71532,7 +71669,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71551,7 +71688,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71570,7 +71707,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71589,7 +71726,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71608,7 +71745,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71627,7 +71764,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71646,7 +71783,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71665,7 +71802,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71684,7 +71821,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71703,7 +71840,7 @@
         "id": "editing-apis",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#editing-apis",
         "title": "Editing APIs",
-        "number": "6.7.4"
+        "number": "6.8.4"
       },
       "definedIn": "prose"
     },
@@ -71722,7 +71859,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "prose"
     },
@@ -71741,7 +71878,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "dt"
     },
@@ -71760,7 +71897,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "dt"
     },
@@ -71779,7 +71916,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "dt"
     },
@@ -71800,7 +71937,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "prose"
     },
@@ -71821,7 +71958,7 @@
         "id": "spelling-and-grammar-checking",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#spelling-and-grammar-checking",
         "title": "Spelling and grammar checking",
-        "number": "6.7.5"
+        "number": "6.8.5"
       },
       "definedIn": "prose"
     },
@@ -71840,7 +71977,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "prose"
     },
@@ -71859,7 +71996,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "dt"
     },
@@ -71878,7 +72015,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "dt"
     },
@@ -71897,7 +72034,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "dt"
     },
@@ -71916,7 +72053,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "dt"
     },
@@ -71935,7 +72072,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "dt"
     },
@@ -71956,7 +72093,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "prose"
     },
@@ -71977,7 +72114,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -71998,7 +72135,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -72019,7 +72156,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -72040,7 +72177,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -72061,7 +72198,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -72082,7 +72219,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "table"
     },
@@ -72101,7 +72238,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "prose"
     },
@@ -72122,7 +72259,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "prose"
     },
@@ -72141,7 +72278,7 @@
         "id": "autocapitalization",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#autocapitalization",
         "title": "Autocapitalization",
-        "number": "6.7.6"
+        "number": "6.8.6"
       },
       "definedIn": "prose"
     },
@@ -72162,7 +72299,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "prose"
     },
@@ -72183,7 +72320,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72204,7 +72341,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72225,7 +72362,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72246,7 +72383,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72267,7 +72404,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72288,7 +72425,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72309,7 +72446,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72330,7 +72467,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "table"
     },
@@ -72351,7 +72488,7 @@
         "id": "input-modalities:-the-inputmode-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-inputmode-attribute",
         "title": "Input modalities: the inputmode attribute",
-        "number": "6.7.7"
+        "number": "6.8.7"
       },
       "definedIn": "prose"
     },
@@ -72372,7 +72509,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "prose"
     },
@@ -72393,7 +72530,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72414,7 +72551,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72435,7 +72572,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72456,7 +72593,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72477,7 +72614,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72498,7 +72635,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72519,7 +72656,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "table"
     },
@@ -72540,7 +72677,7 @@
         "id": "input-modalities:-the-enterkeyhint-attribute",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute",
         "title": "Input modalities: the enterkeyhint attribute",
-        "number": "6.7.8"
+        "number": "6.8.8"
       },
       "definedIn": "prose"
     },
@@ -72559,7 +72696,7 @@
         "id": "introduction-10",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#introduction-10",
         "title": "Introduction",
-        "number": "6.8.1"
+        "number": "6.9.1"
       },
       "definedIn": "prose"
     },
@@ -72578,7 +72715,7 @@
         "id": "introduction-10",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#introduction-10",
         "title": "Introduction",
-        "number": "6.8.1"
+        "number": "6.9.1"
       },
       "definedIn": "prose"
     },
@@ -72597,7 +72734,7 @@
         "id": "introduction-10",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#introduction-10",
         "title": "Introduction",
-        "number": "6.8.1"
+        "number": "6.9.1"
       },
       "definedIn": "prose"
     },
@@ -72616,7 +72753,7 @@
         "id": "introduction-10",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#introduction-10",
         "title": "Introduction",
-        "number": "6.8.1"
+        "number": "6.9.1"
       },
       "definedIn": "prose"
     },
@@ -72635,7 +72772,7 @@
         "id": "introduction-10",
         "href": "https://html.spec.whatwg.org/multipage/interaction.html#introduction-10",
         "title": "Introduction",
-        "number": "6.8.1"
+        "number": "6.9.1"
       },
       "definedIn": "prose"
     },
@@ -72654,7 +72791,7 @@
         "id": "dnd",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dnd",
         "title": "Drag and drop",
-        "number": "6.9"
+        "number": "6.10"
       },
       "definedIn": "heading"
     },
@@ -72673,7 +72810,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72692,7 +72829,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72711,7 +72848,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "dt"
     },
@@ -72730,7 +72867,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "dt"
     },
@@ -72749,7 +72886,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72768,7 +72905,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72787,7 +72924,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72806,7 +72943,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72825,7 +72962,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "dt"
     },
@@ -72844,7 +72981,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "dt"
     },
@@ -72863,7 +73000,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "dt"
     },
@@ -72882,7 +73019,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72901,7 +73038,7 @@
         "id": "the-drag-data-store",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-drag-data-store",
         "title": "The drag data store",
-        "number": "6.9.2"
+        "number": "6.10.2"
       },
       "definedIn": "prose"
     },
@@ -72920,7 +73057,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "pre"
     },
@@ -72939,7 +73076,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -72960,7 +73097,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -72981,7 +73118,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73000,7 +73137,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73019,7 +73156,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73038,7 +73175,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73057,7 +73194,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73078,7 +73215,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73097,7 +73234,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73116,7 +73253,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73135,7 +73272,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73154,7 +73291,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73173,7 +73310,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73192,7 +73329,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73211,7 +73348,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73230,7 +73367,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73249,7 +73386,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73270,7 +73407,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73291,7 +73428,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73312,7 +73449,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73333,7 +73470,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73354,7 +73491,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73375,7 +73512,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73396,7 +73533,7 @@
         "id": "the-datatransfer-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransfer-interface",
         "title": "The DataTransfer interface",
-        "number": "6.9.3"
+        "number": "6.10.3"
       },
       "definedIn": "prose"
     },
@@ -73415,7 +73552,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.9.3.1"
+        "number": "6.10.3.1"
       },
       "definedIn": "pre"
     },
@@ -73436,7 +73573,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.9.3.1"
+        "number": "6.10.3.1"
       },
       "definedIn": "prose"
     },
@@ -73457,7 +73594,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.9.3.1"
+        "number": "6.10.3.1"
       },
       "definedIn": "prose"
     },
@@ -73478,7 +73615,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.9.3.1"
+        "number": "6.10.3.1"
       },
       "definedIn": "prose"
     },
@@ -73499,7 +73636,7 @@
         "id": "the-datatransferitemlist-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitemlist-interface",
         "title": "The DataTransferItemList interface",
-        "number": "6.9.3.1"
+        "number": "6.10.3.1"
       },
       "definedIn": "prose"
     },
@@ -73518,7 +73655,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "pre"
     },
@@ -73537,7 +73674,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "pre"
     },
@@ -73558,7 +73695,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "prose"
     },
@@ -73579,7 +73716,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "prose"
     },
@@ -73600,7 +73737,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "prose"
     },
@@ -73621,7 +73758,7 @@
         "id": "the-datatransferitem-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-datatransferitem-interface",
         "title": "The DataTransferItem interface",
-        "number": "6.9.3.2"
+        "number": "6.10.3.2"
       },
       "definedIn": "prose"
     },
@@ -73640,7 +73777,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.9.4"
+        "number": "6.10.4"
       },
       "definedIn": "pre"
     },
@@ -73659,7 +73796,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.9.4"
+        "number": "6.10.4"
       },
       "definedIn": "pre"
     },
@@ -73680,7 +73817,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.9.4"
+        "number": "6.10.4"
       },
       "definedIn": "prose"
     },
@@ -73699,7 +73836,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.9.4"
+        "number": "6.10.4"
       },
       "definedIn": "prose"
     },
@@ -73718,7 +73855,7 @@
         "id": "the-dragevent-interface",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-dragevent-interface",
         "title": "The DragEvent interface",
-        "number": "6.9.4"
+        "number": "6.10.4"
       },
       "definedIn": "prose"
     },
@@ -73737,7 +73874,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73756,7 +73893,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73775,7 +73912,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73794,7 +73931,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73813,7 +73950,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73832,7 +73969,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73851,7 +73988,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73870,7 +74007,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73889,7 +74026,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73908,7 +74045,7 @@
         "id": "drag-and-drop-processing-model",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#drag-and-drop-processing-model",
         "title": "Processing model",
-        "number": "6.9.5"
+        "number": "6.10.5"
       },
       "definedIn": "prose"
     },
@@ -73929,7 +74066,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -73950,7 +74087,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -73971,7 +74108,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -73992,7 +74129,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -74013,7 +74150,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -74034,7 +74171,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -74055,7 +74192,7 @@
         "id": "dndevents",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#dndevents",
         "title": "Events summary",
-        "number": "6.9.6"
+        "number": "6.10.6"
       },
       "definedIn": "table"
     },
@@ -74076,7 +74213,7 @@
         "id": "the-draggable-attribute",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
         "title": "The draggable attribute",
-        "number": "6.9.7"
+        "number": "6.10.7"
       },
       "definedIn": "prose"
     },
@@ -74097,7 +74234,7 @@
         "id": "the-draggable-attribute",
         "href": "https://html.spec.whatwg.org/multipage/dnd.html#the-draggable-attribute",
         "title": "The draggable attribute",
-        "number": "6.9.7"
+        "number": "6.10.7"
       },
       "definedIn": "prose"
     },
