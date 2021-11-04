@@ -2470,7 +2470,7 @@
         "partial": false
       },
       "RTCCertificateExpiration": {
-        "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] DOMTimeStamp expires;\n};",
+        "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] EpochTimeStamp expires;\n};",
         "type": "dictionary",
         "name": "RTCCertificateExpiration",
         "inheritance": null,
@@ -2492,7 +2492,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMTimeStamp"
+              "idlType": "EpochTimeStamp"
             },
             "default": null,
             "required": false
@@ -2502,7 +2502,7 @@
         "partial": false
       },
       "RTCCertificate": {
-        "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute DOMTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
+        "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute EpochTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
         "type": "interface",
         "name": "RTCCertificate",
         "inheritance": null,
@@ -2516,7 +2516,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "DOMTimeStamp"
+              "idlType": "EpochTimeStamp"
             },
             "extAttrs": [],
             "special": "",
@@ -6780,10 +6780,10 @@
         "EventInit"
       ],
       "RTCCertificateExpiration": [
-        "DOMTimeStamp"
+        "EpochTimeStamp"
       ],
       "RTCCertificate": [
-        "DOMTimeStamp",
+        "EpochTimeStamp",
         "RTCDtlsFingerprint"
       ],
       "RTCRtpTransceiverInit": [
@@ -6953,7 +6953,7 @@
       "Event",
       "EventInit",
       "AlgorithmIdentifier",
-      "DOMTimeStamp",
+      "EpochTimeStamp",
       "MediaStreamTrack",
       "MediaStream",
       "DOMHighResTimeStamp",

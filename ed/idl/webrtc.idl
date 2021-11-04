@@ -247,12 +247,12 @@ partial interface RTCPeerConnection {
 };
 
 dictionary RTCCertificateExpiration {
-  [EnforceRange] DOMTimeStamp expires;
+  [EnforceRange] EpochTimeStamp expires;
 };
 
 [Exposed=Window, Serializable]
 interface RTCCertificate {
-  readonly attribute DOMTimeStamp expires;
+  readonly attribute EpochTimeStamp expires;
   sequence<RTCDtlsFingerprint> getFingerprints();
 };
 

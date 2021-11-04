@@ -6,7 +6,7 @@
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute DOMTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
+    "fragment": "[Exposed=Window, Serializable]\ninterface RTCCertificate {\n  readonly attribute EpochTimeStamp expires;\n  sequence<RTCDtlsFingerprint> getFingerprints();\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtccertificate"
   },
   "extended": [],
