@@ -18,11 +18,6 @@ interface MediaStreamTrack : EventTarget {
   Promise<undefined> applyConstraints(optional MediaTrackConstraints constraints = {});
 };
 
-// Source: MediaStreamTrack Content Hints (https://www.w3.org/TR/mst-content-hint/)
-partial interface MediaStreamTrack {
-  attribute DOMString contentHint;
-};
-
 // Source: Identity for WebRTC 1.0 (https://www.w3.org/TR/webrtc-identity/)
 partial interface MediaStreamTrack {
     readonly        attribute boolean      isolated;
