@@ -5263,7 +5263,7 @@
         "partial": false
       },
       "GPUFragmentState": {
-        "fragment": "dictionary GPUFragmentState: GPUProgrammableStage {\n    required sequence<GPUColorTargetState> targets;\n};",
+        "fragment": "dictionary GPUFragmentState : GPUProgrammableStage {\n    required sequence<GPUColorTargetState> targets;\n};",
         "type": "dictionary",
         "name": "GPUFragmentState",
         "inheritance": "GPUProgrammableStage",
@@ -6147,7 +6147,7 @@
         "extAttrs": []
       },
       "GPUVertexState": {
-        "fragment": "dictionary GPUVertexState: GPUProgrammableStage {\n    sequence<GPUVertexBufferLayout?> buffers = [];\n};",
+        "fragment": "dictionary GPUVertexState : GPUProgrammableStage {\n    sequence<GPUVertexBufferLayout?> buffers = [];\n};",
         "type": "dictionary",
         "name": "GPUVertexState",
         "inheritance": "GPUProgrammableStage",
@@ -9605,7 +9605,7 @@
         "partial": false
       },
       "GPUQueue": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n      GPUImageCopyTexture destination,\n      [AllowShared] BufferSource data,\n      GPUImageDataLayout dataLayout,\n      GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUQueue {\n    undefined submit(sequence<GPUCommandBuffer> commandBuffers);\n\n    Promise<undefined> onSubmittedWorkDone();\n\n    undefined writeBuffer(\n        GPUBuffer buffer,\n        GPUSize64 bufferOffset,\n        [AllowShared] BufferSource data,\n        optional GPUSize64 dataOffset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTexture(\n        GPUImageCopyTexture destination,\n        [AllowShared] BufferSource data,\n        GPUImageDataLayout dataLayout,\n        GPUExtent3D size);\n\n    undefined copyExternalImageToTexture(\n        GPUImageCopyExternalImage source,\n        GPUImageCopyTextureTagged destination,\n        GPUExtent3D copySize);\n};",
         "type": "interface",
         "name": "GPUQueue",
         "inheritance": null,

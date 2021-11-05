@@ -618,7 +618,7 @@ dictionary GPUMultisampleState {
     boolean alphaToCoverageEnabled = false;
 };
 
-dictionary GPUFragmentState: GPUProgrammableStage {
+dictionary GPUFragmentState : GPUProgrammableStage {
     required sequence<GPUColorTargetState> targets;
 };
 
@@ -752,7 +752,7 @@ enum GPUVertexStepMode {
     "instance",
 };
 
-dictionary GPUVertexState: GPUProgrammableStage {
+dictionary GPUVertexState : GPUProgrammableStage {
     sequence<GPUVertexBufferLayout?> buffers = [];
 };
 
@@ -1033,10 +1033,10 @@ interface GPUQueue {
         optional GPUSize64 size);
 
     undefined writeTexture(
-      GPUImageCopyTexture destination,
-      [AllowShared] BufferSource data,
-      GPUImageDataLayout dataLayout,
-      GPUExtent3D size);
+        GPUImageCopyTexture destination,
+        [AllowShared] BufferSource data,
+        GPUImageDataLayout dataLayout,
+        GPUExtent3D size);
 
     undefined copyExternalImageToTexture(
         GPUImageCopyExternalImage source,
