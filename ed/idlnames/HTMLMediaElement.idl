@@ -73,6 +73,11 @@ partial interface HTMLMediaElement {
     [SecureContext] Promise<undefined> setMediaKeys (MediaKeys? mediaKeys);
 };
 
+// Source: Media Capture from DOM Elements (https://www.w3.org/TR/mediacapture-fromelement/)
+partial interface HTMLMediaElement {
+    MediaStream captureStream ();
+};
+
 // Source: Remote Playback API (https://www.w3.org/TR/remote-playback/)
 partial interface HTMLMediaElement {
   [SameObject] readonly attribute RemotePlayback remote;
