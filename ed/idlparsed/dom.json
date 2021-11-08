@@ -1167,7 +1167,7 @@
         "partial": false
       },
       "AbortController": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort();\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
         "type": "interface",
         "name": "AbortController",
         "inheritance": null,
@@ -1210,7 +1210,24 @@
               "union": false,
               "idlType": "undefined"
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "reason",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [],
             "special": ""
           }
@@ -1236,7 +1253,7 @@
         "partial": false
       },
       "AbortSignal": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort();\n\n  readonly attribute boolean aborted;\n\n  attribute EventHandler onabort;\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n\n  attribute EventHandler onabort;\n};",
         "type": "interface",
         "name": "AbortSignal",
         "inheritance": "EventTarget",
@@ -1252,7 +1269,24 @@
               "union": false,
               "idlType": "AbortSignal"
             },
-            "arguments": [],
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "reason",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "any"
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
             "extAttrs": [
               {
                 "type": "extended-attribute",
@@ -1273,6 +1307,21 @@
               "nullable": false,
               "union": false,
               "idlType": "boolean"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "reason",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
             },
             "extAttrs": [],
             "special": "",

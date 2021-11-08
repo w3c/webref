@@ -1,9 +1,10 @@
 // Source: DOM Standard (https://dom.spec.whatwg.org/)
 [Exposed=(Window,Worker)]
 interface AbortSignal : EventTarget {
-  [NewObject] static AbortSignal abort();
+  [NewObject] static AbortSignal abort(optional any reason);
 
   readonly attribute boolean aborted;
+  readonly attribute any reason;
 
   attribute EventHandler onabort;
 };
