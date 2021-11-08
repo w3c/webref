@@ -1530,7 +1530,7 @@
     },
     {
       "id": "sec-temporal-interpretisodatetimeoffset",
-      "title": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZone, disambiguation, offsetOption )",
+      "title": "InterpretISODateTimeOffset ( year, month, day, hour, minute, second, millisecond, microsecond, nanosecond, offsetBehaviour, offsetNanoseconds, timeZone, disambiguation, offsetOption, matchBehaviour )",
       "level": 3,
       "number": "6.5.1"
     },
@@ -2747,52 +2747,58 @@
       "number": "11.6.9"
     },
     {
+      "id": "sec-temporal-formatisotimezoneoffsetstring",
+      "title": "FormatISOTimeZoneOffsetString ( offsetNanoseconds )",
+      "level": 3,
+      "number": "11.6.10"
+    },
+    {
       "id": "sec-temporal-totemporaltimezone",
       "title": "ToTemporalTimeZone ( temporalTimeZoneLike )",
       "level": 3,
-      "number": "11.6.10"
+      "number": "11.6.11"
     },
     {
       "id": "sec-temporal-getoffsetnanosecondsfor",
       "title": "GetOffsetNanosecondsFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.11"
+      "number": "11.6.12"
     },
     {
       "id": "sec-temporal-builtintimezonegetoffsetstringfor",
       "title": "BuiltinTimeZoneGetOffsetStringFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.12"
+      "number": "11.6.13"
     },
     {
       "id": "sec-temporal-builtintimezonegetplaindatetimefor",
       "title": "BuiltinTimeZoneGetPlainDateTimeFor ( timeZone, instant, calendar )",
       "level": 3,
-      "number": "11.6.13"
+      "number": "11.6.14"
     },
     {
       "id": "sec-temporal-builtintimezonegetinstantfor",
       "title": "BuiltinTimeZoneGetInstantFor ( timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.14"
+      "number": "11.6.15"
     },
     {
       "id": "sec-temporal-disambiguatepossibleinstants",
       "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.15"
+      "number": "11.6.16"
     },
     {
       "id": "sec-temporal-getpossibleinstantsfor",
       "title": "GetPossibleInstantsFor ( timeZone, dateTime )",
       "level": 3,
-      "number": "11.6.16"
+      "number": "11.6.17"
     },
     {
       "id": "sec-temporal-timezoneequals",
       "title": "TimeZoneEquals ( one, two )",
       "level": 3,
-      "number": "11.6.17"
+      "number": "11.6.18"
     },
     {
       "id": "sec-temporal-calendar-objects",
@@ -3419,8 +3425,8 @@
       "number": "13.25"
     },
     {
-      "id": "sec-temporal-rejecttemporalcalendartype",
-      "title": "RejectTemporalCalendarType ( object )",
+      "id": "sec-temporal-rejectobjectwithcalendarortimezone",
+      "title": "RejectObjectWithCalendarOrTimeZone ( object )",
       "level": 2,
       "number": "13.26"
     },

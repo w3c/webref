@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Enable depth clamping (requires \"depth-clamping\" feature)\n    boolean clampDepth = false;\n};",
+    "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Requires \"depth-clip-control\" feature.\n    boolean unclippedDepth = false;\n};",
     "href": "https://www.w3.org/TR/webgpu/#dictdef-gpuprimitivestate"
   },
   "extended": [],

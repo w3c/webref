@@ -999,13 +999,13 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clamping\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
           {
             "type": "enum-value",
-            "value": "depth-clamping"
+            "value": "depth-clip-control"
           },
           {
             "type": "enum-value",
@@ -3932,7 +3932,7 @@
         "partial": false
       },
       "GPUTextureSampleType": {
-        "fragment": "enum GPUTextureSampleType {\n  \"float\",\n  \"unfilterable-float\",\n  \"depth\",\n  \"sint\",\n  \"uint\",\n};",
+        "fragment": "enum GPUTextureSampleType {\n    \"float\",\n    \"unfilterable-float\",\n    \"depth\",\n    \"sint\",\n    \"uint\",\n};",
         "type": "enum",
         "name": "GPUTextureSampleType",
         "values": [
@@ -5066,7 +5066,7 @@
         "extAttrs": []
       },
       "GPUPrimitiveState": {
-        "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Enable depth clamping (requires \"depth-clamping\" feature)\n    boolean clampDepth = false;\n};",
+        "fragment": "dictionary GPUPrimitiveState {\n    GPUPrimitiveTopology topology = \"triangle-list\";\n    GPUIndexFormat stripIndexFormat;\n    GPUFrontFace frontFace = \"ccw\";\n    GPUCullMode cullMode = \"none\";\n\n    // Requires \"depth-clip-control\" feature.\n    boolean unclippedDepth = false;\n};",
         "type": "dictionary",
         "name": "GPUPrimitiveState",
         "inheritance": null,
@@ -5142,7 +5142,7 @@
           },
           {
             "type": "field",
-            "name": "clampDepth",
+            "name": "unclippedDepth",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
@@ -6306,36 +6306,11 @@
         "partial": false
       },
       "GPUCommandBuffer": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandBuffer {\n    readonly attribute Promise<double> executionTime;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandBuffer {\n};",
         "type": "interface",
         "name": "GPUCommandBuffer",
         "inheritance": null,
-        "members": [
-          {
-            "type": "attribute",
-            "name": "executionTime",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "Promise",
-              "nullable": false,
-              "union": false,
-              "idlType": [
-                {
-                  "type": "attribute-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "double"
-                }
-              ]
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          }
-        ],
+        "members": [],
         "extAttrs": [
           {
             "type": "extended-attribute",
@@ -7080,30 +7055,11 @@
         "partial": false
       },
       "GPUCommandEncoderDescriptor": {
-        "fragment": "dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {\n    boolean measureExecutionTime = false;\n};",
+        "fragment": "dictionary GPUCommandEncoderDescriptor : GPUObjectDescriptorBase {\n};",
         "type": "dictionary",
         "name": "GPUCommandEncoderDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
-        "members": [
-          {
-            "type": "field",
-            "name": "measureExecutionTime",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          }
-        ],
+        "members": [],
         "extAttrs": [],
         "partial": false
       },
