@@ -1011,7 +1011,7 @@
         "partial": false
       },
       "GPUFeatureName": {
-        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n};",
+        "fragment": "enum GPUFeatureName {\n    \"depth-clip-control\",\n    \"depth24unorm-stencil8\",\n    \"depth32float-stencil8\",\n    \"pipeline-statistics-query\",\n    \"texture-compression-bc\",\n    \"texture-compression-etc2\",\n    \"texture-compression-astc\",\n    \"timestamp-query\",\n    \"indirect-first-instance\",\n};",
         "type": "enum",
         "name": "GPUFeatureName",
         "values": [
@@ -1046,6 +1046,10 @@
           {
             "type": "enum-value",
             "value": "timestamp-query"
+          },
+          {
+            "type": "enum-value",
+            "value": "indirect-first-instance"
           }
         ],
         "extAttrs": []
