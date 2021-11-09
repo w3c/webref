@@ -1,0 +1,461 @@
+{
+  "spec": {
+    "title": "Window Controls Overlay",
+    "url": "https://wicg.github.io/window-controls-overlay/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-controls-of-the-window",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-controls-of-the-window",
+      "linkingText": [
+        "controls of the window",
+        "window controls"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/window-controls-overlay/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-window-controls-overlay",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-window-controls-overlay",
+      "linkingText": [
+        "Window Controls Overlay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/window-controls-overlay/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-title-bar-area",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-title-bar-area",
+      "linkingText": [
+        "title bar area"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/window-controls-overlay/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-overlaid",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-overlaid",
+      "linkingText": [
+        "overlaid",
+        "overlay"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "introduction",
+        "href": "https://wicg.github.io/window-controls-overlay/#introduction",
+        "title": "Introduction",
+        "number": "1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-navigator",
+      "linkingText": [
+        "Navigator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-navigator-windowcontrolsoverlay",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-navigator-windowcontrolsoverlay",
+      "linkingText": [
+        "windowControlsOverlay"
+      ],
+      "localLinkingText": [
+        "Navigator.windowControlsOverlay"
+      ],
+      "type": "attribute",
+      "for": [
+        "Navigator"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-navigator-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#extensions-to-the-navigator-interface",
+        "title": "Extensions to the Navigator interface",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "respec-offender-internal-slot-titlebararea-must-be-associated-with-a-webidl-interface",
+      "href": "https://wicg.github.io/window-controls-overlay/#respec-offender-internal-slot-titlebararea-must-be-associated-with-a-webidl-interface",
+      "linkingText": [
+        "[[TitleBarArea]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "internal-slots",
+        "href": "https://wicg.github.io/window-controls-overlay/#internal-slots",
+        "title": "Internal slots",
+        "number": "3.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dom-windowcontrolsoverlay",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay",
+      "linkingText": [
+        "WindowControlsOverlay"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeevent",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeevent",
+      "linkingText": [
+        "WindowControlsOverlayGeometryChangeEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeevent-constructor",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(type, eventInitDict)"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlayGeometryChangeEvent.constructor",
+        "WindowControlsOverlayGeometryChangeEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "WindowControlsOverlayGeometryChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeevent-boundingrect",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeevent-boundingrect",
+      "linkingText": [
+        "boundingRect"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlayGeometryChangeEvent.boundingRect"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowControlsOverlayGeometryChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeevent-visible",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeevent-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlayGeometryChangeEvent.visible"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowControlsOverlayGeometryChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlay-visible",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlay.visible"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowControlsOverlay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-visible-attribute",
+        "href": "https://wicg.github.io/window-controls-overlay/#the-visible-attribute",
+        "title": "The visible attribute",
+        "number": "4.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-windowcontrolsoverlay-getboundingclientrect",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-getboundingclientrect",
+      "linkingText": [
+        "getBoundingClientRect()"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlay.getBoundingClientRect",
+        "WindowControlsOverlay.getBoundingClientRect()",
+        "getBoundingClientRect"
+      ],
+      "type": "method",
+      "for": [
+        "WindowControlsOverlay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-getboundingclientrect-method",
+        "href": "https://wicg.github.io/window-controls-overlay/#the-getboundingclientrect-method",
+        "title": "The getBoundingClientRect method",
+        "number": "4.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-windowcontrolsoverlay-ongeometrychange",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay-ongeometrychange",
+      "linkingText": [
+        "ongeometrychange"
+      ],
+      "localLinkingText": [
+        "WindowControlsOverlay.ongeometrychange"
+      ],
+      "type": "attribute",
+      "for": [
+        "WindowControlsOverlay"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-ongeometrychange-attribute",
+        "href": "https://wicg.github.io/window-controls-overlay/#the-ongeometrychange-attribute",
+        "title": "The ongeometrychange attribute",
+        "number": "4.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-title-bar-area-environmental-variables",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-title-bar-area-environmental-variables",
+      "linkingText": [
+        "Title bar area environmental variables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-environmental-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-environmental-variables",
+        "title": "Title bar area environmental variables",
+        "number": "6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-title-bar-area-env-variables",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-title-bar-area-env-variables",
+      "linkingText": [
+        "Title bar area env variables"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-env-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables",
+        "title": "Title bar area env variables",
+        "number": "6.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-titlebar-area-x",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-titlebar-area-x",
+      "linkingText": [
+        "titlebar-area-x"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-env-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables",
+        "title": "Title bar area env variables",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-titlebar-area-y",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-titlebar-area-y",
+      "linkingText": [
+        "titlebar-area-y"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-env-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables",
+        "title": "Title bar area env variables",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-titlebar-area-width",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-titlebar-area-width",
+      "linkingText": [
+        "titlebar-area-width"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-env-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables",
+        "title": "Title bar area env variables",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-titlebar-area-height",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-titlebar-area-height",
+      "linkingText": [
+        "titlebar-area-height"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "title-bar-area-env-variables",
+        "href": "https://wicg.github.io/window-controls-overlay/#title-bar-area-env-variables",
+        "title": "Title bar area env variables",
+        "number": "6.1"
+      },
+      "definedIn": "table"
+    },
+    {
+      "id": "dfn-update-the-overlay-area-information",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-update-the-overlay-area-information",
+      "linkingText": [
+        "update the overlay area information"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "update-the-overlay-area-information",
+        "href": "https://wicg.github.io/window-controls-overlay/#update-the-overlay-area-information",
+        "title": "Update the overlay area information",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

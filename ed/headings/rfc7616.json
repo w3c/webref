@@ -1,0 +1,336 @@
+{
+  "spec": {
+    "title": "HTTP Digest Access Authentication",
+    "url": "https://httpwg.org/specs/rfc7616.html"
+  },
+  "headings": [
+    {
+      "id": "rfc.abstract",
+      "href": "https://httpwg.org/specs/rfc7616.html#rfc.abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "introduction",
+      "href": "https://httpwg.org/specs/rfc7616.html#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "terminology",
+      "href": "https://httpwg.org/specs/rfc7616.html#terminology",
+      "level": 3,
+      "title": "Terminology",
+      "number": "1.1"
+    },
+    {
+      "id": "syntax.convention",
+      "href": "https://httpwg.org/specs/rfc7616.html#syntax.convention",
+      "level": 2,
+      "title": "Syntax Convention",
+      "number": "2"
+    },
+    {
+      "id": "examples",
+      "href": "https://httpwg.org/specs/rfc7616.html#examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "2.1"
+    },
+    {
+      "id": "abnf",
+      "href": "https://httpwg.org/specs/rfc7616.html#abnf",
+      "level": 3,
+      "title": "ABNF",
+      "number": "2.2"
+    },
+    {
+      "id": "digest.access.authentication.scheme",
+      "href": "https://httpwg.org/specs/rfc7616.html#digest.access.authentication.scheme",
+      "level": 2,
+      "title": "Digest Access Authentication Scheme",
+      "number": "3"
+    },
+    {
+      "id": "overall.operation",
+      "href": "https://httpwg.org/specs/rfc7616.html#overall.operation",
+      "level": 3,
+      "title": "Overall Operation",
+      "number": "3.1"
+    },
+    {
+      "id": "representation.of.digest.values",
+      "href": "https://httpwg.org/specs/rfc7616.html#representation.of.digest.values",
+      "level": 3,
+      "title": "Representation of Digest Values",
+      "number": "3.2"
+    },
+    {
+      "id": "www-authenticate.response.header",
+      "href": "https://httpwg.org/specs/rfc7616.html#www-authenticate.response.header",
+      "level": 3,
+      "title": "The WWW-Authenticate Response Header Field",
+      "number": "3.3"
+    },
+    {
+      "id": "authorization.request.header.field",
+      "href": "https://httpwg.org/specs/rfc7616.html#authorization.request.header.field",
+      "level": 3,
+      "title": "The Authorization Header Field",
+      "number": "3.4"
+    },
+    {
+      "id": "response",
+      "href": "https://httpwg.org/specs/rfc7616.html#response",
+      "level": 4,
+      "title": "Response",
+      "number": "3.4.1"
+    },
+    {
+      "id": "a1",
+      "href": "https://httpwg.org/specs/rfc7616.html#a1",
+      "level": 4,
+      "title": "A1",
+      "number": "3.4.2"
+    },
+    {
+      "id": "n-a2",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-a2",
+      "level": 4,
+      "title": "A2",
+      "number": "3.4.3"
+    },
+    {
+      "id": "username.hashing",
+      "href": "https://httpwg.org/specs/rfc7616.html#username.hashing",
+      "level": 4,
+      "title": "Username Hashing",
+      "number": "3.4.4"
+    },
+    {
+      "id": "n-parameter-values-and-quoted-string",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-parameter-values-and-quoted-string",
+      "level": 4,
+      "title": "Parameter Values and Quoted-String",
+      "number": "3.4.5"
+    },
+    {
+      "id": "n-various-considerations",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-various-considerations",
+      "level": 4,
+      "title": "Various Considerations",
+      "number": "3.4.6"
+    },
+    {
+      "id": "authenticaion-info.header.field",
+      "href": "https://httpwg.org/specs/rfc7616.html#authenticaion-info.header.field",
+      "level": 3,
+      "title": "The Authentication-Info and Proxy-Authentication-Info Header Fields",
+      "number": "3.5"
+    },
+    {
+      "id": "digest.operation",
+      "href": "https://httpwg.org/specs/rfc7616.html#digest.operation",
+      "level": 3,
+      "title": "Digest Operation",
+      "number": "3.6"
+    },
+    {
+      "id": "n-security-protocol-negotiation",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-security-protocol-negotiation",
+      "level": 3,
+      "title": "Security Protocol Negotiation",
+      "number": "3.7"
+    },
+    {
+      "id": "proxy-auth",
+      "href": "https://httpwg.org/specs/rfc7616.html#proxy-auth",
+      "level": 3,
+      "title": "Proxy-Authenticate and Proxy-Authorization",
+      "number": "3.8"
+    },
+    {
+      "id": "n-examples",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-examples",
+      "level": 3,
+      "title": "Examples",
+      "number": "3.9"
+    },
+    {
+      "id": "n-example-with-sha-256-and-md5",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-example-with-sha-256-and-md5",
+      "level": 4,
+      "title": "Example with SHA-256 and MD5",
+      "number": "3.9.1"
+    },
+    {
+      "id": "n-example-with-sha-512-256--charset--and-userhash",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-example-with-sha-512-256--charset--and-userhash",
+      "level": 4,
+      "title": "Example with SHA-512-256, Charset, and Userhash",
+      "number": "3.9.2"
+    },
+    {
+      "id": "n-internationalization-considerations",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-internationalization-considerations",
+      "level": 2,
+      "title": "Internationalization Considerations",
+      "number": "4"
+    },
+    {
+      "id": "security.considerations",
+      "href": "https://httpwg.org/specs/rfc7616.html#security.considerations",
+      "level": 2,
+      "title": "Security Considerations",
+      "number": "5"
+    },
+    {
+      "id": "n-limitations",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-limitations",
+      "level": 3,
+      "title": "Limitations",
+      "number": "5.1"
+    },
+    {
+      "id": "n-storing-passwords",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-storing-passwords",
+      "level": 3,
+      "title": "Storing Passwords",
+      "number": "5.2"
+    },
+    {
+      "id": "n-authentication-of-clients-using-digest-authentication",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-authentication-of-clients-using-digest-authentication",
+      "level": 3,
+      "title": "Authentication of Clients Using Digest Authentication",
+      "number": "5.3"
+    },
+    {
+      "id": "n-limited-use-nonce-values",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-limited-use-nonce-values",
+      "level": 3,
+      "title": "Limited-Use Nonce Values",
+      "number": "5.4"
+    },
+    {
+      "id": "replay_attacks",
+      "href": "https://httpwg.org/specs/rfc7616.html#replay_attacks",
+      "level": 3,
+      "title": "Replay Attacks",
+      "number": "5.5"
+    },
+    {
+      "id": "n-weakness-created-by-multiple-authentication-schemes",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-weakness-created-by-multiple-authentication-schemes",
+      "level": 3,
+      "title": "Weakness Created by Multiple Authentication Schemes",
+      "number": "5.6"
+    },
+    {
+      "id": "online.dictionary.attacks",
+      "href": "https://httpwg.org/specs/rfc7616.html#online.dictionary.attacks",
+      "level": 3,
+      "title": "Online Dictionary Attacks",
+      "number": "5.7"
+    },
+    {
+      "id": "mitm",
+      "href": "https://httpwg.org/specs/rfc7616.html#mitm",
+      "level": 3,
+      "title": "Man-in-the-Middle Attacks",
+      "number": "5.8"
+    },
+    {
+      "id": "n-chosen-plaintext-attacks",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-chosen-plaintext-attacks",
+      "level": 3,
+      "title": "Chosen Plaintext Attacks",
+      "number": "5.9"
+    },
+    {
+      "id": "n-precomputed-dictionary-attacks",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-precomputed-dictionary-attacks",
+      "level": 3,
+      "title": "Precomputed Dictionary Attacks",
+      "number": "5.10"
+    },
+    {
+      "id": "n-batch-brute-force-attacks",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-batch-brute-force-attacks",
+      "level": 3,
+      "title": "Batch Brute-Force Attacks",
+      "number": "5.11"
+    },
+    {
+      "id": "n-parameter-randomness",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-parameter-randomness",
+      "level": 3,
+      "title": "Parameter Randomness",
+      "number": "5.12"
+    },
+    {
+      "id": "n-summary",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-summary",
+      "level": 3,
+      "title": "Summary",
+      "number": "5.13"
+    },
+    {
+      "id": "iana.considerations",
+      "href": "https://httpwg.org/specs/rfc7616.html#iana.considerations",
+      "level": 2,
+      "title": "IANA Considerations",
+      "number": "6"
+    },
+    {
+      "id": "n-hash-algorithms-for-http-digest-authentication",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-hash-algorithms-for-http-digest-authentication",
+      "level": 3,
+      "title": "Hash Algorithms for HTTP Digest Authentication",
+      "number": "6.1"
+    },
+    {
+      "id": "n-digest-scheme-registration",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-digest-scheme-registration",
+      "level": 3,
+      "title": "Digest Scheme Registration",
+      "number": "6.2"
+    },
+    {
+      "id": "rfc.references",
+      "href": "https://httpwg.org/specs/rfc7616.html#rfc.references",
+      "level": 2,
+      "title": "References",
+      "number": "7"
+    },
+    {
+      "id": "rfc.references.1",
+      "href": "https://httpwg.org/specs/rfc7616.html#rfc.references.1",
+      "level": 3,
+      "title": "Normative References",
+      "number": "7.1"
+    },
+    {
+      "id": "rfc.references.2",
+      "href": "https://httpwg.org/specs/rfc7616.html#rfc.references.2",
+      "level": 3,
+      "title": "Informative References",
+      "number": "7.2"
+    },
+    {
+      "id": "rfc2617.changes",
+      "href": "https://httpwg.org/specs/rfc7616.html#rfc2617.changes",
+      "level": 2,
+      "title": "Changes from RFC 2617",
+      "number": "A"
+    },
+    {
+      "id": "n-acknowledgments",
+      "href": "https://httpwg.org/specs/rfc7616.html#n-acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "B"
+    }
+  ]
+}
