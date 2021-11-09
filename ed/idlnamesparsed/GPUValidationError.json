@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker)]\ninterface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUValidationError {\n    constructor(DOMString message);\n    readonly attribute DOMString message;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#gpuvalidationerror"
   },
   "extended": [],

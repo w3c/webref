@@ -1,0 +1,15 @@
+{
+  "name": "MLConvTranspose2dOptions",
+  "type": "dictionary",
+  "defined": {
+    "spec": {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/"
+    },
+    "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+    "href": "https://webmachinelearning.github.io/webnn/#dictdef-mlconvtranspose2doptions"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}
