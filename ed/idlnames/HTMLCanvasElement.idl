@@ -12,8 +12,3 @@ interface HTMLCanvasElement : HTMLElement {
   undefined toBlob(BlobCallback _callback, optional DOMString type = "image/png", optional any quality);
   OffscreenCanvas transferControlToOffscreen();
 };
-
-// Source: Media Capture from DOM Elements (https://www.w3.org/TR/mediacapture-fromelement/)
-partial interface HTMLCanvasElement {
-    MediaStream captureStream (optional double frameRequestRate);
-};
