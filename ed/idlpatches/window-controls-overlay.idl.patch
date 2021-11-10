@@ -1,0 +1,26 @@
+From e6d6cabb10bd0a6ee83f8ff3d8caf8c5aa8ce65c Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 10 Nov 2021 10:38:04 +0100
+Subject: [PATCH] Add missing dictionary for event creation
+
+https://github.com/WICG/window-controls-overlay/pull/38
+---
+ ed/idl/window-controls-overlay.idl | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/ed/idl/window-controls-overlay.idl b/ed/idl/window-controls-overlay.idl
+index f124322b2..de5e67419 100644
+--- a/ed/idl/window-controls-overlay.idl
++++ b/ed/idl/window-controls-overlay.idl
+@@ -21,3 +21,8 @@ interface WindowControlsOverlayGeometryChangeEvent : Event {
+   [SameObject] readonly attribute DOMRect boundingRect;
+   readonly attribute boolean visible;
+ };
++
++dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {
++  required DOMRect boundingRect;
++  boolean visible = false;
++};
+-- 
+2.33.0.windows.2
+
