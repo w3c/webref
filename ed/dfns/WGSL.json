@@ -3255,10 +3255,29 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-type_alias",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-type_alias",
+      "id": "type-alias",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-alias",
       "linkingText": [
-        "type_alias"
+        "type alias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "type-aliases",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-aliases",
+        "title": "Type Aliases",
+        "number": "4.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-type_alias_decl",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-type_alias_decl",
+      "linkingText": [
+        "type_alias_decl"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3270,7 +3289,7 @@
       "heading": {
         "id": "type-aliases",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#type-aliases",
-        "title": "Type Aliases TODO",
+        "title": "Type Aliases",
         "number": "4.6"
       },
       "definedIn": "prose"
@@ -3857,6 +3876,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "syntax-lhs_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-lhs_expression",
+      "linkingText": [
+        "lhs_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-core_lhs_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-core_lhs_expression",
+      "linkingText": [
+        "core_lhs_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "syntax-multiplicative_expression",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-multiplicative_expression",
       "linkingText": [
@@ -3941,90 +4002,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "syntax-equality_expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-equality_expression",
-      "linkingText": [
-        "equality_expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "expression-grammar",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
-        "title": "Expression Grammar Summary",
-        "number": "6.18"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-and_expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-and_expression",
-      "linkingText": [
-        "and_expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "expression-grammar",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
-        "title": "Expression Grammar Summary",
-        "number": "6.18"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-exclusive_or_expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-exclusive_or_expression",
-      "linkingText": [
-        "exclusive_or_expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "expression-grammar",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
-        "title": "Expression Grammar Summary",
-        "number": "6.18"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-inclusive_or_expression",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-inclusive_or_expression",
-      "linkingText": [
-        "inclusive_or_expression"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "expression-grammar",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
-        "title": "Expression Grammar Summary",
-        "number": "6.18"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "syntax-short_circuit_and_expression",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-short_circuit_and_expression",
       "linkingText": [
@@ -4050,6 +4027,90 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-short_circuit_or_expression",
       "linkingText": [
         "short_circuit_or_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-binary_or_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-binary_or_expression",
+      "linkingText": [
+        "binary_or_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-binary_and_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-binary_and_expression",
+      "linkingText": [
+        "binary_and_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-binary_xor_expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-binary_xor_expression",
+      "linkingText": [
+        "binary_xor_expression"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "expression-grammar",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#expression-grammar",
+        "title": "Expression Grammar Summary",
+        "number": "6.18"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-expression",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-expression",
+      "linkingText": [
+        "expression"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4229,27 +4290,6 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-if_statement",
       "linkingText": [
         "if_statement"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "if-statement",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#if-statement",
-        "title": "If Statement",
-        "number": "7.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-elseif_statement",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-elseif_statement",
-      "linkingText": [
-        "elseif_statement"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6933,27 +6973,6 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-else",
       "linkingText": [
         "else"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "other-keywords",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#other-keywords",
-        "title": "Other Keywords",
-        "number": "14.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-else_if",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-else_if",
-      "linkingText": [
-        "else_if"
       ],
       "localLinkingText": [],
       "type": "dfn",

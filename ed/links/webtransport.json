@@ -24,6 +24,7 @@
       "ascii-serialisation-of-an-origin",
       "relevant-settings-object",
       "concept-settings-object-origin",
+      "concept-settings-object-policy-container",
       "in-parallel",
       "queue-a-global-task",
       "concept-relevant-global",
@@ -54,6 +55,7 @@
       "idl-promise",
       "idl-undefined",
       "syntaxerror",
+      "securityerror",
       "upon-fulfillment",
       "aborterror",
       "notsupportederror",
@@ -108,6 +110,12 @@
     ],
     "https://fetch.spec.whatwg.org/": [
       "concept-connection",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-client",
+      "concept-request-policy-container",
+      "concept-request-destination",
+      "concept-request-origin",
       "determine-the-network-partition-key",
       "concept-connection-obtain",
       "obtain-a-connection-http3only",
@@ -124,7 +132,6 @@
     "https://infra.spec.whatwg.org/": [
       "isomorphic-encode",
       "byte-sequence",
-      "pair",
       "implementation-defined",
       "queue-dequeue",
       "queue-enqueue",
@@ -147,6 +154,10 @@
       "concept-url-scheme",
       "concept-url-fragment"
     ],
+    "https://w3c.github.io/webappsec-csp/": [
+      "report-for-request",
+      "should-block-request"
+    ],
     "https://encoding.spec.whatwg.org/": [
       "utf-8-encode",
       "utf-8-decode",
@@ -162,6 +173,7 @@
       "dom-domexception-domexception"
     ],
     "https://www.w3.org/community/ortc/": [],
+    "https://www.w3.org/TR/CSP3/": [],
     "https://tools.ietf.org/html/draft-ietf-quic-transport": [],
     "https://datatracker.ietf.org/doc/html/draft-ietf-quic-datagram/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
