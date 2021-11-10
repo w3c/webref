@@ -74,8 +74,3 @@ partial interface HTMLInputElement {
     attribute boolean webkitdirectory;
     readonly attribute FrozenArray<FileSystemEntry> webkitEntries;
 };
-
-// Source: HTML Media Capture (https://www.w3.org/TR/html-media-capture/)
-partial interface HTMLInputElement {
-    [CEReactions] attribute DOMString capture;
-};
