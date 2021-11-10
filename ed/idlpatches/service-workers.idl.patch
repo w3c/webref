@@ -1,0 +1,26 @@
+From 4af46c2494413cd0e4d735136129a89c11746e54 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 10 Nov 2021 10:49:29 +0100
+Subject: [PATCH] Use DocumentVisibilityState instead of VisibilityState
+
+https://github.com/w3c/ServiceWorker/issues/1616
+---
+ ed/idl/service-workers.idl | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ed/idl/service-workers.idl b/ed/idl/service-workers.idl
+index b50f6dd2d..6d44d61de 100644
+--- a/ed/idl/service-workers.idl
++++ b/ed/idl/service-workers.idl
+@@ -120,7 +120,7 @@ interface Client {
+ 
+ [Exposed=ServiceWorker]
+ interface WindowClient : Client {
+-  readonly attribute VisibilityState visibilityState;
++  readonly attribute DocumentVisibilityState visibilityState;
+   readonly attribute boolean focused;
+   [SameObject] readonly attribute FrozenArray<USVString> ancestorOrigins;
+   [NewObject] Promise<WindowClient> focus();
+-- 
+2.33.0.windows.2
+
