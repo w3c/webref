@@ -1,0 +1,28 @@
+From 7be4ad3b04cb8e1ff0b431d6279226794181eb69 Mon Sep 17 00:00:00 2001
+From: Francois Daoust <fd@tidoust.net>
+Date: Wed, 10 Nov 2021 11:18:42 +0100
+Subject: [PATCH] Re-introduce MidiPermissionDescriptor
+
+https://github.com/WebAudio/web-midi-api/pull/224
+---
+ ed/idl/webmidi.idl | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/ed/idl/webmidi.idl b/ed/idl/webmidi.idl
+index 89847c3d4..1acf1ac1d 100644
+--- a/ed/idl/webmidi.idl
++++ b/ed/idl/webmidi.idl
+@@ -3,6 +3,10 @@
+ // (https://github.com/w3c/webref)
+ // Source: Web MIDI API (https://webaudio.github.io/web-midi-api/)
+ 
++dictionary MidiPermissionDescriptor : PermissionDescriptor {
++  boolean sysex = false;
++};
++
+ partial interface Navigator {
+   [SecureContext]
+   Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});
+-- 
+2.33.0.windows.2
+
