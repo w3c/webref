@@ -125,14 +125,16 @@
       "definedIn": "pre"
     },
     {
-      "id": "respec-offender-internal-slot-titlebararea-must-be-associated-with-a-webidl-interface",
-      "href": "https://wicg.github.io/window-controls-overlay/#respec-offender-internal-slot-titlebararea-must-be-associated-with-a-webidl-interface",
+      "id": "dfn-titlebararea",
+      "href": "https://wicg.github.io/window-controls-overlay/#dfn-titlebararea",
       "linkingText": [
         "[[TitleBarArea]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
+      "for": [
+        "Window"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -242,6 +244,67 @@
       "type": "attribute",
       "for": [
         "WindowControlsOverlayGeometryChangeEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeeventinit",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeeventinit",
+      "linkingText": [
+        "WindowControlsOverlayGeometryChangeEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeeventinit-boundingrect",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeeventinit-boundingrect",
+      "linkingText": [
+        "boundingRect"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WindowControlsOverlayGeometryChangeEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "windowcontrolsoverlay-interface",
+        "href": "https://wicg.github.io/window-controls-overlay/#windowcontrolsoverlay-interface",
+        "title": "WindowControlsOverlay interface",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-windowcontrolsoverlaygeometrychangeeventinit-visible",
+      "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlaygeometrychangeeventinit-visible",
+      "linkingText": [
+        "visible"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "WindowControlsOverlayGeometryChangeEventInit"
       ],
       "access": "public",
       "informative": false,

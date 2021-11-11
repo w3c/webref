@@ -177,6 +177,49 @@
           }
         ],
         "partial": false
+      },
+      "WindowControlsOverlayGeometryChangeEventInit": {
+        "fragment": "dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {\n  required DOMRect boundingRect;\n  boolean visible = false;\n};",
+        "type": "dictionary",
+        "name": "WindowControlsOverlayGeometryChangeEventInit",
+        "inheritance": "EventInit",
+        "members": [
+          {
+            "type": "field",
+            "name": "boundingRect",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMRect"
+            },
+            "default": null,
+            "required": true
+          },
+          {
+            "type": "field",
+            "name": "visible",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -256,6 +299,10 @@
         "Event",
         "WindowControlsOverlayGeometryChangeEventInit",
         "DOMRect"
+      ],
+      "WindowControlsOverlayGeometryChangeEventInit": [
+        "EventInit",
+        "DOMRect"
       ]
     },
     "externalDependencies": [
@@ -264,7 +311,7 @@
       "DOMRect",
       "EventHandler",
       "Event",
-      "WindowControlsOverlayGeometryChangeEventInit"
+      "EventInit"
     ],
     "hasObsoleteIdl": false
   }

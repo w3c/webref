@@ -21,3 +21,8 @@ interface WindowControlsOverlayGeometryChangeEvent : Event {
   [SameObject] readonly attribute DOMRect boundingRect;
   readonly attribute boolean visible;
 };
+
+dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {
+  required DOMRect boundingRect;
+  boolean visible = false;
+};
