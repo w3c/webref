@@ -33,32 +33,7 @@
       ]
     }
   },
-  "descriptors": {
-    "src": [
-      {
-        "name": "src",
-        "for": "@color-profile",
-        "value": "<url>",
-        "initial": "n/a"
-      }
-    ],
-    "rendering-intent": [
-      {
-        "name": "rendering-intent",
-        "for": "@color-profile",
-        "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
-        "initial": "relative-colorimetric"
-      }
-    ],
-    "components": [
-      {
-        "name": "components",
-        "for": "@color-profile",
-        "value": "<ident>#",
-        "initial": "n/a"
-      }
-    ]
-  },
+  "descriptors": {},
   "valuespaces": {
     "<color>": {
       "value": "<absolute-color-base> | currentcolor | <system-color> | <device-cmyk()>"
@@ -94,13 +69,7 @@
       "value": "oklch( [<percentage> | none] [<number> | none] [<hue> | none] [ / [<alpha-value> | none] ]? )"
     },
     "<color()>": {
-      "value": "color( [<ident> | <dashed-ident>] [<number-percentage> | none]+ [ / [<alpha-value> | none] ]? )"
-    },
-    "<device-cmyk()>": {
-      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
-    },
-    "<cmyk-component>": {
-      "value": "<number> | <percentage>"
+      "value": "color( <colorspace-params> [ / <alpha-value> ]? )"
     },
     "<rectangular-color-space>": {
       "value": "srgb | lab | oklab | xyz | xyz-d50 | xyz-d65"

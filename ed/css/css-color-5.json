@@ -4,7 +4,32 @@
     "url": "https://drafts.csswg.org/css-color-5/"
   },
   "properties": {},
-  "descriptors": {},
+  "descriptors": {
+    "src": [
+      {
+        "name": "src",
+        "for": "@color-profile",
+        "value": "<url>",
+        "initial": "n/a"
+      }
+    ],
+    "rendering-intent": [
+      {
+        "name": "rendering-intent",
+        "for": "@color-profile",
+        "value": "relative-colorimetric | absolute-colorimetric | perceptual | saturation",
+        "initial": "relative-colorimetric"
+      }
+    ],
+    "components": [
+      {
+        "name": "components",
+        "for": "@color-profile",
+        "value": "<ident>#",
+        "initial": "n/a"
+      }
+    ]
+  },
   "valuespaces": {
     "<color-mix()>": {
       "value": "color-mix( <color-interpolation-method> , [ <color> && <percentage [0,100]>? ]#{2})"
@@ -38,6 +63,12 @@
     },
     "<color()>": {
       "value": "color( [from <color>]? <colorspace-params> [ / <alpha-value> ]? )"
+    },
+    "<device-cmyk()>": {
+      "value": "device-cmyk( <cmyk-component>{4} [ / <alpha-value> ]? )"
+    },
+    "<cmyk-component>": {
+      "value": "<number> | <percentage>"
     }
   }
 }
