@@ -161,10 +161,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "lock-concept-origin",
-      "href": "https://wicg.github.io/web-locks/#lock-concept-origin",
+      "id": "lock-concept-manager",
+      "href": "https://wicg.github.io/web-locks/#lock-concept-manager",
       "linkingText": [
-        "origin"
+        "manager"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -266,15 +266,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "lock-concept-held-lock-set",
-      "href": "https://wicg.github.io/web-locks/#lock-concept-held-lock-set",
+      "id": "lock-manager-held-lock-set",
+      "href": "https://wicg.github.io/web-locks/#lock-manager-held-lock-set",
       "linkingText": [
         "held lock set"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [
-        "lock-concept"
+        "lock manager"
       ],
       "access": "private",
       "informative": false,
@@ -347,10 +347,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "lock-request-origin",
-      "href": "https://wicg.github.io/web-locks/#lock-request-origin",
+      "id": "lock-request-manager",
+      "href": "https://wicg.github.io/web-locks/#lock-request-manager",
       "linkingText": [
-        "origin"
+        "manager"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -492,14 +492,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "lock-request-queue-map",
-      "href": "https://wicg.github.io/web-locks/#lock-request-queue-map",
+      "id": "lock-manager-lock-request-queue-map",
+      "href": "https://wicg.github.io/web-locks/#lock-manager-lock-request-queue-map",
       "linkingText": [
         "lock request queue map"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "lock manager"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
