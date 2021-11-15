@@ -2996,6 +2996,28 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-abortcontroller-abort-reason-reason",
+      "href": "https://dom.spec.whatwg.org/#dom-abortcontroller-abort-reason-reason",
+      "linkingText": [
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AbortController/abort(reason)",
+        "AbortController/abort()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-abortcontroller",
+        "href": "https://dom.spec.whatwg.org/#interface-abortcontroller",
+        "title": "Interface AbortController",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "abortcontroller-signal",
       "href": "https://dom.spec.whatwg.org/#abortcontroller-signal",
       "linkingText": [
@@ -3063,6 +3085,7 @@
       "id": "dom-abortcontroller-abort",
       "href": "https://dom.spec.whatwg.org/#dom-abortcontroller-abort",
       "linkingText": [
+        "abort(reason)",
         "abort()"
       ],
       "localLinkingText": [],
@@ -3100,10 +3123,53 @@
       "definedIn": "pre"
     },
     {
-      "id": "abortsignal-aborted-flag",
-      "href": "https://dom.spec.whatwg.org/#abortsignal-aborted-flag",
+      "id": "dom-abortsignal-abort-reason-reason",
+      "href": "https://dom.spec.whatwg.org/#dom-abortsignal-abort-reason-reason",
       "linkingText": [
-        "aborted flag"
+        "reason"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "AbortSignal/abort(reason)",
+        "AbortSignal/abort()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-AbortSignal",
+        "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+        "title": "Interface AbortSignal",
+        "number": "3.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "abortsignal-abort-reason",
+      "href": "https://dom.spec.whatwg.org/#abortsignal-abort-reason",
+      "linkingText": [
+        "abort reason"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "AbortSignal"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-AbortSignal",
+        "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+        "title": "Interface AbortSignal",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abortsignal-aborted",
+      "href": "https://dom.spec.whatwg.org/#abortsignal-aborted",
+      "linkingText": [
+        "aborted"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -3187,6 +3253,7 @@
       "id": "dom-abortsignal-abort",
       "href": "https://dom.spec.whatwg.org/#dom-abortsignal-abort",
       "linkingText": [
+        "abort(reason)",
         "abort()"
       ],
       "localLinkingText": [],
@@ -3209,6 +3276,27 @@
       "href": "https://dom.spec.whatwg.org/#dom-abortsignal-aborted",
       "linkingText": [
         "aborted"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "AbortSignal"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface-AbortSignal",
+        "href": "https://dom.spec.whatwg.org/#interface-AbortSignal",
+        "title": "Interface AbortSignal",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-abortsignal-reason",
+      "href": "https://dom.spec.whatwg.org/#dom-abortsignal-reason",
+      "linkingText": [
+        "reason"
       ],
       "localLinkingText": [],
       "type": "attribute",

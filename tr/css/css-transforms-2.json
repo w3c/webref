@@ -11,9 +11,9 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "relative to the width of the reference box (for the first value) or the height (for the second value)",
-      "computedValue": "the keyword none or a pair of computed <length-percentage> values and optionally an absolute length",
+      "computedValue": "the keyword none or a pair of computed <length-percentage> values and an absolute length",
       "canonicalOrder": "per grammar",
-      "animationType": "by computed value, adding a third 0 value if needed to match components, but see below for none",
+      "animationType": "by computed value, but see below for none",
       "styleDeclaration": [
         "translate"
       ]
@@ -25,7 +25,7 @@
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none, or an <angle> with an optional axis consisting of a list of three <number>s",
+      "computedValue": "the keyword none, or an <angle> with an axis consisting of a list of three <number>s",
       "canonicalOrder": "per grammar",
       "animationType": "as SLERP, but see below for none",
       "styleDeclaration": [
@@ -34,12 +34,12 @@
     },
     "scale": {
       "name": "scale",
-      "value": "none | <number>{1,3}",
+      "value": "none | [ <number> | <percentage> ]{1,3}",
       "initial": "none",
       "appliesTo": "transformable elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the keyword none, or a list of 2 or 3 <number>s",
+      "computedValue": "the keyword none, or a list of 3 <number>s",
       "canonicalOrder": "per grammar",
       "animationType": "by computed value, but see below for none",
       "styleDeclaration": [
@@ -109,6 +109,15 @@
   },
   "descriptors": {},
   "valuespaces": {
+    "<scale()>": {
+      "value": "scale( [ <number> | <percentage> ]#{1,2} )"
+    },
+    "<scaleX()>": {
+      "value": "scaleX( [ <number> | <percentage> ] )"
+    },
+    "<scaleY()>": {
+      "value": "scaleY( [ <number> | <percentage> ] )"
+    },
     "<matrix3d()>": {
       "value": "matrix3d( <number>#{16} )"
     },
@@ -119,10 +128,10 @@
       "value": "translateZ( <length> )"
     },
     "<scale3d()>": {
-      "value": "scale3d( <number> , <number>, <number> )"
+      "value": "scale3d( [ <number> | <percentage> ]#{3} )"
     },
     "<scaleZ()>": {
-      "value": "scaleZ( <number> )"
+      "value": "scaleZ( [ <number> | <percentage> ] )"
     },
     "<rotate3d()>": {
       "value": "rotate3d( <number> , <number> , <number> , [ <angle> | <zero> ] )"
@@ -137,7 +146,7 @@
       "value": "rotateZ( [ <angle> | <zero> ] )"
     },
     "<perspective()>": {
-      "value": "perspective( <length [0,∞]> )"
+      "value": "perspective( <length [0,∞]> | none )"
     }
   }
 }

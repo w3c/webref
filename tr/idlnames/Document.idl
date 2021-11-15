@@ -170,13 +170,6 @@ partial interface Document {
     [SameObject] readonly attribute FragmentDirective fragmentDirective;
 };
 
-// Source: Page Visibility Level 2 (https://www.w3.org/TR/page-visibility-2/)
-partial interface Document {
-  readonly attribute boolean hidden;
-  readonly attribute VisibilityState visibilityState;
-  attribute EventHandler onvisibilitychange;
-};
-
 // Source: Permissions Policy (https://www.w3.org/TR/permissions-policy-1/)
 partial interface Document {
     [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;
