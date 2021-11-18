@@ -1,7 +1,7 @@
 // Source: App History API (https://wicg.github.io/app-history/)
 [Exposed=Window]
 interface AppHistoryEntry : EventTarget {
-  readonly attribute USVString url;
+  readonly attribute USVString? url;
   readonly attribute DOMString key;
   readonly attribute DOMString id;
   readonly attribute long long index;

@@ -1331,7 +1331,7 @@
         "partial": false
       },
       "AppHistoryEntry": {
-        "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
+        "fragment": "[Exposed=Window]\ninterface AppHistoryEntry : EventTarget {\n  readonly attribute USVString? url;\n  readonly attribute DOMString key;\n  readonly attribute DOMString id;\n  readonly attribute long long index;\n  readonly attribute boolean sameDocument;\n\n  any getState();\n\n  attribute EventHandler onnavigateto;\n  attribute EventHandler onnavigatefrom;\n  attribute EventHandler onfinish;\n  attribute EventHandler ondispose;\n};",
         "type": "interface",
         "name": "AppHistoryEntry",
         "inheritance": "EventTarget",
@@ -1343,7 +1343,7 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": false,
+              "nullable": true,
               "union": false,
               "idlType": "USVString"
             },
