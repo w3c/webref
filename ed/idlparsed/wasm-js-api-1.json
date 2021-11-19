@@ -1195,7 +1195,7 @@
         "partial": false
       },
       "ValueType": {
-        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\",\n  \"externref\",\n  \"anyfunc\",\n};",
+        "fragment": "enum ValueType {\n  \"i32\",\n  \"i64\",\n  \"f32\",\n  \"f64\",\n  \"v128\",\n  \"externref\",\n  \"anyfunc\",\n};",
         "type": "enum",
         "name": "ValueType",
         "values": [
@@ -1214,6 +1214,10 @@
           {
             "type": "enum-value",
             "value": "f64"
+          },
+          {
+            "type": "enum-value",
+            "value": "v128"
           },
           {
             "type": "enum-value",
