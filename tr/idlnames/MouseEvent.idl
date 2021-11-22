@@ -22,8 +22,8 @@ interface MouseEvent : UIEvent {
 
 // Source: Pointer Lock 2.0 (https://www.w3.org/TR/pointerlock-2/)
 partial interface MouseEvent {
-  readonly attribute long movementX;
-  readonly attribute long movementY;
+  readonly attribute double movementX;
+  readonly attribute double movementY;
 };
 
 // Source: UI Events (https://www.w3.org/TR/uievents/)

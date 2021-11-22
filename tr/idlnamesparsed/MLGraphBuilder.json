@@ -43,6 +43,13 @@
         "title": "Web Neural Network API",
         "url": "https://www.w3.org/TR/webnn/"
       },
+      "fragment": "partial interface MLGraphBuilder {\n  MLOperand convTranspose2d(MLOperand input, MLOperand filter,\n                            optional MLConvTranspose2dOptions options = {});\n};"
+    },
+    {
+      "spec": {
+        "title": "Web Neural Network API",
+        "url": "https://www.w3.org/TR/webnn/"
+      },
       "fragment": "partial interface MLGraphBuilder {\n  MLOperand add(MLOperand a, MLOperand b);\n  MLOperand sub(MLOperand a, MLOperand b);\n  MLOperand mul(MLOperand a, MLOperand b);\n  MLOperand div(MLOperand a, MLOperand b);\n  MLOperand max(MLOperand a, MLOperand b);\n  MLOperand min(MLOperand a, MLOperand b);\n  MLOperand pow(MLOperand a, MLOperand b);\n};"
     },
     {

@@ -41,6 +41,12 @@ partial interface MLGraphBuilder {
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 partial interface MLGraphBuilder {
+  MLOperand convTranspose2d(MLOperand input, MLOperand filter,
+                            optional MLConvTranspose2dOptions options = {});
+};
+
+// Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
+partial interface MLGraphBuilder {
   MLOperand add(MLOperand a, MLOperand b);
   MLOperand sub(MLOperand a, MLOperand b);
   MLOperand mul(MLOperand a, MLOperand b);

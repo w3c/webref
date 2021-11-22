@@ -12,7 +12,7 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  void requestPointerLock();\n};",
+          "fragment": "partial interface Element {\n  undefined requestPointerLock();\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -26,7 +26,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -39,7 +39,7 @@
       ],
       "Document": [
         {
-          "fragment": "partial interface Document {\n  attribute EventHandler onpointerlockchange;\n  attribute EventHandler onpointerlockerror;\n  void exitPointerLock();\n};",
+          "fragment": "partial interface Document {\n  attribute EventHandler onpointerlockchange;\n  attribute EventHandler onpointerlockerror;\n  undefined exitPointerLock();\n};",
           "type": "interface",
           "name": "Document",
           "inheritance": null,
@@ -83,7 +83,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "void"
+                "idlType": "undefined"
               },
               "arguments": [],
               "extAttrs": [],
@@ -123,7 +123,7 @@
       ],
       "MouseEvent": [
         {
-          "fragment": "partial interface MouseEvent {\n  readonly attribute long movementX;\n  readonly attribute long movementY;\n};",
+          "fragment": "partial interface MouseEvent {\n  readonly attribute double movementX;\n  readonly attribute double movementY;\n};",
           "type": "interface",
           "name": "MouseEvent",
           "inheritance": null,
@@ -137,7 +137,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "long"
+                "idlType": "double"
               },
               "extAttrs": [],
               "special": "",
@@ -152,7 +152,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "long"
+                "idlType": "double"
               },
               "extAttrs": [],
               "special": "",
@@ -165,7 +165,7 @@
       ],
       "MouseEventInit": [
         {
-          "fragment": "partial dictionary MouseEventInit {\n  long movementX = 0;\n  long movementY = 0;\n};",
+          "fragment": "partial dictionary MouseEventInit {\n  double movementX = 0;\n  double movementY = 0;\n};",
           "type": "dictionary",
           "name": "MouseEventInit",
           "inheritance": null,
@@ -180,7 +180,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "long"
+                "idlType": "double"
               },
               "default": {
                 "type": "number",
@@ -198,7 +198,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "long"
+                "idlType": "double"
               },
               "default": {
                 "type": "number",
@@ -215,12 +215,9 @@
     "globals": {},
     "exposed": {},
     "dependencies": {
-      "Element": [
-        "void"
-      ],
+      "Element": [],
       "Document": [
-        "EventHandler",
-        "void"
+        "EventHandler"
       ],
       "DocumentOrShadowRoot": [
         "Element"
@@ -230,7 +227,6 @@
     },
     "externalDependencies": [
       "Element",
-      "void",
       "Document",
       "EventHandler",
       "DocumentOrShadowRoot",

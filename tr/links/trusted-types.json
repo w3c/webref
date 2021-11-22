@@ -7,13 +7,13 @@
     "https://github.com/w3c/webappsec": [],
     "https://lists.w3.org/Archives/Public/public-webappsec/": [],
     "https://www.w3.org/Mail/Request": [],
-    "https://www.w3.org/2011/webappsec/": [],
+    "https://www.w3.org/groups/wg/webappsec": [],
     "https://www.w3.org/Consortium/Patent-Policy/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/groups/wg/webappsec/ipr": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
+    "https://www.w3.org/2021/Process-20211102/": [],
     "https://w3c.github.io/webappsec-csp/": [
       "script-src",
       "header-content-security-policy-report-only",
@@ -44,6 +44,7 @@
       "document",
       "element",
       "concept-element-interface",
+      "concept-create-element",
       "concept-child-text-content",
       "dom-node-textcontent",
       "connected",
@@ -68,16 +69,17 @@
       "documentfragment"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/TrustedHTML": [],
-    "https://heycam.github.io/webidl/": [
+    "https://webidl.spec.whatwg.org/": [
       "Exposed",
       "idl-DOMString",
+      "idl-object",
       "idl-USVString",
       "idl-boolean",
       "idl-any",
-      "this",
       "dfn-attribute",
       "interface-mixin",
       "include",
+      "exceptiondef-typeerror",
       "dfn-extended-attribute",
       "dfn-xattr-identifier",
       "dfn-identifier",
@@ -117,6 +119,10 @@
       "concept-relevant-global",
       "reflect",
       "concept-realm-global",
+      "current-global-object",
+      "concept-document-window",
+      "htmltemplateelement",
+      "html-fragment-serialisation-algorithm",
       "htmlscriptelement",
       "attr-script-src",
       "window",
@@ -206,6 +212,9 @@
       "list-contain"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/createPolicy": [],
+    "https://heycam.github.io/webidl/": [
+      "this"
+    ],
     "https://developer.mozilla.org/en-US/docs/Web/API/TrustedTypePolicyFactory/isHTML": [],
     "https://tc39.es/ecma262/multipage/": [
       "sec-object.create",
@@ -233,7 +242,15 @@
     ],
     "https://tc39.es/proposal-dynamic-code-brand-checks/": [],
     "https://tc39.github.io/ecma262/": [
+      "sec-get-o-p",
+      "current-realm",
       "sec-tostring"
+    ],
+    "https://w3c.github.io/DOM-Parsing/": [
+      "html-fragment-parsing-algorithm",
+      "the-domparser-interface",
+      "dom-innerhtml",
+      "supportedtype"
     ],
     "https://github.com/whatwg/dom/issues/789": [],
     "https://mimesniff.spec.whatwg.org/": [
@@ -242,11 +259,6 @@
     "https://xhr.spec.whatwg.org/": [
       "xmlhttprequest",
       "dom-xmlhttprequest-responsexml"
-    ],
-    "https://w3c.github.io/DOM-Parsing/": [
-      "the-domparser-interface",
-      "dom-innerhtml",
-      "supportedtype"
     ],
     "https://encoding.spec.whatwg.org/": [
       "concept-encoding-get"
@@ -274,6 +286,7 @@
     "https://w3c.github.io/editing/docs/execCommand/": [
       "the-inserthtml-command"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for": [],
     "https://fetch.spec.whatwg.org/": [
       "concept-request",
       "concept-request-url",
@@ -299,7 +312,6 @@
     "https://www.w3.org/TR/FileAPI/": [],
     "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.w3.org/TR/service-workers-1/": [],
-    "https://webidl.spec.whatwg.org/": [],
     "https://www.w3.org/TR/html-design-principles/": []
   }
 }

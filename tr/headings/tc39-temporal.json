@@ -642,7 +642,7 @@
     },
     {
       "id": "sec-temporal.plaintime.prototype.round",
-      "title": "Temporal.PlainTime.prototype.round ( options )",
+      "title": "Temporal.PlainTime.prototype.round ( roundTo )",
       "level": 3,
       "number": "4.3.15"
     },
@@ -1008,7 +1008,7 @@
     },
     {
       "id": "sec-temporal.plaindatetime.prototype.round",
-      "title": "Temporal.PlainDateTime.prototype.round ( options )",
+      "title": "Temporal.PlainDateTime.prototype.round ( roundTo )",
       "level": 3,
       "number": "5.3.30"
     },
@@ -1434,7 +1434,7 @@
     },
     {
       "id": "sec-temporal.zoneddatetime.prototype.round",
-      "title": "Temporal.ZonedDateTime.prototype.round ( options )",
+      "title": "Temporal.ZonedDateTime.prototype.round ( roundTo )",
       "level": 3,
       "number": "6.3.39"
     },
@@ -1734,13 +1734,13 @@
     },
     {
       "id": "sec-temporal.duration.prototype.round",
-      "title": "Temporal.Duration.prototype.round ( options )",
+      "title": "Temporal.Duration.prototype.round ( roundTo )",
       "level": 3,
       "number": "7.3.20"
     },
     {
       "id": "sec-temporal.duration.prototype.total",
-      "title": "Temporal.Duration.prototype.total ( options )",
+      "title": "Temporal.Duration.prototype.total ( totalOf )",
       "level": 3,
       "number": "7.3.21"
     },
@@ -2040,7 +2040,7 @@
     },
     {
       "id": "sec-temporal.instant.prototype.round",
-      "title": "Temporal.Instant.prototype.round ( options )",
+      "title": "Temporal.Instant.prototype.round ( roundTo )",
       "level": 3,
       "number": "8.3.11"
     },
@@ -3557,16 +3557,22 @@
       "number": "13.47"
     },
     {
+      "id": "sec-temporal-tointegerwithoutrounding",
+      "title": "ToIntegerWithoutRounding ( argument )",
+      "level": 2,
+      "number": "13.48"
+    },
+    {
       "id": "sec-temporal-preparetemporalfields",
       "title": "PrepareTemporalFields ( fields, fieldNames, requiredFields )",
       "level": 2,
-      "number": "13.48"
+      "number": "13.49"
     },
     {
       "id": "sec-temporal-preparepartialtemporalfields",
       "title": "PreparePartialTemporalFields ( fields, fieldNames )",
       "level": 2,
-      "number": "13.49"
+      "number": "13.50"
     },
     {
       "id": "sec-temporal-legacy-date-objects",
@@ -3575,22 +3581,28 @@
       "number": "14"
     },
     {
+      "id": "sec-literals-numeric-literals",
+      "title": "Numeric Literals",
+      "level": 2,
+      "number": "14.1"
+    },
+    {
       "id": "sec-mathematical-operations",
       "title": "Mathematical Operations",
       "level": 2,
-      "number": "14.1"
+      "number": "14.2"
     },
     {
       "id": "sec-temporal-properties-of-the-legacy-date-prototype-object",
       "title": "Properties of the Date Prototype Object",
       "level": 2,
-      "number": "14.2"
+      "number": "14.3"
     },
     {
       "id": "sec-date.prototype.totemporalinstant",
       "title": "Date.prototype.toTemporalInstant ( )",
       "level": 3,
-      "number": "14.2.1"
+      "number": "14.3.1"
     },
     {
       "id": "sec-temporal-intl",
@@ -3713,16 +3725,64 @@
       "number": "15.3.12"
     },
     {
+      "id": "sec-temporal-handledatetimevaluetemporaldate",
+      "title": "HandleDateTimeTemporalDate ( dateTimeFormat, temporalDate )",
+      "level": 3,
+      "number": "15.3.13"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalyearmonth",
+      "title": "HandleDateTimeTemporalYearMonth ( dateTimeFormat, temporalYearMonth )",
+      "level": 3,
+      "number": "15.3.14"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalmonthday",
+      "title": "HandleDateTimeTemporalMonthDay ( dateTimeFormat, temporalMonthDay )",
+      "level": 3,
+      "number": "15.3.15"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporaltime",
+      "title": "HandleDateTimeTemporalTime ( dateTimeFormat, temporalTime )",
+      "level": 3,
+      "number": "15.3.16"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporaldatetime",
+      "title": "HandleDateTimeTemporalDateTime ( dateTimeFormat, dateTime )",
+      "level": 3,
+      "number": "15.3.17"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalinstant",
+      "title": "HandleDateTimeTemporalInstant ( dateTimeFormat, instant )",
+      "level": 3,
+      "number": "15.3.18"
+    },
+    {
+      "id": "sec-temporal-handledatetimevaluetemporalzoneddatetime",
+      "title": "HandleDateTimeTemporalZonedDateTime ( dateTimeFormat, zonedDateTime )",
+      "level": 3,
+      "number": "15.3.19"
+    },
+    {
+      "id": "sec-temporal-handledatetimeothers",
+      "title": "HandleDateTimeOthers ( dateTimeFormat, x )",
+      "level": 3,
+      "number": "15.3.20"
+    },
+    {
       "id": "sec-temporal-handledatetimevalue",
       "title": "HandleDateTimeValue ( dateTimeFormat, x )",
       "level": 3,
-      "number": "15.3.13"
+      "number": "15.3.21"
     },
     {
       "id": "sec-temporal-tolocaltime",
       "title": "ToLocalTime ( t, calendar, timeZone )",
       "level": 3,
-      "number": "15.3.14"
+      "number": "15.3.22"
     },
     {
       "id": "sec-properties-of-intl-datetimeformat-prototype-object",

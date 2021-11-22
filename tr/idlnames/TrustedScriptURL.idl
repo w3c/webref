@@ -3,4 +3,5 @@
 interface TrustedScriptURL {
   stringifier;
   USVString toJSON();
+  static TrustedScriptURL fromLiteral(object templateStringsArray);
 };

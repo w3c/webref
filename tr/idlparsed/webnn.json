@@ -981,10 +981,10 @@
         "extAttrs": [],
         "partial": false
       },
-      "MLFilterOperandLayout": {
-        "fragment": "enum MLFilterOperandLayout {\n  \"oihw\",\n  \"hwio\",\n  \"ohwi\",\n  \"ihwo\"\n};",
+      "MLConv2dFilterOperandLayout": {
+        "fragment": "enum MLConv2dFilterOperandLayout {\n  \"oihw\",\n  \"hwio\",\n  \"ohwi\",\n  \"ihwo\"\n};",
         "type": "enum",
-        "name": "MLFilterOperandLayout",
+        "name": "MLConv2dFilterOperandLayout",
         "values": [
           {
             "type": "enum-value",
@@ -1026,9 +1026,213 @@
         "extAttrs": []
       },
       "MLConv2dOptions": {
-        "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  boolean transpose = false;\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+        "fragment": "dictionary MLConv2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConv2dFilterOperandLayout filterLayout = \"oihw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
         "type": "dictionary",
         "name": "MLConv2dOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "padding",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "strides",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "dilations",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "long"
+                }
+              ]
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "autoPad",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLAutoPad"
+            },
+            "default": {
+              "type": "string",
+              "value": "explicit"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "groups",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "long"
+            },
+            "default": {
+              "type": "number",
+              "value": "1"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "inputLayout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLInputOperandLayout"
+            },
+            "default": {
+              "type": "string",
+              "value": "nchw"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "filterLayout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLConv2dFilterOperandLayout"
+            },
+            "default": {
+              "type": "string",
+              "value": "oihw"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "bias",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperand"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "activation",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "MLOperator"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "MLConvTranspose2dFilterOperandLayout": {
+        "fragment": "enum MLConvTranspose2dFilterOperandLayout {\n  \"iohw\",\n  \"hwoi\",\n  \"ohwi\"\n};",
+        "type": "enum",
+        "name": "MLConvTranspose2dFilterOperandLayout",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "iohw"
+          },
+          {
+            "type": "enum-value",
+            "value": "hwoi"
+          },
+          {
+            "type": "enum-value",
+            "value": "ohwi"
+          }
+        ],
+        "extAttrs": []
+      },
+      "MLConvTranspose2dOptions": {
+        "fragment": "dictionary MLConvTranspose2dOptions {\n  sequence<long> padding;\n  sequence<long> strides;\n  sequence<long> dilations;\n  sequence<long> outputPadding;\n  sequence<long> outputSizes;\n  MLAutoPad autoPad = \"explicit\";\n  long groups = 1;\n  MLInputOperandLayout inputLayout = \"nchw\";\n  MLConvTranspose2dFilterOperandLayout filterLayout = \"iohw\";\n  MLOperand bias;\n  MLOperator activation;\n};",
+        "type": "dictionary",
+        "name": "MLConvTranspose2dOptions",
         "inheritance": null,
         "members": [
           {
@@ -1171,24 +1375,6 @@
           },
           {
             "type": "field",
-            "name": "transpose",
-            "extAttrs": [],
-            "idlType": {
-              "type": "dictionary-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "default": {
-              "type": "boolean",
-              "value": false
-            },
-            "required": false
-          },
-          {
-            "type": "field",
             "name": "groups",
             "extAttrs": [],
             "idlType": {
@@ -1233,11 +1419,11 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "MLFilterOperandLayout"
+              "idlType": "MLConvTranspose2dFilterOperandLayout"
             },
             "default": {
               "type": "string",
-              "value": "oihw"
+              "value": "iohw"
             },
             "required": false
           },
@@ -3064,6 +3250,82 @@
                     "nullable": false,
                     "union": false,
                     "idlType": "MLConv2dOptions"
+                  },
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand convTranspose2d(MLOperand input, MLOperand filter,\n                            optional MLConvTranspose2dOptions options = {});\n};",
+          "type": "interface",
+          "name": "MLGraphBuilder",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "convTranspose2d",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "MLOperand"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "input",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "filter",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLOperand"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                },
+                {
+                  "type": "argument",
+                  "name": "options",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "MLConvTranspose2dOptions"
                   },
                   "default": {
                     "type": "dictionary"
@@ -6248,6 +6510,7 @@
         "MLClampOptions",
         "MLOperator",
         "MLConv2dOptions",
+        "MLConvTranspose2dOptions",
         "MLEluOptions",
         "MLGemmOptions",
         "MLGruOptions",
@@ -6274,7 +6537,14 @@
       "MLConv2dOptions": [
         "MLAutoPad",
         "MLInputOperandLayout",
-        "MLFilterOperandLayout",
+        "MLConv2dFilterOperandLayout",
+        "MLOperand",
+        "MLOperator"
+      ],
+      "MLConvTranspose2dOptions": [
+        "MLAutoPad",
+        "MLInputOperandLayout",
+        "MLConvTranspose2dFilterOperandLayout",
         "MLOperand",
         "MLOperator"
       ],
