@@ -1993,9 +1993,9 @@ interface mixin WindowOrWorkerGlobalScope {
 
   // timers
   long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);
-  undefined clearTimeout(optional long handle = 0);
+  undefined clearTimeout(optional long id = 0);
   long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);
-  undefined clearInterval(optional long handle = 0);
+  undefined clearInterval(optional long id = 0);
 
   // microtask queuing
   undefined queueMicrotask(VoidFunction callback);
