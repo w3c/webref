@@ -124,27 +124,6 @@
     },
     {
       "spec": {
-        "title": "CSS Spatial Navigation Level 1",
-        "url": "https://www.w3.org/TR/css-nav-1/"
-      },
-      "fragment": "partial interface Window {\n    undefined navigate(SpatialNavigationDirection dir);\n};"
-    },
-    {
-      "spec": {
-        "title": "CSS Object Model (CSSOM)",
-        "url": "https://www.w3.org/TR/cssom-1/"
-      },
-      "fragment": "partial interface Window {\n  [NewObject] CSSStyleDeclaration getComputedStyle(Element elt, optional CSSOMString? pseudoElt);\n};"
-    },
-    {
-      "spec": {
-        "title": "CSSOM View Module",
-        "url": "https://www.w3.org/TR/cssom-view-1/"
-      },
-      "fragment": "partial interface Window {\n    [NewObject] MediaQueryList matchMedia(CSSOMString query);\n    [SameObject, Replaceable] readonly attribute Screen screen;\n\n    // browsing context\n    undefined moveTo(long x, long y);\n    undefined moveBy(long x, long y);\n    undefined resizeTo(long width, long height);\n    undefined resizeBy(long x, long y);\n\n    // viewport\n    [Replaceable] readonly attribute long innerWidth;\n    [Replaceable] readonly attribute long innerHeight;\n\n    // viewport scrolling\n    [Replaceable] readonly attribute double scrollX;\n    [Replaceable] readonly attribute double pageXOffset;\n    [Replaceable] readonly attribute double scrollY;\n    [Replaceable] readonly attribute double pageYOffset;\n    undefined scroll(optional ScrollToOptions options = {});\n    undefined scroll(unrestricted double x, unrestricted double y);\n    undefined scrollTo(optional ScrollToOptions options = {});\n    undefined scrollTo(unrestricted double x, unrestricted double y);\n    undefined scrollBy(optional ScrollToOptions options = {});\n    undefined scrollBy(unrestricted double x, unrestricted double y);\n\n    // client\n    [Replaceable] readonly attribute long screenX;\n    [Replaceable] readonly attribute long screenLeft;\n    [Replaceable] readonly attribute long screenY;\n    [Replaceable] readonly attribute long screenTop;\n    [Replaceable] readonly attribute long outerWidth;\n    [Replaceable] readonly attribute long outerHeight;\n    [Replaceable] readonly attribute double devicePixelRatio;\n};"
-    },
-    {
-      "spec": {
         "title": "DeviceOrientation Event Specification",
         "url": "https://www.w3.org/TR/orientation-event/"
       },
@@ -214,20 +193,6 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
       },
       "extended": [
-        {
-          "spec": {
-            "title": "CSS Animations Level 1",
-            "url": "https://www.w3.org/TR/css-animations-1/"
-          },
-          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
-        },
-        {
-          "spec": {
-            "title": "CSS Transitions",
-            "url": "https://www.w3.org/TR/css-transitions-1/"
-          },
-          "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler ontransitionrun;\n  attribute EventHandler ontransitionstart;\n  attribute EventHandler ontransitionend;\n  attribute EventHandler ontransitioncancel;\n};"
-        },
         {
           "spec": {
             "title": "Pointer Events",
