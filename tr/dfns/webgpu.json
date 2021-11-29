@@ -5906,6 +5906,48 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-gputextureformat-depth24unorm-stencil8",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-depth24unorm-stencil8",
+      "linkingText": [
+        "\"depth24unorm-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-formats",
+        "href": "https://www.w3.org/TR/webgpu/#texture-formats",
+        "title": "Texture Formats",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gputextureformat-depth32float-stencil8",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-depth32float-stencil8",
+      "linkingText": [
+        "\"depth32float-stencil8\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPUTextureFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-formats",
+        "href": "https://www.w3.org/TR/webgpu/#texture-formats",
+        "title": "Texture Formats",
+        "number": "6.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-gputextureformat-bc1-rgba-unorm",
       "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-bc1-rgba-unorm",
       "linkingText": [
@@ -6981,48 +7023,6 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-astc-12x12-unorm-srgb",
       "linkingText": [
         "\"astc-12x12-unorm-srgb\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUTextureFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "texture-formats",
-        "href": "https://www.w3.org/TR/webgpu/#texture-formats",
-        "title": "Texture Formats",
-        "number": "6.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gputextureformat-depth24unorm-stencil8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-depth24unorm-stencil8",
-      "linkingText": [
-        "\"depth24unorm-stencil8\""
-      ],
-      "localLinkingText": [],
-      "type": "enum-value",
-      "for": [
-        "GPUTextureFormat"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "texture-formats",
-        "href": "https://www.w3.org/TR/webgpu/#texture-formats",
-        "title": "Texture Formats",
-        "number": "6.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gputextureformat-depth32float-stencil8",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gputextureformat-depth32float-stencil8",
-      "linkingText": [
-        "\"depth32float-stencil8\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -14893,6 +14893,25 @@
       "definedIn": "table"
     },
     {
+      "id": "image-copy",
+      "href": "https://www.w3.org/TR/webgpu/#image-copy",
+      "linkingText": [
+        "image copy"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "image-copies",
+        "href": "https://www.w3.org/TR/webgpu/#image-copies",
+        "title": "Image Copies",
+        "number": "12.3.8"
+      },
+      "definedIn": "heading"
+    },
+    {
       "id": "imagecopytexture-subresource-size",
       "href": "https://www.w3.org/TR/webgpu/#imagecopytexture-subresource-size",
       "linkingText": [
@@ -22423,8 +22442,7 @@
       "id": "dom-gpufeaturename-indirect-first-instance",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpufeaturename-indirect-first-instance",
       "linkingText": [
-        "\"indirect-first-instance\"",
-        "indirect-first-instance"
+        "\"indirect-first-instance\""
       ],
       "localLinkingText": [],
       "type": "enum-value",
@@ -22436,16 +22454,16 @@
       "heading": {
         "id": "indirect-first-instance",
         "href": "https://www.w3.org/TR/webgpu/#indirect-first-instance",
-        "title": "indirect-first-instance",
+        "title": "\"indirect-first-instance\"",
         "number": "23.8"
       },
       "definedIn": "heading"
     },
     {
-      "id": "copies-of-depth-and-stencil-textures",
-      "href": "https://www.w3.org/TR/webgpu/#copies-of-depth-and-stencil-textures",
+      "id": "copy-compatible",
+      "href": "https://www.w3.org/TR/webgpu/#copy-compatible",
       "linkingText": [
-        "Copies of depth and stencil textures"
+        "copy-compatible"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -22453,10 +22471,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "depth-formats",
-        "href": "https://www.w3.org/TR/webgpu/#depth-formats",
-        "title": "Depth/stencil formats",
-        "number": "24.1.2"
+        "id": "copying-depth-stencil",
+        "href": "https://www.w3.org/TR/webgpu/#copying-depth-stencil",
+        "title": "Copying Depth/Stencil Textures",
+        "number": "24.1.2.2"
       },
       "definedIn": "prose"
     }
