@@ -219,16 +219,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-element-sethtml-input-sanitizer-input",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-sanitizer-input",
+      "id": "dictdef-sethtmloptions",
+      "href": "https://wicg.github.io/sanitizer-api/#dictdef-sethtmloptions",
       "linkingText": [
-        "input"
+        "SetHTMLOptions"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "Element/setHTML(input, sanitizer)"
-      ],
+      "type": "dictionary",
+      "for": [],
       "access": "public",
       "informative": false,
       "heading": {
@@ -240,15 +238,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-element-sethtml-input-sanitizer-sanitizer",
-      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-sanitizer-sanitizer",
+      "id": "dom-sethtmloptions-sanitizer",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-sethtmloptions-sanitizer",
       "linkingText": [
         "sanitizer"
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "dict-member",
       "for": [
-        "Element/setHTML(input, sanitizer)"
+        "SetHTMLOptions"
       ],
       "access": "public",
       "informative": false,
@@ -263,6 +261,72 @@
     {
       "id": "dom-element-sethtml",
       "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml",
+      "linkingText": [
+        "setHTML(input, options)",
+        "setHTML(input)"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-element-sethtml-input-options-input",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-options-input",
+      "linkingText": [
+        "input"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/setHTML(input, options)",
+        "Element/setHTML(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-element-sethtml-input-options-options",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-options-options",
+      "linkingText": [
+        "options"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "Element/setHTML(input, options)",
+        "Element/setHTML(input)"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sanitizer-api",
+        "href": "https://wicg.github.io/sanitizer-api/#sanitizer-api",
+        "title": "Sanitizer API",
+        "number": "2.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-element-sethtml-input-sanitizer",
+      "href": "https://wicg.github.io/sanitizer-api/#dom-element-sethtml-input-sanitizer",
       "linkingText": [
         "setHTML(input, sanitizer)"
       ],
@@ -841,16 +905,16 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "stricter-action",
-      "href": "https://wicg.github.io/sanitizer-api/#stricter-action",
+      "id": "sanitize-action-for-an-element",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitize-action-for-an-element",
       "linkingText": [
-        "stricter action"
+        "sanitize action for an element"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -860,16 +924,16 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "effective-element-configuration",
-      "href": "https://wicg.github.io/sanitizer-api/#effective-element-configuration",
+      "id": "element-matches-an-element-name",
+      "href": "https://wicg.github.io/sanitizer-api/#element-matches-an-element-name",
       "linkingText": [
-        "effective element configuration"
+        "element matches an element name"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -879,16 +943,16 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "effective-attribute-configuration",
-      "href": "https://wicg.github.io/sanitizer-api/#effective-attribute-configuration",
+      "id": "attribute-matches-an-attribute-match-list",
+      "href": "https://wicg.github.io/sanitizer-api/#attribute-matches-an-attribute-match-list",
       "linkingText": [
-        "effective attribute configuration"
+        "attribute matches an attribute match list"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -898,8 +962,27 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "sanitize-action-for-an-attribute",
+      "href": "https://wicg.github.io/sanitizer-api/#sanitize-action-for-an-attribute",
+      "linkingText": [
+        "sanitize action for an attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "configuration",
+        "href": "https://wicg.github.io/sanitizer-api/#configuration",
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -917,8 +1000,8 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
+        "title": "Matching Against The Configuration",
+        "number": "3.4"
       },
       "definedIn": "prose"
     },
@@ -936,83 +1019,7 @@
       "heading": {
         "id": "configuration",
         "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "determine-the-effective-configuration-for-an-element",
-      "href": "https://wicg.github.io/sanitizer-api/#determine-the-effective-configuration-for-an-element",
-      "linkingText": [
-        "determine the effective configuration for an element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "determine-the-effective-configuration-for-an-attribute",
-      "href": "https://wicg.github.io/sanitizer-api/#determine-the-effective-configuration-for-an-attribute",
-      "linkingText": [
-        "determine the effective configuration for an attribute"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "configuration",
-        "href": "https://wicg.github.io/sanitizer-api/#configuration",
-        "title": "The Effective Configuration",
-        "number": "3.3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "determine-the-baseline-configuration-for-an-element",
-      "href": "https://wicg.github.io/sanitizer-api/#determine-the-baseline-configuration-for-an-element",
-      "linkingText": [
-        "determine the baseline configuration for an element"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "defaults",
-        "href": "https://wicg.github.io/sanitizer-api/#defaults",
-        "title": "Baseline and Defaults",
-        "number": "3.4"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "determine-the-baseline-configuration-for-an-attribute",
-      "href": "https://wicg.github.io/sanitizer-api/#determine-the-baseline-configuration-for-an-attribute",
-      "linkingText": [
-        "determine the baseline configuration for an attribute"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "defaults",
-        "href": "https://wicg.github.io/sanitizer-api/#defaults",
-        "title": "Baseline and Defaults",
+        "title": "Matching Against The Configuration",
         "number": "3.4"
       },
       "definedIn": "prose"

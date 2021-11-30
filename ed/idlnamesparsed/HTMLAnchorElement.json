@@ -153,7 +153,7 @@
             "title": "HTML Sanitizer API",
             "url": "https://wicg.github.io/sanitizer-api/"
           },
-          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, Sanitizer sanitizer);\n};"
+          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};"
         },
         {
           "spec": {

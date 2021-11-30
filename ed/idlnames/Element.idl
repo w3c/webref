@@ -72,7 +72,7 @@ partial interface Element {
 
 // Source: HTML Sanitizer API (https://wicg.github.io/sanitizer-api/)
 partial interface Element {
-  undefined setHTML(DOMString input, Sanitizer sanitizer);
+  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});
 };
 
 // Source: CSS Spatial Navigation Level 1 (https://www.w3.org/TR/css-nav-1/)

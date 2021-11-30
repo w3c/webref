@@ -194,6 +194,31 @@
         ],
         "partial": false
       },
+      "SetHTMLOptions": {
+        "fragment": "dictionary SetHTMLOptions {\n  Sanitizer sanitizer;\n};",
+        "type": "dictionary",
+        "name": "SetHTMLOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "sanitizer",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "Sanitizer"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "SanitizerConfig": {
         "fragment": "dictionary SanitizerConfig {\n  sequence<DOMString> allowElements;\n  sequence<DOMString> blockElements;\n  sequence<DOMString> dropElements;\n  AttributeMatchList allowAttributes;\n  AttributeMatchList dropAttributes;\n  boolean allowCustomElements;\n  boolean allowComments;\n};",
         "type": "dictionary",
@@ -380,7 +405,7 @@
     "idlExtendedNames": {
       "Element": [
         {
-          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, Sanitizer sanitizer);\n};",
+          "fragment": "partial interface Element {\n  undefined setHTML(DOMString input, optional SetHTMLOptions options = {});\n};",
           "type": "interface",
           "name": "Element",
           "inheritance": null,
@@ -415,7 +440,7 @@
                 },
                 {
                   "type": "argument",
-                  "name": "sanitizer",
+                  "name": "options",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -423,10 +448,12 @@
                     "generic": "",
                     "nullable": false,
                     "union": false,
-                    "idlType": "Sanitizer"
+                    "idlType": "SetHTMLOptions"
                   },
-                  "default": null,
-                  "optional": false,
+                  "default": {
+                    "type": "dictionary"
+                  },
+                  "optional": true,
                   "variadic": false
                 }
               ],
@@ -452,8 +479,11 @@
         "Document",
         "Element"
       ],
-      "Element": [
+      "SetHTMLOptions": [
         "Sanitizer"
+      ],
+      "Element": [
+        "SetHTMLOptions"
       ],
       "SanitizerConfig": [
         "AttributeMatchList"
