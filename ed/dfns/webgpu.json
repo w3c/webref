@@ -21101,6 +21101,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "renderstate-viewport",
+      "href": "https://gpuweb.github.io/gpuweb/#renderstate-viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RenderState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-operations",
+        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
+        "title": "Rendering",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "renderstate-scissorrect",
+      "href": "https://gpuweb.github.io/gpuweb/#renderstate-scissorrect",
+      "linkingText": [
+        "scissorRect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RenderState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-operations",
+        "href": "https://gpuweb.github.io/gpuweb/#rendering-operations",
+        "title": "Rendering",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-render",
       "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-render",
       "linkingText": [
@@ -21291,6 +21333,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "fragmentdestination",
+      "href": "https://gpuweb.github.io/gpuweb/#fragmentdestination",
+      "linkingText": [
+        "FragmentDestination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragmentdestination-position",
+      "href": "https://gpuweb.github.io/gpuweb/#fragmentdestination-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FragmentDestination"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fragmentdestination-sampleindex",
+      "href": "https://gpuweb.github.io/gpuweb/#fragmentdestination-sampleindex",
+      "linkingText": [
+        "sampleIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FragmentDestination"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "ndc",
       "href": "https://gpuweb.github.io/gpuweb/#ndc",
       "linkingText": [
@@ -21310,15 +21413,181 @@
       "definedIn": "prose"
     },
     {
-      "id": "fragment-destination",
-      "href": "https://gpuweb.github.io/gpuweb/#fragment-destination",
+      "id": "rasterizationpoint",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint",
       "linkingText": [
-        "fragment destination"
+        "RasterizationPoint"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rasterizationpoint-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-coveragemask",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-coveragemask",
+      "linkingText": [
+        "coverageMask"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-frontfacing",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-frontfacing",
+      "linkingText": [
+        "frontFacing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-perspectivedivisor",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-perspectivedivisor",
+      "linkingText": [
+        "perspectiveDivisor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-depth",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-primitivevertices",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-primitivevertices",
+      "linkingText": [
+        "primitiveVertices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-barycentriccoordinates",
+      "href": "https://gpuweb.github.io/gpuweb/#rasterizationpoint-barycentriccoordinates",
+      "linkingText": [
+        "barycentricCoordinates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://gpuweb.github.io/gpuweb/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-rasterize",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-rasterize",
+      "linkingText": [
+        "rasterize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "rasterization",
@@ -21367,10 +21636,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "fragments",
-      "href": "https://gpuweb.github.io/gpuweb/#fragments",
+      "id": "fragment",
+      "href": "https://gpuweb.github.io/gpuweb/#fragment",
       "linkingText": [
-        "fragments"
+        "Fragment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -21378,10 +21647,113 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "polygon-rasterization",
-        "href": "https://gpuweb.github.io/gpuweb/#polygon-rasterization",
-        "title": "Polygon Rasterization",
-        "number": "21.3.5.3"
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-destination",
+      "href": "https://gpuweb.github.io/gpuweb/#fragment-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-coveragemask",
+      "href": "https://gpuweb.github.io/gpuweb/#fragment-coveragemask",
+      "linkingText": [
+        "coverageMask"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-depth",
+      "href": "https://gpuweb.github.io/gpuweb/#fragment-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-colors",
+      "href": "https://gpuweb.github.io/gpuweb/#fragment-colors",
+      "linkingText": [
+        "colors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-process-fragment",
+      "href": "https://gpuweb.github.io/gpuweb/#abstract-opdef-process-fragment",
+      "linkingText": [
+        "process fragment"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://gpuweb.github.io/gpuweb/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
       },
       "definedIn": "prose"
     },

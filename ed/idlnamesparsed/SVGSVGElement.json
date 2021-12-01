@@ -66,13 +66,6 @@
       "extended": [
         {
           "spec": {
-            "title": "CSS Object Model (CSSOM)",
-            "url": "https://www.w3.org/TR/cssom-1/"
-          },
-          "fragment": "SVGElement includes ElementCSSInlineStyle;"
-        },
-        {
-          "spec": {
             "title": "Scalable Vector Graphics (SVG) 2",
             "url": "https://www.w3.org/TR/SVG2/"
           },
@@ -195,20 +188,6 @@
               "url": "https://www.w3.org/TR/css-typed-om-1/"
             },
             "fragment": "partial interface Element {\n    [SameObject] StylePropertyMapReadOnly computedStyleMap();\n};"
-          },
-          {
-            "spec": {
-              "title": "CSSOM View Module",
-              "url": "https://www.w3.org/TR/cssom-view-1/"
-            },
-            "fragment": "partial interface Element {\n  DOMRectList getClientRects();\n  [NewObject] DOMRect getBoundingClientRect();\n  undefined scrollIntoView(optional (boolean or ScrollIntoViewOptions) arg = {});\n  undefined scroll(optional ScrollToOptions options = {});\n  undefined scroll(unrestricted double x, unrestricted double y);\n  undefined scrollTo(optional ScrollToOptions options = {});\n  undefined scrollTo(unrestricted double x, unrestricted double y);\n  undefined scrollBy(optional ScrollToOptions options = {});\n  undefined scrollBy(unrestricted double x, unrestricted double y);\n  attribute unrestricted double scrollTop;\n  attribute unrestricted double scrollLeft;\n  readonly attribute long scrollWidth;\n  readonly attribute long scrollHeight;\n  readonly attribute long clientTop;\n  readonly attribute long clientLeft;\n  readonly attribute long clientWidth;\n  readonly attribute long clientHeight;\n};"
-          },
-          {
-            "spec": {
-              "title": "CSSOM View Module",
-              "url": "https://www.w3.org/TR/cssom-view-1/"
-            },
-            "fragment": "// like Range\nElement includes GeometryUtils;"
           },
           {
             "spec": {
@@ -359,21 +338,6 @@
             "includes": []
           },
           {
-            "name": "GeometryUtils",
-            "type": "interface mixin",
-            "defined": {
-              "spec": {
-                "title": "CSSOM View Module",
-                "url": "https://www.w3.org/TR/cssom-view-1/"
-              },
-              "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-              "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
-            },
-            "extended": [],
-            "inheritance": null,
-            "includes": []
-          },
-          {
             "name": "InnerHTML",
             "type": "interface mixin",
             "defined": {
@@ -421,29 +385,6 @@
         ]
       },
       "includes": [
-        {
-          "name": "ElementCSSInlineStyle",
-          "type": "interface mixin",
-          "defined": {
-            "spec": {
-              "title": "CSS Object Model (CSSOM)",
-              "url": "https://www.w3.org/TR/cssom-1/"
-            },
-            "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-            "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
-          },
-          "extended": [
-            {
-              "spec": {
-                "title": "CSS Typed OM Level 1",
-                "url": "https://www.w3.org/TR/css-typed-om-1/"
-              },
-              "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
-            }
-          ],
-          "inheritance": null,
-          "includes": []
-        },
         {
           "name": "GlobalEventHandlers",
           "type": "interface mixin",
