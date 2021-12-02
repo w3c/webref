@@ -12,6 +12,12 @@ partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? activeElement;
 };
 
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+partial interface mixin DocumentOrShadowRoot {
+  [SameObject] readonly attribute StyleSheetList styleSheets;
+  attribute ObservableArray<CSSStyleSheet> adoptedStyleSheets;
+};
+
 // Source: Picture-in-Picture (https://www.w3.org/TR/picture-in-picture/)
 partial interface mixin DocumentOrShadowRoot {
   readonly attribute Element? pictureInPictureElement;

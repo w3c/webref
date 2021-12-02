@@ -1,3 +1,10 @@
+// Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)
+[Exposed=Window]
+interface CSSStyleRule : CSSRule {
+  attribute CSSOMString selectorText;
+  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;
+};
+
 // Source: CSS Nesting Module (https://www.w3.org/TR/css-nesting-1/)
 partial interface CSSStyleRule {
   [SameObject] readonly attribute CSSRuleList cssRules;

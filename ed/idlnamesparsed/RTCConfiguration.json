@@ -6,7 +6,7 @@
       "title": "WebRTC 1.0: Real-Time Communication Between Browsers",
       "url": "https://www.w3.org/TR/webrtc/"
     },
-    "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers;\n  RTCIceTransportPolicy iceTransportPolicy;\n  RTCBundlePolicy bundlePolicy;\n  RTCRtcpMuxPolicy rtcpMuxPolicy;\n  sequence<RTCCertificate> certificates;\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
+    "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers = [];\n  RTCIceTransportPolicy iceTransportPolicy = \"all\";\n  RTCBundlePolicy bundlePolicy = \"balanced\";\n  RTCRtcpMuxPolicy rtcpMuxPolicy = \"require\";\n  sequence<RTCCertificate> certificates = [];\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
     "href": "https://w3c.github.io/webrtc-pc/#dom-rtcconfiguration"
   },
   "extended": [

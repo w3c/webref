@@ -36,7 +36,7 @@
     },
     "idlNames": {
       "RTCConfiguration": {
-        "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers;\n  RTCIceTransportPolicy iceTransportPolicy;\n  RTCBundlePolicy bundlePolicy;\n  RTCRtcpMuxPolicy rtcpMuxPolicy;\n  sequence<RTCCertificate> certificates;\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
+        "fragment": "dictionary RTCConfiguration {\n  sequence<RTCIceServer> iceServers = [];\n  RTCIceTransportPolicy iceTransportPolicy = \"all\";\n  RTCBundlePolicy bundlePolicy = \"balanced\";\n  RTCRtcpMuxPolicy rtcpMuxPolicy = \"require\";\n  sequence<RTCCertificate> certificates = [];\n  [EnforceRange] octet iceCandidatePoolSize = 0;\n};",
         "type": "dictionary",
         "name": "RTCConfiguration",
         "inheritance": null,
@@ -62,7 +62,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           },
           {
@@ -77,7 +80,10 @@
               "union": false,
               "idlType": "RTCIceTransportPolicy"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "all"
+            },
             "required": false
           },
           {
@@ -92,7 +98,10 @@
               "union": false,
               "idlType": "RTCBundlePolicy"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "balanced"
+            },
             "required": false
           },
           {
@@ -107,7 +116,10 @@
               "union": false,
               "idlType": "RTCRtcpMuxPolicy"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": "require"
+            },
             "required": false
           },
           {
@@ -131,7 +143,10 @@
                 }
               ]
             },
-            "default": null,
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
             "required": false
           },
           {

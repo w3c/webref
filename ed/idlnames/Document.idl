@@ -178,6 +178,17 @@ partial interface Document {
   readonly attribute NamedFlowMap namedFlows;
 };
 
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+partial interface Document {
+  Element? elementFromPoint(double x, double y);
+  sequence<Element> elementsFromPoint(double x, double y);
+  CaretPosition? caretPositionFromPoint(double x, double y);
+  readonly attribute Element? scrollingElement;
+};
+
+// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
+Document includes GeometryUtils;
+
 // Source: Permissions Policy (https://www.w3.org/TR/permissions-policy-1/)
 partial interface Document {
     [SameObject] readonly attribute PermissionsPolicy permissionsPolicy;

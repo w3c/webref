@@ -1,10 +1,10 @@
 // Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
 dictionary RTCConfiguration {
-  sequence<RTCIceServer> iceServers;
-  RTCIceTransportPolicy iceTransportPolicy;
-  RTCBundlePolicy bundlePolicy;
-  RTCRtcpMuxPolicy rtcpMuxPolicy;
-  sequence<RTCCertificate> certificates;
+  sequence<RTCIceServer> iceServers = [];
+  RTCIceTransportPolicy iceTransportPolicy = "all";
+  RTCBundlePolicy bundlePolicy = "balanced";
+  RTCRtcpMuxPolicy rtcpMuxPolicy = "require";
+  sequence<RTCCertificate> certificates = [];
   [EnforceRange] octet iceCandidatePoolSize = 0;
 };
 
