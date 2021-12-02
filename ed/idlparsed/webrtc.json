@@ -2485,7 +2485,7 @@
         "partial": false
       },
       "RTCCertificateExpiration": {
-        "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] EpochTimeStamp expires;\n};",
+        "fragment": "dictionary RTCCertificateExpiration {\n  [EnforceRange] unsigned long long expires;\n};",
         "type": "dictionary",
         "name": "RTCCertificateExpiration",
         "inheritance": null,
@@ -2507,7 +2507,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "EpochTimeStamp"
+              "idlType": "unsigned long long"
             },
             "default": null,
             "required": false
@@ -6794,9 +6794,7 @@
       "RTCPeerConnectionIceErrorEventInit": [
         "EventInit"
       ],
-      "RTCCertificateExpiration": [
-        "EpochTimeStamp"
-      ],
+      "RTCCertificateExpiration": [],
       "RTCCertificate": [
         "EpochTimeStamp",
         "RTCDtlsFingerprint"

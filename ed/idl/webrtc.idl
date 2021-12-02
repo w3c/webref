@@ -247,7 +247,7 @@ partial interface RTCPeerConnection {
 };
 
 dictionary RTCCertificateExpiration {
-  [EnforceRange] EpochTimeStamp expires;
+  [EnforceRange] unsigned long long expires;
 };
 
 [Exposed=Window, Serializable]
