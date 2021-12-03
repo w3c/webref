@@ -159,44 +159,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-mediastreamtrack",
-      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack",
-      "linkingText": [
-        "MediaStreamTrack"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "introduction",
-        "href": "https://w3c.github.io/mediacapture-main/#introduction",
-        "title": "Introduction",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dom-mediastream",
-      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastream",
-      "linkingText": [
-        "MediaStream"
-      ],
-      "localLinkingText": [],
-      "type": "interface",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "introduction",
-        "href": "https://w3c.github.io/mediacapture-main/#introduction",
-        "title": "Introduction",
-        "number": "4.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dom-mediastream-constructor",
       "href": "https://w3c.github.io/mediacapture-main/#dom-mediastream-constructor",
       "linkingText": [
@@ -380,6 +342,25 @@
         "number": "4.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "dom-mediastream",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastream",
+      "linkingText": [
+        "MediaStream"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "mediastream",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastream",
+        "title": "MediaStream",
+        "number": "4.2"
+      },
+      "definedIn": "pre"
     },
     {
       "id": "dom-mediastream-constructor!overload-1",
@@ -713,10 +694,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-underlying-source",
-      "href": "https://w3c.github.io/mediacapture-main/#dfn-underlying-source",
+      "id": "dfn-create-a-mediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-create-a-mediastreamtrack",
       "linkingText": [
-        "underlying source"
+        "create a MediaStreamTrack"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -732,17 +713,17 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-initialize-the-underlying-source",
-      "href": "https://w3c.github.io/mediacapture-main/#dfn-initialize-the-underlying-source",
+      "id": "dfn-source-0",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-source-0",
       "linkingText": [
-        "initialize the underlying source"
+        "[[Source]]"
       ],
       "localLinkingText": [],
-      "type": "dfn",
+      "type": "attribute",
       "for": [
         "MediaStreamTrack"
       ],
-      "access": "public",
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "mediastreamtrack",
@@ -753,16 +734,178 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-tiesourcetocontext",
-      "href": "https://w3c.github.io/mediacapture-main/#dfn-tiesourcetocontext",
+      "id": "dfn-id",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-id",
       "linkingText": [
-        "tieSourceToContext"
+        "[[Id]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-kind",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-kind",
+      "linkingText": [
+        "[[Kind]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-audio",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-audio",
+      "linkingText": [
+        "\"audio\""
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "MediaStreamTrack/initialize the underlying source"
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-video",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-video",
+      "linkingText": [
+        "\"video\""
       ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-label",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-label",
+      "linkingText": [
+        "[[Label]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-readystate",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-readystate",
+      "linkingText": [
+        "[[ReadyState]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-enabled",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-enabled",
+      "linkingText": [
+        "[[Enabled]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-muted",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-muted",
+      "linkingText": [
+        "[[Muted]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "MediaStreamTrack"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "mediastreamtrack",
+        "href": "https://w3c.github.io/mediacapture-main/#mediastreamtrack",
+        "title": "MediaStreamTrack",
+        "number": "4.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-tie-track-source-to-context",
+      "href": "https://w3c.github.io/mediacapture-main/#dfn-tie-track-source-to-context",
+      "linkingText": [
+        "tie track source to context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -944,6 +1087,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-mediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack",
+      "linkingText": [
+        "MediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "media-stream-track-interface-definition",
+        "href": "https://w3c.github.io/mediacapture-main/#media-stream-track-interface-definition",
+        "title": "Interface Definition",
+        "number": "4.3.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-mediastreamtrack-kind",
       "href": "https://w3c.github.io/mediacapture-main/#dom-mediastreamtrack-kind",
       "linkingText": [
@@ -957,42 +1119,6 @@
         "MediaStreamTrack"
       ],
       "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "attributes-1",
-        "href": "https://w3c.github.io/mediacapture-main/#attributes-1",
-        "title": "Attributes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-audio",
-      "href": "https://w3c.github.io/mediacapture-main/#dfn-audio",
-      "linkingText": [
-        "\"audio\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes-1",
-        "href": "https://w3c.github.io/mediacapture-main/#attributes-1",
-        "title": "Attributes"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-video",
-      "href": "https://w3c.github.io/mediacapture-main/#dfn-video",
-      "linkingText": [
-        "\"video\""
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
       "informative": false,
       "heading": {
         "id": "attributes-1",
@@ -5251,6 +5377,82 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-devicepermissiondescriptor",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-devicepermissiondescriptor",
+      "linkingText": [
+        "DevicePermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://w3c.github.io/mediacapture-main/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-devicepermissiondescriptor-deviceid",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-devicepermissiondescriptor-deviceid",
+      "linkingText": [
+        "deviceId"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "DevicePermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://w3c.github.io/mediacapture-main/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cameradevicepermissiondescriptor",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-cameradevicepermissiondescriptor",
+      "linkingText": [
+        "CameraDevicePermissionDescriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://w3c.github.io/mediacapture-main/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cameradevicepermissiondescriptor-pantiltzoom",
+      "href": "https://w3c.github.io/mediacapture-main/#dom-cameradevicepermissiondescriptor-pantiltzoom",
+      "linkingText": [
+        "panTiltZoom"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CameraDevicePermissionDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "permissions-integration-0",
+        "href": "https://w3c.github.io/mediacapture-main/#permissions-integration-0",
+        "title": "13. Permissions Integration"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dfn-camera",
       "href": "https://w3c.github.io/mediacapture-main/#dfn-camera",
       "linkingText": [
@@ -5264,7 +5466,7 @@
       "heading": {
         "id": "permissions-policy-integration-0",
         "href": "https://w3c.github.io/mediacapture-main/#permissions-policy-integration-0",
-        "title": "13. Permissions Policy Integration"
+        "title": "14. Permissions Policy Integration"
       },
       "definedIn": "prose"
     },
@@ -5282,7 +5484,7 @@
       "heading": {
         "id": "permissions-policy-integration-0",
         "href": "https://w3c.github.io/mediacapture-main/#permissions-policy-integration-0",
-        "title": "13. Permissions Policy Integration"
+        "title": "14. Permissions Policy Integration"
       },
       "definedIn": "prose"
     }

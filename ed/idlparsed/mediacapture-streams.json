@@ -2765,6 +2765,59 @@
           ]
         },
         "extAttrs": []
+      },
+      "DevicePermissionDescriptor": {
+        "fragment": "dictionary DevicePermissionDescriptor : PermissionDescriptor {\n  DOMString deviceId;\n};",
+        "type": "dictionary",
+        "name": "DevicePermissionDescriptor",
+        "inheritance": "PermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "deviceId",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "CameraDevicePermissionDescriptor": {
+        "fragment": "dictionary CameraDevicePermissionDescriptor : DevicePermissionDescriptor {\n  boolean panTiltZoom = false;\n};",
+        "type": "dictionary",
+        "name": "CameraDevicePermissionDescriptor",
+        "inheritance": "DevicePermissionDescriptor",
+        "members": [
+          {
+            "type": "field",
+            "name": "panTiltZoom",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
+            },
+            "default": {
+              "type": "boolean",
+              "value": false
+            },
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
       }
     },
     "idlExtendedNames": {
@@ -3048,7 +3101,13 @@
         "ULongRange"
       ],
       "ConstrainBooleanParameters": [],
-      "ConstrainDOMStringParameters": []
+      "ConstrainDOMStringParameters": [],
+      "DevicePermissionDescriptor": [
+        "PermissionDescriptor"
+      ],
+      "CameraDevicePermissionDescriptor": [
+        "DevicePermissionDescriptor"
+      ]
     },
     "externalDependencies": [
       "EventTarget",
@@ -3056,7 +3115,8 @@
       "Event",
       "EventInit",
       "DOMException",
-      "Navigator"
+      "Navigator",
+      "PermissionDescriptor"
     ],
     "hasObsoleteIdl": false
   }
