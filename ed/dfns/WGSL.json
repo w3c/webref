@@ -2935,6 +2935,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "mip-level",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#mip-level",
+      "linkingText": [
+        "Mip level"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "array-size",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#array-size",
       "linkingText": [
@@ -4265,10 +4284,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "updating-assignment",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/#updating-assignment",
+      "id": "simple-assignment",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#simple-assignment",
       "linkingText": [
-        "updating assignment"
+        "simple assignment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4276,9 +4295,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "updating-assignment-section",
-        "href": "https://gpuweb.github.io/gpuweb/wgsl/#updating-assignment-section",
-        "title": "Updating Assignment",
+        "id": "simple-assignment-section",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#simple-assignment-section",
+        "title": "Simple Assignment",
         "number": "7.2.1"
       },
       "definedIn": "prose"
@@ -4299,6 +4318,46 @@
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#phony-assignment-section",
         "title": "Phony Assignment",
         "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compound-assignment",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#compound-assignment",
+      "linkingText": [
+        "compound assignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compound-assignment-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#compound-assignment-sec",
+        "title": "Compound assignment",
+        "number": "7.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-compound_assignment_operator",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-compound_assignment_operator",
+      "linkingText": [
+        "compound_assignment_operator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compound-assignment-sec",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#compound-assignment-sec",
+        "title": "Compound assignment",
+        "number": "7.2.3"
       },
       "definedIn": "prose"
     },
@@ -9094,6 +9153,216 @@
       "definedIn": "prose"
     },
     {
+      "id": "syntax-plus_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-plus_equal",
+      "linkingText": [
+        "plus_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-minus_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-minus_equal",
+      "linkingText": [
+        "minus_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-times_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-times_equal",
+      "linkingText": [
+        "times_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-division_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-division_equal",
+      "linkingText": [
+        "division_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-modulo_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-modulo_equal",
+      "linkingText": [
+        "modulo_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-and_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-and_equal",
+      "linkingText": [
+        "and_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-or_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-or_equal",
+      "linkingText": [
+        "or_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-xor_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-xor_equal",
+      "linkingText": [
+        "xor_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-shift_right_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-shift_right_equal",
+      "linkingText": [
+        "shift_right_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-shift_left_equal",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntax-shift_left_equal",
+      "linkingText": [
+        "shift_left_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "built-in-functions",
       "href": "https://gpuweb.github.io/gpuweb/wgsl/#built-in-functions",
       "linkingText": [
@@ -9108,6 +9377,44 @@
         "id": "builtin-functions",
         "href": "https://gpuweb.github.io/gpuweb/wgsl/#builtin-functions",
         "title": "16. Built-in functions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texture-gather",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-gather",
+      "linkingText": [
+        "texture gather"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texturegather",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegather",
+        "title": "textureGather",
+        "number": "16.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texture-gather-compare",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/#texture-gather-compare",
+      "linkingText": [
+        "texture gather compare"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texturegathercompare",
+        "href": "https://gpuweb.github.io/gpuweb/wgsl/#texturegathercompare",
+        "title": "textureGatherCompare",
+        "number": "16.8.3"
       },
       "definedIn": "prose"
     }
