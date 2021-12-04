@@ -19,7 +19,7 @@
     },
     "idlNames": {
       "WindowControlsOverlay": {
-        "fragment": "[Exposed=Window]\ninterface WindowControlsOverlay : EventTarget {\n  readonly attribute boolean visible;\n  DOMRect getBoundingClientRect();\n  attribute EventHandler ongeometrychange;\n};",
+        "fragment": "[Exposed=Window]\ninterface WindowControlsOverlay : EventTarget {\n  readonly attribute boolean visible;\n  DOMRect getTitlebarAreaRect();\n  attribute EventHandler ongeometrychange;\n};",
         "type": "interface",
         "name": "WindowControlsOverlay",
         "inheritance": "EventTarget",
@@ -41,7 +41,7 @@
           },
           {
             "type": "operation",
-            "name": "getBoundingClientRect",
+            "name": "getTitlebarAreaRect",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],

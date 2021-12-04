@@ -11,7 +11,7 @@ partial interface Navigator {
 [Exposed=Window]
 interface WindowControlsOverlay : EventTarget {
   readonly attribute boolean visible;
-  DOMRect getBoundingClientRect();
+  DOMRect getTitlebarAreaRect();
   attribute EventHandler ongeometrychange;
 };
 

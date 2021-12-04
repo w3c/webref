@@ -4,6 +4,12 @@
     "url": "https://drafts.csswg.org/css-cascade/"
   },
   "links": {
+    "https://drafts.csswg.org/css-conditional-3/": [
+      "typedef-supports-condition",
+      "at-ruledef-media",
+      "at-ruledef-supports",
+      "typedef-supports-decl"
+    ],
     "https://www.w3.org/TR/CSS/": [
       "future-proofing",
       "unstable",
@@ -34,18 +40,20 @@
       "propdef-border-bottom-width",
       "propdef-border-left-width"
     ],
-    "https://drafts.csswg.org/css-values-3/": [
+    "https://drafts.csswg.org/css-values-4/": [
       "typedef-length-percentage",
+      "url-value",
       "comb-one",
+      "string-value",
       "mult-opt",
       "funcdef-url",
-      "css-keyword",
+      "fetch-a-style-resource",
       "css-wide-keywords",
       "em",
-      "ex",
-      "vh",
-      "vw",
-      "ch"
+      "valdef-length-vh",
+      "valdef-length-vw",
+      "ch",
+      "length-value"
     ],
     "https://drafts.csswg.org/css-syntax-3/": [
       "css-property-declarations",
@@ -60,6 +68,12 @@
       "propdef-page-break-before",
       "propdef-page-break-after"
     ],
+    "https://drafts.csswg.org/mediaqueries-4/": [
+      "typedef-media-query",
+      "typedef-media-query-list",
+      "valdef-media-all",
+      "media-query-list"
+    ],
     "https://drafts.csswg.org/css-display-3/": [
       "text-nodes",
       "elements",
@@ -67,16 +81,6 @@
       "display-type"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/@import": [],
-    "https://drafts.csswg.org/css-values-4/": [
-      "url-value",
-      "string-value",
-      "length-value"
-    ],
-    "https://drafts.csswg.org/mediaqueries-4/": [
-      "typedef-media-query-list",
-      "valdef-media-all",
-      "media-query"
-    ],
     "https://www.w3.org/TR/css-conditional-3/": [
       "support-definition"
     ],
@@ -86,10 +90,6 @@
     ],
     "https://www.w3.org/TR/mediaqueries-4/": [
       "width"
-    ],
-    "https://drafts.csswg.org/css-conditional-3/": [
-      "at-ruledef-media",
-      "at-ruledef-supports"
     ],
     "https://www.w3.org/TR/mediaqueries/": [],
     "https://www.w3.org/TR/css-conditional/": [],
@@ -181,6 +181,9 @@
     ],
     "https://drafts.csswg.org/css-align-3/": [
       "valdef-justify-self-auto"
+    ],
+    "https://drafts.csswg.org/css-values-3/": [
+      "ex"
     ],
     "https://drafts.csswg.org/css-sizing-3/": [
       "propdef-width",
