@@ -4466,8 +4466,33 @@
         ],
         "partial": false
       },
+      "GPUShaderModuleCompilationHint": {
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required GPUPipelineLayout layout;\n};",
+        "type": "dictionary",
+        "name": "GPUShaderModuleCompilationHint",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "layout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPipelineLayout"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4498,6 +4523,38 @@
               "nullable": false,
               "union": false,
               "idlType": "object"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUShaderModuleCompilationHint"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -11861,8 +11918,12 @@
         "GPUCompilationInfo",
         "GPUObjectBase"
       ],
+      "GPUShaderModuleCompilationHint": [
+        "GPUPipelineLayout"
+      ],
       "GPUShaderModuleDescriptor": [
-        "GPUObjectDescriptorBase"
+        "GPUObjectDescriptorBase",
+        "GPUShaderModuleCompilationHint"
       ],
       "GPUCompilationMessage": [
         "GPUCompilationMessageType"

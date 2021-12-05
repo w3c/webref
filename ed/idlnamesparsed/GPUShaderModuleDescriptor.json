@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n};",
+    "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
     "href": "https://gpuweb.github.io/gpuweb/#dictdef-gpushadermoduledescriptor"
   },
   "extended": [],
