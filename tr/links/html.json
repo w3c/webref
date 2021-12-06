@@ -161,6 +161,7 @@
       "scalar-value",
       "tuple",
       "noncharacter",
+      "byte-sequence",
       "string",
       "code-unit",
       "string-code-point-length",
@@ -247,8 +248,10 @@
       "concept-shadow-including-root",
       "interface-node",
       "interface-attr",
+      "interface-characterdata",
       "interface-domimplementation",
       "interface-document",
+      "dom-document-doctype",
       "documentorshadowroot",
       "interface-documentfragment",
       "interface-childnode",
@@ -334,6 +337,9 @@
       "concept-cd-replace",
       "concept-child-text-content",
       "concept-descendant-text-content",
+      "concept-doctype-name",
+      "concept-doctype-publicid",
+      "concept-doctype-systemid",
       "interface-event",
       "concept-event-constructor",
       "interface-eventtarget",
@@ -415,7 +421,10 @@
       "requestcredentials",
       "requestdestination",
       "dom-global-fetch",
+      "finalize-and-report-timing",
       "serialize-a-response-url-for-reporting",
+      "bodyinit-safely-extract",
+      "process-response-end-of-body",
       "concept-response",
       "concept-response-type",
       "concept-response-url",
@@ -861,6 +870,9 @@
     ],
     "https://w3c.github.io/hr-time/": [
       "dfn-current-high-resolution-time",
+      "dfn-unsafe-shared-current-time",
+      "dfn-shared-monotonic-clock",
+      "dfn-coarsen-time",
       "dom-domhighrestimestamp"
     ],
     "https://w3c.github.io/IndexedDB/": [
@@ -886,9 +898,7 @@
       "dom-progressevent-loaded",
       "dom-progressevent-total",
       "formdata",
-      "formdataentryvalue",
-      "concept-formdata-entry",
-      "create-an-entry"
+      "concept-formdata-entry-list"
     ],
     "https://w3c.github.io/battery/": [
       "widl-Navigator-getBattery-Promise-BatteryManager"

@@ -64,69 +64,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-import-media-query",
-      "href": "https://www.w3.org/TR/css-cascade-5/#typedef-import-media-query",
-      "linkingText": [
-        "<media-query>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "@import"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conditional-import",
-        "href": "https://www.w3.org/TR/css-cascade-5/#conditional-import",
-        "title": "Conditional @import Rules",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-import-supports-condition",
-      "href": "https://www.w3.org/TR/css-cascade-5/#typedef-import-supports-condition",
-      "linkingText": [
-        "<supports-condition>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "@import"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conditional-import",
-        "href": "https://www.w3.org/TR/css-cascade-5/#conditional-import",
-        "title": "Conditional @import Rules",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "typedef-import-declaration",
-      "href": "https://www.w3.org/TR/css-cascade-5/#typedef-import-declaration",
-      "linkingText": [
-        "<declaration>"
-      ],
-      "localLinkingText": [],
-      "type": "type",
-      "for": [
-        "@import"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "conditional-import",
-        "href": "https://www.w3.org/TR/css-cascade-5/#conditional-import",
-        "title": "Conditional @import Rules",
-        "number": "2.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "shorthand-property",
       "href": "https://www.w3.org/TR/css-cascade-5/#shorthand-property",
       "linkingText": [
@@ -200,7 +137,7 @@
       "heading": {
         "id": "aliasing",
         "href": "https://www.w3.org/TR/css-cascade-5/#aliasing",
-        "title": "Aliasing",
+        "title": "Property Aliasing",
         "number": "3.1"
       },
       "definedIn": "dt"
@@ -219,7 +156,7 @@
       "heading": {
         "id": "aliasing",
         "href": "https://www.w3.org/TR/css-cascade-5/#aliasing",
-        "title": "Aliasing",
+        "title": "Property Aliasing",
         "number": "3.1"
       },
       "definedIn": "dt"
@@ -261,6 +198,27 @@
         "href": "https://www.w3.org/TR/css-cascade-5/#declared",
         "title": "Declared Values",
         "number": "4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-legacy-value-alias",
+      "href": "https://www.w3.org/TR/css-cascade-5/#css-legacy-value-alias",
+      "linkingText": [
+        "legacy value alias"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "value-aliasing",
+        "href": "https://www.w3.org/TR/css-cascade-5/#value-aliasing",
+        "title": "Value Aliasing",
+        "number": "4.1.1"
       },
       "definedIn": "prose"
     },
@@ -889,6 +847,107 @@
         "href": "https://www.w3.org/TR/css-cascade-5/#revert-layer",
         "title": "Rolling Back Cascade Layers: the revert-layer keyword",
         "number": "7.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-cssimportrule-layername",
+      "href": "https://www.w3.org/TR/css-cascade-5/#dom-cssimportrule-layername",
+      "linkingText": [
+        "layerName"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSImportRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-cssimportrule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-5/#extensions-to-cssimportrule-interface",
+        "title": "Extensions to the CSSImportRule interface",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csslayerblockrule",
+      "href": "https://www.w3.org/TR/css-cascade-5/#csslayerblockrule",
+      "linkingText": [
+        "CSSLayerBlockRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csslayerblockrule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-5/#the-csslayerblockrule-interface",
+        "title": "The CSSLayerBlockRule interface",
+        "number": "8.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslayerblockrule-name",
+      "href": "https://www.w3.org/TR/css-cascade-5/#dom-csslayerblockrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLayerBlockRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csslayerblockrule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-5/#the-csslayerblockrule-interface",
+        "title": "The CSSLayerBlockRule interface",
+        "number": "8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "csslayerstatementrule",
+      "href": "https://www.w3.org/TR/css-cascade-5/#csslayerstatementrule",
+      "linkingText": [
+        "CSSLayerStatementRule"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csslayerstatementrule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-5/#the-csslayerstatementrule-interface",
+        "title": "The CSSLayerStatementRule interface",
+        "number": "8.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-csslayerstatementrule-namelist",
+      "href": "https://www.w3.org/TR/css-cascade-5/#dom-csslayerstatementrule-namelist",
+      "linkingText": [
+        "nameList"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSLayerStatementRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-csslayerstatementrule-interface",
+        "href": "https://www.w3.org/TR/css-cascade-5/#the-csslayerstatementrule-interface",
+        "title": "The CSSLayerStatementRule interface",
+        "number": "8.3"
       },
       "definedIn": "prose"
     }

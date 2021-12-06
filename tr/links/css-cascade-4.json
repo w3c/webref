@@ -4,17 +4,25 @@
     "url": "https://www.w3.org/TR/css-cascade-4/"
   },
   "links": {
+    "https://www.w3.org/TR/css3-conditional/": [
+      "typedef-supports-condition",
+      "at-ruledef-media",
+      "at-ruledef-supports",
+      "typedef-supports-decl"
+    ],
     "https://www.w3.org/TR/CSS/": [
       "future-proofing",
       "unstable",
       "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/Style/CSS/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
@@ -41,23 +49,32 @@
       "propdef-border-bottom-width",
       "propdef-border-left-width"
     ],
-    "https://www.w3.org/TR/css-values-3/": [
+    "https://www.w3.org/TR/css-values-4/": [
       "typedef-length-percentage",
+      "url-value",
       "comb-one",
+      "string-value",
       "mult-opt",
       "funcdef-url",
       "css-wide-keywords",
       "em",
-      "ex",
-      "vh",
-      "vw",
-      "ch"
+      "valdef-length-vh",
+      "valdef-length-vw",
+      "ch",
+      "length-value"
     ],
     "https://drafts.csswg.org/css-syntax-3/": [
       "css-property-declarations"
     ],
     "https://drafts.csswg.org/css2/": [
       "valdef-color-red"
+    ],
+    "https://www.w3.org/TR/mediaqueries-4/": [
+      "typedef-media-query",
+      "typedef-media-query-list",
+      "width",
+      "valdef-media-all",
+      "media-query-list"
     ],
     "https://www.w3.org/TR/css-display-3/": [
       "text-nodes",
@@ -67,18 +84,8 @@
     ],
     "https://www.w3.org/TR/css-syntax-3/": [
       "at-ruledef-charset",
-      "environment-encoding"
-    ],
-    "https://www.w3.org/TR/css-values-4/": [
-      "url-value",
-      "string-value",
-      "length-value"
-    ],
-    "https://www.w3.org/TR/mediaqueries-4/": [
-      "typedef-media-query-list",
-      "width",
-      "valdef-media-all",
-      "media-query"
+      "environment-encoding",
+      "parse-a-stylesheet"
     ],
     "https://www.w3.org/TR/css-conditional-3/": [
       "support-definition"
@@ -91,19 +98,26 @@
       "propdef-page-break-after",
       "box-gen"
     ],
-    "https://www.w3.org/TR/css3-conditional/": [
-      "at-ruledef-media",
-      "at-ruledef-supports"
-    ],
     "https://www.w3.org/TR/mediaqueries/": [],
     "https://www.w3.org/TR/css-conditional/": [],
-    "https://html.spec.whatwg.org/": [
-      "content-type",
-      "same-origin",
-      "the-p-element",
-      "the-css-user-agent-style-sheet-and-presentational-hints",
-      "the-s-element",
-      "the-slot-element"
+    "https://www.w3.org/TR/cssom-1/": [
+      "concept-css-rule-parent-css-style-sheet",
+      "concept-css-style-sheet-location",
+      "concept-css-style-sheet-origin-clean-flag",
+      "dom-cssimportrule-stylesheet",
+      "serializing-css-values",
+      "dom-window-getcomputedstyle"
+    ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url-parser"
+    ],
+    "https://drafts.csswg.org/css-values-4/": [
+      "fetch-a-style-resource"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "concept-response",
+      "concept-response-url",
+      "cors-protocol"
     ],
     "https://dom.spec.whatwg.org/": [
       "concept-document-quirks",
@@ -111,10 +125,14 @@
       "concept-shadow-including-tree-order",
       "concept-light-tree"
     ],
-    "https://fetch.spec.whatwg.org/": [
-      "concept-response",
-      "concept-response-url",
-      "cors-protocol"
+    "https://html.spec.whatwg.org/": [
+      "cors-same-origin",
+      "content-type",
+      "same-origin",
+      "the-p-element",
+      "the-css-user-agent-style-sheet-and-presentational-hints",
+      "the-s-element",
+      "the-slot-element"
     ],
     "https://www.w3.org/TR/css-fonts-4/": [
       "propdef-font",
@@ -136,10 +154,6 @@
       "propdef-break-before",
       "propdef-orphans"
     ],
-    "https://www.w3.org/TR/cssom-1/": [
-      "serializing-css-values",
-      "dom-window-getcomputedstyle"
-    ],
     "https://www.w3.org/TR/css-cascade/": [
       "initial-values",
       "applies-to",
@@ -148,6 +162,9 @@
     ],
     "https://www.w3.org/TR/web-animations/": [
       "animation-type"
+    ],
+    "https://www.w3.org/TR/cssom/": [
+      "serializing-css-values"
     ],
     "https://www.w3.org/TR/css-writing-modes-3/": [
       "propdef-direction",
@@ -161,8 +178,14 @@
       "flat-tree",
       "tree-context"
     ],
+    "https://www.w3.org/TR/css-2018/": [
+      "vendor-prefix"
+    ],
     "https://www.w3.org/TR/css-align-3/": [
       "valdef-justify-self-auto"
+    ],
+    "https://www.w3.org/TR/css-values-3/": [
+      "ex"
     ],
     "https://www.w3.org/TR/css-sizing-3/": [
       "propdef-width",
@@ -207,6 +230,8 @@
     "https://www.w3.org/TR/css-style-attr/": [
       "interpret"
     ],
+    "https://www.w3.org/TR/2021/WD-css-cascade-4-20211015/": [],
+    "https://github.com/w3c/csswg-drafts/issues/6193": [],
     "https://www.w3.org/TR/2021/WD-css-cascade-4-20210319/": [],
     "https://github.com/w3c/csswg-drafts/issues/6659": [],
     "https://www.w3.org/TR/2020/WD-css-cascade-4-20200818/": [],

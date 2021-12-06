@@ -246,6 +246,13 @@
       "number": "4.2.11"
     },
     {
+      "id": "fixed-footprint-types",
+      "href": "https://www.w3.org/TR/WGSL/#fixed-footprint-types",
+      "level": 4,
+      "title": "Fixed-Footprint Types",
+      "number": "4.2.12"
+    },
+    {
       "id": "memory",
       "href": "https://www.w3.org/TR/WGSL/#memory",
       "level": 3,
@@ -687,10 +694,10 @@
       "number": "7.2"
     },
     {
-      "id": "updating-assignment-section",
-      "href": "https://www.w3.org/TR/WGSL/#updating-assignment-section",
+      "id": "simple-assignment-section",
+      "href": "https://www.w3.org/TR/WGSL/#simple-assignment-section",
       "level": 4,
-      "title": "Updating Assignment",
+      "title": "Simple Assignment",
       "number": "7.2.1"
     },
     {
@@ -699,6 +706,13 @@
       "level": 4,
       "title": "Phony Assignment",
       "number": "7.2.2"
+    },
+    {
+      "id": "compound-assignment-sec",
+      "href": "https://www.w3.org/TR/WGSL/#compound-assignment-sec",
+      "level": 4,
+      "title": "Compound assignment",
+      "number": "7.2.3"
     },
     {
       "id": "control-flow",
@@ -1030,14 +1044,14 @@
       "id": "collective-operations",
       "href": "https://www.w3.org/TR/WGSL/#collective-operations",
       "level": 3,
-      "title": "Collective operations TODO",
+      "title": "Collective operations",
       "number": "12.4"
     },
     {
       "id": "barrier",
       "href": "https://www.w3.org/TR/WGSL/#barrier",
       "level": 4,
-      "title": "Barrier TODO",
+      "title": "Barriers",
       "number": "12.4.1"
     },
     {
@@ -1046,13 +1060,6 @@
       "level": 4,
       "title": "Derivatives",
       "number": "12.4.2"
-    },
-    {
-      "id": "arrayed-resource-access",
-      "href": "https://www.w3.org/TR/WGSL/#arrayed-resource-access",
-      "level": 4,
-      "title": "Arrayed resource access TODO",
-      "number": "12.4.3"
     },
     {
       "id": "floating-point-evaluation",
@@ -1240,81 +1247,95 @@
       "number": "16.8.1"
     },
     {
+      "id": "texturegather",
+      "href": "https://www.w3.org/TR/WGSL/#texturegather",
+      "level": 4,
+      "title": "textureGather",
+      "number": "16.8.2"
+    },
+    {
+      "id": "texturegathercompare",
+      "href": "https://www.w3.org/TR/WGSL/#texturegathercompare",
+      "level": 4,
+      "title": "textureGatherCompare",
+      "number": "16.8.3"
+    },
+    {
       "id": "textureload",
       "href": "https://www.w3.org/TR/WGSL/#textureload",
       "level": 4,
       "title": "textureLoad",
-      "number": "16.8.2"
+      "number": "16.8.4"
     },
     {
       "id": "texturenumlayers",
       "href": "https://www.w3.org/TR/WGSL/#texturenumlayers",
       "level": 4,
       "title": "textureNumLayers",
-      "number": "16.8.3"
+      "number": "16.8.5"
     },
     {
       "id": "texturenumlevels",
       "href": "https://www.w3.org/TR/WGSL/#texturenumlevels",
       "level": 4,
       "title": "textureNumLevels",
-      "number": "16.8.4"
+      "number": "16.8.6"
     },
     {
       "id": "texturenumsamples",
       "href": "https://www.w3.org/TR/WGSL/#texturenumsamples",
       "level": 4,
       "title": "textureNumSamples",
-      "number": "16.8.5"
+      "number": "16.8.7"
     },
     {
       "id": "texturesample",
       "href": "https://www.w3.org/TR/WGSL/#texturesample",
       "level": 4,
       "title": "textureSample",
-      "number": "16.8.6"
+      "number": "16.8.8"
     },
     {
       "id": "texturesamplebias",
       "href": "https://www.w3.org/TR/WGSL/#texturesamplebias",
       "level": 4,
       "title": "textureSampleBias",
-      "number": "16.8.7"
+      "number": "16.8.9"
     },
     {
       "id": "texturesamplecompare",
       "href": "https://www.w3.org/TR/WGSL/#texturesamplecompare",
       "level": 4,
       "title": "textureSampleCompare",
-      "number": "16.8.8"
+      "number": "16.8.10"
     },
     {
       "id": "texturesamplecomparelevel",
       "href": "https://www.w3.org/TR/WGSL/#texturesamplecomparelevel",
       "level": 4,
       "title": "textureSampleCompareLevel",
-      "number": "16.8.9"
+      "number": "16.8.11"
     },
     {
       "id": "texturesamplegrad",
       "href": "https://www.w3.org/TR/WGSL/#texturesamplegrad",
       "level": 4,
       "title": "textureSampleGrad",
-      "number": "16.8.10"
+      "number": "16.8.12"
     },
     {
       "id": "texturesamplelevel",
       "href": "https://www.w3.org/TR/WGSL/#texturesamplelevel",
       "level": 4,
       "title": "textureSampleLevel",
-      "number": "16.8.11"
+      "number": "16.8.13"
     },
     {
       "id": "texturestore",
       "href": "https://www.w3.org/TR/WGSL/#texturestore",
       "level": 4,
       "title": "textureStore",
-      "number": "16.8.12"
+      "number": "16.8.14"
     },
     {
       "id": "atomic-builtin-functions",

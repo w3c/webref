@@ -692,27 +692,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-adapter-current-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-adapter-current-slot",
-      "linkingText": [
-        "[[current]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "adapter"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "adapters",
-        "href": "https://www.w3.org/TR/webgpu/#adapters",
-        "title": "Adapters",
-        "number": "3.5.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-adapter-fallback-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-adapter-fallback-slot",
       "linkingText": [
@@ -7078,25 +7057,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "depth-or-stencil-renderable-format",
-      "href": "https://www.w3.org/TR/webgpu/#depth-or-stencil-renderable-format",
-      "linkingText": [
-        "depth or stencil renderable format"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "texture-formats",
-        "href": "https://www.w3.org/TR/webgpu/#texture-formats",
-        "title": "Texture Formats",
-        "number": "6.3"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "gpuexternaltexture",
       "href": "https://www.w3.org/TR/webgpu/#gpuexternaltexture",
       "linkingText": [
@@ -9670,6 +9630,46 @@
       "definedIn": "heading"
     },
     {
+      "id": "dictdef-gpushadermodulecompilationhint",
+      "href": "https://www.w3.org/TR/webgpu/#dictdef-gpushadermodulecompilationhint",
+      "linkingText": [
+        "GPUShaderModuleCompilationHint"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shader-module-creation",
+        "href": "https://www.w3.org/TR/webgpu/#shader-module-creation",
+        "title": "Shader Module Creation",
+        "number": "9.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpushadermodulecompilationhint-layout",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpushadermodulecompilationhint-layout",
+      "linkingText": [
+        "layout"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUShaderModuleCompilationHint"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shader-module-creation",
+        "href": "https://www.w3.org/TR/webgpu/#shader-module-creation",
+        "title": "Shader Module Creation",
+        "number": "9.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dictdef-gpushadermoduledescriptor",
       "href": "https://www.w3.org/TR/webgpu/#dictdef-gpushadermoduledescriptor",
       "linkingText": [
@@ -9714,6 +9714,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpushadermoduledescriptor-sourcemap",
       "linkingText": [
         "sourceMap"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUShaderModuleDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "shader-module-creation",
+        "href": "https://www.w3.org/TR/webgpu/#shader-module-creation",
+        "title": "Shader Module Creation",
+        "number": "9.1.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpushadermoduledescriptor-hints",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpushadermoduledescriptor-hints",
+      "linkingText": [
+        "hints"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -14809,10 +14830,12 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucommandencoder-fillbuffer",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-fillbuffer",
+      "id": "dom-gpucommandencoder-clearbuffer",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-clearbuffer",
       "linkingText": [
-        "fillBuffer(destination, destinationOffset, size)"
+        "clearBuffer(buffer, offset, size)",
+        "clearBuffer(buffer, offset)",
+        "clearBuffer(buffer)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -14830,15 +14853,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-destination",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-destination",
+      "id": "dom-gpucommandencoder-clearbuffer-buffer-offset-size-buffer",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-clearbuffer-buffer-offset-size-buffer",
       "linkingText": [
-        "destination"
+        "buffer"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCommandEncoder/fillBuffer(destination, destinationOffset, size)"
+        "GPUCommandEncoder/clearBuffer(buffer, offset, size)"
       ],
       "access": "public",
       "informative": false,
@@ -14851,15 +14874,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-destinationoffset",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-destinationoffset",
+      "id": "dom-gpucommandencoder-clearbuffer-buffer-offset-size-offset",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-clearbuffer-buffer-offset-size-offset",
       "linkingText": [
-        "destinationOffset"
+        "offset"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCommandEncoder/fillBuffer(destination, destinationOffset, size)"
+        "GPUCommandEncoder/clearBuffer(buffer, offset, size)"
       ],
       "access": "public",
       "informative": false,
@@ -14872,15 +14895,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-size",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-fillbuffer-destination-destinationoffset-size-size",
+      "id": "dom-gpucommandencoder-clearbuffer-buffer-offset-size-size",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-clearbuffer-buffer-offset-size-size",
       "linkingText": [
         "size"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUCommandEncoder/fillBuffer(destination, destinationOffset, size)"
+        "GPUCommandEncoder/clearBuffer(buffer, offset, size)"
       ],
       "access": "public",
       "informative": false,
@@ -15219,6 +15242,25 @@
         "number": "12.3.8"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "copy-compatible",
+      "href": "https://www.w3.org/TR/webgpu/#copy-compatible",
+      "linkingText": [
+        "copy-compatible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "image-copies",
+        "href": "https://www.w3.org/TR/webgpu/#image-copies",
+        "title": "Image Copies",
+        "number": "12.3.8"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "abstract-opdef-set-of-subresources-for-texture-copy",
@@ -21122,6 +21164,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "renderstate-viewport",
+      "href": "https://www.w3.org/TR/webgpu/#renderstate-viewport",
+      "linkingText": [
+        "viewport"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RenderState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-operations",
+        "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
+        "title": "Rendering",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "renderstate-scissorrect",
+      "href": "https://www.w3.org/TR/webgpu/#renderstate-scissorrect",
+      "linkingText": [
+        "scissorRect"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RenderState"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rendering-operations",
+        "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
+        "title": "Rendering",
+        "number": "21.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "abstract-opdef-render",
       "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-render",
       "linkingText": [
@@ -21312,6 +21396,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "fragmentdestination",
+      "href": "https://www.w3.org/TR/webgpu/#fragmentdestination",
+      "linkingText": [
+        "FragmentDestination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragmentdestination-position",
+      "href": "https://www.w3.org/TR/webgpu/#fragmentdestination-position",
+      "linkingText": [
+        "position"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FragmentDestination"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "fragmentdestination-sampleindex",
+      "href": "https://www.w3.org/TR/webgpu/#fragmentdestination-sampleindex",
+      "linkingText": [
+        "sampleIndex"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "FragmentDestination"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "ndc",
       "href": "https://www.w3.org/TR/webgpu/#ndc",
       "linkingText": [
@@ -21331,15 +21476,181 @@
       "definedIn": "prose"
     },
     {
-      "id": "fragment-destination",
-      "href": "https://www.w3.org/TR/webgpu/#fragment-destination",
+      "id": "rasterizationpoint",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint",
       "linkingText": [
-        "fragment destination"
+        "RasterizationPoint"
       ],
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
       "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "rasterizationpoint-destination",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-coveragemask",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-coveragemask",
+      "linkingText": [
+        "coverageMask"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-frontfacing",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-frontfacing",
+      "linkingText": [
+        "frontFacing"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-perspectivedivisor",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-perspectivedivisor",
+      "linkingText": [
+        "perspectiveDivisor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-depth",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-primitivevertices",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-primitivevertices",
+      "linkingText": [
+        "primitiveVertices"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "rasterizationpoint-barycentriccoordinates",
+      "href": "https://www.w3.org/TR/webgpu/#rasterizationpoint-barycentriccoordinates",
+      "linkingText": [
+        "barycentricCoordinates"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "RasterizationPoint"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#rasterization",
+        "title": "Rasterization",
+        "number": "21.3.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "abstract-opdef-rasterize",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-rasterize",
+      "linkingText": [
+        "rasterize"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "rasterization",
@@ -21364,7 +21675,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "21.3.5.3"
+        "number": "21.3.5.4"
       },
       "definedIn": "prose"
     },
@@ -21383,15 +21694,34 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "21.3.5.3"
+        "number": "21.3.5.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "fragments",
-      "href": "https://www.w3.org/TR/webgpu/#fragments",
+      "id": "abstract-opdef-rasterize-polygon",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-rasterize-polygon",
       "linkingText": [
-        "fragments"
+        "rasterize polygon"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "polygon-rasterization",
+        "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
+        "title": "Polygon Rasterization",
+        "number": "21.3.5.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment",
+      "href": "https://www.w3.org/TR/webgpu/#fragment",
+      "linkingText": [
+        "Fragment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -21399,10 +21729,113 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "polygon-rasterization",
-        "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
-        "title": "Polygon Rasterization",
-        "number": "21.3.5.3"
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-destination",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-destination",
+      "linkingText": [
+        "destination"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-coveragemask",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-coveragemask",
+      "linkingText": [
+        "coverageMask"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-depth",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-depth",
+      "linkingText": [
+        "depth"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "fragment-colors",
+      "href": "https://www.w3.org/TR/webgpu/#fragment-colors",
+      "linkingText": [
+        "colors"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Fragment"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-process-fragment",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-process-fragment",
+      "linkingText": [
+        "process fragment"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "fragment-processing",
+        "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
+        "title": "Fragment Processing",
+        "number": "21.3.6"
       },
       "definedIn": "prose"
     },
@@ -22460,10 +22893,10 @@
       "definedIn": "heading"
     },
     {
-      "id": "copy-compatible",
-      "href": "https://www.w3.org/TR/webgpu/#copy-compatible",
+      "id": "depth-or-stencil-format",
+      "href": "https://www.w3.org/TR/webgpu/#depth-or-stencil-format",
       "linkingText": [
-        "copy-compatible"
+        "depth-or-stencil format"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -22471,10 +22904,48 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "copying-depth-stencil",
-        "href": "https://www.w3.org/TR/webgpu/#copying-depth-stencil",
-        "title": "Copying Depth/Stencil Textures",
-        "number": "24.1.2.2"
+        "id": "depth-formats",
+        "href": "https://www.w3.org/TR/webgpu/#depth-formats",
+        "title": "Depth-stencil formats",
+        "number": "24.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "combined-depth-stencil-format",
+      "href": "https://www.w3.org/TR/webgpu/#combined-depth-stencil-format",
+      "linkingText": [
+        "combined depth-stencil format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "depth-formats",
+        "href": "https://www.w3.org/TR/webgpu/#depth-formats",
+        "title": "Depth-stencil formats",
+        "number": "24.1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compressed-format",
+      "href": "https://www.w3.org/TR/webgpu/#compressed-format",
+      "linkingText": [
+        "compressed format"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "packed-formats",
+        "href": "https://www.w3.org/TR/webgpu/#packed-formats",
+        "title": "Packed formats",
+        "number": "24.1.3"
       },
       "definedIn": "prose"
     }

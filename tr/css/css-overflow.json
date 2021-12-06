@@ -50,14 +50,14 @@
     },
     "overflow-clip-margin": {
       "name": "overflow-clip-margin",
-      "value": "<length [0,∞]>",
+      "value": "<visual-box> || <length [0,∞]>",
       "initial": "0px",
       "appliesTo": "all elements",
       "inherited": "no",
       "percentages": "n/a",
-      "computedValue": "the computed <length>",
+      "computedValue": "the computed <length> and a <visual-box> keyword",
       "canonicalOrder": "per grammar",
-      "animationType": "discrete",
+      "animationType": "per computed value if the <visual-box> values match; otherwise discrete",
       "styleDeclaration": [
         "overflow-clip-margin",
         "overflowClipMargin"
@@ -91,6 +91,36 @@
       "styleDeclaration": [
         "overflow-block",
         "overflowBlock"
+      ]
+    },
+    "scroll-behavior": {
+      "name": "scroll-behavior",
+      "value": "auto | smooth",
+      "initial": "auto",
+      "appliesTo": "scrolling boxes",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified value",
+      "canonicalOrder": "per grammar",
+      "animatable": "no",
+      "styleDeclaration": [
+        "scroll-behavior",
+        "scrollBehavior"
+      ]
+    },
+    "scrollbar-gutter": {
+      "name": "scrollbar-gutter",
+      "value": "auto | stable && both-edges?",
+      "initial": "auto",
+      "appliesTo": "scroll containers",
+      "inherited": "no",
+      "percentages": "n/a",
+      "computedValue": "specified keyword(s)",
+      "canonicalOrder": "per grammar",
+      "animationType": "discrete",
+      "styleDeclaration": [
+        "scrollbar-gutter",
+        "scrollbarGutter"
       ]
     },
     "text-overflow": {

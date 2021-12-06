@@ -5,10 +5,10 @@
   },
   "dfns": [
     {
-      "id": "dfn-cpu-utilization",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-cpu-utilization",
+      "id": "dfn-processing-units",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-processing-units",
       "linkingText": [
-        "CPU utilization"
+        "Processing Units"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -16,18 +16,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "cpu-utilization",
-        "href": "https://wicg.github.io/compute-pressure/#cpu-utilization",
-        "title": "CPU utilization",
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
         "number": "2.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dfn-cpu-clock-speed",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-cpu-clock-speed",
+      "id": "dfn-cpu",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpu",
       "linkingText": [
-        "CPU clock speed"
+        "CPU"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -35,67 +35,227 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "cpu-clock-speed",
-        "href": "https://wicg.github.io/compute-pressure/#cpu-clock-speed",
-        "title": "CPU clock speed",
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-gpu",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-gpu",
+      "linkingText": [
+        "GPU"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-xpu",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-xpu",
+      "linkingText": [
+        "XPU"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "processing-units",
+        "href": "https://wicg.github.io/compute-pressure/#processing-units",
+        "title": "Processing Units",
+        "number": "2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-utilization",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-utilization",
+      "linkingText": [
+        "Utilization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "utilization",
+        "href": "https://wicg.github.io/compute-pressure/#utilization",
+        "title": "Utilization",
         "number": "2.2"
       },
       "definedIn": "heading"
     },
     {
-      "id": "respec-offender-internal-slot-callback-must-be-associated-with-a-webidl-interface",
-      "href": "https://wicg.github.io/compute-pressure/#respec-offender-internal-slot-callback-must-be-associated-with-a-webidl-interface",
+      "id": "dfn-load",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-load",
+      "linkingText": [
+        "Load"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "load",
+        "href": "https://wicg.github.io/compute-pressure/#load",
+        "title": "Load",
+        "number": "2.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-frequency",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-frequency",
+      "linkingText": [
+        "Frequency"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-dynamic-frequency-scaling",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-dynamic-frequency-scaling",
+      "linkingText": [
+        "dynamic frequency scaling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-boost",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-boost",
+      "linkingText": [
+        "boost",
+        "boosting"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-throttle",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-throttle",
+      "linkingText": [
+        "throttle",
+        "throttling"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "frequency",
+        "href": "https://wicg.github.io/compute-pressure/#frequency",
+        "title": "Frequency",
+        "number": "2.4"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-callback",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-callback",
       "linkingText": [
         "[[Callback]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
+      "for": [
+        "ComputePressureObserver"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://wicg.github.io/compute-pressure/#internal-slots",
         "title": "Internal slots",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "table"
     },
     {
-      "id": "respec-offender-internal-slot-cpuutilizationthresholds-must-be-associated-with-a-webidl-interface",
-      "href": "https://wicg.github.io/compute-pressure/#respec-offender-internal-slot-cpuutilizationthresholds-must-be-associated-with-a-webidl-interface",
+      "id": "dfn-cpuutilizationthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpuutilizationthresholds",
       "linkingText": [
         "[[CPUUtilizationThresholds]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
+      "for": [
+        "ComputePressureObserver"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://wicg.github.io/compute-pressure/#internal-slots",
         "title": "Internal slots",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "table"
     },
     {
-      "id": "respec-offender-internal-slot-cpuspeedthresholds-must-be-associated-with-a-webidl-interface",
-      "href": "https://wicg.github.io/compute-pressure/#respec-offender-internal-slot-cpuspeedthresholds-must-be-associated-with-a-webidl-interface",
+      "id": "dfn-cpuspeedthresholds",
+      "href": "https://wicg.github.io/compute-pressure/#dfn-cpuspeedthresholds",
       "linkingText": [
         "[[CPUSpeedThresholds]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
-      "for": [],
+      "for": [
+        "ComputePressureObserver"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
         "id": "internal-slots",
         "href": "https://wicg.github.io/compute-pressure/#internal-slots",
         "title": "Internal slots",
-        "number": "2.3"
+        "number": "2.5"
       },
       "definedIn": "table"
     },

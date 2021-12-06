@@ -810,27 +810,6 @@
       "definedIn": "table"
     },
     {
-      "id": "attribute-block",
-      "href": "https://www.w3.org/TR/WGSL/#attribute-block",
-      "linkingText": [
-        "block"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "attribute"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "attributes",
-        "href": "https://www.w3.org/TR/WGSL/#attributes",
-        "title": "Attributes",
-        "number": "3.6"
-      },
-      "definedIn": "table"
-    },
-    {
       "id": "attribute-builtin",
       "href": "https://www.w3.org/TR/WGSL/#attribute-builtin",
       "linkingText": [
@@ -2079,6 +2058,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "fixed-footprint",
+      "href": "https://www.w3.org/TR/WGSL/#fixed-footprint",
+      "linkingText": [
+        "fixed footprint"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "fixed-footprint-types",
+        "href": "https://www.w3.org/TR/WGSL/#fixed-footprint-types",
+        "title": "Fixed-Footprint Types",
+        "number": "4.2.12"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "memory-locations",
       "href": "https://www.w3.org/TR/WGSL/#memory-locations",
       "linkingText": [
@@ -2922,6 +2920,25 @@
       "href": "https://www.w3.org/TR/WGSL/#arrayed-texture",
       "linkingText": [
         "arrayed texture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-types",
+        "href": "https://www.w3.org/TR/WGSL/#texture-types",
+        "title": "Texture and Sampler Types",
+        "number": "4.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "mip-level",
+      "href": "https://www.w3.org/TR/WGSL/#mip-level",
+      "linkingText": [
+        "Mip level"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4267,10 +4284,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "updating-assignment",
-      "href": "https://www.w3.org/TR/WGSL/#updating-assignment",
+      "id": "simple-assignment",
+      "href": "https://www.w3.org/TR/WGSL/#simple-assignment",
       "linkingText": [
-        "updating assignment"
+        "simple assignment"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -4278,9 +4295,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "updating-assignment-section",
-        "href": "https://www.w3.org/TR/WGSL/#updating-assignment-section",
-        "title": "Updating Assignment",
+        "id": "simple-assignment-section",
+        "href": "https://www.w3.org/TR/WGSL/#simple-assignment-section",
+        "title": "Simple Assignment",
         "number": "7.2.1"
       },
       "definedIn": "prose"
@@ -4301,6 +4318,46 @@
         "href": "https://www.w3.org/TR/WGSL/#phony-assignment-section",
         "title": "Phony Assignment",
         "number": "7.2.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "compound-assignment",
+      "href": "https://www.w3.org/TR/WGSL/#compound-assignment",
+      "linkingText": [
+        "compound assignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compound-assignment-sec",
+        "href": "https://www.w3.org/TR/WGSL/#compound-assignment-sec",
+        "title": "Compound assignment",
+        "number": "7.2.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-compound_assignment_operator",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-compound_assignment_operator",
+      "linkingText": [
+        "compound_assignment_operator"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "compound-assignment-sec",
+        "href": "https://www.w3.org/TR/WGSL/#compound-assignment-sec",
+        "title": "Compound assignment",
+        "number": "7.2.3"
       },
       "definedIn": "prose"
     },
@@ -5947,10 +6004,48 @@
       "definedIn": "prose"
     },
     {
+      "id": "control-barrier",
+      "href": "https://www.w3.org/TR/WGSL/#control-barrier",
+      "linkingText": [
+        "control barrier"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "barrier",
+        "href": "https://www.w3.org/TR/WGSL/#barrier",
+        "title": "Barriers",
+        "number": "12.4.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "partial-derivative",
       "href": "https://www.w3.org/TR/WGSL/#partial-derivative",
       "linkingText": [
         "partial derivative"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "derivatives",
+        "href": "https://www.w3.org/TR/WGSL/#derivatives",
+        "title": "Derivatives",
+        "number": "12.4.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "quad",
+      "href": "https://www.w3.org/TR/WGSL/#quad",
+      "linkingText": [
+        "quad"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -6038,6 +6133,44 @@
         "href": "https://www.w3.org/TR/WGSL/#floating-point-accuracy",
         "title": "Floating Point Accuracy",
         "number": "12.5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "memory-scope",
+      "href": "https://www.w3.org/TR/WGSL/#memory-scope",
+      "linkingText": [
+        "memory scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scoped-operations",
+        "href": "https://www.w3.org/TR/WGSL/#scoped-operations",
+        "title": "Scoped Operations",
+        "number": "13.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "execution-scope",
+      "href": "https://www.w3.org/TR/WGSL/#execution-scope",
+      "linkingText": [
+        "execution scope"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "scoped-operations",
+        "href": "https://www.w3.org/TR/WGSL/#scoped-operations",
+        "title": "Scoped Operations",
+        "number": "13.3"
       },
       "definedIn": "prose"
     },
@@ -6844,27 +6977,6 @@
       "href": "https://www.w3.org/TR/WGSL/#syntax-bitcast",
       "linkingText": [
         "bitcast"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "syntax"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "other-keywords",
-        "href": "https://www.w3.org/TR/WGSL/#other-keywords",
-        "title": "Other Keywords",
-        "number": "14.1.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "syntax-block",
-      "href": "https://www.w3.org/TR/WGSL/#syntax-block",
-      "linkingText": [
-        "block"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -9041,6 +9153,216 @@
       "definedIn": "prose"
     },
     {
+      "id": "syntax-plus_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-plus_equal",
+      "linkingText": [
+        "plus_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-minus_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-minus_equal",
+      "linkingText": [
+        "minus_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-times_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-times_equal",
+      "linkingText": [
+        "times_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-division_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-division_equal",
+      "linkingText": [
+        "division_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-modulo_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-modulo_equal",
+      "linkingText": [
+        "modulo_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-and_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-and_equal",
+      "linkingText": [
+        "and_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-or_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-or_equal",
+      "linkingText": [
+        "or_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-xor_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-xor_equal",
+      "linkingText": [
+        "xor_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-shift_right_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-shift_right_equal",
+      "linkingText": [
+        "shift_right_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "syntax-shift_left_equal",
+      "href": "https://www.w3.org/TR/WGSL/#syntax-shift_left_equal",
+      "linkingText": [
+        "shift_left_equal"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "syntax"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "syntactic-tokens",
+        "href": "https://www.w3.org/TR/WGSL/#syntactic-tokens",
+        "title": "Syntactic Tokens",
+        "number": "14.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "built-in-functions",
       "href": "https://www.w3.org/TR/WGSL/#built-in-functions",
       "linkingText": [
@@ -9055,6 +9377,44 @@
         "id": "builtin-functions",
         "href": "https://www.w3.org/TR/WGSL/#builtin-functions",
         "title": "16. Built-in functions"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texture-gather",
+      "href": "https://www.w3.org/TR/WGSL/#texture-gather",
+      "linkingText": [
+        "texture gather"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texturegather",
+        "href": "https://www.w3.org/TR/WGSL/#texturegather",
+        "title": "textureGather",
+        "number": "16.8.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "texture-gather-compare",
+      "href": "https://www.w3.org/TR/WGSL/#texture-gather-compare",
+      "linkingText": [
+        "texture gather compare"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texturegathercompare",
+        "href": "https://www.w3.org/TR/WGSL/#texturegathercompare",
+        "title": "textureGatherCompare",
+        "number": "16.8.3"
       },
       "definedIn": "prose"
     }

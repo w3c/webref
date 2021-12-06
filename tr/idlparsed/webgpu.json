@@ -2767,7 +2767,7 @@
         "extAttrs": []
       },
       "GPUTextureFormat": {
-        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth and stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n};",
+        "fragment": "enum GPUTextureFormat {\n    // 8-bit formats\n    \"r8unorm\",\n    \"r8snorm\",\n    \"r8uint\",\n    \"r8sint\",\n\n    // 16-bit formats\n    \"r16uint\",\n    \"r16sint\",\n    \"r16float\",\n    \"rg8unorm\",\n    \"rg8snorm\",\n    \"rg8uint\",\n    \"rg8sint\",\n\n    // 32-bit formats\n    \"r32uint\",\n    \"r32sint\",\n    \"r32float\",\n    \"rg16uint\",\n    \"rg16sint\",\n    \"rg16float\",\n    \"rgba8unorm\",\n    \"rgba8unorm-srgb\",\n    \"rgba8snorm\",\n    \"rgba8uint\",\n    \"rgba8sint\",\n    \"bgra8unorm\",\n    \"bgra8unorm-srgb\",\n    // Packed 32-bit formats\n    \"rgb9e5ufloat\",\n    \"rgb10a2unorm\",\n    \"rg11b10ufloat\",\n\n    // 64-bit formats\n    \"rg32uint\",\n    \"rg32sint\",\n    \"rg32float\",\n    \"rgba16uint\",\n    \"rgba16sint\",\n    \"rgba16float\",\n\n    // 128-bit formats\n    \"rgba32uint\",\n    \"rgba32sint\",\n    \"rgba32float\",\n\n    // Depth/stencil formats\n    \"stencil8\",\n    \"depth16unorm\",\n    \"depth24plus\",\n    \"depth24plus-stencil8\",\n    \"depth32float\",\n\n    // \"depth24unorm-stencil8\" feature\n    \"depth24unorm-stencil8\",\n\n    // \"depth32float-stencil8\" feature\n    \"depth32float-stencil8\",\n\n    // BC compressed formats usable if \"texture-compression-bc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"bc1-rgba-unorm\",\n    \"bc1-rgba-unorm-srgb\",\n    \"bc2-rgba-unorm\",\n    \"bc2-rgba-unorm-srgb\",\n    \"bc3-rgba-unorm\",\n    \"bc3-rgba-unorm-srgb\",\n    \"bc4-r-unorm\",\n    \"bc4-r-snorm\",\n    \"bc5-rg-unorm\",\n    \"bc5-rg-snorm\",\n    \"bc6h-rgb-ufloat\",\n    \"bc6h-rgb-float\",\n    \"bc7-rgba-unorm\",\n    \"bc7-rgba-unorm-srgb\",\n\n    // ETC2 compressed formats usable if \"texture-compression-etc2\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"etc2-rgb8unorm\",\n    \"etc2-rgb8unorm-srgb\",\n    \"etc2-rgb8a1unorm\",\n    \"etc2-rgb8a1unorm-srgb\",\n    \"etc2-rgba8unorm\",\n    \"etc2-rgba8unorm-srgb\",\n    \"eac-r11unorm\",\n    \"eac-r11snorm\",\n    \"eac-rg11unorm\",\n    \"eac-rg11snorm\",\n\n    // ASTC compressed formats usable if \"texture-compression-astc\" is both\n    // supported by the device/user agent and enabled in requestDevice.\n    \"astc-4x4-unorm\",\n    \"astc-4x4-unorm-srgb\",\n    \"astc-5x4-unorm\",\n    \"astc-5x4-unorm-srgb\",\n    \"astc-5x5-unorm\",\n    \"astc-5x5-unorm-srgb\",\n    \"astc-6x5-unorm\",\n    \"astc-6x5-unorm-srgb\",\n    \"astc-6x6-unorm\",\n    \"astc-6x6-unorm-srgb\",\n    \"astc-8x5-unorm\",\n    \"astc-8x5-unorm-srgb\",\n    \"astc-8x6-unorm\",\n    \"astc-8x6-unorm-srgb\",\n    \"astc-8x8-unorm\",\n    \"astc-8x8-unorm-srgb\",\n    \"astc-10x5-unorm\",\n    \"astc-10x5-unorm-srgb\",\n    \"astc-10x6-unorm\",\n    \"astc-10x6-unorm-srgb\",\n    \"astc-10x8-unorm\",\n    \"astc-10x8-unorm-srgb\",\n    \"astc-10x10-unorm\",\n    \"astc-10x10-unorm-srgb\",\n    \"astc-12x10-unorm\",\n    \"astc-12x10-unorm-srgb\",\n    \"astc-12x12-unorm\",\n    \"astc-12x12-unorm-srgb\",\n};",
         "type": "enum",
         "name": "GPUTextureFormat",
         "values": [
@@ -4466,8 +4466,33 @@
         ],
         "partial": false
       },
+      "GPUShaderModuleCompilationHint": {
+        "fragment": "dictionary GPUShaderModuleCompilationHint {\n    required GPUPipelineLayout layout;\n};",
+        "type": "dictionary",
+        "name": "GPUShaderModuleCompilationHint",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "layout",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPUPipelineLayout"
+            },
+            "default": null,
+            "required": true
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUShaderModuleDescriptor": {
-        "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n};",
+        "fragment": "dictionary GPUShaderModuleDescriptor : GPUObjectDescriptorBase {\n    required USVString code;\n    object sourceMap;\n    record<USVString, GPUShaderModuleCompilationHint> hints;\n};",
         "type": "dictionary",
         "name": "GPUShaderModuleDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -4498,6 +4523,38 @@
               "nullable": false,
               "union": false,
               "idlType": "object"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "hints",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "record",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUShaderModuleCompilationHint"
+                }
+              ]
             },
             "default": null,
             "required": false
@@ -6359,7 +6416,7 @@
         "partial": false
       },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined fillBuffer(\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -6720,7 +6777,7 @@
           },
           {
             "type": "operation",
-            "name": "fillBuffer",
+            "name": "clearBuffer",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -6732,7 +6789,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "destination",
+                "name": "buffer",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -6748,7 +6805,7 @@
               },
               {
                 "type": "argument",
-                "name": "destinationOffset",
+                "name": "offset",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -6758,8 +6815,11 @@
                   "union": false,
                   "idlType": "GPUSize64"
                 },
-                "default": null,
-                "optional": false,
+                "default": {
+                  "type": "number",
+                  "value": "0"
+                },
+                "optional": true,
                 "variadic": false
               },
               {
@@ -6775,7 +6835,7 @@
                   "idlType": "GPUSize64"
                 },
                 "default": null,
-                "optional": false,
+                "optional": true,
                 "variadic": false
               }
             ],
@@ -11858,8 +11918,12 @@
         "GPUCompilationInfo",
         "GPUObjectBase"
       ],
+      "GPUShaderModuleCompilationHint": [
+        "GPUPipelineLayout"
+      ],
       "GPUShaderModuleDescriptor": [
-        "GPUObjectDescriptorBase"
+        "GPUObjectDescriptorBase",
+        "GPUShaderModuleCompilationHint"
       ],
       "GPUCompilationMessage": [
         "GPUCompilationMessageType"

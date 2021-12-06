@@ -6,7 +6,7 @@
       "title": "Window Controls Overlay",
       "url": "https://wicg.github.io/window-controls-overlay/"
     },
-    "fragment": "[Exposed=Window]\ninterface WindowControlsOverlay : EventTarget {\n  readonly attribute boolean visible;\n  DOMRect getBoundingClientRect();\n  attribute EventHandler ongeometrychange;\n};",
+    "fragment": "[Exposed=Window]\ninterface WindowControlsOverlay : EventTarget {\n  readonly attribute boolean visible;\n  DOMRect getTitlebarAreaRect();\n  attribute EventHandler ongeometrychange;\n};",
     "href": "https://wicg.github.io/window-controls-overlay/#dom-windowcontrolsoverlay"
   },
   "extended": [],
