@@ -1,0 +1,256 @@
+{
+  "spec": {
+    "title": "Performance Timeline Level 2",
+    "url": "https://w3c.github.io/performance-timeline/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://w3c.github.io/performance-timeline/#title",
+      "level": 1,
+      "title": "Performance Timeline Level 2"
+    },
+    {
+      "id": "abstract",
+      "href": "https://w3c.github.io/performance-timeline/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://w3c.github.io/performance-timeline/#sotd",
+      "level": 2,
+      "title": "Status of This Document"
+    },
+    {
+      "id": "toc",
+      "href": "https://w3c.github.io/performance-timeline/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "introduction",
+      "href": "https://w3c.github.io/performance-timeline/#introduction",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "conformance",
+      "href": "https://w3c.github.io/performance-timeline/#conformance",
+      "level": 2,
+      "title": "Conformance",
+      "number": "2"
+    },
+    {
+      "id": "performance-timeline",
+      "href": "https://w3c.github.io/performance-timeline/#performance-timeline",
+      "level": 2,
+      "title": "Performance Timeline",
+      "number": "3"
+    },
+    {
+      "id": "extensions-to-the-performance-interface",
+      "href": "https://w3c.github.io/performance-timeline/#extensions-to-the-performance-interface",
+      "level": 3,
+      "title": "Extensions to the Performance interface",
+      "number": "3.1"
+    },
+    {
+      "id": "getentries-method",
+      "href": "https://w3c.github.io/performance-timeline/#getentries-method",
+      "level": 4,
+      "title": "getEntries() method",
+      "number": "3.1.1"
+    },
+    {
+      "id": "getentriesbytype-method",
+      "href": "https://w3c.github.io/performance-timeline/#getentriesbytype-method",
+      "level": 4,
+      "title": "getEntriesByType() method",
+      "number": "3.1.2"
+    },
+    {
+      "id": "getentriesbyname-method",
+      "href": "https://w3c.github.io/performance-timeline/#getentriesbyname-method",
+      "level": 4,
+      "title": "getEntriesByName() method",
+      "number": "3.1.3"
+    },
+    {
+      "id": "the-performanceentry-interface",
+      "href": "https://w3c.github.io/performance-timeline/#the-performanceentry-interface",
+      "level": 2,
+      "title": "The PerformanceEntry interface",
+      "number": "4"
+    },
+    {
+      "id": "the-performanceobserver-interface",
+      "href": "https://w3c.github.io/performance-timeline/#the-performanceobserver-interface",
+      "level": 2,
+      "title": "The PerformanceObserver interface",
+      "number": "5"
+    },
+    {
+      "id": "performanceobservercallbackoptions-dictionary",
+      "href": "https://w3c.github.io/performance-timeline/#performanceobservercallbackoptions-dictionary",
+      "level": 3,
+      "title": "PerformanceObserverCallbackOptions dictionary",
+      "number": "5.1"
+    },
+    {
+      "id": "observe-method",
+      "href": "https://w3c.github.io/performance-timeline/#observe-method",
+      "level": 3,
+      "title": "observe() method",
+      "number": "5.2"
+    },
+    {
+      "id": "performanceobserverinit-dictionary",
+      "href": "https://w3c.github.io/performance-timeline/#performanceobserverinit-dictionary",
+      "level": 4,
+      "title": "PerformanceObserverInit dictionary",
+      "number": "5.2.1"
+    },
+    {
+      "id": "performanceobserverentrylist-interface",
+      "href": "https://w3c.github.io/performance-timeline/#performanceobserverentrylist-interface",
+      "level": 4,
+      "title": "PerformanceObserverEntryList interface",
+      "number": "5.2.2"
+    },
+    {
+      "id": "getentries-method-0",
+      "href": "https://w3c.github.io/performance-timeline/#getentries-method-0",
+      "level": 5,
+      "title": "getEntries() method",
+      "number": "5.2.2.1"
+    },
+    {
+      "id": "getentriesbytype-method-0",
+      "href": "https://w3c.github.io/performance-timeline/#getentriesbytype-method-0",
+      "level": 5,
+      "title": "getEntriesByType() method",
+      "number": "5.2.2.2"
+    },
+    {
+      "id": "getentriesbyname-method-0",
+      "href": "https://w3c.github.io/performance-timeline/#getentriesbyname-method-0",
+      "level": 5,
+      "title": "getEntriesByName() method",
+      "number": "5.2.2.3"
+    },
+    {
+      "id": "takerecords-method",
+      "href": "https://w3c.github.io/performance-timeline/#takerecords-method",
+      "level": 3,
+      "title": "takeRecords() method",
+      "number": "5.3"
+    },
+    {
+      "id": "disconnect-method",
+      "href": "https://w3c.github.io/performance-timeline/#disconnect-method",
+      "level": 3,
+      "title": "disconnect() method",
+      "number": "5.4"
+    },
+    {
+      "id": "supportedentrytypes-attribute",
+      "href": "https://w3c.github.io/performance-timeline/#supportedentrytypes-attribute",
+      "level": 3,
+      "title": "supportedEntryTypes attribute",
+      "number": "5.5"
+    },
+    {
+      "id": "processing",
+      "href": "https://w3c.github.io/performance-timeline/#processing",
+      "level": 2,
+      "title": "Processing",
+      "number": "6"
+    },
+    {
+      "id": "queue-a-performanceentry",
+      "href": "https://w3c.github.io/performance-timeline/#queue-a-performanceentry",
+      "level": 3,
+      "title": "Queue a PerformanceEntry",
+      "number": "6.1"
+    },
+    {
+      "id": "queue-the-performanceobserver-task",
+      "href": "https://w3c.github.io/performance-timeline/#queue-the-performanceobserver-task",
+      "level": 3,
+      "title": "Queue the PerformanceObserver task",
+      "number": "6.2"
+    },
+    {
+      "id": "filter-buffer-map-by-name-and-type",
+      "href": "https://w3c.github.io/performance-timeline/#filter-buffer-map-by-name-and-type",
+      "level": 3,
+      "title": "Filter buffer map by name and type",
+      "number": "6.3"
+    },
+    {
+      "id": "filter-buffer-by-name-and-type",
+      "href": "https://w3c.github.io/performance-timeline/#filter-buffer-by-name-and-type",
+      "level": 3,
+      "title": "Filter buffer by name and type",
+      "number": "6.4"
+    },
+    {
+      "id": "determine-if-a-performance-entry-buffer-is-full",
+      "href": "https://w3c.github.io/performance-timeline/#determine-if-a-performance-entry-buffer-is-full",
+      "level": 3,
+      "title": "Determine if a performance entry buffer is full",
+      "number": "6.5"
+    },
+    {
+      "id": "privacy-security",
+      "href": "https://w3c.github.io/performance-timeline/#privacy-security",
+      "level": 2,
+      "title": "Privacy and Security",
+      "number": "7"
+    },
+    {
+      "id": "dependencies",
+      "href": "https://w3c.github.io/performance-timeline/#dependencies",
+      "level": 2,
+      "title": "Dependencies",
+      "number": "8"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://w3c.github.io/performance-timeline/#idl-index",
+      "level": 2,
+      "title": "IDL Index",
+      "number": "A"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://w3c.github.io/performance-timeline/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments",
+      "number": "B"
+    },
+    {
+      "id": "references",
+      "href": "https://w3c.github.io/performance-timeline/#references",
+      "level": 2,
+      "title": "References",
+      "number": "C"
+    },
+    {
+      "id": "normative-references",
+      "href": "https://w3c.github.io/performance-timeline/#normative-references",
+      "level": 3,
+      "title": "Normative references",
+      "number": "C.1"
+    },
+    {
+      "id": "informative-references",
+      "href": "https://w3c.github.io/performance-timeline/#informative-references",
+      "level": 3,
+      "title": "Informative references",
+      "number": "C.2"
+    }
+  ]
+}

@@ -12,17 +12,17 @@
   "extended": [
     {
       "spec": {
-        "title": "WebXR Lighting Estimation API Level 1",
-        "url": "https://immersive-web.github.io/lighting-estimation/"
-      },
-      "fragment": "partial interface XRWebGLBinding {\n  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);\n};"
-    },
-    {
-      "spec": {
         "title": "WebXR Depth Sensing Module",
         "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
       },
       "fragment": "partial interface XRWebGLBinding {\n  XRWebGLDepthInformation? getDepthInformation(XRView view);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRWebGLBinding {\n  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);\n};"
     }
   ],
   "inheritance": null,

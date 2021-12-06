@@ -117,6 +117,12 @@ partial interface Window {
     Promise<FileSystemDirectoryHandle> showDirectoryPicker(optional DirectoryPickerOptions options = {});
 };
 
+// Source: Manifest Incubations (https://wicg.github.io/manifest-incubations/)
+partial interface Window {
+  attribute EventHandler onappinstalled;
+  attribute EventHandler onbeforeinstallprompt;
+};
+
 // Source: Portals (https://wicg.github.io/portals/)
 partial interface Window {
     readonly attribute PortalHost? portalHost;

@@ -1,12 +1,12 @@
 {
   "spec": {
-    "title": "CSS Cascading and Inheritance Level 4",
-    "url": "https://drafts.csswg.org/css-cascade/"
+    "title": "CSS Cascading and Inheritance Level 5",
+    "url": "https://drafts.csswg.org/css-cascade-5/"
   },
   "properties": {
     "all": {
       "name": "all",
-      "value": "initial | inherit | unset | revert",
+      "value": "initial | inherit | unset | revert | revert-layer",
       "initial": "see individual properties",
       "appliesTo": "see individual properties",
       "inherited": "see individual properties",
@@ -20,5 +20,9 @@
     }
   },
   "descriptors": {},
-  "valuespaces": {}
+  "valuespaces": {
+    "<layer-name>": {
+      "value": "<ident> [ '.' <ident> ]*"
+    }
+  }
 }

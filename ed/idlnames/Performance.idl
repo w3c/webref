@@ -26,7 +26,7 @@ partial interface Performance {
   readonly attribute PerformanceNavigation navigation;
 };
 
-// Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline-2/)
+// Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline/)
 partial interface Performance {
   PerformanceEntryList getEntries ();
   PerformanceEntryList getEntriesByType (DOMString type);
@@ -40,7 +40,7 @@ partial interface Performance {
   attribute EventHandler onresourcetimingbufferfull;
 };
 
-// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing-3/)
+// Source: User Timing Level 3 (https://www.w3.org/TR/user-timing/)
 partial interface Performance {
     PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});
     undefined clearMarks(optional DOMString markName);

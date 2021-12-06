@@ -9,7 +9,15 @@
     "fragment": "[Exposed=Window]\ninterface CSSImportRule : CSSRule {\n  readonly attribute USVString href;\n  [SameObject, PutForwards=mediaText] readonly attribute MediaList media;\n  [SameObject] readonly attribute CSSStyleSheet styleSheet;\n};",
     "href": "https://drafts.csswg.org/cssom/#cssimportrule"
   },
-  "extended": [],
+  "extended": [
+    {
+      "spec": {
+        "title": "CSS Cascading and Inheritance Level 5",
+        "url": "https://www.w3.org/TR/css-cascade-5/"
+      },
+      "fragment": "partial interface CSSImportRule {\n  readonly attribute CSSOMString? layerName;\n};"
+    }
+  ],
   "inheritance": {
     "name": "CSSRule",
     "type": "interface",

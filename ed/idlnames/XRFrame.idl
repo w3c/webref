@@ -17,11 +17,6 @@ partial interface XRFrame {
   [SameObject] readonly attribute XRAnchorSet trackedAnchors;
 };
 
-// Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
-partial interface XRFrame {
-  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);
-};
-
 // Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
 partial interface XRFrame {
   XRCPUDepthInformation? getDepthInformation(XRView view);
@@ -39,4 +34,9 @@ partial interface XRFrame {
 partial interface XRFrame {
   FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);
   FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);
+};
+
+// Source: WebXR Lighting Estimation API Level 1 (https://www.w3.org/TR/webxr-lighting-estimation-1/)
+partial interface XRFrame {
+  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);
 };

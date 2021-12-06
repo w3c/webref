@@ -5,3 +5,8 @@ interface CSSImportRule : CSSRule {
   [SameObject, PutForwards=mediaText] readonly attribute MediaList media;
   [SameObject] readonly attribute CSSStyleSheet styleSheet;
 };
+
+// Source: CSS Cascading and Inheritance Level 5 (https://www.w3.org/TR/css-cascade-5/)
+partial interface CSSImportRule {
+  readonly attribute CSSOMString? layerName;
+};

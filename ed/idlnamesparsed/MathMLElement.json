@@ -4,7 +4,7 @@
   "defined": {
     "spec": {
       "title": "MathML Core",
-      "url": "https://w3c.github.io/mathml-core/"
+      "url": "https://www.w3.org/TR/mathml-core/"
     },
     "fragment": "[Exposed=Window]\ninterface MathMLElement : Element { };",
     "href": "https://w3c.github.io/mathml-core/#dom-mathmlelement"
@@ -12,31 +12,31 @@
   "extended": [
     {
       "spec": {
+        "title": "CSS Object Model (CSSOM)",
+        "url": "https://www.w3.org/TR/cssom-1/"
+      },
+      "fragment": "MathMLElement includes ElementCSSInlineStyle;"
+    },
+    {
+      "spec": {
         "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
+        "url": "https://www.w3.org/TR/mathml-core/"
       },
       "fragment": "MathMLElement includes GlobalEventHandlers;"
     },
     {
       "spec": {
         "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
+        "url": "https://www.w3.org/TR/mathml-core/"
       },
       "fragment": "MathMLElement includes DocumentAndElementEventHandlers;"
     },
     {
       "spec": {
         "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
+        "url": "https://www.w3.org/TR/mathml-core/"
       },
       "fragment": "MathMLElement includes HTMLOrForeignElement;"
-    },
-    {
-      "spec": {
-        "title": "CSS Object Model (CSSOM)",
-        "url": "https://www.w3.org/TR/cssom-1/"
-      },
-      "fragment": "MathMLElement includes ElementCSSInlineStyle;"
     }
   ],
   "inheritance": {
@@ -183,6 +183,13 @@
           "url": "https://www.w3.org/TR/wai-aria-1.2/"
         },
         "fragment": "Element includes ARIAMixin;"
+      },
+      {
+        "spec": {
+          "title": "Web Animations",
+          "url": "https://www.w3.org/TR/web-animations-1/"
+        },
+        "fragment": "Element includes Animatable;"
       }
     ],
     "inheritance": {
@@ -334,10 +341,48 @@
         "extended": [],
         "inheritance": null,
         "includes": []
+      },
+      {
+        "name": "Animatable",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "Web Animations",
+            "url": "https://www.w3.org/TR/web-animations-1/"
+          },
+          "fragment": "interface mixin Animatable {\n    Animation           animate(object? keyframes,\n                                optional (unrestricted double or KeyframeAnimationOptions) options = {});\n    sequence<Animation> getAnimations(optional GetAnimationsOptions options = {});\n};",
+          "href": "https://drafts.csswg.org/web-animations-1/#animatable"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
       }
     ]
   },
   "includes": [
+    {
+      "name": "ElementCSSInlineStyle",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "GlobalEventHandlers",
       "type": "interface mixin",
@@ -408,29 +453,6 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#documentandelementeventhandlers"
       },
       "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "ElementCSSInlineStyle",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "CSS Object Model (CSSOM)",
-          "url": "https://www.w3.org/TR/cssom-1/"
-        },
-        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-        "href": "https://drafts.csswg.org/cssom/#elementcssinlinestyle"
-      },
-      "extended": [
-        {
-          "spec": {
-            "title": "CSS Typed OM Level 1",
-            "url": "https://www.w3.org/TR/css-typed-om-1/"
-          },
-          "fragment": "partial interface mixin ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
-        }
-      ],
       "inheritance": null,
       "includes": []
     }

@@ -20,6 +20,9 @@ WorkerNavigator includes NavigatorStorage;
 // Source: Badging API (https://w3c.github.io/badging/)
 WorkerNavigator includes NavigatorBadge;
 
+// Source: Web Locks API (https://w3c.github.io/web-locks/)
+WorkerNavigator includes NavigatorLocks;
+
 // Source: Local Font Access API (https://wicg.github.io/local-font-access/)
 WorkerNavigator includes NavigatorFonts;
 
@@ -34,9 +37,6 @@ partial interface WorkerNavigator {
 
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 WorkerNavigator includes NavigatorUA;
-
-// Source: Web Locks API (https://wicg.github.io/web-locks/)
-WorkerNavigator includes NavigatorLocks;
 
 // Source: WebUSB API (https://wicg.github.io/webusb/)
 [Exposed=(DedicatedWorker,SharedWorker), SecureContext]
