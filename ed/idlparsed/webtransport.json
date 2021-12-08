@@ -527,7 +527,7 @@
         "partial": false
       },
       "WebTransportCloseInfo": {
-        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long closeCode;\n  DOMString reason;\n};",
+        "fragment": "dictionary WebTransportCloseInfo {\n  unsigned long closeCode = 0;\n  DOMString reason = \"\";\n};",
         "type": "dictionary",
         "name": "WebTransportCloseInfo",
         "inheritance": null,
@@ -544,7 +544,10 @@
               "union": false,
               "idlType": "unsigned long"
             },
-            "default": null,
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
             "required": false
           },
           {
@@ -559,7 +562,10 @@
               "union": false,
               "idlType": "DOMString"
             },
-            "default": null,
+            "default": {
+              "type": "string",
+              "value": ""
+            },
             "required": false
           }
         ],
