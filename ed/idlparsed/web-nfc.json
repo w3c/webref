@@ -424,7 +424,7 @@
         "extAttrs": []
       },
       "NDEFReader": {
-        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n};",
+        "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n  Promise<undefined> makeReadOnly(optional NDEFMakeReadOnlyOptions options={});\n};",
         "type": "interface",
         "name": "NDEFReader",
         "inheritance": "EventTarget",
@@ -555,6 +555,49 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "NDEFWriteOptions"
+                },
+                "default": {
+                  "type": "dictionary"
+                },
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "makeReadOnly",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "options",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "NDEFMakeReadOnlyOptions"
                 },
                 "default": {
                   "type": "dictionary"
@@ -773,6 +816,31 @@
         "extAttrs": [],
         "partial": false
       },
+      "NDEFMakeReadOnlyOptions": {
+        "fragment": "dictionary NDEFMakeReadOnlyOptions {\n  AbortSignal? signal;\n};",
+        "type": "dictionary",
+        "name": "NDEFMakeReadOnlyOptions",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "field",
+            "name": "signal",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": true,
+              "union": false,
+              "idlType": "AbortSignal"
+            },
+            "default": null,
+            "required": false
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
       "NDEFScanOptions": {
         "fragment": "dictionary NDEFScanOptions {\n  AbortSignal signal;\n};",
         "type": "dictionary",
@@ -828,7 +896,8 @@
         "EventHandler",
         "NDEFScanOptions",
         "NDEFMessageSource",
-        "NDEFWriteOptions"
+        "NDEFWriteOptions",
+        "NDEFMakeReadOnlyOptions"
       ],
       "NDEFReadingEvent": [
         "Event",
@@ -840,6 +909,9 @@
         "NDEFMessageInit"
       ],
       "NDEFWriteOptions": [
+        "AbortSignal"
+      ],
+      "NDEFMakeReadOnlyOptions": [
         "AbortSignal"
       ],
       "NDEFScanOptions": [

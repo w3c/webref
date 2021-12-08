@@ -6,7 +6,7 @@
       "title": "Web NFC",
       "url": "https://w3c.github.io/web-nfc/"
     },
-    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n};",
+    "fragment": "[SecureContext, Exposed=Window]\ninterface NDEFReader : EventTarget {\n  constructor();\n\n  attribute EventHandler onreading;\n  attribute EventHandler onreadingerror;\n\n  Promise<undefined> scan(optional NDEFScanOptions options={});\n  Promise<undefined> write(NDEFMessageSource message,\n                                 optional NDEFWriteOptions options={});\n  Promise<undefined> makeReadOnly(optional NDEFMakeReadOnlyOptions options={});\n};",
     "href": "https://w3c.github.io/web-nfc/#dom-ndefreader"
   },
   "extended": [],

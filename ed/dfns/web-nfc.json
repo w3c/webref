@@ -2181,6 +2181,27 @@
       "definedIn": "table"
     },
     {
+      "id": "dfn-pendingmakereadonly",
+      "href": "https://w3c.github.io/web-nfc/#dfn-pendingmakereadonly",
+      "linkingText": [
+        "[[PendingMakeReadOnly]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "NDEFReader"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "nfc-state-associated-with-the-settings-object",
+        "href": "https://w3c.github.io/web-nfc/#nfc-state-associated-with-the-settings-object",
+        "title": "NFC state associated with the settings object",
+        "number": "9.1"
+      },
+      "definedIn": "table"
+    },
+    {
       "id": "dfn-activated-reader-objects",
       "href": "https://w3c.github.io/web-nfc/#dfn-activated-reader-objects",
       "linkingText": [
@@ -2204,6 +2225,25 @@
       "href": "https://w3c.github.io/web-nfc/#dfn-pending-write-tuple",
       "linkingText": [
         "pending write tuple"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "nfc-state-associated-with-the-settings-object",
+        "href": "https://w3c.github.io/web-nfc/#nfc-state-associated-with-the-settings-object",
+        "title": "NFC state associated with the settings object",
+        "number": "9.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-pending-makereadonly-tuple",
+      "href": "https://w3c.github.io/web-nfc/#dfn-pending-makereadonly-tuple",
+      "linkingText": [
+        "pending makeReadOnly tuple"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -2352,6 +2392,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "dfn-abort-a-pending-make-read-only-operation",
+      "href": "https://w3c.github.io/web-nfc/#dfn-abort-a-pending-make-read-only-operation",
+      "linkingText": [
+        "abort a pending make read-only operation"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "aborting-pending-make-read-only-operation",
+        "href": "https://w3c.github.io/web-nfc/#aborting-pending-make-read-only-operation",
+        "title": "Aborting pending make read-only operation",
+        "number": "9.6"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dfn-release-nfc",
       "href": "https://w3c.github.io/web-nfc/#dfn-release-nfc",
       "linkingText": [
@@ -2366,7 +2425,7 @@
         "id": "releasing-nfc",
         "href": "https://w3c.github.io/web-nfc/#releasing-nfc",
         "title": "Releasing NFC",
-        "number": "9.6"
+        "number": "9.7"
       },
       "definedIn": "prose"
     },
@@ -2385,7 +2444,7 @@
         "id": "the-ndefwriteoptions-dictionary",
         "href": "https://w3c.github.io/web-nfc/#the-ndefwriteoptions-dictionary",
         "title": "The NDEFWriteOptions dictionary",
-        "number": "9.7"
+        "number": "9.8"
       },
       "definedIn": "heading"
     },
@@ -2406,7 +2465,7 @@
         "id": "the-ndefwriteoptions-dictionary",
         "href": "https://w3c.github.io/web-nfc/#the-ndefwriteoptions-dictionary",
         "title": "The NDEFWriteOptions dictionary",
-        "number": "9.7"
+        "number": "9.8"
       },
       "definedIn": "prose"
     },
@@ -2427,7 +2486,47 @@
         "id": "the-ndefwriteoptions-dictionary",
         "href": "https://w3c.github.io/web-nfc/#the-ndefwriteoptions-dictionary",
         "title": "The NDEFWriteOptions dictionary",
-        "number": "9.7"
+        "number": "9.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-ndefmakereadonlyoptions",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefmakereadonlyoptions",
+      "linkingText": [
+        "NDEFMakeReadOnlyOptions"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-ndefmakereadonlyoptions-dictionary",
+        "href": "https://w3c.github.io/web-nfc/#the-ndefmakereadonlyoptions-dictionary",
+        "title": "The NDEFMakeReadOnlyOptions dictionary",
+        "number": "9.9"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-ndefmakereadonlyoptions-signal",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefmakereadonlyoptions-signal",
+      "linkingText": [
+        "signal"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "NDEFMakeReadOnlyOptions"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-ndefmakereadonlyoptions-dictionary",
+        "href": "https://w3c.github.io/web-nfc/#the-ndefmakereadonlyoptions-dictionary",
+        "title": "The NDEFMakeReadOnlyOptions dictionary",
+        "number": "9.9"
       },
       "definedIn": "prose"
     },
@@ -2446,7 +2545,7 @@
         "id": "the-ndefscanoptions-dictionary",
         "href": "https://w3c.github.io/web-nfc/#the-ndefscanoptions-dictionary",
         "title": "The NDEFScanOptions dictionary",
-        "number": "9.8"
+        "number": "9.10"
       },
       "definedIn": "heading"
     },
@@ -2467,7 +2566,7 @@
         "id": "the-ndefscanoptions-dictionary",
         "href": "https://w3c.github.io/web-nfc/#the-ndefscanoptions-dictionary",
         "title": "The NDEFScanOptions dictionary",
-        "number": "9.8"
+        "number": "9.10"
       },
       "definedIn": "prose"
     },
@@ -2486,7 +2585,7 @@
         "id": "writing-content",
         "href": "https://w3c.github.io/web-nfc/#writing-content",
         "title": "Writing content",
-        "number": "9.9"
+        "number": "9.11"
       },
       "definedIn": "heading"
     },
@@ -2513,7 +2612,7 @@
         "id": "the-write-method",
         "href": "https://w3c.github.io/web-nfc/#the-write-method",
         "title": "The write() method",
-        "number": "9.9.1"
+        "number": "9.11.1"
       },
       "definedIn": "prose"
     },
@@ -2532,7 +2631,7 @@
         "id": "the-write-method",
         "href": "https://w3c.github.io/web-nfc/#the-write-method",
         "title": "The write() method",
-        "number": "9.9.1"
+        "number": "9.11.1"
       },
       "definedIn": "prose"
     },
@@ -2551,7 +2650,7 @@
         "id": "the-write-method",
         "href": "https://w3c.github.io/web-nfc/#the-write-method",
         "title": "The write() method",
-        "number": "9.9.1"
+        "number": "9.11.1"
       },
       "definedIn": "prose"
     },
@@ -2570,7 +2669,7 @@
         "id": "creating-ndef-message",
         "href": "https://w3c.github.io/web-nfc/#creating-ndef-message",
         "title": "Creating NDEF message",
-        "number": "9.10"
+        "number": "9.12"
       },
       "definedIn": "prose"
     },
@@ -2589,7 +2688,7 @@
         "id": "check-created-records",
         "href": "https://w3c.github.io/web-nfc/#check-created-records",
         "title": "Check created records",
-        "number": "9.10.1"
+        "number": "9.12.1"
       },
       "definedIn": "prose"
     },
@@ -2608,7 +2707,7 @@
         "id": "creating-ndef-record",
         "href": "https://w3c.github.io/web-nfc/#creating-ndef-record",
         "title": "Creating NDEF record",
-        "number": "9.10.2"
+        "number": "9.12.2"
       },
       "definedIn": "prose"
     },
@@ -2627,7 +2726,7 @@
         "id": "validating-external-type",
         "href": "https://w3c.github.io/web-nfc/#validating-external-type",
         "title": "Validating external type",
-        "number": "9.10.3"
+        "number": "9.12.3"
       },
       "definedIn": "prose"
     },
@@ -2646,7 +2745,7 @@
         "id": "validating-local-type",
         "href": "https://w3c.github.io/web-nfc/#validating-local-type",
         "title": "Validating local type",
-        "number": "9.10.4"
+        "number": "9.12.4"
       },
       "definedIn": "prose"
     },
@@ -2665,7 +2764,7 @@
         "id": "mapping-empty-record-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-empty-record-to-ndef",
         "title": "Mapping empty record to NDEF",
-        "number": "9.10.5"
+        "number": "9.12.5"
       },
       "definedIn": "prose"
     },
@@ -2684,7 +2783,7 @@
         "id": "mapping-string-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-string-to-ndef",
         "title": "Mapping string to NDEF",
-        "number": "9.10.6"
+        "number": "9.12.6"
       },
       "definedIn": "prose"
     },
@@ -2703,7 +2802,7 @@
         "id": "mapping-url-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-url-to-ndef",
         "title": "Mapping URL to NDEF",
-        "number": "9.10.7"
+        "number": "9.12.7"
       },
       "definedIn": "prose"
     },
@@ -2722,7 +2821,7 @@
         "id": "mapping-binary-data-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-binary-data-to-ndef",
         "title": "Mapping binary data to NDEF",
-        "number": "9.10.8"
+        "number": "9.12.8"
       },
       "definedIn": "prose"
     },
@@ -2741,7 +2840,7 @@
         "id": "mapping-external-data-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-external-data-to-ndef",
         "title": "Mapping external data to NDEF",
-        "number": "9.10.9"
+        "number": "9.12.9"
       },
       "definedIn": "prose"
     },
@@ -2760,7 +2859,7 @@
         "id": "mapping-local-type-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-local-type-to-ndef",
         "title": "Mapping local type to NDEF",
-        "number": "9.10.10"
+        "number": "9.12.10"
       },
       "definedIn": "prose"
     },
@@ -2779,7 +2878,7 @@
         "id": "mapping-smart-poster-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-smart-poster-to-ndef",
         "title": "Mapping smart poster to NDEF",
-        "number": "9.10.11"
+        "number": "9.12.11"
       },
       "definedIn": "prose"
     },
@@ -2798,7 +2897,90 @@
         "id": "mapping-absolute-url-to-ndef",
         "href": "https://w3c.github.io/web-nfc/#mapping-absolute-url-to-ndef",
         "title": "Mapping absolute-URL to NDEF",
-        "number": "9.10.12"
+        "number": "9.12.12"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-making-content-read-only",
+      "href": "https://w3c.github.io/web-nfc/#dfn-making-content-read-only",
+      "linkingText": [
+        "Making content read-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "making-content-read-only",
+        "href": "https://w3c.github.io/web-nfc/#making-content-read-only",
+        "title": "Making content read-only",
+        "number": "9.13"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-ndefreader-makereadonly",
+      "href": "https://w3c.github.io/web-nfc/#dom-ndefreader-makereadonly",
+      "linkingText": [
+        "makeReadOnly()",
+        "makeReadOnly(options)"
+      ],
+      "localLinkingText": [
+        "NDEFReader.makeReadOnly",
+        "NDEFReader.makeReadOnly()",
+        "makeReadOnly"
+      ],
+      "type": "method",
+      "for": [
+        "NDEFReader"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-makereadonly-method",
+        "href": "https://w3c.github.io/web-nfc/#the-makereadonly-method",
+        "title": "The makeReadOnly() method",
+        "number": "9.13.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-make-an-nfc-tag-permanently-read-only",
+      "href": "https://w3c.github.io/web-nfc/#dfn-make-an-nfc-tag-permanently-read-only",
+      "linkingText": [
+        "make an NFC tag permanently read-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-makereadonly-method",
+        "href": "https://w3c.github.io/web-nfc/#the-makereadonly-method",
+        "title": "The makeReadOnly() method",
+        "number": "9.13.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-start-the-nfc-make-read-only",
+      "href": "https://w3c.github.io/web-nfc/#dfn-start-the-nfc-make-read-only",
+      "linkingText": [
+        "start the NFC make read-only"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "the-makereadonly-method",
+        "href": "https://w3c.github.io/web-nfc/#the-makereadonly-method",
+        "title": "The makeReadOnly() method",
+        "number": "9.13.1"
       },
       "definedIn": "prose"
     },
@@ -2824,7 +3006,7 @@
         "id": "the-scan-method",
         "href": "https://w3c.github.io/web-nfc/#the-scan-method",
         "title": "The scan() method",
-        "number": "9.11.1"
+        "number": "9.14.1"
       },
       "definedIn": "prose"
     },
@@ -2843,7 +3025,7 @@
         "id": "the-scan-method",
         "href": "https://w3c.github.io/web-nfc/#the-scan-method",
         "title": "The scan() method",
-        "number": "9.11.1"
+        "number": "9.14.1"
       },
       "definedIn": "prose"
     },
@@ -2862,7 +3044,7 @@
         "id": "the-scan-method",
         "href": "https://w3c.github.io/web-nfc/#the-scan-method",
         "title": "The scan() method",
-        "number": "9.11.1"
+        "number": "9.14.1"
       },
       "definedIn": "prose"
     },
@@ -2881,7 +3063,7 @@
         "id": "the-nfc-reading-algorithm",
         "href": "https://w3c.github.io/web-nfc/#the-nfc-reading-algorithm",
         "title": "The NFC reading algorithm",
-        "number": "9.11.2"
+        "number": "9.14.2"
       },
       "definedIn": "prose"
     },
@@ -2900,7 +3082,7 @@
         "id": "dispatching-nfc-content",
         "href": "https://w3c.github.io/web-nfc/#dispatching-nfc-content",
         "title": "Dispatching NFC content",
-        "number": "9.11.3"
+        "number": "9.14.3"
       },
       "definedIn": "prose"
     },
@@ -2919,7 +3101,7 @@
         "id": "parsing-records-from-bytes",
         "href": "https://w3c.github.io/web-nfc/#parsing-records-from-bytes",
         "title": "Parsing records from bytes",
-        "number": "9.12.1"
+        "number": "9.15.1"
       },
       "definedIn": "prose"
     },
@@ -2938,7 +3120,7 @@
         "id": "check-parsed-records",
         "href": "https://w3c.github.io/web-nfc/#check-parsed-records",
         "title": "Check parsed records",
-        "number": "9.12.2"
+        "number": "9.15.2"
       },
       "definedIn": "prose"
     },
@@ -2957,7 +3139,7 @@
         "id": "parsing-ndef-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-records",
         "title": "Parsing NDEF records",
-        "number": "9.12.3"
+        "number": "9.15.3"
       },
       "definedIn": "prose"
     },
@@ -2976,7 +3158,7 @@
         "id": "parsing-ndef-well-known-t-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-t-records",
         "title": "Parsing NDEF well-known T records",
-        "number": "9.12.4"
+        "number": "9.15.4"
       },
       "definedIn": "prose"
     },
@@ -2995,7 +3177,7 @@
         "id": "parsing-ndef-well-known-u-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-u-records",
         "title": "Parsing NDEF well-known U records",
-        "number": "9.12.5"
+        "number": "9.15.5"
       },
       "definedIn": "prose"
     },
@@ -3014,7 +3196,7 @@
         "id": "parsing-ndef-well-known-sp-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-sp-records",
         "title": "Parsing NDEF well-known Sp records",
-        "number": "9.12.6"
+        "number": "9.15.6"
       },
       "definedIn": "prose"
     },
@@ -3033,7 +3215,7 @@
         "id": "parsing-ndef-well-known-sp-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-sp-records",
         "title": "Parsing NDEF well-known Sp records",
-        "number": "9.12.6"
+        "number": "9.15.6"
       },
       "definedIn": "prose"
     },
@@ -3052,7 +3234,7 @@
         "id": "parsing-ndef-well-known-sp-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-sp-records",
         "title": "Parsing NDEF well-known Sp records",
-        "number": "9.12.6"
+        "number": "9.15.6"
       },
       "definedIn": "prose"
     },
@@ -3071,7 +3253,7 @@
         "id": "parsing-ndef-well-known-sp-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-well-known-sp-records",
         "title": "Parsing NDEF well-known Sp records",
-        "number": "9.12.6"
+        "number": "9.15.6"
       },
       "definedIn": "prose"
     },
@@ -3090,7 +3272,7 @@
         "id": "parsing-local-type-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-local-type-records",
         "title": "Parsing local type records",
-        "number": "9.12.7"
+        "number": "9.15.7"
       },
       "definedIn": "prose"
     },
@@ -3109,7 +3291,7 @@
         "id": "parsing-ndef-mime-type-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-mime-type-records",
         "title": "Parsing NDEF MIME type records",
-        "number": "9.12.8"
+        "number": "9.15.8"
       },
       "definedIn": "prose"
     },
@@ -3128,7 +3310,7 @@
         "id": "parsing-ndef-absolute-url-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-absolute-url-records",
         "title": "Parsing NDEF absolute-URL records",
-        "number": "9.12.9"
+        "number": "9.15.9"
       },
       "definedIn": "prose"
     },
@@ -3147,7 +3329,7 @@
         "id": "parsing-ndef-external-type-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-external-type-records",
         "title": "Parsing NDEF external type records",
-        "number": "9.12.10"
+        "number": "9.15.10"
       },
       "definedIn": "prose"
     },
@@ -3166,7 +3348,7 @@
         "id": "parsing-ndef-unknown-type-records",
         "href": "https://w3c.github.io/web-nfc/#parsing-ndef-unknown-type-records",
         "title": "Parsing NDEF unknown type records",
-        "number": "9.12.11"
+        "number": "9.15.11"
       },
       "definedIn": "prose"
     },
