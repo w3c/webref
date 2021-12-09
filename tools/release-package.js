@@ -97,7 +97,7 @@ async function releasePackage(prNumber) {
       console.log(`- Tagged released commit ${preReleaseSha} with tag ${tag}`);
       await octokit.git.updateRef({
         owner, repo,
-        ref: `@webref/${type}@latest`,
+        ref: `refs/head/@webref/${type}@latest`,
         sha: preReleaseSha
       });
       console.log(`- Updated ${type}-latest to point to released commit ${preReleaseSha}`);
