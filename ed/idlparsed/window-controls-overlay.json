@@ -84,7 +84,7 @@
         "partial": false
       },
       "WindowControlsOverlayGeometryChangeEvent": {
-        "fragment": "[Exposed=Window]\ninterface WindowControlsOverlayGeometryChangeEvent : Event {\n  constructor(DOMString type, WindowControlsOverlayGeometryChangeEventInit eventInitDict);\n  [SameObject] readonly attribute DOMRect boundingRect;\n  readonly attribute boolean visible;\n};",
+        "fragment": "[Exposed=Window]\ninterface WindowControlsOverlayGeometryChangeEvent : Event {\n  constructor(DOMString type, WindowControlsOverlayGeometryChangeEventInit eventInitDict);\n  [SameObject] readonly attribute DOMRect titlebarAreaRect;\n  readonly attribute boolean visible;\n};",
         "type": "interface",
         "name": "WindowControlsOverlayGeometryChangeEvent",
         "inheritance": "Event",
@@ -129,7 +129,7 @@
           },
           {
             "type": "attribute",
-            "name": "boundingRect",
+            "name": "titlebarAreaRect",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
@@ -179,14 +179,14 @@
         "partial": false
       },
       "WindowControlsOverlayGeometryChangeEventInit": {
-        "fragment": "dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {\n  required DOMRect boundingRect;\n  boolean visible = false;\n};",
+        "fragment": "dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {\n  required DOMRect titlebarAreaRect;\n  boolean visible = false;\n};",
         "type": "dictionary",
         "name": "WindowControlsOverlayGeometryChangeEventInit",
         "inheritance": "EventInit",
         "members": [
           {
             "type": "field",
-            "name": "boundingRect",
+            "name": "titlebarAreaRect",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
