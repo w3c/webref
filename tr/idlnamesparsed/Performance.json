@@ -34,7 +34,7 @@
     {
       "spec": {
         "title": "Performance Timeline",
-        "url": "https://www.w3.org/TR/performance-timeline-2/"
+        "url": "https://www.w3.org/TR/performance-timeline/"
       },
       "fragment": "partial interface Performance {\n  PerformanceEntryList getEntries ();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};"
     },
@@ -48,7 +48,7 @@
     {
       "spec": {
         "title": "User Timing",
-        "url": "https://www.w3.org/TR/user-timing-3/"
+        "url": "https://www.w3.org/TR/user-timing/"
       },
       "fragment": "partial interface Performance {\n    PerformanceMark mark(DOMString markName, optional PerformanceMarkOptions markOptions = {});\n    undefined clearMarks(optional DOMString markName);\n    PerformanceMeasure measure(DOMString measureName, optional (DOMString or PerformanceMeasureOptions) startOrMeasureOptions = {}, optional DOMString endMark);\n    undefined clearMeasures(optional DOMString measureName);\n};"
     }

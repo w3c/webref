@@ -18,11 +18,11 @@ interface WindowControlsOverlay : EventTarget {
 [Exposed=Window]
 interface WindowControlsOverlayGeometryChangeEvent : Event {
   constructor(DOMString type, WindowControlsOverlayGeometryChangeEventInit eventInitDict);
-  [SameObject] readonly attribute DOMRect boundingRect;
+  [SameObject] readonly attribute DOMRect titlebarAreaRect;
   readonly attribute boolean visible;
 };
 
 dictionary WindowControlsOverlayGeometryChangeEventInit : EventInit {
-  required DOMRect boundingRect;
+  required DOMRect titlebarAreaRect;
   boolean visible = false;
 };

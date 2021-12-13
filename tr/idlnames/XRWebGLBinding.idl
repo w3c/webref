@@ -3,6 +3,7 @@
   constructor(XRSession session, XRWebGLRenderingContext context);
 
   readonly attribute double nativeProjectionScaleFactor;
+  readonly attribute boolean usesDepthValues;
 
   XRProjectionLayer createProjectionLayer(optional XRProjectionLayerInit init = {});
   XRQuadLayer createQuadLayer(optional XRQuadLayerInit init = {});
@@ -14,12 +15,12 @@
   XRWebGLSubImage getViewSubImage(XRProjectionLayer layer, XRView view);
 };
 
-// Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
-partial interface XRWebGLBinding {
-  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);
-};
-
 // Source: WebXR Depth Sensing Module (https://www.w3.org/TR/webxr-depth-sensing-1/)
 partial interface XRWebGLBinding {
   XRWebGLDepthInformation? getDepthInformation(XRView view);
+};
+
+// Source: WebXR Lighting Estimation API Level 1 (https://www.w3.org/TR/webxr-lighting-estimation-1/)
+partial interface XRWebGLBinding {
+  WebGLTexture? getReflectionCubeMap(XRLightProbe lightProbe);
 };

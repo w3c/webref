@@ -4,39 +4,39 @@
   "defined": {
     "spec": {
       "title": "MathML Core",
-      "url": "https://w3c.github.io/mathml-core/"
+      "url": "https://www.w3.org/TR/mathml-core/"
     },
     "fragment": "[Exposed=Window]\ninterface MathMLElement : Element { };",
-    "href": "https://w3c.github.io/mathml-core/#dom-mathmlelement"
+    "href": "https://www.w3.org/TR/mathml-core/#dom-mathmlelement"
   },
   "extended": [
-    {
-      "spec": {
-        "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
-      },
-      "fragment": "MathMLElement includes GlobalEventHandlers;"
-    },
-    {
-      "spec": {
-        "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
-      },
-      "fragment": "MathMLElement includes DocumentAndElementEventHandlers;"
-    },
-    {
-      "spec": {
-        "title": "MathML Core",
-        "url": "https://w3c.github.io/mathml-core/"
-      },
-      "fragment": "MathMLElement includes HTMLOrForeignElement;"
-    },
     {
       "spec": {
         "title": "CSS Object Model (CSSOM)",
         "url": "https://www.w3.org/TR/cssom-1/"
       },
       "fragment": "MathMLElement includes ElementCSSInlineStyle;"
+    },
+    {
+      "spec": {
+        "title": "MathML Core",
+        "url": "https://www.w3.org/TR/mathml-core/"
+      },
+      "fragment": "MathMLElement includes GlobalEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "MathML Core",
+        "url": "https://www.w3.org/TR/mathml-core/"
+      },
+      "fragment": "MathMLElement includes DocumentAndElementEventHandlers;"
+    },
+    {
+      "spec": {
+        "title": "MathML Core",
+        "url": "https://www.w3.org/TR/mathml-core/"
+      },
+      "fragment": "MathMLElement includes HTMLOrForeignElement;"
     }
   ],
   "inheritance": {
@@ -154,14 +154,7 @@
           "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
           "url": "https://www.w3.org/TR/wai-aria-1.2/"
         },
-        "fragment": "Element includes AccessibilityRole;"
-      },
-      {
-        "spec": {
-          "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-          "url": "https://www.w3.org/TR/wai-aria-1.2/"
-        },
-        "fragment": "Element includes AriaAttributes;"
+        "fragment": "Element includes ARIAMixin;"
       },
       {
         "spec": {
@@ -262,30 +255,15 @@
         "includes": []
       },
       {
-        "name": "AccessibilityRole",
+        "name": "ARIAMixin",
         "type": "interface mixin",
         "defined": {
           "spec": {
             "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
             "url": "https://www.w3.org/TR/wai-aria-1.2/"
           },
-          "fragment": "interface mixin AccessibilityRole {\n\tattribute DOMString role;\n};",
-          "href": "https://www.w3.org/TR/wai-aria-1.2/#dom-accessibilityrole"
-        },
-        "extended": [],
-        "inheritance": null,
-        "includes": []
-      },
-      {
-        "name": "AriaAttributes",
-        "type": "interface mixin",
-        "defined": {
-          "spec": {
-            "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
-            "url": "https://www.w3.org/TR/wai-aria-1.2/"
-          },
-          "fragment": "interface mixin AriaAttributes {\n\n\tattribute DOMString ariaAtomic;\n\tattribute DOMString ariaAutoComplete;\n\tattribute DOMString ariaBusy;\n\tattribute DOMString ariaChecked;\n\tattribute DOMString ariaColCount;\n\tattribute DOMString ariaColIndex;\n\n\tattribute DOMString ariaColSpan;\n\n\tattribute DOMString ariaCurrent;\n\n\tattribute DOMString ariaDescription;\n\n\tattribute DOMString ariaDisabled;\n\n\tattribute DOMString ariaExpanded;\n\n\tattribute DOMString ariaHasPopup;\n\tattribute DOMString ariaHidden;\n\tattribute DOMString ariaInvalid;\n\tattribute DOMString ariaKeyShortcuts;\n\tattribute DOMString ariaLabel;\n\n\tattribute DOMString ariaLevel;\n\tattribute DOMString ariaLive;\n\tattribute DOMString ariaModal;\n\tattribute DOMString ariaMultiLine;\n\tattribute DOMString ariaMultiSelectable;\n\tattribute DOMString ariaOrientation;\n\n\tattribute DOMString ariaPlaceholder;\n\tattribute DOMString ariaPosInSet;\n\tattribute DOMString ariaPressed;\n\tattribute DOMString ariaReadOnly;\n\n\tattribute DOMString ariaRequired;\n\tattribute DOMString ariaRoleDescription;\n\tattribute DOMString ariaRowCount;\n\tattribute DOMString ariaRowIndex;\n\n\tattribute DOMString ariaRowSpan;\n\tattribute DOMString ariaSelected;\n\tattribute DOMString ariaSetSize;\n\tattribute DOMString ariaSort;\n\tattribute DOMString ariaValueMax;\n\tattribute DOMString ariaValueMin;\n\tattribute DOMString ariaValueNow;\n\tattribute DOMString ariaValueText;\n};",
-          "href": "https://www.w3.org/TR/wai-aria-1.2/#dom-ariaattributes"
+          "fragment": "interface mixin ARIAMixin {\n\tattribute DOMString? role;\n\n\tattribute DOMString? ariaAtomic;\n\tattribute DOMString? ariaAutoComplete;\n\tattribute DOMString? ariaBusy;\n\tattribute DOMString? ariaChecked;\n\tattribute DOMString? ariaColCount;\n\tattribute DOMString? ariaColIndex;\n\n\tattribute DOMString? ariaColSpan;\n\n\tattribute DOMString? ariaCurrent;\n\n\n\n\tattribute DOMString? ariaDisabled;\n\n\tattribute DOMString? ariaExpanded;\n\n\tattribute DOMString? ariaHasPopup;\n\tattribute DOMString? ariaHidden;\n\tattribute DOMString? ariaInvalid;\n\tattribute DOMString? ariaKeyShortcuts;\n\tattribute DOMString? ariaLabel;\n\n\tattribute DOMString? ariaLevel;\n\tattribute DOMString? ariaLive;\n\tattribute DOMString? ariaModal;\n\tattribute DOMString? ariaMultiLine;\n\tattribute DOMString? ariaMultiSelectable;\n\tattribute DOMString? ariaOrientation;\n\n\tattribute DOMString? ariaPlaceholder;\n\tattribute DOMString? ariaPosInSet;\n\tattribute DOMString? ariaPressed;\n\tattribute DOMString? ariaReadOnly;\n\n\tattribute DOMString? ariaRequired;\n\tattribute DOMString? ariaRoleDescription;\n\tattribute DOMString? ariaRowCount;\n\tattribute DOMString? ariaRowIndex;\n\n\tattribute DOMString? ariaRowSpan;\n\tattribute DOMString? ariaSelected;\n\tattribute DOMString? ariaSetSize;\n\tattribute DOMString? ariaSort;\n\tattribute DOMString? ariaValueMax;\n\tattribute DOMString? ariaValueMin;\n\tattribute DOMString? ariaValueNow;\n\tattribute DOMString? ariaValueText;\n};",
+          "href": "https://www.w3.org/TR/wai-aria-1.2/#dom-ariamixin"
         },
         "extended": [],
         "inheritance": null,
@@ -309,6 +287,29 @@
     ]
   },
   "includes": [
+    {
+      "name": "ElementCSSInlineStyle",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "CSS Object Model (CSSOM)",
+          "url": "https://www.w3.org/TR/cssom-1/"
+        },
+        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
+        "href": "https://www.w3.org/TR/cssom-1/#elementcssinlinestyle"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "CSS Typed OM Level 1",
+            "url": "https://www.w3.org/TR/css-typed-om-1/"
+          },
+          "fragment": "partial interface ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "GlobalEventHandlers",
       "type": "interface mixin",
@@ -372,29 +373,6 @@
         "href": "https://html.spec.whatwg.org/multipage/webappapis.html#documentandelementeventhandlers"
       },
       "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "ElementCSSInlineStyle",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "CSS Object Model (CSSOM)",
-          "url": "https://www.w3.org/TR/cssom-1/"
-        },
-        "fragment": "interface mixin ElementCSSInlineStyle {\n  [SameObject, PutForwards=cssText] readonly attribute CSSStyleDeclaration style;\n};",
-        "href": "https://www.w3.org/TR/cssom-1/#elementcssinlinestyle"
-      },
-      "extended": [
-        {
-          "spec": {
-            "title": "CSS Typed OM Level 1",
-            "url": "https://www.w3.org/TR/css-typed-om-1/"
-          },
-          "fragment": "partial interface ElementCSSInlineStyle {\n    [SameObject] readonly attribute StylePropertyMap attributeStyleMap;\n};"
-        }
-      ],
       "inheritance": null,
       "includes": []
     }

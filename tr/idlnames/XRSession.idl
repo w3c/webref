@@ -30,12 +30,6 @@
   attribute EventHandler onframeratechange;
 };
 
-// Source: WebXR Lighting Estimation API Level 1 (https://immersive-web.github.io/lighting-estimation/)
-partial interface XRSession {
-  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});
-  readonly attribute XRReflectionFormat preferredReflectionFormat;
-};
-
 // Source: WebXR Augmented Reality Module - Level 1 (https://www.w3.org/TR/webxr-ar-module-1/)
 partial interface XRSession {
   // Attributes
@@ -63,4 +57,10 @@ partial interface XRSession {
 partial interface XRSession {
   Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);
   Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);
+};
+
+// Source: WebXR Lighting Estimation API Level 1 (https://www.w3.org/TR/webxr-lighting-estimation-1/)
+partial interface XRSession {
+  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});
+  readonly attribute XRReflectionFormat preferredReflectionFormat;
 };

@@ -12,13 +12,6 @@
   "extended": [
     {
       "spec": {
-        "title": "WebXR Lighting Estimation API Level 1",
-        "url": "https://immersive-web.github.io/lighting-estimation/"
-      },
-      "fragment": "partial interface XRSession {\n  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});\n  readonly attribute XRReflectionFormat preferredReflectionFormat;\n};"
-    },
-    {
-      "spec": {
         "title": "WebXR Augmented Reality Module - Level 1",
         "url": "https://www.w3.org/TR/webxr-ar-module-1/"
       },
@@ -51,6 +44,13 @@
         "url": "https://www.w3.org/TR/webxr-hit-test-1/"
       },
       "fragment": "partial interface XRSession {\n  Promise<XRHitTestSource> requestHitTestSource(XRHitTestOptionsInit options);\n  Promise<XRTransientInputHitTestSource> requestHitTestSourceForTransientInput(XRTransientInputHitTestOptionsInit options);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRSession {\n  Promise<XRLightProbe> requestLightProbe(optional XRLightProbeInit options = {});\n  readonly attribute XRReflectionFormat preferredReflectionFormat;\n};"
     }
   ],
   "inheritance": {

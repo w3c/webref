@@ -82,6 +82,13 @@
     },
     {
       "spec": {
+        "title": "Web Locks API",
+        "url": "https://w3c.github.io/web-locks/"
+      },
+      "fragment": "Navigator includes NavigatorLocks;"
+    },
+    {
+      "spec": {
         "title": "Web Bluetooth",
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
@@ -149,13 +156,6 @@
         "url": "https://wicg.github.io/ua-client-hints/"
       },
       "fragment": "Navigator includes NavigatorUA;"
-    },
-    {
-      "spec": {
-        "title": "Web Locks API",
-        "url": "https://wicg.github.io/web-locks/"
-      },
-      "fragment": "Navigator includes NavigatorLocks;"
     },
     {
       "spec": {
@@ -230,7 +230,7 @@
     {
       "spec": {
         "title": "Geolocation API",
-        "url": "https://www.w3.org/TR/geolocation-API/"
+        "url": "https://www.w3.org/TR/geolocation/"
       },
       "fragment": "partial interface Navigator {\n  [SameObject] readonly attribute Geolocation geolocation;\n};"
     },
@@ -527,6 +527,21 @@
       "includes": []
     },
     {
+      "name": "NavigatorLocks",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Web Locks API",
+          "url": "https://w3c.github.io/web-locks/"
+        },
+        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
+        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
       "name": "NavigatorFonts",
       "type": "interface mixin",
       "defined": {
@@ -566,21 +581,6 @@
         },
         "fragment": "interface mixin NavigatorUA {\n  [SecureContext] readonly attribute NavigatorUAData userAgentData;\n};",
         "href": "https://wicg.github.io/ua-client-hints/#navigatorua"
-      },
-      "extended": [],
-      "inheritance": null,
-      "includes": []
-    },
-    {
-      "name": "NavigatorLocks",
-      "type": "interface mixin",
-      "defined": {
-        "spec": {
-          "title": "Web Locks API",
-          "url": "https://wicg.github.io/web-locks/"
-        },
-        "fragment": "[SecureContext]\ninterface mixin NavigatorLocks {\n  readonly attribute LockManager locks;\n};",
-        "href": "https://w3c.github.io/web-locks/#navigatorlocks"
       },
       "extended": [],
       "inheritance": null,

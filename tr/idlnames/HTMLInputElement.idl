@@ -60,6 +60,8 @@ interface HTMLInputElement : HTMLElement {
   undefined setRangeText(DOMString replacement, unsigned long start, unsigned long end, optional SelectionMode selectionMode = "preserve");
   undefined setSelectionRange(unsigned long start, unsigned long end, optional DOMString direction);
 
+  undefined showPicker();
+
   // also has obsolete members
 };
 

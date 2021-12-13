@@ -1,7 +1,7 @@
 {
   "spec": {
     "title": "CSS Fonts Module Level 5",
-    "url": "https://drafts.csswg.org/css-fonts-5/"
+    "url": "https://www.w3.org/TR/css-fonts-5/"
   },
   "properties": {
     "font-size-adjust": {
@@ -96,16 +96,16 @@
   },
   "valuespaces": {
     "<font-format>": {
-      "value": "[<string> | collection | embedded-opentype | opentype | svg | truetype | woff | woff2 ]"
+      "value": "[<string> | woff | truetype | opentype | woff2 | embedded-opentype | collection | svg]"
     },
     "<font-technology>": {
-      "value": "[<font-feature-technology> | <color-font-technology> | variations | palettes | incremental ]"
+      "value": "[features(<font-feature-technology>) | variations | color(<color-font-technology>) | palettes | incremental ]"
     },
     "<font-feature-technology>": {
-      "value": "[feature-opentype | feature-aat | feature-graphite]"
+      "value": "[opentype | aat | graphite]"
     },
     "<color-font-technology>": {
-      "value": "[color-COLRv0 | color-COLRv1 | color-SVG | color-sbix | color-CBDT ]"
+      "value": "[COLRv0 | COLRv1 | SVG | sbix | CBDT ]"
     }
   }
 }

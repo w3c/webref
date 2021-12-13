@@ -26,13 +26,6 @@
     },
     {
       "spec": {
-        "title": "WebXR Lighting Estimation API Level 1",
-        "url": "https://immersive-web.github.io/lighting-estimation/"
-      },
-      "fragment": "partial interface XRFrame {\n  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);\n};"
-    },
-    {
-      "spec": {
         "title": "WebXR Depth Sensing Module",
         "url": "https://www.w3.org/TR/webxr-depth-sensing-1/"
       },
@@ -51,6 +44,13 @@
         "url": "https://www.w3.org/TR/webxr-hit-test-1/"
       },
       "fragment": "partial interface XRFrame {\n  FrozenArray<XRHitTestResult> getHitTestResults(XRHitTestSource hitTestSource);\n  FrozenArray<XRTransientInputHitTestResult> getHitTestResultsForTransientInput(XRTransientInputHitTestSource hitTestSource);\n};"
+    },
+    {
+      "spec": {
+        "title": "WebXR Lighting Estimation API Level 1",
+        "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+      },
+      "fragment": "partial interface XRFrame {\n  XRLightEstimate? getLightEstimate(XRLightProbe lightProbe);\n};"
     }
   ],
   "inheritance": null,

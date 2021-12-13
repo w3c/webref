@@ -39,6 +39,9 @@ partial interface Navigator {
 // Source: Badging API (https://w3c.github.io/badging/)
 Navigator includes NavigatorBadge;
 
+// Source: Web Locks API (https://w3c.github.io/web-locks/)
+Navigator includes NavigatorLocks;
+
 // Source: Web Bluetooth (https://webbluetoothcg.github.io/web-bluetooth/)
 [SecureContext]
 partial interface Navigator {
@@ -88,9 +91,6 @@ partial interface Navigator {
 
 // Source: User-Agent Client Hints (https://wicg.github.io/ua-client-hints/)
 Navigator includes NavigatorUA;
-
-// Source: Web Locks API (https://wicg.github.io/web-locks/)
-Navigator includes NavigatorLocks;
 
 // Source: WebHID API (https://wicg.github.io/webhid/)
 [SecureContext] partial interface Navigator {
@@ -147,7 +147,7 @@ partial interface Navigator {
   sequence<Gamepad?> getGamepads();
 };
 
-// Source: Geolocation API (https://www.w3.org/TR/geolocation-API/)
+// Source: Geolocation API (https://www.w3.org/TR/geolocation/)
 partial interface Navigator {
   [SameObject] readonly attribute Geolocation geolocation;
 };

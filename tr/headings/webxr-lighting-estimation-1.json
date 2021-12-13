@@ -1,0 +1,172 @@
+{
+  "spec": {
+    "title": "WebXR Lighting Estimation API Level 1",
+    "url": "https://www.w3.org/TR/webxr-lighting-estimation-1/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#title",
+      "level": 1,
+      "title": "WebXR Lighting Estimation API Level 1"
+    },
+    {
+      "id": "profile-and-date",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#profile-and-date",
+      "level": 2,
+      "title": "W3C First Public Working Draft, 9 September 2021"
+    },
+    {
+      "id": "abstract",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "status",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#status",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "light-primitives",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#light-primitives",
+      "level": 2,
+      "title": "Light Primitives",
+      "number": "2"
+    },
+    {
+      "id": "xrlightprobe-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrlightprobe-interface",
+      "level": 3,
+      "title": "XRLightProbe",
+      "number": "2.1"
+    },
+    {
+      "id": "xrreflectionformat-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrreflectionformat-interface",
+      "level": 3,
+      "title": "XRReflectionFormat",
+      "number": "2.2"
+    },
+    {
+      "id": "xrlightestimate-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrlightestimate-interface",
+      "level": 3,
+      "title": "XRLightEstimate",
+      "number": "2.3"
+    },
+    {
+      "id": "webxr-device-api-integration",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#webxr-device-api-integration",
+      "level": 2,
+      "title": "WebXR Device API Integration",
+      "number": "3"
+    },
+    {
+      "id": "session-initialization",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#session-initialization",
+      "level": 3,
+      "title": "Session Initialization",
+      "number": "3.1"
+    },
+    {
+      "id": "xrsession-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrsession-interface",
+      "level": 3,
+      "title": "XRSession",
+      "number": "3.2"
+    },
+    {
+      "id": "xrframe-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrframe-interface",
+      "level": 3,
+      "title": "XRFrame",
+      "number": "3.3"
+    },
+    {
+      "id": "webxr-layers-integration",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#webxr-layers-integration",
+      "level": 2,
+      "title": "WebXR Layers Integration",
+      "number": "4"
+    },
+    {
+      "id": "xrwebglbinding-interface",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#xrwebglbinding-interface",
+      "level": 3,
+      "title": "XRWebGLBinding",
+      "number": "4.1"
+    },
+    {
+      "id": "events",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#events",
+      "level": 2,
+      "title": "Events",
+      "number": "5"
+    },
+    {
+      "id": "event-types",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#event-types",
+      "level": 3,
+      "title": "Event Types",
+      "number": "5.1"
+    },
+    {
+      "id": "privacy-security",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#privacy-security",
+      "level": 2,
+      "title": "Privacy & Security Considerations",
+      "number": "6"
+    },
+    {
+      "id": "index",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "idl-index",
+      "href": "https://www.w3.org/TR/webxr-lighting-estimation-1/#idl-index",
+      "level": 2,
+      "title": "IDL Index"
+    }
+  ]
+}
