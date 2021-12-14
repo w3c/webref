@@ -74,6 +74,7 @@
           "HTMLTemplateElement",
           "HTMLSlotElement",
           "HTMLCanvasElement",
+          "CanvasFilter",
           "ImageData",
           "Path2D",
           "OffscreenCanvas",
@@ -101,6 +102,7 @@
           "HTMLFontElement"
         ],
         "Worker": [
+          "CanvasFilter",
           "ImageData",
           "Path2D",
           "OffscreenCanvas",
@@ -112,6 +114,9 @@
           "CloseEvent",
           "MessageChannel",
           "BroadcastChannel"
+        ],
+        "PaintWorklet": [
+          "CanvasFilter"
         ],
         "AudioWorklet": [
           "MessageEvent"
@@ -16703,7 +16708,7 @@
         "partial": false
       },
       "CanvasFilters": {
-        "fragment": "interface mixin CanvasFilters {\n  // filters\n  attribute DOMString filter; // (default \"none\")\n};",
+        "fragment": "interface mixin CanvasFilters {\n  // filters\n  attribute (DOMString or CanvasFilter) filter; // (default \"none\")\n};",
         "type": "interface mixin",
         "name": "CanvasFilters",
         "inheritance": null,
@@ -16716,8 +16721,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "DOMString"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CanvasFilter"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",
@@ -16725,6 +16747,115 @@
           }
         ],
         "extAttrs": [],
+        "partial": false
+      },
+      "CanvasFilterInput": {
+        "fragment": "typedef record<DOMString, any> CanvasFilterInput;",
+        "type": "typedef",
+        "name": "CanvasFilterInput",
+        "idlType": {
+          "type": "typedef-type",
+          "extAttrs": [],
+          "generic": "record",
+          "nullable": false,
+          "union": false,
+          "idlType": [
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            {
+              "type": "typedef-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "any"
+            }
+          ]
+        },
+        "extAttrs": []
+      },
+      "CanvasFilter": {
+        "fragment": "[Exposed=(Window,Worker,PaintWorklet)]\ninterface CanvasFilter {\n  constructor(optional (CanvasFilterInput or sequence<CanvasFilterInput>) filters);\n};",
+        "type": "interface",
+        "name": "CanvasFilter",
+        "inheritance": null,
+        "members": [
+          {
+            "type": "constructor",
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "filters",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": true,
+                  "idlType": [
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "CanvasFilterInput"
+                    },
+                    {
+                      "type": null,
+                      "extAttrs": [],
+                      "generic": "sequence",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": [
+                        {
+                          "type": null,
+                          "extAttrs": [],
+                          "generic": "",
+                          "nullable": false,
+                          "union": false,
+                          "idlType": "CanvasFilterInput"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          }
+        ],
+        "extAttrs": [
+          {
+            "type": "extended-attribute",
+            "name": "Exposed",
+            "rhs": {
+              "type": "identifier-list",
+              "value": [
+                {
+                  "value": "Window"
+                },
+                {
+                  "value": "Worker"
+                },
+                {
+                  "value": "PaintWorklet"
+                }
+              ]
+            },
+            "arguments": []
+          }
+        ],
         "partial": false
       },
       "CanvasRect": {
@@ -38385,6 +38516,7 @@
         "HTMLSlotElement",
         "HTMLCanvasElement",
         "CanvasRenderingContext2D",
+        "CanvasFilter",
         "CanvasGradient",
         "CanvasPattern",
         "TextMetrics",
@@ -38437,6 +38569,7 @@
       ],
       "Worker": [
         "DOMStringList",
+        "CanvasFilter",
         "CanvasGradient",
         "CanvasPattern",
         "TextMetrics",
@@ -38458,6 +38591,9 @@
         "WorkerGlobalScope",
         "WorkerNavigator",
         "WorkerLocation"
+      ],
+      "PaintWorklet": [
+        "CanvasFilter"
       ],
       "AudioWorklet": [
         "MessageEvent",
@@ -38908,7 +39044,12 @@
         "CanvasImageSource"
       ],
       "CanvasShadowStyles": [],
-      "CanvasFilters": [],
+      "CanvasFilters": [
+        "CanvasFilter"
+      ],
+      "CanvasFilter": [
+        "CanvasFilterInput"
+      ],
       "CanvasRect": [],
       "CanvasDrawPath": [
         "CanvasFillRule",
