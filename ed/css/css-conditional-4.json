@@ -7,25 +7,10 @@
   "descriptors": {},
   "valuespaces": {
     "<supports-feature>": {
-      "value": "<supports-selector-fn> | <supports-font-tech-fn> | <supports-font-format-fn> | <supports-decl>"
+      "value": "<supports-selector-fn> | <supports-decl>"
     },
     "<supports-selector-fn>": {
       "value": "selector( <complex-selector> )"
-    },
-    "<supports-font-tech-fn>": {
-      "value": "font-tech ( <font-tech> )"
-    },
-    "<font-tech>": {
-      "value": "[ features-opentype | features-aat | features-graphite | color-colrv0 | color-colrv1 | color-svg | color-sbix | color-cbdt | variations | palettes | incremental ]"
-    },
-    "<supports-font-format-fn>": {
-      "value": "font-format ( <font-format> )"
-    },
-    "<media()>": {
-      "value": "media( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
-    },
-    "<supports()>": {
-      "value": "supports( <declaration> )"
     }
   }
 }
