@@ -31,6 +31,11 @@ partial interface HTMLIFrameElement {
   [CEReactions] attribute [LegacyNullToEmptyString] DOMString marginWidth;
 };
 
+// Source: Priority Hints (https://wicg.github.io/priority-hints/)
+partial interface HTMLIFrameElement {
+    [CEReactions] attribute DOMString importance;
+};
+
 // Source: Content Security Policy: Embedded Enforcement (https://www.w3.org/TR/csp-embedded-enforcement/)
 partial interface HTMLIFrameElement {
   [CEReactions] attribute DOMString csp;
