@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2021-12-17T00:52:33.958Z",
+  "date": "2021-12-17T06:45:08.751Z",
   "options": {
     "output": "report",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 450,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -1730,7 +1730,7 @@
         "https://tc39.es/ecma262/multipage/"
       ],
       "crawled": "https://tc39.es/ecma262/multipage/",
-      "date": "11 December 2021",
+      "date": "17 December 2021",
       "links": "links/ecmascript.json",
       "dfns": "dfns/ecmascript.json",
       "headings": "headings/ecmascript.json",
@@ -9827,7 +9827,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-align/",
       "generator": "bikeshed",
-      "date": "16 June 2021",
+      "date": "16 December 2021",
       "links": "links/css-align-3.json",
       "refs": "refs/css-align-3.json",
       "css": "css/css-align.json",
@@ -12911,7 +12911,7 @@
       ],
       "crawled": "https://drafts.csswg.org/css-sizing-3/",
       "generator": "bikeshed",
-      "date": "7 September 2021",
+      "date": "16 December 2021",
       "links": "links/css-sizing-3.json",
       "refs": "refs/css-sizing-3.json",
       "css": "css/css-sizing.json",
@@ -15259,7 +15259,7 @@
       ],
       "crawled": "https://w3c.github.io/html-aria/",
       "generator": "respec",
-      "date": "13 December 2021",
+      "date": "17 December 2021",
       "links": "links/html-aria.json",
       "refs": "refs/html-aria.json",
       "dfns": "dfns/html-aria.json",
@@ -15307,16 +15307,13 @@
         "https://w3c.github.io/html-media-capture/",
         "https://dev.w3.org/2009/dap/camera/"
       ],
-      "crawled": "https://w3c.github.io/html-media-capture/",
-      "generator": "respec",
-      "date": "01 February 2018",
-      "links": "links/html-media-capture.json",
-      "refs": "refs/html-media-capture.json",
-      "idl": "idl/html-media-capture.idl",
-      "dfns": "dfns/html-media-capture.json",
-      "headings": "headings/html-media-capture.json",
-      "ids": "ids/html-media-capture.json",
-      "idlparsed": "idlparsed/html-media-capture.json"
+      "crawled": {
+        "url": "https://w3c.github.io/html-media-capture/",
+        "repository": "https://github.com/w3c/html-media-capture",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21) Error: Evaluation failed: Error: Respec generation took too long\n    at isReady (__puppeteer_evaluation_script__:12:27)\n    at isReady (__puppeteer_evaluation_script__:19:27)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at async isReady (__puppeteer_evaluation_script__:19:21)\n    at ExecutionContext._evaluateInternal (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:221:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async ExecutionContext.evaluate (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:110:16)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:515:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:51:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:372:22)\n    at async Promise.all (index 339)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:380:21)"
     },
     {
       "url": "https://www.w3.org/TR/IFT/",
@@ -16167,7 +16164,7 @@
       ],
       "crawled": "https://drafts.csswg.org/mediaqueries-5/",
       "generator": "bikeshed",
-      "date": "2 December 2021",
+      "date": "16 December 2021",
       "links": "links/mediaqueries-5.json",
       "refs": "refs/mediaqueries-5.json",
       "css": "css/mediaqueries-5.json",
@@ -18078,7 +18075,7 @@
       ],
       "crawled": "https://w3c.github.io/secure-payment-confirmation/",
       "generator": "bikeshed",
-      "date": "15 December 2021",
+      "date": "17 December 2021",
       "links": "links/secure-payment-confirmation.json",
       "refs": "refs/secure-payment-confirmation.json",
       "idl": "idl/secure-payment-confirmation.idl",
