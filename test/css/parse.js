@@ -10,13 +10,13 @@ const cssValues = [
   { type: 'value space', prop: 'valuespaces', value: 'value' }
 ];
 
-// TEMP: constructs that are not yet supported by the parser (2021-03-10)
+// TEMP: constructs that are not yet supported by the parser
 // See: https://github.com/w3c/reffy/issues/494#issuecomment-790713119
+// (last validated on 2021-12-17)
 const tempIgnore = [
   { shortname: 'css-extensions', prop: 'valuespaces', name: '<custom-selector>' },
   { shortname: 'fill-stroke', prop: 'properties', name: 'stroke-dasharray' },
   { shortname: 'svg-animations', prop: 'valuespaces', name: '<control-point>' },
-  { shortname: 'svg-markers', prop: 'properties', name: 'marker' },
   { shortname: 'svg-strokes', prop: 'valuespaces', name: '<dasharray>' }
 ];
 
