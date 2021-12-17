@@ -249,6 +249,25 @@
       "definedIn": "pre"
     },
     {
+      "id": "interactioncounts",
+      "href": "https://wicg.github.io/event-timing/#interactioncounts",
+      "linkingText": [
+        "InteractionCounts"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-interaction-counts",
+        "href": "https://wicg.github.io/event-timing/#sec-interaction-counts",
+        "title": "InteractionCounts interface",
+        "number": "2.3"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-performance-eventcounts",
       "href": "https://wicg.github.io/event-timing/#dom-performance-eventcounts",
       "linkingText": [
@@ -265,7 +284,28 @@
         "id": "sec-extensions",
         "href": "https://wicg.github.io/event-timing/#sec-extensions",
         "title": "Extensions to the Performance interface",
-        "number": "2.3"
+        "number": "2.4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-performance-interactioncounts",
+      "href": "https://wicg.github.io/event-timing/#dom-performance-interactioncounts",
+      "linkingText": [
+        "interactionCounts"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "Performance"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-extensions",
+        "href": "https://wicg.github.io/event-timing/#sec-extensions",
+        "title": "Extensions to the Performance interface",
+        "number": "2.4"
       },
       "definedIn": "pre"
     },
@@ -384,6 +424,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "pointer-is-drag-set",
+      "href": "https://wicg.github.io/event-timing/#pointer-is-drag-set",
+      "linkingText": [
+        "pointer is drag set"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "pending-pointer-downs",
       "href": "https://wicg.github.io/event-timing/#pending-pointer-downs",
       "linkingText": [
@@ -392,6 +451,48 @@
       "localLinkingText": [],
       "type": "dfn",
       "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "window-eventcounts",
+      "href": "https://wicg.github.io/event-timing/#window-eventcounts",
+      "linkingText": [
+        "eventCounts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Window"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-modifications-HTML",
+        "href": "https://wicg.github.io/event-timing/#sec-modifications-HTML",
+        "title": "Modifications to the HTML specification",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "window-interactioncounts",
+      "href": "https://wicg.github.io/event-timing/#window-interactioncounts",
+      "linkingText": [
+        "interactionCounts"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "Window"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -443,6 +544,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "increase-interaction-count",
+      "href": "https://wicg.github.io/event-timing/#increase-interaction-count",
+      "linkingText": [
+        "increase interaction count"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-increasing-interaction-count",
+        "href": "https://wicg.github.io/event-timing/#sec-increasing-interaction-count",
+        "title": "Increasing interaction count",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "compute-interactionid",
       "href": "https://wicg.github.io/event-timing/#compute-interactionid",
       "linkingText": [
@@ -457,7 +577,7 @@
         "id": "sec-computing-interactionid",
         "href": "https://wicg.github.io/event-timing/#sec-computing-interactionid",
         "title": "Computing interactionId",
-        "number": "3.5"
+        "number": "3.6"
       },
       "definedIn": "prose"
     },
@@ -476,7 +596,7 @@
         "id": "sec-init-event-timing",
         "href": "https://wicg.github.io/event-timing/#sec-init-event-timing",
         "title": "Initialize event timing",
-        "number": "3.6"
+        "number": "3.7"
       },
       "definedIn": "prose"
     },
@@ -495,7 +615,7 @@
         "id": "sec-fin-event-timing",
         "href": "https://wicg.github.io/event-timing/#sec-fin-event-timing",
         "title": "Finalize event timing",
-        "number": "3.7"
+        "number": "3.8"
       },
       "definedIn": "prose"
     },
@@ -514,7 +634,7 @@
         "id": "sec-dispatch-pending",
         "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
         "title": "Dispatch pending Event Timing entries",
-        "number": "3.8"
+        "number": "3.9"
       },
       "definedIn": "prose"
     },
@@ -533,7 +653,7 @@
         "id": "sec-dispatch-pending",
         "href": "https://wicg.github.io/event-timing/#sec-dispatch-pending",
         "title": "Dispatch pending Event Timing entries",
-        "number": "3.8"
+        "number": "3.9"
       },
       "definedIn": "prose"
     }

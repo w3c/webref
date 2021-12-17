@@ -25,3 +25,8 @@ interface Request {
 
 // Source: Fetch Standard (https://fetch.spec.whatwg.org/)
 Request includes Body;
+
+// Source: Priority Hints (https://wicg.github.io/priority-hints/)
+partial interface Request {
+  readonly attribute Importance importance;
+};

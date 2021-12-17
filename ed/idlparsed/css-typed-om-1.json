@@ -3750,7 +3750,7 @@
         "partial": false
       },
       "CSSColorValue": {
-        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static CSSColorValue parse(USVString cssText);\n};",
+        "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColorValue : CSSStyleValue {\n    readonly attribute CSSKeywordValue colorSpace;\n    CSSColorValue to(CSSKeywordish colorSpace);\n    [Exposed=Window] static (CSSColorValue or CSSStyleValue) parse(USVString cssText);\n};",
         "type": "interface",
         "name": "CSSColorValue",
         "inheritance": "CSSStyleValue",
@@ -3810,8 +3810,25 @@
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": false,
-              "idlType": "CSSColorValue"
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSColorValue"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "CSSStyleValue"
+                }
+              ]
             },
             "arguments": [
               {

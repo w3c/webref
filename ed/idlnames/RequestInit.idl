@@ -14,3 +14,8 @@ dictionary RequestInit {
   AbortSignal? signal;
   any window; // can only be set to null
 };
+
+// Source: Priority Hints (https://wicg.github.io/priority-hints/)
+partial dictionary RequestInit {
+  Importance importance;
+};
