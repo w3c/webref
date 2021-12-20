@@ -10,6 +10,7 @@ interface Performance : EventTarget {
 [Exposed=Window]
 partial interface Performance {
     [SameObject] readonly attribute EventCounts eventCounts;
+    [SameObject] readonly attribute InteractionCounts interactionCounts;
 };
 
 // Source: Measure Memory API (https://wicg.github.io/performance-measure-memory/)

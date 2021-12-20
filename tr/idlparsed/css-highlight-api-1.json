@@ -12,13 +12,33 @@
       },
       "functions": {
         "Window": [
-          "HighlightsRegister"
+          "HighlightRegistry"
         ]
       }
     },
     "idlNames": {
+      "HighlightType": {
+        "fragment": "enum HighlightType {\n  \"highlight\",\n  \"spelling-error\",\n  \"grammar-error\"\n};",
+        "type": "enum",
+        "name": "HighlightType",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "highlight"
+          },
+          {
+            "type": "enum-value",
+            "value": "spelling-error"
+          },
+          {
+            "type": "enum-value",
+            "value": "grammar-error"
+          }
+        ],
+        "extAttrs": []
+      },
       "Highlight": {
-        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(CSSOMString name, AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute double priority;\n  readonly attribute CSSOMString name;\n};",
+        "fragment": "[Exposed=Window]\ninterface Highlight {\n  constructor(AbstractRange... initialRanges);\n  setlike<AbstractRange>;\n  attribute long priority;\n  attribute HighlightType type;\n};",
         "type": "interface",
         "name": "Highlight",
         "inheritance": null,
@@ -26,22 +46,6 @@
           {
             "type": "constructor",
             "arguments": [
-              {
-                "type": "argument",
-                "name": "name",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "CSSOMString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              },
               {
                 "type": "argument",
                 "name": "initialRanges",
@@ -87,7 +91,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "double"
+              "idlType": "long"
             },
             "extAttrs": [],
             "special": "",
@@ -95,18 +99,18 @@
           },
           {
             "type": "attribute",
-            "name": "name",
+            "name": "type",
             "idlType": {
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "CSSOMString"
+              "idlType": "HighlightType"
             },
             "extAttrs": [],
             "special": "",
-            "readonly": true
+            "readonly": false
           }
         ],
         "extAttrs": [
@@ -122,15 +126,23 @@
         ],
         "partial": false
       },
-      "HighlightsRegister": {
-        "fragment": "[Exposed=Window]\ninterface HighlightsRegister {\n  setlike<Highlight>;\n  HighlightsRegister add(Highlight value);\n};",
+      "HighlightRegistry": {
+        "fragment": "[Exposed=Window]\ninterface HighlightRegistry {\n  maplike<DOMString, Highlight>;\n};",
         "type": "interface",
-        "name": "HighlightsRegister",
+        "name": "HighlightRegistry",
         "inheritance": null,
         "members": [
           {
-            "type": "setlike",
+            "type": "maplike",
             "idlType": [
+              {
+                "type": null,
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
               {
                 "type": null,
                 "extAttrs": [],
@@ -144,38 +156,6 @@
             "extAttrs": [],
             "readonly": false,
             "async": false
-          },
-          {
-            "type": "operation",
-            "name": "add",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "HighlightsRegister"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "value",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "Highlight"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
           }
         ],
         "extAttrs": [
@@ -195,7 +175,7 @@
     "idlExtendedNames": {
       "CSS": [
         {
-          "fragment": "partial namespace CSS {\n  readonly attribute HighlightsRegister highlights;\n};",
+          "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};",
           "type": "namespace",
           "name": "CSS",
           "inheritance": null,
@@ -209,7 +189,7 @@
                 "generic": "",
                 "nullable": false,
                 "union": false,
-                "idlType": "HighlightsRegister"
+                "idlType": "HighlightRegistry"
               },
               "extAttrs": [],
               "special": "",
@@ -225,24 +205,22 @@
     "exposed": {
       "Window": [
         "Highlight",
-        "HighlightsRegister"
+        "HighlightRegistry"
       ]
     },
     "dependencies": {
       "Highlight": [
-        "CSSOMString",
-        "AbstractRange"
+        "AbstractRange",
+        "HighlightType"
       ],
       "CSS": [
-        "HighlightsRegister"
+        "HighlightRegistry"
       ],
-      "HighlightsRegister": [
-        "Highlight",
-        "HighlightsRegister"
+      "HighlightRegistry": [
+        "Highlight"
       ]
     },
     "externalDependencies": [
-      "CSSOMString",
       "AbstractRange",
       "CSS"
     ],

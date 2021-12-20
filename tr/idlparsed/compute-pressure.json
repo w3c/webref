@@ -14,7 +14,7 @@
     },
     "idlNames": {
       "ComputePressureUpdateCallback": {
-        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  ComputePressureObserverUpdate update,\n  ComputePressureObserver observer\n);",
+        "fragment": "callback ComputePressureUpdateCallback = undefined (\n  ComputePressureEntry update,\n  ComputePressureObserver observer\n);",
         "type": "callback",
         "name": "ComputePressureUpdateCallback",
         "idlType": {
@@ -36,7 +36,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "ComputePressureObserverUpdate"
+              "idlType": "ComputePressureEntry"
             },
             "default": null,
             "optional": false,
@@ -151,10 +151,10 @@
         ],
         "partial": false
       },
-      "ComputePressureObserverUpdate": {
-        "fragment": "dictionary ComputePressureObserverUpdate {\n  double cpuSpeed;\n  double cpuUtilization;\n  ComputePressureObserverOptions options;\n};",
+      "ComputePressureEntry": {
+        "fragment": "dictionary ComputePressureEntry {\n  double cpuSpeed;\n  double cpuUtilization;\n  ComputePressureObserverOptions options;\n};",
         "type": "dictionary",
-        "name": "ComputePressureObserverUpdate",
+        "name": "ComputePressureEntry",
         "inheritance": null,
         "members": [
           {
@@ -283,7 +283,7 @@
         "ComputePressureUpdateCallback",
         "ComputePressureObserverOptions"
       ],
-      "ComputePressureObserverUpdate": [
+      "ComputePressureEntry": [
         "ComputePressureObserverOptions"
       ],
       "ComputePressureObserverOptions": []

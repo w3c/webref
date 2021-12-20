@@ -53,6 +53,30 @@
         "type": "discrete"
       }
     ],
+    "horizontal-viewport-segments": [
+      {
+        "name": "horizontal-viewport-segments",
+        "for": "@media",
+        "value": "<integer>",
+        "type": "range"
+      }
+    ],
+    "vertical-viewport-segments": [
+      {
+        "name": "vertical-viewport-segments",
+        "for": "@media",
+        "value": "<integer>",
+        "type": "range"
+      }
+    ],
+    "display-mode": [
+      {
+        "name": "display-mode",
+        "for": "@media",
+        "value": "fullscreen | standalone | minimal-ui | browser",
+        "type": "discrete"
+      }
+    ],
     "resolution": [
       {
         "name": "resolution",
@@ -173,6 +197,14 @@
         "type": "discrete"
       }
     ],
+    "nav-controls": [
+      {
+        "name": "nav-controls",
+        "for": "@media",
+        "value": "none | back",
+        "type": "discrete"
+      }
+    ],
     "video-color-gamut": [
       {
         "name": "video-color-gamut",
@@ -187,30 +219,6 @@
         "for": "@media",
         "value": "standard | high",
         "type": "discrete"
-      }
-    ],
-    "video-width": [
-      {
-        "name": "video-width",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "video-height": [
-      {
-        "name": "video-height",
-        "for": "@media",
-        "value": "<length>",
-        "type": "range"
-      }
-    ],
-    "video-resolution": [
-      {
-        "name": "video-resolution",
-        "for": "@media",
-        "value": "<resolution> | infinite",
-        "type": "range"
       }
     ],
     "scripting": [
@@ -241,15 +249,7 @@
       {
         "name": "prefers-contrast",
         "for": "@media",
-        "value": "no-preference | high | low | forced",
-        "type": "discrete"
-      }
-    ],
-    "prefers-color-scheme": [
-      {
-        "name": "prefers-color-scheme",
-        "for": "@media",
-        "value": "light | dark",
+        "value": "no-preference | less | more | custom",
         "type": "discrete"
       }
     ],
@@ -258,6 +258,14 @@
         "name": "forced-colors",
         "for": "@media",
         "value": "none | active",
+        "type": "discrete"
+      }
+    ],
+    "prefers-color-scheme": [
+      {
+        "name": "prefers-color-scheme",
+        "for": "@media",
+        "value": "light | dark",
         "type": "discrete"
       }
     ],

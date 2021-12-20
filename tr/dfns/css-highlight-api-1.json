@@ -43,17 +43,15 @@
       "definedIn": "prose"
     },
     {
-      "id": "custom-highlight-name",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#custom-highlight-name",
+      "id": "enumdef-highlighttype",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#enumdef-highlighttype",
       "linkingText": [
-        "name"
+        "HighlightType"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "custom highlight"
-      ],
-      "access": "private",
+      "type": "enum",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "creation",
@@ -61,21 +59,18 @@
         "title": "Creating Custom Highlights",
         "number": "3.1"
       },
-      "definedIn": "prose"
+      "definedIn": "pre"
     },
     {
-      "id": "dom-highlight-highlight-name-initialranges-name",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight-name-initialranges-name",
+      "id": "dom-highlighttype-highlight",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlighttype-highlight",
       "linkingText": [
-        "name"
+        "\"highlight\""
       ],
       "localLinkingText": [],
-      "type": "argument",
+      "type": "enum-value",
       "for": [
-        "Highlight/Highlight(name, ...initialRanges)",
-        "Highlight/constructor(name, ...initialRanges)",
-        "Highlight/Highlight(name)",
-        "Highlight/constructor(name)"
+        "HighlightType"
       ],
       "access": "public",
       "informative": false,
@@ -88,18 +83,60 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-highlight-highlight-name-initialranges-initialranges",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight-name-initialranges-initialranges",
+      "id": "dom-highlighttype-spelling-error",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlighttype-spelling-error",
+      "linkingText": [
+        "\"spelling-error\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HighlightType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "creation",
+        "href": "https://www.w3.org/TR/css-highlight-api-1/#creation",
+        "title": "Creating Custom Highlights",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-highlighttype-grammar-error",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlighttype-grammar-error",
+      "linkingText": [
+        "\"grammar-error\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "HighlightType"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "creation",
+        "href": "https://www.w3.org/TR/css-highlight-api-1/#creation",
+        "title": "Creating Custom Highlights",
+        "number": "3.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-highlight-highlight-initialranges-initialranges",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight-initialranges-initialranges",
       "linkingText": [
         "initialRanges"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "Highlight/Highlight(name, ...initialRanges)",
-        "Highlight/constructor(name, ...initialRanges)",
-        "Highlight/Highlight(name)",
-        "Highlight/constructor(name)"
+        "Highlight/Highlight(...initialRanges)",
+        "Highlight/constructor(...initialRanges)",
+        "Highlight/Highlight()",
+        "Highlight/constructor()"
       ],
       "access": "public",
       "informative": false,
@@ -133,10 +170,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-highlight-name",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-name",
+      "id": "dom-highlight-type",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-type",
       "linkingText": [
-        "name"
+        "type"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -157,10 +194,10 @@
       "id": "dom-highlight-highlight",
       "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlight-highlight",
       "linkingText": [
-        "Highlight(name, ...initialRanges)",
-        "constructor(name, ...initialRanges)",
-        "Highlight(name)",
-        "constructor(name)"
+        "Highlight(...initialRanges)",
+        "constructor(...initialRanges)",
+        "Highlight()",
+        "constructor()"
       ],
       "localLinkingText": [],
       "type": "constructor",
@@ -178,10 +215,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "highlights-register",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#highlights-register",
+      "id": "highlight-registry",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#highlight-registry",
       "linkingText": [
-        "highlights register"
+        "highlight registry"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -237,10 +274,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "highlightsregister",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#highlightsregister",
+      "id": "highlightregistry",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#highlightregistry",
       "linkingText": [
-        "HighlightsRegister"
+        "HighlightRegistry"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -256,38 +293,15 @@
       "definedIn": "pre"
     },
     {
-      "id": "dom-highlightsregister-add-value-value",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlightsregister-add-value-value",
+      "id": "custom-highlight-name",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#custom-highlight-name",
       "linkingText": [
-        "value"
+        "custom highlight name"
       ],
       "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "HighlightsRegister/add(value)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "registration",
-        "href": "https://www.w3.org/TR/css-highlight-api-1/#registration",
-        "title": "Registering Custom Highlights",
-        "number": "3.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-highlightsregister-add",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#dom-highlightsregister-add",
-      "linkingText": [
-        "add(value)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "HighlightsRegister"
-      ],
-      "access": "public",
+      "type": "dfn",
+      "for": [],
+      "access": "private",
       "informative": false,
       "heading": {
         "id": "registration",
@@ -298,10 +312,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "selectordef-highlight-highlight-name",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#selectordef-highlight-highlight-name",
+      "id": "selectordef-highlight-custom-highlight-name",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#selectordef-highlight-custom-highlight-name",
       "linkingText": [
-        "::highlight(<highlight-name>)"
+        "::highlight(<custom-highlight-name>)"
       ],
       "localLinkingText": [],
       "type": "selector",
@@ -336,10 +350,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "typedef-highlight-name",
-      "href": "https://www.w3.org/TR/css-highlight-api-1/#typedef-highlight-name",
+      "id": "typedef-custom-highlight-name",
+      "href": "https://www.w3.org/TR/css-highlight-api-1/#typedef-custom-highlight-name",
       "linkingText": [
-        "<highlight-name>"
+        "<custom-highlight-name>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -369,7 +383,7 @@
         "id": "priorities",
         "href": "https://www.w3.org/TR/css-highlight-api-1/#priorities",
         "title": "Priority of Overlapping Highlights",
-        "number": "4.2.4"
+        "number": "4.2.5"
       },
       "definedIn": "prose"
     }

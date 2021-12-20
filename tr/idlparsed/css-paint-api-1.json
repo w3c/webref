@@ -16,7 +16,7 @@
     },
     "idlNames": {
       "PaintWorkletGlobalScope": {
-        "fragment": "[Global=(Worklet,PaintWorklet),Exposed=PaintWorklet]\ninterface PaintWorkletGlobalScope : WorkletGlobalScope {\n    void registerPaint(DOMString name, VoidFunction paintCtor);\n    readonly attribute unrestricted double devicePixelRatio;\n};",
+        "fragment": "[Global=(Worklet,PaintWorklet),Exposed=PaintWorklet]\ninterface PaintWorkletGlobalScope : WorkletGlobalScope {\n    undefined registerPaint(DOMString name, VoidFunction paintCtor);\n    readonly attribute unrestricted double devicePixelRatio;\n};",
         "type": "interface",
         "name": "PaintWorkletGlobalScope",
         "inheritance": "WorkletGlobalScope",
@@ -30,7 +30,7 @@
               "generic": "",
               "nullable": false,
               "union": false,
-              "idlType": "void"
+              "idlType": "undefined"
             },
             "arguments": [
               {
@@ -348,7 +348,6 @@
       ],
       "PaintWorkletGlobalScope": [
         "WorkletGlobalScope",
-        "void",
         "VoidFunction"
       ],
       "PaintRenderingContext2DSettings": [],
@@ -371,7 +370,6 @@
       "CSS",
       "Worklet",
       "WorkletGlobalScope",
-      "void",
       "VoidFunction"
     ],
     "hasObsoleteIdl": false

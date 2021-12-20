@@ -4,51 +4,86 @@
     "url": "https://www.w3.org/TR/css-paint-api-1/"
   },
   "links": {
-    "https://www.w3.org/TR/css3-images/": [
-      "image-type",
+    "https://www.w3.org/TR/css-images-3/": [
+      "typedef-image",
+      "concrete-object-size",
+      "object-size-negotiation",
+      "natural-dimensions",
       "object-sizing-examples"
     ],
     "https://github.com/w3c/css-houdini-drafts/blob/master/css-paint-api/EXPLAINER.md": [],
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/Style/CSS/members": [],
-    "https://www.w3.org/Style/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/css-houdini-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-houdini-archive/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://lists.w3.org/Archives/Public/www-style/": [],
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
-    "https://github.com/web-platform-tests/wpt/tree/master/css/css-paint-api": [],
-    "https://www.w3.org/2018/Process-20180201/": [],
-    "https://www.w3.org/TR/worklets-1/": [
+    "https://developer.mozilla.org/en-US/docs/Web/API/CSS/paintWorklet": [],
+    "https://html.spec.whatwg.org/": [
       "worklet",
       "worklet-global-scope-type",
+      "worklet-destination-type",
       "workletglobalscope",
-      "worklets-workletglobalscopes",
-      "code-idempotency"
+      "queue-a-task",
+      "canvasstate",
+      "canvastransform",
+      "canvascompositing",
+      "canvasimagesmoothing",
+      "canvasfillstrokestyles",
+      "canvasshadowstyles",
+      "canvasrect",
+      "canvasdrawpath",
+      "canvasdrawimage",
+      "canvaspathdrawingstyles",
+      "canvaspath",
+      "canvasrenderingcontext2d",
+      "canvasimagedata",
+      "canvasuserinterface",
+      "canvastext",
+      "canvastextdrawingstyles",
+      "concept-canvas-set-bitmap-dimensions",
+      "reset-the-rendering-context-to-its-default-state",
+      "canvasimagesource",
+      "dom-context-2d-drawimage",
+      "concept-worklet-global-scopes",
+      "create-a-worklet-global-scope",
+      "in-parallel",
+      "worklets-idempotent"
     ],
-    "https://heycam.github.io/webidl/": [
+    "https://www.w3.org/TR/cssom-1/": [
+      "namespacedef-css",
+      "supported-css-property"
+    ],
+    "https://webidl.spec.whatwg.org/": [
       "SameObject",
       "Global",
       "Exposed",
+      "idl-undefined",
       "idl-DOMString",
       "VoidFunction",
       "idl-unrestricted-double",
       "idl-boolean",
-      "Function",
       "dfn-callback-function",
       "dfn-throw",
       "invalidmodificationerror",
       "idl-DOMException",
-      "es-type-mapping",
+      "web-idl-arguments-list-converting",
       "idl-double",
       "invoke-a-callback-function",
       "dfn-callback-this-value"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/devicePixelRatio": [],
     "https://www.w3.org/TR/cssom-view/": [
       "dom-window-devicepixelratio"
     ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet": [],
     "https://infra.spec.whatwg.org/": [
       "struct",
       "list",
@@ -68,83 +103,50 @@
       "sec-ecmascript-data-types-and-values",
       "sec-construct"
     ],
+    "https://www.w3.org/TR/css-syntax-3/": [
+      "function",
+      "typedef-declaration-value"
+    ],
     "https://dom.spec.whatwg.org/": [
       "concept-document"
     ],
     "https://www.w3.org/TR/css-properties-values-api-1/": [
-      "supported-syntax-strings"
+      "syntax-definition",
+      "consume-a-syntax-definition"
     ],
-    "https://www.w3.org/TR/cssom-1/": [
-      "supported-css-property"
-    ],
+    "https://developer.mozilla.org/en-US/docs/Web/API/PaintWorklet/registerPaint": [],
     "https://www.w3.org/TR/css-variables-1/": [
       "custom-property"
-    ],
-    "https://html.spec.whatwg.org/": [
-      "queue-a-task",
-      "canvasstate",
-      "canvastransform",
-      "canvascompositing",
-      "canvasimagesmoothing",
-      "canvasfillstrokestyles",
-      "canvasshadowstyles",
-      "canvasrect",
-      "canvasdrawpath",
-      "canvasdrawimage",
-      "canvaspathdrawingstyles",
-      "canvaspath",
-      "canvasrenderingcontext2d",
-      "canvasimagedata",
-      "canvasuserinterface",
-      "canvastext",
-      "canvastextdrawingstyles",
-      "output-bitmap",
-      "concept-canvas-set-bitmap-dimensions",
-      "concept-canvas-alpha",
-      "reset-the-rendering-context-to-its-default-state",
-      "canvasimagesource",
-      "dom-context-2d-drawimage",
-      "in-parallel"
     ],
     "https://www.w3.org/TR/css-typed-om-1/": [
       "stylepropertymap",
       "cssimagevalue",
       "stylepropertymapreadonly"
     ],
-    "https://www.w3.org/TR/css3-values/": [
+    "https://developer.mozilla.org/en-US/docs/Web/CSS/image/paint()": [],
+    "https://www.w3.org/TR/css-values-4/": [
       "typedef-ident",
       "comb-comma",
       "mult-opt"
     ],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "typedef-declaration-value"
-    ],
-    "https://drafts.csswg.org/css-ui-4/": [
+    "https://www.w3.org/TR/css-ui-3/": [
       "propdef-cursor"
     ],
-    "https://www.w3.org/TR/css4-images/": [
+    "https://www.w3.org/TR/css-images-4/": [
       "invalid-image"
     ],
-    "https://www.w3.org/TR/css-cascade-4/": [
+    "https://www.w3.org/TR/css-cascade-5/": [
       "computed-value"
     ],
+    "https://github.com/w3c/css-houdini-drafts/issues/819": [],
     "https://www.w3.org/TR/css-display-3/": [
-      "css-box"
+      "box"
     ],
-    "https://drafts.csswg.org/css-images-3/": [
-      "object-size-negotiation",
-      "concrete-object-size",
-      "intrinsic-dimensions"
-    ],
-    "https://drafts.css-houdini.org/worklets/": [
-      "create-a-workletglobalscope"
-    ],
-    "https://www.w3.org/TR/css3-background/": [
+    "https://www.w3.org/TR/css-backgrounds-3/": [
       "propdef-border-image"
     ],
-    "https://github.com/w3c/css-houdini-drafts/issues/743": [],
-    "https://github.com/w3c/css-houdini-drafts/issues/523": [],
-    "https://drafts.css-houdini.org/css-paint-api-1/issues-list-2018-04-10": [],
+    "https://github.com/w3c/css-houdini-drafts/issues/791": [],
+    "https://www.w3.org/TR/2018/CR-css-paint-api-1-20180809/": [],
     "https://www.w3.org/TR/CSS21/": [
       "style-sheet",
       "user-agent",
@@ -157,12 +159,7 @@
     ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
-    "https://www.w3.org/TR/css-backgrounds-3/": [],
-    "https://www.w3.org/TR/css-images-4/": [],
-    "https://www.w3.org/TR/css-syntax-3/": [],
-    "https://www.w3.org/TR/css-ui-4/": [],
-    "https://www.w3.org/TR/css-values-3/": [],
     "https://www.w3.org/TR/cssom-view-1/": [],
-    "https://tools.ietf.org/html/rfc2119": []
+    "https://datatracker.ietf.org/doc/html/rfc2119": []
   }
 }

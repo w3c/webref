@@ -11,20 +11,14 @@
       "title": "Media Queries Level 5"
     },
     {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#subtitle",
-      "level": 2,
-      "title": "W3C Working Draft, 31 July 2020"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/mediaqueries-5/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -101,7 +95,7 @@
       "id": "mq-only",
       "href": "https://www.w3.org/TR/mediaqueries-5/#mq-only",
       "level": 4,
-      "title": "Hiding a Media Query From Legacy User Agents: the only keyword",
+      "title": "Hiding a Media Query From Legacy user agents: the only keyword",
       "number": "2.2.2"
     },
     {
@@ -222,6 +216,27 @@
       "level": 3,
       "title": "Inline-Axis Overflow: the overflow-inline feature",
       "number": "4.6"
+    },
+    {
+      "id": "mf-horizontal-viewport-segments",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#mf-horizontal-viewport-segments",
+      "level": 3,
+      "title": "Horizontal Viewport Segments: the horizontal-viewport-segments feature",
+      "number": "4.7"
+    },
+    {
+      "id": "mf-vertical-viewport-segments",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#mf-vertical-viewport-segments",
+      "level": 3,
+      "title": "Vertical Viewport Segments: the vertical-viewport-segments feature",
+      "number": "4.8"
+    },
+    {
+      "id": "display-modes",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#display-modes",
+      "level": 3,
+      "title": "Display Modes: the display-mode media feature",
+      "number": "4.9"
     },
     {
       "id": "mf-display-quality",
@@ -350,6 +365,13 @@
       "number": "7.3"
     },
     {
+      "id": "nav-controls",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#nav-controls",
+      "level": 3,
+      "title": "Detecting UA-supplied navigation controls: the nav-controls feature",
+      "number": "7.4"
+    },
+    {
       "id": "video-prefixed-features",
       "href": "https://www.w3.org/TR/mediaqueries-5/#video-prefixed-features",
       "level": 2,
@@ -369,27 +391,6 @@
       "level": 3,
       "title": "Video Dynamic Range: the video-dynamic-range feature",
       "number": "8.2"
-    },
-    {
-      "id": "video-width",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#video-width",
-      "level": 3,
-      "title": "Video-Width: the video-width feature",
-      "number": "8.3"
-    },
-    {
-      "id": "video-height",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#video-height",
-      "level": 3,
-      "title": "Video-Height: the video-height feature",
-      "number": "8.4"
-    },
-    {
-      "id": "video-resolution",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#video-resolution",
-      "level": 3,
-      "title": "Video Display Resolution: the video-resolution feature",
-      "number": "8.5"
     },
     {
       "id": "mf-scripting",
@@ -446,17 +447,17 @@
       "number": "11.3"
     },
     {
+      "id": "forced-colors",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#forced-colors",
+      "level": 3,
+      "title": "Detecting Forced Colors Mode: the forced-colors feature",
+      "number": "11.4"
+    },
+    {
       "id": "prefers-color-scheme",
       "href": "https://www.w3.org/TR/mediaqueries-5/#prefers-color-scheme",
       "level": 3,
       "title": "Detecting the desire for light or dark color schemes: the prefers-color-scheme feature",
-      "number": "11.4"
-    },
-    {
-      "id": "forced-colors",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#forced-colors",
-      "level": 3,
-      "title": "Detecting a forced color palette: the forced-colors feature",
       "number": "11.5"
     },
     {
@@ -498,10 +499,22 @@
       "title": "device-aspect-ratio"
     },
     {
+      "id": "priv-sec",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#priv-sec",
+      "level": 2,
+      "title": "Appendix B: Privacy and Security Considerations"
+    },
+    {
       "id": "changes",
       "href": "https://www.w3.org/TR/mediaqueries-5/#changes",
       "level": 2,
       "title": "Changes"
+    },
+    {
+      "id": "changes-since-2020-07-31",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#changes-since-2020-07-31",
+      "level": 3,
+      "title": "Changes Since the 2020-07-31 Working Draft"
     },
     {
       "id": "changes-since-2020-07-15",
@@ -540,46 +553,40 @@
       "title": "Acknowledgments"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conformance",
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "document-conventions",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#document-conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conform-classes",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conform-classes",
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "conform-responsible",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conform-responsible",
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-partial",
       "level": 3,
-      "title": "Requirements for Responsible Implementation of CSS"
+      "title": "Partial implementations"
     },
     {
-      "id": "conform-partial",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conform-partial",
-      "level": 4,
-      "title": "Partial Implementations"
-    },
-    {
-      "id": "conform-future-proofing",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "conform-testing",
-      "href": "https://www.w3.org/TR/mediaqueries-5/#conform-testing",
-      "level": 4,
-      "title": "Implementations of CR-level Features"
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/mediaqueries-5/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
     },
     {
       "id": "index",

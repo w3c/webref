@@ -1,0 +1,249 @@
+{
+  "spec": {
+    "title": "Priority Hints",
+    "url": "https://wicg.github.io/priority-hints/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "Importance": {
+        "fragment": "enum Importance { \"high\", \"low\", \"auto\" };",
+        "type": "enum",
+        "name": "Importance",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "high"
+          },
+          {
+            "type": "enum-value",
+            "value": "low"
+          },
+          {
+            "type": "enum-value",
+            "value": "auto"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Request": [
+        {
+          "fragment": "partial interface Request {\n  readonly attribute Importance importance;\n};",
+          "type": "interface",
+          "name": "Request",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "importance",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Importance"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "RequestInit": [
+        {
+          "fragment": "partial dictionary RequestInit {\n  Importance importance;\n};",
+          "type": "dictionary",
+          "name": "RequestInit",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "field",
+              "name": "importance",
+              "extAttrs": [],
+              "idlType": {
+                "type": "dictionary-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "Importance"
+              },
+              "default": null,
+              "required": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLImageElement": [
+        {
+          "fragment": "partial interface HTMLImageElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "type": "interface",
+          "name": "HTMLImageElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "importance",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLLinkElement": [
+        {
+          "fragment": "partial interface HTMLLinkElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "type": "interface",
+          "name": "HTMLLinkElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "importance",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLScriptElement": [
+        {
+          "fragment": "partial interface HTMLScriptElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "type": "interface",
+          "name": "HTMLScriptElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "importance",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLIFrameElement": [
+        {
+          "fragment": "partial interface HTMLIFrameElement {\n    [CEReactions] attribute DOMString importance;\n};",
+          "type": "interface",
+          "name": "HTMLIFrameElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "importance",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "DOMString"
+              },
+              "extAttrs": [
+                {
+                  "type": "extended-attribute",
+                  "name": "CEReactions",
+                  "rhs": null,
+                  "arguments": []
+                }
+              ],
+              "special": "",
+              "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Request": [
+        "Importance"
+      ],
+      "RequestInit": [
+        "Importance"
+      ],
+      "HTMLImageElement": [],
+      "HTMLLinkElement": [],
+      "HTMLScriptElement": [],
+      "HTMLIFrameElement": []
+    },
+    "externalDependencies": [
+      "Request",
+      "RequestInit",
+      "HTMLImageElement",
+      "HTMLLinkElement",
+      "HTMLScriptElement",
+      "HTMLIFrameElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}

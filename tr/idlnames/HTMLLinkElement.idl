@@ -31,6 +31,11 @@ partial interface HTMLLinkElement {
   [CEReactions] attribute DOMString target;
 };
 
+// Source: Priority Hints (https://wicg.github.io/priority-hints/)
+partial interface HTMLLinkElement {
+    [CEReactions] attribute DOMString importance;
+};
+
 // Source: Subresource Integrity (https://www.w3.org/TR/SRI/)
 partial interface HTMLLinkElement {
                     attribute DOMString integrity;

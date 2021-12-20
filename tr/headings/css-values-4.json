@@ -11,20 +11,14 @@
       "title": "CSS Values and Units Module Level 4"
     },
     {
-      "id": "profile-and-date",
-      "href": "https://www.w3.org/TR/css-values-4/#profile-and-date",
-      "level": 2,
-      "title": "W3C Working Draft, 16 October 2021"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/css-values-4/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/css-values-4/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-values-4/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -196,6 +190,13 @@
       "number": "4.5.3"
     },
     {
+      "id": "url-processing",
+      "href": "https://www.w3.org/TR/css-values-4/#url-processing",
+      "level": 4,
+      "title": "URL Processing Model",
+      "number": "4.5.4"
+    },
+    {
       "id": "numeric-types",
       "href": "https://www.w3.org/TR/css-values-4/#numeric-types",
       "level": 2,
@@ -283,7 +284,7 @@
       "id": "combine-mixed",
       "href": "https://www.w3.org/TR/css-values-4/#combine-mixed",
       "level": 4,
-      "title": "Combination of Percentage and Dimension Mixes",
+      "title": "Computation and Combination of Percentage and Dimension Mixes",
       "number": "5.6.1"
     },
     {
@@ -441,170 +442,143 @@
       "number": "9"
     },
     {
-      "id": "toggle-notation",
-      "href": "https://www.w3.org/TR/css-values-4/#toggle-notation",
-      "level": 3,
-      "title": "Toggling Between Values: toggle()",
-      "number": "9.1"
-    },
-    {
-      "id": "attr-notation",
-      "href": "https://www.w3.org/TR/css-values-4/#attr-notation",
-      "level": 2,
-      "title": "10. Attribute References: the attr() function"
-    },
-    {
-      "id": "attr-types",
-      "href": "https://www.w3.org/TR/css-values-4/#attr-types",
-      "level": 3,
-      "title": "attr() Types",
-      "number": "10.1"
-    },
-    {
-      "id": "attr-substitution",
-      "href": "https://www.w3.org/TR/css-values-4/#attr-substitution",
-      "level": 3,
-      "title": "attr() Substitution",
-      "number": "10.2"
-    },
-    {
       "id": "math",
       "href": "https://www.w3.org/TR/css-values-4/#math",
       "level": 2,
-      "title": "11. Mathematical Expressions"
+      "title": "10. Mathematical Expressions"
     },
     {
       "id": "calc-func",
       "href": "https://www.w3.org/TR/css-values-4/#calc-func",
       "level": 3,
       "title": "Basic Arithmetic: calc()",
-      "number": "11.1"
+      "number": "10.1"
     },
     {
       "id": "comp-func",
       "href": "https://www.w3.org/TR/css-values-4/#comp-func",
       "level": 3,
       "title": "Comparison Functions: min(), max(), and clamp()",
-      "number": "11.2"
+      "number": "10.2"
     },
     {
       "id": "round-func",
       "href": "https://www.w3.org/TR/css-values-4/#round-func",
       "level": 3,
       "title": "Stepped Value Functions: round(), mod(), and rem()",
-      "number": "11.3"
+      "number": "10.3"
     },
     {
       "id": "round-infinities",
       "href": "https://www.w3.org/TR/css-values-4/#round-infinities",
       "level": 4,
       "title": "Argument Ranges",
-      "number": "11.3.1"
+      "number": "10.3.1"
     },
     {
       "id": "trig-funcs",
       "href": "https://www.w3.org/TR/css-values-4/#trig-funcs",
       "level": 3,
       "title": "Trigonometric Functions: sin(), cos(), tan(), asin(), acos(), atan(), and atan2()",
-      "number": "11.4"
+      "number": "10.4"
     },
     {
       "id": "trig-infinities",
       "href": "https://www.w3.org/TR/css-values-4/#trig-infinities",
       "level": 4,
       "title": "Argument Ranges",
-      "number": "11.4.1"
+      "number": "10.4.1"
     },
     {
       "id": "exponent-funcs",
       "href": "https://www.w3.org/TR/css-values-4/#exponent-funcs",
       "level": 3,
       "title": "Exponential Functions: pow(), sqrt(), hypot(), log(), exp()",
-      "number": "11.5"
+      "number": "10.5"
     },
     {
       "id": "exponent-infinities",
       "href": "https://www.w3.org/TR/css-values-4/#exponent-infinities",
       "level": 4,
       "title": "Argument Ranges",
-      "number": "11.5.1"
+      "number": "10.5.1"
     },
     {
       "id": "sign-funcs",
       "href": "https://www.w3.org/TR/css-values-4/#sign-funcs",
       "level": 3,
       "title": "Sign-Related Functions: abs(), sign()",
-      "number": "11.6"
+      "number": "10.6"
     },
     {
       "id": "calc-constants",
       "href": "https://www.w3.org/TR/css-values-4/#calc-constants",
       "level": 3,
       "title": "Numeric Constants: e, pi",
-      "number": "11.7"
+      "number": "10.7"
     },
     {
       "id": "calc-error-constants",
       "href": "https://www.w3.org/TR/css-values-4/#calc-error-constants",
       "level": 4,
       "title": "Degenerate Numeric Constants: infinity, -infinity, NaN",
-      "number": "11.7.1"
+      "number": "10.7.1"
     },
     {
       "id": "calc-syntax",
       "href": "https://www.w3.org/TR/css-values-4/#calc-syntax",
       "level": 3,
       "title": "Syntax",
-      "number": "11.8"
+      "number": "10.8"
     },
     {
       "id": "calc-type-checking",
       "href": "https://www.w3.org/TR/css-values-4/#calc-type-checking",
       "level": 3,
       "title": "Type Checking",
-      "number": "11.9"
+      "number": "10.9"
     },
     {
       "id": "calc-internal",
       "href": "https://www.w3.org/TR/css-values-4/#calc-internal",
       "level": 3,
       "title": "Internal Representation",
-      "number": "11.10"
+      "number": "10.10"
     },
     {
       "id": "calc-simplification",
       "href": "https://www.w3.org/TR/css-values-4/#calc-simplification",
       "level": 4,
       "title": "Simplification",
-      "number": "11.10.1"
+      "number": "10.10.1"
     },
     {
       "id": "calc-computed-value",
       "href": "https://www.w3.org/TR/css-values-4/#calc-computed-value",
       "level": 3,
       "title": "Computed Value",
-      "number": "11.11"
+      "number": "10.11"
     },
     {
       "id": "calc-range",
       "href": "https://www.w3.org/TR/css-values-4/#calc-range",
       "level": 3,
       "title": "Range Checking",
-      "number": "11.12"
+      "number": "10.12"
     },
     {
       "id": "calc-serialize",
       "href": "https://www.w3.org/TR/css-values-4/#calc-serialize",
       "level": 3,
       "title": "Serialization",
-      "number": "11.13"
+      "number": "10.13"
     },
     {
       "id": "combine-math",
       "href": "https://www.w3.org/TR/css-values-4/#combine-math",
       "level": 3,
       "title": "Combination of Math Functions",
-      "number": "11.14"
+      "number": "10.14"
     },
     {
       "id": "iana",

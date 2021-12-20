@@ -10,11 +10,13 @@
       "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/Style/CSS/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
@@ -27,7 +29,6 @@
       "escaped-characters",
       "ignore",
       "containing-block-details",
-      "computed-value",
       "the-height-property",
       "style-sheet",
       "user-agent"
@@ -55,15 +56,12 @@
       "valdef-all-unset",
       "at-ruledef-import",
       "used-value",
-      "actual-value",
-      "inherited-value",
-      "shorthand-property"
+      "actual-value"
     ],
     "https://www.w3.org/TR/CSS2/": [
       "value-def-border-width",
       "propdef-border-collapse",
       "propdef-line-height",
-      "propdef-background-position",
       "propdef-border-spacing"
     ],
     "https://www.w3.org/TR/css-syntax/": [
@@ -80,11 +78,9 @@
       "typedef-number-token",
       "typedef-percentage-token",
       "typedef-function-token",
-      "typedef-declaration-value",
-      "typedef-delim-token",
-      "parse-a-component-value",
       "whitespace",
       "typedef-whitespace-token",
+      "typedef-delim-token",
       "simple-block"
     ],
     "https://www.w3.org/TR/css-break-3/": [
@@ -134,14 +130,10 @@
       "discrete"
     ],
     "https://github.com/w3c/csswg-drafts/issues/6700": [],
-    "https://drafts.csswg.org/css-syntax-3/": [
-      "identifier"
-    ],
     "https://infra.spec.whatwg.org/": [
       "ascii-case-insensitive",
       "string-is",
       "string",
-      "strip-leading-and-trailing-ascii-whitespace",
       "list-iterate",
       "string-concatenate"
     ],
@@ -153,30 +145,46 @@
     ],
     "https://www.w3.org/TR/css-variables-1/": [
       "custom-property",
-      "funcdef-var",
-      "substitute-a-var"
+      "funcdef-var"
     ],
-    "https://www.w3.org/TR/css-color-4/": [
+    "https://www.w3.org/TR/css-color-5/": [
       "at-ruledef-profile",
-      "typedef-color",
-      "interpolation",
-      "interpolation-alpha",
-      "funcdef-rgba",
-      "typedef-hex-color",
-      "named-color",
-      "propdef-opacity"
+      "funcdef-hsl"
     ],
     "https://url.spec.whatwg.org/": [
-      "concept-url"
+      "concept-url",
+      "concept-url-parser"
     ],
     "https://html.spec.whatwg.org/": [
       "dynamic-changes-to-base-urls",
       "the-base-element",
-      "dom-history-pushstate"
+      "dom-history-pushstate",
+      "relevant-settings-object",
+      "concept-settings-object-global",
+      "api-base-url",
+      "concept-settings-object-origin"
     ],
     "https://www.w3.org/TR/cssom-1/": [
       "serializing-css-values",
+      "cssstylesheet",
+      "concept-css-style-sheet-stylesheet-base-url",
+      "concept-css-style-sheet-location",
+      "concept-css-style-sheet-origin-clean-flag",
       "resolved-values"
+    ],
+    "https://fetch.spec.whatwg.org/": [
+      "requestdestination",
+      "concept-response",
+      "concept-request",
+      "concept-request-url",
+      "concept-request-destination",
+      "concept-request-mode",
+      "concept-request-origin",
+      "concept-request-credentials-mode",
+      "concept-request-use-url-credentials-flag",
+      "concept-request-referrer",
+      "concept-fetch",
+      "finalize-and-report-timing"
     ],
     "https://www.w3.org/TR/css-grid-2/": [
       "valdef-flex-fr",
@@ -199,9 +207,6 @@
       "propdef-max-width",
       "propdef-min-height"
     ],
-    "https://www.w3.org/TR/css-color-5/": [
-      "funcdef-hsl"
-    ],
     "https://www.w3.org/TR/css-writing-modes-4/": [
       "inline-axis",
       "block-axis",
@@ -209,7 +214,8 @@
       "valdef-writing-mode-vertical-rl",
       "valdef-writing-mode-vertical-lr",
       "propdef-text-orientation",
-      "valdef-text-orientation-upright"
+      "valdef-text-orientation-upright",
+      "writing-mode"
     ],
     "https://www.w3.org/TR/css3-fonts/": [
       "first-available-font"
@@ -244,30 +250,18 @@
       "typedef-image",
       "interpolation"
     ],
-    "https://drafts.csswg.org/css-gcpm-3/2009-06-10.html": [
-      "image-resolution0"
+    "https://www.w3.org/TR/css-images-4/": [
+      "propdef-image-resolution"
+    ],
+    "https://www.w3.org/TR/css-color-4/": [
+      "typedef-color",
+      "interpolation",
+      "interpolation-alpha",
+      "funcdef-rgba",
+      "propdef-opacity"
     ],
     "https://www.w3.org/TR/css-transforms-1/": [
       "propdef-transform-origin"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "value-def-disc",
-      "value-def-circle",
-      "value-def-square"
-    ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-attribute",
-      "concept-element",
-      "concept-document-quirks"
-    ],
-    "https://www.w3.org/TR/selectors-4/": [
-      "typedef-wq-name",
-      "attribute-selector",
-      "originating-element"
-    ],
-    "https://drafts.csswg.org/css-variables-1/": [
-      "guaranteed-invalid-value",
-      "invalid-at-computed-value-time"
     ],
     "https://drafts.css-houdini.org/css-typed-om-1/": [
       "cssnumericvalue-type",
@@ -287,6 +281,9 @@
     "https://lists.w3.org/Archives/Member/w3c-css-wg/2016AprJun/0239.html": [],
     "https://www.iana.org/assignments/about-uri-tokens/about-uri-tokens.xhtml": [],
     "https://www.w3.org/TR/css3-values/": [],
+    "https://dom.spec.whatwg.org/": [
+      "concept-document-quirks"
+    ],
     "https://www.w3.org/TR/css-position-3/": [
       "propdef-bottom",
       "propdef-left",
@@ -298,7 +295,17 @@
       "funcdef-clip-rect"
     ],
     "https://www.w3.org/TR/css3-conditional/": [
-      "at-ruledef-supports"
+      "at-ruledef-supports",
+      "dom-css-supports-conditiontext"
+    ],
+    "https://www.w3.org/TR/2021/WD-css-values-4-20211016/": [],
+    "https://github.com/w3c/csswg-drafts/issues/6873": [],
+    "https://github.com/w3c/csswg-drafts/issues/562": [],
+    "https://github.com/w3c/csswg-drafts/issues/3462": [],
+    "https://github.com/w3c/csswg-drafts/issues/4723": [],
+    "https://www.w3.org/TR/css-values-4/": [
+      "funcdef-toggle",
+      "funcdef-attr"
     ],
     "https://www.w3.org/TR/2021/WD-css-values-4-20210930/": [],
     "https://github.com/w3c/csswg-drafts/issues/6701": [],
@@ -316,7 +323,6 @@
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://www.w3.org/TR/css-conditional-3/": [],
-    "https://www.w3.org/TR/css-gcpm-3/": [],
     "https://www.w3.org/TR/css-typed-om-1/": [],
     "https://www.w3.org/TR/css-fonts-3/": [],
     "https://www.w3.org/TR/css-cascade-3/": [],

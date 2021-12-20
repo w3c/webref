@@ -15,7 +15,7 @@
         "title": "Event Timing API",
         "url": "https://wicg.github.io/event-timing/"
       },
-      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n};"
+      "fragment": "[Exposed=Window]\npartial interface Performance {\n    [SameObject] readonly attribute EventCounts eventCounts;\n    [SameObject] readonly attribute InteractionCounts interactionCounts;\n};"
     },
     {
       "spec": {

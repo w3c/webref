@@ -4647,10 +4647,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "processresponseendofbody",
-      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#processresponseendofbody",
+      "id": "processresponseconsumebody",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#processresponseconsumebody",
       "linkingText": [
-        "processResponseEndOfBody"
+        "processResponseConsumeBody"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -21502,10 +21502,86 @@
       "definedIn": "prose"
     },
     {
+      "id": "core-attribute",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#core-attribute",
+      "linkingText": [
+        "core attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "presentation-attribute",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#presentation-attribute",
+      "linkingText": [
+        "presentation attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "filter-value-list",
       "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#filter-value-list",
       "linkingText": [
         "<filter-value-list>"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filter-primitive-attribute",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#filter-primitive-attribute",
+      "linkingText": [
+        "filter primitive attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "dependencies",
+        "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#dependencies",
+        "title": "Dependencies",
+        "number": "2.1.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "filter-property",
+      "href": "https://html.spec.whatwg.org/multipage/infrastructure.html#filter-property",
+      "linkingText": [
+        "filter property"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -60610,6 +60686,44 @@
       "definedIn": "pre"
     },
     {
+      "id": "canvasfilterinput",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfilterinput",
+      "linkingText": [
+        "CanvasFilterInput"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "canvasfilter",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasfilter",
+      "linkingText": [
+        "CanvasFilter"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "2dcontext",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#2dcontext",
+        "title": "The 2D rendering context",
+        "number": "4.12.5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "canvasrect",
       "href": "https://html.spec.whatwg.org/multipage/canvas.html#canvasrect",
       "linkingText": [
@@ -65118,6 +65232,198 @@
       "type": "attribute",
       "for": [
         "CanvasFilters"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-canvas-current-filter",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-current-filter",
+      "linkingText": [
+        "current filter"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "concept-concept-canvasfilter-xml-filter-list",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#concept-concept-canvasfilter-xml-filter-list",
+      "linkingText": [
+        "XML filter list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "supported-filter-names",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#supported-filter-names",
+      "linkingText": [
+        "supported filter names"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xml-element-data-for-filters",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#xml-element-data-for-filters",
+      "linkingText": [
+        "XML element data for filters"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xml-filter-name",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#xml-filter-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xml-filter-attributes",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#xml-filter-attributes",
+      "linkingText": [
+        "attributes"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "xml-filter-children",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#xml-filter-children",
+      "linkingText": [
+        "children"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "idl-type-for-a-canvas-filter-attribute",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#idl-type-for-a-canvas-filter-attribute",
+      "linkingText": [
+        "IDL type for a canvas filter attribute"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-xml-value",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#generate-xml-value",
+      "linkingText": [
+        "generate an XML value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "filters",
+        "href": "https://html.spec.whatwg.org/multipage/canvas.html#filters",
+        "title": "Filters",
+        "number": "4.12.5.1.19"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-canvasfilter",
+      "href": "https://html.spec.whatwg.org/multipage/canvas.html#dom-canvasfilter",
+      "linkingText": [
+        "new CanvasFilter(filters)"
+      ],
+      "localLinkingText": [],
+      "type": "constructor",
+      "for": [
+        "CanvasFilter"
       ],
       "access": "public",
       "informative": false,

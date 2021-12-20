@@ -3,20 +3,25 @@
 // (https://github.com/w3c/webref)
 // Source: CSS Custom Highlight API Module Level 1 (https://www.w3.org/TR/css-highlight-api-1/)
 
+enum HighlightType {
+  "highlight",
+  "spelling-error",
+  "grammar-error"
+};
+
 [Exposed=Window]
 interface Highlight {
-  constructor(CSSOMString name, AbstractRange... initialRanges);
+  constructor(AbstractRange... initialRanges);
   setlike<AbstractRange>;
-  attribute double priority;
-  readonly attribute CSSOMString name;
+  attribute long priority;
+  attribute HighlightType type;
 };
 
 partial namespace CSS {
-  readonly attribute HighlightsRegister highlights;
+  readonly attribute HighlightRegistry highlights;
 };
 
 [Exposed=Window]
-interface HighlightsRegister {
-  setlike<Highlight>;
-  HighlightsRegister add(Highlight value);
+interface HighlightRegistry {
+  maplike<DOMString, Highlight>;
 };
