@@ -49,12 +49,6 @@ partial interface Navigator {
   readonly attribute Bluetooth bluetooth;
 };
 
-// Source: Contact Picker API (https://wicg.github.io/contact-api/spec/)
-[Exposed=Window]
-partial interface Navigator {
-  [SecureContext, SameObject] readonly attribute ContactsManager contacts;
-};
-
 // Source: Get Installed Related Apps API (https://wicg.github.io/get-installed-related-apps/spec/)
 [Exposed=Window]
 partial interface Navigator {
