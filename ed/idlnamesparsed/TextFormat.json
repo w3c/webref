@@ -1,0 +1,15 @@
+{
+  "name": "TextFormat",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "EditContext API",
+      "url": "https://www.w3.org/TR/edit-context/"
+    },
+    "fragment": "[Exposed=Window]\ninterface TextFormat {\n    constructor(optional TextFormatInit options = {});\n    attribute unsigned long rangeStart;\n    attribute unsigned long rangeEnd;\n    attribute DOMString textColor;\n    attribute DOMString backgroundColor;\n    attribute DOMString underlineStyle;\n    attribute DOMString underlineThickness;\n    attribute DOMString underlineColor;\n};",
+    "href": "https://w3c.github.io/edit-context/#dom-textformat"
+  },
+  "extended": [],
+  "inheritance": null,
+  "includes": []
+}

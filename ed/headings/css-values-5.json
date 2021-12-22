@@ -1,0 +1,182 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 5",
+    "url": "https://drafts.csswg.org/css-values-5/"
+  },
+  "headings": [
+    {
+      "id": "title",
+      "href": "https://drafts.csswg.org/css-values-5/#title",
+      "level": 1,
+      "title": "CSS Values and Units Module Level 5"
+    },
+    {
+      "id": "abstract",
+      "href": "https://drafts.csswg.org/css-values-5/#abstract",
+      "level": 2,
+      "title": "Abstract"
+    },
+    {
+      "id": "sotd",
+      "href": "https://drafts.csswg.org/css-values-5/#sotd",
+      "level": 2,
+      "title": "Status of this document"
+    },
+    {
+      "id": "toc",
+      "href": "https://drafts.csswg.org/css-values-5/#toc",
+      "level": 2,
+      "title": "Table of Contents"
+    },
+    {
+      "id": "intro",
+      "href": "https://drafts.csswg.org/css-values-5/#intro",
+      "level": 2,
+      "title": "Introduction",
+      "number": "1"
+    },
+    {
+      "id": "placement",
+      "href": "https://drafts.csswg.org/css-values-5/#placement",
+      "level": 3,
+      "title": "Module Interactions",
+      "number": "1.1"
+    },
+    {
+      "id": "toggle-notation",
+      "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
+      "level": 3,
+      "title": "Toggling Between Values: toggle()",
+      "number": "1.2"
+    },
+    {
+      "id": "attr-notation",
+      "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
+      "level": 2,
+      "title": "Attribute References: the attr() function",
+      "number": "2"
+    },
+    {
+      "id": "attr-types",
+      "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+      "level": 3,
+      "title": "attr() Types",
+      "number": "2.1"
+    },
+    {
+      "id": "attr-substitution",
+      "href": "https://drafts.csswg.org/css-values-5/#attr-substitution",
+      "level": 3,
+      "title": "attr() Substitution",
+      "number": "2.2"
+    },
+    {
+      "id": "acknowledgments",
+      "href": "https://drafts.csswg.org/css-values-5/#acknowledgments",
+      "level": 2,
+      "title": "Acknowledgments"
+    },
+    {
+      "id": "changes",
+      "href": "https://drafts.csswg.org/css-values-5/#changes",
+      "level": 2,
+      "title": "Changes"
+    },
+    {
+      "id": "changes-recent",
+      "href": "https://drafts.csswg.org/css-values-5/#changes-recent",
+      "level": 3,
+      "title": "Recent Changes"
+    },
+    {
+      "id": "additions-L3",
+      "href": "https://drafts.csswg.org/css-values-5/#additions-L3",
+      "level": 3,
+      "title": "Additions Since Level 4"
+    },
+    {
+      "id": "sec-pri",
+      "href": "https://drafts.csswg.org/css-values-5/#sec-pri",
+      "level": 2,
+      "title": "Security and Privacy Considerations"
+    },
+    {
+      "id": "w3c-conformance",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-conformance",
+      "level": 2,
+      "title": "Conformance"
+    },
+    {
+      "id": "w3c-conventions",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-conventions",
+      "level": 3,
+      "title": "Document conventions"
+    },
+    {
+      "id": "w3c-conformance-classes",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-conformance-classes",
+      "level": 3,
+      "title": "Conformance classes"
+    },
+    {
+      "id": "w3c-partial",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-partial",
+      "level": 3,
+      "title": "Partial implementations"
+    },
+    {
+      "id": "w3c-conform-future-proofing",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-conform-future-proofing",
+      "level": 4,
+      "title": "Implementations of Unstable and Proprietary Features"
+    },
+    {
+      "id": "w3c-testing",
+      "href": "https://drafts.csswg.org/css-values-5/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
+    },
+    {
+      "id": "index",
+      "href": "https://drafts.csswg.org/css-values-5/#index",
+      "level": 2,
+      "title": "Index"
+    },
+    {
+      "id": "index-defined-here",
+      "href": "https://drafts.csswg.org/css-values-5/#index-defined-here",
+      "level": 3,
+      "title": "Terms defined by this specification"
+    },
+    {
+      "id": "index-defined-elsewhere",
+      "href": "https://drafts.csswg.org/css-values-5/#index-defined-elsewhere",
+      "level": 3,
+      "title": "Terms defined by reference"
+    },
+    {
+      "id": "references",
+      "href": "https://drafts.csswg.org/css-values-5/#references",
+      "level": 2,
+      "title": "References"
+    },
+    {
+      "id": "normative",
+      "href": "https://drafts.csswg.org/css-values-5/#normative",
+      "level": 3,
+      "title": "Normative References"
+    },
+    {
+      "id": "informative",
+      "href": "https://drafts.csswg.org/css-values-5/#informative",
+      "level": 3,
+      "title": "Informative References"
+    },
+    {
+      "id": "issues-index",
+      "href": "https://drafts.csswg.org/css-values-5/#issues-index",
+      "level": 2,
+      "title": "Issues Index"
+    }
+  ]
+}

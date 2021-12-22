@@ -39,6 +39,12 @@ partial interface Navigator {
 // Source: Badging API (https://w3c.github.io/badging/)
 Navigator includes NavigatorBadge;
 
+// Source: Contact Picker API (https://w3c.github.io/contact-api/spec/)
+[Exposed=Window]
+partial interface Navigator {
+  [SecureContext, SameObject] readonly attribute ContactsManager contacts;
+};
+
 // Source: Web Locks API (https://w3c.github.io/web-locks/)
 Navigator includes NavigatorLocks;
 
@@ -73,9 +79,6 @@ partial interface Navigator {
 
 // Source: Local Font Access API (https://wicg.github.io/local-font-access/)
 Navigator includes NavigatorFonts;
-
-// Source: Network Information API (https://wicg.github.io/netinfo/)
-Navigator includes NavigatorNetworkInformation;
 
 // Source: Web Serial API (https://wicg.github.io/serial/)
 [Exposed=Window, SecureContext]
@@ -222,12 +225,6 @@ Navigator includes NavigatorAutomationInformation;
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 Navigator includes NavigatorGPU;
-
-// Source: Web MIDI API (https://www.w3.org/TR/webmidi/)
-partial interface Navigator {
-  [SecureContext]
-  Promise <MIDIAccess> requestMIDIAccess(optional MIDIOptions options = {});
-};
 
 // Source: Web Neural Network API (https://www.w3.org/TR/webnn/)
 Navigator includes NavigatorML;
