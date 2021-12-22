@@ -68,6 +68,13 @@
     },
     {
       "spec": {
+        "title": "Network Information API",
+        "url": "https://wicg.github.io/netinfo/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorNetworkInformation;"
+    },
+    {
+      "spec": {
         "title": "Web Serial API",
         "url": "https://wicg.github.io/serial/"
       },
@@ -255,6 +262,21 @@
         },
         "fragment": "[SecureContext]\ninterface mixin NavigatorFonts {\n  [SameObject] readonly attribute FontManager fonts;\n};",
         "href": "https://wicg.github.io/local-font-access/#navigatorfonts"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorNetworkInformation",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "Network Information API",
+          "url": "https://wicg.github.io/netinfo/"
+        },
+        "fragment": "interface mixin NavigatorNetworkInformation {\n  [SameObject] readonly attribute NetworkInformation connection;\n};",
+        "href": "https://wicg.github.io/netinfo/#dom-navigatornetworkinformation"
       },
       "extended": [],
       "inheritance": null,

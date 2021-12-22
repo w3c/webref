@@ -26,6 +26,9 @@ WorkerNavigator includes NavigatorLocks;
 // Source: Local Font Access API (https://wicg.github.io/local-font-access/)
 WorkerNavigator includes NavigatorFonts;
 
+// Source: Network Information API (https://wicg.github.io/netinfo/)
+WorkerNavigator includes NavigatorNetworkInformation;
+
 // Source: Web Serial API (https://wicg.github.io/serial/)
 [Exposed=DedicatedWorker, SecureContext]
 partial interface WorkerNavigator {
