@@ -10541,7 +10541,7 @@
         "extAttrs": []
       },
       "GPUUncapturedErrorEvent": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    [SameObject] readonly attribute GPUError error;\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUUncapturedErrorEvent : Event {\n    constructor(\n        DOMString type,\n        GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict\n    );\n    readonly attribute GPUError error;\n};",
         "type": "interface",
         "name": "GPUUncapturedErrorEvent",
         "inheritance": "Event",
@@ -10595,14 +10595,7 @@
               "union": false,
               "idlType": "GPUError"
             },
-            "extAttrs": [
-              {
-                "type": "extended-attribute",
-                "name": "SameObject",
-                "rhs": null,
-                "arguments": []
-              }
-            ],
+            "extAttrs": [],
             "special": "",
             "readonly": true
           }

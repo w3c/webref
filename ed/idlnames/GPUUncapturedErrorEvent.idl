@@ -5,5 +5,5 @@ interface GPUUncapturedErrorEvent : Event {
         DOMString type,
         GPUUncapturedErrorEventInit gpuUncapturedErrorEventInitDict
     );
-    [SameObject] readonly attribute GPUError error;
+    readonly attribute GPUError error;
 };
