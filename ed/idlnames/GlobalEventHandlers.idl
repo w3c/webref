@@ -70,6 +70,14 @@ interface mixin GlobalEventHandlers {
   attribute EventHandler onwheel;
 };
 
+// Source: CSS Animations Level 1 (https://www.w3.org/TR/css-animations-1/)
+partial interface mixin GlobalEventHandlers {
+  attribute EventHandler onanimationstart;
+  attribute EventHandler onanimationiteration;
+  attribute EventHandler onanimationend;
+  attribute EventHandler onanimationcancel;
+};
+
 // Source: CSS Transitions (https://www.w3.org/TR/css-transitions-1/)
 partial interface mixin GlobalEventHandlers {
   attribute EventHandler ontransitionrun;
