@@ -29,8 +29,9 @@
       "block-level",
       "in-flow",
       "block-formatting-context",
-      "inline-box",
       "inline-level-box",
+      "containing-block",
+      "inline-box",
       "propdef-display",
       "valdef-display-inline",
       "valdef-display-list-item"
@@ -64,6 +65,11 @@
       "propdef-direction",
       "propdef-unicode-bidi"
     ],
+    "https://drafts.csswg.org/css2/": [
+      "propdef-line-height",
+      "selectordef-after"
+    ],
+    "https://github.com/w3c/csswg-drafts/issues/2282": [],
     "https://drafts.csswg.org/css-cascade-5/": [
       "inheritance",
       "inherited-property",
@@ -79,9 +85,14 @@
     "https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter": [],
     "https://drafts.csswg.org/css-text-3/": [
       "typographic-character-unit",
+      "content-language",
       "unicode-general-category",
       "word-separator",
       "propdef-text-align"
+    ],
+    "https://www.w3.org/TR/css-text-3/": [
+      "characters",
+      "character-properties"
     ],
     "https://github.com/tabatkins/bikeshed/issues/2202": [],
     "https://drafts.csswg.org/css-lists-3/": [
@@ -247,6 +258,9 @@
       "line-decoration",
       "emphasis-marks"
     ],
+    "https://www.w3.org/TR/CSS2/z": [
+      "painting-order"
+    ],
     "https://wpt.fyi/results/css/css-pseudo/selection-paint-image.html": [],
     "https://wpt.live/css/css-pseudo/selection-paint-image.html": [],
     "https://github.com/web-platform-tests/wpt/blob/master/css/css-pseudo/selection-paint-image.html": [],
@@ -255,9 +269,6 @@
     "https://drafts.csswg.org/css-content-3/": [
       "propdef-content",
       "valdef-content-none"
-    ],
-    "https://drafts.csswg.org/css2/": [
-      "selectordef-after"
     ],
     "https://developer.mozilla.org/en-US/docs/Web/CSS/::marker": [],
     "https://github.com/w3c/csswg-drafts/issues/4506": [],
@@ -324,7 +335,6 @@
     "https://www.w3.org/TR/css-ruby-1/": [],
     "https://www.w3.org/TR/css-syntax-3/": [],
     "https://www.w3.org/TR/css-tables-3/": [],
-    "https://www.w3.org/TR/css-text-3/": [],
     "https://www.w3.org/TR/css-text-decor-4/": [],
     "https://www.w3.org/TR/css-ui-4/": [],
     "https://www.w3.org/TR/css-variables-1/": [],
