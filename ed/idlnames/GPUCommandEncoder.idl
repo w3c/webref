@@ -31,10 +31,6 @@ interface GPUCommandEncoder {
         optional GPUSize64 offset = 0,
         optional GPUSize64 size);
 
-    undefined pushDebugGroup(USVString groupLabel);
-    undefined popDebugGroup();
-    undefined insertDebugMarker(USVString markerLabel);
-
     undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);
 
     undefined resolveQuerySet(
@@ -49,3 +45,9 @@ interface GPUCommandEncoder {
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
 GPUCommandEncoder includes GPUObjectBase;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPUCommandEncoder includes GPUCommandsMixin;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPUCommandEncoder includes GPUDebugCommandsMixin;

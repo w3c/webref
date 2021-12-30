@@ -6415,8 +6415,17 @@
         "extAttrs": [],
         "partial": false
       },
+      "GPUCommandsMixin": {
+        "fragment": "interface mixin GPUCommandsMixin {\n};",
+        "type": "interface mixin",
+        "name": "GPUCommandsMixin",
+        "inheritance": null,
+        "members": [],
+        "extAttrs": [],
+        "partial": false
+      },
       "GPUCommandEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
         "type": "interface",
         "name": "GPUCommandEncoder",
         "inheritance": null,
@@ -6836,85 +6845,6 @@
                 },
                 "default": null,
                 "optional": true,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "pushDebugGroup",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "groupLabel",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
-                "variadic": false
-              }
-            ],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "popDebugGroup",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [],
-            "extAttrs": [],
-            "special": ""
-          },
-          {
-            "type": "operation",
-            "name": "insertDebugMarker",
-            "idlType": {
-              "type": "return-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "undefined"
-            },
-            "arguments": [
-              {
-                "type": "argument",
-                "name": "markerLabel",
-                "extAttrs": [],
-                "idlType": {
-                  "type": "argument-type",
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "USVString"
-                },
-                "default": null,
-                "optional": false,
                 "variadic": false
               }
             ],
@@ -7428,7 +7358,7 @@
         "partial": false
       },
       "GPUProgrammablePassEncoder": {
-        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "fragment": "interface mixin GPUProgrammablePassEncoder {\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      optional sequence<GPUBufferDynamicOffset> dynamicOffsets = []);\n\n    undefined setBindGroup(GPUIndex32 index, GPUBindGroup bindGroup,\n                      Uint32Array dynamicOffsetsData,\n                      GPUSize64 dynamicOffsetsDataStart,\n                      GPUSize32 dynamicOffsetsDataLength);\n};",
         "type": "interface mixin",
         "name": "GPUProgrammablePassEncoder",
         "inheritance": null,
@@ -7604,7 +7534,17 @@
             ],
             "extAttrs": [],
             "special": ""
-          },
+          }
+        ],
+        "extAttrs": [],
+        "partial": false
+      },
+      "GPUDebugCommandsMixin": {
+        "fragment": "interface mixin GPUDebugCommandsMixin {\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "type": "interface mixin",
+        "name": "GPUDebugCommandsMixin",
+        "inheritance": null,
+        "members": [
           {
             "type": "operation",
             "name": "pushDebugGroup",
@@ -11573,6 +11513,20 @@
           "extAttrs": [],
           "target": "GPUCommandEncoder",
           "includes": "GPUObjectBase"
+        },
+        {
+          "fragment": "GPUCommandEncoder includes GPUCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPUCommandEncoder",
+          "includes": "GPUCommandsMixin"
+        },
+        {
+          "fragment": "GPUCommandEncoder includes GPUDebugCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPUCommandEncoder",
+          "includes": "GPUDebugCommandsMixin"
         }
       ],
       "GPUComputePassEncoder": [
@@ -11582,6 +11536,20 @@
           "extAttrs": [],
           "target": "GPUComputePassEncoder",
           "includes": "GPUObjectBase"
+        },
+        {
+          "fragment": "GPUComputePassEncoder includes GPUCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPUComputePassEncoder",
+          "includes": "GPUCommandsMixin"
+        },
+        {
+          "fragment": "GPUComputePassEncoder includes GPUDebugCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPUComputePassEncoder",
+          "includes": "GPUDebugCommandsMixin"
         },
         {
           "fragment": "GPUComputePassEncoder includes GPUProgrammablePassEncoder;",
@@ -11598,6 +11566,20 @@
           "extAttrs": [],
           "target": "GPURenderPassEncoder",
           "includes": "GPUObjectBase"
+        },
+        {
+          "fragment": "GPURenderPassEncoder includes GPUCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPURenderPassEncoder",
+          "includes": "GPUCommandsMixin"
+        },
+        {
+          "fragment": "GPURenderPassEncoder includes GPUDebugCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPURenderPassEncoder",
+          "includes": "GPUDebugCommandsMixin"
         },
         {
           "fragment": "GPURenderPassEncoder includes GPUProgrammablePassEncoder;",
@@ -11630,6 +11612,20 @@
           "extAttrs": [],
           "target": "GPURenderBundleEncoder",
           "includes": "GPUObjectBase"
+        },
+        {
+          "fragment": "GPURenderBundleEncoder includes GPUCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPURenderBundleEncoder",
+          "includes": "GPUCommandsMixin"
+        },
+        {
+          "fragment": "GPURenderBundleEncoder includes GPUDebugCommandsMixin;",
+          "type": "includes",
+          "extAttrs": [],
+          "target": "GPURenderBundleEncoder",
+          "includes": "GPUDebugCommandsMixin"
         },
         {
           "fragment": "GPURenderBundleEncoder includes GPUProgrammablePassEncoder;",
@@ -12031,6 +12027,7 @@
       "GPUCommandBufferDescriptor": [
         "GPUObjectDescriptorBase"
       ],
+      "GPUCommandsMixin": [],
       "GPUCommandEncoder": [
         "GPURenderPassEncoder",
         "GPURenderPassDescriptor",
@@ -12045,7 +12042,9 @@
         "GPUSize32",
         "GPUCommandBuffer",
         "GPUCommandBufferDescriptor",
-        "GPUObjectBase"
+        "GPUObjectBase",
+        "GPUCommandsMixin",
+        "GPUDebugCommandsMixin"
       ],
       "GPUCommandEncoderDescriptor": [
         "GPUObjectDescriptorBase"
@@ -12082,12 +12081,15 @@
         "GPUSize64",
         "GPUSize32"
       ],
+      "GPUDebugCommandsMixin": [],
       "GPUComputePassEncoder": [
         "GPUComputePipeline",
         "GPUSize32",
         "GPUBuffer",
         "GPUSize64",
         "GPUObjectBase",
+        "GPUCommandsMixin",
+        "GPUDebugCommandsMixin",
         "GPUProgrammablePassEncoder"
       ],
       "GPUComputePassTimestampWrite": [
@@ -12115,6 +12117,8 @@
         "GPUSize32",
         "GPURenderBundle",
         "GPUObjectBase",
+        "GPUCommandsMixin",
+        "GPUDebugCommandsMixin",
         "GPUProgrammablePassEncoder",
         "GPURenderEncoderBase"
       ],
@@ -12157,6 +12161,8 @@
         "GPURenderBundle",
         "GPURenderBundleDescriptor",
         "GPUObjectBase",
+        "GPUCommandsMixin",
+        "GPUDebugCommandsMixin",
         "GPUProgrammablePassEncoder",
         "GPURenderEncoderBase"
       ],
