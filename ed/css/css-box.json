@@ -80,12 +80,12 @@
     },
     "margin-trim": {
       "name": "margin-trim",
-      "value": "none | in-flow | all",
+      "value": "none | block | inline | [ block-start || inline-start || block-end || inline-end ]",
       "initial": "none",
-      "appliesTo": "block containers, multi-column containers",
+      "appliesTo": "block containers, multi-column containers, flex containers, grid containers",
       "inherited": "no",
       "percentages": "N/A",
-      "computedValue": "keyword as specified",
+      "computedValue": "a set of zero to four keywords indicating which sides to trim",
       "canonicalOrder": "per grammar",
       "animationType": "discrete",
       "styleDeclaration": [

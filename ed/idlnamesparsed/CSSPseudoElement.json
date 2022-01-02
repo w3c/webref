@@ -6,7 +6,7 @@
       "title": "CSS Pseudo-Elements Module Level 4",
       "url": "https://www.w3.org/TR/css-pseudo-4/"
     },
-    "fragment": "[Exposed=Window]\ninterface CSSPseudoElement : EventTarget {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n};",
+    "fragment": "[Exposed=Window]\ninterface CSSPseudoElement : EventTarget {\n    readonly attribute CSSOMString type;\n    readonly attribute Element element;\n    readonly attribute (Element or CSSPseudoElement) parent;\n    CSSPseudoElement? pseudo(CSSOMString type);\n};",
     "href": "https://drafts.csswg.org/css-pseudo-4/#csspseudoelement"
   },
   "extended": [
