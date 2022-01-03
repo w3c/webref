@@ -1,0 +1,1761 @@
+{
+  "spec": {
+    "title": "EditContext API",
+    "url": "https://www.w3.org/TR/edit-context/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-text-input-method",
+      "href": "https://www.w3.org/TR/edit-context/#dfn-text-input-method",
+      "linkingText": [
+        "Text Input Method"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "background",
+        "href": "https://www.w3.org/TR/edit-context/#background",
+        "title": "Background and Motivation",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-edit-context",
+      "href": "https://www.w3.org/TR/edit-context/#dfn-text-edit-context",
+      "linkingText": [
+        "Text Edit Context"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "background",
+        "href": "https://www.w3.org/TR/edit-context/#background",
+        "title": "Background and Motivation",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-text-input-service",
+      "href": "https://www.w3.org/TR/edit-context/#dfn-text-input-service",
+      "linkingText": [
+        "Text Input Service"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "background",
+        "href": "https://www.w3.org/TR/edit-context/#background",
+        "title": "Background and Motivation",
+        "number": "1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-user-agent",
+      "href": "https://www.w3.org/TR/edit-context/#dfn-user-agent",
+      "linkingText": [
+        "user agent"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "conformance",
+        "href": "https://www.w3.org/TR/edit-context/#conformance",
+        "title": "Conformance",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-element",
+      "href": "https://www.w3.org/TR/edit-context/#dom-element",
+      "linkingText": [
+        "Element"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-element-interface",
+        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
+        "title": "Extensions to the Element interface",
+        "number": "3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-element-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#dom-element-editcontext",
+      "linkingText": [
+        "editContext"
+      ],
+      "localLinkingText": [
+        "Element.editContext"
+      ],
+      "type": "attribute",
+      "for": [
+        "Element"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "extensions-to-the-element-interface",
+        "href": "https://www.w3.org/TR/edit-context/#extensions-to-the-element-interface",
+        "title": "Extensions to the Element interface",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-editcontext",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext",
+      "linkingText": [
+        "EditContext"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-editcontextinit",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontextinit",
+      "linkingText": [
+        "EditContextInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontextinit-text",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontextinit-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EditContextInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontextinit-selectionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontextinit-selectionstart",
+      "linkingText": [
+        "selectionStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EditContextInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontextinit-selectionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontextinit-selectionend",
+      "linkingText": [
+        "selectionEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "EditContextInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-constructor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)"
+      ],
+      "localLinkingText": [
+        "EditContext.constructor",
+        "EditContext.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-editcontext-text",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [
+        "EditContext.text"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-selectionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-selectionstart",
+      "linkingText": [
+        "selectionStart"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-selectionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-selectionend",
+      "linkingText": [
+        "selectionEnd"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-compositionrangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-compositionrangestart",
+      "linkingText": [
+        "compositionRangeStart"
+      ],
+      "localLinkingText": [
+        "EditContext.compositionRangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-compositionrangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-compositionrangeend",
+      "linkingText": [
+        "compositionRangeEnd"
+      ],
+      "localLinkingText": [
+        "EditContext.compositionRangeEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-isincomposition",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-isincomposition",
+      "linkingText": [
+        "isInComposition"
+      ],
+      "localLinkingText": [
+        "EditContext.isInComposition"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-controlbound",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-controlbound",
+      "linkingText": [
+        "controlBound"
+      ],
+      "localLinkingText": [
+        "EditContext.controlBound"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-selectionbound",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-selectionbound",
+      "linkingText": [
+        "selectionBound"
+      ],
+      "localLinkingText": [
+        "EditContext.selectionBound"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-characterboundsrangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-characterboundsrangestart",
+      "linkingText": [
+        "characterBoundsRangeStart"
+      ],
+      "localLinkingText": [
+        "EditContext.characterBoundsRangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-characterbounds",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-characterbounds",
+      "linkingText": [
+        "characterBounds()"
+      ],
+      "localLinkingText": [
+        "EditContext.characterBounds",
+        "EditContext.characterBounds()",
+        "characterBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-updateselection",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-updateselection",
+      "linkingText": [
+        "updateSelection()",
+        "updateSelection(start, end)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateSelection",
+        "EditContext.updateSelection()",
+        "updateSelection"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-updateselectionbound",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-updateselectionbound",
+      "linkingText": [
+        "updateSelectionBound()",
+        "updateSelectionBound(selectionBound)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateSelectionBound",
+        "EditContext.updateSelectionBound()",
+        "updateSelectionBound"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-updatecontrolbound",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-updatecontrolbound",
+      "linkingText": [
+        "updateControlBound()",
+        "updateControlBound(controlBound)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateControlBound",
+        "EditContext.updateControlBound()",
+        "updateControlBound"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-updatecharacterbounds",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-updatecharacterbounds",
+      "linkingText": [
+        "updateCharacterBounds()",
+        "updateCharacterBounds(rangeStart, characterBounds)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateCharacterBounds",
+        "EditContext.updateCharacterBounds()",
+        "updateCharacterBounds"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-updatetext",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-updatetext",
+      "linkingText": [
+        "updateText()",
+        "updateText(rangeStart, rangeEnd, text)"
+      ],
+      "localLinkingText": [
+        "EditContext.updateText",
+        "EditContext.updateText()",
+        "updateText"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-attachedelements",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-attachedelements",
+      "linkingText": [
+        "attachedElements()"
+      ],
+      "localLinkingText": [
+        "EditContext.attachedElements",
+        "EditContext.attachedElements()",
+        "attachedElements"
+      ],
+      "type": "method",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-ontextupdate",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-ontextupdate",
+      "linkingText": [
+        "ontextupdate"
+      ],
+      "localLinkingText": [
+        "EditContext.ontextupdate"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-oncharacterboundsupdate",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-oncharacterboundsupdate",
+      "linkingText": [
+        "oncharacterboundsupdate"
+      ],
+      "localLinkingText": [
+        "EditContext.oncharacterboundsupdate"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-ontextformatupdate",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-ontextformatupdate",
+      "linkingText": [
+        "ontextformatupdate"
+      ],
+      "localLinkingText": [
+        "EditContext.ontextformatupdate"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-oncompositionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-oncompositionstart",
+      "linkingText": [
+        "oncompositionstart"
+      ],
+      "localLinkingText": [
+        "EditContext.oncompositionstart"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-editcontext-oncompositionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-editcontext-oncompositionend",
+      "linkingText": [
+        "oncompositionend"
+      ],
+      "localLinkingText": [
+        "EditContext.oncompositionend"
+      ],
+      "type": "attribute",
+      "for": [
+        "EditContext"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-editcontext-interface",
+        "href": "https://www.w3.org/TR/edit-context/#the-editcontext-interface",
+        "title": "The EditContext Interface",
+        "number": "4"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-textupdateevent",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent",
+      "linkingText": [
+        "TextUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-textupdateeventinit",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit",
+      "linkingText": [
+        "TextUpdateEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-updaterangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-updaterangestart",
+      "linkingText": [
+        "updateRangeStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-updaterangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-updaterangeend",
+      "linkingText": [
+        "updateRangeEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-text",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-selectionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-selectionstart",
+      "linkingText": [
+        "selectionStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-selectionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-selectionend",
+      "linkingText": [
+        "selectionEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-compositionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-compositionstart",
+      "linkingText": [
+        "compositionStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateeventinit-compositionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateeventinit-compositionend",
+      "linkingText": [
+        "compositionEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-constructor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.constructor",
+        "TextUpdateEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-updaterangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-updaterangestart",
+      "linkingText": [
+        "updateRangeStart"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.updateRangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-updaterangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-updaterangeend",
+      "linkingText": [
+        "updateRangeEnd"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.updateRangeEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-text",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-text",
+      "linkingText": [
+        "text"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.text"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-selectionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionstart",
+      "linkingText": [
+        "selectionStart"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.selectionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-selectionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-selectionend",
+      "linkingText": [
+        "selectionEnd"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.selectionEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-compositionstart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-compositionstart",
+      "linkingText": [
+        "compositionStart"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.compositionStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textupdateevent-compositionend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textupdateevent-compositionend",
+      "linkingText": [
+        "compositionEnd"
+      ],
+      "localLinkingText": [
+        "TextUpdateEvent.compositionEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textupdateevent",
+        "title": "TextUpdateEvent",
+        "number": "5.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateevent",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatupdateevent",
+      "linkingText": [
+        "TextFormatUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-textformatinit",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit",
+      "linkingText": [
+        "TextFormatInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-rangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-rangestart",
+      "linkingText": [
+        "rangeStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-rangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-rangeend",
+      "linkingText": [
+        "rangeEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-textcolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-textcolor",
+      "linkingText": [
+        "textColor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-backgroundcolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-backgroundcolor",
+      "linkingText": [
+        "backgroundColor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-underlinestyle",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-underlinestyle",
+      "linkingText": [
+        "underlineStyle"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-underlinethickness",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-underlinethickness",
+      "linkingText": [
+        "underlineThickness"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatinit-underlinecolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatinit-underlinecolor",
+      "linkingText": [
+        "underlineColor"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat",
+      "linkingText": [
+        "TextFormat"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-constructor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)"
+      ],
+      "localLinkingText": [
+        "TextFormat.constructor",
+        "TextFormat.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-rangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-rangestart",
+      "linkingText": [
+        "rangeStart"
+      ],
+      "localLinkingText": [
+        "TextFormat.rangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-rangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-rangeend",
+      "linkingText": [
+        "rangeEnd"
+      ],
+      "localLinkingText": [
+        "TextFormat.rangeEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-textcolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-textcolor",
+      "linkingText": [
+        "textColor"
+      ],
+      "localLinkingText": [
+        "TextFormat.textColor"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-backgroundcolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-backgroundcolor",
+      "linkingText": [
+        "backgroundColor"
+      ],
+      "localLinkingText": [
+        "TextFormat.backgroundColor"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-underlinestyle",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-underlinestyle",
+      "linkingText": [
+        "underlineStyle"
+      ],
+      "localLinkingText": [
+        "TextFormat.underlineStyle"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-underlinethickness",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-underlinethickness",
+      "linkingText": [
+        "underlineThickness"
+      ],
+      "localLinkingText": [
+        "TextFormat.underlineThickness"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformat-underlinecolor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformat-underlinecolor",
+      "linkingText": [
+        "underlineColor"
+      ],
+      "localLinkingText": [
+        "TextFormat.underlineColor"
+      ],
+      "type": "attribute",
+      "for": [
+        "TextFormat"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateeventinit",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatupdateeventinit",
+      "linkingText": [
+        "TextFormatUpdateEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateeventinit-textformats",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatupdateeventinit-textformats",
+      "linkingText": [
+        "textFormats"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "TextFormatUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateevent-constructor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatupdateevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)"
+      ],
+      "localLinkingText": [
+        "TextFormatUpdateEvent.constructor",
+        "TextFormatUpdateEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "TextFormatUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-textformatupdateevent-gettextformats",
+      "href": "https://www.w3.org/TR/edit-context/#dom-textformatupdateevent-gettextformats",
+      "linkingText": [
+        "getTextFormats()"
+      ],
+      "localLinkingText": [
+        "TextFormatUpdateEvent.getTextFormats",
+        "TextFormatUpdateEvent.getTextFormats()",
+        "getTextFormats"
+      ],
+      "type": "method",
+      "for": [
+        "TextFormatUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "textformatupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#textformatupdateevent",
+        "title": "TextFormatUpdateEvent",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateevent",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateevent",
+      "linkingText": [
+        "CharacterBoundsUpdateEvent"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-characterboundsupdateeventinit",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateeventinit",
+      "linkingText": [
+        "CharacterBoundsUpdateEventInit"
+      ],
+      "localLinkingText": [],
+      "type": "dictionary",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateeventinit-rangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateeventinit-rangestart",
+      "linkingText": [
+        "rangeStart"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CharacterBoundsUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateeventinit-rangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateeventinit-rangeend",
+      "linkingText": [
+        "rangeEnd"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "CharacterBoundsUpdateEventInit"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateevent-constructor",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateevent-constructor",
+      "linkingText": [
+        "constructor()",
+        "constructor(options)"
+      ],
+      "localLinkingText": [
+        "CharacterBoundsUpdateEvent.constructor",
+        "CharacterBoundsUpdateEvent.constructor()",
+        "constructor"
+      ],
+      "type": "constructor",
+      "for": [
+        "CharacterBoundsUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateevent-rangestart",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateevent-rangestart",
+      "linkingText": [
+        "rangeStart"
+      ],
+      "localLinkingText": [
+        "CharacterBoundsUpdateEvent.rangeStart"
+      ],
+      "type": "attribute",
+      "for": [
+        "CharacterBoundsUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-characterboundsupdateevent-rangeend",
+      "href": "https://www.w3.org/TR/edit-context/#dom-characterboundsupdateevent-rangeend",
+      "linkingText": [
+        "rangeEnd"
+      ],
+      "localLinkingText": [
+        "CharacterBoundsUpdateEvent.rangeEnd"
+      ],
+      "type": "attribute",
+      "for": [
+        "CharacterBoundsUpdateEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "characterboundsupdateevent",
+        "href": "https://www.w3.org/TR/edit-context/#characterboundsupdateevent",
+        "title": "CharacterBoundsUpdateEvent",
+        "number": "5.3"
+      },
+      "definedIn": "pre"
+    }
+  ]
+}

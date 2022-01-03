@@ -197,10 +197,10 @@
       "value": "or <media-in-parens>"
     },
     "<media-in-parens>": {
-      "value": "( <media-condition> ) | <media-feature> | <general-enclosed>"
+      "value": "( <media-condition> ) | ( <media-feature> ) | <general-enclosed>"
     },
     "<media-feature>": {
-      "value": "( [ <mf-plain> | <mf-boolean> | <mf-range> ] )"
+      "value": "[ <mf-plain> | <mf-boolean> | <mf-range> ]"
     },
     "<mf-plain>": {
       "value": "<mf-name> : <mf-value>"
@@ -230,7 +230,7 @@
       "value": "<mf-lt> | <mf-gt> | <mf-eq>"
     },
     "<general-enclosed>": {
-      "value": "[ <function-token> <any-value> ) ] | ( <ident> <any-value> )"
+      "value": "[ <function-token> <any-value>? ) ] | ( <any-value>? )"
     }
   }
 }

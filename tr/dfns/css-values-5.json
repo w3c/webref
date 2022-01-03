@@ -1,0 +1,395 @@
+{
+  "spec": {
+    "title": "CSS Values and Units Module Level 5",
+    "url": "https://drafts.csswg.org/css-values-5/"
+  },
+  "dfns": [
+    {
+      "id": "funcdef-toggle",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-toggle",
+      "linkingText": [
+        "toggle()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "toggle-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
+        "title": "Toggling Between Values: toggle()",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-toggle-value",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-toggle-value",
+      "linkingText": [
+        "<toggle-value>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "toggle-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#toggle-notation",
+        "title": "Toggling Between Values: toggle()",
+        "number": "1.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "funcdef-attr",
+      "href": "https://drafts.csswg.org/css-values-5/#funcdef-attr",
+      "linkingText": [
+        "attr()"
+      ],
+      "localLinkingText": [],
+      "type": "function",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
+        "title": "Attribute References: the attr() function",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "typedef-attr-type",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-attr-type",
+      "linkingText": [
+        "<attr-type>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
+        "title": "Attribute References: the attr() function",
+        "number": "2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "typedef-dimension-unit",
+      "href": "https://drafts.csswg.org/css-values-5/#typedef-dimension-unit",
+      "linkingText": [
+        "<dimension-unit>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
+        "title": "Attribute References: the attr() function",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "attr-substitution-value",
+      "href": "https://drafts.csswg.org/css-values-5/#attr-substitution-value",
+      "linkingText": [
+        "substitution value"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "attr()"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attr-notation",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-notation",
+        "title": "Attribute References: the attr() function",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "valdef-attr-string",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-string",
+      "linkingText": [
+        "string"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-url",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-url",
+      "linkingText": [
+        "url"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-ident",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-ident",
+      "linkingText": [
+        "ident"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-color",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-color",
+      "linkingText": [
+        "color"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-number",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-number",
+      "linkingText": [
+        "number"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-percentage",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-percentage",
+      "linkingText": [
+        "percentage"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-length",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-length",
+      "linkingText": [
+        "length"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-angle",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-angle",
+      "linkingText": [
+        "angle"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-time",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-time",
+      "linkingText": [
+        "time"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-frequency",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-frequency",
+      "linkingText": [
+        "frequency"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-flex",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-flex",
+      "linkingText": [
+        "flex"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-attr-dimension-unit",
+      "href": "https://drafts.csswg.org/css-values-5/#valdef-attr-dimension-unit",
+      "linkingText": [
+        "<dimension-unit>"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "attr()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-types",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-types",
+        "title": "attr() Types",
+        "number": "2.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "substitute-an-attr",
+      "href": "https://drafts.csswg.org/css-values-5/#substitute-an-attr",
+      "linkingText": [
+        "substitute an attr()"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "attr-substitution",
+        "href": "https://drafts.csswg.org/css-values-5/#attr-substitution",
+        "title": "attr() Substitution",
+        "number": "2.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}

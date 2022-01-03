@@ -11,20 +11,14 @@
       "title": "CSS Syntax Module Level 3"
     },
     {
-      "id": "subtitle",
-      "href": "https://www.w3.org/TR/css-syntax-3/#subtitle",
-      "level": 2,
-      "title": "W3C Candidate Recommendation, 16 July 2019"
-    },
-    {
       "id": "abstract",
       "href": "https://www.w3.org/TR/css-syntax-3/#abstract",
       "level": 2,
       "title": "Abstract"
     },
     {
-      "id": "status",
-      "href": "https://www.w3.org/TR/css-syntax-3/#status",
+      "id": "sotd",
+      "href": "https://www.w3.org/TR/css-syntax-3/#sotd",
       "level": 2,
       "title": "Status of this document"
     },
@@ -185,7 +179,7 @@
       "id": "would-start-an-identifier",
       "href": "https://www.w3.org/TR/css-syntax-3/#would-start-an-identifier",
       "level": 4,
-      "title": "Check if three code points would start an identifier",
+      "title": "Check if three code points would start an ident sequence",
       "number": "4.3.9"
     },
     {
@@ -199,7 +193,7 @@
       "id": "consume-name",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-name",
       "level": 4,
-      "title": "Consume a name",
+      "title": "Consume an ident sequence",
       "number": "4.3.11"
     },
     {
@@ -259,60 +253,74 @@
       "number": "5.3.1"
     },
     {
+      "id": "parse-comma-list",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-comma-list",
+      "level": 4,
+      "title": "Parse A Comma-Separated List According To A CSS Grammar",
+      "number": "5.3.2"
+    },
+    {
       "id": "parse-stylesheet",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-stylesheet",
       "level": 4,
       "title": "Parse a stylesheet",
-      "number": "5.3.2"
+      "number": "5.3.3"
     },
     {
       "id": "parse-list-of-rules",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-rules",
       "level": 4,
       "title": "Parse a list of rules",
-      "number": "5.3.3"
+      "number": "5.3.4"
     },
     {
       "id": "parse-rule",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-rule",
       "level": 4,
       "title": "Parse a rule",
-      "number": "5.3.4"
+      "number": "5.3.5"
     },
     {
       "id": "parse-declaration",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-declaration",
       "level": 4,
       "title": "Parse a declaration",
-      "number": "5.3.5"
+      "number": "5.3.6"
+    },
+    {
+      "id": "parse-style-blocks-contents",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-style-blocks-contents",
+      "level": 4,
+      "title": "Parse a style block’s contents",
+      "number": "5.3.7"
     },
     {
       "id": "parse-list-of-declarations",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-declarations",
       "level": 4,
       "title": "Parse a list of declarations",
-      "number": "5.3.6"
+      "number": "5.3.8"
     },
     {
       "id": "parse-component-value",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-component-value",
       "level": 4,
       "title": "Parse a component value",
-      "number": "5.3.7"
+      "number": "5.3.9"
     },
     {
       "id": "parse-list-of-component-values",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-component-values",
       "level": 4,
       "title": "Parse a list of component values",
-      "number": "5.3.8"
+      "number": "5.3.10"
     },
     {
       "id": "parse-comma-separated-list-of-component-values",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values",
       "level": 4,
       "title": "Parse a comma-separated list of component values",
-      "number": "5.3.9"
+      "number": "5.3.11"
     },
     {
       "id": "parser-algorithms",
@@ -343,39 +351,46 @@
       "number": "5.4.3"
     },
     {
+      "id": "consume-style-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-style-block",
+      "level": 4,
+      "title": "Consume a style block’s contents",
+      "number": "5.4.4"
+    },
+    {
       "id": "consume-list-of-declarations",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-list-of-declarations",
       "level": 4,
       "title": "Consume a list of declarations",
-      "number": "5.4.4"
+      "number": "5.4.5"
     },
     {
       "id": "consume-declaration",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-declaration",
       "level": 4,
       "title": "Consume a declaration",
-      "number": "5.4.5"
+      "number": "5.4.6"
     },
     {
       "id": "consume-component-value",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-component-value",
       "level": 4,
       "title": "Consume a component value",
-      "number": "5.4.6"
+      "number": "5.4.7"
     },
     {
       "id": "consume-simple-block",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-simple-block",
       "level": 4,
       "title": "Consume a simple block",
-      "number": "5.4.7"
+      "number": "5.4.8"
     },
     {
       "id": "consume-function",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-function",
       "level": 4,
       "title": "Consume a function",
-      "number": "5.4.8"
+      "number": "5.4.9"
     },
     {
       "id": "anb-microsyntax",
@@ -448,11 +463,18 @@
       "number": "9.1"
     },
     {
+      "id": "at-rules",
+      "href": "https://www.w3.org/TR/css-syntax-3/#at-rules",
+      "level": 3,
+      "title": "At-rules",
+      "number": "9.2"
+    },
+    {
       "id": "charset-rule",
       "href": "https://www.w3.org/TR/css-syntax-3/#charset-rule",
       "level": 3,
       "title": "The @charset Rule",
-      "number": "9.2"
+      "number": "9.3"
     },
     {
       "id": "serialization",
@@ -480,32 +502,39 @@
       "title": "12. Changes"
     },
     {
+      "id": "changes-CR-20190716",
+      "href": "https://www.w3.org/TR/css-syntax-3/#changes-CR-20190716",
+      "level": 3,
+      "title": "Changes from the 16 August 2019 Candidate Recommendation",
+      "number": "12.1"
+    },
+    {
       "id": "changes-CR-20140220",
       "href": "https://www.w3.org/TR/css-syntax-3/#changes-CR-20140220",
       "level": 3,
       "title": "Changes from the 20 February 2014 Candidate Recommendation",
-      "number": "12.1"
+      "number": "12.2"
     },
     {
       "id": "changes-WD-20131105",
       "href": "https://www.w3.org/TR/css-syntax-3/#changes-WD-20131105",
       "level": 3,
       "title": "Changes from the 5 November 2013 Last Call Working Draft",
-      "number": "12.2"
+      "number": "12.3"
     },
     {
       "id": "changes-WD-20130919",
       "href": "https://www.w3.org/TR/css-syntax-3/#changes-WD-20130919",
       "level": 3,
       "title": "Changes from the 19 September 2013 Working Draft",
-      "number": "12.3"
+      "number": "12.4"
     },
     {
       "id": "changes-css21",
       "href": "https://www.w3.org/TR/css-syntax-3/#changes-css21",
       "level": 3,
       "title": "Changes from CSS 2.1 and Selectors Level 3",
-      "number": "12.4"
+      "number": "12.5"
     },
     {
       "id": "acknowledgments",
@@ -514,50 +543,44 @@
       "title": "Acknowledgments"
     },
     {
-      "id": "conformance",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conformance",
+      "id": "w3c-conformance",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-conformance",
       "level": 2,
       "title": "Conformance"
     },
     {
-      "id": "document-conventions",
-      "href": "https://www.w3.org/TR/css-syntax-3/#document-conventions",
+      "id": "w3c-conventions",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-conventions",
       "level": 3,
       "title": "Document conventions"
     },
     {
-      "id": "conform-classes",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conform-classes",
+      "id": "w3c-conformance-classes",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-conformance-classes",
       "level": 3,
       "title": "Conformance classes"
     },
     {
-      "id": "conform-responsible",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conform-responsible",
+      "id": "w3c-partial",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-partial",
       "level": 3,
-      "title": "Requirements for Responsible Implementation of CSS"
+      "title": "Partial implementations"
     },
     {
-      "id": "conform-partial",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conform-partial",
-      "level": 4,
-      "title": "Partial Implementations"
-    },
-    {
-      "id": "conform-future-proofing",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conform-future-proofing",
+      "id": "w3c-conform-future-proofing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-conform-future-proofing",
       "level": 4,
       "title": "Implementations of Unstable and Proprietary Features"
     },
     {
-      "id": "conform-testing",
-      "href": "https://www.w3.org/TR/css-syntax-3/#conform-testing",
-      "level": 4,
-      "title": "Implementations of CR-level Features"
+      "id": "w3c-testing",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-testing",
+      "level": 3,
+      "title": "Non-experimental implementations"
     },
     {
-      "id": "cr-exit-criteria",
-      "href": "https://www.w3.org/TR/css-syntax-3/#cr-exit-criteria",
+      "id": "w3c-cr-exit-criteria",
+      "href": "https://www.w3.org/TR/css-syntax-3/#w3c-cr-exit-criteria",
       "level": 3,
       "title": "CR exit criteria"
     },

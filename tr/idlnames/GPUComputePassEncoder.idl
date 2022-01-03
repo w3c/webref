@@ -12,4 +12,10 @@ interface GPUComputePassEncoder {
 GPUComputePassEncoder includes GPUObjectBase;
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPUComputePassEncoder includes GPUCommandsMixin;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPUComputePassEncoder includes GPUDebugCommandsMixin;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 GPUComputePassEncoder includes GPUProgrammablePassEncoder;

@@ -909,6 +909,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "limit-default",
+      "href": "https://www.w3.org/TR/webgpu/#limit-default",
+      "linkingText": [
+        "default"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "limit"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "limit-better",
       "href": "https://www.w3.org/TR/webgpu/#limit-better",
       "linkingText": [
@@ -930,16 +951,14 @@
       "definedIn": "prose"
     },
     {
-      "id": "limit-default",
-      "href": "https://www.w3.org/TR/webgpu/#limit-default",
+      "id": "limit-class",
+      "href": "https://www.w3.org/TR/webgpu/#limit-class",
       "linkingText": [
-        "default"
+        "limit class"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [
-        "limit"
-      ],
+      "for": [],
       "access": "private",
       "informative": false,
       "heading": {
@@ -949,6 +968,48 @@
         "number": "3.6.2"
       },
       "definedIn": "prose"
+    },
+    {
+      "id": "limit-class-maximum",
+      "href": "https://www.w3.org/TR/webgpu/#limit-class-maximum",
+      "linkingText": [
+        "maximum"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "limit class"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "limit-class-alignment",
+      "href": "https://www.w3.org/TR/webgpu/#limit-class-alignment",
+      "linkingText": [
+        "alignment"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "limit class"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "limits",
+        "href": "https://www.w3.org/TR/webgpu/#limits",
+        "title": "Limits",
+        "number": "3.6.2"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-supported-limits-maxtexturedimension1d",
@@ -4658,7 +4719,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gputextureviewdimension-2d",
@@ -4679,7 +4740,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gputextureviewdimension-2d-array",
@@ -4700,7 +4761,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gputextureviewdimension-cube",
@@ -4721,7 +4782,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gputextureviewdimension-cube-array",
@@ -4742,7 +4803,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gputextureviewdimension-3d",
@@ -4763,7 +4824,7 @@
         "title": "Texture View Creation",
         "number": "6.2.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "enumdef-gputextureaspect",
@@ -13928,10 +13989,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "gpucommandencoder",
-      "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder",
+      "id": "gpucommandsmixin",
+      "href": "https://www.w3.org/TR/webgpu/#gpucommandsmixin",
       "linkingText": [
-        "GPUCommandEncoder"
+        "GPUCommandsMixin"
       ],
       "localLinkingText": [],
       "type": "interface",
@@ -13939,72 +14000,51 @@
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "heading"
     },
     {
-      "id": "dom-gpucommandencoder-command_list-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-command_list-slot",
-      "linkingText": [
-        "[[command_list]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
-        "number": "12.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpucommandencoder-state-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-state-slot",
+      "id": "dom-gpucommandsmixin-state-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandsmixin-state-slot",
       "linkingText": [
         "[[state]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCommandEncoder"
+        "GPUCommandsMixin"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucommandencoder-debug_group_stack-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-debug_group_stack-slot",
+      "id": "dom-gpucommandsmixin-commands-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandsmixin-commands-slot",
       "linkingText": [
-        "[[debug_group_stack]]"
+        "[[commands]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
       "for": [
-        "GPUCommandEncoder"
+        "GPUCommandsMixin"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "dt"
@@ -14021,9 +14061,9 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "prose"
@@ -14042,18 +14082,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "encoder-state-encoding-a-render-pass",
-      "href": "https://www.w3.org/TR/webgpu/#encoder-state-encoding-a-render-pass",
+      "id": "encoder-state-locked",
+      "href": "https://www.w3.org/TR/webgpu/#encoder-state-locked",
       "linkingText": [
-        "encoding a render pass"
+        "locked"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -14063,18 +14103,18 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "encoder-state-encoding-a-compute-pass",
-      "href": "https://www.w3.org/TR/webgpu/#encoder-state-encoding-a-compute-pass",
+      "id": "encoder-state-ended",
+      "href": "https://www.w3.org/TR/webgpu/#encoder-state-ended",
       "linkingText": [
-        "encoding a compute pass"
+        "ended"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -14084,33 +14124,50 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "command-encoder",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder",
-        "title": "GPUCommandEncoder",
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
         "number": "12.1"
       },
       "definedIn": "dt"
     },
     {
-      "id": "encoder-state-closed",
-      "href": "https://www.w3.org/TR/webgpu/#encoder-state-closed",
+      "id": "abstract-opdef-prepare-the-encoder-state",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-prepare-the-encoder-state",
       "linkingText": [
-        "closed"
+        "Prepare the encoder state"
       ],
       "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "encoder state"
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "commands-mixin",
+        "href": "https://www.w3.org/TR/webgpu/#commands-mixin",
+        "title": "GPUCommandsMixin",
+        "number": "12.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "gpucommandencoder",
+      "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder",
+      "linkingText": [
+        "GPUCommandEncoder"
       ],
-      "access": "private",
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
       "informative": false,
       "heading": {
         "id": "command-encoder",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder",
         "title": "GPUCommandEncoder",
-        "number": "12.1"
+        "number": "12.2"
       },
-      "definedIn": "dt"
+      "definedIn": "heading"
     },
     {
       "id": "dictdef-gpucommandencoderdescriptor",
@@ -14127,7 +14184,7 @@
         "id": "command-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-creation",
         "title": "Creation",
-        "number": "12.1.1"
+        "number": "12.2.1"
       },
       "definedIn": "pre"
     },
@@ -14149,7 +14206,7 @@
         "id": "command-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-creation",
         "title": "Creation",
-        "number": "12.1.1"
+        "number": "12.2.1"
       },
       "definedIn": "dt"
     },
@@ -14170,7 +14227,7 @@
         "id": "command-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-creation",
         "title": "Creation",
-        "number": "12.1.1"
+        "number": "12.2.1"
       },
       "definedIn": "table"
     },
@@ -14191,7 +14248,7 @@
         "id": "command-encoder-pass-encoding",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-pass-encoding",
         "title": "Pass Encoding",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "dt"
     },
@@ -14212,7 +14269,7 @@
         "id": "command-encoder-pass-encoding",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-pass-encoding",
         "title": "Pass Encoding",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "table"
     },
@@ -14234,7 +14291,7 @@
         "id": "command-encoder-pass-encoding",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-pass-encoding",
         "title": "Pass Encoding",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "dt"
     },
@@ -14255,7 +14312,7 @@
         "id": "command-encoder-pass-encoding",
         "href": "https://www.w3.org/TR/webgpu/#command-encoder-pass-encoding",
         "title": "Pass Encoding",
-        "number": "12.2"
+        "number": "12.3"
       },
       "definedIn": "table"
     },
@@ -14274,7 +14331,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "heading"
     },
@@ -14295,7 +14352,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "pre"
     },
@@ -14314,7 +14371,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "prose"
     },
@@ -14333,7 +14390,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "prose"
     },
@@ -14354,7 +14411,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "dt"
     },
@@ -14375,7 +14432,7 @@
         "id": "gpu-image-data-layout",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-data-layout",
         "title": "GPUImageDataLayout",
-        "number": "12.3.1"
+        "number": "12.4.1"
       },
       "definedIn": "dt"
     },
@@ -14394,7 +14451,7 @@
         "id": "gpu-image-copy-buffer",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-buffer",
         "title": "GPUImageCopyBuffer",
-        "number": "12.3.2"
+        "number": "12.4.2"
       },
       "definedIn": "heading"
     },
@@ -14415,7 +14472,7 @@
         "id": "gpu-image-copy-buffer",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-buffer",
         "title": "GPUImageCopyBuffer",
-        "number": "12.3.2"
+        "number": "12.4.2"
       },
       "definedIn": "pre"
     },
@@ -14434,7 +14491,7 @@
         "id": "gpu-image-copy-buffer",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-buffer",
         "title": "GPUImageCopyBuffer",
-        "number": "12.3.2"
+        "number": "12.4.2"
       },
       "definedIn": "prose"
     },
@@ -14453,7 +14510,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "heading"
     },
@@ -14474,7 +14531,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "dt"
     },
@@ -14495,7 +14552,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "dt"
     },
@@ -14516,7 +14573,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "dt"
     },
@@ -14537,7 +14594,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "dt"
     },
@@ -14556,7 +14613,7 @@
         "id": "gpu-image-copy-texture",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture",
         "title": "GPUImageCopyTexture",
-        "number": "12.3.3"
+        "number": "12.4.3"
       },
       "definedIn": "prose"
     },
@@ -14575,7 +14632,7 @@
         "id": "gpu-image-copy-texture-tagged",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture-tagged",
         "title": "GPUImageCopyTextureTagged",
-        "number": "12.3.4"
+        "number": "12.4.4"
       },
       "definedIn": "heading"
     },
@@ -14596,7 +14653,7 @@
         "id": "gpu-image-copy-texture-tagged",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture-tagged",
         "title": "GPUImageCopyTextureTagged",
-        "number": "12.3.4"
+        "number": "12.4.4"
       },
       "definedIn": "dt"
     },
@@ -14617,7 +14674,7 @@
         "id": "gpu-image-copy-texture-tagged",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-texture-tagged",
         "title": "GPUImageCopyTextureTagged",
-        "number": "12.3.4"
+        "number": "12.4.4"
       },
       "definedIn": "dt"
     },
@@ -14636,7 +14693,7 @@
         "id": "gpu-image-copy-external-image",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-external-image",
         "title": "GPUImageCopyExternalImage",
-        "number": "12.3.5"
+        "number": "12.4.5"
       },
       "definedIn": "heading"
     },
@@ -14657,7 +14714,7 @@
         "id": "gpu-image-copy-external-image",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-external-image",
         "title": "GPUImageCopyExternalImage",
-        "number": "12.3.5"
+        "number": "12.4.5"
       },
       "definedIn": "dt"
     },
@@ -14678,7 +14735,28 @@
         "id": "gpu-image-copy-external-image",
         "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-external-image",
         "title": "GPUImageCopyExternalImage",
-        "number": "12.3.5"
+        "number": "12.4.5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpuimagecopyexternalimage-flipy",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuimagecopyexternalimage-flipy",
+      "linkingText": [
+        "flipY"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUImageCopyExternalImage"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "gpu-image-copy-external-image",
+        "href": "https://www.w3.org/TR/webgpu/#gpu-image-copy-external-image",
+        "title": "GPUImageCopyExternalImage",
+        "number": "12.4.5"
       },
       "definedIn": "dt"
     },
@@ -14699,7 +14777,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "dt"
     },
@@ -14720,7 +14798,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "table"
     },
@@ -14741,7 +14819,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "table"
     },
@@ -14762,7 +14840,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "table"
     },
@@ -14783,7 +14861,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "table"
     },
@@ -14804,7 +14882,7 @@
         "id": "buffer-copies",
         "href": "https://www.w3.org/TR/webgpu/#buffer-copies",
         "title": "Buffer Copies",
-        "number": "12.3.6"
+        "number": "12.4.6"
       },
       "definedIn": "table"
     },
@@ -14827,7 +14905,7 @@
         "id": "buffer-fills",
         "href": "https://www.w3.org/TR/webgpu/#buffer-fills",
         "title": "Buffer Fills",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "dt"
     },
@@ -14848,7 +14926,7 @@
         "id": "buffer-fills",
         "href": "https://www.w3.org/TR/webgpu/#buffer-fills",
         "title": "Buffer Fills",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "table"
     },
@@ -14869,7 +14947,7 @@
         "id": "buffer-fills",
         "href": "https://www.w3.org/TR/webgpu/#buffer-fills",
         "title": "Buffer Fills",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "table"
     },
@@ -14890,7 +14968,7 @@
         "id": "buffer-fills",
         "href": "https://www.w3.org/TR/webgpu/#buffer-fills",
         "title": "Buffer Fills",
-        "number": "12.3.7"
+        "number": "12.4.7"
       },
       "definedIn": "table"
     },
@@ -14909,7 +14987,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "heading"
     },
@@ -14928,7 +15006,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "prose"
     },
@@ -14947,7 +15025,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "prose"
     },
@@ -14966,7 +15044,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "prose"
     },
@@ -14987,7 +15065,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "dt"
     },
@@ -15008,7 +15086,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15029,7 +15107,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15050,7 +15128,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15071,7 +15149,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "dt"
     },
@@ -15092,7 +15170,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15113,7 +15191,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15134,7 +15212,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15155,7 +15233,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "dt"
     },
@@ -15176,7 +15254,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15197,7 +15275,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15218,7 +15296,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "table"
     },
@@ -15237,7 +15315,7 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "prose"
     },
@@ -15256,114 +15334,9 @@
         "id": "image-copies",
         "href": "https://www.w3.org/TR/webgpu/#image-copies",
         "title": "Image Copies",
-        "number": "12.3.8"
+        "number": "12.4.8"
       },
       "definedIn": "prose"
-    },
-    {
-      "id": "dom-gpucommandencoder-pushdebuggroup",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-pushdebuggroup",
-      "linkingText": [
-        "pushDebugGroup(groupLabel)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
-        "title": "Debug Markers",
-        "number": "12.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-pushdebuggroup-grouplabel-grouplabel",
-      "linkingText": [
-        "groupLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/pushDebugGroup(groupLabel)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
-        "title": "Debug Markers",
-        "number": "12.4"
-      },
-      "definedIn": "table"
-    },
-    {
-      "id": "dom-gpucommandencoder-popdebuggroup",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-popdebuggroup",
-      "linkingText": [
-        "popDebugGroup()"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
-        "title": "Debug Markers",
-        "number": "12.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpucommandencoder-insertdebugmarker",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-insertdebugmarker",
-      "linkingText": [
-        "insertDebugMarker(markerLabel)"
-      ],
-      "localLinkingText": [],
-      "type": "method",
-      "for": [
-        "GPUCommandEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
-        "title": "Debug Markers",
-        "number": "12.4"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucommandencoder-insertdebugmarker-markerlabel-markerlabel",
-      "linkingText": [
-        "markerLabel"
-      ],
-      "localLinkingText": [],
-      "type": "argument",
-      "for": [
-        "GPUCommandEncoder/insertDebugMarker(markerLabel)"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "command-encoder-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#command-encoder-debug-markers",
-        "title": "Debug Markers",
-        "number": "12.4"
-      },
-      "definedIn": "table"
     },
     {
       "id": "dom-gpucommandencoder-writetimestamp",
@@ -15657,26 +15630,6 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-debug_group_stack-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-debug_group_stack-slot",
-      "linkingText": [
-        "[[debug_group_stack]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUProgrammablePassEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "programmable-passes",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes",
-        "title": "13. Programmable Passes"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "dom-gpuprogrammablepassencoder-bind_groups-slot",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-bind_groups-slot",
       "linkingText": [
@@ -15925,107 +15878,140 @@
       "definedIn": "prose"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-pushdebuggroup",
+      "id": "gpudebugcommandsmixin",
+      "href": "https://www.w3.org/TR/webgpu/#gpudebugcommandsmixin",
+      "linkingText": [
+        "GPUDebugCommandsMixin"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-gpudebugcommandsmixin-debug_group_stack-slot",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-debug_group_stack-slot",
+      "linkingText": [
+        "[[debug_group_stack]]"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUDebugCommandsMixin"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpudebugcommandsmixin-pushdebuggroup",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-pushdebuggroup",
       "linkingText": [
         "pushDebugGroup(groupLabel)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUProgrammablePassEncoder"
+        "GPUDebugCommandsMixin"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "programmable-passes-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
-        "title": "Debug Markers",
-        "number": "13.2"
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-pushdebuggroup-grouplabel-grouplabel",
+      "id": "dom-gpudebugcommandsmixin-pushdebuggroup-grouplabel-grouplabel",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-pushdebuggroup-grouplabel-grouplabel",
       "linkingText": [
         "groupLabel"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUProgrammablePassEncoder/pushDebugGroup(groupLabel)"
+        "GPUDebugCommandsMixin/pushDebugGroup(groupLabel)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "programmable-passes-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
-        "title": "Debug Markers",
-        "number": "13.2"
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
       },
       "definedIn": "table"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-popdebuggroup",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-popdebuggroup",
+      "id": "dom-gpudebugcommandsmixin-popdebuggroup",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-popdebuggroup",
       "linkingText": [
         "popDebugGroup()"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUProgrammablePassEncoder"
+        "GPUDebugCommandsMixin"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "programmable-passes-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
-        "title": "Debug Markers",
-        "number": "13.2"
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-insertdebugmarker",
+      "id": "dom-gpudebugcommandsmixin-insertdebugmarker",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-insertdebugmarker",
       "linkingText": [
         "insertDebugMarker(markerLabel)"
       ],
       "localLinkingText": [],
       "type": "method",
       "for": [
-        "GPUProgrammablePassEncoder"
+        "GPUDebugCommandsMixin"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "programmable-passes-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
-        "title": "Debug Markers",
-        "number": "13.2"
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
       },
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuprogrammablepassencoder-insertdebugmarker-markerlabel-markerlabel",
+      "id": "dom-gpudebugcommandsmixin-insertdebugmarker-markerlabel-markerlabel",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpudebugcommandsmixin-insertdebugmarker-markerlabel-markerlabel",
       "linkingText": [
         "markerLabel"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUProgrammablePassEncoder/insertDebugMarker(markerLabel)"
+        "GPUDebugCommandsMixin/insertDebugMarker(markerLabel)"
       ],
       "access": "public",
       "informative": false,
       "heading": {
-        "id": "programmable-passes-debug-markers",
-        "href": "https://www.w3.org/TR/webgpu/#programmable-passes-debug-markers",
-        "title": "Debug Markers",
-        "number": "13.2"
+        "id": "debug-markers",
+        "href": "https://www.w3.org/TR/webgpu/#debug-markers",
+        "title": "14. Debug Markers"
       },
       "definedIn": "table"
     },
@@ -16044,7 +16030,7 @@
         "id": "compute-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder",
         "title": "GPUComputePassEncoder",
-        "number": "14.1"
+        "number": "15.1"
       },
       "definedIn": "heading"
     },
@@ -16065,7 +16051,7 @@
         "id": "compute-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder",
         "title": "GPUComputePassEncoder",
-        "number": "14.1"
+        "number": "15.1"
       },
       "definedIn": "dt"
     },
@@ -16086,7 +16072,7 @@
         "id": "compute-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder",
         "title": "GPUComputePassEncoder",
-        "number": "14.1"
+        "number": "15.1"
       },
       "definedIn": "dt"
     },
@@ -16105,7 +16091,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16126,7 +16112,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16147,7 +16133,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16166,7 +16152,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16187,7 +16173,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16208,7 +16194,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16229,7 +16215,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16248,7 +16234,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16267,7 +16253,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "pre"
     },
@@ -16288,7 +16274,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "dt"
     },
@@ -16309,7 +16295,7 @@
         "id": "compute-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-creation",
         "title": "Creation",
-        "number": "14.1.1"
+        "number": "15.1.1"
       },
       "definedIn": "prose"
     },
@@ -16330,7 +16316,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "dt"
     },
@@ -16351,7 +16337,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16374,7 +16360,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "dt"
     },
@@ -16395,7 +16381,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16416,7 +16402,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16437,7 +16423,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16458,7 +16444,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "dt"
     },
@@ -16477,7 +16463,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "prose"
     },
@@ -16498,7 +16484,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16519,7 +16505,7 @@
         "id": "compute-pass-encoder-dispatch",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-dispatch",
         "title": "Dispatch",
-        "number": "14.1.2"
+        "number": "15.1.2"
       },
       "definedIn": "table"
     },
@@ -16540,7 +16526,7 @@
         "id": "compute-pass-encoder-finalization",
         "href": "https://www.w3.org/TR/webgpu/#compute-pass-encoder-finalization",
         "title": "Finalization",
-        "number": "14.1.3"
+        "number": "15.1.3"
       },
       "definedIn": "dt"
     },
@@ -16559,7 +16545,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "heading"
     },
@@ -16578,7 +16564,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "pre"
     },
@@ -16599,7 +16585,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16620,7 +16606,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16641,7 +16627,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16662,7 +16648,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16683,7 +16669,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16704,7 +16690,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16725,7 +16711,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16746,7 +16732,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16767,7 +16753,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16788,7 +16774,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16809,7 +16795,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16830,7 +16816,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16851,7 +16837,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16872,7 +16858,7 @@
         "id": "render-pass-encoder",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder",
         "title": "GPURenderPassEncoder",
-        "number": "15.1"
+        "number": "16.1"
       },
       "definedIn": "dt"
     },
@@ -16891,7 +16877,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -16912,7 +16898,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -16933,7 +16919,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -16952,7 +16938,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -16973,7 +16959,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -16994,7 +16980,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -17015,7 +17001,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -17034,7 +17020,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -17053,7 +17039,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "pre"
     },
@@ -17074,7 +17060,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "dt"
     },
@@ -17095,7 +17081,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "dt"
     },
@@ -17116,7 +17102,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "dt"
     },
@@ -17137,7 +17123,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "dt"
     },
@@ -17158,7 +17144,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "prose"
     },
@@ -17179,7 +17165,7 @@
         "id": "render-pass-encoder-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-creation",
         "title": "Creation",
-        "number": "15.1.1"
+        "number": "16.1.1"
       },
       "definedIn": "prose"
     },
@@ -17198,7 +17184,7 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
       },
       "definedIn": "pre"
     },
@@ -17219,7 +17205,7 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
       },
       "definedIn": "dt"
     },
@@ -17240,7 +17226,7 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
       },
       "definedIn": "dt"
     },
@@ -17261,7 +17247,7 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
       },
       "definedIn": "dt"
     },
@@ -17282,7 +17268,7 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
       },
       "definedIn": "dt"
     },
@@ -17303,7 +17289,26 @@
         "id": "color-attachments",
         "href": "https://www.w3.org/TR/webgpu/#color-attachments",
         "title": "Color Attachments",
-        "number": "15.1.1.1"
+        "number": "16.1.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-renderable-texture-view",
+      "href": "https://www.w3.org/TR/webgpu/#abstract-opdef-renderable-texture-view",
+      "linkingText": [
+        "renderable texture view"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-attachments",
+        "href": "https://www.w3.org/TR/webgpu/#color-attachments",
+        "title": "Color Attachments",
+        "number": "16.1.1.1"
       },
       "definedIn": "prose"
     },
@@ -17322,7 +17327,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "pre"
     },
@@ -17343,7 +17348,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17364,7 +17369,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17385,7 +17390,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17406,7 +17411,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17427,7 +17432,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17448,7 +17453,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17469,7 +17474,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "dt"
     },
@@ -17490,7 +17495,7 @@
         "id": "depth-stencil-attachments",
         "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
         "title": "Depth/Stencil Attachments",
-        "number": "15.1.1.2"
+        "number": "16.1.1.2"
       },
       "definedIn": "prose"
     },
@@ -17509,7 +17514,7 @@
         "id": "load-and-store-ops",
         "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
         "title": "Load & Store Operations",
-        "number": "15.1.1.3"
+        "number": "16.1.1.3"
       },
       "definedIn": "pre"
     },
@@ -17530,7 +17535,7 @@
         "id": "load-and-store-ops",
         "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
         "title": "Load & Store Operations",
-        "number": "15.1.1.3"
+        "number": "16.1.1.3"
       },
       "definedIn": "dt"
     },
@@ -17549,7 +17554,7 @@
         "id": "load-and-store-ops",
         "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
         "title": "Load & Store Operations",
-        "number": "15.1.1.3"
+        "number": "16.1.1.3"
       },
       "definedIn": "pre"
     },
@@ -17570,7 +17575,7 @@
         "id": "load-and-store-ops",
         "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
         "title": "Load & Store Operations",
-        "number": "15.1.1.3"
+        "number": "16.1.1.3"
       },
       "definedIn": "pre"
     },
@@ -17591,7 +17596,7 @@
         "id": "load-and-store-ops",
         "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
         "title": "Load & Store Operations",
-        "number": "15.1.1.3"
+        "number": "16.1.1.3"
       },
       "definedIn": "pre"
     },
@@ -17610,7 +17615,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "pre"
     },
@@ -17631,7 +17636,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "pre"
     },
@@ -17652,7 +17657,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "pre"
     },
@@ -17673,7 +17678,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "pre"
     },
@@ -17692,7 +17697,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "prose"
     },
@@ -17711,7 +17716,7 @@
         "id": "render-pass-layout",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-layout",
         "title": "Render Pass Layout",
-        "number": "15.1.1.4"
+        "number": "16.1.1.4"
       },
       "definedIn": "prose"
     },
@@ -17732,7 +17737,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -17753,7 +17758,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17776,7 +17781,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -17797,7 +17802,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17818,7 +17823,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17839,7 +17844,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17860,7 +17865,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17883,7 +17888,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -17904,7 +17909,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17925,7 +17930,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17946,7 +17951,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17967,7 +17972,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -17991,7 +17996,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -18012,7 +18017,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18033,7 +18038,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18054,7 +18059,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18075,7 +18080,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18100,7 +18105,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -18121,7 +18126,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18142,7 +18147,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18163,7 +18168,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18184,7 +18189,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18205,7 +18210,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18226,7 +18231,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -18245,7 +18250,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "prose"
     },
@@ -18266,7 +18271,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18287,7 +18292,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18308,7 +18313,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "dt"
     },
@@ -18327,7 +18332,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "prose"
     },
@@ -18348,7 +18353,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18369,7 +18374,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "table"
     },
@@ -18388,7 +18393,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "prose"
     },
@@ -18407,7 +18412,7 @@
         "id": "render-pass-encoder-drawing",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-drawing",
         "title": "Drawing",
-        "number": "15.1.2"
+        "number": "16.1.2"
       },
       "definedIn": "prose"
     },
@@ -18428,7 +18433,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "dt"
     },
@@ -18449,7 +18454,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18470,7 +18475,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18491,7 +18496,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18512,7 +18517,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18533,7 +18538,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18554,7 +18559,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18575,7 +18580,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "dt"
     },
@@ -18596,7 +18601,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18617,7 +18622,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18638,7 +18643,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18659,7 +18664,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18680,7 +18685,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "dt"
     },
@@ -18701,7 +18706,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18722,7 +18727,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "dt"
     },
@@ -18743,7 +18748,7 @@
         "id": "render-pass-encoder-rasterization-state",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-rasterization-state",
         "title": "Rasterization state",
-        "number": "15.1.3"
+        "number": "16.1.3"
       },
       "definedIn": "table"
     },
@@ -18764,7 +18769,7 @@
         "id": "render-pass-encoder-queries",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-queries",
         "title": "Queries",
-        "number": "15.1.4"
+        "number": "16.1.4"
       },
       "definedIn": "dt"
     },
@@ -18785,7 +18790,7 @@
         "id": "render-pass-encoder-queries",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-queries",
         "title": "Queries",
-        "number": "15.1.4"
+        "number": "16.1.4"
       },
       "definedIn": "table"
     },
@@ -18806,7 +18811,7 @@
         "id": "render-pass-encoder-queries",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-queries",
         "title": "Queries",
-        "number": "15.1.4"
+        "number": "16.1.4"
       },
       "definedIn": "dt"
     },
@@ -18827,7 +18832,7 @@
         "id": "render-pass-encoder-bundles",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-bundles",
         "title": "Bundles",
-        "number": "15.1.5"
+        "number": "16.1.5"
       },
       "definedIn": "dt"
     },
@@ -18848,7 +18853,7 @@
         "id": "render-pass-encoder-bundles",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-bundles",
         "title": "Bundles",
-        "number": "15.1.5"
+        "number": "16.1.5"
       },
       "definedIn": "table"
     },
@@ -18869,7 +18874,7 @@
         "id": "render-pass-encoder-finalization",
         "href": "https://www.w3.org/TR/webgpu/#render-pass-encoder-finalization",
         "title": "Finalization",
-        "number": "15.1.6"
+        "number": "16.1.6"
       },
       "definedIn": "dt"
     },
@@ -18888,7 +18893,7 @@
         "id": "render-bundle",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle",
         "title": "GPURenderBundle",
-        "number": "16.1"
+        "number": "17.1"
       },
       "definedIn": "heading"
     },
@@ -18909,7 +18914,7 @@
         "id": "render-bundle",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle",
         "title": "GPURenderBundle",
-        "number": "16.1"
+        "number": "17.1"
       },
       "definedIn": "dt"
     },
@@ -18930,7 +18935,7 @@
         "id": "render-bundle",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle",
         "title": "GPURenderBundle",
-        "number": "16.1"
+        "number": "17.1"
       },
       "definedIn": "dt"
     },
@@ -18951,7 +18956,7 @@
         "id": "render-bundle",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle",
         "title": "GPURenderBundle",
-        "number": "16.1"
+        "number": "17.1"
       },
       "definedIn": "dt"
     },
@@ -18972,7 +18977,7 @@
         "id": "render-bundle",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle",
         "title": "GPURenderBundle",
-        "number": "16.1"
+        "number": "17.1"
       },
       "definedIn": "dt"
     },
@@ -18991,7 +18996,7 @@
         "id": "render-bundle-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
         "title": "Creation",
-        "number": "16.1.1"
+        "number": "17.1.1"
       },
       "definedIn": "pre"
     },
@@ -19010,112 +19015,9 @@
         "id": "render-bundle-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
         "title": "Creation",
-        "number": "16.1.1"
+        "number": "17.1.1"
       },
       "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpurenderbundleencoder-command_list-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderbundleencoder-command_list-slot",
-      "linkingText": [
-        "[[command_list]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderBundleEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-creation",
-        "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
-        "title": "Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "dom-gpurenderbundleencoder-state-slot",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderbundleencoder-state-slot",
-      "linkingText": [
-        "[[state]]"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPURenderBundleEncoder"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-creation",
-        "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
-        "title": "Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "render-bundle-state",
-      "href": "https://www.w3.org/TR/webgpu/#render-bundle-state",
-      "linkingText": [
-        "render bundle state"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-creation",
-        "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
-        "title": "Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "render-bundle-state-open",
-      "href": "https://www.w3.org/TR/webgpu/#render-bundle-state-open",
-      "linkingText": [
-        "open"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "render bundle state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-creation",
-        "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
-        "title": "Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "dt"
-    },
-    {
-      "id": "render-bundle-state-closed",
-      "href": "https://www.w3.org/TR/webgpu/#render-bundle-state-closed",
-      "linkingText": [
-        "closed"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "render bundle state"
-      ],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "render-bundle-creation",
-        "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
-        "title": "Creation",
-        "number": "16.1.1"
-      },
-      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-createrenderbundleencoder",
@@ -19134,7 +19036,7 @@
         "id": "render-bundle-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
         "title": "Creation",
-        "number": "16.1.1"
+        "number": "17.1.1"
       },
       "definedIn": "dt"
     },
@@ -19155,7 +19057,7 @@
         "id": "render-bundle-creation",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-creation",
         "title": "Creation",
-        "number": "16.1.1"
+        "number": "17.1.1"
       },
       "definedIn": "table"
     },
@@ -19174,7 +19076,7 @@
         "id": "render-bundle-encoding",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-encoding",
         "title": "Encoding",
-        "number": "16.1.2"
+        "number": "17.1.2"
       },
       "definedIn": "pre"
     },
@@ -19195,7 +19097,7 @@
         "id": "render-bundle-encoding",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-encoding",
         "title": "Encoding",
-        "number": "16.1.2"
+        "number": "17.1.2"
       },
       "definedIn": "pre"
     },
@@ -19216,7 +19118,7 @@
         "id": "render-bundle-encoding",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-encoding",
         "title": "Encoding",
-        "number": "16.1.2"
+        "number": "17.1.2"
       },
       "definedIn": "pre"
     },
@@ -19238,7 +19140,7 @@
         "id": "render-bundle-finalization",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-finalization",
         "title": "Finalization",
-        "number": "16.1.3"
+        "number": "17.1.3"
       },
       "definedIn": "dt"
     },
@@ -19259,7 +19161,7 @@
         "id": "render-bundle-finalization",
         "href": "https://www.w3.org/TR/webgpu/#render-bundle-finalization",
         "title": "Finalization",
-        "number": "16.1.3"
+        "number": "17.1.3"
       },
       "definedIn": "table"
     },
@@ -19277,7 +19179,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "pre"
     },
@@ -19299,7 +19201,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "dt"
     },
@@ -19319,7 +19221,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19339,7 +19241,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19359,7 +19261,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19379,7 +19281,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19399,7 +19301,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19419,7 +19321,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "dt"
     },
@@ -19439,7 +19341,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19459,7 +19361,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19479,7 +19381,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19499,7 +19401,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19519,7 +19421,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "dt"
     },
@@ -19539,7 +19441,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19559,7 +19461,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19579,7 +19481,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19599,7 +19501,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "dt"
     },
@@ -19619,7 +19521,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "table"
     },
@@ -19639,7 +19541,7 @@
       "heading": {
         "id": "queues",
         "href": "https://www.w3.org/TR/webgpu/#queues",
-        "title": "17. Queues"
+        "title": "18. Queues"
       },
       "definedIn": "dt"
     },
@@ -19658,7 +19560,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "heading"
     },
@@ -19679,7 +19581,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "dt"
     },
@@ -19700,7 +19602,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "dt"
     },
@@ -19719,7 +19621,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "prose"
     },
@@ -19740,7 +19642,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "prose"
     },
@@ -19761,7 +19663,7 @@
         "id": "queryset",
         "href": "https://www.w3.org/TR/webgpu/#queryset",
         "title": "GPUQuerySet",
-        "number": "18.1"
+        "number": "19.1"
       },
       "definedIn": "prose"
     },
@@ -19780,7 +19682,7 @@
         "id": "queryset-creation",
         "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
         "title": "QuerySet Creation",
-        "number": "18.1.1"
+        "number": "19.1.1"
       },
       "definedIn": "pre"
     },
@@ -19801,7 +19703,7 @@
         "id": "queryset-creation",
         "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
         "title": "QuerySet Creation",
-        "number": "18.1.1"
+        "number": "19.1.1"
       },
       "definedIn": "dt"
     },
@@ -19822,7 +19724,7 @@
         "id": "queryset-creation",
         "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
         "title": "QuerySet Creation",
-        "number": "18.1.1"
+        "number": "19.1.1"
       },
       "definedIn": "dt"
     },
@@ -19843,7 +19745,7 @@
         "id": "queryset-creation",
         "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
         "title": "QuerySet Creation",
-        "number": "18.1.1"
+        "number": "19.1.1"
       },
       "definedIn": "dt"
     },
@@ -19864,7 +19766,7 @@
         "id": "queryset-creation",
         "href": "https://www.w3.org/TR/webgpu/#queryset-creation",
         "title": "QuerySet Creation",
-        "number": "18.1.1"
+        "number": "19.1.1"
       },
       "definedIn": "table"
     },
@@ -19885,7 +19787,7 @@
         "id": "queryset-destruction",
         "href": "https://www.w3.org/TR/webgpu/#queryset-destruction",
         "title": "QuerySet Destruction",
-        "number": "18.1.2"
+        "number": "19.1.2"
       },
       "definedIn": "dt"
     },
@@ -19904,7 +19806,7 @@
         "id": "querytype",
         "href": "https://www.w3.org/TR/webgpu/#querytype",
         "title": "QueryType",
-        "number": "18.2"
+        "number": "19.2"
       },
       "definedIn": "pre"
     },
@@ -19925,7 +19827,7 @@
         "id": "querytype",
         "href": "https://www.w3.org/TR/webgpu/#querytype",
         "title": "QueryType",
-        "number": "18.2"
+        "number": "19.2"
       },
       "definedIn": "pre"
     },
@@ -19946,7 +19848,7 @@
         "id": "querytype",
         "href": "https://www.w3.org/TR/webgpu/#querytype",
         "title": "QueryType",
-        "number": "18.2"
+        "number": "19.2"
       },
       "definedIn": "pre"
     },
@@ -19965,7 +19867,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "pre"
     },
@@ -19986,7 +19888,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20007,7 +19909,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20028,7 +19930,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20049,7 +19951,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20070,7 +19972,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20091,7 +19993,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20112,7 +20014,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "table"
     },
@@ -20133,7 +20035,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20154,7 +20056,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20175,7 +20077,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "table"
     },
@@ -20196,7 +20098,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "dt"
     },
@@ -20215,7 +20117,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "prose"
     },
@@ -20234,7 +20136,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "prose"
     },
@@ -20253,7 +20155,7 @@
         "id": "canvas-context",
         "href": "https://www.w3.org/TR/webgpu/#canvas-context",
         "title": "GPUCanvasContext",
-        "number": "19.2"
+        "number": "20.2"
       },
       "definedIn": "prose"
     },
@@ -20272,7 +20174,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "prose"
     },
@@ -20291,7 +20193,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20312,7 +20214,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20333,7 +20235,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20352,7 +20254,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20373,7 +20275,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20394,7 +20296,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20415,7 +20317,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20436,7 +20338,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20457,7 +20359,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20478,7 +20380,7 @@
         "id": "canvas-configuration",
         "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
         "title": "GPUCanvasConfiguration",
-        "number": "19.3"
+        "number": "20.3"
       },
       "definedIn": "pre"
     },
@@ -20499,7 +20401,7 @@
         "id": "GPUCanvasCompositingAlphaMode",
         "href": "https://www.w3.org/TR/webgpu/#GPUCanvasCompositingAlphaMode",
         "title": "GPUCanvasCompositingAlphaMode",
-        "number": "19.4"
+        "number": "20.4"
       },
       "definedIn": "heading"
     },
@@ -20518,7 +20420,7 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
       "definedIn": "pre"
     },
@@ -20539,7 +20441,7 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
       "definedIn": "pre"
     },
@@ -20558,7 +20460,7 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
       "definedIn": "pre"
     },
@@ -20579,7 +20481,7 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
       "definedIn": "pre"
     },
@@ -20600,7 +20502,7 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
       "definedIn": "pre"
     },
@@ -20621,9 +20523,9 @@
         "id": "fatal-errors",
         "href": "https://www.w3.org/TR/webgpu/#fatal-errors",
         "title": "Fatal Errors",
-        "number": "20.1"
+        "number": "21.1"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "enumdef-gpuerrorfilter",
@@ -20640,7 +20542,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20661,7 +20563,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20682,7 +20584,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20701,7 +20603,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20723,7 +20625,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20742,7 +20644,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20764,7 +20666,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20786,7 +20688,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20807,7 +20709,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20826,7 +20728,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20847,7 +20749,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "pre"
     },
@@ -20868,7 +20770,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "dt"
     },
@@ -20889,7 +20791,7 @@
         "id": "error-scopes",
         "href": "https://www.w3.org/TR/webgpu/#error-scopes",
         "title": "Error Scopes",
-        "number": "20.2"
+        "number": "21.2"
       },
       "definedIn": "dt"
     },
@@ -20908,7 +20810,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -20930,7 +20832,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -20952,7 +20854,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -20974,28 +20876,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-gpuuncapturederrorevent-error",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpuuncapturederrorevent-error",
-      "linkingText": [
-        "error"
-      ],
-      "localLinkingText": [],
-      "type": "attribute",
-      "for": [
-        "GPUUncapturedErrorEvent"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "telemetry",
-        "href": "https://www.w3.org/TR/webgpu/#telemetry",
-        "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -21014,7 +20895,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -21035,9 +20916,30 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpuuncapturederrorevent-error",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuuncapturederrorevent-error",
+      "linkingText": [
+        "error"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "GPUUncapturedErrorEvent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "telemetry",
+        "href": "https://www.w3.org/TR/webgpu/#telemetry",
+        "title": "Telemetry",
+        "number": "21.3"
+      },
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpudevice-onuncapturederror",
@@ -21056,7 +20958,7 @@
         "id": "telemetry",
         "href": "https://www.w3.org/TR/webgpu/#telemetry",
         "title": "Telemetry",
-        "number": "20.3"
+        "number": "21.3"
       },
       "definedIn": "pre"
     },
@@ -21075,7 +20977,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21096,7 +20998,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21117,7 +21019,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21138,7 +21040,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21159,7 +21061,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21180,7 +21082,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21199,7 +21101,7 @@
         "id": "rendering-operations",
         "href": "https://www.w3.org/TR/webgpu/#rendering-operations",
         "title": "Rendering",
-        "number": "21.3"
+        "number": "22.3"
       },
       "definedIn": "prose"
     },
@@ -21218,7 +21120,7 @@
         "id": "index-resolution",
         "href": "https://www.w3.org/TR/webgpu/#index-resolution",
         "title": "Index Resolution",
-        "number": "21.3.1"
+        "number": "22.3.1"
       },
       "definedIn": "prose"
     },
@@ -21237,7 +21139,7 @@
         "id": "index-resolution",
         "href": "https://www.w3.org/TR/webgpu/#index-resolution",
         "title": "Index Resolution",
-        "number": "21.3.1"
+        "number": "22.3.1"
       },
       "definedIn": "prose"
     },
@@ -21256,7 +21158,7 @@
         "id": "vertex-processing",
         "href": "https://www.w3.org/TR/webgpu/#vertex-processing",
         "title": "Vertex Processing",
-        "number": "21.3.2"
+        "number": "22.3.2"
       },
       "definedIn": "prose"
     },
@@ -21275,7 +21177,7 @@
         "id": "primitive-assembly",
         "href": "https://www.w3.org/TR/webgpu/#primitive-assembly",
         "title": "Primitive Assembly",
-        "number": "21.3.3"
+        "number": "22.3.3"
       },
       "definedIn": "prose"
     },
@@ -21294,7 +21196,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "21.3.4"
+        "number": "22.3.4"
       },
       "definedIn": "prose"
     },
@@ -21313,7 +21215,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "21.3.4"
+        "number": "22.3.4"
       },
       "definedIn": "prose"
     },
@@ -21332,7 +21234,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "21.3.4"
+        "number": "22.3.4"
       },
       "definedIn": "prose"
     },
@@ -21351,7 +21253,7 @@
         "id": "primitive-clipping",
         "href": "https://www.w3.org/TR/webgpu/#primitive-clipping",
         "title": "Primitive Clipping",
-        "number": "21.3.4"
+        "number": "22.3.4"
       },
       "definedIn": "prose"
     },
@@ -21370,7 +21272,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "prose"
     },
@@ -21389,7 +21291,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "prose"
     },
@@ -21410,7 +21312,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21431,7 +21333,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21450,7 +21352,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "prose"
     },
@@ -21469,7 +21371,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "prose"
     },
@@ -21490,7 +21392,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21511,7 +21413,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21532,7 +21434,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21553,7 +21455,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21574,7 +21476,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21595,7 +21497,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21616,7 +21518,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "dt"
     },
@@ -21635,7 +21537,7 @@
         "id": "rasterization",
         "href": "https://www.w3.org/TR/webgpu/#rasterization",
         "title": "Rasterization",
-        "number": "21.3.5"
+        "number": "22.3.5"
       },
       "definedIn": "prose"
     },
@@ -21654,7 +21556,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "21.3.5.4"
+        "number": "22.3.5.4"
       },
       "definedIn": "prose"
     },
@@ -21673,7 +21575,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "21.3.5.4"
+        "number": "22.3.5.4"
       },
       "definedIn": "prose"
     },
@@ -21692,7 +21594,7 @@
         "id": "polygon-rasterization",
         "href": "https://www.w3.org/TR/webgpu/#polygon-rasterization",
         "title": "Polygon Rasterization",
-        "number": "21.3.5.4"
+        "number": "22.3.5.4"
       },
       "definedIn": "prose"
     },
@@ -21711,7 +21613,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21732,7 +21634,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21753,7 +21655,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21774,7 +21676,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21795,7 +21697,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21814,7 +21716,7 @@
         "id": "fragment-processing",
         "href": "https://www.w3.org/TR/webgpu/#fragment-processing",
         "title": "Fragment Processing",
-        "number": "21.3.6"
+        "number": "22.3.6"
       },
       "definedIn": "prose"
     },
@@ -21833,7 +21735,7 @@
         "id": "alpha-to-coverage",
         "href": "https://www.w3.org/TR/webgpu/#alpha-to-coverage",
         "title": "Alpha to Coverage",
-        "number": "21.3.9"
+        "number": "22.3.9"
       },
       "definedIn": "prose"
     },
@@ -21852,7 +21754,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.11"
+        "number": "22.3.11"
       },
       "definedIn": "prose"
     },
@@ -21871,7 +21773,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.11"
+        "number": "22.3.11"
       },
       "definedIn": "prose"
     },
@@ -21890,7 +21792,7 @@
         "id": "sample-masking",
         "href": "https://www.w3.org/TR/webgpu/#sample-masking",
         "title": "Sample Masking",
-        "number": "21.3.11"
+        "number": "22.3.11"
       },
       "definedIn": "prose"
     },
@@ -21908,7 +21810,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -21926,7 +21828,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -21944,7 +21846,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -21962,7 +21864,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -21980,7 +21882,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -21998,7 +21900,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -22016,7 +21918,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -22034,7 +21936,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -22052,7 +21954,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -22070,7 +21972,7 @@
       "heading": {
         "id": "type-definitions",
         "href": "https://www.w3.org/TR/webgpu/#type-definitions",
-        "title": "22. Type Definitions"
+        "title": "23. Type Definitions"
       },
       "definedIn": "pre"
     },
@@ -22089,7 +21991,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22110,7 +22012,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22131,7 +22033,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22152,7 +22054,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22173,7 +22075,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22192,7 +22094,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22211,7 +22113,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22232,7 +22134,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22253,7 +22155,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22272,7 +22174,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22291,7 +22193,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22312,7 +22214,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22333,7 +22235,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22352,7 +22254,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22373,7 +22275,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22394,7 +22296,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22415,7 +22317,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22434,7 +22336,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22453,7 +22355,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22474,7 +22376,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22495,7 +22397,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22516,7 +22418,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22535,7 +22437,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22556,7 +22458,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22577,7 +22479,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22598,7 +22500,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22617,7 +22519,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "pre"
     },
@@ -22636,7 +22538,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22657,7 +22559,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22678,7 +22580,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22699,7 +22601,7 @@
         "id": "colors-and-vectors",
         "href": "https://www.w3.org/TR/webgpu/#colors-and-vectors",
         "title": "Colors & Vectors",
-        "number": "22.1"
+        "number": "23.1"
       },
       "definedIn": "prose"
     },
@@ -22720,7 +22622,7 @@
         "id": "depth-clip-control",
         "href": "https://www.w3.org/TR/webgpu/#depth-clip-control",
         "title": "\"depth-clip-control\"",
-        "number": "23.1"
+        "number": "24.1"
       },
       "definedIn": "heading"
     },
@@ -22741,7 +22643,7 @@
         "id": "depth24unorm-stencil8",
         "href": "https://www.w3.org/TR/webgpu/#depth24unorm-stencil8",
         "title": "\"depth24unorm-stencil8\"",
-        "number": "23.2"
+        "number": "24.2"
       },
       "definedIn": "heading"
     },
@@ -22762,7 +22664,7 @@
         "id": "depth32float-stencil8",
         "href": "https://www.w3.org/TR/webgpu/#depth32float-stencil8",
         "title": "\"depth32float-stencil8\"",
-        "number": "23.3"
+        "number": "24.3"
       },
       "definedIn": "heading"
     },
@@ -22783,7 +22685,7 @@
         "id": "texture-compression-bc",
         "href": "https://www.w3.org/TR/webgpu/#texture-compression-bc",
         "title": "\"texture-compression-bc\"",
-        "number": "23.4"
+        "number": "24.4"
       },
       "definedIn": "heading"
     },
@@ -22804,7 +22706,7 @@
         "id": "texture-compression-etc",
         "href": "https://www.w3.org/TR/webgpu/#texture-compression-etc",
         "title": "\"texture-compression-etc2\"",
-        "number": "23.5"
+        "number": "24.5"
       },
       "definedIn": "heading"
     },
@@ -22825,7 +22727,7 @@
         "id": "texture-compression-astc",
         "href": "https://www.w3.org/TR/webgpu/#texture-compression-astc",
         "title": "\"texture-compression-astc\"",
-        "number": "23.6"
+        "number": "24.6"
       },
       "definedIn": "heading"
     },
@@ -22846,7 +22748,7 @@
         "id": "timestamp-query",
         "href": "https://www.w3.org/TR/webgpu/#timestamp-query",
         "title": "\"timestamp-query\"",
-        "number": "23.7"
+        "number": "24.7"
       },
       "definedIn": "heading"
     },
@@ -22867,7 +22769,7 @@
         "id": "indirect-first-instance",
         "href": "https://www.w3.org/TR/webgpu/#indirect-first-instance",
         "title": "\"indirect-first-instance\"",
-        "number": "23.8"
+        "number": "24.8"
       },
       "definedIn": "heading"
     },
@@ -22886,7 +22788,7 @@
         "id": "depth-formats",
         "href": "https://www.w3.org/TR/webgpu/#depth-formats",
         "title": "Depth-stencil formats",
-        "number": "24.1.2"
+        "number": "25.1.2"
       },
       "definedIn": "prose"
     },
@@ -22905,7 +22807,7 @@
         "id": "depth-formats",
         "href": "https://www.w3.org/TR/webgpu/#depth-formats",
         "title": "Depth-stencil formats",
-        "number": "24.1.2"
+        "number": "25.1.2"
       },
       "definedIn": "prose"
     },
@@ -22924,7 +22826,7 @@
         "id": "packed-formats",
         "href": "https://www.w3.org/TR/webgpu/#packed-formats",
         "title": "Packed formats",
-        "number": "24.1.3"
+        "number": "25.1.3"
       },
       "definedIn": "prose"
     }

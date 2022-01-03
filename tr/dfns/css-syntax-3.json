@@ -85,14 +85,16 @@
       "definedIn": "prose"
     },
     {
-      "id": "decode",
-      "href": "https://www.w3.org/TR/css-syntax-3/#decode",
+      "id": "css-decode-bytes",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-decode-bytes",
       "linkingText": [
-        "decode"
+        "decode bytes"
       ],
       "localLinkingText": [],
       "type": "dfn",
-      "for": [],
+      "for": [
+        "CSS"
+      ],
       "access": "private",
       "informative": false,
       "heading": {
@@ -113,25 +115,6 @@
       "type": "dfn",
       "for": [],
       "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "input-byte-stream",
-        "href": "https://www.w3.org/TR/css-syntax-3/#input-byte-stream",
-        "title": "The input byte stream",
-        "number": "3.2"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "get-an-encoding",
-      "href": "https://www.w3.org/TR/css-syntax-3/#get-an-encoding",
-      "linkingText": [
-        "get an encoding"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "public",
       "informative": false,
       "heading": {
         "id": "input-byte-stream",
@@ -176,6 +159,50 @@
         "href": "https://www.w3.org/TR/css-syntax-3/#input-preprocessing",
         "title": "Preprocessing the input stream",
         "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-filter-code-points",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-filter-code-points",
+      "linkingText": [
+        "filter code points",
+        "filtered code points"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "input-preprocessing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#input-preprocessing",
+        "title": "Preprocessing the input stream",
+        "number": "3.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-tokenize",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-tokenize",
+      "linkingText": [
+        "tokenize",
+        "tokenization"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "tokenization",
+        "href": "https://www.w3.org/TR/css-syntax-3/#tokenization",
+        "title": "Tokenization",
+        "number": "4"
       },
       "definedIn": "prose"
     },
@@ -826,9 +853,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "name-start-code-point",
-      "href": "https://www.w3.org/TR/css-syntax-3/#name-start-code-point",
+      "id": "ident-start-code-point",
+      "href": "https://www.w3.org/TR/css-syntax-3/#ident-start-code-point",
       "linkingText": [
+        "ident-start code point",
         "name-start code point"
       ],
       "localLinkingText": [],
@@ -845,10 +873,10 @@
       "definedIn": "dt"
     },
     {
-      "id": "name-code-point",
-      "href": "https://www.w3.org/TR/css-syntax-3/#name-code-point",
+      "id": "ident-code-point",
+      "href": "https://www.w3.org/TR/css-syntax-3/#ident-code-point",
       "linkingText": [
-        "name code point"
+        "ident code point"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -940,10 +968,11 @@
       "definedIn": "dt"
     },
     {
-      "id": "identifier",
-      "href": "https://www.w3.org/TR/css-syntax-3/#identifier",
+      "id": "ident-sequence",
+      "href": "https://www.w3.org/TR/css-syntax-3/#ident-sequence",
       "linkingText": [
-        "identifier"
+        "ident sequence",
+        "CSS ident sequence"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1132,13 +1161,13 @@
       "definedIn": "prose"
     },
     {
-      "id": "check-if-three-code-points-would-start-an-identifier",
-      "href": "https://www.w3.org/TR/css-syntax-3/#check-if-three-code-points-would-start-an-identifier",
+      "id": "check-if-three-code-points-would-start-an-ident-sequence",
+      "href": "https://www.w3.org/TR/css-syntax-3/#check-if-three-code-points-would-start-an-ident-sequence",
       "linkingText": [
-        "check if three code points would start an identifier",
-        "starts with an identifier",
-        "start with an identifier",
-        "would start an identifier"
+        "check if three code points would start an ident sequence",
+        "starts with an ident sequence",
+        "start with an ident sequence",
+        "would start an ident sequence"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1148,7 +1177,7 @@
       "heading": {
         "id": "would-start-an-identifier",
         "href": "https://www.w3.org/TR/css-syntax-3/#would-start-an-identifier",
-        "title": "Check if three code points would start an identifier",
+        "title": "Check if three code points would start an ident sequence",
         "number": "4.3.9"
       },
       "definedIn": "prose"
@@ -1176,10 +1205,10 @@
       "definedIn": "prose"
     },
     {
-      "id": "consume-a-name",
-      "href": "https://www.w3.org/TR/css-syntax-3/#consume-a-name",
+      "id": "consume-an-ident-sequence",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-an-ident-sequence",
       "linkingText": [
-        "consume a name"
+        "consume an ident sequence"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1189,7 +1218,7 @@
       "heading": {
         "id": "consume-name",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-name",
-        "title": "Consume a name",
+        "title": "Consume an ident sequence",
         "number": "4.3.11"
       },
       "definedIn": "prose"
@@ -1252,27 +1281,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "at-rule",
-      "href": "https://www.w3.org/TR/css-syntax-3/#at-rule",
-      "linkingText": [
-        "at-rule"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [
-        "CSS"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "parsing",
-        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
-        "title": "Parsing",
-        "number": "5"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "qualified-rule",
       "href": "https://www.w3.org/TR/css-syntax-3/#qualified-rule",
       "linkingText": [
@@ -1313,6 +1321,48 @@
         "number": "5"
       },
       "definedIn": "dt"
+    },
+    {
+      "id": "css-property-declarations",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-property-declarations",
+      "linkingText": [
+        "property declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-descriptor-declarations",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-descriptor-declarations",
+      "linkingText": [
+        "descriptor declarations"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "component-value",
@@ -1382,6 +1432,69 @@
       "href": "https://www.w3.org/TR/css-syntax-3/#simple-block",
       "linkingText": [
         "simple block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "curly-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#curly-block",
+      "linkingText": [
+        "{}-block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "square-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#square-block",
+      "linkingText": [
+        "[]-block"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parsing",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parsing",
+        "title": "Parsing",
+        "number": "5"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "paren-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#paren-block",
+      "linkingText": [
+        "()-block"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -1494,6 +1607,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "normalize-into-a-token-stream",
+      "href": "https://www.w3.org/TR/css-syntax-3/#normalize-into-a-token-stream",
+      "linkingText": [
+        "normalize into a token stream"
+      ],
+      "localLinkingText": [
+        "normalize"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parser-entry-points",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parser-entry-points",
+        "title": "Parser Entry Points",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "css-parse-something-according-to-a-css-grammar",
       "href": "https://www.w3.org/TR/css-syntax-3/#css-parse-something-according-to-a-css-grammar",
       "linkingText": [
@@ -1516,6 +1650,29 @@
       "definedIn": "prose"
     },
     {
+      "id": "css-parse-a-comma-separated-list-according-to-a-css-grammar",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-parse-a-comma-separated-list-according-to-a-css-grammar",
+      "linkingText": [
+        "parse a comma-separated list according to a CSS grammar",
+        "parse a list",
+        "parsing a list"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-comma-list",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parse-comma-list",
+        "title": "Parse A Comma-Separated List According To A CSS Grammar",
+        "number": "5.3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "parse-a-stylesheet",
       "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-stylesheet",
       "linkingText": [
@@ -1530,7 +1687,7 @@
         "id": "parse-stylesheet",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-stylesheet",
         "title": "Parse a stylesheet",
-        "number": "5.3.2"
+        "number": "5.3.3"
       },
       "definedIn": "prose"
     },
@@ -1549,7 +1706,7 @@
         "id": "parse-list-of-rules",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-rules",
         "title": "Parse a list of rules",
-        "number": "5.3.3"
+        "number": "5.3.4"
       },
       "definedIn": "prose"
     },
@@ -1568,7 +1725,7 @@
         "id": "parse-rule",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-rule",
         "title": "Parse a rule",
-        "number": "5.3.4"
+        "number": "5.3.5"
       },
       "definedIn": "prose"
     },
@@ -1587,7 +1744,26 @@
         "id": "parse-declaration",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-declaration",
         "title": "Parse a declaration",
-        "number": "5.3.5"
+        "number": "5.3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-a-style-blocks-contents",
+      "href": "https://www.w3.org/TR/css-syntax-3/#parse-a-style-blocks-contents",
+      "linkingText": [
+        "parse a style block’s contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "parse-style-blocks-contents",
+        "href": "https://www.w3.org/TR/css-syntax-3/#parse-style-blocks-contents",
+        "title": "Parse a style block’s contents",
+        "number": "5.3.7"
       },
       "definedIn": "prose"
     },
@@ -1606,7 +1782,7 @@
         "id": "parse-list-of-declarations",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-declarations",
         "title": "Parse a list of declarations",
-        "number": "5.3.6"
+        "number": "5.3.8"
       },
       "definedIn": "prose"
     },
@@ -1625,7 +1801,7 @@
         "id": "parse-component-value",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-component-value",
         "title": "Parse a component value",
-        "number": "5.3.7"
+        "number": "5.3.9"
       },
       "definedIn": "prose"
     },
@@ -1644,7 +1820,7 @@
         "id": "parse-list-of-component-values",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-list-of-component-values",
         "title": "Parse a list of component values",
-        "number": "5.3.8"
+        "number": "5.3.10"
       },
       "definedIn": "prose"
     },
@@ -1663,7 +1839,7 @@
         "id": "parse-comma-separated-list-of-component-values",
         "href": "https://www.w3.org/TR/css-syntax-3/#parse-comma-separated-list-of-component-values",
         "title": "Parse a comma-separated list of component values",
-        "number": "5.3.9"
+        "number": "5.3.11"
       },
       "definedIn": "prose"
     },
@@ -1725,6 +1901,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "consume-a-style-blocks-contents",
+      "href": "https://www.w3.org/TR/css-syntax-3/#consume-a-style-blocks-contents",
+      "linkingText": [
+        "consume a style block’s contents"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "consume-style-block",
+        "href": "https://www.w3.org/TR/css-syntax-3/#consume-style-block",
+        "title": "Consume a style block’s contents",
+        "number": "5.4.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "consume-a-list-of-declarations",
       "href": "https://www.w3.org/TR/css-syntax-3/#consume-a-list-of-declarations",
       "linkingText": [
@@ -1739,7 +1934,7 @@
         "id": "consume-list-of-declarations",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-list-of-declarations",
         "title": "Consume a list of declarations",
-        "number": "5.4.4"
+        "number": "5.4.5"
       },
       "definedIn": "prose"
     },
@@ -1758,7 +1953,7 @@
         "id": "consume-declaration",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-declaration",
         "title": "Consume a declaration",
-        "number": "5.4.5"
+        "number": "5.4.6"
       },
       "definedIn": "prose"
     },
@@ -1777,7 +1972,7 @@
         "id": "consume-component-value",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-component-value",
         "title": "Consume a component value",
-        "number": "5.4.6"
+        "number": "5.4.7"
       },
       "definedIn": "prose"
     },
@@ -1796,7 +1991,7 @@
         "id": "consume-simple-block",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-simple-block",
         "title": "Consume a simple block",
-        "number": "5.4.7"
+        "number": "5.4.8"
       },
       "definedIn": "prose"
     },
@@ -1815,7 +2010,7 @@
         "id": "consume-simple-block",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-simple-block",
         "title": "Consume a simple block",
-        "number": "5.4.7"
+        "number": "5.4.8"
       },
       "definedIn": "prose"
     },
@@ -1834,7 +2029,7 @@
         "id": "consume-function",
         "href": "https://www.w3.org/TR/css-syntax-3/#consume-function",
         "title": "Consume a function",
-        "number": "5.4.8"
+        "number": "5.4.9"
       },
       "definedIn": "prose"
     },
@@ -2048,6 +2243,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "typedef-style-block",
+      "href": "https://www.w3.org/TR/css-syntax-3/#typedef-style-block",
+      "linkingText": [
+        "<style-block>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "declaration-rule-list",
+        "href": "https://www.w3.org/TR/css-syntax-3/#declaration-rule-list",
+        "title": "Defining Block Contents: the <declaration-list>, <rule-list>, and <stylesheet> productions",
+        "number": "8.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "typedef-declaration-list",
       "href": "https://www.w3.org/TR/css-syntax-3/#typedef-declaration-list",
       "linkingText": [
@@ -2181,6 +2395,84 @@
       "definedIn": "prose"
     },
     {
+      "id": "at-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#at-rule",
+      "linkingText": [
+        "at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-rules",
+        "href": "https://www.w3.org/TR/css-syntax-3/#at-rules",
+        "title": "At-rules",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "statement-at-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#statement-at-rule",
+      "linkingText": [
+        "statement at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-rules",
+        "href": "https://www.w3.org/TR/css-syntax-3/#at-rules",
+        "title": "At-rules",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "block-at-rule",
+      "href": "https://www.w3.org/TR/css-syntax-3/#block-at-rule",
+      "linkingText": [
+        "block at-rule"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-rules",
+        "href": "https://www.w3.org/TR/css-syntax-3/#at-rules",
+        "title": "At-rules",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "css-descriptor",
+      "href": "https://www.w3.org/TR/css-syntax-3/#css-descriptor",
+      "linkingText": [
+        "descriptor"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "CSS"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "at-rules",
+        "href": "https://www.w3.org/TR/css-syntax-3/#at-rules",
+        "title": "At-rules",
+        "number": "9.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "at-ruledef-charset",
       "href": "https://www.w3.org/TR/css-syntax-3/#at-ruledef-charset",
       "linkingText": [
@@ -2195,7 +2487,7 @@
         "id": "charset-rule",
         "href": "https://www.w3.org/TR/css-syntax-3/#charset-rule",
         "title": "The @charset Rule",
-        "number": "9.2"
+        "number": "9.3"
       },
       "definedIn": "prose"
     },

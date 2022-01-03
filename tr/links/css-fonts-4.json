@@ -11,11 +11,13 @@
       "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
-    "https://www.w3.org/Style/CSS/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
     "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
@@ -45,9 +47,11 @@
       "comb-any",
       "url-value",
       "mult-num-range",
+      "fetch-a-style-resource",
       "ex",
       "typedef-ident",
-      "integer-value"
+      "typedef-dashed-ident",
+      "funcdef-calc"
     ],
     "https://www.w3.org/TR/css-values/": [
       "value-defs",
@@ -55,8 +59,12 @@
     ],
     "https://www.w3.org/TR/css-cascade/": [
       "initial-values",
+      "applies-to",
       "inherited-property",
       "computed"
+    ],
+    "https://www.w3.org/TR/cssom/": [
+      "serializing-css-values"
     ],
     "https://www.w3.org/TR/web-animations/": [
       "animation-type"
@@ -75,15 +83,16 @@
       "typedef-declaration-list",
       "parse-comma-separated-list-of-component-values",
       "typedef-urange",
-      "typedef-rule-list",
       "at-rule",
-      "identifier",
-      "css-parse-something-according-to-a-css-grammar"
+      "identifier"
     ],
     "https://www.w3.org/TR/cssom-1/": [
       "dom-window-getcomputedstyle",
+      "concept-css-rule-parent-css-style-sheet",
+      "cssstyledeclaration-declarations",
       "cssrule",
-      "cssstyledeclaration"
+      "cssstyledeclaration",
+      "cssomstring"
     ],
     "https://drafts.csswg.org/css2/": [
       "valdef-font-style-oblique",
@@ -108,20 +117,14 @@
     "https://drafts.csswg.org/css-shapes-2/": [
       "valdef-shape-large"
     ],
+    "https://w3c.github.io/mathml-core/": [
+      "the-math-script-level-property"
+    ],
     "https://html.spec.whatwg.org/": [
       "font"
     ],
-    "https://www.w3.org/TR/WOFF/": [],
-    "https://www.microsoft.com/typography/otspec/default.htm": [],
-    "https://www.w3.org/TR/WOFF2/": [],
-    "https://www.w3.org/Submission/2008/SUBM-EOT-20080305/": [],
-    "https://docs.microsoft.com/en-us/typography/opentype/spec/otff": [
-      "collections"
-    ],
-    "https://www.w3.org/TR/SVG11/": [],
-    "https://www.w3.org/TR/css-color-4/": [
-      "propdef-color",
-      "typedef-color"
+    "https://www.w3.org/TR/2020/NOTE-PFE-evaluation-20201015/": [
+      "range-request"
     ],
     "https://www.w3.org/TR/css3-syntax/": [
       "whitespace"
@@ -140,8 +143,11 @@
       "ascii-case-insensitive",
       "tuple"
     ],
+    "https://url.spec.whatwg.org/": [
+      "concept-url"
+    ],
     "https://fetch.spec.whatwg.org/": [
-      "concept-request",
+      "concept-response",
       "concept-fetch"
     ],
     "https://www.w3.org/TR/css-inline-3/": [
@@ -163,10 +169,6 @@
     ],
     "https://docs.microsoft.com/en-us/typography/opentype/spec/os2": [],
     "https://lists.w3.org/Archives/Public/www-style/2009Dec/0036.html": [],
-    "https://drafts.csswg.org/cssom-1/": [
-      "cssstyledeclaration-declarations",
-      "cssomstring"
-    ],
     "https://www.microsoft.com/typography/otspec/featuretags.htm": [],
     "https://example.com/?q=%E3%82%AB%E3%83%AC%E3%83%BC": [],
     "https://www.microsoft.com/typography/otspec/languagetags.htm": [],
@@ -181,18 +183,56 @@
       "propdef-transform"
     ],
     "https://www.microsoft.com/typography/otspec/fvar.htm": [],
+    "https://www.w3.org/TR/css-color-4/": [
+      "propdef-color"
+    ],
+    "https://www.w3.org/TR/css-variables-1/": [
+      "funcdef-var"
+    ],
+    "https://drafts.csswg.org/css-env-1/": [
+      "funcdef-env"
+    ],
+    "https://www.w3.org/TR/css-fonts-4/": [
+      "descdef-font-palette-values-override-color"
+    ],
     "https://www.unicode.org/emoji/charts/emoji-variants.html": [],
-    "https://heycam.github.io/webidl/": [
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/gsub": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/gpos": [],
+    "https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6morx.html": [],
+    "https://developer.apple.com/fonts/TrueType-Reference-Manual/RM06/Chap6kerx.html": [],
+    "https://scripts.sil.org/cms/scripts/render_download.php?site_id=nrsi&format=file&media_id=GraphiteBinaryFormat_3_0&filename=GraphiteBinaryFormat_3_0.pdf": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/avar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/cvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/fvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/gvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/hvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/mvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/stat": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/vvar": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/colr": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/svg": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/sbix": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/cbdt": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/cpal": [],
+    "https://docs.microsoft.com/en-us/typography/opentype/spec/otff": [
+      "collections"
+    ],
+    "https://www.w3.org/Submission/2008/SUBM-EOT-20080305/": [],
+    "https://www.microsoft.com/typography/otspec/default.htm": [],
+    "https://www.w3.org/TR/SVG11/": [],
+    "https://www.w3.org/TR/WOFF/": [],
+    "https://www.w3.org/TR/WOFF2/": [],
+    "https://webidl.spec.whatwg.org/": [
       "Exposed",
       "idl-unsigned-short",
       "idl-sequence",
       "idl-unsigned-long",
-      "idl-undefined",
-      "es-maplike",
-      "dfn-throw",
-      "syntaxerror"
+      "idl-undefined"
     ],
     "https://www.w3.org/TR/DOM-Level-2-Style/": [],
+    "https://heycam.github.io/webidl/": [
+      "es-maplike"
+    ],
     "https://www.w3.org/TR/security-privacy-questionnaire/": [
       "questions"
     ],
@@ -201,25 +241,28 @@
       "issuecomment-536169515",
       "issuecomment-536815201"
     ],
+    "https://www.w3.org/TR/2021/WD-css-fonts-4-20210729/": [],
     "https://www.w3.org/TR/2020/WD-css-fonts-4-20201117/": [],
     "https://www.w3.org/TR/2019/WD-css-fonts-4-20191113/": [],
     "https://www.w3.org/TR/2018/WD-css-fonts-4-20180920/": [],
     "https://www.w3.org/TR/2018/WD-css-fonts-4-20180410/": [],
+    "https://www.w3.org/TR/2018/REC-css-fonts-3-20180920/": [],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://developer.apple.com/fonts/TrueType-Reference-Manual/RM09/AppendixF.html": [],
     "https://www.microsoft.com/typography/otspec/featurelist.htm": [],
-    "https://tools.ietf.org/html/rfc2119": [],
+    "https://datatracker.ietf.org/doc/html/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc8081": [],
     "https://www.unicode.org/versions/latest/": [],
-    "https://www.unicode.org/reports/tr51/tr51-19.html": [],
+    "https://www.unicode.org/reports/tr51/tr51-21.html": [],
     "https://www.w3.org/TR/charmod-norm/": [],
     "https://www.w3.org/TR/css-font-loading-3/": [],
     "https://www.w3.org/TR/css-conditional-3/": [],
     "https://standards.iso.org/ittf/PubliclyAvailableStandards/c052136_ISO_IEC_14496-22_2009%28E%29.zip": [],
     "https://www.fontfont.com/staticcontent/downloads/FF_OT_User_Guide.pdf": [],
+    "https://www.w3.org/TR/PFE-evaluation/": [],
     "https://developer.apple.com/fonts/TrueType-Reference-Manual/": [],
-    "https://www.unicode.org/reports/tr29/tr29-37.html": [],
+    "https://www.unicode.org/reports/tr29/tr29-39.html": [],
     "https://www.microsoft.com/typography/developers/opentype/default.htm": []
   }
 }

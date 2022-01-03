@@ -884,6 +884,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "valdef-font-size-math",
+      "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-size-math",
+      "linkingText": [
+        "math"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "font-size"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "font-size-prop",
+        "href": "https://www.w3.org/TR/css-fonts-4/#font-size-prop",
+        "title": "Font size: the font-size property",
+        "number": "2.5"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "propdef-font-size-adjust",
       "href": "https://www.w3.org/TR/css-fonts-4/#propdef-font-size-adjust",
       "linkingText": [
@@ -1551,10 +1572,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "font-technology-values",
-      "href": "https://www.w3.org/TR/css-fonts-4/#font-technology-values",
+      "id": "font-tech-values",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-tech-values",
       "linkingText": [
-        "<font-technology>"
+        "<font-tech>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1570,10 +1591,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "font-feature-technology-values",
-      "href": "https://www.w3.org/TR/css-fonts-4/#font-feature-technology-values",
+      "id": "font-feature-tech-values",
+      "href": "https://www.w3.org/TR/css-fonts-4/#font-feature-tech-values",
       "linkingText": [
-        "<font-feature-technology>"
+        "<font-feature-tech>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1589,10 +1610,10 @@
       "definedIn": "pre"
     },
     {
-      "id": "color-font-technology-values",
-      "href": "https://www.w3.org/TR/css-fonts-4/#color-font-technology-values",
+      "id": "color-font-tech-values",
+      "href": "https://www.w3.org/TR/css-fonts-4/#color-font-tech-values",
       "linkingText": [
-        "<color-font-technology>"
+        "<color-font-tech>"
       ],
       "localLinkingText": [],
       "type": "type",
@@ -1772,6 +1793,25 @@
         "number": "4.7"
       },
       "definedIn": "table"
+    },
+    {
+      "id": "fetch-a-font",
+      "href": "https://www.w3.org/TR/css-fonts-4/#fetch-a-font",
+      "linkingText": [
+        "fetch a font"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "font-fetching-requirements",
+        "href": "https://www.w3.org/TR/css-fonts-4/#font-fetching-requirements",
+        "title": "Font fetching requirements",
+        "number": "4.8.2"
+      },
+      "definedIn": "prose"
     },
     {
       "id": "descdef-font-face-font-display",
@@ -3831,27 +3871,6 @@
       "definedIn": "table"
     },
     {
-      "id": "valdef-font-palette-none",
-      "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-palette-none",
-      "linkingText": [
-        "none"
-      ],
-      "localLinkingText": [],
-      "type": "value",
-      "for": [
-        "font-palette"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "font-palette-prop",
-        "href": "https://www.w3.org/TR/css-fonts-4/#font-palette-prop",
-        "title": "Controlling Color Font Palettes: The font-palette property",
-        "number": "9.1"
-      },
-      "definedIn": "dt"
-    },
-    {
       "id": "valdef-font-palette-normal",
       "href": "https://www.w3.org/TR/css-fonts-4/#valdef-font-palette-normal",
       "linkingText": [
@@ -3997,10 +4016,73 @@
       "definedIn": "table"
     },
     {
-      "id": "descdef-font-palette-values-override-color",
-      "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-override-color",
+      "id": "valdef-base-palette-light",
+      "href": "https://www.w3.org/TR/css-fonts-4/#valdef-base-palette-light",
       "linkingText": [
-        "override-color"
+        "light"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://www.w3.org/TR/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "valdef-base-palette-dark",
+      "href": "https://www.w3.org/TR/css-fonts-4/#valdef-base-palette-dark",
+      "linkingText": [
+        "dark"
+      ],
+      "localLinkingText": [],
+      "type": "value",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://www.w3.org/TR/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "typedef-base-palette-integer",
+      "href": "https://www.w3.org/TR/css-fonts-4/#typedef-base-palette-integer",
+      "linkingText": [
+        "<integer>"
+      ],
+      "localLinkingText": [],
+      "type": "type",
+      "for": [
+        "base-palette"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "base-palette-desc",
+        "href": "https://www.w3.org/TR/css-fonts-4/#base-palette-desc",
+        "title": "Specifying the base palette: the base-palette descriptor",
+        "number": "9.2.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "descdef-font-palette-values-override-colors",
+      "href": "https://www.w3.org/TR/css-fonts-4/#descdef-font-palette-values-override-colors",
+      "linkingText": [
+        "override-colors"
       ],
       "localLinkingText": [],
       "type": "descriptor",
@@ -4012,7 +4094,7 @@
       "heading": {
         "id": "override-color",
         "href": "https://www.w3.org/TR/css-fonts-4/#override-color",
-        "title": "Overriding a color from a palette: The override-color descriptor",
+        "title": "Overriding a colors from a palette: The override-colors descriptor",
         "number": "9.2.3"
       },
       "definedIn": "table"
@@ -4154,7 +4236,7 @@
         "id": "om-fontface",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontface",
         "title": "The CSSFontFaceRule interface",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "prose"
     },
@@ -4173,7 +4255,7 @@
         "id": "om-fontface",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontface",
         "title": "The CSSFontFaceRule interface",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "pre"
     },
@@ -4194,7 +4276,7 @@
         "id": "om-fontface",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontface",
         "title": "The CSSFontFaceRule interface",
-        "number": "11.1"
+        "number": "12.1"
       },
       "definedIn": "pre"
     },
@@ -4215,7 +4297,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4234,7 +4316,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "prose"
     },
@@ -4253,7 +4335,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4274,7 +4356,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4295,7 +4377,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4316,7 +4398,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4337,7 +4419,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4358,7 +4440,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4379,7 +4461,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4400,7 +4482,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4419,7 +4501,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4440,7 +4522,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4461,7 +4543,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4482,28 +4564,7 @@
         "id": "om-fontfeaturevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontfeaturevalues",
         "title": "The CSSFontFeatureValuesRule interface",
-        "number": "11.2"
-      },
-      "definedIn": "pre"
-    },
-    {
-      "id": "dom-cssrule-font_palette_values_rule",
-      "href": "https://www.w3.org/TR/css-fonts-4/#dom-cssrule-font_palette_values_rule",
-      "linkingText": [
-        "FONT_PALETTE_VALUES_RULE"
-      ],
-      "localLinkingText": [],
-      "type": "const",
-      "for": [
-        "CSSRule"
-      ],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "om-fontpalettevalues",
-        "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
-        "title": "The CSSFontPaletteValuesRule interface",
-        "number": "11.3"
+        "number": "12.2"
       },
       "definedIn": "pre"
     },
@@ -4522,7 +4583,28 @@
         "id": "om-fontpalettevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
         "title": "The CSSFontPaletteValuesRule interface",
-        "number": "11.3"
+        "number": "12.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-name",
+      "href": "https://www.w3.org/TR/css-fonts-4/#dom-cssfontpalettevaluesrule-name",
+      "linkingText": [
+        "name"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "om-fontpalettevalues",
+        "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
+        "title": "The CSSFontPaletteValuesRule interface",
+        "number": "12.3"
       },
       "definedIn": "pre"
     },
@@ -4543,7 +4625,7 @@
         "id": "om-fontpalettevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
         "title": "The CSSFontPaletteValuesRule interface",
-        "number": "11.3"
+        "number": "12.3"
       },
       "definedIn": "pre"
     },
@@ -4564,7 +4646,28 @@
         "id": "om-fontpalettevalues",
         "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
         "title": "The CSSFontPaletteValuesRule interface",
-        "number": "11.3"
+        "number": "12.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-cssfontpalettevaluesrule-overridecolors",
+      "href": "https://www.w3.org/TR/css-fonts-4/#dom-cssfontpalettevaluesrule-overridecolors",
+      "linkingText": [
+        "overrideColors"
+      ],
+      "localLinkingText": [],
+      "type": "attribute",
+      "for": [
+        "CSSFontPaletteValuesRule"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "om-fontpalettevalues",
+        "href": "https://www.w3.org/TR/css-fonts-4/#om-fontpalettevalues",
+        "title": "The CSSFontPaletteValuesRule interface",
+        "number": "12.3"
       },
       "definedIn": "pre"
     }

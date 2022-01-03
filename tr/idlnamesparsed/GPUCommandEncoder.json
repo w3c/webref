@@ -6,7 +6,7 @@
       "title": "WebGPU",
       "url": "https://www.w3.org/TR/webgpu/"
     },
-    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
+    "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUCommandEncoder {\n    GPURenderPassEncoder beginRenderPass(GPURenderPassDescriptor descriptor);\n    GPUComputePassEncoder beginComputePass(optional GPUComputePassDescriptor descriptor = {});\n\n    undefined copyBufferToBuffer(\n        GPUBuffer source,\n        GPUSize64 sourceOffset,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset,\n        GPUSize64 size);\n\n    undefined copyBufferToTexture(\n        GPUImageCopyBuffer source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToBuffer(\n        GPUImageCopyTexture source,\n        GPUImageCopyBuffer destination,\n        GPUExtent3D copySize);\n\n    undefined copyTextureToTexture(\n        GPUImageCopyTexture source,\n        GPUImageCopyTexture destination,\n        GPUExtent3D copySize);\n\n    undefined clearBuffer(\n        GPUBuffer buffer,\n        optional GPUSize64 offset = 0,\n        optional GPUSize64 size);\n\n    undefined writeTimestamp(GPUQuerySet querySet, GPUSize32 queryIndex);\n\n    undefined resolveQuerySet(\n        GPUQuerySet querySet,\n        GPUSize32 firstQuery,\n        GPUSize32 queryCount,\n        GPUBuffer destination,\n        GPUSize64 destinationOffset);\n\n    GPUCommandBuffer finish(optional GPUCommandBufferDescriptor descriptor = {});\n};",
     "href": "https://www.w3.org/TR/webgpu/#gpucommandencoder"
   },
   "extended": [
@@ -16,6 +16,20 @@
         "url": "https://www.w3.org/TR/webgpu/"
       },
       "fragment": "GPUCommandEncoder includes GPUObjectBase;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUCommandEncoder includes GPUCommandsMixin;"
+    },
+    {
+      "spec": {
+        "title": "WebGPU",
+        "url": "https://www.w3.org/TR/webgpu/"
+      },
+      "fragment": "GPUCommandEncoder includes GPUDebugCommandsMixin;"
     }
   ],
   "inheritance": null,
@@ -30,6 +44,36 @@
         },
         "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
         "href": "https://www.w3.org/TR/webgpu/#gpuobjectbase"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUCommandsMixin {\n};",
+        "href": "https://www.w3.org/TR/webgpu/#gpucommandsmixin"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "GPUDebugCommandsMixin",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "WebGPU",
+          "url": "https://www.w3.org/TR/webgpu/"
+        },
+        "fragment": "interface mixin GPUDebugCommandsMixin {\n    undefined pushDebugGroup(USVString groupLabel);\n    undefined popDebugGroup();\n    undefined insertDebugMarker(USVString markerLabel);\n};",
+        "href": "https://www.w3.org/TR/webgpu/#gpudebugcommandsmixin"
       },
       "extended": [],
       "inheritance": null,

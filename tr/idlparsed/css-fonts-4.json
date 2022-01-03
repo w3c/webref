@@ -305,35 +305,25 @@
         "partial": false
       },
       "CSSFontPaletteValuesRule": {
-        "fragment": "[Exposed=Window]\ninterface CSSFontPaletteValuesRule : CSSRule {\n  maplike<unsigned long, CSSOMString>;\n  attribute CSSOMString fontFamily;\n  attribute CSSOMString basePalette;\n};",
+        "fragment": "[Exposed=Window]interface CSSFontPaletteValuesRule : CSSRule {\n  readonly attribute CSSOMString name;\n  readonly attribute CSSOMString fontFamily;\n  readonly attribute CSSOMString basePalette;\n  readonly attribute CSSOMString overrideColors;\n};",
         "type": "interface",
         "name": "CSSFontPaletteValuesRule",
         "inheritance": "CSSRule",
         "members": [
           {
-            "type": "maplike",
-            "idlType": [
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned long"
-              },
-              {
-                "type": null,
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "CSSOMString"
-              }
-            ],
-            "arguments": [],
+            "type": "attribute",
+            "name": "name",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
             "extAttrs": [],
-            "readonly": false,
-            "async": false
+            "special": "",
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -348,7 +338,7 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
           },
           {
             "type": "attribute",
@@ -363,7 +353,22 @@
             },
             "extAttrs": [],
             "special": "",
-            "readonly": false
+            "readonly": true
+          },
+          {
+            "type": "attribute",
+            "name": "overrideColors",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "CSSOMString"
+            },
+            "extAttrs": [],
+            "special": "",
+            "readonly": true
           }
         ],
         "extAttrs": [
@@ -403,33 +408,6 @@
               "value": {
                 "type": "number",
                 "value": "14"
-              }
-            }
-          ],
-          "extAttrs": [],
-          "partial": true
-        },
-        {
-          "fragment": "partial interface CSSRule {  const unsigned short FONT_PALETTE_VALUES_RULE = 15;\n};",
-          "type": "interface",
-          "name": "CSSRule",
-          "inheritance": null,
-          "members": [
-            {
-              "type": "const",
-              "name": "FONT_PALETTE_VALUES_RULE",
-              "idlType": {
-                "type": "const-type",
-                "extAttrs": [],
-                "generic": "",
-                "nullable": false,
-                "union": false,
-                "idlType": "unsigned short"
-              },
-              "extAttrs": [],
-              "value": {
-                "type": "number",
-                "value": "15"
               }
             }
           ],

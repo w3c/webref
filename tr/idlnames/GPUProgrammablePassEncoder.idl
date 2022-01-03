@@ -7,8 +7,4 @@ interface mixin GPUProgrammablePassEncoder {
                       Uint32Array dynamicOffsetsData,
                       GPUSize64 dynamicOffsetsDataStart,
                       GPUSize32 dynamicOffsetsDataLength);
-
-    undefined pushDebugGroup(USVString groupLabel);
-    undefined popDebugGroup();
-    undefined insertDebugMarker(USVString markerLabel);
 };

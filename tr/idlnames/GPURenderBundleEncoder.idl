@@ -8,6 +8,12 @@ interface GPURenderBundleEncoder {
 GPURenderBundleEncoder includes GPUObjectBase;
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPURenderBundleEncoder includes GPUCommandsMixin;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
+GPURenderBundleEncoder includes GPUDebugCommandsMixin;
+
+// Source: WebGPU (https://www.w3.org/TR/webgpu/)
 GPURenderBundleEncoder includes GPUProgrammablePassEncoder;
 
 // Source: WebGPU (https://www.w3.org/TR/webgpu/)

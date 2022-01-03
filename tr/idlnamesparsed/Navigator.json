@@ -82,6 +82,13 @@
     },
     {
       "spec": {
+        "title": "Contact Picker API",
+        "url": "https://w3c.github.io/contact-api/spec/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
+    },
+    {
+      "spec": {
         "title": "Web Locks API",
         "url": "https://w3c.github.io/web-locks/"
       },
@@ -93,13 +100,6 @@
         "url": "https://webbluetoothcg.github.io/web-bluetooth/"
       },
       "fragment": "[SecureContext]\npartial interface Navigator {\n  [SameObject]\n  readonly attribute Bluetooth bluetooth;\n};"
-    },
-    {
-      "spec": {
-        "title": "Contact Picker API",
-        "url": "https://wicg.github.io/contact-api/spec/"
-      },
-      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  [SecureContext, SameObject] readonly attribute ContactsManager contacts;\n};"
     },
     {
       "spec": {

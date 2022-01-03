@@ -8,21 +8,22 @@
       "partial",
       "future-proofing",
       "unstable",
-      "proprietary-extension",
-      "vendor-prefix"
+      "proprietary-extension"
     ],
     "https://www.w3.org/TR/": [],
+    "https://www.w3.org/groups/wg/css": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://github.com/w3c/csswg-drafts/issues": [],
     "https://lists.w3.org/Archives/Public/public-css-archive/": [],
     "https://lists.w3.org/Archives/Public/www-style/": [],
-    "https://www.w3.org/Style/CSS/": [],
-    "https://www.w3.org/Consortium/Patent-Policy/": [
+    "https://www.w3.org/Consortium/Patent-Policy-20200915/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/2004/01/pp-impl/32061/status": [],
-    "https://www.w3.org/2019/Process-20190301/": [],
-    "https://www.w3.org/TR/css3-positioning/": [
+    "https://www.w3.org/TR/css-position-3/": [
       "valdef-top-auto",
       "propdef-top",
       "propdef-right",
@@ -33,28 +34,20 @@
       "propdef-text-align"
     ],
     "https://www.w3.org/TR/CSS2/": [
+      "propdef-vertical-align",
       "height-layout",
       "property-defs",
+      "propdef-max-height",
+      "propdef-max-width",
+      "propdef-min-height",
+      "propdef-min-width",
       "blockwidth",
       "abs-non-replaced-width",
       "abs-non-replaced-height",
       "abs-replaced-width",
-      "absolutely-positioned",
-      "style-sheet",
-      "user-agent",
-      "ignore"
-    ],
-    "https://www.w3.org/TR/CSS21/": [
-      "propdef-vertical-align",
-      "propdef-max-height",
-      "propdef-max-width",
-      "propdef-width",
-      "propdef-height",
-      "propdef-min-height",
-      "propdef-min-width",
       "propdef-border-spacing",
-      "line-box",
-      "abs-non-replaced-width"
+      "absolutely-positioned",
+      "line-box"
     ],
     "https://www.w3.org/TR/css-values-3/": [
       "value-defs"
@@ -82,7 +75,6 @@
       "multi-line-flex-container",
       "propdef-flex",
       "propdef-flex-flow",
-      "valdef-justify-content-center",
       "abspos-items",
       "flex-layout"
     ],
@@ -96,11 +88,14 @@
       "vertical-writing-mode",
       "line-left",
       "line-right",
+      "start",
+      "end",
       "inline-size",
       "valdef-direction-ltr",
       "valdef-direction-rtl",
       "inline-start",
       "inline-end",
+      "block-end",
       "line-under",
       "line-over",
       "block-flow-direction",
@@ -116,24 +111,24 @@
       "valdef-display-inline-block",
       "valdef-display-inline-table",
       "establish-an-independent-formatting-context",
+      "non-replaced",
       "containing-block",
       "block-formatting-context",
+      "replaced-element",
+      "block-level",
+      "inline-level",
       "formatting-context",
       "block-level-box",
       "inline-level-box"
     ],
-    "https://www.w3.org/TR/css-grid-1/": [
+    "https://www.w3.org/TR/css-grid-2/": [
       "grid-container",
       "grid-item",
       "grid-track",
-      "collapsed-gutter",
       "grid-row",
       "grid-column",
       "grid-area",
-      "grid-item-sizing",
-      "gutters",
       "grid-placement-property",
-      "static-position",
       "grid-layout"
     ],
     "https://www.w3.org/TR/css3-writing-modes/": [
@@ -144,6 +139,15 @@
       "intro-baselines",
       "propdef-direction",
       "dominant-baseline"
+    ],
+    "https://www.w3.org/TR/css-align-3/": [
+      "content-distribute"
+    ],
+    "https://www.w3.org/TR/css-cascade-5/": [
+      "used-value",
+      "shorthand-property",
+      "computed-value",
+      "inherited-value"
     ],
     "https://www.w3.org/TR/cssom-1/": [
       "serializing-css-values"
@@ -156,54 +160,76 @@
       "scrollport",
       "propdef-overflow"
     ],
-    "https://drafts.csswg.org/css-values/": [
+    "https://www.w3.org/TR/css-values/": [
       "value-defs",
       "percentages"
     ],
-    "https://drafts.csswg.org/css-cascade/": [
+    "https://www.w3.org/TR/css-cascade/": [
       "initial-values",
+      "applies-to",
       "inherited-property",
       "computed"
     ],
-    "https://drafts.csswg.org/web-animations/": [
+    "https://www.w3.org/TR/cssom/": [
+      "serializing-css-values"
+    ],
+    "https://www.w3.org/TR/web-animations/": [
       "animation-type"
     ],
-    "https://www.w3.org/TR/css3-multicol/": [
+    "https://www.w3.org/TR/css-inline-3/": [
+      "valdef-baseline-shift-top",
+      "valdef-baseline-shift-bottom",
+      "valdef-alignment-baseline-middle",
+      "propdef-dominant-baseline",
+      "propdef-alignment-baseline",
+      "baseline-synthesis"
+    ],
+    "https://www.w3.org/TR/css-multicol-1/": [
       "multi-column-container",
       "valdef-column-width-auto",
       "propdef-column-width",
       "column-box"
     ],
-    "https://www.w3.org/TR/css-cascade-4/": [
-      "shorthand-property",
-      "computed-value",
-      "inherited-value"
+    "https://www.w3.org/TR/css-grid-1/": [
+      "collapsed-gutter",
+      "grid-item-sizing",
+      "gutters",
+      "static-position"
+    ],
+    "https://www.w3.org/TR/css-box-4/": [
+      "margin-edge",
+      "margin",
+      "margin-box",
+      "propdef-margin",
+      "propdef-padding",
+      "content-box",
+      "content-edge"
     ],
     "https://www.w3.org/TR/css-sizing-3/": [
+      "propdef-width",
+      "propdef-height",
       "valdef-width-auto",
       "fit-content-size",
       "available",
       "stretch-fit-size",
+      "cyclic-percentage-size",
       "percentage-sizing"
     ],
-    "https://drafts.csswg.org/css-pseudo/": [
+    "https://www.w3.org/TR/css-sizing-4/": [
+      "valdef-width-fit-content"
+    ],
+    "https://drafts.csswg.org/css2/": [
+      "visudet",
+      "abs-non-replaced-width"
+    ],
+    "https://www.w3.org/TR/css-pseudo/": [
       "generated-content"
     ],
-    "https://www.w3.org/TR/css-box-3/": [
-      "propdef-margin",
-      "propdef-padding",
-      "margin-box",
-      "content-edge"
-    ],
+    "https://www.w3.org/TR/css3-multicol/": [],
     "https://www.w3.org/TR/css-flexbox/": [],
     "https://www.w3.org/TR/css-grid/": [],
-    "https://www.w3.org/TR/css3-selectors/": [
+    "https://www.w3.org/TR/selectors-3/": [
       "first-formatted-line0"
-    ],
-    "https://www.w3.org/TR/css-inline-3/": [
-      "propdef-dominant-baseline",
-      "propdef-alignment-baseline",
-      "baseline-synthesis"
     ],
     "https://www.w3.org/TR/css-fonts-3/": [
       "first-available-font"
@@ -217,6 +243,12 @@
     "https://drafts.csswg.org/css-logical-1/": [
       "inset-properties"
     ],
+    "https://www.w3.org/TR/2020/WD-css-align-3-20200421/": [],
+    "https://github.com/w3c/csswg-drafts/issues/5235": [],
+    "https://github.com/w3c/csswg-drafts/issues/5088": [],
+    "https://github.com/w3c/csswg-drafts/issues/3611": [],
+    "https://github.com/w3c/csswg-drafts/issues/4545": [],
+    "https://github.com/w3c/csswg-drafts/issues/5923": [],
     "https://www.w3.org/TR/2018/WD-css-align-3-20181206/": [],
     "https://github.com/w3c/csswg-drafts/issues/4659": [],
     "https://github.com/w3c/csswg-drafts/issues/3454": [],
@@ -244,12 +276,14 @@
     "https://github.com/w3c/csswg-drafts/issues/1038": [],
     "https://github.com/w3c/csswg-drafts/issues/1318": [],
     "https://github.com/w3c/csswg-drafts/issues/766": [],
+    "https://www.w3.org/TR/CSS21/": [
+      "style-sheet",
+      "user-agent",
+      "ignore"
+    ],
     "https://www.w3.org/Style/CSS/Test/": [],
     "https://lists.w3.org/Archives/Public/public-css-testsuite": [],
     "https://www.w3.org/TR/css-logical-1/": [],
-    "https://www.w3.org/TR/css-multicol-1/": [],
-    "https://www.w3.org/TR/css-position-3/": [],
-    "https://tools.ietf.org/html/rfc2119": [],
-    "https://www.w3.org/TR/selectors-3/": []
+    "https://datatracker.ietf.org/doc/html/rfc2119": []
   }
 }
