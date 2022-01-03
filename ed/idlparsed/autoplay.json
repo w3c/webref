@@ -1,0 +1,105 @@
+{
+  "spec": {
+    "title": "Autoplay Policy Detection",
+    "url": "https://w3c.github.io/autoplay/"
+  },
+  "idlparsed": {
+    "jsNames": {
+      "constructors": {},
+      "functions": {}
+    },
+    "idlNames": {
+      "AutoplayPolicy": {
+        "fragment": "enum AutoplayPolicy {\n  \"allowed\",\n  \"allowed-muted\",\n  \"disallowed\"\n};",
+        "type": "enum",
+        "name": "AutoplayPolicy",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "allowed"
+          },
+          {
+            "type": "enum-value",
+            "value": "allowed-muted"
+          },
+          {
+            "type": "enum-value",
+            "value": "disallowed"
+          }
+        ],
+        "extAttrs": []
+      }
+    },
+    "idlExtendedNames": {
+      "Document": [
+        {
+          "fragment": "partial interface Document {\n  readonly attribute AutoplayPolicy autoplayPolicy;\n};",
+          "type": "interface",
+          "name": "Document",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "autoplayPolicy",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AutoplayPolicy"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ],
+      "HTMLMediaElement": [
+        {
+          "fragment": "partial interface HTMLMediaElement {\n  readonly attribute AutoplayPolicy autoplayPolicy;\n};",
+          "type": "interface",
+          "name": "HTMLMediaElement",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "attribute",
+              "name": "autoplayPolicy",
+              "idlType": {
+                "type": "attribute-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AutoplayPolicy"
+              },
+              "extAttrs": [],
+              "special": "",
+              "readonly": true
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        }
+      ]
+    },
+    "globals": {},
+    "exposed": {},
+    "dependencies": {
+      "Document": [
+        "AutoplayPolicy"
+      ],
+      "HTMLMediaElement": [
+        "AutoplayPolicy"
+      ]
+    },
+    "externalDependencies": [
+      "Document",
+      "HTMLMediaElement"
+    ],
+    "hasObsoleteIdl": false
+  }
+}
