@@ -71,6 +71,24 @@
     "<color()>": {
       "value": "color( <colorspace-params> [ / <alpha-value> ]? )"
     },
+    "<colorspace-params>": {
+      "value": "[ <predefined-rgb-params> | <xyz-params>]"
+    },
+    "<predefined-rgb-params>": {
+      "value": "<predefined-rgb> [ <number> | <percentage> | none ]{3}"
+    },
+    "<predefined-rgb>": {
+      "value": "srgb | srgb-linear | display-p3 | a98-rgb | prophoto-rgb | rec2020"
+    },
+    "<xyz-params>": {
+      "value": "<xyz-space> [ <number> | none ]{3}"
+    },
+    "<xyz-space>": {
+      "value": "xyz | xyz-d50 | xyz-d65"
+    },
+    "<color-space>": {
+      "value": "<rectangular-color-space> | <polar-color-space>"
+    },
     "<rectangular-color-space>": {
       "value": "srgb | srgb-linear | lab | oklab | xyz | xyz-d50 | xyz-d65"
     },
