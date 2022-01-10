@@ -1,0 +1,5 @@
+// Source: MediaStreamTrack Insertable Media Processing using Streams (https://w3c.github.io/mediacapture-transform/)
+dictionary MediaStreamTrackProcessorInit {
+  required MediaStreamTrack track;
+  [EnforceRange] unsigned short maxBufferSize;
+};

@@ -153,6 +153,11 @@ partial interface Document {
   Promise<undefined> requestStorageAccess();
 };
 
+// Source: Autoplay Policy Detection (https://w3c.github.io/autoplay/)
+partial interface Document {
+  readonly attribute AutoplayPolicy autoplayPolicy;
+};
+
 // Source: Federated Learning of Cohorts (https://wicg.github.io/floc/)
 partial interface Document {
     Promise<InterestCohort> interestCohort();
