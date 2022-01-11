@@ -153,11 +153,6 @@ partial interface Document {
   Promise<undefined> requestStorageAccess();
 };
 
-// Source: Autoplay Policy Detection (https://w3c.github.io/autoplay/)
-partial interface Document {
-  readonly attribute AutoplayPolicy autoplayPolicy;
-};
-
 // Source: Federated Learning of Cohorts (https://wicg.github.io/floc/)
 partial interface Document {
     Promise<InterestCohort> interestCohort();
@@ -174,25 +169,6 @@ partial interface Document {
 partial interface Document {
     [SameObject] readonly attribute FragmentDirective fragmentDirective;
 };
-
-// Source: CSS Font Loading Module Level 3 (https://www.w3.org/TR/css-font-loading-3/)
-Document includes FontFaceSource;
-
-// Source: CSS Regions Module Level 1 (https://www.w3.org/TR/css-regions-1/)
-partial interface Document {
-  readonly attribute NamedFlowMap namedFlows;
-};
-
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
-partial interface Document {
-  Element? elementFromPoint(double x, double y);
-  sequence<Element> elementsFromPoint(double x, double y);
-  CaretPosition? caretPositionFromPoint(double x, double y);
-  readonly attribute Element? scrollingElement;
-};
-
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
-Document includes GeometryUtils;
 
 // Source: Permissions Policy (https://www.w3.org/TR/permissions-policy-1/)
 partial interface Document {
@@ -221,9 +197,4 @@ partial interface Document {
 // Source: Scalable Vector Graphics (SVG) 2 (https://www.w3.org/TR/SVG2/)
 partial interface Document {
   readonly attribute SVGSVGElement? rootElement;
-};
-
-// Source: Web Animations (https://www.w3.org/TR/web-animations-1/)
-partial interface Document {
-    readonly attribute DocumentTimeline timeline;
 };

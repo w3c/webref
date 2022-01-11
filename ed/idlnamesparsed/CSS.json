@@ -1,14 +1,4 @@
 {
-  "name": "CSS",
-  "type": "namespace",
-  "defined": {
-    "spec": {
-      "title": "CSS Object Model (CSSOM)",
-      "url": "https://www.w3.org/TR/cssom-1/"
-    },
-    "fragment": "[Exposed=Window]\nnamespace CSS {\n  CSSOMString escape(CSSOMString ident);\n};",
-    "href": "https://drafts.csswg.org/cssom/#namespacedef-css"
-  },
   "extended": [
     {
       "spec": {
@@ -23,27 +13,6 @@
         "url": "https://www.w3.org/TR/css-animation-worklet-1/"
       },
       "fragment": "[Exposed=Window]\npartial namespace CSS {\n    [SameObject] readonly attribute Worklet animationWorklet;\n};"
-    },
-    {
-      "spec": {
-        "title": "CSS Conditional Rules Module Level 3",
-        "url": "https://www.w3.org/TR/css-conditional-3/"
-      },
-      "fragment": "partial namespace CSS {\n  boolean supports(CSSOMString property, CSSOMString value);\n  boolean supports(CSSOMString conditionText);\n};"
-    },
-    {
-      "spec": {
-        "title": "CSS Custom Highlight API Module Level 1",
-        "url": "https://www.w3.org/TR/css-highlight-api-1/"
-      },
-      "fragment": "partial namespace CSS {\n  readonly attribute HighlightRegistry highlights;\n};"
-    },
-    {
-      "spec": {
-        "title": "CSS Images Module Level 4",
-        "url": "https://www.w3.org/TR/css-images-4/"
-      },
-      "fragment": "partial namespace CSS {\n  [SameObject] readonly attribute any elementSources;\n};"
     },
     {
       "spec": {
@@ -74,6 +43,5 @@
       "fragment": "partial namespace CSS {\n    CSSUnitValue number(double value);\n    CSSUnitValue percent(double value);\n\n    // <length>\n    CSSUnitValue em(double value);\n    CSSUnitValue ex(double value);\n    CSSUnitValue ch(double value);\n    CSSUnitValue ic(double value);\n    CSSUnitValue rem(double value);\n    CSSUnitValue lh(double value);\n    CSSUnitValue rlh(double value);\n    CSSUnitValue vw(double value);\n    CSSUnitValue vh(double value);\n    CSSUnitValue vi(double value);\n    CSSUnitValue vb(double value);\n    CSSUnitValue vmin(double value);\n    CSSUnitValue vmax(double value);\n    CSSUnitValue cm(double value);\n    CSSUnitValue mm(double value);\n    CSSUnitValue Q(double value);\n    CSSUnitValue in(double value);\n    CSSUnitValue pt(double value);\n    CSSUnitValue pc(double value);\n    CSSUnitValue px(double value);\n\n    // <angle>\n    CSSUnitValue deg(double value);\n    CSSUnitValue grad(double value);\n    CSSUnitValue rad(double value);\n    CSSUnitValue turn(double value);\n\n    // <time>\n    CSSUnitValue s(double value);\n    CSSUnitValue ms(double value);\n\n    // <frequency>\n    CSSUnitValue Hz(double value);\n    CSSUnitValue kHz(double value);\n\n    // <resolution>\n    CSSUnitValue dpi(double value);\n    CSSUnitValue dpcm(double value);\n    CSSUnitValue dppx(double value);\n\n    // <flex>\n    CSSUnitValue fr(double value);\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }
