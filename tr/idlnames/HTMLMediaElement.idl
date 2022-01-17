@@ -59,11 +59,6 @@ interface HTMLMediaElement : HTMLElement {
   TextTrack addTextTrack(TextTrackKind kind, optional DOMString label = "", optional DOMString language = "");
 };
 
-// Source: Autoplay Policy Detection (https://w3c.github.io/autoplay/)
-partial interface HTMLMediaElement {
-  readonly attribute AutoplayPolicy autoplayPolicy;
-};
-
 // Source: Audio Output Devices API (https://www.w3.org/TR/audio-output/)
 partial interface HTMLMediaElement {
   [SecureContext] readonly attribute DOMString sinkId;

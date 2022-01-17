@@ -68,6 +68,20 @@
     },
     {
       "spec": {
+        "title": "Autoplay Policy Detection",
+        "url": "https://w3c.github.io/autoplay/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor ctor);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor ctor);\n};"
+    },
+    {
+      "spec": {
+        "title": "Autoplay Policy Detection",
+        "url": "https://w3c.github.io/autoplay/"
+      },
+      "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};"
+    },
+    {
+      "spec": {
         "title": "Badging API",
         "url": "https://w3c.github.io/badging/"
       },

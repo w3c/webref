@@ -2959,6 +2959,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-readablestreamdefaultcontroller-releasesteps",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreamdefaultcontroller-releasesteps",
+      "linkingText": [
+        "[[ReleaseSteps]]"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "ReadableStreamDefaultController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-default-controller-internal-methods",
+        "href": "https://streams.spec.whatwg.org/#rs-default-controller-internal-methods",
+        "title": "Internal methods",
+        "number": "4.6.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "readablebytestreamcontroller",
       "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller",
       "linkingText": [
@@ -3711,6 +3732,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-readablebytestreamcontroller-releasesteps",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontroller-releasesteps",
+      "linkingText": [
+        "[[ReleaseSteps]]"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "ReadableByteStreamController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rbs-controller-internal-methods",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-internal-methods",
+        "title": "Internal methods",
+        "number": "4.7.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "readablestreambyobrequest",
       "href": "https://streams.spec.whatwg.org/#readablestreambyobrequest",
       "linkingText": [
@@ -4166,6 +4208,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "abstract-opdef-readablestreamcontroller-releasesteps",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreamcontroller-releasesteps",
+      "linkingText": [
+        "[[ReleaseSteps]]"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [
+        "ReadableStreamController"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-abstract-ops-used-by-controllers",
+        "href": "https://streams.spec.whatwg.org/#rs-abstract-ops-used-by-controllers",
+        "title": "Interfacing with controllers",
+        "number": "4.9.2"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "readable-stream-add-read-into-request",
       "href": "https://streams.spec.whatwg.org/#readable-stream-add-read-into-request",
       "linkingText": [
@@ -4432,6 +4495,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-readablestreambyobreadererrorreadintorequests",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreambyobreadererrorreadintorequests",
+      "linkingText": [
+        "ReadableStreamBYOBReaderErrorReadIntoRequests"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-reader-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rs-reader-abstract-ops",
+        "title": "Readers",
+        "number": "4.9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "readable-stream-byob-reader-read",
       "href": "https://streams.spec.whatwg.org/#readable-stream-byob-reader-read",
       "linkingText": [
@@ -4451,10 +4533,67 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-readablestreambyobreaderrelease",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreambyobreaderrelease",
+      "linkingText": [
+        "ReadableStreamBYOBReaderRelease"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-reader-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rs-reader-abstract-ops",
+        "title": "Readers",
+        "number": "4.9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-readablestreamdefaultreadererrorreadrequests",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreamdefaultreadererrorreadrequests",
+      "linkingText": [
+        "ReadableStreamDefaultReaderErrorReadRequests"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-reader-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rs-reader-abstract-ops",
+        "title": "Readers",
+        "number": "4.9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "readable-stream-default-reader-read",
       "href": "https://streams.spec.whatwg.org/#readable-stream-default-reader-read",
       "linkingText": [
         "ReadableStreamDefaultReaderRead"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rs-reader-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rs-reader-abstract-ops",
+        "title": "Readers",
+        "number": "4.9.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-readablestreamdefaultreaderrelease",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablestreamdefaultreaderrelease",
+      "linkingText": [
+        "ReadableStreamDefaultReaderRelease"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -4869,6 +5008,44 @@
       "definedIn": "prose"
     },
     {
+      "id": "abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerenqueueclonedchunktoqueue",
+      "linkingText": [
+        "ReadableByteStreamControllerEnqueueClonedChunkToQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rbs-controller-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-abstract-ops",
+        "title": "Byte stream controllers",
+        "number": "4.9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-readablebytestreamcontrollerenqueuedetachedpullintotoqueue",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerenqueuedetachedpullintotoqueue",
+      "linkingText": [
+        "ReadableByteStreamControllerEnqueueDetachedPullIntoToQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rbs-controller-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-abstract-ops",
+        "title": "Byte stream controllers",
+        "number": "4.9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "readable-byte-stream-controller-error",
       "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-error",
       "linkingText": [
@@ -4911,6 +5088,25 @@
       "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-fill-pull-into-descriptor-from-queue",
       "linkingText": [
         "ReadableByteStreamControllerFillPullIntoDescriptorFromQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rbs-controller-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-abstract-ops",
+        "title": "Byte stream controllers",
+        "number": "4.9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-readablebytestreamcontrollerfillreadrequestfromqueue",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerfillreadrequestfromqueue",
+      "linkingText": [
+        "ReadableByteStreamControllerFillReadRequestFromQueue"
       ],
       "localLinkingText": [],
       "type": "abstract-op",
@@ -5006,6 +5202,25 @@
       "href": "https://streams.spec.whatwg.org/#readable-byte-stream-controller-process-pull-into-descriptors-using-queue",
       "linkingText": [
         "ReadableByteStreamControllerProcessPullIntoDescriptorsUsingQueue"
+      ],
+      "localLinkingText": [],
+      "type": "abstract-op",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rbs-controller-abstract-ops",
+        "href": "https://streams.spec.whatwg.org/#rbs-controller-abstract-ops",
+        "title": "Byte stream controllers",
+        "number": "4.9.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "abstract-opdef-readablebytestreamcontrollerprocessreadrequestsusingqueue",
+      "href": "https://streams.spec.whatwg.org/#abstract-opdef-readablebytestreamcontrollerprocessreadrequestsusingqueue",
+      "linkingText": [
+        "ReadableByteStreamControllerProcessReadRequestsUsingQueue"
       ],
       "localLinkingText": [],
       "type": "abstract-op",

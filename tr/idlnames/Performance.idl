@@ -38,7 +38,7 @@ partial interface Performance {
 partial interface Performance {
   undefined clearResourceTimings ();
   undefined setResourceTimingBufferSize (unsigned long maxSize);
-              attribute EventHandler onresourcetimingbufferfull;
+  attribute EventHandler onresourcetimingbufferfull;
 };
 
 // Source: User Timing (https://www.w3.org/TR/user-timing/)

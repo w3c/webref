@@ -2693,112 +2693,106 @@
       "number": "11.6"
     },
     {
-      "id": "sec-temporal-parsetemporaltimezone",
-      "title": "ParseTemporalTimeZone ( string )",
-      "level": 3,
-      "number": "11.6.1"
-    },
-    {
       "id": "sec-temporal-createtemporaltimezone",
       "title": "CreateTemporalTimeZone ( identifier [ , newTarget ] )",
       "level": 3,
-      "number": "11.6.2"
+      "number": "11.6.1"
     },
     {
       "id": "sec-temporal-getisopartsfromepoch",
       "title": "GetISOPartsFromEpoch ( epochNanoseconds )",
       "level": 3,
-      "number": "11.6.3"
+      "number": "11.6.2"
     },
     {
       "id": "sec-temporal-getianatimezoneepochvalue",
       "title": "GetIANATimeZoneEpochValue ( timeZoneIdentifier, year, month, day, hour, minute, second, millisecond, microsecond, nanosecond )",
       "level": 3,
-      "number": "11.6.4"
+      "number": "11.6.3"
     },
     {
       "id": "sec-temporal-getianatimezoneoffsetnanoseconds",
       "title": "GetIANATimeZoneOffsetNanoseconds ( epochNanoseconds, timeZoneIdentifier )",
       "level": 3,
-      "number": "11.6.5"
+      "number": "11.6.4"
     },
     {
       "id": "sec-temporal-getianatimezonenexttransition",
       "title": "GetIANATimeZoneNextTransition ( epochNanoseconds, timeZoneIdentifier )",
       "level": 3,
-      "number": "11.6.6"
+      "number": "11.6.5"
     },
     {
       "id": "sec-temporal-getianatimezoneprevioustransition",
       "title": "GetIANATimeZonePreviousTransition ( epochNanoseconds, timeZoneIdentifier )",
       "level": 3,
-      "number": "11.6.7"
+      "number": "11.6.6"
     },
     {
       "id": "sec-temporal-parsetimezoneoffsetstring",
       "title": "ParseTimeZoneOffsetString ( offsetString )",
       "level": 3,
-      "number": "11.6.8"
+      "number": "11.6.7"
     },
     {
       "id": "sec-temporal-formattimezoneoffsetstring",
       "title": "FormatTimeZoneOffsetString ( offsetNanoseconds )",
       "level": 3,
-      "number": "11.6.9"
+      "number": "11.6.8"
     },
     {
       "id": "sec-temporal-formatisotimezoneoffsetstring",
       "title": "FormatISOTimeZoneOffsetString ( offsetNanoseconds )",
       "level": 3,
-      "number": "11.6.10"
+      "number": "11.6.9"
     },
     {
       "id": "sec-temporal-totemporaltimezone",
       "title": "ToTemporalTimeZone ( temporalTimeZoneLike )",
       "level": 3,
-      "number": "11.6.11"
+      "number": "11.6.10"
     },
     {
       "id": "sec-temporal-getoffsetnanosecondsfor",
       "title": "GetOffsetNanosecondsFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.12"
+      "number": "11.6.11"
     },
     {
       "id": "sec-temporal-builtintimezonegetoffsetstringfor",
       "title": "BuiltinTimeZoneGetOffsetStringFor ( timeZone, instant )",
       "level": 3,
-      "number": "11.6.13"
+      "number": "11.6.12"
     },
     {
       "id": "sec-temporal-builtintimezonegetplaindatetimefor",
       "title": "BuiltinTimeZoneGetPlainDateTimeFor ( timeZone, instant, calendar )",
       "level": 3,
-      "number": "11.6.14"
+      "number": "11.6.13"
     },
     {
       "id": "sec-temporal-builtintimezonegetinstantfor",
       "title": "BuiltinTimeZoneGetInstantFor ( timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.15"
+      "number": "11.6.14"
     },
     {
       "id": "sec-temporal-disambiguatepossibleinstants",
       "title": "DisambiguatePossibleInstants ( possibleInstants, timeZone, dateTime, disambiguation )",
       "level": 3,
-      "number": "11.6.16"
+      "number": "11.6.15"
     },
     {
       "id": "sec-temporal-getpossibleinstantsfor",
       "title": "GetPossibleInstantsFor ( timeZone, dateTime )",
       "level": 3,
-      "number": "11.6.17"
+      "number": "11.6.16"
     },
     {
       "id": "sec-temporal-timezoneequals",
       "title": "TimeZoneEquals ( one, two )",
       "level": 3,
-      "number": "11.6.18"
+      "number": "11.6.17"
     },
     {
       "id": "sec-temporal-calendar-objects",
@@ -3621,6 +3615,10 @@
       "title": "CanonicalizeTimeZoneName ( timeZone )",
       "level": 3,
       "number": "15.1.2"
+    },
+    {
+      "id": "sup-canonicalizetimezonename",
+      "title": "CanonicalizeTimeZoneName (\n          timeZone: a String value that is a valid time zone name as verified by IsValidTimeZoneName,\n        )"
     },
     {
       "id": "sup-defaulttimezone",

@@ -6,7 +6,12 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {},
-      "functions": {}
+      "functions": {
+        "Window": [
+          "Navigator",
+          "Navigator"
+        ]
+      }
     },
     "idlNames": {
       "AutoplayPolicy": {
@@ -28,77 +33,230 @@
           }
         ],
         "extAttrs": []
+      },
+      "HTMLMediaElementConstructor": {
+        "fragment": "callback HTMLMediaElementConstructor = HTMLMediaElement ();",
+        "type": "callback",
+        "name": "HTMLMediaElementConstructor",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "HTMLMediaElement"
+        },
+        "arguments": [],
+        "extAttrs": []
+      },
+      "AudioContextConstructor": {
+        "fragment": "callback AudioContextConstructor = AudioContext ();",
+        "type": "callback",
+        "name": "AudioContextConstructor",
+        "idlType": {
+          "type": "return-type",
+          "extAttrs": [],
+          "generic": "",
+          "nullable": false,
+          "union": false,
+          "idlType": "AudioContext"
+        },
+        "arguments": [],
+        "extAttrs": []
       }
     },
     "idlExtendedNames": {
-      "Document": [
+      "Navigator": [
         {
-          "fragment": "partial interface Document {\n  readonly attribute AutoplayPolicy autoplayPolicy;\n};",
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor ctor);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor ctor);\n};",
           "type": "interface",
-          "name": "Document",
+          "name": "Navigator",
           "inheritance": null,
           "members": [
             {
-              "type": "attribute",
-              "name": "autoplayPolicy",
+              "type": "operation",
+              "name": "getAutoplayPolicy",
               "idlType": {
-                "type": "attribute-type",
+                "type": "return-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
                 "idlType": "AutoplayPolicy"
               },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "ctor",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "HTMLMediaElementConstructor"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
               "extAttrs": [],
-              "special": "",
-              "readonly": true
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "getAutoplayPolicy",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AutoplayPolicy"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "ctor",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AudioContextConstructor"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
-        }
-      ],
-      "HTMLMediaElement": [
+        },
         {
-          "fragment": "partial interface HTMLMediaElement {\n  readonly attribute AutoplayPolicy autoplayPolicy;\n};",
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};",
           "type": "interface",
-          "name": "HTMLMediaElement",
+          "name": "Navigator",
           "inheritance": null,
           "members": [
             {
-              "type": "attribute",
-              "name": "autoplayPolicy",
+              "type": "operation",
+              "name": "getAutoplayPolicy",
               "idlType": {
-                "type": "attribute-type",
+                "type": "return-type",
                 "extAttrs": [],
                 "generic": "",
                 "nullable": false,
                 "union": false,
                 "idlType": "AutoplayPolicy"
               },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "element",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "HTMLMediaElement"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
               "extAttrs": [],
-              "special": "",
-              "readonly": true
+              "special": ""
+            },
+            {
+              "type": "operation",
+              "name": "getAutoplayPolicy",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "",
+                "nullable": false,
+                "union": false,
+                "idlType": "AutoplayPolicy"
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "context",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "AudioContext"
+                  },
+                  "default": null,
+                  "optional": false,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
             }
           ],
-          "extAttrs": [],
+          "extAttrs": [
+            {
+              "type": "extended-attribute",
+              "name": "Exposed",
+              "rhs": {
+                "type": "identifier",
+                "value": "Window"
+              },
+              "arguments": []
+            }
+          ],
           "partial": true
         }
       ]
     },
     "globals": {},
-    "exposed": {},
+    "exposed": {
+      "Window": [
+        "Navigator",
+        "Navigator"
+      ]
+    },
     "dependencies": {
-      "Document": [
-        "AutoplayPolicy"
-      ],
-      "HTMLMediaElement": [
-        "AutoplayPolicy"
+      "Navigator": [
+        "AutoplayPolicy",
+        "HTMLMediaElementConstructor",
+        "AudioContextConstructor",
+        "HTMLMediaElement",
+        "AudioContext"
       ]
     },
     "externalDependencies": [
-      "Document",
-      "HTMLMediaElement"
+      "Navigator",
+      "HTMLMediaElement",
+      "AudioContext"
     ],
     "hasObsoleteIdl": false
   }
