@@ -43,25 +43,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "dfn-gpu",
-      "href": "https://wicg.github.io/compute-pressure/#dfn-gpu",
-      "linkingText": [
-        "GPU"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "processing-units",
-        "href": "https://wicg.github.io/compute-pressure/#processing-units",
-        "title": "Processing Units",
-        "number": "3.1"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "dfn-xpu",
       "href": "https://wicg.github.io/compute-pressure/#dfn-xpu",
       "linkingText": [
@@ -292,6 +273,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-computepressuretarget",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressuretarget",
+      "linkingText": [
+        "ComputePressureTarget"
+      ],
+      "localLinkingText": [],
+      "type": "enum",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserver-object",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+        "title": "The ComputePressureObserver object",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-computepressuretarget-cpu",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressuretarget-cpu",
+      "linkingText": [
+        "cpu"
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "ComputePressureTarget"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-computepressureobserver-object",
+        "href": "https://wicg.github.io/compute-pressure/#the-computepressureobserver-object",
+        "title": "The ComputePressureObserver object",
+        "number": "5.2"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-computepressureobserver",
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver",
       "linkingText": [
@@ -399,8 +420,7 @@
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-constructor",
       "linkingText": [
         "constructor()",
-        "constructor(callback)",
-        "constructor(callback, options)"
+        "constructor(callback)"
       ],
       "localLinkingText": [
         "ComputePressureObserver.constructor",
@@ -425,7 +445,9 @@
       "id": "dom-computepressureobserver-observe",
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-observe",
       "linkingText": [
-        "observe()"
+        "observe()",
+        "observe(target)",
+        "observe(target, options)"
       ],
       "localLinkingText": [
         "ComputePressureObserver.observe",
@@ -450,7 +472,8 @@
       "id": "dom-computepressureobserver-unobserve",
       "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-unobserve",
       "linkingText": [
-        "unobserve()"
+        "unobserve()",
+        "unobserve(target)"
       ],
       "localLinkingText": [
         "ComputePressureObserver.unobserve",
@@ -468,6 +491,31 @@
         "href": "https://wicg.github.io/compute-pressure/#the-unobserve-method",
         "title": "The unobserve() method",
         "number": "5.2.4"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-computepressureobserver-disconnect",
+      "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver-disconnect",
+      "linkingText": [
+        "disconnect()"
+      ],
+      "localLinkingText": [
+        "ComputePressureObserver.disconnect",
+        "ComputePressureObserver.disconnect()",
+        "disconnect"
+      ],
+      "type": "method",
+      "for": [
+        "ComputePressureObserver"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "the-disconnect-method",
+        "href": "https://wicg.github.io/compute-pressure/#the-disconnect-method",
+        "title": "The disconnect() method",
+        "number": "5.2.5"
       },
       "definedIn": "heading"
     },
