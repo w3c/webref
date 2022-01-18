@@ -23,6 +23,13 @@
         "url": "https://wicg.github.io/entries-api/"
       },
       "fragment": "partial interface HTMLInputElement {\n    attribute boolean webkitdirectory;\n    readonly attribute FrozenArray<FileSystemEntry> webkitEntries;\n};"
+    },
+    {
+      "spec": {
+        "title": "HTML Media Capture",
+        "url": "https://www.w3.org/TR/html-media-capture/"
+      },
+      "fragment": "partial interface HTMLInputElement {\n    [CEReactions] attribute DOMString capture;\n};"
     }
   ],
   "inheritance": {
@@ -420,13 +427,6 @@
           "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
         },
         "extended": [
-          {
-            "spec": {
-              "title": "CSS Animations Level 1",
-              "url": "https://www.w3.org/TR/css-animations-1/"
-            },
-            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
-          },
           {
             "spec": {
               "title": "CSS Transitions",
