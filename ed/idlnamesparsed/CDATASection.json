@@ -28,13 +28,6 @@
           "url": "https://dom.spec.whatwg.org/"
         },
         "fragment": "Text includes Slottable;"
-      },
-      {
-        "spec": {
-          "title": "CSSOM View Module",
-          "url": "https://www.w3.org/TR/cssom-view-1/"
-        },
-        "fragment": "Text includes GeometryUtils;"
       }
     ],
     "inheritance": {
@@ -137,21 +130,6 @@
           },
           "fragment": "interface mixin Slottable {\n  readonly attribute HTMLSlotElement? assignedSlot;\n};",
           "href": "https://dom.spec.whatwg.org/#slotable"
-        },
-        "extended": [],
-        "inheritance": null,
-        "includes": []
-      },
-      {
-        "name": "GeometryUtils",
-        "type": "interface mixin",
-        "defined": {
-          "spec": {
-            "title": "CSSOM View Module",
-            "url": "https://www.w3.org/TR/cssom-view-1/"
-          },
-          "fragment": "interface mixin GeometryUtils {\n  sequence<DOMQuad> getBoxQuads(optional BoxQuadOptions options = {});\n  DOMQuad convertQuadFromNode(DOMQuadInit quad, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMQuad convertRectFromNode(DOMRectReadOnly rect, GeometryNode from, optional ConvertCoordinateOptions options = {});\n  DOMPoint convertPointFromNode(DOMPointInit point, GeometryNode from, optional ConvertCoordinateOptions options = {}); // XXX z,w turns into 0\n};",
-          "href": "https://drafts.csswg.org/cssom-view/#geometryutils"
         },
         "extended": [],
         "inheritance": null,
