@@ -5,4 +5,5 @@ interface ComputePressureObserver {
   undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});
   undefined unobserve(ComputePressureTarget target);
   undefined disconnect();
+  sequence<ComputePressureEntry> takeRecords();
 };

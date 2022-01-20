@@ -74,7 +74,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n};",
+        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -193,6 +193,30 @@
               "nullable": false,
               "union": false,
               "idlType": "undefined"
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "takeRecords",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureEntry"
+                }
+              ]
             },
             "arguments": [],
             "extAttrs": [],
@@ -343,7 +367,8 @@
       "ComputePressureObserver": [
         "ComputePressureUpdateCallback",
         "ComputePressureTarget",
-        "ComputePressureObserverOptions"
+        "ComputePressureObserverOptions",
+        "ComputePressureEntry"
       ],
       "ComputePressureEntry": [
         "ComputePressureObserverOptions"
