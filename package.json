@@ -34,12 +34,13 @@
     "css-tree": "2.0.4",
     "flags": "0.1.3",
     "mocha": "9.1.4",
+    "reffy": "6.1.3",
     "rimraf": "3.0.2",
     "webidl2": "24.2.0"
   },
   "scripts": {
     "create-patch": "node tools/create-patch.js",
-    "prepare": "node packages/prepare.js",
+    "prepare": "node tools/prepare-curated.js curated && node tools/prepare-packages.js",
     "test": "mocha --recursive",
     "test-css": "mocha --recursive test/css",
     "test-elements": "mocha --recursive test/elements",

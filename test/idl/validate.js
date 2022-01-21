@@ -1,11 +1,32 @@
-const assert = require('assert').strict;
-const WebIDL2 = require('webidl2');
+/**
+ * Test the validity of Web IDL extracts taken in isolation, and together as
+ * some validation rules have insufficient type information when looking at each
+ * spec in isolation.
+ * 
+ * The tests on individual extracts run against the curated view. The test that
+ * checks the combined Web IDL runs both on the curated view and the
+ * `@webref/idl` package view, because new validation errors may be detected in
+ * the package view, e.g. due to missing base interfaces.
+ */
 
+const assert = require('assert').strict;
+const path = require('path');
+const WebIDL2 = require('webidl2');
 const idl = require('@webref/idl');
 
+const curatedView = {
+  name: 'curated',
+  folder: path.join(__dirname, '..', '..', 'curated', 'idl')
+};
+const packageView = {
+  name: '@webref/idl package',
+  folder: path.join(__dirname, '..', '..', 'packages', 'idl')
+};
+
+// Wrapper around the WebIDL2.js validation function to ignore
+// [LegacyNoInterfaceObject] "errors".
 function validate(ast) {
   const validations = WebIDL2.validate(ast).filter(v => {
-    // Ignore the [LegacyNoInterfaceObject] rule.
     return v.ruleName !== 'no-nointerfaceobject';
   });
   if (!validations.length) {
@@ -17,29 +38,44 @@ function validate(ast) {
   assert.fail(message);
 }
 
-describe('The @webref/idl data', async () => {
+describe(`The ${curatedView.name} view of Web IDL extracts`, function () {
   before(async () => {
-    const all = await idl.parseAll();
+    const all = await idl.parseAll(curatedView.folder);
 
-    // Register late tests
-    // (note "describe" level is needed, and there needs to remain an "it" at
-    // the parent "describe" level)
-    describe('The @webref/idl data is valid per spec', () => {
+    describe(`The ${curatedView.name} view of Web IDL extracts`, function () {
       for (const [spec, ast] of Object.entries(all)) {
-        it(spec, () => {
+        it(`contains valid Web IDL for ${spec}`, function () {
           validate(ast);
         });
       }
     });
 
-    // Also validate all IDL together. Some validation rules have insufficient
-    // type information when looking at each spec in isolation.
-    it('is valid when IDL from all specs gets combined', () => {
-      validate(Object.values(all).flat());
+    describe(`The combined Web IDL in the ${curatedView.name} view`, function () {
+      it('is valid Web IDL', function () {
+        this.slow(1000);
+        validate(Object.values(all).flat());
+      });
     });
   });
 
   // Dummy test needed for "before" to run and register late tests
   // (test will fail if before function throws, e.g. because data is invalid)
-  it('can initialize data', () => {});
+  it('contains data that can be parsed with webidl2.js', () => {});
 });
+
+
+describe(`The ${packageView.name} view of Web IDL extracts`, async () => {
+  before(async () => {
+    const all = await idl.parseAll(packageView.folder);
+
+    describe(`The combined Web IDL in the ${packageView.name} view`, function () {
+      it('is valid Web IDL', function () {
+        this.slow(1000);
+        validate(Object.values(all).flat());
+      });
+    });
+  });
+
+  it('contains data that can be parsed with webidl2.js', () => {});
+});
+

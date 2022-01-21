@@ -51,6 +51,17 @@ async function releasePackage(prNumber) {
   const preReleaseSha = preReleasePR.base.sha;
   console.log(`- Found commit to release: ${preReleaseSha}`);
 
+  // Find corresponding commit in curated branch from PR body
+  const curatedShaRegex = /triggered by curated data at ([0-9a-f]+)./;
+  const curatedShaArr = curatedShaRegex.exec(preReleasePR.body);
+  const curatedSha = curatedShaArr[1];
+  if (curatedSha) {
+    console.log(`- Found corresponding commit on curated branch: ${curatedSha}`);
+  }
+  else {
+    console.log('- No corresponding commit on curated branch');
+  }
+
   console.log();
   console.log("Publish package to npm");
   console.log("- Checkout repo at right commit in temporary folder");
@@ -67,7 +78,10 @@ async function releasePackage(prNumber) {
     console.log(`- Installation folder: ${installFolder}`);
 
     console.log("- Prepare package files");
-    execSync("npm run prepare", {
+    execSync("node tools/prepare-curated.js ed curated", {
+      cwd: installFolder
+    });
+    execSync("node tools/prepare-packages.js curated packages", {
       cwd: installFolder
     });
 
@@ -88,19 +102,33 @@ async function releasePackage(prNumber) {
       console.log("- Skip, no actual package released");
     }
     else {
-      const tag = `@webref/${type}@${pubResult.version}`;
+      const rawTag = `Raw data for @webref/${type}@${pubResult.version}`;
       await octokit.git.createRef({
         owner, repo,
-        ref: `refs/tags/${tag}`,
+        ref: `refs/tags/${rawTag}`,
         sha: preReleaseSha
       });
-      console.log(`- Tagged released commit ${preReleaseSha} with tag ${tag}`);
-      await octokit.git.updateRef({
-        owner, repo,
-        ref: `heads/@webref/${type}@latest`,
-        sha: preReleaseSha
-      });
-      console.log(`- Updated ${type}-latest to point to released commit ${preReleaseSha}`);
+      console.log(`- Tagged released commit ${preReleaseSha} with tag "${rawTag}"`);
+
+      if (curatedSha) {
+        const curatedTag = `@webref/${type}@${pubResult.version}`;
+        await octokit.git.createRef({
+          owner, repo,
+          ref: `refs/tags/${curatedTag}`,
+          sha: curatedSha
+        });
+        console.log(`- Tagged curated commit ${curatedSha} with tag "${curatedTag}"`);
+
+        await octokit.git.updateRef({
+          owner, repo,
+          ref: `heads/@webref/${type}@latest`,
+          sha: curatedSha
+        });
+        console.log(`- Updated ${type}-latest to point to curated commit ${curatedSha}`);
+      }
+      else {
+        console.log(`- No commit to tag on curated branch, ${type}-latest tag not updated`);
+      }
     }
   }
   finally {
