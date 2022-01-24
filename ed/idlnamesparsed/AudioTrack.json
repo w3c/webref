@@ -1,14 +1,4 @@
 {
-  "name": "AudioTrack",
-  "type": "interface",
-  "defined": {
-    "spec": {
-      "title": "HTML Standard",
-      "url": "https://html.spec.whatwg.org/multipage/"
-    },
-    "fragment": "[Exposed=Window]\ninterface AudioTrack {\n  readonly attribute DOMString id;\n  readonly attribute DOMString kind;\n  readonly attribute DOMString label;\n  readonly attribute DOMString language;\n  attribute boolean enabled;\n};",
-    "href": "https://html.spec.whatwg.org/multipage/media.html#audiotrack"
-  },
   "extended": [
     {
       "spec": {
@@ -18,6 +8,5 @@
       "fragment": "[Exposed=(Window,DedicatedWorker)]\npartial interface AudioTrack {\n    readonly        attribute SourceBuffer? sourceBuffer;\n};"
     }
   ],
-  "inheritance": null,
   "includes": []
 }

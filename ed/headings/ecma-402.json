@@ -245,6 +245,12 @@
       "number": "8.2.8"
     },
     {
+      "id": "sec-intl.segmenter-intro",
+      "title": "Intl.Segmenter ( . . . )",
+      "level": 3,
+      "number": "8.2.9"
+    },
+    {
       "id": "sec-function-properties-of-the-intl-object",
       "title": "Function Properties of the Intl Object",
       "level": 2,
@@ -1457,94 +1463,268 @@
       "number": "17.5"
     },
     {
+      "id": "segmenter-objects",
+      "title": "Segmenter Objects",
+      "level": 1,
+      "number": "18"
+    },
+    {
+      "id": "sec-intl-segmenter-constructor",
+      "title": "The Intl.Segmenter Constructor",
+      "level": 2,
+      "number": "18.1"
+    },
+    {
+      "id": "sec-intl.segmenter",
+      "title": "Intl.Segmenter ( [ locales [ , options ] ] )",
+      "level": 3,
+      "number": "18.1.1"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-constructor",
+      "title": "Properties of the Intl.Segmenter Constructor",
+      "level": 2,
+      "number": "18.2"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype",
+      "title": "Intl.Segmenter.prototype",
+      "level": 3,
+      "number": "18.2.1"
+    },
+    {
+      "id": "sec-intl.segmenter.supportedlocalesof",
+      "title": "Intl.Segmenter.supportedLocalesOf ( locales [ , options ] )",
+      "level": 3,
+      "number": "18.2.2"
+    },
+    {
+      "id": "sec-intl.segmenter-internal-slots",
+      "title": "Internal slots",
+      "level": 3,
+      "number": "18.2.3"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-prototype-object",
+      "title": "Properties of the Intl.Segmenter Prototype Object",
+      "level": 2,
+      "number": "18.3"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.constructor",
+      "title": "Intl.Segmenter.prototype.constructor",
+      "level": 3,
+      "number": "18.3.1"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype-@@tostringtag",
+      "title": "Intl.Segmenter.prototype [ @@toStringTag ]",
+      "level": 3,
+      "number": "18.3.2"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.segment",
+      "title": "Intl.Segmenter.prototype.segment ( string )",
+      "level": 3,
+      "number": "18.3.3"
+    },
+    {
+      "id": "sec-intl.segmenter.prototype.resolvedoptions",
+      "title": "Intl.Segmenter.prototype.resolvedOptions ( )",
+      "level": 3,
+      "number": "18.3.4"
+    },
+    {
+      "id": "sec-properties-of-intl-segmenter-instances",
+      "title": "Properties of Intl.Segmenter Instances",
+      "level": 2,
+      "number": "18.4"
+    },
+    {
+      "id": "sec-segments-objects",
+      "title": "Segments Objects",
+      "level": 2,
+      "number": "18.5"
+    },
+    {
+      "id": "sec-createsegmentsobject",
+      "title": "CreateSegmentsObject ( segmenter, string )",
+      "level": 3,
+      "number": "18.5.1"
+    },
+    {
+      "id": "sec-%segmentsprototype%-object",
+      "title": "The %SegmentsPrototype% Object",
+      "level": 3,
+      "number": "18.5.2"
+    },
+    {
+      "id": "sec-%segmentsprototype%.containing",
+      "title": "%SegmentsPrototype%.containing ( index )",
+      "level": 4,
+      "number": "18.5.2.1"
+    },
+    {
+      "id": "sec-%segmentsprototype%-@@iterator",
+      "title": "%SegmentsPrototype% [ @@iterator ] ( )",
+      "level": 4,
+      "number": "18.5.2.2"
+    },
+    {
+      "id": "sec-properties-of-segments-instances",
+      "title": "Properties of Segments Instances",
+      "level": 3,
+      "number": "18.5.3"
+    },
+    {
+      "id": "sec-segment-iterator-objects",
+      "title": "Segment Iterator Objects",
+      "level": 2,
+      "number": "18.6"
+    },
+    {
+      "id": "sec-createsegmentiterator",
+      "title": "CreateSegmentIterator ( segmenter, string )",
+      "level": 3,
+      "number": "18.6.1"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%-object",
+      "title": "The %SegmentIteratorPrototype% Object",
+      "level": 3,
+      "number": "18.6.2"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%.next",
+      "title": "%SegmentIteratorPrototype%.next ( )",
+      "level": 4,
+      "number": "18.6.2.1"
+    },
+    {
+      "id": "sec-%segmentiteratorprototype%.@@tostringtag",
+      "title": "%SegmentIteratorPrototype% [ @@toStringTag ]",
+      "level": 4,
+      "number": "18.6.2.2"
+    },
+    {
+      "id": "sec-properties-of-segment-iterator-instances",
+      "title": "Properties of Segment Iterator Instances",
+      "level": 3,
+      "number": "18.6.3"
+    },
+    {
+      "id": "sec-segment-data-objects",
+      "title": "Segment Data Objects",
+      "level": 2,
+      "number": "18.7"
+    },
+    {
+      "id": "sec-createsegmentdataobject",
+      "title": "CreateSegmentDataObject ( segmenter, string, startIndex, endIndex )",
+      "level": 3,
+      "number": "18.7.1"
+    },
+    {
+      "id": "sec-intl-segmenter-abstracts",
+      "title": "Abstract Operations for Segmenter Objects",
+      "level": 2,
+      "number": "18.8"
+    },
+    {
+      "id": "sec-findboundary",
+      "title": "FindBoundary ( segmenter, string, startIndex, direction )",
+      "level": 3,
+      "number": "18.8.1"
+    },
+    {
       "id": "locale-sensitive-functions",
       "title": "Locale Sensitive Functions of the ECMAScript Language Specification",
       "level": 1,
-      "number": "18"
+      "number": "19"
     },
     {
       "id": "sup-properties-of-the-string-prototype-object",
       "title": "Properties of the String Prototype Object",
       "level": 2,
-      "number": "18.1"
+      "number": "19.1"
     },
     {
       "id": "sup-String.prototype.localeCompare",
       "title": "String.prototype.localeCompare ( that [ , locales [ , options ] ] )",
       "level": 3,
-      "number": "18.1.1"
+      "number": "19.1.1"
     },
     {
       "id": "sup-string.prototype.tolocalelowercase",
       "title": "String.prototype.toLocaleLowerCase ( [ locales ] )",
       "level": 3,
-      "number": "18.1.2"
+      "number": "19.1.2"
     },
     {
       "id": "sup-string.prototype.tolocaleuppercase",
       "title": "String.prototype.toLocaleUpperCase ( [ locales ] )",
       "level": 3,
-      "number": "18.1.3"
+      "number": "19.1.3"
     },
     {
       "id": "sup-properties-of-the-number-prototype-object",
       "title": "Properties of the Number Prototype Object",
       "level": 2,
-      "number": "18.2"
+      "number": "19.2"
     },
     {
       "id": "sup-number.prototype.tolocalestring",
       "title": "Number.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.2.1"
+      "number": "19.2.1"
     },
     {
       "id": "sup-properties-of-the-bigint-prototype-object",
       "title": "Properties of the BigInt Prototype Object",
       "level": 2,
-      "number": "18.3"
+      "number": "19.3"
     },
     {
       "id": "sup-bigint.prototype.tolocalestring",
       "title": "BigInt.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.3.1"
+      "number": "19.3.1"
     },
     {
       "id": "sup-properties-of-the-date-prototype-object",
       "title": "Properties of the Date Prototype Object",
       "level": 2,
-      "number": "18.4"
+      "number": "19.4"
     },
     {
       "id": "sup-date.prototype.tolocalestring",
       "title": "Date.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.4.1"
+      "number": "19.4.1"
     },
     {
       "id": "sup-date.prototype.tolocaledatestring",
       "title": "Date.prototype.toLocaleDateString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.4.2"
+      "number": "19.4.2"
     },
     {
       "id": "sup-date.prototype.tolocaletimestring",
       "title": "Date.prototype.toLocaleTimeString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.4.3"
+      "number": "19.4.3"
     },
     {
       "id": "sup-properties-of-the-array-prototype-object",
       "title": "Properties of the Array Prototype Object",
       "level": 2,
-      "number": "18.5"
+      "number": "19.5"
     },
     {
       "id": "sup-array.prototype.tolocalestring",
       "title": "Array.prototype.toLocaleString ( [ locales [ , options ] ] )",
       "level": 3,
-      "number": "18.5.1"
+      "number": "19.5.1"
     }
   ]
 }
