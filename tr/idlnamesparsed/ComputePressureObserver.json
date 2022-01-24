@@ -6,7 +6,7 @@
       "title": "Compute Pressure API",
       "url": "https://wicg.github.io/compute-pressure/"
     },
-    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(\n    ComputePressureUpdateCallback callback,\n    optional ComputePressureObserverOptions options = {}\n  );\n  undefined observe();\n  undefined unobserve();\n};",
+    "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n};",
     "href": "https://wicg.github.io/compute-pressure/#dom-computepressureobserver"
   },
   "extended": [],
