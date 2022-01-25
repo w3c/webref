@@ -1,5 +1,64 @@
 {
+  "name": "Navigator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Window]\ninterface Navigator {\n  // objects implementing this interface also implement the interfaces given below\n};",
+    "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigator"
+  },
   "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorID;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorLanguage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorOnLine;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorContentUtils;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorCookies;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorPlugins;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "Navigator includes NavigatorConcurrentHardware;"
+    },
     {
       "spec": {
         "title": "Storage Standard",
@@ -309,7 +368,120 @@
       "fragment": "partial interface Navigator {\n  [SecureContext, SameObject] readonly attribute XRSystem xr;\n};"
     }
   ],
+  "inheritance": null,
   "includes": [
+    {
+      "name": "NavigatorID",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLanguage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorOnLine",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorContentUtils",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorContentUtils {\n  [SecureContext] undefined registerProtocolHandler(DOMString scheme, USVString url);\n  [SecureContext] undefined unregisterProtocolHandler(DOMString scheme, USVString url);\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcontentutils"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorCookies",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorCookies {\n  readonly attribute boolean cookieEnabled;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorcookies"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorPlugins",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorPlugins {\n  [SameObject] readonly attribute PluginArray plugins;\n  [SameObject] readonly attribute MimeTypeArray mimeTypes;\n  boolean javaEnabled();\n  readonly attribute boolean pdfViewerEnabled;\n};"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorConcurrentHardware",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "NavigatorStorage",
       "type": "interface mixin",

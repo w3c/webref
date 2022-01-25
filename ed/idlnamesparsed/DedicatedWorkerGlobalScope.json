@@ -1,5 +1,22 @@
 {
+  "name": "DedicatedWorkerGlobalScope",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Global=(Worker,DedicatedWorker),Exposed=DedicatedWorker]\ninterface DedicatedWorkerGlobalScope : WorkerGlobalScope {\n  [Replaceable] readonly attribute DOMString name;\n\n  undefined postMessage(any message, sequence<object> transfer);\n  undefined postMessage(any message, optional StructuredSerializeOptions options = {});\n\n  undefined close();\n\n  attribute EventHandler onmessage;\n  attribute EventHandler onmessageerror;\n};",
+    "href": "https://html.spec.whatwg.org/multipage/workers.html#dedicatedworkerglobalscope"
+  },
   "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "DedicatedWorkerGlobalScope includes AnimationFrameProvider;"
+    },
     {
       "spec": {
         "title": "WebRTC Encoded Transform",
@@ -8,5 +25,153 @@
       "fragment": "partial interface DedicatedWorkerGlobalScope {\n    attribute EventHandler onrtctransform;\n};"
     }
   ],
-  "includes": []
+  "inheritance": {
+    "name": "WorkerGlobalScope",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "[Exposed=Worker]\ninterface WorkerGlobalScope : EventTarget {\n  readonly attribute WorkerGlobalScope self;\n  readonly attribute WorkerLocation location;\n  readonly attribute WorkerNavigator navigator;\n  undefined importScripts(USVString... urls);\n\n  attribute OnErrorEventHandler onerror;\n  attribute EventHandler onlanguagechange;\n  attribute EventHandler onoffline;\n  attribute EventHandler ononline;\n  attribute EventHandler onrejectionhandled;\n  attribute EventHandler onunhandledrejection;\n};",
+      "href": "https://html.spec.whatwg.org/multipage/workers.html#workerglobalscope"
+    },
+    "extended": [
+      {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "WorkerGlobalScope includes WindowOrWorkerGlobalScope;"
+      },
+      {
+        "spec": {
+          "title": "CSS Font Loading Module Level 3",
+          "url": "https://www.w3.org/TR/css-font-loading-3/"
+        },
+        "fragment": "WorkerGlobalScope includes FontFaceSource;"
+      }
+    ],
+    "inheritance": {
+      "name": "EventTarget",
+      "type": "interface",
+      "defined": {
+        "spec": {
+          "title": "DOM Standard",
+          "url": "https://dom.spec.whatwg.org/"
+        },
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "href": "https://dom.spec.whatwg.org/#eventtarget"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    "includes": [
+      {
+        "name": "WindowOrWorkerGlobalScope",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute USVString origin;\n  readonly attribute boolean isSecureContext;\n  readonly attribute boolean crossOriginIsolated;\n\n  undefined reportError(any e);\n\n  // base64 utility methods\n  DOMString btoa(DOMString data);\n  ByteString atob(DOMString data);\n\n  // timers\n  long setTimeout(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearTimeout(optional long id = 0);\n  long setInterval(TimerHandler handler, optional long timeout = 0, any... arguments);\n  undefined clearInterval(optional long id = 0);\n\n  // microtask queuing\n  undefined queueMicrotask(VoidFunction callback);\n\n  // ImageBitmap\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, optional ImageBitmapOptions options = {});\n  Promise<ImageBitmap> createImageBitmap(ImageBitmapSource image, long sx, long sy, long sw, long sh, optional ImageBitmapOptions options = {});\n\n  // structured cloning\n  any structuredClone(any value, optional StructuredSerializeOptions options = {});\n};",
+          "href": "https://html.spec.whatwg.org/multipage/webappapis.html#windoworworkerglobalscope"
+        },
+        "extended": [
+          {
+            "spec": {
+              "title": "Fetch Standard",
+              "url": "https://fetch.spec.whatwg.org/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [NewObject] Promise<Response> fetch(RequestInfo input, optional RequestInit init = {});\n};"
+          },
+          {
+            "spec": {
+              "title": "Trusted Types",
+              "url": "https://w3c.github.io/webappsec-trusted-types/dist/spec/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute TrustedTypePolicyFactory trustedTypes;\n};"
+          },
+          {
+            "spec": {
+              "title": "Origin Policy",
+              "url": "https://wicg.github.io/origin-policy/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute FrozenArray<DOMString> originPolicyIds;\n};"
+          },
+          {
+            "spec": {
+              "title": "Prioritized Task Scheduling",
+              "url": "https://wicg.github.io/scheduling-apis/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  readonly attribute Scheduler scheduler;\n};"
+          },
+          {
+            "spec": {
+              "title": "High Resolution Time",
+              "url": "https://www.w3.org/TR/hr-time-3/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [Replaceable] readonly attribute Performance performance;\n};"
+          },
+          {
+            "spec": {
+              "title": "Indexed Database API 3.0",
+              "url": "https://www.w3.org/TR/IndexedDB-3/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute IDBFactory indexedDB;\n};"
+          },
+          {
+            "spec": {
+              "title": "Service Workers Nightly",
+              "url": "https://www.w3.org/TR/service-workers-1/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SecureContext, SameObject] readonly attribute CacheStorage caches;\n};"
+          },
+          {
+            "spec": {
+              "title": "Web Cryptography API",
+              "url": "https://www.w3.org/TR/WebCryptoAPI/"
+            },
+            "fragment": "partial interface mixin WindowOrWorkerGlobalScope {\n  [SameObject] readonly attribute Crypto crypto;\n};"
+          }
+        ],
+        "inheritance": null,
+        "includes": []
+      },
+      {
+        "name": "FontFaceSource",
+        "type": "interface mixin",
+        "defined": {
+          "spec": {
+            "title": "CSS Font Loading Module Level 3",
+            "url": "https://www.w3.org/TR/css-font-loading-3/"
+          },
+          "fragment": "interface mixin FontFaceSource {\n  readonly attribute FontFaceSet fonts;\n};",
+          "href": "https://drafts.csswg.org/css-font-loading/#fontfacesource"
+        },
+        "extended": [],
+        "inheritance": null,
+        "includes": []
+      }
+    ]
+  },
+  "includes": [
+    {
+      "name": "AnimationFrameProvider",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin AnimationFrameProvider {\n  unsigned long requestAnimationFrame(FrameRequestCallback callback);\n  undefined cancelAnimationFrame(unsigned long handle);\n};",
+        "href": "https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#animationframeprovider"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    }
+  ]
 }

@@ -1,3 +1,12 @@
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+[Exposed=Window]
+interface DataTransferItem {
+  readonly attribute DOMString kind;
+  readonly attribute DOMString type;
+  undefined getAsString(FunctionStringCallback? _callback);
+  File? getAsFile();
+};
+
 // Source: File and Directory Entries API (https://wicg.github.io/entries-api/)
 partial interface DataTransferItem {
     FileSystemEntry? webkitGetAsEntry();

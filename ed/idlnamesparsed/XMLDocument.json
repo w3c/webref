@@ -211,7 +211,7 @@
             "title": "DOM Standard",
             "url": "https://dom.spec.whatwg.org/"
           },
-          "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+          "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
           "href": "https://dom.spec.whatwg.org/#eventtarget"
         },
         "extended": [],
@@ -336,6 +336,13 @@
           "href": "https://html.spec.whatwg.org/multipage/webappapis.html#globaleventhandlers"
         },
         "extended": [
+          {
+            "spec": {
+              "title": "CSS Animations Level 1",
+              "url": "https://www.w3.org/TR/css-animations-1/"
+            },
+            "fragment": "partial interface mixin GlobalEventHandlers {\n  attribute EventHandler onanimationstart;\n  attribute EventHandler onanimationiteration;\n  attribute EventHandler onanimationend;\n  attribute EventHandler onanimationcancel;\n};"
+          },
           {
             "spec": {
               "title": "CSS Transitions",

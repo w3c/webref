@@ -1,5 +1,43 @@
 {
+  "name": "WorkerNavigator",
+  "type": "interface",
+  "defined": {
+    "spec": {
+      "title": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/"
+    },
+    "fragment": "[Exposed=Worker]\ninterface WorkerNavigator {};",
+    "href": "https://html.spec.whatwg.org/multipage/workers.html#workernavigator"
+  },
   "extended": [
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorID;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorLanguage;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorOnLine;"
+    },
+    {
+      "spec": {
+        "title": "HTML Standard",
+        "url": "https://html.spec.whatwg.org/multipage/"
+      },
+      "fragment": "WorkerNavigator includes NavigatorConcurrentHardware;"
+    },
     {
       "spec": {
         "title": "Storage Standard",
@@ -92,7 +130,76 @@
       "fragment": "WorkerNavigator includes NavigatorML;"
     }
   ],
+  "inheritance": null,
   "includes": [
+    {
+      "name": "NavigatorID",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorID {\n  readonly attribute DOMString appCodeName; // constant \"Mozilla\"\n  readonly attribute DOMString appName; // constant \"Netscape\"\n  readonly attribute DOMString appVersion;\n  readonly attribute DOMString platform;\n  readonly attribute DOMString product; // constant \"Gecko\"\n  [Exposed=Window] readonly attribute DOMString productSub;\n  readonly attribute DOMString userAgent;\n  [Exposed=Window] readonly attribute DOMString vendor;\n  [Exposed=Window] readonly attribute DOMString vendorSub; // constant \"\"\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorid"
+      },
+      "extended": [
+        {
+          "spec": {
+            "title": "HTML Standard",
+            "url": "https://html.spec.whatwg.org/multipage/"
+          },
+          "fragment": "partial interface mixin NavigatorID {\n  [Exposed=Window] boolean taintEnabled(); // constant false\n  [Exposed=Window] readonly attribute DOMString oscpu;\n};"
+        }
+      ],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorLanguage",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorLanguage {\n  readonly attribute DOMString language;\n  readonly attribute FrozenArray<DOMString> languages;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatorlanguage"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorOnLine",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorOnLine {\n  readonly attribute boolean onLine;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/system-state.html#navigatoronline"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
+    {
+      "name": "NavigatorConcurrentHardware",
+      "type": "interface mixin",
+      "defined": {
+        "spec": {
+          "title": "HTML Standard",
+          "url": "https://html.spec.whatwg.org/multipage/"
+        },
+        "fragment": "interface mixin NavigatorConcurrentHardware {\n  readonly attribute unsigned long long hardwareConcurrency;\n};",
+        "href": "https://html.spec.whatwg.org/multipage/workers.html#navigatorconcurrenthardware"
+      },
+      "extended": [],
+      "inheritance": null,
+      "includes": []
+    },
     {
       "name": "NavigatorStorage",
       "type": "interface mixin",

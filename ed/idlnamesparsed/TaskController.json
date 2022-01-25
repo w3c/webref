@@ -10,5 +10,20 @@
     "href": "https://wicg.github.io/scheduling-apis/#taskcontroller"
   },
   "extended": [],
+  "inheritance": {
+    "name": "AbortController",
+    "type": "interface",
+    "defined": {
+      "spec": {
+        "title": "DOM Standard",
+        "url": "https://dom.spec.whatwg.org/"
+      },
+      "fragment": "[Exposed=*]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
+      "href": "https://dom.spec.whatwg.org/#abortcontroller"
+    },
+    "extended": [],
+    "inheritance": null,
+    "includes": []
+  },
   "includes": []
 }

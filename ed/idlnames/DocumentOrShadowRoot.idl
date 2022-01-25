@@ -1,6 +1,15 @@
+// Source: DOM Standard (https://dom.spec.whatwg.org/)
+interface mixin DocumentOrShadowRoot {
+};
+
 // Source: Fullscreen API Standard (https://fullscreen.spec.whatwg.org/)
 partial interface mixin DocumentOrShadowRoot {
   [LegacyLenientSetter] readonly attribute Element? fullscreenElement;
+};
+
+// Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
+partial interface mixin DocumentOrShadowRoot {
+  readonly attribute Element? activeElement;
 };
 
 // Source: CSS Object Model (CSSOM) (https://www.w3.org/TR/cssom-1/)

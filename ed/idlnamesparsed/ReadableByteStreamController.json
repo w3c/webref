@@ -6,7 +6,7 @@
       "title": "Streams Standard",
       "url": "https://streams.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
+    "fragment": "[Exposed=*]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
     "href": "https://streams.spec.whatwg.org/#readablebytestreamcontroller"
   },
   "extended": [],
