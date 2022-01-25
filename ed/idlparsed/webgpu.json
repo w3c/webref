@@ -7646,7 +7646,7 @@
         "partial": false
       },
       "GPUComputePassEncoder": {
-        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 x, optional GPUSize32 y = 1, optional GPUSize32 z = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined endPass();\n};",
+        "fragment": "[Exposed=(Window, DedicatedWorker), SecureContext]\ninterface GPUComputePassEncoder {\n    undefined setPipeline(GPUComputePipeline pipeline);\n    undefined dispatch(GPUSize32 workgroupCountX, optional GPUSize32 workgroupCountY = 1, optional GPUSize32 workgroupCountZ = 1);\n    undefined dispatchIndirect(GPUBuffer indirectBuffer, GPUSize64 indirectOffset);\n\n    undefined endPass();\n};",
         "type": "interface",
         "name": "GPUComputePassEncoder",
         "inheritance": null,
@@ -7697,7 +7697,7 @@
             "arguments": [
               {
                 "type": "argument",
-                "name": "x",
+                "name": "workgroupCountX",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -7713,7 +7713,7 @@
               },
               {
                 "type": "argument",
-                "name": "y",
+                "name": "workgroupCountY",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -7732,7 +7732,7 @@
               },
               {
                 "type": "argument",
-                "name": "z",
+                "name": "workgroupCountZ",
                 "extAttrs": [],
                 "idlType": {
                   "type": "argument-type",
@@ -9035,7 +9035,7 @@
         "partial": false
       },
       "GPURenderPassColorAttachment": {
-        "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUTextureView resolveTarget;\n\n    required (GPULoadOp or GPUColor) loadValue;\n    required GPUStoreOp storeOp;\n};",
+        "fragment": "dictionary GPURenderPassColorAttachment {\n    required GPUTextureView view;\n    GPUTextureView resolveTarget;\n\n    GPUColor clearValue;\n    required GPULoadOp loadOp;\n    required GPUStoreOp storeOp;\n};",
         "type": "dictionary",
         "name": "GPURenderPassColorAttachment",
         "inheritance": null,
@@ -9072,32 +9072,30 @@
           },
           {
             "type": "field",
-            "name": "loadValue",
+            "name": "clearValue",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPULoadOp"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUColor"
-                }
-              ]
+              "union": false,
+              "idlType": "GPUColor"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "loadOp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPULoadOp"
             },
             "default": null,
             "required": true
@@ -9122,7 +9120,7 @@
         "partial": false
       },
       "GPURenderPassDepthStencilAttachment": {
-        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    required (GPULoadOp or float) depthLoadValue;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    required (GPULoadOp or GPUStencilValue) stencilLoadValue;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
+        "fragment": "dictionary GPURenderPassDepthStencilAttachment {\n    required GPUTextureView view;\n\n    float depthClearValue = 0;\n    required GPULoadOp depthLoadOp;\n    required GPUStoreOp depthStoreOp;\n    boolean depthReadOnly = false;\n\n    GPUStencilValue stencilClearValue = 0;\n    required GPULoadOp stencilLoadOp;\n    required GPUStoreOp stencilStoreOp;\n    boolean stencilReadOnly = false;\n};",
         "type": "dictionary",
         "name": "GPURenderPassDepthStencilAttachment",
         "inheritance": null,
@@ -9144,32 +9142,33 @@
           },
           {
             "type": "field",
-            "name": "depthLoadValue",
+            "name": "depthClearValue",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPULoadOp"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "float"
-                }
-              ]
+              "union": false,
+              "idlType": "float"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "depthLoadOp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPULoadOp"
             },
             "default": null,
             "required": true
@@ -9209,32 +9208,33 @@
           },
           {
             "type": "field",
-            "name": "stencilLoadValue",
+            "name": "stencilClearValue",
             "extAttrs": [],
             "idlType": {
               "type": "dictionary-type",
               "extAttrs": [],
               "generic": "",
               "nullable": false,
-              "union": true,
-              "idlType": [
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPULoadOp"
-                },
-                {
-                  "type": null,
-                  "extAttrs": [],
-                  "generic": "",
-                  "nullable": false,
-                  "union": false,
-                  "idlType": "GPUStencilValue"
-                }
-              ]
+              "union": false,
+              "idlType": "GPUStencilValue"
+            },
+            "default": {
+              "type": "number",
+              "value": "0"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "stencilLoadOp",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "GPULoadOp"
             },
             "default": null,
             "required": true
@@ -9277,13 +9277,17 @@
         "partial": false
       },
       "GPULoadOp": {
-        "fragment": "enum GPULoadOp {\n    \"load\",\n};",
+        "fragment": "enum GPULoadOp {\n    \"load\",\n    \"clear\",\n};",
         "type": "enum",
         "name": "GPULoadOp",
         "values": [
           {
             "type": "enum-value",
             "value": "load"
+          },
+          {
+            "type": "enum-value",
+            "value": "clear"
           }
         ],
         "extAttrs": []
@@ -12153,8 +12157,8 @@
       ],
       "GPURenderPassColorAttachment": [
         "GPUTextureView",
-        "GPULoadOp",
         "GPUColor",
+        "GPULoadOp",
         "GPUStoreOp"
       ],
       "GPURenderPassDepthStencilAttachment": [

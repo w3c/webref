@@ -16402,9 +16402,9 @@
       "id": "dom-gpucomputepassencoder-dispatch",
       "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch",
       "linkingText": [
-        "dispatch(x, y, z)",
-        "dispatch(x, y)",
-        "dispatch(x)"
+        "dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)",
+        "dispatch(workgroupCountX, workgroupCountY)",
+        "dispatch(workgroupCountX)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16422,15 +16422,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-x",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-x-y-z-x",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
       "linkingText": [
-        "x"
+        "workgroupCountX"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16443,15 +16443,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-y",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-x-y-z-y",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
       "linkingText": [
-        "y"
+        "workgroupCountY"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16464,15 +16464,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-z",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-x-y-z-z",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
       "linkingText": [
-        "z"
+        "workgroupCountZ"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -17288,10 +17288,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpasscolorattachment-loadvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasscolorattachment-loadvalue",
+      "id": "dom-gpurenderpasscolorattachment-clearvalue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasscolorattachment-clearvalue",
       "linkingText": [
-        "loadValue"
+        "clearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassColorAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-attachments",
+        "href": "https://gpuweb.github.io/gpuweb/#color-attachments",
+        "title": "Color Attachments",
+        "number": "16.1.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpasscolorattachment-loadop",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpasscolorattachment-loadop",
+      "linkingText": [
+        "loadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17410,10 +17431,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassdepthstencilattachment-depthloadvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthloadvalue",
+      "id": "dom-gpurenderpassdepthstencilattachment-depthclearvalue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthclearvalue",
       "linkingText": [
-        "depthLoadValue"
+        "depthClearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassDepthStencilAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "depth-stencil-attachments",
+        "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+        "title": "Depth/Stencil Attachments",
+        "number": "16.1.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpassdepthstencilattachment-depthloadop",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-depthloadop",
+      "linkingText": [
+        "depthLoadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17473,10 +17515,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassdepthstencilattachment-stencilloadvalue",
-      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilloadvalue",
+      "id": "dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
       "linkingText": [
-        "stencilLoadValue"
+        "stencilClearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassDepthStencilAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "depth-stencil-attachments",
+        "href": "https://gpuweb.github.io/gpuweb/#depth-stencil-attachments",
+        "title": "Depth/Stencil Attachments",
+        "number": "16.1.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpassdepthstencilattachment-stencilloadop",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpurenderpassdepthstencilattachment-stencilloadop",
+      "linkingText": [
+        "stencilLoadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17597,6 +17660,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpuloadop-clear",
+      "href": "https://gpuweb.github.io/gpuweb/#dom-gpuloadop-clear",
+      "linkingText": [
+        "\"clear\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPULoadOp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "load-and-store-ops",
+        "href": "https://gpuweb.github.io/gpuweb/#load-and-store-ops",
+        "title": "Load & Store Operations",
+        "number": "16.1.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-gpustoreop",
       "href": "https://gpuweb.github.io/gpuweb/#enumdef-gpustoreop",
       "linkingText": [
@@ -17634,7 +17718,7 @@
         "title": "Load & Store Operations",
         "number": "16.1.1.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpustoreop-discard",
@@ -17655,7 +17739,7 @@
         "title": "Load & Store Operations",
         "number": "16.1.1.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dictdef-gpurenderpasslayout",
