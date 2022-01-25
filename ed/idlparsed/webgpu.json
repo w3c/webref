@@ -82,7 +82,7 @@
     },
     "idlNames": {
       "GPUObjectBase": {
-        "fragment": "interface mixin GPUObjectBase {\n    attribute USVString? label;\n};",
+        "fragment": "interface mixin GPUObjectBase {\n    attribute (USVString or undefined) label;\n};",
         "type": "interface mixin",
         "name": "GPUObjectBase",
         "inheritance": null,
@@ -94,9 +94,26 @@
               "type": "attribute-type",
               "extAttrs": [],
               "generic": "",
-              "nullable": true,
-              "union": false,
-              "idlType": "USVString"
+              "nullable": false,
+              "union": true,
+              "idlType": [
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "USVString"
+                },
+                {
+                  "type": null,
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
             },
             "extAttrs": [],
             "special": "",

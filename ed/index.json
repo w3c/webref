@@ -1,7 +1,7 @@
 {
   "type": "crawl",
   "title": "Reffy crawl",
-  "date": "2022-01-24T18:42:07.584Z",
+  "date": "2022-01-25T00:51:27.800Z",
   "options": {
     "output": "report",
     "modules": [
@@ -20,7 +20,7 @@
   },
   "stats": {
     "crawled": 458,
-    "errors": 0
+    "errors": 1
   },
   "results": [
     {
@@ -150,7 +150,7 @@
         "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html"
       ],
       "crawled": "https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc6265bis.json",
       "refs": "refs/rfc6265bis.json",
       "headings": "headings/rfc6265bis.json",
@@ -1918,11 +1918,13 @@
       "versions": [
         "https://tc39.es/intl-displaynames-v2/"
       ],
-      "crawled": "https://tc39.es/intl-displaynames-v2/",
-      "date": "2 December 2021",
-      "links": "links/tc39-intl-displaynames-v2.json",
-      "headings": "headings/tc39-intl-displaynames-v2.json",
-      "ids": "ids/tc39-intl-displaynames-v2.json"
+      "crawled": {
+        "url": "https://tc39.es/intl-displaynames-v2/",
+        "repository": "https://github.com/tc39/intl-displaynames-v2",
+        "sourcePath": "index.html",
+        "filename": "index.html"
+      },
+      "error": "Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/reffy.mjs failed Error: Loading script from reffy/scripts/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/reffy.mjs failed\n    at DOMWorld.addScriptTag (/home/runner/work/webref/webref/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:175:23)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\n    at async processSpecification (/home/runner/work/webref/webref/node_modules/reffy/src/lib/util.js:593:9)\n    at async crawlSpec (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:52:24)\n    at async crawlSpecAndPromise (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:349:22)\n    at async Promise.all (index 37)\n    at async crawlList (/home/runner/work/webref/webref/node_modules/reffy/src/lib/specs-crawler.js:357:21)"
     },
     {
       "url": "https://tc39.es/proposal-accessible-object-hasownproperty/",
@@ -2568,7 +2570,7 @@
         "https://tc39.es/proposal-relative-indexing-method/"
       ],
       "crawled": "https://tc39.es/proposal-relative-indexing-method/",
-      "date": "3 August 2021",
+      "date": "24 January 2022",
       "links": "links/tc39-relative-indexing-method.json",
       "headings": "headings/tc39-relative-indexing-method.json",
       "ids": "ids/tc39-relative-indexing-method.json"
@@ -2713,7 +2715,7 @@
         "https://tc39.es/proposal-temporal/"
       ],
       "crawled": "https://tc39.es/proposal-temporal/",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/tc39-temporal.json",
       "headings": "headings/tc39-temporal.json",
       "ids": "ids/tc39-temporal.json"
@@ -3623,7 +3625,7 @@
       ],
       "crawled": "https://wicg.github.io/app-history/",
       "generator": "bikeshed",
-      "date": "20 January 2022",
+      "date": "24 January 2022",
       "links": "links/app-history.json",
       "refs": "refs/app-history.json",
       "idl": "idl/app-history.idl",
@@ -8699,7 +8701,7 @@
         "https://www.rfc-editor.org/rfc/rfc2397"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc2397",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc2397.json",
       "ids": "ids/rfc2397.json"
     },
@@ -8732,7 +8734,7 @@
         "https://www.rfc-editor.org/rfc/rfc4120"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc4120",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc4120.json",
       "ids": "ids/rfc4120.json"
     },
@@ -8841,7 +8843,7 @@
         "https://www.rfc-editor.org/rfc/rfc6454"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6454",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc6454.json",
       "ids": "ids/rfc6454.json"
     },
@@ -8874,7 +8876,7 @@
         "https://www.rfc-editor.org/rfc/rfc6797"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc6797",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc6797.json",
       "ids": "ids/rfc6797.json"
     },
@@ -8907,7 +8909,7 @@
         "https://www.rfc-editor.org/rfc/rfc7034"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7034",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc7034.json",
       "ids": "ids/rfc7034.json"
     },
@@ -9169,7 +9171,7 @@
         "https://www.rfc-editor.org/rfc/rfc7239"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7239",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc7239.json",
       "ids": "ids/rfc7239.json"
     },
@@ -9202,7 +9204,7 @@
         "https://www.rfc-editor.org/rfc/rfc7469"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7469",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc7469.json",
       "ids": "ids/rfc7469.json"
     },
@@ -9311,7 +9313,7 @@
         "https://www.rfc-editor.org/rfc/rfc7578"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc7578",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc7578.json",
       "ids": "ids/rfc7578.json"
     },
@@ -9572,7 +9574,7 @@
         "https://www.rfc-editor.org/rfc/rfc8942"
       ],
       "crawled": "https://www.rfc-editor.org/rfc/rfc8942",
-      "date": "24 January 2022",
+      "date": "25 January 2022",
       "links": "links/rfc8942.json",
       "refs": "refs/rfc8942.json",
       "headings": "headings/rfc8942.json",
