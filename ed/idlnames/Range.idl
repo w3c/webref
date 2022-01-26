@@ -38,12 +38,6 @@ interface Range : AbstractRange {
   stringifier;
 };
 
-// Source: CSSOM View Module (https://www.w3.org/TR/cssom-view-1/)
-partial interface Range {
-  DOMRectList getClientRects();
-  [NewObject] DOMRect getBoundingClientRect();
-};
-
 // Source: DOM Parsing and Serialization (https://www.w3.org/TR/DOM-Parsing/)
 partial interface Range {
   [CEReactions, NewObject] DocumentFragment createContextualFragment(DOMString fragment);

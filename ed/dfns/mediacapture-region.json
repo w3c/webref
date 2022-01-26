@@ -1,0 +1,427 @@
+{
+  "spec": {
+    "title": "Region Capture",
+    "url": "https://w3c.github.io/mediacapture-region/"
+  },
+  "dfns": [
+    {
+      "id": "dfn-display-surface",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-display-surface",
+      "linkingText": [
+        "display-surface"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#definitions",
+        "title": "Definitions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-browser",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-browser",
+      "linkingText": [
+        "browser"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#definitions",
+        "title": "Definitions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-self-capture",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-self-capture",
+      "linkingText": [
+        "self-capture"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#definitions",
+        "title": "Definitions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-self-capture-video-track",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-self-capture-video-track",
+      "linkingText": [
+        "self-capture video track"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#definitions",
+        "title": "Definitions",
+        "number": "2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-tagging",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-tagging",
+      "linkingText": [
+        "tagging"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "solution-overview",
+        "href": "https://w3c.github.io/mediacapture-region/#solution-overview",
+        "title": "Solution Overview",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-crop-states",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-crop-states",
+      "linkingText": [
+        "crop-states"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "solution-overview",
+        "href": "https://w3c.github.io/mediacapture-region/#solution-overview",
+        "title": "Solution Overview",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cropped",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-cropped",
+      "linkingText": [
+        "cropped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "solution-overview",
+        "href": "https://w3c.github.io/mediacapture-region/#solution-overview",
+        "title": "Solution Overview",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-uncropped",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-uncropped",
+      "linkingText": [
+        "uncropped"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "solution-overview",
+        "href": "https://w3c.github.io/mediacapture-region/#solution-overview",
+        "title": "Solution Overview",
+        "number": "5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-croptarget-production",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-croptarget-production",
+      "linkingText": [
+        "CropTarget Production"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "produce-crop-target",
+        "href": "https://w3c.github.io/mediacapture-region/#produce-crop-target",
+        "title": "CropTarget Production",
+        "number": "6"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-croptarget",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-croptarget",
+      "linkingText": [
+        "CropTarget"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "crop-target",
+        "href": "https://w3c.github.io/mediacapture-region/#crop-target",
+        "title": "CropTarget Definition",
+        "number": "6.2"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dom-mediadevices-producecroptarget",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-mediadevices-producecroptarget",
+      "linkingText": [
+        "produceCropTarget()",
+        "produceCropTarget(element)"
+      ],
+      "localLinkingText": [
+        "MediaDevices.produceCropTarget",
+        "MediaDevices.produceCropTarget()",
+        "produceCropTarget"
+      ],
+      "type": "method",
+      "for": [
+        "MediaDevices"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "producecroptarget-method",
+        "href": "https://w3c.github.io/mediacapture-region/#producecroptarget-method",
+        "title": "MediaDevices.produceCropTarget",
+        "number": "6.3"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-valid-croptarget",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-valid-croptarget",
+      "linkingText": [
+        "valid CropTarget"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "producecroptarget-method",
+        "href": "https://w3c.github.io/mediacapture-region/#producecroptarget-method",
+        "title": "MediaDevices.produceCropTarget",
+        "number": "6.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-cropping-mechanism",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-cropping-mechanism",
+      "linkingText": [
+        "Cropping Mechanism"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "cropping-a-track",
+        "href": "https://w3c.github.io/mediacapture-region/#cropping-a-track",
+        "title": "Cropping Mechanism",
+        "number": "7"
+      },
+      "definedIn": "heading"
+    },
+    {
+      "id": "dfn-mediastreamtrackorsubclassthereof",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-mediastreamtrackorsubclassthereof",
+      "linkingText": [
+        "MediaStreamTrackOrSubclassThereof"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "browser-capture-media-stream-track",
+        "href": "https://w3c.github.io/mediacapture-region/#browser-capture-media-stream-track",
+        "title": "BrowserCaptureMediaStreamTrack",
+        "number": "7.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-browsercapturemediastreamtrack",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack",
+      "linkingText": [
+        "BrowserCaptureMediaStreamTrack"
+      ],
+      "localLinkingText": [],
+      "type": "interface",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-capture-media-stream-track",
+        "href": "https://w3c.github.io/mediacapture-region/#browser-capture-media-stream-track",
+        "title": "BrowserCaptureMediaStreamTrack",
+        "number": "7.1"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-browsercapturemediastreamtrack-cropto",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-cropto",
+      "linkingText": [
+        "cropTo()",
+        "cropTo(cropTarget)"
+      ],
+      "localLinkingText": [
+        "BrowserCaptureMediaStreamTrack.cropTo",
+        "BrowserCaptureMediaStreamTrack.cropTo()",
+        "cropTo"
+      ],
+      "type": "method",
+      "for": [
+        "BrowserCaptureMediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-capture-media-stream-track",
+        "href": "https://w3c.github.io/mediacapture-region/#browser-capture-media-stream-track",
+        "title": "BrowserCaptureMediaStreamTrack",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-browsercapturemediastreamtrack-clone",
+      "href": "https://w3c.github.io/mediacapture-region/#dom-browsercapturemediastreamtrack-clone",
+      "linkingText": [
+        "clone()"
+      ],
+      "localLinkingText": [
+        "BrowserCaptureMediaStreamTrack.clone",
+        "BrowserCaptureMediaStreamTrack.clone()",
+        "clone"
+      ],
+      "type": "method",
+      "for": [
+        "BrowserCaptureMediaStreamTrack"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "browser-capture-media-stream-track",
+        "href": "https://w3c.github.io/mediacapture-region/#browser-capture-media-stream-track",
+        "title": "BrowserCaptureMediaStreamTrack",
+        "number": "7.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dfn-potential-crop-target",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-potential-crop-target",
+      "linkingText": [
+        "potential crop-target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "crop-session-definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#crop-session-definitions",
+        "title": "Crop-Session Definitions",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-crop-session-target",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-crop-session-target",
+      "linkingText": [
+        "crop-session target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "crop-session-definitions",
+        "href": "https://w3c.github.io/mediacapture-region/#crop-session-definitions",
+        "title": "Crop-Session Definitions",
+        "number": "7.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-empty-crop-session-target",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-empty-crop-session-target",
+      "linkingText": [
+        "empty crop-session target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "empty-crop-target",
+        "href": "https://w3c.github.io/mediacapture-region/#empty-crop-target",
+        "title": "Empty Crop-Target",
+        "number": "7.2.2.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dfn-disconnected-crop-session-target",
+      "href": "https://w3c.github.io/mediacapture-region/#dfn-disconnected-crop-session-target",
+      "linkingText": [
+        "disconnected crop-session target"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "disconnected-crop-target",
+        "href": "https://w3c.github.io/mediacapture-region/#disconnected-crop-target",
+        "title": "Disconnected Crop-Session Target",
+        "number": "7.2.2.2"
+      },
+      "definedIn": "prose"
+    }
+  ]
+}
