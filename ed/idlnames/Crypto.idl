@@ -5,9 +5,3 @@ interface Crypto {
   ArrayBufferView getRandomValues(ArrayBufferView array);
   [SecureContext] DOMString randomUUID();
 };
-
-// Source: uuid (https://wicg.github.io/uuid/)
-[Exposed=(Window,Worker)]
-partial interface Crypto {
-  [SecureContext] DOMString randomUUID();
-};

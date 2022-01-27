@@ -7,5 +7,6 @@ dictionary RTCEncodedVideoFrameMetadata {
     long spatialIndex;
     long temporalIndex;
     long synchronizationSource;
+    octet payloadType;
     sequence<long> contributingSources;
 };

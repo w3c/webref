@@ -17,6 +17,11 @@ partial interface RTCRtpSender {
     attribute RTCRtpTransform? transform;
 };
 
+// Source: WebRTC Encoded Transform (https://www.w3.org/TR/webrtc-encoded-transform/)
+partial interface RTCRtpSender {
+    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);
+};
+
 // Source: WebRTC 1.0: Real-Time Communication Between Browsers (https://www.w3.org/TR/webrtc/)
 partial interface RTCRtpSender {
   readonly attribute RTCDTMFSender? dtmf;
