@@ -2314,7 +2314,7 @@
         "partial": false
       },
       "GPUTextureDescriptor": {
-        "fragment": "dictionary GPUTextureDescriptor : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n};",
+        "fragment": "dictionary GPUTextureDescriptor : GPUObjectDescriptorBase {\n    required GPUExtent3D size;\n    GPUIntegerCoordinate mipLevelCount = 1;\n    GPUSize32 sampleCount = 1;\n    GPUTextureDimension dimension = \"2d\";\n    required GPUTextureFormat format;\n    required GPUTextureUsageFlags usage;\n    sequence<GPUTextureFormat> viewFormats = [];\n};",
         "type": "dictionary",
         "name": "GPUTextureDescriptor",
         "inheritance": "GPUObjectDescriptorBase",
@@ -2417,6 +2417,33 @@
             },
             "default": null,
             "required": true
+          },
+          {
+            "type": "field",
+            "name": "viewFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureFormat"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
+            },
+            "required": false
           }
         ],
         "extAttrs": [],
@@ -10164,7 +10191,7 @@
         "extAttrs": []
       },
       "GPUCanvasConfiguration": {
-        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
+        "fragment": "dictionary GPUCanvasConfiguration {\n    required GPUDevice device;\n    required GPUTextureFormat format;\n    GPUTextureUsageFlags usage = 0x10;  // GPUTextureUsage.RENDER_ATTACHMENT\n    sequence<GPUTextureFormat> viewFormats = [];\n    GPUPredefinedColorSpace colorSpace = \"srgb\";\n    GPUCanvasCompositingAlphaMode compositingAlphaMode = \"opaque\";\n    GPUExtent3D size;\n};",
         "type": "dictionary",
         "name": "GPUCanvasConfiguration",
         "inheritance": null,
@@ -10214,6 +10241,33 @@
             "default": {
               "type": "number",
               "value": "0x10"
+            },
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "viewFormats",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "sequence",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "dictionary-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "GPUTextureFormat"
+                }
+              ]
+            },
+            "default": {
+              "type": "sequence",
+              "value": []
             },
             "required": false
           },

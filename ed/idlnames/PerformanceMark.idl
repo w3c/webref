@@ -1,5 +1,5 @@
 // Source: User Timing Level 3 (https://www.w3.org/TR/user-timing/)
-[Exposed=(Window,Worker)]
+[Exposed=*]
 interface PerformanceMark : PerformanceEntry {
   constructor(DOMString markName, optional PerformanceMarkOptions markOptions = {});
   readonly attribute any detail;
