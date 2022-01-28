@@ -14,7 +14,7 @@ partial interface MediaDevices {
 };
 
 [Exposed = Window]
-interface BrowserCaptureMediaStreamTrack : MediaStreamTrackOrSubclassThereof {
+interface BrowserCaptureMediaStreamTrack : MediaStreamTrack {
   Promise<undefined> cropTo(CropTarget? cropTarget);
   BrowserCaptureMediaStreamTrack clone();
 };

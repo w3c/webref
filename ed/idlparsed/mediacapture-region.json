@@ -34,10 +34,10 @@
         "partial": false
       },
       "BrowserCaptureMediaStreamTrack": {
-        "fragment": "[Exposed = Window]\ninterface BrowserCaptureMediaStreamTrack : MediaStreamTrackOrSubclassThereof {\n  Promise<undefined> cropTo(CropTarget? cropTarget);\n  BrowserCaptureMediaStreamTrack clone();\n};",
+        "fragment": "[Exposed = Window]\ninterface BrowserCaptureMediaStreamTrack : MediaStreamTrack {\n  Promise<undefined> cropTo(CropTarget? cropTarget);\n  BrowserCaptureMediaStreamTrack clone();\n};",
         "type": "interface",
         "name": "BrowserCaptureMediaStreamTrack",
-        "inheritance": "MediaStreamTrackOrSubclassThereof",
+        "inheritance": "MediaStreamTrack",
         "members": [
           {
             "type": "operation",
@@ -179,7 +179,7 @@
         "HTMLElement"
       ],
       "BrowserCaptureMediaStreamTrack": [
-        "MediaStreamTrackOrSubclassThereof",
+        "MediaStreamTrack",
         "CropTarget",
         "BrowserCaptureMediaStreamTrack"
       ]
@@ -187,7 +187,7 @@
     "externalDependencies": [
       "MediaDevices",
       "HTMLElement",
-      "MediaStreamTrackOrSubclassThereof"
+      "MediaStreamTrack"
     ],
     "hasObsoleteIdl": false
   }
