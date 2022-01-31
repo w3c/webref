@@ -99,7 +99,7 @@ async function releasePackage(prNumber) {
       console.log("- Skip, no actual package released");
     }
     else {
-      const rawTag = `Raw data for @webref/${type}@${pubResult.version}`;
+      const rawTag = `@webref/raw-${type}@${pubResult.version}`;
       await octokit.git.createRef({
         owner, repo,
         ref: `refs/tags/${rawTag}`,
