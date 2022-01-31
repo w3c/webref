@@ -31,14 +31,9 @@ jobs:
     - name: Checkout webref
       uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Prepare curated and packages data
+      # Note that "ci" runs the "prepare" script
       run: npm ci
-
-    - name: Prepare curated data
-      run: node tools/prepare-curated.js ed curated
-
-    - name: Prepare packages data (needed for tests)
-      run: node tools/prepare-packages.js curated packages
 
     - name: Test curated and packages data
       run: npm run test

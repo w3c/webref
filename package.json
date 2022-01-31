@@ -33,14 +33,14 @@
     "@webref/idl": "file:packages/idl",
     "css-tree": "2.0.4",
     "flags": "0.1.3",
-    "mocha": "9.1.4",
+    "mocha": "9.2.0",
     "reffy": "6.1.3",
     "rimraf": "3.0.2",
     "webidl2": "24.2.0"
   },
   "scripts": {
     "create-patch": "node tools/create-patch.js",
-    "prepare": "node tools/prepare-curated.js curated && node tools/prepare-packages.js",
+    "prepare": "node tools/prepare-curated.js ed curated && node tools/prepare-packages.js curated packages",
     "test": "mocha --recursive",
     "test-css": "mocha --recursive test/css",
     "test-elements": "mocha --recursive test/elements",
