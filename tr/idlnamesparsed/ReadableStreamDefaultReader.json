@@ -6,7 +6,7 @@
       "title": "Streams Standard",
       "url": "https://streams.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
+    "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
     "href": "https://streams.spec.whatwg.org/#readablestreamdefaultreader"
   },
   "extended": [

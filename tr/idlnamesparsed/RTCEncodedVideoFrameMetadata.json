@@ -6,7 +6,7 @@
       "title": "WebRTC Encoded Transform",
       "url": "https://www.w3.org/TR/webrtc-encoded-transform/"
     },
-    "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    sequence<long> contributingSources;\n};",
+    "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
     "href": "https://www.w3.org/TR/webrtc-encoded-transform/#dictdef-rtcencodedvideoframemetadata"
   },
   "extended": [],

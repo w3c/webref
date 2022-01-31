@@ -6,11 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
-          "CompressionStream",
-          "DecompressionStream"
-        ],
-        "Worker": [
+        "*": [
           "CompressionStream",
           "DecompressionStream"
         ]
@@ -19,7 +15,7 @@
     },
     "idlNames": {
       "CompressionStream": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CompressionStream {\n  constructor(DOMString format);\n};",
+        "fragment": "[Exposed=*]\ninterface CompressionStream {\n  constructor(DOMString format);\n};",
         "type": "interface",
         "name": "CompressionStream",
         "inheritance": null,
@@ -52,15 +48,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -68,7 +57,7 @@
         "partial": false
       },
       "DecompressionStream": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface DecompressionStream {\n  constructor(DOMString format);\n};",
+        "fragment": "[Exposed=*]\ninterface DecompressionStream {\n  constructor(DOMString format);\n};",
         "type": "interface",
         "name": "DecompressionStream",
         "inheritance": null,
@@ -101,15 +90,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -139,11 +121,7 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
-        "CompressionStream",
-        "DecompressionStream"
-      ],
-      "Worker": [
+      "*": [
         "CompressionStream",
         "DecompressionStream"
       ]

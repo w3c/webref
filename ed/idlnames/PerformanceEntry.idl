@@ -1,5 +1,5 @@
 // Source: Performance Timeline Level 2 (https://www.w3.org/TR/performance-timeline/)
-[Exposed=(Window,Worker)]
+[Exposed=*]
 interface PerformanceEntry {
   readonly    attribute DOMString           name;
   readonly    attribute DOMString           entryType;

@@ -6,7 +6,7 @@
       "title": "CSS Typed OM Level 1",
       "url": "https://www.w3.org/TR/css-typed-om-1/"
     },
-    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(CSSKeywordish colorSpace, sequence<CSSNumberish> channels, optional CSSNumberish alpha = 1);\n    attribute CSSKeywordish colorSpace;\n    attribute CSSPercentishArray channels;\n    attribute CSSNumberish alpha;\n};",
+    "fragment": "[Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]\ninterface CSSColor : CSSColorValue {\n    constructor(CSSKeywordish colorSpace, sequence<CSSColorPercent> channels, optional CSSNumberish alpha = 1);\n    attribute CSSKeywordish colorSpace;\n    attribute ObservableArray<CSSColorPercent> channels;\n    attribute CSSNumberish alpha;\n};",
     "href": "https://drafts.css-houdini.org/css-typed-om-1/#csscolor"
   },
   "extended": [],

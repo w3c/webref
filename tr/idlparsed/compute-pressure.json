@@ -61,8 +61,20 @@
         ],
         "extAttrs": []
       },
+      "ComputePressureTarget": {
+        "fragment": "enum ComputePressureTarget { \"cpu\" };",
+        "type": "enum",
+        "name": "ComputePressureTarget",
+        "values": [
+          {
+            "type": "enum-value",
+            "value": "cpu"
+          }
+        ],
+        "extAttrs": []
+      },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(\n    ComputePressureUpdateCallback callback,\n    optional ComputePressureObserverOptions options = {}\n  );\n  undefined observe();\n  undefined unobserve();\n};",
+        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -81,6 +93,37 @@
                   "nullable": false,
                   "union": false,
                   "idlType": "ComputePressureUpdateCallback"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": []
+          },
+          {
+            "type": "operation",
+            "name": "observe",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureTarget"
                 },
                 "default": null,
                 "optional": false,
@@ -105,11 +148,44 @@
                 "variadic": false
               }
             ],
-            "extAttrs": []
+            "extAttrs": [],
+            "special": ""
           },
           {
             "type": "operation",
-            "name": "observe",
+            "name": "unobserve",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "undefined"
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "target",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureTarget"
+                },
+                "default": null,
+                "optional": false,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "disconnect",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
@@ -124,14 +200,23 @@
           },
           {
             "type": "operation",
-            "name": "unobserve",
+            "name": "takeRecords",
             "idlType": {
               "type": "return-type",
               "extAttrs": [],
-              "generic": "",
+              "generic": "sequence",
               "nullable": false,
               "union": false,
-              "idlType": "undefined"
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "ComputePressureEntry"
+                }
+              ]
             },
             "arguments": [],
             "extAttrs": [],
@@ -281,7 +366,9 @@
     "dependencies": {
       "ComputePressureObserver": [
         "ComputePressureUpdateCallback",
-        "ComputePressureObserverOptions"
+        "ComputePressureTarget",
+        "ComputePressureObserverOptions",
+        "ComputePressureEntry"
       ],
       "ComputePressureEntry": [
         "ComputePressureObserverOptions"

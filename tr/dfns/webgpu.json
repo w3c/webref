@@ -4127,6 +4127,46 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-gputexturedescriptor-viewformats",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gputexturedescriptor-viewformats",
+      "linkingText": [
+        "viewFormats"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUTextureDescriptor"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "texture-creation",
+        "href": "https://www.w3.org/TR/webgpu/#texture-creation",
+        "title": "Texture Creation",
+        "number": "6.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "texture-view-format-compatible",
+      "href": "https://www.w3.org/TR/webgpu/#texture-view-format-compatible",
+      "linkingText": [
+        "texture view format compatible"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "texture-creation",
+        "href": "https://www.w3.org/TR/webgpu/#texture-creation",
+        "title": "Texture Creation",
+        "number": "6.1.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "enumdef-gputexturedimension",
       "href": "https://www.w3.org/TR/webgpu/#enumdef-gputexturedimension",
       "linkingText": [
@@ -16402,9 +16442,9 @@
       "id": "dom-gpucomputepassencoder-dispatch",
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch",
       "linkingText": [
-        "dispatch(x, y, z)",
-        "dispatch(x, y)",
-        "dispatch(x)"
+        "dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)",
+        "dispatch(workgroupCountX, workgroupCountY)",
+        "dispatch(workgroupCountX)"
       ],
       "localLinkingText": [],
       "type": "method",
@@ -16422,15 +16462,15 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-x",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-x-y-z-x",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountx",
       "linkingText": [
-        "x"
+        "workgroupCountX"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16443,15 +16483,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-y",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-x-y-z-y",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcounty",
       "linkingText": [
-        "y"
+        "workgroupCountY"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -16464,15 +16504,15 @@
       "definedIn": "table"
     },
     {
-      "id": "dom-gpucomputepassencoder-dispatch-x-y-z-z",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-x-y-z-z",
+      "id": "dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucomputepassencoder-dispatch-workgroupcountx-workgroupcounty-workgroupcountz-workgroupcountz",
       "linkingText": [
-        "z"
+        "workgroupCountZ"
       ],
       "localLinkingText": [],
       "type": "argument",
       "for": [
-        "GPUComputePassEncoder/dispatch(x, y, z)"
+        "GPUComputePassEncoder/dispatch(workgroupCountX, workgroupCountY, workgroupCountZ)"
       ],
       "access": "public",
       "informative": false,
@@ -17288,10 +17328,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpasscolorattachment-loadvalue",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasscolorattachment-loadvalue",
+      "id": "dom-gpurenderpasscolorattachment-clearvalue",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasscolorattachment-clearvalue",
       "linkingText": [
-        "loadValue"
+        "clearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassColorAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "color-attachments",
+        "href": "https://www.w3.org/TR/webgpu/#color-attachments",
+        "title": "Color Attachments",
+        "number": "16.1.1.1"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpasscolorattachment-loadop",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpasscolorattachment-loadop",
+      "linkingText": [
+        "loadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17410,10 +17471,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassdepthstencilattachment-depthloadvalue",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-depthloadvalue",
+      "id": "dom-gpurenderpassdepthstencilattachment-depthclearvalue",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-depthclearvalue",
       "linkingText": [
-        "depthLoadValue"
+        "depthClearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassDepthStencilAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "depth-stencil-attachments",
+        "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
+        "title": "Depth/Stencil Attachments",
+        "number": "16.1.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpassdepthstencilattachment-depthloadop",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-depthloadop",
+      "linkingText": [
+        "depthLoadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17473,10 +17555,31 @@
       "definedIn": "dt"
     },
     {
-      "id": "dom-gpurenderpassdepthstencilattachment-stencilloadvalue",
-      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-stencilloadvalue",
+      "id": "dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-stencilclearvalue",
       "linkingText": [
-        "stencilLoadValue"
+        "stencilClearValue"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPURenderPassDepthStencilAttachment"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "depth-stencil-attachments",
+        "href": "https://www.w3.org/TR/webgpu/#depth-stencil-attachments",
+        "title": "Depth/Stencil Attachments",
+        "number": "16.1.1.2"
+      },
+      "definedIn": "dt"
+    },
+    {
+      "id": "dom-gpurenderpassdepthstencilattachment-stencilloadop",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpurenderpassdepthstencilattachment-stencilloadop",
+      "linkingText": [
+        "stencilLoadOp"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -17597,6 +17700,27 @@
       "definedIn": "dt"
     },
     {
+      "id": "dom-gpuloadop-clear",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpuloadop-clear",
+      "linkingText": [
+        "\"clear\""
+      ],
+      "localLinkingText": [],
+      "type": "enum-value",
+      "for": [
+        "GPULoadOp"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "load-and-store-ops",
+        "href": "https://www.w3.org/TR/webgpu/#load-and-store-ops",
+        "title": "Load & Store Operations",
+        "number": "16.1.1.3"
+      },
+      "definedIn": "dt"
+    },
+    {
       "id": "enumdef-gpustoreop",
       "href": "https://www.w3.org/TR/webgpu/#enumdef-gpustoreop",
       "linkingText": [
@@ -17634,7 +17758,7 @@
         "title": "Load & Store Operations",
         "number": "16.1.1.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dom-gpustoreop-discard",
@@ -17655,7 +17779,7 @@
         "title": "Load & Store Operations",
         "number": "16.1.1.3"
       },
-      "definedIn": "pre"
+      "definedIn": "dt"
     },
     {
       "id": "dictdef-gpurenderpasslayout",
@@ -20362,6 +20486,27 @@
       "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-usage",
       "linkingText": [
         "usage"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "GPUCanvasConfiguration"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "canvas-configuration",
+        "href": "https://www.w3.org/TR/webgpu/#canvas-configuration",
+        "title": "GPUCanvasConfiguration",
+        "number": "20.3"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-gpucanvasconfiguration-viewformats",
+      "href": "https://www.w3.org/TR/webgpu/#dom-gpucanvasconfiguration-viewformats",
+      "linkingText": [
+        "viewFormats"
       ],
       "localLinkingText": [],
       "type": "dict-member",

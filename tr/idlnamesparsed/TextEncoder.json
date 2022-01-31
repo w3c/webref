@@ -6,7 +6,7 @@
       "title": "Encoding Standard",
       "url": "https://www.w3.org/TR/encoding/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
+    "fragment": "[Exposed=*]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
     "href": "https://www.w3.org/TR/encoding/#textencoder"
   },
   "extended": [

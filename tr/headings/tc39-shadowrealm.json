@@ -23,12 +23,6 @@
       "number": "2.1"
     },
     {
-      "id": "sec-wrappedfunctioncreate",
-      "title": "WrappedFunctionCreate ( callerRealm, targetFunction )",
-      "level": 2,
-      "number": "2.2"
-    },
-    {
       "id": "sec-shadowrealm-objects",
       "title": "ShadowRealm Objects",
       "level": 1,
@@ -41,28 +35,46 @@
       "number": "3.1"
     },
     {
-      "id": "sec-performshadowrealmeval",
-      "title": "PerformShadowRealmEval ( sourceText, callerRealm, evalRealm )",
+      "id": "sec-wrappedfunctioncreate",
+      "title": "WrappedFunctionCreate (\n\t\t\t\t\tcallerRealm: a Realm Record,\n\t\t\t\t\tTarget: a function object,\n\t\t\t\t)",
       "level": 3,
       "number": "3.1.1"
     },
     {
-      "id": "sec-shadowrealmimportvalue",
-      "title": "ShadowRealmImportValue ( specifierString, exportNameString, callerRealm, evalRealm, evalContext )",
+      "id": "sec-copynameandlength",
+      "title": "CopyNameAndLength (\n\t\t\t\t\tF: a function object,\n\t\t\t\t\tTarget: a function object,\n\t\t\t\t\tprefix: a String,\n\t\t\t\t\toptional argCount: a Number,\n\t\t\t\t)",
       "level": 3,
       "number": "3.1.2"
     },
     {
-      "id": "sec-getwrappedvalue",
-      "title": "GetWrappedValue ( callerRealm, value )",
+      "id": "sec-function.prototype.bind",
+      "title": "Function.prototype.bind ( thisArg, ...args )",
+      "level": 4,
+      "number": "3.1.2.1"
+    },
+    {
+      "id": "sec-performshadowrealmeval",
+      "title": "PerformShadowRealmEval (\n\t\t\t\t\tsourceText: a String,\n\t\t\t\t\tcallerRealm: a Realm Record,\n\t\t\t\t\tevalRealm: a Realm Record,\n\t\t\t\t)",
       "level": 3,
       "number": "3.1.3"
     },
     {
-      "id": "sec-validateshadowrealmobject",
-      "title": "ValidateShadowRealmObject ( O )",
+      "id": "sec-shadowrealmimportvalue",
+      "title": "ShadowRealmImportValue (\n\t\t\t\t\tspecifierString: a String,\n\t\t\t\t\texportNameString: a String,\n\t\t\t\t\tcallerRealm: a Realm Record,\n\t\t\t\t\tevalRealm: a Realm Record,\n\t\t\t\t\tevalContext: an execution context,\n\t\t\t\t)",
       "level": 3,
       "number": "3.1.4"
+    },
+    {
+      "id": "sec-getwrappedvalue",
+      "title": "GetWrappedValue (\n\t\t\t\t\tcallerRealm: a Realm Record,\n\t\t\t\t\tvalue: unknown,\n\t\t\t\t)",
+      "level": 3,
+      "number": "3.1.5"
+    },
+    {
+      "id": "sec-validateshadowrealmobject",
+      "title": "ValidateShadowRealmObject (\n\t\t\t\t\tO: unknown\n\t\t\t\t)",
+      "level": 3,
+      "number": "3.1.6"
     },
     {
       "id": "sec-shadowrealm-constructor",

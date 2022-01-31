@@ -1,5 +1,5 @@
 // Source: Streams Standard (https://streams.spec.whatwg.org/)
-[Exposed=(Window,Worker,Worklet), Transferable]
+[Exposed=*, Transferable]
 interface TransformStream {
   constructor(optional object transformer,
               optional QueuingStrategy writableStrategy = {},

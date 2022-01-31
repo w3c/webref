@@ -169,7 +169,7 @@
         "partial": false
       },
       "FontMetadata": {
-        "fragment": "[Exposed=Window]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  // Names\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n  readonly attribute USVString style;\n\n  // Metrics\n  readonly attribute boolean italic;\n  readonly attribute float stretch;\n  readonly attribute float weight;\n};",
+        "fragment": "[Exposed=Window]\ninterface FontMetadata {\n  Promise<Blob> blob();\n\n  // Names\n  readonly attribute USVString postscriptName;\n  readonly attribute USVString fullName;\n  readonly attribute USVString family;\n  readonly attribute USVString style;\n};",
         "type": "interface",
         "name": "FontMetadata",
         "inheritance": null,
@@ -253,51 +253,6 @@
               "nullable": false,
               "union": false,
               "idlType": "USVString"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "italic",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "boolean"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "stretch",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
-            },
-            "extAttrs": [],
-            "special": "",
-            "readonly": true
-          },
-          {
-            "type": "attribute",
-            "name": "weight",
-            "idlType": {
-              "type": "attribute-type",
-              "extAttrs": [],
-              "generic": "",
-              "nullable": false,
-              "union": false,
-              "idlType": "float"
             },
             "extAttrs": [],
             "special": "",

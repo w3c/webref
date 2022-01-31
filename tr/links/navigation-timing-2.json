@@ -15,6 +15,8 @@
       "dom-performanceresourcetiming-decodedbodysize",
       "dom-performanceresourcetiming-secureconnectionstart",
       "dom-performanceresourcetiming",
+      "dom-performanceresourcetiming-workerstart",
+      "dom-performanceresourcetiming-fetchstart",
       "dom-performanceresourcetiming-requeststart",
       "dom-performanceresourcetiming-responsestart",
       "dom-performanceresourcetiming-responseend",
@@ -22,25 +24,23 @@
       "dom-performanceresourcetiming-connectstart",
       "dom-performanceresourcetiming-connectend"
     ],
-    "https://www.w3.org/webperf/": [],
-    "https://github.com/w3c/navigation-timing/issues/": [],
-    "https://lists.w3.org/Archives/Public/public-web-perf/": [],
+    "https://www.w3.org/groups/wg/webperf": [],
+    "https://www.w3.org/2021/Process-20211102/": [
+      "recs-and-notes"
+    ],
     "https://www.w3.org/Consortium/Patent-Policy/": [
       "def-essential",
       "sec-Disclosure"
     ],
     "https://www.w3.org/groups/wg/webperf/ipr": [],
-    "https://www.w3.org/2020/Process-20200915/": [],
-    "https://www.w3.org/TR/hr-time-2/": [
+    "https://www.w3.org/TR/hr-time-3/": [
       "dfn-time-origin",
       "dom-domhighrestimestamp",
       "dom-performance-timeorigin"
     ],
     "https://html.spec.whatwg.org/": [
       "window",
-      "navigate",
       "concept-document-window",
-      "the-document's-address",
       "document-load-timing-info",
       "document-unload-timing-info",
       "unload-event-start-time",
@@ -65,6 +65,7 @@
       "hh-entry-update",
       "concept-relevant-global",
       "concept-global-object-realm",
+      "the-document's-address",
       "load-timing-info",
       "previous-document-unload-timing",
       "same-origin",
@@ -74,22 +75,31 @@
       "unload-a-document",
       "fetching-resources",
       "relevant-application-cache",
-      "document"
+      "document",
+      "navigate"
     ],
-    "https://www.w3.org/TR/performance-timeline-2/": [
+    "https://www.w3.org/TR/performance-timeline/": [
       "dom-performanceentry",
+      "dom-performanceentry-starttime",
+      "dom-performanceentry-duration",
       "supportedentrytypes-attribute",
       "dfn-performance-entry-buffer",
       "dfn-queue-a-performanceentry"
     ],
-    "https://heycam.github.io/webidl/": [
+    "https://dom.spec.whatwg.org/": [
+      "dom-document-url",
+      "concept-document",
+      "document"
+    ],
+    "https://webidl.spec.whatwg.org/": [
       "idl-DOMString",
+      "this",
       "Exposed",
       "idl-unsigned-short",
       "Default",
       "idl-object",
-      "default-tojson-operation",
-      "idl-enums",
+      "default-tojson-steps",
+      "dfn-enumeration",
       "idl-unsigned-long-long",
       "SameObject"
     ],
@@ -119,10 +129,6 @@
       "fetch-timing-info",
       "concept-request-method"
     ],
-    "https://dom.spec.whatwg.org/": [
-      "concept-document",
-      "document"
-    ],
     "https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html": [
       "sec8.1"
     ],
@@ -133,11 +139,11 @@
       "concept-url-scheme"
     ],
     "https://datatracker.ietf.org/doc/html/bcp14": [],
-    "https://tc39.es/ecma262/multipage/": [],
     "https://www.w3.org/TR/navigation-timing/": [],
     "https://www.rfc-editor.org/rfc/rfc2119": [],
     "https://www.rfc-editor.org/rfc/rfc2616": [],
     "https://www.rfc-editor.org/rfc/rfc8174": [],
+    "https://www.w3.org/TR/hr-time-2/": [],
     "https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.69.7329&rep=rep1&type=pdf": [],
     "https://httpwg.org/specs/rfc7234.html": []
   }
