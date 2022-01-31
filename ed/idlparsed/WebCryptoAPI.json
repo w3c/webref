@@ -21,7 +21,7 @@
     },
     "idlNames": {
       "Crypto": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Crypto {\n  [SecureContext] readonly attribute SubtleCrypto subtle;\n  ArrayBufferView getRandomValues(ArrayBufferView array);\n};",
+        "fragment": "[Exposed=(Window,Worker)]\ninterface Crypto {\n  [SecureContext] readonly attribute SubtleCrypto subtle;\n  ArrayBufferView getRandomValues(ArrayBufferView array);\n  [SecureContext] DOMString randomUUID();\n};",
         "type": "interface",
         "name": "Crypto",
         "inheritance": null,
@@ -78,6 +78,28 @@
               }
             ],
             "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "randomUUID",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "DOMString"
+            },
+            "arguments": [],
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SecureContext",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
             "special": ""
           }
         ],

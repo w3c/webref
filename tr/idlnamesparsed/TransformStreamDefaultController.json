@@ -6,7 +6,7 @@
       "title": "Streams Standard",
       "url": "https://streams.spec.whatwg.org/"
     },
-    "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
+    "fragment": "[Exposed=*]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
     "href": "https://streams.spec.whatwg.org/#transformstreamdefaultcontroller"
   },
   "extended": [],

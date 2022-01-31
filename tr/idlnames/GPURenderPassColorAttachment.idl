@@ -3,6 +3,7 @@ dictionary GPURenderPassColorAttachment {
     required GPUTextureView view;
     GPUTextureView resolveTarget;
 
-    required (GPULoadOp or GPUColor) loadValue;
+    GPUColor clearValue;
+    required GPULoadOp loadOp;
     required GPUStoreOp storeOp;
 };

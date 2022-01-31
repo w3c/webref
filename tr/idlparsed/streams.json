@@ -6,27 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
-          "ReadableStream",
-          "ReadableStreamDefaultReader",
-          "ReadableStreamBYOBReader",
-          "WritableStream",
-          "WritableStreamDefaultWriter",
-          "TransformStream",
-          "ByteLengthQueuingStrategy",
-          "CountQueuingStrategy"
-        ],
-        "Worker": [
-          "ReadableStream",
-          "ReadableStreamDefaultReader",
-          "ReadableStreamBYOBReader",
-          "WritableStream",
-          "WritableStreamDefaultWriter",
-          "TransformStream",
-          "ByteLengthQueuingStrategy",
-          "CountQueuingStrategy"
-        ],
-        "Worklet": [
+        "*": [
           "ReadableStream",
           "ReadableStreamDefaultReader",
           "ReadableStreamBYOBReader",
@@ -38,21 +18,7 @@
         ]
       },
       "functions": {
-        "Window": [
-          "ReadableStreamDefaultController",
-          "ReadableByteStreamController",
-          "ReadableStreamBYOBRequest",
-          "WritableStreamDefaultController",
-          "TransformStreamDefaultController"
-        ],
-        "Worker": [
-          "ReadableStreamDefaultController",
-          "ReadableByteStreamController",
-          "ReadableStreamBYOBRequest",
-          "WritableStreamDefaultController",
-          "TransformStreamDefaultController"
-        ],
-        "Worklet": [
+        "*": [
           "ReadableStreamDefaultController",
           "ReadableByteStreamController",
           "ReadableStreamBYOBRequest",
@@ -63,7 +29,7 @@
     },
     "idlNames": {
       "ReadableStream": {
-        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
+        "fragment": "[Exposed=*, Transferable]\ninterface ReadableStream {\n  constructor(optional object underlyingSource, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> cancel(optional any reason);\n  ReadableStreamReader getReader(optional ReadableStreamGetReaderOptions options = {});\n  ReadableStream pipeThrough(ReadableWritablePair transform, optional StreamPipeOptions options = {});\n  Promise<undefined> pipeTo(WritableStream destination, optional StreamPipeOptions options = {});\n  sequence<ReadableStream> tee();\n\n  async iterable<any>(optional ReadableStreamIteratorOptions options = {});\n};",
         "type": "interface",
         "name": "ReadableStream",
         "inheritance": null,
@@ -373,18 +339,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           },
@@ -937,7 +893,7 @@
         "partial": false
       },
       "ReadableStreamDefaultReader": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamDefaultReadResult> read();\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamDefaultReader",
         "inheritance": null,
@@ -1009,18 +965,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1068,7 +1014,7 @@
         "partial": false
       },
       "ReadableStreamBYOBReader": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBReader {\n  constructor(ReadableStream stream);\n\n  Promise<ReadableStreamBYOBReadResult> read(ArrayBufferView view);\n  undefined releaseLock();\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBReader",
         "inheritance": null,
@@ -1157,18 +1103,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1216,7 +1152,7 @@
         "partial": false
       },
       "ReadableStreamDefaultController": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(optional any chunk);\n  undefined error(optional any e);\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(optional any chunk);\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "ReadableStreamDefaultController",
         "inheritance": null,
@@ -1321,18 +1257,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1340,7 +1266,7 @@
         "partial": false
       },
       "ReadableByteStreamController": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableByteStreamController {\n  readonly attribute ReadableStreamBYOBRequest? byobRequest;\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined close();\n  undefined enqueue(ArrayBufferView chunk);\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "ReadableByteStreamController",
         "inheritance": null,
@@ -1460,18 +1386,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1479,7 +1395,7 @@
         "partial": false
       },
       "ReadableStreamBYOBRequest": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
+        "fragment": "[Exposed=*]\ninterface ReadableStreamBYOBRequest {\n  readonly attribute ArrayBufferView? view;\n\n  undefined respond([EnforceRange] unsigned long long bytesWritten);\n  undefined respondWithNewView(ArrayBufferView view);\n};",
         "type": "interface",
         "name": "ReadableStreamBYOBRequest",
         "inheritance": null,
@@ -1576,18 +1492,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1595,7 +1501,7 @@
         "partial": false
       },
       "WritableStream": {
-        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
+        "fragment": "[Exposed=*, Transferable]\ninterface WritableStream {\n  constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});\n\n  readonly attribute boolean locked;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  WritableStreamDefaultWriter getWriter();\n};",
         "type": "interface",
         "name": "WritableStream",
         "inheritance": null,
@@ -1741,18 +1647,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           },
@@ -2005,7 +1901,7 @@
         "extAttrs": []
       },
       "WritableStreamDefaultWriter": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
+        "fragment": "[Exposed=*]\ninterface WritableStreamDefaultWriter {\n  constructor(WritableStream stream);\n\n  readonly attribute Promise<undefined> closed;\n  readonly attribute unrestricted double? desiredSize;\n  readonly attribute Promise<undefined> ready;\n\n  Promise<undefined> abort(optional any reason);\n  Promise<undefined> close();\n  undefined releaseLock();\n  Promise<undefined> write(optional any chunk);\n};",
         "type": "interface",
         "name": "WritableStreamDefaultWriter",
         "inheritance": null,
@@ -2222,18 +2118,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -2241,7 +2127,7 @@
         "partial": false
       },
       "WritableStreamDefaultController": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface WritableStreamDefaultController {\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
+        "fragment": "[Exposed=*]\ninterface WritableStreamDefaultController {\n  readonly attribute AbortSignal signal;\n  undefined error(optional any e);\n};",
         "type": "interface",
         "name": "WritableStreamDefaultController",
         "inheritance": null,
@@ -2299,18 +2185,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -2318,7 +2194,7 @@
         "partial": false
       },
       "TransformStream": {
-        "fragment": "[Exposed=(Window,Worker,Worklet), Transferable]\ninterface TransformStream {\n  constructor(optional object transformer,\n              optional QueuingStrategy writableStrategy = {},\n              optional QueuingStrategy readableStrategy = {});\n\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
+        "fragment": "[Exposed=*, Transferable]\ninterface TransformStream {\n  constructor(optional object transformer,\n              optional QueuingStrategy writableStrategy = {},\n              optional QueuingStrategy readableStrategy = {});\n\n  readonly attribute ReadableStream readable;\n  readonly attribute WritableStream writable;\n};",
         "type": "interface",
         "name": "TransformStream",
         "inheritance": null,
@@ -2417,18 +2293,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           },
@@ -2657,7 +2523,7 @@
         "extAttrs": []
       },
       "TransformStreamDefaultController": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
+        "fragment": "[Exposed=*]\ninterface TransformStreamDefaultController {\n  readonly attribute unrestricted double? desiredSize;\n\n  undefined enqueue(optional any chunk);\n  undefined error(optional any reason);\n  undefined terminate();\n};",
         "type": "interface",
         "name": "TransformStreamDefaultController",
         "inheritance": null,
@@ -2762,18 +2628,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -2878,7 +2734,7 @@
         "partial": false
       },
       "ByteLengthQueuingStrategy": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface ByteLengthQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
+        "fragment": "[Exposed=*]\ninterface ByteLengthQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
         "type": "interface",
         "name": "ByteLengthQueuingStrategy",
         "inheritance": null,
@@ -2941,18 +2797,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -2960,7 +2806,7 @@
         "partial": false
       },
       "CountQueuingStrategy": {
-        "fragment": "[Exposed=(Window,Worker,Worklet)]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
+        "fragment": "[Exposed=*]\ninterface CountQueuingStrategy {\n  constructor(QueuingStrategyInit init);\n\n  readonly attribute unrestricted double highWaterMark;\n  readonly attribute Function size;\n};",
         "type": "interface",
         "name": "CountQueuingStrategy",
         "inheritance": null,
@@ -3023,18 +2869,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "Worklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -3104,37 +2940,7 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
-        "ReadableStream",
-        "ReadableStreamDefaultReader",
-        "ReadableStreamBYOBReader",
-        "ReadableStreamDefaultController",
-        "ReadableByteStreamController",
-        "ReadableStreamBYOBRequest",
-        "WritableStream",
-        "WritableStreamDefaultWriter",
-        "WritableStreamDefaultController",
-        "TransformStream",
-        "TransformStreamDefaultController",
-        "ByteLengthQueuingStrategy",
-        "CountQueuingStrategy"
-      ],
-      "Worker": [
-        "ReadableStream",
-        "ReadableStreamDefaultReader",
-        "ReadableStreamBYOBReader",
-        "ReadableStreamDefaultController",
-        "ReadableByteStreamController",
-        "ReadableStreamBYOBRequest",
-        "WritableStream",
-        "WritableStreamDefaultWriter",
-        "WritableStreamDefaultController",
-        "TransformStream",
-        "TransformStreamDefaultController",
-        "ByteLengthQueuingStrategy",
-        "CountQueuingStrategy"
-      ],
-      "Worklet": [
+      "*": [
         "ReadableStream",
         "ReadableStreamDefaultReader",
         "ReadableStreamBYOBReader",

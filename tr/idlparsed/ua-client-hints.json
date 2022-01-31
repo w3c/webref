@@ -57,7 +57,7 @@
         "partial": false
       },
       "UADataValues": {
-        "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
+        "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
         "type": "dictionary",
         "name": "UADataValues",
         "inheritance": null,
@@ -187,6 +187,21 @@
               "nullable": false,
               "union": false,
               "idlType": "DOMString"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "wow64",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "boolean"
             },
             "default": null,
             "required": false

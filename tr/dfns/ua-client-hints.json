@@ -194,6 +194,27 @@
       "definedIn": "prose"
     },
     {
+      "id": "user-agent-wow64-ness",
+      "href": "https://wicg.github.io/ua-client-hints/#user-agent-wow64-ness",
+      "linkingText": [
+        "wow64-ness"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [
+        "user agent"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "http-ua-hints",
+        "href": "https://wicg.github.io/ua-client-hints/#http-ua-hints",
+        "title": "User Agent Hints",
+        "number": "3"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "http-headerdef-sec-ch-ua",
       "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua",
       "linkingText": [
@@ -289,101 +310,6 @@
       "definedIn": "prose"
     },
     {
-      "id": "http-headerdef-sec-ch-ua-mobile",
-      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-mobile",
-      "linkingText": [
-        "Sec-CH-UA-Mobile"
-      ],
-      "localLinkingText": [],
-      "type": "http-header",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-ch-ua-mobile",
-        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile",
-        "title": "The 'Sec-CH-UA-Mobile' Header Field",
-        "number": "3.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "http-headerdef-sec-ch-ua-model",
-      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-model",
-      "linkingText": [
-        "Sec-CH-UA-Model"
-      ],
-      "localLinkingText": [],
-      "type": "http-header",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-ch-ua-model",
-        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-model",
-        "title": "The 'Sec-CH-UA-Model' Header Field",
-        "number": "3.6"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "http-headerdef-sec-ch-ua-platform",
-      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-platform",
-      "linkingText": [
-        "Sec-CH-UA-Platform"
-      ],
-      "localLinkingText": [],
-      "type": "http-header",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-ch-ua-platform",
-        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform",
-        "title": "The 'Sec-CH-UA-Platform' Header Field",
-        "number": "3.7"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "http-headerdef-sec-ch-ua-platform-version",
-      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-platform-version",
-      "linkingText": [
-        "Sec-CH-UA-Platform-Version"
-      ],
-      "localLinkingText": [],
-      "type": "http-header",
-      "for": [],
-      "access": "public",
-      "informative": false,
-      "heading": {
-        "id": "sec-ch-ua-platform-version",
-        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
-        "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
-        "number": "3.8"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "parse-a-platform-returned-version-string",
-      "href": "https://wicg.github.io/ua-client-hints/#parse-a-platform-returned-version-string",
-      "linkingText": [
-        "parse a platform-returned version string"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "sec-ch-ua-platform-version",
-        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
-        "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
-        "number": "3.8"
-      },
-      "definedIn": "prose"
-    },
-    {
       "id": "http-headerdef-sec-ch-ua-full-version-list",
       "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-full-version-list",
       "linkingText": [
@@ -398,7 +324,7 @@
         "id": "sec-ch-ua-full-version-list",
         "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
         "title": "The 'Sec-CH-UA-Full-Version-List' Header Field",
-        "number": "3.9"
+        "number": "3.5"
       },
       "definedIn": "prose"
     },
@@ -417,7 +343,121 @@
         "id": "sec-ch-ua-full-version-list",
         "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list",
         "title": "The 'Sec-CH-UA-Full-Version-List' Header Field",
+        "number": "3.5"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ch-ua-mobile",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-mobile",
+      "linkingText": [
+        "Sec-CH-UA-Mobile"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-mobile",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile",
+        "title": "The 'Sec-CH-UA-Mobile' Header Field",
+        "number": "3.6"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ch-ua-model",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-model",
+      "linkingText": [
+        "Sec-CH-UA-Model"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-model",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-model",
+        "title": "The 'Sec-CH-UA-Model' Header Field",
+        "number": "3.7"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ch-ua-platform",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-platform",
+      "linkingText": [
+        "Sec-CH-UA-Platform"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-platform",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform",
+        "title": "The 'Sec-CH-UA-Platform' Header Field",
+        "number": "3.8"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ch-ua-platform-version",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-platform-version",
+      "linkingText": [
+        "Sec-CH-UA-Platform-Version"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-platform-version",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
+        "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
         "number": "3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "parse-a-platform-returned-version-string",
+      "href": "https://wicg.github.io/ua-client-hints/#parse-a-platform-returned-version-string",
+      "linkingText": [
+        "parse a platform-returned version string"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-platform-version",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version",
+        "title": "The 'Sec-CH-UA-Platform-Version' Header Field",
+        "number": "3.9"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "http-headerdef-sec-ch-ua-wow64",
+      "href": "https://wicg.github.io/ua-client-hints/#http-headerdef-sec-ch-ua-wow64",
+      "linkingText": [
+        "Sec-CH-UA-WoW64"
+      ],
+      "localLinkingText": [],
+      "type": "http-header",
+      "for": [],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sec-ch-ua-wow64",
+        "href": "https://wicg.github.io/ua-client-hints/#sec-ch-ua-wow64",
+        "title": "The 'Sec-CH-UA-WoW64' Header Field",
+        "number": "3.10"
       },
       "definedIn": "prose"
     },
@@ -653,6 +693,27 @@
       "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-uafullversion",
       "linkingText": [
         "uaFullVersion"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "UADataValues"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "interface",
+        "href": "https://wicg.github.io/ua-client-hints/#interface",
+        "title": "Interface",
+        "number": "4"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-uadatavalues-wow64",
+      "href": "https://wicg.github.io/ua-client-hints/#dom-uadatavalues-wow64",
+      "linkingText": [
+        "wow64"
       ],
       "localLinkingText": [],
       "type": "dict-member",

@@ -18,7 +18,7 @@
         "title": "DOM Standard",
         "url": "https://dom.spec.whatwg.org/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+      "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
       "href": "https://dom.spec.whatwg.org/#abortsignal"
     },
     "extended": [],
@@ -30,7 +30,7 @@
           "title": "DOM Standard",
           "url": "https://dom.spec.whatwg.org/"
         },
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
         "href": "https://dom.spec.whatwg.org/#eventtarget"
       },
       "extended": [],

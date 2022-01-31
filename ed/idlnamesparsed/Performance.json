@@ -6,7 +6,7 @@
       "title": "High Resolution Time",
       "url": "https://www.w3.org/TR/hr-time-3/"
     },
-    "fragment": "[Exposed=(Window,Worker)]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
+    "fragment": "[Exposed=*]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
     "href": "https://w3c.github.io/hr-time/#dom-performance"
   },
   "extended": [
@@ -61,7 +61,7 @@
         "title": "DOM Standard",
         "url": "https://dom.spec.whatwg.org/"
       },
-      "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+      "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
       "href": "https://dom.spec.whatwg.org/#eventtarget"
     },
     "extended": [],

@@ -6,11 +6,13 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
+        "*": [
           "Event",
           "CustomEvent",
           "EventTarget",
-          "AbortController",
+          "AbortController"
+        ],
+        "Window": [
           "MutationObserver",
           "Document",
           "DocumentFragment",
@@ -20,21 +22,13 @@
           "Range",
           "XPathEvaluator",
           "XSLTProcessor"
-        ],
-        "Worker": [
-          "Event",
-          "CustomEvent",
-          "EventTarget",
-          "AbortController"
-        ],
-        "AudioWorklet": [
-          "Event",
-          "EventTarget"
         ]
       },
       "functions": {
+        "*": [
+          "AbortSignal"
+        ],
         "Window": [
-          "AbortSignal",
           "NodeList",
           "HTMLCollection",
           "MutationRecord",
@@ -55,15 +49,12 @@
           "DOMTokenList",
           "XPathResult",
           "XPathExpression"
-        ],
-        "Worker": [
-          "AbortSignal"
         ]
       }
     },
     "idlNames": {
       "Event": {
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface Event {\n  constructor(DOMString type, optional EventInit eventInitDict = {});\n\n  readonly attribute DOMString type;\n  readonly attribute EventTarget? target;\n  readonly attribute EventTarget? srcElement; // legacy\n  readonly attribute EventTarget? currentTarget;\n  sequence<EventTarget> composedPath();\n\n  const unsigned short NONE = 0;\n  const unsigned short CAPTURING_PHASE = 1;\n  const unsigned short AT_TARGET = 2;\n  const unsigned short BUBBLING_PHASE = 3;\n  readonly attribute unsigned short eventPhase;\n\n  undefined stopPropagation();\n           attribute boolean cancelBubble; // legacy alias of .stopPropagation()\n  undefined stopImmediatePropagation();\n\n  readonly attribute boolean bubbles;\n  readonly attribute boolean cancelable;\n           attribute boolean returnValue;  // legacy\n  undefined preventDefault();\n  readonly attribute boolean defaultPrevented;\n  readonly attribute boolean composed;\n\n  [LegacyUnforgeable] readonly attribute boolean isTrusted;\n  readonly attribute DOMHighResTimeStamp timeStamp;\n\n  undefined initEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false); // legacy\n};",
+        "fragment": "[Exposed=*]\ninterface Event {\n  constructor(DOMString type, optional EventInit eventInitDict = {});\n\n  readonly attribute DOMString type;\n  readonly attribute EventTarget? target;\n  readonly attribute EventTarget? srcElement; // legacy\n  readonly attribute EventTarget? currentTarget;\n  sequence<EventTarget> composedPath();\n\n  const unsigned short NONE = 0;\n  const unsigned short CAPTURING_PHASE = 1;\n  const unsigned short AT_TARGET = 2;\n  const unsigned short BUBBLING_PHASE = 3;\n  readonly attribute unsigned short eventPhase;\n\n  undefined stopPropagation();\n           attribute boolean cancelBubble; // legacy alias of .stopPropagation()\n  undefined stopImmediatePropagation();\n\n  readonly attribute boolean bubbles;\n  readonly attribute boolean cancelable;\n           attribute boolean returnValue;  // legacy\n  undefined preventDefault();\n  readonly attribute boolean defaultPrevented;\n  readonly attribute boolean composed;\n\n  [LegacyUnforgeable] readonly attribute boolean isTrusted;\n  readonly attribute DOMHighResTimeStamp timeStamp;\n\n  undefined initEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false); // legacy\n};",
         "type": "interface",
         "name": "Event",
         "inheritance": null,
@@ -523,18 +514,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "AudioWorklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -606,7 +587,7 @@
         "partial": false
       },
       "CustomEvent": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface CustomEvent : Event {\n  constructor(DOMString type, optional CustomEventInit eventInitDict = {});\n\n  readonly attribute any detail;\n\n  undefined initCustomEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false, optional any detail = null); // legacy\n};",
+        "fragment": "[Exposed=*]\ninterface CustomEvent : Event {\n  constructor(DOMString type, optional CustomEventInit eventInitDict = {});\n\n  readonly attribute any detail;\n\n  undefined initCustomEvent(DOMString type, optional boolean bubbles = false, optional boolean cancelable = false, optional any detail = null); // legacy\n};",
         "type": "interface",
         "name": "CustomEvent",
         "inheritance": "Event",
@@ -760,15 +741,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -803,7 +777,7 @@
         "partial": false
       },
       "EventTarget": {
-        "fragment": "[Exposed=(Window,Worker,AudioWorklet)]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
+        "fragment": "[Exposed=*]\ninterface EventTarget {\n  constructor();\n\n  undefined addEventListener(DOMString type, EventListener? callback, optional (AddEventListenerOptions or boolean) options = {});\n  undefined removeEventListener(DOMString type, EventListener? callback, optional (EventListenerOptions or boolean) options = {});\n  boolean dispatchEvent(Event event);\n};",
         "type": "interface",
         "name": "EventTarget",
         "inheritance": null,
@@ -1017,18 +991,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                },
-                {
-                  "value": "AudioWorklet"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1167,7 +1131,7 @@
         "partial": false
       },
       "AbortController": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
+        "fragment": "[Exposed=*]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
         "type": "interface",
         "name": "AbortController",
         "inheritance": null,
@@ -1237,15 +1201,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -1253,7 +1210,7 @@
         "partial": false
       },
       "AbortSignal": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
+        "fragment": "[Exposed=*]\ninterface AbortSignal : EventTarget {\n  [NewObject] static AbortSignal abort(optional any reason);\n\n  readonly attribute boolean aborted;\n  readonly attribute any reason;\n  undefined throwIfAborted();\n\n  attribute EventHandler onabort;\n};",
         "type": "interface",
         "name": "AbortSignal",
         "inheritance": "EventTarget",
@@ -1363,15 +1320,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -10939,12 +10889,14 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
+      "*": [
         "Event",
         "CustomEvent",
         "EventTarget",
         "AbortController",
-        "AbortSignal",
+        "AbortSignal"
+      ],
+      "Window": [
         "NodeList",
         "HTMLCollection",
         "MutationObserver",
@@ -10975,17 +10927,6 @@
         "XPathExpression",
         "XPathEvaluator",
         "XSLTProcessor"
-      ],
-      "Worker": [
-        "Event",
-        "CustomEvent",
-        "EventTarget",
-        "AbortController",
-        "AbortSignal"
-      ],
-      "AudioWorklet": [
-        "Event",
-        "EventTarget"
       ]
     },
     "dependencies": {

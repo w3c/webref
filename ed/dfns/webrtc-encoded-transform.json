@@ -123,6 +123,25 @@
       "definedIn": "prose"
     },
     {
+      "id": "association-steps",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#association-steps",
+      "linkingText": [
+        "association steps"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "attribute",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#attribute",
+        "title": "Extension attribute",
+        "number": "3.2"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-rtcrtpsender-transform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-transform",
       "linkingText": [
@@ -1017,6 +1036,27 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-rtcencodedvideoframemetadata-payloadtype",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-payloadtype",
+      "linkingText": [
+        "payloadType"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedVideoFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "dom-rtcencodedvideoframemetadata-contributingsources",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedvideoframemetadata-contributingsources",
       "linkingText": [
@@ -1164,6 +1204,27 @@
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-synchronizationsource",
       "linkingText": [
         "synchronizationSource"
+      ],
+      "localLinkingText": [],
+      "type": "dict-member",
+      "for": [
+        "RTCEncodedAudioFrameMetadata"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcencodedaudioframemetadata-payloadtype",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcencodedaudioframemetadata-payloadtype",
+      "linkingText": [
+        "payloadType"
       ],
       "localLinkingText": [],
       "type": "dict-member",
@@ -1364,6 +1425,28 @@
       "definedIn": "pre"
     },
     {
+      "id": "dom-rtcrtpscripttransformer-generatekeyframe-rids-rids",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe-rids-rids",
+      "linkingText": [
+        "rids"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RTCRtpScriptTransformer/generateKeyFrame(rids)",
+        "RTCRtpScriptTransformer/generateKeyFrame()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "scriptTransform",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#scriptTransform",
+        "title": "RTCRtpScriptTransform",
+        "number": "5"
+      },
+      "definedIn": "pre"
+    },
+    {
       "id": "rtcrtpscripttransform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpscripttransform",
       "linkingText": [
@@ -1487,6 +1570,49 @@
       "definedIn": "prose"
     },
     {
+      "id": "dom-rtcrtpscripttransformer-generatekeyframe",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-generatekeyframe",
+      "linkingText": [
+        "generateKeyFrame(rids)",
+        "generateKeyFrame()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpScriptTransformer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-operations",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-operations",
+        "title": "Operations",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rtcrtpscripttransformer-sendkeyframerequest",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-sendkeyframerequest",
+      "linkingText": [
+        "sendKeyFrameRequest()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpScriptTransformer"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "RTCRtpScriptTransform-operations",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransform-operations",
+        "title": "Operations",
+        "number": "5.1"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-rtcrtpscripttransformer-options",
       "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpscripttransformer-options",
       "linkingText": [
@@ -1546,6 +1672,88 @@
         "href": "https://w3c.github.io/webrtc-encoded-transform/#RTCRtpScriptTransformer-attributes",
         "title": "Attributes",
         "number": "5.2"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "generate-key-frame-algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#generate-key-frame-algorithm",
+      "linkingText": [
+        "generate key frame algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "KeyFrame-algorithms",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#KeyFrame-algorithms",
+        "title": "KeyFrame Algorithms",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "send-request-key-frame-algorithm",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#send-request-key-frame-algorithm",
+      "linkingText": [
+        "send request key frame algorithm"
+      ],
+      "localLinkingText": [],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": false,
+      "heading": {
+        "id": "KeyFrame-algorithms",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#KeyFrame-algorithms",
+        "title": "KeyFrame Algorithms",
+        "number": "5.3"
+      },
+      "definedIn": "prose"
+    },
+    {
+      "id": "dom-rtcrtpsender-generatekeyframe-rids-rids",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe-rids-rids",
+      "linkingText": [
+        "rids"
+      ],
+      "localLinkingText": [],
+      "type": "argument",
+      "for": [
+        "RTCRtpSender/generateKeyFrame(rids)",
+        "RTCRtpSender/generateKeyFrame()"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "rtcrtpsender-extension",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#rtcrtpsender-extension",
+        "title": "RTCRtpSender extension",
+        "number": "6"
+      },
+      "definedIn": "pre"
+    },
+    {
+      "id": "dom-rtcrtpsender-generatekeyframe",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/#dom-rtcrtpsender-generatekeyframe",
+      "linkingText": [
+        "generateKeyFrame(rids)",
+        "generateKeyFrame()"
+      ],
+      "localLinkingText": [],
+      "type": "method",
+      "for": [
+        "RTCRtpSender"
+      ],
+      "access": "public",
+      "informative": false,
+      "heading": {
+        "id": "sender-operation",
+        "href": "https://w3c.github.io/webrtc-encoded-transform/#sender-operation",
+        "title": "Extension operation",
+        "number": "6.1"
       },
       "definedIn": "prose"
     }

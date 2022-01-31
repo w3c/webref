@@ -6,19 +6,12 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
-          "PerformanceObserver"
-        ],
-        "Worker": [
+        "*": [
           "PerformanceObserver"
         ]
       },
       "functions": {
-        "Window": [
-          "PerformanceEntry",
-          "PerformanceObserverEntryList"
-        ],
-        "Worker": [
+        "*": [
           "PerformanceEntry",
           "PerformanceObserverEntryList"
         ]
@@ -49,7 +42,7 @@
         "extAttrs": []
       },
       "PerformanceEntry": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
+        "fragment": "[Exposed=*]\ninterface PerformanceEntry {\n  readonly    attribute DOMString           name;\n  readonly    attribute DOMString           entryType;\n  readonly    attribute DOMHighResTimeStamp startTime;\n  readonly    attribute DOMHighResTimeStamp duration;\n  [Default] object toJSON();\n};",
         "type": "interface",
         "name": "PerformanceEntry",
         "inheritance": null,
@@ -142,15 +135,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -224,7 +210,7 @@
         "extAttrs": []
       },
       "PerformanceObserver": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
+        "fragment": "[Exposed=*]\ninterface PerformanceObserver {\n  constructor(PerformanceObserverCallback callback);\n  undefined observe (optional PerformanceObserverInit options = {});\n  undefined disconnect ();\n  PerformanceEntryList takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedEntryTypes;\n};",
         "type": "interface",
         "name": "PerformanceObserver",
         "inheritance": null,
@@ -352,15 +338,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -457,7 +436,7 @@
         "partial": false
       },
       "PerformanceObserverEntryList": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface PerformanceObserverEntryList {\n  PerformanceEntryList getEntries();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
+        "fragment": "[Exposed=*]\ninterface PerformanceObserverEntryList {\n  PerformanceEntryList getEntries();\n  PerformanceEntryList getEntriesByType (DOMString type);\n  PerformanceEntryList getEntriesByName (DOMString name, optional DOMString type);\n};",
         "type": "interface",
         "name": "PerformanceObserverEntryList",
         "inheritance": null,
@@ -563,15 +542,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -690,12 +662,7 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
-        "PerformanceEntry",
-        "PerformanceObserver",
-        "PerformanceObserverEntryList"
-      ],
-      "Worker": [
+      "*": [
         "PerformanceEntry",
         "PerformanceObserver",
         "PerformanceObserverEntryList"

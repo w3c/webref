@@ -18,7 +18,7 @@
         "title": "DOM Standard",
         "url": "https://dom.spec.whatwg.org/"
       },
-      "fragment": "[Exposed=(Window,Worker)]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
+      "fragment": "[Exposed=*]\ninterface AbortController {\n  constructor();\n\n  [SameObject] readonly attribute AbortSignal signal;\n\n  undefined abort(optional any reason);\n};",
       "href": "https://dom.spec.whatwg.org/#abortcontroller"
     },
     "extended": [],

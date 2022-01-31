@@ -6,7 +6,7 @@
       "title": "User-Agent Client Hints",
       "url": "https://wicg.github.io/ua-client-hints/"
     },
-    "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
+    "fragment": "dictionary UADataValues {\n  sequence<NavigatorUABrandVersion> brands;\n  boolean mobile;\n  DOMString architecture;\n  DOMString bitness;\n  DOMString model;\n  DOMString platform;\n  DOMString platformVersion;\n  DOMString uaFullVersion; // deprecated in favor of fullVersionList\n  boolean wow64;\n  sequence<NavigatorUABrandVersion> fullVersionList;\n};",
     "href": "https://wicg.github.io/ua-client-hints/#dictdef-uadatavalues"
   },
   "extended": [],

@@ -1,5 +1,5 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-[Exposed=(Window,Worker)]
+[Exposed=*]
 interface ErrorEvent : Event {
   constructor(DOMString type, optional ErrorEventInit eventInitDict = {});
 

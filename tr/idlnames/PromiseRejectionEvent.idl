@@ -1,5 +1,5 @@
 // Source: HTML Standard (https://html.spec.whatwg.org/multipage/)
-[Exposed=(Window,Worker)]
+[Exposed=*]
 interface PromiseRejectionEvent : Event {
   constructor(DOMString type, PromiseRejectionEventInit eventInitDict);
 

@@ -8,7 +8,6 @@
       "constructors": {},
       "functions": {
         "Window": [
-          "Navigator",
           "Navigator"
         ]
       }
@@ -68,7 +67,7 @@
     "idlExtendedNames": {
       "Navigator": [
         {
-          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor ctor);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor ctor);\n};",
+          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElementConstructor mediaCtor);\n  AutoplayPolicy getAutoplayPolicy(AudioContextConstructor audioCtor);\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};",
           "type": "interface",
           "name": "Navigator",
           "inheritance": null,
@@ -87,7 +86,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "ctor",
+                  "name": "mediaCtor",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -119,7 +118,7 @@
               "arguments": [
                 {
                   "type": "argument",
-                  "name": "ctor",
+                  "name": "audioCtor",
                   "extAttrs": [],
                   "idlType": {
                     "type": "argument-type",
@@ -136,27 +135,7 @@
               ],
               "extAttrs": [],
               "special": ""
-            }
-          ],
-          "extAttrs": [
-            {
-              "type": "extended-attribute",
-              "name": "Exposed",
-              "rhs": {
-                "type": "identifier",
-                "value": "Window"
-              },
-              "arguments": []
-            }
-          ],
-          "partial": true
-        },
-        {
-          "fragment": "[Exposed=Window]\npartial interface Navigator {\n  AutoplayPolicy getAutoplayPolicy(HTMLMediaElement element);\n\n  AutoplayPolicy getAutoplayPolicy(AudioContext context);\n};",
-          "type": "interface",
-          "name": "Navigator",
-          "inheritance": null,
-          "members": [
+            },
             {
               "type": "operation",
               "name": "getAutoplayPolicy",
@@ -240,7 +219,6 @@
     "globals": {},
     "exposed": {
       "Window": [
-        "Navigator",
         "Navigator"
       ]
     },

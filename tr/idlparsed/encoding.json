@@ -6,13 +6,7 @@
   "idlparsed": {
     "jsNames": {
       "constructors": {
-        "Window": [
-          "TextDecoder",
-          "TextEncoder",
-          "TextDecoderStream",
-          "TextEncoderStream"
-        ],
-        "Worker": [
+        "*": [
           "TextDecoder",
           "TextEncoder",
           "TextDecoderStream",
@@ -152,7 +146,7 @@
         "partial": false
       },
       "TextDecoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional [AllowShared] BufferSource input, optional TextDecodeOptions options = {});\n};",
+        "fragment": "[Exposed=*]\ninterface TextDecoder {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n\n  USVString decode(optional [AllowShared] BufferSource input, optional TextDecodeOptions options = {});\n};",
         "type": "interface",
         "name": "TextDecoder",
         "inheritance": null,
@@ -263,15 +257,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -344,7 +331,7 @@
         "partial": false
       },
       "TextEncoder": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
+        "fragment": "[Exposed=*]\ninterface TextEncoder {\n  constructor();\n\n  [NewObject] Uint8Array encode(optional USVString input = \"\");\n  TextEncoderEncodeIntoResult encodeInto(USVString source, [AllowShared] Uint8Array destination);\n};",
         "type": "interface",
         "name": "TextEncoder",
         "inheritance": null,
@@ -457,15 +444,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -473,7 +453,7 @@
         "partial": false
       },
       "TextDecoderStream": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TextDecoderStream {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n};",
+        "fragment": "[Exposed=*]\ninterface TextDecoderStream {\n  constructor(optional DOMString label = \"utf-8\", optional TextDecoderOptions options = {});\n};",
         "type": "interface",
         "name": "TextDecoderStream",
         "inheritance": null,
@@ -527,15 +507,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -543,7 +516,7 @@
         "partial": false
       },
       "TextEncoderStream": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface TextEncoderStream {\n  constructor();\n};",
+        "fragment": "[Exposed=*]\ninterface TextEncoderStream {\n  constructor();\n};",
         "type": "interface",
         "name": "TextEncoderStream",
         "inheritance": null,
@@ -559,15 +532,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -629,13 +595,7 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
-        "TextDecoder",
-        "TextEncoder",
-        "TextDecoderStream",
-        "TextEncoderStream"
-      ],
-      "Worker": [
+      "*": [
         "TextDecoder",
         "TextEncoder",
         "TextDecoderStream",

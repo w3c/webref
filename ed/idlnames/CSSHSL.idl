@@ -1,9 +1,9 @@
 // Source: CSS Typed OM Level 1 (https://www.w3.org/TR/css-typed-om-1/)
 [Exposed=(Window, Worker, PaintWorklet, LayoutWorklet)]
 interface CSSHSL : CSSColorValue {
-    constructor(CSSNumericValue h, CSSNumberish s, CSSNumberish l, optional CSSNumberish alpha = 1);
-    attribute CSSNumericValue h;
-    attribute CSSNumberish s;
-    attribute CSSNumberish l;
-    attribute CSSNumberish alpha;
+    constructor(CSSColorAngle h, CSSColorPercent s, CSSColorPercent l, optional CSSColorPercent alpha = 1);
+    attribute CSSColorAngle h;
+    attribute CSSColorPercent s;
+    attribute CSSColorPercent l;
+    attribute CSSColorPercent alpha;
 };

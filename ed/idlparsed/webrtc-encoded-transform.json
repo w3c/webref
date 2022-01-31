@@ -526,7 +526,7 @@
         "extAttrs": []
       },
       "RTCEncodedVideoFrameMetadata": {
-        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    sequence<long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedVideoFrameMetadata {\n    long long frameId;\n    sequence<long long> dependencies;\n    unsigned short width;\n    unsigned short height;\n    long spatialIndex;\n    long temporalIndex;\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedVideoFrameMetadata",
         "inheritance": null,
@@ -647,6 +647,21 @@
           },
           {
             "type": "field",
+            "name": "payloadType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
             "name": "contributingSources",
             "extAttrs": [],
             "idlType": {
@@ -761,7 +776,7 @@
         "partial": false
       },
       "RTCEncodedAudioFrameMetadata": {
-        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    long synchronizationSource;\n    sequence<long> contributingSources;\n};",
+        "fragment": "dictionary RTCEncodedAudioFrameMetadata {\n    long synchronizationSource;\n    octet payloadType;\n    sequence<long> contributingSources;\n};",
         "type": "dictionary",
         "name": "RTCEncodedAudioFrameMetadata",
         "inheritance": null,
@@ -777,6 +792,21 @@
               "nullable": false,
               "union": false,
               "idlType": "long"
+            },
+            "default": null,
+            "required": false
+          },
+          {
+            "type": "field",
+            "name": "payloadType",
+            "extAttrs": [],
+            "idlType": {
+              "type": "dictionary-type",
+              "extAttrs": [],
+              "generic": "",
+              "nullable": false,
+              "union": false,
+              "idlType": "octet"
             },
             "default": null,
             "required": false
@@ -917,7 +947,7 @@
         "partial": false
       },
       "RTCRtpScriptTransformer": {
-        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n};",
+        "fragment": "[Exposed=DedicatedWorker]\ninterface RTCRtpScriptTransformer {\n    readonly attribute ReadableStream readable;\n    readonly attribute WritableStream writable;\n    readonly attribute any options;\n    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);\n    Promise<undefined> sendKeyFrameRequest();\n};",
         "type": "interface",
         "name": "RTCRtpScriptTransformer",
         "inheritance": null,
@@ -966,6 +996,80 @@
             "extAttrs": [],
             "special": "",
             "readonly": true
+          },
+          {
+            "type": "operation",
+            "name": "generateKeyFrame",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [
+              {
+                "type": "argument",
+                "name": "rids",
+                "extAttrs": [],
+                "idlType": {
+                  "type": "argument-type",
+                  "extAttrs": [],
+                  "generic": "sequence",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": [
+                    {
+                      "type": "argument-type",
+                      "extAttrs": [],
+                      "generic": "",
+                      "nullable": false,
+                      "union": false,
+                      "idlType": "DOMString"
+                    }
+                  ]
+                },
+                "default": null,
+                "optional": true,
+                "variadic": false
+              }
+            ],
+            "extAttrs": [],
+            "special": ""
+          },
+          {
+            "type": "operation",
+            "name": "sendKeyFrameRequest",
+            "idlType": {
+              "type": "return-type",
+              "extAttrs": [],
+              "generic": "Promise",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "return-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "undefined"
+                }
+              ]
+            },
+            "arguments": [],
+            "extAttrs": [],
+            "special": ""
           }
         ],
         "extAttrs": [
@@ -1087,6 +1191,66 @@
               "extAttrs": [],
               "special": "",
               "readonly": false
+            }
+          ],
+          "extAttrs": [],
+          "partial": true
+        },
+        {
+          "fragment": "partial interface RTCRtpSender {\n    Promise<undefined> generateKeyFrame(optional sequence <DOMString> rids);\n};",
+          "type": "interface",
+          "name": "RTCRtpSender",
+          "inheritance": null,
+          "members": [
+            {
+              "type": "operation",
+              "name": "generateKeyFrame",
+              "idlType": {
+                "type": "return-type",
+                "extAttrs": [],
+                "generic": "Promise",
+                "nullable": false,
+                "union": false,
+                "idlType": [
+                  {
+                    "type": "return-type",
+                    "extAttrs": [],
+                    "generic": "",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": "undefined"
+                  }
+                ]
+              },
+              "arguments": [
+                {
+                  "type": "argument",
+                  "name": "rids",
+                  "extAttrs": [],
+                  "idlType": {
+                    "type": "argument-type",
+                    "extAttrs": [],
+                    "generic": "sequence",
+                    "nullable": false,
+                    "union": false,
+                    "idlType": [
+                      {
+                        "type": "argument-type",
+                        "extAttrs": [],
+                        "generic": "",
+                        "nullable": false,
+                        "union": false,
+                        "idlType": "DOMString"
+                      }
+                    ]
+                  },
+                  "default": null,
+                  "optional": true,
+                  "variadic": false
+                }
+              ],
+              "extAttrs": [],
+              "special": ""
             }
           ],
           "extAttrs": [],

@@ -1,5 +1,5 @@
 // Source: Streams Standard (https://streams.spec.whatwg.org/)
-[Exposed=(Window,Worker,Worklet), Transferable]
+[Exposed=*, Transferable]
 interface WritableStream {
   constructor(optional object underlyingSink, optional QueuingStrategy strategy = {});
 
