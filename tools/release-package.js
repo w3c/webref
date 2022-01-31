@@ -78,10 +78,7 @@ async function releasePackage(prNumber) {
     console.log(`- Installation folder: ${installFolder}`);
 
     console.log("- Prepare package files");
-    execSync("node tools/prepare-curated.js ed curated", {
-      cwd: installFolder
-    });
-    execSync("node tools/prepare-packages.js curated packages", {
+    execSync("npm ci", {
       cwd: installFolder
     });
 
