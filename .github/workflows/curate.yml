@@ -43,7 +43,7 @@ jobs:
       run: npm run test
 
     - name: Commit curated data
-      run: node tools/commit-curated.js stay-on-curated-branch
+      run: node tools/commit-curated.js curated stay-on-curated-branch
 
     - name: Push changes to curated branch
       uses: ad-m/github-push-action@v0.6.0
