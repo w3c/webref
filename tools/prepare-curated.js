@@ -26,7 +26,13 @@ const {
 const { applyPatches } = require('./apply-patches.js');
 
 
-
+/**
+ * Remove links from given spec crawl result to extracts that no longer exist
+ * once patches have been applied.
+ *
+ * @function
+ * @param {Object} spec to parse and clean.
+ */
 async function cleanCrawlOutcome(spec) {
   await Promise.all(Object.keys(spec).map(async property => {
     // Only consider properties that link to an extract
@@ -73,9 +79,11 @@ async function prepareCurated(rawFolder, curatedFolder) {
 
   console.log();
   console.log('Copy raw data to curated folder');
-  await Promise.all([
-    'css', 'dfns', 'elements', 'headings', 'idl', 'ids', 'links', 'refs'
-  ].map(async folder => {
+  const folders = await fs.readdir(rawFolder);
+  await Promise.all(folders.filter(folder =>
+      !folder.endsWith('patches') && !folder.includes('.') &&
+      !['idlnames', 'idlnamesparsed', 'idlparsed'].includes(folder)
+  ).map(async folder => {
     await copyFolder(
       path.join(rawFolder, folder),
       curatedFolder);

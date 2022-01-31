@@ -1,9 +1,7 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-async function listAll(options) {
-  options = options || {};
-  const folder = options.folder || __dirname;
+async function listAll({folder = __dirname} = {}) {
   const all = {};
   const files = await fs.readdir(folder);
   for (const f of files) {

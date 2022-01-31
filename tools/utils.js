@@ -51,11 +51,9 @@ function requireFromWorkingDirectory(filename) {
  *    folder from the copy and start the copy with its contents
  * @return {Promise} The promise to have copied the folder's contents.
  */
-async function copyFolder(source, target, options) {
-  options = options || {};
-
+async function copyFolder(source, target, { excludeRoot = false } = {}) {
   // Check if folder needs to be created or integrated
-  const targetFolder = options.excludeRoot ?
+  const targetFolder = excludeRoot ?
     target :
     path.join(target, path.basename(source));
   await createFolderIfNeeded(targetFolder);

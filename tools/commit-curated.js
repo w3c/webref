@@ -7,8 +7,9 @@
  * ... where:
  * - [curated folder] is the folder that contains the curated data that should
  * replace curated data in the "curated" branch
- * - [stay on curated branch] is "true" to remain on the "curated" branch at the
- * end of the script (script switches back to initial branch otherwise)
+ * - [stay on curated branch] is set (any value) to remain on the "curated"
+ * branch at the end of the script (script switches back to initial branch
+ * otherwise)
  */
 
 const util = require('util');
