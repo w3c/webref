@@ -35,7 +35,8 @@ async function commitCurated(curatedFolder, stayOnCurated) {
   if (currentBranch !== 'curated') {
     console.log();
     console.log('Checkout branch "curated"');
-    execSync(`git checkout curated`);
+    // Final '--' because presence of a 'curated' folder may confuse Git
+    execSync(`git checkout curated --`);
     console.log('- done');
   }
 
