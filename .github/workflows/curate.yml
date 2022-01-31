@@ -30,6 +30,10 @@ jobs:
 
     - name: Checkout webref
       uses: actions/checkout@v2
+      with:
+        # Need to checkout all history as curation job also needs to access
+        # the curated branch
+        fetch-depth: 0
 
     - name: Prepare curated and packages data
       # Note that "ci" runs the "prepare" script
