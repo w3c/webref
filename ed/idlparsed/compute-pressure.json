@@ -74,7 +74,7 @@
         "extAttrs": []
       },
       "ComputePressureObserver": {
-        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n};",
+        "fragment": "[Exposed=Window]\ninterface ComputePressureObserver {\n  constructor(ComputePressureUpdateCallback callback);\n  undefined observe(ComputePressureTarget target, optional ComputePressureObserverOptions options = {});\n  undefined unobserve(ComputePressureTarget target);\n  undefined disconnect();\n  sequence<ComputePressureEntry> takeRecords();\n  [SameObject] static readonly attribute FrozenArray<DOMString> supportedTargetTypes;\n};",
         "type": "interface",
         "name": "ComputePressureObserver",
         "inheritance": null,
@@ -221,6 +221,37 @@
             "arguments": [],
             "extAttrs": [],
             "special": ""
+          },
+          {
+            "type": "attribute",
+            "name": "supportedTargetTypes",
+            "idlType": {
+              "type": "attribute-type",
+              "extAttrs": [],
+              "generic": "FrozenArray",
+              "nullable": false,
+              "union": false,
+              "idlType": [
+                {
+                  "type": "attribute-type",
+                  "extAttrs": [],
+                  "generic": "",
+                  "nullable": false,
+                  "union": false,
+                  "idlType": "DOMString"
+                }
+              ]
+            },
+            "extAttrs": [
+              {
+                "type": "extended-attribute",
+                "name": "SameObject",
+                "rhs": null,
+                "arguments": []
+              }
+            ],
+            "special": "static",
+            "readonly": true
           }
         ],
         "extAttrs": [
