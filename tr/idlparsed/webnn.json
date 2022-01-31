@@ -90,7 +90,7 @@
         "extAttrs": []
       },
       "MLPowerPreference": {
-        "fragment": "enum MLPowerPreference {\n  // Let the user agent select the most suitable behavior.\n  \"default\",\n\n  // Prioritizes execution speed over power consumption.\n  \"high-performance\",\n  \n  // Prioritizes power consumption over other considerations such as execution speed.\n  \"low-power\"\n};",
+        "fragment": "enum MLPowerPreference {\n  // Let the user agent select the most suitable behavior.\n  \"default\",\n\n  // Prioritizes execution speed over power consumption.\n  \"high-performance\",\n\n  // Prioritizes power consumption over other considerations such as execution speed.\n  \"low-power\"\n};",
         "type": "enum",
         "name": "MLPowerPreference",
         "values": [
@@ -4156,7 +4156,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight, \n                        long steps, long hiddenSize, optional MLGruOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  sequence<MLOperand> gru(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n\n                        long steps, long hiddenSize, optional MLGruOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -4289,7 +4289,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight, \n                  MLOperand hiddenState, long hiddenSize, optional MLGruCellOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand gruCell(MLOperand input, MLOperand weight, MLOperand recurrentWeight,\n\n                  MLOperand hiddenState, long hiddenSize, optional MLGruCellOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,
@@ -4564,7 +4564,7 @@
           "partial": true
         },
         {
-          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input, \n                                optional MLInstanceNormalizationOptions options = {});\n};",
+          "fragment": "partial interface MLGraphBuilder {\n  MLOperand instanceNormalization(MLOperand input,\n\n                                optional MLInstanceNormalizationOptions options = {});\n};",
           "type": "interface",
           "name": "MLGraphBuilder",
           "inheritance": null,

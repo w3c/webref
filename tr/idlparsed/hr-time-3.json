@@ -7,10 +7,7 @@
     "jsNames": {
       "constructors": {},
       "functions": {
-        "Window": [
-          "Performance"
-        ],
-        "Worker": [
+        "*": [
           "Performance"
         ]
       }
@@ -45,7 +42,7 @@
         "extAttrs": []
       },
       "Performance": {
-        "fragment": "[Exposed=(Window,Worker)]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
+        "fragment": "[Exposed=*]\ninterface Performance : EventTarget {\n    DOMHighResTimeStamp now();\n    readonly attribute DOMHighResTimeStamp timeOrigin;\n    [Default] object toJSON();\n};",
         "type": "interface",
         "name": "Performance",
         "inheritance": "EventTarget",
@@ -108,15 +105,8 @@
             "type": "extended-attribute",
             "name": "Exposed",
             "rhs": {
-              "type": "identifier-list",
-              "value": [
-                {
-                  "value": "Window"
-                },
-                {
-                  "value": "Worker"
-                }
-              ]
+              "type": "*",
+              "value": null
             },
             "arguments": []
           }
@@ -162,10 +152,7 @@
     },
     "globals": {},
     "exposed": {
-      "Window": [
-        "Performance"
-      ],
-      "Worker": [
+      "*": [
         "Performance"
       ]
     },

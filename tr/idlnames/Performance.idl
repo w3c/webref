@@ -1,5 +1,5 @@
 // Source: High Resolution Time (https://www.w3.org/TR/hr-time-3/)
-[Exposed=(Window,Worker)]
+[Exposed=*]
 interface Performance : EventTarget {
     DOMHighResTimeStamp now();
     readonly attribute DOMHighResTimeStamp timeOrigin;

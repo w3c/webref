@@ -5,6 +5,28 @@
   },
   "dfns": [
     {
+      "id": "dfn-checking-permission",
+      "href": "https://www.w3.org/TR/geolocation/#dfn-checking-permission",
+      "linkingText": [
+        "checking permission",
+        "check permission"
+      ],
+      "localLinkingText": [
+        "check permission"
+      ],
+      "type": "dfn",
+      "for": [],
+      "access": "private",
+      "informative": true,
+      "heading": {
+        "id": "check-permission",
+        "href": "https://www.w3.org/TR/geolocation/#check-permission",
+        "title": "Checking permission to use the API",
+        "number": "3.4"
+      },
+      "definedIn": "prose"
+    },
+    {
       "id": "dom-navigator-geolocation",
       "href": "https://www.w3.org/TR/geolocation/#dom-navigator-geolocation",
       "linkingText": [
@@ -23,7 +45,7 @@
         "id": "navigator_interface",
         "href": "https://www.w3.org/TR/geolocation/#navigator_interface",
         "title": "Extensions to the Navigator interface",
-        "number": "4"
+        "number": "5"
       },
       "definedIn": "pre"
     },
@@ -42,7 +64,7 @@
         "id": "geolocation_interface",
         "href": "https://www.w3.org/TR/geolocation/#geolocation_interface",
         "title": "Geolocation interface and callbacks",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -61,7 +83,7 @@
         "id": "geolocation_interface",
         "href": "https://www.w3.org/TR/geolocation/#geolocation_interface",
         "title": "Geolocation interface and callbacks",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -80,7 +102,7 @@
         "id": "geolocation_interface",
         "href": "https://www.w3.org/TR/geolocation/#geolocation_interface",
         "title": "Geolocation interface and callbacks",
-        "number": "5"
+        "number": "6"
       },
       "definedIn": "pre"
     },
@@ -101,15 +123,15 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/geolocation/#internal-slots",
         "title": "Internal slots",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
     {
-      "id": "dfn-watchtasks",
-      "href": "https://www.w3.org/TR/geolocation/#dfn-watchtasks",
+      "id": "dfn-watchids",
+      "href": "https://www.w3.org/TR/geolocation/#dfn-watchids",
       "linkingText": [
-        "[[watchTasks]]"
+        "[[watchIDs]]"
       ],
       "localLinkingText": [],
       "type": "attribute",
@@ -122,7 +144,7 @@
         "id": "internal-slots",
         "href": "https://www.w3.org/TR/geolocation/#internal-slots",
         "title": "Internal slots",
-        "number": "5.1"
+        "number": "6.1"
       },
       "definedIn": "table"
     },
@@ -150,7 +172,7 @@
         "id": "getcurrentposition-method",
         "href": "https://www.w3.org/TR/geolocation/#getcurrentposition-method",
         "title": "getCurrentPosition() method",
-        "number": "5.2"
+        "number": "6.2"
       },
       "definedIn": "prose"
     },
@@ -178,7 +200,7 @@
         "id": "watchposition-method",
         "href": "https://www.w3.org/TR/geolocation/#watchposition-method",
         "title": "watchPosition() method",
-        "number": "5.3"
+        "number": "6.3"
       },
       "definedIn": "prose"
     },
@@ -204,15 +226,15 @@
         "id": "clearwatch-method",
         "href": "https://www.w3.org/TR/geolocation/#clearwatch-method",
         "title": "clearWatch() method",
-        "number": "5.4"
+        "number": "6.4"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-request-position",
-      "href": "https://www.w3.org/TR/geolocation/#dfn-request-position",
+      "id": "dfn-request-a-position",
+      "href": "https://www.w3.org/TR/geolocation/#dfn-request-a-position",
       "linkingText": [
-        "Request position"
+        "request a position"
       ],
       "localLinkingText": [],
       "type": "dfn",
@@ -220,20 +242,19 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "request-position",
-        "href": "https://www.w3.org/TR/geolocation/#request-position",
-        "title": "Request position",
-        "number": "5.5"
+        "id": "request-a-position",
+        "href": "https://www.w3.org/TR/geolocation/#request-a-position",
+        "title": "Request a position",
+        "number": "6.5"
       },
       "definedIn": "prose"
     },
     {
-      "id": "dfn-acquire-position",
-      "href": "https://www.w3.org/TR/geolocation/#dfn-acquire-position",
+      "id": "dfn-acquire-a-position",
+      "href": "https://www.w3.org/TR/geolocation/#dfn-acquire-a-position",
       "linkingText": [
-        "Acquire position",
-        "acquiring a position",
-        "acquire a position"
+        "acquire a position",
+        "acquiring a position"
       ],
       "localLinkingText": [
         "acquiring a position",
@@ -244,29 +265,10 @@
       "access": "private",
       "informative": false,
       "heading": {
-        "id": "request-position",
-        "href": "https://www.w3.org/TR/geolocation/#request-position",
-        "title": "Request position",
-        "number": "5.5"
-      },
-      "definedIn": "prose"
-    },
-    {
-      "id": "dfn-check-permission",
-      "href": "https://www.w3.org/TR/geolocation/#dfn-check-permission",
-      "linkingText": [
-        "check permission"
-      ],
-      "localLinkingText": [],
-      "type": "dfn",
-      "for": [],
-      "access": "private",
-      "informative": false,
-      "heading": {
-        "id": "check-permission",
-        "href": "https://www.w3.org/TR/geolocation/#check-permission",
-        "title": "Check permission",
-        "number": "5.6"
+        "id": "acquire-a-position",
+        "href": "https://www.w3.org/TR/geolocation/#acquire-a-position",
+        "title": "Acquire a position",
+        "number": "6.6"
       },
       "definedIn": "prose"
     },
@@ -285,7 +287,7 @@
         "id": "call-back-with-error",
         "href": "https://www.w3.org/TR/geolocation/#call-back-with-error",
         "title": "Call back with error",
-        "number": "5.7"
+        "number": "6.7"
       },
       "definedIn": "prose"
     },
@@ -304,7 +306,7 @@
         "id": "position_options_interface",
         "href": "https://www.w3.org/TR/geolocation/#position_options_interface",
         "title": "PositionOptions dictionary",
-        "number": "6"
+        "number": "7"
       },
       "definedIn": "heading"
     },
@@ -325,7 +327,7 @@
         "id": "enablehighaccuracy-member",
         "href": "https://www.w3.org/TR/geolocation/#enablehighaccuracy-member",
         "title": "enableHighAccuracy member",
-        "number": "6.1"
+        "number": "7.1"
       },
       "definedIn": "prose"
     },
@@ -346,7 +348,7 @@
         "id": "timeout-member",
         "href": "https://www.w3.org/TR/geolocation/#timeout-member",
         "title": "timeout member",
-        "number": "6.2"
+        "number": "7.2"
       },
       "definedIn": "prose"
     },
@@ -367,7 +369,7 @@
         "id": "maximumage-member",
         "href": "https://www.w3.org/TR/geolocation/#maximumage-member",
         "title": "maximumAge member",
-        "number": "6.3"
+        "number": "7.3"
       },
       "definedIn": "prose"
     },
@@ -386,7 +388,7 @@
         "id": "position_interface",
         "href": "https://www.w3.org/TR/geolocation/#position_interface",
         "title": "GeolocationPosition interface",
-        "number": "7"
+        "number": "8"
       },
       "definedIn": "pre"
     },
@@ -409,7 +411,7 @@
         "id": "coords-attribute",
         "href": "https://www.w3.org/TR/geolocation/#coords-attribute",
         "title": "coords attribute",
-        "number": "7.1"
+        "number": "8.1"
       },
       "definedIn": "prose"
     },
@@ -432,7 +434,7 @@
         "id": "timestamp-attribute",
         "href": "https://www.w3.org/TR/geolocation/#timestamp-attribute",
         "title": "timestamp attribute",
-        "number": "7.2"
+        "number": "8.2"
       },
       "definedIn": "prose"
     },
@@ -453,7 +455,7 @@
         "id": "internal-slots-0",
         "href": "https://www.w3.org/TR/geolocation/#internal-slots-0",
         "title": "Internal slots",
-        "number": "7.3"
+        "number": "8.3"
       },
       "definedIn": "table"
     },
@@ -472,7 +474,7 @@
         "id": "task-sources",
         "href": "https://www.w3.org/TR/geolocation/#task-sources",
         "title": "Task sources",
-        "number": "7.4"
+        "number": "8.4"
       },
       "definedIn": "dt"
     },
@@ -491,7 +493,7 @@
         "id": "coordinates_interface",
         "href": "https://www.w3.org/TR/geolocation/#coordinates_interface",
         "title": "GeolocationCoordinates interface",
-        "number": "8"
+        "number": "9"
       },
       "definedIn": "heading"
     },
@@ -514,7 +516,7 @@
         "id": "latitude-longitude-and-accuracy-attributes",
         "href": "https://www.w3.org/TR/geolocation/#latitude-longitude-and-accuracy-attributes",
         "title": "latitude, longitude, and accuracy attributes",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -537,7 +539,7 @@
         "id": "latitude-longitude-and-accuracy-attributes",
         "href": "https://www.w3.org/TR/geolocation/#latitude-longitude-and-accuracy-attributes",
         "title": "latitude, longitude, and accuracy attributes",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -560,7 +562,7 @@
         "id": "latitude-longitude-and-accuracy-attributes",
         "href": "https://www.w3.org/TR/geolocation/#latitude-longitude-and-accuracy-attributes",
         "title": "latitude, longitude, and accuracy attributes",
-        "number": "8.1"
+        "number": "9.1"
       },
       "definedIn": "prose"
     },
@@ -583,7 +585,7 @@
         "id": "altitude-and-altitudeaccuracy-attributes",
         "href": "https://www.w3.org/TR/geolocation/#altitude-and-altitudeaccuracy-attributes",
         "title": "altitude and altitudeAccuracy attributes",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -606,7 +608,7 @@
         "id": "altitude-and-altitudeaccuracy-attributes",
         "href": "https://www.w3.org/TR/geolocation/#altitude-and-altitudeaccuracy-attributes",
         "title": "altitude and altitudeAccuracy attributes",
-        "number": "8.2"
+        "number": "9.2"
       },
       "definedIn": "prose"
     },
@@ -629,7 +631,7 @@
         "id": "heading-attribute",
         "href": "https://www.w3.org/TR/geolocation/#heading-attribute",
         "title": "heading attribute",
-        "number": "8.3"
+        "number": "9.3"
       },
       "definedIn": "prose"
     },
@@ -652,7 +654,7 @@
         "id": "speed-attribute",
         "href": "https://www.w3.org/TR/geolocation/#speed-attribute",
         "title": "speed attribute",
-        "number": "8.4"
+        "number": "9.4"
       },
       "definedIn": "prose"
     },
@@ -671,7 +673,7 @@
         "id": "constructing-a-geolocationposition",
         "href": "https://www.w3.org/TR/geolocation/#constructing-a-geolocationposition",
         "title": "Constructing a GeolocationPosition",
-        "number": "8.5"
+        "number": "9.5"
       },
       "definedIn": "prose"
     },
@@ -689,8 +691,7 @@
       "heading": {
         "id": "position_error_interface",
         "href": "https://www.w3.org/TR/geolocation/#position_error_interface",
-        "title": "GeolocationPositionError interface",
-        "number": "9"
+        "title": "10. GeolocationPositionError interface"
       },
       "definedIn": "heading"
     },
@@ -711,7 +712,7 @@
         "id": "constants",
         "href": "https://www.w3.org/TR/geolocation/#constants",
         "title": "Constants",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "dt"
     },
@@ -732,7 +733,7 @@
         "id": "constants",
         "href": "https://www.w3.org/TR/geolocation/#constants",
         "title": "Constants",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "dt"
     },
@@ -753,7 +754,7 @@
         "id": "constants",
         "href": "https://www.w3.org/TR/geolocation/#constants",
         "title": "Constants",
-        "number": "9.1"
+        "number": "10.1"
       },
       "definedIn": "dt"
     },
@@ -776,7 +777,7 @@
         "id": "code-attribute",
         "href": "https://www.w3.org/TR/geolocation/#code-attribute",
         "title": "code attribute",
-        "number": "9.2"
+        "number": "10.2"
       },
       "definedIn": "prose"
     },
@@ -799,7 +800,7 @@
         "id": "message-attribute",
         "href": "https://www.w3.org/TR/geolocation/#message-attribute",
         "title": "message attribute",
-        "number": "9.3"
+        "number": "10.3"
       },
       "definedIn": "prose"
     }
