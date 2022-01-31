@@ -2,7 +2,14 @@
  * Prepare a Webref package release pull request if needed.
  *
  * The pull request contains the diff as description, and bumps the version
- * patch number.
+ * patch number of the corresponding `package.json` file.
+ *
+ * Pre-requisites:
+ * - The local repo must be up-to-date with the remote repo on GitHub. That is
+ * typically the case when this script runs as part of a GitHub job.
+ * - The current branch in the local repo should be the main branch.
+ * - The `prepare-curated.js` and `prepare-packages.js` utilities must have
+ * been run to generate the relevant data in the `packages` folder.
  *
  * If the PR is merged, the "release-package.js" job should run and actually
  * release the package at the commit on which the pre-release PR was based.
@@ -13,9 +20,6 @@
  * PR.
  *
  * Possible TODO improvements:
- * - Make sure that local clone of the repo is at the same commit as repo on
- * GitHub (local clone is used to compute the diff). Report an error if that is
- * not the case.
  * - Invalidate or re-request review when PR is updated?
  */
 
@@ -136,6 +140,30 @@ async function prepareRelease(type) {
   // Compute a reasonably unique ID
   const uid = (new Date()).toISOString().replace(/[\-T:\.Z]/g, "");
 
+  console.log("Get latest commit on current branch");
+  const latestCommitSha = execSync('git log -n 1 --pretty=format:"%H"', { encoding: 'utf8' }).trim();
+  console.log(`- Current branch is at ${latestCommitSha}`);
+
+  console.log();
+  console.log("Get corresponding commit on curated branch");
+  const latestCommitCuratedSha = execSync(
+    `git log -n 1 --pretty=format:"%H" --grep="Publish curated data from ${latestCommitSha}" --branches`,
+    { encoding: 'utf8' }).trim();
+  if (latestCommitCuratedSha) {
+    console.log(`- Corresponding commit on curated branch: ${latestCommitCuratedSha}`);
+  }
+  else {
+    console.log(`- No corresponding commit on curated branch`);
+    return;
+  }
+
+  // Note the reference to the commit on the curated branch is more than purely
+  // informational. The `release-package.js` script will use it to tag the
+  // commit when a package is released.
+  const curatedRef = latestCommitCuratedSha ?
+    ` triggered by curated data at ${latestCommitCuratedSha}` : '';
+
+  console.log();
   console.log("Look for a pending pre-release PR");
   const searchResponse = await octokit.search.issuesAndPullRequests({
     q: `repo:${owner}/${repo} type:pr state:open head:release-${type}-`
@@ -198,28 +226,20 @@ ${diff.substring(0, 60000)}`;
   console.log(`- Bumped version: ${bumpedVersion}`);
 
   console.log();
-  console.log("Get latest commit on default branch");
-  const latestCommitResponse = await octokit.repos.getCommit({
-    owner, repo, ref: "HEAD"
-  });
-  const latestCommitSha = latestCommitResponse.data.sha;
-  console.log(`- HEAD is at ${latestCommitSha}`);
-
-  console.log();
   console.log("Prepare pre-release PR title and body");
   const title = `📦 Release @webref/${type}@${version}`;
   const body = `
 **⚠ NEVER add commits to this pull request.**
 
-🤖 This pull request was automatically created to facilitate human review of \`@webref/${type}\` changes.
+🤖 This pull request was automatically created to facilitate human review of \`@webref/${type}\` changes${curatedRef}.
 
 🧐 Please review the diff below and version numbers. If all looks good, merge this pull request to release the changes to npm.
 
 📦 Latest released \`@webref/${type}\` package was **v${latestReleasedVersion}**. Merging this pull request will release **v${version}**. Make sure that the bump is the right one for the changes.
 
-✍ If any change needs to be made before release, **do not add a commit** to this pull request. Changes should rather be handled in a separate pull request and pushed to the default branch. You may leave this pull request open in the meantime, or close it. The pre-release job will automatically update this pull request or create a new one once the updates have made their way to the default branch.
+✍ If any change needs to be made before release, **do not add a commit** to this pull request. Changes should rather be handled in a separate pull request and pushed to the main branch. You may leave this pull request open in the meantime, or close it. The pre-release job will automatically update this pull request or create a new one once the updates have made their way to the main branch.
 
-🛈 The actual change introduced by this pull request is a version bump in \`packages/${type}/package.json\`. You should not need to review that change to decide on whether a new release should be issued. The bumped version is not the version that will be released when this pull request is merged, but rather the version that will be released next time.
+🛈 The actual change introduced by this pull request is a version bump in \`packages/${type}/package.json\`. You do not need to review that change. The bumped version is not the version that will be released when this pull request is merged, but rather the version that will be released next time.
 
 \`\`\`diff
 ${diff}

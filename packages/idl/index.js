@@ -21,20 +21,20 @@ class IDLFile {
   }
 }
 
-async function listAll() {
+async function listAll({folder = __dirname} = {}) {
   const all = {};
-  const files = await fs.readdir(__dirname);
+  const files = await fs.readdir(folder);
   for (const f of files) {
     if (f.endsWith('.idl')) {
-      const idlFile = new IDLFile(__dirname, f);
+      const idlFile = new IDLFile(folder, f);
       all[idlFile.shortname] = idlFile;
     }
   }
   return all;
 }
 
-async function parseAll() {
-  const all = await listAll();
+async function parseAll(options) {
+  const all = await listAll(options);
   for (const [key, value] of Object.entries(all)) {
     all[key] = await value.parse();
   }
